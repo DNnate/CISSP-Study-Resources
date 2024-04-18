@@ -25,7 +25,7 @@
     - some organizations might have slightly different ethics than others, so be sure to familiarize yourself with your org’s ethics and guidelines
 
 [1.2](#1.2) Understand and apply security concepts (OSG-9 Chpt 1)
-- 1.2.1 Confidentiality, integrity, and availability, authenticity and nonrepudiation
+- 1.2.1 Confidentiality, integrity, and availability, authenticity and nonrepudiation (5 Pillars)
   - **Confidentiality**:
     - Concept of measures used to ensure the protection of the secrecy of data, objects, and resources
     - Confidentiality protections prevent disclosure while protecting authorized access
