@@ -106,11 +106,11 @@
           - tailored to enterprise needs
           - end-to-end governance system   
     -  ISO 27000 series (27000, 27001, 27002, etc.).
-            - 15408 evaluation Criteria
-            - 22301  security and resilience
-            - 27001 information security
-            - 27002 information security guidance
-            - 27031 Business continuity    
+          - 15408 evaluation Criteria
+          - 22301  security and resilience
+          - 27001 information security standards/controls
+          - 27002 information security guidance
+          - 27031 Business continuity    
     -  SABSA (Sheerwood Applied Business Security Architecture)
     -  FedRAMP (Federal Risk and Authorization Managment Programme) regulates cloud security for US Gov
     -  FIPS 140-3 Security requirement for cryptographic modules
@@ -252,6 +252,15 @@
     - accountability
   -  The EU-US **Privacy Shield** (formerly the EU-US Safe Harbor agreement): controls data flow from the EU to the United States; the EU has more stringent privacy protections and without the Privacy Shield, personal data flow from the EU to the United States would not be allowed
 
+- **Cyber Kill/Attack Chain** a seven-steps to identify and stop attacks:
+  - Stage I: Reconnaisance
+  - Stage II: Weaponization
+  - Stage III: Delivery
+  - Stage IV: Exploit
+  - Stage V: Installation
+  - Stage VI: Command and Control (C&C)
+  - Stage VII: Actions
+
 [1.6](#1.6) Understand requirements for investigation types (i.e., administrative, criminal, civil, regulatory, industry standards) (OSG-9 Chpt 19)
 
 - An investigation will vary based on incident type; e.g. for a financial services company, a financial system compromise might cause a regulatory investigation; a system breach or website compromise might cause a criminal investigation; each type of investigation has special considerations:
@@ -285,6 +294,9 @@
   - **Guideline**: offers recommendations on how standards and baselines should be implemented & serves as an operational guide for security professionals and users 
     - Guidelines are flexible, and can be customized for unique systems or conditions; they state which security mechanism should be deployed instead of prescribing a specific product or control; they are not complusory; suggested practices and expectations of activity to best accomplish tasks and goals
   - **Procedure** (AKA Standard Operating Procedure or SOP): detailed, step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution
+
+[1.7.2](#1.7.2) External Dependencies (New in 2024)
+Factors, entities or conditions outside the organisation upon which the organisations business continutiy plans and operation resilience may depend. EG suppliers, vendors, utilities, transportation
 
 [1.8](#1.8) Identify, analyze, and prioritize Business Continuity (BC) requirements (OSG-9 Chpt 3)
 
