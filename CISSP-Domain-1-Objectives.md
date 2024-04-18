@@ -44,7 +44,7 @@
     - Authorized subjects are granted timely and uninterrupted access to objects
     - To ensure high availability of services and data, use techniques like failover clustering, site resiliency, automatic failover, load balancing, redundancy of hardware and software components, and fault tolerance
 
-  - **Authenticity**: ensuring a transmission, message or sender is legitimate    
+  - **Authenticity**: ensuring a transmission, message or sender is legitimate (Proof of Origin)   
     - See the NIST glossary for examples: https://csrc.nist.gov/glossary/term/authenticity
 
   - **Nonrepudiation**: 
