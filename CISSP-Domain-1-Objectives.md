@@ -105,7 +105,21 @@
           - governance distinct from management
           - tailored to enterprise needs
           - end-to-end governance system   
-    -  ISO 27000 series (27000, 27001, 27002, etc.). 
+    -  ISO 27000 series (27000, 27001, 27002, etc.).
+            - 15408 evaluation Criteria
+            - 22301  security and resilience
+            - 27001 information security
+            - 27002 information security guidance
+            - 27031 Business continuity    
+    -  SABSA (Sheerwood Applied Business Security Architecture)
+    -  FedRAMP (Federal Risk and Authorization Managment Programme) regulates cloud security for US Gov
+    -  FIPS 140-3 Security requirement for cryptographic modules
+    -  NIST
+          - 800-37 Risk Managment Framework
+          - 800-47 Certification and Acreditation
+          - 800-92 Log Management
+          - 800-162 Guide to ABAC
+          - 800-53 Cybersecurity Framework  
     -  NIST **CyberSecurity Framework (CSF)**
         - designed for commerical orgs and critical infrastructure, CSF 1.1 consists of five functions:
           - identify
