@@ -222,4 +222,9 @@
     - completing the sale: the CCP sends a reply to the POS indicating the charge is approved
     - this system prevents CC theft at the POS system
 
+**Tokenization** replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
+**Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified. 
+**Data masking** obscures some, but not all, data. 
+**Pseudonymization** uses a pseudonym or alias to replace other information.
+
 
