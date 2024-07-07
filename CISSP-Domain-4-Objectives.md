@@ -501,18 +501,34 @@ IEEE 802.16 - Broadband Wireless Access
 IEEE 802.17 - Resilient Packet Ring (RPR)
 - 802.17: RPR - Optimizes the transport of data traffic over fiber ring networks.
 
+***UTP categories***
 
     | UTP | Throuput  |Notes |
-    |-----|---------------| -------------------|
+    |------------|---------------| -------------------|
     | Cat 1 | 1 Mbps | Primarily used for voice. Not suitable for networks, but usable by modems |
     | Cat 2 | 4 Mbps | Original Token Ring networks and host-to-terminal connections on mainframes |
     | Cat 3 | 10 Mbps| Primarily used in Ethernet networks and as telephone cables.|
     | Cat 4 | 16 Mbps| Primarily used in Token Ring networks.|
-    | Cat 5 | 100 MbpsUsed in 100BaseTX, FDDI, and ATM networks.|
-    | Cat 5e | 1 GbpsGigabit Ethernet (1000BaseT).|
-    | Cat 6 | 1 GbpsGigabit Ethernet (10G Ethernet with 55-meter distance limit).|
-    | Cat 6a | 10 GbpsGigabit Ethernet, 10G Ethernet.|
-    | Cat 7 | 10 GbpsGigabit Ethernet, 10G Ethernet.|
-    |Cat 8 | 40 Gbps10G+ Ethernet.|
+    | Cat 5 | 100 Mbps | Used in 100BaseTX, FDDI, and ATM networks.|
+    | Cat 5e | 1 Gbps | Gigabit Ethernet (1000BaseT).|
+    | Cat 6 | 1 Gbps | Gigabit Ethernet (10G Ethernet with 55-meter distance limit).|
+    | Cat 6a | 10 Gbps | Gigabit Ethernet, 10G Ethernet.|
+    | Cat 7 | 10 Gbps | Gigabit Ethernet, 10G Ethernet.|
+    |Cat 8 | 40 Gbps | 10G+ Ethernet.|
 
 Maximum distance to deploy twisted-pair cable (1000BaseT) should not be longer than 100 meters
+
+***Coax***
+There are two main types of coaxial cable: thinnet and thicknet. 
+    - Thinnet (10Base2) was commonly used to connect systems to backbone trunks of thicknet cabling. Thinnet can span
+distances of 185 meters and provide throughput up to 10 Mbps. 
+    - Thicknet (10Base5) can span 500 meters and provide throughput up to 10 Mbps.
+    
+Bending the coax cable past its maximum arc radius may break the center conductor and Deploying the coax cable in a length greater than its maximum recommended may cause isses.
+
+***Fibre Optics***
+Fiber can be deployed as single-mode (supporting a single light signal) or multimode (supporting multiple light signals).         - Single-mode fiber has a thinner optical core, lower attenuation over distance, and potentially unlimited bandwidth. It
+uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km without repeaters, and is typically sheathed in yellow. 
+    - Multimode fiber has a larger optical core, higher attenuation over distance, and bandwidth limitations (inversely related to distance), and it uses 850 nm or 1300 nm wavelength LEDs or lasers, has a maximum run length of
+400m, and is typically sheathed in blue.
+
