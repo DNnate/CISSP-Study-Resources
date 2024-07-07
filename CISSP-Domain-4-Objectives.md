@@ -446,3 +446,20 @@ Session layer (layer 5) of the OSI model.
     - Remote workers are another form of third-party connectivity
     - Vendors (like IT auditing firms) may need to connect to your network, and attackers are routinely looking for creative ways to gain organizational access -- third-party connectivity is one option
     - As organizations evaluate third-party connectivity, they need to look carefully at the principle of least privilege and at methods of monitoring use and misuse
+
+***EMAIL SECURIY***
+- **Secure Multipurpose Internet Mail Extensions (S/MIME)**  offers authentication and confidentiality to email through public key
+encryption, digital envelopes, and digital signatures. Authentication is provided through X.509 digital certificates issued by trusted third-party CAs. Privacy is provided through the use of Public Key Cryptography Standard (PKCS) standards-compliant encryption. Two types of messages can be formed using S/MIME: signed messages and secured enveloped messages. A signed message provides integrity, sender authentication, and nonrepudiation. An enveloped message provides recipient authentication and confi-
+dentiality.
+
+- **Pretty Good Privacy (PGP)**  is a peer-to-peer public-private key–based email system that uses a variety of encryption algorithms to encrypt files and email messages. PGP is not a standard but rather Open Source.
+
+- **DomainKeys Identified Mail (DKIM)** is a means to assert that valid mail is sent by an organization through verification of domain name identity. See dkim.org. 
+
+- **Sender Policy Framework (SPF)** To protect against spam and email spoofing, it operates by checking that inbound messages originate from a host authorized to send messages by the owners of the SMTP origin domain. 
+
+- **Domain Message Authentication Reporting and Conformance (DMARC)** DMARC is a DNS-based email authentication system. It is intended to protect against business email compromise (BEC), phishing, and other email scams. Email servers can verify if a received message is valid by following the DNS-based instructions; if invalid, the email can be discarded, quarantined, or delivered anyway.
+
+- **STARTTLS** using Secure SMTP over TLS. STARTTLS (aka explicit TLS or opportunistic TLS for SMTP) will attempt to set up an encrypted connection with the target email server. STARTTLS is not a protocol but instead an SMTP command. Once the initial SMTP connection is made to the email server, the STARTTLS command will be used if the target server supports it. Otherwise, it will remain as plaintext. STARTTLS’s secure session will take place on TCP port 587. STARTTLS can also be used with IMAP connections, whereas POP3 connections use the STLS command to perform a similar function.
+
+- **Implicit SMTPS** This is the TLS-encrypted form of SMTP, which assumes the target server supports TLS. If accurate, then an encrypted session is negotiated. If not, then the connection is terminated because plaintext is not accepted. SMTPS communications are initiated against TCP port 465.
