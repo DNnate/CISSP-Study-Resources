@@ -232,15 +232,21 @@
     - this system prevents CC theft at the POS system
 
 **Tokenization** replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
+
 **Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified. 
+
 **Data masking** obscures some, but not all, data. 
+
 **Pseudonymization** uses a pseudonym or alias to replace other information.
 
-
 **Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53
+
 **Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks
+
 **Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88
 
 **Intangible Assets**: Patents, databases, and formulas
+
 **Tangible Assets**: hardware, cables, and buildings
+
 **Personnel Assets**: Employees
