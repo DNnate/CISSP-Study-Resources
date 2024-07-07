@@ -532,3 +532,12 @@ uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km 
     - Multimode fiber has a larger optical core, higher attenuation over distance, and bandwidth limitations (inversely related to distance), and it uses 850 nm or 1300 nm wavelength LEDs or lasers, has a maximum run length of
 400m, and is typically sheathed in blue.
 
+| SONET         | SDH        |DATA RATE               |
+|---------------|-----------------| -------------------|
+|STS-1/OC-1     | STM-0           | 51.84 Mbps        | 
+|STS-3/OC-3     | STM-1      | 155.52 Mbps |
+|STS-12/OC-12   | STM-4      | 622.08 Mbps |
+|STS-48/OC-48   | STM-16      | 2.488 Gbps |
+|STS-96/OC-96   | STM-32      | 4.876 Gbps |
+|STS-192/OC-192 | STM-64      | 9.953 Gbps |
+|STS-768/OC-768 | STM-256      | 39.813 Gbps |
