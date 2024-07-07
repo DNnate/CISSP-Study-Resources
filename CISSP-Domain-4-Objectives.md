@@ -57,9 +57,9 @@ Networking can be one of the more complex exam topics; if you have a networking 
     | Layer | OSI model layer | TCP/IP model | PDU | Devices | Protocols | 
     |-----|---------------| -------------------|------------| ----------------|-----------|
     | 7     | Application     | Application |Data               | L7 firewall                                | HTTP/s, DNS, DHCP, FTP,S-HTTP, TPFT, Telnet, SSH, SMTP, POP3, SNMP, PEM, IMAP, NTP, SNMP, TLS/SSL, GBP, RIP, SIP, S/MIME etc. |
-    | 6     | Presentation    | Application |Data               | L7 firewall                                | All the above                                                |
-    | 5     | Session         | Application| Data               | L7 firewall                                | All the above                                                |
-    | 4     | Transport       | Transport (host-to-host) | Segments           | L4 firewall                                | TCP (connection oriented), UDP (connectionless)     |
+    | 6     | Presentation    | Application |Data               | L7 firewall                                | JPEG, ASCII, and MIDI                                                |
+    | 5     | Session         | Application| Data               | L7 firewall                                | NFS, SQL, and RPC                                                |
+    | 4     | Transport       | Transport (host-to-host) | Segments           | L4 firewall                                | TCP (connection oriented), UDP (connectionless), TLS     |
     | 3     | Network         | Internet/IP | Packets            | Router, Multiplayer Switch, Router         | IPv4, IPv6, IPSec, OSPF, EIGRP                               |
     | 2     | Data Link       | Network Access | Frames             | Switch, Bridge, NIC, Wireless Access Point | MAC, ARP Ethernet 802.3 (Wired), CDP, LLDP, HDLC, PPP, DSL, L2TP, IEEE 802.11 (Wireless), SONET/SDH |
     | 1     | Physical        | Network Access | Bits               | All the above                              | Electrical signal (copper wire), Light signal (optical fibre), Radio signal (air) |
