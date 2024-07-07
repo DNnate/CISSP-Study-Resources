@@ -520,18 +520,16 @@ Maximum distance to deploy twisted-pair cable (1000BaseT) should not be longer t
 
 ***Coax***
 
-There are two main types of coaxial cable: thinnet and thicknet. 
-
+- There are two main types of coaxial cable: thinnet and thicknet. 
     - Thinnet (10Base2) was commonly used to connect systems to backbone trunks of thicknet cabling. Thinnet can span
-distances of 185 meters and provide throughput up to 10 Mbps. 
+        distances of 185 meters and provide throughput up to 10 Mbps. 
     - Thicknet (10Base5) can span 500 meters and provide throughput up to 10 Mbps.
     
 Bending the coax cable past its maximum arc radius may break the center conductor and Deploying the coax cable in a length greater than its maximum recommended may cause isses.
 
 ***Fibre Optics***
 
-Fiber can be deployed as single-mode (supporting a single light signal) or multimode (supporting multiple light signals).  
-
+- Fiber can be deployed as single-mode (supporting a single light signal) or multimode (supporting multiple light signals).  
     - Single-mode fiber has a thinner optical core, lower attenuation over distance, and potentially unlimited bandwidth. It
 uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km without repeaters, and is typically sheathed in yellow.
     - Multimode fiber has a larger optical core, higher attenuation over distance, and bandwidth limitations (inversely related to distance), and it uses 850 nm or 1300 nm wavelength LEDs or lasers, has a maximum run length of
