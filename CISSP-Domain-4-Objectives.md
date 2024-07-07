@@ -64,6 +64,8 @@ Networking can be one of the more complex exam topics; if you have a networking 
     | 2     | Data Link       | Network Access | Frames             | Switch, Bridge, NIC, Wireless Access Point | MAC, ARP Ethernet 802.3 (Wired), CDP, LLDP, HDLC, PPP, DSL, L2TP, IEEE 802.11 (Wireless), SONET/SDH |
     | 1     | Physical        | Network Access | Bits               | All the above                              | Electrical signal (copper wire), Light signal (optical fibre), Radio signal (air) |
 
+Note: Data streams are associated with the Application, Presentation, and Session layers. Once they reach the Transport layer, they become segments (TCP) or datagrams (UDP). From there, they are converted to packets at the Network layer, frames at the Data Link layer, and bits at the Physical layer.
+
     ### OSI layers in detail
     - Mnemonics:
         - from top: All People Seem To Need Delicious Pizza
@@ -112,7 +114,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
             - **distance-vector**: (interior) makes routing decisions based on distance (e.g. hop count), and vector (router egress interface); examples:
                 - **Routing Information Protocol (RIP)**: a distance-vector protocol that uses hop count as its routing metric
                 - Interior Gateway Routing Protocol (IGRP)
-                - Enhanced Interior Gateway Routing Protocol (EIGRP)
+                - Enhanced Interior Gateway Routing Protocol (EIGRP). This is Cisco Proprietary.
             - **link state**: (interior) uses router characteristics (e.g. speed, latency, error rates) to make next hop routing decisions; examples:
                 - **Open Shortest Path First (OSPF)**: an interior gateway routing protocol developed for IP networks based on shorest path first or link-state algorithm
                 - Intermediate System to Intermediate System (IS-IS)
