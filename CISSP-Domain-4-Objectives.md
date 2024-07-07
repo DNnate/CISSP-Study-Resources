@@ -502,7 +502,7 @@ IEEE 802.17 - Resilient Packet Ring (RPR)
 - 802.17: RPR - Optimizes the transport of data traffic over fiber ring networks.
 
 
-**| UTP | Throuput  |Notes |** 
+    | UTP | Throuput  |Notes |
     |-----|---------------| -------------------|
     | Cat 1 | 1 Mbps | Primarily used for voice. Not suitable for networks, but usable by modems |
     | Cat 2 | 4 Mbps | Original Token Ring networks and host-to-terminal connections on mainframes |
