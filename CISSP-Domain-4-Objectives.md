@@ -260,6 +260,10 @@ Networking can be one of the more complex exam topics; if you have a networking 
 
 ***PEAP***:Protected Extensible Authentication Protocol (PEAP) encapsulates EAP methods within a TLS tunnel that provides authentication and potentially encryption. Since EAP was originally designed for use over physically isolated channels and hence assumed secured pathways, EAP is usually not encrypted. So PEAP can provide encryption for EAP methods.
 
+***CHAP***:Challenge-Handshake Authentication Protocol, or CHAP, is used by PPP servers to authenticate remote clients. It encrypts both the username and password and performs periodic reauthentication while connected using techniques to prevent replay attacks. 
+
+***Password Authentication Protocol (PAP)***: PAP transmits usernames and passwords in cleartext. It offers no form of encryption; it simply provides a means to transport the logon credentials from the client to the authentication server. Also used by PPP servers.
+
 **Zigbee**: IoT equipment communications concept based on Bluetooth
         - Low power/low throughput
         - Requires close proximity
