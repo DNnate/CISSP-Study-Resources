@@ -250,21 +250,21 @@ Networking can be one of the more complex exam topics; if you have a networking 
         | 802.11ac   | Wi-Fi 5    | 1 Gbps |2.4 GHz               |
         | 802.11ax   | Wi-Fi 6/Wi-Fi 6E     | 9.5 Gbps |2.4 GHz   |
 
-***Wi-Fi Protected Access 3 (WPA3)***: WPA3-ENT uses 192-bit AES CCMP encryption, and WPA3-PER remains at 128-bit AES CCMP. WPA3-PER replaces the preshared key authentication with Simultaneous Authentication of Equals (SAE). Some 802.11ac/Wi-Fi 5 devices were the first to support or adopt WPA3. SAE performs a zero-knowledge proof process known as Dragonfly Key Exchange, which is itself a derivative of Diffie–Hellman. 
+***Wi-Fi Protected Access 3 (WPA3)***: WPA3-ENT uses 192-bit AES CCMP encryption, and WPA3-PER remains at 128-bit AES CCMP. WPA3-PER replaces the preshared key authentication with Simultaneous Authentication of Equals (SAE). SAE performs a zero-knowledge proof process known as Dragonfly Key Exchange, which is itself a derivative of Diffie–Hellman. 
 
-***802.1X/EAP***: WPA, WPA2, and WPA3 support the enterprise (ENT) authentication known as 802.1X/EAP, a standard port-based network access control that ensures that clients cannot communicate with a resource until proper authentication has taken place. Through the use of 802.1X, other techniques and solutions such as Remote Authentication Dial-In User Service (RADIUS), Terminal Access Controller Access Control System (TACACS), certificates, smartcards, token devices, and biometrics can be integrated into wireless networks, providing techniques for both mutual and multifactor authentication.
+***802.1X/EAP***: WPA, WPA2, and WPA3 support the enterprise (ENT) authentication known as 802.1X/EAP, a standard port-based network access control. Through the use of 802.1X, other solutions such as Remote Authentication Dial-In User Service (RADIUS), Terminal Access Controller Access Control System (TACACS), certificates, smartcards, token devices, and biometrics can be integrated into wireless networks, providing techniques for both mutual and multifactor authentication.
 
 ***Extensible Authentication Protocol (EAP)***: is not a specific mechanism of authentication; rather it is an authentication framework. Effectively, EAP allows for new authentication technologies to be compatible with existing wireless or point-to-point connection technologies. 
 
-***LEAP***: Lightweight Extensible Authentication Protocol (LEAP) is a Cisco proprietary alternative to TKIP for WPA. This was developed to address deficiencies in TKIP before the 802.11i/WPA2 system was ratified as a standard. An attack tool known as asleap was released in 2004 that could exploit the ultimately weak protection provided by LEAP. LEAP should be avoided when possible; use of EAP-TLS as an alternative is recommended, but if LEAP is used, a complex password is strongly recommended.
+***LEAP***: Lightweight Extensible Authentication Protocol (LEAP) is a Cisco proprietary alternative to TKIP for WPA. This was developed to address deficiencies in TKIP before the 802.11i/WPA2 system was ratified as a standard. An attack tool known as asleap was released in 2004 that could exploit LEAP; use of EAP-TLS as an alternative is recommended, but if LEAP is used, a complex password is strongly recommended.
 
 ***PEAP***:Protected Extensible Authentication Protocol (PEAP) encapsulates EAP methods within a TLS tunnel that provides authentication and potentially encryption. Since EAP was originally designed for use over physically isolated channels and hence assumed secured pathways, EAP is usually not encrypted. So PEAP can provide encryption for EAP methods.
 
-    - **Zigbee**: IoT equipment communications concept based on Bluetooth
+**Zigbee**: IoT equipment communications concept based on Bluetooth
         - Low power/low throughput
         - Requires close proximity
         - Encrypted using 128-bit symmetric algorithm
-    - **Satellite**: primarily uses radio waves between terrestrial locations and an orbiting artificial satellite
+**Satellite**: primarily uses radio waves between terrestrial locations and an orbiting artificial satellite
         - Supports telephone, tv, radio, internet, military communications
         - 3 primary orbits:
             - LEO: low Earth orbit (160-2k km)
