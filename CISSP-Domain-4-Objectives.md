@@ -66,7 +66,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
 
 Note: Data streams are associated with the Application, Presentation, and Session layers. Once they reach the Transport layer, they become segments (TCP) or datagrams (UDP). From there, they are converted to packets at the Network layer, frames at the Data Link layer, and bits at the Physical layer.
 
-    ### OSI layers in detail
+### OSI layers in detail
     - Mnemonics:
         - from top: All People Seem To Need Delicious Pizza
         - from bottom: Please Do Not Throw Sausage Pizza Away
