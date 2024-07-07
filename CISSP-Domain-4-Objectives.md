@@ -447,7 +447,7 @@ Session layer (layer 5) of the OSI model.
     - Vendors (like IT auditing firms) may need to connect to your network, and attackers are routinely looking for creative ways to gain organizational access -- third-party connectivity is one option
     - As organizations evaluate third-party connectivity, they need to look carefully at the principle of least privilege and at methods of monitoring use and misuse
 
-***EMAIL SECURIY***
+***EMAIL SECURITY***
 - **Secure Multipurpose Internet Mail Extensions (S/MIME)**  offers authentication and confidentiality to email through public key
 encryption, digital envelopes, and digital signatures. Authentication is provided through X.509 digital certificates issued by trusted third-party CAs. Privacy is provided through the use of Public Key Cryptography Standard (PKCS) standards-compliant encryption. Two types of messages can be formed using S/MIME: signed messages and secured enveloped messages. A signed message provides integrity, sender authentication, and nonrepudiation. An enveloped message provides recipient authentication and confi-
 dentiality.
