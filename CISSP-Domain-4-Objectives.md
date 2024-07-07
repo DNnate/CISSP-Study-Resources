@@ -264,11 +264,13 @@ Networking can be one of the more complex exam topics; if you have a networking 
 
 ***Password Authentication Protocol (PAP)***: PAP transmits usernames and passwords in cleartext. It offers no form of encryption; it simply provides a means to transport the logon credentials from the client to the authentication server. Also used by PPP servers.
 
-**Zigbee**: IoT equipment communications concept based on Bluetooth
+***Zigbee***: IoT equipment communications concept based on Bluetooth
         - Low power/low throughput
         - Requires close proximity
         - Encrypted using 128-bit symmetric algorithm
-**Satellite**: primarily uses radio waves between terrestrial locations and an orbiting artificial satellite
+        - Uses AES to prtect traffic
+        
+***Satellite***: primarily uses radio waves between terrestrial locations and an orbiting artificial satellite
         - Supports telephone, tv, radio, internet, military communications
         - 3 primary orbits:
             - LEO: low Earth orbit (160-2k km)
