@@ -228,7 +228,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
 
 - 4.1.7 Wireless networks (e.g. LiFi, Wi-Fi, Zigbee, satellite)
 
-    - Li-Fi: **light fidelity (Li-Fi)**: a form of wireless communication technology that relies on light to transmit data, with theorectical speeds up to 224Gbits/sec
+    - Li-Fi: **light fidelity (Li-Fi)**: a form of wireless communication technology that relies on light to transmit data, with theorectical speeds up to 224Gbits/sec. It is not susceptible to EM interference
     - **Wi-Fi**: Wirless LAN IEEE 802.11x; associated with computer networking, Wi-Fi uses 802.11x spec to create a public or private wireless LAN
         - **Wired Equivalent Privacy (WEP)**:
             - WEP is defined by the original IEEE 802.11 standard
