@@ -588,3 +588,8 @@ These IPv4 addresses, commonly called the private IPv4 addresses, are defined in
 - 10.0.0.0–10.255.255.255 (a full Class A range).
 - 172.16.0.0–172.31.255.255 (16 Class B ranges).
 - 192.168.0.0–192.168.255.255 (256 Class C ranges).
+
+
+**4G** has been in use since the early 2000s and most cellular devices support 4G communications. The 4G standard allows for mobile devices to achieve 100 Mbps, whereas stationary devices can reach 1 Gbps. 4G is primarily using IP-based Communications for both voice and data, rather than the traditional circuit-switching telephony services of the past. 4G is provided by various transmission systems, the most common being LTE, followed by WiMAX.
+
+**5G** is the latest mobile service technology that is available for use on some mobile phones, tablets, and other equipment. Many ICS, IoT, and specialty devices may have embedded 5G capabilities. 5G uses higher frequencies than previous cellular technologies, which has allowed for higher transmission speeds (up to 10 Gbps) but at a reduced distance. Organizations need to be aware of when and where 5G is available for use and enforce security requirements on such communications.
