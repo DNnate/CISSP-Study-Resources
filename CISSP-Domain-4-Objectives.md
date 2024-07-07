@@ -147,6 +147,12 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Know commonly used twisted-pair cable categories
         - Know cable types & characteristics
 
+***TCP/IP Model***
+- Application layer
+- Transport layer
+- Internet layer
+- Network Access layer
+
 - 4.1.2 Internet Protocol (IP) networking (e.g., Internet Protocol Security (IPSec), Internet Protocol (IP) v4/6)
      - IP is part of the TCP/IP (Transmission Control Protocol/Internet Protocol) suite
         - TCP/IP is the name of IETF's four-layer networking model, and its protocol stack; the four layers are link (physical), internet (network-to-network), transport (channels for connection/connectionless data exchange) and application (where apps make use of network services)
