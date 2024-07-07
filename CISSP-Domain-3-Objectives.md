@@ -482,7 +482,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - **Implementation attack**: attempts to exploit weaknesses in the implementation of a cryptography system
         - focuses on exploiting the software code, not just errors or flaws but the methodology employed to program the encryption system
         - in this type of attack, attackers look for weaknesses in the implementation, such as a software bug or outdated firmware
-- 3.7.7 Side-channel
+- 3.7.7 Side-channel: Side-channel attacks seek to use information about system activity and retrieve information that is actively being encrypted
     - **Side-channel**: these attacks seek to use the way computer systems generate characteristic footprints of activity, such as changes in processor utilization, power consumption, or electromagnetic radiation to monitor system activity and retrieve information that is actively being encrypted
         - similar to an implementation attack, side-channel attacks look for weaknesses outside of the core cryptography functions themselves
         - a side-channel attack could target a computer’s CPU, or attempt to gain key information about the environment during encryption or decryption by looking for electromagnetic emissions or the amount of execution time required during decryption
