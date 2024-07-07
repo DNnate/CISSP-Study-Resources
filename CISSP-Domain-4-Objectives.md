@@ -243,12 +243,12 @@ Networking can be one of the more complex exam topics; if you have a networking 
         | Amendment | Wi-Fi Alliance | Speed | Frequency |
         |-----|---------------| -------------------|------------|
         | 802.11    |   --   | 2 Mbps |2.4 GHz               |
-        | 802.11a   |  Wi-Fi 2    | 54 Mbps |2.4 GHz              |
+        | 802.11a   |  Wi-Fi 2    | 54 Mbps |5 GHz                |
         | 802.11b   |  Wi-Fi 1    | 11 Mbps |2.4 GHz              |
         | 802.11g   |  Wi-Fi 3    | 54 Mbps |2.4 GHz              |
-        | 802.11n   |  Wi-Fi 4    | 200+ Mbps |2.4 GHz            |
-        | 802.11ac   | Wi-Fi 5    | 1 Gbps |2.4 GHz               |
-        | 802.11ax   | Wi-Fi 6/Wi-Fi 6E     | 9.5 Gbps |2.4 GHz   |
+        | 802.11n   |  Wi-Fi 4    | 200+ Mbps |2.4GHz or 5 GHz    |
+        | 802.11ac   | Wi-Fi 5    | 1 Gbps  |5 GHz                |
+        | 802.11ax   | Wi-Fi 6/Wi-Fi 6E     |9.5 Gbps |1-5(6)GHz  |
 
 ***Wi-Fi Protected Access 3 (WPA3)***: WPA3-ENT uses 192-bit AES CCMP encryption, and WPA3-PER remains at 128-bit AES CCMP. WPA3-PER replaces the preshared key authentication with Simultaneous Authentication of Equals (SAE). SAE performs a zero-knowledge proof process known as Dragonfly Key Exchange, which is itself a derivative of Diffie–Hellman. 
 
