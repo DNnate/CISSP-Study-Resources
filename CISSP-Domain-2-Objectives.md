@@ -23,6 +23,8 @@
     - government classification labels include:   
       - **Top Secret**: if disclosed, could cause massive damage to national security, such as the disclosure of spy satellite information
       - **Secret**: if disclosed, can adversely affect national security
+      - **Confidential**: Confidential data is usually data that is exempt from disclosure under laws such as the Freedom of Information Act but is not classified as national security data.
+      - **Sensitive**: But Unclassified (SBU): SBU data is data that is not considered vital to national security, but its disclosure would do some harm. Many agencies classify data they collect from citizens as SBU. In Canada, the SBU classification is referred to as protected (A, B, C).
       - **Unclassified**: not sensitive
     - non-government organizations use labels such as:
       - **Confidential/Proprietary**: only used within the org and, in the case of unauthorized disclosure, it could suffer serious consequences
@@ -57,8 +59,8 @@
 - **Storage**: define storage locations and procedures by storage type; use physical locks for paper-based media, and encrypt electronic data
 - **Destruction**: destroy data no longer needed by the organization; policy should define acceptable destruction methods by type and classification ([see NIST SP-800-88 for details](https://csrc.nist.gov/publications/detail/sp/800-88/rev-1/final))
   - **Erasing**: usually refers to a delete operation on media, leaving data remanence
-  - **Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data
-  - **Purging**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools (see below) -- not considered acceptable for top secret data
+  - **Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data or scrubbing un-needed data
+  - **Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools (see below) -- not considered acceptable for top secret data
 - **Data Remanence**: data remaining on media after typical erasure; to ensure all remanence is removed, the following tools can help:
   - **Degaussing**: used on magentic media
   - **(Physical) destruction**: used for SSD/electronic components, or in combination with other less-secure methods. Due to problems with remnant data, the U.S. National Security Agency requires physical destruction of SSDs
@@ -98,6 +100,8 @@
     - data owner is the person respsonible for classifying, categorizing, and permitting access to the data; the data owner is the person who is best familiar with the importance of the data to the business
     - system owners are responsible for the systems that process the data
     - system owner is responsible for system operation and maintenance, and associated updating/patching as well as related procurement activities
+  - **Data Subject**: the person who the information is about.
+  - **Data Owner**: the entity that collects/creates the PII and is legally responsible and accountable for protecting it and educating others about how to protect the data through dissemination of intellectual property rights documentation, policies and regulatory requirements, specific protective measures that are expected of custodians, and compliance requirements. Data owners are tasked with making decisions about data, such as who receives access to it and how it is used. The data owner has ultimate responsibility for data belonging to an organization and is typically the CEO, president, or another senior employee
   - **Data controller**: decide what data to process and how to process it
     - the data controller is the person or entity that controls the processing of the data - deciding what data to process, why this data should be processed, and how it is processed
     - e.g. a company that collects personal information on employees for payroll is a data controller (but, if they pass this info to a third-party to process payroll, the payroll company is the data processor, see below)
@@ -106,7 +110,9 @@
     - note GDPR definition: "a natural or legal person, public authority, agency, or other body, which processes personal data soley on behalf of the data controller"
       - GDPR also restricts data tranfers to countries outside EU, with fines for violations
       - many orgs have created dedicated roles to oversee GDPR data laws are followed
-  - **Data custodian**: a custodian is delegated, from the system owner, day-to-day responsibilities for properly storing and protecting data; responsible for the protection of data through maintenance activities, backing up and archiving, and preventing the loss or corruption and recovering data 
+  - **Data custodian**: a custodian is delegated, from the system owner, day-to-day responsibilities for properly storing and protecting data; responsible for the protection of data through maintenance activities, backing up and archiving, and preventing the loss or corruption and recovering data
+  - **Data Steward**: a newer concept related to users of the data; those who use the data for the business purpose.
+  - **Business/Mission Owners**:-  Typically own processes or programs. they ensure that all operations fit within the business goals and mission. This task includes ensuring that collected data is necessary for the business to function. Collecting unnecessary data wastes time and resources. Because the business/mission owner is primarily concerned with the overall business, conflicts between data owners, data custodians, and system owners may need to be resolved by the business/mission owner, who will need to make the best decision for the organization.
   - **Security administrator**: responsible for ensuring the overall security of entire infrastructure; they perform tasks that lead to the discovery of vulnerabilities, monitor network traffic and configure tools to protect the network (like firewalls and antivirus software) 
     - security admins also devise security policies, plans for business continuity and disaster recovery and train staff
   - **Supervisors**: responsible for overseeing the activities of all the above entities and all support personnel; they ensure team activities are conducted smoothly and that personnel is properly skilled for the tasks assigned
@@ -166,11 +172,14 @@
 
 - 2.6.1 Data states (e.g., in use, in transit, at rest)
   - The three data states are at rest, in transit, and in use
-    - **Data at rest**: any data stored on media such as hard drives or external media
-    - **Data in transit**: any data transmitted over a network
+    - **Data at rest**: any data stored on media such as hard drives or external media: Protecting Data at Rest: AES encryption, Access Control, redundancy/backup, Bitlocker, FileVault, symmetric encrytion e.g Serpent, IDEA
+
+    - **Data in transit**: any data transmitted over a network: Protecting Data in Motion: TLS encryption, email encrytion (SMIME, PGP), IPSEC, VPN, SSH
       - encryption methods protect data at rest and in transit
     - **Data in use**: data in memory and used by an application
-      - applications should flush memory buffers to remove data after it is no longer needed
+      - applications should flush memory buffers to remove data after it is no longer needed: Protecting Data in Use (Harder to protect): RAM/memory data, pervasive encryption, prevent shoulder surfing, parameter checking against buffer overflow, Address space layout randomization (ASLR) is a memory-protection process for operating systems (OSes) that guards against buffer-overflow attacks by randomizing the location where system executables are loaded into memory
+
+
 
 - 2.6.2 Scoping and tailoring
   - **Baseline**: documented, lowest level of security config allowed by a standard or org
@@ -228,3 +237,10 @@
 **Pseudonymization** uses a pseudonym or alias to replace other information.
 
 
+**Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53
+**Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks
+**Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88
+
+**Intangible Assets**: Patents, databases, and formulas
+**Tangible Assets**: hardware, cables, and buildings
+**Personnel Assets**: Employees
