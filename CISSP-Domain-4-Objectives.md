@@ -500,3 +500,19 @@ IEEE 802.16 - Broadband Wireless Access
   
 IEEE 802.17 - Resilient Packet Ring (RPR)
 - 802.17: RPR - Optimizes the transport of data traffic over fiber ring networks.
+
+
+**| UTP | Throuput  |Notes |** 
+    |-----|---------------| -------------------|
+    | Cat 1 | 1 Mbps | Primarily used for voice. Not suitable for networks, but usable by modems |
+    | Cat 2 | 4 Mbps | Original Token Ring networks and host-to-terminal connections on mainframes |
+    | Cat 3 | 10 Mbps| Primarily used in Ethernet networks and as telephone cables.|
+    | Cat 4 | 16 Mbps| Primarily used in Token Ring networks.|
+    | Cat 5 | 100 MbpsUsed in 100BaseTX, FDDI, and ATM networks.|
+    | Cat 5e | 1 GbpsGigabit Ethernet (1000BaseT).|
+    | Cat 6 | 1 GbpsGigabit Ethernet (10G Ethernet with 55-meter distance limit).|
+    | Cat 6a | 10 GbpsGigabit Ethernet, 10G Ethernet.|
+    | Cat 7 | 10 GbpsGigabit Ethernet, 10G Ethernet.|
+    |Cat 8 | 40 Gbps10G+ Ethernet.|
+
+Maximum distance to deploy twisted-pair cable (1000BaseT) should not be longer than 100 meters
