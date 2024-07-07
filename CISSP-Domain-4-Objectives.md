@@ -504,17 +504,17 @@ IEEE 802.17 - Resilient Packet Ring (RPR)
 ***UTP categories***
 
 | UTP    | Throuput      |Notes               |
-    |--------|---------------| -------------------|
-    | Cat 1  | 1 Mbps        | Primarily used for voice. Not suitable for networks, but usable by modems |
-    | Cat 2  | 4 Mbps        | Original Token Ring networks and host-to-terminal connections on mainframes |
-    | Cat 3  | 10 Mbps       | Primarily used in Ethernet networks and as telephone cables.|
-    | Cat 4  | 16 Mbps       | Primarily used in Token Ring networks.|
-    | Cat 5  | 100 Mbps      | Used in 100BaseTX, FDDI, and ATM networks.|
-    | Cat 5e | 1 Gbps        | Gigabit Ethernet (1000BaseT).|
-    | Cat 6  | 1 Gbps        | Gigabit Ethernet (10G Ethernet with 55-meter distance limit).|
-    | Cat 6a | 10 Gbps       | Gigabit Ethernet, 10G Ethernet.|
-    | Cat 7  | 10 Gbps       | Gigabit Ethernet, 10G Ethernet.|
-    | Cat 8  | 40 Gbps       | 10G+ Ethernet.|
+|--------|---------------| -------------------|
+| Cat 1  | 1 Mbps        | Primarily used for voice. Not suitable for networks, but usable by modems |
+| Cat 2  | 4 Mbps        | Original Token Ring networks and host-to-terminal connections on mainframes |
+| Cat 3  | 10 Mbps       | Primarily used in Ethernet networks and as telephone cables.|
+| Cat 4  | 16 Mbps       | Primarily used in Token Ring networks.|
+| Cat 5  | 100 Mbps      | Used in 100BaseTX, FDDI, and ATM networks.|
+| Cat 5e | 1 Gbps        | Gigabit Ethernet (1000BaseT).|
+| Cat 6  | 1 Gbps        | Gigabit Ethernet (10G Ethernet with 55-meter distance limit).|
+| Cat 6a | 10 Gbps       | Gigabit Ethernet, 10G Ethernet.|
+| Cat 7  | 10 Gbps       | Gigabit Ethernet, 10G Ethernet.|
+| Cat 8  | 40 Gbps       | 10G+ Ethernet.|
 
 Maximum distance to deploy twisted-pair cable (1000BaseT) should not be longer than 100 meters
 
