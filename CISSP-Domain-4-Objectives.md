@@ -465,3 +465,33 @@ dentiality.
 - **STARTTLS** using Secure SMTP over TLS. STARTTLS (aka explicit TLS or opportunistic TLS for SMTP) will attempt to set up an encrypted connection with the target email server. STARTTLS is not a protocol but instead an SMTP command. Once the initial SMTP connection is made to the email server, the STARTTLS command will be used if the target server supports it. Otherwise, it will remain as plaintext. STARTTLS’s secure session will take place on TCP port 587. STARTTLS can also be used with IMAP connections, whereas POP3 connections use the STLS command to perform a similar function.
 
 - **Implicit SMTPS** This is the TLS-encrypted form of SMTP, which assumes the target server supports TLS. If accurate, then an encrypted session is negotiated. If not, then the connection is terminated because plaintext is not accepted. SMTPS communications are initiated against TCP port 465.
+
+
+IEEE 802.1 - Bridging and Network Management
+- 802.1Q: VLAN Tagging - Defines VLANs and the tagging protocol used to identify VLAN traffic.
+- 802.1X: Port-Based Network Access Control - Provides an authentication mechanism for devices wishing to attach to a LAN or WLAN.
+- 802.1D: Spanning Tree Protocol (STP) - Provides loop-free topology for Ethernet networks.
+- 802.1w: Rapid Spanning Tree Protocol (RSTP) - An evolution of STP providing faster convergence.
+- 802.1s: Multiple Spanning Tree Protocol (MSTP) - Extends RSTP to support multiple spanning trees.
+- 802.1ad: Provider Bridges (Q-in-Q) - Extends VLANs for use in provider networks.
+IEEE 802.3 - Ethernet
+- 802.3i: 10BASE-T - 10 Mbps over twisted pair cabling.
+- 802.3u: 100BASE-TX - Fast Ethernet, 100 Mbps over twisted pair cabling.
+- 802.3ab: 1000BASE-T - Gigabit Ethernet over twisted pair cabling.
+- 802.3ae: 10GBASE-SR/LR - 10 Gigabit Ethernet over fiber.
+- 802.3af: Power over Ethernet (PoE) - Provides power over Ethernet cabling.
+- 802.3at: Power over Ethernet Plus (PoE+) - Enhanced version of PoE with higher power delivery.
+IEEE 802.11 - Wireless LAN (Wi-Fi)
+- 802.11a: 5 GHz, up to 54 Mbps.
+- 802.11b: 2.4 GHz, up to 11 Mbps.
+- 802.11g: 2.4 GHz, up to 54 Mbps.
+- 802.11n: 2.4/5 GHz, up to 600 Mbps with MIMO.
+- 802.11ac: 5 GHz, up to several Gbps with wider channels and more MIMO streams.
+- 802.11ax: Wi-Fi 6, improvements in throughput and efficiency.
+IEEE 802.15 - Wireless Personal Area Networks (WPAN)
+- 802.15.1: Bluetooth.
+- 802.15.4: Low-Rate WPAN (used by protocols like Zigbee).
+IEEE 802.16 - Broadband Wireless Access
+- 802.16: WiMAX - Provides wireless metropolitan area network (MAN) connectivity.
+IEEE 802.17 - Resilient Packet Ring (RPR)
+- 802.17: RPR - Optimizes the transport of data traffic over fiber ring networks.
