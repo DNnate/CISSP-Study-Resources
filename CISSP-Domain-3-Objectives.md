@@ -518,6 +518,8 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - often threatning to publically release sensitive data if ransome is not paid 
         - 2020 study, 56% of orgs suffered a ransomeware attack, 27% of orgs who reported an attack chose to pay, on average ~$1.1m 
         - seek legal advice prior to engaging with ransomware authors
+     
+**Race condition**: The exploitation of the reliance of a system’s behavior on the sequence of events that occur externally
 
 [3.8](#3.8) Apply security principles to site and facility design (OSG-9 Chpt 10)
 
