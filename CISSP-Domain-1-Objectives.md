@@ -606,3 +606,7 @@ Also see my articles on risk management:
 - SOC 2: An audit and compliance report that evaluates an organization based on AICPA’s five “Trust Services principles”: privacy, security, availability, processing integrity, and confidentiality. Many organizations undergo SOC 2 auditing and present a SOC 2 report to regulators and customers to demonstrate compliance with industry standard security controls.
 - SOC 3: This is a “lite” version of a SOC 2 report and abstracts or removes all sensitive details. A SOC 3 report generally indicates whether an organization has demonstrated each of the five Trust Services principles without disclosing specifics (like exactly what they do or don’t do). Companies make SOC 3 reports available to the public and restrict SOC 2 reports to trusted parties.
 
+***EF***The exposure factor is the percentage of the facility that risk managers expect will be damaged if a risk materializes. It is calculated by dividing the amount of damage by the asset value. 
+***ARO***The annualized rate of occurrence is the number of times that risk analysts expect a risk to happen in any given year. The annualized loss expectancy (ALE) represents the amount of money a business expects to lose to a given risk each year.
+***SLE***The single loss expectancy (SLE) is the product of the asset value (AV) and the exposure factor (EF).
+***ALE***The annualized loss expectancy is calculated by multiplying the single loss expectancy (SLE) by the annualized rate of occurrence (ARO). 
