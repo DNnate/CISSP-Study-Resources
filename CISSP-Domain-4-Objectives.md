@@ -370,7 +370,9 @@ The components of a network make up the backbone of the logical infrastructure f
         - dissolvable: usually written in a web/mobile language and is executed on each local machine when the specific management web page is accessed (such as captive portal)
         - permanent: installed on the monitored system as a persistent background service
     - Just as you need to control physical access to equipment and wiring, you need to use logical controls to protect a network; there are a variety of devices that provide this type of protection, including:
-        - stateful and stateless firewalls can perform inspection of the network packets and use rules, signatures and patterns to determine whether the packet should be delivered
+        - stateful and stateless firewalls can perform inspection of the network packets and use rules, signatures and patterns to determine whether the packet should be delivered. Circuit-level firewalls (aka circuit proxies) are used to estab-
+lish communication sessions between trusted partners. In theory, they operate at the
+Session layer (layer 5) of the OSI model.
             - reasons for dropping a packet could include addresses that don’t exist on the network, ports or addresses that are blocked, or the content of the packet (e.g malicious packets blocked by admin policy)
         - IDP devices, which monitor the network for unusual network traffic and MAC or IP address spoofing, and then either alert on or actively stop this type of traffic
         - proxy/reverse proxies: 
