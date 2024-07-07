@@ -33,7 +33,7 @@ You may find this domain to be more technical than others, and if you have exper
 - **Stream mode encryption**: system using a process that treats the input plaintext as a continuous flow of symbols, encrypting one symbol at a time; usually uses a streaming key, using part of the key as a one-time key for each symbol's encryption
 - **Substitution cipher**: encryption/decription process using subsitution
 - **Symmetric encryption**: process that uses the same key (or a simple transformation of it) for both encryption/decryption
-- **Transposition cypher**: encryption/decription process using transposition
+- **Transposition cypher**: encryption/decription process using transposition e.e frequency of message might match knwn english language patters
 - **VESDA**: very early smoke detection process (air sensing device brand name)
 - **Work factor**: amount of effort necessary to break a cryptographic system, measured in elapsed time
 - **Zero-knowledge proof**: one person demonstrates to another that they can achieve a reslut that requires sensitive info without actually disclosing the sensitive info
