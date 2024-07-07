@@ -504,7 +504,7 @@ IEEE 802.17 - Resilient Packet Ring (RPR)
 ***UTP categories***
 
     | UTP | Throuput  |Notes |
-    |------------|---------------| -------------------|
+    |-----|---------------| -------------------|
     | Cat 1 | 1 Mbps | Primarily used for voice. Not suitable for networks, but usable by modems |
     | Cat 2 | 4 Mbps | Original Token Ring networks and host-to-terminal connections on mainframes |
     | Cat 3 | 10 Mbps| Primarily used in Ethernet networks and as telephone cables.|
