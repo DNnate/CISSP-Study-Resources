@@ -127,7 +127,7 @@
           - detect
           - respond
           - recovery
-        - note: updated (2024) CSF 2.0 functions:
+        - note: updated (2024) CSF 2.0 functions 800-53:
           - govern
           - identify
           - protect
@@ -252,7 +252,7 @@
     - accountability
   -  The EU-US **Privacy Shield** (formerly the EU-US Safe Harbor agreement): controls data flow from the EU to the United States; the EU has more stringent privacy protections and without the Privacy Shield, personal data flow from the EU to the United States would not be allowed
 
-- **Cyber Kill/Attack Chain** a seven-steps to identify and stop attacks:
+- **Cyber Kill/Attack Chain** a seven-steps to identify and stop attacks: RWDEICA Reckless Wizards Delve Eagerly Into Crytic Arcanum)
   - Stage I: Reconnaisance
   - Stage II: Weaponization
   - Stage III: Delivery
@@ -486,7 +486,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - SP 800-37 Rev 2, Risk Management Framework for Information Systems and Organizations
     - SP 800-39, Managing Information Security Risk
     - SP 800-30 Rev 1, Guide for Conducting Risk Assessments
-    - The **RMF has 7 steps**, and **six cyclical phases**:
+    - The **RMF has 7 steps**, and **six cyclical phases**: (PCSIAAM People Can See I AM ALWAYS Monitoring)
       - **Prepare** to execute the RMF from an organization and system-level perspective by establishing a context and priorities for managing security and privacy risk
       - **Categorize** the system and the information processed, stored, and transmitted by the system based on an analysis of the impact of loss
       - **Select** an initial set of controls for the system and tailor the controls as needed to reduce risk to an acceptable level based on an assessment of risk
@@ -588,3 +588,21 @@ Also see my articles on risk management:
 - In the [third installment](https://blog.balancedsec.com/p/risk-concepts-from-the-cissp-part-3), we review the outcome of the risk assessment process, looking at total risk, allowing us to determine our response to each risk/threat pair and perform a cost/benefit review of a particular safeguard or control
   - we look at the categories and types of controls and the idea of layering them to provide several different types of protection mechanisms 
   - we also review the important step of reporting out our risk analysis and recommended responses, noting differences in requirements for messaging by group
+
+
+**TCB Common Criteria (IFSMMSSF) "Ice Fishermen Sing Merry Melodies, So Stay Friendly!"**
+- EAL0 –Inadequate assurance
+- EAL1 –Functionally tested
+- EAL2 –Structurally tested
+- EAL3 –Methodically tested and checked
+- EAL4 –Methodically designed, tested and reviewed
+- EAL5 –Semi formally designed and tested
+- EAL6 –Semi formally verified design and tested
+- EAL7 –Formally verified design and tested
+
+  ****System and Organization Controls (SOC)***
+- SOC 1: An audit and compliance report that focuses strictly on a company’s financial statements and controls that can impact a customer’s financial statements. A company that performs credit card processing is likely to require a SOC
+1 audit and compliance report.
+- SOC 2: An audit and compliance report that evaluates an organization based on AICPA’s five “Trust Services principles”: privacy, security, availability, processing integrity, and confidentiality. Many organizations undergo SOC 2 auditing and present a SOC 2 report to regulators and customers to demonstrate compliance with industry standard security controls.
+- SOC 3: This is a “lite” version of a SOC 2 report and abstracts or removes all sensitive details. A SOC 3 report generally indicates whether an organization has demonstrated each of the five Trust Services principles without disclosing specifics (like exactly what they do or don’t do). Companies make SOC 3 reports available to the public and restrict SOC 2 reports to trusted parties.
+
