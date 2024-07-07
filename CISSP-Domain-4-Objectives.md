@@ -577,6 +577,6 @@ IPsec uses public-key cryptography and symmetric cryptography to provide encrypt
 ***PRIVATE IP***
 
 These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
--10.0.0.0–10.255.255.255 (a full Class A range)
--172.16.0.0–172.31.255.255 (16 Class B ranges)
--192.168.0.0–192.168.255.255 (256 Class C ranges)
+-10.0.0.0–10.255.255.255 (a full Class A range).
+-172.16.0.0–172.31.255.255 (16 Class B ranges).
+-192.168.0.0–192.168.255.255 (256 Class C ranges).
