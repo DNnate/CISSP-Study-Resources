@@ -519,7 +519,9 @@ IEEE 802.17 - Resilient Packet Ring (RPR)
 Maximum distance to deploy twisted-pair cable (1000BaseT) should not be longer than 100 meters
 
 ***Coax***
+
 There are two main types of coaxial cable: thinnet and thicknet. 
+
     - Thinnet (10Base2) was commonly used to connect systems to backbone trunks of thicknet cabling. Thinnet can span
 distances of 185 meters and provide throughput up to 10 Mbps. 
     - Thicknet (10Base5) can span 500 meters and provide throughput up to 10 Mbps.
@@ -527,8 +529,11 @@ distances of 185 meters and provide throughput up to 10 Mbps.
 Bending the coax cable past its maximum arc radius may break the center conductor and Deploying the coax cable in a length greater than its maximum recommended may cause isses.
 
 ***Fibre Optics***
-Fiber can be deployed as single-mode (supporting a single light signal) or multimode (supporting multiple light signals).         - Single-mode fiber has a thinner optical core, lower attenuation over distance, and potentially unlimited bandwidth. It
-uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km without repeaters, and is typically sheathed in yellow. 
+
+Fiber can be deployed as single-mode (supporting a single light signal) or multimode (supporting multiple light signals).  
+
+    - Single-mode fiber has a thinner optical core, lower attenuation over distance, and potentially unlimited bandwidth. It
+uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km without repeaters, and is typically sheathed in yellow.
     - Multimode fiber has a larger optical core, higher attenuation over distance, and bandwidth limitations (inversely related to distance), and it uses 850 nm or 1300 nm wavelength LEDs or lasers, has a maximum run length of
 400m, and is typically sheathed in blue.
 
@@ -541,3 +546,5 @@ uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km 
 |STS-96/OC-96   | STM-32      | 4.876 Gbps |
 |STS-192/OC-192 | STM-64      | 9.953 Gbps |
 |STS-768/OC-768 | STM-256      | 39.813 Gbps |
+
+Synchronous Digital Hierarchy (SDH) and Synchronous Optical Network (SONET) are fiber-optic high-speed networking standards. SDH was standardized by the International Telecommunications Union (ITU) and SONET by the American National Standards Institute (ANSI). SDH and SONET are mostly hardware or physical layer standards defining infrastructure and line speed requirements. SDH and SONET use synchronous time-division multiplexing (TDM) to high-speed duplex communications with minimal need for control and management overhead.
