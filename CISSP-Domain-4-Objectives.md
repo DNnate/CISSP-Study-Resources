@@ -575,7 +575,8 @@ IPsec uses public-key cryptography and symmetric cryptography to provide encrypt
 - Internet Security Association and Key Management Protocol (ISAKMP) is used to organize and manage the encryption keys that have been generated and exchanged by OAKLEY and SKEME. A security association is the agreed-on method of authentication and encryption used by two entities (a bit like a digital keyring).  ISAKMP is used to negotiate and provide authenticated keying material (a common method of authentication) for security associations in a secured manner. Each IPsec VPN uses two security associations, one for encrypted transmission and the other for encrypted reception. Thus, each IPsec VPN is composed of two simplex communication channels that are independently encrypted. ISAKMP’s use of two security associations per VPN is what enables IPsec to support multiple simultaneous VPNs from each host.
 
 ***PRIVATE IP***
+
 These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
-■■10.0.0.0–10.255.255.255 (a full Class A range)
-■■172.16.0.0–172.31.255.255 (16 Class B ranges)
-■■192.168.0.0–192.168.255.255 (256 Class C ranges)
+-■■10.0.0.0–10.255.255.255 (a full Class A range)
+-■■172.16.0.0–172.31.255.255 (16 Class B ranges)
+-■■192.168.0.0–192.168.255.255 (256 Class C ranges)
