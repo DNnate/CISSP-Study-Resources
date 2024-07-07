@@ -56,7 +56,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
 
     | Layer | OSI model layer | TCP/IP model | PDU | Devices | Protocols | 
     |-----|---------------| -------------------|------------| ----------------|-----------|
-    | 7     | Application     | Application |Data               | L7 firewall                                | HTTP/s, DNS, DHCP, FTP,S-HTTP, TPFT, Telnet, SSH, SMTP, POP3, PEM, IMAP, NTP, SNMP, TLS/SSL, GBP, RIP, SIP, S/MIME etc. |
+    | 7     | Application     | Application |Data               | L7 firewall                                | HTTP/s, DNS, DHCP, FTP,S-HTTP, TPFT, Telnet, SSH, SMTP, POP3, SNMP, PEM, IMAP, NTP, SNMP, TLS/SSL, GBP, RIP, SIP, S/MIME etc. |
     | 6     | Presentation    | Application |Data               | L7 firewall                                | All the above                                                |
     | 5     | Session         | Application| Data               | L7 firewall                                | All the above                                                |
     | 4     | Transport       | Transport (host-to-host) | Segments           | L4 firewall                                | TCP (connection oriented), UDP (connectionless)     |
