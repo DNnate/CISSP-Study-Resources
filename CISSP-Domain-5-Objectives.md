@@ -6,7 +6,8 @@ The identity and Access Management (IAM) domain focuses on issues related to gra
 - Identification is the process of a subject claiming, or professing, an identity
 - Authentication verifies the subject’s identity by comparing one or more authentication factors against a database holding authentication info for users
 - The three primary authentication factors are something you know, something you have, and something you are
-- Single sign-on (SSO) technologies allow users to authenticate once and access any resources in a network or the cloud, without authenticating again
+- Single sign-on (SSO) technologies allow users to authenticate once and access any resources in a network or the cloud, without authenticating again. Kerberos, Active Directory Federation Services (ADFS), and Central Authentication
+Services (CAS) are all SSO implementations. RADIUS is not a single sign-on implementation
 - Federated Identity Management (FIM) systems link user identities in one system with other systems to implement SSO
 - **Access Control System**: ensuring access to assets is authorized and restricted based on business and security requirements
 - **Access Control Token**: based on the parameters like time, date, day etc a token defines access validity to a system
