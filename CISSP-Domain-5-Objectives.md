@@ -288,12 +288,12 @@ The identity and Access Management (IAM) domain focuses on issues related to gra
 
 ***Authorization Mecahanisms***
 
-- Implicit Deny: ensures that access to an object is denied unless access has been explicitly granted to a subject. (deny by default)
-- Access Control Matrix: a table that includes subjects, objects, and assigned privileges. 
-- Capability Tables: Capability tables list the privileges assigned to subjects and identify the objects that subjects can access. They are different from ACLs in that a capability table is focused on subjects (such as users, groups, or roles). In contrast, ACLs are focused on objects. 
-- Constrained Interface: Applications use constrained interfaces or restricted interfaces to restrict what users can do or see based on their privileges. 
-- Content-­Dependent Control: This restrict access to data based on the content within an object. A database view is a content-­dependent control.
--Context-­Dependent Control: These require specific activity before granting users access. 
-- Need to Know: ensures that subjects are granted access only to what they need to know for their work tasks and job functions.
-- Least Privilege: This ensures that subjects are granted only the privileges they need to perform their work tasks and job functions. This is sometimes lumped together with need to know. The only difference is that least privilege will also include rights to take action on a system.
-- Separation of Duties and Responsibilities: This ensures that sensitive functions are split into tasks performed by two or more employees. It helps prevent fraud and errors by creating a system of checks and balances.
+    - Implicit Deny: ensures that access to an object is denied unless access has been explicitly granted to a subject. (deny by default)
+    - Access Control Matrix: a table that includes subjects, objects, and assigned privileges. 
+    - Capability Tables: Capability tables list the privileges assigned to subjects and identify the objects that subjects can access. They are different from ACLs in that a capability table is focused on subjects (such as users, groups, or roles). In contrast, ACLs are focused on objects. 
+    - Constrained Interface: Applications use constrained interfaces or restricted interfaces to restrict what users can do or see based on their privileges. 
+    - Content-­Dependent Control: This restrict access to data based on the content within an object. A database view is a content-­dependent control.
+    -Context-­Dependent Control: These require specific activity before granting users access. 
+    - Need to Know: ensures that subjects are granted access only to what they need to know for their work tasks and job functions.
+    - Least Privilege: This ensures that subjects are granted only the privileges they need to perform their work tasks and job functions. This is sometimes lumped together with need to know. The only difference is that least privilege will also include rights to take action on a system.
+    - Separation of Duties and Responsibilities: This ensures that sensitive functions are split into tasks performed by two or more employees. It helps prevent fraud and errors by creating a system of checks and balances.
