@@ -250,7 +250,7 @@ The identity and Access Management (IAM) domain focuses on issues related to gra
         - **Kerberos Principal**: typically a user but can be any entity that can request a ticket
         - **Kerberos realm**: a logical area (such as a domain or network) ruled by Kerberos
     - Kerberos login process:
-        - user types a username/password into the client
+        - user types a username/password into the client to initiate client/TGS key generation
         - client encrypts the username with AES for transmission to the KDC
         - the KDC verifies the username against a db of known credentials
         - the KDC generates a symmetric key that will be used by the client and the Kerberos server
