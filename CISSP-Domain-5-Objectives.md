@@ -270,7 +270,7 @@ of tasks.
         - the KDC verifies the username against a db of known credentials
         - the KDC generates a symmetric key that will be used by the client and the Kerberos server
             - it encrypts this with a hash of the user’s password
-            - the KDC also generates an encrypted timestamped TGT
+            - the KDC also generates an encrypted timestamped TGT. Kerberos relies on properly synchronized time on each end of a connection to function.
         - the KDC then transmits the encrypted symmetric key and the encrypted timestamped TGT to the client
         - the client installs the TGT for use until it expires
             - the client also decrypts the symmetric key using a hash of the user’s password
