@@ -127,7 +127,7 @@
           - detect
           - respond
           - recovery
-        - note: updated (2024) CSF 2.0 functions 800-53:
+        - note: updated (2024) CSF 2.0 functions 800-53: (Great Ideas Propel Dreams Rapidly, Right GIPDRR)
           - govern
           - identify
           - protect
