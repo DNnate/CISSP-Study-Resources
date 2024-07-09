@@ -98,7 +98,7 @@
   - A **security control framework**: outlines the org's approach to security, including a list of specific security processes, procedures, and solutions used; it is important in planning the structure of an org's security solution; many frameworks to choose from, such as:
     -  **Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
         - COBIT is a documented set of best IT security practices by ISACA
-        - Six key principles:
+        - Six key principles (Sally Has Daring Goals To Excel SHDGTE) :
           - provide stakeholder value
           - holistic approach
           - dynamic governance system
@@ -487,7 +487,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - SP 800-37 Rev 2, Risk Management Framework for Information Systems and Organizations
     - SP 800-39, Managing Information Security Risk
     - SP 800-30 Rev 1, Guide for Conducting Risk Assessments
-    - The **RMF has 7 steps**, and **six cyclical phases**: (PCSIAAM People Can See I AM ALWAYS Monitoring)
+    - The **RMF 800-37 has 7 steps**, and **six cyclical phases**: (PCSIAAM People Can See I AM ALWAYS Monitoring)
       - **Prepare** to execute the RMF from an organization and system-level perspective by establishing a context and priorities for managing security and privacy risk
       - **Categorize** the system and the information processed, stored, and transmitted by the system based on an analysis of the impact of loss
       - **Select** an initial set of controls for the system and tailor the controls as needed to reduce risk to an acceptable level based on an assessment of risk
