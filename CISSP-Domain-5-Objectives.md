@@ -160,7 +160,7 @@ dentials.
     - A key characteristic of the DAC model is that every object has an owner, and the owner can grant or deny access to any other subjects
         - e.g. you create a file and are the owner, and can grant permissions to that file
     - New Technology File System (NTFS) used in Windows, uses the DAC model
-- 5.4.5 Attribute Based Access Control (ABAC)
+- 5.4.5 Attribute Based Access Control (ABAC) or Policy-Based Access Control
     - **Attribute-Based Access Control (ABAC)**: an access control paradigm where access rights are granted to users with policies that combine attributes together. Attributes used for ABAC often fall into one of four categories: subject attributes like department or title; action attributes like the ability to view, edit, or delete; object attributes
 that describe the object that can be impacted; and contextual attributes like location, time, or elements.
     - A key characteristic of the ABAC model is its use of rules that can include multiple attributes
