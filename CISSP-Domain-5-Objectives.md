@@ -159,6 +159,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.4.6 Risk based access control
     - Risk-based access control model grants access after evaluating risk; evaluating the environment and the situation and making risk-based decisions using policies embeded within software
         - Using machine learning, making predictive conclusions about current activity based on past activity
+- 5.4.7 Task based access control
+    - TBAC is similar to RBAC, but instead of being assigned to one or more roles, each user is assigned an array
+of tasks.
 
 [5.5](#5.5) Manage the identity and access provisioning lifecycle (OSG-9 Chpts 13,14)
 - 5.5.1 Account accesss review
