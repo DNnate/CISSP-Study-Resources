@@ -101,7 +101,7 @@ that a user has in a website to execute code on the user’s computer. **XSRF** 
 trust that remote sites have in a user’s system to execute commands on the user’s behalf.
         - OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
     - Cloud-based federation typically uses a third-party service to share federated identities
-    - Federated identity management systems can be hosted on-premises, in the cloud, or in a combination of the two as a hybrid system
+    - Federated identity management systems can be hosted on-premises, in the cloud, or in a combination of the two as a hybrid system. Hybrid federation e.g occurs where authentication occurs on-premises and services are provided through a federated identity service in the cloud
 - 5.2.7 Credential management systems
     - **Credential management systems**: provide storage space for usernames and password
         - e.g. web browsers that remember usernames and passwords for visited sites
