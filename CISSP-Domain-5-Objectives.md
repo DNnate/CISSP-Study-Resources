@@ -101,6 +101,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 that a user has in a website to execute code on the user’s computer. **XSRF** attacks exploit the
 trust that remote sites have in a user’s system to execute commands on the user’s behalf.
         - OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
+        - OpenID Connect is a RESTful, JSON-based authentication protocol that, when paired with OAuth, can provide identity verification and basic profile information.
     - Cloud-based federation typically uses a third-party service to share federated identities
     - Federated identity management systems can be hosted on-premises, in the cloud, or in a combination of the two as a hybrid system. Hybrid federation e.g occurs where authentication occurs on-premises and services are provided through a federated identity service in the cloud
 - 5.2.7 Credential management systems
@@ -128,7 +129,7 @@ trust that remote sites have in a user’s system to execute commands on the use
 - 5.3.1 On-premise
     - Federated identity management can be hosted on-premise, and typically provides an organization with the most control
 - 5.3.2 Cloud
-    - Cloud-based apps used federated identify management (FIM) systems, which are a form of SSO
+    - Cloud-based apps used federated identify management (FIM) systems, which are a form of SSO. E.g Shibboleth is a federated identity solution designed to allow web-based SSO
     - Cloud-based federation typically uses a third-party service to hsare federated identities (e.g. training sites use federated SSO systems)
         - commonly matching the user's internal login ID with a federated identify
 - 5.3.3 Hybrid
