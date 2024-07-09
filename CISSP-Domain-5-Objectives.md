@@ -61,6 +61,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - **Multifactor authentication (MFA)**: any authentication using two or more factors
         - multifactor auth must use multiple types or factors, such as something you know and something you have
         - note: requiring users to enter a password and a PIN is NOT multifactor (both are something you know)
+        - Type 1 + Type 2 + Type 3: A user needs to enter a password (Type 1 something you know), use a smart card (Type 2 something you have), and undergo a retina scan (Type 3 something you are).
     - Two-factor methods:
         - **Hash Message Authentication Code (HMAC)**: includes a hash function used by the HMAC-based One-Time Password (HOTP) standard to create onetime passwords
         - **Time-based One-Time Password (TOTP)**: similar to HOTP, but uses a timestamp and remains valid for a certain time frame (e.g. 30 or 60 seconds)
