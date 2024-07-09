@@ -76,7 +76,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.2.4 Session management
     - Session management is important to use with any type of authentication system to prevent unauthorized access
     - Desktop/laptops: recommendation to use screensavers, although modern OSs have timeout/lock features
-    - Secure online sessions should terminate after a timeout period
+    - Secure online sessions should terminate after a timeout period. Common session management techniques include the use of cookies, hidden form fields, URL rewriting, and built-in frameworks like Java’s HTTPSession.
     - The Open Web Application Security Project (OWASP) publishes “cheat sheets” that provide app developer’s specific recommendations
 - 5.2.5 Registration, proofing, and establishment of identity
     - Within an organization, new employees prove their identity with appropriate documentation during the hiring process
