@@ -301,3 +301,8 @@ of tasks.
 - Need to Know: ensures that subjects are granted access only to what they need to know for their work tasks and job functions.
 - Least Privilege: This ensures that subjects are granted only the privileges they need to perform their work tasks and job functions. This is sometimes lumped together with need to know. The only difference is that least privilege will also include rights to take action on a system.
 - Separation of Duties and Responsibilities: This ensures that sensitive functions are split into tasks performed by two or more employees. It helps prevent fraud and errors by creating a system of checks and balances.
+
+  **Markup Language**
+- Service Provisioning Markup Language (SPML) is an XML-based language designed to allow platforms to generate and respond to provisioning requests.
+- Security Assertion Markup Language (SAML) is used to make authorization and authentication data on first access
+- Extensible Access Control Markup Language (XACML) is used to describe access controls.
