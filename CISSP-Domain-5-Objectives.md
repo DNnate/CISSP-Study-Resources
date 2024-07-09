@@ -63,6 +63,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - note: requiring users to enter a password and a PIN is NOT multifactor (both are something you know)
         - Type 1 + Type 2 + Type 3: A user needs to enter a password (Type 1 something you know), use a smart card (Type 2 something you have), and undergo a retina scan (Type 3 something you are).
         - Yubikeys, Titan Security Keys, and similar devices are examples of tokens i.e Type 2
+        - **Synchronous** soft tokens, such as Google Authenticator, use a time-based algorithm that generates a constantly changing series of codes. **Asynchronous** tokens typically require a challenge to be entered on the token to allow it to calculate a response, which the server compares to the response it expects.
     - Two-factor methods:
         - **Hash Message Authentication Code (HMAC)**: includes a hash function used by the HMAC-based One-Time Password (HOTP) standard to create onetime passwords
         - **Time-based One-Time Password (TOTP)**: similar to HOTP, but uses a timestamp and remains valid for a certain time frame (e.g. 30 or 60 seconds)
