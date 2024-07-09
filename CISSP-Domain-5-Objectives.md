@@ -95,8 +95,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - where each organization decides what resources to share
     - Methods used to implement federated identity management systems include:
         - Security Assertion Markup Language (SAML)
-        - OAuth
-        - OpenID Connect (OIDC)
+        - OAuth (most widely used and integrates with 3rd Parties)
+        - OpenID Connect (OIDC) (used for authentication)
     - Cloud-based federation typically uses a third-party service to share federated identities
     - Federated identity management systems can be hosted on-premises, in the cloud, or in a combination of the two as a hybrid system
 - 5.2.7 Credential management systems
