@@ -99,7 +99,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - OAuth (most widely used and integrates with 3rd Parties). The anti-forgery state token exchanged during OAuth sessions is intended to prevent cross-site request forgery. Cross-­site request forgery attacks, abbreviated as XSRF or CSRF attacks, are similar to cross-­site scripting attacks but exploit a different trust relationship. XSS attacks exploit the trust
 that a user has in a website to execute code on the user’s computer. **XSRF** attacks exploit the
 trust that remote sites have in a user’s system to execute commands on the user’s behalf.
-        - OpenID Connect (OIDC) (used for authentication)
+        - OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
     - Cloud-based federation typically uses a third-party service to share federated identities
     - Federated identity management systems can be hosted on-premises, in the cloud, or in a combination of the two as a hybrid system
 - 5.2.7 Credential management systems
