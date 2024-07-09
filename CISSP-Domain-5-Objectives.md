@@ -144,7 +144,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - **Mandatory Access Control (MAC)**: access control that requires the system itself to manage access controls in accordance with the org's security policies
     - A key characteristic of the MAC model is the use of labels applied to both subjects and objects
         - e.g. a label of top secret grants access to top-secret documents
-    - When documented in a table, the MAC model sometimes resembles a lattice (i.e. climbing rosebush framework), so it is referred to as a lattice-based model
+    - When documented in a table, the MAC model sometimes resembles a lattice (i.e. climbing rosebush framework), so it is referred to as a lattice-based model. Biba integrity model uses this.
 - 5.4.4 Discretionary Access Control (DAC)
     - **Discretionary Access Control (DAC)**: access control model in which the system owner decides who gets access
     - A key characteristic of the DAC model is that every object has an owner, and the owner can grant or deny access to any other subjects
