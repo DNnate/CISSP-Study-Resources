@@ -515,7 +515,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - Information Disclosure: the revelation or distribution of private, confidential, or controlled information to external or unauthorized entities
   - Denial of Service (DoS): an attack that attempts to prevent authorized use of a resource; this can be done through flaw exploitation, connection overloading, or traffic flooding
   - Elevation of privilege: an attack where a limited user account is transformed into an account with greater privileges, powers, and access
-- **Process for Attack Simulation and Threat Analysis (PASTA)**: a seven-stage threat modeling methodology:
+- **Process for Attack Simulation and Threat Analysis (PASTA)**: a seven-stage threat modeling methodology: _(Our Team Always Tackles Vulnerabilities And Risks)_
   - Stage I: Definition of the Objectives (DO) for the Analysis of Risk
   - Stage II: Definition of the Technical Scope (DTS)
   - Stage III: Application Decomposition and Analysis (ADA)
