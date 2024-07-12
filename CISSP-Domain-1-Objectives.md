@@ -592,7 +592,7 @@ Also see my articles on risk management:
   - we also review the important step of reporting out our risk analysis and recommended responses, noting differences in requirements for messaging by group
 
 
-**TCB Common Criteria (IFSMMSSF) "Ice Fishermen Sing Merry Melodies, So Stay Friendly!"**
+**TCB Common Criteria ISO/IEC 15408-1 Evaluation Assurance Levels (IFSMMSSF) "Ice Fishermen Sing Merry Melodies, So Stay Friendly!"**
 - EAL0 –Inadequate assurance
 - EAL1 –Functionally tested
 - EAL2 –Structurally tested
