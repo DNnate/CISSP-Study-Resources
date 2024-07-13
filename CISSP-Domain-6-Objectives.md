@@ -293,7 +293,9 @@
     - **Dynamic Testing** DAST: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else. In those cases, testers often do not have access to the underlying source code.
         - common example of dynamic software testing is the use of web application scanning tools to detect the presence of cross-­site scripting, SQL injection, or other flaws in web applications.
         - Another example is the use of synthetic transactions to verify system performance. These are scripted transactions with known expected results.
-    - **Fuzz Testng**: is a specialized dynamic testing technique that provides many different types of input to software to stress its limits and find previously undetected flaws. It is imited to detecting simple vulnerabilities. zzuf is a fuzzing tool
+    - **Fuzz Testng**: is a specialized dynamic testing technique that provides many different types of input to software to stress its limits and find previously undetected flaws. It is imited to detecting simple vulnerabilities.
+    - zzuf is a fuzzing tool
+    - Fuzzers are tools that are designed to provide invalid or unexpected input to applications, testing for vulnerabilities like format string vulnerabilities, buffer overflow issues, and other problems.
         - Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input.
         - Generational (Intelligent) Fuzzing Develops data models and creates new fuzzed input based on an understanding of the types of data used by the program.
     - **Interface Testing**: assesses the performance of modules against the interface specifications to ensure that they will work together properly. Interfaces to be tested include
