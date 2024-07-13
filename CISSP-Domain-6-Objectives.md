@@ -130,7 +130,7 @@ raw packets, and a user may be restricted by the operating system from sending h
     - Network flow (NetFlow) logs are particularly useful when investigating security incidents
     - **Synthetic monitoring (or active monitoring)** uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. e.g Grafana, Zabbix, Selenium. It performs artificial transactions against a website to assess performance.
     - **Passive monitoring** uses a span port or other method to copy traffic and monitor it in real time. e.g wireshark,  PRTG, Cacti, ntoping, prometheus. **Real user monitoring (RUM)** is a variant of passive monitoring where the monitoring tool
-reassembles the activity of individual users to track their interaction with a website.
+reassembles the activity of individual users to track their interaction with a website. RUM records user interaction with an application or system to ensure performance and proper application behavior.
     - **Identity and access management (IAM)** systems combine lifecycle management and monitoring tools to ensure that identity and authorization are properly handled throughout an organization. e.g AD, DUO, OKTA
 
 - 6.2.4 Synthetic transactions
