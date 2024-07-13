@@ -283,3 +283,32 @@
     - Disadvantage of using a third-party auditor:
         - cost: third-party auditors are going to be much more costly than internal teams; this means that the organization is likely to conduct audits as frequently
         - internal resources are still required to assist or accompany auditors, to answer questions and guide
+     
+
+- 6.6 Software testing
+    - **Code Review**: Code review is the foundation of software assessment programs. During a code review, also known as a peer review, developers other than the one who wrote the code review it for defects.
+    - an example of Code review is by using the 6 steps Fagan process: 1.Planning, 2.Overview, 3.Preparation, 4.Inspection, 5.Rework, 6.Follow-­up
+    - **Static Testing** SAST: evaluates the security of software without running it by analyzing either the source code or the compiled application
+        - Developers use static code analysis tools network
+    - **Dynamic Testing** DAST: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else. In those cases, testers often do not have access to the underlying source code.
+        - common example of dynamic software testing is the use of web application scanning tools to detect the presence of cross-­site scripting, SQL injection, or other flaws in web applications.
+        - Another example is the use of synthetic transactions to verify system performance. These are scripted transactions with known expected results.
+    - **Fuzz Testng**: is a specialized dynamic testing technique that provides many different types of input to software to stress its limits and find previously undetected flaws. It is imited to detecting simple vulnerabilities
+        - Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input.
+        - Generational (Intelligent) Fuzzing Develops data models and creates new fuzzed input based on an understanding of the types of data used by the program.
+    - **Interface Testing**: assesses the performance of modules against the interface specifications to ensure that they will work together properly. Interfaces to be tested include
+            - Application Programming Interfaces (APIs)
+            - User Interfaces (UIs)
+            - Physical Interfaces (For appliacations that manipulate machinery and logic controllers)
+             these tests are sometimes called "**known environment**" tests
+        - **Misuse Case Testing**: or abuse case testing to evaluate the vulnerability of their software to users attempt
+to misuse the application
+        - **Mutation Testing**: Mutation testing modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation.
+        - **Regression Testing**: In cases where the project is releasing updates to an existing system, regression testing formalizes the process of verifying that the new code performs in the same manner as the old code, other than any changes expected as part of the new release.        
+        - **Test Coverage Analysis**:
+            - Test Coverage = number of use cases Tested/Total umber of use cases
+            - Branch Coverage: Test all If/Esle Statements
+            - Condition Coverage
+            - Function Coverage
+            - Loop Coverage
+            - Statement Coverage
