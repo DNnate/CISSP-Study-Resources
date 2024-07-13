@@ -243,8 +243,9 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - WEP uses a predefined shared Rivest Cipher 4 (RC4) secret key for both authentication (SKA) and encryption
             - Shared key is static
             - WEP is weak from RC4 flaws 
-        - Wi-Fi Protected Access II (WPA2):
-            - IEEE 802.11i WPA2 replaced WEP and WPA
+        - **Wi-Fi Protected Access II (WPA2)**:
+            - IEEE 802.11i WPA2 replaced WEP and WPA.
+            - WPA2 enterprise uses RADIUS authentication for users rather than a preshared key. This means a password attack is more likely to fail as password attempts for a given user may result in account lockout.
             - Uses AES-CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol)
         - Frequency table:
             
