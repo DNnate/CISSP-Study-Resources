@@ -299,9 +299,9 @@
         - Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input.
         - Generational (Intelligent) Fuzzing Develops data models and creates new fuzzed input based on an understanding of the types of data used by the program.
     - **Interface Testing**: assesses the performance of modules against the interface specifications to ensure that they will work together properly. Interfaces to be tested include
-            - Application Programming Interfaces (APIs)
-            - User Interfaces (UIs)
-            - Physical Interfaces (For appliacations that manipulate machinery and logic controllers)
+      - Application Programming Interfaces (APIs)
+      - User Interfaces (UIs)
+      - Physical Interfaces (For appliacations that manipulate machinery and logic controllers)
 
     - **Misuse Case Testing**: or abuse case testing to evaluate the vulnerability of their software to users attempt
 to misuse the application
