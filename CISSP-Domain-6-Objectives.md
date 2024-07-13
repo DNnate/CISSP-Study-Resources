@@ -306,7 +306,7 @@ reassembles the activity of individual users to track their interaction with a w
         - common example of dynamic software testing is the use of web application scanning tools to detect the presence of cross-­site scripting, SQL injection, or other flaws in web applications.
         - Another example is the use of synthetic transactions to verify system performance. These are scripted transactions with known expected results.
     - **Fuzz Testng**: is a specialized dynamic testing technique that provides many different, and sometimes invalid types of input to software to stress its limits and find previously undetected flaws. It is imited to detecting simple vulnerabilities.
-    - zzuf is a fuzzing tool
+    - zzuf is a fuzzing tool thats tests web browsers ability to handle unexpected data
     - Fuzzers are tools that are designed to provide invalid or unexpected input to applications, testing for vulnerabilities like format string vulnerabilities, buffer overflow issues, and other problems.
         - Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input.
         - Generational (Intelligent) Fuzzing Develops data models and creates new fuzzed input based on an understanding of the types of data used by the program.
