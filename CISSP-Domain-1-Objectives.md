@@ -331,9 +331,11 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - Also decide which systems and services you need to get things running again (think foundational IT services such as the network and directory, which many other systems rely on)
       - Finally, prioritize the order in which critical systems and services are recovered or brought back online. 
       - As part of the BIA, establish:
-        - **recovery time objectives (RTO)** (how long it takes to recover)
-        - **recovery point objectives (RPO)** (the maximum tolerable data loss)
-        - **maximum tolerable downtime (MTD)**, (how long an org can survive an interruption of critical functions) along with the costs of downtime and recovery; AKA MTD (maximum tolerable downtime)
+        - **Recovery Time Objectives (RTO)** (how long it takes to recover) The maximum acceptable amount of time that a system, application, or function can be down after a failure or disaster.
+        - **Recovery Point Objectives (RPO)** (the maximum tolerable data loss)
+        - **Mean Time Between Failures (MTBF)** The predicted elapsed time between inherent failures of a system during operation. e.g A server might have an MTBF of 10,000 hours.
+        - **Mean Time to Repair (MTTR)** The average time required to repair a failed component or system.
+        - **Maximum tolerable downtime (MTD)**, (how long an org can survive an interruption of critical functions) along with the costs of downtime and recovery; AKA MTD (maximum tolerable downtime)
     - **Continuity planning**: The first two phases of the BCP process (project scope and planning and the business impact analysis) focus on determining how the BCP process will work and prioritizing the business assets that need to be protected against interruption
       - The next phase of BCP development, continuity planning, focuses on the development and implementation of a continuity strategy to minimize the impact realized risks might have on protected assets
       - There are two primary subtasks involved in continuity planning:
