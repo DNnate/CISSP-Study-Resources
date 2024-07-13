@@ -303,7 +303,7 @@
 
     - **Misuse Case Testing**: or abuse case testing to evaluate the vulnerability of their software to users attempt
 to misuse the application
-    - **Mutation Testing**: Mutation testing modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation.
+    - **Mutation Testing**: Mutation testing (automatically) modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation.
     - **Regression Testing**: In cases where the project is releasing updates to an existing system, regression testing formalizes the process of verifying that the new code performs in the same manner as the old code, other than any changes expected as part of the new release.        
     - **Test Coverage Analysis**:
             - Test Coverage = number of use cases Tested/Total umber of use cases
