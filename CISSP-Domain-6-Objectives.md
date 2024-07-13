@@ -82,7 +82,7 @@
             - **Common Platform Enumeration (CPE)**: provides a naming system for operating systems, applications, and devices
             - **Extensible Configuration Checklist Description Format (XCCDF)**: provides a language for specifying security checklists
             - **Open Vulnerability and Assessment Language (OVAL)**: provides a language for describing security testing procedures
-    - Vulnerability scans automatically probe systems, applications, and networks looking for weaknesses that could be exploited by an attacker
+    - Vulnerability scans automatically probe systems, applications, and networks looking for weaknesses that could be exploited by an attacker. Vulnerability Scanners scan remote machines to gather information, including fingerprints from responses to queries and connections, banner information from services, and related data.
     - Four main categories of vulnerability scans:
         - network discovery scans: Network discovery scanners use many different techniques to identify open ports on remote systems:
             - TCP SYN Scanning Sends a single packet to each scanned port with the SYN flag set. This indicates a request to open a new connection. If the scanner receives a response that has the SYN and ACK flags set, this indicates that the system is moving to the second phase in the three-­way TCP handshake and that the port is open. TCP SYN scanning is also known as “half-­open” scanning.
@@ -94,8 +94,6 @@ raw packets, and a user may be restricted by the operating system from sending h
         - network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable
         - web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af
         - database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
-
-    - Vulnerability Scanners scan remote machines to gather information, including fingerprints from responses to queries and connections, banner information from services, and related data.
 
 - 6.2.2 Penetration testing
     - Penetration tests goes beyond vulnerability testing techniques because it actually attempts to exploit systems
