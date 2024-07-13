@@ -640,4 +640,4 @@ Also see my articles on risk management:
   - Calculate the Annualized Loss Expectancy (ALE): ALE = SLE * ARO, i.e ALE = $15,000 * 0.04 = $600
 
 **ISO 28000:2007,** “Specification for security management systems for the supply chain,” provides a broad framework for managing supply chain risk.
-  - ISO 28000:2007 relies heavily on the continuous process improvement model of plan, do, check, act (PDCA) to improve the security management system and to assure organizational conformance to the security practice.
+  - ISO 28000:2007 relies heavily on the continuous process improvement model of plan, do, check, act (PDCA or Deming cycle) to improve the security management system and to assure organizational conformance to the security practice.
