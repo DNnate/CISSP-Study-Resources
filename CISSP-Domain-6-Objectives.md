@@ -81,6 +81,7 @@
             - **Common Configuration Enumeration (CCE)**: provides a naming system for system config issues
             - **Common Platform Enumeration (CPE)**: provides a naming system for operating systems, applications, and devices
             - **Extensible Configuration Checklist Description Format (XCCDF)**: provides a language for specifying security checklists
+            - **Script Check Engine (SCE)** is designed to make scripts ­interoperable with security policy definitions.
             - **Open Vulnerability and Assessment Language (OVAL)**: provides a language for describing security testing procedures
     - Vulnerability scans automatically probe systems, applications, and networks looking for weaknesses that could be exploited by an attacker. Vulnerability Scanners scan remote machines to gather information, including fingerprints from responses to queries and connections, banner information from services, and related data.
     - Four main categories of vulnerability scans:
