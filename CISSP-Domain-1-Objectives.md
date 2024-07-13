@@ -608,7 +608,29 @@ Also see my articles on risk management:
 - SOC 2: An audit and compliance report that evaluates an organization based on AICPA’s five “Trust Services principles”: privacy, security, availability, processing integrity, and confidentiality. Many organizations undergo SOC 2 auditing and present a SOC 2 report to regulators and customers to demonstrate compliance with industry standard security controls.
 - SOC 3: This is a “lite” version of a SOC 2 report and abstracts or removes all sensitive details. A SOC 3 report generally indicates whether an organization has demonstrated each of the five Trust Services principles without disclosing specifics (like exactly what they do or don’t do). Companies make SOC 3 reports available to the public and restrict SOC 2 reports to trusted parties.
 
-***EF***The exposure factor is the percentage of the facility that risk managers expect will be damaged if a risk materializes. It is calculated by dividing the amount of damage by the asset value. 
-***ARO***The annualized rate of occurrence is the number of times that risk analysts expect a risk to happen in any given year. The annualized loss expectancy (ALE) represents the amount of money a business expects to lose to a given risk each year.
-***SLE***The single loss expectancy (SLE) is the product of the asset value (AV) and the exposure factor (EF).
-***ALE***The annualized loss expectancy is calculated by multiplying the single loss expectancy (SLE) by the annualized rate of occurrence (ARO). 
+***EF***: The exposure factor is the percentage of the facility that risk managers expect will be damaged if a risk materializes. It is calculated by dividing the amount of damage by the asset value. 
+  - EF is the percentage of an asset's value that is expected to be lost if a specific threat event occurs.
+  - Formula: EF = (Loss due to the threat event / Total asset value) * 100
+  - Example: If a fire destroys 40% of a building's value, the EF is 40%.
+***ARO***: The annualized rate of occurrence is the number of times that risk analysts expect a risk to happen in any given year. The annualized loss expectancy (ALE) represents the amount of money a business expects to lose to a given risk each year.
+  - ARO is the expected frequency with which a specific threat will occur within a year.
+  - ARO can be a whole number or a fraction, representing the number of occurrences per year.
+  - Example: If historical data suggests that a power outage happens twice a year, the ARO is 2. If a flood is expected to occur once every 10 years, the ARO is 0.1.
+***SLE***: The single loss expectancy (SLE) is the product of the asset value (AV) and the exposure factor (EF).
+  - SLE is the monetary loss expected from a single occurrence of a threat event.
+  - Formula: SLE = Asset Value (AV) * Exposure Factor (EF)
+  - Example: If the asset value of a server is $10,000 and the EF for a fire is 40%, the SLE is $10,000 * 0.40 = $4,000.
+***ALE***: The annualized loss expectancy is calculated by multiplying the single loss expectancy (SLE) by the annualized rate of occurrence (ARO).
+  - ALE is the expected monetary loss for an asset due to a specific threat over a one-year period.
+  - Formula: ALE = Single Loss Expectancy (SLE) * Annualized Rate of Occurrence (ARO)
+  - Example: If the SLE for a fire affecting a server is $4,000 and the ARO is 0.1, the ALE is $4,000 * 0.1 = $400.
+
+- **Example Calculation**
+  - Identify Asset Value (AV): Let's say the value of a database server is $50,000.
+  - Determine the Exposure Factor (EF): A fire might destroy 30% of the server’s value. i.e EF = 30% = 0.30
+  - Calculate the Single Loss Expectancy (SLE): SLE = AV * EF i.e SLE = $50,000 * 0.30 = $15,000
+  - Estimate the Annualized Rate of Occurrence (ARO): Based on historical data, a fire might occur once every 25 years. i.e ARO = 1/25 = 0.04
+  - Calculate the Annualized Loss Expectancy (ALE): ALE = SLE * ARO, i.e ALE = $15,000 * 0.04 = $600
+
+**ISO 28000:2007,** “Specification for security management systems for the supply chain,” provides a broad framework for managing supply chain risk.
+  - ISO 28000:2007 relies heavily on the continuous process improvement model of plan, do, check, act (PDCA) to improve the security management system and to assure organizational conformance to the security practice.
