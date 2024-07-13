@@ -84,7 +84,13 @@
             - **Open Vulnerability and Assessment Language (OVAL)**: provides a language for describing security testing procedures
     - Vulnerability scans automatically probe systems, applications, and networks looking for weaknesses that could be exploited by an attacker
     - Four main categories of vulnerability scans:
-        - network discovery scans
+        - network discovery scans: Network discovery scanners use many different techniques to identify open ports on remote systems:
+            - TCP SYN Scanning Sends a single packet to each scanned port with the SYN flag set. This indicates a request to open a new connection. If the scanner receives a response that has the SYN and ACK flags set, this indicates that the system is moving to the second phase in the three-­way TCP handshake and that the port is open. TCP SYN scanning is also known as “half-­open” scanning.
+            - TCP Connect Scanning Opens a full connection to the remote system on the specified port. This scan type is used when the user running the scan does not have the necessary permissions to run a half-­open scan. Most other scan types require the ability to send
+raw packets, and a user may be restricted by the operating system from sending hand-crafted packets.
+            - TCP ACK Scanning Sends a packet with the ACK flag set, indicating that it is part of an open connection. This type of scan may be done in an attempt to determine the rules enforced by a firewall and the firewall methodology.
+            - UDP Scanning Performs a scan of the remote system using the UDP protocol, checking for active UDP services. This scan type does not use the three-­way handshake, because UDP is a connectionless protocol.
+            - Xmas Scanning Sends a packet with the FIN, PSH, and URG flags set. A packet with so many flags set is said to be “lit up like a Christmas tree,” leading to the scan’s name.
         - network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable
         - web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af
         - database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
