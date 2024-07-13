@@ -95,6 +95,8 @@ raw packets, and a user may be restricted by the operating system from sending h
         - web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af
         - database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
 
+    - Vulnerability Scanners scan remote machines to gather information, including fingerprints from responses to queries and connections, banner information from services, and related data.
+
 - 6.2.2 Penetration testing
     - Penetration tests goes beyond vulnerability testing techniques because it actually attempts to exploit systems
     - NIST defines the penetration testing process as consisting of four phases:
