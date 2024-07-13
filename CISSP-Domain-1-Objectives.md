@@ -510,7 +510,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - Reduce the severity of any remaining defects
 - A defensive approach to threat modeling takes place during the early stages of development; the method is based on predicting threats and designing in specific defenses during the coding and crafting process
   - Security solutions are more cost effective in this phase than later; this concept should be considered a proactive approach to threat management
-- Microsoft developed the **STRIDE threat model**:
+- Microsoft developed the **STRIDE threat model**: Also useful for threat categorization during aplication threat modeling
   - Spoofing: an attack with the goal of gaining access to a target system through the use of falsified identity
   - Tampering: any action resulting in unauthorized changes or manipulation of data, whether in transit or in storage
   - Repudiation: the ability of a user or attacker to deny having performed an action or activity by maintaining plausible deniability
