@@ -127,6 +127,8 @@ raw packets, and a user may be restricted by the operating system from sending h
     - Logging systems should also make use of the Network Time Protocol (NTP) to ensure that clocks are synchronized on systems sending log entries to the SIEM as well as the SIEM itself, ensuring info from multiple sources have a consistent timeline
     - Information security managers should also periodically conduct log reviews, particularly for sensitive functions, to ensure that privileged users are not abusing their privileges
     - Network flow (NetFlow) logs are particularly useful when investigating security incidents
+    - **Synthetic monitoring** uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors.
+    - **Passive monitoring** uses a span port or other method to copy traffic and monitor it in real time.
 
 - 6.2.4 Synthetic transactions
     - **Synthetic transactions**: scripted transactions with known expected results
