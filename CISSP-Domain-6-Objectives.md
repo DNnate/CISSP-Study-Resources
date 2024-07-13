@@ -322,9 +322,11 @@ to misuse the application
     - **Mutation Testing**: Mutation testing (automatically) modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation.
     - **Regression Testing**: In cases where the project is releasing updates to an existing system, regression testing formalizes the process of verifying that the new code performs in the same manner as the old code, other than any changes expected as part of the new release.        
     - **Test Coverage Analysis**:
-            - Test Coverage = number of use cases Tested/Total umber of use cases
+            - Test Coverage = number of use cases Tested/Total umber of use cases. ­Coverage rates are used to measure how effective code testing is.
             - Branch Coverage: Test all If/Esle Statements
             - Condition Coverage
             - Function Coverage
             - Loop Coverage
             - Statement Coverage
+
+**Time to remediate a vulnerability**is a commonly used key performance indicator for security teams.
