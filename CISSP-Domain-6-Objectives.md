@@ -94,6 +94,8 @@ raw packets, and a user may be restricted by the operating system from sending h
         - network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable
         - web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af
         - database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
+    - Active Scanning is useful for testing IDS or IPS systems. Scripted attacks are part of active scanning
+    - Passive scanning can help identify rogue devices by capturing MAC address vendor IDs that do not match deployed devices, by verifying that systems match inventories of organizationally owned hardware by hardware address, and by monitoring for rogue SSIDs or connections.
 
 - 6.2.2 Penetration testing
     - Penetration tests goes beyond vulnerability testing techniques because it actually attempts to exploit systems
