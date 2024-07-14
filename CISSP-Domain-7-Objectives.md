@@ -322,7 +322,8 @@
         - end users sometimes detect irregular activity and contact support
     - Note: receiving an alert or complaint doesn’t always mean an incident has occurred
 - 7.6.2 Response
-    - After detecting and verifying an incident, the next step is activate an Incident Response (IR) or CSIRT team 
+    - After detecting and verifying an incident, the next step is activate an Incident Response (IR) or CSIRT team
+    - CSIRT representation normally includes at least representatives of senior management, information security professionals, legal representatives, public affairs staff, and engineering/technical staff.
     - An IR team is AKA computer incident response team (CIRT) or computer security incident response team (CSIRT)
     - Among the first steps taken by the IR Team will be an impact assessment to determine the scale of the incident, how long the impact might be experienced, who else might need to be involved etc.
     - The IR team typicall investigate the incident, assess the damage, collect evidence, report the incident, perform recovery procedures, and participate in the remediation and lessons learned stages, helping with root cause analysis
