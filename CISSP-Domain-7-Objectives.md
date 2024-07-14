@@ -35,7 +35,7 @@
         - ensuring evidence (e.g. computers, mobile devices, portable drives etc) is not contacted, tampered with, or destroyed 
     - general principles:
         - identify and secure the scene
-        - protect evidence -- proper collection of evidence preserves its integrity and the chain of custody
+        - protect evidence -- proper collection of evidence preserves its integrity and the chain of custody. For example A forensic disk controller or hardware write-block device is a specialized type of computer hard disk controller made for the purpose of gaining read-only access to computer hard drives without the risk of damaging the drive's contents. It  intercept write commands from the host operating system, preventing them from reaching the drive. The other three functions include returning data requested by a read operation, returning access-significant information from the device, and reporting errors from the device back to the forensic host.
         - identification and examination of the evidence
         - further analysis of the most compelling evidence
         - final reporting of findings
