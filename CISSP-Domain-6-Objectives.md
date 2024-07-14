@@ -339,6 +339,7 @@ to misuse the application
 - ISO/IEC 27006:2015, “Information technology —­Security techniques —­ Requirements for bodies providing audit and certification of information security management systems,” is the official set of requirements and guidance for auditors performing certification audits against ISO 27001.
 - NIST Special Publication (SP) 800-­53A, “Assessing Security and Privacy Controls in Federal Information Systems and Organizations,” is a guide to assessing the controls outlined in NIST SP 800-­53. It introduces a simple set of testing procedures to assess control effectiveness: test, examine, or interview. 
 - The NIST Cybersecurity Framework (CSF) and FedRAMP Security Assessment Framework (SAF) are both freely available as well and may be used to perform assessments with evaluation methods similar to those in NIST SP 800-­53A.
+- COBIT the Control Objectives for Information and Related Technologies, is commonly used as an audit framework for organizations.
 
 
 **NIST Special Publication (SP) 800 Series:**
