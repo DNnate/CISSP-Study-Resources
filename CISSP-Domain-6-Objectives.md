@@ -92,7 +92,7 @@ raw packets, and a user may be restricted by the operating system from sending h
             - TCP ACK Scanning Sends a packet with the ACK flag set, indicating that it is part of an open connection. This type of scan may be done in an attempt to determine the rules enforced by a firewall and the firewall methodology.
             - UDP Scanning Performs a scan of the remote system using the UDP protocol, checking for active UDP services. This scan type does not use the three-­way handshake, because UDP is a connectionless protocol.
             - Xmas Scanning Sends a packet with the FIN, PSH, and URG flags set. A packet with so many flags set is said to be “lit up like a Christmas tree,” leading to the scan’s name.
-        - network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable
+        - network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Note: Nmap only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports!
         - web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af
         - database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
     - Active Scanning is useful for testing IDS or IPS systems. Scripted attacks are part of active scanning
