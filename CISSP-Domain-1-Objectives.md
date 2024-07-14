@@ -119,7 +119,11 @@
           - 800-47 Certification and Acreditation
           - 800-92 Log Management
           - 800-162 Guide to ABAC
-          - 800-53 Cybersecurity Framework  
+          - 800-53 Cybersecurity Framework
+          - 800-53A is titled “Assessing Security and Privacy Controls in Federal Information Systems and Organizations: Building Effective Assessment Plans
+          - 800-12 is an introduction to computer security
+          - 800-34 covers contingency planning
+          - 800-86 is the “Guide to Integrating Forensic Techniques into Incident Response.”
     -  NIST **CyberSecurity Framework (CSF)**
         - designed for commerical orgs and critical infrastructure, CSF 1.1 consists of five functions:
           - identify
