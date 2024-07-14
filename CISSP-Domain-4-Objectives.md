@@ -134,8 +134,6 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Switches & bridges function at this layer
         - Logical Link Control (LLC) is one of two sublayers that make up the Data Link Layer
 
-**DNP3 (Distributed Network Protocol 3)** is primarily used in the electric and water utility and management industries. It is used to support communications between data acquisition systems and the system control equipment. This includes substation computers, remote terminal units (RTUs) (i.e., devices controlled by an embedded microprocessor), intelligent electronic devices (IEDs), and SCADA primary stations (i.e., control centers). DNP3 is an open and public standard. It is a multilayer protocol that functions similarly to TCP/IP in that it has link, transport, and transportation layers. It utilizes the Data Link Layer for reliable node-to-node data transfer. and At the Application Layer, DNP3 defines the format of messages, the functions that can be requested (e.g., reading or writing data points), and the way in which data points are represented.
-
     - Physical Layer (1)
         - Converts a frame into bits for transmission/receiving over the physical connection medium
         - Network hardware devices that function at layer 1 include NICs, hubs, repeaters, concentrators, amplifiers
@@ -148,6 +146,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - **bus**: all devices are connected to a single cable (backbone) terminated on both ends
         - Know commonly used twisted-pair cable categories
         - Know cable types & characteristics
+     
+**DNP3 (Distributed Network Protocol 3)** is primarily used in the electric and water utility and management industries. It is used to support communications between data acquisition systems and the system control equipment. This includes substation computers, remote terminal units (RTUs) (i.e., devices controlled by an embedded microprocessor), intelligent electronic devices (IEDs), and SCADA primary stations (i.e., control centers). DNP3 is an open and public standard. It is a multilayer protocol that functions similarly to TCP/IP in that it has link, transport, and transportation layers. It utilizes the Data Link Layer for reliable node-to-node data transfer. and At the Application Layer, DNP3 defines the format of messages, the functions that can be requested (e.g., reading or writing data points), and the way in which data points are represented.
 
 ***TCP/IP Model***
         - Application layer
