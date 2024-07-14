@@ -271,6 +271,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - disable remote management and enable secure communication only (such as over HTTPS)
             - review IoT vendor to understand their history with reported vulnerabilities, response time to vulnerabilities and their overall approach to security
             - not all IoT devices are suitable for enterprise networks
+            - Mirai malware affectes IoT, transforming them into a botnet
 - 3.5.9 Microservices
     - **Microservices**: a feature of web-based solutions and derivative of SOA 
         - A microservice is simply one element, feature, capability, business logic, or function of a web app that can be called upon or used by other web apps
@@ -463,7 +464,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 [3.7](#3.7) Understand methods of cryptanalytic attacks (OSG-9 Chpts 7,14,21)
 - 3.7.1 Brute force
     - **Brute force**: an attack that attempts every possible valid combination for a key or password
-        - they involve using massive amounts of processing power to methodically guess the key used to secure cryptographic communications
+        - they involve using massive amounts of processing power to methodically guess the key used to secure cryptographic communications. 
 - 3.7.2 Ciphertext only
     - **Ciphertext only**: an attack where you only have the encrypted ciphertext message at your disposal (not the plaintext)
         - if you have enough ciphertext samples, the idea is that you can decrypt the target ciphertext based on the samples
@@ -502,7 +503,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - **Pass the hash (PtH)**: a technique where an attacker captures a password hash (as opposed to the password characters) and then simply passes it through for authentication and potentially lateral access to other networked systems 
         - the threat actor doesn’t need to decrypt the hash to obtain a plain text password
         - PtH attacks exploit the authentication protocol, as the passwords hash remains static for every session until the password is rotated
-        - attackers commonly obtain hashes by scraping a system’s active memory and other techniques
+        - attackers commonly obtain hashes by scraping a system’s active memory and other techniques. MIMIKATZ is a popular tool to exploit pass the hash
 - 3.7.12 Kerberos exploitation
     - **Overpass the Hash**: alternative to the PtH attack, used when NTLM is disabled on the network (AKA pass the key) 
     - **Pass the Ticket**: in this attack, attackers attempt to harvest tickets held in the lsass.exe process 
@@ -519,7 +520,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - 2020 study, 56% of orgs suffered a ransomeware attack, 27% of orgs who reported an attack chose to pay, on average ~$1.1m 
         - seek legal advice prior to engaging with ransomware authors
      
-**Race condition**: The exploitation of the reliance of a system’s behavior on the sequence of events that occur externally
+**Race condition**: The exploitation of the reliance of a system’s behavior on the sequence of events that occur externally. Time of Check to Time of Use (TOCTOU) attack (attacker exploits the difference in time btw when a security control is verified and the data protected by the control is actually used)
 
 [3.8](#3.8) Apply security principles to site and facility design (OSG-9 Chpt 10)
 
@@ -685,3 +686,9 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - TLS - In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is ­protected using symmetric cryptography.
 
 **In a zero-knowledge proof**, one individual demonstrates to another that they can achieve a result that requires sensitive information without actually disclosing the sensitive information
+
+- **TEMPEST-derived technology** allows the electronic emanations that devices produce (known as Van Eck radiation) to be read from a distance (this process is known as Van Eck phreaking). TEMPEST eavesdropping or Van Eck phreaking countermeasures include the following:
+    - Faraday Cage
+    - White Noise
+    - Control Zone
+- The TEMPEST program creates technology that is not susceptible to Van Eck phreaking attacks because it reduces or suppresses natural electromagnetic emanations.
