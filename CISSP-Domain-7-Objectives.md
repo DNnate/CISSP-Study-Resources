@@ -204,8 +204,8 @@
         - **delivery**: attackers send the weapon to the target via phishing attacks, malicious email attachments, compromised websites, or other common social engineering methods
         - **exploitation**: the weapon exploits a vulnerability on the target system
         - **installation**: code that exploits the vulnerability then installs malware with a backdoor allowing attacker remote access
-        - **command and control**: attackers maintain a command and control system, which controls the target and other compromised systems
-        - actions on objectives: attackers execute their original goals such as theft of money, or data, destruction of assets, or installing additional malicious code (eg. ransomware)
+        - **command and control**: attackers maintain a command and control system, which controls the target and other compromised systems. Social media is commonly used as a command-and-control system for botnet activity.
+        - **actions on objectives**: attackers execute their original goals such as theft of money, or data, destruction of assets, or installing additional malicious code (eg. ransomware)
     
 - 7.2.7 User and Entity Behavior Analytics (UEBA)
     - **UEBA (aka UBA)**: focuses on the analysis of user and entity behavior as a way of detecting inappropriate or unauthorized activity (e.g. fraud, malware, insider attacks etc); analysis engines are typically included with SIEM solutions or may be added via subscription
