@@ -399,6 +399,7 @@ to misuse the application
 - NIST SP 800-86: "Guide to Integrating Forensic Techniques into Incident Response" - Discusses how to integrate forensic techniques into incident response.
 - NIST SP 800-122: "Guide to Protecting the Confidentiality of Personally Identifiable Information (PII)" - Provides guidelines for protecting the confidentiality of PII.
 - NIST SP 800-171: "Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations" - Specifies requirements for protecting controlled unclassified information.
+- NIST SP 800-115: titled "Technical Guide to Information Security Testing and Assessment," provides guidance on the planning, conducting, analyzing, and documenting information security/penetration testing and assessment activities. (Plan, Discover, Attack, Report _PDAC_)
 
 NIST Cybersecurity Framework (CSF): The NIST Cybersecurity Framework consists of standards, guidelines, and best practices to manage cybersecurity risk. It is organized into five core functions: Identify, Protect, Detect, Respond, and Recover.
 
