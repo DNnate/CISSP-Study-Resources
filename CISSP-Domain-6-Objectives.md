@@ -55,7 +55,7 @@
         - **SOC 2 Engagements**: assess the organization’s controls that affect the security (confidentiality, integrity, and availability) and privacy of information stored in a system
             - SOC 2 audit results are confidential and are usually only shared outside an org under an NDA
         - **SOC 3 Engagements**: assess the organization’s controls that affect the security (confidentiality, integrity, and availability) and privacy information stored in a system
-            - however, SOC3 audit results are intended for public disclosure
+            - however, SOC3 audit results are intended for public disclosure, and intended for distribution to third parties
     - Two types of SOC reports:
         - **Type I Reports**: provide the auditor’s opinion on the description provided by management and the suitability of the design of the controls
             - type I reports also cover only a specific point in time, rather than an extended period
