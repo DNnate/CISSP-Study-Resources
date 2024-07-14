@@ -349,6 +349,38 @@ to misuse the application
 - The NIST Cybersecurity Framework (CSF) and FedRAMP Security Assessment Framework (SAF) are both freely available as well and may be used to perform assessments with evaluation methods similar to those in NIST SP 800-­53A.
 - COBIT the Control Objectives for Information and Related Technologies, is commonly used as an audit framework for organizations.
 
+**Common Ports**
+- Line Printer Daemon (LPD) protocol: Port 515 
+- RAW or JetDirect protocol: Port 9100
+- FTP (File Transfer Protocol): Port 20 (Data Transfer), Port 21 (Control)
+- FTPS (FTP Secure): Ports 989 and 990
+- SFTP (SSH File Transfer Protocol): Port 22
+- SSH (Secure Shell): Port 22
+- Telnet: Port 23
+- SMTP (Simple Mail Transfer Protocol):Port 25
+- IMAP (Internet Message Access Protocol): Port 143
+- IMAPS (IMAP Secure): Port 993
+- POP3 (Post Office Protocol version 3): Port 110
+- POP3S (POP3 Secure): Port 995
+- TFTP (Trivial File Transfer Protocol): Port 69
+- SNMP (Simple Network Management Protocol): Port 161 (Agent), Port 162 (Manager)
+- LDAP (Lightweight Directory Access Protocol): Port 389
+- LDAPS (LDAP Secure): Port 636
+- RDP (Remote Desktop Protocol): Port 3389
+- SMB (Server Message Block): Port 445
+- Syslog: Port 514
+- Kerberos: Port 88
+- SQL Server: Port 1433
+- MySQL: Port 3306
+- Oracle DB: Port 1521
+- NTP (Network Time Protocol): Port 123
+- BGP (Border Gateway Protocol): Port 179
+- IKE (Internet Key Exchange): Port 500
+- L2TP (Layer 2 Tunneling Protocol): Port 1701
+- PPTP (Point-to-Point Tunneling Protocol): Port 1723
+- RADIUS (Remote Authentication Dial-In User Service): Port 1812 (Authentication), Port 1813 (Accounting)
+- NetBIOS: Ports 137-139
+- TACAS: Port 49
 
 **NIST Special Publication (SP) 800 Series:**
 
