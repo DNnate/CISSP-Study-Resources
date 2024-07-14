@@ -11,8 +11,8 @@ Networking can be one of the more complex exam topics; if you have a networking 
 - **Bound networks**: AKA wired/Ethernet networks, where devices are connected by physical cables
 - **Boundary routers**: they advertise routes that external hosts can use to reach internal hosts
 - **Bridge**: device that aggregates separate network segments into a single network segment, operating at OSI layer 2
-- **CSMA/CA**: Carrier Sense Multiple Access with Collission Avoidance is a method of network flow control
-- **CSMA/CD**: Carrier Sense Multiple Access with Colliion Detection is a method of network flow control, where if > 1 station accesses the network at the same time, other stations detect and re-try their transmission
+- **CSMA/CA**: Carrier Sense Multiple Access with Collission Avoidance is a method of network flow control. 802.11 wireless networking is an example of a network that employs CSMA/CA technologies. CSMA/CA attempts to avoid collisions by granting only a single permission to communicate at any given time.
+- **CSMA/CD**: Carrier Sense Multiple Access with Colliion Detection is a method of network flow control, where if > 1 station accesses the network at the same time, other stations detect and re-try their transmission. Ethernet networks employ the CSMA/CD technology. CSMA/CD responds to collisions by having each member of the collision domain wait for a short but random period of time before starting the process over.
 - **Circuit-switched network**: network that uses a dedicated circuit between endpoints
 - **CDMA**: Code-Division Multiple Access: a method of encoding several sources of data so they can all be transmitted over a single RF carrier by one transmitter, or by using a single RF carrier frequency with multiple transmitters; the data from each call is encoded with a unique key, and calls are transmitted at once
 - **Concentrator**: provides communication capability between many low-speed, usually asynchronous channels and one or more high-speed, usually synchronous channels. Usually different speeds, codes, and protocols can be accommodated on the low-speed side; multiplexed into one signal
@@ -133,6 +133,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - **Address Resolution Protocol (ARP)**: operates at layer 2
         - Switches & bridges function at this layer
         - Logical Link Control (LLC) is one of two sublayers that make up the Data Link Layer
+
+**DNP3 (Distributed Network Protocol 3)** is primarily used in the electric and water utility and management industries. It is used to support communications between data acquisition systems and the system control equipment. This includes substation computers, remote terminal units (RTUs) (i.e., devices controlled by an embedded microprocessor), intelligent electronic devices (IEDs), and SCADA primary stations (i.e., control centers). DNP3 is an open and public standard. It is a multilayer protocol that functions similarly to TCP/IP in that it has link, transport, and transportation layers. It utilizes the Data Link Layer for reliable node-to-node data transfer. and At the Application Layer, DNP3 defines the format of messages, the functions that can be requested (e.g., reading or writing data points), and the way in which data points are represented.
 
     - Physical Layer (1)
         - Converts a frame into bits for transmission/receiving over the physical connection medium
@@ -385,6 +387,7 @@ The components of a network make up the backbone of the logical infrastructure f
 lish communication sessions between trusted partners. In theory, they operate at the
 Session layer (layer 5) of the OSI model.
             - reasons for dropping a packet could include addresses that don’t exist on the network, ports or addresses that are blocked, or the content of the packet (e.g malicious packets blocked by admin policy)
+            - Tier 1 Firewall - One protected Zone e.g Internet & Tier 2 Firewall - Two Protected Zones e.g Internet and DMZ and so on.
         - IDP devices, which monitor the network for unusual network traffic and MAC or IP address spoofing, and then either alert on or actively stop this type of traffic
         - proxy/reverse proxies: 
             - proxy servers can be used to proxy internet-bound traffic, instead of letting clients talk directly
