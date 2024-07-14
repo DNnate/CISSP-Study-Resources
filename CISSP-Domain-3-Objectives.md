@@ -198,7 +198,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - 3.5.4 Cryptographic systems
     - Goal of a well-implemented cryptographic system is to make compromise too time-consuming and/or expensive 
     - Each component has vulnerabilities:
-        - **Kerckhoff's Principle** (AKA Kerckhoff's assumption): a cryptographic system should be secure even if everything about the system, except the key, is public knowledge
+        - **Kerckhoff's Principle** (AKA Kerckhoff's assumption): a cryptographic system should be secure even if everything about the system, except the key, is public knowledge. The principle can be summed up as “The enemy knows the system.”
         - Software: used to encrypt/decrypt data; can be a standalone app, command-line, built into the OS or called via API; like any software, there are likely bugs/issues, so regular patching is important
         - Keys: dictate how encryption is applied through an algorithm; a key should remain secret, otherwise the security of the encrypted data is at risk  
             - **key space**: represents all possible permutations of a key
@@ -646,3 +646,43 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - Battery backup/fail-over power (including UPS/generators):
         - this is a system that collects power into a battery but can switch over to pulling power from the battery when the power grid fails
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
+
+
+**DIGITAL SIGNATURES**: The Digital Signature Standard approves three encryption algorithms for use in digital signatures: 
+    - the Digital Signature Algorithm (DSA)
+    - the Rivest, Shamir, Adleman (RSA)algorithm;
+    - the Elliptic Curve DSA (ECDSA) algorithm.
+
+**HASHING**
+    - HMAC - Lenght variable
+    - HAVAL - Lenght 128, 160, 192, 224, 256
+    - MD2 - Lenght 128
+    - MD4 - Lenght 128
+    - MD5 - Lenght 128
+    - SHA-1 - Lenght 160
+    - SHA-224 - Lenght 224
+    - SHA-256 - Lenght 256
+    - SHA-384 - Lenght 384
+    - SHA-512 - Lenght 512
+
+**SYMMETRIC**
+    - AES- Block Cipher, Bock Size 128, Key Size 128, 192, 256
+    - Blowfish - Bock Size 64, Key Size 32 - 448
+    - DES - Block Cipher, Bock Size 64, Key Size 56
+    - 2DES - Block Cipher (vulnerable to meet-in-the-middle attack)
+    - 3DES - Block Cipher, Bock Size 64, Key Size 112, 168 
+    - IDEA - Bock Size 64, Key Size 128
+    - RC2 - Bock Size 128, Key Size 128
+    - RC4 - Stream Cipher, Key Size 128
+    - RC5 - RSA Block Mode Cipher, Bock Size 32, 64, 128, Key Size 0 - 2048
+    - Skipjack - Bock Size 64, Key Size 80
+    - Twofish - Bock Size 128, Key Size 1-256
+
+**ASSYMETRIC (use a pair of keys for each user)**
+    - RSA - Key Transport Algorithm, Size 512
+    - Diffie-Hellman - Key Exchange Algorithm
+    - EL Gamal - Key Exchange Algorithm
+    - ECC - Elliptic Curve Algorithm, Size Variable (smaller key size due to 160 EC Key = 1024 RSA)
+    - TLS - In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is ­protected using symmetric cryptography.
+
+**In a zero-knowledge proof**, one individual demonstrates to another that they can achieve a result that requires sensitive information without actually disclosing the sensitive information
