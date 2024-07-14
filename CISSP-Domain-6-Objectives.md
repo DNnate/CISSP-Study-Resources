@@ -330,6 +330,11 @@ to misuse the application
             - Loop Coverage
             - Statement Coverage
 
+- Test coverage report measures how many of the test cases have been completed and is used as a way to provide test metrics when using test cases.
+- Penetration test report is provided when a penetration test is conducted.
+- Code coverage report covers how much of the code has been tested
+- Line coverage report is a type of code coverage report.
+
 **Time to remediate a vulnerability**is a commonly used key performance indicator for security teams.
 
 **Common Audit Frameworks**
