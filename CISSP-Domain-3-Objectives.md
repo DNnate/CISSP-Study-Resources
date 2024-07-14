@@ -647,14 +647,12 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - this is a system that collects power into a battery but can switch over to pulling power from the battery when the power grid fails
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
 
-**DIGITAL SIGNATURES**: The Digital Signature Standard approves three encryption algorithms for use in digital signatures: 
-
+- **DIGITAL SIGNATURES**: The Digital Signature Standard approves three encryption algorithms for use in digital signatures: 
     - the Digital Signature Algorithm (DSA)
     - the Rivest, Shamir, Adleman (RSA)algorithm;
     - the Elliptic Curve DSA (ECDSA) algorithm.
 
-**HASHING**
-
+- **HASHING**
     - HMAC - Lenght variable
     - HAVAL - Lenght 128, 160, 192, 224, 256
     - MD2 - Lenght 128
@@ -666,8 +664,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - SHA-384 - Lenght 384
     - SHA-512 - Lenght 512
 
-**SYMMETRIC**
-
+- **SYMMETRIC**
     - AES- Block Cipher, Bock Size 128, Key Size 128, 192, 256
     - Blowfish - Bock Size 64, Key Size 32 - 448
     - DES - Block Cipher, Bock Size 64, Key Size 56
@@ -680,8 +677,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - Skipjack - Bock Size 64, Key Size 80
     - Twofish - Bock Size 128, Key Size 1-256
 
-**ASSYMETRIC (use a pair of keys for each user)**
-
+- **ASSYMETRIC (use a pair of keys for each user)**
     - RSA - Key Transport Algorithm, Size 512
     - Diffie-Hellman - Key Exchange Algorithm
     - EL Gamal - Key Exchange Algorithm
