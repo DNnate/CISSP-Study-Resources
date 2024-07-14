@@ -382,6 +382,11 @@ to misuse the application
 - RADIUS (Remote Authentication Dial-In User Service): Port 1812 (Authentication), Port 1813 (Accounting)
 - NetBIOS: Ports 137-139
 - TACAS: Port 49
+- XMPP (Extensible Messaging and Presence Protocol): Port 5222
+- VNC (Virtual Network Computing): Port 5900
+- NFS (Network File System): Port 2049
+- OpenVPN: Port 1194
+- PostgreSQL: Port 5432
 
 **NIST Special Publication (SP) 800 Series:**
 
