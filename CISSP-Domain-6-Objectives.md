@@ -331,3 +331,60 @@ to misuse the application
             - Statement Coverage
 
 **Time to remediate a vulnerability**is a commonly used key performance indicator for security teams.
+
+**Common Audit Frameworks**
+- SSAE 18 is the Statement on Standards for Attestation Engagements that is used by auditors when performing audits for SOC 2.
+- ISO/IEC 15408-­1:2009, “Information technology —­Security techniques —­ Evaluation criteria for IT security,” is the foundation for the Common Criteria certification, which is a formal assessment process for technology products against a defined set of security functional requirements. This document and ISO/IEC 18045 are available free of charge.
+- ISO/IEC 18045:2008, “Information technology —­Security techniques —­Methodology for IT security evaluation,” is a companion to ISO 15048 and provides standards for consistent criteria and evaluation methods.
+- ISO/IEC 27006:2015, “Information technology —­Security techniques —­ Requirements for bodies providing audit and certification of information security management systems,” is the official set of requirements and guidance for auditors performing certification audits against ISO 27001.
+- NIST Special Publication (SP) 800-­53A, “Assessing Security and Privacy Controls in Federal Information Systems and Organizations,” is a guide to assessing the controls outlined in NIST SP 800-­53. It introduces a simple set of testing procedures to assess control effectiveness: test, examine, or interview. 
+- The NIST Cybersecurity Framework (CSF) and FedRAMP Security Assessment Framework (SAF) are both freely available as well and may be used to perform assessments with evaluation methods similar to those in NIST SP 800-­53A.
+
+
+**NIST Special Publication (SP) 800 Series:**
+
+- NIST SP 800-30: "Guide for Conducting Risk Assessments" - Provides guidance on conducting risk assessments.
+- NIST SP 800-37: "Risk Management Framework for Information Systems and Organizations" - Outlines the Risk Management Framework (RMF) for federal information systems.
+- NIST SP 800-39: "Managing Information Security Risk" - Provides guidelines for an integrated, organization-wide program for managing information security risk.
+- NIST SP 800-53: "Security and Privacy Controls for Information Systems and Organizations" - Provides a catalog of security and privacy controls for federal information systems and organizations.
+- NIST SP 800-61: "Computer Security Incident Handling Guide" - Offers guidelines for handling computer security incidents.
+- NIST SP 800-82: "Guide to Industrial Control Systems (ICS) Security" - Provides guidance on securing industrial control systems.
+- NIST SP 800-86: "Guide to Integrating Forensic Techniques into Incident Response" - Discusses how to integrate forensic techniques into incident response.
+- NIST SP 800-122: "Guide to Protecting the Confidentiality of Personally Identifiable Information (PII)" - Provides guidelines for protecting the confidentiality of PII.
+- NIST SP 800-171: "Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations" - Specifies requirements for protecting controlled unclassified information.
+
+NIST Cybersecurity Framework (CSF): The NIST Cybersecurity Framework consists of standards, guidelines, and best practices to manage cybersecurity risk. It is organized into five core functions: Identify, Protect, Detect, Respond, and Recover.
+
+**Federal Information Processing Standards (FIPS):**
+
+- FIPS 199: "Standards for Security Categorization of Federal Information and Information Systems" - Establishes security categories for information and information systems.
+- FIPS 200: "Minimum Security Requirements for Federal Information and Information Systems" - Specifies minimum security requirements for federal information systems.
+- FIPS 140-3: "Security Requirements for Cryptographic Modules" - Specifies requirements for cryptographic modules.
+
+**ISO/IEC 27000 Series:**
+
+- ISO/IEC 27001: "Information Security Management Systems (ISMS) – Requirements" - Specifies the requirements for establishing, implementing, maintaining, and continually improving an information security management system.
+- ISO/IEC 27002: "Code of Practice for Information Security Controls" - Provides guidelines and general principles for initiating, implementing, maintaining, and improving information security management in an organization.
+- ISO/IEC 27005: "Information Security Risk Management" - Provides guidelines for information security risk management, including risk assessment and treatment.
+- ISO/IEC 27017: "Code of Practice for Information Security Controls Based on ISO/IEC 27002 for Cloud Services" - Provides guidelines for information security controls applicable to the provision and use of cloud services.
+- ISO/IEC 27018: "Code of Practice for Protection of Personally Identifiable Information (PII) in Public Clouds Acting as PII Processors" - Provides guidelines for the protection of PII in cloud computing environments.
+- ISO/IEC 27031: "Guidelines for Information and Communication Technology Readiness for Business Continuity" - Provides guidelines for ICT readiness for business continuity.
+- ISO/IEC 27035: "Information Security Incident Management" - Provides guidelines for the management of information security incidents, including planning and response.
+- ISO/IEC 27701: "Privacy Information Management System" - Provides guidelines for establishing, implementing, maintaining, and continually improving a Privacy Information Management System (PIMS) based on the requirements of ISO/IEC 27001.
+
+**ISO 31000 Series:**
+
+- ISO 31000: "Risk Management – Guidelines" - Provides principles and generic guidelines on risk management.
+- ISO 31010: "Risk Management – Risk Assessment Techniques" - Provides guidance on the selection and application of techniques for assessing risk in a wide range of situations.
+
+**ISO/IEC 20000 Series:**
+
+- ISO/IEC 20000-1: "Information Technology – Service Management – Part 1: Service Management System Requirements" - Specifies requirements for establishing, implementing, maintaining, and continually improving a service management system (SMS).
+- ISO/IEC 20000-2: "Information Technology – Service Management – Part 2: Guidance on the Application of Service Management Systems" Provides guidance on the application of an SMS based on ISO/IEC 20000-1.
+
+**SSAE 18:** "Attestation Standards: Clarification and Recodification" - This standard, effective since May 1, 2017, provides guidance on performing and reporting on examination, review, and agreed-upon procedures engagements. It includes guidelines for reports on controls at service organizations, consolidating and clarifying previous standards.
+- SOC Reports under SSAE 18:
+
+    - SOC 1 (which focuses on controls at a service organization relevant to user entities’ internal control over financial reporting) and SOC 2 (which controls relevant to security, availability, processing integrity, confidentiality, and privacy) both have Type I (specific point in time) and Type II (over a specified period) reports.
+    - SOC 3 does not have separate Type I or Type II reports; it provides a general-purpose report suitable for public distribution.
+
