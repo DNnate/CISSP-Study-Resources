@@ -335,6 +335,9 @@ to misuse the application
 - Code coverage report covers how much of the code has been tested
 - Line coverage report is a type of code coverage report.
 
+**Time of Check to Time of Use**
+- Computer systems perform tasks with rigid precision. Computers excel at repeatable tasks. Attackers can develop attacks based on the predictability of task execution. The common sequence of events for an algorithm is to check that a resource is available and then access it if you are permitted. The **time of check (TOC)** is the time at which the subject checks on the status of the object. There may be several decisions to make before returning to the object to access it. When the decision is made to access the object, the procedure accesses it at the **time of use (TOU)**. The difference between the TOC and the TOU is sometimes large enough for an attacker to replace the original object with another object that suits their own needs. Time of check to time of use (TOCTTOU or TOC/TOU) attacks are often called race conditions. When testing in a non-production environment, the changes from a testing environment with instrumentation inserted into the code and the production environment for the code can mask timing-related issues like race conditions.
+
 **Time to remediate a vulnerability**is a commonly used key performance indicator for security teams.
 
 **Common Audit Frameworks**
