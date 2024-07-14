@@ -586,6 +586,13 @@ flooding and fire are examples of natural disasters.
         - **electronic vaulting**: where database backups are moved to a remote site using bulk transfers
         - **remote journaling**: data transfers are performed in a more expeditious manner; remote journaling is similar to electronic vaulting in that transaction logs transferred to the remote site are not applied to a live database server but are maintained in a backup device
         - **remote mirroring**: the most advanced db backup solution, and the most expensive, with remote mirroring, a live db server is maintained at the backup site; the remote server receives copies of the db modifications at the same time they are applied to the production server at the primary site
+
+- **Backup Tape Rotation** There are several commonly used tape rotation strategies for backups:
+	- the Grandfather-­Father-­Son (GFS) strategy: This is a tiered backup scheme that uses daily (son), weekly (father), and monthly (Grandfather) backup tapes.
+ 	- the Tower of Hanoi strategy: Uses a series of tapes labeled with numbers that follow the recursive pattern of the Tower of Hanoi puzzle. The nth backup tape is used at intervals of 2^𝑛 days
+	- the Six Cartridge Weekly Backup strategy: A simple weekly backup rotation strategy that uses Six tapes labeled Monday through Saturday.
+ - These strategies can be fairly complex, especially with large tape sets. They can be implemented manually using a pencil and a calendar or automatically by using either commercial backup software or a fully automated hierarchical storage management (HSM) system. An HSM system is an automated robotic backup jukebox consisting of 32 or 64 optical or tape backup devices. All the drive elements within an HSM system are configured as a single drive array (a bit like RAID).
+
 - 7.10.2 Recovery site strategies
     - Non-disaster: service disruption with significant but limited impact
     - Disaster: event that causes an entire site to be unusable for a day or longer (usually requires alternate processing facility)
