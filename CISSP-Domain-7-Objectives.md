@@ -542,7 +542,8 @@
 
 [7.10](#7.10) Implement recovery strategies (OSG-9 Chpt 18)
 - **Recovery strategy**: a plan for restoring critical business components, systems, and operations following a disruption
-- **Disaster recovery (DR)**: set of practices that enables an organization to minimize loss of, and restore, mission-critical technology infrastructure after a catastrophic incident 
+- **Disaster recovery (DR)**: set of practices that enables an organization to minimize loss of, and restore, mission-critical technology infrastructure after a catastrophic incident. A disaster is any event that can disrupt normal IT operations and can be either natural or manmade. Hacking and terrorism are examples of manmade disasters, while
+flooding and fire are examples of natural disasters.
 - **Business continuity (BC)**: set of practices that enables an organization to continue performing its critical functions through and after any disruptive event
 - 7.10.1 Backup storage strategies
     - Backup strategies are driven by org goals and objectives and usually focus on backup and restore time as well as storage needs
@@ -744,7 +745,8 @@
 [7.12](#7.12) Test Disaster Recovery Plans (DRP) (OSG-9 Chpt 18)
 - Every DR plan must be tested on a periodic basis to ensure that the plan’s provisions are viable and that it meets an org’s changing needs
 - Five main test types:
-    - checklist tests
+    - **checklist tests:** The checklist review is the least disruptive type of disaster recovery test. During a check-
+list review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes.
     - structured walk-throughs
     - simulation tests
     - parallel tests
@@ -754,6 +756,7 @@
         - ensure that key personnel are aware of their responsibilities and have that knowledge refreshed periodically
         - provide individuals with an opportunity to review and update plans, remvoving obsolete info
         - helps identify situations in which key personnel have left the company and the DR responsibility needs to be re-assigned (note that DR responsibilities should be included in job descriptions)
+        - During a tabletop exercise, team members come together and walk through a scenario without making any changes to information systems.
 - 7.12.2 Walkthrough
     - **Structured walk-through**: AKA tabletop exercise, takes testing one step further, where members of the DR team gather in a large conference room and role-play a disaster scenario
         - the team refers to their copies of the DR plan and discuss the appropriate responses to that particular type of disaster
@@ -766,10 +769,12 @@
     - **Parallel tests**: represent the next level, and involve relocating personnel to the alternate recovery site and implementing site activation procedures
         - the relocated employees perform their DR responsibilities just as they would for an actual disaster
         - operations at the main facility are not interrupted
+        - During a parallel test, the team actually activates the disaster recovery site for testing, but the primary site remains operational.
 
 - 7.12.5 Full interruption
     - **Full-interruption tests**: operate like parallel tests, but involve actually shutting down operations at the primary site and shifting them to the recovery site
         - these tests involve a significant risk (shutting down the primary site, transfer recovery ops, followed by the reverse) and therefore are extremely difficult to arrange (management resistance to these tests are likely)
+        - During a full interruption test, the team takes down the primary site and confirms that the disaster recovery site is capable of handling regular operations. The full interruption test is the most thorough test but also the most disruptive.
 
 [7.13](#7.13) Particpate in Business Continuity (BC) planning and exercises (OSG-9 Chpt 3)
 
