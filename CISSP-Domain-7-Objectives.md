@@ -461,6 +461,7 @@
     - **Honeynet**: two or more networked honeypots used together to simulate a network
     - They look and act like legit systems, but they do not host data of any real value for an attacker; admins often configure honeypots with vulnerabilities to tempt intruders into attacking them
     - In addition to keeping the attacker away from a production environment, the honeypot allows administrators to observe an attacker’s activity without compromising the live environment
+    - A pseudoflaw is a false vulnerability in a system that may distract an attacker. This can also be added to honeypots
 - 7.7.7 Anti-malware
     - **Malware**: program inserted into a system with the intent of compromising the CIA of the victim's data, applications, or  OS; malicious software that negatively impacts a system
     - The most important protection against malicious code is the use of antimalware software with up-to-date signature files and heuristic capabilities
