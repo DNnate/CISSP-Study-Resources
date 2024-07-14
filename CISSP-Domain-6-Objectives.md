@@ -97,6 +97,7 @@ raw packets, and a user may be restricted by the operating system from sending h
         - database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
     - Active Scanning is useful for testing IDS or IPS systems. Scripted attacks are part of active scanning
     - Passive scanning can help identify rogue devices by capturing MAC address vendor IDs that do not match deployed devices, by verifying that systems match inventories of organizationally owned hardware by hardware address, and by monitoring for rogue SSIDs or connections.
+    - Authenticated Vulnerability scans use a read-only account to access configuration files, allowing more accurate testing of vulnerabilities.
 
 - 6.2.2 Penetration testing
     - Penetration tests goes beyond vulnerability testing techniques because it actually attempts to exploit systems. In most organizations, senior management needs to approve penetration tests due to the risk to the organization and the potential impact of the test. In a small number of organizations, the service owner may be able to make this decision, but penetration tests often have broader impacts than a single service, meaning that senior management is the proper approval path.
