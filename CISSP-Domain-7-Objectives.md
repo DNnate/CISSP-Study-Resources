@@ -847,11 +847,23 @@ list review, team members each review the contents of their disaster recovery ch
     - Duress systems are useful when personnel are working alone
     - If a duress system is activated accidentally code word(s) can be used to assure responding personnel it was an accident, or omit the word(s) keying an actual response
  
-**RING PROTECTION**
-Ring 0 The kernel lies within the central ring 
-Ring 1 Conceptually contains other operating system components. 
-Ring 2 is used for drivers and protocols. 
-Ring 3 User-level programs and applications run at 3. 
-Note: Rings 0 through 2 run in privileged mode while Ring 3 runs in user mode. It is important to note that many modern operating systems do not fully ­implement this model.
+- **RING PROTECTION**
+ - Ring 0 The kernel lies within the central ring
+ - Ring 1 Conceptually contains other operating system components.
+ - Ring 2 is used for drivers and protocols.
+ - Ring 3 User-level programs and applications run at 3. 
+- Note: Rings 0 through 2 run in privileged mode while Ring 3 runs in user mode. It is important to note that many modern operating systems do not fully ­implement this model.
+
+-**DDOS Attacks**:
+- SYN Flood: In a SYN flood attack, the attacker sends a large number of SYN packets to a system but does not respond to the SYN/ACK packets, attempting to overwhelm the attacked system’s connection state table with half-open connections.
+- Smurf: A Smurf attack is a type of DDoS (Distributed Denial of Service) attack where an attacker sends a large number of ICMP echo request packets to a broadcast address, with the source address spoofed to that of the target.
+- Ping Flood (or ICMP Flood): attack involves overwhelming the target with a large number of ICMP echo request (ping) packets. Unlike a Smurf attack, it doesn't rely on amplification via broadcast addresses
+- Fraggle attack: is similar to a Smurf attack but uses UDP echo packets instead of ICMP.
+- TCP Reset Attack: Another type of attack that manipulates the TCP session is the TCP reset attack. Sessions
+are normally terminated with either the FIN (finish) or the RST (reset) packet. Attackers can spoof the source IP address in a RST packet and disconnect active sessions. The two systems then need to reestablish the session. This is primarily a threat for systems that need persistent sessions to maintain data with other systems. When the session is reestablished, they need to re-­create the data, so it’s much more involved than just sending three packets back and forth to establish the session.
+- Ping of Death: A ping-­of-­death attack used oversized ping packets. Some operating systems couldn’t handle them. In some cases, the systems crashed, and in other cases, the attack caused a buffer overflow error (legacy).
+- Teardrop: A teardrop attack fragments data packets, making them difficult or impossible to be put back together by the receiving system. This often caused systems to crash (legacy).
+- Land: In a land attack, the attack sends spoofed SYN packets to a victim using the victim’s IP address as both the source and destination IP address. A variant is a banana attack, which redirects outgoing messages from a system back to the system, shutting down all external communication (legacy).
+	
 
 
