@@ -12,7 +12,8 @@
 - **Event**: observable occurance in a network or system
 - **Hackback**: actions taken by a victim of hacking to compromise the systems of the alleged attacker
 - **Heuristics**: method of machine learning which identifies patterns of acceptable activity, so that deviations from the patterns will be identified
-- **Incident**: an event which potentially or actually jeopardizes the CIA of an information system or the info the system processes, stores, transmits
+- **Incident**: an event which potentially or actually jeopardizes the CIA of an information system or the info the system processes, stores, transmits. Security incidents negatively affect the confidentiality, integrity, or availability of
+information or assets and/or violate a security policy. e.g backup failure, unauthorized vulnerability scan, ransomware
 - **Indicator**: technical artifact or observable occurrence suggesting that an attack is imminent, currently underway, or already occured
 - **Indicators of Compromise (IoC)**: a signal that an intrusion, malware, or other predefined hostile or hazardous set of events has or is occurring
 - **Information Security Continuous Monitoring (ICSM)**: maintaining ongoing awareness of information security, vulnerabilities and threats to support organizational risk management decisions; ongoing monitoring sufficient to ensure and assure effectiveness of security controls
