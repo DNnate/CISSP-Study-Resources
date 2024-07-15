@@ -204,7 +204,7 @@
 
 - 2.6.4 Data protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB))
   - **Data protection methods** include: 
-    - **digital rights management (DRM)**: methods used in attempt to protect copyrighted materials
+    - **digital rights management (DRM)**: methods used in attempt to protect copyrighted materials. there is hardware and software based DRMs.
     - **Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network
       - note that entities must comply with the EU GDPR, and use additional data protection methods such as pseudonymization, tokenization, and anonymization
   - One of the primary methods of protecting the confidentiality of data is encryption
