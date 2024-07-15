@@ -149,7 +149,7 @@
 - 7.2.1 Intrusion detection and prevention
     - **Intrusion**: a security event, or a combination of multiple security events that constitutes an incident; occurs when an attacker attempts to bypass or can bypass or thwart security mechanisms and access an organization’s resources without the authority to do so
     - **Intrusion detection**: a specific form of monitoring events, usually in real time, to detect abnormal activity indicating a potential incident or intrusion
-    - **Intrusion Detection System (IDS)**: a security service that monitors and analyzes network or system events for the purpose of finding/providing realtime/neartime warnings of unauthorized attempts to access system resources; automates the inspection of logs and real-time system events to detect intrusion attempts and system failures
+    - **Intrusion Detection System (IDS)**: a security service that monitors and analyzes network or system events for the purpose of finding/providing realtime/neartime warnings of unauthorized attempts to access system resources; automates the inspection of logs and real-time system events to detect intrusion attempts and system failures. It provides only _passive_ responses, such as alerting administrators to a suspected attack
         - an IDS is intended as part of a defense-in-depth security plan
     - **Intrusion Prevention Systems (IPS)**: a security service that uses available info to determine if an attack is underway, alerting and also blocking attacks from reaching intended target; includes detection capabilities, you’ll also see them referred to as intrusion detection and prevention systems (IDPSs)
     - NIST SP 800-94 Guide to Intrusion Detection and Prevention Systems provides comprehensive coverage of both IDS and IPS
@@ -269,6 +269,8 @@
 - 7.4.5 Service Level Agreements (SLA)
     - **Service Level Agreement (SLA)**: an agreement between an organization and an outside entity, such as a vendor, where the SLA stipulates performance expectations and often includes penalties if the vendor doesn’t meet these expectations
     - **Memoradum of Understanding (MOU)**: documents the intention of two entities to work together toward a common goal
+    - **Operational Level Agreement (OLA)**: is between internal service organizations and does not involve customers.
+    - **Statement of Work (SOW)**: SOW is an addendum to a contract describing work to be performed.
 
 [7.5](#7.5) Apply resource protection (OSG-9 Chpt 16)
 - Media management should consider all types of media as well as short- and long-term needs and evaluate:
@@ -732,6 +734,7 @@ flooding and fire are examples of natural disasters.
         - initial training for employees taking on a new DR role for the first time
         - detailed refresher training for DR team members
         - brief awareness refreshers for all other employees
+        - **Entitlement** refers to the privileges granted to new users when an account is first provisioned.
 - 7.11.7 Lessons learned
     - A lessons learned session should be conducted at the conclusion of any disaster recovery operation or other security incident
     - The lessons learned process is designed to provide everyone involved with the incident response effort an opportunity to reflect on their individual roles and the teams overall response
