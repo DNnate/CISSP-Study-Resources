@@ -853,3 +853,5 @@ Ring 1 Conceptually contains other operating system components.
 Ring 2 is used for drivers and protocols. 
 Ring 3 User-level programs and applications run at 3. 
 Note: Rings 0 through 2 run in privileged mode while Ring 3 runs in user mode. It is important to note that many modern operating systems do not fully ­implement this model.
+
+
