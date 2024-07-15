@@ -33,7 +33,7 @@ information or assets and/or violate a security policy. e.g backup failure, unau
         - sealing off access to the area or crime scene
         - taking images of the scene
         - documenting evidence
-        - ensuring evidence (e.g. computers, mobile devices, portable drives etc) is not contacted, tampered with, or destroyed
+        - ensuring evidence (e.g. computers, mobile devices, portable drives etc) is not contacted, tampered with, or destroyed. To be admissible, evidence must be relevant, material, and competent (legally obtained).
         - Proportionality: The benefits of additional discovery must be proportional to the additional costs that they will require. This prevents additional discovery requests from becoming inordinately expensive, and the requester will typically have to justify these requests to the judge presiding over the case.
         - _Interviews_ occur when investigators meet with an individual who may have information relevant to their investigation but is not a suspect. If the individual is a suspect, then the meeting is an _interrogation_.
     - general principles:
