@@ -427,6 +427,18 @@ information or assets and/or violate a security policy. e.g backup failure, unau
     - Use up-to-date antimalware software
     - Use firewalls
     - Implement configuration and system management processes
+
+- **NIST SP 800-137**: organizations should use the following factors to ­determine assessment and monitoring frequency:
+- security control volatility
+- system ­categorizations/impact levels
+- security controls or specific assessment objects providing ­critical functions
+- security controls with identified weaknesses
+- organizational risk tolerance
+- threat information
+- vulnerability information
+- risk assessment results
+- the output of ­monitoring strategy reviews
+- reporting requirements.
     
 - 7.7.1 Firewalls (e.g. next generation, web application, network)
     - Firewalls are preventive and technical controls
