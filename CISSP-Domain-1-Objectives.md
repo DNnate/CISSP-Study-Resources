@@ -6,16 +6,16 @@
 - 1.1.1 (ISC)² Code of Professional Ethics
   - (ISC)² Code of Professional Ethics -- take the time to read the [code of ethics](www.isc2.org/Ethics)
   - At a minimum, know and understand the ethics canons:
-    - **Protect society, the common good, necessary public trust and confidence, and the infrastructure**
+    - **I: Protect society, the common good, necessary public trust and confidence, and the infrastructure**
       - this is “do the right thing”; put the common good ahead of yourself 
       - ensure that the public can have faith in your infrastructure and security
-    - **Act honorably, honestly, justly, responsibly, and legally**
+    - **II: Act honorably, honestly, justly, responsibly, and legally**
       - always follow the laws 
       - but if you find yourself working on a project where conflicting laws from different countries or jurisdictions apply, you should prioritize the local jurisdiction from which you are performing the services
-    - **Provide diligent and competent service to principles** 
+    - **III: Provide diligent and competent service to principles** 
       - avoid passing yourself as an expert or as qualified in areas that you aren’t 
       - maintain and expand your skills to provide competent services
-    - **Advance and protect the profession**
+    - **IV: Advance and protect the profession**
       - don’t bring negative publicity to the profession 
       - provide competent services, get training and act honorably 
       - think of it like this: If you follow the first three canons in the code
@@ -23,6 +23,12 @@
 - 1.1.2 Organizational code of ethics
   - You must also support ethics at your organization; this can be interpreted to mean evangelizing ethics throughout the organization, providing documentation and training around ethics, or looking for ways to enhance the existing organizational ethics 
     - some organizations might have slightly different ethics than others, so be sure to familiarize yourself with your org’s ethics and guidelines
+
+   - **Code of Ethics Complaints**: (ISC)2 members who encounter a potential violation of the Code of Ethics may report the
+possible violation to (ISC)2 for investigation by filing a formal ethics complaint, identifying the specific canon of the Code of Ethics that the member believes has been violated. Complaints under the Code of Ethics must be in writing and in the form of a sworn affidavit. Furthermore, complaints are only accepted from those who believe they have been injured by the alleged behavior. This personal injury provides standing to file a complaint and is determined based on the canon involved:
+  - Any member of the general public may file a complaint involving canons I or II.
+  - Only an employer or someone with a contracting relationship with the individual may file a complaint under canon III.
+  - Other professionals may file a complaint under canon IV. It is important to note that this is not limited to cybersecurity professionals. Anyone who is certified or licensed as a professional and subscribes to a code of ethics as part of that licensure or certification is eligible to file a canon IV complaint.
 
 [1.2](#1.2) Understand and apply security concepts (OSG-9 Chpt 1)
 - 1.2.1 Confidentiality, integrity, and availability, authenticity and nonrepudiation (5 Pillars)
