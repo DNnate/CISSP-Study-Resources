@@ -207,6 +207,7 @@ reassembles the activity of individual users to track their interaction with a w
     - Account management reviews ensure that users only retain authorized permissions and that unauthorized modifications do not occur
     - Full review of accounts: time-consuming to review all, and often done only for highly privileged accounts
     - Organizations that don’t have time to conduct a full review process may use sampling, but only if sampling is truely random
+    - The two main methods of choosing records from a large pool for further analysis are sampling and clipping. **Sampling** uses statistical techniques to choose a sample that is representative of the entire pool, while **clipping** uses threshold values to select those records that exceed a predefined threshold because they may be of most interest to analysts.
     - Adding accounts: should be a well-defined process, and users should sign AUP
     - Adding, removing, and modifying accounts and permissions should be carefully controlled and documented
     - Accounts that are no longer needed should be suspended
