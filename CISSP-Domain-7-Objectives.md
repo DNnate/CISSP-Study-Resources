@@ -492,6 +492,9 @@ information or assets and/or violate a security policy. e.g backup failure, unau
         - rootkit: Similar to stealth malware, a rootkit attempts to mask its presence on a system; typically includes a collection of malware tools that an attacker can utilize according to specific goals
         - zero-day: is any type of malware that's never been seen in the wild before, and the vendor of the impacted product is unaware (or hasn't issued a patch), as are security companies that create anti-malware software intended to protect systems; previously unreported vuln which can be potentially exploited without risk of detection or prevention until system owner/developer detects and corrects vuln; gets name from the "zero time" being the time at which the exploit or vuln is first identified by the systems' owners or builders; AKA zero-hour exploit, zero-day attack
 
+**Saboage**: An attack committed against an organization by an insider, such as an employee, is known as sabotage. Sabotage refers to deliberate actions intended to disrupt, damage, destroy, or compromise an organization's operations, assets, infrastructure, or reputation.
+**Espionage**: This involve the theft of sensitive information and unauthorized access or collection of sensitive or confidential information for the purpose of gaining a competitive advantage, political advantage, or other nefarious motives.
+
 - 7.7.8 Machine learning and Artificial Intelligence (AI) based tools
     - **AI**: gives machines the ability to do things that a human can do better or allows a machine to perform tasks that we previously thought required human intelligence
     - **Machine Learning**: a subset of AI and refers to a system that can improve automatically through experience
