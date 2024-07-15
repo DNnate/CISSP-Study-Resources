@@ -276,6 +276,7 @@ information or assets and/or violate a security policy. e.g backup failure, unau
     - **Memoradum of Understanding (MOU)**: documents the intention of two entities to work together toward a common goal
     - **Operational Level Agreement (OLA)**: is between internal service organizations and does not involve customers.
     - **Statement of Work (SOW)**: SOW is an addendum to a contract describing work to be performed.
+    - **Software Escrow Agreements** place a copy of the source code for a software package in the hands of an independent third party who will turn the code over to the customer if the vendor ceases business operations.
 
 [7.5](#7.5) Apply resource protection (OSG-9 Chpt 16)
 - Media management should consider all types of media as well as short- and long-term needs and evaluate:
@@ -412,7 +413,7 @@ information or assets and/or violate a security policy. e.g backup failure, unau
         - motion detectors
         - recording and reviewing of events captured by security cameras
         - job rotation policies
-        - mandatory vacation policies
+        - mandatory vacation policies (At least 1 week)
         - audit trails
         - honeypots or honeynets
         - intrusion detection systems
