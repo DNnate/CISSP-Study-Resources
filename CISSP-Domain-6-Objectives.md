@@ -399,6 +399,7 @@ to misuse the application
 - NIST SP 800-82: "Guide to Industrial Control Systems (ICS) Security" - Provides guidance on securing industrial control systems.
 - NIST SP 800-86: "Guide to Integrating Forensic Techniques into Incident Response" - Discusses how to integrate forensic techniques into incident response.
 - NIST SP 800-94 Guide to Intrusion Detection and Prevention Systems provides comprehensive coverage of both IDS and IPS
+- NIST SP 800-137: titled "Information Security Continuous Monitoring (ISCM) for Federal Information Systems and Organizations," provides guidelines for implementing continuous monitoring strategie
 - NIST SP 800-115: titled "Technical Guide to Information Security Testing and Assessment," provides guidance on the planning, conducting, analyzing, and documenting information security/penetration testing and assessment activities. (Plan, Discover, Attack, Report _PDAC_)
 - NIST SP 800-122: "Guide to Protecting the Confidentiality of Personally Identifiable Information (PII)" - Provides guidelines for protecting the confidentiality of PII.
 - NIST SP 800-171: "Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations" - Specifies requirements for protecting controlled unclassified information.
