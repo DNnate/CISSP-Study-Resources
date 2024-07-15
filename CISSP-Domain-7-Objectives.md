@@ -156,6 +156,8 @@ information or assets and/or violate a security policy. e.g backup failure, unau
         - an IDS is intended as part of a defense-in-depth security plan
     - **Intrusion Prevention Systems (IPS)**: a security service that uses available info to determine if an attack is underway, alerting and also blocking attacks from reaching intended target; includes detection capabilities, you’ll also see them referred to as intrusion detection and prevention systems (IDPSs)
     - NIST SP 800-94 Guide to Intrusion Detection and Prevention Systems provides comprehensive coverage of both IDS and IPS
+    - **Host-­based IDSs (HIDSs)** can monitor activity on a single system only. A drawback is that attackers can discover and disable them. HIDS may be able to detect unauthorized processes running on a system.
+    - **Network-­based IDS (NIDS)** can monitor activity on a network, and an NIDS isn’t as visible to attackers. They may  not notice rogue processes
 - 7.2.2 Security Information and Event Management (SIEM)
     - Security Information and Event Management (SIEM): systems that ingest logs from multiple sources, compile and analyze log entries, and report relevant information
         - SIEM systems are complex and require expertise to install and tune
