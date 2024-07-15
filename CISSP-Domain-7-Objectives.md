@@ -425,7 +425,7 @@
     - Types of firewalls:
         - application gateway firewall: filters traffic based on specific application requirements
         - circuit-level gateway firewall: designed to provide connection security to internal and external computers in a network's session layer, they filter traffic based on the communications circuit; they do not engage in packet filtering based on packet contents
-        - third-generation firewalls: (AKA stateful inspection firewalls and dynamic packet filtering firewalls) filter traffic based on its state within a stream of traffic
+        - third-generation firewalls: (AKA stateful inspection firewalls and dynamic packet filtering firewalls) filter traffic based on its state within a stream of traffic. Stateful protocol analysis uses blacklists, whitelists, thresholds, and program code viewing to provide various security capabilities.
         - app firewalls: control traffic going to or from a specific app or service
             - e.g. a web application firewall (WAF) inspects traffic going to a web server and can block malicious traffic such as SQL injection attacks and cross-site scripting (XSS) attacks
         - next-generation firewall (NGFW): functions as a unified threat management (UTM) device and combines several capabilities, including traditional functions such as packet filtering and stateful inspection, and can also perform packet inspection allowing identification and blocking of malicious traffic
