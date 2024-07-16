@@ -909,7 +909,7 @@ list review, team members each review the contents of their disaster recovery ch
 
  - **Common Web Application Vulnerabilities**
     - Cross-Site Scripting (XSS): XSS attacks involve injecting malicious scripts into web pages, which are then executed in the context of another user’s browser. These scripts can steal cookies, session tokens, or other sensitive information from users, manipulate the content of the web page, or perform actions on behalf of the user.
-    - Cross-Site Request Forgery (CSRF): CSRF attacks force authenticated users to execute unwanted actions on a web application in which they are currently authenticated. By tricking a user into clicking a link or loading an image, an attacker can send unauthorized requests to the web application.
+    - Cross-Site Request Forgery (CSRF or XSRF): CSRF attacks force authenticated users to execute unwanted actions on a web application in which they are currently authenticated. By tricking a user into clicking a link or loading an image, an attacker can send unauthorized requests to the web application.
     - SQL Injection: Injecting malicious SQL statements into an entry field for execution on a backend database.
     - Broken Authentication and Session Management: Flaws in the authentication and session management functions that can be exploited to impersonate other users e.g Session ID exposure, weak password management.
     - Security Misconfiguration: Insecure default configurations, incomplete or ad-hoc configurations, open cloud storage, Improper enforcement of access control policies, misconfigured HTTP headers, and error messages containing sensitive information. Can lead to unauthorized access and data exposure.
