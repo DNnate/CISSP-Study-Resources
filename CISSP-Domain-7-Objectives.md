@@ -582,10 +582,12 @@ flooding and fire are examples of natural disasters.
         - **Incremental backup**: changes since the last incremental backup
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - once an incremental backup is complete, the archive bit on all duplicated files is reset, turned off, or set to 0
+            - Incremental backups provide the option that includes the smallest amount of data. 
         - **Differential backup**: changes since the last full backup
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - unlike full and incremental backups, the differential backup process does not change the archive bit
         - the most important difference between incremental and differential backups is the time needed to restore data in the event of an emergency
+        - A differential backup would back up all data modified since the last full backup, which could be a substantial amount.
             - a combination of full and differential backups will require only two backups to be restored: the most recent full backup and the most recent differential backup
             - a combination of full backups with incremental backups will require restoration of the most recent full backups as well as all incremental backups performed since that full backup
             - differential backups don’t take as long to restore, but they take longer to create than incremental
@@ -632,6 +634,8 @@ flooding and fire are examples of natural disasters.
     - When designing a disaster recovery plan, it’s important to keep your goal in mind — the restoration of workgroups to the point that they can resume their activities in their usual work locations
         - sometimes it's best to develop separate recovery facilities for different work groups
     - To recover your business operations with the greatest possible efficiency, you should engineer the disaster recovery plan so that those business units with the highest priority are recovered first
+ 
+**Transaction log** backups are specifically designed to support database servers and would not be effective on a file server.
     
 - 7.10.3 Multiple processing sites
     - One of the most important elements of the disaster recovery plan is the selection of alternate processing sites to be used when the primary sites are unavailable
