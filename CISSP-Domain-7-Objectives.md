@@ -527,6 +527,11 @@ of litigation is imminent.
     - An AI system starts without a baseline, monitors traffic and slowly creates its own baseline based on the traffic it observes
         - as it creates the baseline it also looks for anomalies
         - an AI system also relies on feedback from admins to learn if alarms are valid or false positives
+- **Neural networks** attempt to use complex computational techniques to model the behavior of the human mind. Through the use of the Delta rule or Learning rule, neural networks are able to learn from experience.
+- **Knowledge banks** are a component of expert systems, which are designed to capture and reapply human knowledge.
+- **Decision support systems** are designed to provide advice to those carrying out standard procedures and are often driven by expert systems.
+- **Expert Systems** uses details about the current situation, and the inference engine uses a combination of logical reasoning and fuzzy logic techniques to draw a conclusion based on past experience.
+
 
 [7.8](#7.8) Implement and support patch and vulnerability management (OSG-9 Chpt 16)
 - **Vulnerability Management**: activities necessary to identify, assess, prioritize, and remediate information systems weaknesses
