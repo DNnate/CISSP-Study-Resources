@@ -233,6 +233,7 @@ and coding flaws as well as the severity of other flaws.
 
 - **A Gantt chart** is a type of bar chart that shows the interrelationships over time between projects and schedules. It provides a graphical illustration of a schedule that helps you plan, coordinate, and track specific tasks in a project. They are particularly useful when coordinating tasks that require the use of the same team members or other resources.
 - **Program Evaluation Review Technique (PERT)** is a project-­scheduling tool used to judge the size of a software product in development and calculate the standard deviation (SD) for risk assessment. PERT relates the estimated lowest possible size, the most likely size, and the highest possible size of each component. The PERT chart  shows the dependencies between different project tasks.
+    - PERT charts use nodes to represent milestones or deliverables and then show the estimated time to move between milestones 
 - **Rapid Application Development, or RAD**, focuses on fast development and the ability to quickly adjust to changing requirements. RAD uses four phases: requirements planning, user design, construction, and cutover.
 
 - 8.1.3 Operations and maintenance
