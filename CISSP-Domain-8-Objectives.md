@@ -352,6 +352,7 @@ and coding flaws as well as the severity of other flaws.
   - **Black-box testing** begins with no prior knowledge of the system implementation, simulating a user perspective.
   - **Gray-box testing** provide partial knowledge of the system, respectively, in advance of the test.
   - **Unit testing** focuses on the smallest parts of an application, like functions, methods, or classes, ensuring they operate correctly in isolation. Unit tests are often automated, allowing developers to run them frequently to catch issues early in the development process, ensuring each component works correctly.
+  - **User Acceptance Testing**: (UAT) is typically the last phase of the testing process. It verifies that the solution developed meets user requirements and validates it against use cases.
   - Static testing, white-box testing, and code review approaches all require access to the source code of the application.
 
 [8.3](#8.3) Assess the effectiveness of software security (OSG-9 Chpts 20,21)
