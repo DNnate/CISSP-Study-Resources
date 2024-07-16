@@ -161,6 +161,8 @@ inputs and outputs to inform the test plan.
             - Testing
             - Operations and maintenance
         - A major criticism of this model is that it's very rigid, and not ideal for most complex projects which often contain many variables that affect the scope throughout the project's lifecycle
+        - Despite many organizations moving to Agile, DevOps, or other more responsive development methodologies, waterfall remains a strong contender when clear objectives and stable requirements are combined with a need to prevent flaws and to have a high level of control over the development process and output.
+        - It is mainly used where time and cost is not important
     - **Spiral model**: improved waterfall dev process providing for a cycle of Plan, Do, Check, Act (PDCA) sub-stages at each phase of the SDLC; a risk-driven development process that follows an iterative model while also including waterfall elements
         - following defined phases to completion and then repeats the process, resembling a spiral
         - the spiral model provides a solution to the major criticism of the waterfall model in that it allows devs to return to planning stages as technical demands and customer requirements iterate
@@ -462,6 +464,7 @@ control are initiated by developers seeking to implement changes. Design review 
         - one of the advantages of this approach is that sensors (for systems like IDS/IPS) can be dynamically repositioned depending on the threat
         - SDS provides a decoupling from physical devices, because it abstracts security functions into software that can run on any compatible physical or virtual infrastructure, critical for supporting cloud services dynamic scaling and virtualized data centers
     - DevSecOps supports the concept of software-defined security, where security controls are actively managed into the CI/CD pipeline
+    - security infrastructure may be easily manipulated by code. It is an example of  infrastructure as code (IaC) implementation.
         
 - **Fail-Safe**: Ensures the system defaults to a safe state in the event of a failure.e.g An automatic door locks when the power goes out, preventing unauthorized access. 
 - **Fail-Secure** (Synonym of Fail Closed): Maintains a secure state during a failure, prioritizing security over other concerns. e.g  Blue screen of death to ensure that security is not compromised during a failure.
