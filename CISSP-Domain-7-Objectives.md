@@ -417,6 +417,7 @@ of litigation is imminent.
         - mandatory vacation policies (At least 1 week)
         - audit trails
         - honeypots or honeynets
+        - Darknet: A monitored network without any hosts. It is a segment of unused network address space that should have no network activity and, therefore, may be easily used to monitor for illicit activity.
         - intrusion detection systems
         - violation reports
         - supervision and reviews of users
@@ -628,6 +629,7 @@ flooding and fire are examples of natural disasters.
         - use a dedicated site that the org owns/operates
         - lease a commercial facility (hot, warm, cold site)
         - enter into a formal agreement with another facility/org
+        - A Service bureau: is an organization that can provide on-site or off-site IT services in the event of a disaster
     - When a disaster interrupts a business, a disaster recovery plan should kick in nearly automatically and begin providing support for recovery operations
         -in addition to improving your response capabilities, purchasing insurance can reduce the impact of financial losses
     - Recovery site strategies consider multiple elements of an organization, such as people, data, infrastructure, and cost, as well as factors like availability and location
@@ -647,10 +649,12 @@ flooding and fire are examples of natural disasters.
             - disadvantages:
                 - tremendous lag to activate the site, often measured in weeks, which can yield a false sense of security
                 - difficult to test
+                - A rented space with power, cooling, and connectivity that can accept equipment as part of a recovery effort
         - **warm sites**: a warm site is better than a cold site because, in addition to the shell of a building, basic equipment is installed
             - a warm site contains the data links and preconfigured equipment necessary to begin restoring operations, but no usable data for information
             - unlike hot sites, however, warm sites do not typically contain copies of the client’s data
             - activation of a warm site typically takes at least 12 hours from the time a disaster is declared
+            - It relies on shared storage and backups for recovery
         - **hot sites**: a fully operational offsite data processing facility equipped with hardware and software; a backup facility that is maintained in constant working order, with a full complement of servers, workstations, and comm links
             - a hot site is usually a subscription service
             - the data on the primary site servers is periodically or continuously replicated to corresponding servers at the hot site, ensuring that the hot site has up-to-date data
@@ -659,6 +663,7 @@ flooding and fire are examples of natural disasters.
             - disadvanages:
                 - extremely costly, likely doubling an org’s budget for hardware, software and services, and requires the use of additional employees to maintain the site
                 - has (by definition) copies of all production data, and therefore increases your attack surface
+                - A site with dedicated storage and real-time data replication, often with shared equipment that allows restoration of service in a very short time
         - **Mobile sites**: non-mainstream alternatives to traditional recovery sites; usually configured as cold or warm sites, if your DR plan depends on a workgroup recovery strategy, mobile sites are an excellent way to implement that approach
         - Cloud computing: many orgs now turn to cloud computing as their preferred disaster recovery option
             - some companies that maintain their own datacenters may choose to use these IaaS options as backup service providers
