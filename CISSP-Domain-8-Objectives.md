@@ -409,7 +409,7 @@ and coding flaws as well as the severity of other flaws.
         - source code vulns are caused by design or implementation flaws
         - **design flaw**: if dev did everything correctly, there would still be a vulnerability
         - **implementation flaw**: dev incorrectly implemented part of a good design
-    - the OWASP top 10 vulnerabilities for 2021:
+    - The Open Web Application Security Project (OWASP) is widely considered as the most authoritative source on web application security issues. The OWASP top 10 vulnerabilities for 2021:
         - Broken access control
         - Cryptographic failures
         - Injection
