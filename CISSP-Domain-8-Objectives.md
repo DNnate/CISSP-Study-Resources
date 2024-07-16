@@ -462,5 +462,5 @@ technique limits user input to approved ranges of values that fit within allocat
     - Cross-Site Script Inclusion (XSSI): Attacks where sensitive information from script files can be accessed by unauthorized scripts. can lead to data leakage, exposure of internal APIs and configurations.
     - Server-Side Request Forgery (SSRF): An attacker can trick the server into making requests to unintended locations, potentially leaking internal information.
     - XML External Entity (XXE) Attacks: Exploitation of XML parsers to include malicious content or access sensitive data. It can be used for server-side request forgery.
-    - Directory Traversal: Manipulating file paths to access restricted directories and execute commands outside of the web root directory.
+    - Directory Traversal: Manipulating file paths to access restricted directories and execute commands outside of the web root directory. The attacker attempts to force the web application to navigate up the file hierarchy and retrieve a file that should not normally be provided to a web user, such as the password file.
     - Command Injection: Injecting system commands via an application that is executed by the host’s operating system.
