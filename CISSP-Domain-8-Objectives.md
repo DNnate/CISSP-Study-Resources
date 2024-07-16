@@ -437,3 +437,19 @@ copies of data designed for different clearance levels.
         - Key/value stores are perhaps the simplest possible form of database. They store information in key/value pairs, where the key is essentially an index used to uniquely identify a record, which consists of a data value.
         - Graph databases store data in graph format, using nodes to represent objects and edges to represent relationships.
         - Document stores are similar to key/value stores in that they store information using keys, but the type of information they store is typically more complex than that in a key/value store and is in the form of a document. Common document types used in document stores include XML and JSON
+        - 
+
+- **Common Web Application Vulnerabilities**
+    - Cross-Site Scripting (XSS): XSS attacks involve injecting malicious scripts into web pages, which are then executed in the context of another user’s browser. These scripts can steal cookies, session tokens, or other sensitive information from users, manipulate the content of the web page, or perform actions on behalf of the user.
+    - Cross-Site Request Forgery (CSRF or XSRF): CSRF attacks force authenticated users to execute unwanted actions on a web application in which they are currently authenticated. By tricking a user into clicking a link or loading an image, an attacker can send unauthorized requests to the web application.
+    - SQL Injection: Injecting malicious SQL statements into an entry field for execution on a backend database.
+    - Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to adjacent memory locations being overwritten. The best protection against buffer overflow attacks is server-side input validation. This
+technique limits user input to approved ranges of values that fit within allocated buffers.
+    - Broken Authentication and Session Management: Flaws in the authentication and session management functions that can be exploited to impersonate other users e.g Session ID exposure, weak password management.
+    - Security Misconfiguration: Insecure default configurations, incomplete or ad-hoc configurations, open cloud storage, Improper enforcement of access control policies, misconfigured HTTP headers, and error messages containing sensitive information. Can lead to unauthorized access and data exposure.
+    - Insecure Deserialization: Issues arising from the deserialization of untrusted data, which can lead to remote code execution, replay attacks, and injection attacks. Can lead to exploitation and manipulation of application logic.
+    - Cross-Site Script Inclusion (XSSI): Attacks where sensitive information from script files can be accessed by unauthorized scripts. can lead to data leakage, exposure of internal APIs and configurations.
+    - Server-Side Request Forgery (SSRF): An attacker can trick the server into making requests to unintended locations, potentially leaking internal information.
+    - XML External Entity (XXE) Attacks: Exploitation of XML parsers to include malicious content or access sensitive data. It can be used for server-side request forgery.
+    - Directory Traversal: Manipulating file paths to access restricted directories and execute commands outside of the web root directory.
+    - Command Injection: Injecting system commands via an application that is executed by the host’s operating system.
