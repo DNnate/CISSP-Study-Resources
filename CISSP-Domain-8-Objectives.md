@@ -318,6 +318,9 @@ and coding flaws as well as the severity of other flaws.
         - DAST is usually performed once a program has cleared SAST and basic code flaws have been fixed 
         - DAST enables devs to trace subtle logical errors that are likely to cause security problems, without the need to create artificial error-inducing scenarios
         - dynamic analysis is also effective for compatibility testing, detecting memory leakages, identifying dependencies, and analyzing software without accessing the software’s actual source code
+      - **Code Review**: A process where one or more developers examine another developer's code to identify any errors, security vulnerabilities, or areas for improvement.
+      - **White-Box Testing**: A software testing approach where the tester has complete knowledge of the internal structure, code, and logic of the application being tested.
+      - Static testing, white-box testing, and code review approaches all require access to the source code of the application.
 
 [8.3](#8.3) Assess the effectiveness of software security (OSG-9 Chpts 20,21)
 - 8.3.1 Auditing and logging of changes
