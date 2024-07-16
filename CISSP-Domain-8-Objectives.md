@@ -100,6 +100,8 @@
 - **Source code**: program statements in human-readable form using a formal programming language's rules for syntax and semantics
 - **Spyware/Adware**: software that performas a variety of monitoring and data gathering functions; AKA potentailly unwanted programs/applications (PUP/PUA), may be used in monitoring employee activities/use of resources (spyware), or advertising efforts (adware); both may be legit/authorized by system owners or unwanted intruders
 - **Strong data typing**: feature of a programming language preventing data type mismatch errors; strongly typed languages will generate errors at compile time
+- **Input validation** verifies that user-supplied input does not violate security conditions. Effecive against buffer overflow, XSS and SQL Injection attacks
+- **Bounds checking** is a form of input validation, but it is typically used to ensure that numeric input falls within an acceptable range
 - **Threat surface**: total set of penetrations of a boundary or perimeter that surrounds or contains system elements
 - **TOCTOU attack**: time of check vs time of use (TOCTOU) attack takes advantage of the time delay between a security check (such as authentication or authorization) being performed and actual use of the asset
 - **Trapdoor/backdoor**: hidden mechanism that bypasses access control measures; an entry point into an architecture or system that is inserted in software by devs during development to provide a method of gaining access for modification/support; can also be inserted by an attacker, bypassing access control measures designed to prevent unauthorized software changes
@@ -466,7 +468,7 @@ copies of data designed for different clearance levels.
         - 
 
 - **Common Web Application Vulnerabilities**
-    - Cross-Site Scripting (XSS): XSS attacks involve injecting malicious scripts into web pages, which are then executed in the context of another user’s browser. These scripts can steal cookies, session tokens, or other sensitive information from users, manipulate the content of the web page, or perform actions on behalf of the user.
+    - Cross-Site Scripting (XSS): XSS attacks involve injecting malicious scripts into web pages, which are then executed in the context of another user’s browser. These scripts can steal cookies, session tokens, or other sensitive information from users, manipulate the content of the web page, or perform actions on behalf of the user. Input validation is the most effective defense against cross-site scripting attacks.
     - Cross-Site Request Forgery (CSRF or XSRF): CSRF attacks force authenticated users to execute unwanted actions on a web application in which they are currently authenticated. By tricking a user into clicking a link or loading an image, an attacker can send unauthorized requests to the web application.
     - SQL Injection: Injecting malicious SQL statements into an entry field for execution on a backend database.
     - Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to adjacent memory locations being overwritten. The best protection against buffer overflow attacks is server-side input validation. This
