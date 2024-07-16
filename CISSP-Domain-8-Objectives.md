@@ -487,6 +487,7 @@ technique limits user input to approved ranges of values that fit within allocat
     - XML External Entity (XXE) Attacks: Exploitation of XML parsers to include malicious content or access sensitive data. It can be used for server-side request forgery.
     - Directory Traversal: Manipulating file paths to access restricted directories and execute commands outside of the web root directory. The attacker attempts to force the web application to navigate up the file hierarchy and retrieve a file that should not normally be provided to a web user, such as the password file.
     - Command Injection: Injecting system commands via an application that is executed by the host’s operating system.
+    - Session Hijacking: It's when an attacker steals or takes over a session (like a logged-in state) that belongs to another user. This can happen if the session ID (which identifies the user’s session) is intercepted or guessed by the attacker. Once hijacked, the attacker can pretend to be the user without needing their login credentials.Transport Layer Security (TLS) provides the most effective defense against session hijack-ing because it encrypts all traffic between the client and server, preventing the attacker from stealing session credentials.
  
 
 - **Malware: (Malicious Software)** is a general term used to describe any software intentionally designed to cause damage to a computer, server, client, or computer network. It encompasses a wide range of malicious programs, including but not limited to:       
