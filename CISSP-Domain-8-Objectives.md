@@ -322,6 +322,7 @@ and coding flaws as well as the severity of other flaws.
     - **Runbook**: implements the playbook data into an automated tool
     - SOAR allows security admins to define these incidents and the response, typically using playbooks and runbooks
     - Both SOAR and SIEM platforms can help detect and, in the case of SOAR, respond to threats against your software development efforts
+    - Security information and event management (SIEM) systems do correlate information from multiple sources and perform analysis, but they stop short of providing automated playbook responses. That is the realm of security orchestration, automation, and response (SOAR) platforms.
         - devs can be resistent to anything that slows down the development process, and this is where DevSecOps can help build the right culture, and balance the needs of developers and security
  
 - 8.2.8 Software Configuration Management (SCM)
