@@ -69,7 +69,12 @@
 - **Query attack**: use of query tools to access data not normally allowed by the trusted front end, including the views controlled by the query application; could also result from malformed queries using SQL to bypass security controls; improper/incomplese checks on queries can be used in a similar way to bypass access controls
 - **Ransom attack**: form of attack that threatens destruction, denial, or unauthorized public release/remarketing of private information assets; usually involves encrypting assets and withhold the decryption key until a ransom is paid by the victim
 - **Refactoring**: partial or complete rewrite of a set of software to perform the same functions, but in a more straightforward, more efficient, or more maintainable form
-- **Regression testing**: test a system to ascertain whether recently approved modifications have changed performance of other approved functions or introduced other unautorized behavior
+- **Regression testing**: test a system to ascertain whether recently approved modifications have changed performance of other approved functions or introduced other unautorized behavior.
+    - Regression testing is performed after developers make changes to an application. It reruns a number of test cases and compares the results to baseline results. 
+    - Orthogonal array testing is a method for generating test cases based on statistical analysis.
+    - Pattern testing uses records of past software bugs to inform the analysis.
+    - Matrix testing develops a matrix of all possible
+inputs and outputs to inform the test plan. 
 - **Relational database model**: data elements and records arragned in tables which are related or linked to each other to implement business logic, where data records of different structures or types are needed together in the same activity. Records are identified using a variety of keys.
     - **Candidate Keys**: is a subset of attributes that can be used to uniquely identify any record in a table. No two records in the same table will ever contain the same values for all attributes composing a candidate key. Each table may have one or more candidate keys, which are chosen from column headings.
     - **Primary Keys**: is selected from the set of candidate keys for a table to be used to uniquely identify the records in a table. Each table has only one primary key, selected by the database designer from the set of candidate keys. The RDBMS enforces the uniqueness of primary keys by disallowing the insertion of multiple records with the same primary key.
