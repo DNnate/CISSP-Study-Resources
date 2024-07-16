@@ -345,8 +345,10 @@ and coding flaws as well as the severity of other flaws.
     - **Static Application Security Testing (SAST)**: AKA static analysis, tools and technique to help identify software defects (e.g. data type errors, loop/structure bounds violations, unreachable code) or security policy violations and is carried out by examining the code without executing the program (or before the program is compiled)
         - the term SAST is generally reserved for automated tools that assist analysts and developers, whereas manual inspection by humans is generally referred to as code review
         - SAST allows devs to scan source code for flaws and vulns; it also provides a scalable method of security code review and ensuring that devs are following secure coding policies
+        - Static testing performs code analysis in an offline fashion, without actually executing the code.
     - **Dynamic Application Security Testing (DAST)**: AKA dynamic analysis, is the evaluation of a program while running in real time
         - tools that execute the software unit, application or system under test, in ways that attempt to drive it to reveal a potentially exploitable vulnerability
+        - Dynamic testing evaluates code in a runtime environment.
         - DAST is usually performed once a program has cleared SAST and basic code flaws have been fixed 
         - DAST enables devs to trace subtle logical errors that are likely to cause security problems, without the need to create artificial error-inducing scenarios
         - dynamic analysis is also effective for compatibility testing, detecting memory leakages, identifying dependencies, and analyzing software without accessing the software’s actual source code
@@ -360,7 +362,8 @@ and coding flaws as well as the severity of other flaws.
   - **Gray-box testing** provide partial knowledge of the system, respectively, in advance of the test.
   - **Unit testing** focuses on the smallest parts of an application, like functions, methods, or classes, ensuring they operate correctly in isolation. Unit tests are often automated, allowing developers to run them frequently to catch issues early in the development process, ensuring each component works correctly.
   - **User Acceptance Testing**: (UAT) is typically the last phase of the testing process. It verifies that the solution developed meets user requirements and validates it against use cases.
-  - Static testing, white-box testing, and code review approaches all require access to the source code of the application.
+  - Static testing, white-box testing, and code review approaches all require access to the source code of the application but dynamic testing does not.
+  - Both static and dynamic testing may use automated tools
 
 [8.3](#8.3) Assess the effectiveness of software security (OSG-9 Chpts 20,21)
 - 8.3.1 Auditing and logging of changes
