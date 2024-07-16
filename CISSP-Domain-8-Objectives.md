@@ -47,7 +47,9 @@
 - **Functional requirements**: describes a finite task or process the system must perform; often directly traceable to specific elements in the final system's design and construction
 - **Hierarchical database model**: data elements and records are arranged in tree-like parent-child structures
 - **Integrated Product and Process Development (IPPD)**: management technique that simultaneously integrates essential acquisition activities through the use of multidisciplinary teams to optimize the design, manufacturing, and supportability processes
-- **Integrated Product Team**: team of stakeholders and individuals that possess different skills and who work together to acheive a defined process or product
+- **Integrated Product Team (IPT)**: team of stakeholders and individuals that possess different skills and who work together to acheive a defined process or product.
+    - It was designed by the Defense Department in 1995.
+    - It was a predecessor to the Agile methodology, which uses tools like the scrum approach and user stories to conduct software development work. 
 - **Interactive Application Security Testing (IAST)**: testing that combines or integrates SAST and DAST to improve testing and provide behavioral analysis capabilities to pinpoint the source of vulnerabilities
 - **Knowledge Discovery in Database (KDD)**: mathematical, statistical, and visualization method of identifying valid and useful patterns in data
 - **Knowledge Management**: efficent/effective management of info and associated resources in an enterprise to drive busienss intelligence and decision-making; may include workflow management, business process modeling, doc management, db and info systems and knowledge-based systems
@@ -163,6 +165,7 @@ inputs and outputs to inform the test plan.
         - A major criticism of this model is that it's very rigid, and not ideal for most complex projects which often contain many variables that affect the scope throughout the project's lifecycle
         - Despite many organizations moving to Agile, DevOps, or other more responsive development methodologies, waterfall remains a strong contender when clear objectives and stable requirements are combined with a need to prevent flaws and to have a high level of control over the development process and output.
         - It is mainly used where time and cost is not important
+        - In the waterfall model, the software development process follows five sequential steps that are, in order: Requirements, Design, Coding, Testing, and Maintenance.
     - **Spiral model**: improved waterfall dev process providing for a cycle of Plan, Do, Check, Act (PDCA) sub-stages at each phase of the SDLC; a risk-driven development process that follows an iterative model while also including waterfall elements
         - following defined phases to completion and then repeats the process, resembling a spiral
         - the spiral model provides a solution to the major criticism of the waterfall model in that it allows devs to return to planning stages as technical demands and customer requirements iterate
@@ -174,6 +177,7 @@ a “loop” of iterations through similar processes.
         - this requires a high degree of automation, including integrating code repositories, the software configuration management process, and the movement of code between development, testing and production environments
         - the tight integration of development and operations also calls for the simultaneous integration of security controls
         - security must be tightly integrated and move with the same agility
+        - The DevOps approach to technology management seeks to integrate software development, operations, and quality assurance in a seamless approach that builds collaboration between the three disciplines.
     - **DevSecOps**: refers to the integration of development, security, and operations
         - provides for a merger of phased review (as in the waterfall SDLC) with the DevOps method, to incorporate the needs for security, safety, resilience or other emerging properties in the final system, at each turn of the cycle of development
         - DevSecOps supports the concept of software-defined security, where security controls are actively managed into the CI/CD pipeline
@@ -357,7 +361,7 @@ control are initiated by developers seeking to implement changes. Design review 
         - Dynamic testing evaluates code in a runtime environment.
         - DAST is usually performed once a program has cleared SAST and basic code flaws have been fixed 
         - DAST enables devs to trace subtle logical errors that are likely to cause security problems, without the need to create artificial error-inducing scenarios
-        - dynamic analysis is also effective for compatibility testing, detecting memory leakages, identifying dependencies, and analyzing software without accessing the software’s actual source code
+        - dynamic analysis is also effective for compatibility testing, detecting memory leakages, identifying dependencies, and analyzing software without accessing the software’s actual source code. Examples of DAST include Fuzzing and Web application vulnerability scanning
   - **Code Review**: A process where one or more developers examine another developer's code to identify any errors, security vulnerabilities, or areas for improvement.
       - Pass-around reviews are often done via email or using a central code review system, allowing developers to review code asynchronously.
       - Pair programming requires two programmers to work together, with one writing code and the other reviewing and tracking progress.
@@ -367,6 +371,8 @@ control are initiated by developers seeking to implement changes. Design review 
   - **Black-box testing** begins with no prior knowledge of the system implementation, simulating a user perspective. They do not have access to source code.
   - **Gray-box testing** provide partial knowledge of the system, respectively, in advance of the test. In a gray-box test, the tester evaluates the software from a user perspective but has access to the source code as the test is conducted.
   - **Unit testing** focuses on the smallest parts of an application, like functions, methods, or classes, ensuring they operate correctly in isolation. Unit tests are often automated, allowing developers to run them frequently to catch issues early in the development process, ensuring each component works correctly.
+  - **Integration testing**: A testing method used to validate how software modules work together
+  - **System testing**: Testing on a complete integrated product
   - **User Acceptance Testing**: (UAT) is typically the last phase of the testing process. It verifies that the solution developed meets user requirements and validates it against use cases.
   - Static testing, white-box testing, and code review approaches all require access to the source code of the application but dynamic testing does not.
   - Both static and dynamic testing may use automated tools
@@ -517,9 +523,9 @@ technique limits user input to approved ranges of values that fit within allocat
     - Trojans: Programs that appear legitimate but perform malicious activities when executed.
     - Ransomware: Encrypts files on a victim's system and demands ransom for decryption.
     - Spyware: Secretly gathers information about a user's activities.
-    - Adware: Displays unwanted advertisements.
-    - Worms: Self-replicating malware that spreads over networks.
-    - Rootkits: Conceal the existence of malware or malicious processes.
+    - Adware: Displays unwanted advertisements. classed as potentially unwanted programs (PUPs)
+    - Worms: Self-replicating malware that spreads over networks. e.g stuxnet, code red worm
+    - Rootkits: Conceal the existence of malware or malicious processes. it is commonly used for privilege escalation
     - Logic Bombs: Malicious code that lies dormant until certain conditions are met.
     
         - Viruses: A virus is a specific type of malware that replicates by inserting its code into other programs or files. When the infected program is executed, the virus code activates and spreads to other files or systems. The have the ability to modify other programs or files, making them contagious and capable of spreading rapidly. While all viruses are malware (because they are designed to cause harm), not all malware are viruses. For example, ransomware encrypts files for ransom, while spyware gathers information without replicating itself. Trojans masquerade as legitimate software but have malicious functions. Below are common types of viruses:
