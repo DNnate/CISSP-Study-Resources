@@ -481,7 +481,7 @@ technique limits user input to approved ranges of values that fit within allocat
     - Command Injection: Injecting system commands via an application that is executed by the host’s operating system.
  
 
-- **Malware: Malware (malicious software)** is a general term used to describe any software intentionally designed to cause damage to a computer, server, client, or computer network. It encompasses a wide range of malicious programs, including but not limited to:       
+- **Malware: (Malicious Software)** is a general term used to describe any software intentionally designed to cause damage to a computer, server, client, or computer network. It encompasses a wide range of malicious programs, including but not limited to:       
     - Viruses: Programs that replicate themselves and infect other files on a computer.
     - Trojans: Programs that appear legitimate but perform malicious activities when executed.
     - Ransomware: Encrypts files on a victim's system and demands ransom for decryption.
