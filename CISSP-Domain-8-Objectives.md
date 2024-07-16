@@ -357,9 +357,9 @@ and coding flaws as well as the severity of other flaws.
       - Pair programming requires two programmers to work together, with one writing code and the other reviewing and tracking progress.
       - Team reviews are typically done in a group
       - Fagan inspection is a formal review process that would involve both the developer and a team to review the code using a formal process. 
-  - **White-Box Testing**: A software testing approach where the tester has complete knowledge of the internal structure, code, and logic of the application being tested.
-  - **Black-box testing** begins with no prior knowledge of the system implementation, simulating a user perspective.
-  - **Gray-box testing** provide partial knowledge of the system, respectively, in advance of the test.
+  - **White-Box Testing**: A software testing approach where the tester has complete knowledge of the internal structure, code, and logic of the application being tested. White-box tests also have access to the source code but perform testing from a developer’s perspective.
+  - **Black-box testing** begins with no prior knowledge of the system implementation, simulating a user perspective. They do not have access to source code.
+  - **Gray-box testing** provide partial knowledge of the system, respectively, in advance of the test. In a gray-box test, the tester evaluates the software from a user perspective but has access to the source code as the test is conducted.
   - **Unit testing** focuses on the smallest parts of an application, like functions, methods, or classes, ensuring they operate correctly in isolation. Unit tests are often automated, allowing developers to run them frequently to catch issues early in the development process, ensuring each component works correctly.
   - **User Acceptance Testing**: (UAT) is typically the last phase of the testing process. It verifies that the solution developed meets user requirements and validates it against use cases.
   - Static testing, white-box testing, and code review approaches all require access to the source code of the application but dynamic testing does not.
