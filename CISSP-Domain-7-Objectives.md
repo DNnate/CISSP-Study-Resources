@@ -501,7 +501,7 @@ of litigation is imminent.
         - polymorphic: malware that can change aspects of itself as it replicates to evade detection (e.g. file name, file size, code structure etc)
         - trojan: A Trojan horse is malware that looks harmless or desirable but contains malicious code; trojans are often found in easily downloadable software; a trojan inserts backdoors or trapdoors into other programs or systems
         - bot: an emerging class of mobile code; employing limited machine learning capabilities to assist with user requests for help or assistance, automation of or assistance with workflows, data input quality validation etc
-        - botnet: many infected systems that have been harnessed together and act in unison
+        - botnet: many infected systems that have been harnessed together and act in unison. Botnets are used for a wide variety of malicious purposes, including scanning the network for vulnerable systems, conducting brute-force attacks against other systems, mining cryptocurrency, and sending out spam messages.
         - boot sector infectors: pieces of malware that can install themselves in the boot sector of a drive
         - hoaxes/pranks: not actually software, they're usually part of social engineering—via email or other means—that intends harm (hoaxes) or a joke (pranks)
         - logic bomb: malware inserted into a program which will activate and perform functions suiting the attacker at some later date/conditions are met; code that will execute based on some triggering event
