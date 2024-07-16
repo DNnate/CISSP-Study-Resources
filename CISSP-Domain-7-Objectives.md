@@ -906,7 +906,20 @@ list review, team members each review the contents of their disaster recovery ch
     - SSL/TLS Interception (TLS MitM): This attack involves intercepting SSL/TLS encrypted traffic by compromising the trusted relationship between the client and server. Attackers can use techniques like SSL stripping, where they downgrade HTTPS connections to HTTP, or employ compromised or fake SSL certificates to intercept and decrypt secure communications.
     - Bluetooth MitM Attacks: In Bluetooth MitM attacks, attackers exploit vulnerabilities in the Bluetooth protocol to intercept and manipulate data exchanged between Bluetooth-enabled devices. This can lead to unauthorized access to sensitive information or control over Bluetooth devices.
     - HTTP Session Hijacking: In this attack, the attacker steals a user's session ID or token to impersonate the user and gain unauthorized access to web applications. This can be achieved through various means, such as intercepting cookies transmitted over insecure HTTP connections or exploiting vulnerabilities in session management.
-	
+
+ - **Common Web Application Vulnerabilities**
+    - Cross-Site Scripting (XSS): XSS attacks involve injecting malicious scripts into web pages, which are then executed in the context of another user’s browser. These scripts can steal cookies, session tokens, or other sensitive information from users, manipulate the content of the web page, or perform actions on behalf of the user.
+    - Cross-Site Request Forgery (CSRF): CSRF attacks force authenticated users to execute unwanted actions on a web application in which they are currently authenticated. By tricking a user into clicking a link or loading an image, an attacker can send unauthorized requests to the web application.
+    - SQL Injection: Injecting malicious SQL statements into an entry field for execution on a backend database.
+    - Broken Authentication and Session Management: Flaws in the authentication and session management functions that can be exploited to impersonate other users e.g Session ID exposure, weak password management.
+    - Security Misconfiguration: Insecure default configurations, incomplete or ad-hoc configurations, open cloud storage, Improper enforcement of access control policies, misconfigured HTTP headers, and error messages containing sensitive information. Can lead to unauthorized access and data exposure.
+    - Insecure Deserialization: Issues arising from the deserialization of untrusted data, which can lead to remote code execution, replay attacks, and injection attacks. Can lead to exploitation and manipulation of application logic.
+    - Cross-Site Script Inclusion (XSSI): Attacks where sensitive information from script files can be accessed by unauthorized scripts. can lead to data leakage, exposure of internal APIs and configurations.
+    - Server-Side Request Forgery (SSRF): An attacker can trick the server into making requests to unintended locations, potentially leaking internal information.
+    - XML External Entity (XXE) Attacks: Exploitation of XML parsers to include malicious content or access sensitive data. It can be used for server-side request forgery.
+    - Directory Traversal: Manipulating file paths to access restricted directories and execute commands outside of the web root directory.
+    - Command Injection: Injecting system commands via an application that is executed by the host’s operating system.
+
 - **Cloud Service Models**
     - **Infrastructure as a Service (IaaS)**: Provides virtualized computing resources over the internet. Examples: AWS EC2, Microsoft Azure Virtual Machines, Google Compute Engine.
         - Cloud Service Provider (CSP): Manages data centers, servers, networking/firewall equipment, and storage. Provides hypervisor or virtualization layer. Secures the infrastructure that runs all services offered by the provider. Ensures availability, scalability, and performance of infrastructure components.
