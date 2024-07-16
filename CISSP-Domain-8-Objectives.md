@@ -340,6 +340,7 @@ and coding flaws as well as the severity of other flaws.
         - dynamic analysis is also effective for compatibility testing, detecting memory leakages, identifying dependencies, and analyzing software without accessing the software’s actual source code
   - **Code Review**: A process where one or more developers examine another developer's code to identify any errors, security vulnerabilities, or areas for improvement.
   - **White-Box Testing**: A software testing approach where the tester has complete knowledge of the internal structure, code, and logic of the application being tested.
+  - **Unit testing** focuses on the smallest parts of an application, like functions, methods, or classes, ensuring they operate correctly in isolation. Unit tests are often automated, allowing developers to run them frequently to catch issues early in the development process, ensuring each component works correctly.
   - Static testing, white-box testing, and code review approaches all require access to the source code of the application.
 
 [8.3](#8.3) Assess the effectiveness of software security (OSG-9 Chpts 20,21)
