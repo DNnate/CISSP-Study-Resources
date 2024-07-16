@@ -244,7 +244,8 @@ and coding flaws as well as the severity of other flaws.
         - **Change Control**: the process of controlling specific changes that need to take place during the life cycle of a system, serving to document the necessary change-related activities 
             - where change management is the project manager’s responsibility for the overarching process, change control is what devs do to ensure the software or environment doesn’t break when changed
             - change control is basically the process used by devs to re-create a situation encountered by a user and analyze the appropriate changes; it provides a framework where multiple devs can create and test a solution prior to rolling it out into a prod environment
-        - **Release Control**: once changes are finalized, they must be approved for release through the release control procedure
+            - The change control process is responsible for providing an organized framework within which multiple developers can create and test a solution prior to rolling it out in a production environment.
+        - **Release Control**: once changes are finalized, they must be approved for release through the release control procedure. Release control manages the deployment of code into production.
 - 8.1.5 Integrated Product Team (IPT)
     - **Integrated Product Team (IPT)**:Introduced by the DoD as an approach to bring together multifunctional teams with a single goal of delivering a product or developing a process or policy, and fostering parallel, rather than sequential, decisions
     - Essentially, IPT is used to ensure that all aspects of a product, process, or policy are considered during the development process
@@ -286,9 +287,10 @@ and coding flaws as well as the severity of other flaws.
                 - lower coupling provides better software design because objects are more independent, and code is easier to troubleshoot and update
     
 - 8.2.2 Libraries
-    - **Software library**: a pre-written collection of components (classes, procedures, scripts etc) that do specific tasks, useful to other components (e.g. software libraries for encryption algorithms, managing network connections, or displaying graphics)
+    - **Software library (Code Libraries)**: a pre-written collection of components (classes, procedures, scripts etc) that do specific tasks, useful to other components (e.g. software libraries for encryption algorithms, managing network connections, or displaying graphics)
     - Shared software libraries contain reusable code, improving developer's efficiency, and reducing the need to write well-known algorithms from scratch; often available as open source
         - shared libraries can also include many security issues (e.g. Heartbleed), and devs should be aware of the origins of the shared code that they use, and keep informed about any security vulns that might be discovered in these libraries
+        - Code repositories may be used to manage the distribution and updating of these libraries.
     
 - 8.2.3 Tool sets
     - Forcing all devs to use the same toolset can reduce productivity and job satisfaction; however letting every dev choose their own tools and environment widens an organization's attack surface
@@ -340,6 +342,8 @@ and coding flaws as well as the severity of other flaws.
         - dynamic analysis is also effective for compatibility testing, detecting memory leakages, identifying dependencies, and analyzing software without accessing the software’s actual source code
   - **Code Review**: A process where one or more developers examine another developer's code to identify any errors, security vulnerabilities, or areas for improvement.
   - **White-Box Testing**: A software testing approach where the tester has complete knowledge of the internal structure, code, and logic of the application being tested.
+  - **Black-box testing** begins with no prior knowledge of the system implementation, simulating a user perspective.
+  - **Gray-box testing** provide partial knowledge of the system, respectively, in advance of the test.
   - **Unit testing** focuses on the smallest parts of an application, like functions, methods, or classes, ensuring they operate correctly in isolation. Unit tests are often automated, allowing developers to run them frequently to catch issues early in the development process, ensuring each component works correctly.
   - Static testing, white-box testing, and code review approaches all require access to the source code of the application.
 
