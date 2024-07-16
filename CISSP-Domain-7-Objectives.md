@@ -319,7 +319,7 @@ of litigation is imminent.
     - **Containment:** Limiting the impact of the incident and preventing further damage (e.g., by isolating affected systems, changing passwords, and implementing security controls)
     - **Eradication:** Removing the cause of the incident from the environment (e.g., by removing malware, patching vulnerabilities, and disabling compromised accounts)
     - **Recovery:** Restoring systems and data to their normal state (e.g., by restoring from backups, rebuilding systems, and re-enabling compromised accounts)
-    - **Lessons Learned:** Documenting the incident and learning from it to improve future responses (e.g., by identifying areas where the incident response process can be improved and by sharing lessons learned with other organizations)
+    - **Lessons Learned:** Documenting the incident and learning from it to improve future responses (e.g., by identifying areas where the incident response process can be improved and by sharing lessons learned with other organizations). Advisable to recruit an independent moderator or external consultant to facilitate the session.
 
 - The following steps (Detection, Response, Migtation, Reporting, Recovery, Remediation, and Lessons Learned) are on the exam
 - 7.6.1 Detection
