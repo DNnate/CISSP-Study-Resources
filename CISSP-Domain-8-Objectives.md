@@ -520,6 +520,7 @@ technique limits user input to approved ranges of values that fit within allocat
     - Adware: Displays unwanted advertisements.
     - Worms: Self-replicating malware that spreads over networks.
     - Rootkits: Conceal the existence of malware or malicious processes.
+    - Logic Bombs: Malicious code that lies dormant until certain conditions are met.
     
         - Viruses: A virus is a specific type of malware that replicates by inserting its code into other programs or files. When the infected program is executed, the virus code activates and spreads to other files or systems. The have the ability to modify other programs or files, making them contagious and capable of spreading rapidly. While all viruses are malware (because they are designed to cause harm), not all malware are viruses. For example, ransomware encrypts files for ransom, while spyware gathers information without replicating itself. Trojans masquerade as legitimate software but have malicious functions. Below are common types of viruses:
             - File Infectors: These viruses attach themselves to executable files (.exe, .com, etc.). They can overwrite the file, infect it, or alter the behavior of the executable. When the infected file is run, the virus is activated. e.g CIH (Chernobyl), Sasser.
