@@ -494,7 +494,12 @@ technique limits user input to approved ranges of values that fit within allocat
     - Directory Traversal: Manipulating file paths to access restricted directories and execute commands outside of the web root directory. The attacker attempts to force the web application to navigate up the file hierarchy and retrieve a file that should not normally be provided to a web user, such as the password file.
     - Command Injection: Injecting system commands via an application that is executed by the host’s operating system.
     - Session Hijacking: It's when an attacker steals or takes over a session (like a logged-in state) that belongs to another user. This can happen if the session ID (which identifies the user’s session) is intercepted or guessed by the attacker. Once hijacked, the attacker can pretend to be the user without needing their login credentials.Transport Layer Security (TLS) provides the most effective defense against session hijack-ing because it encrypts all traffic between the client and server, preventing the attacker from stealing session credentials.
- 
+    - URL encoding: This in itself is not an attack; rather, it is a method used to represent characters in a URL string using a percent sign (%) followed by two hexadecimal digits. This encoding is necessary to transmit data safely over the Internet, especially when the data contains special characters that might be misinterpreted by the web server or browser. In URL encoding, the . character is replaced by %252E, and the / character is replaced by %252F. However, URL encoding can be misused in certain contexts to facilitate attacks such as:
+        - SQL Injection: Attackers may use URL encoding to bypass input validation and inject malicious SQL queries into the application.
+        - Cross-Site Scripting (XSS): By encoding malicious scripts or payloads in URLs, attackers can attempt to inject these scripts into web pages viewed by other users.
+        - Directory Traversal: Encoded characters can be used to traverse directories and access unauthorized files on the server.
+        - Parameter Manipulation: Encoding can be used to manipulate parameters and alter the intended functionality of web applications.
+
 
 - **Malware: (Malicious Software)** is a general term used to describe any software intentionally designed to cause damage to a computer, server, client, or computer network. It encompasses a wide range of malicious programs, including but not limited to:       
     - Viruses: Programs that replicate themselves and infect other files on a computer.
