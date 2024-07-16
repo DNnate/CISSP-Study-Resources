@@ -479,3 +479,26 @@ technique limits user input to approved ranges of values that fit within allocat
     - XML External Entity (XXE) Attacks: Exploitation of XML parsers to include malicious content or access sensitive data. It can be used for server-side request forgery.
     - Directory Traversal: Manipulating file paths to access restricted directories and execute commands outside of the web root directory. The attacker attempts to force the web application to navigate up the file hierarchy and retrieve a file that should not normally be provided to a web user, such as the password file.
     - Command Injection: Injecting system commands via an application that is executed by the host’s operating system.
+ 
+
+- **Malware: Malware (malicious software)** is a general term used to describe any software intentionally designed to cause damage to a computer, server, client, or computer network. It encompasses a wide range of malicious programs, including but not limited to:       
+    - Viruses: Programs that replicate themselves and infect other files on a computer.
+    - Trojans: Programs that appear legitimate but perform malicious activities when executed.
+    - Ransomware: Encrypts files on a victim's system and demands ransom for decryption.
+    - Spyware: Secretly gathers information about a user's activities.
+    - Adware: Displays unwanted advertisements.
+    - Worms: Self-replicating malware that spreads over networks.
+    - Rootkits: Conceal the existence of malware or malicious processes.
+    
+        - Viruses: A virus is a specific type of malware that replicates by inserting its code into other programs or files. When the infected program is executed, the virus code activates and spreads to other files or systems. The have the ability to modify other programs or files, making them contagious and capable of spreading rapidly. While all viruses are malware (because they are designed to cause harm), not all malware are viruses. For example, ransomware encrypts files for ransom, while spyware gathers information without replicating itself. Trojans masquerade as legitimate software but have malicious functions. Below are common types of viruses:
+            - File Infectors: These viruses attach themselves to executable files (.exe, .com, etc.). They can overwrite the file, infect it, or alter the behavior of the executable. When the infected file is run, the virus is activated. e.g CIH (Chernobyl), Sasser.
+            - Macro Viruses: These viruses target applications that use macros, such as Microsoft Word or Excel. They infect and spread through macro-enabled documents, affecting document files rather than the system itself. e.g Melissa, Concept.
+            - Boot Sector Viruses: These viruses infect the master boot record (MBR) of a hard disk or a removable drive's boot sector. They are activated when the system starts up, spreading before the operating system is loaded. E.g Michelangelo, Stone.
+            - Multipartite Viruses: These viruses can infect multiple parts of a system, such as both the boot sector and executable files. They spread in multiple ways and can re-infect systems even after cleanup if not all parts are addressed. E.g Tequila, Invader.
+            - Polymorphic Viruses: These viruses can change their code or signature each time they infect a new system. They use encryption and code mutation to avoid detection by antivirus software. E.g Storm Worm, Vundo.
+            - Metamorphic Viruses: These viruses rewrite their own code each time they infect a new file, making each version different. They can completely change their structure and functionality to evade detection. E.g Simile, ZMist.
+            - Stealth Viruses: These viruses hide themselves by intercepting system calls and returning false information to the antivirus software. They avoid detection by masking their presence, often hiding file size changes or memory usage. E.g Tchernobyl, Frodo.
+            - Resident Viruses: These viruses embed themselves in the system's memory. They stay active even after the host program is terminated, allowing them to infect other files and programs. E.g Randex, CMJ.
+            - Non-resident Viruses: These viruses do not embed themselves in the memory. They act immediately by infecting files as soon as they are executed and do not remain in memory. E.g Cascade, Vienna.
+            - Ransomware: While often classified separately from traditional viruses, ransomware can be seen as a type of malicious code that encrypts the victim's data. It demands a ransom for the decryption key. It spreads like a virus, often through email attachments or malicious links. E.g WannaCry, Cryptolocker.
+            - Encrypted virus: uses encryption to conceal its malicious code. The virus contains a decryption routine and an encrypted copy of the virus code. Each time the virus infects a new file, it generates a new encryption key and encrypts its code. When the infected file is executed, the decryption routine is triggered, decrypting the virus code and allowing it to execute. 
