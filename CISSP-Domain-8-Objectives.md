@@ -344,6 +344,10 @@ and coding flaws as well as the severity of other flaws.
         - DAST enables devs to trace subtle logical errors that are likely to cause security problems, without the need to create artificial error-inducing scenarios
         - dynamic analysis is also effective for compatibility testing, detecting memory leakages, identifying dependencies, and analyzing software without accessing the software’s actual source code
   - **Code Review**: A process where one or more developers examine another developer's code to identify any errors, security vulnerabilities, or areas for improvement.
+      - Pass-around reviews are often done via email or using a central code review system, allowing developers to review code asynchronously.
+      - Pair programming requires two programmers to work together, with one writing code and the other reviewing and tracking progress.
+      - Team reviews are typically done in a group
+      - Fagan inspection is a formal review process that would involve both the developer and a team to review the code using a formal process. 
   - **White-Box Testing**: A software testing approach where the tester has complete knowledge of the internal structure, code, and logic of the application being tested.
   - **Black-box testing** begins with no prior knowledge of the system implementation, simulating a user perspective.
   - **Gray-box testing** provide partial knowledge of the system, respectively, in advance of the test.
