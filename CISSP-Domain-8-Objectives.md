@@ -251,6 +251,8 @@ and coding flaws as well as the severity of other flaws.
 - 8.1.4 Change management
     - Change management (AKA control management) plays an important role when monitoring systems in a controlled environment, and has 3 basic components:
         - **Request Control**: process that provides an organized framework within which users can request modifications, managers can conduct cost/benefit analysis, and developers can prioritize tasks
+            - Change Request: The request process begins with a user-initiated request for a feature. Change and release
+control are initiated by developers seeking to implement changes. Design review is a phase of the change approval process initiated by developers when they have a completed design.
         - **Change Control**: the process of controlling specific changes that need to take place during the life cycle of a system, serving to document the necessary change-related activities 
             - where change management is the project manager’s responsibility for the overarching process, change control is what devs do to ensure the software or environment doesn’t break when changed
             - change control is basically the process used by devs to re-create a situation encountered by a user and analyze the appropriate changes; it provides a framework where multiple devs can create and test a solution prior to rolling it out into a prod environment
@@ -476,8 +478,8 @@ Fail-Open: Opens up or grants access during a failure, allowing processes to con
 mathematical ability of modern database platforms.
     - Cell suppression: is the concept of hiding individual database fields or cells or imposing more security restrictions on them.
     - Semantic integrity: ensures that user actions don’t violate any structural rules. It also checks that all stored data types are within valid domain ranges, ensures that only logical values exist, and confirms that the system complies with any and all uniqueness constraints.
-    - Polyinstantiation: in the context of databases, occurs when two or more rows in the same relational database table appear to have identical primary key elements but contain different data for use at differing classification levels. Polyinstantiation is often used as a defense against some types of inference attacks, but it introduces additional storage costs to store
-copies of data designed for different clearance levels.
+    - Polyinstantiation: in the context of databases, occurs when two or more rows in the same relational database table appear to have identical primary key elements but contain different data for use at differing classification levels. Polyinstantiation is often used as a defense against some types of inference attacks, but it introduces additional storage costs to store copies of data designed for different clearance levels. It allows the storage of multiple different pieces of information in a database at different classification levels to prevent attackers from inferring anything about the
+absence of information.
     - Open Database Connectivity (ODBC): is a database feature that allows applications to communicate with different types of databases without having to be directly programmed for interaction with each type.
     - NoSQL databases are a class of databases that use models other than the relational model to store data. There are 3 types:
         - Key/value stores are perhaps the simplest possible form of database. They store information in key/value pairs, where the key is essentially an index used to uniquely identify a record, which consists of a data value.
