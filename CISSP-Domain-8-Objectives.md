@@ -171,7 +171,8 @@
                     - guidance
             - Design: process used to define software requirements and develop software
                 - this function includes practices for:
-                    - threat modeling
+                    - threat modeling: designed to reduce the number of security-related design
+and coding flaws as well as the severity of other flaws.
                     - threat assessment
                     - security requirements
                     - security architecture
