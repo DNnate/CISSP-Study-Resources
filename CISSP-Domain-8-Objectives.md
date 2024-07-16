@@ -384,6 +384,8 @@
      - **Application Programming Interface (API)**: specifies the manner in which a software component interacts with other components
         - API's reduce the effort of providing secure component interactions by providing easy implementation for security controls 
         - API's reduce code maintenance by encouraging software resue, and keeping the location of changes in one place
+        - **Closed system** is designed to work well with a narrow range of other systems, generally all from the same manufacturer. The standards for closed systems are often proprietary and not normally disclosed. 
+- **Open systems** are designed using agreed-upon industry standards. Open systems are much easier to integrate with systems from different manufacturers that support the same standards or that use compatible application programming interfaces (APIs).
         - **Parameter validation**: ensuring that any API parameter is checked against being malformed, invalid, or malicious helps ensure API secure use; validation confirms that the parameter values being received by an app are within defined limits before they are processed by the system
 
 - 8.5.3 Security coding practices
@@ -398,10 +400,15 @@
     - Note: secure coding standards, rigorously applied, is the best way to reduce source code vulns; coding standards ensures devs always do certain things in a certain way, while avoiding others
     - Secure coding guidelines are recommended practices that tend to be less specific than standards
             - e.g. consistently formatted code comments, or keeping code funtions short/tight
-    
+
 - 8.5.4 Software-defined security
     - **Software-defined security (SDS or SDSec)**: a security model in which security functions such as firewalling, IDS/IPS, and network segmentation are implemented in software within an SDN environment 
         - one of the advantages of this approach is that sensors (for systems like IDS/IPS) can be dynamically repositioned depending on the threat
         - SDS provides a decoupling from physical devices, because it abstracts security functions into software that can run on any compatible physical or virtual infrastructure, critical for supporting cloud services dynamic scaling and virtualized data centers
     - DevSecOps supports the concept of software-defined security, where security controls are actively managed into the CI/CD pipeline
         
+- **Fail-Safe**: Ensures the system defaults to a safe state in the event of a failure.e.g An automatic door locks when the power goes out, preventing unauthorized access. 
+- **Fail-Secure** (Synonym of Fail Closed): Maintains a secure state during a failure, prioritizing security over other concerns. e.g  Blue screen of death to ensure that security is not compromised during a failure.
+- **Fail-Closed**: Closes or shuts down access when a failure occurs, restricting entry or use. e.g a network firewall that blocks all traffic if it encounters a malfunction. Sacrifices availability for security.
+Fail-Open: Opens up or grants access during a failure, allowing processes to continue to maintain  availability, potentially at the cost of security.
+- **Fail-Soft**: Allows a system to continue operating in a reduced or limited capacity after a failure. e.g A computer that turns off non-critical services to keep essential services running after a hardware failure.
