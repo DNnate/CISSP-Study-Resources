@@ -385,6 +385,7 @@ and coding flaws as well as the severity of other flaws.
 [8.4](#8.4) Assess security impact of acquired software (OSG-9 Chpts 16,20)
 - 8.4.1 Commercial-off-the-shelf (COTS)
     - **Commercial Off-the-Shelf (COTS)**: software elements, usually apps, that are provided as finished products (not intended for alteration by or for the end-user)
+    - When using commercial off-the-shelf (COTS) software, customers do not generally have access to the source code and must depend upon the vendor to release security patches that correct vulnerabilities.
     - Most widely used commercial-off-the-shelf (COTS) software products have been security researcher (both benign and malicious) tested 
         - researching discovered vulnerabilities and exploits can help us understand how seriously the vendor takes security
         - for niche products, you should research vendor certifications, such as ISO/IEC 27034 Application Security
