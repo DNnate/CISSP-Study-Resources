@@ -420,3 +420,18 @@ and coding flaws as well as the severity of other flaws.
 - **Fail-Closed**: Closes or shuts down access when a failure occurs, restricting entry or use. e.g a network firewall that blocks all traffic if it encounters a malfunction. Sacrifices availability for security.
 Fail-Open: Opens up or grants access during a failure, allowing processes to continue to maintain  availability, potentially at the cost of security.
 - **Fail-Soft**: Allows a system to continue operating in a reduced or limited capacity after a failure. e.g A computer that turns off non-critical services to keep essential services running after a hardware failure.
+
+- **Database Security**
+    - Concurrency, or edit control: is a preventive security mechanism that ensures that the information stored in the database is always correct or at least has its integrity and availability protected. This feature can be employed on a single-­level or multilevel database. Databases that fail to implement concurrency correctly may suffer from the following issues: **Lost Updates** Occur when two different processes make updates to a database, unaware of each other’s activity. **Dirty Reads** Occur when a process reads a record from a transaction that did not successfully commit. 
+    - Aggregation: SQL provides a number of functions that combine records from one or more tables to produce potentially useful information. This process is called aggregation. Aggregation attacks are used to collect numerous low-­ level security items or low-­value items and combine them to create something of a higher security level or value.
+    - Inference: Inference attacks involve combining several pieces of nonsensitive information to gain access to information that should be classified at a higher level. However, inference makes use of the human mind’s deductive capacity rather than the raw
+mathematical ability of modern database platforms.
+    - Cell suppression: is the concept of hiding individual database fields or cells or imposing more security restrictions on them.
+    - Semantic integrity: ensures that user actions don’t violate any structural rules. It also checks that all stored data types are within valid domain ranges, ensures that only logical values exist, and confirms that the system complies with any and all uniqueness constraints.
+    - Polyinstantiation: in the context of databases, occurs when two or more rows in the same relational database table appear to have identical primary key elements but contain different data for use at differing classification levels. Polyinstantiation is often used as a defense against some types of inference attacks, but it introduces additional storage costs to store
+copies of data designed for different clearance levels.
+    - Open Database Connectivity (ODBC): is a database feature that allows applications to communicate with different types of databases without having to be directly programmed for interaction with each type.
+    - NoSQL databases are a class of databases that use models other than the relational model to store data. There are 3 types:
+        - Key/value stores are perhaps the simplest possible form of database. They store information in key/value pairs, where the key is essentially an index used to uniquely identify a record, which consists of a data value.
+        - Graph databases store data in graph format, using nodes to represent objects and edges to represent relationships.
+        - Document stores are similar to key/value stores in that they store information using keys, but the type of information they store is typically more complex than that in a key/value store and is in the form of a document. Common document types used in document stores include XML and JSON
