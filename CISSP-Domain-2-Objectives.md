@@ -2,6 +2,7 @@
 
 - Domain 2 of the CISSP exam covers asset security making up ~10% of the test 
 - Asset security includes the concepts, principles, and standards of monitoring and securing any asset important to the organization
+- The annual costs of safeguards should not exceed the expected annual cost of asset value loss.
 
 - The Asset Security domain focuses on collecting, handling, and protecting information throughout its lifecycle; the first step is classifying information based on its value to the organization
 - **Asset**: anything of value owned by the organization
