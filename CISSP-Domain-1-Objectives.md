@@ -591,11 +591,15 @@ is based on the idea that when working with a third party, that third party shou
 [1.13](#1.13) Establish and maintain a security awareness, education, and training program (OSG-9 Chpt 2)
 - 1.13.1 Methods and techniques to present awareness and training (e.g., social engineering, phishing, security champions, gamification)
   - Before actual training takes place, user security awareness needs to take place; from there, training, or teaching employees to perform their work tasks and to comply with the security policy can begin
+  - **Training** is teaching employees to perform their work tasks and to comply with the security policy. Training is typically hosted by an organization and is targeted to groups of employees with similar job functions. 
     - All new employees require some level of training so that they will be able to comply with all standards, guidelines, and procedures mandated by the security policy
-    - Education is a more detailed endeavor in which students/users learn much more than they actually need to know to perform their work tasks 
-    - Education is most often associated with users pursuing certification or seeking job promotion
-  - Employees need to understand what to be aware of (e.g. types of threats, such as phishing and free USB sticks), how to perform their jobs securely (e.g. encrypt sensitive data, physically protect valuable assets) and how security plays a role in the big picture (company reputation, profits,and losses) 
     - Training should be mandatory and provided both to new employees and yearly (at a minimum) for ongoing training 
+  - **Education** is a more detailed endeavor in which students/users learn much more than they actually need to know to perform their work tasks 
+    - Education is most often associated with users pursuing certification or seeking job promotion
+  - **Awareness** establishes a common baseline or foundation of security understanding across the entire organization and focuses on key or basic topics and issues related to security that all employees must understand. Although it
+is provided by the organization, it is not targeted to groups of workers since it applies to all
+employees.
+  - Employees need to understand what to be aware of (e.g. types of threats, such as phishing and free USB sticks), how to perform their jobs securely (e.g. encrypt sensitive data, physically protect valuable assets) and how security plays a role in the big picture (company reputation, profits,and losses) 
     - Routine tests of operational security should be performed (such as phishing test campaigns, tailgating at company doors and social engineering tests)
     - Social engineering: while many orgs don’t perform social engineering campaigns (testing employees using benign social engineering attempts) as part of security awareness, it is likely to gain traction. 
       - outside of campaigns, presenting social engineering scenarios and information is a common way to educate
