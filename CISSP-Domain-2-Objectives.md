@@ -5,7 +5,16 @@
 
 - The Asset Security domain focuses on collecting, handling, and protecting information throughout its lifecycle; the first step is classifying information based on its value to the organization
 - **Asset**: anything of value owned by the organization
+  - **Intangible Assets**: Patents, databases, and formulas
+  - **Tangible Assets**: hardware, cables, and buildings
+  - **Personnel Assets**: Employees
 - **Asset lifecycle**: phases an asset goes through, from creation (or collection) to destruction
+- **Threat** is any potential occurrence that may cause an undesirable or unwanted outcome for an organization or for a
+specific asset. 
+- **Vulnerability** is the weakness in an asset, or the absence or the weakness of a safeguard or countermeasure. 
+- **Exposure** is being susceptible to asset loss because of a threat; there is the possibility that a vulnerability can or will be exploited. 
+- **Risk** is the possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the
+severity of damage that could result.
 
 [2.1](#2.1) Identify and classify information assets (OSG-9 Chpt 5)
 
@@ -246,8 +255,3 @@
 
 **Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88
 
-**Intangible Assets**: Patents, databases, and formulas
-
-**Tangible Assets**: hardware, cables, and buildings
-
-**Personnel Assets**: Employees
