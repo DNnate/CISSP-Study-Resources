@@ -322,7 +322,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
 
 - **Business Continuity Planning (BCP)**: involves assessing the risk to organizational processes and creating policies, plans, and procedures to minimize the impact those risks might have on the organization if they were to occur
   - BCP is used to maintain the continuous operation of a business in the event of an emergency, with a goal to implement a combination of policies, procedures, and processes
-  - Business continuity requires a lot of planning and preparation; actual implementation of business continuity processes occur quite infrequently 
+  - Business continuity requires a lot of planning and preparation; actual implementation of business continuity processes occur quite infrequently
+  - business organization analysis is the first step of the process, and the results are used to aid in the selection of team members and the design of the BCP process.
   - The primary facets of business continuity are:
     - Resilience: (e.g. within a data center and between sites or data centers) 
     - Recovery: if a service becomes unavailable, you need to recover it as soon as possible
@@ -358,7 +359,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - The next phase of BCP development, continuity planning, focuses on the development and implementation of a continuity strategy to minimize the impact realized risks might have on protected assets
       - There are two primary subtasks involved in continuity planning:
         - Strategy development
-        - Provisions and processes
+        - Provisions and processes: In the provisions and processes phase, the BCP team also designs the procedures and mechanisms to mitigate risks that were deemed unacceptable during the strategy development phase.
       - The goal of this process is to create a **continuity of operations plan** (COOP), which focuses on how an org will carry out critical business functions starting shortly after a disruption occurs and extending up to one month of sustained operations
     - **Approval and implementation**:
       - BCP plan now needs sr. management buy-in (should be endorsed by the org's top exec)
@@ -444,6 +445,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - **Risk Avoidance**: determining that the impact or likelihood of a specific risk is too greate to be offset by potential benefits, and not performing a particular business function due to that determiniation; the process of selecting alternate options or activities that have less associated risk than the default, common, expedient, or cheap option
     - **Risk Acceptance**: the result after a cost/benefit analysis determines that countermeasure costs would outweigh the possible cost of loss due to a risk 
       - also means that management has agreed to accept the consequences/loss if the risk is realized
+      - For acceptable risks, the documentation should include a rationale for that decision and a list of potential future events that might warrant a reconsideration of that determination. The documentation would not include controls used to mitigate acceptable risks, since acceptable risks do not require mitigation.
     - **Risk Rejection**: an unacceptable possible response to risk is to reject risk or ignore risk; denying that risk exists and hoping that it will never be realized are not valid prudent due care/due diligence responses to risk
     - **Risk Transference**: paying an external party to accept the financial impact of a given risk
   - **Inherent Risk**: the level of natural, native, or default risk that exists in an environment, system, or product prior to any risk management efforts being performed (AKA initial or starting risk); this is the risk identified by the risk assessment process
