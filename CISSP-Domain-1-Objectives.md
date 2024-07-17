@@ -459,7 +459,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - Bear in mind that security should be designed to support and enable business tasks and functions
       - security controls, countermeasures, and safeguards can be implemented administratively, logically / technically, or physically 
       - these 3 categories should be implemented in a conceptual layered defense-in-depth manner to provide maximum benefit
-      - based on the concept that policies (part of administrative controls) drive all aspects of security and thus form the initial protection layer around assets 
+      - based on the concept that policies (part of administrative controls) drive all aspects of security and thus form the initial protection layer around assets
+      - Defense in depth is simply the use of multiple controls in a series. No one control can protect against all possible threats. Using a multilayered solution allows for numerous, different controls to guard against whatever threats come to pass. Some of the terms that relate to or are based on defense in depth include: Layering, Classifications, Zones, Realms, Compartments, Silos, Segmentations, Lattice structure, Protection rings
       - then, logical and technical controls provide protection against logical attacks and exploits 
       - then, physical controls provide protection against real-world physical attacks against facilities and devices
 - 1.10.5 Applicable types of controls (e.g., preventive, detective, corrective)
