@@ -593,7 +593,8 @@ is based on the idea that when working with a third party, that third party shou
   - Before actual training takes place, user security awareness needs to take place; from there, training, or teaching employees to perform their work tasks and to comply with the security policy can begin
   - **Training** is teaching employees to perform their work tasks and to comply with the security policy. Training is typically hosted by an organization and is targeted to groups of employees with similar job functions. 
     - All new employees require some level of training so that they will be able to comply with all standards, guidelines, and procedures mandated by the security policy
-    - Training should be mandatory and provided both to new employees and yearly (at a minimum) for ongoing training 
+    - Training should be mandatory and provided both to new employees and yearly (at a minimum) for ongoing training
+    - Program effectiveness evaluation, such as giving a quiz or monitoring security incident rate changes over time, can be used to measure whether the training is beneficial or a waste of time and resources
   - **Education** is a more detailed endeavor in which students/users learn much more than they actually need to know to perform their work tasks 
     - Education is most often associated with users pursuing certification or seeking job promotion
   - **Awareness** establishes a common baseline or foundation of security understanding across the entire organization and focuses on key or basic topics and issues related to security that all employees must understand. Although it
@@ -605,11 +606,14 @@ employees.
       - outside of campaigns, presenting social engineering scenarios and information is a common way to educate
     - Phishing: phishing campaigns are popular, and many orgs use third-party services to routinely test their employees with fake phishing emails 
       - such campaigns produce valuable data, such as the percentage of employees who open the phishing email, the percentage who open attachments or click links, and the percentage who report the fake phishing email as malicious
-    - Security champions: the term “champion” has been gaining ground; orgs often use it to designate a person on a team who is a subject matter expert in a particular area or responsible for a specific area
+    - **Security champions**: the term “champion” has been gaining ground; orgs often use it to designate a person on a team who is a subject matter expert in a particular area or responsible for a specific area
       - e.g. somebody on the team could be a monitoring champion — they have deep knowledge around monitoring and evangelize the benefits of monitoring to the team or other teams
       - a security champion is a person responsible for evangelizing security, helping bring security to areas that require attention, and helping the team enhance their skills
-    - Gamification: legacy training and education are typically based on reading and then answering multiple-choice questions to prove knowledge; gamification aims to make training and education more fun and engaging by packing educational material into a game
+      - Security champions are often
+non-­security employees who take up the mantle to encourage others to support and adopt more security practices and behaviors.
+    - **Gamification**: legacy training and education are typically based on reading and then answering multiple-choice questions to prove knowledge; gamification aims to make training and education more fun and engaging by packing educational material into a game
       - gamification has enabled organizations to get more out of the typical employee training
+      - Gamification is a means to encourage compliance and engagement by integrating common elements of game play into other activities, such as security compliance and behavior change. This can include rewarding compliance behaviors and potentially punishing violating behaviors. Many aspects of game play can be integrated into security training and adoption, such as scoring points, earning achievements or badges (i.e., earn recognition), competing with others, cooperating with others (i.e., team up with coworkers), following a set of common/standard rules, having a defined goal, seeking rewards, developing group stories/experiences, and avoiding pitfalls or negative game events
 
 - **Social Engineering Attacks**
 	- **Phishing**: This involves sending fraudulent emails that appear to come from reputable sources. The goal is to trick recipients into providing sensitive information such as usernames, passwords, and credit card details.
