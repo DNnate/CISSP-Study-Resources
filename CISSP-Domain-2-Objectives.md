@@ -14,8 +14,9 @@
 specific asset. e.g threat/likelihood of fire
 - **Vulnerability** is the _weakness_ in an asset, or the absence or the weakness of a safeguard or countermeasure. e.g lack of fire extinguishers
 - **Exposure** is being _susceptible_ to asset loss because of a threat; there is the possibility that a vulnerability can or will be exploited. 
-- **Risk** is the _possibility or likelihood_ that a threat will exploit a vulnerability to cause harm to an asset and the
-severity of damage that could result. e.g damage to equipment
+- **Risk** is the _possibility, probability, chance or likelihood_ that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result. e.g damage to equipment.
+  - Risk = Threat * Vulnerability
+  - Every instance of exposure is a risk
 
 [2.1](#2.1) Identify and classify information assets (OSG-9 Chpt 5)
 
