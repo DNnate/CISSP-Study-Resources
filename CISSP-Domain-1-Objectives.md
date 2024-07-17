@@ -68,6 +68,7 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
  
 - **Security governance**: the collection of policies, roles, processes/practices used to make security decisions in an org; related to supporting, evaluating, defining, and directing the security efforts of an org 
   - Security governance is the implementation of a security solution and a management method that are tightly interconnected
+  - Security governance seeks to compare the security processes and infrastructure used within the organization with knowledge and insight obtained from external sources.
   - There are numerous security frameworks and governance guidelines, including the National Institute of Standards and Technology (NIST) SP 800-53 and SP 800-100
 - **The security function**: the aspect of operating a business that focuses on the task of evaluating and improving security over time 
   - To manage security, an org must implement proper and sufficient security governance
@@ -77,7 +78,7 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
   - **Security Management Planning**: ensures proper creation/implementation/enforcment of a security policy, and alignment with org strategy, goals, mission, and objectives
   - **Strategic Plan**: a strategic plan is a long-term plan (useful for 5 years); it defines the org's security purpose 
     - A strategic plan should include risk assessment
-  - **Tactical Plan**: mid-term plan (1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan
+  - **Tactical Plan**: mid-term plan (1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan or can be crafted ad hoc based on unpredicted events
   - **Operational Plan**: a short-term, highly detailed plan based on strategic or tactical plans 
     - Strategy, goals, missions,and objectives — support each other in a heirarchy
     - **Objectives**: are closest to the ground-level and represent small efforts to help you achieve a mission 
@@ -86,6 +87,7 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
 - 1.3.2 Organizational processes (e.g., acquistions, divestitures, governance committees)
   - Security governance should address every aspect of an org, including organizational processes of acquisitions, divestitures, and governance
   - Be aware of the risks in acquisitions (since the state of the IT environment to be integrated is unknown, due diligence is key) and divestitures (how to split the IT infrastructure and what to do with identities and credentials)
+  - Acquisitions and mergers place an organization at an increased level of risk. Such risks include inappropriate information disclosure, data loss, downtime, and failure to achieve sufficient return on investment (ROI)
   - Understand the value of governance committees (vendor governance, project governance, architecture governance, etc.)
   - Executives, managers and appointed individuals meet to review architecture, projects and incidents (security or otherwise),and provide approvals for new strategies or directions 
     - The goal is a fresh set of eyes, often eyes that are not purely focused on information security
@@ -151,8 +153,12 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
       - developing a formalized security structure containing a security policy, standards, baselines guidlines, and procedures 
       - documentation to establish written policies
       - disseminating the information to the organization
+      - Due diligence is knowing what should be done and planning for it.
+      - Due diligence is developing a formalized security structure containing a security policy, standards, baselines, guidelines, and procedures.
   - **Due care**: practicing the individual activities that maintain the due diligence effort; due care is about your legal responsibility within the law or within org policies to implement your org’s controls, follow security policies, do the right thing and make reasonable choices
   - Security documentation is the security policy
+  - Due care is doing the right action at the right time.
+  - Due care is the continued application of a security structure onto the IT infrastructure of an organization.
   - After establishing a framework for governance, security awareness training should be implemented, including all new hires, who complete the security awareness training as they come on board, and existing employees who should recertify regularly (typically yearly)
   - ***The Prudent Man Rule*** requires that a fiduciary, such as a senior executives and trustee, act with the care, skill, prudence, and diligence that a prudent person acting in a like capacity would use. FOrmalised by the Federal Sentencing Guidelines released in 1991 provided punishment guidelines to help federal judges interpret computer crime laws.
 
@@ -299,11 +305,13 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
 
 - Security Standards, Baselines and Guidelines: once the main security policies are set, the remaining security docuemntation can be crafted from these policies
   - **Policies**: these are high-level documents, usually written by the management team; policies are mandatory, and a policy might provide requirements, but not the steps for implementation
+    - A policy is a document that defines the scope of security needed by the organization and discusses the assets that require protection and the extent to which security solutions should go to provide the necessary protection. 
   - **Standards**: specific mandates explicity stating expections of performance/conformance; more descriptive than policies, standards define compulsary requirements for the homogenous use of hardware, software, technology, and security controls, uniformly implemented throughout the org
-  - **Baseline**: defines a minimum level of security that every system throughout the organization must meet; baselines are usually system specific and refer to industry / government standards
+    - A standard defines compulsory requirements for the homogenous use of hardware, software, technology, and security controls. 
+  - **Baseline**: defines a minimum level of security that every system throughout the organization must meet; baselines are usually system specific and refer to industry / government standards. It is often related to configuration. 
     - e.g. a baseline for  server builds would be a list of configuration areas that should be applied to every server that is built 
     - A Group Policy Object (GPO) in a Windows network is sometimes used to comply with standards; configuration management solutions can also help you establish baselines and spot configurations that are not in alignment
-  - **Guideline**: offers recommendations on how standards and baselines should be implemented & serves as an operational guide for security professionals and users 
+  - **Guideline**: offers recommendations on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
     - Guidelines are flexible, and can be customized for unique systems or conditions; they state which security mechanism should be deployed instead of prescribing a specific product or control; they are not complusory; suggested practices and expectations of activity to best accomplish tasks and goals
   - **Procedure** (AKA Standard Operating Procedure or SOP): detailed, step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution
 
@@ -513,7 +521,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
 
 [1.11](#1.11) Understand and apply threat modeling concepts and methodologies (OSG-9 Chpt 1)
 - **Threat Modeling**: security process where potential threats are identified, categorized, and analyzed; can be performed as a proactive measure during design and development or as an reactive measure once a product has been deployed   
-  - Threat modeling identifies the potential harm, the probability of occurrence, the priority of concern, and the means to eradicate or reduce the threat 
+  - Threat modeling identifies the potential harm, the probability of occurrence, the priority of concern, and the means to eradicate or reduce the threat
+    - Proactive Approach: This is a proactive approach to threat modeling, which is also known as the defensive approach.
+    - Reactive approach or adversarial approach to threat modeling takes place after a product has been created and deployed.
 - Microsoft uses the **Security Development Lifecycle** (SDL) with the motto: "Secure by design, secure by default, secure in deployment and communication" 
   - It has two objectives:
     - Reduce the number of security-related design and coding defects
