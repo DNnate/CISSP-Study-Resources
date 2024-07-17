@@ -2,7 +2,7 @@
 
 - Domain 2 of the CISSP exam covers asset security making up ~10% of the test 
 - Asset security includes the concepts, principles, and standards of monitoring and securing any asset important to the organization
-- The annual costs of safeguards should not exceed the expected annual cost of asset value loss.
+- Anything that removes a vulnerability or protects against one or more specific threats is considered a safeguard or a countermeasure. The annual costs of safeguards should not exceed the expected annual cost of asset value loss.
 
 - The Asset Security domain focuses on collecting, handling, and protecting information throughout its lifecycle; the first step is classifying information based on its value to the organization
 - **Asset**: anything of value owned by the organization
@@ -13,7 +13,7 @@
 - **Threat** is any _potential occurrence_ that may cause an undesirable or unwanted outcome for an organization or for a
 specific asset. e.g threat/likelihood of fire
 - **Vulnerability** is the _weakness_ in an asset, or the absence or the weakness of a safeguard or countermeasure. e.g lack of fire extinguishers
-- **Exposure** is being _susceptible_ to asset loss because of a threat; there is the possibility that a vulnerability can or will be exploited. 
+- **Exposure** is being _susceptible_ to asset loss because of a threat; there is the possibility that a vulnerability can or will be exploited. It is the presence of a vulnerability when a related threat exists
 - **Risk** is the _possibility, probability, chance or likelihood_ that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result. e.g damage to equipment.
   - Risk = Threat * Vulnerability
   - Every instance of exposure is a risk
