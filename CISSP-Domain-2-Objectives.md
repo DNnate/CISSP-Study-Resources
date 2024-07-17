@@ -12,8 +12,8 @@
 - **Threat** is any potential occurrence that may cause an undesirable or unwanted outcome for an organization or for a
 specific asset. 
 - **Vulnerability** is the weakness in an asset, or the absence or the weakness of a safeguard or countermeasure. 
-- **Exposure** is being susceptible to asset loss because of a threat; there is the possibility that a vulnerability can or will be exploited. 
-- **Risk** is the possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the
+- **Exposure** is being _susceptible_ to asset loss because of a threat; there is the possibility that a vulnerability can or will be exploited. 
+- **Risk** is the _possibility or likelihood _that a threat will exploit a vulnerability to cause harm to an asset and the
 severity of damage that could result.
 
 [2.1](#2.1) Identify and classify information assets (OSG-9 Chpt 5)
