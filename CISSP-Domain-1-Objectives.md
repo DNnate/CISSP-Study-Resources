@@ -662,6 +662,9 @@ Also see my articles on risk management:
   - Formula: ALE = Single Loss Expectancy (SLE) * Annualized Rate of Occurrence (ARO)
   - Example: If the SLE for a fire affecting a server is $4,000 and the ARO is 0.1, the ALE is $4,000 * 0.1 = $400.
 
+- **Cost/Benefit Equation for Safeguards**: Anything that removes a vulnerability or protects against one or more specific threats is considered a safeguard or a countermeasure.
+  -Formula: ALE before safeguard – ALE after implementing the safeguard – annual cost of safeguard [(ALE1 – ALE2) – ACS]. 
+
 - **Example Calculation**
   - Identify Asset Value (AV): Let's say the value of a database server is $50,000.
   - Determine the Exposure Factor (EF): A fire might destroy 30% of the server’s value. i.e EF = 30% = 0.30
