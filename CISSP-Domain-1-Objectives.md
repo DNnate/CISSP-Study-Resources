@@ -610,6 +610,20 @@ employees.
       - a security champion is a person responsible for evangelizing security, helping bring security to areas that require attention, and helping the team enhance their skills
     - Gamification: legacy training and education are typically based on reading and then answering multiple-choice questions to prove knowledge; gamification aims to make training and education more fun and engaging by packing educational material into a game
       - gamification has enabled organizations to get more out of the typical employee training
+
+- **Social Engineering Attacks**
+	- **Phishing**: This involves sending fraudulent emails that appear to come from reputable sources. The goal is to trick recipients into providing sensitive information such as usernames, passwords, and credit card details.
+	- **Spear Phishing**: A more targeted form of phishing, spear phishing involves sending emails to specific individuals or organizations, often using personal information to make the attack more convincing.
+	- **Whaling**: This type of phishing targets high-profile individuals like executives or important decision-makers within an organization. The emails are crafted to look like critical business communications.
+	- **Vishing**: This is voice phishing, where attackers use phone calls to trick individuals into providing sensitive information. Often, attackers pose as legitimate entities like banks or government agencies.
+	- **Smishing**: Similar to phishing but conducted via SMS (text messages), smishing involves sending texts that appear to come from trusted sources, prompting recipients to click on a link or provide personal information.
+	- **Pretexting**: In this attack, the attacker creates a fabricated scenario (pretext) to obtain information or perform actions that benefit the attacker. This often involves impersonating someone in authority or a trusted individual.
+	- **Baiting**: Baiting involves enticing a victim with something appealing (the "bait"), such as free software or music downloads, to trick them into providing personal information or downloading malware.
+	- **Quid Pro Quo**: In this attack, the attacker offers a service or benefit in exchange for information. For example, an attacker might pose as an IT support person offering to help with a technical issue in exchange for login credentials.
+	- **Tailgating (or Piggybacking)**: This involves an attacker gaining physical access to a restricted area by following closely behind an authorized person. The attacker relies on the person in front to hold the door open for them.
+	- **Dumpster Diving**: This attack involves searching through an organization’s trash to find sensitive information that has not been properly disposed of. This could include discarded documents, hard drives, or other media.
+	- **Impersonation**: Attackers pose as someone trustworthy, such as a co-worker, IT support, or a vendor, to gain the trust of the victim and extract information or gain access to systems.
+	- **Shoulder Surfing**: This is the practice of spying on the user of an electronic device to obtain confidential information, such as passwords, PINs, or other sensitive data, by looking over their shoulder.
   
 - 1.13.2 Periodic content reviews
   - Threats are complex, so training needs to be relevant and interesting to be effective; this means updating training materials and changing out the ways which security is tested and measured 
