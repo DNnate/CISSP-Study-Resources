@@ -9,9 +9,9 @@
   - **Tangible Assets**: hardware, cables, and buildings
   - **Personnel Assets**: Employees
 - **Asset lifecycle**: phases an asset goes through, from creation (or collection) to destruction
-- **Threat** is any potential occurrence that may cause an undesirable or unwanted outcome for an organization or for a
+- **Threat** is any _potential occurrence_ that may cause an undesirable or unwanted outcome for an organization or for a
 specific asset. 
-- **Vulnerability** is the weakness in an asset, or the absence or the weakness of a safeguard or countermeasure. 
+- **Vulnerability** is the _weakness_ in an asset, or the absence or the weakness of a safeguard or countermeasure. 
 - **Exposure** is being _susceptible_ to asset loss because of a threat; there is the possibility that a vulnerability can or will be exploited. 
 - **Risk** is the _possibility or likelihood_ that a threat will exploit a vulnerability to cause harm to an asset and the
 severity of damage that could result.
