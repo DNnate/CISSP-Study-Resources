@@ -524,7 +524,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - Threat modeling identifies the potential harm, the probability of occurrence, the priority of concern, and the means to eradicate or reduce the threat
     - Proactive Approach: This is a proactive approach to threat modeling, which is also known as the defensive approach.
     - Reactive approach or adversarial approach to threat modeling takes place after a product has been created and deployed.
-- Microsoft uses the **Security Development Lifecycle** (SDL) with the motto: "Secure by design, secure by default, secure in deployment and communication" 
+- Microsoft uses the **Security Development Lifecycle** (SDL) with the motto: "Secure by design, secure by default, secure in deployment and communication" (also known as SD3+C)
   - It has two objectives:
     - Reduce the number of security-related design and coding defects
     - Reduce the severity of any remaining defects
@@ -537,7 +537,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - Information Disclosure: the revelation or distribution of private, confidential, or controlled information to external or unauthorized entities
   - Denial of Service (DoS): an attack that attempts to prevent authorized use of a resource; this can be done through flaw exploitation, connection overloading, or traffic flooding
   - Elevation of privilege: an attack where a limited user account is transformed into an account with greater privileges, powers, and access
-- **Process for Attack Simulation and Threat Analysis (PASTA)**: a seven-stage threat modeling methodology: _(Our Technical Application Tackles Vulnerabilities And Risks)_
+- **Process for Attack Simulation and Threat Analysis (PASTA)**: PASTA is a risk-­centric approach that aims at selecting or developing countermeasures in relation to the value of the assets to be protected. A seven-stage threat modeling methodology: _(Our Technical Application Tackles Vulnerabilities And Risks)_
   - Stage I: Definition of the Objectives (DO) for the Analysis of Risk
   - Stage II: Definition of the Technical Scope (DTS)
   - Stage III: Application Decomposition and Analysis (ADA)
@@ -554,6 +554,12 @@ Factors, entities or conditions outside the organisation upon which the organisa
    - Focus on assets: an org’s most valuable assets are likely to be targeted by attackers
    - Focus on software: orgs that develop applications in house, and can be viewed as part of the threat landscape; the goal isn’t to identify every possible attack, but to focus on the big picture, identifying risks and attack vectors
 - Understanding threats to the org allow the documentation of potential attack vectors; diagramming can be used to list various technologies under threat
+- **Reduction Analysis** (Also known as Decomposiing the application, system or environment): The purpose is to gain a greater understanding of the logic of a product, its internal components as well as its interactions and external elements: The five key concepts of decomposition are
+  - trust boundaries
+  - dataflow paths
+  - input points
+  - privileged operations
+  - Details about security stance and approach.
 
 [1.12](#1.12) Apply Supply Chain Risk Management (SRM) concepts (OSG-9 Chpt 1)
 - 1.12.1 Risks associated with hardware, software, and services
@@ -564,6 +570,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - Each link in the chain should be responsible and accountable to the next link in the chain; each handoff is properly organized, documented, managed, and audited
     - The goal of a secure supply chain is that the finished product is of sufficient quality, meets performance and operational goals, provides stated security mechanisms, and that at no point in the process was any element counterfeited or subject to unauthorized or malicious manipulation or sabotage
   - The supply chain can be a threat vector, where materials, software, hardware, or data is being obtained from a supposedly trusted source but the supply chain behind the source could have been compromised and asset poisoned or modified
+  - Void **Authorization to operate (ATO)**: The situation of voiding the ATO of a vendor describes the fact that the vendor is not meeting minimal security requirements which are necessary to the protection of the service and its customers.
+  - When dealing with suppliers, a Minimum security requirements should be modeled on your existing security policy. This
+is based on the idea that when working with a third party, that third party should have at least the same security as your organization.
 - 1.12.2 Third-party assessment and monitoring
   - Before doing business with another company, an org needs to perform due-dilligence, and third-party assessments can help gather information and perform the assessment 
   - An on-site assessment is useful to gain information about physical security and operations 
