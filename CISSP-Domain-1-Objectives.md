@@ -355,6 +355,11 @@ Factors, entities or conditions outside the organisation upon which the organisa
         - **Mean Time Between Failures (MTBF)** The predicted elapsed time between inherent failures of a system during operation. e.g A server might have an MTBF of 10,000 hours.
         - **Mean Time to Repair (MTTR)** The average time required to repair a failed component or system.
         - **Maximum tolerable downtime (MTD)**, (how long an org can survive an interruption of critical functions) along with the costs of downtime and recovery; AKA MTD (maximum tolerable downtime)
+        - Some mitigation actions during BIA include:
+        - Hardening systems:  securing systems by reducing their attack surface of vulnerability
+        - Defining systems: identifying and describing the various systems within an organization, including their roles, functions, and interdependencies.
+        - Reducing systems: Consolidation and removal of complexity
+        - Alternative systems: refers to backup systems, redundant systems 
     - **Continuity planning**: The first two phases of the BCP process (project scope and planning and the business impact analysis) focus on determining how the BCP process will work and prioritizing the business assets that need to be protected against interruption
       - The next phase of BCP development, continuity planning, focuses on the development and implementation of a continuity strategy to minimize the impact realized risks might have on protected assets
       - There are two primary subtasks involved in continuity planning:
