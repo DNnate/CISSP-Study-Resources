@@ -434,7 +434,10 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - Risk is threat with a vulnerability
   - Risk = threat * vulnerability (or probability of harm * severity of harm)
   - Addressing either the threat or threat agent or vulnerability directly results in a reduction of risk (known as threat mitigation)
-  - All IT systems have risk; all orgs have risk; there is no way to elminiate 100% of all risks 
+  - All IT systems have risk; all orgs have risk; there is no way to elminiate 100% of all risks. Risk is typically composed of three Components:
+  - **Threat** (a potential cause of an incident that may result in harm)
+  - **Vulnerability** (a weakness that can be exploited by a threat)
+  - **Impact** (the potential harm caused by a threat exploiting a vulnerability)
     - Instead upper management must decide which risks are acceptable, and which are not; There are two primary risk-assessment methodologies:
       - **Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations
       - **Qualitative Risk Analysis**: assigns subjective and intangible values to the loss of an asset and takes into account perspectives, feelings, intuition, preferences, ideas, and gut reactions
