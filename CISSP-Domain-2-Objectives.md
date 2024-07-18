@@ -251,6 +251,8 @@ specific asset. e.g threat/likelihood of fire
 
 **Pseudonymization** uses a pseudonym or alias to replace other information.
 
+**Policy**: Policy is High level > Standard > Guidlines > Procedure
+
 **Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53
 
 **Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks
