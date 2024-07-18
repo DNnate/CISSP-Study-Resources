@@ -331,7 +331,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 
 - BCP vs DR: 
   - BCP activities are typically strategically focused at a high level and center themselves on business processes and operations
-  - DR plans tend to be more tactical and describe technical activities such as recovery sites, backups, and fault tolerance
+  - DR plans tend to be more tactical and describe technical activities such as recovery sites, backups, and fault tolerance. It ensures sufficient technical controls in place to recover operations after a disruption
 
 - The overall goal of BCP is to provide a quick, calm, and efficient response in the event of an emergency and to enhance a company's ability to quickly recover from a distruptive event
 
@@ -368,6 +368,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - The goal of this process is to create a **continuity of operations plan** (COOP), which focuses on how an org will carry out critical business functions starting shortly after a disruption occurs and extending up to one month of sustained operations
     - **Approval and implementation**:
       - BCP plan now needs sr. management buy-in (should be endorsed by the org's top exec)
+      - You should strive to have the highest-­ranking person possible sign the BCP’s statement of importance.
       - BCP team should create an implementation schedule, and all personnel involed should receive training on the plan
 
 - The top priority of BCP and DRP is people: **Always prioritize people's safety**; get people out of harm's way, and then address IT recovery and restoration issues
