@@ -77,7 +77,7 @@
     - **Security Content Automation Protocol (SCAP)**: provides a common framework for discussion and facilitation of automation of interactions between different security systems (sponsored by NIST)
         - SCAP components related to vulnerability assessments:
             - **Common Vulnerabilities and Exposures (CVE)**: provides a naming system for describing security vulnerabilities
-            - **Common Vulnerability Scoring Systems (CVSS)**: provides a standardized scoring system for describing the severity of security vulnerabilities
+            - **Common Vulnerability Scoring Systems (CVSS)**: provides a standardized scoring system for describing the severity of security vulnerabilities. The score can range from 0.0 (least severe) to 10.0 (most severe).
             - **Common Configuration Enumeration (CCE)**: provides a naming system for system config issues
             - **Common Platform Enumeration (CPE)**: provides a naming system for operating systems, applications, and devices
             - **Extensible Configuration Checklist Description Format (XCCDF)**: provides a language for specifying security checklists
