@@ -175,10 +175,12 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
     - **Sarbanes-Oxley (SOX)** - financial systems may be audited to ensure security controls are sufficient to ensure compliance with SOX. It protects investors.  required publicly traded companies to implement a wide range of controls intended to minimize conflicts of interest, provide investors with appropriate risk information, place civil and criminal penalties on executives for providing false financial disclosures, and provide protections for whistleblowers who report inappropriate actions to regulators.
     - **Gramm-Leach-Bliley Act (GLBA)** - affects banks, insurance companies, and credit providers; included a number of limitations on the types of information that could be exchanged even among subsidiaries of the same corp, and required financial institutions to provide written privacy policies to all their customers
     - **Health Insurance Portability and Accountability Act (HIPAA)** - privacy and security regulations requiring strict security measures for hospitals, physicians, insurance companies, and other organizations that process or store private medical information about individuals; also clearly defines the rights of individuals who are the subject of medical records and requires organizations that maintain such records to disclose these rights in writing
+    - Organizations subject to HIPAA may enter into relationships with service providers as long as the provider’s use of protected health information is regulated under a formal business associate agreement (BAA). The BAA makes the service provider liable under HIPAA.
     - **Federal Information Security Management Act (FISMA)** - ) includes provisions regulating information security at federal agencies. Requires federal agencies to implement an information security program that covers the agency's operations and contractors
     - **Computer Fraud and Abuse Act (CFAA)** (as amended) - protects computers used by the government or in interstate commerce from a variety of abuses
     - **ITIL**  British Government standard that describes IT service managment and the structured fitting of security into an organization. It focuses on change management, configuration management and SLAs.
     - **Electronic Communications Privacy Act (ECPA)** - passed in 1986 to expand and revise federal wiretapping and electronic eavesdropping provisions, making it a crime to intercept or procure electronic communications, and includes important provisions that protect a person’s wire and electronic communications from being intercepted by another private individual
+    - The **Privacy Act of 1974** limits the ways government agencies may use information that private citizens disclose to them under certain circumstances. The Privacy Act regulates what information government agencies may collect and maintain about individuals.
     - **The Lanham Act** regulates the issuance of trademarks to protect intellectual property.
     - **Digital Millennium Copyright Act** - prohibits the circumvention of copyright protection mechanisms placed in digital media and limits the liability of internet service providers for the activities of their users
 - 1.4.2 Privacy requirements
@@ -193,6 +195,8 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
     - California Consumer Privacy Act (CCPA)
     - Be familiar with the EU Data Protection Directive
     - Be familiar with the requirements around healthcare data, credit card data and other PII data as it relates to various countries and their laws and regulations
+    - The European Union provides **standard contractual clauses** that may be used to facilitate data transfer. That would be the best choice in a case where two different companies e.g one in Europe and one in the United States are sharing data.
+    - If the data were being shared internally within a company, **binding corporate rules** would also be an option
 
 [1.5](#1.5) Understand legal and regulatory issues that pertain to information security in a holistic context (OSG-9 Chpt 4)
 - 1.5.1 Cybercrimes and data breaches
@@ -204,7 +208,7 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
     - **Council of Europe Convention on Cybercrime**: a treaty signed by many countries that establishes standards for cybercrime policy 
     - Laws about data breaches, including notification requirements
     - In the US, the **Health Information Technology for Economic and Clinical Health (HITECH)** Act requires notification of a data breach in some cases, such as when the personal health information was not protected as required by HIPAA
-    - GLBA (Gramm-Leach-Bliley Act) applies to insurance and financial orgs, requiring notification to federal regulators, law enforcement agencies and customers when a data breach occurs 
+    - **GLBA (Gramm-Leach-Bliley Act)****** applies to insurance and financial orgs, requiring notification to federal regulators, law enforcement agencies and customers when a data breach occurs 
     - Certain states also impose their own requirements concerning data breaches 
     - the EU and other countries have their own requirements, for instance, the GDPR has very strict data breach notification requirements: A data breach must be reported to the competent supervisory authority within 72 hours of its discovery
     - Some countries do not have any reporting requirements
