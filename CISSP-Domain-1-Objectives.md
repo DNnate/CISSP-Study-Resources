@@ -215,11 +215,11 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
 - 1.5.2 Licensing and intellectual property (IP) requirements
   - **Intellectual property**: intangible assets (e.g. software, data)
   - **Trademarks**: words, slogans, and logos used to identify a company and its products or services.
-  - **Patents**: a temporary monopoly for producing a specific item such as a toy, which must be novel and unique to qualify for a patent. Have expiration date.
+  - **Patents**: a temporary monopoly for producing a specific item such as a toy, which must be novel and unique to qualify for a patent. Patents have expiration date. U.S. patent law provides for an exclusivity period of 20 years beginning at the time a utility patent application is submitted to the Patent and Trademark Office.
     - **Utility**: protect the intellectual property rights of inventors
     - **Design**: cover the appearance of an invention and last for 15 years; note design patents on't protect the idea of an invention only its form, and are generally seen as weaker
     - Software: area of on-going controversy; Google vs Oracle; given to rise of "patent trolls"
-  - **Copyright**: exclusive use of artistic, musical or literary works which prevents unauthorized duplication, distribution or modification. Also can include software code published in academic journal. Copyright and patent protection both have expiration dates.
+  - **Copyright**: exclusive use of artistic, musical or literary works which prevents unauthorized duplication, distribution or modification. Also can include software code published in academic journal. Copyright and patent protection both have expiration dates. Copyright protection generally lasts for 70 years after the death of the last surviving author of the work
   - **Licensing**: a contract between the software producer and the consumer which limits the use and/or distribution of the software
   - **Trade Secrets**: intellectual property that is critical to a business, and significant damage would result if it were disclosed to competitors or the public
   - When you file application for protection, until registration is granted, you can use the **TM** symbol to inform others that it is protected under trademark law. Once the application is approved, the name becomes a registered trademark, and
