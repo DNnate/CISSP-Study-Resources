@@ -219,6 +219,7 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
   - **Trade Secrets**: intellectual property that is critical to a business, and significant damage would result if it were disclosed to competitors or the public
 - 1.5.3 Import/export controls
   -  Every country has laws around the import and export of hardware and software; e.g. the US has restrictions around the export of cryptographic technology, and Russia requires a license to import encryption technologies manufactured outside the country
+  -  The _Bureau of Industry and Security_ within the Department of Commerce sets regulations on the export of encryption products outside of the United States.
 - 1.5.4 Transborder data flow
   -  Orgs should adhere to origin country-specific laws and regulations, regardless of where data resides
   -  Also be aware of applicable laws where data is stored and systems are used
