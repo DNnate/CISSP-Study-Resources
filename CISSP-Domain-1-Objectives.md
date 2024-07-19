@@ -169,12 +169,13 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
     - **Criminal law**: protects society against acts that violate the basic principles we believe in; violations of criminal law are prosecuted by federal and state governments
     - **Civil law**: provides the framework for the transaction of business between people and organizations; violations of civil law are brought to the court and argued by the two affected parties
     - **Administrative law**: used by government agencies to effectively carry out their day-to-day business
+    	- Administrative laws do not require an act of the legislative branch to implement at the federal level. Administrative laws consist of the policies, procedures, and regulations promulgated by agencies of the executive branch of government. Although they do not require an act of Congress, these laws are subject to judicial review and must comply with criminal and civil laws enacted by the legislative branch. 
   - **Compliance**: Organizations may find themselves subject to a wide variety of laws, and regulations imposed by regulatory agencies or contractual obligation
     - **Payment Card Industry Data Security Standard (PCI DSS)** - governs the security of credit card information and is enforced through the terms of a merchant agreement between a business that accepts CC payments, and the bank that processes the business' transactions
     - **Sarbanes-Oxley (SOX)** - financial systems may be audited to ensure security controls are sufficient to ensure compliance with SOX. It protects investors.  required publicly traded companies to implement a wide range of controls intended to minimize conflicts of interest, provide investors with appropriate risk information, place civil and criminal penalties on executives for providing false financial disclosures, and provide protections for whistleblowers who report inappropriate actions to regulators.
     - **Gramm-Leach-Bliley Act (GLBA)** - affects banks, insurance companies, and credit providers; included a number of limitations on the types of information that could be exchanged even among subsidiaries of the same corp, and required financial institutions to provide written privacy policies to all their customers
     - **Health Insurance Portability and Accountability Act (HIPAA)** - privacy and security regulations requiring strict security measures for hospitals, physicians, insurance companies, and other organizations that process or store private medical information about individuals; also clearly defines the rights of individuals who are the subject of medical records and requires organizations that maintain such records to disclose these rights in writing
-    - **Federal Information Security Management Act (FISMA)** - requires federal agencies to implement an information security program that covers the agency's operations and contractors
+    - **Federal Information Security Management Act (FISMA)** - ) includes provisions regulating information security at federal agencies. Requires federal agencies to implement an information security program that covers the agency's operations and contractors
     - **Computer Fraud and Abuse Act (CFAA)** (as amended) - protects computers used by the government or in interstate commerce from a variety of abuses
     - **ITIL**  British Government standard that describes IT service managment and the structured fitting of security into an organization. It focuses on change management, configuration management and SLAs.
     - **Electronic Communications Privacy Act (ECPA)** - passed in 1986 to expand and revise federal wiretapping and electronic eavesdropping provisions, making it a crime to intercept or procure electronic communications, and includes important provisions that protect a person’s wire and electronic communications from being intercepted by another private individual
@@ -209,14 +210,16 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
     - Some countries do not have any reporting requirements
 - 1.5.2 Licensing and intellectual property (IP) requirements
   - **Intellectual property**: intangible assets (e.g. software, data)
-  - **Trademarks**: words, slogans, and logos used to identify a company and its products or services
-  - **Patents**: a temporary monopoly for producing a specific item such as a toy, which must be novel and unique to qualify for a patent
+  - **Trademarks**: words, slogans, and logos used to identify a company and its products or services.
+  - **Patents**: a temporary monopoly for producing a specific item such as a toy, which must be novel and unique to qualify for a patent. Have expiration date.
     - **Utility**: protect the intellectual property rights of inventors
     - **Design**: cover the appearance of an invention and last for 15 years; note design patents on't protect the idea of an invention only its form, and are generally seen as weaker
     - Software: area of on-going controversy; Google vs Oracle; given to rise of "patent trolls"
-  - **Copyright**: exclusive use of artistic, musical or literary works which prevents unauthorized duplication, distribution or modification
+  - **Copyright**: exclusive use of artistic, musical or literary works which prevents unauthorized duplication, distribution or modification. Also can include software code published in academic journal. Copyright and patent protection both have expiration dates.
   - **Licensing**: a contract between the software producer and the consumer which limits the use and/or distribution of the software
   - **Trade Secrets**: intellectual property that is critical to a business, and significant damage would result if it were disclosed to competitors or the public
+  - When you file application for protection, until registration is granted, you can use the **TM** symbol to inform others that it is protected under trademark law. Once the application is approved, the name becomes a registered trademark, and
+you can begin using the **®** symbol. The **©** symbol is used to represent a copyright.
 - 1.5.3 Import/export controls
   -  Every country has laws around the import and export of hardware and software; e.g. the US has restrictions around the export of cryptographic technology, and Russia requires a license to import encryption technologies manufactured outside the country
   -  The _Bureau of Industry and Security_ within the Department of Commerce sets regulations on the export of encryption products outside of the United States.
@@ -227,13 +230,15 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
   - Many laws include privacy protections for personal data 
     - The EU’s GDPR has strong privacy rules that apply to any org anywhere that stores or processes the personal data of EU residents; these individuals must be told how their data is collected and used, and they must be able to opt out 
   - The privacy guidelines of the **Organization for Economic Co-operation and Development (OECD)** require orgs to avoid unjustified obstacles to trans-border data flow, set limits to personal data collection, protect personal data with reasonable security and more
-  - Fourth Amendment to the US Constitution: the right of the people to be secure in their persons, houses, papers, effects against unreasonable search and seizure
+  - **Fourth Amendment** to the US Constitution: the right of the people to be secure in their persons, houses, papers, effects against unreasonable search and seizure
+  - It sets the “probable cause” standard that law enforcement officers must follow when conducting searches and/or seizures of private property. It also states that those officers must obtain a warrant before gaining involuntary access to such property. 
   - **Electronic Communication Privacy Act (ECPA)**: as amended, protects wire, oral, and electronic communications while those communications are being made, are in transit, and when they are stored on computers; makes it a crime to invade electronic privacy of an individual, and it broadened the Federal Wiretap Act
   - HIPAA: see above
   - HITECH: see above
   - California SB 1386 (2002): immediate disclosure to individuals for PII breach
   - **California Consumer Privacy Act (CCPA)**: The CCPA applies to: 
-    - For-profit businesses that collect consumers’ personal information (or have others collect personal information for them), 
+    - For-profit businesses that collect consumers’ personal information (or have others collect personal information for them),
+    - was the first sweeping data privacy law enacted by a U.S. state.
     - Determine why and how the information will be processed, 
     - Do business in California and meet any of the following: 
       - have a gross annual revenue > $25 million;
@@ -271,6 +276,7 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
     - security
     - accountability
   -  The EU-US **Privacy Shield** (formerly the EU-US Safe Harbor agreement): controls data flow from the EU to the United States; the EU has more stringent privacy protections and without the Privacy Shield, personal data flow from the EU to the United States would not be allowed. It is no longer valid
+  -  **The Communications Assistance for Law Enforcement Act (CALEA)** required that communications carriers assist law enforcement with the implementation of wiretaps when done under an appropriate court order. CALEA only applies to communications carriers
 
 - **Cyber Kill/Attack Chain** a seven-steps to identify and stop attacks: (RWDEICA Reckless Wizards Delve Eagerly Into Crytic Arcanum)
   - Stage I: Reconnaisance
