@@ -102,8 +102,8 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
   - Asset Owner: responsible for classifying information for placement or protection within the security solution
   - Custodian: responsible for the task of implementing the proscribed protection defined by the security policy and senior management
   - Auditor: responsible for reviewing and verifying that the security policy is properly implemented
-- 1.3.4 Security control frameworks
-  - A **security control framework**: outlines the org's approach to security, including a list of specific security processes, procedures, and solutions used; it is important in planning the structure of an org's security solution; many frameworks to choose from, such as:
+- 1.3.4 Security control frameworks **Focuses on the HOW**
+  - A **security control framework**: It is a prescriptive set of cybersecurity safeguards and best practices to protect an organizations assets. It helps in implementing risk managment strategy. outlines the org's approach to security, including a list of specific security processes, procedures, and solutions used; it is important in planning the structure of an org's security solution; many frameworks to choose from, such as:
     -  **Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
         - COBIT is a documented set of best IT security practices by ISACA
         - Six key principles (Sally Has Daring Goals To Excel SHDGTE) :
@@ -116,10 +116,10 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
     -  ISO 27000 series (27000, 27001, 27002, etc.).
           - 15408 evaluation Criteria
           - 22301  security and resilience
-          - 27001 information security standards/controls
-          - 27002 information security guidance
+          - **27001** information security standards/controls: Outlines a framework for implementing, maintaining and continually improving ISMS Information Security Management System (ISMS is a set of policies, processes and controls that helps organization protect thier information assets). ISO 27001 Guides organizations in identifying assets and assessing thier values and information risks AND implementing mitigating security controls based on ISO 27002. CLoud platforms all have ISO 27001.
+          - **27002** information security guidance: Offers best practices and ontrol objectives related to key aspects of cybersecurity in support of ISO/IEC 27001. Focuses on cryptography, human resource security, operational security, and incident response. Serves as an official blueprint for orgs aiming to effectively safeguard information assets from cyber threats.
           - 27031 Business continuity    
-    -  **SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It integrates security into the business processes and aligns security measures with business goals. SABSA Lifecycle Phases:
+    -  **SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It integrates security into the business processes and aligns security measures with business goals. provides a structured method for designing, implementing and managing security architectures. SABSA Lifecycle Phases:
      - Strategy Phase: Understanding business context and defining security goals.
      - Design Phase: Developing the detailed architecture.
      - Implementation Phase: Deploying the security solutions.
@@ -529,9 +529,13 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - **Defined**: a common or standardized risk framework is adopted organization-wide
     - **Integrated**: risk management operations are integrated into business processes, metrics are used to gather effectiveness data, and risk is considered an element in business strategy decisions
     - **Optimized**: risk management focuses on achieving objectives rather than just reacting to external threats; increased strategic planning is geared toward business success rather than just avoiding incidents; and lessons learned are re-integrated into the risk management process
-- 1.10.10 Risk frameworks
-  - A risk framework is a guide or recipe for how risk is to be accessed, resolved, and monitored 
+- 1.10.10 Risk frameworks **Focuses on the WHY**
+  - A risk framework is a guide or recipe for how risk is to be accessed, resolved, and monitored
+  - provide a structured approach to identifying, assessing, prioritizing and manging risk to guide decision making
+  - provides the overaching structure for making risk informed decisions
   - NIST established the **Risk Management Framework** (RMF) and the **Cybersecurity Framework** (CSF): the CSF is a set of guidelines for mitigating organizational cybersecurity risks, based on existing standards, guidelines, and practices
+  - CSF is aimed at private (commercial) businesses and purely optional
+  - RMF's audience is federal government agencies and is mandatory for thosie to which it applies
   - The RMF is intended as a risk management process to identify and respond to threats, and is defined in three core, interrelated Special Publications: 
     - SP 800-37 Rev 2, Risk Management Framework for Information Systems and Organizations
     - SP 800-39, Managing Information Security Risk
