@@ -356,6 +356,17 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
                 - monitor attack, exposure and abuse indexes for new threats to virtual machines (which might be better protected); often, virtualization administrators have access to all virtuals
 
 [3.6](#3.6) Select and determine cryptographic solutions (OSG-9 Chpts 6,7)
+- FIPS 140-2: Established to aid in the protection of digitally stored unclassified , yet sensitive information.
+ - Developed by NIST for use in computer systems by non-military American government agencies and government contractors
+ - **FIPS 140-2** (Federal Information Processing Standard) Security levels include
+  - Level 1: lowest level of security.
+  - Level 2: Specifies requirement for security levels that protect sensitive information. 
+  - Level 3: Requires physical protection to ensure high degree of confidence that any attempts to tamper are evident and detectable.
+-  **FIPS 140-3**: As of April 2022, superseeds FIPS 140-2
+   - Level 1: Production grade equipments and externally tested algorithms
+  - Level 2: Adds requirements for tamper-evidence and role-based authentication.
+  - Level 3: Includes tamper-resistance, identity-based authentication, and sepereation between interfaces
+  - Level 4: Adds protections against environmental attacks and more stringent physical security requirements. Requires the ability to be tamper-active, erasing the content of the device if it detects various forms of environmental attack.
 - 3.6.1 Cryptographic lifecycle (e.g., keys, algorithm selection)
     - Keep **Moore’s Law** in mind (processing capabilities of state-of-the-art microprocessors double about every 2 years), and have appropriate governance controls in place to ensure that algorithms, protocols, and key lengths selected are sufficient to preserve the integrity of the cryptosystems for as long as necessary -- to keep secret information safe
     - Specify the cryptographic algorithms (such as AES, 3DES, and RSA) acceptable for use in an organization
@@ -379,7 +390,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - "same" is a synonym for symmetric 
         - "different" is a synonym for asymmetric 
         - total number of keys required to completely connect n parties using symmetric cryptography is given by this formula: 
-            - **(n(n - 1)) / 2**
+            - **(n(n - 1)) / 2** 🥇
     - **Asymmetric** encryption: process that uses different keys for encryption and decryption, and in which the decryption key is computationally not possible to determine given the encryption key itself
         - Asymmetric (AKA public key, since one key of a pair is available to anybody) algorithms provide convenient key exchange mechanisms and are scalable to very large numbers of users (addressing the two most significant challenges for users of symmetric cryptosystems) 
         - Asymmetric cryptosystems avoid the challenge of sharing the same secret key between users, by using pairs of public and private keys to allow secure communication without the overhead of complex key distribution
@@ -435,7 +446,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - Keys should be backed up!
             - **Key escrow**: process or entity that can recover lost or corrupted cryptographic keys
                 - **multiparty key recovery**: when two or more entities are required to reconstruct or recover a key
-                - **m of n control**: you designate a group of (n) people as recovery agents, but only need subset (m) of them for key recovery
+                - **m of n control**: 🥇 you designate a group of (n) people as recovery agents, but only need subset (m) of them for key recovery
                 - **split custody**: enables two or more people to share access to a key (e.g. for example, two people each hold half the password to the key)
             - Key rotation: rotate keys (retire old keys, implement new) to reduce the risks of a compromised key having access
             - Key states:
