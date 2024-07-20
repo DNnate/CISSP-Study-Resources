@@ -691,9 +691,9 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
       - Deploying, Operating and Maintaining
       - Decommissioning
     - There are 9 Phases called out in the syllabus:
-      - **Phase 1**: Stakeholder Needs and Requirements: identify the problems the system needs to solve. Define functional and security features requried, identify compliance requirements. Key activities include stakeholder interviews, define project scope. Establish baseline security expectaions.
-      - **Phase 2**: Requirement Analysis: Analyse requirements to ensure they are sonsistent complete and unambigous.
-      - Phase 3: Architectural Design
+      - **Phase 1: Stakeholder Needs and Requirements:** identify the problems the system needs to solve. Define functional and security features requried, identify compliance requirements. Key activities include stakeholder interviews, define project scope. Establish baseline security expectaions.
+      - **Phase 2: Requirement Analysis:** Analyse requirements to ensure they are sonsistent complete and unambigous. Key activities include prioritize requirements, create requirement specification documents, risk analysis. Map requirements to security controls and conduct feasibility studies. Goal is to translate high-level security expectations into actionable security requirements and controls.This should address risks identified.
+      - **Phase 3: Architectural Design**
       - Phase 4: Developement/Implementation:
       - Phase 5: Integration
       - Phase 6: 
