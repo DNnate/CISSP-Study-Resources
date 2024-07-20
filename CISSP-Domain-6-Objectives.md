@@ -410,7 +410,8 @@ NIST Cybersecurity Framework (CSF): The NIST Cybersecurity Framework consists of
 
 - FIPS 199: "Standards for Security Categorization of Federal Information and Information Systems" - Establishes security categories for information and information systems.
 - FIPS 200: "Minimum Security Requirements for Federal Information and Information Systems" - Specifies minimum security requirements for federal information systems.
-- FIPS 140-3: "Security Requirements for Cryptographic Modules" - Specifies requirements for cryptographic modules.
+- FIPS 140-2: "Security Requirements for Cryptographic Modules" - Specifies requirements for cryptographic modules.
+- FIPS 140-3: is the successor to FIPS 140-2, providing updated requirements for cryptographic modules
 
 **ISO/IEC 27000 Series:**
 
