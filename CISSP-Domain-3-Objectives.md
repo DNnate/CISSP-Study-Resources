@@ -370,7 +370,10 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - **Cyprtographic Modules**: Can store secrets such as password, symmetric and assymetric keys, HSM backed keys, textual data and even X.509 certificates
    - Hardware: e.g SafeNet Luna HSM (Thales), Gemalto SafeNet HSM (Thales), nShield HSM (Entrust), Ultimaco CryptoServer HSM
    - Software: OpenSSL FIPS Object Module, Microsoft Windows Crypto Modules, Bouncy Castle FIPS Modules
-   - Cloud: Microsoft Azure Key Vault, Amazon Key Management Service (KMS), Google cloud Key Managment Service (KMS)  
+   - Cloud: Microsoft Azure Key Vault, Amazon Key Management Service (KMS), Google cloud Key Managment Service (KMS)
+- **Level of Protection:** dictates that encryption keys must be secured at the same level of control or higher as the data they protect. Sensitivity of the data dictates this level of protection as defined in the org security policies.
+- **Key Recovery:** Circumstances where you need to recover a key for a particular user, without that users cooperation such as termination or key loss.
+- **Key Escrow:** Copies of keys are held by a trusted 3rd party in a secure environment. Comes up in conversations around disasater recovery, business continuity, law enforcement access, regulatory compliance etc
 - 3.6.1 Cryptographic lifecycle (e.g., keys, algorithm selection)
     - Keep **Moore’s Law** in mind (processing capabilities of state-of-the-art microprocessors double about every 2 years), and have appropriate governance controls in place to ensure that algorithms, protocols, and key lengths selected are sufficient to preserve the integrity of the cryptosystems for as long as necessary -- to keep secret information safe
     - Specify the cryptographic algorithms (such as AES, 3DES, and RSA) acceptable for use in an organization
@@ -388,7 +391,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - 3.6.2 Cryptographic methods (e.g., symmetric, asymmetric, elliptic curves, quantum)
     - **Symmetric** encryption: uses the same key for encryption and decryption
         - symmetric encryption uses a shared secret key available to all users of the cryptosystem 
-        - symmetric encryption is faster than asymmetric encryption because smaller keys can be used for the same level of protection
+        - symmetric encryption is faster than asymmetric encryption because smaller keys can be used for the same level of protection 
         - downside is that users or systems must find a way to securely share the key and hope the key is used only for the specified communication
         - primarily employed to perform bulk encryption and provides only for the security service of confidentiality 
         - "same" is a synonym for symmetric 
