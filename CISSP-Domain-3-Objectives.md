@@ -367,6 +367,10 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
   - Level 2: Adds requirements for tamper-evidence and role-based authentication.
   - Level 3: Includes tamper-resistance, identity-based authentication, and sepereation between interfaces
   - Level 4: Adds protections against environmental attacks and more stringent physical security requirements. Requires the ability to be tamper-active, erasing the content of the device if it detects various forms of environmental attack.
+- **Cyprtographic Modules**: Can store secrets such as password, symmetric and assymetric keys, HSM backed keys, textual data and even X.509 certificates
+ - Hardware: e.g SafeNet Luna HSM (Thales), Gemalto SafeNet HSM (Thales), nShield HSM (Entrust), Ultimaco CryptoServer HSM
+ - Software: OpenSSL FIPS Object Module, Microsoft Windows Crypto Modules, Bouncy Castle FIPS Modules
+ - Cloud: Microsoft Azure Key Vault, Amazon Key Management Service (KMS), Google cloud Key Managment Service (KMS)  
 - 3.6.1 Cryptographic lifecycle (e.g., keys, algorithm selection)
     - Keep **Moore’s Law** in mind (processing capabilities of state-of-the-art microprocessors double about every 2 years), and have appropriate governance controls in place to ensure that algorithms, protocols, and key lengths selected are sufficient to preserve the integrity of the cryptosystems for as long as necessary -- to keep secret information safe
     - Specify the cryptographic algorithms (such as AES, 3DES, and RSA) acceptable for use in an organization
