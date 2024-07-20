@@ -80,6 +80,17 @@ You may find this domain to be more technical than others, and if you have exper
         - The job of the auditor is to monitor the environment for violations
         - When working with third parties, especially with cloud providers, each entity needs to understand their portion of the shared responsibility of performing work operations and maintaining security. This is often referenced as the **cloud shared responsibility model**
 
+- 3.1.12 Secure Access Service Edge (SASE)
+    - **SASE**: A design philosophy closely related to Zero trust Network Architecture. Brings together networking and security functions and delivers them as an integrated cloud service.
+    - Described as Gartner in 2019 as a networking model that merges traditional WAN managment and security capabilites into a unified whole
+    - It is built, implemented and managed  using cloud-native architectures. It is a responde to the the edge-centric trends in mobility, cloud, SD-WAN and the internet of things. It is WAN implmentation in the world of hybrid and public cloud. SASE compnents include:
+     - Firewall services
+     - secure web gateway
+     - anti-malware services
+     - intrusion prevention services
+     - cloud access service broker (CASB)
+     - Data Loss Prevention (DLP) 
+
 [3.2](#3.2) Understand the fundamental concepts of security modles (e.g. Biba, Star Model, Bell-LaPadula) (OSG-9 Chpt 8)
 - Security models:
     - Intended to provide an explicit set of rules that a computer can follow to implement the fundamental security concepts, processes, and procedures of a security policy 
