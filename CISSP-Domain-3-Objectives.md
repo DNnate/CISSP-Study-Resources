@@ -443,6 +443,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - offline distribution
             - public key encryption, and 
             - the Diffie-Hellman key exchange algorithm
+            - Quantum Key Distribution: 🥇 a secure communication that involves components of quantum mechanics. Enables a party to generate a shared random key known only to them. This secret key can then be used to encrypt and decrypt messages. it has the ability to detect eavesdropping by any 3rd party trying to gain knowledge of the key. eavesdropper interception introduces detectable anomalies. Not the same as quantum cryptography. it relies on having an authenticated classical channel of communication. it means the parties have already exchanged symmetric keys of sufficient lenght or public keys of suffcient security level. Only used for key distribution and not to transmit data. used in high security scenarios.
         - Key management can be difficult with symmetric encryption but is much simpler with asymmetric encryption
         - There are several tasks related to key management:
             - **Key Creation**: Encryption keys should be generated using FIPS 140-2/3 validated modules
@@ -454,7 +455,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - **Key Storage**: Keys should never be stored in plain text.  This includes keys in volatile and persistent memory.
             - **Key Usage**: AUP determines guard rails for key usage
             - **Key Destruction**: Removal of an encryption key from its operational location
-            - **Key Deletion**: Removing any information that can be used to reconstruct the key
+            - **Key Deletion**: Removing any information that can be used to reconstruct the key e.g device wipe in MDM such as Airwatch & MS Intune
             - **Key escrow**: process or entity that can recover lost or corrupted cryptographic keys
                 - **multiparty key recovery**: when two or more entities are required to reconstruct or recover a key
                 - **m of n control**: 🥇 you designate a group of (n) people as recovery agents, but only need subset (m) of them for key recovery
@@ -682,6 +683,20 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - this is a system that collects power into a battery but can switch over to pulling power from the battery when the power grid fails
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
 
+- 3.10 Information System Life Cycle
+    - a structured framework for managing an information system from its intial conception to its retirement.
+    - The goal is to ensure that a system is developed and managed in a way that meets business needs , remains secure and operates efficiently through its lifespan
+    - Key phases include
+      - Planning, Design and Bulding
+      - Deploying, Operating and Maintaining
+      - Decommissioning
+    - There are 9 Phases called out in the syllabus:
+      - **Phase 1**: Stakeholder Needs and Requirements: identify the problems the system needs to solve. Define functional and security features requried, identify compliance requirements. Key activities include stakeholder interviews, define project scope. Establish baseline security expectaions.
+      - **Phase 2**: Requirement Analysis: Analyse requirements to ensure they are sonsistent complete and unambigous.
+      - Phase 3: Architectural Design
+      - Phase 4: Developement/Implementation:
+      - Phase 5: Integration
+      - Phase 6: 
 - **DIGITAL SIGNATURES**: The Digital Signature Standard approves three encryption algorithms for use in digital signatures: 
     - the Digital Signature Algorithm (DSA)
     - the Rivest, Shamir, Adleman (RSA)algorithm;
