@@ -169,6 +169,7 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
   - After establishing a framework for governance, security awareness training should be implemented, including all new hires, who complete the security awareness training as they come on board, and existing employees who should recertify regularly (typically yearly)
   - ***The Prudent Man Rule*** requires that a fiduciary, such as a senior executives and trustee, act with the care, skill, prudence, and diligence that a prudent person acting in a like capacity would use. FOrmalised by the Federal Sentencing Guidelines released in 1991 provided punishment guidelines to help federal judges interpret computer crime laws.
 
+
 [1.4](#1.4) Determine compliance and other requirements (OSG-9 Chpt 4)
 - 1.4.1 Contractual, legal, industry standards, and regulatory requirements
   - Understand the difference between criminal, civil, and administrative law.
@@ -186,6 +187,8 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
     - **Computer Fraud and Abuse Act (CFAA)** (as amended) - protects computers used by the government or in interstate commerce from a variety of abuses
     - **ITIL**  British Government standard that describes IT service managment and the structured fitting of security into an organization. It focuses on change management, configuration management and SLAs.
     - **Electronic Communications Privacy Act (ECPA)** - passed in 1986 to expand and revise federal wiretapping and electronic eavesdropping provisions, making it a crime to intercept or procure electronic communications, and includes important provisions that protect a person’s wire and electronic communications from being intercepted by another private individual
+    - **Personal Information Protection Law (PIPL)**: effective since 2021 aims to establish a comprehensive framework for the protection of personal information in China
+    - **Protection of Personal Information Act (POPIA)**: enacted in 2013, establishes regulatios for the responsible processing of personal information by both public and private entities in South Africa.
     - The **Privacy Act of 1974** limits the ways government agencies may use information that private citizens disclose to them under certain circumstances. The Privacy Act regulates what information government agencies may collect and maintain about individuals.
     - **The Lanham Act** regulates the issuance of trademarks to protect intellectual property.
     - **Digital Millennium Copyright Act** - prohibits the circumvention of copyright protection mechanisms placed in digital media and limits the liability of internet service providers for the activities of their users
@@ -285,8 +288,28 @@ you can begin using the **®** symbol. The **©** symbol is used to represent a 
     - storage limitation
     - security
     - accountability
-  -  The EU-US **Privacy Shield** (formerly the EU-US Safe Harbor agreement): controls data flow from the EU to the United States; the EU has more stringent privacy protections and without the Privacy Shield, personal data flow from the EU to the United States would not be allowed. It is no longer valid
-  -  **The Communications Assistance for Law Enforcement Act (CALEA)** required that communications carriers assist law enforcement with the implementation of wiretaps when done under an appropriate court order. CALEA only applies to communications carriers
+  - The EU-US **Privacy Shield** (formerly the EU-US Safe Harbor agreement): controls data flow from the EU to the United States; the EU has more stringent privacy protections and without the Privacy Shield, personal data flow from the EU to the United States would not be allowed. It is no longer valid
+  - **The Communications Assistance for Law Enforcement Act (CALEA)** required that communications carriers assist law enforcement with the implementation of wiretaps when done under an appropriate court order. CALEA only applies to communications carriers
+  - **Privacy Impact Assesment (PIA)**: is designed to identify the privacy data being collected, processed or stored by a system, and assess the effects of a data breach. Several privacy laws require PIA as a planning tool for identifying and implementing required privacy controls including GDPR and HIPPA
+  - Conducting a PIA typically begins when a system or process is being evaluated.
+  - Evolving privacy regulations neccessitates assessment of existing systems
+  - PIA involves defining assessment scope, data collection methods and plan for data retention
+  - Internation Association of Privacy Professionals (IAPP) publishes guids and resources related to privacy efforts including PIA
+
+- **Geographic Considerations**: Different laws and regulations may apply depending on the location (data residency) of the
+ - data subject
+ - data collector
+ - cloud service provider
+ - subcontractors processing the data
+ - company headquaters of the entities involved
+ - Legal concerns can 
+  - prevent the utilization of a cloud service provider
+  - add to costs and time to market
+  - can drive changes to technical architectures required to deliver services
+  - Never replace complaince with convinience when evaluating services as this increases risk
+ - Conflicting internation legislation: Example GDPR forbids the transfer of data to countries that lack adequate privacy protections. and the **Clarifying Lawful Overseas Use of Data (CLOUD) Act** requires cloud service proviproviders to hand over data to aid in investigation of serious crimes, even if stored in another country.
+  - Situations like this requires collaboration and legal counsel
+  - Cloud practitioners must be aware of multiple sets of laws and regulations and the risk introduced by conflicting legislation across geography and jurisdiction e.g copyright and intellectual property laws, data residency and safeguards for required for privacy compliance, data breaches and data breach notifications, internation import/export laws
 
 - **Cyber Kill/Attack Chain** a seven-steps to identify and stop attacks: (RWDEICA Reckless Wizards Delve Eagerly Into Crytic Arcanum)
   - Stage I: Reconnaisance
@@ -317,24 +340,27 @@ you can begin using the **®** symbol. The **©** symbol is used to represent a 
 - The top tier of a formalized hierarchical organization security documentation is the security policy
   - **Policy**: docs created by and published by senior management describing organizational strategic goals
   - A security policy is a document that defines the scope of security needed by the org, discussing assets that require protection and the extent to which security solutions should go to provide the necessary protections
+  - Policies are high-level documents, usually written by the management team; policies are mandatory, and a policy might provide requirements, but not the steps for implementation
+    - A policy is a document that defines the scope of security needed by the organization and discusses the assets that require protection and the extent to which security solutions should go to provide the necessary protection.
   - It defines the strategic security objectives, vision, and goals and outlines the security framework of the organization
 - **Acceptable User Policy**: the AUP is a commonly produced document that exists as part of the overall security documentation infrastructure 
   - This policy defines a level of acceptable performance and expectation of behavior and activity; failure to comply with the policy may result in job action warnings, penalties, or termination
 
 - Security Standards, Baselines and Guidelines: once the main security policies are set, the remaining security docuemntation can be crafted from these policies
-  - **Policies**: these are high-level documents, usually written by the management team; policies are mandatory, and a policy might provide requirements, but not the steps for implementation
-    - A policy is a document that defines the scope of security needed by the organization and discusses the assets that require protection and the extent to which security solutions should go to provide the necessary protection. 
-  - **Standards**: specific mandates explicity stating expections of performance/conformance; more descriptive than policies, standards define compulsary requirements for the homogenous use of hardware, software, technology, and security controls, uniformly implemented throughout the org
+  - **Standards**: specific mandates explicity stating expections of performance/conformance; more descriptive than policies, standards define compulsary requirements for the homogenous use of hardware, software, technology, and security controls, uniformly implemented throughout the org. It could be internal or external.
     - A standard defines compulsory requirements for the homogenous use of hardware, software, technology, and security controls. 
   - **Baseline**: defines a minimum level of security that every system throughout the organization must meet; baselines are usually system specific and refer to industry / government standards. It is often related to configuration. 
     - e.g. a baseline for  server builds would be a list of configuration areas that should be applied to every server that is built 
     - A Group Policy Object (GPO) in a Windows network is sometimes used to comply with standards; configuration management solutions can also help you establish baselines and spot configurations that are not in alignment
   - **Guideline**: offers recommendations on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
     - Guidelines are flexible, and can be customized for unique systems or conditions; they state which security mechanism should be deployed instead of prescribing a specific product or control; they are not complusory; suggested practices and expectations of activity to best accomplish tasks and goals
+    - **Framework** are a set of guidlines
   - **Procedure** (AKA Standard Operating Procedure or SOP): detailed, step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution
+  - **Laws** Legal rules created by government entities e.g legislature. Must be followed or can result in civil or criminal penalties
+  - **Regulations** rules created by governmental agencies. Must be followed or can result in civil or criminal penalties
 
 [1.7.2](#1.7.2) External Dependencies (New in 2024)
-Factors, entities or conditions outside the organisation upon which the organisations business continutiy plans and operation resilience may depend. EG suppliers, vendors, utilities, transportation
+Factors, entities or conditions outside the organisation upon which the organisations business continutiy plans and operation resilience may depend. EG suppliers, vendors, utilities, transportation. Do not rely on one supply that may be affected by the same disaster.
 
 [1.8](#1.8) Identify, analyze, and prioritize Business Continuity (BC) requirements (OSG-9 Chpt 3)
 
@@ -606,9 +632,13 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - The supply chain can be a threat vector, where materials, software, hardware, or data is being obtained from a supposedly trusted source but the supply chain behind the source could have been compromised and asset poisoned or modified
   - Void **Authorization to operate (ATO)**: The situation of voiding the ATO of a vendor describes the fact that the vendor is not meeting minimal security requirements which are necessary to the protection of the service and its customers.
   - When dealing with suppliers, a Minimum security requirements should be modeled on your existing security policy. This is based on the idea that when working with a third party, that third party should have at least the same security as your organization.
-  - The **Silicon Root of Trust** refers to the security mechanisms embedded directly into the silicon of hardware components, typically within a computer's processor or specialized security chip. This embedded trust anchor is immutable and forms the foundation for all higher-level security functions and assurances within the system.
-  - A **Physically Unclonable Function PUF** is a hardware-based security feature that generates a unique identifier or response based on the microscopic variations in the physical properties of a device. These variations arise naturally during the manufacturing process and are not replicable, making each PUF unique.
+  - The **Silicon Root of Trust (SRoT)** refers to the security mechanisms embedded directly into the silicon of hardware components e.g IoT device, typically within a computer's processor or specialized security chip. Contains unique unchangable cryptographic key/identity (immutable fingerprint) established during manufaturing process that servers as a Trust Anchor. This embedded trust anchor is immutable and forms the foundation for all higher-level security functions and assurances within the system. If firmware is compromised, SRoT will changeand prevent system from booting because signature no longer matches.
+  - A **Physically Unclonable Function (PUF)** is a hardware-based security feature that generates a unique identifier or response based on the microscopic variations in the physical properties of an integrated circuit or chip. These variations arise naturally during the manufacturing process and are not replicable, making each PUF unique. When PUF is queried, it responds with a unique output based on this variations. This response is like a fingerprint that is impossible to clone or recreate in another device. Used in secure key generation, device authentication, anti-tampering and secure boot.
   - A **Software Bill of Materials (SBOM)** is a comprehensive list of all the components, libraries, modules, and dependencies included in a software application. It is akin to a list of ingredients in a recipe, detailing everything that goes into the software. SBOMs are crucial for understanding and managing the composition of software, ensuring transparency, security, and compliance.
+  - **Hardware Root of Trust (HRoT)**: A line of defense against executing unathorized firmware on a system. Establishes a chain of trust starting from hardware up through firmware and software layers (Trust Anchor). When certificates ares used for Full Disk Encryption (FDE), they use a hardware root of trust for key storage, which verifies the keys match before the secure boot process takes place. SRoT and PUF are also implemnetations of Hardware Root of trust. Componenets include
+   - Trusted Platform Module (TPM): A hardware component that securely stores cryptographic keys and performs cryptographic operations. e.g bitlocker
+   - Hardware Security Module (HSM): A dedicated hardware device designed to manage and protect digital keys and perform encryption and decryption.
+   - Secure Enclave or Trusted Execution Environment (TEE): An isolated area within the main processor that ensures the confidentiality and integrity of code and data loaded within it.
 
 - 1.12.2 Third-party assessment and monitoring
   - Before doing business with another company, an org needs to perform due-dilligence, and third-party assessments can help gather information and perform the assessment 
