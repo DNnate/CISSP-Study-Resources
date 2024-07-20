@@ -119,8 +119,12 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
           - 27001 information security standards/controls
           - 27002 information security guidance
           - 27031 Business continuity    
-    -  SABSA (Sheerwood Applied Business Security Architecture)
-    -  FedRAMP (Federal Risk and Authorization Managment Programme) regulates cloud security for US Gov
+    -  **SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It integrates security into the business processes and aligns security measures with business goals. SABSA Lifecycle Phases:
+     - Strategy Phase: Understanding business context and defining security goals.
+     - Design Phase: Developing the detailed architecture.
+     - Implementation Phase: Deploying the security solutions.
+     - Management Phase: Ongoing management and adaptation of the security architecture.  
+    -  **FedRAMP (Federal Risk and Authorization Managment Programme)** regulates cloud security for US Gov. FedRAMP specifies a set of security controls based on NIST SP 800-53. It provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services.
     -  FIPS 140-3 Security requirement for cryptographic modules
     -  NIST
           - 800-37 Risk Managment Framework
@@ -595,8 +599,11 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - The goal of a secure supply chain is that the finished product is of sufficient quality, meets performance and operational goals, provides stated security mechanisms, and that at no point in the process was any element counterfeited or subject to unauthorized or malicious manipulation or sabotage
   - The supply chain can be a threat vector, where materials, software, hardware, or data is being obtained from a supposedly trusted source but the supply chain behind the source could have been compromised and asset poisoned or modified
   - Void **Authorization to operate (ATO)**: The situation of voiding the ATO of a vendor describes the fact that the vendor is not meeting minimal security requirements which are necessary to the protection of the service and its customers.
-  - When dealing with suppliers, a Minimum security requirements should be modeled on your existing security policy. This
-is based on the idea that when working with a third party, that third party should have at least the same security as your organization.
+  - When dealing with suppliers, a Minimum security requirements should be modeled on your existing security policy. This is based on the idea that when working with a third party, that third party should have at least the same security as your organization.
+  - The **Silicon Root of Trust** refers to the security mechanisms embedded directly into the silicon of hardware components, typically within a computer's processor or specialized security chip. This embedded trust anchor is immutable and forms the foundation for all higher-level security functions and assurances within the system.
+  - A **Physically Unclonable Function PUF** is a hardware-based security feature that generates a unique identifier or response based on the microscopic variations in the physical properties of a device. These variations arise naturally during the manufacturing process and are not replicable, making each PUF unique.
+  - A **Software Bill of Materials (SBOM)** is a comprehensive list of all the components, libraries, modules, and dependencies included in a software application. It is akin to a list of ingredients in a recipe, detailing everything that goes into the software. SBOMs are crucial for understanding and managing the composition of software, ensuring transparency, security, and compliance.
+
 - 1.12.2 Third-party assessment and monitoring
   - Before doing business with another company, an org needs to perform due-dilligence, and third-party assessments can help gather information and perform the assessment 
   - An on-site assessment is useful to gain information about physical security and operations 
