@@ -34,6 +34,8 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
 - 1.2.1 Confidentiality, integrity, and availability, authenticity and nonrepudiation (5 Pillars)
   - **Confidentiality**:
     - Concept of measures used to ensure the protection of the secrecy of data, objects, and resources
+    - is the duty to ensure privacy. It focuses on data
+    - It is a legal obligation in regulatory scenarios and a due care obligation in U.S law
     - Confidentiality protections prevent disclosure while protecting authorized access
     - Preserving authorized restrictions on information access and disclosure, including the means for protecting personal privacy and prioprietary information
     - Sensitive data, including personally identifiable information (PII) must be kept confidential; confidentiality is different from secrecy
@@ -234,7 +236,7 @@ you can begin using the **®** symbol. The **©** symbol is used to represent a 
 - 1.5.4 Transborder data flow
   -  Orgs should adhere to origin country-specific laws and regulations, regardless of where data resides
   -  Also be aware of applicable laws where data is stored and systems are used
-- 1.5.5 Privacy
+- 1.5.5 Privacy: Right of an individual to have control over how their info is collected & used/disclosed
   - Many laws include privacy protections for personal data 
     - The EU’s GDPR has strong privacy rules that apply to any org anywhere that stores or processes the personal data of EU residents; these individuals must be told how their data is collected and used, and they must be able to opt out 
   - The privacy guidelines of the **Organization for Economic Co-operation and Development (OECD)** require orgs to avoid unjustified obstacles to trans-border data flow, set limits to personal data collection, protect personal data with reasonable security and more
