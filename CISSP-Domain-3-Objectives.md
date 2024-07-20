@@ -445,12 +445,16 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - the Diffie-Hellman key exchange algorithm
         - Key management can be difficult with symmetric encryption but is much simpler with asymmetric encryption
         - There are several tasks related to key management:
-            - Key creation
+            - **Key Creation**: Encryption keys should be generated using FIPS 140-2/3 validated modules
             - **Key distribution**: the process of sending a key to a user or system; it must be secure and it must be stored in a secure way on the computing device
                 - keys are stored before and after distribution; when distributed to a user, it can't hang out on a user's desktop
-            - Keys shouldn't be in cleartext outside the crypography device
+            - Keys shouldn't be in cleartext outside the crypography device. Encrypt keys with a sepereate encryption key before distributing to other parties.
             - Key distribution and maintenance should be automated (and hidden from the user)
             - Keys should be backed up!
+            - **Key Storage**: Keys should never be stored in plain text.  This includes keys in volatile and persistent memory.
+            - **Key Usage**: AUP determines guard rails for key usage
+            - **Key Destruction**: Removal of an encryption key from its operational location
+            - **Key Deletion**: Removing any information that can be used to reconstruct the key
             - **Key escrow**: process or entity that can recover lost or corrupted cryptographic keys
                 - **multiparty key recovery**: when two or more entities are required to reconstruct or recover a key
                 - **m of n control**: 🥇 you designate a group of (n) people as recovery agents, but only need subset (m) of them for key recovery
