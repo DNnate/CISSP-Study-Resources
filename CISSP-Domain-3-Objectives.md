@@ -359,18 +359,18 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - FIPS 140-2: Established to aid in the protection of digitally stored unclassified , yet sensitive information.
  - Developed by NIST for use in computer systems by non-military American government agencies and government contractors
  - **FIPS 140-2** (Federal Information Processing Standard) Security levels include
-  - Level 1: lowest level of security.
-  - Level 2: Specifies requirement for security levels that protect sensitive information. 
-  - Level 3: Requires physical protection to ensure high degree of confidence that any attempts to tamper are evident and detectable.
+   - Level 1: lowest level of security.
+   - Level 2: Specifies requirement for security levels that protect sensitive information. 
+   - Level 3: Requires physical protection to ensure high degree of confidence that any attempts to tamper are evident and detectable.
 -  **FIPS 140-3**: As of April 2022, superseeds FIPS 140-2
    - Level 1: Production grade equipments and externally tested algorithms
-  - Level 2: Adds requirements for tamper-evidence and role-based authentication.
-  - Level 3: Includes tamper-resistance, identity-based authentication, and sepereation between interfaces
-  - Level 4: Adds protections against environmental attacks and more stringent physical security requirements. Requires the ability to be tamper-active, erasing the content of the device if it detects various forms of environmental attack.
+   - Level 2: Adds requirements for tamper-evidence and role-based authentication.
+   - Level 3: Includes tamper-resistance, identity-based authentication, and sepereation between interfaces
+   - Level 4: Adds protections against environmental attacks and more stringent physical security requirements. Requires the ability to be tamper-active, erasing the content of the device if it detects various forms of environmental attack.
 - **Cyprtographic Modules**: Can store secrets such as password, symmetric and assymetric keys, HSM backed keys, textual data and even X.509 certificates
- - Hardware: e.g SafeNet Luna HSM (Thales), Gemalto SafeNet HSM (Thales), nShield HSM (Entrust), Ultimaco CryptoServer HSM
- - Software: OpenSSL FIPS Object Module, Microsoft Windows Crypto Modules, Bouncy Castle FIPS Modules
- - Cloud: Microsoft Azure Key Vault, Amazon Key Management Service (KMS), Google cloud Key Managment Service (KMS)  
+   - Hardware: e.g SafeNet Luna HSM (Thales), Gemalto SafeNet HSM (Thales), nShield HSM (Entrust), Ultimaco CryptoServer HSM
+   - Software: OpenSSL FIPS Object Module, Microsoft Windows Crypto Modules, Bouncy Castle FIPS Modules
+   - Cloud: Microsoft Azure Key Vault, Amazon Key Management Service (KMS), Google cloud Key Managment Service (KMS)  
 - 3.6.1 Cryptographic lifecycle (e.g., keys, algorithm selection)
     - Keep **Moore’s Law** in mind (processing capabilities of state-of-the-art microprocessors double about every 2 years), and have appropriate governance controls in place to ensure that algorithms, protocols, and key lengths selected are sufficient to preserve the integrity of the cryptosystems for as long as necessary -- to keep secret information safe
     - Specify the cryptographic algorithms (such as AES, 3DES, and RSA) acceptable for use in an organization
