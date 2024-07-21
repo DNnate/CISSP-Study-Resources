@@ -170,20 +170,22 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - Transport Layer: defines protocols for setting up the level of transmission service for applications; this layer is responsible for the reliable transmission of data and the error-free delivery of packets
     - Application Layer: defines protocols for node-to-node application communication and provides services to the application software running on a computer
 
-**IPv4**: 
+- **IPv4**: 
  - Format: IPv4 addresses are 32-bit numerical labels written in decimal format as four octets separated by periods (e.g., 192.168.1.1).
  - Size: The IPv4 header is 20 to 60 bytes in length.
  - Fragmentation: Routers can fragment IPv4 packets to accommodate the maximum transmission unit (MTU) of the network path.
  - Built-in Security: IPv4 does not have built-in security features, but it can use IPsec (Internet Protocol Security) for encryption and authentication.
- - Broadcast: Supports Broadcast
 
-**IPv6**:
+- **IPv6**:
  - Format: IPv6 addresses are 128-bit hexadecimal labels written in eight groups of four hexadecimal digits separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
  - Size: The IPv6 header is 40 bytes in length.
  - Fragmentation: IPv6 requires fragmentation to be handled by the sending host rather than by routers, improving efficiency.
  - Built-in Security: IPv6 was designed with IPsec as a mandatory component, providing native support for encryption and authentication.
- - Broadcast: Does not support broadcast. IPv6 replaces broadcast with multicast and anycast to improve network efficiency and reduce unnecessary traffic.
 
+- **Multicast:** One to Many. Supported by both IPv4 and IPv6.
+- **Broadcast:** One to all. Not Supported by IPv6. IPv6 replaces broadcast with multicast and anycast to improve network efficiency and reduce unnecessary traffic.
+- **Unicast:** One to One communication. Supported by bothIPv4 and IPv6.
+- **Anycast:** From single source to the nearest or optimal recipient or group of recipients. Supported natively by IPv6. Used for CDN and for streaming.
 
 - 4.1.3 Secure protocols
     - **Kerberos**: standards-based network authentication protocol, used in many products (most notably Microsoft Active Directory Domain Services or AD DS)     
@@ -228,6 +230,9 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - **Multiprotocol Label Switching (MPLS)**: a WAN protocol that operates at both layer 2 and 3 and does label switching; MPLS is a high-throughput/high-performance network technology that directs data across a network based on short path labels rather than longer network addresses
         - **Voice over Internet Protocol (VoIP)**: a tunneling mechanism that encapsulates audio, video, and other data into IP packets to support voice calls and multimedia collab
             - VoIP is considered a converged protocol because it combines audio and video encapsulation technology (operating as application layer protocols) with the protocol stack of TCP/IP
+        - **Infini Band Over Ethernet**: a network protocol that allows remote direct memory access (RDMA) over ethernet network. It is a low-latency high throughput networking technology commonly used in high-performance computing (HPC), data centers, and enterprise environments. Supports speeds of up to 200Gbps per link.
+        - **Compute Express Link (CXL)**: is an open standard interconnect designed to improve communication between CPUs and other high-speed devices such as accelerators, memory expanders, and smart I/O devices. It is used for high-speed, high-capacity CPU-to-Device and CPU-to-Memory connections.
+
 
 - 4.1.6 Micro-segmentation (e.g., Software Defined Networks (SDN), Virtual eXtensible Local Area Network (VXLAN),Encapsulation, Software-Defined Wide Area Network (SD-WAN))
     - **Software-defined networks (SDN)**:
@@ -250,6 +255,12 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - the OSI model represents a protocol stack, or a layered collection of multiple protocols, and communication between protocol layers occurs via encapsulation and deencapsulation (defined above)
 
     - **Software-defined wide area network (SD-WAN)**: an evolution of SDN that can be used to manage the connectivity and control services between distant data centers, remote locations, and cloud services over WAN links; put another way, SDN-WAN is an extension of SDN practices to connect entities spread across the internet, supporing WAN architecture; espcially related to cloud migration
+    - **Transport Architecture**:
+     - Management Plane: The management plane is responsible for network administration tasks. It handles configuration, monitoring, security management, and policy enforcement. E.g SNMP, SSH, NETCONF
+     - Control Plane: is responsible for making decisions and determine optimal paths about where and how data packets should be forwarded. It manages routing, signaling, and network topology. E.g routing protocols like OSPF, BGP
+     - Data Plane: is responsible for the actual movement of packets through the network. It handles the forwarding of data based on the decisions made by the control plane. e.g QOS, packet forwarding by switch or router using mac address table or routing tables respectively, packet filtering e.g firewalls, load balancers
+       - Cut-Through Switching:  is a method of forwarding packets in which a switch starts forwarding a frame before the entire frame has been received. There is minimal error checking and it is used in low-latency networks
+       - Store-and-forward Switching: is a method where the entire frame is received and error-checked before being forwarded. Used in environements where liability is essential. 
 
 - 4.1.7 Wireless networks (e.g. LiFi, Wi-Fi, Zigbee, satellite)
 
@@ -309,6 +320,25 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - maintain a fixed position above a terrestrial location, and ground stations can use fixed antennas
                 - larger transmission footprint than MEO, but higher latency
 
+- **Network Performance Metrics**:
+  -  Bandwidth: The maximum amount of data or capacity that can be transmitted over a network in a given amount of time. Theoretical maximum transfer rate. Key: A highway with many lanes can carry more cars than a highway with only one lane.
+  -  Throughput: The actual amount of data successfully transferred over the network in a given amount of time. Actual data transfer rate considering factors like latency, packet loss and congestion. Key: How many cars actually pass through a toll booth per hour, not just how many cars the highway can theoretically handle.
+  -  Latency: The time it takes for a data packet to travel from the source to the destination. It has an inverse relationship to throughput.
+  -  Jitter: The variation in time delay between data packets arriving. Affects QOS for real-time applications. Key: If some cars on a highway arrive faster than others even though they left at the same time.
+  -  Signal to Noise Ratio (SNR): A measure of the signal strength relative to background noise. Commonly used in wireless communications. Key: How clearly you can hear someone speaking in a noisy room; higher SNR means a clearer signal and less interferance.
+- **Network Segmentation**: Benefits include boosting performance where system that need to communicate are located in the same segment. It reduces communication problems such as broadcast storms to individual segments, and improves security by isolating traffic to segments
+  - Intranet: Data traffic that moves between a data center and external networks or clients.
+  - Extranet: A controlled private network allowing access to partners, vendors, or clients. This section of the network has been sectioned off to act as as an intranet for the private network but also to serve information to the public internet. A cross between the internet and the intranet.
+  - DMZ: A buffer zone between the internal network and the external network, hosting public-facing services. An extranet for public consumption. Typically labelled perimeter network.
+ - **Physical Segmentation**:
+   - Out-of-Band: physically seperating networks into distinct zones using hardware. It is an alternate communication path for different types of traffic.
+   - Air Gap: Complete physical isolation of a network by having no wired or wireless communications. Common in high security government networks or critical infrastructures e.g industrial systems and public utilities.
+ - **Logical Segmentation**:
+   - In-Band: seperate networks by configuring routers, switches, firewalls to control traffic flow e.g subnets, VLANs
+   - Virtual Routing and Forwarding: facilitates the co-existence of multiple routing table instances on a router simultenously
+   - Virtual Domain: Network segments/chunks created through logical segmentation techniques like VRFs. In the VRF context, they are called VRF domains. Virtual domains (often referred to as virtual contexts or virtual systems) allow for the creation of separate, isolated security domains within a single firewall or security device.
+ - **Micro-Segmentation**: involves creating fine-grained, policy-driven segments that can isolate individual workloads or devices. It takes the concept of logical segmentation to a more granular level. The small segments contain specific workload or functionally similar or identical nodes. It limits scope of breach and lateral movement. Cisco Trsutsec is an example of Micro segmentation.
+
 - 4.1.8 Cellular networks (e.g. 4G, 5G)
 
     - A cellular network or a wireless network is the primary communications technology used by many mobile devices
@@ -327,12 +357,32 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - provider's towers can be simulated to conduct man-in-the-middle/on-path attack
         - using cell connectivity to access the internet or your office network creates a potential bridge, provider attackers with another avenue
 
+- **Traffic FLows**:
+  - East-West Traffic: Data traffic that moves laterally within a data center, between servers or virtual machines. Involves trusted nodes and networks. Traffic remains withing the internal network or cloud. Access controls, micro-segmentation and isolations policies are used here for security.
+  - North-South Traffic: Data traffic that moves between a data center and external networks or clients. Traffic moves to/from endpoints on internal network to nodes on the public cloud/internet. Involves untrusted nodes. This brings security concerns like data comprise, DDoS attacks, inadequate authentication. 
+
 - 4.1.9 Content Distribution Networks (CDN)
 
     - **Content Distribution Network (CDN)**: a collection of resource services deployed in numerous data centers across the internet in order to provide low latency, high performance, and high availability of the hosted content
         - CDNs provide multimedia performance quality through the concept of distributed data hosts, geographically distributed, closer to groups of customers
         - Provides geographic and logical load balancing; lower-latency and higher-quality throughput
     - Client-based CDN is often referred to as P2P (peer-to-peer)
+
+- 4.1.12 Edge Networks 
+    - Distributed networks that bring compute and storage resources physically closer to end users and devices on the edge of the network.
+    - **Ingress/Egress**: Entry point for traffic entering an edge network, usually from an end user device or an external network. Important for security monitoring and traffic shaping.
+    - **Peering**: Direct interconnection between edge network locations to allow traffic exchange without travelling through a central hub. reduces latency and bottle necks which are problems in a hub-and-spoke topology.
+    - **Caching**: Caching popular contents like video, audio and web pages. Provides better user experience in SaaS subscriber scenarios. eg CDNs.
+    - **Compute**: Granular compute functions, containarized, to provide low-latency processing near end users and devices. Also known as Edge Computing. Edge computing is a technology that processes data near the source of data generation, such as IoT devices or local servers, rather than sending it to a central data center or cloud for processing.
+    - **Storage**: Multiple edge locations to reduce latency for accessing data and updating data. E.g file servers that are synchronized across location like DFS.
+
+- 4.1.17 Virtual Private Cloud (VPC)
+    - Virtual networks, public and private subnets, segmentation and API inspection and integration are important elements of cloud security.
+    - VPC is a virtual network that consists of cloud resources, where the VM of one company is isolated from the resources of another company.
+    - Seperate VPCs can be isolated using public or private networks or segmentation. This concept exists in all major public clouds. It is refered to as VPC in AWS & Google Cloud Platforms. It is referred to as Virtual Networks (VNET) in Azure.
+ 
+- 4.1.18 Monitoring and Management
+    - Virtual networks, public and private subnets, segmentation and API inspection and integration are important elements of cloud security.
 
 [4.2](#4.2) Secure network components (OSG-9 Chpt 11)
 
