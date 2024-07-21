@@ -382,7 +382,10 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - Seperate VPCs can be isolated using public or private networks or segmentation. This concept exists in all major public clouds. It is refered to as VPC in AWS & Google Cloud Platforms. It is referred to as Virtual Networks (VNET) in Azure.
  
 - 4.1.18 Monitoring and Management
-    - Virtual networks, public and private subnets, segmentation and API inspection and integration are important elements of cloud security.
+    - Network Observability: Invloves collecting data and gaining visibility into the status and performance of network components and traffic flows. Supports issue identificaton and troubleshooting.
+    - Traffic FLow/Traffic Shapping: Managing and controlling the volume and priorities of different types of traffic. E,g QOS (priority to certain traffic such as real-time traffic), rate limitting (example API limiting to number of API requests that can be made by a single user in a specific period of time), throttling.
+    - Capacity Management: Tracking network utilization and planning capcity expansion to meet future demands.
+    - Fault Detection and Handling: Discovering, diagnosing and responding to problems like failed devices, connectivity losses, performance slow downs. includes alerting and automatic failover. 
 
 [4.2](#4.2) Secure network components (OSG-9 Chpt 11)
 
