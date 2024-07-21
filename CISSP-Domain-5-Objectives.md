@@ -37,7 +37,15 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - permissions help ensure only authorized entities can access data
         - logical controls restrict access to config settings on systems/networks to only authed individuals
         - applies to on-prem and cloud
-
+ - 5.1.6 Services: Controlling physical and logical access, whether on-premise or in the cloud, in the office or work-from-home scenarios. Basically controlling access control mechanisms to assets. These includes
+   - Apps
+   - Data/Information
+   - Infrastructure and Systems
+   - Devices
+   - Cloud services
+   - Sites and Facilities
+     
+   
 [5.2](#5.2) Manage identification and authentication of people, devices, and services (OSG-9 Chpt 13)
 - **Identification**: the process of a subject claiming, or professing an identity
 - **Authentication**: verifies the subject’s identity by comparing one or more factors against a database of valid identities, such as user accounts
@@ -55,13 +63,34 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
             - difficult to maintain consistency
             - changes made to any individual access control point needs to be repeated at others
     - With ubiquitious mobile computing and anywhere, anytime access (to apps & data), identity is the "new perimeter"
+    - **Roles & Groups**:
+    - provides centralized managment of access control policies, sreamlining administration across different scenarios. It also enforces least privilege by tailoring permission to roles.
+    - On-Premise: roles and groups are tied to physical servers and domain controllers e.g AD
+    - Cloud: cloud providers like Azure or AWS offer thier own identity and Access Management systems. It allows for cloud native groups and roles, templates and security integration with clud platforms. E.g Entra ID (Formerly Azure AD)
+    - Hybrid: Organizations typically sunchronize  groups and roles  between on-premise and cloud environments. It allows for SSO for on-premise and cloud resources for better user experience.
+      - Groups: Collection of users or devices that share common access requirements for a resources. Can streamline managment permissions and scale.
+      - Roles: defines specfic rights and permissions granted to groups. Typically defines specific rights and permissions granted to groups. and reflects job functions or respionsibilities within an organization. In the cloud, it can relate to roles that map to specific roles for completing common tasks.
+      - 
 - 5.2.2 Single/Multi-Factor Authentication (MFA)
+- **Authentication Methods**:
+- Passwords Only: the least secure 😠
+- Password and (SMS or Voice) ☹️
+- Password and (Authenticator App, Software OATH/Tokens OTP, Hardware OATH/Tokens OTP). OTH tokens are one-time codes that changes every few minutes/seconds. 🙂
+- Passwordless: It is convinient and also reduces phishing exposure. Strong passwords can be diffuclt to remember. Reduces password re-use. Passwords are also subject to replay attacks. The are cost concerns, and biometric privacy concerns. 😄 Examples include:
+   - Windows Hello for Business: Uses biometrics and supports relying party that supports Fast ID Online FIDO v2.0 authentication
+   - FIDO2 Security Key: Hardware that uses public-key assymetric cryptograpgy for user authentication
+   - Authenticator App: Authenticator Apps can also be used as the primary form of authentication to sign into popular cloud identities. It can also be used as additional verification option for self-service password reset or MFA. 
+- **OATH token**: is a hardware or software-based authentication device that generates a one-time password (OTP) for secure access to systems, applications, or data. It is based on the OATH (Initiative for Open Authentication) standards, particularly the Time-based One-Time Password (TOTP) and HMAC-based One-Time Password (HOTP) algorithms.
+  - **TOTP**: Generates OTPs based on the current time and a shared secret. The OTP is typically valid for a short period (e.g., 30 seconds).
+  - **HOTP**: Generates OTPs based on a counter that increments each time an OTP is requested, along with a shared secret.
+  - **Hardware Tokens**: Physical devices that display OTPs, such as key fobs or cards. Displays a key that refreshes every 30 seconds.
+  - **Software Tokens**: Applications that run on smartphones or computers, generating OTPs. Examples include Google Authenticator or Authy. Microsoft Authenticator App is a software based OATH.
     - **Single-factor authentication**: any authentication using only one proof of identity
     - **Two-factor authentication (2FA)**: requires two different proofs of identity
     - **Multifactor authentication (MFA)**: any authentication using two or more factors
         - multifactor auth must use multiple types or factors, such as something you know and something you have
         - note: requiring users to enter a password and a PIN is NOT multifactor (both are something you know)
-        - Type 1 + Type 2 + Type 3: A user needs to enter a password (Type 1 something you know), use a smart card (Type 2 something you have), and undergo a retina scan (Type 3 something you are).
+        - Type 1 + Type 2 + Type 3: A user needs to enter a password (Type 1 something you know ✏️), use a smart card (Type 2 something you have ✏️), and undergo a retina scan (Type 3 something you are ✏️).
         - Yubikeys, Titan Security Keys, and similar devices are examples of tokens i.e Type 2
         - **Synchronous** soft tokens, such as Google Authenticator, use a time-based algorithm that generates a constantly changing series of codes. **Asynchronous** tokens typically require a challenge to be entered on the token to allow it to calculate a response, which the server compares to the response it expects.
     - Two-factor methods:
