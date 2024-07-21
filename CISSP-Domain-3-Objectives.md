@@ -55,8 +55,14 @@ You may find this domain to be more technical than others, and if you have exper
 - 3.1.7 Keep it simple
     - **Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design
     3.1.8 Zero Trust
-    - **Zero Trust**: "assume breach"; a security concept and alternative of the traditional (castle/moat) approach where nothing is automatically trusted; instead each request for activity or access is assumed to be from an unknown and untrusted location until otherwise verified
-        - replaces trust but verify as a security design principle by asserting that all activities by all users/entities must be subject to control, authentication, authorization, and management at the most granular level possible
+    - **Zero Trust**: Security architecture where no entity is trusted by default. Based on 3 principles
+        - Aassume Breach ⭐
+        - Verify Explicitly ⭐
+        - Least Privilege Access ⭐    
+        - it is a security concept and alternative of the traditional (castle/moat) approach where nothing is automatically trusted; instead each request for activity or access is assumed to be from an unknown and untrusted location until otherwise verified
+        - It suppports defense-in-depth which advises a layered approach to security
+        - replaces trust but verify as a security design principle by asserting that all activities by all users/entities must be subject to control, authentication, authorization, and management at the most granular level possible (Trust but Verify invlolves a network perimeter beyond which everything is untrusted)
+        - Zero trust addresses the limitations of the legacy network perimeter-based security model. It treats identity as the control plane and assumes compromise/breach when verifying every request.
         - Goal is to have every access request authenticated, authorized, and encrypted prior to access being granted to an asset or resource
         - See my article on an [Overview of Zero Trust Basics](https://blog.balancedsec.com/p/an-overview-of-zero-trust-basics)
 - 3.1.9 Privacy by design
