@@ -200,8 +200,28 @@ that describe the object that can be impacted; and contextual attributes like lo
     - Risk-based access control model grants access after evaluating risk; evaluating the environment and the situation and making risk-based decisions using policies embeded within software
         - Using machine learning, making predictive conclusions about current activity based on past activity
 - 5.4.7 Task based access control
-    - TBAC is similar to RBAC, but instead of being assigned to one or more roles, each user is assigned an array
-of tasks.
+    - TBAC is similar to RBAC, but instead of being assigned to one or more roles, each user is assigned an array of tasks.
+- **Access Policy Enforcement**:
+  - **Policy Enforcement Point (PEP)**: Responsible for enabling, monitoring and terminating connections between a subject (such as user or device) and an enterprise resource.
+     - It acts as a gateway the enforces access control policies.
+     - When an access request occurs, the PEP evaluates the request against predifined policies and then applies the neccessary controls.
+     - E.g PEP might enforce MFA authentications for access request from unexpected locations. in this case, it is dynamic based on conditions/contexts
+     - PEP enforces policies at the connection level
+  - **Policy Decision Point (PDP)**: This is where the decisions are made based on various factors such as user identity, device health and risk assessment.
+     - it evaluates the context of an access request and decides whether it should be allowed, denied, or subjected to additonal controls
+     - it considers the 5 Ws (Who, What, When, Where, Why)
+     - PDP makes access decision based on contextual information
+  - With regards to the key elements of Zero trust architecture, as it relates to access policy enforcment, the following are described in NIST 800-207.
+    - Control Plane: These drive the policy-based decision logic for the concept of Zero trust. Involves the following:
+       - Adaptive Identity: Changes the way that the system asks a user to authenticate based on ocntext of the request. e.g user location, device health, approved app, riks levels of user
+       - Threat Scope reduction: An end goal of ZTNA to decrease risks to the organisation.
+       - Policy-Driven Access Control: Control based on a users identity rather than simply thier systems location. example conditional access feature in MIcrosft's Entra ID.
+       - Policy Administrator: Responsible for communicating the decisions made by the policy engine It is a funtion not a person.
+       - Policy Engine: Decides whether to grant access to a resource for a given subject. E.g Microsoft Entra ID is a policy engine. The policy administrator and the policy engine together give us the PDP functionality.
+    - Data Plane: These enforces the decision defined in the control plane. Involves the following:
+       - Implicit Trust Zones: Part of the traditional security approach in which firewalls and other security devices formed a perimeter. systems belonging to an organisation are placed inside this boundary.
+       - Subject/System: Subject is the user who wishes to access a resource. The system is a non-human entity often used by the user to access this resource.   
+       - Policy Enforcement Point: When a user or system request access to a resource, it is the PEP that evaluates it against predefined policies and applies the neccessary controls.
 
 [5.5](#5.5) Manage the identity and access provisioning lifecycle (OSG-9 Chpts 13,14)
 - 5.5.1 Account accesss review
