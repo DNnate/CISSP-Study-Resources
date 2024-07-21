@@ -170,6 +170,21 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - Transport Layer: defines protocols for setting up the level of transmission service for applications; this layer is responsible for the reliable transmission of data and the error-free delivery of packets
     - Application Layer: defines protocols for node-to-node application communication and provides services to the application software running on a computer
 
+**IPv4**: 
+ - Format: IPv4 addresses are 32-bit numerical labels written in decimal format as four octets separated by periods (e.g., 192.168.1.1).
+ - Size: The IPv4 header is 20 to 60 bytes in length.
+ - Fragmentation: Routers can fragment IPv4 packets to accommodate the maximum transmission unit (MTU) of the network path.
+ - Built-in Security: IPv4 does not have built-in security features, but it can use IPsec (Internet Protocol Security) for encryption and authentication.
+ - Broadcast: Supports Broadcast
+
+**IPv6**:
+ - Format: IPv6 addresses are 128-bit hexadecimal labels written in eight groups of four hexadecimal digits separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+ - Size: The IPv6 header is 40 bytes in length.
+ - Fragmentation: IPv6 requires fragmentation to be handled by the sending host rather than by routers, improving efficiency.
+ - Built-in Security: IPv6 was designed with IPsec as a mandatory component, providing native support for encryption and authentication.
+ - Broadcast: Does not support broadcast. IPv6 replaces broadcast with multicast and anycast to improve network efficiency and reduce unnecessary traffic.
+
+
 - 4.1.3 Secure protocols
     - **Kerberos**: standards-based network authentication protocol, used in many products (most notably Microsoft Active Directory Domain Services or AD DS)     
         - Kerberos is mostly used on LANs for organization-wide authentication, single sign-on (SSO) and authorization
