@@ -268,10 +268,15 @@ that describe the object that can be impacted; and contextual attributes like lo
         - e.g. after compromising a regular user’s account an attacker can use vertical privilege escalation techniques to gain administrator privileges on the user’s computer
         - the attacker can then use horizontal privilege escalation techniques to access other computers in the network
         - this horizontal privilege escalation throughout the network is AKA **lateral movement**
-
+- **Service Accounts**: When a software is installed on a computer, it may require privileged access to run and access other resources (systems/data). Service accounts are a low level adminsitrative accounts without human intervention.
+   - it is an account used to run an application
+   - In the cloud, it is often called service principle.
+   - In the cloud, similar concepts exists for clud resources such as VMs, that provides an identity for that resource to access other resources. In Azure (_Managed Identity_), in AWS (_Service Roles_), in Google cloud (_Service Account Identity_).
+   - Least privilege and life cycle managment are all equally important for service accounts.
+- 
 [5.6](#5.6) Implement authentication systems (OSG-9 Chpt 14)
 - 5.6.1 OpenID Connect (OIDC) / Open Authorization (Oauth)
-    - OAuth 2.0 authorization framework enables third-party apps to obtain limited access to an HTTP service, either on behalf of a resource owner (by orchestrating an approval interaction), or by allowing third-party applications to obtain access on its own behalf
+    - **OAuth 2.0** authorization framework enables third-party apps to obtain limited access to an HTTP service, either on behalf of a resource owner (by orchestrating an approval interaction), or by allowing third-party applications to obtain access on its own behalf
     - OAuth is an open framework used for authentication and authorization protocols 
     - The most common protocol built on OAuth is OpenID Connect (OIDC) 
     - OAuth 2.0 is often used for delegated access to applications, e.g. a mobile game that automatically finds all of your new friends from a social media app is likely using OAuth 2.0
@@ -283,7 +288,8 @@ that describe the object that can be impacted; and contextual attributes like lo
         - OIDC uses the OAuth framework for authorization and builds on the OpenID technologies for authentication
 
 - 5.6.2 Security Assertion Markup Language (SAML)
-    - Security Assertion Markup Language (SAML): an open XML-based standard commonly used to exchange authentication and authorization (AA) information between federated orgs
+    - **Security Assertion Markup Language (SAML)**: an open XML-based standard commonly used to exchange authentication and authorization (AA) information between federated orgs
+    - it is used to make authorization and authentication data on first access
     - SAML provides SSO capabilities for browser access
     - SAML is a popular SSO standard on the internet - used to exchange authentication and authorization (AA) information
     - Organization for the Advancement of Structure Information Standards (OASIS) maintains it
@@ -295,8 +301,12 @@ that describe the object that can be impacted; and contextual attributes like lo
         - Authentication Assertion: provides proof that the user agent provided the proper credentials, identifies the identification method, and identifies the time the user agent logged on
         - Authorization Assertion: indicates whether the user agent is authorized to access the requested service; if denied, includes why
         - Attribute Assertion: attributes can be any information about the user agent
+ - **Other Markup Languages**
+    - Service Provisioning Markup Language (SPML) is an XML-based language designed to allow platforms to generate and respond to provisioning requests.
+    - Extensible Access Control Markup Language (XACML) is used to describe access controls.
+  
 - 5.6.3 Kerberos
-    - Kerberos is a network authentication protocol widely used in corporate and private networks and found in many LDAP and directory services solutions such as Microsoft Active Directory
+    - **Kerberos** is a network authentication protocol widely used in corporate and private networks and found in many LDAP and directory services solutions such as Microsoft Active Directory
     - It provides single sign-on and uses cryptography to strengthen the authentication process
     - The purpose of Kerberos is authentication; Kerberos offers a single sign-on solution for users and protects logon credentials
     - Ticket authentication is a mechanism that employs a third-party entity to prove identification and provide authentication - Kerberos is a well-known ticket system
@@ -335,7 +345,7 @@ that describe the object that can be impacted; and contextual attributes like lo
         - once identity and authorization are verified, Kerberos activity is complete
             - the server or service host then opens a session with the client and begins communication or data transmission
 - 5.6.4 Remote Authentication Dial-in User Service (RADIUS) / Terminal Access Controller Access Control System Plus (TACACS+)
-    - Remote Authentication Dial-in User Service (RADIUS): centralizes authentication for remote access connections, such as VPNs or dial-up access
+    - **Remote Authentication Dial-in User Service (RADIUS)**: centralizes authentication for remote access connections, such as VPNs or dial-up access
         - a user can connect to any network access server, which then passes on the user’s credentials to the RADIUS server to verify authentication and authorization and to track accounting
         - in this context, the network access server is the RADIUS client, and a RADIUS server acts as an authentication server
         - the RADIUS server also provides AAA services for multiple remote access servers
@@ -344,12 +354,24 @@ that describe the object that can be impacted; and contextual attributes like lo
         - RADIUS uses UDP port 1812 for RADIUS messages and UDP port 1813 for RADIUS Accounting messages
         - RADIUS encrypts only the password’s exchange by default
         - it is possible to use RADIUS/TLS to encrypt the entire session
-    - Cisco developed Terminal Access Control Access Control System Plus (TACACS+) and released it as an open standard
+    - **TACACS**: Cisco developed Terminal Access Control Access Control System Plus (TACACS+) and released it as an open standard
         - provides improvements over the earlier version and over RADIUS, it separates authentication, authorization, and accounting into separate processes, which can be hosted on three different servers
+        - TACACS+ allows authentication, authorization, and accounting to be handled independently, providing more granular control.
         - additionally, TACACS+ encrypts all of the authentication information, not just the password, as RADIUS does
         - TACACS+ uses TCP port 49, providing a higher level of reliability for the packet transmissions
-        - 
 
+- 5.6.5 Credential Managment System
+    - **Password Vault**: stored locally on the device and stores password so the user doesnt have to remember them
+       - uses trong encyrption e.g AES-256 for secure storage
+       - only as secure as the secure owner password used to protect the vault itself
+       - Often uses MFA
+       - Some password vaults exists in the cloud for DevOps scenarios
+    - **Key Managment Systems**: CSPs offer a cloud service for centralized secure stroage and access for application secrets called vaults. In Azure (Key Vault), in AWS (KMS), in Google Cloud (KMS Vault)
+       - secrets can include API keys, passwords, certificates, tokens, cryptographic keys
+       - The services will typicall offer programmatic access via API to support DevOps and CI/CD
+       - Access control is handled at the vault-instance level and often at a secret level within
+       - Secrets and keys can be protected either by software of by FIPS 14-2(3) Level 2 validated HSMs.
+  
 ***Authorization Mecahanisms***
 
 - Implicit Deny: ensures that access to an object is denied unless access has been explicitly granted to a subject. (deny by default)
@@ -361,8 +383,3 @@ that describe the object that can be impacted; and contextual attributes like lo
 - Need to Know: ensures that subjects are granted access only to what they need to know for their work tasks and job functions.
 - Least Privilege: This ensures that subjects are granted only the privileges they need to perform their work tasks and job functions. This is sometimes lumped together with need to know. The only difference is that least privilege will also include rights to take action on a system.
 - Separation of Duties and Responsibilities: This ensures that sensitive functions are split into tasks performed by two or more employees. It helps prevent fraud and errors by creating a system of checks and balances.
-
-  **Markup Language**
-- Service Provisioning Markup Language (SPML) is an XML-based language designed to allow platforms to generate and respond to provisioning requests.
-- Security Assertion Markup Language (SAML) is used to make authorization and authentication data on first access
-- Extensible Access Control Markup Language (XACML) is used to describe access controls.
