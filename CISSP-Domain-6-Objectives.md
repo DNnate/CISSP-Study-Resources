@@ -65,6 +65,36 @@
             - Type II reports also cover an extended period of time, at least 6 months
             - think of Type II report as similar to a traditional audit; the auditor is checking the paperwork, and verifying the controls are functioning properly
         - Type II reports are considered much more reliable than Type I reports (Type I reports simply take the service orgs word that the controls are implemented as described)
+     
+- 6.1.4 Location for Auditing
+    - Third-party audits are conducted by, or on behalf of, another org
+    - **On-Premise**:
+        - Physical Access: Auditors typically need physical access to hardware, network devices, and data centres for inspection, configuration reviews and testing
+        - Control and Visibility: Organisation retains greater control over its infrastructure thus auditors have ore direct visibility into security configurations
+        - Scope: Audits may be focused on traditional IT infrastructure , including network security, operating systems, physical safeguards etc
+    - **Cloud**:
+        - Shared Responsibility: Security is a shared responsibility between the organisation and the cloud provider. Audit focus shifts towards how the organisation uses the cloud services
+        - Documentation & APIs: Auditors typically will rely on heavily on cloud provider documentations, service configurations, and access to relevant APIs for gathering evidence.
+        - Compliance Focus: Emphasis often on meeting cloud-specific security standards (e.g SOC 2, ISO 27001, FedRAMP), and the organisations configuration of cloud services. CSPs provide attestation documents for certification of the underlying infrastructure but the customer still needs to configure the cloud service in a compliant manner.
+        - Customer right-to-audit is often limited, and be  mindful of rules of engagement when it comes to penetration testing
+    - **Hybrid**:
+        - Increased Complexity: presents the most complexity due to the mix of on-premise and cloud components that need auditing
+        - Data Flows: Understanding how data moves between on-premise and cloud environments is crucial for risk assessment
+        - Integrated Controls: Auditors must evaluate the evaluate the effectiveness of security controls accros the entire hybrid landscape.
+
+- **Assurance Challenges with Virtualization & Cloud**: The cloud is made possible by virualization technologies that enable dynamic environments needed for a global provider platform.
+    -  Depending on the cloud arhitecture deployed, the cloud security professional may need to perorm multiple layers of auditing.
+    -  To be effective, the auditor must understand the virualization architecture of the cloud provider
+        - Provider (Cloud Service Provider): The CSP i.e Microsoft, Amazon & Google will usually be responsible for the audits of controls over the hypervisor
+        - Customer (Cloud conusmers):  VMs deployed on top of the hardware are usually owned by the customer
+        - **Right-to-Audit**:
+            - The customer can request right-to-audit the service provider to ensure compliance with the security requirements agreed in the contract
+            - Contracts are often written to allow CSPs standard audits (SOC 2, ISO 27001) to be used in place of customer-performed audit.
+        - **Metrics**: If there are specific indicators that the CSP must provide to the customer, they should be documented in a contract
+            - Metrics tell you how compliance with the agreement will be measured
+        - Major CSPs make SOC 2 Type II (or other report) available on demand 
+        - The use of vulnerability scanners and pen testers may be limited by the CSP's terms of service or cloud contractual arrangment.
+            - 
 
 [6.2](#6.2) Conduct security control testing (OSG-9 Chpt 15)
 - Security control testing can include testing of the physical facility, logical systems and applications; common testing methods:
@@ -124,7 +154,26 @@ raw packets, and a user may be restricted by the operating system from sending h
             - does not provide attackers with any information prior to the attack
             - this simulates an external attacker trying to gain access to information about the business and technical environment before engaging in an attack
             - these tests are sometimes called "**unknown environment**" tests
-
+- **Excersice Types**:
+    - **Red Team**: A group of security professionals who simulate real-world attacks to test the defenses of an organization.
+        - They are an internal or external entity dedicated to testing the effectiveness of a security program by emulating tools and techniques of likely attackers in the most realistic way possible
+        - They are offence
+        - Think of attackers testing the system for weaknesses.
+    - **Blue Team**: A group of security professionals responsible for defending an organization’s IT infrastructure from attacks.
+        - They are internal security team that defends against Red Team and real attackers
+        - They are defence
+        - Think of defenders protecting the system from attacks.
+    - **Purple Team**: A collaboration between the red team and blue team to improve the overall security of an organization.
+        - exist to ensure and maximise the effectiveness of the red and blue teams
+        - They are for process improvement
+        - Think of a cooperative effort where attackers and defenders work together to strengthen security.
+   - **White Team**: responsible for overseeing an engagement/competition between a Red Team of mock attackers and a Blue Team of actual defenders.
+        - They do not participate directly in the attack (red team) or defense (blue team) activities but ensure fair play and adherence to the rules.
+        - Facilitate communication and coordination between red and blue teams.
+        - Observe the security exercise to ensure that it is realistic and that all parties follow the guidelines.
+        - Set the boundaries and objectives of the security exercise to ensure it is controlled and focused.
+        - Think of judge or referee
+      
 - 6.2.3 Log reviews
     - **Security Information and Event Management (SIEM)**: packages that collect information using the syslog functionality present in many devices, operating systems, and applications. Note: Windows systems generate logs in the Windows native logging format. To send syslog events, Windows systems require a helper application or tool.
     - Admins may choose to deploy logging policies through Windows Group Policy Objects (GPOs)
@@ -301,7 +350,35 @@ reassembles the activity of individual users to track their interaction with a w
         - cost: third-party auditors are going to be much more costly than internal teams; this means that the organization is likely to conduct audits as frequently
         - internal resources are still required to assist or accompany auditors, to answer questions and guide
      
-
+- 6.5.4 Location: Facilitating Security Audit
+    - On-Premise:
+    - **Cloud**: distributed nature and scale of cloud infrastructure makes conducting an audit of cloud infrasturcture challenging.
+        - You generally cannot audit the underlying infrastructure managed by the CSP
+        - cloud computing enables distributed services , with systems that can replicate globally. The impact is the additional geographic locations auditors must consider when performing an audit
+        - Common technique in cloud auditing is sampling - picking a subset of the physical infrastructure to inspect
+        - CSPs can collect evidence that provides auditors with sufficient assurance that they have collected a representative sample to save time and expense while still mainting accuracy
+        - In relation to audit compliance, the 3 audit standards commonly used by the big CSPs include SSAE, ISAE, and CSA.
+            - **SSAE (Statement on Standards for Attestation Engagements)**: SSAE is a standard developed by the American Institute of Certified Public Accountants (AICPA) for reporting on the controls at a service organization.
+                - SSAE 18 is designed to enhance the quality and usefulness of SOC reports
+                - SSAE is the framework for creating System and Organization Controls (SOC) reports, such as SOC 1, SOC 2, and SOC 3.
+                  - SOC 1: report that focuses on financial reporting by certified public accountants.
+                  - SOC 2 Type I: report that focuses on security, availability, processing integrity, confidentiality, and privacy controls at a specific point in time.
+                  - SOC 2 Type II: report that asseses the security, availability, processing integrity, confidentiality, and privacy controls over time by overving operations for at least 6 months. You can get these reports on demand from CSPs but may require you to sign an NDA.
+                  - SOC 3: Similar to SOC 2 but intended for broader distribution and contains auditors general opinions.
+                - It includes audit standards and suggested report formats to guide and assits auditors
+                - Example a cloud service provider undergoes an SSAE 18 audit to prove to clients that their data is secure and managed properly. 
+            - **ISAE (International Standard on Assurance Engagements)**:  ISAE is a set of standards issued by the International Auditing and Assurance Standards Board (IAASB) for assurance engagements, including reports on controls at service organizations. 
+                - The board and its standards are both similar to those of SSAE.
+                - ISAE 3402: The most relevant standard for cloud services, similar to SSAE 18, used internationally. it is roughly the equivalent of SOC 2 reports in SSAE.
+            - **CSA (Cloud Security Alliance)**: CSA is an organization that defines best practices and provides certifications for securing cloud computing environments.
+                - it offers the CSA STAR program: The Security, Trust, Assurance, and Risk (STAR) program is a certification for cloud service providers based on CSA's Cloud Controls Matrix (CCM).
+                - STAR consists of two level of certification which provide increasing levels of assurance
+                   - Level 1 Self-Assesment: is based on self-assessment where Providers assess their own security practices against the CCM. It documents the security offering provided by the CSP.
+                   - Level 2 Third Party Audit: Requires the CSP to engage an independent auditor to evaluate the CSPs controls against the CSA standard. It is stronger.
+                - Can be used by CSPs, cloud consumers, auditors or consultants
+                - It is designed to demonstrate compliance to a desired level of assurance.
+    - Hybrid:
+      
 - [6.6](#6.6) Software testing: Security Assessment and Testing (OSG-9 Chpt 15)
     - **Code Review**: Code review is the foundation of software assessment programs. During a code review, also known as a peer review, developers other than the one who wrote the code review it for defects. Static program reviews are typically performed by an automated tool. Program understanding, program comprehension, pair programming, software inspections, and software walk-throughs are all human-centric methods for reviewing code.
     - an example of Code review is by using the 6 steps Fagan process: 1.Planning, 2.Overview, 3.Preparation, 4.Inspection, 5.Rework, 6.Follow-­up
