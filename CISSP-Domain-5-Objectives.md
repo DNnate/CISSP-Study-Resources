@@ -73,13 +73,13 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
       - 
 - 5.2.2 Single/Multi-Factor Authentication (MFA)
 - **Authentication Methods**:
-- Passwords Only: the least secure 😠
-- Password and (SMS or Voice) ☹️
-- Password and (Authenticator App, Software OATH/Tokens OTP, Hardware OATH/Tokens OTP). OTH tokens are one-time codes that changes every few minutes/seconds. 🙂
-- Passwordless: It is convinient and also reduces phishing exposure. Strong passwords can be diffuclt to remember. Reduces password re-use. Passwords are also subject to replay attacks. The are cost concerns, and biometric privacy concerns. 😄 Examples include:
-   - Windows Hello for Business: Uses biometrics and supports relying party that supports Fast ID Online FIDO v2.0 authentication
-   - FIDO2 Security Key: Hardware that uses public-key assymetric cryptograpgy for user authentication
-   - Authenticator App: Authenticator Apps can also be used as the primary form of authentication to sign into popular cloud identities. It can also be used as additional verification option for self-service password reset or MFA. 
+  - Passwords Only: the least secure 😠
+  - Password and (SMS or Voice) ☹️
+  - Password and (Authenticator App, Software OATH/Tokens OTP, Hardware OATH/Tokens OTP). OTH tokens are one-time codes that changes every few minutes/seconds. 🙂
+  - Passwordless: It is convinient and also reduces phishing exposure. Strong passwords can be diffuclt to remember. Reduces password re-use. Passwords are also subject to replay attacks. The are cost concerns, and biometric privacy concerns. 😄 Examples include:
+     - Windows Hello for Business: Uses biometrics and supports relying party that supports Fast ID Online FIDO v2.0 authentication
+     - FIDO2 Security Key: Hardware that uses public-key assymetric cryptograpgy for user authentication
+     - Authenticator App: Authenticator Apps can also be used as the primary form of authentication to sign into popular cloud identities. It can also be used as additional verification option for self-service password reset or MFA. 
 - **OATH token**: is a hardware or software-based authentication device that generates a one-time password (OTP) for secure access to systems, applications, or data. It is based on the OATH (Initiative for Open Authentication) standards, particularly the Time-based One-Time Password (TOTP) and HMAC-based One-Time Password (HOTP) algorithms.
   - **TOTP**: Generates OTPs based on the current time and a shared secret. The OTP is typically valid for a short period (e.g., 30 seconds).
   - **HOTP**: Generates OTPs based on a counter that increments each time an OTP is requested, along with a shared secret.
