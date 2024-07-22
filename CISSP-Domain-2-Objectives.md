@@ -219,7 +219,7 @@ specific asset. e.g threat/likelihood of fire
   - The overall goal is to have an objective and measurable selection process 
     - if you repeat the process with a totally different team, the alternate team should come up with the same selection
 
-- 2.6.4 Data protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB)) 🥇 Sometimes it is better to collect limited information 🥇
+- 2.6.4 Data protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB)) 
   - **Data protection methods** include: 
     - **digital rights management (DRM)**: methods used in attempt to protect copyrighted materials. there is hardware and software based DRMs.
     - **Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network
@@ -250,12 +250,12 @@ specific asset. e.g threat/likelihood of fire
     - completing the sale: the CCP sends a reply to the POS indicating the charge is approved
     - this system prevents CC theft at the POS system
     - Tokenization replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
-
 - **Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified.
     -  Anonymization techniques remove all personal data and make the data unusable for
 reuse on the website.
-
 - **Data masking** obscures some, but not all, data. 
+
+🥇 Sometimes it is better to collect limited information 🥇
 
 - **Policy ▶️Standard ▶️Baseline ▶️ Guideline ▶️Procedure**
     - **Policy**: Policy is High level > Standard > Guidlines > Procedure
