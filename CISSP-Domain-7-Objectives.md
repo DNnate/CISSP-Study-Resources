@@ -28,6 +28,8 @@ information or assets and/or violate a security policy. e.g backup failure, unau
 - **Trusted Computing Base (TCB)**: the collection of all hardware, software, and firmware components within an architecture that is specifically responsible for security and the isolation of objects;
     - TCB is a term that is usually associated with security kernels and the reference monitor
     - TCB has a component known as the reference monitor in theory, which becomes the security kernel in implementation.
+    - It is the combination of hardware, software, and controls that work together to
+enforce a security policy.
 - **View-Based access controls**: access control that allows the database to be logically divided into components like records, fields, or groups allowing sensitive data to be hidden from non-authorized users; admins can set up views by user type, allowing only access to assigned views
 
 [7.1](#7.1) Understand and comply with investigations (OSG-9 Chpt 19)
