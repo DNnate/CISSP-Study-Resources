@@ -113,7 +113,12 @@ specific asset. e.g threat/likelihood of fire
     - system owners are responsible for the systems that process the data
     - system owner is responsible for system operation and maintenance, and associated updating/patching as well as related procurement activities
   - **Data Subject**: the person who the information is about.
-  - **Data Owner**: the entity that collects/creates the PII and is legally responsible and accountable for protecting it and educating others about how to protect the data through dissemination of intellectual property rights documentation, policies and regulatory requirements, specific protective measures that are expected of custodians, and compliance requirements. Data owners are tasked with making decisions about data, such as who receives access to it and how it is used. The data owner has ultimate responsibility for data belonging to an organization and is typically the CEO, president, or another senior employee
+  - **Data Owner**: the entity that collects/creates the PII and is legally responsible and accountable for protecting it and educating others about how to protect the data through dissemination of intellectual property rights documentation, policies and regulatory requirements,
+       - specific protective measures that are expected of custodians, and compliance requirements.
+       - Data owners are tasked with making decisions about data, such as who receives access to it and how it is used.
+       - The data owner has ultimate responsibility for data belonging to an organization and is typically the CEO, president, or another senior employee
+       - The data owner is the person responsible for classifying data.
+       - A data controller decides what data to process and directs the data processor to process the data.
   - **Data controller**: decide what data to process and how to process it
     - the data controller is the person or entity that controls the processing of the data - deciding what data to process, why this data should be processed, and how it is processed
     - e.g. a company that collects personal information on employees for payroll is a data controller (but, if they pass this info to a third-party to process payroll, the payroll company is the data processor, see below)
@@ -214,7 +219,7 @@ specific asset. e.g threat/likelihood of fire
   - The overall goal is to have an objective and measurable selection process 
     - if you repeat the process with a totally different team, the alternate team should come up with the same selection
 
-- 2.6.4 Data protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB))
+- 2.6.4 Data protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB)) 🥇 Sometimes it is better to collect limited information 🥇
   - **Data protection methods** include: 
     - **digital rights management (DRM)**: methods used in attempt to protect copyrighted materials. there is hardware and software based DRMs.
     - **Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network
@@ -229,33 +234,32 @@ specific asset. e.g threat/likelihood of fire
       - e.g. a web server uses a certificate to encrypt data being viewed by a user, or IPsec encrypting a communication session 
       - most important point is to use encryption whenever possible, including for internal-only web apps
       - DLP solutions are useful for data in transit, scanning data on the wire, and stopping the transmission/transfer, based on the DLP rules set (e.g. outbound data that contains numbers matching a social security number pattern, a DLP rule can be used to block that traffic)
-    - Data in use:
+    - Data in use: 
       - CASB solution often combines DLP, a web application firewall with some type of authentication and authorization, and a network firewall in a single solution; A CASB solution is helpful for protecting data in use (and data in transit)
-  - **Pseudonymization**: refers to the process of using pseudonyms to represent other data
+  - **Pseudonymization**: refers to the process of using pseudonyms or alias to represent other data
     - A pseudonym is an alias, and pseudonymization can prevent data from directly identifying an entity (i.e. person)
+    - the process can be reversed
   - **Tokenization**: use of a token, typically a random string of characters, to replace other data
     - note that tokenization is similar to pseudonymization in that they are both used to represent other data, and the token or pseudonym have no meaning or value outside the process that creates and links them to that data
-  - example of tokenization used in CC transactions:
+    - If company are reselling products to the same customers, they can use tokenization to save tokens that match the credit card data, instead of saving and storing credit card data.
+    - example of tokenization used in CC transactions:
     - registration: app on user's smart phone securely sends CC info to the credit card processor (CCP)
-        - The CCP sends the CC info to a tokenization vault, creating a token and associating it with the user's phone
+    - The CCP sends the CC info to a tokenization vault, creating a token and associating it with the user's phone
     - usage: when the user makes a purchase, the POS system sends the token to the CCP for authorization
     - validation: the CCP sends the token to the tokenization vault; the vault replies with the CC info, the charge is processed
     - completing the sale: the CCP sends a reply to the POS indicating the charge is approved
     - this system prevents CC theft at the POS system
+    - Tokenization replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
 
-**Tokenization** replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
+- **Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified.
+    -  Anonymization techniques remove all personal data and make the data unusable for
+reuse on the website.
 
-**Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified. 
+- **Data masking** obscures some, but not all, data. 
 
-**Data masking** obscures some, but not all, data. 
-
-**Pseudonymization** uses a pseudonym or alias to replace other information.
-
-**Policy**: Policy is High level > Standard > Guidlines > Procedure
-
-**Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53
-
-**Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks
-
-**Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88
+- **Policy ▶️Standard ▶️Baseline ▶️ Guideline ▶️Procedure**
+    - **Policy**: Policy is High level > Standard > Guidlines > Procedure
+    - **Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53
+    - **Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks
+    - **Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88
 
