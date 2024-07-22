@@ -142,6 +142,7 @@ You may find this domain to be more technical than others, and if you have exper
 - **Goguen-Meseguer Model**:
     - An integrity model
     - Foundation of noninterference conceptual theories
+    - **Noninterference** is the concept of limiting the actions of a subject at a higher security level so that they do not affect the system state or the actions of a subject at a lower security level.
 - **Sutherland Model**:
     - Focuses on preventing interference in support of integrity
 - **Graham-Denning Model**
