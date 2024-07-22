@@ -134,7 +134,7 @@ You may find this domain to be more technical than others, and if you have exper
         - create The principle can be summed up as “The enemy knows the system.”The principle can be summed up as “The enemy knows the system.”
         - remove
 - **Clark-Wilson**:
-    - Designed to protect integrity using the access control triplet
+    - Designed to protect integrity using the access control triplet (‼️Subject, ‼️Object, ‼️Permissions/Access Rights)
     - A program interface is used to limit what is done by a subject; if the focus of an intermediary program between subject and object is to protect integrity, then it is an implementation of the Clark-Wilson model
 - **Brewer and Nash Model**:
     - AKA "ethical wall", and "cone of silence"
@@ -156,6 +156,10 @@ You may find this domain to be more technical than others, and if you have exper
 - **Star Model**: 
     - Not an official model, but name refers to using asterisks (stars) to dictate whether a person at a specific level of confidentiality is allowed to write data to a lower level of confidentiality
     - Also determines whether a person can read or write to a higher or lower level of confidentiality
+- **Access Control Matrix**: 
+    - An access control matrix assembles ACLs from multiple objects into a single table.
+    - The rows of that table are the ACEs of a subject across those objects, thus a capabilities list.
+      
 
 [3.3](#3.3) Select controls based upon systems security requirements (OSG-9 Chpt 8)
 
