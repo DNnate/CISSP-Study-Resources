@@ -471,9 +471,12 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
                 - certificate policy: documents how your org handles items like requestor identities, the uses of certificates and storage of private keys 
                 - CSP: documents the security configuration of your PKI and is usually available to the public
             - Besides issuing certificates, a PKI has other duties: 
-                - a PKI needs to be able to provide certificate revocation information to clients
+                - a PKI needs to be able to provide certificate revocation information to clients. Note: Certificate revocation lists (CRLs) introduce an inherent latency to the certificate expiration process due to the time lag between CRL distributions.
                 - if an administrator revokes a certificate that has been issued, clients must be able to get that info from your PKI
                 - storage of private keys and info about issued certificates (can be stored in a database or a directory)
+                    - The PFX format is most closely associated with Windows systems that store certificates in binary format. File Extension are typically .pfx or .p12. PFX typically contains a private key, a certificate, and potentially a certificate chain in a single file. Used for importing/exporting certificates and private keys in a single file, often in Windows environments.
+                    - P7B format is used for Windows systems storing files in text format. P7B: Contains only certificates (the certificate chain), not private keys. It can be base64-encoded with headers and footers (e.g., -----BEGIN PKCS7-----), or binary. Used primarily for handling certificates and certificate chains, not for private keys, and is often used in Windows and Java environments. File Extension typically .p7b or .p7c.
+                    - The PEM format is another text format that is base64 ASCII-encoded. PEM usually represents individual components (like separate files for private keys and certificates). File Extension are typically .pem, .crt, .cer, or .key (depending on the contents). PEM is common in Unix/Linux environments and for tasks requiring separate certificate and key files.
             - PKI uses LDAP when integrating digital certs into transmissions 
 - 3.6.4 Key management practices
     - **Key management practices**: include safeguards surrounding the creation, distribution, storage, destruction, recovery, and escrow of secret keys
@@ -539,19 +542,21 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 [3.7](#3.7) Understand methods of cryptanalytic attacks (OSG-9 Chpts 7,14,21)
 - 3.7.1 Brute force
     - **Brute force**: an attack that attempts every possible valid combination for a key or password
-        - they involve using massive amounts of processing power to methodically guess the key used to secure cryptographic communications. 
+        - they involve using massive amounts of processing power to methodically guess the key used to secure cryptographic communications.
+        - Rainbow tables contain precomputed hash values for commonly used passwords and may be used to increase the efficiency of password-­cracking attacks.
 - 3.7.2 Ciphertext only
     - **Ciphertext only**: an attack where you only have the encrypted ciphertext message at your disposal (not the plaintext)
         - if you have enough ciphertext samples, the idea is that you can decrypt the target ciphertext based on the samples
         - one technique proves helpful against simple ciphers is frequency analysis (counting the number of times each letter appears in the ciphertext)
+        - An attacker without any special access to the system would only be able to perform ciphertext-­only attacks.
 - 3.7.3 Known plaintext
-    - **Known plaintext**: in this attack, the attacker has a copy of the encrypted message along with the plaintext message used to generate the ciphertext (the copy); this knowledge greatly assists the attacker in breaking weaker codes
+    - **Known plaintext**: in this attack, the attacker has a copy of the encrypted message along with the plaintext message used to generate the ciphertext (the copy); this knowledge greatly assists the attacker in breaking weaker codes. Known plaintext and chosen plaintext attacks require the ability to encrypt data.
 - 3.7.4 Frequency analysis
     - **Frequency analysis**: an attack where the characteristics of a language are used to defeat substitution ciphers
         - for example in English, the letter "E" is the most common, so the most common letter in an encrypted cyphertext could be a substitution for "E"
         - other examples might include letters that appear twice in sequence, as well as the most common words used in a language 
 - 3.7.5 Chosen ciphertext
-    - **Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to one or more ciphertexts and their plaintexts; i.e. the attacker has the ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext.
+    - **Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to one or more ciphertexts and their plaintexts; i.e. the attacker has the ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext. Known plaintext and chosen plaintext attacks require the ability to encrypt data.
     - **Differential cryptanalysis**: a type of chosen plaintext attack, and a general form of cryptanalysis applicable primarily to block ciphers, but also to stream ciphers and cryptographic hash functions; in the broadest sense, it is the study of how differences in information input can affect the resultant difference at the output; advanced methods such as differential cryptanalysis are types of chosen plaintext attacks
         - as an example, an attacker may try to get the receiver to decrypt modified ciphertext, looking for that modification to cause a predictable change to the plaintext
 - 3.7.6 Implementation attacks
@@ -566,7 +571,8 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - timing attack is an example
 - 3.7.8 Side-channel
     - **Fault-Injection**: the attacker attempts to compromise the integrity of a cryptographic device by causing some type of external fault 
-        - for example, using high-voltage electricity, high or low temperature, or other factors to cause a malfunction that undermines the security of the device
+        - for example, using high-voltage electricity, high or low temperature, or other factors to cause a malfunction that undermines the security of the device.
+        - Fault injection attacks require physical access to the facility.
 - 3.7.9 Timing
     - **Timing**: timing attacks are an example of a side-channel attack where the attacker measures precisely how long cryptographic operations take to complete, gaining information about the cryptographic process that may be used to undermine its security.
         - By analyzing these timing variations, an attacker can infer details about the cryptographic keys or the data being processed.
