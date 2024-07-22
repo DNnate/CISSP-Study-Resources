@@ -332,15 +332,6 @@ control are initiated by developers seeking to implement changes. Design review 
     - CI/CD relies on automation and often third-party tools which can have vulnerabilities or be compromised
     - Secure practices such as threat modeling, least privilege, defense in depth, and zero trust can help reduce possible threats to these tools and systems
 
-- 8.2.7 Security Orchestration, Automation, and Response (SOAR)
-    - **Security Orchestration, Automation, and Response (SOAR)**: refers to a group of technologies that allow orgs to respond to some incidents automatically
-    - **Playbook**: a document or checklist that defines how to verify an incident
-    - **Runbook**: implements the playbook data into an automated tool
-    - SOAR allows security admins to define these incidents and the response, typically using playbooks and runbooks
-    - Both SOAR and SIEM platforms can help detect and, in the case of SOAR, respond to threats against your software development efforts
-    - Security information and event management (SIEM) systems do correlate information from multiple sources and perform analysis, but they stop short of providing automated playbook responses. That is the realm of security orchestration, automation, and response (SOAR) platforms.
-        - devs can be resistent to anything that slows down the development process, and this is where DevSecOps can help build the right culture, and balance the needs of developers and security
- 
 - 8.2.8 Software Configuration Management (SCM)
     - **Software Configuration Management (SCM)**: a product that identifies the attributes of software at various points in time and performs methodical change control for the purpose of maintaining software integrity and traceability throughout the SDLC
         - SCM tracks config changes, and verifies that the delivered software includes all approved changes
