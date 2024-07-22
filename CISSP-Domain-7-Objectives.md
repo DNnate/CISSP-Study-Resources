@@ -28,6 +28,7 @@ information or assets and/or violate a security policy. e.g backup failure, unau
 - **Trusted Computing Base (TCB)**: the collection of all hardware, software, and firmware components within an architecture that is specifically responsible for security and the isolation of objects;
     - TCB is a term that is usually associated with security kernels and the reference monitor
     - TCB has a component known as the reference monitor in theory, which becomes the security kernel in implementation.
+    - The reference monitor validates access to every resource prior to granting the requested access.
     - It is the combination of hardware, software, and controls that work together to enforce a security policy.
  - **Security Perimeters**:
    - the imaginary boundary that separates the TCB from the rest of the system is known as a security perimeter
