@@ -45,6 +45,7 @@ specific asset. e.g threat/likelihood of fire
     - labels can be as granular and custom as required by the org
   -  It is important to protect data in all states: at rest, in transit, or in use
   -  The best way to protect data confidentiality is via use of strong encryption
+- **Declassification** is the process of moving an object into a lower level of classification once it is determined that it no longer justifies being placed at a higher level. In a Bell-LaPadula implementation, for example, Only a trusted subject can perform declassification because this action is a violation of the verbiage of the star property of Bell–LaPadula, but not the spirit or intent, which is to prevent unauthorized disclosure.
 
 - 2.1.2 Asset Classification
   - It's important to identify and classify assets, such as systems, mobile devices etc.
