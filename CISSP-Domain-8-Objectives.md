@@ -471,17 +471,24 @@ control are initiated by developers seeking to implement changes. Design review 
 Supports federation protocols (e.g., SAML, OAuth, OpenID Connect) to establish trust relationships between different identity domains. Implements policies and controls for managing identities and ensuring compliance with regulatory requirements. Monitors identity-related events and provides audit logs for visibility and compliance purposes. Adheres to relevant regulations and standards regarding identity management and data protection.
         - Customer: Defines and manages user accounts, roles, and permissions within the IDaaS platform. Integrates IDaaS with existing on-premises or cloud applications and services requiring authentication and access control. Configures and enforces identity and access management (IAM) policies based on organizational requirements and security best practices. Utilizes the IDaaS platform to authenticate users and enforce security measures such as password policies and MFA. Defines access policies and permissions for applications and resources accessed through the IDaaS platform. Monitors user activity and security events related to identity and access management, and responds to incidents as necessary. Provides training and awareness programs to users regarding identity security practices and the use of IDaaS services effectively.Ensures that the use of IDaaS complies with internal policies, industry regulations, and legal requirements related to identity management.
     - **Considerations around Cloud Services when access the Impact of acquired Software**: A clear understanding of contractual responsibilities of your CSP is important for security, availability and compliance
-        - Data Security and Privacy: 
-        - Shared Responsibility
-        - CSP Security Practices
-        - Multi-Tenenacy & Isolation
-        - Identity & Access Managment
-        - Monitoring, Logging & Auditing
-        - Incident Response & Notification
-        - Compliance and Regulatory
-        - Data Portability and Exit Strategy
-        - Supply Chain Security
-        -
+        - Data Security and Privacy: Evaluating the CSPs data security measures, encryption processes, access controls is crucial to confidentiality and integrity of the organizations data
+            - Data residency and privacy (GDPR, PCI, PHI etc) may vary based on the cloud provider you choose 
+        - Shared Responsibility Model: know the model and have clear definition of the responsibilities of each party is essential to avoid security gaps or overlap.
+            - know your responsibilites with any CSP hosting your app or data 
+        - CSP Security Practices: Assessing the CSPs security policies, incident response procedures and thier track record in addressing security incidents
+        - Multi-Tenenacy & Isolation: Evaluate the CSPs tenant isolation mechanism to prevent unauthorised access or data leakage between tenants. Logical and physical isolation options are fairly consistent across the big 3 CSPs.
+        - Identity & Access Managment: Assessing the CSPs IAM capabilities, including auth mechanisms (MFA), and role based access controls to ensure granular, and just-in-time controls
+            - Also verify support for App's preferred identity providers 
+        - Monitoring, Logging & Auditing: Evaluate the CSPs logging and monitoring capabilities, log retention policies, and the organisations ability to access and analyse relevant logs. Cloud services hosting your app should have a consumable audit trail.
+        - Incident Response & Notification: Have a clear understanding of your CSPs incident response procedures and notification protocols, in the event of a security incident or data breach
+            - contractual details matter becuase you cannot transfer accountabilit
+            - if your CSP is breach and your customer data is compromised, your organisation's responsibility to the customer is the same 
+        - Compliance and Regulatory: Depending on the org's industry and type of data involved, there may be specific compliance and/or regulatory requirements that a CSP must adhere to. Assessing the CSPs compliance to these requirements and thier ability to provide relevant certifications is essential
+        - Data Portability and Exit Strategy: Organisations need to have a clear understanding  of their abiltiy to migrate or exit the cloud service if neccessary
+            - Evaluate the CSPs data portability capabilties, export formats, and the organisations ability to retrieve its data in the event of service termination
+            - this is crucial in maintaining business continuity and avoiding vendor lock-in
+        - Supply Chain Security: Cloud services often involve complex supply chains, with multiple 3rd party components and services integrated into the overall solution.
+            - Evaluate the CSPs supply chain risk managment processes is important to mitigate potential vulnerabilities or threats introduced through thier supply chain      
 
 [8.5](#8.5) Define and apply secure coding guidelines and standards (OSG-9 Chpts 20,21)
 - **Secure Coding Guidelines and Standards**: best practices identified by a variety of software and security professionals, that when used correctly can dramatically reduce the number of exploitable vulnerabilities introduced during development that remain in the operationally-deployed system
