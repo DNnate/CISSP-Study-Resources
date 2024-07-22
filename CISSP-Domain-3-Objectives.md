@@ -551,7 +551,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - for example in English, the letter "E" is the most common, so the most common letter in an encrypted cyphertext could be a substitution for "E"
         - other examples might include letters that appear twice in sequence, as well as the most common words used in a language 
 - 3.7.5 Chosen ciphertext
-    - **Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to one or more ciphertexts and their plaintexts; i.e. the attacker has the ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key
+    - **Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to one or more ciphertexts and their plaintexts; i.e. the attacker has the ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext.
     - **Differential cryptanalysis**: a type of chosen plaintext attack, and a general form of cryptanalysis applicable primarily to block ciphers, but also to stream ciphers and cryptographic hash functions; in the broadest sense, it is the study of how differences in information input can affect the resultant difference at the output; advanced methods such as differential cryptanalysis are types of chosen plaintext attacks
         - as an example, an attacker may try to get the receiver to decrypt modified ciphertext, looking for that modification to cause a predictable change to the plaintext
 - 3.7.6 Implementation attacks
@@ -568,7 +568,9 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - **Fault-Injection**: the attacker attempts to compromise the integrity of a cryptographic device by causing some type of external fault 
         - for example, using high-voltage electricity, high or low temperature, or other factors to cause a malfunction that undermines the security of the device
 - 3.7.9 Timing
-    - **Timing**: timing attacks are an example of a side-channel attack where the attacker measures precisely how long cryptographic operations take to complete, gaining information about the cryptographic process that may be used to undermine its security
+    - **Timing**: timing attacks are an example of a side-channel attack where the attacker measures precisely how long cryptographic operations take to complete, gaining information about the cryptographic process that may be used to undermine its security.
+        - By analyzing these timing variations, an attacker can infer details about the cryptographic keys or the data being processed.
+        - If an encryption algorithm takes longer to process certain values or operations due to conditional statements or variable-length operations, an attacker might exploit these timing differences to gain insights into the key or plaintext.   
 - 3.7.10 Man-in-the-middle (MITM)
     - **Man-in-the-middle (MITM) (AKA on-path)**: in this attack a malicious individual sits between two communicating parties and intercepts all communications (including the setup of the cryptographic session) 
         - attacker responds to the originator's initialization requests and sets up a secure session with the originator 
@@ -585,7 +587,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - **Silver Ticket**: a silver ticket uses the captured NTLM hash of a service account to create a ticket-granting service (TGS) ticket (the silver ticket grants the attacker all the privileges granted to the service account) 
     - **Golden Ticket**: if an attacker obtains the hash of the Kerberos service account (KRBTGT), they can create tickets at will within Active Directory (this provides so much power it is referred to as having a golden ticket) 
     - **Kerberos Brute-Force**: attackers use the Python script kerbrute.py on Linux, and Rubeus on Windows systems; tools can guess usernames and passwords 
-    - **ASREPRoast**: ASREPRoast identifies users that don’t have Kerberos preauthentication enabled 
+    - **ASREPRoast**: ASREPRoast identifies users that don’t have Kerberos preauthentication enabled or not enforced in AD. This can be discovered using tools such as GetNPUsers from the Impacket suite. The name "ASREPRoast" is derived from the combination of "AS-REP" (Authentication Service Response) and "Roast" (a term used to describe the process of extracting and cracking hashes).
     - **Kerberoasting**: kerberoasting collects encrypted ticket-granting service (TGS) tickets
 - 3.7.13 Ransomeware
     - **Ransomware**: a type of malware that weaponizes cryptography 
