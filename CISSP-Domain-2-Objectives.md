@@ -73,6 +73,7 @@ specific asset. e.g threat/likelihood of fire
   - **Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data or scrubbing un-needed data
   - **Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools (see below) -- not considered acceptable for top secret data.
       - Purging overwrites the media with random bits multiple times and includes additional steps to ensure that data is removed. It ensures there isn’t any data remanence.
+      - Sanitization methods (such as clearing, purging, and destroying) help ensure that data cannot be recovered
 - **Data Remanence**: data remaining on media after typical erasure; to ensure all remanence is removed, the following tools can help:
   - **Degaussing**: used on magentic media. Degaussing the disks often damages the electronics but doesn’t reliably remove the data.
   - **Overwriting**: Same as Clearing and also known as purging. Overwriting the disks multiple times will remove all existing data. This is called purging, and purged media can then be used again.
@@ -207,13 +208,13 @@ specific asset. e.g threat/likelihood of fire
 - 2.6.2 Scoping and tailoring
   - **Baseline**: documented, lowest level of security config allowed by a standard or org
   - After selecting a control baseline, orgs fine-tune with tailoring and scoping processes; a big part of the tailoring process is aligning controls with an org's specific security requirements
-  - **Tailoring**: refers to modifying the list of security controls within a baseline to align with the org's mission
+  - **Tailoring**: refers to modifying the list of ✏️ security controls ✏️ within a baseline to align with the org's mission
     - includes the following activities:
       - identifying and designating common controls; specificaion of organization-defined parameters in the security controls via explicit assignment and selection statements
       - applying scoping guidance/considerations
       - selecting/specifying compensating controls
       - assigning control values
-  - **Scoping**: limiting the general baseline recommendations by removing those that do not apply; part of the tailoring process and refers to reviewing a list of baseline security controls and selecting only those controls that apply to the systems you're trying to protect
+  - **Scoping**: limiting the general baseline recommendations by removing those that do not apply; part of the tailoring process and refers to reviewing a list of baseline ✏️ security controls ✏️ and selecting only those controls that apply to the systems you're trying to protect
     - scoping processes eliminate controls that are recommended in a baseline
     - Scoping is a part of the tailoring process and refers to reviewing a list of security controls and selecting the security controls that apply.
 
@@ -228,12 +229,16 @@ specific asset. e.g threat/likelihood of fire
 
 - 2.6.4 Data protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB)) 
   - **Data protection methods** include: 
-    - **digital rights management (DRM)**: methods used in attempt to protect copyrighted materials. there is hardware and software based DRMs.
+    - **digital rights management (DRM)**: methods used in attempt to protect copyrighted materials. there is hardware and software based DRMs. Methods used with DRM include:
+         - Persistent online authentication
+         - Automatic expiration
+         - Continuous audit trail  
     - **Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network
+         - A cloud access security broker (CASB) is software placed logically between users and cloud-­based resources, and it can enforce security policies used in an internal network.
       - note that entities must comply with the EU GDPR, and use additional data protection methods such as pseudonymization, tokenization, and anonymization
   - One of the primary methods of protecting the confidentiality of data is encryption
   - Options for protecting your data vary depending on its state:
-    - Data at rest: consider encryption for operating system volumes and data volumes, and backups as well
+    - **Data at rest**: consider encryption for operating system volumes and data volumes, and backups as well
       - be sure to consider all locations for data at rest, such as tapes, USB drives, external drives, RAID arrays, SAN, NAS, and optical media
       - DRM is useful for data at rest because DRM "travels with the data" regardless of the data state
         - DRM is especially useful when you can’t encrypt data volumes
@@ -241,7 +246,7 @@ specific asset. e.g threat/likelihood of fire
       - e.g. a web server uses a certificate to encrypt data being viewed by a user, or IPsec encrypting a communication session 
       - most important point is to use encryption whenever possible, including for internal-only web apps
       - DLP solutions are useful for data in transit, scanning data on the wire, and stopping the transmission/transfer, based on the DLP rules set (e.g. outbound data that contains numbers matching a social security number pattern, a DLP rule can be used to block that traffic)
-    - Data in use: 
+    - **Data in use**: 
       - CASB solution often combines DLP, a web application firewall with some type of authentication and authorization, and a network firewall in a single solution; A CASB solution is helpful for protecting data in use (and data in transit)
   - **Pseudonymization**: refers to the process of using pseudonyms or alias to represent other data
     - A pseudonym is an alias, and pseudonymization can prevent data from directly identifying an entity (i.e. person)
@@ -264,8 +269,8 @@ reuse on the website.
 
 🥇 Sometimes it is better to collect limited information 🥇
 
-- **Policy ▶️Standard ▶️Baseline ▶️ Guideline ▶️Procedure**
-    - **Policy**: Policy is High level > Standard > Guidlines > Procedure
+- **Policy ▶️ Standard ▶️ Baseline ▶️ Guideline ▶️Procedure**
+    - **Policy**: Policy is High level from Management 
     - **Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53
     - **Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks
     - **Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88
