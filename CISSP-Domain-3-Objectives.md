@@ -33,6 +33,13 @@ You may find this domain to be more technical than others, and if you have exper
 - **Transposition cypher**: encryption/decription process using transposition. e.g frequency of message might match known english language patterns
 - **VESDA**: very early smoke detection process (air sensing device brand name)
 - **Work factor**: amount of effort necessary to break a cryptographic system, measured in elapsed time
+- **Confusion**: occurs when the relationship between the plaintext and the key is so complicated that an attacker can’t merely continue altering the plaintext and analyzing the resulting ciphertext to determine the key.
+- **Diffusion** occurs when a change in the plaintext results in multiple changes spread throughout the ciphertext.
+- **One-­time Pad**: A one-time pad (OTP) is a theoretically unbreakable encryption technique in cryptography that involves using a random key that is as long as the message being sent. It is the only known cryptosystem that is not vulnerable to attacks. All other cryptosystems, including transposition ciphers, substitution ciphers, and even AES, are vulnerable to attack, even if no attack has yet been discovered.
+    - The encryption key must be randomly generated.
+    - The encryption key must be at least as long as the message to be encrypted.
+    - Each one-time pad must be used only once.
+    -  The one-time pad must be physically protected against disclosure. 
 
 [3.1](#3.1) Research, implement, and manage engineering processes using secure design principles (OSG-9 Chpts 1,8,9,16)
 
@@ -364,11 +371,11 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 [3.6](#3.6) Select and determine cryptographic solutions (OSG-9 Chpts 6,7)
 - FIPS 140-2: Established to aid in the protection of digitally stored unclassified , yet sensitive information.
  - Developed by NIST for use in computer systems by non-military American government agencies and government contractors
- - **FIPS 140-2** (Federal Information Processing Standard) Security levels include
+ - **FIPS 140-2** 🤯 (Federal Information Processing Standard) Security levels include
    - Level 1: lowest level of security.
    - Level 2: Specifies requirement for security levels that protect sensitive information. 
    - Level 3: Requires physical protection to ensure high degree of confidence that any attempts to tamper are evident and detectable.
--  **FIPS 140-3**: As of April 2022, superseeds FIPS 140-2
+-  **FIPS 140-3**: 🤯 As of April 2022, superseeds FIPS 140-2
    - Level 1: Production grade equipments and externally tested algorithms
    - Level 2: Adds requirements for tamper-evidence and role-based authentication.
    - Level 3: Includes tamper-resistance, identity-based authentication, and sepereation between interfaces
@@ -399,11 +406,25 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - symmetric encryption uses a shared secret key available to all users of the cryptosystem 
         - symmetric encryption is faster than asymmetric encryption because smaller keys can be used for the same level of protection 
         - downside is that users or systems must find a way to securely share the key and hope the key is used only for the specified communication
-        - primarily employed to perform bulk encryption and provides only for the security service of confidentiality 
+        - primarily employed to perform bulk encryption and provides only for the security service of confidentiality
+        - Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.
         - "same" is a synonym for symmetric 
         - "different" is a synonym for asymmetric 
         - total number of keys required to completely connect n parties using symmetric cryptography is given by this formula: 
             - **(n(n - 1)) / 2** 🥇
+            - **Block Ciphers**: Encrypts data in fixed-size blocks (e.g., 64 bits, 128 bits). Examples: DES, 3DES, AES, Blowfish, Twofish. Block ciphers can operate in various modes to enhance security and applicability:
+                - ECB (Electronic Codebook): Encrypts each block independently; not recommended due to security weaknesses.
+                - CBC (Cipher Block Chaining): Each plaintext block is XORed with the previous ciphertext block before encryption, improving security.
+                - CFB (Cipher Feedback) and OFB (Output Feedback): Convert block ciphers into stream ciphers, encrypting smaller units of data.
+                - CTR (Counter Mode): Encrypts data by combining plaintext with an encrypted counter, turning a block cipher into a stream cipher.
+            - **Stream Ciphers**: Encrypts data one bit or byte at a time. Examples: RC4, ChaCha20.
+                -  Bit-by-Bit Encryption: Unlike block ciphers that encrypt data in fixed-size blocks, stream ciphers encrypt data one bit or byte at a time.
+                -  They generate a pseudo-random key stream that is combined with the plaintext using an XOR operation to produce the ciphertext.
+                -  They are generally simpler and faster than block ciphers, making them suitable for applications requiring high-speed encryption.
+                -  They are faster and can be more efficient than block ciphers for certain applications, especially when hardware resources are limited.
+                -  They typically have lower latency compared to block ciphers, making them suitable for real-time applications.
+                -  Disadvantage is that if the key stream is reused (keystream reuse), it can compromise security, as it makes the cipher vulnerable to attacks. Ensuring that the same key stream is not reused is critical and can complicate key management.
+ 
     - **Asymmetric** encryption: process that uses different keys for encryption and decryption, and in which the decryption key is computationally not possible to determine given the encryption key itself
         - Asymmetric (AKA public key, since one key of a pair is available to anybody) algorithms provide convenient key exchange mechanisms and are scalable to very large numbers of users (addressing the two most significant challenges for users of symmetric cryptosystems) 
         - Asymmetric cryptosystems avoid the challenge of sharing the same secret key between users, by using pairs of public and private keys to allow secure communication without the overhead of complex key distribution
@@ -492,6 +513,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - 3.6.7 Integrity (e.g., hashing)
     - Hash Functions have a very simple purpose — they take a potentially long message and generate a unique output value derived from the content of the message called a **message digest**
         - hash function implements encryption with a specified algorithm, but without a key
+        - Provides a fixed-size hash value from variable-length input, used for ensuring data integrity.
         - used to ensure message sent by the originator is the same one received by recipient
         - input can be of any length 
         - output has a fixed length 
