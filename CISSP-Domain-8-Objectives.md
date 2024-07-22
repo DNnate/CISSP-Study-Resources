@@ -481,6 +481,8 @@ Supports federation protocols (e.g., SAML, OAuth, OpenID Connect) to establish t
         - Compliance and Regulatory
         - Data Portability and Exit Strategy
         - Supply Chain Security
+        -
+
 [8.5](#8.5) Define and apply secure coding guidelines and standards (OSG-9 Chpts 20,21)
 - **Secure Coding Guidelines and Standards**: best practices identified by a variety of software and security professionals, that when used correctly can dramatically reduce the number of exploitable vulnerabilities introduced during development that remain in the operationally-deployed system
 - 8.5.1 Security weaknesses and vulnerabilities at the source-code level
