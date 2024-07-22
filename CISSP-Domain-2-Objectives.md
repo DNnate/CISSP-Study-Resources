@@ -195,6 +195,13 @@ specific asset. e.g threat/likelihood of fire
     - **Data at rest**: any data stored on media such as hard drives or external media: Protecting Data at Rest: AES encryption, Access Control, redundancy/backup, Bitlocker, FileVault, symmetric encrytion e.g Serpent, IDEA
 
     - **Data in transit**: any data transmitted over a network: Protecting Data in Motion: TLS encryption, email encrytion (SMIME, PGP), IPSEC, VPN, SSH
+        - SSH-2: Provides improved security with more robust encryption e.g AES and key exchange mechanisms. It also adds support for simultaneous shell sessions over a single SSH connection and Supports optional compression of data to improve  performance
+        - IPsec: Provides strong encryption and is used in many VPNs. Operates at the Network layer. Transport Mode: Encrypts only the payload of the IP packet, leaving the header intact. Tunnel Mode: Encrypts both the payload and the header, creating a new IP header.
+        - L2TP: Provides tunneling but requires IPsec for encryption. Operates at the Data link layer. perates at the data link layer and provides a framework for tunneling protocols. L2TP alone does not offer encryption or security but is typically used with IPsec to provide these features (L2TP/IPsec).
+        - PPTP: Older and less secure, generally not recommended. Operates at the Data link layer. Encapsulates PPP (Point-to-Point Protocol) frames into IP packets for transmission over the internet. PPTP itself provides encryption but is considered less secure compared to more modern protocols.
+        - SSL/TLS: Strong encryption, often used in remote access VPNs. Operates at the Application link layer. Often used in remote access VPNs (SSL VPNs) and for securing web traffic (HTTPS).
+        - IKEv2: Enhances IPsec with better performance and security. Operates at the Network layer (enhances IPsec).  Provides strong security and supports features like NAT traversal and seamless connection resumption.
+        - OpenVPN: Flexible and secure with strong encryption, highly configurable. Operates at the Application layer (uses SSL/TLS).      
       - encryption methods protect data at rest and in transit
       - Asymmetric encryption (along with symmetric encryption) protects data in transit.
     - **Data in use**: data in memory and used by an application
