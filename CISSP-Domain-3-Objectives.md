@@ -41,7 +41,7 @@ You may find this domain to be more technical than others, and if you have exper
 - **Work factor**: amount of effort necessary to break a cryptographic system, measured in elapsed time
 - **Confusion**: occurs when the relationship between the plaintext and the key is so complicated that an attacker can’t merely continue altering the plaintext and analyzing the resulting ciphertext to determine the key.
 - **Diffusion** occurs when a change in the plaintext results in multiple changes spread throughout the ciphertext.
-- **One-­time Pad**: A one-time pad (OTP) is a theoretically unbreakable encryption technique in cryptography that involves using a random key that is as long as the message being sent. It is the only known cryptosystem that is not vulnerable to attacks. All other cryptosystems, including transposition ciphers, substitution ciphers, and even AES, are vulnerable to attack, even if no attack has yet been discovered.
+- **One-­time Pad**: A one-time pad (OTP) is a theoretically unbreakable encryption technique in cryptography that involves using a random key that is as long as the message being sent. It is the only known cryptosystem that is not vulnerable to attacks. All other cryptosystems, including transposition ciphers, substitution ciphers, and even AES, are vulnerable to attack, even if no attack has yet been discovered. A one-­time pad is only appropriate for use in human-­to-­human communications.
     - The encryption key must be randomly generated.
     - The encryption key must be at least as long as the message to be encrypted.
     - Each one-time pad must be used only once.
@@ -420,7 +420,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - **(n(n - 1)) / 2** 🥇
             - **Block Ciphers**: Encrypts data in fixed-size blocks (e.g., 64 bits, 128 bits). Examples: DES, 3DES, AES, Blowfish, Twofish. Block ciphers can operate in various modes to enhance security and applicability:
                 - ECB (Electronic Codebook): Encrypts each block independently; not recommended due to security weaknesses. Only provide confidentiality. Plaintext is divided into blocks. Each block is encrypted separately to produce the ciphertext blocks
-                - CBC (Cipher Block Chaining): Each plaintext block is XORed with the previous ciphertext block before encryption, improving security. The first plaintext block is XORed with an initialization vector (IV) before encryption.         Subsequent plaintext blocks are XORed with the previous ciphertext block. Ensures that identical plaintext blocks produce different ciphertext blocks and Adds diffusion to the encryption process.
+                - CBC (Cipher Block Chaining): Each plaintext block is XORed with the previous ciphertext block before encryption, improving security. The first plaintext block is XORed with an initialization vector (IV) before encryption.         Subsequent plaintext blocks are XORed with the previous ciphertext block. Ensures that identical plaintext blocks produce different ciphertext blocks and Adds diffusion to the encryption process. One important consideration when using CBC mode is that errors propagate—­if one block is corrupted during transmission, it becomes impossible to decrypt that block and the next block as well.
                 - Output Feedback (OFB) Mode: Converts a block cipher into a synchronous stream cipher by generating a keystream from the encryption of an initial value (IV) and XORing it with the plaintext. The block cipher encrypts an IV to produce a keystream. The keystream is XORed with the plaintext to produce ciphertext. Error propagation is minimal; a bit error affects only the corresponding bit in the plaintext and can operate in parallel since encryption is independent of the plaintext.     Weaknesses: Vulnerable to bit-flipping attacks if not combined with proper integrity checks. Requires secure IV management. Only provide confidentiality.
                 - CFB (Cipher Feedback): Convert block ciphers into stream ciphers, encrypting smaller units of data. CFB mode operates on small units of data, such as bits or bytes, and can recover from transmission errors more effectively than some other modes.  It uses the previous ciphertext block to influence the encryption of the current plaintext block. Although CFB mode uses a block cipher, it effectively functions as a stream cipher by generating a keystream that is XORed with the plaintext. Strenghts include error Propagation, Self-Synchronizing i.e Capable of recovering from transmission errors if the ciphertext is corrupted or lost. Allows for encryption of small units of data (like individual bytes) rather than fixed-size blocks. While more secure than ECB, CFB mode still needs to be combined with secure key management practices to avoid vulnerabilities.
                 - CTR (Counter Mode): Encrypts data by combining plaintext with an encrypted counter, turning a block cipher into a stream cipher by encrypting successive values of a counter and XORing the result with the plaintext. The block cipher encrypts a counter value, which is incremented for each block. The encrypted counter value (keystream) is XORed with the plaintext to produce ciphertext. Supports parallel encryption and decryption and Allows random access to encrypted data blocks. Weaknesses: The counter must never repeat for the same key to maintain security. Only provide confidentiality.
@@ -444,11 +444,14 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - Most common asymmetric cryptosystems in use today:    
             - Rivest-Shamir-Adleman (RSA) 
             - Diffie-Hellman 
-            - ElGamal
-            - Eliptical Curve Cryptography (EEC)
+            - ElGamal - The major disadvantage of the ElGamal cryptosystem is that it doubles the length of any message it encrypts.
+            - Eliptical Curve Cryptography (ECC) - The elliptic curve cryptosystem requires significantly shorter keys to achieve encryption that would be the same strength as encryption achieved with the RSA encryption algorithm. A 3,072-­bit RSA key is cryptographically equivalent to a 256-­bit elliptic curve cryptosystem key.
+        - **Scenario**: If 🅰️ wants to send a message to 🅱️. 🅰️ must encrypt the message using 🅱️’s public key so that 🅱️ can decrypt it using 🅱️ private key. If 🅰️ encrypted the message with his own public key, 🅱️ would need to know 🅰️’s private key to decrypt the message. If 🅰️ encrypted it with his own private key, any user could decrypt the message using 🅰️’s freely available public key. 🅰️ could not encrypt the message using 🅱️’s private key because 🅰️ does not have access to it. If 🅰️ did, any user could decrypt it using 🅱️’s freely available public key.
+
 - 3.6.3 Public Key Infrastructure (PKI)
     - **Public Key Infrastructure (PKI)**: hierarchy of trust relationships permitting the combination of asymmetric and symmetric cryptography along with hashing and digital certificates (giving us hybrid cryptography) 
         - A PKI issues certificates to computing devices and users, enabling them to apply cryptography (e.g., to send encrypted email messages, encrypt websites or use IPsec to encrypt data communications)
+        - X.509 governs digital certificates and the public key infrastructure (PKI). It defines the appropriate content for a digital certificate and the processes used by certificate authorities to generate and revoke certificates.
         - Many vendors provide PKI services; you can run a PKI privately and solely for your own org, you can acquire certificates from a trusted third-party provider, or you can do both (which is common) 
         - A PKI is made up of 
             - **certification authorities (CAs)**: servers that provide one or more PKI functions, such as providing policies or issuing certificates 
@@ -515,7 +518,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - Non-repudiation of delivery: receiver cannot say they have received a different message (other than what they actually received)
     - Most common method of non-repudiation is digital signatures
     - Digital signatures rely on certificates
-    - If a digital signature was verified with the public key of the sender, then we know that it was created using the sender's private key 
+    - If a digital signature was verified with the public key of the sender, then we know that it was created using the sender's private key. If 🅰️ wants to digitally sign a message he’s sending to 🅱️ so that 🅱️ can be sure the message came from 🅰️ without modification while in transit. 🅰️ should encrypt the message digest with 🅰️'s own private key. When 🅱️ receives the message, 🅱️ will decrypt the digest with 🅰️’s public key and then compute the digest. If the two digests match, 🅱️ can be assured that the message truly originated from 🅰️.
     - Private key should only be known to the sender, so the verification proves to the recipient that the signature came from the sender, providing origin authentication 
     - The recipient (or anyone else) can demonstrate that process to a third party providing nonrepudiation
     - Data encryption provides confidentiality
@@ -531,6 +534,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - the hash function should be collision-resistant, meaning it is extremely hard to find two messages that produce the same hash value output
         - hashes are used for storing passwords, with email, and for file download integrity verification
     - Hashing and integrity: if the hash generated by sender, and separately by the receiver match, then we have integrity
+    - Cryptographic salt values are added to the passwords in password files before hashing to defeat rainbow table and dictionary attacks.
 
 [3.7](#3.7) Understand methods of cryptanalytic attacks (OSG-9 Chpts 7,14,21)
 - 3.7.1 Brute force
@@ -738,10 +742,10 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
       - **Phase 8 Operations & Maintenance/Sustainment**: Ongoing operations and managment to ensure availability and performance e.g troubleshooting, applying updates, addressing vulnerabilities, incident response. The key activities include patch managment, system monitoring, incident response, config managment, change control. The goal is to ensure continous maintenance of security posture.
       - **Phase 9 Retirement/Disposal**: secure decommissiong or disposal when the sytem reaches the end of its useful life or obsolete. focus is on preventing data exposure and respecting data retention periods. The key activities include data archival, secure disposal of hardware and media. The goal is to prevent data exposure, proper hardware disposel, data sanitization and compliance with data retention requirements;
        
-- **DIGITAL SIGNATURES**: The Digital Signature Standard approves three encryption algorithms for use in digital signatures: 
+- **DIGITAL SIGNATURES**: The Digital Signature Standard FIPS 186-4 approves three encryption algorithms for use in digital signatures: 
     - the Digital Signature Algorithm (DSA)
     - the Rivest, Shamir, Adleman (RSA)algorithm;
-    - the Elliptic Curve DSA (ECDSA) algorithm.
+    - the Elliptic Curve DSA (ECDSA) algorithm. 🥇
 
 - **HASHING**
     - HMAC - Lenght variable
@@ -750,13 +754,13 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - MD4 - Lenght 128
     - MD5 - Lenght 128
     - SHA-1 - Lenght 160
-    - SHA-224 - Lenght 224
-    - SHA-256 - Lenght 256
-    - SHA-384 - Lenght 384
-    - SHA-512 - Lenght 512
+    - SHA-224 - Lenght 224, produces 224-­bit digests
+    - SHA-256 - Lenght 256, produces 256-­bit digests
+    - SHA-384 - Lenght 384, produces 384-­bit digests 
+    - SHA-512 - Lenght 512, produces 512-­bit digests 🥇
 
 - **SYMMETRIC**
-    - AES- Block Cipher, Bock Size 128, Key Size 128, 192, 256
+    - AES- Block Cipher, Bock Size 128, Key Size 128, 192, 256 🥇
     - Blowfish - Bock Size 64, Key Size 32 - 448
     - DES - Block Cipher, Bock Size 64, Key Size 56
     - 2DES - Block Cipher (vulnerable to meet-in-the-middle attack)
