@@ -274,7 +274,8 @@ specific asset. e.g threat/likelihood of fire
 - **Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified.
     -  Anonymization techniques remove all personal data and make the data unusable for
 reuse on the website.
-- **Data masking** obscures some, but not all, data. 
+- **Data masking** obscures some, but not all, data.
+- **Perturbation** is the use of false or misleading data in a database management system in order to redirect or thwart information confidentiality attacks.
 
 🥇 Sometimes it is better to collect limited information 🥇
 
