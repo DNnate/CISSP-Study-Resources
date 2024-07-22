@@ -69,11 +69,13 @@ specific asset. e.g threat/likelihood of fire
 - **Data Location**: keep dup copies of backups, on- and off-site
 - **Storage**: define storage locations and procedures by storage type; use physical locks for paper-based media, and encrypt electronic data
 - **Destruction**: destroy data no longer needed by the organization; policy should define acceptable destruction methods by type and classification ([see NIST SP-800-88 for details](https://csrc.nist.gov/publications/detail/sp/800-88/rev-1/final))
-  - **Erasing**: usually refers to a delete operation on media, leaving data remanence
+  - **Erasing**: usually refers to a delete operation on media, leaving data remanence. It rarely remove the data from media but instead mark it for deletion
   - **Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data or scrubbing un-needed data
-  - **Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools (see below) -- not considered acceptable for top secret data
+  - **Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools (see below) -- not considered acceptable for top secret data.
+      - Purging overwrites the media with random bits multiple times and includes additional steps to ensure that data is removed. It ensures there isn’t any data remanence.
 - **Data Remanence**: data remaining on media after typical erasure; to ensure all remanence is removed, the following tools can help:
-  - **Degaussing**: used on magentic media
+  - **Degaussing**: used on magentic media. Degaussing the disks often damages the electronics but doesn’t reliably remove the data.
+  - **Overwriting**: Same as Clearing and also known as purging. Overwriting the disks multiple times will remove all existing data. This is called purging, and purged media can then be used again.
   - **(Physical) destruction**: used for SSD/electronic components, or in combination with other less-secure methods. Due to problems with remnant data, the U.S. National Security Agency requires physical destruction of SSDs
   - **Cryptographic Erasure**: AKA cryptoshedding, basically destroying encryption key; may be only secure method for cloud storage
   - The standard methods for clearing magnetic tapes, according to the NIST Guidelines for Media Sanitization, are overwriting the tape with nonsensitive data, degaussing, and physical destruction via shredding or incineration. Reformatting a tape does not remove remnant data.
@@ -152,7 +154,7 @@ specific asset. e.g threat/likelihood of fire
   - Encrypt sensitive data
   - Safeguard assets via basic security controls to enforce appropriate levels of confidentiality, integrity and availability and act per security policies, standards, procedures and guidelines
 - 2.4.5 Data retention
-  - Retention requirements apply to data or records, media holding sensitive data, systems that process sensitive data, and personnel who have access to sensitive data
+  - Retention requirements apply to data or records, media holding sensitive data, systems that process sensitive data, and personnel who have access to sensitive data. Record retention policies define the amount of time to keep data, and laws or regulations often drive these policies.
     - **record retention**: retaining and maintaining info as long as it is needed, and destroying it when its no longer needed
       - note: a current trend in many orgs is to reduce legal liabilities by implementing short retention policies with email
   - Three fundamental retention policy questions:
@@ -193,10 +195,14 @@ specific asset. e.g threat/likelihood of fire
 
     - **Data in transit**: any data transmitted over a network: Protecting Data in Motion: TLS encryption, email encrytion (SMIME, PGP), IPSEC, VPN, SSH
       - encryption methods protect data at rest and in transit
+      - Asymmetric encryption (along with symmetric encryption) protects data in transit.
     - **Data in use**: data in memory and used by an application
-      - applications should flush memory buffers to remove data after it is no longer needed: Protecting Data in Use (Harder to protect): RAM/memory data, pervasive encryption, prevent shoulder surfing, parameter checking against buffer overflow, Address space layout randomization (ASLR) is a memory-protection process for operating systems (OSes) that guards against buffer-overflow attacks by randomizing the location where system executables are loaded into memory
-
-
+      - applications should flush memory buffers to remove data after it is no longer needed: Protecting Data in Use (Harder to protect): RAM/memory data,
+      - pervasive encryption,
+      - prevent shoulder surfing,
+      - parameter checking against buffer overflow,
+      - Address space layout randomization (ASLR) is a memory-protection process for operating systems (OSes) that guards against buffer-overflow attacks by randomizing the location where system executables are loaded into memory
+      - Purging memory buffers removes all remnants of data after a program has used it.
 
 - 2.6.2 Scoping and tailoring
   - **Baseline**: documented, lowest level of security config allowed by a standard or org
@@ -209,6 +215,7 @@ specific asset. e.g threat/likelihood of fire
       - assigning control values
   - **Scoping**: limiting the general baseline recommendations by removing those that do not apply; part of the tailoring process and refers to reviewing a list of baseline security controls and selecting only those controls that apply to the systems you're trying to protect
     - scoping processes eliminate controls that are recommended in a baseline
+    - Scoping is a part of the tailoring process and refers to reviewing a list of security controls and selecting the security controls that apply.
 
 - 2.6.3 Standards selection
   - Organizations need to identify the standards (e.g. PCI DSS, GDPR etc) that apply and ensure that the security controls they select fully comply with these standards
