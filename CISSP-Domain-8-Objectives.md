@@ -513,7 +513,7 @@ Supports federation protocols (e.g., SAML, OAuth, OpenID Connect) to establish t
      - **Application Programming Interface (API)**: specifies the manner in which a software component interacts with other components
         - API's reduce the effort of providing secure component interactions by providing easy implementation for security controls 
         - API's reduce code maintenance by encouraging software resue, and keeping the location of changes in one place
-        - **Closed system** is designed to work well with a narrow range of other systems, generally all from the same manufacturer. The standards for closed systems are often proprietary and not normally disclosed. 
+- **Closed system** is designed to work well with a narrow range of other systems, generally all from the same manufacturer. The standards for closed systems are often proprietary and not normally disclosed. A closed system is one that uses largely proprietary or unpublished protocols and standards.
 - **Open systems** are designed using agreed-upon industry standards. Open systems are much easier to integrate with systems from different manufacturers that support the same standards or that use compatible application programming interfaces (APIs).
         - **Parameter validation**: ensuring that any API parameter is checked against being malformed, invalid, or malicious helps ensure API secure use; validation confirms that the parameter values being received by an app are within defined limits before they are processed by the system
 
