@@ -162,18 +162,31 @@ of litigation is imminent.
     - **Host-­based IDSs (HIDSs)** can monitor activity on a single system only. A drawback is that attackers can discover and disable them. HIDS may be able to detect unauthorized processes running on a system.
     - **Network-­based IDS (NIDS)** can monitor activity on a network, and an NIDS isn’t as visible to attackers. They may  not notice rogue processes
 - 7.2.2 Security Information and Event Management (SIEM)
-    - Security Information and Event Management (SIEM): systems that ingest logs from multiple sources, compile and analyze log entries, and report relevant information
+    - Security Information and Event Management (SIEM): systems that collects/ingest logs from multiple sources, compile and analyze log entries, and report relevant information
         - SIEM systems are complex and require expertise to install and tune
+        - Provide real-time monitoring, traffic analysis, & notification of potential attack
         - require a properly trained team that understands how to read and interpret info, and escalation procedures to follow when a legitimate alert is raised
         - SIEM systems represent technology, process, and people, and each is important to overall effectiveness
         - a SIEM includes significant intelligence functionality, allowing large amounts of logged events and analysis and correlation of the same to occur very quickly
     - SIEM capabilities include:
-        - Aggregation
-        - Normalization
+        - Log Centralization & Aggregation
+        - Normalization data into a common event schema
+        - Data Integrity
         - Correlation
         - Secure storage
-        - Analysis
-        - Reporting
+        - Analysis: Broad visibility across data, apps, identities, endpoints, and infrastructure
+        - Automated and Continous/Investigative Monitoring and response
+        - Alerting and Reporting
+🔄 Log Collection ↪️ SIEM ↪️ SOAR ↪️ SOC Team 🔄 Log Collection
+- 7.2.2.1 Security Orchestration, Automation, and Response (SOAR)
+    - **Security Orchestration, Automation, and Response (SOAR)**: refers to a group of technologies that allow orgs to respond to some incidents automatically. It is a centralized alert and response automation tool with threat specific playbooks and runbooks. Response is in a digital work-flow format and could be automated or sem-automated (requiring a single click). It often uses AI, Machine Learning and Threat Intelligence.
+    - **Playbook**: a document or checklist that defines how to verify/define an incident and the action taken. Playbook is the paperwork.
+    - **Runbook**: implements the playbook data into an automated tool. When integrated with SIEM, some runbooks are invokable from the SIEM. Runbook is the automated technology.
+    - SOAR allows security admins to define these incidents and the response, typically using playbooks and runbooks
+    - Both SOAR and SIEM integrated platforms can help detect and, in the case of SOAR, respond to threats against your software development efforts. It reduces Mean Time to Detection MTTD and accelerates response.
+    - Security information and event management (SIEM) systems do correlate information from multiple sources and perform analysis, but they stop short of providing automated playbook responses. That is the realm of security orchestration, automation, and response (SOAR) platforms.
+        - devs can be resistent to anything that slows down the development process, and this is where DevSecOps can help build the right culture, and balance the needs of developers and security
+          
 - 7.2.3 Continuous monitoring
     - After a SIEM is set up, configured, tuned, and running, it must be routinely updated and continuously monitored to function effectively
     - Effective continuous monitoring encompasses technology, processes, and people
@@ -824,6 +837,17 @@ list review, team members each review the contents of their disaster recovery ch
     - **Full-interruption tests**: operate like parallel tests, but involve actually shutting down operations at the primary site and shifting them to the recovery site
         - these tests involve a significant risk (shutting down the primary site, transfer recovery ops, followed by the reverse) and therefore are extremely difficult to arrange (management resistance to these tests are likely)
         - During a full interruption test, the team takes down the primary site and confirms that the disaster recovery site is capable of handling regular operations. The full interruption test is the most thorough test but also the most disruptive.
+     
+- 7.12.6 Communication
+    - **DR Comunication**: DR testing communication encompasses various internal and external stakeholders with different needs and communication methods/preferences
+        - Internal Stakeholders:
+            - Disaster Recovery Team: Reliable real-time channels for real-time cordination, problem-solving and decision making e.g Chats, Teams, Zoom
+            - Managment: Needs periodic updates on progress and potential impact on normal operations. e.g emails
+            - Wide Company: General awareness and ahead of scheduled tests minimizes confusion. Pre-test and post-test announements.
+        - External Stakeholders:
+            - Customer/Clients: In large scale tests or real life scenarios, there should be proactive controlled communications about potential service disruptions. When there are impacts, ETAs for resolution are important for preserving trust and managing expectations.
+            - Partners: if testing may impact join systems or join operations, inform partners of relevant timelines and agree on cordination channels.
+            - Regulators: Certain industries have reporting requirements. For testing that triggers downtime of regulated systems, advanced notification of post-test results may be mandatory. Always include compliance experts in plan creation and testing.
 
 [7.13](#7.13) Particpate in Business Continuity (BC) planning and exercises (OSG-9 Chpt 3)
 
