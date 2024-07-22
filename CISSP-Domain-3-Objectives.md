@@ -744,6 +744,16 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - ECC - Elliptic Curve Algorithm, Size Variable (smaller key size due to 160 EC Key = 1024 RSA)
     - TLS - In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is ­protected using symmetric cryptography.
 
+- **Key Excahnge Algorithms**:
+    - Diffie-Hellman (DH): Based on the mathematical difficulty of the discrete logarithm problem. Susceptible to man-in-the-middle attacks if not properly authenticated. Variants include Ephemeral Diffie-Hellman (DHE) for forward secrecy.
+    - RSA (Rivest-Shamir-Adleman): Public key algorithm that can be used for both encryption and digital signatures, including key exchange. Based on the computational difficulty of factoring large prime numbers. Can be used to securely exchange symmetric keys by encrypting them with the recipient’s public key.
+    - Elliptic Curve Diffie-Hellman (ECDH): An adaptation of Diffie-Hellman using elliptic curve cryptography to provide equivalent security with smaller key sizes. More efficient and faster compared to traditional Diffie-Hellman. Commonly used in modern secure communications (e.g., TLS).
+    - Elliptic Curve Integrated Encryption Scheme (ECIES): Combines elliptic curve cryptography for key exchange with symmetric encryption and message authentication. Provides confidentiality, integrity, and authenticity. Utilizes ECDH for key exchange and AES for encryption.
+    - Menezes-Qu-Vanstone (MQV): An authenticated protocol for key exchange using elliptic curves, enhancing security by incorporating digital signatures. Provides resistance to certain attacks. Used in various standards, including IEEE P1363 and NIST.
+    - Station-to-Station (STS) Protocol: Combines Diffie-Hellman key exchange with digital signatures to authenticate the communicating parties. Mitigates man-in-the-middle attacks by authenticating the exchanged keys. Utilizes both public key cryptography and Diffie-Hellman.
+    - Internet Key Exchange (IKE): A protocol used to set up a secure and authenticated communication channel, often used with IPsec. Supports mutual authentication and dynamic key exchange.
+    - Secure Remote Password (SRP): A password-based key exchange protocol that ensures mutual authentication without transmitting the actual password. Provides resistance against dictionary attacks and man-in-the-middle attacks. Useful in secure login scenarios where passwords are used.
+
 **In a zero-knowledge proof**, one individual demonstrates to another that they can achieve a result that requires sensitive information without actually disclosing the sensitive information
 
 - **TEMPEST-derived technology** allows the electronic emanations that devices produce (known as Van Eck radiation) to be read from a distance (this process is known as Van Eck phreaking). TEMPEST eavesdropping or Van Eck phreaking countermeasures include the following:
