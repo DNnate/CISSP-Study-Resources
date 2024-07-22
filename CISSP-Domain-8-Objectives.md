@@ -454,7 +454,7 @@ control are initiated by developers seeking to implement changes. Design review 
         - Cloud Service Provider (CSP): Manages data centers, servers, networking/firewall equipment, and storage. Provides hypervisor or virtualization layer. Secures the infrastructure that runs all services offered by the provider. Ensures availability, scalability, and performance of infrastructure components.
         Customer: Configures and secures the operating system running on virtual machines. Installs, configures, and secures applications and middleware. Manages and secures data stored and processed within the virtual machines. Configures local firewall rules, network access controls, and VPN connections.
     
-    - Platform as a Service (PaaS): Provides a platform allowing customers to develop, run, and manage applications without managing underlying infrastructure. Examples: AWS Elastic Beanstalk, Microsoft Azure App Service, Google App Engine.
+    - **Platform as a Service (PaaS)**: Provides a platform allowing customers to develop, run, and manage applications without managing underlying infrastructure. Examples: AWS Elastic Beanstalk, Microsoft Azure App Service, Google App Engine.
             - Cloud Service Provider (CSP): Provides and manages the development platform (e.g., runtime environment, databases, web servers), middleware services required for application development and deployment, Manages platform-level security patches and updates, Ensures scalability and availability of the platform.
         - Customer: Application Development: Develops, tests, and deploys applications on the provided platform. Manages and secures application data stored within the platform. Configures user access controls and identity management within the platform. Integration: Integrates applications with other services and components.
 
@@ -470,7 +470,17 @@ control are initiated by developers seeking to implement changes. Design review 
         - Cloud Service Provider (CSP): Provides centralized identity management services such as user authentication, authorization, and access control. Offers SSO capabilities to enable users to access multiple applications and services with a single set of credentials. Manages the lifecycle of user accounts, including creating, modifying, and disabling accounts based on organizational policies. Provides options for MFA to enhance security by requiring additional verification factors beyond passwords.
 Supports federation protocols (e.g., SAML, OAuth, OpenID Connect) to establish trust relationships between different identity domains. Implements policies and controls for managing identities and ensuring compliance with regulatory requirements. Monitors identity-related events and provides audit logs for visibility and compliance purposes. Adheres to relevant regulations and standards regarding identity management and data protection.
         - Customer: Defines and manages user accounts, roles, and permissions within the IDaaS platform. Integrates IDaaS with existing on-premises or cloud applications and services requiring authentication and access control. Configures and enforces identity and access management (IAM) policies based on organizational requirements and security best practices. Utilizes the IDaaS platform to authenticate users and enforce security measures such as password policies and MFA. Defines access policies and permissions for applications and resources accessed through the IDaaS platform. Monitors user activity and security events related to identity and access management, and responds to incidents as necessary. Provides training and awareness programs to users regarding identity security practices and the use of IDaaS services effectively.Ensures that the use of IDaaS complies with internal policies, industry regulations, and legal requirements related to identity management.
-        - 
+    - **Considerations around Cloud Services when access the Impact of acquired Software**: A clear understanding of contractual responsibilities of your CSP is important for security, availability and compliance
+        - Data Security and Privacy: 
+        - Shared Responsibility
+        - CSP Security Practices
+        - Multi-Tenenacy & Isolation
+        - Identity & Access Managment
+        - Monitoring, Logging & Auditing
+        - Incident Response & Notification
+        - Compliance and Regulatory
+        - Data Portability and Exit Strategy
+        - Supply Chain Security
 [8.5](#8.5) Define and apply secure coding guidelines and standards (OSG-9 Chpts 20,21)
 - **Secure Coding Guidelines and Standards**: best practices identified by a variety of software and security professionals, that when used correctly can dramatically reduce the number of exploitable vulnerabilities introduced during development that remain in the operationally-deployed system
 - 8.5.1 Security weaknesses and vulnerabilities at the source-code level
