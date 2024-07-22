@@ -138,6 +138,9 @@ inputs and outputs to inform the test plan.
             - at regular intervals, the team reviews their effective and adjusts for improvement
         - Several methodologies have emerged that take these Agile principles and define specific processes around them:
             - **Scrum**: a management framework that teams use to self-organize and work towards a common goal; it describes a set of meetings, tools, and roles for efficient project delivery, allowing teams to self-manage, learn from experience, and adapt to change; named from the daily team meetings, called scrums
+                - It is an agile model that help agile teams to work together and deliver complex products
+                - primarily used for software dev but has grown to be accepted within other industries
+                - provides a set of rules, practices and roles to put the agile prinicples into action
             - **Kanban**: a visual system used to manage and keep track of work as it moves through a process; the word kanban is Japanese for "card you can see"; Kanban teams focus on reducing the time a project (or user story) takes from start to finish, using a kanban board and continuously improving their flow of work
             - **Rapid Application Development (RAD)**: an agile software development approach that focuses more on ongoing software projects and user feedback and less on following a strict plan, emphasizing rapid prototyping over planning
             - **Rational Unified Process (RUP)**: an agile software development methodology that splits the project life cycle into four phases:
@@ -151,26 +154,43 @@ inputs and outputs to inform the test plan.
                 - focus on the business need: DSDM teams establish a valid business case and ensure organizational support throughout the project
                 - deliver on time: work should be time-boxed and predictable, to build confidence in the development team
             - **Extreme Programming (XP)**: an Agile project management methodology that targets speed and simplicity with short development cycles, using five guiding values, five rules, and twelve practices for programming; the goal of the rigid structure, focused sprints and continuous integrations is higher quality product
-            - **Scaled Agile Framework® (SAFe)**: a set of org and workflow patterns for implementing agile practices at an enterprise scale; the framework is a body of knowledge that includes structured guidance on roles and responsibilities, how to plan and manage the work, and values to uphold
+            - **Scaled Agile Framework® (SAFe)**: a set of org and workflow patterns for implementing agile practices at an enterprise scale; the framework is a body of knowledge that includes structured guidance on roles and responsibilities, how to plan and manage the work, and values to uphold.
+               - it includes structured guidance on roles and responsibilities, how to plan and mage the work and which values to uphold.
+               - promotes alignment, collaboration and delivery across large numbers of agile teams
+               - It builds on several Agile concepts. It does not replace Agile, rather it adds neccessary layers to make Agile work in large enterprise-level context
+                   - Cordination Across Teams
+                   - Strategic alignment with orgs business objectives
+                   - emphasizes quality as a non-negotiable aspect of delivery
+                   - architectural guidance for future evolution and scaling
+                   - Cadence and synchronization through Programme Increment PI planning and demos (PI is a quarterly excersice where the group plans thier work)
+                   - Lean-Agile leadership 
+               - it was developed leveraging 3 primary bodies of knowledge
+                   - Agile Software Developement
+                   - Lean Product Developement
+                   - Systems Thinking
     - **Waterfall**: 
         - Developed by Winston Royce in 1970, the waterfall model uses a linear sequential life-cycle approach where each phase must be completed before the next can begin; all project requirements are gathered up front, and there is no formal way to integrate changes as more information becomes available
         - Traditional model has 7 stages, as each stage is completed, the project moves into the next phase; the iterative waterfall model does allow development to return to the previous phase to correct defects 
-            - System requirements
-            - Software requirements
-            - Preliminary design
-            - Detailed design
-            - Code and debug
+            - System Requirements
+            - Software Requirements
+            - Preliminary Design
+            - Detailed Design
+            - Code and Debug
             - Testing
-            - Operations and maintenance
+            - Operations and Maintenance
+        - It allows developers to go backacross the 7 stages to make corrections. But you can only return to a previous stage (Only on stage back)
         - A major criticism of this model is that it's very rigid, and not ideal for most complex projects which often contain many variables that affect the scope throughout the project's lifecycle
-        - Despite many organizations moving to Agile, DevOps, or other more responsive development methodologies, waterfall remains a strong contender when clear objectives and stable requirements are combined with a need to prevent flaws and to have a high level of control over the development process and output.
+        - Despite many organizations moving to Agile, DevOps, or other more responsive development methodologies, waterfall remains a strong contender when clear objectives, upfront planning and stable requirements are combined with a need to prevent flaws and to have a high level of control over the development process and output.
         - It is mainly used where time and cost is not important
+        - Still used in public utility projects and even building of nuclear reactors
         - In the waterfall model, the software development process follows five sequential steps that are, in order: Requirements, Design, Coding, Testing, and Maintenance.
     - **Spiral model**: improved waterfall dev process providing for a cycle of Plan, Do, Check, Act (PDCA) sub-stages at each phase of the SDLC; a risk-driven development process that follows an iterative model while also including waterfall elements
         - following defined phases to completion and then repeats the process, resembling a spiral
+        - It allows for multiple iterations of the waterfall-style process
+        - It is known as a "Metamodel" or "Model of Models"
         - the spiral model provides a solution to the major criticism of the waterfall model in that it allows devs to return to planning stages as technical demands and customer requirements iterate
-        - In this approach, developers use multiple iterations of a waterfall-style software development process. This becomes
-a “loop” of iterations through similar processes.
+        - In this approach, developers use multiple iterations of a waterfall-style software development process. This becomes a “loop” of iterations through similar processes.
+        - Each loop of the spiral results in the development of a new system prototype.
     - **DevOps (Development and Operations)**: an approach to software development, quality assurance, and technology operations that seeks to unite siloed staff, and bring the three functions together in a single operational model
         - closely aligned with lean and the Agile development approach, DevOps aims to dramatically decrease the time required to develop, test, and deploy software changes
         - using the DevOps model, and continuous integration/continuous delivery (CI/CD), orgs strive to roll out code dozens or even hundreds of times per day and the can deploy code extremely rapidly.
@@ -343,16 +363,29 @@ control are initiated by developers seeking to implement changes. Design review 
         - github, bitbucket, and sourceforge are examples of systems that provide version control, bug tracking, web hosting, release management, and communications functionality
     
 - 8.2.10 Application security testing (e.g., Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST))
-    - **Static Application Security Testing (SAST)**: AKA static analysis, tools and technique to help identify software defects (e.g. data type errors, loop/structure bounds violations, unreachable code) or security policy violations and is carried out by examining the code without executing the program (or before the program is compiled)
+    - **Static Application Security Testing (SAST)**: (Inside Out) AKA static analysis, tools and technique to help identify software defects (e.g. data type errors, loop/structure bounds violations, unreachable code) or security policy violations and is carried out by examining the code without executing the program (or before the program is compiled)
         - the term SAST is generally reserved for automated tools that assist analysts and developers, whereas manual inspection by humans is generally referred to as code review
+        - Tester has access to the underlying framwork, design, source code and implementation
         - SAST allows devs to scan source code for flaws and vulns; it also provides a scalable method of security code review and ensuring that devs are following secure coding policies
         - Static testing performs code analysis in an offline fashion, without actually executing the code.
-    - **Dynamic Application Security Testing (DAST)**: AKA dynamic analysis, is the evaluation of a program while running in real time
+    - **Dynamic Application Security Testing (DAST)**: (Outside In)  AKA dynamic analysis, is the evaluation of a program while running in real time
         - tools that execute the software unit, application or system under test, in ways that attempt to drive it to reveal a potentially exploitable vulnerability
         - Dynamic testing evaluates code in a runtime environment.
+        - Tester has NO knowledge of the underlying framework, design, source code and implementation
+        - It is by definition a form of black-box testing
         - DAST is usually performed once a program has cleared SAST and basic code flaws have been fixed 
         - DAST enables devs to trace subtle logical errors that are likely to cause security problems, without the need to create artificial error-inducing scenarios
         - dynamic analysis is also effective for compatibility testing, detecting memory leakages, identifying dependencies, and analyzing software without accessing the software’s actual source code. Examples of DAST include Fuzzing and Web application vulnerability scanning
+     
+- **Interactive Application Security Testing (IAST)**: testing that combines or integrates SAST and DAST to improve testing and provide behavioral analysis capabilities to pinpoint the source of vulnerabilities
+     - It analyses codes for vulnerabilities while it is being used
+     - it focuses on real-time reporting to optimize testing and analysis process
+     - unlike SAST & DAST, IAST analyses internal functions of the application while it is running
+     - it is often built into CI\CD automated release testing
+- **Software Composition Analysis (SCA)**: It is used to track the components of a software package or application
+     - It is of particular concern for apps built with open-source software components becuase open-source software components often involve re-usable code libraries.
+     - SCA tools identify flaws/vulnerabilities in these open-source components to ensure the latest versions are in use
+     - It is often automated and combines application security and patch management
   - **Code Review**: A process where one or more developers examine another developer's code to identify any errors, security vulnerabilities, or areas for improvement.
       - Pass-around reviews are often done via email or using a central code review system, allowing developers to review code asynchronously.
       - Pair programming requires two programmers to work together, with one writing code and the other reviewing and tracking progress.
