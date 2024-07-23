@@ -214,6 +214,7 @@ You may find this domain to be more technical than others, and if you have exper
 
 - User interface: a constrained UI can be used in an application to restrict what users can do or see based on their privileges
     - e.g. dimming/graying out capabilities for users without the correct privilege
+    - A constrained or restricted interface is implemented within an application to restrict what users can do or see based on their privileges. The purpose of a constrained interface is to limit or restrict the actions of both authorized and unauthorized users.
     - An interface is also the method by which two or more systems communicate
 - Be aware of the common security capabilities of interfaces:
     - Encryption/decryption: when communications are encrypted, a client and server can communicate without exposing information to the network; when an interface doesn’t provide such a capability, use IPsec or another encrypted transport mechanism
