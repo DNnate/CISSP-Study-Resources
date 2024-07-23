@@ -115,16 +115,19 @@ You may find this domain to be more technical than others, and if you have exper
     - Intended to provide an explicit set of rules that a computer can follow to implement the fundamental security concepts, processes, and procedures of a security policy 
     - Provide a way for a designer to map abstract statements into a security policy prescribing the algorithms and data structures necessary to build hardware and software
     - Enable people to access only the data classified for their clearance level
+    - A security model provides a framework to implement a security policy.
+    - **The State Machine Model** describes a system that is always secure no matter what state it is in. A secure state machine model system always boots into a secure state, maintains a secure state across all transitions, and allows subjects to access resources only in a secure manner compliant with the security policy. Bell–LaPadula and Biba are built on a state machine model.
 - **Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification
-    - Focuse is on confidentiality 
-    - Simple property: No read-up 
+    - Focuse is on confidentiality ✏️
+    - Simple security property: No read-up 
     - Star (*) property: No write-down (AKA confinement property)
     - Discretionary Security Property: uses an access matrix (need to know in order to access)
     - Doesn't address covert channels
 - **Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
-    - Focus is on integrity 
-    - “No read down” (for example, users with a Top Secret clearance can’t read data classified as Secret)
-    - “No write up” (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
+    - Focus is on integrity ✏️
+    -  is based on information flow, and is a multilevel model.
+    - Simple security property: “No read down” (for example, users with a Top Secret clearance can’t read data classified as Secret)
+    - Star (*) property: “No write up” (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
     - By combining it with Bell-LaPadula, you get both confidentiality and integrity
 - **Take-Grant**: 
     - The take-grant model employs a directed graph to dictate how rights can be passed from one subject to another, or from a subject to an object
@@ -134,17 +137,21 @@ You may find this domain to be more technical than others, and if you have exper
         - create The principle can be summed up as “The enemy knows the system.”The principle can be summed up as “The enemy knows the system.”
         - remove
 - **Clark-Wilson**:
+    - Focus is on integrity ✏️
     - Designed to protect integrity using the access control triplet (‼️Subject, ‼️Object, ‼️Program/Interface)
     - A program interface is used to limit what is done by a subject; if the focus of an intermediary program between subject and object is to protect integrity, then it is an implementation of the Clark-Wilson model
 - **Brewer and Nash Model**:
     - AKA "ethical wall", and "cone of silence"
-    - created to permit access controls to change dynamically based on a user's previous activity 
+    - created to permit access controls to change dynamically based on a user's previous activity
+    - prevents conflicts of interest. ✏️
 - **Goguen-Meseguer Model**:
-    - An integrity model
+    - An integrity model ✏️
+    - it is based on predetermining the set or domain (i.e., a list) of objects that a subject can access.
     - Foundation of noninterference conceptual theories
     - **Noninterference** is the concept of limiting the actions of a subject at a higher security level so that they do not affect the system state or the actions of a subject at a lower security level.
 - **Sutherland Model**:
     - Focuses on preventing interference in support of integrity
+    - Focus is on Integrity ✏️
 - **Graham-Denning Model**
     - Focused on the secure creation and deletion of both subjects and objects
     - 8 primary protection rules or actions
@@ -168,8 +175,8 @@ You may find this domain to be more technical than others, and if you have exper
 - The number of the level indicates what kind of testing and confirmation has been performed
 - The important concepts:
     - To perform an evaluation, you need to select the **Target of Evaluation (TOE)** (e.g. firewall or an anti-malware app)
-    - The evaluation process will look at the **protection profile (PP)**, which is a document that outlines the security needs (customer "I wants"); a vendor might use a specific protection profile for a particular solution
-    - The evaluation process will look at the **Security Target (ST)**, specifying the claims of security from the vendor that are built into a TOE (the ST is usually published to customers and partners and available to internal staff)
+    - The evaluation process will look at the **Protection Profile (PP)**, which is a document that outlines the security needs (customer 🔥"I wants"🔥); a vendor might use a specific protection profile for a particular solution
+    - The evaluation process will look at the **Security Target (ST)**, specifying the claims of security from the vendor that are built into a TOE (the ST is usually published to customers and partners and available to internal staff). STs are considered the implemented security measures or the 🔥"I will provide"🔥 from the vendor.
     - An organization's PP is compared to various STs from the selected vendor's TOEs, and the closest or best match is what the org purchases
     - The evaluation will attempt to gauge the confidence level of a security feature 
     - **Security assurance requirements (SARs)**: a description of how the TOE is to be evaluated, based on the development of the solution
@@ -182,16 +189,21 @@ You may find this domain to be more technical than others, and if you have exper
         - EAL5: semi-formally designed and tested
         - EAL6: semi-formally verified, designed, and tested
         - EAL7: formally verified, designed, and tested
-- **Authorization to Operate (ATO)**: official auth to use specific IT systems to perform tasks/accept identified risks
+- **Authorization to Operate (ATO)**: official auth to use specific IT systems to perform tasks/accept identified risks: The four types of ATOs are
+    - Authorization to Operate
+    - Common Control Authorization
+    - Authorization to Use
+    - Denial of Authorization.
 
 [3.4](#3.4) Understand security capabilities of Information Systems (IS) (e.g. memory protection, Trusted Platform Model (TPM), encryption/decryption) (OSG-9 Chpt 8)
 
 - Security capabilities of information systems include memory protection, virtualization, Trusted Platform Module (TPM), encryption/decryption, interfaces, and fault tolerance
-- A computing device is likely running multiple apps and services simultaneously, each occupying a segment of memory; the goal of memory protection is to prevent one app or service from impacting another 
+- A computing device is likely running multiple apps and services simultaneously, each occupying a segment of memory; the goal of memory protection is to prevent one app or service from impacting another
+- Memory protection is a core security component that must be designed and implemented into an operating system. It must be enforced regardless of the programs executing in the system. Otherwise, instability, violation of integrity, denial of service, and disclosure are likely results.
 - There are two primary memory protection methods:
     - **Process isolation**: OS provides separate memory spaces for each processes instructions and data, and prevents one process from impacting another
     - **Hardware segmentation**: forces separation via physical hardware controls rather than logical processes; in this type of segmentation, the operating system maps processes to dedicated memory locations
-
+- **Confinment/Constrained Process**: A constrained process is one that can access only certain memory locations.
 - **Virtualization**: technology used to host one or more operating systems within the memory of a single host, or to run applications that are not compatible with the host OS; the goal is to protect the hypervisor and ensure that compromising one VM doesn't affect others on that host
 
 - **Trusted Platform Module (TPM)**: a cryptographic chip that is sometimes included with a client computer or server; a TPM enhances the capabilities of a computer by offering hardware-based cryptographic operations
