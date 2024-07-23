@@ -109,7 +109,6 @@ inputs and outputs to inform the test plan.
 - **Strong data typing**: feature of a programming language preventing data type mismatch errors; strongly typed languages will generate errors at compile time
 - **Input validation** verifies that user-supplied input does not violate security conditions. Effecive against buffer overflow, XSS and SQL Injection attacks
 - **Bounds checking** is a form of input validation, but it is typically used to ensure that numeric input falls within an acceptable range
-- **Confinement/Constrained Process** Confinement or a constrained process is one that can access only certain memory locations.
 - **Limit Check** which is the verification that input is within a preset range or domain
 - **Threat surface**: total set of penetrations of a boundary or perimeter that surrounds or contains system elements
 - **TOCTOU attack**: time of check vs time of use (TOCTOU) attack takes advantage of the time delay between a security check (such as authentication or authorization) being performed and actual use of the asset
