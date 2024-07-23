@@ -91,13 +91,15 @@ You may find this domain to be more technical than others, and if you have exper
             - Respect, user-centric: involve end users, providing the right amount of information for them to make informed decisions about their data
 - 3.1.10 Trust by verify
     - **Trust but verify**: based on a Russian proverb, and no longer sufficient; it's the traditional approach of trusting subjects and devices within a company's security perimeter automatically, leaving an org vulnerable to insider attacks and providing intruders the ability to easily perform lateral movement
-- 3.1.11 Shared responsibility
+- 3.1.11 Shared responsibility 🔥
     - **Shared responsibility**: the security design principle that indicates that organizations do not operate in isolation
         - Everyone in an organization has some level of security responsibility
         - the job of the CISO and security team is to establish & maintain security
         - The job of regular employees to perform their tasks within the confines of security
         - The job of the auditor is to monitor the environment for violations
         - When working with third parties, especially with cloud providers, each entity needs to understand their portion of the shared responsibility of performing work operations and maintaining security. This is often referenced as the **cloud shared responsibility model**
+        - Organizations are responsible to their stakeholders for making good security decisions in order to sustain the organization.
+        - As we become aware of new vulnerabilities and threats, we should consider it our responsibility (if not our duty) to responsibly disclose that information to the proper vendor or to an information sharing center.
 
 - 3.1.12 Secure Access Service Edge (SASE)
     - **SASE**: A design philosophy closely related to Zero trust Network Architecture. Brings together networking and security functions and delivers them as an integrated cloud service.
