@@ -533,6 +533,7 @@ Supports federation protocols (e.g., SAML, OAuth, OpenID Connect) to establish t
             - e.g. consistently formatted code comments, or keeping code funtions short/tight
 
 - 8.5.4 Software-defined security
+    - A **security model** provides a framework to implement a security policy.A security model provides a way for designers to map abstract statements into a solution that prescribes the algorithms and data structures necessary to build hardware and software. Thus, a security model gives software designers something against which to measure their design and implementation. 
     - **Software-defined security (SDS or SDSec)**: a security model in which security functions such as firewalling, IDS/IPS, and network segmentation are implemented in software within an SDN environment 
         - one of the advantages of this approach is that sensors (for systems like IDS/IPS) can be dynamically repositioned depending on the threat
         - SDS provides a decoupling from physical devices, because it abstracts security functions into software that can run on any compatible physical or virtual infrastructure, critical for supporting cloud services dynamic scaling and virtualized data centers
