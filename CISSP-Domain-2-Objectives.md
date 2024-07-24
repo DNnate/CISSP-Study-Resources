@@ -213,9 +213,15 @@ specific asset. e.g threat/likelihood of fire
       - parameter checking against buffer overflow,
       - Address space layout randomization (ASLR) is a memory-protection process for operating systems (OSes) that guards against buffer-overflow attacks by randomizing the location where system executables are loaded into memory
       - Purging memory buffers removes all remnants of data after a program has used it.
-- **Type of RAM**: Static RAM and dynamic RAM are types of real memory and thus are all the same concept in relation to being volatile—­meaning they lose any data they were holding when power is lost or cycled.
-    - Static RAM SRAM: Stores data using flip-flops. This means the data is retained as long as power is supplied. Faster because it doesn’t need to refresh. It can quickly read and write data. More expensive because it uses more transistors per bit of data and consumes more power.
-    - Dynamic RAM DRAM: Stores data using capacitors and transistors. The data needs to be refreshed periodically to maintain its integrity. Slower due to the need for periodic refreshing of the data stored in capacitors. cost-effective for larger memory capacities and consumes less power.
+   
+- **Different types of memory**:
+    - ROM is nonvolatile and can’t be written to by the end user.
+    - PROM: Data can be written to PROM chips only once.
+    - EPROM/UVEPROM chips may be erased with ultraviolet light. EEPROM chips may be erased with electrical current.
+    - RAM chips are volatile and lose their contents when the computer is powered off.     
+    - **Type of RAM**: Static RAM and dynamic RAM are types of real memory and thus are all the same concept in relation to being volatile—­meaning they lose any data they were holding when power is lost or cycled.
+         - Static RAM SRAM: Stores data using flip-flops. This means the data is retained as long as power is supplied. Faster because it doesn’t need to refresh. It can quickly read and write data. More expensive because it uses more transistors per bit of data and consumes more power.
+         - Dynamic RAM DRAM: Stores data using capacitors and transistors. The data needs to be refreshed periodically to maintain its integrity. Slower due to the need for periodic refreshing of the data stored in capacitors. cost-effective for larger memory capacities and consumes less power.
     - Secondary memory is a term used to describe magnetic, optical, or flash media (i.e., typical storage devices like HDD, SSD, CD, DVD, and thumb drives). These devices will retain their contents after being removed from the computer and may later be read by another user.
 
 - 2.6.2 Scoping and tailoring
