@@ -351,16 +351,21 @@ derivative of SOA is microservices.
     - **Serverless architecture** (AKA **function as a service (FaaS)**): a cloud computing concept where code is managed by the customer and the platform (i.e. supporting hardware and software) or servers are managed by the CSP
         - Applications developed on serverless architecture are similar to microservices, and each function is created to operate independently and automonomously
         - A serverless model, as in other CSP models, is a shared security model,and your org and the CSP share security responsibility
+        - There is always a physical server running the code, but this execution model allows the software designer/architect/programmer/developer to focus on the logic of their code and not have to be concerned about the parameters or limitations of
+a specific server. This is also known as function as a service (FaaS).
+
+- **Infrastructure as Code**: Infrastructure as Code (IaC) is a concept where you manage and provision IT infrastructure using code rather than manual processes. 
 
 - 3.5.12 Embedded systems
     - **Embedded systems**: any form of computing component added to an existing mechanical or electrical system for the purpose of providing automation, remote control, and/or monitoring; usually including a limited set of specific functions
         - Embedded systems can be a security risk because they are generally static, with admins having no way to update or address security vulns (or vendors are slow to patch)
         - Embedded systems focus on minimizing cost and extraneous features
-        - Embedded systems are often in control of/associated with physical systems, and can have real-world impact
+        - Embedded systems are often in control of/associated with physical 📝 systems, and can have real-world impact
+        - Because an embedded system is often in control of a mechanism in the physical world, a security breach could cause harm to people and property (aka cyber-­physical).
         - Securing embedded systems:
             - ebedded systems should be isolated from the internet, and from a private production network to minimize exposure to remote exploitation, remote control, and malware
             - use secure boot feature and physically protecting the hardware
-     - **Cyber-physical systems** refer to devices that offer a computational means to control something in the physical world. In the past these might have been referred to as embedded systems, but the category of cyber-physical seems to focus more on the physical world results rather than the computational aspects.
+     - **Cyber-physical systems** refer to devices that offer a computational means to control something in the physical world. In the past these might have been referred to as 🎵 embedded systems 🎵, but the category of cyber-physical seems to focus more on the physical world results rather than the computational aspects.
      - 
 
 - 3.5.13 High-Performance Computing (HPC) systems
@@ -370,7 +375,8 @@ derivative of SOA is microservices.
             - network capabilities 
             - storage capacity
         - HPCs often implement real-time OS (RTOS)
-        - A real-time operating system (RTOS) is designed to process or handle data as it arrives on the system with minimal latency or delay. An RTOS is usually stored on read-only memory (ROM) and is designed to operate in a hard real-time or soft real-time condition.
+             - **Real-time operating system (RTOS)** is designed to process or handle data as it arrives on the system with minimal latency or delay. An RTOS is usually stored on read-only memory (ROM) and is designed to operate in a hard real-time or soft real-time condition.
+             - It minimizes latency and delay, storing code in ROM, and optimizing for mission-­critical operations
         - HPC systems are often rented, leased or shared, which can limit the effectiveness of firewalls and invalidate air gap solutions
         - Securing HPC systems:
             - deploy head nodes and route all outside traffic through them, isolating parts of a system 
@@ -378,6 +384,7 @@ derivative of SOA is microservices.
 - 3.5.14 Edge computing systems
     - **Edge computing**: philosophy of network design where data and compute resources are located as close as possible, at or near the network edge, to optimize bandwidth use while minimizing latency
     - In edge computing, the intelligence and processing are contained within each device. Thus, rather than having to send data off to a master processing entity, each device can process its own data locally.
+    - The architecture of edge computing performs computations closer to the data source, which is at or near the edge of the network.
         - Securing edge computing:
             - this technology creates additional network edges that result in increased levels of complexity
             - visibility, control, and correlation requires a Zero Trust access-based approach to address security on the LAN edge, WAN edge and cloud edge, as well as network management
@@ -402,6 +409,8 @@ derivative of SOA is microservices.
             - virtualized systems should be security tested via vuln assessment and penetration testing
             - virtualization doesn't lessen the security management requirements of an OS, patch management is still required
             - be aware of VM Sprawl and Shadow IT
+            - **VM Sprawl** occurs when organizations fail to plan their IT/IS needs and just deploy new systems, software, and VMs whenever their production needs demand it. This often results in obtaining underpowered equipment that is then over-
+taxed by inefficient implementations of software and VMs.
             - **VM escape**: occurs when software within a guest OS is able to breach the isolation protection provided by the hypervisor
             - VM escape minimizaton:
                 - keep highly sensitive systems and data on separate physical machines
