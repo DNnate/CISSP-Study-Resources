@@ -376,6 +376,11 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - **Compute**: Granular compute functions, containarized, to provide low-latency processing near end users and devices. Also known as Edge Computing. Edge computing is a technology that processes data near the source of data generation, such as IoT devices or local servers, rather than sending it to a central data center or cloud for processing.
     - **Storage**: Multiple edge locations to reduce latency for accessing data and updating data. E.g file servers that are synchronized across location like DFS.
 
+- **Grid computing** is a form of distributed computing where multiple computers work together to solve complex problems or process large amounts of data. In simple terms, it's like combining the power of many computers to achieve a task more efficiently than a single computer could alone.
+     - In many grid computing implementations, grid members can access the contents of the distributed work segments or divisions.
+     - Grid computing over the internet is not usually the best platform for sensitive operations.
+     - Grid computing is able to handle and compensate for latency of communications, duplicate work, and capacity fluctuation.
+       
 - 4.1.17 Virtual Private Cloud (VPC)
     - Virtual networks, public and private subnets, segmentation and API inspection and integration are important elements of cloud security.
     - VPC is a virtual network that consists of cloud resources, where the VM of one company is isolated from the resources of another company.
