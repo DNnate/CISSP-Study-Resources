@@ -861,3 +861,13 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - White Noise
     - Control Zone
 - The TEMPEST program creates technology that is not susceptible to Van Eck phreaking attacks because it reduces or suppresses natural electromagnetic emanations.
+
+- **Mobile Device Concepts**:
+   - Corporate-­owned: A corporate-­owned mobile strategy is when the company purchases mobile devices that can support compliance with the security policy. These devices are to be used exclusively for company purposes, and users should not perform any personal tasks on them.
+     - This option often requires workers to carry a second device for personal use.
+     - Corporate-­owned clearly assigns responsibility for device oversight to the organization.
+     - The following allow for comingling of data and have unclear or vague security responsibility assignments as a concept or policy basis.
+   - Bring Your Own Device BYOD: is a policy that allows employees to bring their own personal mobile devices to work and use those devices to connect to business resources and/or the internet through the company net work.
+   - Corporate-­owned, personally enabled (COPE): The concept of COPE means the organization purchases devices and provides them to employees. Each user is then able to customize the device and use it for both work activities and personal activities.
+   -  Choose your own device (CYOD): The concept of CYOD provides users with a list of approved devices from which to select the
+device to implement.
