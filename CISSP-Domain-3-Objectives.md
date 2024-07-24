@@ -264,7 +264,8 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - algorithms themselves are not secret; they have extensive public details about history and how they function
 
 - 3.5.5 Industrial Control Systems (ICS)
-    - **Industrial control systems (ICS)**: a form of computer-management device that controls industrial processes and machines, also known as operational technology (OT)
+    - **Industrial control systems (ICS)**: a form of computer-management device that controls industrial processes and machines, also known as operational technology (OT): ICS examples include distributed control systems (DCSs), programmable logic controllers
+(PLCs), and supervisory control and data acquisition (SCADA).
     - **Supervisory control and data acquisition (SCADA)**: systems used to control physical devices like those in an electrical power plant or factory; SCADA systems are well suited for distributed environments, such as those spanning continents 
         - some SCADA systems still rely on legacy or proprietary communications, putting them at risk, especially as attackers gain knowledge of such systems and their vulnerabilities      
         - SCADA risk mitigations:
@@ -324,6 +325,8 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - not all IoT devices are suitable for enterprise networks
             - Mirai malware affectes IoT, transforming them into a botnet
 - 3.5.9 Microservices
+- Service-oriented architecture (SOA) constructs new applications or functions out of existing but separate and distinct software services. The resulting application is often new; thus, its security issues are unknown, untested, and unprotected. A
+derivative of SOA is microservices.
     - **Microservices**: a feature of web-based solutions and derivative of SOA 
         - A microservice is simply one element, feature, capability, business logic, or function of a web app that can be called upon or used by other web apps
         - Microservices are usually small and focused on a single operation, engineered with few dependencies, and based on fast, short-term development cycles (similar to Agile)
@@ -357,6 +360,9 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - Securing embedded systems:
             - ebedded systems should be isolated from the internet, and from a private production network to minimize exposure to remote exploitation, remote control, and malware
             - use secure boot feature and physically protecting the hardware
+     - **Cyber-physical systems** refer to devices that offer a computational means to control something in the physical world. In the past these might have been referred to as embedded systems, but the category of cyber-physical seems to focus more on the physical world results rather than the computational aspects.
+     - 
+
 - 3.5.13 High-Performance Computing (HPC) systems
     - **High-performance computing (HPC)** systems: platforms designed to perform complex calculations/data manipulation at extremely high speeds (e.g. super computers or MPP (Massively Parallel Processing)); often used by large orgs, universities, or gov agencies
         - An HPC solution is composed of three main elements: 
@@ -364,12 +370,14 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - network capabilities 
             - storage capacity
         - HPCs often implement real-time OS (RTOS)
+        - A real-time operating system (RTOS) is designed to process or handle data as it arrives on the system with minimal latency or delay. An RTOS is usually stored on read-only memory (ROM) and is designed to operate in a hard real-time or soft real-time condition.
         - HPC systems are often rented, leased or shared, which can limit the effectiveness of firewalls and invalidate air gap solutions
         - Securing HPC systems:
             - deploy head nodes and route all outside traffic through them, isolating parts of a system 
             - "fingerprint" HPC systems to understand use, and detect anomalous behavior
 - 3.5.14 Edge computing systems
     - **Edge computing**: philosophy of network design where data and compute resources are located as close as possible, at or near the network edge, to optimize bandwidth use while minimizing latency
+    - In edge computing, the intelligence and processing are contained within each device. Thus, rather than having to send data off to a master processing entity, each device can process its own data locally.
         - Securing edge computing:
             - this technology creates additional network edges that result in increased levels of complexity
             - visibility, control, and correlation requires a Zero Trust access-based approach to address security on the LAN edge, WAN edge and cloud edge, as well as network management
@@ -379,6 +387,10 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - attend to physical security 
             - deploy IDS on the network side to monitor for malicious traffic
             - in many scenarios, you are an edge customer, and likely will need to rely on a vendor for some of the security and vulnerability remediation
+
+- **Fog computing** is another example of advanced computation architectures, which is also often used as an element in an IIoT deployment. Fog computing relies upon sensors, IoT devices, or even edge computing devices to collect data, and then transfer it back to a central location for processing. Thus, intelligence and processing is centralized.
+    - Both edge and fog computing can often take advantage of or integrate the use of microcontrollers, embedded devices, static devices, cyber-physical systems, and IoT equipment.
+  
 - 3.5.15 Virtualized systems
     - **Virtualized systems**: used to host one or more OSs within the memory of a single host computer, or to run apps not compatible with the host OS
         - Securing virtualized systems:
@@ -395,6 +407,20 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
                 - keep highly sensitive systems and data on separate physical machines
                 - keep all hypervisor software current with vendor-released patches
                 - monitor attack, exposure and abuse indexes for new threats to virtual machines (which might be better protected); often, virtualization administrators have access to all virtuals
+
+- **A system on a chip (SoC)** is an integrated circuit (IC) or chip that has all of the elements of a computer integrated into a single chip. This often includes the main CPU, RAM, a GPU, Wi-Fi, wired networking, peripheral interfaces (such as USB), and power management. In most cases, the only item missing from an SoC compared to a full computer is bulk storage. Often a bulk storage device must be attached or connected to the SoC to store its programs and other files, since the SoC usually contains only enough memory to retain its own firmware or OS.
+    - The security risks of an SoC include the fact that the firmware or OS of an SoC is often minimal, which leaves little room for most security features.
+    - A few devices that use an SoC include the mini-computer Raspberry Pi, fitness trackers, smart watches, and some smartphones.
+      
+- **Static systems/environments** are applications, OSs, hardware sets, or networks that are configured for a specific need, capability, or function, and then set to remain unaltered.
+     - A nonpersistent system or static system is a computer system that does not allow, support, or retain changes. Thus between uses and/or reboots, the operating environment and installed software are exactly the same. Changes may be blocked or simply discarded after each system use.
+     - A nonpersistent system is able to maintain its configuration and security in spite of user attempts to imple-
+ment change.
+
+- **parallel data systems**: . Systems designed to perform numerous calculations simultaneously include SMP, AMP, and MPP. Grid computing is a form of parallel distributed processing that loosely groups a significant number of processing nodes to work toward a specific processing goal. Peer-to-peer (P2P) technologies are networking and distributed application solutions that share tasks and workloads among peers.
+  
+- **Microcontrollers**: A microcontroller is similar to but less complex than a system on a chip (SoC). A microcontroller may be a component of an SoC. A microcontroller is a small computer consisting of a CPU (with one or more cores), memory, various
+input/output capabilities, RAM, and often nonvolatile storage in the form of flash or ROM/PROM/EEPROM. Examples include Raspberry Pi, Arduino, and FPGA.
 
 [3.6](#3.6) Select and determine cryptographic solutions (OSG-9 Chpts 6,7)
 - FIPS 140-2: Established to aid in the protection of digitally stored unclassified , yet sensitive information.
