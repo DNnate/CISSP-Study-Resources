@@ -266,7 +266,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - 3.5.5 Industrial Control Systems (ICS)
     - **Industrial control systems (ICS)**: a form of computer-management device that controls industrial processes and machines, also known as operational technology (OT)
     - **Supervisory control and data acquisition (SCADA)**: systems used to control physical devices like those in an electrical power plant or factory; SCADA systems are well suited for distributed environments, such as those spanning continents 
-        - some SCADA systems still rely on legacy or proprietary communications, putting them at risk, especially as attackers gain knowledge of such systems and their vulnerabilities
+        - some SCADA systems still rely on legacy or proprietary communications, putting them at risk, especially as attackers gain knowledge of such systems and their vulnerabilities      
         - SCADA risk mitigations:
             - isolate networks 
             - limit access physically and logically 
@@ -300,6 +300,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - Most DCEs have duplicate or concurrent components, are asynchronous, and allow for fail-soft or independent failure of components
     - DCE is AKA concurrent computing, parallel computing, and distributed computing 
     - DCE solutions are implemented as client-server, three-tier, multi-tier, and peer-to-peer
+    - Distributed control systems (DCSs) are typically used in industrial process plants where the need to gather data and implement control over a large-­scale environment from a single location is essential.
     - Securing distributed systems:
         - in distributed systems, integrity is sometimes a concern because data and software are spread across various systems, often in different locations
         - Client/server model network is AKA a distributed system or distributed architecture 
@@ -326,6 +327,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - **Microservices**: a feature of web-based solutions and derivative of SOA 
         - A microservice is simply one element, feature, capability, business logic, or function of a web app that can be called upon or used by other web apps
         - Microservices are usually small and focused on a single operation, engineered with few dependencies, and based on fast, short-term development cycles (similar to Agile)
+        - It is the conversion or transformation of a capability of one web application into a microservice that can be called upon by numerous other web applications. The relationship to an application programming interface (API) is that each microservice must have a clearly defined (and secured!) API to allow for I/O between multi-­microservices as well as to and from other applications.
         - Securing microservices: 
             - use HTTPS only 
             - encrypt everything possible and use routine scanning
