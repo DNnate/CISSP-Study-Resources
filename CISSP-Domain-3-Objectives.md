@@ -810,10 +810,13 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - facility construction and selection
     - site management
     - building design
-    - personnel controls e.g Badges, identification cards, and security IDs, turnstile, mantraps, access control vestibules
+    - personnel controls e.g Badges, identification cards, and security IDs, turnstile, mantraps, access control vestibules (An access control vestibule is a double set of doors that is often protected by a guard and used to contain a subject until their identity and authentication is verified.)
     - awareness training
     - emergency response and procedures.
-    - 
+        - **Security Guards**: are usually unaware of the scope of the operations within a facility and are therefore not thoroughly equipped to know how to respond to every situation. Though this is considered a disadvantage, the lack of knowledge of the scope of the operations within a facility can also be considered an advantage because this supports confidentiality of those operations and thus helps reduce the possibility that a security guard will be involved in the disclosure of confidential information. The main disadvantages of security guards include:
+            - Not all environments and facilities support security guards. This may be because of actual human incompatibility or the layout, design, location, and construction of the facility.
+            - Not all security guards are themselves reliable.
+            - Prescreening, bonding, and training do not guarantee that you won’t end up with an ineffective or unreliable security guard.
 - **Technical Physical Controls**
      - **Motion Detectors**: A motion detector, or motion sensor, is a device that senses movement or sound in a specific area, and it is a common element of intruder detection systems. Many types of motion detectors exist, including the following:
          - digital motion detector monitors for  changes in the digital pattern of a monitored area (smart security camera).
@@ -837,7 +840,8 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
          -  should be positioned to have clear sight lines of all exterior walls, entrance and exit points, and interior hallways.
          -  Simple motion recognition or motion-triggered cameras may be fooled by animals, birds, insects, weather, or foliage. In order to distinguish between a false alarm and an intrusion, a secondary verification mechanism should be used.
          -  **Enhanced video surveillance (EVS)**: systems are capable of object detection, which can include faces, devices, and weapons. Some can even automatically identify individuals and track their motion (gait analysis).  EVSs can be enhanced using machine learning to improve video monitoring through automation, improved image recognition, and pattern/activity interpretation
-           
+     - **Lighting**: Lighting is often claimed to be the most commonly deployed physical security mechanism. However, lighting is only a deterrent and not a strong deterrent. It should not be used as the primary or sole protection mechanism except in areas with a low threat level. Your entire site, inside and out, should be well lit. This provides for easy identification of personnel and makes it easier to notice intrusions.
+     - Key locks are also most common and inexpensive form of physical access control device for both interior and exterior use. 
      - **Fire Detectors**: There are many types of fire detection systems:
          - Fixed-temperature detection systems: trigger suppression when a specific temperature is reached. inexpensive and is the most common with potentially visible sprinkler head which serves as both the detection and release mechanism (plastic that melts at a specific temperature or small glass vial containing chemicals that vaporize to over-pressurize and shatter the container at a specific temperature to trigger release). This system is inexpensive and very reliable
          - Rate-of-rise detection systems: trigger suppression when the speed at which the temperature changes reaches a specific level. These are often digital temperature measuring devices, which can be fooled by HVAC heating during winter months and thus are not widely deployed.
