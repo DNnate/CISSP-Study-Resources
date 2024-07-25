@@ -753,8 +753,16 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - Other environmental issues include earthquakes, power outages, tornados and wind
     - Secondary facilities should be located far enough away from the primary to ensure they won't be damaged by the same event
     - **Recommendations**:
-        - Temperature: Rooms intended primarily to house computers should generally be kept between 59 and 89.6 degrees Fahrenheit (15 and 32 degrees Celsius).
-        - Humidity: Humidity in a computer room should be maintained between 20 and 80 percent. Too much humidity can cause corrosion. Too little humidity causes static electricity.
+        - Temperature: Rooms intended primarily to house computers should generally be kept between 59 and 89.6 degrees Fahrenheit (15 and 32 degrees Celsius). Some systems might require even lower temperatures.
+        - Humidity: Humidity in a computer room should be maintained between 20 and 80 percent. Too much humidity can cause condensation leading to corrosion. Too little humidity causes static voltage\electricity to build up.
+        - Static Voltage:
+             - 40 can cause Destruction of sensitive circuits and other electronic components
+             - 1,000 ca cause Scrambling of monitor displays
+             - 1,500 can cause Destruction of data stored on hard drives
+             - 2,000 can cause Abrupt system shutdown
+             - 4,000 can cause Printer jam or component damage
+             - 17,000 can cause Permanent circuit damage
+          
 - 3.9.8 Fire prevention, detection, and suppression
     - Protecting personnel from harm should always be the most important goal of any security or protection system!
     - In addition to protecting people, fire detection and suppression is designed to keep asset damage caused by fire, smoke, heat, and suppression materials to a minimum
@@ -796,9 +804,16 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - facility construction and selection
     - site management
     - building design
-    - personnel controls
+         - **Wiring Closet**: A cable plant management policy is used to define the physical structure and deployment of network cabling and related devices within a facility. A cable plant is the collection of interconnected cables and intermediary devices (such as cross-connects, patch panels, and switches) that establish the physical network. Elements of a cable plant include the following:
+            - Entrance facility: Also known as the demarcation point or MDF, is the entrance point to the building where the cable from the provider connects the internal cable plant.
+            - Equipment room: is the main wiring closet for the building, often connected to or adjacent to the MDF.
+            - Backbone distribution system: provides wired connections between the equipment room and the telecommunications room, including cross-floor connections.
+            - TeleComms Room: This serves the connection needs of a floor or a section of a large building by providing space for networking equipment and cabling systems. It also serves as the interconnection point between the backbone distribution system and the horizontal distribution system. The wiring closet is also known as premises wire distribution room, main distribution frame (MDF), intermediate distribution frame (IDF), and telecommunications room, and it is referred to as intermediate distribution facilities in (ISC)2 CISSP objective 3.9.1).
+            - Horizontal distribution system:  provides the connection between the telecommunications room and work areas, often including cabling, cross-connection blocks, patch panels, and supporting hardware infrastructure (such as cable trays, cable hangers, and conduits).
+    - personnel controls e.g Badges, identification cards, and security IDs, turnstile, mantraps, access control vestibules
     - awareness training
     - emergency response and procedures.
+    - 
 - **Technical Physical Controls**
      - **Motion Detectors**: A motion detector, or motion sensor, is a device that senses movement or sound in a specific area, and it is a common element of intruder detection systems. Many types of motion detectors exist, including the following:
          - digital motion detector monitors for  changes in the digital pattern of a monitored area (smart security camera).
