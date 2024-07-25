@@ -789,6 +789,31 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - this is a system that collects power into a battery but can switch over to pulling power from the battery when the power grid fails
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
 
+- **Physical Security**
+     - **Motion Detectors**: A motion detector, or motion sensor, is a device that senses movement or sound in a specific area, and it is a common element of intruder detection systems. Many types of motion detectors exist, including the following:
+         - digital motion detector monitors for  changes in the digital pattern of a monitored area (smart security camera).
+         - passive infrared (PIR) or heat-based motion detector monitors for changes in the heat levels and patterns.
+         - wave pattern motion detector transmits a consistent low ultrasonic or high microwave frequency signal into a monitored area and monitors for changes or disturbances in the reflected pattern.
+         - capacitance motion detector senses changes in the electrical or magnetic field surrounding a monitored object.
+         - photoelectric motion detector senses changes in visible light levels. Usually  deployed in dark rooms.
+         - passive audio motion detector listens for abnormal sounds in the monitored area.
+
+     - **Intrusion Alarms**: Whenever a motion detector registers a significant or meaningful change in the environment, it triggers an alarm. An alarm is a separate mechanism that triggers a deterrent, a repellent, and/or a notification.:
+         - Deterrent alarms: trigger deterrents may engage additional locks, shut doors, and so on. The goal of such an alarm is to make further intrusion or attack more difficult.
+         - Repellent alarms: Alarms that trigger repellents usually sound an audio siren or bell and turn on lights.
+         - Notification alarms: trigger notification often silent from the intruder/attacker perspective to notify administrators, security guards, and law enforcement.
+         - Alarms are also categorized by where they are located: local, centralized or proprietary, or auxiliary.
+             - Local alarm system: Local alarm systems must broadcast an audible (up to 120 decibels [dB]) alarm signal that can be easily heard up to 400 feet away. must be protected from tampering and disablement. to be effective, a security team or guards must be positioned nearby who can respond when the alarm is triggered.
+             - Central station system: The alarm is usually silent locally, but offsite monitoring agents are notified so that they can respond to the security breach. Most residential security systems are of this type such as Brinks and ADT. In a proprietary system, the organization has its own onsite security staff waiting to respond to security breaches.
+             - Auxiliary alarm system: Auxiliary alarm systems can be added to either local or centralized alarm systems. When the security perimeter is breached, emergency services are notified to respond to the incident and arrive at the location. This can include fire, police, and medical services. 
+     - **Cameras**: Can be overt and obvious in order to provide a deterrent benefit, or hidden and concealed in order to primarily provide a detective benefit. Vary in type, including visible light, infrared, and motion-triggered recording. Some cameras are fixed, whereas others support remote control of automated pan, tilt, and zoom (PTZ).
+         - should be positioned to watch exit and entry points allowing any change in authorization or access level.
+         - should also be used to monitor activities around valuable assets and to provide additional protection in public areas such as parking structures and walkways
+         -  should be positioned to have clear sight lines of all exterior walls, entrance and exit points, and interior hallways.
+         -  Simple motion recognition or motion-triggered cameras may be fooled by animals, birds, insects, weather, or foliage. In order to distinguish between a false alarm and an intrusion, a secondary verification mechanism should be used.
+         -  **Enhanced video surveillance (EVS)**: systems are capable of object detection, which can include faces, devices, and weapons. Some can even automatically identify individuals and track their motion (gait analysis).  EVSs can be enhanced using machine learning to improve video monitoring through automation, improved image recognition, and pattern/activity interpretation
+         -  
+
 - 3.10 Information System Life Cycle
     - a structured framework for managing an information system from its intial conception to its retirement.
     - The goal is to ensure that a system is developed and managed in a way that meets business needs , remains secure and operates efficiently through its lifespan
