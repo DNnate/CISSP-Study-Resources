@@ -697,6 +697,12 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - access to the wiring closest/IDF should be restricted to authorized personnel responsible for managing the IT hardware 
         - use door access control (i.e. electronic badge system or electronic combination lock) 
         - from a layout perspective, wiring closets should be accessible only in private areas of the building interiors; people must pass through a visitor center and a controlled doorway prior to be able to enter a wiring closet
+        -  - **Wiring Closet**: A cable plant management policy is used to define the physical structure and deployment of network cabling and related devices within a facility. A cable plant is the collection of interconnected cables and intermediary devices (such as cross-connects, patch panels, and switches) that establish the physical network. Elements of a cable plant include the following:
+            - Entrance facility: Also known as the demarcation point or MDF, is the entrance point to the building where the cable from the provider connects the internal cable plant.
+            - Equipment room: is the main wiring closet for the building, often connected to or adjacent to the MDF.
+            - Backbone distribution system: provides wired connections between the equipment room and the telecommunications room, including cross-floor connections.
+            - TeleComms Room: This serves the connection needs of a floor or a section of a large building by providing space for networking equipment and cabling systems. It also serves as the interconnection point between the backbone distribution system and the horizontal distribution system. The wiring closet is also known as premises wire distribution room, main distribution frame (MDF), intermediate distribution frame (IDF), and telecommunications room, and it is referred to as intermediate distribution facilities in (ISC)2 CISSP objective 3.9.1).
+            - Horizontal distribution system:  provides the connection between the telecommunications room and work areas, often including cabling, cross-connection blocks, patch panels, and supporting hardware infrastructure (such as cable trays, cable hangers, and conduits).
 - 3.9.2 Server rooms/data centers
     - **Server rooms/data centers**: server rooms, data centers, communication rooms, server vaults, and IT closets are enclosed, restricted, and protected rooms where mission critical servers and networks are housed
         - a server room is a bigger version of a wiring closet, much smaller than a data center
@@ -804,12 +810,6 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - facility construction and selection
     - site management
     - building design
-         - **Wiring Closet**: A cable plant management policy is used to define the physical structure and deployment of network cabling and related devices within a facility. A cable plant is the collection of interconnected cables and intermediary devices (such as cross-connects, patch panels, and switches) that establish the physical network. Elements of a cable plant include the following:
-            - Entrance facility: Also known as the demarcation point or MDF, is the entrance point to the building where the cable from the provider connects the internal cable plant.
-            - Equipment room: is the main wiring closet for the building, often connected to or adjacent to the MDF.
-            - Backbone distribution system: provides wired connections between the equipment room and the telecommunications room, including cross-floor connections.
-            - TeleComms Room: This serves the connection needs of a floor or a section of a large building by providing space for networking equipment and cabling systems. It also serves as the interconnection point between the backbone distribution system and the horizontal distribution system. The wiring closet is also known as premises wire distribution room, main distribution frame (MDF), intermediate distribution frame (IDF), and telecommunications room, and it is referred to as intermediate distribution facilities in (ISC)2 CISSP objective 3.9.1).
-            - Horizontal distribution system:  provides the connection between the telecommunications room and work areas, often including cabling, cross-connection blocks, patch panels, and supporting hardware infrastructure (such as cable trays, cable hangers, and conduits).
     - personnel controls e.g Badges, identification cards, and security IDs, turnstile, mantraps, access control vestibules
     - awareness training
     - emergency response and procedures.
