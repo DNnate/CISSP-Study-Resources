@@ -697,7 +697,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - access to the wiring closest/IDF should be restricted to authorized personnel responsible for managing the IT hardware 
         - use door access control (i.e. electronic badge system or electronic combination lock) 
         - from a layout perspective, wiring closets should be accessible only in private areas of the building interiors; people must pass through a visitor center and a controlled doorway prior to be able to enter a wiring closet
-        -  - **Wiring Closet**: A cable plant management policy is used to define the physical structure and deployment of network cabling and related devices within a facility. A cable plant is the collection of interconnected cables and intermediary devices (such as cross-connects, patch panels, and switches) that establish the physical network. Elements of a cable plant include the following:
+        -  - **Cable Plant Management Policy**: A cable plant management policy is used to define the physical structure and deployment of network cabling and related devices within a facility. A cable plant is the collection of interconnected cables and intermediary devices (such as cross-connects, patch panels, and switches) that establish the physical network. Elements of a cable plant include the following:
             - Entrance facility: Also known as the demarcation point or MDF, is the entrance point to the building where the cable from the provider connects the internal cable plant.
             - Equipment room: is the main wiring closet for the building, often connected to or adjacent to the MDF.
             - Backbone distribution system: provides wired connections between the equipment room and the telecommunications room, including cross-floor connections.
@@ -793,7 +793,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - Four main types of suppression:
         - **wet pipe system**: (AKA closed head system): is always filled with water; water discharges immediately when suppression is triggered
         - **dry pipe system**: contains compressed inert gas
-        - **preaction system**: a variation of the dry pipe system that uses a two-stage detection and release mechanism
+        - **preaction system**: a variation of the dry pipe system that uses a two-stage detection and release mechanism. It is the best type of water-­based fire suppression system for a computer facility because it provides the opportunity to prevent the release of water in the event of a false alarm or false initial trigger. The most common cause of false positive for water-based fire suppression systems is humans.
         - **deluge system**: uses larger pipes and delivers larger volume of water
     - Note: Most sprinkler heads feature a glass bulb filled with a glycerin-based liquid; this liquid expands when it comes in contact with air heated to between 135 and 165 degrees; when the liquid expands, it shatters its glass confines and the sprinkler head activates
 - 3.9.9 Power (e.g., redundant, backup)
@@ -806,7 +806,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - this is a system that collects power into a battery but can switch over to pulling power from the battery when the power grid fails
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
 
-- **Administrative Physical Controls** 
+- **Administrative Physical Controls**: The six common physical security control mechanisms is ✏️Deter, ✏️Deny, ✏️Detect, ✏️Delay, ✏️Determine, ✏️Decide. 
     - facility construction and selection
     - site management
     - building design
@@ -837,8 +837,15 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
          -  should be positioned to have clear sight lines of all exterior walls, entrance and exit points, and interior hallways.
          -  Simple motion recognition or motion-triggered cameras may be fooled by animals, birds, insects, weather, or foliage. In order to distinguish between a false alarm and an intrusion, a secondary verification mechanism should be used.
          -  **Enhanced video surveillance (EVS)**: systems are capable of object detection, which can include faces, devices, and weapons. Some can even automatically identify individuals and track their motion (gait analysis).  EVSs can be enhanced using machine learning to improve video monitoring through automation, improved image recognition, and pattern/activity interpretation
-         -  
-
+           
+     - **Fire Detectors**: There are many types of fire detection systems:
+         - Fixed-temperature detection systems: trigger suppression when a specific temperature is reached. inexpensive and is the most common with potentially visible sprinkler head which serves as both the detection and release mechanism (plastic that melts at a specific temperature or small glass vial containing chemicals that vaporize to over-pressurize and shatter the container at a specific temperature to trigger release). This system is inexpensive and very reliable
+         - Rate-of-rise detection systems: trigger suppression when the speed at which the temperature changes reaches a specific level. These are often digital temperature measuring devices, which can be fooled by HVAC heating during winter months and thus are not widely deployed.
+         - Flame-actuated systems trigger suppression based on the infrared energy of flames. This is fast and reliable but often fairly expensive and is often only used in high-risk environments.
+         - Smoke-actuated systems use photoelectric or radioactive ionization sensors as triggers. Either method monitors for light or radiation obstruction or reduction across an air gap caused by particles in the air. It is intended to be triggered by smoke, but dust and steam can sometimes trigger the alarm.
+         - The radioactive ionization-based smoke detectors use americium as a source of alpha particles and a Geiger counter to detect the rate of these particles' transmission across the air gap. This element produces such low levels of radiation that a layer of dead skin cells is sufficient to block its transmission.
+         - Incipient smoke detection systems, also known as aspirating sensors, are able to detect the chemicals typically associated with the very early stages of combustion before a fire is other wise detectible via other means. These devices are even more costly than flame-actuated sensors and are also only used in high-risk or critical environments.
+           
 - 3.10 Information System Life Cycle
     - a structured framework for managing an information system from its intial conception to its retirement.
     - The goal is to ensure that a system is developed and managed in a way that meets business needs , remains secure and operates efficiently through its lifespan
