@@ -752,6 +752,9 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - If water-based sprinklers are used for fire suppression, damage to electronic equipment is likely; automate the shutoff of electricity prior to sprinkler trigger
     - Other environmental issues include earthquakes, power outages, tornados and wind
     - Secondary facilities should be located far enough away from the primary to ensure they won't be damaged by the same event
+    - **Recommendations**:
+        - Temperature: Rooms intended primarily to house computers should generally be kept between 59 and 89.6 degrees Fahrenheit (15 and 32 degrees Celsius).
+        - Humidity: Humidity in a computer room should be maintained between 20 and 80 percent. Too much humidity can cause corrosion. Too little humidity causes static electricity.
 - 3.9.8 Fire prevention, detection, and suppression
     - Protecting personnel from harm should always be the most important goal of any security or protection system!
     - In addition to protecting people, fire detection and suppression is designed to keep asset damage caused by fire, smoke, heat, and suppression materials to a minimum
@@ -789,7 +792,14 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - this is a system that collects power into a battery but can switch over to pulling power from the battery when the power grid fails
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
 
-- **Physical Security**
+- **Administrative Physical Controls** 
+    - facility construction and selection
+    - site management
+    - building design
+    - personnel controls
+    - awareness training
+    - emergency response and procedures.
+- **Technical Physical Controls**
      - **Motion Detectors**: A motion detector, or motion sensor, is a device that senses movement or sound in a specific area, and it is a common element of intruder detection systems. Many types of motion detectors exist, including the following:
          - digital motion detector monitors for  changes in the digital pattern of a monitored area (smart security camera).
          - passive infrared (PIR) or heat-based motion detector monitors for changes in the heat levels and patterns.
