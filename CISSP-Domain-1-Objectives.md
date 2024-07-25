@@ -396,6 +396,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - As part of the BIA, establish:
         - **Recovery Time Objectives (RTO)** (how long it takes to recover) The maximum acceptable amount of time that a system, application, or function can be down after a failure or disaster.
         - **Recovery Point Objectives (RPO)** (the maximum tolerable data loss)
+        - **Mean time to Failure (MTTF)**: is the expected typical functional lifetime of the device given a specific operating environment.
         - **Mean Time Between Failures (MTBF)** The predicted elapsed time between inherent failures of a system during operation. e.g A server might have an MTBF of 10,000 hours.
         - **Mean Time to Repair (MTTR)** The average time required to repair a failed component or system.
         - **Maximum tolerable downtime (MTD)**, (how long an org can survive an interruption of critical functions) along with the costs of downtime and recovery; AKA MTD (maximum tolerable downtime)
