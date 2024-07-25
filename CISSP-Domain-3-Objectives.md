@@ -69,7 +69,7 @@ You may find this domain to be more technical than others, and if you have exper
     - **Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design
     3.1.8 Zero Trust
     - **Zero Trust**: Security architecture where no entity is trusted by default. Based on 3 principles
-        - Aassume Breach ⭐
+        - Assume Breach ⭐
         - Verify Explicitly ⭐
         - Least Privilege Access ⭐    
         - it is a security concept and alternative of the traditional (castle/moat) approach where nothing is automatically trusted; instead each request for activity or access is assumed to be from an unknown and untrusted location until otherwise verified
@@ -82,29 +82,29 @@ You may find this domain to be more technical than others, and if you have exper
     - **Privacy by design (PbD)**: a guideline to integrate privacy protections into products during the earliest design phase rather than tacking it on at the end of development
         - Same overall concept as "security by design" or "integrated security" where security is an element of design and architecture of a product starting at initiation and continuing through the software development lifecycle (SDLC)
         - There are 7 recognized principles to achieve privacy by design:
-            - Proactive, preventative: think ahead and design for things that you anticipate might happen
-            - Default setting: make private by default, e.g. social media app shouldn't share user data with everybody by default
-            - Embedded: build privacy in; don’t add it later
-            - Full functionality, positive-sum: achieve both security and privacy, not just one or the other
-            - Full lifecycle protection: privacy should be achieved before, during and after a transaction. Part of this is securely disposing of data when it is no longer needed
-            - Visibility, transparency, open: publish the requirements and goals; audit them and publish the findings
-            - Respect, user-centric: involve end users, providing the right amount of information for them to make informed decisions about their data
+            - ✏️ Proactive, preventative: think ahead and design for things that you anticipate might happen
+            - ✏️ Default setting: make private by default, e.g. social media app shouldn't share user data with everybody by default
+            - ✏️ Embedded: build privacy in; don’t add it later
+            - ✏️ Full functionality, positive-sum: achieve both security and privacy, not just one or the other
+            - ✏️ Full lifecycle protection: privacy should be achieved before, during and after a transaction. Part of this is securely disposing of data when it is no longer needed
+            - ✏️ Visibility, transparency, open: publish the requirements and goals; audit them and publish the findings
+            - ✏️ Respect, user-centric: involve end users, providing the right amount of information for them to make informed decisions about their data
 - 3.1.10 Trust by verify
     - **Trust but verify**: based on a Russian proverb, and no longer sufficient; it's the traditional approach of trusting subjects and devices within a company's security perimeter automatically, leaving an org vulnerable to insider attacks and providing intruders the ability to easily perform lateral movement
 - 3.1.11 Shared responsibility 🔥
     - **Shared responsibility**: the security design principle that indicates that organizations do not operate in isolation
-        - Everyone in an organization has some level of security responsibility
-        - the job of the CISO and security team is to establish & maintain security
-        - The job of regular employees to perform their tasks within the confines of security
-        - The job of the auditor is to monitor the environment for violations
-        - When working with third parties, especially with cloud providers, each entity needs to understand their portion of the shared responsibility of performing work operations and maintaining security. This is often referenced as the **cloud shared responsibility model**
-        - Organizations are responsible to their stakeholders for making good security decisions in order to sustain the organization.
-        - As we become aware of new vulnerabilities and threats, we should consider it our responsibility (if not our duty) to responsibly disclose that information to the proper vendor or to an information sharing center.
+        - ✏️Everyone in an organization has some level of security responsibility
+        - ✏️the job of the CISO and security team is to establish & maintain security
+        - ✏️The job of regular employees to perform their tasks within the confines of security
+        - ✏️The job of the auditor is to monitor the environment for violations
+        - ✏️When working with third parties, especially with cloud providers, each entity needs to understand their portion of the shared responsibility of performing work operations and maintaining security. This is often referenced as the **cloud shared responsibility model**
+        - ✏️Organizations are responsible to their stakeholders for making good security decisions in order to sustain the organization.
+        - ✏️As we become aware of new vulnerabilities and threats, we should consider it our responsibility (if not our duty) to responsibly disclose that information to the proper vendor or to an information sharing center.
 
 - 3.1.12 Secure Access Service Edge (SASE)
-    - **SASE**: A design philosophy closely related to Zero trust Network Architecture. Brings together networking and security functions and delivers them as an integrated cloud service.
+    - **SASE**: A design philosophy closely related to Zero trust Network Architecture. 🔥Brings together networking and security functions and delivers them as an integrated cloud service.
     - Described as Gartner in 2019 as a networking model that merges traditional WAN managment and security capabilites into a unified whole
-    - It is built, implemented and managed  using cloud-native architectures. It is a responde to the the edge-centric trends in mobility, cloud, SD-WAN and the internet of things. It is WAN implmentation in the world of hybrid and public cloud. SASE compnents include:
+    - It is built, implemented and managed  using 🔥cloud-native architectures. It is a responde to the the edge-centric trends in mobility, cloud, SD-WAN and the internet of things. It is WAN implmentation in the world of hybrid and public cloud. SASE compnents include:
      - Firewall services
      - secure web gateway
      - anti-malware services
@@ -121,23 +121,23 @@ You may find this domain to be more technical than others, and if you have exper
     - **The State Machine Model** describes a system that is always secure no matter what state it is in. A secure state machine model system always boots into a secure state, maintains a secure state across all transitions, and allows subjects to access resources only in a secure manner compliant with the security policy. Bell–LaPadula and Biba are built on a state machine model.
 - **Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification
     - Focuse is on confidentiality ✏️
-    - Simple security property: No read-up 
+    - Simple security property: 🔥No read-up 
     - Star (*) property: No write-down (AKA confinement property)
     - Discretionary Security Property: uses an access matrix (need to know in order to access)
     - Doesn't address covert channels
 - **Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
     - Focus is on integrity ✏️
     -  is based on information flow, and is a multilevel model.
-    - Simple security property: “No read down” (for example, users with a Top Secret clearance can’t read data classified as Secret)
+    - Simple security property: “🔥No read down” (for example, users with a Top Secret clearance can’t read data classified as Secret)
     - Star (*) property: “No write up” (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
     - By combining it with Bell-LaPadula, you get both confidentiality and integrity
 - **Take-Grant**: 
     - The take-grant model employs a directed graph to dictate how rights can be passed from one subject to another, or from a subject to an object
     - Four rules: 
-        - take 
-        - grant 
-        - create The principle can be summed up as “The enemy knows the system.”The principle can be summed up as “The enemy knows the system.”
-        - remove
+        - ✏️take 
+        - ✏️grant 
+        - ✏️create The principle can be summed up as “The enemy knows the system.”The principle can be summed up as “The enemy knows the system.”
+        - ✏️remove
 - **Clark-Wilson**:
     - Focus is on integrity ✏️
     - Designed to protect integrity using the access control triplet (‼️Subject, ‼️Object, ‼️Program/Interface)
@@ -148,20 +148,20 @@ You may find this domain to be more technical than others, and if you have exper
     - prevents conflicts of interest. ✏️
 - **Goguen-Meseguer Model**:
     - An integrity model ✏️
-    - it is based on predetermining the set or domain (i.e., a list) of objects that a subject can access.
+    - it is based on 🔥predetermining the set or domain (i.e., a list) of objects that a subject can access.
     - Foundation of noninterference conceptual theories
     - **Noninterference** is the concept of limiting the actions of a subject at a higher security level so that they do not affect the system state or the actions of a subject at a lower security level.
 - **Sutherland Model**:
-    - Focuses on preventing interference in support of integrity
+    - Focuses on preventing 🔥interference in support of integrity
     - Focus is on Integrity ✏️
 - **Graham-Denning Model**
     - Focused on the secure creation and deletion of both subjects and objects
     - 8 primary protection rules or actions
-        - 1-4:securely create/delete a subject/object
-        - 5-8:securely provide the read/grant/delete/transfer access right
+        - ✏️1-4:securely create/delete a subject/object
+        - ✏️5-8:securely provide the read/grant/delete/transfer access right
 - **Harrison-Ruzzo-Ullman Model**:
     - Focuses on the assignment of object access rights to subjects as well as the integrity/resilience of those assigned rights
-    - HRU is an extension of Graham-Denning model
+    - HRU is an 🔥extension of Graham-Denning model
 - **Star Model**: 
     - Not an official model, but name refers to using asterisks (stars) to dictate whether a person at a specific level of confidentiality is allowed to write data to a lower level of confidentiality
     - Also determines whether a person can read or write to a higher or lower level of confidentiality
@@ -176,26 +176,27 @@ You may find this domain to be more technical than others, and if you have exper
 - The CC provides a standard to evaluate systems, defining various levels of testing and confirmation of systems' security capabilities 
 - The number of the level indicates what kind of testing and confirmation has been performed
 - The important concepts:
-    - To perform an evaluation, you need to select the **Target of Evaluation (TOE)** (e.g. firewall or an anti-malware app)
-    - The evaluation process will look at the **Protection Profile (PP)**, which is a document that outlines the security needs (customer 🔥"I wants"🔥); a vendor might use a specific protection profile for a particular solution
-    - The evaluation process will look at the **Security Target (ST)**, specifying the claims of security from the vendor that are built into a TOE (the ST is usually published to customers and partners and available to internal staff). STs are considered the implemented security measures or the 🔥"I will provide"🔥 from the vendor.
+    - To perform an evaluation, you need to select the **✏️Target of Evaluation (TOE)** (e.g. firewall or an anti-malware app)
+    - The evaluation process will look at the **✏️Protection Profile (PP)**, which is a document that outlines the security needs (customer 🔥"I wants"🔥); a vendor might use a specific protection profile for a particular solution
+    - The evaluation process will look at the **✏️Security Target (ST)**, specifying the claims of security from the vendor that are built into a TOE (the ST is usually published to customers and partners and available to internal staff). STs are considered the implemented security measures or the 🔥"I will provide"🔥 from the vendor.
     - An organization's PP is compared to various STs from the selected vendor's TOEs, and the closest or best match is what the org purchases
     - The evaluation will attempt to gauge the confidence level of a security feature 
     - **Security assurance requirements (SARs)**: a description of how the TOE is to be evaluated, based on the development of the solution
     - Key actions during development and testing should be captured 
-    - An **evaluation assurance level (EAL)**: a numerical rating used to assess the rigor of an evaluation; the scale is EAL 1 (cheap and easy) to EAL7 (expensive and complex):
-        - EAL1: functionally tested
-        - EAL2: structurally tested
-        - EAL3: methodically tested and checked
-        - EAL4: methodically designed, tested, and reviewed
-        - EAL5: semi-formally designed and tested
-        - EAL6: semi-formally verified, designed, and tested
-        - EAL7: formally verified, designed, and tested
+    - An **evaluation assurance level (EAL)**: a numerical rating used to assess the rigor of an evaluation; the scale is
+        - ✏️EAL 1 (cheap and easy) to EAL7 (expensive and complex):
+        - ✏️EAL1: functionally tested
+        - ✏️EAL2: structurally tested
+        - ✏️EAL3: methodically tested and checked
+        - ✏️EAL4: methodically designed, tested, and reviewed
+        - ✏️EAL5: semi-formally designed and tested
+        - ✏️EAL6: semi-formally verified, designed, and tested
+        - ✏️EAL7: formally verified, designed, and tested
 - **Authorization to Operate (ATO)**: official auth to use specific IT systems to perform tasks/accept identified risks: The four types of ATOs are
-    - Authorization to Operate
-    - Common Control Authorization
-    - Authorization to Use
-    - Denial of Authorization.
+    - ✏️Authorization to Operate
+    - ✏️Common Control Authorization
+    - ✏️Authorization to Use
+    - ✏️Denial of Authorization.
 
 [3.4](#3.4) Understand security capabilities of Information Systems (IS) (e.g. memory protection, Trusted Platform Model (TPM), encryption/decryption) (OSG-9 Chpt 8)
 
@@ -209,18 +210,18 @@ You may find this domain to be more technical than others, and if you have exper
 - **Virtualization**: technology used to host one or more operating systems within the memory of a single host, or to run applications that are not compatible with the host OS; the goal is to protect the hypervisor and ensure that compromising one VM doesn't affect others on that host
 
 - **Trusted Platform Module (TPM)**: a cryptographic chip that is sometimes included with a client computer or server; a TPM enhances the capabilities of a computer by offering hardware-based cryptographic operations
-    - TPM is a tamper-resistant integrated circuit built into some motherboards that can perform cryptographic operations (including key gen) and protect small amoutns of sensitive info, like passwords and cryptographic keys
+    - 🔥TPM is a tamper-resistant integrated circuit built into some motherboards that can perform cryptographic operations (including key gen) and protect small amoutns of sensitive info, like passwords and cryptographic keys
     - Many security products and encryption solutions require a TPM
     - TPM is both a specification for a cryptoprocessor chip on a motherboard and the general name for implementation of the specification
     - A TPM is an example of a **hardware security module (HSM)**: a cryptoprocessor used to manage and store digital encryption keys, accelerate crypto operations, support faster digital signatures, and improve authentication
 
-- User interface: a constrained UI can be used in an application to restrict what users can do or see based on their privileges
+- **User interface**: a constrained UI can be used in an application to restrict what users can do or see based on their privileges
     - e.g. dimming/graying out capabilities for users without the correct privilege
     - A constrained or restricted interface is implemented within an application to restrict what users can do or see based on their privileges. The purpose of a constrained interface is to limit or restrict the actions of both authorized and unauthorized users.
     - An interface is also the method by which two or more systems communicate
 - Be aware of the common security capabilities of interfaces:
-    - Encryption/decryption: when communications are encrypted, a client and server can communicate without exposing information to the network; when an interface doesn’t provide such a capability, use IPsec or another encrypted transport mechanism
-    - Signing: used for non-repudiation; in a high-security environment, both encrypt and sign all communications if possible
+    - **Encryption/decryption**: when communications are encrypted, a client and server can communicate without exposing information to the network; when an interface doesn’t provide such a capability, use IPsec or another encrypted transport mechanism
+    - **Signing**: used for 🔥non-repudiation; in a high-security environment, both encrypt and sign all communications if possible
 
 - **Fault tolerance**: capability used to enhance availability; in the event of an attack (e.g. DoS), or system failure, fault tolerance helps keep a system up and running
 
@@ -264,15 +265,14 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - algorithms themselves are not secret; they have extensive public details about history and how they function
 
 - 3.5.5 Industrial Control Systems (ICS)
-    - **Industrial control systems (ICS)**: a form of computer-management device that controls industrial processes and machines, also known as operational technology (OT): ICS examples include distributed control systems (DCSs), programmable logic controllers
-(PLCs), and supervisory control and data acquisition (SCADA).
+    - **Industrial control systems (ICS)**: a form of computer-management device that controls industrial processes and machines, also known as operational technology (OT): ICS examples include distributed control systems (DCSs), programmable logic controllers (PLCs), and supervisory control and data acquisition (SCADA).
     - **Supervisory control and data acquisition (SCADA)**: systems used to control physical devices like those in an electrical power plant or factory; SCADA systems are well suited for distributed environments, such as those spanning continents 
         - some SCADA systems still rely on legacy or proprietary communications, putting them at risk, especially as attackers gain knowledge of such systems and their vulnerabilities      
         - SCADA risk mitigations:
-            - isolate networks 
-            - limit access physically and logically 
-            - restrict code to only essential apps 
-            - log all activity
+            - ✏️isolate networks 
+            - ✏️limit access physically and logically 
+            - ✏️restrict code to only essential apps 
+            - ✏️log all activity
 - 3.5.6 Cloud-based systems (e.g., Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))
     - **Cloud-based systems**: on-demand access to computing resources available from almost anywhere
     - Cloud's primary challenge: resources are outside the org’s direct control, making it more difficult to manage risk
@@ -281,7 +281,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - All sensitive data should be encrypted, both for network communication and data-at-rest
     - Use centralized identity access and management system, with multifactor authentication
     - Customers shouldn’t use encryption controlled by the vendor, eliminating risks to vendor-based insider threats, and supporting destruction using  
-    - **Cryptographic erase**: methods that permanently remove the cryptographic keys
+    - 🔥Cryptographic erase: methods that permanently remove the cryptographic keys
     - Capture diagnostic and security data from cloud-based systems and store in your SIEM system
     - Ensure cloud configuration matches or exceeds your on-premise security requirements
     - Understand the cloud vendor's security strategy
@@ -305,9 +305,9 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - Securing distributed systems:
         - in distributed systems, integrity is sometimes a concern because data and software are spread across various systems, often in different locations
         - Client/server model network is AKA a distributed system or distributed architecture 
-            - security must be addressed everywhere instead of at a single centralized host 
-            - processing and storage are distributed on multiple clients and servers, and all must be secured 
-            - network links must be secured and protected
+            - ✏️security must be addressed everywhere instead of at a single centralized host 
+            - ✏️processing and storage are distributed on multiple clients and servers, and all must be secured 
+            - ✏️network links must be secured and protected
 - 3.5.8 Internet of Things (IoT)
     - **Internet of things (IoT)**: a class of smart devices that are internet-connected in order to provide automation, remote control, or AI processing to appliances or devices 
         - An IoT device is almost always separate/distinct hardware used on its own or in conjunction with an existing system
