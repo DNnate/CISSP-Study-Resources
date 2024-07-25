@@ -17,6 +17,7 @@ specific asset. e.g threat/likelihood of fire
 - **Risk** is the _possibility, probability, chance or likelihood_ that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result. e.g damage to equipment.
   - Risk = Threat * Vulnerability
   - Every instance of exposure is a risk
+- **Risk Analysis**: is simply the evaluation of threats against assets in regard to rate of occurrence and levels of consequence.
 
 [2.1](#2.1) Identify and classify information assets (OSG-9 Chpt 5)
 
