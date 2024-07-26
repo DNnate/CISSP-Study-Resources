@@ -918,7 +918,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
 **In a zero-knowledge proof**, one individual demonstrates to another that they can achieve a result that requires sensitive information without actually disclosing the sensitive information
 
 - **TEMPEST-derived technology** allows the electronic emanations that devices produce (known as Van Eck radiation) to be read from a distance (this process is known as Van Eck phreaking). TEMPEST eavesdropping or Van Eck phreaking countermeasures include the following:
-    - Faraday Cage
+    - Faraday Cage: A Faraday cage is an enclosure that blocks or absorbs electromagnetic fields or signals. Faraday cage containers, computer cases, rack-­mount systems, rooms, or even building materials are used to create a blockage against the transmission of data, information, metadata, or other emanations from computers and other electronics. Devices inside a Faraday cage can use EM fields for communications, such as wireless or Bluetooth, but devices outside of the cage will not be able to eavesdrop on the signals of the systems within the cage.
     - White Noise
     - Control Zone
 - The TEMPEST program creates technology that is not susceptible to Van Eck phreaking attacks because it reduces or suppresses natural electromagnetic emanations.
