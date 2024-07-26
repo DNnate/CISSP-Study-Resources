@@ -87,7 +87,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Responsible for establishing, maintaining, and terminating communication sessions between two computers
         - Three communication session phases: 
             - connection establishment
-                - **simplex**: one-way
+                - **simplex**: one-way 
                 - **half-duplex**: both comm devices can transmit/receive, but not at the same time
                 - **full-duplex**: both comm devices can transmit/receive at same time
             - data transfer
@@ -102,6 +102,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - uses three-way handshake
             - User Datagram Protocol (UDP)
                 - connectionless protocol that provides fast, best-effort delivery of **datagrams** (self-container unit of data)
+                - it is also considered a simplex protocol (Typically, there is no acknowledgment or feedback from the receiver to the sender, because the channel only allows data to flow in one direction.)
             - Transport Layer Security (TLS)
     - Network Layer (3)
         - Responsible for logical addressing, and providing routing or delivery guidance (but not necessarily verifying guaranteed delivery), manages error detection and traffic control
@@ -133,6 +134,10 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - **Address Resolution Protocol (ARP)**: operates at layer 2
         - Switches & bridges function at this layer
         - Logical Link Control (LLC) is one of two sublayers that make up the Data Link Layer
+        - **ARP Poisoning**: also known as ARP spoofing, is a type of cyber attack in which an attacker sends falsified Address Resolution Protocol (ARP) messages over a local network. 
+            - ARP poisoning can use unsolicited or gratuitous replies—­specifically, ARP replies for which the local device did not transmit an ARP broadcast request.
+            - in ARP poisoning,  an attacker sends malicious ARP replies to the network. These replies contain incorrect mappings of IP addresses to MAC addresses. Devices on the network, upon receiving these forged ARP replies, update their ARP tables with the incorrect information.
+            - It can be used for Man-in-the-Middle (MitM) Attacks, Denial of Service (DoS), and Session Hijacking.
 
     - Physical Layer (1)
         - Converts a frame into bits for transmission/receiving over the physical connection medium
@@ -186,6 +191,10 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - **Broadcast:** One to all. Not Supported by IPv6. IPv6 replaces broadcast with multicast and anycast to improve network efficiency and reduce unnecessary traffic.
 - **Unicast:** One to One communication. Supported by bothIPv4 and IPv6.
 - **Anycast:** From single source to the nearest or optimal recipient or group of recipients. Supported natively by IPv6. Used for CDN and for streaming.
+- The means by which IPv6 and IPv4 can coexist on the same network is to use one or more of three primary options: dual stack, tunneling, or NAT-­PT.
+    - Dual stack is to have most systems operate both IPv4 and IPv6 and use the appropriate protocol for each conversation.
+    - Tunneling allows most systems to operate a single stack of either IPv4 or IPv6 and use an encapsulation tunnel to access systems of the other protocol.
+    - Network Address Translation-­Protocol Translation (NAT-­PT) (RFC-­2766) can be used to convert between IPv4 and IPv6 network segments similar to how NAT converts between internal and external addresses.
 
 - 4.1.3 Secure protocols
     - **Kerberos**: standards-based network authentication protocol, used in many products (most notably Microsoft Active Directory Domain Services or AD DS)     
@@ -196,6 +205,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - TLS has supplanted SSL (the original protocol, considered legacy/insecure) 
         - TLS was initially introduced in 1999 but didn’t gain widespread use until years later
         - The original versions of TLS (1.0 and 1.1) are considered deprecated and organizations should be relying on TLS 1.2 or TLS 1.3
+        - TLS supports both one-­way and two-­way authentication.
+        - TLS and SSL are not interoperable or backward compatible.
     - **SFTP**: a version of FTP that includes encryption and is used for transferring files between two devices (often a client / server)
     - **SSH**: remote management protocol, which operates over TCP/IP
         - all communications are encrypted
@@ -214,7 +225,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - it provides flexibility and resiliiency in complex networks
     Multilayer disadvantages:
         - nothing stops an added layer from being covert
-        - encapsulating can be used to bypass filters
+        - encapsulating can be used to bypass filters: Encapsulation is both a benefit and a potentially harmful implication of multilayer protocols. Encapsulation allows for encryption, flexibility, and resiliency, while also enabling covert channels, filter bypass, and overstepping network segmentation boundaries.
         - logical network segments can be traversed
 
 - 4.1.5 Converged protocols (e.g., Fiber Channel Over Ethernet (FCoE), Internet Small Computer Sysetms Interface (iSCSI), Voice over Internet Protocol (VoIP))
@@ -222,8 +233,13 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - converged protocols provide the ability to use existing TCP/IP supporting network infrastructure to host special or proprietary services without the need to deploy different hardware
     - Examples of converged protocols:
         - **Storage Area Network (SAN)**: a secondary network (distinct from the primary network) used to consolidate/manage various storage devices into single network-accessible storage
+           -  In some instances, a SAN may implement deduplication in order to save space by not retaining multiple copies of the same file. However, this can sometimes result in data loss if the one retained original is corrupted.
+           -  ✏️Deduplication replaces multiple copies of a file with a pointer to one copy. If the one remaining file is damaged, then all of the linked copies are damaged or inaccessible as well.
         - **Fibre Channel over Ethernet (FCoE)**: operating at layer 2, Fibre Channel is a network data-storage solution (SAN or network-attached storage (NAS)) that allows for high-speed file transfers of (up to) 128 Gbps
+        - designed to be operated over fiber-optic cables support for copper cables was added later to offer less expensive
+options. Fibre Channel typically requires its own dedicated infrastructure (separate cables). However, Fibre Channel over Ethernet (FCoE) can be used to support it over the existing network infrastructure. 
             - FCoE can be used over existing network infrastructure
+            - FCoE typically requires 10 Gbps Ethernet in order to support the Fibre Channel protocol.
             - FCoE used to encapsulate Fibre Channel over Ethernet networks
             - with this technology, Fibre Channel operates as a Network layer (OSI layer 3) protocol, replacing IP as the payload of a standard Ethernet network
         - **Internet Small Computer Sysetms Interface (iSCSI)**: operating at layer 3, iSCSI is a network storage standard based on IP, used to enable location-independent file storage, transmission, and retrieval over LAN, WAN, or public internet connections
@@ -234,7 +250,9 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - **Compute Express Link (CXL)**: is an open standard interconnect designed to improve communication between CPUs and other high-speed devices such as accelerators, memory expanders, and smart I/O devices. It is used for high-speed, high-capacity CPU-to-Device and CPU-to-Memory connections.
 
 
-- 4.1.6 Micro-segmentation (e.g., Software Defined Networks (SDN), Virtual eXtensible Local Area Network (VXLAN),Encapsulation, Software-Defined Wide Area Network (SD-WAN))
+- 4.1.6 Micro-segmentation:
+- **Micro-Segmentation**: involves creating fine-grained, policy-driven segments that can isolate individual workloads or devices. It takes the concept of logical segmentation to a more granular level. The small segments contain specific workload or functionally similar or identical nodes. It limits scope of breach and lateral movement. Cisco Trsutsec is an example of Micro segmentation.
+- Microsegmentation can be implemented using internal segmentation firewalls (ISFWs), transactions between zones are filtered, and it can be implemented with virtual systems and virtual networks. (e.g., Software Defined Networks (SDN), Virtual eXtensible Local Area Network (VXLAN),Encapsulation, Software-Defined Wide Area Network (SD-WAN))
     - **Software-defined networks (SDN)**:
         - SDN is a broad range of techniques enabling network management, routing, forwarding, and control functions to be directed by software
         - SDN is effectively network virtualization, and separates the infrastructure layer (aka the data or forwarding plane) - hardware and hardware-based settings, from the control layer - network services of data transmission management
@@ -261,6 +279,19 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
      - Data Plane: is responsible for the actual movement of packets through the network. It handles the forwarding of data based on the decisions made by the control plane. e.g QOS, packet forwarding by switch or router using mac address table or routing tables respectively, packet filtering e.g firewalls, load balancers
        - Cut-Through Switching:  is a method of forwarding packets in which a switch starts forwarding a frame before the entire frame has been received. There is minimal error checking and it is used in low-latency networks
        - Store-and-forward Switching: is a method where the entire frame is received and error-checked before being forwarded. Used in environements where liability is essential. 
+
+- **Network Segmentation**: Benefits include boosting performance where system that need to communicate are located in the same segment. It reduces communication problems such as broadcast storms to individual segments, and improves security by isolating traffic to segments
+  - Intranet: Data traffic that moves between a data center and external networks or clients.
+  - Extranet: A controlled private network allowing access to partners, vendors, or clients. This section of the network has been sectioned off to act as as an intranet for the private network but also to serve information to the public internet. A cross between the internet and the intranet.
+  - DMZ: A buffer zone between the internal network and the external network, hosting public-facing services. An extranet for public consumption. Typically labelled perimeter network. DMZ is a specific implementation with a focus on isolating external-facing services from the internal network. 
+  - Screened subnet: is a type of security zone that can be positioned so that it operates as a buffer network between the secured private network and the internet and can host publicly accessible services. It is often placed between an internal network and an external network and can be seen as a specific type of DMZ.
+ - **Physical Segmentation**:
+   - Out-of-Band: physically seperating networks into distinct zones using hardware. It is an alternate communication path for different types of traffic.
+   - Air Gap: Complete physical isolation of a network by having no wired or wireless communications. Common in high security government networks or critical infrastructures e.g industrial systems and public utilities.
+ - **Logical Segmentation**:
+   - In-Band: seperate networks by configuring routers, switches, firewalls to control traffic flow e.g subnets, VLANs
+   - Virtual Routing and Forwarding: facilitates the co-existence of multiple routing table instances on a router simultenously
+   - Virtual Domain: Network segments/chunks created through logical segmentation techniques like VRFs. In the VRF context, they are called VRF domains. Virtual domains (often referred to as virtual contexts or virtual systems) allow for the creation of separate, isolated security domains within a single firewall or security device.
 
 - 4.1.7 Wireless networks (e.g. LiFi, Wi-Fi, Zigbee, satellite)
 
@@ -301,7 +332,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 
 ***Password Authentication Protocol (PAP)***: PAP transmits usernames and passwords in cleartext. It offers no form of encryption; it simply provides a means to transport the logon credentials from the client to the authentication server. Also used by PPP servers.
 
-***Zigbee***: IoT equipment communications concept based on Bluetooth
+***Zigbee***: IoT equipment communications concept based on Bluetooth. It requires close proximity of devices and communications are encrypted.
         - Low power/low throughput
         - Requires close proximity
         - Encrypted using 128-bit symmetric algorithm
@@ -326,37 +357,30 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
   -  Latency: The time it takes for a data packet to travel from the source to the destination. It has an inverse relationship to throughput.
   -  Jitter: The variation in time delay between data packets arriving. Affects QOS for real-time applications. Key: If some cars on a highway arrive faster than others even though they left at the same time.
   -  Signal to Noise Ratio (SNR): A measure of the signal strength relative to background noise. Commonly used in wireless communications. Key: How clearly you can hear someone speaking in a noisy room; higher SNR means a clearer signal and less interferance.
-- **Network Segmentation**: Benefits include boosting performance where system that need to communicate are located in the same segment. It reduces communication problems such as broadcast storms to individual segments, and improves security by isolating traffic to segments
-  - Intranet: Data traffic that moves between a data center and external networks or clients.
-  - Extranet: A controlled private network allowing access to partners, vendors, or clients. This section of the network has been sectioned off to act as as an intranet for the private network but also to serve information to the public internet. A cross between the internet and the intranet.
-  - DMZ: A buffer zone between the internal network and the external network, hosting public-facing services. An extranet for public consumption. Typically labelled perimeter network.
- - **Physical Segmentation**:
-   - Out-of-Band: physically seperating networks into distinct zones using hardware. It is an alternate communication path for different types of traffic.
-   - Air Gap: Complete physical isolation of a network by having no wired or wireless communications. Common in high security government networks or critical infrastructures e.g industrial systems and public utilities.
- - **Logical Segmentation**:
-   - In-Band: seperate networks by configuring routers, switches, firewalls to control traffic flow e.g subnets, VLANs
-   - Virtual Routing and Forwarding: facilitates the co-existence of multiple routing table instances on a router simultenously
-   - Virtual Domain: Network segments/chunks created through logical segmentation techniques like VRFs. In the VRF context, they are called VRF domains. Virtual domains (often referred to as virtual contexts or virtual systems) allow for the creation of separate, isolated security domains within a single firewall or security device.
- - **Micro-Segmentation**: involves creating fine-grained, policy-driven segments that can isolate individual workloads or devices. It takes the concept of logical segmentation to a more granular level. The small segments contain specific workload or functionally similar or identical nodes. It limits scope of breach and lateral movement. Cisco Trsutsec is an example of Micro segmentation.
+
 
 - 4.1.8 Cellular networks (e.g. 4G, 5G)
 
     - A cellular network or a wireless network is the primary communications technology used by many mobile devices
     - Cells are primary transceiver (cell site/tower)
     - Generally encrypted between mobile device and transmission tower; plaintext over wire; use encryption like TLS/VPN
-    - 4G
+    - **4G**
         - 4G allows for mobile devices to achieve 100 Mbps, and stationary devices can reach 1 Gbps
         - LTE and WiMAX are common transmission systems
         - **WiMAX**: Broadband Wireless Access IEEE 802.16 is a well-known example of wireless broadband; WiMAX can potentially deliver data rates of > 30 Mbps
-    - 5G
+    - **5G**
         - 5G uses higher frequencies than previous tech, allowing for higher transmission speeds — up to 10 Gbps, but at reduced distances
+        - 5G supports up to 10 Gbps
+        - 5G coverage is the most limited since it is the latest technology and still not universally deployed
+        - 5G tower covers less area than a 4G tower.
         - Orgs need to enforce security requirements on 5G
     - Security issues with wireless:
         - provider network (voice or data) is not necessarily secure
         - your cell phone can be intercepted
         - provider's towers can be simulated to conduct man-in-the-middle/on-path attack
         - using cell connectivity to access the internet or your office network creates a potential bridge, provider attackers with another avenue
-
+    -  Cellular services, such as 4G and 5G, raise numerous security and operational concerns. Although cellular service is encrypted from device to tower, there is a risk of being fooled by a false or rogue tower. A rogue tower could offer only plaintext connections, but even if it supported encrypted transactions, the encryption only applies to the radio transmissions between the device and the tower. Once the communication is on the tower, it will be decrypted, allowing for eavesdropping and content manipulation. Even without a rogue tower, eavesdropping can occur across the cellular carrier’s interior network as well as across the internet, unless a VPN link is established between the remote mobile device and the network of the organization.
+    -  Being able to establish a connection can be unreliable as 3G, 4G, and 5G coverage is not 100 percent available everywhere.
 - **Traffic FLows**:
   - East-West Traffic: Data traffic that moves laterally within a data center, between servers or virtual machines. Involves trusted nodes and networks. Traffic remains withing the internal network or cloud. Access controls, micro-segmentation and isolations policies are used here for security.
   - North-South Traffic: Data traffic that moves between a data center and external networks or clients. Traffic moves to/from endpoints on internal network to nodes on the public cloud/internet. Involves untrusted nodes. This brings security concerns like data comprise, DDoS attacks, inadequate authentication. 
