@@ -46,7 +46,6 @@ Networking can be one of the more complex exam topics; if you have a networking 
 - **Teardrop attack**: exploits reassembly of fragmented IP packets in the fragment offset field (indicating the start position or offset of data contained in a fragemented packet)
 - **Terminal Emulation Protocol**: AKA Telnet, is a command-line protocol designed to provide access between hosts
 - **Unbound (Wireless) Network**: network where the physical layer interconnections are done using radio, light, or some other means (not confined to wires, cables, or fibers); may or may not be mobile
-- **WAF**: Web Application Firewall is a software-based app that monitors and filters exchanges between applications and a host; usually inspect and filter conversations like HTTP/S
 
 [4.1](#4.1) Assess and implement secure design principles in network architectures (OSG-9 Chpts 11,12)
 
@@ -292,6 +291,15 @@ options. Fibre Channel typically requires its own dedicated infrastructure (sepa
    - In-Band: seperate networks by configuring routers, switches, firewalls to control traffic flow e.g subnets, VLANs
    - Virtual Routing and Forwarding: facilitates the co-existence of multiple routing table instances on a router simultenously
    - Virtual Domain: Network segments/chunks created through logical segmentation techniques like VRFs. In the VRF context, they are called VRF domains. Virtual domains (often referred to as virtual contexts or virtual systems) allow for the creation of separate, isolated security domains within a single firewall or security device.
+- **Firewall Types**: 
+   - **Next-­generation firewall (NGFW)** is a unified threat management (UTM) device that is designed to provide advanced security features at the network perimeter and is based on a traditional firewall with numerous other integrated network and security services. It provides a comprehensive range of security features, including perimeter protection, application control, and advanced threat detection.
+   - **Internal Segmentation Firewall (ISFW)** is a security device or technology used to enforce security policies and controls within an internal network, particularly to segment different internal network zones. Unlike traditional firewalls that primarily focus on perimeter security, an ISFW operates within the internal network to create additional layers of security. It focuses on internal network segmentation and access control between internal segments.
+   - **Application-­level firewall** is able to make access control decisions based on the content of communications as well as the parameters of the associated protocol and software.
+   - **Web Application Firewall WAF**: is a software-based app that monitors and filters exchanges between applications and a host; usually inspect and filter conversations like HTTP/S. It is an appliance, server add-­on, virtual service, or system filter that defines a strict set of communication rules for a website
+   - **Stateful inspection firewalls** make access control decisions based on the content and context of communications, but are not typically limited to a single application-­layer protocol.
+   - **Circuit-­level firewalls** are able to make permit and deny decisions in regard to circuit establishment either based on simple rules for IP and port, using captive portals, requiring port authentication via 802.1X, or more complex elements such as context-­or attribute-­based access control.
+   - **Static packet-­filtering firewalls** filter traffic by examining data from a message header. Usually, the rules are concerned with source and destination IP address (layer 3) and port numbers (layer 4).
+   - **TCP Wrapper**: is a host-based access control system that can be used to restrict access to Internet services based on IP address or hostname. It acts as a gateway between network services and the network, allowing administrators to control which hosts can connect to services like SSH, FTP, and others. TCP Wrapper allows administrators to specify which hosts (by IP address or hostname) are allowed or denied access to specific services, such as SSH, FTP, or HTTP, based on the requesting host.
 
 - 4.1.7 Wireless networks (e.g. LiFi, Wi-Fi, Zigbee, satellite)
 
@@ -467,11 +475,12 @@ The components of a network make up the backbone of the logical infrastructure f
 - 4.2.3 Network Access Control (NAC) devices
 
     - **Network Access Control (NAC)**: the concept of controlling access to an environment through strict adherence to and enforcement of security policy
-    - NAC is meant to be an automated detection and response system that can react in real time, ensuring all monitored systems are patched/updated and have current security configurations, as well as keep unauthorized devices out of the network
+    - NAC is meant to be an automated detection and response system that can react in real time, ensuring all monitored systems are patched/updated and have current security configurations, as well as keep unauthorized devices out of the network. 📝 Note that it cannot reduce social engineering threats.
     - NAC goals:
-        - prevent/reduce known attacks directly (and zero-day indirectly)
+        - prevent/reduce known attacks directly (and zero-day attacks indirectly)
         - enforce security policy throughout the network
         - use identities to perform access control
+        - detect/block rogue devices
     - NAC can be implemented with a preadmission or postadmission philosophy:
         - **preadmission philosohpy**: requires a system to meet all current security requirements (such as patch application and malware scanner updates) before it is allowed to communicate with the network
         - **postadmission philosophy**: allows and denies access based on user activity, which is based on a predefined authorization matrix
@@ -507,6 +516,14 @@ Session layer (layer 5) of the OSI model.
             - security awareness training
             - desktop env should be included in org DR
             - EDR/MDR should be considered
+- **Endpoint detection and response (EDR)** is a security mechanism that is an evolution of traditional antimalware products. EDR seeks to detect, record, evaluate, and respond to suspicious activities and events, which may be caused by problematic software or by valid and invalid users.
+    - It is a natural extension of continuous monitoring, focusing on both the endpoint device itself and network communications reaching the local interface.
+    - Some EDR solutions employ an on-­device analysis engine whereas others report events back to a central analysis server or to a cloud solution.
+    - The goal of EDR is to detect abuses that are potentially more advanced than what can be detected by traditional antivirus or HIDSs, while optimizing the response time of incident response, discarding false positives, implementing blocking for advanced threats, and protecting against multiple threats occurring simulta neously and via various threat vectors.
+- ** managed detection and response (MDR)**: focuses on threat detection and mediation but is not limited to the scope of endpoints. MDR is a service that attempts to monitor an IT environment in real-time to quickly detect and resolve threats. Often an MDR solution is a combination and integration of numerous technologies, including SIEM, network traffic analysis (NTA), EDR, and IDS.
+- **Endpoint protection platform (EPP)**: is a variation of EDR much like IPS is a variation of IDS. The focus on EPP is on four main security functions: predict, prevent, detect, and respond. Thus, EPP is the more active prevent and predict variation of the more passive EDR concept.
+- **Extended detection and response (XDR)**: components often include EDR, MDR, and EPP elements. Also, XDR is not solely focused on endpoints, but often includes NTA, NIDS, and NIPS functions as well. Managed security service provider (MSSP) can provide XDR solutions that are centrally controlled and managed.
+- **Managed security service provider MSSP**: solutions can be deployed fully on-premise, fully in the cloud, or as a hybrid structure, and can be overseen through a SOC which is itself local or remote. Typically, working with an MSSP to provide EDR, MDR, EPP, or XDR services can allow an organization to gain the benefits of these advanced security products and leverage the experience and expertise of the MSSP's staff of security management and response professionals.
 
 [4.3](#4.3) Implement secure communication channels according to design ((OSG-9 Chpt 12))
 - Protocols that provide security services for application-specific communication channels are called secure communication protocols
