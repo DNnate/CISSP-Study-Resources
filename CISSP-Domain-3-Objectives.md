@@ -646,6 +646,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - **Pass the hash (PtH)**: a technique where an attacker captures a password hash (as opposed to the password characters) and then simply passes it through for authentication and potentially lateral access to other networked systems 
         - the threat actor doesn’t need to decrypt the hash to obtain a plain text password
         - PtH attacks exploit the authentication protocol, as the passwords hash remains static for every session until the password is rotated
+        - 📝NTLM is known to be susceptible to pass-­the-­hash attacks
         - attackers commonly obtain hashes by scraping a system’s active memory and other techniques. MIMIKATZ is a popular tool to exploit pass the hash
 - 3.7.12 Kerberos exploitation
     - **Overpass the Hash**: alternative to the PtH attack, used when NTLM is disabled on the network (AKA pass the key) 
