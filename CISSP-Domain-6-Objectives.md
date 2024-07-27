@@ -240,7 +240,7 @@ reassembles the activity of individual users to track their interaction with a w
         - OSSTMM (Open Source Security Testing Methodology Manual)
         - NIST 800-115
         - FedRAMP Penetration Test Guidance
-        - PCI DSS Information Supplemental on Penetration Testing
+        - PCI DSS Information Supplemental on Penetration Testing Note📝 PCI DSS requires a rescan of  application at least annually and after any change in the application.
 
 - 6.2.10 Compliance checks
     - Orgs should create and maintain compliance plans documenting each of their regulatory obligations and map those to the specific security controls designed to satisfy each objective
@@ -285,6 +285,7 @@ reassembles the activity of individual users to track their interaction with a w
 - 6.3.4 Backup verification data
     - Managers should periodically inspect the results of backups to verify that the process functions effectively and meets the organization’s data protection needs
         - this might include reviewing logs, inspecting hash values, or requesting an actual restore of a system or file
+        -  ensures that the organization’s data protection requirements are met effectively
 
 - 6.3.5 Training and awareness
     - Training and awareness programs play a crucial role in preparing an organization’s workforce to support information security programs
@@ -390,8 +391,8 @@ reassembles the activity of individual users to track their interaction with a w
     - **Fuzz Testng**: is a specialized dynamic testing technique that provides many different, and sometimes invalid types of input to software to stress its limits and find previously undetected flaws. It is imited to detecting simple vulnerabilities.
     - zzuf is a fuzzing tool thats tests web browsers ability to handle unexpected data
     - Fuzzers are tools that are designed to provide invalid or unexpected input to applications, testing for vulnerabilities like format string vulnerabilities, buffer overflow issues, and other problems.
-        - Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input.
-        - Generational (Intelligent) Fuzzing Develops data models and creates new fuzzed input based on an understanding of the types of data used by the program.
+        - 🔔Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input. It uses bit flipping and other techniques to slightly modify previous inputs to a program in an attempt to detect software flaws.
+        - 🔔Generational (Intelligent) Fuzzing Develops data models and creates new fuzzed input based on an understanding of the types of data used by the program.
     - **Interface Testing**: assesses the performance of modules against the interface specifications to ensure that they will work together properly. Interfaces to be tested include
       - Application Programming Interfaces (APIs)
       - User Interfaces (UIs)
@@ -513,7 +514,7 @@ NIST Cybersecurity Framework (CSF): The NIST Cybersecurity Framework consists of
 
 **SSAE 18:** "Attestation Standards: Clarification and Recodification" - This standard, effective since May 1, 2017, provides guidance on performing and reporting on examination, review, and agreed-upon procedures engagements. It includes guidelines for reports on controls at service organizations, consolidating and clarifying previous standards.
 - SOC Reports under SSAE 18:
-
-    - SOC 1 (which focuses on controls at a service organization relevant to user entities’ internal control over financial reporting) and SOC 2 (which controls relevant to security, availability, processing integrity, confidentiality, and privacy) both have Type I (specific point in time) and Type II (over a specified period) reports.
+    - SOC 1 (which focuses on controls at a service organization relevant to user entities’ internal control over financial reporting) and SOC 2 (which controls relevant to security, availability, processing integrity, confidentiality, and privacy) both have Type I (provides an opinion on the operating effectiveness of those controls at a 🔥specific point in time) and Type II (provides opinion on the suitability and effectiveness of security controls after evaluating them over a 🔥specified period of time) reports.
     - SOC 3 does not have separate Type I or Type II reports; it provides a general-purpose report suitable for public distribution.
+    - Note📝 There are only two types of SOC report: Type I and Type II. Both reports provide information on the suitability of the design of security controls.
 
