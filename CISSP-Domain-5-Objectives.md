@@ -3,7 +3,7 @@
 The identity and Access Management (IAM) domain focuses on issues related to granting and revoking privileges to access data or perform actions on systems
 - Assets include information, systems, devices, facilities, and applications
 - Organizations use both physical and logical access controls to protect them
-- Identification is the process of a subject claiming, or professing, an identity
+- Identification is the process of a subject claiming, or professing, an identity. Subjects claim an identity, and identification can be as simple as a username for a user. Subjects prove their identity by providing authentication credentials such as the matching password for a username.
 - Authentication verifies the subject’s identity by comparing one or more authentication factors against a database holding authentication info for users
 - The three primary authentication factors are something you know, something you have, and something you are
 - Single sign-on (SSO) technologies allow users to authenticate once and access any resources in a network or the cloud, without authenticating again. Kerberos, Active Directory Federation Services (ADFS), and Central Authentication
@@ -11,9 +11,6 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - Federated Identity Management (FIM) systems link user identities in one system with other systems to implement SSO
 - **Access Control System**: ensuring access to assets is authorized and restricted based on business and security requirements
 - **Access Control Token**: based on the parameters like time, date, day etc a token defines access validity to a system
-- **Crossover Error Rate CER**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent
-- **FRR**: False Rejection Rate (Type 1) incorrectly denying authentication to a legit identity and therefore denying access
-- **FAR**: False Acceptance Rate (Type 2) incorrectly authenticating a claimed identity as legit, recognizing and granting access on that basis
 - **Ethical Wall**: the use of administrative, phyiscal/logical controls to establih/enforce separation of information, assets or job functions for need-to-know boundaries or prevent conflict of interest situations; AKA compartmentalization
 - **Granularity of controls**: level of abstraction or detail which in a security function can be configured or tuned for performance and sensitivity
 - **IDaaS**: cloud-based service that broker IAM functions to target systems on customers' premise and/or in the cloud
@@ -96,11 +93,22 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - **🔔Synchronous** soft tokens, such as Google Authenticator, use a time-based algorithm that generates a constantly changing series of codes. A synchronous token generates and displays onetime passwords e.g every 60 seconds, that are synchronized with an authentication server.
         - **🔔Asynchronous** tokens typically require a challenge to be entered on the token to allow it to calculate a response, which the server compares to the response it expects. An asynchronous token uses a challenge-­response process to generate the onetime password.
     - Two-factor methods:
-        - **Hash Message Authentication Code (HMAC)**: includes a hash function used by the HMAC-based One-Time Password (HOTP) standard to create onetime passwords
-        - **Time-based One-Time Password (TOTP)**: similar to HOTP, but uses a timestamp and remains valid for a certain time frame (e.g. 30 or 60 seconds)
+        - **HMAC-based One-Time Password (HOTP)** Hash Message Authentication Code (HMAC) includes a hash function used by the HMAC-based One-Time Password (HOTP) standard to create onetime passwords. It typically creates HOTP values of six to eight numbers. This is similar to the asynchronous dynamic passwords created by tokens. The HOTP value remains valid until used.
+        - **Time-based One-Time Password (TOTP)**: similar to HOTP, but uses a timestamp and remains valid for a certain time frame (e.g. 30 or 60 seconds). It is similar to the synchronous dynamic passwords used by tokens. The TOTP password expires if the user doesn’t use it within the time frame. 
             - e.g. phone-based authenticator app, where your phone is mimicking a hardware TOTP token (combined with userid/password is considered two-factor or two-step authentication)
         - **Email challenge**: popular method, used by websites, sending the user an email with a PIN
         - Short Message Service (SMS) to send users a text with a PIN is another 2-factor method; note that ✏️NIST SP 800-63B points out vulnerabilities, and deprecates use of SMS as a two-factor method for federal agencies
+- **Biometric**: Biometric methods identify users based on physical characteristics such as fingerprints. During enrollment, a subject’s biometric factor is sampled and stored in the device’s database. This stored sample of a biometric factor is the 🔔reference profile (also known as a 🔔reference template). The 🔔throughput rate (ideally 6 seconds) is the amount of time the system requires to scan a subject and approve or deny access. The more complex or detailed a biometric characteristic, the longer processing takes. Physiological biometric methods include fingerprints, face scans, retina scans, iris scans, palm scans (also known as palm topography or palm geography), and voice patterns:
+    - Fingerprints: Fingerprints have loops, whorls, ridges, and bifurcations (also called minutiae) and fingerprint readers match the minutiae to data within a database.
+    - Face Scans: Face scans use the geometric patterns of faces for detection and recognition.
+    - Retina Scans: Retina scans focus on the pattern of blood vessels at the back of the eye. They are the most accurate form of biometric authentication and can differentiate between identical twins. However, some privacy proponents object to their use because they can reveal medical conditions, such as high blood pressure and pregnancy.
+    - Iris Scans: Focusing on the colored area around the pupil, iris scans are the second most accurate form of biometric authentication. Iris scans are considered more acceptable by general users than retina scans because scans can occur from far away and are less intrusive. Scans can often be done from 6 to 12 meters away (about 20 to 40 feet). However, some scanners can be fooled with a high-quality image in place of a person’s eye. Additionally, accuracy can be affected by changes in lighting and the usage of some glasses and contact lenses.
+    - Palm Scans: Palm scanners scan the palm of the hand for identification. They use near-infrared light to measure vein patterns in the palm, which are as unique as fingerprints.
+    - Biometric devices are rated for performance by examining the different types of errors they produce:
+      - **Crossover Error Rate CER**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent. Devices with lower CERs are more accurate than devices with higher CERs
+      - **FRR**: False Rejection Rate (Type 1 Error) incorrectly denying authentication to a legit identity and therefore denying access
+      - **FAR**: False Acceptance Rate (Type 2 Error) incorrectly authenticating a claimed identity as legit, recognizing and granting access on that basis
+
 - 5.2.3 Accountability
     - Two important security elements in an access control system are authorization and accountability
         - **Authorization**: subjects are granted access to objects based on proven identities
