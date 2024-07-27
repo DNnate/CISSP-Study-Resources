@@ -184,25 +184,39 @@ dentials.
     - A hybrid federation is a combination of a cloud-based solution and an on-premise solution
 
 [5.4](#5.4) Implement and manage authorization mechanisms (OSG-9 Chpt 14)
-- 5.4.1 Role Based Access Control (RBAC)
+- 5.4.1 **Role Based Access Control (RBAC)**
     - A key characteristic of the Role-Based Access Control (RBAC) model is the use of roles or groups
     - Instead of assigning permissions directly to users, user accounts are placed in roles and administrators assign privileges to the roles (typically defined by job function)
         - if the user account is in a role, the user has all privileges assigned to the role
     - MS Windows OS uses this model with groups
-- 5.4.2 Rule Based access control
+    - A role-­based access control (RBAC) model can group users into roles based on the organization’s hierarchy
+    - it is based on role or group membership, and users can be members of multiple groups. Users are not limited to only a single role.
+    - RBAC models are based on the hierarchy of an organization, so they are hierarchy based.
+    - It is nondiscretionary model managed by a central authority🔥 to determine which objects subjects can access
+- 5.4.2 **Rule Based access control**
     - A key characteristic of the Rule-Based access control model is that it applies global rules to all subjects
         - e.g. firewalls uses rules that allow or block traffic to all users equally
     - Rules within the rule-based access control model are sometimes referred to as restrictions or filters
+    - It uses a global rules applied to all users and other subjects equally.
+    - It is a Nondiscretionary access controls that uses centralized management 🔥, such as a rules deployed on a firewall.
 - 5.4.3 Mandatory Access Control (MAC)
     - **Mandatory Access Control (MAC)**: access control that requires the _system_ itself to manage access controls in accordance with the org's security policies. Users cannot delegate rights.
     - A key characteristic of the MAC model is the use of labels applied to both subjects and objects
         - e.g. a label of top secret grants access to top-secret documents
     - When documented in a table, the MAC model sometimes resembles a lattice or matrix (i.e. climbing rosebush framework), so it is referred to as a lattice-based model. Biba integrity model uses this.
+    - 📝 MAC model doesn’t use a centralized environment.
+    - MAC is a nondiscretionary access control model that uses labels🔥
+    - (MAC) model supports three environments: hierarchical, compartmentalized, and hybrid.
+        - ☑️In a hierarchical environment, the various classification labels are assigned in an ordered structure from low security to high security.
+        - ☑️compartmentalized environment ignores the levels, and instead only allows access for individual compartments on any level.
+        - ☑️hybrid environment is a combination of a hierarchical and compartmentalized environment.
+
 - 5.4.4 Discretionary Access Control (DAC)
     - **Discretionary Access Control (DAC)**: access control model in which the system owner decides who gets access
     - A key characteristic of the DAC model is that every object has an owner, and the owner can grant or deny access to any other subjects
         - e.g. you create a file and are the owner, and can grant permissions to that file
     - New Technology File System (NTFS) used in Windows, uses the DAC model
+    - MAC, RBAC, and rule-­based access control) are nondiscretionary models.
 - 5.4.5 Attribute Based Access Control (ABAC) or Policy-Based Access Control
     - **Attribute-Based Access Control (ABAC)**: an access control paradigm where access rights are granted to users with policies that combine attributes together. Attributes used for ABAC often fall into one of four categories: subject attributes like department or title; action attributes like the ability to view, edit, or delete; object attributes
 that describe the object that can be impacted; and contextual attributes like location, time, or elements.
@@ -210,10 +224,12 @@ that describe the object that can be impacted; and contextual attributes like lo
         - this allows it to be much more flexible than a rule-based access control model that applies the rules to all subjects equally
         - many software-defined networks (SDNs) use the ABAC model
     - ABAC allows administrators to create rules within a policy using plain language statements such as "Allow Managers to access the WAN using a mobile device"
-- 5.4.6 Risk based access control
+- 5.4.6 **Risk based access control**
     - Risk-based access control model grants access after evaluating risk; evaluating the environment and the situation and making risk-based decisions using policies embeded within software
         - Using machine learning, making predictive conclusions about current activity based on past activity
-- 5.4.7 Task based access control
+        - risk-­based access control model can require users to authenticate with multifactor authentication
+        - it evaluates the environment and the situation and then makes access decisions based on coded policies
+- 5.4.7 **Task based access control**
     - TBAC is similar to RBAC, but instead of being assigned to one or more roles, each user is assigned an array of tasks.
 - **Access Policy Enforcement**:
   - **Policy Enforcement Point (PEP)**: Responsible for enabling, monitoring and terminating connections between a subject (such as user or device) and an enterprise resource.
@@ -296,11 +312,11 @@ that describe the object that can be impacted; and contextual attributes like lo
     - OAuth 2.0 is often used for delegated access to applications, e.g. a mobile game that automatically finds all of your new friends from a social media app is likely using OAuth 2.0
     - Conversely, if you sign into a new mobile game using a social media account (instead of creating a user account just for the game), that process might use OIDC
     - **OpenID Connect (OIDC)**: an authentication layer using the OAuth 2.0 authorization framework, maintained by the OpenID Foundation, providing both authentication and authorization
-    - OIDC uses JSON (JavaScript Object Notation) Web Tokens (JWT) -- AKA ID token
+    - OIDC uses JSON (JavaScript Object Notation) Web Tokens (JWT) -- AKA ID token that provides both authentication and profile information for internet-­based single sign-­on
     - OAuth and OIDC are used with many web-based applications to share information without sharing credentials
         - OAuth provides authorization
         - OIDC uses the OAuth framework for authorization and builds on the OpenID technologies for authentication
-
+    - 📝OpenID on its own provides authentication but doesn’t include profile information. However OpenID Connect provides both authentication and profile information
 - 5.6.2 Security Assertion Markup Language (SAML)
     - **Security Assertion Markup Language (SAML)**: an open XML-based standard commonly used to exchange authentication and authorization (AA) information between federated orgs
     - it is used to make authorization and authentication data on first access
@@ -322,6 +338,8 @@ that describe the object that can be impacted; and contextual attributes like lo
 - 5.6.3 Kerberos
     - **Kerberos** is a network authentication protocol widely used in corporate and private networks and found in many LDAP and directory services solutions such as Microsoft Active Directory
     - It provides single sign-on and uses cryptography to strengthen the authentication process
+    - The primary purpose of Kerberos is authentication, since it allows users to prove their identity.
+    - Kerberos requires computer times to be within 5 minutes of each other
     - The purpose of Kerberos is authentication; Kerberos offers a single sign-on solution for users and protects logon credentials
     - Ticket authentication is a mechanism that employs a third-party entity to prove identification and provide authentication - Kerberos is a well-known ticket system
     - After users authenticate and prove their identity, Kerberos uses their proven identity to issue tickets, and user accounts present these tickets when accessing resources
@@ -361,7 +379,7 @@ that describe the object that can be impacted; and contextual attributes like lo
 - 5.6.4 Remote Authentication Dial-in User Service (RADIUS) / Terminal Access Controller Access Control System Plus (TACACS+)
     - **Remote Authentication Dial-in User Service (RADIUS)**: centralizes authentication for remote access connections, such as VPNs or dial-up access
         - a user can connect to any network access server, which then passes on the user’s credentials to the RADIUS server to verify authentication and authorization and to track accounting
-        - in this context, the network access server is the RADIUS client, and a RADIUS server acts as an authentication server
+        - in this context, the network access server is the RADIUS client e.g router, switch, and a RADIUS server acts as an authentication server
         - the RADIUS server also provides AAA services for multiple remote access servers
         - RADIUS uses the User Datagram Protocol (UDP) by default and encrypts only the password’s exchange
         - RADIUS using Transport Layer Security (TLS) over TCP (port 2083) is defined by RFC 6614 
