@@ -349,7 +349,7 @@ that describe the object that can be impacted; and contextual attributes like lo
         - **Key Distribution Center (KDC)**: the trusted third party that provides authentication services
         - **Kerberos Authentication Server**: hosts the functions of the KDC:
             - **ticket-granting service (TGS)**: provides proof that a subject has authenticated through a KDC and is authorized to request tickets to access other objects
-                - a TGT is encrypted and includes a symmetric key, an expiration time, and user’s IP address
+                - a TGT is encrypted and includes a symmetric key, an expiration time, and user’s IP address. 📝 a scenario where TGT is compromised, Attackers can create golden tickets after successfully exploiting Kerberos and obtaining the Kerberos service account (KRBTGT).
                 - subjects present the TGT when requesting tickets to access objects
             - **authentication service (AS)**: verifies or rejects the authenticity and timeliness of tickets. Often referred to as the KDC
         - **ticket (AKA service ticket (ST))**: an encrypted message that provides proof that a subject is authorized to access an object
