@@ -289,6 +289,9 @@ options. Fibre Channel typically requires its own dedicated infrastructure (sepa
    - Air Gap: Complete physical isolation of a network by having no wired or wireless communications. Common in high security government networks or critical infrastructures e.g industrial systems and public utilities.
  - **Logical Segmentation**:
    - In-Band: seperate networks by configuring routers, switches, firewalls to control traffic flow e.g subnets, VLANs
+        - Switches: switch is a networking device that can be used to create 🔥digital virtual network segments (i.e., VLANs) that can be altered as needed by adjusting the settings internal to the device.
+        - Router: Provides connection to disparate networks (i.e., subnets)
+        - Proxy and Firewalls: Can be positioned between network segments to control and manage traffic
    - Virtual Routing and Forwarding: facilitates the co-existence of multiple routing table instances on a router simultenously
    - Virtual Domain: Network segments/chunks created through logical segmentation techniques like VRFs. In the VRF context, they are called VRF domains. Virtual domains (often referred to as virtual contexts or virtual systems) allow for the creation of separate, isolated security domains within a single firewall or security device.
 - **Firewall Types**: 
