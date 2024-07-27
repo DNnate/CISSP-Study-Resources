@@ -226,6 +226,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - nothing stops an added layer from being covert
         - encapsulating can be used to bypass filters: Encapsulation is both a benefit and a potentially harmful implication of multilayer protocols. Encapsulation allows for encryption, flexibility, and resiliency, while also enabling covert channels, filter bypass, and overstepping network segmentation boundaries.
         - logical network segments can be traversed
+        - Generally, Multilayer protocols include the risk of VLAN hopping, multiple encapsulation, and filter evasion using tunneling.
 
 - 4.1.5 Converged protocols (e.g., Fiber Channel Over Ethernet (FCoE), Internet Small Computer Sysetms Interface (iSCSI), Voice over Internet Protocol (VoIP))
     - **Converged protocols**: merged specialty or proprietary with standard protocols, such as those from the TCP/IP suite
@@ -476,7 +477,7 @@ The components of a network make up the backbone of the logical infrastructure f
         | Cat 8    |   40 Gbps  |        |
 
 - 4.2.3 Network Access Control (NAC) devices
-
+- Port security can refer to several concepts, including network access control (NAC), Transport layer ports, and RJ-­45 jack ports. 📝NAC requires authentication before devices can communicate on the network. 📝Transport-­layer port security involves using firewalls to grant or deny communications to TCP and UDP ports. 📝physical control of all connection points. RJ-­45 jacks should be managed so that unused ports are disabled and that when a cable is disconnected, the port is disabled. This approach prevents the connection of unauthorized devices.
     - **Network Access Control (NAC)**: the concept of controlling access to an environment through strict adherence to and enforcement of security policy
     - NAC is meant to be an automated detection and response system that can react in real time, ensuring all monitored systems are patched/updated and have current security configurations, as well as keep unauthorized devices out of the network. 📝 Note that it cannot reduce social engineering threats.
     - NAC goals:
@@ -534,6 +535,13 @@ Session layer (layer 5) of the OSI model.
     - **Voice of Internet Protocol (VoIP)**: set of technologies that enables voice to be sent over a packet network
     - As more orgs switch to VoIP, protocols like SIP become more common, and introducing additional management, either via dedicated voice VLANs, or by establishing quality of service (QoS) levels to ensure voice traffic priority
     - Web-based voice apps can be more difficult to manage, causing additional unplanned bandwidth consumption
+    - VoIP is at risk for caller ID spoofing, vishing, call manager software/firmware attacks, phone hardware attacks, DoS, MitM/on-path attacks, spoofing, and switch hopping.
+    - Phreaking is a specific type of attack in which various types of technology are used to circumvent the telephone system to make free long-distance calls, to alter the function of telephone service, to steal specialized services, or to cause service disruptions. A phreaker is an attacker who performs phreaking.
+    -  Countermeasures must be deployed to protect against interception, eavesdropping, tapping, and other types of exploitation.
+    -   Countermeasures to PBX fraud and abuse include Changing default passwords on PBX systems and it provides the most effective increase in security since PBX systems typically do not support encryption, although some VoIP PBX systems may support encryption in specific conditions.
+
+
+      
 - 4.3.2 Multimedia collaboration
     - There are a variety of new technologies that allow instant organizational collaboration, including smartboards, and products that enhance on-site, hybrid, or virutal meetings
     - Mobile communication apps are a huge market, and will continue to grow, increasing the complexity of mobile security
@@ -697,11 +705,12 @@ several common VPN protocols: PPTP, L2TP, SSH, OpenVPN (i.e., TLS), and IPsec.
 form periodic mid-session reauthentication to detect and respond to session hijacking. ESP can operate in either transport mode or tunnel mode.
 - Hash-based Message Authentication Code (HMAC) is the primary hashing or integrity mechanism used by IPsec. 
 - IP Payload Compression (IPComp) is a compression tool used by IPsec to compress data prior to ESP encrypting it in order to attempt to keep up with wire speed transmission.
+- Internet Key Exchange (IKE) is the mechanism of IPsec that manages cryptography keys and is composed of three elements: OAKLEY, SKEME, and ISAKMP.
     
 IPsec uses public-key cryptography and symmetric cryptography to provide encryption (aka hybrid cryptography), secure key exchange, access control, nonrepudiation, and message authentication, all using standard internet protocols and algorithms. The mechanism of IPsec that manages cryptography keys is Internet Key Exchange (IKE). IKE is composed of three elements: OAKLEY, SKEME, and ISAKMP. 
-- OAKLEY is a key generation and exchange protocol similar to Diffie–Hellman. 
-- Secure Key Exchange Mechanism (SKEME) is a means to exchange keys securely, similar to a digital envelope. Modern IKE implementations may also use ECDHE for key exchange. 
-- Internet Security Association and Key Management Protocol (ISAKMP) is used to organize and manage the encryption keys that have been generated and exchanged by OAKLEY and SKEME. A security association is the agreed-on method of authentication and encryption used by two entities (a bit like a digital keyring).  ISAKMP is used to negotiate and provide authenticated keying material (a common method of authentication) for security associations in a secured manner. Each IPsec VPN uses two security associations, one for encrypted transmission and the other for encrypted reception. Thus, each IPsec VPN is composed of two simplex communication channels that are independently encrypted. ISAKMP’s use of two security associations per VPN is what enables IPsec to support multiple simultaneous VPNs from each host.
+- ✏️OAKLEY is a key generation and exchange protocol similar to Diffie–Hellman. 
+- ✏️Secure Key Exchange Mechanism (SKEME) is a means to exchange keys securely, similar to a digital envelope. Modern IKE implementations may also use ECDHE for key exchange. 
+- ✏️Internet Security Association and Key Management Protocol (ISAKMP) is used to organize and manage the encryption keys that have been generated and exchanged by OAKLEY and SKEME. A security association is the agreed-on method of authentication and encryption used by two entities (a bit like a digital keyring).  ISAKMP is used to negotiate and provide authenticated keying material (a common method of authentication) for security associations in a secured manner. Each IPsec VPN uses two security associations, one for encrypted transmission and the other for encrypted reception. Thus, each IPsec VPN is composed of two simplex communication channels that are independently encrypted. ISAKMP’s use of two security associations per VPN is what enables IPsec to support multiple simultaneous VPNs from each host.
 
 ***PRIVATE IP***
 
