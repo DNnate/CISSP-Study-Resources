@@ -566,6 +566,21 @@ Session layer (layer 5) of the OSI model.
         - Prevent ghost or phantom calls on IP phones by blocking nonexistent or invalid-origin numbers.
         - Implement NIPS with VoIP evaluation features.
 
+- **Switching Technologies**
+
+| Circuit Switching      | Packet Switching      | 
+|------------------------|-----------------------|
+| Constant traffic   | Bursty traffic   |
+| Fixed known delays | Variable Delays |
+| Connection oriented | Connectionless |
+| Sensitive to connection loss | Sensitive to data loss |
+| Used primarily for voice | Used for any type of traffic |
+| Outdated | Modern |
+
+
+
+
+
 
       
 - 4.3.2 Multimedia collaboration
