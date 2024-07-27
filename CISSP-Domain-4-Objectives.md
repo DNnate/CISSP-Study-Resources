@@ -577,12 +577,15 @@ Session layer (layer 5) of the OSI model.
 | Used primarily for voice | Used for any type of traffic |
 | Outdated | Modern |
 
+- **A virtual circuit**: (also called a communication path) is a logical pathway or circuit created over a packet-switched network between two specific endpoints. Within packet-switching systems are two types of virtual circuits: 
+    - Permanent virtual circuits (PVCs): A PVC is like a dedicated leased line; the logical circuit always exists and is waiting for the customer to send data. A PVC is a predefined virtual circuit that is always available. The virtual circuit may be closed down when not in use, but it can be instantly reopened whenever needed.  A PVC is like a two-way radio or walkie-talkie. Whenever communication is needed, you press the button and start talking; the radio reopens the predefined frequency automatically (that is, the virtual circuit).
+    - Switched virtual circuits (SVCs): An SVC has to be created each time it is needed using the best paths currently
+available before it can be used and then disassembled after the transmission is complete. An SVC is more like a shortwave or ham radio. You must tune the transmitter and receiver to a new frequency every time you want to communicate with someone.
+- In either type of virtual circuit, when a data packet enters point A of a virtual circuit connection, that packet is sent directly to point B or the other end of the virtual circuit. However, the actual path of one packet may be different from the path of another packet from the same transmission. In other words, multiple paths may exist between point A and point B as the ends of the virtual circuit, but any packet entering at point A will end up at point B.
 
+- **WAN Technologies**
 
-
-
-
-      
+  
 - 4.3.2 Multimedia collaboration
     - There are a variety of new technologies that allow instant organizational collaboration, including smartboards, and products that enhance on-site, hybrid, or virutal meetings
     - Mobile communication apps are a huge market, and will continue to grow, increasing the complexity of mobile security
