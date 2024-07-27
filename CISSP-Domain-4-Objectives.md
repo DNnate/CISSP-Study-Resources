@@ -536,9 +536,35 @@ Session layer (layer 5) of the OSI model.
     - As more orgs switch to VoIP, protocols like SIP become more common, and introducing additional management, either via dedicated voice VLANs, or by establishing quality of service (QoS) levels to ensure voice traffic priority
     - Web-based voice apps can be more difficult to manage, causing additional unplanned bandwidth consumption
     - VoIP is at risk for caller ID spoofing, vishing, call manager software/firmware attacks, phone hardware attacks, DoS, MitM/on-path attacks, spoofing, and switch hopping.
-    - Phreaking is a specific type of attack in which various types of technology are used to circumvent the telephone system to make free long-distance calls, to alter the function of telephone service, to steal specialized services, or to cause service disruptions. A phreaker is an attacker who performs phreaking.
+    - Phreaking is a specific type of attack in which various types of technology are used to circumvent the telephone system to make free long-distance calls, to alter the function of telephone service, to steal specialized services, or to cause service disruptions. A phreaker is an attacker who performs phreaking. 
+    - Vishing: Anyone who can receive a call, whether using a traditional PSTN landline, a PBX business line, a mobile phone, or a VoIP solution, can be the target of a VoIP-originated voice-based social engineering attack. This type of attack is known as voice-based phishing.
     -  Countermeasures must be deployed to protect against interception, eavesdropping, tapping, and other types of exploitation.
     -   Countermeasures to PBX fraud and abuse include Changing default passwords on PBX systems and it provides the most effective increase in security since PBX systems typically do not support encryption, although some VoIP PBX systems may support encryption in specific conditions.
+    -   PBX and PSTN voice communications are vulnerable to interception, eavesdropping, tapping, and other exploitations. Often, physical security is required to maintain control over voice communications within the confines of your organization’s physical locations.
+    -   Many PBX systems can be exploited by malicious individuals to avoid toll charges and hide their identity. Phreakers may be able to gain unauthorized access to personal voice mailboxes, redirect messages, block access, and redirect inbound and outbound calls.
+    -   Countermeasures to PBX fraud include:
+        - Consider replacing remote access or long-distance calling through the PBX with a credit card or calling card system.
+        - Restrict dial-in and dial-out features to authorized individuals who require such functionality for their work tasks.
+        - If you still have dial-in modems, use unpublished phone numbers that are outside the prefix block range of your voice numbers.
+        - Protect administrative interfaces for the PBX.
+        - Block or disable any unassigned access codes or accounts.
+        - Define an acceptable use policy and train users on how to properly use the system.
+        - Log and audit all activities on the PBX and review the audit trails for security and use violations.
+        - Disable maintenance modems (i.e., remote access modems used by the vendor to remotely manage, update, and tune a deployed product) and/or any form of remote administrative access.
+        - Change all default configurations, especially passwords and capabilities related to administrative or privileged features.
+        - Block remote dialing.
+        - Keep the system current with vendor/service provider updates.
+        - Deploy direct inward system access (DISA) technologies to reduce PBX fraud by external parties. Direct inward system access (DISA), like any other security feature, must be properly installed, configured, and monitored in order to obtain the desired security improvement. DISA adds authentication requirements to all external connections to the PBX. 
+    -   Securing VoIP communications often involves specific application of many common security concepts:
+        - Use strong passwords and two-factor authentication.
+        - Record call logs and inspect for unusual activity.
+        - Block international calling.
+        - Outsource VoIP to a trusted SaaS.
+        - Update VoIP equipment firmware.
+        - Restrict physical access to VoIP-related networking equipment.
+        - Train users on VoIP security best practices.
+        - Prevent ghost or phantom calls on IP phones by blocking nonexistent or invalid-origin numbers.
+        - Implement NIPS with VoIP evaluation features.
 
 
       
@@ -567,6 +593,7 @@ Session layer (layer 5) of the OSI model.
         - transmission protection
         - authentication protection
         - remote user assistance
+
 - 4.3.4 Data communications   
     - Whether workers are physically in an office or working remotely, communication between devices should be encrypted to prevent any unauthorized device or person from openly reading the contents of packets as they are sent across a network
     - Corporate networks can be segmented into multiple VLANs to separate different types of resources
@@ -586,21 +613,21 @@ Session layer (layer 5) of the OSI model.
     - Vendors (like IT auditing firms) may need to connect to your network, and attackers are routinely looking for creative ways to gain organizational access -- third-party connectivity is one option
     - As organizations evaluate third-party connectivity, they need to look carefully at the principle of least privilege and at methods of monitoring use and misuse
 
-***EMAIL SECURITY***
-- **Secure Multipurpose Internet Mail Extensions (S/MIME)**  offers authentication and confidentiality to email through public key
-encryption, digital envelopes, and digital signatures. Authentication is provided through X.509 digital certificates issued by trusted third-party CAs. Privacy is provided through the use of Public Key Cryptography Standard (PKCS) standards-compliant encryption. Two types of messages can be formed using S/MIME: signed messages and secured enveloped messages. A signed message provides integrity, sender authentication, and nonrepudiation. An enveloped message provides recipient authentication and confi-
-dentiality.
-
+- **EMAIL SECURITY**: The email infrastructure employed on the internet primarily consists of email servers using Simple Mail Transfer Protocol (SMTP) (TCP port 25) to accept messages from clients, transport those messages to other servers, and deposit them into a user’s server-based inbox. In addition to email servers, the email infrastructure includes email clients. Clients retrieve email from their server-based inboxes using Post Office Protocol version 3 (POP3) (TCP port 110) or Internet Message Access Protocol (IMAP) (technically version 4) (TCP port 143). Internet-compatible email systems rely on the X.400 standard for addressing and message handling. Sendmail is the most common SMTP server for Unix systems, and Exchange is the most common SMTP server for Microsoft systems.
+- SMTP is designed to be a mail relay system. This means it relays mail from sender to intended recipient. However, you want to avoid turning your SMTP server into an open relay (also known as an open relay agent or relay agent), which is an SMTP server that does not authenticate senders before accepting and relaying mail. Open relays are prime targets for spammers because they allow spammers to send out floods of emails by piggybacking on an insecure email infrastructure. As open relays are locked down—becoming closed relays or authenticated relays—adversaries are often resorting to hijacking authenticated user accounts through social engineering or credential stuffing/spraying/guessing attacks.
+- Email Security goals include:
+    - Restrict access to messages to their intended recipients (i.e., privacy and confidentiality)
+    - Maintain the integrity of messages
+    - Authenticate and verify the source of messages
+    - Provide for nonrepudiation
+    - Verify the delivery of messages
+    - Classify sensitive content within or attached to messages
+- **Secure Multipurpose Internet Mail Extensions (S/MIME)**  offers authentication and confidentiality to email through public key encryption, digital envelopes, and digital signatures. Authentication is provided through X.509 digital certificates issued by trusted third-party CAs. Privacy is provided through the use of Public Key Cryptography Standard (PKCS) standards-compliant encryption. Two types of messages can be formed using S/MIME: signed messages and secured enveloped messages. A signed message provides integrity, sender authentication, and nonrepudiation. An enveloped message provides recipient authentication and confidentiality.
 - **Pretty Good Privacy (PGP)**  is a peer-to-peer public-private key–based email system that uses a variety of encryption algorithms to encrypt files and email messages. PGP is not a standard but rather Open Source.
-
-- **DomainKeys Identified Mail (DKIM)** is a means to assert that valid mail is sent by an organization through verification of domain name identity. See dkim.org. 
-
-- **Sender Policy Framework (SPF)** To protect against spam and email spoofing, it operates by checking that inbound messages originate from a host authorized to send messages by the owners of the SMTP origin domain. 
-
+- **DomainKeys Identified Mail (DKIM)** is a means to assert that valid mail is sent by an organization through verification of domain name identity. See dkim.org.
+- **Sender Policy Framework (SPF)** To protect against spam and email spoofing, it operates by checking that inbound messages originate from a host authorized to send messages by the owners of the SMTP origin domain.
 - **Domain Message Authentication Reporting and Conformance (DMARC)** DMARC is a DNS-based email authentication system. It is intended to protect against business email compromise (BEC), phishing, and other email scams. Email servers can verify if a received message is valid by following the DNS-based instructions; if invalid, the email can be discarded, quarantined, or delivered anyway.
-
 - **STARTTLS** using Secure SMTP over TLS. STARTTLS (aka explicit TLS or opportunistic TLS for SMTP) will attempt to set up an encrypted connection with the target email server. STARTTLS is not a protocol but instead an SMTP command. Once the initial SMTP connection is made to the email server, the STARTTLS command will be used if the target server supports it. Otherwise, it will remain as plaintext. STARTTLS’s secure session will take place on TCP port 587. STARTTLS can also be used with IMAP connections, whereas POP3 connections use the STLS command to perform a similar function.
-
 - **Implicit SMTPS** This is the TLS-encrypted form of SMTP, which assumes the target server supports TLS. If accurate, then an encrypted session is negotiated. If not, then the connection is terminated because plaintext is not accepted. SMTPS communications are initiated against TCP port 465.
 
 
