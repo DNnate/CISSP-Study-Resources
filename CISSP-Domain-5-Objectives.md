@@ -11,7 +11,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - Federated Identity Management (FIM) systems link user identities in one system with other systems to implement SSO
 - **Access Control System**: ensuring access to assets is authorized and restricted based on business and security requirements
 - **Access Control Token**: based on the parameters like time, date, day etc a token defines access validity to a system
-- **Crossover Error Rate**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent
+- **Crossover Error Rate CER**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent
 - **FRR**: False Rejection Rate (Type 1) incorrectly denying authentication to a legit identity and therefore denying access
 - **FAR**: False Acceptance Rate (Type 2) incorrectly authenticating a claimed identity as legit, recognizing and granting access on that basis
 - **Ethical Wall**: the use of administrative, phyiscal/logical controls to establih/enforce separation of information, assets or job functions for need-to-know boundaries or prevent conflict of interest situations; AKA compartmentalization
@@ -51,7 +51,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - **Authentication**: verifies the subject’s identity by comparing one or more factors against a database of valid identities, such as user accounts
     - a core principle with authentication is that all subjects must have unique identities
     - identification and authentication occur together as a single two-step process
-    - users identify themselves with usernames and authenticate (or prove their identity) with passwords. Note: The practice of salting passwords (Salted hashes are stored and compared to passwords after they are salted and hashed) was specifically introduced to thwart rainbow table attacks, but it also thwarts the effectiveness of offline dictionary and brute-­force attacks. 
+    - users identify themselves with usernames and authenticate (or prove their identity) with passwords. ✏️NIST SP 800-­63B recommends users only be required to change their password if their current password is compromised. They do not recommend that users be required to change their password regularly at any interval.
+    - Note: The practice of 🔥salting passwords (Salted hashes are stored and compared to passwords after they are salted and hashed) was specifically introduced to thwart rainbow table attacks, but it also thwarts the effectiveness of offline dictionary and brute-­force attacks. 
 - 5.2.1 Identiy management (IdM) implementation
     - Identity and access management is a collection of processes and techologies that are used to control access to critical assets; it's purpose is the management of access to information, systems, devices, and facilities
     - Identity Management (IdM) implementation techniques generally fall into two categories:
@@ -92,19 +93,24 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - note: requiring users to enter a password and a PIN is NOT multifactor (both are something you know)
         - Type 1 + Type 2 + Type 3: A user needs to enter a password (Type 1 something you know ✏️), use a smart card (Type 2 something you have ✏️), and undergo a retina scan (Type 3 something you are ✏️).
         - Yubikeys, Titan Security Keys, and similar devices are examples of tokens i.e Type 2
-        - **Synchronous** soft tokens, such as Google Authenticator, use a time-based algorithm that generates a constantly changing series of codes. **Asynchronous** tokens typically require a challenge to be entered on the token to allow it to calculate a response, which the server compares to the response it expects.
+        - **🔔Synchronous** soft tokens, such as Google Authenticator, use a time-based algorithm that generates a constantly changing series of codes. A synchronous token generates and displays onetime passwords e.g every 60 seconds, that are synchronized with an authentication server.
+        - **🔔Asynchronous** tokens typically require a challenge to be entered on the token to allow it to calculate a response, which the server compares to the response it expects. An asynchronous token uses a challenge-­response process to generate the onetime password.
     - Two-factor methods:
         - **Hash Message Authentication Code (HMAC)**: includes a hash function used by the HMAC-based One-Time Password (HOTP) standard to create onetime passwords
         - **Time-based One-Time Password (TOTP)**: similar to HOTP, but uses a timestamp and remains valid for a certain time frame (e.g. 30 or 60 seconds)
             - e.g. phone-based authenticator app, where your phone is mimicking a hardware TOTP token (combined with userid/password is considered two-factor or two-step authentication)
         - **Email challenge**: popular method, used by websites, sending the user an email with a PIN
-        - Short Message Service (SMS) to send users a text with a PIN is another 2-factor method; note that NIST SP 800-63B points out vulnerabilities, and deprecates use of SMS as a two-factor method for federal agencies
+        - Short Message Service (SMS) to send users a text with a PIN is another 2-factor method; note that ✏️NIST SP 800-63B points out vulnerabilities, and deprecates use of SMS as a two-factor method for federal agencies
 - 5.2.3 Accountability
     - Two important security elements in an access control system are authorization and accountability
         - **Authorization**: subjects are granted access to objects based on proven identities
         - **Accountability**: users and other subjects can be held accountable for their actions when auditing is implemented
+            - Accurate identification and authentication are required to support accountability.
+            - Authentication is necessary to ensure a network supports accountability. Note that authentication indicates that a user claimed an identity such as with a username and proved the identity such as with a password. In other words, valid authentication includes identification. However, identification doesn't include authentication. If users could just claim an identity without proving it's their identity, the system doesn't support accountability.
     - **Auditing**: tracks subjects and records when they access objects, creating an audit trail in one or more audit logs
-    - Auditing provides accountability
+        - Auditing provides accountability
+        - Auditing occurs after the logs have been created
+        - Logs record events, including who took an action, but without accurate identification and authentication, the logs can’t be relied on.
 - 5.2.4 Session management
     - Session management is important to use with any type of authentication system to prevent unauthorized access
     - Desktop/laptops: recommendation to use screensavers, although modern OSs have timeout/lock features
@@ -120,7 +126,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - Cognitive Passwords: security questions that are gathered during account creation, which are later used as questions for authentication (e.g. name of pet, color of first car etc)
         - one of the flaws associated with cognitive passwords is that the information is often available on social media sites or general internet searches
 - 5.2.6 Federated Identity Management (FIM)
-    - Federated Identity Management (FIM) systems (a form of SSO) are often used by cloud-based apps
+    - Federated Identity Management (FIM) systems (a form of SSO. 📝SSO is a benefit of identity management, not a type of identity management.) are often used by cloud-based apps
     - A federated identity links a user’s identity in one system with multiple identity management systems
     - FIM allows multiple orgs to join a federation or group, agreeing to share identity information
         - users in each org can log in once in their own org, and their credentials are matched with a federated identity
