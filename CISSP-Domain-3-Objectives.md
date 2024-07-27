@@ -168,7 +168,10 @@ You may find this domain to be more technical than others, and if you have exper
 - **Access Control Matrix**: 
     - An access control matrix assembles ACLs from multiple objects into a single table.
     - The rows of that table are the ACEs of a subject across those objects, thus a capabilities list.
-      
+- **Capability Tables**: 
+    - They are different from ACLs in that a capability table is focused on subjects (such as users, groups, or roles).
+    - For example, a capability table created for the accounting role will include a list of all objects that the accounting role can access as well as the specific privileges assigned to the accounting role for these objects. In con-
+trast, ACLs are focused on objects.
 
 [3.3](#3.3) Select controls based upon systems security requirements (OSG-9 Chpt 8)
 
