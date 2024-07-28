@@ -412,6 +412,12 @@ that describe the object that can be impacted; and contextual attributes like lo
 - Constrained Interface: Applications use constrained interfaces or restricted interfaces to restrict what users can do or see based on their privileges. 
 - Content-­Dependent Control: This restrict access to data based on the content within an object. A database view is a content-­dependent control.
 - Context-­Dependent Control: These require specific activity before granting users access. e.g Time-based controls to logon on at certain hours
-- Need to Know: ensures that subjects are granted access only to what they need to know for their work tasks and job functions.
-- Least Privilege: This ensures that subjects are granted only the privileges they need to perform their work tasks and job functions. This is sometimes lumped together with need to know. The only difference is that least privilege will also include rights to take action on a system.
-- Separation of Duties and Responsibilities: This ensures that sensitive functions are split into tasks performed by two or more employees. It helps prevent fraud and errors by creating a system of checks and balances.
+- Need to Know: ensures that subjects are granted access only to what they need to know for their work tasks and job functions. The need-­to-­know policy operates on the basis that any given system user should be granted access only to portions of sensitive information or materials necessary to perform some task. It is the requirement to have access to, knowledge about, or possession of data to perform specific work tasks, but no more.
+    - 🔔Need to know refers to permissions only
+- Least Privilege: This ensures that subjects are granted only the privileges they need to perform their work tasks and job functions. This is sometimes lumped together with need to know. The only difference is that least privilege will also include rights to take action on a system. An organization applies the least privilege principle to ensure employees receive only the
+access they need to complete their job responsibilities.
+    - 🔔The principle of least privilege includes both rights and permissions
+- Separation of Duties and Responsibilities: (Somtimes shorted SED) This ensures that sensitive functions are split into tasks performed by two or more employees. It helps prevent fraud and errors by creating a system of checks and balances. It ensures that no single entity can perform all the tasks for a job or function.
+- Job Rotation: A job rotation policy has employees rotate jobs or job responsibilities and can help detect collusion and fraud.
+- Mandatory Vacation policies: ensure that employees take an extended time away from their jobs, requiring someone else to perform their job responsibilities, which increases the likelihood of discovering fraud.
+- Note📝 When creating new user accounts, default acceess for new users should always be "No Access", if no authorization mechanism is specified.
