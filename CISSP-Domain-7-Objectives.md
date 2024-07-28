@@ -662,6 +662,7 @@ of litigation is imminent.
         2) full backup on Monday night, then run incremental backups every other night of the week
             - if a failure occurs Saturday morning, restore Monday’s full backup and then restore each incremental backup in the original chronological order
 
+- **Transaction log** backups are specifically designed to support database servers and would not be effective on a file server.
 
     | Feature    | Full Backup  | Incremental Backup | Differential Backup |
     |---------------|------------------|-----------------------|--------------|
@@ -671,7 +672,6 @@ of litigation is imminent.
     | **Recovery Speed**    | Fastest, as all data is in one place                | Slowest, as it may require multiple incremental backups to restore to a specific point | Faster than incremental since it requires the last full backup and the last differential backup |
     | **Complexity**        | Simplest, with no dependency on previous backups    | Complex, as it depends on a chain of backups from the last full backup to the most recent incremental backup | Less complex than incremental, requires the last full backup and the last differential backup for restoration |
     | **Best Use Case**     | When backup time and storage space are not issues Ideal for less frequent backups | Suitable for environments where daily changes are minimal and quick backups are necessary | Ideal for environments where storage space is a concern but restoration time needs to be relatively quick |
-
 
     - Three main techniques used to create offsite copies of DB content: electronic vaulting, remote journaling, and remote mirroring
         - **🔥electronic vaulting**: where database backups are moved to a remote site using bulk transfers, but it does not do so in real time.
@@ -699,9 +699,8 @@ of litigation is imminent.
     - When designing a disaster recovery plan, it’s important to keep your goal in mind — the restoration of workgroups to the point that they can resume their activities in their usual work locations
         - sometimes it's best to develop separate recovery facilities for different work groups
     - To recover your business operations with the greatest possible efficiency, you should engineer the disaster recovery plan so that those business units with the highest priority are recovered first
- 
-**Transaction log** backups are specifically designed to support database servers and would not be effective on a file server.
-    
+- **Mutual assistance agreements**: (MAAs) provide an inexpensive alternative to disaster recovery sites, but they are not commonly used because they are difficult to enforce. Organizations participating in an MAA may also be shut down by the same disaster, and MAAs raise confidentiality concerns.
+      
 - 7.10.3 Multiple processing sites
     - One of the most important elements of the disaster recovery plan is the selection of alternate processing sites to be used when the primary sites are unavailable
         - **cold sites**: standby facilities large enough to handle the processing load of an organization and equipped with appropriate electrical and environmental support systems
@@ -854,7 +853,7 @@ of litigation is imminent.
 [7.12](#7.12) Test Disaster Recovery Plans (DRP) (OSG-9 Chpt 18)
 - Every DR plan must be tested on a periodic basis to ensure that the plan’s provisions are viable and that it meets an org’s changing needs
 - Five main test types:
-    - checklist tests
+    - Read-through tests
     - structured walk-throughs
     - simulation tests
     - parallel tests
@@ -874,6 +873,7 @@ list review, team members each review the contents of their disaster recovery ch
 - 7.12.3 Simulation
     - **Simulation tests**: similar to the structured walk-throughs, where team members are presented with a scenario and asked to develop an appropriate response
         - unlike read-throughs and walk-throughs, some of these response measures are then tested
+        -  ❗Simulation tests may shut down noncritical business units. 
         - this may involve the interruption of noncritical business activities and the use of some operational personnel
 - Checklist tests, structured walk-­throughs, and simulations are all test types that do not involve actually activating the alternate site.
 - 7.12.4 Parallel
