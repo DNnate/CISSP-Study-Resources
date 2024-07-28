@@ -329,7 +329,7 @@ of litigation is imminent.
     - **Memoradum of Understanding (MOU)**: documents the intention of two entities to work together toward a common goal
     - **Operational Level Agreement (OLA)**: is between internal service organizations and does not involve customers.
     - **Statement of Work (SOW)**: SOW is an addendum to a contract describing work to be performed.
-    - **Software Escrow Agreements** place a copy of the source code for a software package in the hands of an independent third party who will turn the code over to the customer if the vendor ceases business operations.
+    - **Software Escrow Agreements** place a copy of the source code for a software package in the hands of an independent third party who will turn the code over to the customer if the vendor ceases business operations. Software escrow agreements place the application source code in the hands of an independent third party, thus providing firms with a “safety net” in the event a developer goes out of business or fails to honor the terms of a service agreement.
 
 [7.5](#7.5) Apply resource protection (OSG-9 Chpt 16)
 - Media management should consider all types of media as well as short- and long-term needs and evaluate:
@@ -649,10 +649,11 @@ of litigation is imminent.
         - **Differential backup**: changes since the last full backup
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - unlike full and incremental backups, the differential backup process does not change the archive bit
+            - Differential backups involve always storing copies of all files modified since the most recent full backup, regardless of any incremental or differential backups created during the intervening time period.
         - the most important difference between incremental and differential backups is the time needed to restore data in the event of an emergency
         - A differential backup would back up all data modified since the last full backup, which could be a substantial amount.
-            - a combination of full and differential backups will require only two backups to be restored: the most recent full backup and the most recent differential backup
-            - a combination of full backups with incremental backups will require restoration of the most recent full backups as well as all incremental backups performed since that full backup
+            - 🔥a combination of full and differential backups will require only two backups to be restored: the most recent full backup and the most recent differential backup.
+            - 🔥a combination of full backups with incremental backups will require restoration of the most recent full backups as well as all incremental backups performed since that full backup, which can make the number of backups and the number of required restorations large.
             - differential backups don’t take as long to restore, but they take longer to create than incremental
     - Backup storage best practices include keeping copies of the media in at least one offsite location to provide redundancy should the primary location be unavailable, incapacitated, or destroyed; common strategy is to store backups in a cloud service that is itself geographically redundant
     - Two commmon backup strategies:
@@ -714,12 +715,14 @@ of litigation is imminent.
                 - A rented space with power, cooling, and connectivity that can accept equipment as part of a recovery effort
         - **warm sites**: a warm site is better than a cold site because, in addition to the shell of a building, basic equipment is installed
             - a warm site contains the data links and preconfigured equipment necessary to begin restoring operations, but no usable data for information
+            - ✏️contain workstations, servers, and the communications circuits necessary to achieve operational status but require the 🎆restoration of data from backup.
             - unlike hot sites, however, warm sites do not typically contain copies of the client’s data
             - activation of a warm site typically takes at least 12 hours from the time a disaster is declared
             - It relies on shared storage and backups for recovery
         - **hot sites**: a fully operational offsite data processing facility equipped with hardware and software; a backup facility that is maintained in constant working order, with a full complement of servers, workstations, and comm links
             - a hot site is usually a subscription service
             - the data on the primary site servers is periodically or continuously replicated to corresponding servers at the hot site, ensuring that the hot site has up-to-date data
+            - ✏️contain workstations, servers, and the communications circuits necessary to achieve operational status as well as 🎆current data or near-­real-­time copies of the operational data
             - advantages:
                 - unsurpassed level of disaster recovery protection
             - disadvanages:
@@ -776,7 +779,8 @@ of litigation is imminent.
 - **Business Continuity Management (BCM)**: the process and function by which an organization is responsible for creating, maintaining, and testing BCP and DRP plans
 - **Business Continuity Planning (BCP)**: focuses on the survival of the business processes when something unexpected impacts it. Business continuity planning is focused on keeping business functions uninterrupted when a disaster strikes. Preventing business interruption is the goal of business continuity
 - **Disaster Recovery Planning (DRP)**: focuses on the recovery of vital technology infrastructure and systems. disaster recovery planning picks up where business continuity planning leaves off. Disaster recovery planning guides an organization through recovery of normal operations at the primary facility. The goal of DRP is to restore regular business activity as quickly as possible
-- Organizations can choose whether to develop business continuity planning or disaster recovery planning plans, although it is highly recommended that they do both. 
+- Organizations can choose whether to develop business continuity planning or disaster recovery planning plans, although it is highly recommended that they do both.
+- Tip❗People should always be your highest priority in business continuity planning. Any life safety systems, e.g fire suppression systems, should always receive high prioritization❗
     - BCM, BCP, and DRP are ultimately used to achieve the same goal: the continuity of the business and its critical and essential functions, processes, and services
 - The key BCP/DRP steps are:
     - Develop contingency planning policy
@@ -850,12 +854,14 @@ of litigation is imminent.
 [7.12](#7.12) Test Disaster Recovery Plans (DRP) (OSG-9 Chpt 18)
 - Every DR plan must be tested on a periodic basis to ensure that the plan’s provisions are viable and that it meets an org’s changing needs
 - Five main test types:
-    - **checklist tests:** The checklist review is the least disruptive type of disaster recovery test. During a check-
-list review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes.
+    - checklist tests
     - structured walk-throughs
     - simulation tests
     - parallel tests
     - full-interruption tests
+- 7.12.0 **checklist tests:** The checklist review is the least disruptive type of disaster recovery test. During a check-
+list review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes.
+
 - 7.12.1 Read-through/tabletop
     - **Read-through test**: one of the simplest to conduct, but also one of the most critical; copies of a DR plan are distributed to the members of the DR team for review, accomplishing three goals:
         - ensure that key personnel are aware of their responsibilities and have that knowledge refreshed periodically
@@ -869,12 +875,13 @@ list review, team members each review the contents of their disaster recovery ch
     - **Simulation tests**: similar to the structured walk-throughs, where team members are presented with a scenario and asked to develop an appropriate response
         - unlike read-throughs and walk-throughs, some of these response measures are then tested
         - this may involve the interruption of noncritical business activities and the use of some operational personnel
-
+- Checklist tests, structured walk-­throughs, and simulations are all test types that do not involve actually activating the alternate site.
 - 7.12.4 Parallel
-    - **Parallel tests**: represent the next level, and involve relocating personnel to the alternate recovery site and implementing site activation procedures
+    - **Parallel tests**: represent the next level, and involve 🔥relocating personnel to the alternate recovery site and implementing site activation procedures
         - the relocated employees perform their DR responsibilities just as they would for an actual disaster
         - operations at the main facility are not interrupted
         - During a parallel test, the team actually activates the disaster recovery site for testing, but the primary site remains operational.
+        -  it fully evaluates operations at the backup facility but does not shift primary operations responsibility from the main site
 
 - 7.12.5 Full interruption
     - **Full-interruption tests**: operate like parallel tests, but involve actually shutting down operations at the primary site and shifting them to the recovery site
@@ -883,11 +890,12 @@ list review, team members each review the contents of their disaster recovery ch
      
 - 7.12.6 Communication
     - **DR Comunication**: DR testing communication encompasses various internal and external stakeholders with different needs and communication methods/preferences
-        - Internal Stakeholders:
+        - 🔥Internal Stakeholders:
             - Disaster Recovery Team: Reliable real-time channels for real-time cordination, problem-solving and decision making e.g Chats, Teams, Zoom
             - Managment: Needs periodic updates on progress and potential impact on normal operations. e.g emails
             - Wide Company: General awareness and ahead of scheduled tests minimizes confusion. Pre-test and post-test announements.
-        - External Stakeholders:
+            - The executive summary provides a high-­level view of the entire organization’s disaster recovery efforts. This document is useful for the managers and leaders of the firm as well as public relations personnel who need a nontechnical perspective on this complex effort.
+        - 🔥External Stakeholders:
             - Customer/Clients: In large scale tests or real life scenarios, there should be proactive controlled communications about potential service disruptions. When there are impacts, ETAs for resolution are important for preserving trust and managing expectations.
             - Partners: if testing may impact join systems or join operations, inform partners of relevant timelines and agree on cordination channels.
             - Regulators: Certain industries have reporting requirements. For testing that triggers downtime of regulated systems, advanced notification of post-test results may be mandatory. Always include compliance experts in plan creation and testing.
