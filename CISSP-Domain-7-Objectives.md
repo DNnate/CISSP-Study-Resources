@@ -194,7 +194,17 @@ of litigation is imminent.
     - Both SOAR and SIEM integrated platforms can help detect and, in the case of SOAR, respond to threats against your software development efforts. It reduces Mean Time to Detection MTTD and accelerates response.
     - Security information and event management (SIEM) systems do correlate information from multiple sources and perform analysis, but they stop short of providing automated playbook responses. That is the realm of security orchestration, automation, and response (SOAR) platforms.
         - devs can be resistent to anything that slows down the development process, and this is where DevSecOps can help build the right culture, and balance the needs of developers and security
-          
+
+- **Syslog**: RFC 5424, the Syslog Protocol, describes the syslog protocol, which is used to send event notification messages. A centralized syslog server receives these syslog messages from devices on a network. The protocol defines how to format the messages and how to ✏️send them to the syslog server but ✏️not how to handle them. Syslog has historically been used in Unix and Linux systems. These systems include the syslogd daemon, which handles all incoming syslog messages, similar to how a SIEM server provides centralized logging. Some syslogd extensions, such as syslog-­ng and rsyslog, allow the syslog server to accept messages from any source, not just Unix and Linux systems.
+- **Sampling or data extraction**, is the process of extracting specific elements from a large collection of data to construct a meaningful representation or summary of the whole. In other words, sampling is a form of data reduction that allows someone to glean valuable information by looking at only a small sample of data in an audit trail.
+- Both statistical and nonstatistical sampling are valid mechanisms to create summaries or overviews of large bodies of audit data. However, statistical sampling is more reliable and mathematically defensible.
+     - Statistical sampling uses precise mathematical functions to extract meaningful information from a large volume of data. There is always a risk that sampled data is not an accurate representation of the whole body of data, and statistical sampling can identify the margin of error.
+     - Nonstatistical sampling is discretionary sampling, or sampling at the auditor’s discretion. It doesn’t offer an accurate representation of the whole body of data and will ignore events that don’t reach the clipping level threshold. However, it is effective when used to focus on specific events. Additionally, nonstatistical sampling is less expensive and easier to implement than statistical sampling.
+          - Clipping Levels: Clipping is a form of nonstatistical sampling. It selects only events that exceed a clipping level, which is a predefined threshold for the event. The system ignores events until they reach this threshold.
+          - For example, failed logon attempts are common in any system, since users can easily enter the wrong password once or twice. Instead of raising an alarm for every single failed logon attempt, a clipping level can be set to raise an alarm only if it detects five failed logon attempts within a 30-­minute period.
+          - Many account lockout controls use a similar clipping level. They don’t lock the account after a single failed logon. Instead, they count the failed logons and lock the account only when the predefined threshold is reached.
+          - Clipping levels are widely used in the process of auditing events to establish a baseline of routine system or user activity. The monitoring system raises an alarm to signal abnormal events only if the baseline is exceeded.
+	  
 - 7.2.3 Continuous monitoring
     - After a SIEM is set up, configured, tuned, and running, it must be routinely updated and continuously monitored to function effectively
     - Effective continuous monitoring encompasses technology, processes, and people
@@ -215,10 +225,13 @@ of litigation is imminent.
 - 7.2.4 Egress monitoring
     - It’s important to monitor traffic exiting as well as entering a network, and **Egress monitoring** refers to monitoring outgoing traffic to detect unauthorized data transfer outside the org (AKA data exfiltration)
     - Common methods used to detect or prevent data exfiltration are data loss prevention (DLP) techniques and monitoring for steganography. Note stegaography (embedded and not visible to naked eye) and watermark (visible to naked eye)
+    - A network-­based data loss prevention (DLP) system monitors outgoing traffic (egress monitoring) and can thwart data exfiltration attempts.
 - 7.2.5 Log management
     - **Log management**: refers to all the methods used to collect, process, and protect log entries (see SIEM definition above)
     - **rollover logging**: allows admins to set a maximum log size, when the log reaches that max, the system begins overwriting the oldest events in the log
 - 7.2.6 Threat intelligence (e.g. threat feeds, threat hunting)
+    - **Threat hunting** is the process of actively searching for infections or attacks within a network. Threat intelligence refers to the actionable intelligence created after analyzing incoming data, such as threat feeds. Threat hunters use threat intelligence to search for specific threats. Additionally, they may use a kill chain model to mitigate these threats. Thret hunters regularly monitor threat feeds and using that information to check systems within the network. Their goal is to discover any infections or attacks that haven’t been detected by existing tools.
+    - **Threat Feeds**:Threat feeds provide organizations with a steady stream of raw data. By analyzing threat feeds, security administrators can learn of current threats. They can then use this knowledge to search through the network, looking for signs of these threats.
     - **Threat intelligence**: an umbrella term encompassing threat research and analysis and emerging threat trends; gathering data on potential threats, including various sources to get timely info on current threats; information that is aggregated, transformed, analyzed, interpreted, or enriched to provide the necessary context for the decision-making process
     - **Kill chain**: military model (used for both offense and defense):
         - find/identify a target through reconnaissance
@@ -235,7 +248,23 @@ of litigation is imminent.
         - **installation**: code that exploits the vulnerability then installs malware with a backdoor allowing attacker remote access
         - **command and control**: attackers maintain a command and control system, which controls the target and other compromised systems. Social media is commonly used as a command-and-control system for botnet activity.
         - **actions on objectives**: attackers execute their original goals such as theft of money, or data, destruction of assets, or installing additional malicious code (eg. ransomware)
-    
+
+- **The MITRE ATT&CK Matrix**: (created by MITRE and viewable at attack.mitre.org) is a knowledge base of identified tactics, techniques, and procedures (TTPs) used by attackers in various attacks. It is complementary to kill chain models, such as the Cyber Kill Chain. However, unlike kill chain models, the tactics are not an ordered set of attacks. Instead, ATT&CK lists the TTPs within a matrix. Additionally, attackers are constantly modifying their attack methods, so the ATT&CK Matrix is a living document that is updated at least twice a year. The matrix includes the following tactics:
+     - Reconnaissance
+     - Resource development
+     - Initial access
+     - Execution
+     - Persistence
+     - Privilege escalation
+     - Defense evasion
+     - Credential access
+     - Discovery
+     - Lateral movement
+     - Collection
+     - Command and control
+     - Exfiltration
+     - Impact
+  
 - 7.2.7 User and Entity Behavior Analytics (UEBA)
     - **UEBA (aka UBA)**: focuses on the analysis of user and entity behavior as a way of detecting inappropriate or unauthorized activity (e.g. fraud, malware, insider attacks etc); analysis engines are typically included with SIEM solutions or may be added via subscription
     - **Behavior-based detection**: AKA statistical intrusion, anomaly, and heuristics-based detection, starts by creating a baseline of normal activities and events; once enough baseline data has been accumulated to determine normal activity, it can detect abnormal activity (that may indicate a malicious intrusion or event)
@@ -395,8 +424,8 @@ of litigation is imminent.
     - It's common for the IR team to create a report when they complete a lessons learned review
         - based on the findings, the team may recommend changes to procedures, the addition of security controls, or even changes to policies
         - management will decide what recommendations to implement and is responsible for the remaining risk for any recommendations they reject
-
-- NOTE: Incident management DOES NOT include a counterattack against the attacker
+        - The remediation and lessons learned stages include root cause analysis to determine the cause and recommend solutions to prevent a reoccurrence
+- NOTE📝 Incident management DOES NOT include a counterattack against the attacker
 
 - Incident Response Summary:
 
@@ -439,7 +468,7 @@ of litigation is imminent.
         - job rotation policies
         - mandatory vacation policies (At least 1 week)
         - audit trails (Audit trails provide documentation on what happened, when it happened, and who did it. IT personnel create audit trails by examining logs.)
-        - honeypots or honeynets
+        - honeypots or honeynets (A honeypot is a system that typically has pseudo flaws and fake data to lure intruders. A honeynet is two or more honeypots in a network.)
         - Darknet: A monitored network without any hosts. It is a segment of unused network address space that should have no network activity and, therefore, may be easily used to monitor for illicit activity.
         - intrusion detection systems
         - violation reports
@@ -475,18 +504,23 @@ of litigation is imminent.
             - e.g. a web application firewall (WAF) inspects traffic going to a web server and can block malicious traffic such as SQL injection attacks and cross-site scripting (XSS) attacks
         - next-generation firewall (NGFW): functions as a unified threat management (UTM) device and combines several capabilities, including traditional functions such as packet filtering and stateful inspection, and can also perform packet inspection allowing identification and blocking of malicious traffic
 
-- 7.7.2 Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS)
+- 7.7.2 Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS): Network-­based intrusion detection systems (NIDSs) and intrusion protection systems (IPSs) primarily monitor ✏️incoming traffic for threats.
     - Intrusion Detection Systems (IDSs) and Intrusion Prevention Systems (IPSs) are two methods organizations typically implement to detect and prevent attacks
     - **Intrusion detection**: a specific form of monitoring events, usually in real time, to detect abnormal activity indicating a potential incident or intrusion
         - Intrusion Detection System (IDS) automates the inspection of logs and real-time system events to detect intrusion attempts and system failures
         - IDSs are an effective method of detecting many DoS and DDoS attacks
         - an IDS actively watches for suspicious activity by monitoring network traffic and inspecting logs
+        - 📝An IDS is most likely to connect to a switch port configured as a mirrored port. 
         - an IDS is intended as part of a defense-in-depth security plan
-        - **knowledge-based detection**: AKA signature-based or pattern-matching detection, the most common method used by an IDS
-        - **behavior-based detection**: AKA statistical intrusion, anomaly, and heuristics-based detection; behavior-based IDSs use baseline, activity stats, and heuristic eval techniques to compare current activity against previous activity to detect potentially malicious events
-    - An IPS includes detection capabilities, you’ll see them referred to as intrusion detection and prevention systems (IDPSs)
+        - Active IDS, in addition to logging, can actively by changing the environmentidentifies the response after a threat is detected. Note📝 Active IDS is not the same as IPS becuase it is not deployed inline.
+        - Passive IDS respond passively by logging and sending notifications.
+        - A network-­based IDS can be both signature based and anomaly based.
+        - **🔥knowledge-based detection**: AKA 🎆signature-based or 🎆pattern-matching detection, the most common method used by an IDS. It uses known signatures to detect attacks. It can only detect attacks from known threats.
+        - **🔥behavior-based detection**: AKA 🎆statistical intrusion, 🎆anomaly-based, and 🎆heuristics-based detection; behavior-based IDSs use baseline, activity stats, and heuristic eval techniques to compare current activity against previous activity to detect potentially malicious events. It requires a baseline, and it then monitors traffic for any anomalies or changes when compared to the baseline.  The baseline can be outdated if the network is modified, so it must be updated when the environment changes. It can detect new security threats.
+    - **Intrusion prevention**: An IPS includes detection capabilities, you’ll see them referred to as intrusion detection and prevention systems (IDPSs)
         - an IPS includes all the capabilities of an IDS but can also take additional steps to stop or prevent intrusions
     - IDS/IPS should be deployed at strategic network locations to monitor traffic, such as at the perimeters, or between network segments, and should be configured to alert for specific types of scans and traffic patterns
+    - 📝IPS is usually placed in line with the network traffic, so it is placed before the switch.
     - See NIST SP 800-94
 
 - 7.7.3 Whitelisting/blacklisting
@@ -525,6 +559,7 @@ of litigation is imminent.
         - 🔥trojan: A Trojan horse is malware that looks harmless or desirable but contains malicious code; trojans are often found in easily downloadable software; a trojan inserts backdoors or trapdoors into other programs or systems
         - 🔥bot: an emerging class of mobile code; employing limited machine learning capabilities to assist with user requests for help or assistance, automation of or assistance with workflows, data input quality validation etc
         - 🔥botnet: many infected systems that have been harnessed together and act in unison. Botnets are used for a wide variety of malicious purposes, including scanning the network for vulnerable systems, conducting brute-force attacks against other systems, mining cryptocurrency, and sending out spam messages.
+        - 🔥bot herder: A botnet is a collection of compromised computing devices (often called bots or zombies) organized in a network controlled by a criminal known as a bot herder. Bot herders use a command-­and-­control server to remotely control the zombies and often use the botnet to launch attacks on other systems or send spam or phishing emails. Bot herders also rent botnet access out to other criminals.
         - 🔥boot sector infectors: pieces of malware that can install themselves in the boot sector of a drive
         - 🔥hoaxes/pranks: not actually software, they're usually part of social engineering—via email or other means—that intends harm (hoaxes) or a joke (pranks)
         - 🔥logic bomb: malware inserted into a program which will activate and perform functions suiting the attacker at some later date/conditions are met; code that will execute based on some triggering event
@@ -946,3 +981,10 @@ list review, team members each review the contents of their disaster recovery ch
     - 🔥Bluetooth MitM Attacks: In Bluetooth MitM attacks, attackers exploit vulnerabilities in the Bluetooth protocol to intercept and manipulate data exchanged between Bluetooth-enabled devices. This can lead to unauthorized access to sensitive information or control over Bluetooth devices.
     - 🔥HTTP Session Hijacking: In this attack, the attacker steals a user's session ID or token to impersonate the user and gain unauthorized access to web applications. This can be achieved through various means, such as intercepting cookies transmitted over insecure HTTP connections or exploiting vulnerabilities in session management.
 
+- **Basic Security Controls**: Basic preventive measures can prevent many incidents from occurring. These include
+    - keeping systems  and applications up to date
+    - removing or disabling unneeded protocols and services
+    - using intrusion detection and prevention systems
+    - using antimalware software with up-­to-­date signatures
+    - enabling both host-­based and network-­based firewalls
+    - Implement configuration and system management processes. 
