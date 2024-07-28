@@ -105,9 +105,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - Iris Scans: Focusing on the colored area around the pupil, iris scans are the second most accurate form of biometric authentication. Iris scans are considered more acceptable by general users than retina scans because scans can occur from far away and are less intrusive. Scans can often be done from 6 to 12 meters away (about 20 to 40 feet). However, some scanners can be fooled with a high-quality image in place of a person’s eye. Additionally, accuracy can be affected by changes in lighting and the usage of some glasses and contact lenses.
     - Palm Scans: Palm scanners scan the palm of the hand for identification. They use near-infrared light to measure vein patterns in the palm, which are as unique as fingerprints.
     - Biometric devices are rated for performance by examining the different types of errors they produce:
-      - **Crossover Error Rate CER**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent. Devices with lower CERs are more accurate than devices with higher CERs
-      - **FRR**: False Rejection Rate (Type 1 Error) incorrectly denying authentication to a legit identity and therefore denying access
-      - **FAR**: False Acceptance Rate (Type 2 Error) incorrectly authenticating a claimed identity as legit, recognizing and granting access on that basis
+      - **🔥Crossover Error Rate CER**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent. Devices with lower CERs are more accurate than devices with higher CERs
+      - **🔥FRR**: False Rejection Rate (Type 1 Error) incorrectly denying authentication to a legit identity and therefore denying access (Similar to False Positive of IPS)
+      - **🔥FAR**: False Acceptance Rate (Type 2 Error) incorrectly authenticating a claimed identity as legit, recognizing and granting access on that basis (Similar to False negetive of IPS)
 
 - 5.2.3 Accountability
     - Two important security elements in an access control system are authorization and accountability
