@@ -295,8 +295,8 @@ reassembles the activity of individual users to track their interaction with a w
     - Use phishing simulations to evaluate the effectiveness of their security awareness programs
 
 - 6.3.6 Disaster Recover (DR) and Business Continuity (BC)
-    - **Business Continuity (BC)**: the processes used by an organization to ensure, holistically, that its vital business processes remain unaffected or can be quickly restored following a serious incident
-    - **Disaster Recovery (DR)**: is a subset of BC, that focuses on restoring information systems after a disaster
+    - **Business Continuity (BC)**: the processes used by an organization to ensure, holistically, that its vital business processes remain unaffected or can be quickly restored following a serious incident. Preventing business interruption is the goal of business continuity
+    - **Disaster Recovery (DR)**: is a subset of BC, that focuses on restoring information systems after a disaster. the goal of DRP is to restore regular business activity as quickly as possible.
     - These processes need to be periodically accessed, and regular testing of disaster recovery and business continuity controls provide organizations with the assurance they are effectively protected against disruptions to business ops
     - Protection of life is of the utmost importance and should be dealt with first before attempting to save material things
 
