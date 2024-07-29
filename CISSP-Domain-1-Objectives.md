@@ -30,6 +30,18 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
   - Only an employer or someone with a contracting relationship with the individual may file a complaint under canon III.
   - Other professionals may file a complaint under canon IV. It is important to note that this is not limited to cybersecurity professionals. Anyone who is certified or licensed as a professional and subscribes to a code of ethics as part of that licensure or certification is eligible to file a canon IV complaint.
 
+- **Ten Commandments of Computer Ethics**: The Computer Ethics Institute created its own code of ethics (http://cpsr.org/issues/ethics/cei). The Ten Commandments of Computer Ethics are as follows:
+     - 1. Thou shalt not use a computer to harm other people.
+       2. Thou shalt not interfere with other people’s computer work.
+       3. Thou shalt not snoop around in other people’s computer files.
+       4. Thou shalt not use a computer to steal.
+       5. Thou shalt not use a computer to bear false witness.
+       6. Thou shalt not copy proprietary software for which you have not paid.
+       7. Thou shalt not use other people’s computer resources without authorization or proper compensation.
+       8. Thou shalt not appropriate other people’s intellectual output.
+       9. Thou shalt think about the social consequences of the program you are writing or the system you are designing.
+       10. Thou shalt always use a computer in ways that ensure consideration and respect for your fellow humans.
+
 [1.2](#1.2) Understand and apply security concepts (OSG-9 Chpt 1)
 - 1.2.1 Confidentiality, integrity, and availability, authenticity and nonrepudiation (5 Pillars)
   - **Confidentiality**:
