@@ -60,19 +60,31 @@ of litigation is imminent.
     - prevent future occurrences
     - mitigate the impact of the incident on the organization
 - Types of investigations:
-    - **administrative**: an investigation that is focused on policy violations
+    - **administrative**: an investigation that is focused on policy violations. They are internal to an orgaisation.
+        - Operational investigations have the loosest standards for collection of information. They are not intended to produce evidence because they are for internal operational purposes only. In addition to resolving the operational issue, operational investigations often conduct a root cause analysis that seeks to identify the reason that an operational issue occurred. 
     - **criminal**: conducted by law enforcement, this type of investigation tries to determine if there is cause to believe (beyond a reasonable doubt) that someone committed a crime
         - the goal is to gather evidence that can be used to convict in court
         - the job of a security professional is to preserve evidence, ensure law enforcement has been contacted, and assist as necessary
     - **civil**: non-criminal investigation for matters such as contract disputes
         - the goal of a civil investigation is to gather evidence that can be used to support a legal claim in court, and is typically triggered from an imminent or on-going lawsuit
         - the level of proof is much lower for a civil compared to a criminal investigation
+        - Most civil cases do not follow the beyond a reasonable doubt standard of proof. Instead, they use the weaker preponderance of the evidence standard. 
     - **regulatory**: investigation initiated by a government regulator when there is reason to believe an organization is not in compliance
         -  this type of investigation varies significantly in scope and could look like any of the other three types of investigation depending on the severity of the allegations
         - as with criminal investigations, it is key to preserve evidence, and assist the regulator’s investigators
+- **Electronic Discovery**: In legal proceedings, each side has a duty to preserve evidence related to the case and, through the discovery process, share information with their adversary in the proceedings. This discovery process applies to both paper records and electronic records, and the electronic discovery (or eDiscovery) process facilitates the processing of electronic information for disclosure. The Electronic Discovery Reference Model (EDRM) describes a standard process for conducting eDiscovery with nine aspects:
+    - Information Governance: Ensures that information is well organized for future eDiscovery efforts.
+    - Identification: Locates the information that may be responsive to a discovery request when the organization believes that litigation is likely.
+    - Preservation: Ensures that potentially discoverable information is protected against alteration or deletion.
+    - Collection: Gathers the relevant information centrally for use in the eDiscovery process.
+    - Processing: Screens the collected information to perform a “rough cut” of irrelevant information, reducing the amount of information requiring detailed screening.
+    - Review: Examines the remaining information to determine what information is relevant to the request and removing any information protected by attorney-­client privilege.
+    - Analysis: Performs deeper inspection of the content and context of remaining information.
+    - Production: Places the information into a format that may be shared with others and delivers it to other parties, such as opposing counsel.
+    - Presentation: Displays the information to witnesses, the court, and other parties.
 
 - 7.1.1 Evidence collection and handling
-    - Evidence collection is complex, should be done by professionals, and can be thrown out of court if incorrectly handled
+    - Evidence (or artifacts) collection is complex, should be done by professionals, and can be thrown out of court if incorrectly handled
     - It’s important to preserve original evidence
     - International Organization on Computer Evidence (IOCE) six principles for media, network and software analysis:
         - all general forensic and procedural principles must be applied to digital evidence collection 
@@ -100,10 +112,15 @@ of litigation is imminent.
         - **secondary evidence**:
             - less powerful and reliable than primary evidence (e.g. copies of originals, witness oral evidence etc)
             - if primary evidence is available secondary of the same content is not valid
-        - **real evidence**: this type of evidence includes physical objects, such as computers, hard drives, and other storage devices, that can be brought into a court of law
+        - **real evidence**: also known as object evidence. this type of evidence includes physical objects, such as computers, hard drives, and other storage devices, that can be brought into a court of law
+        - **Documentary Evidence**: includes any written items brought into court to prove a fact at hand. This type of evidence must also be authenticated. Two additional evidence rules apply specifically to documentary evidence:
+             - The best evidence rule states that when a document is used as evidence in a court proceeding, the original document must be introduced.
+             - The parol evidence rule states that when an agreement between parties is put into written form, the written document is assumed to contain all the terms of the agreement and no verbal agreements may modify the written agreement.
         - **direct evidence**: this type of evidence is based on the observations of a witness or expert opinion and can be used to prove a fact at hand (with backup evidence support)
         - **circumstantial evidence**: this type of evidence is based on inference and can be used to support a conclusion, but not prove it
         - **corroborative evidence**: this type of evidence is used to support other evidence and can be used to strengthen a case
+        - **Demonstrative Evidence** is evidence used to support testimonial evidence. It consists of items that may or may not be admitted into evidence themselves but are used to help a witness explain a concept or clarify an issue. 
+        - **Testimonial Evidence** is, quite simply, evidence consisting of the testimony of a witness, either verbal testimony in court or written testimony in a recorded deposition. Witnesses must take an oath agreeing to tell the truth.
         - **hearsay evidence**: type of evidence that is based on statements made by someone outside of court and is generally not admissible
         - **best evidence rule**: states that the original evidence should be presented in court, rather than a copy or other secondary evidence
     - It is important to note that evidence should be collected and handled in a forensically sound manner to ensure that it is admissible in court and to avoid any legal issues
@@ -157,6 +174,20 @@ of litigation is imminent.
         - web browsers
         - mobile devices
         - hard drives, flash drives
+- Forensics:
+    - Media Analysis: a branch of computer forensic analysis, involves the identification and extraction of information from storage media e.g magnetic media (e.g., hard disks, tapes) or optical media (e.g., CDs, DVDs, Blu-­ray discs). Analysts should never access hard drives or other media from a live system. Instead, they should power off the system (after collecting other evidence), remove and then attach the storage device to a dedicated forensic workstation, using a write blocker. Write blockers are hardware adapters that physically sever the portion of the cable used to connect the storage device that would write data to the device, reducing the likelihood of accidental tampering with the device. The analyst should immediately calculate a cryptographic hash of the device contents and then use forensic tools to create a forensic image of the device: a bitwise copy of the data stored on the device. The analyst should then compute the cryptographic hash of that image to ensure that it is identical to the original media contents.
+    - Memory Analysis: This is a tricky undertaking, since it can be difficult to work with memory without actually altering its contents. When gathering the contents of memory, analysts should use trusted tools to generate a memory dump file and place it on a forensically prepared device, such as a USB drive. As with other types of digital evidence, the analyst should compute a cryptographic hash of the dump file to later prove its authenticity.
+    - Network Analysis: This is often difficult to reconstruct due to the volatility of network data—­if it isn’t deliberately recorded at the time it occurs, it generally is not preserved. Network forensic analysis depend on the use of preexisting security controls that log network activity.
+    - Software Analysis: review of software code, looking for backdoors, logic bombs, or other security vulnerabilities. 
+    - Hardware/Embedded Device Analysis: This may include a review of Personal computers, Smartphones, Tablet computers, Embedded computers in cars, security systems, and other devices. Analysts conducting these reviews must have specialized knowledge of the systems under review. 
+- **Major Categories of Computer Crime**: A computer crime is a crime (or violation of a law or regulation) that involves a computer. The crime could be against the computer, or the computer could have been used in the actual commission of the crime.
+    - Military and intelligence attacks:attacks are launched primarily to obtain secret and restricted information from law enforcement or military and technological research sources. 
+    - Business attacks: The gathering of a competitor’s confidential intellectual property, also called corporate espionage or industrial espionage. focus on illegally jeopardizing the confidentiality, integrity, or availability of information and systems operated by a business
+    - Financial attacks:  carried out to unlawfully obtain money or services. Financial attacks may also take the form of cybercrime for hire
+    - Terrorist attacks: The purpose of a terrorist attack is to disrupt normal life and instill fear, whereas a military or intelligence attack is designed to extract secret information. 
+    - Grudge attacks:  attacks that are carried out to damage an organization or a person. The damage could be in the loss of information or information processing capabilities or harm to the organization or a person’s reputation. The motivation behind a grudge attack is usually a feeling of resentment
+    - Thrill attacks: are the attacks launched only for the fun of it. Attackers who lack the ability to devise their own attacks will often download programs that do their work for them. These attackers are often called script kiddies 
+    - Hacktivist attacks: These attackers, known as hacktivists (a combination of hacker and activist), often combine political motivations with the thrill of hacking. Anonymous and LulzSec and use tools like the Low Orbit Ion Cannon (LOIC) to create large-­scale DoS attacks. At the extreme end of hacktivism, suicide hackers engage in highly destructive activity with the knowledge that they will most likely be caught.
 
 [7.2](#7.2) Conduct logging and monitoring activities (OSG-9 Chpts 17,21)
 
