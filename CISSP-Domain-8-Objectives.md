@@ -79,9 +79,9 @@
 inputs and outputs to inform the test plan. 
 - **Relational database model**: data elements and records arragned in tables which are related or linked to each other to implement business logic, where data records of different structures or types are needed together in the same activity. Records are identified using a variety of keys.
     - **Candidate Keys**: is a subset of attributes that can be used to uniquely identify any record in a table. No two records in the same table will ever contain the same values for all attributes composing a candidate key. Each table may have one or more candidate keys, which are chosen from column headings.
-    - **Primary Keys**: is selected from the set of candidate keys for a table to be used to uniquely identify the records in a table. Each table has only one primary key, selected by the database designer from the set of candidate keys. The RDBMS enforces the uniqueness of primary keys by disallowing the insertion of multiple records with the same primary key.
+    - **Primary Keys**: is selected from the set of candidate keys for a table to be used to 🧠uniquely identify the records in a table. Each table has only one primary key, selected by the database designer from the set of candidate keys. The RDBMS enforces the uniqueness of primary keys by disallowing the insertion of multiple records with the same primary key.
     - **Alternate Keys**: Any candidate key that is not selected as the primary key is referred to as an alternate key.
-    - **Foreign Keys**: is used to enforce relationships between two tables, also known as referential integrity. Referential integrity ensures that if one table contains a foreign key, it corresponds to a still-­existing primary key in the other table in the relationship. It makes certain that no record/tuple/row contains a reference to a primary key of a nonexistent record/tuple/row.
+    - **Foreign Keys**: is used to enforce relationships between two tables, also known as referential integrity. Referential integrity ensures that if one table contains a foreign key, it corresponds to a still-­existing primary key in the other table in the relationship. It makes certain that no record/tuple/row contains a reference to a primary key of a nonexistent record/tuple/row. Foreign keys are used to enforce 🧠referential integrity constraints between tables that participate in a relationship.
     - **Normalization**: Database developers strive to create well-­organized and efficient databases. To assist with this effort, they’ve defined several levels of database organization known as normal forms. The process of bringing a database table into compliance with normal forms is known as normalization.The three most common are first normal form (1NF), second normal form (2NF), and third normal form (3NF). Each of these forms adds requirements to reduce redundancy in the tables, eliminate misplaced data, and perform a number of other housekeeping tasks. The normal forms are cumulative—­in other words, to be in 2NF, a table must first be 1NF compliant. Before making a table 3NF compliant, it must first be in 2NF.
     - Relational database transactions have four required characteristics: atomicity, consistency, isolation, and durability. Together, these attributes are known as the ACID model, which is a critical concept in the development of database management systems.
         - **Atomicity**: Database transactions must be atomic—­that is, they must be an “all-­or-­nothing” affair. If any part of the transaction fails, the entire transaction must be rolledback as if it never occurred.
@@ -185,6 +185,7 @@ inputs and outputs to inform the test plan.
         - It is mainly used where time and cost is not important
         - Still used in public utility projects and even building of nuclear reactors
         - In the waterfall model, the software development process follows five sequential steps that are, in order: Requirements, Design, Coding, Testing, and Maintenance.
+        - The ✏️Iterative waterfall model uses a seven-­stage approach to software development and includes a feedback loop that allows development to return to the previous phase to correct defects discovered during the subsequent phase.
     - **Spiral model**: improved waterfall dev process providing for a cycle of Plan, Do, Check, Act (PDCA) sub-stages at each phase of the SDLC; a risk-driven development process that follows an iterative model while also including waterfall elements
         - following defined phases to completion and then repeats the process, resembling a spiral
         - It allows for multiple iterations of the waterfall-style process
@@ -199,9 +200,11 @@ inputs and outputs to inform the test plan.
         - the tight integration of development and operations also calls for the simultaneous integration of security controls
         - security must be tightly integrated and move with the same agility
         - The DevOps approach to technology management seeks to integrate software development, operations, and quality assurance in a seamless approach that builds collaboration between the three disciplines.
+        - The three elements of the DevOps model are 🔥software development, 🔥quality assurance, and 🔥IT operations.
     - **DevSecOps**: refers to the integration of development, security, and operations
         - provides for a merger of phased review (as in the waterfall SDLC) with the DevOps method, to incorporate the needs for security, safety, resilience or other emerging properties in the final system, at each turn of the cycle of development
         - DevSecOps supports the concept of software-defined security, where security controls are actively managed into the CI/CD pipeline
+        - The four elements of the DevSecOps model are 🔥software development, 🔥quality assurance, 🔥IT operations and 🔥Information security (introduced in the DevSecOps model)
 
 - 8.1.2 Maturity models (e.g., Capability Maturity Model (CMM), Software Assurance Maturity Model (SAMM))
     - Software Engineering Institute (SEI) (Carnegie Mellon University) created the Capability Maturity Model for Software (AKA Software Capability Maturity Model, abbreviated SW-CMM, CMM, or SCMM)
@@ -217,7 +220,7 @@ inputs and outputs to inform the test plan.
     - **Software Assurance Maturity Model (SAMM)**: an open source project maintained by the Open Web Application Security Project (OWASP)
         - provides a framework for integrating security into the software development and maintenance processes and provides orgs with the ability to assess their maturity
         - SAMM associates software development with 5 business functions:
-            - Governance: the activities needed to manage software development processes
+            - 📝Governance: the activities needed to manage software development processes
                 - this function includes practices for:
                     - strategy
                     - metrics
@@ -225,24 +228,23 @@ inputs and outputs to inform the test plan.
                     - compliance
                     - education
                     - guidance
-            - Design: process used to define software requirements and develop software
+            - 📝Design: process used to define software requirements and develop software
                 - this function includes practices for:
-                    - threat modeling: designed to reduce the number of security-related design
-and coding flaws as well as the severity of other flaws.
-                    - threat assessment
+                    - threat modeling: designed to reduce the number of security-related design and coding flaws as well as the severity of other flaws.
+                    - threat assessment using threatmodelling techniques
                     - security requirements
                     - security architecture
-            - Implementation: process of building and deploying software components and managing flaws
+            - 📝Implementation: process of building and deploying software components and managing flaws
                 - this function includes:
                     - secure build
                     - secure deployment
                     - defect management practices
-            - Verification: activities undertaken to confirm code meets business and security requirements
+            - 📝Verification: activities undertaken to confirm code meets business and security requirements
                 - this function includes:
                     - architecture assessment
                     - requirements-driven testing
                     - security testing
-            - Operations: actions taken to maintain security throughout the software lifecycle after code is released
+            - 📝Operations: actions taken to maintain security throughout the software lifecycle after code is released
                 - function includes:
                     - incident management
                     - environment management
@@ -278,8 +280,9 @@ and coding flaws as well as the severity of other flaws.
 - 8.1.4 Change management
     - Change management (AKA control management) plays an important role when monitoring systems in a controlled environment, and has 3 basic components:
         - **Request Control**: process that provides an organized framework within which users can request modifications, managers can conduct cost/benefit analysis, and developers can prioritize tasks
-            - Change Request: The request process begins with a user-initiated request for a feature. Change and release
-control are initiated by developers seeking to implement changes. Design review is a phase of the change approval process initiated by developers when they have a completed design.
+            - Change Request: The request process begins with a user-initiated request for a feature. Change and release control are initiated by developers seeking to implement changes. Design review is a phase of the change approval process initiated by developers when they have a completed design.
+            - Request control provides users with a framework to request changes and developers with the opportunity to prioritize those requests
+            - Request control provides an organized framework for users to request modifications.
         - **Change Control**: the process of controlling specific changes that need to take place during the life cycle of a system, serving to document the necessary change-related activities 
             - where change management is the project manager’s responsibility for the overarching process, change control is what devs do to ensure the software or environment doesn’t break when changed
             - change control is basically the process used by devs to re-create a situation encountered by a user and analyze the appropriate changes; it provides a framework where multiple devs can create and test a solution prior to rolling it out into a prod environment
@@ -550,8 +553,7 @@ Fail-Open: Opens up or grants access during a failure, allowing processes to con
         - **Lost Updates** Occur when two different processes make updates to a database, unaware of each other’s activity.
         - **Dirty Reads** Occur when a process reads a record from a transaction that did not successfully commit. 
     - Aggregation: SQL provides a number of functions that combine records from one or more tables to produce potentially useful information. This process is called aggregation. Aggregation attacks are used to collect numerous low-­ level security items or low-­value items and combine them to create something of a higher security level or value.
-    - Inference: Inference attacks involve combining several pieces of nonsensitive information to gain access to information that should be classified at a higher level. However, inference makes use of the human mind’s deductive capacity rather than the raw
-mathematical ability of modern database platforms.
+    - Inference: Inference attacks involve combining several pieces of nonsensitive information to gain access to information that should be classified at a higher level. However, inference makes use of the human mind’s deductive capacity rather than the raw mathematical ability of modern database platforms.
     - Cell suppression: is the concept of hiding individual database fields or cells or imposing more security restrictions on them.
     - Semantic integrity: ensures that user actions don’t violate any structural rules. It also checks that all stored data types are within valid domain ranges, ensures that only logical values exist, and confirms that the system complies with any and all uniqueness constraints.
     - Polyinstantiation: in the context of databases, occurs when two or more rows in the same relational database table appear to have identical primary key elements but contain different data for use at differing classification levels. Polyinstantiation is often used as a defense against some types of inference attacks, but it introduces additional storage costs to store copies of data designed for different clearance levels. It allows the storage of multiple different pieces of information in a database at different classification levels to prevent attackers from inferring anything about the
