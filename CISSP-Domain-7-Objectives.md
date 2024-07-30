@@ -1034,5 +1034,6 @@ list review, team members each review the contents of their disaster recovery ch
 - Physical Access Control:
      - Locks and Keys, Security Guards, Access Cards/Biometric Systems, CCTV, Security Alarms
 - Administrative Access Control:
-     - Access Control Policies, User Account Management, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
-- Technical Access Control: passwords, multi-factor authentication (MFA), or digital certificates, Encryption, Firewalls, IDS/IPS, Access Control Lists (ACLs)
+     - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
+- Technical Access Control:
+     - passwords, multi-factor authentication (MFA), or digital certificates, Encryption, Firewalls, IDS/IPS, Access Control Lists (ACLs)
