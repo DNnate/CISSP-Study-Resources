@@ -615,12 +615,17 @@ access rights.
             - Resident Viruses: These viruses embed themselves in the system's memory. They stay active even after the host program is terminated, allowing them to infect other files and programs. E.g Randex, CMJ.
             - Non-resident Viruses: These viruses do not embed themselves in the memory. They act immediately by infecting files as soon as they are executed and do not remain in memory. E.g Cascade, Vienna.
             - Ransomware: While often classified separately from traditional viruses, ransomware can be seen as a type of malicious code that encrypts the victim's data. It demands a ransom for the decryption key. It spreads like a virus, often through email attachments or malicious links. E.g WannaCry, Cryptolocker.
-            - Encrypted virus: uses encryption to conceal its malicious code. The virus contains a decryption routine and an encrypted copy of the virus code. Each time the virus infects a new file, it generates a new encryption key and encrypts its
-            - code. When the infected file is executed, the decryption routine is triggered, decrypting the virus code and allowing it to execute.
-         
-- Multitasking is processing more than one task at the same time. In most cases, multitasking is simulated by the OS (using multiprogramming or pseudo-­simultaneous execution) even when not supported by the processor.
-- Multicore is also able to perform simultaneous execution but does so with multiple execution cores on one or more CPUs.
-- Multistate is a type of system that can operate at various security levels (or classifications, risk levels, etc.)
-- Multithreading permits multiple concurrent tasks (i.e., threads) to be performed within a single process.
-- Multiprocessing: In a multiprocessing environment, a multiprocessor computing system (that is, one with more than one CPU) harnesses the power of
-more than one processor to complete the execution of a multithreaded application. 
+            - Encrypted virus: uses encryption to conceal its malicious code. The virus contains a decryption routine and an encrypted copy of the virus code. Each time the virus infects a new file, it generates a new encryption key and encrypts its code. When the infected file is executed, the decryption routine is triggered, decrypting the virus code and allowing it to execute.
+
+- **Computing Resilience**:        
+    - Multitasking is processing more than one task at the same time. In most cases, multitasking is simulated by the OS (using multiprogramming or pseudo-­simultaneous execution) even when not supported by the processor.
+    - - Multicore is also able to perform simultaneous execution but does so with multiple execution cores on one or more CPUs.
+      - Multistate is a type of system that can operate at various security levels (or classifications, risk levels, etc.)
+      - Multithreading permits multiple concurrent tasks (i.e., threads) to be performed within a single process.
+      - Multiprocessing: In a multiprocessing environment, a multiprocessor computing system (that is, one with more than one CPU) harnesses the power of more than one processor to complete the execution of a multithreaded application.
+
+- **Application Resilience**: two related principles: Scalability and elasticity are common features of cloud platforms and are a major driver toward the use of these platforms in enterprise computing environments.
+    - Scalability says that applications should be designed so that computing resources they require may be incrementally added to support increasing demand.
+        - Vertical Scalling: This may include adding more resources to an existing computing instance, which is known as vertical scaling or “scaling up.”
+        - Horizontal Scaling: It may also include adding additional instances to a pool, which is known as horizontal scaling, or “scaling out.”
+    - Elasticity goes a step further than scalability and says that applications should be able to automatically provision resources to scale when necessary and then automatically deprovision those resources to reduce capacity (and cost) when they are no longer needed. You can think of elasticity as the ability to scale both up and down on an as-­needed basis.
