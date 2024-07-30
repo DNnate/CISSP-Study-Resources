@@ -472,6 +472,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - symmetric encryption uses a shared secret key available to all users of the cryptosystem 
         - symmetric encryption is faster than asymmetric encryption because smaller keys can be used for the same level of protection 
         - downside is that users or systems must find a way to securely share the key and hope the key is used only for the specified communication
+        - symmetric encryption uses session keys
         - primarily employed to perform bulk encryption and provides only for the security service of confidentiality
         - Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.
         - "same" is a synonym for symmetric 
@@ -495,6 +496,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
                 -  Disadvantage is that if the key stream is reused (keystream reuse), it can compromise security, as it makes the cipher vulnerable to attacks. Ensuring that the same key stream is not reused is critical and can complicate key management.
  
     - **Asymmetric** encryption: process that uses different keys for encryption and decryption, and in which the decryption key is computationally not possible to determine given the encryption key itself
+        - uses public and private key 
         - Asymmetric (AKA public key, since one key of a pair is available to anybody) algorithms provide convenient key exchange mechanisms and are scalable to very large numbers of users (addressing the two most significant challenges for users of symmetric cryptosystems) 
         - Asymmetric cryptosystems avoid the challenge of sharing the same secret key between users, by using pairs of public and private keys to allow secure communication without the overhead of complex key distribution
         - **Public key**: one part of the matching key pair, which can be shared or published
