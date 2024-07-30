@@ -625,6 +625,7 @@ available before it can be used and then disassembled after the transmission is 
         - however, organizations still use hypervisors to virtualize servers and desktops for increased density and reliability
             - to host multiple servers on a single hypervisor, the Ethernet and storage networks must also be virtualized 
             - VMware vSphere and Microsoft Hyper-V both use virtual network and storage switches to allow communication between virtual machines and the physical network; guest OSs running in the VMs use a synthetic network or storage adapter, which is relayed to the physical adapter on the host
+            - Securing virtual machine images and snapshots is a key consideration when designing secure virtualization environments. Virtual machines can be easily copied or cloned, potentially exposing sensitive data or allowing unauthorized access. Proper security measures must be taken to secure virtual machine images and snapshots.
             - SDN on the hypervisor can control the VLANs, port isolation, bandwidth and other aspects just as if it was a physical port
 - 4.3.6 Third-party connectivity
     - Any time an org’s network is connected directly to another entity’s network, their local threats and risks affect each other
