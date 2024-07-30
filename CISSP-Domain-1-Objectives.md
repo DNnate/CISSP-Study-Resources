@@ -488,6 +488,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - **Risk**: the possiblity or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result; the > the potential harm, the > the risk
 - 1.10.1 Risk assessment/analysis
   - **Risk Assessment**: used to identify the risks and set criticality priorities, and then risk response is used to determine the best defense for each identified risk
+  - The primary goal of a security risk assessment is to identify and analyze risks and then develop strategies to reduce them to an acceptable level.
   - Risk is threat with a vulnerability
   - Risk = threat * vulnerability (or probability of harm * severity of harm)
   - Addressing either the threat or threat agent or vulnerability directly results in a reduction of risk (known as threat mitigation)
