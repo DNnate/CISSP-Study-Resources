@@ -94,7 +94,6 @@
             - Metrics tell you how compliance with the agreement will be measured
         - Major CSPs make SOC 2 Type II (or other report) available on demand 
         - The use of vulnerability scanners and pen testers may be limited by the CSP's terms of service or cloud contractual arrangment.
-            - 
 
 [6.2](#6.2) Conduct security control testing (OSG-9 Chpt 15)
 - Security control testing can include testing of the physical facility, logical systems and applications; common testing methods:
