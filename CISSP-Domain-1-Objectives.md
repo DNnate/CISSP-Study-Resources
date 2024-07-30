@@ -736,13 +736,14 @@ Also see my articles on risk management:
 - EAL6 –Semi formally verified design and tested
 - EAL7 –Formally verified design and tested
 
-  ****System and Organization Controls (SOC)***
+ - **System and Organization Controls (SOC)**: A security audit systematically evaluates an organization’s security policies,
+standards, and procedures to ensure compliance with established security requirements.
 - SOC 1: An audit and compliance report that focuses strictly on a company’s financial statements and controls that can impact a customer’s financial statements. A company that performs credit card processing is likely to require a SOC
 1 audit and compliance report.
 - SOC 2: An audit and compliance report that evaluates an organization based on AICPA’s five “Trust Services principles”: privacy, security, availability, processing integrity, and confidentiality. Many organizations undergo SOC 2 auditing and present a SOC 2 report to regulators and customers to demonstrate compliance with industry standard security controls.
 - SOC 3: This is a “lite” version of a SOC 2 report and abstracts or removes all sensitive details. A SOC 3 report generally indicates whether an organization has demonstrated each of the five Trust Services principles without disclosing specifics (like exactly what they do or don’t do). Companies make SOC 3 reports available to the public and restrict SOC 2 reports to trusted parties.
 
-***QUANTITATIVE RISK MANAGEMENT**
+- **QUANTITATIVE RISK MANAGEMENT**:
 
 - **EF**: The exposure factor is the percentage of the facility that risk managers expect will be damaged if a risk materializes. It is calculated by dividing the amount of damage by the asset value. 
   - EF is the percentage of an asset's value that is expected to be lost if a specific threat event occurs.
