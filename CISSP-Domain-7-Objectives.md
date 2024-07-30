@@ -617,7 +617,7 @@ of litigation is imminent.
 - **Neural networks** attempt to use complex computational techniques to model the behavior of the human mind. Through the use of the Delta rule or Learning rule, neural networks are able to learn from experience.
 - **Knowledge banks** are a component of expert systems, which are designed to capture and reapply human knowledge.
 - **Decision support systems** are designed to provide advice to those carrying out standard procedures and are often driven by expert systems.
-- **Expert Systems** uses details about the current situation, and the inference engine uses a combination of logical reasoning and fuzzy logic techniques to draw a conclusion based on past experience.
+- **Expert Systems** uses details about the current situation, and the inference engine uses a combination of logical reasoning and fuzzy logic techniques to draw a conclusion based on past experience. Expert systems use a knowledge base consisting of a series of 🧠“if/then” statements to form decisions based on the previous experience of human experts.
 
 
 [7.8](#7.8) Implement and support patch and vulnerability management (OSG-9 Chpt 16)
