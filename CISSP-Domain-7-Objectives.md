@@ -1030,3 +1030,9 @@ list review, team members each review the contents of their disaster recovery ch
     - using antimalware software with up-­to-­date signatures
     - enabling both host-­based and network-­based firewalls
     - Implement configuration and system management processes. 
+
+- Physical Access Control:
+     - Locks and Keys, Security Guards, Access Cards/Biometric Systems, CCTV, Security Alarms
+- Administrative Access Control:
+     - Access Control Policies, User Account Management, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
+- Technical Access Control: passwords, multi-factor authentication (MFA), or digital certificates, Encryption, Firewalls, IDS/IPS, Access Control Lists (ACLs)
