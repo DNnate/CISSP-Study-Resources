@@ -855,6 +855,13 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
          - Smoke-actuated systems use photoelectric or radioactive ionization sensors as triggers. Either method monitors for light or radiation obstruction or reduction across an air gap caused by particles in the air. It is intended to be triggered by smoke, but dust and steam can sometimes trigger the alarm.
          - The radioactive ionization-based smoke detectors use americium as a source of alpha particles and a Geiger counter to detect the rate of these particles' transmission across the air gap. This element produces such low levels of radiation that a layer of dead skin cells is sufficient to block its transmission.
          - Incipient smoke detection systems, also known as aspirating sensors, are able to detect the chemicals typically associated with the very early stages of combustion before a fire is other wise detectible via other means. These devices are even more costly than flame-actuated sensors and are also only used in high-risk or critical environments.
+
+- Physical Access Control:
+     - Locks and Keys, Security Guards, CCTV, Security Alarms
+- Administrative Access Control:
+     - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
+- Technical Access Control:
+     - passwords, multi-factor authentication (MFA), or digital certificates, Encryption, Firewalls, IDS/IPS, Access Control Lists (ACLs), Access Cards/Biometric Systems
            
 - 3.10 Information System Life Cycle
     - a structured framework for managing an information system from its intial conception to its retirement.
