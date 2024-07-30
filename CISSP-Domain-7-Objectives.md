@@ -299,7 +299,7 @@ of litigation is imminent.
 - 7.2.7 User and Entity Behavior Analytics (UEBA)
     - **UEBA (aka UBA)**: focuses on the analysis of user and entity behavior as a way of detecting inappropriate or unauthorized activity (e.g. fraud, malware, insider attacks etc); analysis engines are typically included with SIEM solutions or may be added via subscription
     - **Behavior-based detection**: AKA statistical intrusion, anomaly, and heuristics-based detection, starts by creating a baseline of normal activities and events; once enough baseline data has been accumulated to determine normal activity, it can detect abnormal activity (that may indicate a malicious intrusion or event)
-    - Behavior-based IDSs use the baseline, activity statistics, and heuristic evaluation techniques to compare current activity against previous activity to detect potentially malicious events
+    - Behavior-based IDSs use the baseline, profiles, activity statistics, and heuristic evaluation techniques to compare current activity against previous activity to detect potentially malicious events
     - **Static code scanning techniques**: the scanner scans code in files, similar to white box testing
     - **Dynamic techniques**: the scanner runs executable files in a sandbox to observe their behavior.
 
