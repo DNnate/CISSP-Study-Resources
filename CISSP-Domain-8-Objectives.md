@@ -20,7 +20,7 @@
 - **ACID Test**: data integrity provided by means of enforcing atomicity, consistency, isolation, and durability policies
 - **Aggregation**: ability to combine non-sensitive data from separate sources to create sensitive info
 - **Arbitrary code**: alternate set of instructions and data that an attacker attempts to trick a processor into executing
-- **Buffer overflow**: source code vulnerability allowing access to data locations outside of the storage space allocated to the buffer; can be triggered by attempting to input data larger than the size of the buffer
+- **Buffer overflow**: source code vulnerability allowing access to data locations outside of the storage space allocated to the buffer; can be triggered by attempting to input data larger than the size of the buffer. Input that is too large can “overflow” a data structure to affect other data stored in the computer’s memory.
 - **Bypass attack**: attempt to bypass front-end controls of a database to access information
 - **Certification**: comprehensive technical security analysis of a system to ensure it meets all applicable security requirements
 - **Citizen programmers**: organizational members who codify work-related knowledge, insights, and ideas into (varying degress of) usable software; the process and result is ad hoc, difficult to manage, and usually bereft of security considerations
@@ -113,8 +113,8 @@ temporarily separated from each other so that one does not interfere with the ot
 - **Bounds checking** is a form of input validation, but it is typically used to ensure that numeric input falls within an acceptable range
 - **Limit Check** which is the verification that input is within a preset range or domain
 - **Threat surface**: total set of penetrations of a boundary or perimeter that surrounds or contains system elements
-- **TOCTOU attack**: time of check vs time of use (TOCTOU) attack takes advantage of the time delay between a security check (such as authentication or authorization) being performed and actual use of the asset
-- **Trapdoor/backdoor**: hidden mechanism that bypasses access control measures; an entry point into an architecture or system that is inserted in software by devs during development to provide a method of gaining access for modification/support; can also be inserted by an attacker, bypassing access control measures designed to prevent unauthorized software changes
+- **TOCTOU attack**: time of check vs time of use (TOCTOU) attack takes advantage of the time delay between a security check (such as authentication or authorization) being performed and actual use of the asset. Time-­of-­check to time-­of-­use (TOCTTOU) attacks exploit timing differences that lead to race conditions. TOC/TOU is a type of timing vulnerability that occurs when a program checks access permissions too far in advance of a resource request.
+- **Trapdoor/backdoor**: hidden mechanism that bypasses access control measures; an entry point into an architecture or system that is inserted in software by devs during development to provide a method of gaining access for modification/support; can also be inserted by an attacker, bypassing access control measures designed to prevent unauthorized software changes. Backdoors are code that allows those with knowledge of the backdoor to bypass authentication mechanisms
 
 - 8.1.1 Development methodologies (e.g. Agile, Waterfall, DevOps, DevSecOps)
     - **Agile methodology**: a project management approach to development that involves breaking the project into phases and emphasizes continuous collaboration and improvement; teams follow a cycle of planning, executing, and evaluating
@@ -569,9 +569,9 @@ absence of information.
 - **Cardinality & Degree** :The cardinality of a table refers to the number of ✏️rows in the table, whereas the degree of a table is the number of ✏️columns. In this case, a table has three columns (name, telephone number, and customer ID), so it has a degree of three.        - 
 
 - **Common Web Application Vulnerabilities**
-    - Cross-Site Scripting (XSS): XSS attacks involve injecting malicious scripts into web pages, which are then executed in the context of another user’s browser. These scripts can steal cookies, session tokens, or other sensitive information from users, manipulate the content of the web page, or perform actions on behalf of the user. Input validation is the most effective defense against cross-site scripting attacks. XSS attacks may take advantage of the use of reflected input in a web application where input provided by one user is displayed to another user.
-    - Cross-Site Request Forgery (CSRF or XSRF): CSRF attacks force authenticated users to execute unwanted actions on a web application in which they are currently authenticated. By tricking a user into clicking a link or loading an image, an attacker can send unauthorized requests to the web application.
-    - SQL Injection: Injecting malicious SQL statements into an entry field for execution on a backend database. Server-side inout validation is effective against SQL injection. Client-side input validation is not an effective control against any type of attack because the attacker can easily bypass the validation by altering the code on the client. Escaping restricted characters prevents them from being passed to the database, as does parameterization. Limiting database permissions prevents dangerous code from executing.
+    - Cross-Site Scripting (XSS): XSS attacks involve injecting malicious scripts into web pages, which are then executed in the context of another user’s browser. These scripts can steal cookies, session tokens, or other sensitive information from users, manipulate the content of the web page, or perform actions on behalf of the user. Input validation is the most effective defense against cross-site scripting attacks. Escaping restricted characters/metacharacters is also a good defence against XSS attacks.  XSS attacks may take advantage of the use of 🧠reflected input in a web application where input provided by one user is displayed to another user. In a reflected attack, the attacker can embed the attack within the URL so that it is reflected to users who follow a link.
+    - Cross-Site Request Forgery (CSRF or XSRF): CSRF attacks force authenticated users to execute unwanted actions on a web application in which they are currently authenticated. By tricking a user into clicking a link or loading an image, an attacker can send unauthorized requests to the web application. Cross-­site request forgery (XSRF) attacks exploit authentication trust between browser tabs.
+    - SQL Injection: Injecting malicious SQL statements into an entry field for execution on a backend database. Server-side inout validation is effective against SQL injection. Client-side input validation is not an effective control against any type of attack because the attacker can easily bypass the validation by altering the code on the client. Escaping restricted characters prevents them from being passed to the database, as does parameterization. Limiting database permissions prevents dangerous code from executing. Developers of web applications should leverage parameterized queries to limit the application’s ability to execute arbitrary code.
     - Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to adjacent memory locations being overwritten. The best protection against buffer overflow attacks is server-side input validation. This
 technique limits user input to approved ranges of values that fit within allocated buffers.
     - Broken Authentication and Session Management: Flaws in the authentication and session management functions that can be exploited to impersonate other users e.g Session ID exposure, weak password management.
@@ -591,14 +591,18 @@ technique limits user input to approved ranges of values that fit within allocat
 
 
 - **Malware: (Malicious Software)** is a general term used to describe any software intentionally designed to cause damage to a computer, server, client, or computer network. It encompasses a wide range of malicious programs, including but not limited to:       
-    - Viruses: Programs that replicate themselves and infect other files on a computer.
-    - Trojans: Programs that appear legitimate but perform malicious activities when executed.
+    - Viruses: Programs that replicate themselves and infect other files on a computer. Require humn intervention to replicate.
+    - Trojans: Programs that appear legitimate but perform malicious activities when executed. Trojan horses masquerade as useful software but then carry out malicious functions after installation.
     - Ransomware: Encrypts files on a victim's system and demands ransom for decryption.
     - Spyware: Secretly gathers information about a user's activities.
     - Adware: Displays unwanted advertisements. classed as potentially unwanted programs (PUPs)
-    - Worms: Self-replicating malware that spreads over networks. e.g stuxnet, code red worm
-    - Rootkits: Conceal the existence of malware or malicious processes. it is commonly used for privilege escalation
-    - Logic Bombs: Malicious code that lies dormant until certain conditions are met.
+    - Worms: Self-replicating malware that spreads over networks. e.g stuxnet, code red worm. Worms are malicious code objects that move between systems under their own power, whereas viruses require some type of human intervention.
+    - Rootkits: Conceal the existence of malware or malicious processes. it is commonly used for 🧠privilege escalation. Privilege escalation attacks, such as those carried out by rootkits, seek to upgrade normal user accounts to administrative
+access rights.
+    - Logic Bombs: Malicious code that lies dormant until certain conditions are met. Logic bombs wait until certain conditions are met before delivering their malicious payloads.
+    - Cryptomalware: Designed to steals computing power and uses it to mine cryptocurrency.
+    - Remote access Trojans (RATs) are designed to grant attackers remote administrative access to systems.
+    - Potentially unwanted programs (PUPs) are any type of software that is initially approved by the user but then performs undesirable actions.
     
         - Viruses: A virus is a specific type of malware that replicates by inserting its code into other programs or files. When the infected program is executed, the virus code activates and spreads to other files or systems. The have the ability to modify other programs or files, making them contagious and capable of spreading rapidly. While all viruses are malware (because they are designed to cause harm), not all malware are viruses. For example, ransomware encrypts files for ransom, while spyware gathers information without replicating itself. Trojans masquerade as legitimate software but have malicious functions. Below are common types of viruses:
             - File Infectors: These viruses attach themselves to executable files (.exe, .com, etc.). They can overwrite the file, infect it, or alter the behavior of the executable. When the infected file is run, the virus is activated. e.g CIH (Chernobyl), Sasser.
