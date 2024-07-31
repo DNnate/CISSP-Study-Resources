@@ -133,11 +133,14 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
           - **27001 (Focuses on WHAT and WHY)** information security standards/controls: Outlines a framework for implementing, maintaining and continually improving ISMS Information Security Management System (ISMS is a set of policies, processes and controls that helps organization protect thier information assets). ISO 27001 Guides organizations in identifying assets and assessing thier values and information risks AND implementing mitigating security controls based on ISO 27002. CLoud platforms all have ISO 27001.
           - **27002 (Focuses on HOW)** information security guidance: Offers best practices and ontrol objectives related to key aspects of cybersecurity in support of ISO/IEC 27001. Focuses on cryptography, human resource security, operational security, and incident response. Serves as an official blueprint for orgs aiming to effectively safeguard information assets from cyber threats.
           - 27031 Business continuity    
-    -  **SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It integrates security into the business processes and aligns security measures with business goals. provides a structured method for designing, implementing and managing security architectures. SABSA Lifecycle Phases:
-     - Strategy Phase: Understanding business context and defining security goals.
-     - Design Phase: Developing the detailed architecture.
-     - Implementation Phase: Deploying the security solutions.
-     - Management Phase: Ongoing management and adaptation of the security architecture.  
+    -  **SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It integrates security into the business processes and aligns security measures with business goals. provides a structured method for designing, implementing and managing security architectures.
+    -  It provides a holistic, business-­driven approach to security architecture, encompassing everything from assessing business requirements to implementation and metrics.
+    -  It is recognized for its comprehensive life cycle approach to security architecture, from assessing business requirements to establishing a “chain of traceability” through strategy, concept, design, implementation, and metrics stages
+    -  SABSA Lifecycle Phases:
+        - Strategy Phase: Understanding business context and defining security goals.
+        - Design Phase: Developing the detailed architecture.
+        - Implementation Phase: Deploying the security solutions.
+        - Management Phase: Ongoing management and adaptation of the security architecture.  
     -  **FedRAMP (Federal Risk and Authorization Managment Programme)** regulates cloud security for US Gov. FedRAMP specifies a set of security controls based on NIST SP 800-53. It provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services.
     -  FIPS 140-3 Security requirement for cryptographic modules
     -  NIST
