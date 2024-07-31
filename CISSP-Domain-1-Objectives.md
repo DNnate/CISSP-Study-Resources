@@ -581,8 +581,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - provide a structured approach to identifying, assessing, prioritizing and manging risk to guide decision making
   - provides the overaching structure for making risk informed decisions
   - NIST established the **Risk Management Framework** (RMF) and the **Cybersecurity Framework** (CSF): the CSF is a set of guidelines for mitigating organizational cybersecurity risks, based on existing standards, guidelines, and practices
-  - CSF is aimed at private (commercial) businesses and purely optional
-  - RMF's audience is federal government agencies and is mandatory for thosie to which it applies
+  - **Risk management** facilitates the balance of operational and economic costs of protective measures with gains in mission capability.  Risk management is a systematic approach to identifying, assessing, and prioritizing risks to organizational operations, assets, or individuals resulting from the operation of information systems and the information processed, stored, or transmitted by those systems. It involves evaluating the likelihood and impact of risks and implementing cost-effective measures to reduce them to an acceptable level. By considering the costs of implementing protective measures against the benefits of mission capability, risk management helps organizations make informed decisions about how to allocate their resources to achieve their security goals. Performance testing, security audit, and risk assessment are all important components of a risk management program.
+  - CSF is aimed at ✏️private (commercial) businesses and purely optional
+  - RMF's audience is ✏️federal government agencies and is mandatory for thosie to which it applies
   - The RMF is intended as a risk management process to identify and respond to threats, and is defined in three core, interrelated Special Publications: 
     - SP 800-37 Rev 2, Risk Management Framework for Information Systems and Organizations
     - SP 800-39, Managing Information Security Risk
