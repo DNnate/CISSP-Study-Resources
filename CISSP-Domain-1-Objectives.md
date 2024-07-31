@@ -404,6 +404,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - 1.8.1 Business Impact Analysis (BIA)
     - **Business impact analysis (BIA)**: Identify the systems and services that the business relies on and assess the impacts that a disruption or outage would cause, including the impacts on business processes like accounts receivable and sales 
       - Also decide which systems and services you need to get things running again (think foundational IT services such as the network and directory, which many other systems rely on)
+      - The “business impact” asset valuation method involves evaluating the potential impact on the organization’s operations, reputation, or bottom line if the asset is compromised. The other options correspond to different asset valuation methods: “✏️financial value,” “✏️market value,” and “✏️intangible value,” respectively.
       - Finally, prioritize the order in which critical systems and services are recovered or brought back online. 
       - As part of the BIA, establish:
         - **Recovery Time Objectives (RTO)** (how long it takes to recover) The maximum acceptable amount of time that a system, application, or function can be down after a failure or disaster.
@@ -493,12 +494,12 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - Risk = threat * vulnerability (or probability of harm * severity of harm)
   - Addressing either the threat or threat agent or vulnerability directly results in a reduction of risk (known as threat mitigation)
   - All IT systems have risk; all orgs have risk; there is no way to elminiate 100% of all risks. Risk is typically composed of three Components:
-  - **Threat** (a potential cause of an incident that may result in harm)
-  - **Vulnerability** (a weakness that can be exploited by a threat)
-  - **Impact** (the potential harm caused by a threat exploiting a vulnerability)
-    - Instead upper management must decide which risks are acceptable, and which are not; There are two primary risk-assessment methodologies:
-      - **Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations
-      - **Qualitative Risk Analysis**: assigns subjective and intangible values to the loss of an asset and takes into account perspectives, feelings, intuition, preferences, ideas, and gut reactions
+  - **🔥Threat** (a potential cause of an incident that may result in harm)
+  - **🔥Vulnerability** (a weakness that can be exploited by a threat)
+  - **🔥Impact** (the potential harm caused by a threat exploiting a vulnerability)
+  - Instead upper management must decide which risks are acceptable, and which are not; There are two primary risk-assessment methodologies:
+      - **Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations e.g FAIR (Factor Analysis of Information Risk) is a quantitative risk management framework
+      - **Qualitative Risk Analysis**: assigns subjective and intangible values to the loss of an asset and takes into account perspectives, feelings, intuition, preferences, ideas, and gut reactions. It relies on subjective judgments to rank risk.
     - Most orgs employ a hybrid of both risk assessment methodologies
     - The goal of risk assessment is to identify risks (based on asset-threat parings) and rank them in order of criticality
 
@@ -564,6 +565,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - track the progress of risk mitigation
 - 1.10.9 Continuous improvement (e.g., Risk maturity modeling)
   - Risk analysis is performed to provide upper management with the details necessary to decide which risks should be mitigated, which should be transferred, which should be deterred, which should be avoided, and which should be accepted
+  - Effective risk communication and reporting should be clear, timely, and consistent.
   - An **Enterprise Risk Management** (ERM) program can be evaluated using an RMM 
   - **Risk Maturity Model (RMM)**: assesses the key indicators and activities of a mature, sustainable, and repeatable risk management process, typically relating the assessment of risk maturity against a five-level model such as:
     - **Ad hoc**: a chaotic starting point from which all orgs initiate risk management
@@ -571,7 +573,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - **Defined**: a common or standardized risk framework is adopted organization-wide
     - **Integrated**: risk management operations are integrated into business processes, metrics are used to gather effectiveness data, and risk is considered an element in business strategy decisions
     - **Optimized**: risk management focuses on achieving objectives rather than just reacting to external threats; increased strategic planning is geared toward business success rather than just avoiding incidents; and lessons learned are re-integrated into the risk management process
-- 1.10.10 Risk frameworks **Focuses on the WHY**
+- 1.10.10 Risk frameworks **Focuses on the 📝WHY**
   - A risk framework is a guide or recipe for how risk is to be accessed, resolved, and monitored
   - provide a structured approach to identifying, assessing, prioritizing and manging risk to guide decision making
   - provides the overaching structure for making risk informed decisions
@@ -582,16 +584,17 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - SP 800-37 Rev 2, Risk Management Framework for Information Systems and Organizations
     - SP 800-39, Managing Information Security Risk
     - SP 800-30 Rev 1, Guide for Conducting Risk Assessments
-    - The **RMF 800-37 has 7 steps**, and **six cyclical phases**: (PCSIAAM People Can See I AM ALWAYS Monitoring)
-      - **Prepare** to execute the RMF from an organization and system-level perspective by establishing a context and priorities for managing security and privacy risk
-      - **Categorize** the system and the information processed, stored, and transmitted by the system based on an analysis of the impact of loss
-      - **Select** an initial set of controls for the system and tailor the controls as needed to reduce risk to an acceptable level based on an assessment of risk
-      - **Implement** the controls and describe how the controls are employed within the system and its environment of operation
-      - **Assess** the controls to determine if the controls are implemented correctly, operating as intended, and producing the desired outcomes with respect to satisfying the security and privacy requirements
-      - **Authorize** the system or common controls based on a determination that the risk to organizational operations and assets, individuals, and other organizations, and the nation is acceptable
-      - **Monitor** the system and associated controls on an on-going basis to include assessing control effectiveness, documenting changes to the system and environment of operation, conducting risk assessments and impact analysis, and reporting the security and privacy posture of the system
+    - The **📝RMF 800-37 has 7 steps**, and **six cyclical phases**: (PCSIAAM People Can See I AM ALWAYS Monitoring)
+      - **🔥Prepare** to execute the RMF from an organization and system-level perspective by establishing a context and priorities for managing security and privacy risk
+      - **🔥Categorize** the system and the information processed, stored, and transmitted by the system based on an analysis of the impact of loss
+      - **🔥Select** an initial set of controls for the system and tailor the controls as needed to reduce risk to an acceptable level based on an assessment of risk
+      - **🔥Implement** the controls and describe how the controls are employed within the system and its environment of operation
+      - **🔥Assess** the controls to determine if the controls are implemented correctly, operating as intended, and producing the desired outcomes with respect to satisfying the security and privacy requirements
+      - **🔥Authorize** the system or common controls based on a determination that the risk to organizational operations and assets, individuals, and other organizations, and the nation is acceptable
+      - **🔥Monitor** the system and associated controls on an on-going basis to include assessing control effectiveness, documenting changes to the system and environment of operation, conducting risk assessments and impact analysis, and reporting the security and privacy posture of the system
     - See my overview article, [The NIST Risk Management Framework](https://blog.balancedsec.com/p/the-nist-risk-management-framework)
   - There are other risk frameworks, such as the British Standard BS 31100 -- be familiar with frameworks and their goals
+  - Regular risk monitoring and review involves tracking risk treatment progress, reviewing risk assessments, and analyzing incident reports.
 
 [1.11](#1.11) Understand and apply threat modeling concepts and methodologies (OSG-9 Chpt 1)
 - **Threat Modeling**: security process where potential threats are identified, categorized, and analyzed; can be performed as a proactive measure during design and development or as an reactive measure once a product has been deployed   
