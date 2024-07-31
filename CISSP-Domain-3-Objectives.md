@@ -900,7 +900,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
 
 - **SYMMETRIC**
     - AES- Block Cipher, Bock Size 128, Key Size 128, 192, 256 🥇
-    - Blowfish - Bock Size 64, Key Size 32 - 448
+    - Blowfish - Bock Size 64, Key Size 32 - 448 (uses 16 round of encryption regardless of key lenght)
     - DES - Block Cipher, Bock Size 64, Key Size 56
     - 2DES - Block Cipher (vulnerable to meet-in-the-middle attack)
     - 3DES - Block Cipher, Bock Size 64, Key Size 112, 168 
