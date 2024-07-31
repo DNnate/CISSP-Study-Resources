@@ -316,7 +316,8 @@ options. Fibre Channel typically requires its own dedicated infrastructure (sepa
             - WEP is weak from RC4 flaws 
         - **Wi-Fi Protected Access II (WPA2)**:
             - IEEE 802.11i WPA2 replaced WEP and WPA.
-            - WPA2 enterprise uses RADIUS authentication for users rather than a preshared key. This means a password attack is more likely to fail as password attempts for a given user may result in account lockout.
+            - WPA2 enterprise uses 🔥RADIUS authentication for users rather than a preshared key. This means a password attack is more likely to fail as password attempts for a given user may result in account lockout.
+            - EAP is an authentication framework used in wireless networks to provide various methods for authenticating users. In WPA2, 🔥EAP is often used in conjunction with the Advanced Encryption Standard (AES) to provide strong encryption and secure authentication for wireless communications.
             - Uses AES-CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol)
         - Frequency table:
             
