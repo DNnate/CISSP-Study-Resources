@@ -991,14 +991,17 @@ list review, team members each review the contents of their disaster recovery ch
     - An example of a duress system is a button that sends a distress call
     - Duress systems are useful when personnel are working alone
     - If a duress system is activated accidentally code word(s) can be used to assure responding personnel it was an accident, or omit the word(s) keying an actual response
- 
-- **RING PROTECTION**
+
+- **Trusted Computing Base (TCB)**: This encompasses all the hardware, software, and firmware that are critical to the system's security. It includes the Security Kernel but also includes other components involved in the security of the system.
+- **Security Kernel**: The actual implementation within the OS that enforces the security policies and manages the interfaces between the hardware, OS, and other parts of the system. It is part of an operating system (OS) responsible for providing security interfaces among the hardware, OS, and other parts of the computing system
+- **RING PROTECTION**:Ring protection is a feature of CPU architectures that provides a way to enforce different levels of privilege or protection for different parts of the system. It uses a hierarchy of privilege levels, typically referred to as "rings," where Ring 0 (the innermost ring) has the highest level of privilege and direct access to hardware, while Ring 3 (the outermost ring) has the lowest level of privilege and is used for user applications.
  - Ring 0 The kernel lies within the central ring
  - Ring 1 Conceptually contains other operating system components.
  - Ring 2 is used for drivers and protocols.
  - Ring 3 User-level programs and applications run at 3. 
 - Note📝 Rings 0 through 2 run in privileged mode while Ring 3 runs in user mode. It is important to note that many modern operating systems do not fully ­implement this model.
-
+- **Reference Monitor**: This concept refers to an abstract model that 🔥enforces access control policies in a system. It's a theoretical component that must be implemented by the Security Kernel.
+- 
 -**DDOS Attacks**:
 - 🔥SYN Flood: In a SYN flood attack, the attacker sends a large number of SYN packets to a system but does not respond to the SYN/ACK packets, attempting to overwhelm the attacked system’s connection state table with half-open connections. Many firewalls have a built-in anti–SYN flood defense (SYN-ACK Spoofing) that responds to SYNs on behalf of protected systems. It is a TCP attack.
 - 🔥Smurf: A Smurf attack is a type of DDoS (Distributed Denial of Service) attack where an attacker sends a large number of ICMP echo request packets to a broadcast address, with the source address spoofed to that of the target.
