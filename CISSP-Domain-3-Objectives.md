@@ -862,6 +862,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
      - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
 - Technical Access Control:
      - passwords, multi-factor authentication (MFA), or digital certificates, Encryption, Firewalls, IDS/IPS, Access Control Lists (ACLs), Access Cards/Biometric Systems
+- **Defense-in-depth** is a security strategy that employs multiple layers of protection to safeguard an organization's assets. It involves implementing various security measures at different levels to provide overlapping layers of defense, thereby enhancing overall security. By implementing a variety of security controls across different layers (physical, technical, and administrative), organizations can better safeguard their resources against various threats. 
            
 - 3.10 Information System Life Cycle
     - a structured framework for managing an information system from its intial conception to its retirement.
