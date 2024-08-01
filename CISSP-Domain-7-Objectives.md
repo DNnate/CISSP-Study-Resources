@@ -654,7 +654,7 @@ of litigation is imminent.
     - Change request: a change request can come from any part of an org and pertain to almost any topic; companies typically use some type of change management software
     - Assess impact: after a change request is made, however small the request might be, the impact of the potential change must be assessed
     - Approval/reject: based on the requested change and related impact assessment, common sense plays a big part in the approval process
-    - Build and test: after approval, any change should be developed and tested, ideally in a test environment
+    - Build and test: after approval, any change should be developed and tested, ideally in a test environment. ✏️UAT: Before implementing any change, tests should be performed, preferably in a closed environment such as an operational system taken off-line or replicated, which mainly depends on the business capacities.
     - Schedule/notification: prior to implementing any change, key stakeholders should be notified
     - Implement: after testing and notification of stakeholders, the change should be implemented; it's important to have a roll-back plan, allowing personnel to undo the change
     - Validation: once implemented, senior management and stakeholders should again be notified to validate the change
