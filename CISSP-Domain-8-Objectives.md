@@ -99,8 +99,8 @@ temporarily separated from each other so that one does not interfere with the ot
 - **SDLC**: Software Development LifeCycle is a framework and systematic associated with tasks that are performed in a series of steps for building, deploying, and supporting software apps; begins with planning and requirements gathering, and ends with decommissioning and sunsetting; there are many different SDLCs, such as agile, DevSecOps, rapid prototyping, offering different approaches to defining and managing the software lifecycle
     - All systems development processes should have several activities in common. Although they may not necessarily share the same names, these core activities are essential to the development of sound, secure systems:
         - Phase 1: Conceptual definition
-        - Phase 2: Functional requirements determination
-        - Phase 3: Control specifications development
+        - Phase 2: Functional requirements determination:  conducted by the senior team members with inputs from all the stakeholders and domain experts. Planning for the quality assurance requirements and recognization of the risks involved is also done at this stage.
+        - Phase 3: Control specifications development, feasibility studies
         - Phase 4: Design review
         - Phase 5: Coding
         - Phase 6: Code review walk-­through
