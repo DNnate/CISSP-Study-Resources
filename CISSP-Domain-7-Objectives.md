@@ -947,6 +947,12 @@ list review, team members each review the contents of their disaster recovery ch
     - Implementing continuity strategies, plans, and solutions
     - Training the staff
     - Testing, exercising, and maintaining the plans and solutions
+-  Plan-Do-Check-Act model:
+    - ✏️PLAN: Ensure that business continuity policy, objectives, targets, controls, processes and procedures relevant to improving business continuity have been established.
+    - ✏️DO: Ensure the business continuity policy, controls, processes, and procedures have been implemented.
+    - ✏️ACT: Maintain and improve the Business Continuity Management (BCM) system by taking corrective action, based on the results of management review.
+    - ✏️CHECK: Monitor and review performance against business continuity policy and objectives, report the results to management for review, and determine and authorize actions for remediation and improvement.
+
 
 [7.14](#7.14) Implement and manage physical security (OSG-9 Chpt 10)
 - Physical access control mechanisms deployed to control, monitor and manage access to a facility
