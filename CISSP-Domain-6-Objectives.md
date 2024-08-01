@@ -60,6 +60,7 @@
         - **Type I Reports**: provide the auditor’s opinion on the description provided by management and the suitability of the design of the controls
             - type I reports also cover only a specific point in time, rather than an extended period
             - think of Type I report as more of a documentation review
+            -  takes a “snapshot-in-time” approach, setting a baseline for future audits of your service organization’s system.
         - **Type II Reports**: go further and also provide the auditor’s opinion on the operating effectiveness of the controls
             - the auditor actually confirms the controls are functioning properly
             - Type II reports also cover an extended period of time, at least 6 months
@@ -362,7 +363,7 @@ reassembles the activity of individual users to track their interaction with a w
                 - SSAE 18 is designed to enhance the quality and usefulness of SOC reports
                 - SSAE is the framework for creating System and Organization Controls (SOC) reports, such as SOC 1, SOC 2, and SOC 3.
                   - SOC 1: report that focuses on financial reporting by certified public accountants.
-                  - SOC 2 Type I: report that focuses on security, availability, processing integrity, confidentiality, and privacy controls at a specific point in time.
+                  - SOC 2 Type I: report that focuses on security, availability, processing integrity, confidentiality, and privacy controls at a specific point in time. Also Acts as baseline for future audits.
                   - SOC 2 Type II: report that asseses the security, availability, processing integrity, confidentiality, and privacy controls over time by overving operations for at least 6 months. You can get these reports on demand from CSPs but may require you to sign an NDA.
                   - SOC 3: Similar to SOC 2 but intended for broader distribution and contains auditors general opinions.
                 - It includes audit standards and suggested report formats to guide and assits auditors
