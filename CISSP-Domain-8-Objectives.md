@@ -96,12 +96,12 @@ temporarily separated from each other so that one does not interfere with the ot
 - **Runtime Application Security Protection (RASP)**: security agents comprised of small code units built into an app which can detect set of security violations; upon detection, the RASP agent can cause the app to terminate, or take other protective actions
 - **Security Assessment**: testing, inspection, and analysis to determine the degree to which a system meets or exceeds the required security posture; may assess whether an as-built system meets the requirements in its specs, or whether an in-use system meets the current perception of the real-world security threats
 - **Software Quality Assurance**: variety of formal and informal processes that attempt to determine whether a software app or system meets all of its intended functions, doesn't perform unwanted functions, is free from known security vulns, and is free from insertion or other errors in design and function
-- **SDLC**: Software Development LifeCycle is a framework and systematic associated with tasks that are performed in a series of steps for building, deploying, and supporting software apps; begins with planning and requirements gathering, and ends with decommissioning and sunsetting; there are many different SDLCs, such as agile, DevSecOps, rapid prototyping, offering different approaches to defining and managing the software lifecycle
+- **SDLC**: Software Development LifeCycle is a framework and systematic associated with tasks that are performed in a series of steps for building, deploying, and supporting software apps; 🧠begins with planning and requirements gathering, and ends with decommissioning and sunsetting; there are many different SDLCs, such as agile, DevSecOps, rapid prototyping, offering different approaches to defining and managing the software lifecycle
     - All systems development processes should have several activities in common. Although they may not necessarily share the same names, these core activities are essential to the development of sound, secure systems:
         - Phase 1: Conceptual definition
         - Phase 2: Functional requirements determination:  conducted by the senior team members with inputs from all the stakeholders and domain experts. Planning for the quality assurance requirements and recognization of the risks involved is also done at this stage.
         - Phase 3: Control specifications development, feasibility studies
-        - Phase 4: Design review
+        - Phase 4: Design review:  emphasizes the importance of ensuring that the appropriate security controls, objectives, and goals are identified and initiated 
         - Phase 5: Coding
         - Phase 6: Code review walk-­through
         - Phase 7: System test review
