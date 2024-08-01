@@ -113,6 +113,12 @@ specific asset. e.g threat/likelihood of fire
     - important to monitor license compliance to avoid legal issues
     - software licensing also refers to ensuring that systems do not have unauthorized software installed
   - To protect intangible inventories (like intellectual property, patents, trademarks, and company’s reputation, and copyrights), they need to be tracked
+- **NIST SPECIAL PUBLICATION 1800-5**: IT Asset Management Reference Architecture
+     -  Tier 1 Systems: Tier 1 systems collect, store, and analyze the data that they receive from the Tier 2 systems. They allow users to analyze the data and to visualize it for further analysis. e.g splunk
+     -  Tier 2 Systems: Tier 2 is composed of systems that each perform a unique task. Each Tier 2 system is fully capable of collecting, storing, and analyzing data pertaining to its unique task. The middle tier systems filter relevant and desired data from the raw data collected and forward this data to the analysis engine and visualization tool for further analysis e.g Fathom, Bro, Snort, OpenVAS, WSUS, BelManage, BelManage Data Analytics, Puppet, openswan, iStar/C-Cure Controller
+     -  Tier 3 Systems: Tier 3 systems are the assets (end points) on the enterprise network that are owned by the enterprise, such as workstations, switches, servers, users’ laptops, virtual machines, and other devices. All enterprise assets are monitored from the start of their lifecycle until disposal by the systems in the Tier 2. Device location, owner, installed software catalog, current security vulnerabilities, and abnormal traffic activity are captured to allow for better visibility by administrators e.g AD, camera, PC, laptops, mobile phones, router and firewall
+     -  
+
 
 [2.4](#2.4) Manage data lifecycle (OSG-9 Chpt 5)
 - 2.4.1 Data roles (i.e., owners, controllers, custodians, processors, users/subjects)
