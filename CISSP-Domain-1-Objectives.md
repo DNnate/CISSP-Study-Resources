@@ -412,7 +412,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - Finally, prioritize the order in which critical systems and services are recovered or brought back online. 
       - As part of the BIA, establish:
         - **Recovery Time Objectives (RTO)** (how long it takes to recover) The maximum acceptable amount of time that a system, application, or function can be down after a failure or disaster.
-        - **Recovery Point Objectives (RPO)** (the maximum tolerable data loss)
+        - **Recovery Point Objectives (RPO)** (the maximum tolerable data loss/maximum amount of time for which loss of data is acceptable)
         - **Mean time to Failure (MTTF)**: is the expected typical functional lifetime of the device given a specific operating environment.
         - **Mean Time Between Failures (MTBF)** The predicted elapsed time between inherent failures of a system during operation. e.g A server might have an MTBF of 10,000 hours.
         - **Mean Time to Repair (MTTR)** The average time required to repair a failed component or system.
@@ -658,9 +658,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - A **Physically Unclonable Function (PUF)** is a hardware-based security feature that generates a unique identifier or response based on the microscopic variations in the physical properties of an integrated circuit or chip. These variations arise naturally during the manufacturing process and are not replicable, making each PUF unique. When PUF is queried, it responds with a unique output based on this variations. This response is like a fingerprint that is impossible to clone or recreate in another device. Used in secure key generation, device authentication, anti-tampering and secure boot.
   - A **Software Bill of Materials (SBOM)** is a comprehensive list of all the components, libraries, modules, and dependencies included in a software application. It is akin to a list of ingredients in a recipe, detailing everything that goes into the software. SBOMs are crucial for understanding and managing the composition of software, ensuring transparency, security, and compliance. Attack in 2020 lead to US Govt requirement for SBOM in the 2021 Executive Order on Improving the Nations Cybersecurity.
   - **Hardware Root of Trust (HRoT)**: A line of defense against executing unathorized firmware on a system. Establishes a chain of trust starting from hardware up through firmware and software layers (Trust Anchor). When certificates ares used for Full Disk Encryption (FDE), they use a hardware root of trust for key storage, which verifies the keys match before the secure boot process takes place. SRoT and PUF are also implemnetations of Hardware Root of trust. Componenets include
-   - Trusted Platform Module (TPM): A hardware component that securely stores cryptographic keys and performs cryptographic operations. e.g bitlocker
-   - Hardware Security Module (HSM): A dedicated hardware device designed to manage and protect digital keys and perform encryption and decryption.
-   - Secure Enclave or Trusted Execution Environment (TEE): An isolated area within the main processor that ensures the confidentiality and integrity of code and data loaded within it.
+   - 🔥Trusted Platform Module (TPM): ✏️A hardware component that securely stores cryptographic keys and performs cryptographic operations. TPMs are built into many modern computers and can securely generate, store, and manage cryptographic keys, ensuring that private keys are kept safe from extraction or compromise. e.g bitlocker
+   - 🔥Hardware Security Module (HSM): A dedicated hardware device designed to 🧠manage and protect digital keys and 🧠perform encryption and decryption.
+   - 🔥Secure Enclave or Trusted Execution Environment (TEE): An isolated area within the main processor that ensures the confidentiality and integrity of code and data loaded within it.
 
 - 1.12.2 Third-party assessment and monitoring
   - Before doing business with another company, an org needs to perform due-dilligence, and third-party assessments can help gather information and perform the assessment 
