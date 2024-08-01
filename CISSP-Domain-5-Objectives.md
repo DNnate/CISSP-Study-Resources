@@ -62,7 +62,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
             - changes made to any individual access control point needs to be repeated at others
     - With ubiquitious mobile computing and anywhere, anytime access (to apps & data), identity is the "new perimeter"
     - **Roles & Groups**:
-    - provides centralized managment of access control policies, sreamlining administration across different scenarios. It also enforces least privilege by tailoring permission to roles.
+    - provides centralized managment of access control policies, sreamlining administration across different scenarios. It also enforces ✏️least privilege by tailoring permission to roles.
     - On-Premise: roles and groups are tied to physical servers and domain controllers e.g AD
     - Cloud: cloud providers like Azure or AWS offer thier own identity and Access Management systems. It allows for cloud native groups and roles, templates and security integration with clud platforms. E.g Entra ID (Formerly Azure AD)
     - Hybrid: Organizations typically sunchronize  groups and roles  between on-premise and cloud environments. It allows for SSO for on-premise and cloud resources for better user experience.
