@@ -258,6 +258,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - **Software-defined networks (SDN)**:
         - SDN is a broad range of techniques enabling network management, routing, forwarding, and control functions to be directed by software
         - SDN is effectively network virtualization, and separates the infrastructure layer (aka the data or forwarding plane) - hardware and hardware-based settings, from the control layer - network services of data transmission management
+        - SDN introduces a centralized controller that manages the network infrastructure and allows for dynamic and programmable network configurations. While SDN offers advantages in terms of flexibility and automation, it also 🧠expands the attack surface of the network. With SDN, there is a single point of control that, if compromised, can have a significant impact on the entire network.
             - NOTE: the **control plane**: uses protocols to decide where to send traffic, and the **data plane**: includes rules that decide whether traffic will be forwarded
         - typically ABAC-based
         - an SDN solution provides the option to handle traffic routing using simpler network devices that accept instructions from the SDN controller
