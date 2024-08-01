@@ -480,11 +480,11 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - total number of keys required to completely connect n parties using symmetric cryptography is given by this formula: 
             - **(n(n - 1)) / 2** 🥇
             - **Block Ciphers**: Encrypts data in fixed-size blocks (e.g., 64 bits, 128 bits). Examples: DES, 3DES, AES, Blowfish, Twofish. Block ciphers can operate in various modes to enhance security and applicability:
-                - ECB (Electronic Codebook): Encrypts each block independently; not recommended due to security weaknesses. Only provide confidentiality. Plaintext is divided into blocks. Each block is encrypted separately to produce the ciphertext blocks
-                - CBC (Cipher Block Chaining): Each plaintext block is XORed with the previous ciphertext block before encryption, improving security. The first plaintext block is XORed with an initialization vector (IV) before encryption.         Subsequent plaintext blocks are XORed with the previous ciphertext block. Ensures that identical plaintext blocks produce different ciphertext blocks and Adds diffusion to the encryption process. One important consideration when using CBC mode is that errors propagate—­if one block is corrupted during transmission, it becomes impossible to decrypt that block and the next block as well.
-                - Output Feedback (OFB) Mode: Converts a block cipher into a synchronous stream cipher by generating a keystream from the encryption of an initial value (IV) and XORing it with the plaintext. The block cipher encrypts an IV to produce a keystream. The keystream is XORed with the plaintext to produce ciphertext. Error propagation is minimal; a bit error affects only the corresponding bit in the plaintext and can operate in parallel since encryption is independent of the plaintext.     Weaknesses: Vulnerable to bit-flipping attacks if not combined with proper integrity checks. Requires secure IV management. Only provide confidentiality.
-                - CFB (Cipher Feedback): Convert block ciphers into stream ciphers, encrypting smaller units of data. CFB mode operates on small units of data, such as bits or bytes, and can recover from transmission errors more effectively than some other modes.  It uses the previous ciphertext block to influence the encryption of the current plaintext block. Although CFB mode uses a block cipher, it effectively functions as a stream cipher by generating a keystream that is XORed with the plaintext. Strenghts include error Propagation, Self-Synchronizing i.e Capable of recovering from transmission errors if the ciphertext is corrupted or lost. Allows for encryption of small units of data (like individual bytes) rather than fixed-size blocks. While more secure than ECB, CFB mode still needs to be combined with secure key management practices to avoid vulnerabilities.
-                - CTR (Counter Mode): Encrypts data by combining plaintext with an encrypted counter, turning a block cipher into a stream cipher by encrypting successive values of a counter and XORing the result with the plaintext. The block cipher encrypts a counter value, which is incremented for each block. The encrypted counter value (keystream) is XORed with the plaintext to produce ciphertext. Supports parallel encryption and decryption and Allows random access to encrypted data blocks. Weaknesses: The counter must never repeat for the same key to maintain security. Only provide confidentiality.
+                - ECB (Electronic Codebook): Encrypts each block 🧠independently; not recommended due to security weaknesses. Only provide confidentiality. Plaintext is divided into blocks. Each block is encrypted separately to produce the ciphertext blocks
+                - CBC (Cipher Block Chaining): Each plaintext block is 🧠XORed with the previous ciphertext block before encryption, improving security. The first plaintext block is XORed with an initialization vector (IV) before encryption.         Subsequent plaintext blocks are XORed with the previous ciphertext block. Ensures that identical plaintext blocks produce different ciphertext blocks and Adds diffusion to the encryption process. One important consideration when using CBC mode is that errors propagate—­if one block is corrupted during transmission, it becomes impossible to decrypt that block and the next block as well.
+                - Output Feedback (OFB) Mode: Converts a block cipher into a 🧠synchronous stream cipher by generating a keystream from the encryption of an initial value (IV) and XORing it with the plaintext. The block cipher encrypts an IV to produce a keystream. The keystream is XORed with the plaintext to produce ciphertext. Error propagation is minimal; a bit error affects only the corresponding bit in the plaintext and can operate in parallel since encryption is independent of the plaintext.     Weaknesses: Vulnerable to bit-flipping attacks if not combined with proper integrity checks. Requires secure IV management. Only provide confidentiality.
+                - CFB (Cipher Feedback): Convert block ciphers into 🧠stream ciphers, encrypting smaller units of data. CFB mode operates on small units of data, such as bits or bytes, and can recover from transmission errors more effectively than some other modes.  It uses the previous ciphertext block to influence the encryption of the current plaintext block. Although CFB mode uses a block cipher, it effectively functions as a stream cipher by generating a keystream that is XORed with the plaintext. Strenghts include error Propagation, Self-Synchronizing i.e Capable of recovering from transmission errors if the ciphertext is corrupted or lost. Allows for encryption of small units of data (like individual bytes) rather than fixed-size blocks. While more secure than ECB, CFB mode still needs to be combined with secure key management practices to avoid vulnerabilities.
+                - CTR (Counter Mode): Encrypts data by 🧠combining plaintext with an encrypted counter, 🧠turning a block cipher into a stream cipher by encrypting successive values of a counter and XORing the result with the plaintext. The block cipher encrypts a counter value, which is incremented for each block. The encrypted counter value (keystream) is XORed with the plaintext to produce ciphertext. Supports parallel encryption and decryption and Allows random access to encrypted data blocks. Weaknesses: The counter must never repeat for the same key to maintain security. Only provide confidentiality.
                 - Galois/Counter Mode (GCM): Combines the Counter mode for encryption with Galois mode for authentication, providing both confidentiality and integrity. Uses CTR mode for encryption. Adds an authentication tag generated using a polynomial hash function (Galois field multiplication) to ensure data integrity. Provides authenticated encryption with associated data (AEAD) and Ensures both confidentiality and data integrity. Weaknesses: Requires careful implementation to avoid nonce reuse, which can compromise security. Used in modern protocols like TLS and IPsec to secure data with both encryption and authentication.
                 - Counter with Cipher Block Chaining Message Authentication Code (CCM): Combines Counter mode for encryption with CBC-MAC for authentication to provide AEAD. Encrypts data using Counter mode. Computes a CBC-MAC tag over the plaintext and additional authenticated data (AAD). Strengths: Provides both encryption and message authentication. Suitable for environments where both encryption and data integrity are required. Weaknesses: Slightly more complex than using GCM. Requires careful nonce management to ensure security. Example: Used in various standards, including IEEE 802.11 (Wi-Fi) and some versions of IPsec.
             - **Stream Ciphers**: Encrypts data one bit or byte at a time. Examples: RC4, ChaCha20.
@@ -888,11 +888,11 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
 
 - **HASHING**
     - HMAC - Lenght variable
-    - HAVAL - Lenght 128, 160, 192, 224, 256
-    - MD2 - Lenght 128
-    - MD4 - Lenght 128
-    - MD5 - Lenght 128
-    - SHA-1 - Lenght 160
+    - HAVAL - Lenght 128, 160, 192, 224, 256 bits
+    - MD2 - Lenght 128 bits(16 bytes)
+    - MD4 - Lenght 128 bits(16 bytes)
+    - MD5 - Lenght 128 bits(16 bytes) 📝 All Message Digest variants have the same hash lenght
+    - SHA-1 - Lenght ✏️160
     - SHA-224 - Lenght 224, produces 224-­bit digests
     - SHA-256 - Lenght 256, produces 256-­bit digests
     - SHA-384 - Lenght 384, produces 384-­bit digests 
@@ -908,11 +908,11 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - RC2 - Bock Size 128, Key Size 128
     - RC4 - Stream Cipher, Key Size 128
     - RC5 - RSA Block Mode Cipher, Bock Size 32, 64, 128, Key Size 0 - 2048
-    - Skipjack - Bock Size 64, Key Size 80
+    - Skipjack - Block Size 64, Key Size 80
     - Twofish - Bock Size 128, Key Size 1-256
 
 - **ASSYMETRIC (use a pair of keys for each user)**
-    - RSA - Key Transport Algorithm, Size 512
+    - RSA - Key Transport Algorithm, ✏️Size 512
     - Diffie-Hellman - Key Exchange Algorithm
     - EL Gamal - Key Exchange Algorithm
     - ECC - Elliptic Curve Algorithm, Size Variable (smaller key size due to 160 EC Key = 1024 RSA)
