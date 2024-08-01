@@ -12,6 +12,7 @@
     - **II: Act honorably, honestly, justly, responsibly, and legally**
       - always follow the laws 
       - but if you find yourself working on a project where conflicting laws from different countries or jurisdictions apply, you should prioritize the local jurisdiction from which you are performing the services
+      - Treat all members fairly. In resolving conflicts, consider public safety and duties to principals, individuals and the profession in that order.
     - **III: Provide diligent and competent service to principles** 
       - avoid passing yourself as an expert or as qualified in areas that you aren’t 
       - maintain and expand your skills to provide competent services
