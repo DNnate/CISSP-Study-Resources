@@ -259,6 +259,16 @@ you can begin using the **®** symbol. The **©** symbol is used to represent a 
   - Many laws include privacy protections for personal data 
     - The EU’s GDPR has strong privacy rules that apply to any org anywhere that stores or processes the personal data of EU residents; these individuals must be told how their data is collected and used, and they must be able to opt out 
   - The privacy guidelines of the **Organization for Economic Co-operation and Development (OECD)** require orgs to avoid unjustified obstacles to trans-border data flow, set limits to personal data collection, protect personal data with reasonable security and more
+       - The OECD Privacy Guidelines on the Protection of Privacy and Transborder Flows of Personal Data, provide a framework for the protection of personal information and the management of data flows across borders.
+       - First adopted in 1980 and revised in 2013. They key principles are
+       - 1. Collection Limitation: Organizations should collect only the data that is needed for their purposes and should do so fairly and lawfully.
+         2. Data Quality: Organizations should ensure that personal data is relevant and accurate, and should update it as necessary to maintain its quality.
+         3. Purpose Specification: Organizations must clearly state the purposes for data collection and use, and any subsequent use should be consistent with these purposes.
+         4. Use Limitation: Data should be used only for the purposes for which it was collected, and any new use should require additional consent or legal justification.
+         5. Security Safeguards: Organizations should implement appropriate security measures to protect personal data from unauthorized access and misuse.
+         6. Openness: Organizations should be transparent about their data collection and processing practices, and individuals should be informed about these practices.
+         7. Individual Participation: Data subjects should have the right to access their personal data, request corrections, and ensure that their data is accurate and up-to-date.
+         8. Accountability: Organizations should ensure compliance with the guidelines and be able to demonstrate their adherence to these principles. 
   - **Fourth Amendment** to the US Constitution: the right of the people to be secure in their persons, houses, papers, effects against unreasonable search and seizure
   - It sets the “probable cause” standard that law enforcement officers must follow when conducting searches and/or seizures of private property. It also states that those officers must obtain a warrant before gaining involuntary access to such property. 
   - **Electronic Communication Privacy Act (ECPA)**: as amended, protects wire, oral, and electronic communications while those communications are being made, are in transit, and when they are stored on computers; makes it a crime to invade electronic privacy of an individual, and it broadened the Federal Wiretap Act
