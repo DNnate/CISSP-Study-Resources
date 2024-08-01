@@ -119,6 +119,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - Auditing provides accountability
         - Auditing occurs after the logs have been created
         - Logs record events, including who took an action, but without accurate identification and authentication, the logs can’t be relied on.
+        - **File Integrity Checker** is designed specifically to monitor and detect changes to files and directories. It works by creating a baseline of file attributes (such as checksums or hashes) and then 🧠regularly checking/actively monitoring for any deviations from this baseline. This allows it to identify unauthorized or unexpected changes to content.
+        - **Audit Logs**: track and record activities on a system, including changes to files and content. While they provide valuable information about who made changes and when, they are more about recording events rather than actively monitoring for unauthorized changes.
 - 5.2.4 Session management
     - Session management is important to use with any type of authentication system to prevent unauthorized access
     - Desktop/laptops: recommendation to use screensavers, although modern OSs have timeout/lock features
