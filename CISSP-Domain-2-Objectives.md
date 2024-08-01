@@ -292,10 +292,15 @@ specific asset. e.g threat/likelihood of fire
     - this system prevents CC theft at the POS system
     - Tokenization replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
 - **Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified.
-    -  Anonymization techniques remove all personal data and make the data unusable for
-reuse on the website.
-- **Data masking** obscures some, but not all, data.
-- **Perturbation** is the use of false or misleading data in a database management system in order to redirect or thwart information confidentiality attacks.
+    -  Anonymization techniques remove all personal data and make the data unusable for reuse on the website. Techniques of Data Anonymization
+  1. Data masking: obscures some, but not all, data
+  2. Pseudonymization: Pseudonymization involves replacing identifiable information with pseudonyms or identifiers that do not directly reveal the identity of individuals. The original data can only be restored if additional information, kept separate, is used.
+  3. Generalization
+  4. Data swapping: Swapping data involves exchanging data between different records, which can still potentially allow for some degree of identification, especially if the data structure or patterns are recognizable.
+  5. Data perturbation: is the use of false or misleading data in a database management system in order to redirect or thwart information confidentiality attacks.
+  6. Synthetic data
+-
+- **Randomizing data** Randomizing data is a common approach to anonymization. It involves replacing PII with artificial but realistic-looking data. This technique ensures that the data in a test environment does not correspond to any actual individuals, thus protecting privacy while maintaining the data’s utility for testing purposes.
 
 🥇 Sometimes it is better to collect limited information 🥇
 
