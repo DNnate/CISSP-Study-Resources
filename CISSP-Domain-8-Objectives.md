@@ -421,6 +421,7 @@ temporarily separated from each other so that one does not interfere with the ot
         - use of admin privileges
         - Transport Layer Security (TLS) failures
         - cryptographic errors
+    - ✏️Code Signing: Code signing provides developers/entity/organisation with a way to confirm the authenticity of their code to end users. Developers use a cryptographic function to digitally sign their code with their own private key, and then browsers can use the developer’s public key to verify that signature and ensure that the code is legitimate and was not modified by unauthorized individuals.
 - 8.3.2 Risk analysis and mitigation
     - Risk management is at the center of secure software development, in particular regarding the mapping of identified risks and implemented controls
         - this is a difficult part of secure software dev, especially related to auditing
