@@ -299,6 +299,8 @@ reassembles the activity of individual users to track their interaction with a w
     - **Disaster Recovery (DR)**: is a subset of BC, that focuses on restoring information systems after a disaster. the goal of DRP is to restore regular business activity as quickly as possible.
     - These processes need to be periodically accessed, and regular testing of disaster recovery and business continuity controls provide organizations with the assurance they are effectively protected against disruptions to business ops
     - Protection of life is of the utmost importance and should be dealt with first before attempting to save material things
+        - Crisis management is the process of planning and responding to unexpected events that can have a negative impact on an organization. One of the key traits of crisis management is the ability to anticipate potential problems and develop plans to mitigate their impact. This means being able to think ahead and identify potential risks, as well as having a plan in place to deal with them if they do occur.
+        - Crisis management involves handling the overall strategy and high-level decisions during a crisis or disaster. It focuses on managing the organization's response at a strategic level, ensuring that the organization can navigate through the crisis effectively and make decisions that align with its long-term goals and survival.
 
 [6.4](#6.4) Analyze test output and generate report (OSG-9 Chpt 15)
 - Step 1: review and understand the data
