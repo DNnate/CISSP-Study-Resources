@@ -80,6 +80,8 @@ specific asset. e.g threat/likelihood of fire
 - **Data Remanence**: data remaining on media after typical erasure; to ensure all remanence is removed, the following tools can help:
   - **Degaussing**: used on magentic media. Degaussing the disks often damages the electronics but doesn’t reliably remove the data.
   - **Overwriting**: Same as Clearing and also known as purging. Overwriting the disks multiple times will remove all existing data. This is called purging, and purged media can then be used again.
+       - Single-pass wipe: involves overwriting the entire hard drive with random data once (e.g replacing with 0s and 1s).
+       - Multi-pass wipes: involves overwriting the drive multiple times, and is more secure against advanced recovery techniques.
   - **(Physical) destruction**: used for SSD/electronic components, or in combination with other less-secure methods. Due to problems with remnant data, the U.S. National Security Agency requires physical destruction of SSDs
   - **Cryptographic Erasure**: AKA cryptoshedding, basically destroying encryption key; may be only secure method for cloud storage
   - The standard methods for clearing magnetic tapes, according to the NIST Guidelines for Media Sanitization, are overwriting the tape with nonsensitive data, degaussing, and physical destruction via shredding or incineration. Reformatting a tape does not remove remnant data.
