@@ -663,6 +663,11 @@ of litigation is imminent.
     - Document the change: documentation should take place at each step; it's critical to ensure all documentation is complete and to identify the version and baseline related to a given change
 - When a change management process is enforced, it creates documentation for all changes to a system, providing a trail of info if personnel need to reverse the change, or make the same change on other systems
 - Change management control is a mandatory element for some security assurance requirements (SARs) in the ISO Common Criteria
+- Change Management roles
+     - Program Sponsor is the role that provides overall direction, support, and oversight for a project or change initiative. They are typically a senior executive or manager who is responsible for ensuring that the project aligns with organizational goals and has the resources and support needed for success. The program sponsor plays a critical role in endorsing and championing the change throughout the organization, addressing high-level issues, and facilitating necessary resources and support.
+     - Project Manager: The project manager is responsible for planning, executing, and closing the project. They focus on managing the project’s scope, schedule, and resources but may not have the same level of executive support and overall responsibility as the program sponsor.
+     - Change Implementer: The change implementer is responsible for executing the change according to the plan but does not typically handle the overarching support and strategic alignment that the program sponsor provides.
+     - Change Driver: This term is less commonly used but generally refers to the person or entity that initiates or advocates for the change.
 
 [7.10](#7.10) Implement recovery strategies (OSG-9 Chpt 18)
 - **Recovery strategy**: a plan for restoring critical business components, systems, and operations following a disruption
