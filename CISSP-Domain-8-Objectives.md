@@ -446,6 +446,7 @@ temporarily separated from each other so that one does not interfere with the ot
         - it also means that both open-source devs as well as adversaries are able to review the code for vulns 
         - the greatest risk of open-source software is relying on outdated versions -- especially true of shared libraries 
         - an org should develop processes to ensure that all open-source software is periodically updated, likely in a way that differs from the process for updating COTS
+        - By monitoring assets containing open source libraries for vulnerabilities, organizations can stay informed about any newly discovered vulnerabilities or weaknesses in these libraries. This allows them to take proactive measures, such as applying patches or updates, implementing workarounds, or finding alternative solutions, to mitigate the risk of zero-day attacks.
 
 - 8.4.3 Third-party
     - **Third-party software**: (AKA outsourced software) is software made specifically for an org by a third party
