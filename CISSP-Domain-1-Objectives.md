@@ -640,6 +640,12 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - Stage VI: Attack Modeling and Simulation (AMS)
   - Stage VII: Risk Analysis and Management (RAM)
 - Each stage of PASTA has a specific list of objectives to achieve and deliverables to produce in order to complete the stage
+- **DREAD**: The DREAD model, developed in 2002, is a quantitative risk analysis model that involves rating the severity of security threats by assigning numeric values (typically from 1 to 10) that represent different levels of severity.
+     - Damage: What is the total amount of damage the threat is capable of causing to your business?
+     - Reproducibility: How easily can an attack on the particular threat be replicated?
+     - Exploitability: How much effort is required for the threat to be exploited by an attacker?
+     - Affected users: How many people, either inside or outside of your organization, will be affected by the security threat?
+     - Discoverability: How easily can the vulnerability be found?
 - **Visual, Agile, and Simple Threat (VAST)**: a threat modeling concept that integrates threat and risk management into an Agile programming environment on a scalable basis
 - Part of the job of the security team is to identify threats, using different methods:
    - Focus on attackers: this is a useful method in specific situations;
