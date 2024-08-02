@@ -307,7 +307,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
    - **Circuit-­level firewalls** are able to make permit and deny decisions in regard to circuit establishment either based on simple rules for IP and port, using captive portals, requiring port authentication via 802.1X, or more complex elements such as context-­or attribute-­based access control.
    - **Static packet-­filtering firewalls** filter traffic by examining data from a message header. Usually, the rules are concerned with source and destination IP address (layer 3) and port numbers (layer 4).
    - **TCP Wrapper**: is a host-based access control system that can be used to restrict access to Internet services based on IP address or hostname. It acts as a gateway between network services and the network, allowing administrators to control which hosts can connect to services like SSH, FTP, and others. TCP Wrapper allows administrators to specify which hosts (by IP address or hostname) are allowed or denied access to specific services, such as SSH, FTP, or HTTP, based on the requesting host.
-
+- 📝IM clients can utilize random port numbers which makes it challenging for firewalls to control.
 - 4.1.7 Wireless networks (e.g. LiFi, Wi-Fi, Zigbee, satellite)
 
     - Li-Fi: **light fidelity (Li-Fi)**: a form of wireless communication technology that relies on light to transmit data, with theorectical speeds up to 224Gbits/sec. It is not susceptible to EM interference
