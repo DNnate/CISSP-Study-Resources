@@ -542,6 +542,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - 1.10.4 Countermeasure selection and implementation
   - **Countermeasure**: AKA a "control" or "safeguard" can help reduce risk
     - For exam prep, understand how the concepts are integrated into your environment; this is not a step-by-step technical configuration, but the process of the implementation — where you start, in which order it occurs and how you finish
+    - When developing an organization's information security budget, it is important that the  expected risk can be managed appropriately with the funds allocated.
     - Bear in mind that security should be designed to support and enable business tasks and functions
       - security controls, countermeasures, and safeguards can be implemented administratively, logically / technically, or physically 
       - these 3 categories should be implemented in a conceptual layered defense-in-depth manner to provide maximum benefit
