@@ -651,8 +651,8 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - 📝NTLM is known to be susceptible to pass-­the-­hash attacks
         - attackers commonly obtain hashes by scraping a system’s active memory and other techniques. MIMIKATZ is a popular tool to exploit pass the hash
 - 3.7.12 Kerberos exploitation
-    - **Overpass the Hash**: alternative to the PtH attack, used when NTLM is disabled on the network (AKA pass the key) 
-    - **Pass the Ticket**: in this attack, attackers attempt to harvest tickets held in the lsass.exe process 
+    - **Overpass the Hash**: alternative to the PtH attack, used when 🧠NTLM is disabled on the network (AKA pass the key) 
+    - **Pass the Ticket**: in this attack, attackers attempt to harvest tickets held in the lsass.exe process and if succesful, is able to move laterally using authenticated credentials. In a Pass the Ticket attack, an attacker acquires a valid ticket-granting ticket (TGT) or session key from a compromised account or system and uses it to authenticate and impersonate a legitimate user. This allows the attacker to gain unauthorized access to other systems and move laterally within the network without the need for further authentication. It is a common technique used in advanced persistent threats (APTs) to maintain persistent access and expand control within a network.
     - **Silver Ticket**: a silver ticket uses the captured NTLM hash of a service account to create a ticket-granting service (TGS) ticket (the silver ticket grants the attacker all the privileges granted to the service account) 
     - **Golden Ticket**: if an attacker obtains the hash of the Kerberos service account (KRBTGT), they can create tickets at will within Active Directory (this provides so much power it is referred to as having a golden ticket) 
     - **Kerberos Brute-Force**: attackers use the Python script kerbrute.py on Linux, and Rubeus on Windows systems; tools can guess usernames and passwords 
