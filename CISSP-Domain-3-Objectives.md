@@ -216,7 +216,9 @@ trast, ACLs are focused on objects.
     - 🔥TPM is a tamper-resistant integrated circuit built into some motherboards that can perform cryptographic operations (including key gen) and protect small amoutns of sensitive info, like passwords and cryptographic keys
     - Many security products and encryption solutions require a TPM
     - TPM is both a specification for a cryptoprocessor chip on a motherboard and the general name for implementation of the specification
-    - A TPM is an example of a **hardware security module (HSM)**: a cryptoprocessor used to manage and store digital encryption keys, accelerate crypto operations, support faster digital signatures, and improve authentication
+    - TPM does include  Storage Root Key (SRK), which is used for managing and protecting cryptographic operations and keys within the TPM.
+    - A TPM is an example of a hardware security module (HSM)
+    - **hardware security module (HSM)**: a cryptoprocessor used to manage and store digital encryption keys, accelerate crypto operations, support faster digital signatures, and improve authentication. HSMs include root keys and are used for high-security key management. They are generally used in server environments rather than directly on endpoints.
 
 - **User interface**: a constrained UI can be used in an application to restrict what users can do or see based on their privileges
     - e.g. dimming/graying out capabilities for users without the correct privilege
