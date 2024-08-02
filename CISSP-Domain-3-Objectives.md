@@ -477,7 +477,8 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - downside is that users or systems must find a way to securely share the key and hope the key is used only for the specified communication
         - symmetric encryption uses session keys
         - primarily employed to perform bulk encryption and provides only for the security service of confidentiality
-        - Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.
+        - 🧠Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message. Asymmetric cryptography is used for Nonrepudiation. Sender encrypt message (digital signature) with private key and receive decrypt message with sender's public key. This validates integrity and Nonrepudiation.
+        - 🧠Nonrepudiation cannot be achieved with a symmetric cryptosystem, such as AES.
         - "same" is a synonym for symmetric 
         - "different" is a synonym for asymmetric 
         - total number of keys required to completely connect n parties using symmetric cryptography is given by this formula: 
