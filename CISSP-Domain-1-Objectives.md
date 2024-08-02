@@ -223,7 +223,7 @@
     - Be familiar with the EU Data Protection Directive
     - Be familiar with the requirements around healthcare data, credit card data and other PII data as it relates to various countries and their laws and regulations
     - The European Union provides 🔥**standard contractual clauses** that may be used to facilitate data transfer. That would be the best choice in a case where two different companies e.g one in Europe and one in the United States are sharing data.
-    - If the data were being shared internally within a company or business partners, 🔥**binding corporate rules** would also be an option
+    - If the data were being shared internally within a company, 🔥**binding corporate rules** would also be an option
 
 [1.5](#1.5) Understand legal and regulatory issues that pertain to information security in a holistic context (OSG-9 Chpt 4)
 - 1.5.1 Cybercrimes and data breaches
