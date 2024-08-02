@@ -149,9 +149,9 @@ that a user has in a website to execute code on the user’s computer. **XSRF** 
         - OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
         - OpenID Connect is a RESTful, JSON-based authentication protocol that, when paired with OAuth, can provide identity verification and basic profile information.
         - OpenID Provider (OP): The service that authenticates users. Relying Party (RP): The website or app trusting the OP for user authentication. End User: The person logging in using OpenID credentials. User logs in to the RP using their OpenID.
-RP redirects to the OP e.g Google for authentication. OP authenticates the user and sends a response back to the RP.
-RP verifies the response. User gains access to the RP. **Note** Allowing the relying party to provide the redirect to the OpenID provider could allow a phishing attack by directing clients to a fake OpenID provider that can capture valid cre-
-dentials.
+        - RP redirects to the OP e.g Google for authentication. OP authenticates the user and sends a response back to the RP.
+        - RP verifies the response. User gains access to the RP. **Note** Allowing the relying party to provide the redirect to the OpenID provider could allow a phishing attack by directing clients to a fake OpenID provider that can capture valid credentials.
+    - **Proxied federation** is a method of identity management that allows identity providers (IdPs) and relying parties (RPs) to communicate through a third-party service, known as a proxy. This allows the IdP and RP to remain anonymous to each other, and it helps to protect the privacy of subscriber lists. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other.
     - Cloud-based federation typically uses a third-party service to share federated identities
     - Federated identity management systems can be hosted on-premises, in the cloud, or in a combination of the two as a hybrid system. Hybrid federation e.g occurs where authentication occurs on-premises and services are provided through a federated identity service in the cloud
 - 5.2.7 Credential management systems
