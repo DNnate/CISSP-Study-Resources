@@ -409,6 +409,8 @@ used are called STRIDE, DREAD, and PASTA.
   - **User Acceptance Testing**: (UAT) is typically the last phase of the testing process. It verifies that the solution developed meets user requirements and validates it against use cases.
   - Static testing, white-box testing, and code review approaches all require access to the source code of the application but dynamic testing does not.
   - Both static and dynamic testing may use automated tools
+  - **Positive Testing**: also known as "happy path" testing, involves providing valid and expected inputs to the software to ensure that it behaves as intended. The focus is on verifying that the application performs its expected functions correctly when given correct and anticipated data.
+  - **Negetive Testing**: Negative testing involves providing invalid, unexpected, or erroneous inputs to the software to ensure that it handles these situations gracefully. The aim is to verify that the application can handle incorrect data or operations without crashing, producing incorrect results, or compromising security.
 
 [8.3](#8.3) Assess the effectiveness of software security (OSG-9 Chpts 20,21)
 - 8.3.1 Auditing and logging of changes
