@@ -647,6 +647,16 @@ Factors, entities or conditions outside the organisation upon which the organisa
      - Exploitability: How much effort is required for the threat to be exploited by an attacker?
      - Affected users: How many people, either inside or outside of your organization, will be affected by the security threat?
      - Discoverability: How easily can the vulnerability be found?
+ - **MITRE's ATT&CK framework** is broadly adopted by threat modeling and threat intelligence organizations and is used as a default model in many software packages and tools.
+ - ATT&CK is used to map out and understand adversarial behaviors and techniques, allowing organizations to improve detection and response capabilities based on known attack methods.
+ - It is a comprehensive knowledge base of adversary tactics and techniques based on real-world observations and using pre-existing tools. It includes:
+     - Tactics: The goals of an adversary during an attack (e.g., Initial Access, Execution, Persistence).
+     - Techniques: Specific methods used to achieve tactics (e.g., Phishing, PowerShell).
+  - **The Diamond Model** specifically addresses how to think about intrusions but does not address broader threats, and the other answers were made up for this question. The Diamond Model focuses on four key elements that interact with each other to create a threat scenario: i.e Adversary to Infrastructure, Adversary to Capability, Infrastructure to Capability, and Victim to Capability.
+      - Adversary: The entity or individual initiating the attack.
+      - Infrastructure: The systems, tools, or networks used by the adversary to conduct the attack.
+      - Capability: The techniques, tools, or methods used by the adversary to exploit vulnerabilities and achieve their goals.
+      - Victim: The target of the attack, which could be a person, organization, system, or data.
 - **Visual, Agile, and Simple Threat (VAST)**: a threat modeling concept that integrates threat and risk management into an Agile programming environment on a scalable basis
 - Part of the job of the security team is to identify threats, using different methods:
    - Focus on attackers: this is a useful method in specific situations;
