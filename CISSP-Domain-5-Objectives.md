@@ -138,6 +138,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.2.6 Federated Identity Management (FIM)
     - Federated Identity Management (FIM) systems (a form of SSO. 📝SSO is a benefit of identity management, not a type of identity management.) are often used by cloud-based apps
     - A federated identity links a user’s identity in one system with multiple identity management systems
+    - Identity systems from different orgs have established trust among themselves
     - FIM allows multiple orgs to join a federation or group, agreeing to share identity information
         - users in each org can log in once in their own org, and their credentials are matched with a federated identity
         - users can then use this federated identity to access resources in any other org within the group
