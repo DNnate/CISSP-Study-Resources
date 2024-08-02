@@ -798,8 +798,9 @@ failures, hardware/software failures, labor difficulties, theft, and vandalism.
     - **Redundant array of independent disks (RAID)**: refers to multiple drives being used in unison in a system to achieve greater speed or availability; the most well-known RAID levels are:
         - 🔥RAID 0—Striping: provides significant speed, writing and reading advantages. Requires minimum of 2 drives. offers no redundancy
         - 🔥RAID 1—Mirroring: uses redundancy to provide reliable availability of data. Requires minimum of 2 drives. sacrifices performance
+        - 🔥RAID 3: This level uses byte-level striping with a dedicated parity disk. It provides fault tolerance but can become a bottleneck because all parity calculations are handled by a single disk. It is less common compared to RAID 5 and RAID 6.
         - 🔥RAID 10—Mirroring and Striping: requires a minimum of four drives and provides the benefits of striping (speed) and mirroring (availability) in one solution; this type of RAID is typically one of the most expensive
-        - 🔥RAID 5—Parity Protection: requires a minimum of three drives and provides a cost-effective balance between RAID 0 and RAID 1; RAID 5 utilizes a parity bit, computed from an XOR operation, for purposes of storing and restoring data
+        - 🔥RAID 5—Parity Protection: requires a minimum of three drives and provides a cost-effective balance between RAID 0 and RAID 1; RAID 5 utilizes a parity bit, computed from an XOR operation, for purposes of storing and restoring data. RAID level 5 offers both redundancy and fault tolerance by using striping with distributed parity. 
 
 
 
