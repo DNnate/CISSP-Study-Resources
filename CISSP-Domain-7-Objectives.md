@@ -72,21 +72,21 @@ of litigation is imminent.
     - **regulatory**: investigation initiated by a government regulator when there is reason to believe an organization is not in compliance
         -  this type of investigation varies significantly in scope and could look like any of the other three types of investigation depending on the severity of the allegations
         - as with criminal investigations, it is key to preserve evidence, and assist the regulator’s investigators
-- **Electronic Discovery**: In legal proceedings, each side has a duty to preserve evidence related to the case and, through the discovery process, share information with their adversary in the proceedings. This discovery process applies to both paper records and electronic records, and the electronic discovery (or eDiscovery) process facilitates the processing of electronic information for disclosure. The Electronic Discovery Reference Model (EDRM) describes a standard process for conducting eDiscovery with nine aspects:
-    - Information Governance: Ensures that information is well organized for future eDiscovery efforts.
-    - Identification: Locates the information that may be responsive to a discovery request when the organization believes that litigation is likely.
-    - Preservation: Ensures that potentially discoverable information is protected against alteration or deletion.
-    - Collection: Gathers the relevant information centrally for use in the eDiscovery process.
-    - Processing: Screens the collected information to perform a “rough cut” of irrelevant information, reducing the amount of information requiring detailed screening.
-    - Review: Examines the remaining information to determine what information is relevant to the request and removing any information protected by attorney-­client privilege.
-    - Analysis: Performs deeper inspection of the content and context of remaining information.
-    - Production: Places the information into a format that may be shared with others and delivers it to other parties, such as opposing counsel.
-    - Presentation: Displays the information to witnesses, the court, and other parties.
+- **Electronic Discovery**: In 🧠legal proceedings, each side has a duty to preserve evidence related to the case and, through the discovery process, share information with their adversary in the proceedings. This discovery process applies to both paper records and electronic records, and the electronic discovery (or eDiscovery) process facilitates the processing of electronic information for disclosure. The Electronic Discovery Reference Model (EDRM) describes a standard process for conducting eDiscovery with nine aspects:
+    - ✏️Information Governance: Ensures that information is well organized for future eDiscovery efforts.
+    - ✏️Identification: Locates the information that may be responsive to a discovery request when the organization believes that litigation is likely.
+    - ✏️Preservation: Ensures that potentially discoverable information is protected against alteration or deletion.
+    - ✏️Collection: Gathers the relevant information centrally for use in the eDiscovery process.
+    - ✏️Processing: Screens the collected information to perform a “rough cut” of irrelevant information, reducing the amount of information requiring detailed screening.
+    - ✏️Review: Examines the remaining information to determine what information is relevant to the request and removing any information protected by attorney-­client privilege.
+    - ✏️Analysis: Performs deeper inspection of the content and context of remaining information.
+    - ✏️Production: Places the information into a format that may be shared with others and delivers it to other parties, such as opposing counsel.
+    - ✏️Presentation: Displays the information to witnesses, the court, and other parties.
 
 - 7.1.1 Evidence collection and handling
     - Evidence (or artifacts) collection is complex, should be done by professionals, and can be thrown out of court if incorrectly handled
     - It’s important to preserve original evidence
-    - International Organization on Computer Evidence (IOCE) six principles for media, network and software analysis:
+    - 🧚‍♂️International Organization on Computer Evidence (IOCE) six principles for media, network and software analysis:
         - all general forensic and procedural principles must be applied to digital evidence collection 
         - seizing digital evidence shouldn't change the evidence
         - accessing original digital evidence should only be done by trained professionals
@@ -726,6 +726,10 @@ failures, hardware/software failures, labor difficulties, theft, and vandalism.
  	- the Tower of Hanoi strategy: Uses a series of tapes labeled with numbers that follow the recursive pattern of the Tower of Hanoi puzzle. The nth backup tape is used at intervals of 2^𝑛 days
 	- the Six Cartridge Weekly Backup strategy: A simple weekly backup rotation strategy that uses Six tapes labeled Monday through Saturday.
  - These strategies can be fairly complex, especially with large tape sets. They can be implemented manually using a pencil and a calendar or automatically by using either commercial backup software or a fully automated hierarchical storage management (HSM) system. An HSM system is an automated robotic backup jukebox consisting of 32 or 64 optical or tape backup devices. All the drive elements within an HSM system are configured as a single drive array (a bit like RAID).
+
+- Online Storage: This is for data that is frequently accessed and actively used. It’s the most accessible and typically the most expensive form of storage.
+- Nearline Storage: This sits between online and offline storage in terms of accessibility and cost. It’s suitable for data that doesn’t need to be immediately accessible but still needs to be retrieved quickly when needed.
+- Offline Storage: This is for data that is rarely accessed and can be stored on less expensive, slower media. Examples include tape drives or optical media.
 
 - 7.10.2 Recovery site strategies
     - Non-disaster: service disruption with significant but limited impact
