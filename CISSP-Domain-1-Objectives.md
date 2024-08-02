@@ -5,18 +5,18 @@
 - As a CISSP, you must understand and follow the (ISC)² code of ethics, as well as your organization’s own code
 - 1.1.1 (ISC)² Code of Professional Ethics
   - (ISC)² Code of Professional Ethics -- take the time to read the [code of ethics](www.isc2.org/Ethics)
-  - At a minimum, know and understand the ethics canons:
-    - **I: Protect society, the common good, necessary public trust and confidence, and the infrastructure**
+  - At a minimum, know and understand the ethics canons: 🟡 PAPA
+    - **🔥I: Protect society, the common good, necessary public trust and confidence, and the infrastructure**
       - this is “do the right thing”; put the common good ahead of yourself 
       - ensure that the public can have faith in your infrastructure and security
-    - **II: Act honorably, honestly, justly, responsibly, and legally**
+    - **🔥II: Act honorably, honestly, justly, responsibly, and legally**
       - always follow the laws 
       - but if you find yourself working on a project where conflicting laws from different countries or jurisdictions apply, you should prioritize the local jurisdiction from which you are performing the services
       - Treat all members fairly. In resolving conflicts, consider public safety and duties to principals, individuals and the profession in that order.
-    - **III: Provide diligent and competent service to principles** 
+    - **🔥III: Provide diligent and competent service to principles** 
       - avoid passing yourself as an expert or as qualified in areas that you aren’t 
       - maintain and expand your skills to provide competent services
-    - **IV: Advance and protect the profession**
+    - **🔥IV: Advance and protect the profession**
       - don’t bring negative publicity to the profession 
       - provide competent services, get training and act honorably 
       - think of it like this: If you follow the first three canons in the code
@@ -25,11 +25,10 @@
   - You must also support ethics at your organization; this can be interpreted to mean evangelizing ethics throughout the organization, providing documentation and training around ethics, or looking for ways to enhance the existing organizational ethics 
     - some organizations might have slightly different ethics than others, so be sure to familiarize yourself with your org’s ethics and guidelines
 
-   - **Code of Ethics Complaints**: (ISC)2 members who encounter a potential violation of the Code of Ethics may report the
-possible violation to (ISC)2 for investigation by filing a formal ethics complaint, identifying the specific canon of the Code of Ethics that the member believes has been violated. Complaints under the Code of Ethics must be in writing and in the form of a sworn affidavit. Furthermore, complaints are only accepted from those who believe they have been injured by the alleged behavior. This personal injury provides standing to file a complaint and is determined based on the canon involved:
+   - **Code of Ethics Complaints**: (ISC)2 members who encounter a potential violation of the Code of Ethics may report the possible violation to (ISC)2 for investigation by filing a formal ethics complaint, identifying the specific canon of the Code of Ethics that the member believes has been violated. Complaints under the Code of Ethics must be in writing and in the form of a sworn affidavit. Furthermore, complaints are only accepted from those who believe they have been injured by the alleged behavior. This personal injury provides standing to file a complaint and is determined based on the canon involved:
   - Any member of the general public may file a complaint involving canons I or II.
   - Only an employer or someone with a contracting relationship with the individual may file a complaint under canon III.
-  - Other professionals may file a complaint under canon IV. It is important to note that this is not limited to cybersecurity professionals. Anyone who is certified or licensed as a professional and subscribes to a code of ethics as part of that licensure or certification is eligible to file a canon IV complaint.
+  - Other professionals may file a complaint under canon IV. It is important to note that this is not limited to cybersecurity professionals. Anyone who is certified or 🧠licensed as a professional and 🧠subscribes to a code of ethics as part of that licensure or certification is eligible to file a canon IV complaint.
 
 - **Ten Commandments of Computer Ethics**: The Computer Ethics Institute created its own code of ethics (http://cpsr.org/issues/ethics/cei). The Ten Commandments of Computer Ethics are as follows:
      - 1. Thou shalt not use a computer to harm other people.
@@ -84,17 +83,17 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
 - **Security governance**: the collection of policies, roles, processes/practices used to make security decisions in an org; related to supporting, evaluating, defining, and directing the security efforts of an org 
   - Security governance is the implementation of a security solution and a management method that are tightly interconnected
   - Security governance seeks to compare the security processes and infrastructure used within the organization with knowledge and insight obtained from external sources.
-  - There are numerous security frameworks and governance guidelines, including the National Institute of Standards and Technology (NIST) SP 800-53 and SP 800-100
+  - There are numerous security frameworks and governance guidelines, including the National Institute of Standards and Technology (NIST) 🔥SP 800-53 Cybersecurity Framework and 🔥SP 800-100
 - **The security function**: the aspect of operating a business that focuses on the task of evaluating and improving security over time 
   - To manage security, an org must implement proper and sufficient security governance
   - The act of performing a risk assessment to drive the security policy is the clearest and most direct example of management of the security function
 - **Third-party governance**: external entity oversight that may be mandated by law, regulation, industry standards, contractual obligation, or licensing requirement; outside investigator or auditors are often involved
 - 1.3.1 Alignment of security function to business strategy, goals, mission, and objectives
   - **Security Management Planning**: ensures proper creation/implementation/enforcment of a security policy, and alignment with org strategy, goals, mission, and objectives
-  - **Strategic Plan**: a strategic plan is a long-term plan (useful for 5 years); it defines the org's security purpose 
+  - **Strategic Plan**: a strategic plan is a 🔥long-term plan (useful for 5 years); it defines the org's security purpose 
     - A strategic plan should include risk assessment
-  - **Tactical Plan**: mid-term plan (1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan or can be crafted ad hoc based on unpredicted events
-  - **Operational Plan**: a short-term, highly detailed plan based on strategic or tactical plans 
+  - **Tactical Plan**: mid-term plan (🔥1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan or can be crafted ad hoc based on unpredicted events
+  - **Operational Plan**: a 🔥short-term, highly detailed plan based on strategic or tactical plans 
     - Strategy, goals, missions,and objectives — support each other in a heirarchy
     - **Objectives**: are closest to the ground-level and represent small efforts to help you achieve a mission 
     - **Missions**: represent a collection of objectives, and one or more missions lead to goals; when you reach your goals, you are achieving the strategy
@@ -102,7 +101,7 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
 - 1.3.2 Organizational processes (e.g., acquistions, divestitures, governance committees)
   - Security governance should address every aspect of an org, including organizational processes of acquisitions, divestitures, and governance
   - Be aware of the risks in acquisitions (since the state of the IT environment to be integrated is unknown, due diligence is key) and divestitures (how to split the IT infrastructure and what to do with identities and credentials)
-  - Acquisitions and mergers place an organization at an increased level of risk. Such risks include inappropriate information disclosure, data loss, downtime, and failure to achieve sufficient return on investment (ROI)
+  - Acquisitions and mergers place an organization at an increased level of risk. Such risks include ✏️inappropriate information disclosure, ✏️data loss, ✏️downtime, and ✏️failure to achieve sufficient return on investment (ROI)
   - Understand the value of governance committees (vendor governance, project governance, architecture governance, etc.)
   - Executives, managers and appointed individuals meet to review architecture, projects and incidents (security or otherwise),and provide approvals for new strategies or directions 
     - The goal is a fresh set of eyes, often eyes that are not purely focused on information security
@@ -114,35 +113,35 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
 - 1.3.3 Organizational Roles and Responsibilities
   -  Senior Manager: has a responsibility for organizational security and to maximize profits and shareholder value
   - Security Professional: has the functional responsibility for security, including writing the security policy and implementing it
-  - Asset Owner: responsible for classifying information for placement or protection within the security solution
+  - Asset Owner: responsible for ✏️classifying information✏️ for placement or protection within the security solution
   - Custodian: responsible for the task of implementing the proscribed protection defined by the security policy and senior management
   - Auditor: responsible for reviewing and verifying that the security policy is properly implemented
-- 1.3.4 Security control frameworks **Focuses on the HOW**
+- 1.3.4 Security control frameworks **🔥🔥Focuses on the HOW🔥🔥**
   - A **security control framework**: It is a prescriptive set of cybersecurity safeguards and best practices to protect an organizations assets. It helps in implementing risk managment strategy. outlines the org's approach to security, including a list of specific security processes, procedures, and solutions used; it is important in planning the structure of an org's security solution; many frameworks to choose from, such as:
     -  **Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
         - COBIT is a documented set of best IT security practices by ISACA
-        - Six key principles (Sally Has Daring Goals To Excel SHDGTE) :
-          - provide stakeholder value
-          - holistic approach
-          - dynamic governance system
-          - governance distinct from management
-          - tailored to enterprise needs
-          - end-to-end governance system   
+        - Six key principles (🟡Sally Has Daring Goals To Excel SHDGTE) :
+          - ✏️provide stakeholder value
+          - ✏️holistic approach
+          - ✏️dynamic governance system
+          - ✏️governance distinct from management
+          - ✏️tailored to enterprise needs
+          - ✏️end-to-end governance system   
     -  ISO 27000 series (27000, 27001, 27002, etc.).
           - 15408 evaluation Criteria
           - 22301  security and resilience
-          - **27001 (Focuses on WHAT and WHY)** information security standards/controls: Outlines a framework for implementing, maintaining and continually improving ISMS Information Security Management System (ISMS is a set of policies, processes and controls that helps organization protect thier information assets). ISO 27001 Guides organizations in identifying assets and assessing thier values and information risks AND implementing mitigating security controls based on ISO 27002. CLoud platforms all have ISO 27001.
-          - **27002 (Focuses on HOW)** information security guidance: Offers best practices and ontrol objectives related to key aspects of cybersecurity in support of ISO/IEC 27001. Focuses on cryptography, human resource security, operational security, and incident response. Serves as an official blueprint for orgs aiming to effectively safeguard information assets from cyber threats.
+          - **27001 (🔥🔥Focuses on WHAT and WHY🔥🔥)** information security standards/controls: Outlines a framework for implementing, maintaining and continually improving ISMS Information Security Management System (ISMS is a set of policies, processes and controls that helps organization protect thier information assets). ISO 27001 Guides organizations in identifying assets and assessing thier values and information risks AND implementing mitigating security controls based on ISO 27002. CLoud platforms all have ISO 27001.
+          - **27002 (🔥🔥Focuses on HOW🔥🔥)** information security guidance: Offers best practices and Control objectives related to key aspects of cybersecurity in support of ISO/IEC 27001. Focuses on cryptography, human resource security, operational security, and incident response. Serves as an official blueprint for orgs aiming to effectively safeguard information assets from cyber threats.
           - 27031 Business continuity    
-    -  **SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It integrates security into the business processes and aligns security measures with business goals. provides a structured method for designing, implementing and managing security architectures.
+    -  **SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It 🧠integrates security into the business processes and aligns security measures with business goals🧠. provides a structured method for designing, implementing and managing security architectures.
     -  It provides a holistic, business-­driven approach to security architecture, encompassing everything from assessing business requirements to implementation and metrics.
     -  It is recognized for its comprehensive life cycle approach to security architecture, from assessing business requirements to establishing a “chain of traceability” through strategy, concept, design, implementation, and metrics stages
-    -  SABSA Lifecycle Phases:
-        - Strategy Phase: Understanding business context and defining security goals.
-        - Design Phase: Developing the detailed architecture.
-        - Implementation Phase: Deploying the security solutions.
-        - Management Phase: Ongoing management and adaptation of the security architecture.  
-    -  **FedRAMP (Federal Risk and Authorization Managment Programme)** regulates cloud security for US Gov. FedRAMP specifies a set of security controls based on NIST SP 800-53. It provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services.
+    -  SABSA Lifecycle Phases: 🟡 SDIM
+        - ✏️Strategy Phase: Understanding business context and defining security goals.
+        - ✏️Design Phase: Developing the detailed architecture.
+        - ✏️Implementation Phase: Deploying the security solutions.
+        - ✏️Management Phase: Ongoing management and adaptation of the security architecture.  
+    -  **FedRAMP (Federal Risk and Authorization Managment Programme)** regulates 🧠cloud security for US Gov. FedRAMP specifies a set of security controls based on NIST SP 800-53. It provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services.
     -  FIPS 140-3 Security requirement for cryptographic modules
     -  NIST
           - 800-37 Risk Managment Framework
@@ -161,23 +160,23 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
           - detect
           - respond
           - recovery
-        - note: updated (2024) CSF 2.0 functions 800-53: (Great Ideas Propel Dreams Rapidly, Right GIPDRR)
-          - govern
-          - identify
-          - protect
-          - detect
-          - respond
-          - recover
+        - note: updated (2024) CSF 2.0 functions 800-53: (🟡Great Ideas Propel Dreams Rapidly, Right GIPDRR)
+          - ✏️govern
+          - ✏️identify
+          - ✏️protect
+          - ✏️detect
+          - ✏️respond
+          - ✏️recover
 - 1.3.5 Due care/due diligence
-  - **Due diligence**: establishing a plan, policy, and process to protect the interests of the organization; due diligence is about understanding your security governance principles (policies and procedures) and the risks to your organization; actions taken by a vendor to demonstrate or provide due care
-    - Due diligence often involves:
+  - **Due diligence**: 🕵️ establishing a plan, policy, and process to protect the interests of the organization; due diligence is about understanding your security governance principles (policies and procedures) and the risks to your organization; actions taken by a vendor to demonstrate or provide due care
+    - Due diligence often involves: 
       - gathering information through discovery, risk assessments and review of existing documentation 
       - developing a formalized security structure containing a security policy, standards, baselines guidlines, and procedures 
       - documentation to establish written policies
       - disseminating the information to the organization
       - Due diligence is knowing what should be done and planning for it.
       - Due diligence is developing a formalized security structure containing a security policy, standards, baselines, guidelines, and procedures.
-  - **Due care**: practicing the individual activities that maintain the due diligence effort; due care is about your legal responsibility within the law or within org policies to implement your org’s controls, follow security policies, do the right thing and make reasonable choices
+  - **Due care**: 🧑‍🏭 practicing the individual activities that maintain the due diligence effort; due care is about your legal responsibility within the law or within org policies to implement your org’s controls, follow security policies, do the right thing and make reasonable choices
   - Security documentation is the security policy
   - Due care is doing the right action at the right time.
   - exercise reasonable security measures to protect assets
@@ -192,24 +191,25 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
     - **Criminal law**: protects society against acts that violate the basic principles we believe in; violations of criminal law are prosecuted by federal and state governments
     - **Civil law**: provides the framework for the transaction of business between people and organizations; violations of civil law are brought to the court and argued by the two affected parties
     - **Administrative law**: used by government agencies to effectively carry out their day-to-day business
-    	- Administrative laws do not require an act of the legislative branch to implement at the federal level. Administrative laws consist of the policies, procedures, and regulations promulgated by agencies of the executive branch of government. Although they do not require an act of Congress, these laws are subject to judicial review and must comply with criminal and civil laws enacted by the legislative branch. 
+    	- Administrative laws do not require an act of the legislative branch to implement at the federal level. Administrative laws consist of the policies, procedures, and regulations promulgated by agencies of the executive branch of government. Although they do not require an act of Congress, these laws are subject to judicial review and must 🧠comply with criminal and civil laws enacted by the legislative branch. 
   - **Compliance**: Organizations may find themselves subject to a wide variety of laws, and regulations imposed by regulatory agencies or contractual obligation
     - **Payment Card Industry Data Security Standard (PCI DSS)** - governs the security of credit card information and is enforced through the terms of a merchant agreement between a business that accepts CC payments, and the bank that processes the business' transactions
-    - **Sarbanes-Oxley (SOX)** - financial systems may be audited to ensure security controls are sufficient to ensure compliance with SOX. It protects investors.  required publicly traded companies to implement a wide range of controls intended to minimize conflicts of interest, provide investors with appropriate risk information, place civil and criminal penalties on executives for providing false financial disclosures, and provide protections for whistleblowers who report inappropriate actions to regulators.
-    - **Gramm-Leach-Bliley Act (GLBA)** - affects banks, insurance companies, and credit providers; included a number of limitations on the types of information that could be exchanged even among subsidiaries of the same corp, and required financial institutions to provide written privacy policies to all their customers
+    - **Sarbanes-Oxley (SOX)** - financial systems may be audited to ensure security controls are sufficient to ensure compliance with SOX. It ✏️protects investors.  required publicly traded companies to implement a wide range of controls intended to ✏️minimize conflicts of interest, ✏️provide investors with appropriate risk information, place civil and ✏️criminal penalties on executives for providing false financial disclosures, and provide protections for whistleblowers who report inappropriate actions to regulators.
+    - **Gramm-Leach-Bliley Act (GLBA)** - ✏️affects banks, insurance companies, and credit providers; included a number of ✏️limitations on the types of information that could be exchanged even among subsidiaries of the same corp, and required financial institutions to provide ✏️written privacy policies to all their customers
     - **Health Insurance Portability and Accountability Act (HIPAA)** - privacy and security regulations requiring strict security measures for hospitals, physicians, insurance companies, and other organizations that process or store private medical information about individuals; also clearly defines the rights of individuals who are the subject of medical records and requires organizations that maintain such records to disclose these rights in writing
     - Organizations subject to HIPAA may enter into relationships with service providers as long as the provider’s use of protected health information is regulated under a formal business associate agreement (BAA). The BAA makes the service provider liable under HIPAA.
-    - **Federal Information Security Management Act (FISMA)** - ) includes provisions regulating information security at federal agencies. Requires federal agencies to implement an information security program that covers the agency's operations and contractors
+    - **Federal Information Security Management Act (FISMA)** - ) includes provisions regulating information security at federal agencies. Requires federal agencies to implement an information security program that covers the ✏️agency's operations and ✏️contractors
     - **Computer Fraud and Abuse Act (CFAA)** (as amended) - protects computers used by the government or in interstate commerce from a variety of abuses
     - **ITIL**  British Government standard that describes IT service managment and the structured fitting of security into an organization. It focuses on change management, configuration management and SLAs. Helps information technology (IT) organizations with reducing cost, mitigating risk, and improving customer service.
     - **Electronic Communications Privacy Act (ECPA)** - passed in 1986 to expand and revise federal wiretapping and electronic eavesdropping provisions, making it a crime to intercept or procure electronic communications, and includes important provisions that protect a person’s wire and electronic communications from being intercepted by another private individual
-    - **Personal Information Protection Law (PIPL)**: effective since 2021 aims to establish a comprehensive framework for the protection of personal information in China
-    - **Protection of Personal Information Act (POPIA)**: enacted in 2013, establishes regulatios for the responsible processing of personal information by both public and private entities in South Africa.
+    - **Personal Information Protection Law (PIPL)**: effective since 2021 aims to establish a comprehensive framework for the protection of personal information in 🔥China
+    - **Protection of Personal Information Act (POPIA)**: enacted in 2013, establishes regulatios for the responsible processing of personal information by both public and private entities in 🔥South Africa.
     - The **Privacy Act of 1974** limits the ways government agencies may use information that private citizens disclose to them under certain circumstances. The Privacy Act regulates what information government agencies may collect and maintain about individuals.
-    - **The Lanham Act** regulates the issuance of trademarks to protect intellectual property.
-    - **Digital Millennium Copyright Act** - prohibits the circumvention of copyright protection mechanisms placed in digital media and limits the liability of internet service providers for the activities of their users
-    - **The Wassenaar Arrangement** on Export Controls for Conventional Arms and Dual-Use Goods and Technologies is a multilateral export control regime established on 12 July 1996, in Wassenaar, near The Hague, Netherlands. According to the Wassenaar Arrangement document, it was "established to contribute to regional and international security and stability by promoting transparency and greater responsibility in transfers of conventional arms and dual-use goods and technologies, thus preventing destabilizing accumulations. Participating states seek, through their national policies, to ensure that transfers of these items do not contribute to the development or enhancement of military capabilities which undermine these goals, and are not diverted to support such capabilities. It also addresses cyber weapons, including malicious software, Command and Control (C2) software, and internet surveillance software.
-    - **Information Assurance Technical Framework (IATF)** The IATF is a framework developed by the International Organization for Standardization (ISO) to provide guidelines for assessing the security and privacy aspects of information technology systems provides and technical guidance for protecting the information infrastructures of the United States U.S. Government and industry. It covers various areas such as risk management, security controls, and data privacy. The four major technology focus areas of the Defense-in-Depth Strategy are to Defend the Network and Infrastructure, Defend the Enclave Boundary, Defend the Computing Environment, and Defend Supporting Infrastructures. 
+    - **The Lanham Act** regulates the issuance of 🧠trademarks to protect intellectual property.
+    - **Digital Millennium Copyright Act** - prohibits the circumvention of copyright protection mechanisms placed in digital media and 🧠limits the liability of internet service providers for the activities of their users
+    - **The Economic Espionage Act** imposes fines and jail sentences on anyone found guilty of stealing trade secrets from a U.S. corporation. It gives true teeth to the intellectual property rights of trade secret owners. 
+    - **The Wassenaar Arrangement** on Export Controls for Conventional Arms and Dual-Use Goods and Technologies is a multilateral 🔥export control regime established on 12 July 1996, in Wassenaar, near The Hague, Netherlands. According to the Wassenaar Arrangement document, it was "established to contribute to regional and international security and stability by promoting transparency and greater responsibility in transfers of conventional arms and dual-use goods and technologies, thus preventing destabilizing accumulations. Participating states seek, through their national policies, to ensure that transfers of these items do not contribute to the development or enhancement of military capabilities which undermine these goals, and are not diverted to support such capabilities. It also addresses cyber weapons, including malicious software, Command and Control (C2) software, and internet surveillance software.
+    - **Information Assurance Technical Framework (IATF)** The IATF is a framework developed by the International Organization for Standardization (ISO) to provide guidelines for assessing the security and privacy aspects of information technology systems provides and technical guidance for protecting the information infrastructures of the 🇪🇺 United States U.S. Government and industry. It covers various areas such as risk management, security controls, and data privacy. The four major technology focus areas of the ✴️Defense-in-Depth Strategy, ✴️Defend the Enclave Boundary, ✴️Defend the Computing Environment, and Defend ✴️Supporting Infrastructures. 
 - 1.4.2 Privacy requirements
     - European Union's **General Data Protection Regulation (GDPR)** - replaced Data Protection Directive (DPD), purpose is to provide a single, harmonized law that covers data throughout the EU
       - Lawfulness, fairness, and transparency
@@ -249,11 +249,10 @@ possible violation to (ISC)2 for investigation by filing a formal ethics complai
   - **Copyright**: exclusive use of artistic, musical or literary works which prevents unauthorized duplication, distribution or modification. Also can include software code published in academic journal. Copyright and patent protection both have expiration dates. Copyright protection generally lasts for 70 years after the death of the last surviving author of the work
   - **Licensing**: a contract between the software producer and the consumer which limits the use and/or distribution of the software
   - **Trade Secrets**: intellectual property that is critical to a business, and significant damage would result if it were disclosed to competitors or the public
-  - When you file application for protection, until registration is granted, you can use the **TM** symbol to inform others that it is protected under trademark law. Once the application is approved, the name becomes a registered trademark, and
-you can begin using the **®** symbol. The **©** symbol is used to represent a copyright.
+  - When you file application for protection, until registration is granted, you can use the 🔥**TM** symbol to inform others that it is protected under trademark law. Once the application is approved, the name becomes a registered trademark, and you can begin using the 🔥**®** R symbol. The 🔥**©** C symbol is used to represent a copyright.
 - 1.5.3 Import/export controls
-  -  Every country has laws around the import and export of hardware and software; e.g. the US has restrictions around the export of cryptographic technology, and Russia requires a license to import encryption technologies manufactured outside the country
-  -  The _Bureau of Industry and Security_ within the Department of Commerce sets regulations on the export of encryption products outside of the United States.
+  -  Every country has laws around the import and export of hardware and software; e.g. the US has restrictions around the export of 🔐cryptographic technology, and Russia requires a license to import 🔐encryption technologies manufactured outside the country
+  -  The _Bureau of Industry and Security_ within the Department of Commerce sets regulations on the export of 🔐encryption products outside of the United States.
 - 1.5.4 Transborder data flow
   -  Orgs should adhere to origin country-specific laws and regulations, regardless of where data resides
   -  Also be aware of applicable laws where data is stored and systems are used
@@ -272,7 +271,7 @@ you can begin using the **®** symbol. The **©** symbol is used to represent a 
          7. Individual Participation: Data subjects should have the right to access their personal data, request corrections, and ensure that their data is accurate and up-to-date.
          8. Accountability: Organizations should ensure compliance with the guidelines and be able to demonstrate their adherence to these principles. 
   - **Fourth Amendment** to the US Constitution: the right of the people to be secure in their persons, houses, papers, effects against unreasonable search and seizure
-  - It sets the “probable cause” standard that law enforcement officers must follow when conducting searches and/or seizures of private property. It also states that those officers must obtain a warrant before gaining involuntary access to such property. 
+  - It sets the “📝probable cause📝” standard that law enforcement officers must follow when conducting searches and/or seizures of private property. It also states that those officers must obtain a warrant before gaining involuntary access to such property. 
   - **Electronic Communication Privacy Act (ECPA)**: as amended, protects wire, oral, and electronic communications while those communications are being made, are in transit, and when they are stored on computers; makes it a crime to invade electronic privacy of an individual, and it broadened the Federal Wiretap Act
   - HIPAA: see above
   - HITECH: see above
@@ -323,7 +322,8 @@ you can begin using the **®** symbol. The **©** symbol is used to represent a 
   - Evolving privacy regulations neccessitates assessment of existing systems
   - PIA involves defining assessment scope, data collection methods and plan for data retention
   - Internation Association of Privacy Professionals (IAPP) publishes guids and resources related to privacy efforts including PIA
-
+- **RFC 1087, Ethics and the Internet**: actions that compromise the privacy of users" are explicitly considered unacceptable and unethical
+  
 - **Geographic Considerations**: Different laws and regulations may apply depending on the location (data residency) of the
  - data subject
  - data collector
@@ -355,10 +355,10 @@ you can begin using the **®** symbol. The **©** symbol is used to represent a 
     - Administrative investigations are often tied to HR scenarios, such as when a manager has been accused of improprieties
   - **Criminal**: a criminal investigation occurs when a crime has been committed and you are working with a law enforcement agency to convict the alleged perpetrator; in such a case, it is common to gather evidence for a court of law, and to share the evidence with the defense
     - You need to gather and handle the information using methods that ensure the evidence can be used in court
-    - In a criminal case, a suspect must be proven guilty beyond a reasonable doubt; a higher bar compared to a civil case, which is showing a preponderance of evidence
+    - In a criminal case, a suspect must be proven guilty beyond a 📝reasonable doubt📝; a higher bar compared to a civil case, which is showing a preponderance of evidence
   - **Civil**: in a civil case, one person or entity sues another; e.g. one company could sue another for a trademark violation 
     - A civil case is typically about monetary damages, and doesn't involve criminality
-    - In a civil case, a preponderance of evidence is required to secure a victory; differing from criminal cases, where a suspect is innocent until proven guilty beyond a reasonable doubt
+    - In a civil case, a 📝preponderance of evidence📝 is required to secure a victory; differing from criminal cases, where a suspect is innocent until proven guilty beyond a reasonable doubt
   - **Industry Standards**: an industry standards investigation is intended to determine whether an org is adhering to a specific industry standard or set of standards, such as logging and auditing failed logon attempts 
     - Because industry standards represent well-understood and widely implemented best practices, many orgs try to adhere to them even when they are not required to do so in order to improve security, and reduce operational and other risks
   - **Regulatory**: A regulatory investigation is conducted by a regulatory body, such as the Securities and Exchange Commission (SEC) or Financial Industry Regulatory Authority (FINRA), against an org suspected of an infraction 
@@ -730,7 +730,7 @@ employees.
 non-­security employees who take up the mantle to encourage others to support and adopt more security practices and behaviors.
     - **Gamification**: legacy training and education are typically based on reading and then answering multiple-choice questions to prove knowledge; gamification aims to make training and education more fun and engaging by packing educational material into a game
       - gamification has enabled organizations to get more out of the typical employee training
-      - Gamification is a means to encourage compliance and engagement by integrating common elements of game play into other activities, such as security compliance and behavior change. This can include rewarding compliance behaviors and potentially punishing violating behaviors. Many aspects of game play can be integrated into security training and adoption, such as scoring points, earning achievements or badges (i.e., earn recognition), competing with others, cooperating with others (i.e., team up with coworkers), following a set of common/standard rules, having a defined goal, seeking rewards, developing group stories/experiences, and avoiding pitfalls or negative game events
+      - Gamification is a means to encourage compliance and engagement by integrating common elements of game play into other activities, such as security compliance and behavior change. This can include rewarding compliance behaviors and potentially punishing violating behaviors. Many aspects of game play can be integrated into security training and adoption, such as ✏️scoring points, ✏️earning achievements or badges (i.e., earn recognition), competing with others, ✏️cooperating with others (i.e., team up with coworkers), following a set of common/standard rules, having a defined goal, seeking rewards, developing group stories/experiences, and avoiding pitfalls or negative game events
 
 - **Social Engineering Attacks**
 	- **Phishing**: This involves sending fraudulent emails that appear to come from reputable sources. The goal is to trick recipients into providing sensitive information such as usernames, passwords, and credit card details.
