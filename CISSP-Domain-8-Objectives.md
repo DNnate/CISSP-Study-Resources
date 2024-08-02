@@ -199,7 +199,7 @@ temporarily separated from each other so that one does not interfere with the ot
     - **DevOps (Development and Operations)**: an approach to software development, quality assurance, and technology operations that seeks to unite siloed staff, and bring the three functions together in a single operational model
         - closely aligned with lean and the Agile development approach, DevOps aims to dramatically decrease the time required to develop, test, and deploy software changes
         - using the DevOps model, and continuous integration/continuous delivery (CI/CD), orgs strive to roll out code dozens or even hundreds of times per day and the can deploy code extremely rapidly.
-        - this requires a high degree of automation, including integrating code repositories, the software configuration management process, and the movement of code between development, testing and production environments
+        - this requires a high degree of 🧠automation, including integrating code repositories, the software configuration management process, and the movement of code between development, testing and production environments
         - the tight integration of development and operations also calls for the simultaneous integration of security controls
         - security must be tightly integrated and move with the same agility
         - The DevOps approach to technology management seeks to integrate software development, operations, and quality assurance in a seamless approach that builds collaboration between the three disciplines.
