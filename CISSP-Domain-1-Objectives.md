@@ -171,16 +171,17 @@
   - **Due diligence**: 🕵️ establishing a plan, policy, and process to protect the interests of the organization; due diligence is about understanding your security governance principles (policies and procedures) and the risks to your organization; actions taken by a vendor to demonstrate or provide due care
     - Due diligence often involves: 
       - gathering information through discovery, risk assessments and review of existing documentation 
-      - developing a formalized security structure containing a security policy, standards, baselines guidlines, and procedures 
+      - ✏️developing a formalized security structure containing a security policy, standards, baselines guidlines, and procedures 
       - documentation to establish written policies
       - disseminating the information to the organization
-      - Due diligence is knowing what should be done and planning for it.
+      - Due diligence is ✏️knowing what should be done and planning for it.
       - Due diligence is developing a formalized security structure containing a security policy, standards, baselines, guidelines, and procedures.
-  - **Due care**: 🧑‍🏭 practicing the individual activities that maintain the due diligence effort; due care is about your legal responsibility within the law or within org policies to implement your org’s controls, follow security policies, do the right thing and make reasonable choices
+      - The 🥇asset owner security role is ultimately responsible for due diligence in protecting a company's data. Asset owner is the person who has final corporate responsibility for the protection and storage of data. Owners may be liable for negligence if they fail to perform due diligence in establishing and enforcing security policy to protect and sustain sensitive data.
+  - **Due care**: 🧑‍🏭 practicing the individual activities that maintain the due diligence/ security effort; due care is about your legal responsibility within the law or within org policies to implement your org’s controls, follow security policies, do the right thing and make reasonable choices
   - Security documentation is the security policy
-  - Due care is doing the right action at the right time.
+  - Due care is ✏️doing the right action at the right time.
   - exercise reasonable security measures to protect assets
-  - Due care is the continued application of a security structure onto the IT infrastructure of an organization.
+  - Due care is the ✏️continued application of a security structure onto the IT infrastructure of an organization.
   - After establishing a framework for governance, security awareness training should be implemented, including all new hires, who complete the security awareness training as they come on board, and existing employees who should recertify regularly (typically yearly)
   - ***The Prudent Man Rule*** requires that a fiduciary, such as a senior executives and trustee, act with the care, skill, prudence, and diligence that a prudent person acting in a like capacity would use. FOrmalised by the Federal Sentencing Guidelines released in 1991 provided punishment guidelines to help federal judges interpret computer crime laws.
 
@@ -199,7 +200,10 @@
     - **Health Insurance Portability and Accountability Act (HIPAA)** - privacy and security regulations requiring strict security measures for hospitals, physicians, insurance companies, and other organizations that process or store private medical information about individuals; also clearly defines the rights of individuals who are the subject of medical records and requires organizations that maintain such records to disclose these rights in writing
     - Organizations subject to HIPAA may enter into relationships with service providers as long as the provider’s use of protected health information is regulated under a formal business associate agreement (BAA). The BAA makes the service provider liable under HIPAA.
     - **Federal Information Security Management Act (FISMA)** - ) includes provisions regulating information security at federal agencies. Requires federal agencies to implement an information security program that covers the ✏️agency's operations and ✏️contractors
-    - **Computer Fraud and Abuse Act (CFAA)** (as amended) - protects computers used by the government or in interstate commerce from a variety of abuses
+    - **Computer Fraud and Abuse Act (CFAA)** (as amended) - protects computers used by the government or in interstate commerce from a variety of abuses. It also provides specific protections for systems operated by government ✏️agencies.
+    - The **Homeland Security Act (HSA)** created the U.S. Department of Homeland Security included
+         - 🔥the Cyber Security Enhancement Act of 2002: Strengthens cybersecurity efforts by promoting information sharing, enhancing computer crime investigations, and improving cybersecurity practices across federal, state, and local governments. Focuses on improving cybersecurity and enhancing collaboration between government and private sector.
+         - 🔥the Critical Infrastructure Information Act of 2002: Protects sensitive information related to critical infrastructure from public disclosure. Protects sensitive infrastructure information from public disclosure to enhance the security of critical systems.
     - **ITIL**  British Government standard that describes IT service managment and the structured fitting of security into an organization. It focuses on change management, configuration management and SLAs. Helps information technology (IT) organizations with reducing cost, mitigating risk, and improving customer service.
     - **Personal Information Protection Law (PIPL)**: effective since 2021 aims to establish a comprehensive framework for the protection of personal information in 🔥China
     - **Protection of Personal Information Act (POPIA)**: enacted in 2013, establishes regulatios for the responsible processing of personal information by both public and private entities in 🔥South Africa.
@@ -240,18 +244,22 @@
     - Some countries do not have any reporting requirements
 - 1.5.2 Licensing and intellectual property (IP) requirements
   - **Intellectual property**: ✏️intangible assets (e.g. software, data)
-  - **Trademarks**: words, slogans, and logos used to identify a company and its products or services.
+  - **Trademarks**: words, slogans, and logos used to identify a company and its products or services. The ❄️_United States Patent and Trademark Office_ (USPTO), which bears responsibility for the registration of trademarks. The ® symbol is reserved for trademarks that have received official registration status by the U.S. Patent and Trademark Office. The ™ symbol would be used before receiving USPTO approval
   - **Patents**: a ✏️temporary monopoly for producing a specific item such as a toy, which must be novel and unique to qualify for a patent. Patents have 📝expiration date. U.S. patent law provides for an exclusivity period of 📝20 years beginning at the time a utility patent application is submitted to the Patent and Trademark Office.
     - **Utility**: protect the intellectual property rights of ✏️inventors
     - **Design**: cover the appearance of an invention and last for 15 years; note design patents on't protect the idea of an invention only its form, and are generally seen as weaker
     - Software: area of on-going controversy; Google vs Oracle; given to rise of "patent trolls"
-  - **Copyright**: exclusive use of 🔥artistic, 🔥musical or 🔥literary works which prevents unauthorized duplication, distribution or modification. Also can include software code published in academic journal. Copyright and patent protection both have expiration dates. Copyright protection generally lasts for 📝70 years after the death of the 📝last surviving author of the work
+  - **Copyright**: exclusive use of 🔥artistic, 🔥musical or 🔥literary works which prevents unauthorized duplication, distribution or modification. Also can include software code published in academic journal. Copyright and patent protection both have expiration dates. Copyright protection generally lasts for 📝70 years after the death of the 📝last surviving author of the work. The © symbol is used to represent a copyright.
   - **Licensing**: a contract between the software producer and the consumer which limits the use and/or distribution of the software
+      - ✏️Contractual agreements: Licenses for high-value software often use contractual agreements to outline the responsibilities of both parties
+      - ✏️Shrink-wrap agreement: is a type of contract where the terms and conditions are enclosed with the software packaging. The contract is considered accepted by the user when they open the packaging and begin using the software.
+      - ✏️Click-wrap agreement is a type of contract where users must agree to the terms and conditions by clicking an "I agree" button or similar option before they can complete the installation or use of the software.
   - **Trade Secrets**: intellectual property that is critical to a business, and significant damage would result if it were disclosed to competitors or the public
   - When you file application for protection, until registration is granted, you can use the 🔥**TM** symbol to inform others that it is protected under trademark law. Once the application is approved, the name becomes a registered trademark, and you can begin using the 🔥**®** R symbol. The 🔥**©** C symbol is used to represent a copyright.
 - 1.5.3 Import/export controls
   -  Every country has laws around the import and export of hardware and software; e.g. the US has restrictions around the export of 🔐cryptographic technology, and Russia requires a license to import 🔐encryption technologies manufactured outside the country
-  -  The _Bureau of Industry and Security_ within the Department of Commerce sets regulations on the export of 🔐encryption products outside of the United States.
+  -  These regulations tend to cover more technical items, such as high-performance computing, security software, and encryption technology.
+  -  The ❄️_Bureau of Industry and Security_ BIS within the Department of Commerce sets regulations on the export of 🔐encryption products outside of the United States.
 - 1.5.4 Transborder data flow
   -  Orgs should adhere to origin country-specific laws and regulations, regardless of where data resides
   -  Also be aware of applicable laws where data is stored and systems are used
@@ -443,10 +451,10 @@ Factors, entities or conditions outside the organisation upon which the organisa
         - **Mean Time to Repair (MTTR)** The average time required to repair a failed component or system.
         - **Maximum tolerable downtime (MTD)**, (how long an org can survive an interruption of critical functions) along with the costs of downtime and recovery; AKA MTD (maximum tolerable downtime)
         - Some mitigation actions during BIA include:
-        - Hardening systems:  securing systems by reducing their attack surface of vulnerability
-        - Defining systems: identifying and describing the various systems within an organization, including their roles, functions, and interdependencies.
-        - Reducing systems: Consolidation and removal of complexity
-        - Alternative systems: refers to backup systems, redundant systems 
+        - ✏️Hardening systems:  securing systems by reducing their attack surface of vulnerability
+        - ✏️Defining systems: identifying and describing the various systems within an organization, including their roles, functions, and interdependencies.
+        - ✏️Reducing systems: Consolidation and removal of complexity
+        - ✏️Alternative systems: refers to backup systems, redundant systems 
     - **Continuity planning**: The first two phases of the BCP process (project scope and planning and the business impact analysis) focus on determining how the BCP process will work and prioritizing the business assets that need to be protected against interruption
       - The next phase of BCP development, continuity planning, focuses on the development and implementation of a continuity strategy to minimize the impact realized risks might have on protected assets
       - There are two primary subtasks involved in continuity planning:
@@ -519,7 +527,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - 1.10.1 Risk assessment/analysis
   - **Risk Assessment**: used to identify the risks and set criticality priorities, and then risk response is used to determine the best defense for each identified risk
   - The primary goal of a security risk assessment is to identify and analyze risks and then develop strategies to reduce them to an acceptable level.
-  - Risk is threat with a vulnerability
+  - ❄️Risk is threat with a vulnerability
   - Risk = threat * vulnerability (or probability of harm * severity of harm)
   - Addressing either the threat or threat agent or vulnerability directly results in a reduction of risk (known as threat mitigation)
   - All IT systems have risk; all orgs have risk; there is no way to elminiate 100% of all risks. Risk is typically composed of three Components:
@@ -527,10 +535,11 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **🔥Vulnerability** (a weakness that can be exploited by a threat)
   - **🔥Impact** (the potential harm caused by a threat exploiting a vulnerability)
   - Instead upper management must decide which risks are acceptable, and which are not; There are two primary risk-assessment methodologies:
-      - **Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations e.g FAIR (Factor Analysis of Information Risk) is a quantitative risk management framework
+      - **Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations e.g ✏️FAIR (Factor Analysis of Information Risk) is a quantitative risk management framework
       - **Qualitative Risk Analysis**: assigns subjective and intangible values to the loss of an asset and takes into account perspectives, feelings, intuition, preferences, ideas, and gut reactions. It relies on subjective judgments to rank risk.
     - Most orgs employ a hybrid of both risk assessment methodologies
     - The goal of risk assessment is to identify risks (based on asset-threat parings) and rank them in order of criticality
+    - The two most important elements of a qualitative risk assessment are determining the ❄️probability and ❄️impact of each risk upon the organization. Likelihood is another word for probability.
 
 - 1.10.3 Risk response
   - **Risk response**: the formulation of a plan for each identified risk; for a given risk, you have a choice for a possible risk response:
@@ -564,18 +573,19 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - then, logical and technical controls provide protection against logical attacks and exploits 
       - then, physical controls provide protection against real-world physical attacks against facilities and devices
 - 1.10.5 Applicable types of controls (e.g., preventive, detective, corrective)
-  - **Administrative**: the policies and procedures defined by an org's security policy and other regulations or requirements
-  - **Physical**: security mechanisms focused on providing protection to the facility and real world objects
-  - **Preventive**: a preventive or preventative control is deployed to thwart or stop unwanted or unauthorized activity from occurring
-  - **Deterrent**: a deterrent control is deployed to discourage security policy violations; deterrent and preventative controls are similar, but deterrent controls often depend on individuals being convinced not to take an unwanted action
-  - **Detective**: a detective control is deployed to discover or detect unwanted or unauthorized activity; detective controls operate after the fact
-  - **Compensating**: a compensating control is deployed to provide various options to other existing controls, to aid in enforcement and support of security policies
+  - **🔥Administrative**: the policies and procedures defined by an org's security policy and other regulations or requirements
+  - **🔥Physical**: security mechanisms focused on providing protection to the facility and real world objects
+  - **🔥Preventive**: a preventive or preventative control is deployed to thwart or stop unwanted or unauthorized activity from occurring
+  - **🔥Deterrent**: a deterrent control is deployed to discourage security policy violations; deterrent and preventative controls are similar, but deterrent controls often depend on individuals being convinced not to take an unwanted action
+  - **🔥Detective**: a detective control is deployed to discover or detect unwanted or unauthorized activity; detective controls operate after the fact
+  - **🔥Compensating**: a compensating control is deployed to provide various options to other existing controls, to aid in enforcement and support of security policies
     - they can be any controls used in addition to, or in place of, another control
     - they can be a means to improve the effectiveness of a primary control or as the alternative or failover option in the event of a primary control failure
-  - **Corrective**: a corrective control modifies the environment to return systems to normal after an unwanted or unauthorized activity as occurred; it attempts to correct any problems resulting from a security incident
-  - **Recovery**: An extension of corrective controls but have more advanced or complex abilities; a recovery control attempts to repair or restore resources, functions, and capabilities after a security policy violation 
+    - example Compensation controls are used when controls like the locks in this example are not sufficient. and then placing a signs on the doors reminding staff that leaving the door open creates a security issue, and an alarm that will sound if the doors are left open for more than five minutes.
+  - **🔥Corrective**: a corrective control modifies the environment to return systems to normal after an unwanted or unauthorized activity as occurred; it attempts to correct any problems resulting from a security incident
+  - **🔥Recovery**: An extension of corrective controls but have more advanced or complex abilities; a recovery control attempts to repair or restore resources, functions, and capabilities after a security policy violation 
     - recovery controls typically address more significant damaging events compared to corrective controls, especially when security violations may have occurred
-  - **Directive**: A directive control is deployed to direct, confine, or control the actions of subjects to force or encourage compliance with security policies
+  - **🔥Directive**: A directive control is deployed to direct, confine, or control the actions of subjects to force or encourage compliance with security policies
 - 1.10.6 Control assessments (security and privacy)
   - Periodically assess security and privacy controls: what’s working, what isn’t 
     - As part of this assessment, the existing documents should be thoroughly reviewed, and some of the controls tested randomly 
@@ -615,7 +625,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - SP 800-37 Rev 2, Risk Management Framework for Information Systems and Organizations
     - SP 800-39, Managing Information Security Risk
     - SP 800-30 Rev 1, Guide for Conducting Risk Assessments
-    - The **📝RMF 800-37 has 7 steps**, and **six cyclical phases**: (PCSIAAM People Can See I AM ALWAYS Monitoring)
+    - The **📝RMF 800-37 has 7 steps**, and **six cyclical phases**: (PCSIAAM 🟡People Can See I AM ALWAYS Monitoring)
       - **🔥Prepare** to execute the RMF from an organization and system-level perspective by establishing a context and priorities for managing security and privacy risk
       - **🔥Categorize** the system and the information processed, stored, and transmitted by the system based on an analysis of the impact of loss
       - **🔥Select** an initial set of controls for the system and tailor the controls as needed to reduce risk to an acceptable level based on an assessment of risk
@@ -630,60 +640,59 @@ Factors, entities or conditions outside the organisation upon which the organisa
 [1.11](#1.11) Understand and apply threat modeling concepts and methodologies (OSG-9 Chpt 1)
 - **Threat Modeling**: security process where potential threats are identified, categorized, and analyzed; can be performed as a proactive measure during design and development or as an reactive measure once a product has been deployed   
   - Threat modeling identifies the potential harm, the probability of occurrence, the priority of concern, and the means to eradicate or reduce the threat
-    - Proactive Approach: This is a proactive approach to threat modeling, which is also known as the defensive approach.
-    - Reactive approach or adversarial approach to threat modeling takes place after a product has been created and deployed.
-- Microsoft uses the **Security Development Lifecycle** (SDL) with the motto: "Secure by design, secure by default, secure in deployment and communication" (also known as SD3+C)
+    - 🔥Proactive Approach: This is a proactive approach to threat modeling, which is also known as the ❄️defensive approach.  Defensive approach to threat modeling takes place during the early stages of development; the method is based on predicting threats and designing in specific defenses during the coding and crafting process
+  - Security solutions are more cost effective in this phase than later; this concept should be considered a proactive approach to threat management. During the early stages of systems development, the team considers the vulnerabilities, threats, and risks of their solution and integrates protections against unwanted outcomes.
+    - 🔥Reactive approach or adversarial approach to threat modeling takes place after a product has been created and deployed. Threat hunting usually happens at this stage.
+- Microsoft uses the **Security Development Lifecycle** (SDL) with the motto: "Secure by ✴️design, secure by ✴️default, secure in ✴️deployment and ✴️communication" (also known as 🟡SD3+C)
   - It has two objectives:
     - Reduce the number of security-related design and coding defects
     - Reduce the severity of any remaining defects
-- A defensive approach to threat modeling takes place during the early stages of development; the method is based on predicting threats and designing in specific defenses during the coding and crafting process
-  - Security solutions are more cost effective in this phase than later; this concept should be considered a proactive approach to threat management
 - Microsoft developed the **STRIDE threat model**: Also useful for threat categorization during aplication threat modeling
-  - Spoofing: an attack with the goal of gaining access to a target system through the use of falsified identity
-  - Tampering: any action resulting in unauthorized changes or manipulation of data, whether in transit or in storage
-  - Repudiation: the ability of a user or attacker to deny having performed an action or activity by maintaining plausible deniability
-  - Information Disclosure: the revelation or distribution of private, confidential, or controlled information to external or unauthorized entities
-  - Denial of Service (DoS): an attack that attempts to prevent authorized use of a resource; this can be done through flaw exploitation, connection overloading, or traffic flooding
-  - Elevation of privilege: an attack where a limited user account is transformed into an account with greater privileges, powers, and access
-- **Process for Attack Simulation and Threat Analysis (PASTA)**: PASTA is a risk-­centric approach that aims at selecting or developing countermeasures in relation to the value of the assets to be protected. A seven-stage threat modeling methodology: _(Our Technical Application Tackles Vulnerabilities And Risks)_
-  - Stage I: Definition of the Objectives (DO) for the Analysis of Risk
-  - Stage II: Definition of the Technical Scope (DTS)
-  - Stage III: Application Decomposition and Analysis (ADA)
-  - Stage IV: Threat Analysis (TA)
-  - Stage V: Weakness and Vulnerability Analysis (WVA)
-  - Stage VI: Attack Modeling and Simulation (AMS)
-  - Stage VII: Risk Analysis and Management (RAM)
+  - ✏️Spoofing: an attack with the goal of gaining access to a target system through the use of falsified identity
+  - ✏️Tampering: any action resulting in unauthorized changes or manipulation of data, whether in transit or in storage
+  - ✏️Repudiation: the ability of a user or attacker to deny having performed an action or activity by maintaining plausible deniability
+  - ✏️Information Disclosure: the revelation or distribution of private, confidential, or controlled information to external or unauthorized entities
+  - ✏️Denial of Service (DoS): an attack that attempts to prevent authorized use of a resource; this can be done through flaw exploitation, connection overloading, or traffic flooding
+  - ✏️Elevation of privilege: an attack where a limited user account is transformed into an account with greater privileges, powers, and access
+- **Process for Attack Simulation and Threat Analysis (PASTA)**: PASTA is a risk-­centric approach that aims at selecting or developing countermeasures in relation to the value of the assets to be protected. A seven-stage threat modeling methodology: _(🟡Our Technical Application Tackles Vulnerabilities And Risks)_
+  - ✏️Stage I: Definition of the Objectives (DO) for the Analysis of Risk
+  - ✏️Stage II: Definition of the Technical Scope (DTS)
+  - ✏️Stage III: Application Decomposition and Analysis (ADA)
+  - ✏️Stage IV: Threat Analysis (TA)
+  - ✏️Stage V: Weakness and Vulnerability Analysis (WVA)
+  - ✏️Stage VI: Attack Modeling and Simulation (AMS)
+  - ✏️Stage VII: Risk Analysis and Management (RAM)
 - Each stage of PASTA has a specific list of objectives to achieve and deliverables to produce in order to complete the stage
 - **DREAD**: The DREAD model, developed in 2002, is a quantitative risk analysis model that involves rating the severity of security threats by assigning numeric values (typically from 1 to 10) that represent different levels of severity.
-     - Damage: What is the total amount of damage the threat is capable of causing to your business?
-     - Reproducibility: How easily can an attack on the particular threat be replicated?
-     - Exploitability: How much effort is required for the threat to be exploited by an attacker?
-     - Affected users: How many people, either inside or outside of your organization, will be affected by the security threat?
+     - ✏️Damage: What is the total amount of damage the threat is capable of causing to your business?
+     - ✏️Reproducibility: How easily can an attack on the particular threat be replicated?
+     - ✏️Exploitability: How much effort is required for the threat to be exploited by an attacker?
+     - ✏️Affected users: How many people, either inside or outside of your organization, will be affected by the security threat?
      - Discoverability: How easily can the vulnerability be found?
  - **MITRE's ATT&CK framework** is broadly adopted by threat modeling and threat intelligence organizations and is used as a default model in many software packages and tools.
- - ATT&CK is used to map out and understand adversarial behaviors and techniques, allowing organizations to improve detection and response capabilities based on known attack methods.
- - It is a comprehensive knowledge base of adversary tactics and techniques based on real-world observations and using pre-existing tools. It includes:
-     - Tactics: The goals of an adversary during an attack (e.g., Initial Access, Execution, Persistence).
-     - Techniques: Specific methods used to achieve tactics (e.g., Phishing, PowerShell).
+ - ATT&CK is used to map out and understand adversarial behaviors and techniques, allowing organizations to improve detection and response capabilities based on ❄️known attack methods.
+ - It is a comprehensive knowledge base of adversary tactics and techniques based on real-world observations and using ❄️pre-existing tools. It includes:
+     - ✏️Tactics: The goals of an adversary during an attack (e.g., Initial Access, Execution, Persistence).
+     - ✏️Techniques: Specific methods used to achieve tactics (e.g., Phishing, PowerShell).
   - **The Diamond Model** specifically addresses how to think about intrusions but does not address broader threats, and the other answers were made up for this question. The Diamond Model focuses on four key elements that interact with each other to create a threat scenario: i.e Adversary to Infrastructure, Adversary to Capability, Infrastructure to Capability, and Victim to Capability.
-      - Adversary: The entity or individual initiating the attack.
-      - Infrastructure: The systems, tools, or networks used by the adversary to conduct the attack.
-      - Capability: The techniques, tools, or methods used by the adversary to exploit vulnerabilities and achieve their goals.
-      - Victim: The target of the attack, which could be a person, organization, system, or data.
+      - ✏️Adversary: The entity or individual initiating the attack.
+      - ✏️Infrastructure: The systems, tools, or networks used by the adversary to conduct the attack.
+      - ✏️Capability: The techniques, tools, or methods used by the adversary to exploit vulnerabilities and achieve their goals.
+      - ✏️Victim: The target of the attack, which could be a person, organization, system, or data.
 - **Visual, Agile, and Simple Threat (VAST)**: a threat modeling concept that integrates threat and risk management into an Agile programming environment on a scalable basis
 - Part of the job of the security team is to identify threats, using different methods:
-   - Focus on attackers: this is a useful method in specific situations;
+   - ✏️Focus on attackers: this is a useful method in specific situations;
     - e.g. suppose that a developer’s employment is terminated, and that post-offboarding and review of developer’s computer, a determination is made that the person was disgruntled and angry
       - understanding this situation as a possible threat, allows mitigation steps to be taken
-   - Focus on assets: an org’s most valuable assets are likely to be targeted by attackers
-   - Focus on software: orgs that develop applications in house, and can be viewed as part of the threat landscape; the goal isn’t to identify every possible attack, but to focus on the big picture, identifying risks and attack vectors
+   - ✏️Focus on assets: an org’s most valuable assets are likely to be targeted by attackers
+   - ✏️Focus on software: orgs that develop applications in house, and can be viewed as part of the threat landscape; the goal isn’t to identify every possible attack, but to focus on the big picture, identifying risks and attack vectors
 - Understanding threats to the org allow the documentation of potential attack vectors; diagramming can be used to list various technologies under threat
 - **Reduction Analysis** (Also known as Decomposiing the application, system or environment): The purpose is to gain a greater understanding of the logic of a product, its internal components as well as its interactions and external elements: The five key concepts of decomposition are
-  - trust boundaries
-  - dataflow paths
-  - input points
-  - privileged operations
-  - Details about security stance and approach.
+  - ✏️trust boundaries
+  - ✏️dataflow paths
+  - ✏️input points
+  - ✏️privileged operations
+  - ✏️Details about security stance and approach.
 
 [1.12](#1.12) Apply Supply Chain Risk Management (SRM) concepts (OSG-9 Chpt 1)
 - 1.12.1 Risks associated with hardware, software, and services
@@ -804,6 +813,7 @@ standards, and procedures to ensure compliance with established security require
   - ARO is the expected frequency with which a specific threat will occur within a year.
   - ARO can be a whole number or a fraction, representing the number of occurrences per year.
   - Example: If historical data suggests that a power outage happens twice a year, the ARO is 2. If a flood is expected to occur once every 10 years, the ARO is 0.1.
+  - A 📝countermeasure primary affects the annualized rate of occurrence (ARO), because the countermeasure is designed to prevent (or mitigate or reduce) the occurrence of the risk, thus reducing its frequency per year.
     
 - **SLE**: The single loss expectancy (SLE) is the product of the asset value (AV) and the exposure factor (EF).
   - SLE is the monetary loss expected from a single occurrence of a threat event.
