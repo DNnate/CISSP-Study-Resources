@@ -81,10 +81,11 @@
  
 [1.3](#1.3) Evaluate and apply security governance principles (OSG-9 Chpt 1)
  
-- **Security governance**: the collection of policies, roles, processes/practices used to make security decisions in an org; related to supporting, evaluating, defining, and directing the security efforts of an org 
-  - Security governance is the implementation of a security solution and a management method that are tightly interconnected
-  - Security governance seeks to compare the security processes and infrastructure used within the organization with knowledge and insight obtained from external sources.
-  - Security governance should include acquisitions, divestitures, and governance committees. 
+- **Security governance**: 🌠the collection of policies, roles, processes/practices used to make security decisions in an org; related to supporting, evaluating, defining, and directing the security efforts of an org 
+  - 🌠Security governance is the implementation of a security solution and a management method that are tightly interconnected
+  - 🌠Security governance requires a clear understanding of the objectives of the organization as the core concepts of security and indeed the primary goals and objectives of security should be the CIA Triad
+  - 🌠Security governance seeks to compare the security processes and infrastructure used within the organization with knowledge and insight obtained from external sources.
+  - 🌠Security governance should include acquisitions, divestitures, and governance committees. 
   - There are numerous security frameworks and governance guidelines, including the National Institute of Standards and Technology (NIST) 🔥SP 800-53 Cybersecurity Framework and 🔥SP 800-100
 - **The security function**: the aspect of operating a business that focuses on the task of evaluating and improving security over time 
   - To manage security, an org must implement proper and sufficient security governance
@@ -146,6 +147,7 @@
         - ✏️Implementation Phase: Deploying the security solutions.
         - ✏️Management Phase: Ongoing management and adaptation of the security architecture.  
     -  **FedRAMP (Federal Risk and Authorization Managment Programme)** regulates 🧠cloud security for US Gov. FedRAMP specifies a set of security controls based on NIST SP 800-53. It provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services.
+    -  FedRAMP is a U.S. government compliance program that standardizes how cloud services are assessed, monitored, and handle authorization. There is a FedRAMP marketplace for service providers and services that have been authorized by FedRAMP. 
     -  FIPS 140-3 Security requirement for cryptographic modules
     -  NIST
           - 800-37 Risk Managment Framework
@@ -179,6 +181,7 @@
       - documentation to establish written policies
       - disseminating the information to the organization
       - Due diligence is ✏️knowing what should be done and planning for it.
+      - The due diligence principle is a more specific component of due care that states that an individual assigned a responsibility should exercise due care to complete it accurately and in a timely manner.
       - Due diligence is developing a formalized security structure containing a security policy, standards, baselines, guidelines, and procedures.
       - The 🥇asset owner security role is ultimately responsible for due diligence in protecting a company's data. Asset owner is the person who has final corporate responsibility for the protection and storage of data. Owners may be liable for negligence if they fail to perform due diligence in establishing and enforcing security policy to protect and sustain sensitive data.
   - **Due care**: 🧑‍🏭 practicing the individual activities that maintain the due diligence/ security effort; due care is about your legal responsibility within the law or within org policies to implement your org’s controls, follow security policies, do the right thing and make reasonable choices
@@ -186,6 +189,8 @@
   - Due care is ✏️doing the right action at the right time.
   - exercise reasonable security measures to protect assets
   - Due care is the ✏️continued application of a security structure onto the IT infrastructure of an organization.
+  - Due care also includes periodic security audits
+  - The due care principle states that an individual should 🧠react in a situation using the same level of care that would be expected from any reasonable person. It is a very broad standard.
   - After establishing a framework for governance, security awareness training should be implemented, including all new hires, who complete the security awareness training as they come on board, and existing employees who should recertify regularly (typically yearly)
   - ***The Prudent Man Rule*** requires that a fiduciary, such as a senior executives and trustee, act with the care, skill, prudence, and diligence that a prudent person acting in a like capacity would use. FOrmalised by the Federal Sentencing Guidelines released in 1991 provided punishment guidelines to help federal judges interpret computer crime laws.
 
@@ -214,7 +219,7 @@
     - **Protection of Personal Information Act (POPIA)**: enacted in 2013, establishes regulatios for the responsible processing of personal information by both public and private entities in 🔥South Africa.
     - The **Privacy Act of 1974** limits the ways government agencies may use information that private citizens disclose to them under certain circumstances. The Privacy Act regulates what information ✏️government agencies may collect and maintain about individuals.
     - **The Lanham Act** regulates the issuance of 🧠trademarks to protect intellectual property.
-    - **Digital Millennium Copyright Act** - prohibits the circumvention of copyright protection mechanisms placed in digital media and 🧠limits the liability of internet service providers for the activities of their users
+    - **Digital Millennium Copyright Act (DMCA)** - prohibits the circumvention of copyright protection mechanisms placed in digital media or on a protected work by the copyright holder and 🧠limits the liability of internet service providers for the activities of their users
     - **The Economic Espionage Act** imposes fines and jail sentences on anyone found guilty of stealing trade secrets from a U.S. corporation. It gives true teeth to the intellectual property rights of trade secret owners. 
     - **The Wassenaar Arrangement** on Export Controls for Conventional Arms and Dual-Use Goods and Technologies is a multilateral 🔥export control regime established on 12 July 1996, in Wassenaar, near The Hague, Netherlands. According to the Wassenaar Arrangement document, it was "established to contribute to regional and international security and stability by promoting transparency and greater responsibility in transfers of conventional arms and dual-use goods and technologies, thus preventing destabilizing accumulations. Participating states seek, through their national policies, to ensure that transfers of these items do not contribute to the development or enhancement of ✏️military capabilities which undermine these goals, and are not diverted to support such capabilities. It also addresses cyber weapons, including malicious software, Command and Control (C2) software, and internet surveillance software.
     - **Information Assurance Technical Framework (IATF)** The IATF is a framework developed by the International Organization for Standardization (ISO) to provide guidelines for assessing the security and privacy aspects of information technology systems provides and technical guidance for protecting the information infrastructures of the U.S. Government and industry. It covers various areas such as risk management, security controls, and data privacy. The four major technology focus areas of the ✴️Defense-in-Depth Strategy, ✴️Defend the Enclave Boundary, ✴️Defend the Computing Environment, and Defend ✴️Supporting Infrastructures. 
@@ -442,7 +447,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - 1.8.2 Develop and document the scope and the plan
   - The BCP process has four main steps (Project scope and planning, Business Impact Analysis, Continuity planning, and Approval and implementation):
     - **Project scope and planning**: Developing the project scope and plan starts with gaining support of the management team, making a business case (cost/benefit analysis, regulatory or compliance reasons etc.) and gaining approval to move forward. 
-      - Next, you need to form a team with representatives from the business as well as IT
+      - Next, you need to form a team with representatives from the business as well as IT. This will require an initial analysis of the Business organization to aid in the selection of team members
       - Next, start with a business continuity policy statement, then conduct a business impact analysis (see next item), and then develop the remaining components: 
         - preventive controls
         - relocation
@@ -460,7 +465,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
         - **Mean time to Failure (MTTF)**: is the expected typical functional lifetime of the device given a specific operating environment.
         - **Mean Time Between Failures (MTBF)** The predicted elapsed time between inherent failures of a system during operation. e.g A server might have an MTBF of 10,000 hours.
         - **Mean Time to Repair (MTTR)** The average time required to repair a failed component or system.
-        - **Maximum tolerable downtime (MTD)**, (how long an org can survive an interruption of critical functions) along with the costs of downtime and recovery; AKA MTD (maximum tolerable downtime)
+        - **Maximum tolerable downtime (MTD)**, (how long an org can survive an interruption of critical functions) along with the costs of downtime and recovery; AKA MTD (maximum tolerable downtime). This measure is sometimes also called ✴️maximum tolerable outage (MTO) or ✴️maximum allowable downtime (MAD)
         - Some mitigation actions during BIA include:
         - ✏️Hardening systems:  securing systems by reducing their attack surface of vulnerability
         - ✏️Defining systems: identifying and describing the various systems within an organization, including their roles, functions, and interdependencies.
@@ -489,7 +494,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - 1.9.1 Candidate screening and hiring
   - The following strategies can reduce your risk:
     - **Candidate screening and hiring**: To properly plan for security, you shold have standards in place for job descriptions, job classification, work tasks, job responsibilities, prevention of collusion, candidate screening, background checks, security clearances, employment agreements, and nondisclosure agreements 
-      - ⭐Nondisclosure agreements (NDAs) typically require either mutual or one-way confidentiality in a business relationship. ⭐Noncompete agreements (NCAs) limit the future employment possibilities of employees by restricting an employee’s ability to work with or start a competing business for a certain period after leaving the organization.
+      - ⭐Nondisclosure agreements (NDAs) typically require either mutual or one-way confidentiality in a business relationship. ⭐Noncompete agreements (NCAs) limit the future employment possibilities of employees by restricting an employee’s ability to work with or start a competing business for a certain period after leaving the organization. 📝Signing a noncompete or nondisclosure agreement is typically done at hiring.
       - screening employment candidates thoroughly is a key part of the hiring process
       - be sure to conduct a full background check that includes a criminal records check, job history verification, education verification, certification validation and confirmation of other accolades when possible
       - all references should be contacted
@@ -508,6 +513,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **Transfer**: an employee moves from one job to another, likely requiring adjusted account access to maintain appropriate least privilege
   - **Termination or offboarding**: offboarding is the removal of an employee's identity from the IAM system, once that person has left the org; can also be an element used when an employee transfers into a new role
     - whether cordial or abrupt, the ex-employee should be escorted off the premises and not allowed to return
+    - In the case of an involuntary termination under adverse circumstances, the user is being fired and may have a negative and potentially hostile reaction. For this reason, it is important to terminate access immediately upon the user being informed of the termination. Terminating access prior to notification may tip the user off to the termination in advance.
 - 1.9.4 Vendor, consultant, and contractor agreements and controls
   - Orgs commonly outsource many IT functions, particularly data center hosting, contact-center support, and application development
   - Info security policies and procedures must address outsourcing secuity and the use of service providers, vendors and consultants 
@@ -539,6 +545,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - 1.10.1 Risk assessment/analysis
   - **Risk Assessment**: used to identify the risks and set criticality priorities, and then risk response is used to determine the best defense for each identified risk
   - The primary goal of a security risk assessment is to identify and analyze risks and then develop strategies to reduce them to an acceptable level.
+  - A risk matrix or risk heat map is a form of risk assessment that is performed on a basic graph or chart
   - ❄️Risk is threat with a vulnerability
   - Risk = threat * vulnerability (or probability of harm * severity of harm)
   - Addressing either the threat or threat agent or vulnerability directly results in a reduction of risk (known as threat mitigation)
@@ -610,8 +617,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - While monitoring is used for more than security purposes, monitoring should be tuned to ensure the org is notified about potential security incidents as soon as possible 
   - If a security breach occurs, monitored systems and data become valuable from a forensics perspective; rrom the ability to derive root cause of an incident to making adjustments to minimize the chances of reoccurance 
 - 1.10.8 Reporting
-  - Risk Reporting is a key task to perform at the conclusion of risk analysis (i.e. production and presentation of a summarizing report) 
-  - A Risk Register or Risk Log is a document that inventories all identified risks to an org or system or within an individual project 
+  - 🔥Risk Reporting is a key task to perform at the conclusion of risk analysis (i.e. production and presentation of a summarizing report). Risk reporting involves the production of a risk report and a presentation of that report to the interested/relevant parties
+  - 🔥A Risk Register or Risk Log is a document that inventories all identified risks to an org or system or within an individual project 
     - A risk register is used to record and track the activities of risk management, including:
       - identifying risks
       - evaluating the severity of, and prioritizing those risks
@@ -621,12 +628,12 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - Risk analysis is performed to provide upper management with the details necessary to decide which risks should be mitigated, which should be transferred, which should be deterred, which should be avoided, and which should be accepted
   - Effective risk communication and reporting should be clear, timely, and consistent.
   - An **Enterprise Risk Management** (ERM) program can be evaluated using an RMM 
-  - **Risk Maturity Model (RMM)**: assesses the key indicators and activities of a mature, sustainable, and repeatable risk management process, typically relating the assessment of risk maturity against a five-level model such as:
-    - **Ad hoc**: a chaotic starting point from which all orgs initiate risk management
-    - **Preliminary**: loose attempts are made to follow risk management processes, but each department may perform risk assessment uniquely
-    - **Defined**: a common or standardized risk framework is adopted organization-wide
-    - **Integrated**: risk management operations are integrated into business processes, metrics are used to gather effectiveness data, and risk is considered an element in business strategy decisions
-    - **Optimized**: risk management focuses on achieving objectives rather than just reacting to external threats; increased strategic planning is geared toward business success rather than just avoiding incidents; and lessons learned are re-integrated into the risk management process
+  - **Risk Maturity Model (RMM)**: 🟡APDIO. RMM assesses the key indicators and activities of a mature, sustainable, and repeatable risk management process, typically relating the assessment of risk maturity against a five-level model such as:
+    - **🔢Ad hoc**: a chaotic starting point from which all orgs initiate risk management
+    - **🔢Preliminary**: loose attempts are made to follow risk management processes, but each department may perform risk assessment uniquely
+    - **🔢Defined**: a common or standardized risk framework is adopted organization-wide
+    - **🔢Integrated**: risk management operations are integrated into business processes, metrics are used to gather effectiveness data, and risk is considered an element in business strategy decisions
+    - **🔢Optimized**: risk management focuses on achieving objectives rather than just reacting to external threats; increased strategic planning is geared toward business success rather than just avoiding incidents; and lessons learned are re-integrated into the risk management process
 - 1.10.10 Risk frameworks **Focuses on the 📝WHY**
   - A risk framework is a guide or recipe for how risk is to be accessed, resolved, and monitored
   - provide a structured approach to identifying, assessing, prioritizing and manging risk to guide decision making
@@ -735,9 +742,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
 
 - 1.12.2 Third-party assessment and monitoring
   - Before doing business with another company, an org needs to perform due-dilligence, and third-party assessments can help gather information and perform the assessment
-  - A third-party audit is performed by a third-party, such as defined by AICPA, to provide an unbiased review of an entity's security infrastructure.
+  - A third-party audit is performed by a third-party, such as defined by AICPA, to provide an unbiased review of an entity's security infrastructure. This audit may reveal where there are problems, but the audit should not be the basis of minimum security requirements for a third party selection.
     - 🔮on-site assessment is useful to gain information about physical security and operations. It is a third-party assessment tool where auditors visit the site of the organization to interview personnel and observe their operating habits.
-    - 🔮Process/policy review is a mechanism that requests copies of their security policies, processes/procedures, and documentation of incidents and responses for review.
+    - 🔮Process/policy review is a mechanism that requests copies of their security policies, processes/procedures, and documentation of incidents and responses for review. Minimum security requirements should be modeled on your existing security policy. This is based on the idea that when working with a third party, that third party should have at least the same security as your organization.
     - 🔮Document exchange and review is a mechanism to investigate the means by which datasets and documentation are exchanged as well as the formal processes by which they perform assessments and reviews. During document review, your goal is to thoroughly review all the architecture, designs, implementations, policies, procedures, etc. 
     - A good understanding of the current state of the environment, especially to understand any shortcomings or compliance issues prior to integrating the IT infrastructures
     - The level of access and depth of information obtained is usually proportional to how closely the companies will work together 
@@ -829,27 +836,28 @@ standards, and procedures to ensure compliance with established security require
 
 - **EF**: The exposure factor is the percentage of the facility that risk managers expect will be damaged if a risk materializes. It is calculated by dividing the amount of damage by the asset value. 
   - EF is the percentage of an asset's value that is expected to be lost if a specific threat event occurs.
-  - Formula: EF = (Loss due to the threat event / Total asset value) * 100
+  - Formula🔥: EF = (Loss due to the threat event ➗ Total asset value) ✖️ 100
   - Example: If a fire destroys 40% of a building's value, the EF is 40%.
     
-- **ARO**: The annualized rate of occurrence is the number of times that risk analysts expect a risk to happen in any given year. The annualized loss expectancy (ALE) represents the amount of money a business expects to lose to a given risk each year.
+- **ARO**: The annualized rate of occurrence is the number of times that risk analysts expect a risk to happen in any given year. 
   - ARO is the expected frequency with which a specific threat will occur within a year.
   - ARO can be a whole number or a fraction, representing the number of occurrences per year.
-  - Example: If historical data suggests that a power outage happens twice a year, the ARO is 2. If a flood is expected to occur once every 10 years, the ARO is 0.1.
+  - Formula🔥: ARO = Number of occurence ➗ Number of Years
+  - Example: 🔥If historical data suggests that a power outage happens twice a year, the ARO is 2. 🔥If a flood is expected to occur once every 10 years, the ARO is 0.1.
   - A 📝countermeasure primary affects the annualized rate of occurrence (ARO), because the countermeasure is designed to prevent (or mitigate or reduce) the occurrence of the risk, thus reducing its frequency per year.
     
 - **SLE**: The single loss expectancy (SLE) is the product of the asset value (AV) and the exposure factor (EF).
   - SLE is the monetary loss expected from a single occurrence of a threat event.
-  - Formula: SLE = Asset Value (AV) * Exposure Factor (EF)
+  - Formula🔥: SLE = Asset Value (AV) ✖️ Exposure Factor (EF)
   - Example: If the asset value of a server is $10,000 and the EF for a fire is 40%, the SLE is $10,000 * 0.40 = $4,000.
 
-- **ALE**: The annualized loss expectancy is calculated by multiplying the single loss expectancy (SLE) by the annualized rate of occurrence (ARO).
+- **ALE**: The annualized loss expectancy (ALE) represents the amount of money a business expects to lose to a given risk each year. The annualized loss expectancy is calculated by multiplying the single loss expectancy (SLE) by the annualized rate of occurrence (ARO).
   - ALE is the expected monetary loss for an asset due to a specific threat over a one-year period.
-  - Formula: ALE = Single Loss Expectancy (SLE) * Annualized Rate of Occurrence (ARO)
+  - Formula🔥: ALE = Single Loss Expectancy (SLE) ✖️ Annualized Rate of Occurrence (ARO)
   - Example: If the SLE for a fire affecting a server is $4,000 and the ARO is 0.1, the ALE is $4,000 * 0.1 = $400.
 
 - **Cost/Benefit Equation for Safeguards**: Anything that removes a vulnerability or protects against one or more specific threats is considered a safeguard or a countermeasure.
-  -Formula: ALE before safeguard – ALE after implementing the safeguard – annual cost of safeguard [(ALE1 – ALE2) – ACS]. 
+  -Formula🔥: ALE before safeguard – ALE after implementing the safeguard – annual cost of safeguard [(ALE1 – ALE2) – ACS]. 
 
 - **Example Calculation**
   - Identify Asset Value (AV): Let's say the value of a database server is $50,000.
