@@ -215,6 +215,9 @@
          - 🔥the Cyber Security Enhancement Act of 2002: Strengthens cybersecurity efforts by promoting information sharing, enhancing computer crime investigations, and improving cybersecurity practices across federal, state, and local governments. Focuses on improving cybersecurity and enhancing collaboration between government and private sector.
          - 🔥the Critical Infrastructure Information Act of 2002: Protects sensitive information related to critical infrastructure from public disclosure. Protects sensitive infrastructure information from public disclosure to enhance the security of critical systems.
     - **ITIL**  British Government standard that describes IT service managment and the structured fitting of security into an organization. It focuses on change management, configuration management and SLAs. Helps information technology (IT) organizations with reducing cost, mitigating risk, and improving customer service.
+    - **The Code of Federal Regulations (CFR)** contains the text of all administrative laws promulgated by federal agencies.
+    - **The United States Code** contains criminal and civil law.
+    - **Supreme Court rulings** contain interpretations of law and are not laws themselves. 
     - **Personal Information Protection Law (PIPL)**: effective since 2021 aims to establish a comprehensive framework for the protection of personal information in 🔥China
     - **Protection of Personal Information Act (POPIA)**: enacted in 2013, establishes regulatios for the responsible processing of personal information by both public and private entities in 🔥South Africa.
     - The **Privacy Act of 1974** limits the ways government agencies may use information that private citizens disclose to them under certain circumstances. The Privacy Act regulates what information ✏️government agencies may collect and maintain about individuals.
