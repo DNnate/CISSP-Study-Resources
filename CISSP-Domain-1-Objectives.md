@@ -2,8 +2,8 @@
 
 [1.1](#1.1) Understand, adhere to, and promote professional ethics (OSG-9 Chpts 1,19)
 
-- As a CISSP, you must understand and follow the (ISC)² code of ethics, as well as your organization’s own code
-- 1.1.1 (ISC)² Code of Professional Ethics: The ISC2 Code of Ethics applies only to information security professionals who are members of ISC2
+- As a CISSP, you must understand and follow the (ISC)² code of ethics, as well as your organization’s own code. 
+- 1.1.1 (ISC)² Code of Professional Ethics: The ISC2 Code of Ethics applies only to information security professionals who are members of ISC2. CISSPs who violate the ISC2 Code of Ethics are subject to certification revocation.
   - (ISC)² Code of Professional Ethics -- take the time to read the [code of ethics](www.isc2.org/Ethics)
   - At a minimum, know and understand the ethics canons: 🟡 PAPA
     - **🔥I: Protect society, the common good, necessary public trust and confidence, and the infrastructure**
@@ -96,8 +96,8 @@
   - **Strategic Plan**: a strategic plan is a 🔥long-term plan (useful for 5 years); it defines the org's security purpose 
     - A strategic plan should include risk assessment
   - **Tactical Plan**: mid-term plan (🔥1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan or can be crafted ad hoc based on unpredicted events
-  - **Operational Plan**: a 🔥short-term, highly detailed plan based on strategic or tactical plans 
-    - Strategy, goals, missions,and objectives — support each other in a heirarchy
+  - **Operational Plan**: a 🔥short-term, highly detailed plan based on strategic or tactical plans. It is valid or useful only for a short time. 
+- Strategy ▶️ goals ▶️ missions and objectives — support each other in a heirarchy
     - **Objectives**: are closest to the ground-level and represent small efforts to help you achieve a mission 
     - **Missions**: represent a collection of objectives, and one or more missions lead to goals; when you reach your goals, you are achieving the strategy
   - A security framework must closely tie to mission and objectives, enabling the business to complete its objectives and advance the mission while securing the environment based on risk tolerance
@@ -114,10 +114,10 @@
     - process/policy review
     - third-party audit
 - 1.3.3 Organizational Roles and Responsibilities
-  -  Senior Manager: has a responsibility for organizational security and to maximize profits and shareholder value
-  - Security Professional: has the functional responsibility for security, including writing the security policy and implementing it
-  - Asset Owner: responsible for ✏️classifying information✏️ for placement or protection within the security solution
-  - Custodian: responsible for the task of implementing the proscribed protection defined by the security policy and senior management
+  - ✴️Senior Manager: has a responsibility for organizational security and to maximize profits and shareholder value
+  - ✴️Security Professional: has the functional responsibility for security, including writing the security policy and implementing it
+  - ✴️Asset/Data Owner: responsible for ✏️classifying information✏️ for placement or protection within the security solution. Data owner is typically a senior leader who delegates operational responsibility to a data custodian
+  - ✴️Custodian: responsible for the task of implementing the proscribed protection defined by the security policy and senior management. The data custodian role is assigned to an individual who is responsible for implementing the security controls defined by policy and senior management. 
   - Auditor: responsible for reviewing and verifying that the security policy is properly implemented
 - 1.3.4 Security control frameworks **🔥🔥Focuses on the HOW🔥🔥**
   - A **security control framework**: It is a prescriptive set of cybersecurity safeguards and best practices to protect an organizations assets. It helps in implementing risk managment strategy. outlines the org's approach to security, including a list of specific security processes, procedures, and solutions used; it is important in planning the structure of an org's security solution;
@@ -549,17 +549,26 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **Risk Assessment**: used to identify the risks and set criticality priorities, and then risk response is used to determine the best defense for each identified risk
   - The primary goal of a security risk assessment is to identify and analyze risks and then develop strategies to reduce them to an acceptable level.
   - A risk matrix or risk heat map is a form of risk assessment that is performed on a basic graph or chart
-  - ❄️Risk is threat with a vulnerability
-  - Risk = threat * vulnerability (or probability of harm * severity of harm)
-  - Addressing either the threat or threat agent or vulnerability directly results in a reduction of risk (known as threat mitigation)
-  - All IT systems have risk; all orgs have risk; there is no way to elminiate 100% of all risks. Risk is typically composed of three Components:
-  - **🔥Threat** (a potential cause of an incident that may result in harm)
-  - **🔥Vulnerability** (a weakness that can be exploited by a threat)
-  - **🔥Impact** (the potential harm caused by a threat exploiting a vulnerability)
-  - Risk analysis identifies risks, quantifies the impact of threats, and aids in budgeting for security. It helps integrate the needs and objectives of the security policy with the organization's business goals and intentions. The risk analysis/risk assessment is a "point in time" metric, meaning Security is always changing thus continuous improvement is required.
-  - Instead upper management must decide which risks are acceptable, and which are not; There are two primary risk-assessment methodologies:
-      - **Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations e.g ✏️FAIR (Factor Analysis of Information Risk) is a quantitative risk management framework
-      - **Qualitative Risk Analysis**: assigns subjective and intangible values to the loss of an asset and takes into account perspectives, feelings, intuition, preferences, ideas, and gut reactions. It relies on subjective judgments to rank risk. The use of a ⭐probability/impact matrix is the hallmark of a qualitative risk assessment. It uses subjective measures of probability and impact, such as "high" and "low," in place of quantitative measures.
+  - Likelihood assessment is a component of a risk assessment that determines the likelihood that a risk will materialize
+  - **❄️Risk** is threat with a vulnerability. Risk is the possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result.
+       - Risk = threat * vulnerability (or probability of harm * severity of harm)
+       - Addressing either the threat or threat agent or vulnerability directly results in a reduction of risk (known as threat mitigation)
+       - All IT systems have risk; all orgs have risk; there is no way to elminiate 100% of all risks. Risk is typically composed of three Components:
+  - **❄️Threat** (a potential cause of an incident that may result in harm)
+       - ✏️Threats: Any potential occurrence that may cause an undesirable or unwanted outcome for an organization or for a specific asset is a threat.
+       - ✏️Threat agents or threat actors: Entities that intentionally exploit vulnerabilities.
+       - ✏️Threat events: Accidental occurrences and intentional exploitations of vulnerabilities.
+       - ✏️Threat vector: The path or means by which an attack or attacker can gain access to a target in order to cause harm. 
+  - **❄️Vulnerability** (a weakness that can be exploited by a threat). It is the weakness in an asset, or the absence or the weakness of a safeguard or countermeasure. 📝The Common Vulnerability Scoring System (CVSS) is a standardized approach to rating the severity of vulnerabilities 
+  - **❄️Impact** (the potential harm caused by a threat exploiting a vulnerability)
+  - **Risk analysis** identifies risks, quantifies the impact of threats, and aids in budgeting for security. It helps integrate the needs and objectives of the security policy with the organization's business goals and intentions. The risk analysis/risk assessment is a "point in time" metric, meaning Security is always changing thus continuous improvement is required.
+       - Risk analysis includes analyzing an environment for risks
+       - evaluating each threat event as to its likelihood of occurring and the cost of the damage it would cause
+       - assessing the cost of various countermeasures for each risk, and creating a cost/benefit report for safeguards to present to upper management. 
+  - It is the responsibility of upper management must decide which risks are acceptable, and which are not; Selecting safeguards is a task of upper management based on the results of risk analysis known as risk response.
+  - There are two primary risk-assessment methodologies:
+      - **Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations e.g ✏️FAIR (Factor Analysis of Information Risk) is a quantitative risk management framework. Quantitative analysis uses numeric ratings to address tangible risks.
+      - **Qualitative Risk Analysis**: assigns subjective and intangible values to the loss of an asset and takes into account perspectives, feelings, intuition, preferences, ideas, and gut reactions. It relies on subjective judgments to rank risk. The use of a ⭐probability/impact matrix is the hallmark of a qualitative risk assessment. It uses subjective measures of probability and impact, such as "high" and "low," in place of quantitative measures. qualitative risk assessment is a good tool for intangible risks
     - Most orgs employ a hybrid of both risk assessment methodologies
     - The goal of risk assessment is to identify risks (based on asset-threat parings) and rank them in order of criticality
     - The two most important elements of a qualitative risk assessment are determining the ❄️probability and ❄️impact of each risk upon the organization. Likelihood is another word for probability.
@@ -863,6 +872,7 @@ standards, and procedures to ensure compliance with established security require
 - **ALE**: The annualized loss expectancy (ALE) represents the amount of money a business expects to lose to a given risk each year. The annualized loss expectancy is calculated by multiplying the single loss expectancy (SLE) by the annualized rate of occurrence (ARO).
   - ALE is the expected monetary loss for an asset due to a specific threat over a one-year period.
   - Formula🔥: ALE = Single Loss Expectancy (SLE) ✖️ Annualized Rate of Occurrence (ARO)
+  - Formula🔥: ALE = AV ✖️ EF ✖️ ARO
   - Example: If the SLE for a fire affecting a server is $4,000 and the ARO is 0.1, the ALE is $4,000 * 0.1 = $400.
 
 - **Cost/Benefit Equation for Safeguards**: Anything that removes a vulnerability or protects against one or more specific threats is considered a safeguard or a countermeasure.
