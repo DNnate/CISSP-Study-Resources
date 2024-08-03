@@ -376,14 +376,17 @@
 
 - Security Standards, Baselines and Guidelines: once the main security policies are set, the remaining security docuemntation can be crafted from these policies
   - **Standards**: specific mandates explicity stating expections of performance/conformance; more descriptive than policies, standards define :compulsary requirements for the homogenous use of hardware, software, technology, and security controls, uniformly implemented throughout the org. It could be internal or external.
-    - A standard defines compulsory requirements for the homogenous use of hardware, software, technology, and security controls. 
-  - **Baseline**: defines a minimum level of security that every system throughout the organization must meet; baselines are usually system specific and refer to industry / government standards. It is often related to configuration. 
-    - e.g. a baseline for  server builds would be a list of configuration areas that should be applied to every server that is built 
+    - A standard defines compulsory requirements for the homogenous use of hardware, software, technology, and security controls.
+    - Standards are ❄️Mandatory
+  - **Baseline**: ✏️defines a minimum level of security that every system throughout the organization must meet; baselines are usually ✏️system specific and refer to industry / government standards. It is often related to configuration. 
+    - A baseline is a more operationally focused form of a standard.
+    - e.g. a baseline for  server builds would be a list of configuration areas that should be applied to every server that is built
+    - Baselines are ❄️Mandatory. All systems not complying with the baseline should be taken out of production until they can be brought up to the baseline.
     - A Group Policy Object (GPO) in a Windows network is sometimes used to comply with standards; configuration management solutions can also help you establish baselines and spot configurations that are not in alignment
-  - **Guideline**: offers recommendations on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
+  - **Guideline**: offers ❄️Recommendations on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
     - Guidelines are flexible, and can be customized for unique systems or conditions; they state which security mechanism should be deployed instead of prescribing a specific product or control; they are not complusory; suggested practices and expectations of activity to best accomplish tasks and goals
     - **Framework** are a set of guidlines
-  - **Procedure** (AKA Standard Operating Procedure or SOP): detailed, step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution
+  - **Procedure** (AKA Standard Operating Procedure or SOP): detailed, ❄️step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution
   - **Laws** Legal rules created by government entities e.g legislature. Must be followed or can result in civil or criminal penalties
   - **Regulations** rules created by governmental agencies. Must be followed or can result in civil or criminal penalties
 
@@ -393,14 +396,24 @@ Factors, entities or conditions outside the organisation upon which the organisa
 [1.8](#1.8) Identify, analyze, and prioritize Business Continuity (BC) requirements (OSG-9 Chpt 3)
 
 - **Business Continuity Planning (BCP)**: involves assessing the risk to organizational processes and creating policies, plans, and procedures to minimize the impact those risks might have on the organization if they were to occur
-  - BCP is used to maintain the continuous operation of a business in the event of an emergency, with a goal to implement a combination of policies, procedures, and processes
+  - BCP is used to maintain the ❄️continuous operation of a business in the event of an emergency, with a goal to implement a combination of policies, procedures, and processes
   - Business continuity requires a lot of planning and preparation; actual implementation of business continuity processes occur quite infrequently
   - business organization analysis is the first step of the process, and the results are used to aid in the selection of team members and the design of the BCP process.
   - The primary facets of business continuity are:
     - Resilience: (e.g. within a data center and between sites or data centers) 
     - Recovery: if a service becomes unavailable, you need to recover it as soon as possible
     - Contingency: a last resort in case resilience and recovery prove ineffective
-
+- Following are the steps for BCP:
+    - ✏️Project initiation: Develop a contingency planning policy statement, Conduct business impact analysis (BIA), Identify preventive control, Develop strategies for recovery, Develop an IT contingency plan, Plan testing, training, and exercises, Maintenance planning
+    - ✏️Scope: Initiation of the plan, Final approval of the plan, Demonstration of due care and due diligence to the satisfaction of management
+    - ✏️Business impact analysis: Identify critical assets, Conduct risk assessment, Determine maximum tolerable downtime (MTD), Failure and recovery metrics
+    - ✏️Identify preventive control
+    - ✏️Recovery strategy: Supply chain management (acquisition of computer equipment is assured during disaster), Telecommunication management (availability of electronic communication during disaster), Utility management (Availability of utilities like power, gas, water, etc.)
+    - ✏️Designing and development: approval
+    - ✏️Implementation, training, and testing
+    - ✏️BCP maintenance: Change management, Version control, Accounting for mistakes
+- NIST SP800-34 provides a guideline for developing a logical BCP. It can be found at: http://csrc.nist.gov/publications/nistpubs/800-34-rev1/sp800-34-rev1_errata-Nov11-2010.pdf
+  
 - BCP vs DR: 
   - BCP activities are typically strategically focused at a high level and center themselves on business processes and operations
   - DR plans tend to be more tactical and describe technical activities such as recovery sites, backups, and fault tolerance. It ensures sufficient technical controls in place to recover operations after a disruption
