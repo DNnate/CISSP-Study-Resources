@@ -892,11 +892,11 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - the Elliptic Curve DSA (ECDSA) algorithm. 🥇
 
 - **HASHING**
-    - HMAC - Lenght variable
+    - HMAC - Lenght variable (✏️very strong)
     - HAVAL - Lenght 128, 160, 192, 224, 256 bits
     - MD2 - Lenght 128 bits(16 bytes)
     - MD4 - Lenght 128 bits(16 bytes)
-    - MD5 - Lenght 128 bits(16 bytes) 📝 All Message Digest variants have the same hash lenght
+    - MD5 - Lenght 128 bits(16 bytes) 📝(All Message Digest variants have the same hash lenght. MD2-5 have been replaced by MD6)
     - SHA-1 - Lenght ✏️160
     - SHA-224 - Lenght 224, produces 224-­bit digests
     - SHA-256 - Lenght 256, produces 256-­bit digests
