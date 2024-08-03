@@ -201,15 +201,14 @@
     - **Federal Information Security Management Act (FISMA)** - ) includes provisions regulating information security at federal agencies. Requires federal agencies to implement an information security program that covers the ✏️agency's operations and ✏️contractors
     - **Computer Fraud and Abuse Act (CFAA)** (as amended) - protects computers used by the government or in interstate commerce from a variety of abuses
     - **ITIL**  British Government standard that describes IT service managment and the structured fitting of security into an organization. It focuses on change management, configuration management and SLAs. Helps information technology (IT) organizations with reducing cost, mitigating risk, and improving customer service.
-    - **Electronic Communications Privacy Act (ECPA)** - passed in 1986 to expand and revise federal wiretapping and electronic eavesdropping provisions, making it a crime to intercept or procure electronic communications, and includes important provisions that protect a person’s wire and electronic communications from being intercepted by another private individual
     - **Personal Information Protection Law (PIPL)**: effective since 2021 aims to establish a comprehensive framework for the protection of personal information in 🔥China
     - **Protection of Personal Information Act (POPIA)**: enacted in 2013, establishes regulatios for the responsible processing of personal information by both public and private entities in 🔥South Africa.
-    - The **Privacy Act of 1974** limits the ways government agencies may use information that private citizens disclose to them under certain circumstances. The Privacy Act regulates what information government agencies may collect and maintain about individuals.
+    - The **Privacy Act of 1974** limits the ways government agencies may use information that private citizens disclose to them under certain circumstances. The Privacy Act regulates what information ✏️government agencies may collect and maintain about individuals.
     - **The Lanham Act** regulates the issuance of 🧠trademarks to protect intellectual property.
     - **Digital Millennium Copyright Act** - prohibits the circumvention of copyright protection mechanisms placed in digital media and 🧠limits the liability of internet service providers for the activities of their users
     - **The Economic Espionage Act** imposes fines and jail sentences on anyone found guilty of stealing trade secrets from a U.S. corporation. It gives true teeth to the intellectual property rights of trade secret owners. 
-    - **The Wassenaar Arrangement** on Export Controls for Conventional Arms and Dual-Use Goods and Technologies is a multilateral 🔥export control regime established on 12 July 1996, in Wassenaar, near The Hague, Netherlands. According to the Wassenaar Arrangement document, it was "established to contribute to regional and international security and stability by promoting transparency and greater responsibility in transfers of conventional arms and dual-use goods and technologies, thus preventing destabilizing accumulations. Participating states seek, through their national policies, to ensure that transfers of these items do not contribute to the development or enhancement of military capabilities which undermine these goals, and are not diverted to support such capabilities. It also addresses cyber weapons, including malicious software, Command and Control (C2) software, and internet surveillance software.
-    - **Information Assurance Technical Framework (IATF)** The IATF is a framework developed by the International Organization for Standardization (ISO) to provide guidelines for assessing the security and privacy aspects of information technology systems provides and technical guidance for protecting the information infrastructures of the United States U.S. Government and industry. It covers various areas such as risk management, security controls, and data privacy. The four major technology focus areas of the ✴️Defense-in-Depth Strategy, ✴️Defend the Enclave Boundary, ✴️Defend the Computing Environment, and Defend ✴️Supporting Infrastructures. 
+    - **The Wassenaar Arrangement** on Export Controls for Conventional Arms and Dual-Use Goods and Technologies is a multilateral 🔥export control regime established on 12 July 1996, in Wassenaar, near The Hague, Netherlands. According to the Wassenaar Arrangement document, it was "established to contribute to regional and international security and stability by promoting transparency and greater responsibility in transfers of conventional arms and dual-use goods and technologies, thus preventing destabilizing accumulations. Participating states seek, through their national policies, to ensure that transfers of these items do not contribute to the development or enhancement of ✏️military capabilities which undermine these goals, and are not diverted to support such capabilities. It also addresses cyber weapons, including malicious software, Command and Control (C2) software, and internet surveillance software.
+    - **Information Assurance Technical Framework (IATF)** The IATF is a framework developed by the International Organization for Standardization (ISO) to provide guidelines for assessing the security and privacy aspects of information technology systems provides and technical guidance for protecting the information infrastructures of the U.S. Government and industry. It covers various areas such as risk management, security controls, and data privacy. The four major technology focus areas of the ✴️Defense-in-Depth Strategy, ✴️Defend the Enclave Boundary, ✴️Defend the Computing Environment, and Defend ✴️Supporting Infrastructures. 
 - 1.4.2 Privacy requirements
     - European Union's **General Data Protection Regulation (GDPR)** - replaced Data Protection Directive (DPD), purpose is to provide a single, harmonized law that covers data throughout the EU
       - Lawfulness, fairness, and transparency
@@ -222,8 +221,8 @@
     - California Consumer Privacy Act (CCPA)
     - Be familiar with the EU Data Protection Directive
     - Be familiar with the requirements around healthcare data, credit card data and other PII data as it relates to various countries and their laws and regulations
-    - The European Union provides 🔥**standard contractual clauses** that may be used to facilitate data transfer. That would be the best choice in a case where two different companies e.g one in Europe and one in the United States are sharing data.
-    - If the data were being shared internally within a company, 🔥**binding corporate rules** would also be an option
+    - The European Union provides 🔥**standard contractual clauses** that may be used to facilitate data transfer. That would be the best choice in a case where two ✏️different companies e.g one in Europe and one in the United States are sharing data.
+    - **🔥binding corporate rules**:If the data were being shared internally within the ✏️same company, binding corporate rules would also be an option
 
 [1.5](#1.5) Understand legal and regulatory issues that pertain to information security in a holistic context (OSG-9 Chpt 4)
 - 1.5.1 Cybercrimes and data breaches
@@ -234,19 +233,19 @@
   - In particular, be familiar with:
     - **Council of Europe Convention on Cybercrime**: a treaty signed by many countries that establishes standards for cybercrime policy 
     - Laws about data breaches, including notification requirements
-    - In the US, the **Health Information Technology for Economic and Clinical Health (HITECH)** Act requires notification of a data breach in some cases, such as when the personal health information was not protected as required by HIPAA
-    - **GLBA (Gramm-Leach-Bliley Act)****** applies to insurance and financial orgs, requiring notification to federal regulators, law enforcement agencies and customers when a data breach occurs 
+    - In the US, the **Health Information Technology for Economic and Clinical Health (HITECH)** Act requires ✏️notification of a data breach in some cases, such as when the personal health information was not protected as required by HIPAA
+    - **GLBA (Gramm-Leach-Bliley Act)** applies to insurance and financial orgs, requiring notification to federal regulators, law enforcement agencies and customers when a ✏️data breach occurs 
     - Certain states also impose their own requirements concerning data breaches 
     - the EU and other countries have their own requirements, for instance, the GDPR has very strict data breach notification requirements: A data breach must be reported to the competent supervisory authority within 72 hours of its discovery
     - Some countries do not have any reporting requirements
 - 1.5.2 Licensing and intellectual property (IP) requirements
-  - **Intellectual property**: intangible assets (e.g. software, data)
+  - **Intellectual property**: ✏️intangible assets (e.g. software, data)
   - **Trademarks**: words, slogans, and logos used to identify a company and its products or services.
-  - **Patents**: a temporary monopoly for producing a specific item such as a toy, which must be novel and unique to qualify for a patent. Patents have expiration date. U.S. patent law provides for an exclusivity period of 20 years beginning at the time a utility patent application is submitted to the Patent and Trademark Office.
-    - **Utility**: protect the intellectual property rights of inventors
+  - **Patents**: a ✏️temporary monopoly for producing a specific item such as a toy, which must be novel and unique to qualify for a patent. Patents have 📝expiration date. U.S. patent law provides for an exclusivity period of 📝20 years beginning at the time a utility patent application is submitted to the Patent and Trademark Office.
+    - **Utility**: protect the intellectual property rights of ✏️inventors
     - **Design**: cover the appearance of an invention and last for 15 years; note design patents on't protect the idea of an invention only its form, and are generally seen as weaker
     - Software: area of on-going controversy; Google vs Oracle; given to rise of "patent trolls"
-  - **Copyright**: exclusive use of artistic, musical or literary works which prevents unauthorized duplication, distribution or modification. Also can include software code published in academic journal. Copyright and patent protection both have expiration dates. Copyright protection generally lasts for 70 years after the death of the last surviving author of the work
+  - **Copyright**: exclusive use of 🔥artistic, 🔥musical or 🔥literary works which prevents unauthorized duplication, distribution or modification. Also can include software code published in academic journal. Copyright and patent protection both have expiration dates. Copyright protection generally lasts for 📝70 years after the death of the 📝last surviving author of the work
   - **Licensing**: a contract between the software producer and the consumer which limits the use and/or distribution of the software
   - **Trade Secrets**: intellectual property that is critical to a business, and significant damage would result if it were disclosed to competitors or the public
   - When you file application for protection, until registration is granted, you can use the 🔥**TM** symbol to inform others that it is protected under trademark law. Once the application is approved, the name becomes a registered trademark, and you can begin using the 🔥**®** R symbol. The 🔥**©** C symbol is used to represent a copyright.
@@ -262,17 +261,18 @@
   - The privacy guidelines of the **Organization for Economic Co-operation and Development (OECD)** require orgs to avoid unjustified obstacles to trans-border data flow, set limits to personal data collection, protect personal data with reasonable security and more
        - The OECD Privacy Guidelines on the Protection of Privacy and Transborder Flows of Personal Data, provide a framework for the protection of personal information and the management of data flows across borders.
        - First adopted in 1980 and revised in 2013. They key principles are
-       - 1. Collection Limitation: Organizations should collect only the data that is needed for their purposes and should do so fairly and lawfully.
-         2. Data Quality: Organizations should ensure that personal data is relevant and accurate, and should update it as necessary to maintain its quality.
-         3. Purpose Specification: Organizations must clearly state the purposes for data collection and use, and any subsequent use should be consistent with these purposes.
-         4. Use Limitation: Data should be used only for the purposes for which it was collected, and any new use should require additional consent or legal justification.
-         5. Security Safeguards: Organizations should implement appropriate security measures to protect personal data from unauthorized access and misuse.
-         6. Openness: Organizations should be transparent about their data collection and processing practices, and individuals should be informed about these practices.
-         7. Individual Participation: Data subjects should have the right to access their personal data, request corrections, and ensure that their data is accurate and up-to-date.
-         8. Accountability: Organizations should ensure compliance with the guidelines and be able to demonstrate their adherence to these principles. 
+       - 1. ✏️Collection Limitation: Organizations should collect only the data that is needed for their purposes and should do so ❄️fairly and lawfully.
+         2. ✏️Data Quality: Organizations should ensure that personal data is relevant and accurate, and should update it as necessary to maintain its quality.
+         3. ✏️Purpose Specification: Organizations must clearly state the purposes for data collection and use, and any subsequent use should be consistent with these purposes.
+         4. ✏️Use Limitation: Data should be used only for the purposes for which it was collected, and any new use should require additional consent or legal justification.
+         5. ✏️Security Safeguards: Organizations should implement appropriate security measures to protect personal data from unauthorized access and misuse.
+         6. ✏️Openness: Organizations should be transparent about their data collection and processing practices, and individuals should be informed about these practices.
+         7. ✏️Individual Participation: Data subjects should have the right to access their personal data, request corrections, and ensure that their data is accurate and up-to-date.
+         8. ✏️Accountability: Organizations should ensure compliance with the guidelines and be able to demonstrate their adherence to these principles. 
   - **Fourth Amendment** to the US Constitution: the right of the people to be secure in their persons, houses, papers, effects against unreasonable search and seizure
   - It sets the “📝probable cause📝” standard that law enforcement officers must follow when conducting searches and/or seizures of private property. It also states that those officers must obtain a warrant before gaining involuntary access to such property. 
-  - **Electronic Communication Privacy Act (ECPA)**: as amended, protects wire, oral, and electronic communications while those communications are being made, are in transit, and when they are stored on computers; makes it a crime to invade electronic privacy of an individual, and it broadened the Federal Wiretap Act
+  - **Electronic Communication Privacy Act (ECPA)**: as amended, protects wire, oral, and electronic communications while those communications are being made, are in transit, and when they are stored on computers; makes it a ✏️crime to invade electronic privacy of an individual, and it broadened the Federal Wiretap Act
+      - ECPA passed in 1986 to expand and revise federal wiretapping and electronic eavesdropping provisions, making it a crime to intercept or procure electronic communications, and includes important provisions that ✏️protect a person’s wire and electronic communications from being intercepted by another private individual
   - HIPAA: see above
   - HITECH: see above
   - California SB 1386 (2002): immediate disclosure to individuals for PII breach
@@ -286,26 +286,26 @@
       - get 50% or more of their annual revenue from selling or sharing California residents’ personal information
     - The CCPA imposes separate obligations on service providers and contractors (who contract with businesses to process personal info) and other recipients of personal information from businesses
     - The CCPA does not generally apply to nonprofit orgs or government agencies
-    - California residents have the right to:
-      - (L)imit use and disclosure of personal info
-      - (O)pt-out of sale or cross-context advertising
-      - (C)orrect inaccurate info
-      - (K)now what personal info business have and share
-      - (E)qual treatment / nondiscrimination
-      - (D)elete info business have on them
+    - California residents have the right to: 🟡 LOCKED
+      - ✏️(L)imit use and disclosure of personal info
+      - ✏️(O)pt-out of sale or cross-context advertising
+      - ✏️(C)orrect inaccurate info
+      - ✏️(K)now what personal info business have and share
+      - ✏️(E)qual treatment / nondiscrimination
+      - ✏️(D)elete info business have on them
 
   - **Children's Online Privacy Protection Act (COPPA)** of 1998:
     - COPPA makes a series of demands on websites that cater to children or knowingly collect information from children:
       - Websites must have a privacy notice that clearly states the types of info they collect and what it's used for (including whether infor is disclosed to third parties); must also include contact infor for site operators
       - Parents must be able to review any info collected from children and permanently delete it from the site's records
-      - Parents must give verifiable consent to the collection of info about children younger than the age of 13 prior to any such collection
+      - Parents must give verifiable consent to the collection of info about children younger than the age of 📝13 prior to any such collection
   - GLBA: see above
-  - US Patriot Act of 2002: enacted following the September 11 attacks with the stated goal of tightening U.S. national security, particularly as it related to foreign terrorism
+  - **US Patriot Act of 2002**: enacted following the September 11 attacks with the stated goal of tightening U.S. national security, particularly as it related to ❄️foreign terrorism
     - The act included three main provisions:
-      - expanded surveillance abilities of law enforcement, including by tapping domestic and international phones
+      - 🎧expanded surveillance abilities of law enforcement, including by 🎧tapping domestic and international phones
       - easier interagency communication to allow federal agencies to more effectively use all available resources in counterterrorism efforts
       - increased penalties for terrorism crimes and an expanded list of activities which would qualify for terrorism charges
-  - **Family Education Rights and Privacy Act (FERPA)**: Grants privacy rights to students over 18, and the parents of minor students
+  - **Family Education Rights and Privacy Act (FERPA)**: Grants privacy rights to students over 📝18, and the parents of minor students
   - EU's Data Protection Directive (DPD): see above
   - EU's General Data Protection Regulation (GDPR): key provisions
     - lawfulness, fairness, and transparency
@@ -316,13 +316,13 @@
     - security
     - accountability
   - The EU-US **Privacy Shield** (formerly the EU-US Safe Harbor agreement): controls data flow from the EU to the United States; the EU has more stringent privacy protections and without the Privacy Shield, personal data flow from the EU to the United States would not be allowed. It is no longer valid
-  - **The Communications Assistance for Law Enforcement Act (CALEA)** required that communications carriers assist law enforcement with the implementation of wiretaps when done under an appropriate court order. CALEA only applies to communications carriers
+  - **The Communications Assistance for Law Enforcement Act (CALEA)** required that communications carriers assist law enforcement with the implementation of 🎧wiretaps when done under an appropriate court order. CALEA only applies to communications carriers
   - **Privacy Impact Assesment (PIA)**: is designed to identify the privacy data being collected, processed or stored by a system, and assess the effects of a data breach. Several privacy laws require PIA as a planning tool for identifying and implementing required privacy controls including GDPR and HIPPA
   - Conducting a PIA typically begins when a system or process is being evaluated.
   - Evolving privacy regulations neccessitates assessment of existing systems
   - PIA involves defining assessment scope, data collection methods and plan for data retention
   - Internation Association of Privacy Professionals (IAPP) publishes guids and resources related to privacy efforts including PIA
-- **RFC 1087, Ethics and the Internet**: actions that compromise the privacy of users" are explicitly considered unacceptable and unethical
+- **RFC 1087, Ethics and the Internet**: actions that compromise the 📝"privacy of users" are explicitly considered unacceptable and unethical
   
 - **Geographic Considerations**: Different laws and regulations may apply depending on the location (data residency) of the
  - data subject
@@ -335,18 +335,18 @@
   - add to costs and time to market
   - can drive changes to technical architectures required to deliver services
   - Never replace complaince with convinience when evaluating services as this increases risk
- - Conflicting internation legislation: Example GDPR forbids the transfer of data to countries that lack adequate privacy protections. and the **Clarifying Lawful Overseas Use of Data (CLOUD) Act** requires cloud service proviproviders to hand over data to aid in investigation of serious crimes, even if stored in another country.
+ - Conflicting internation legislation: Example GDPR forbids the transfer of data to countries that lack adequate privacy protections. and the **Clarifying Lawful Overseas Use of Data (CLOUD) Act** requires cloud ❄️service providers to hand over data to aid in 👮investigation of serious crimes, even if stored in another country.
   - Situations like this requires collaboration and legal counsel
   - Cloud practitioners must be aware of multiple sets of laws and regulations and the risk introduced by conflicting legislation across geography and jurisdiction e.g copyright and intellectual property laws, data residency and safeguards for required for privacy compliance, data breaches and data breach notifications, internation import/export laws
 
-- **Cyber Kill/Attack Chain** a seven-steps to identify and stop attacks: (RWDEICA Reckless Wizards Delve Eagerly Into Crytic Arcanum)
-  - Stage I: Reconnaisance
-  - Stage II: Weaponization
-  - Stage III: Delivery
-  - Stage IV: Exploit
-  - Stage V: Installation
-  - Stage VI: Command and Control (C&C)
-  - Stage VII: Actions
+- **Cyber Kill/Attack Chain** a seven-steps to identify and stop attacks: (RWDEICA 🟡Reckless Wizards Delve Eagerly Into Crytic Arcanum)
+  - ✏️Stage I: Reconnaisance
+  - ✏️Stage II: Weaponization
+  - ✏️Stage III: Delivery
+  - ✏️Stage IV: Exploit
+  - ✏️Stage V: Installation
+  - ✏️Stage VI: Command and Control (C&C)
+  - ✏️Stage VII: Actions
 
 [1.6](#1.6) Understand requirements for investigation types (i.e., administrative, criminal, civil, regulatory, industry standards) (OSG-9 Chpt 19)
 
@@ -366,16 +366,16 @@
 
 [1.7](#1.7) Develop, document, and implement security policy, standards, procedures and guidelines (OSG-9 Chpt 1)
 - The top tier of a formalized hierarchical organization security documentation is the security policy
-  - **Policy**: docs created by and published by senior management describing organizational strategic goals
+  - **Policy**: docs created by and published by ❄️senior management describing organizational strategic goals
   - A security policy is a document that defines the scope of security needed by the org, discussing assets that require protection and the extent to which security solutions should go to provide the necessary protections
-  - Policies are high-level documents, usually written by the management team; policies are mandatory, and a policy might provide requirements, but not the steps for implementation
+  - Policies are ❄️high-level documents, usually written by the management team; policies are ❄️mandatory, and a policy might ❄️provide requirements, but not the steps for implementation
     - A policy is a document that defines the scope of security needed by the organization and discusses the assets that require protection and the extent to which security solutions should go to provide the necessary protection.
-  - It defines the strategic security objectives, vision, and goals and outlines the security framework of the organization
+  - It defines the ❄️strategic security objectives, vision, and ❄️goals and outlines the security framework of the organization
 - **Acceptable User Policy**: the AUP is a commonly produced document that exists as part of the overall security documentation infrastructure 
   - This policy defines a level of acceptable performance and expectation of behavior and activity; failure to comply with the policy may result in job action warnings, penalties, or termination
 
 - Security Standards, Baselines and Guidelines: once the main security policies are set, the remaining security docuemntation can be crafted from these policies
-  - **Standards**: specific mandates explicity stating expections of performance/conformance; more descriptive than policies, standards define compulsary requirements for the homogenous use of hardware, software, technology, and security controls, uniformly implemented throughout the org. It could be internal or external.
+  - **Standards**: specific mandates explicity stating expections of performance/conformance; more descriptive than policies, standards define :compulsary requirements for the homogenous use of hardware, software, technology, and security controls, uniformly implemented throughout the org. It could be internal or external.
     - A standard defines compulsory requirements for the homogenous use of hardware, software, technology, and security controls. 
   - **Baseline**: defines a minimum level of security that every system throughout the organization must meet; baselines are usually system specific and refer to industry / government standards. It is often related to configuration. 
     - e.g. a baseline for  server builds would be a list of configuration areas that should be applied to every server that is built 
