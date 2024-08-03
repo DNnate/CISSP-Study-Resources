@@ -649,7 +649,12 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - See my overview article, [The NIST Risk Management Framework](https://blog.balancedsec.com/p/the-nist-risk-management-framework)
   - There are other risk frameworks, such as the British Standard BS 31100 -- be familiar with frameworks and their goals
   - Regular risk monitoring and review involves tracking risk treatment progress, reviewing risk assessments, and analyzing incident reports.
-
+- other risk managment frameworks include
+     - ✴️The Committee of Sponsoring Organizations (COSO) of the Treadway Commission's Enterprise Risk Management — Integrated Framework
+     - ✴️ISACA's Risk IT Framework
+     - ✴️Operationally Critical Threat, Asset, And Vulnerability Evaluation (OCTAVE)
+     - ✴️Factor Analysis of Information Risk (FAIR)
+     - ✴️Threat Agent Risk Assessment (TARA)
 [1.11](#1.11) Understand and apply threat modeling concepts and methodologies (OSG-9 Chpt 1)
 - **Threat Modeling**: security process where potential threats are identified, categorized, and analyzed; can be performed as a proactive measure during design and development or as an reactive measure once a product has been deployed   
   - Threat modeling identifies the potential harm, the probability of occurrence, the priority of concern, and the means to eradicate or reduce the threat
