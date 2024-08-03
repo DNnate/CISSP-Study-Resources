@@ -112,10 +112,10 @@ of litigation is imminent.
         - **secondary evidence**:
             - less powerful and reliable than primary evidence (e.g. copies of originals, witness oral evidence etc)
             - if primary evidence is available secondary of the same content is not valid
-        - **real evidence**: also known as object evidence. this type of evidence includes physical objects, such as computers, hard drives, and other storage devices, that can be brought into a court of law
-        - **Documentary Evidence**: includes any written items brought into court to prove a fact at hand. This type of evidence must also be authenticated. Two additional evidence rules apply specifically to documentary evidence:
-             - The best evidence rule states that when a document is used as evidence in a court proceeding, the original document must be introduced.
-             - The parol evidence rule states that when an agreement between parties is put into written form, the written document is assumed to contain all the terms of the agreement and no verbal agreements may modify the written agreement.
+        - **real evidence**: also known as object evidence. this type of evidence includes physical objects, such as computers, hard drives, and other storage devices, that can be brought into a court of law. Real evidence must be either ✴️uniquely identified by a witness or authenticated through a ✴️documented chain of custody.
+        - **Documentary Evidence**: includes any 📝written items brought into court to prove a fact at hand. This type of evidence must also be authenticated. Two additional evidence rules apply specifically to documentary evidence:
+             - ✴️The best evidence rule states that when a document is used as evidence in a court proceeding, the original document must be introduced.
+             - ✴️The parol evidence rule states that when an agreement between parties is put into written form, the written document is assumed to contain all the terms of the agreement and no verbal agreements may modify the written agreement.
         - **direct evidence**: this type of evidence is based on the observations of a witness or expert opinion and can be used to prove a fact at hand (with backup evidence support)
         - **circumstantial evidence**: this type of evidence is based on inference and can be used to support a conclusion, but not prove it
         - **corroborative evidence**: this type of evidence is used to support other evidence and can be used to strengthen a case
