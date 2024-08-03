@@ -3,7 +3,7 @@
 [1.1](#1.1) Understand, adhere to, and promote professional ethics (OSG-9 Chpts 1,19)
 
 - As a CISSP, you must understand and follow the (ISC)² code of ethics, as well as your organization’s own code
-- 1.1.1 (ISC)² Code of Professional Ethics
+- 1.1.1 (ISC)² Code of Professional Ethics: The ISC2 Code of Ethics applies only to information security professionals who are members of ISC2
   - (ISC)² Code of Professional Ethics -- take the time to read the [code of ethics](www.isc2.org/Ethics)
   - At a minimum, know and understand the ethics canons: 🟡 PAPA
     - **🔥I: Protect society, the common good, necessary public trust and confidence, and the infrastructure**
@@ -24,7 +24,8 @@
 - 1.1.2 Organizational code of ethics
   - You must also support ethics at your organization; this can be interpreted to mean evangelizing ethics throughout the organization, providing documentation and training around ethics, or looking for ways to enhance the existing organizational ethics 
     - some organizations might have slightly different ethics than others, so be sure to familiarize yourself with your org’s ethics and guidelines
-
+    - All ISC2 certified professionals are required to ⭐comply with the ISC2 Code of Ethics. All employees of an organization are required to ⭐comply with the organization's code of ethics.
+    - The federal code of ethics (or, more formally, the Code of Ethics for Government Service) only applies to federal employees and would not apply to a nonprofit organization.
    - **Code of Ethics Complaints**: (ISC)2 members who encounter a potential violation of the Code of Ethics may report the possible violation to (ISC)2 for investigation by filing a formal ethics complaint, identifying the specific canon of the Code of Ethics that the member believes has been violated. Complaints under the Code of Ethics must be in writing and in the form of a sworn affidavit. Furthermore, complaints are only accepted from those who believe they have been injured by the alleged behavior. This personal injury provides standing to file a complaint and is determined based on the canon involved:
   - Any member of the general public may file a complaint involving canons I or II.
   - Only an employer or someone with a contracting relationship with the individual may file a complaint under canon III.
@@ -83,6 +84,7 @@
 - **Security governance**: the collection of policies, roles, processes/practices used to make security decisions in an org; related to supporting, evaluating, defining, and directing the security efforts of an org 
   - Security governance is the implementation of a security solution and a management method that are tightly interconnected
   - Security governance seeks to compare the security processes and infrastructure used within the organization with knowledge and insight obtained from external sources.
+  - Security governance should include acquisitions, divestitures, and governance committees. 
   - There are numerous security frameworks and governance guidelines, including the National Institute of Standards and Technology (NIST) 🔥SP 800-53 Cybersecurity Framework and 🔥SP 800-100
 - **The security function**: the aspect of operating a business that focuses on the task of evaluating and improving security over time 
   - To manage security, an org must implement proper and sufficient security governance
@@ -117,7 +119,9 @@
   - Custodian: responsible for the task of implementing the proscribed protection defined by the security policy and senior management
   - Auditor: responsible for reviewing and verifying that the security policy is properly implemented
 - 1.3.4 Security control frameworks **🔥🔥Focuses on the HOW🔥🔥**
-  - A **security control framework**: It is a prescriptive set of cybersecurity safeguards and best practices to protect an organizations assets. It helps in implementing risk managment strategy. outlines the org's approach to security, including a list of specific security processes, procedures, and solutions used; it is important in planning the structure of an org's security solution; many frameworks to choose from, such as:
+  - A **security control framework**: It is a prescriptive set of cybersecurity safeguards and best practices to protect an organizations assets. It helps in implementing risk managment strategy. outlines the org's approach to security, including a list of specific security processes, procedures, and solutions used; it is important in planning the structure of an org's security solution;
+  - If a security control's benefits cannot be quantified, evaluated, or compared, then it does not actually provide any security.
+  - there are many frameworks to choose from, such as:
     -  **Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
         - COBIT is a documented set of best IT security practices by ISACA
         - Six key principles (🟡Sally Has Daring Goals To Excel SHDGTE) :
@@ -131,7 +135,7 @@
           - 15408 evaluation Criteria
           - 22301  security and resilience
           - **27001 (🔥🔥Focuses on WHAT and WHY🔥🔥)** information security standards/controls: Outlines a framework for implementing, maintaining and continually improving ISMS Information Security Management System (ISMS is a set of policies, processes and controls that helps organization protect thier information assets). ISO 27001 Guides organizations in identifying assets and assessing thier values and information risks AND implementing mitigating security controls based on ISO 27002. CLoud platforms all have ISO 27001.
-          - **27002 (🔥🔥Focuses on HOW🔥🔥)** information security guidance: Offers best practices and Control objectives related to key aspects of cybersecurity in support of ISO/IEC 27001. Focuses on cryptography, human resource security, operational security, and incident response. Serves as an official blueprint for orgs aiming to effectively safeguard information assets from cyber threats.
+          - **27002 (🔥🔥Focuses on HOW🔥🔥)** titled "Information technology—Security techniques—Code of practice for information security management: offers information security guidance: Offers best practices and Control objectives related to key aspects of cybersecurity in support of ISO/IEC 27001. Focuses on cryptography, human resource security, operational security, and incident response. Serves as an official blueprint for orgs aiming to effectively safeguard information assets from cyber threats.
           - 27031 Business continuity    
     -  **SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It 🧠integrates security into the business processes and aligns security measures with business goals🧠. provides a structured method for designing, implementing and managing security architectures.
     -  It provides a holistic, business-­driven approach to security architecture, encompassing everything from assessing business requirements to implementation and metrics.
@@ -198,6 +202,7 @@
     - **Sarbanes-Oxley (SOX)** - governs the financial records of publicly traded companies. financial systems may be audited to ensure security controls are sufficient to ensure compliance with SOX. It ✏️protects investors.  required publicly traded companies to implement a wide range of controls intended to ✏️minimize conflicts of interest, ✏️provide investors with appropriate risk information, place civil and ✏️criminal penalties on executives for providing false financial disclosures, and provide protections for ✏️whistleblowers who report inappropriate actions to regulators.
     - **Gramm-Leach-Bliley Act (GLBA)** - covers the customer records of financial institutions. ✏️affects banks, insurance companies, and credit providers; included a number of ✏️limitations on the types of information that could be exchanged even among subsidiaries of the same corp, and required financial institutions to provide ✏️written privacy policies to all their customers
     - **Health Insurance Portability and Accountability Act (HIPAA)** - privacy and security regulations requiring strict security measures for hospitals, physicians, insurance companies, and other organizations that process or store private medical information about individuals; also clearly defines the rights of individuals who are the subject of medical records and requires organizations that maintain such records to disclose these rights in writing
+    - HIPAA regulates three types of entities-healthcare providers, health information clearinghouses, and health insurance plans-as well as the business associates of any of those covered entities.
     - Organizations subject to HIPAA may enter into relationships with service providers as long as the provider’s use of protected health information is regulated under a formal business associate agreement (BAA). The BAA makes the service provider liable under HIPAA.
     - **Federal Information Security Management Act (FISMA)** - ) includes provisions regulating information security at federal agencies. Requires federal agencies to implement an information security program that covers the ✏️agency's operations and ✏️contractors
     - **Computer Fraud and Abuse Act (CFAA)** (as amended) - protects computers used by the government or in interstate commerce from a variety of abuses. It also provides specific protections for systems operated by government ✏️agencies.
@@ -244,17 +249,20 @@
     - Some countries do not have any reporting requirements
 - 1.5.2 Licensing and intellectual property (IP) requirements
   - **Intellectual property**: ✏️intangible assets (e.g. software, data)
-  - **Trademarks**: words, slogans, and logos used to identify a company and its products or services. The ❄️_United States Patent and Trademark Office_ (USPTO), which bears responsibility for the registration of trademarks. The ® symbol is reserved for trademarks that have received official registration status by the U.S. Patent and Trademark Office. The ™ symbol would be used before receiving USPTO approval
+  - **Trademarks**: words, slogans, and logos used to identify a company and its products or services. The ❄️_United States Patent and Trademark Office_ (USPTO), which bears responsibility for the registration of trademarks. The ® symbol is reserved for trademarks that have received official registration status by the U.S. Patent and Trademark Office. The ™ symbol would be used before receiving USPTO approval. Trademarks are renewable indefinitely.
   - **Patents**: a ✏️temporary monopoly for producing a specific item such as a toy, which must be novel and unique to qualify for a patent. Patents have 📝expiration date. U.S. patent law provides for an exclusivity period of 📝20 years beginning at the time a utility patent application is submitted to the Patent and Trademark Office.
     - **Utility**: protect the intellectual property rights of ✏️inventors
     - **Design**: cover the appearance of an invention and last for 15 years; note design patents on't protect the idea of an invention only its form, and are generally seen as weaker
     - Software: area of on-going controversy; Google vs Oracle; given to rise of "patent trolls"
-  - **Copyright**: exclusive use of 🔥artistic, 🔥musical or 🔥literary works which prevents unauthorized duplication, distribution or modification. Also can include software code published in academic journal. Copyright and patent protection both have expiration dates. Copyright protection generally lasts for 📝70 years after the death of the 📝last surviving author of the work. The © symbol is used to represent a copyright.
+  - **Copyright**: exclusive use of 🔥artistic, 🔥musical or 🔥literary works which prevents unauthorized duplication, distribution or modification. Also can include software code published in academic journal. Copyright and patent protection both have expiration dates. Copyright protection generally lasts for 📝70 years after the death of the 📝last surviving author of the work or 📝95 years from publication or 📝120 years from creation if owned by a corporation.. The © symbol is used to represent a copyright.
   - **Licensing**: a contract between the software producer and the consumer which limits the use and/or distribution of the software
       - ✏️Contractual agreements: Licenses for high-value software often use contractual agreements to outline the responsibilities of both parties
       - ✏️Shrink-wrap agreement: is a type of contract where the terms and conditions are enclosed with the software packaging. The contract is considered accepted by the user when they open the packaging and begin using the software.
       - ✏️Click-wrap agreement is a type of contract where users must agree to the terms and conditions by clicking an "I agree" button or similar option before they can complete the installation or use of the software.
-  - **Trade Secrets**: intellectual property that is critical to a business, and significant damage would result if it were disclosed to competitors or the public
+      - ✏️Enterprise license agreement typically allows customization of terms and pricing, reflecting the negotiated details between the vendor and a corporate client.
+      - ✏️An end-user license agreement usually accompanies software to dictate the terms of use but is not designed for custom negotiations and pricing agreements.
+      - The license agreement may also be written as a perpetual or subscription license
+  - **Trade Secrets**: intellectual property that is critical to a business, and significant damage would result if it were disclosed to competitors or the public. Trade secrets are protected as long as they remain secret.
   - When you file application for protection, until registration is granted, you can use the 🔥**TM** symbol to inform others that it is protected under trademark law. Once the application is approved, the name becomes a registered trademark, and you can begin using the 🔥**®** R symbol. The 🔥**©** C symbol is used to represent a copyright.
 - 1.5.3 Import/export controls
   -  Every country has laws around the import and export of hardware and software; e.g. the US has restrictions around the export of 🔐cryptographic technology, and Russia requires a license to import 🔐encryption technologies manufactured outside the country
@@ -306,6 +314,7 @@
     - COPPA makes a series of demands on websites that cater to children or knowingly collect information from children:
       - Websites must have a privacy notice that clearly states the types of info they collect and what it's used for (including whether infor is disclosed to third parties); must also include contact infor for site operators
       - Parents must be able to review any info collected from children and permanently delete it from the site's records
+      - It regulates websites that cater to children or knowingly collect information from children under the age of 13
       - Parents must give verifiable consent to the collection of info about children younger than the age of 📝13 prior to any such collection
   - GLBA: see above
   - **US Patriot Act of 2002**: enacted following the September 11 attacks with the stated goal of tightening U.S. national security, particularly as it related to ❄️foreign terrorism
@@ -330,7 +339,7 @@
   - Evolving privacy regulations neccessitates assessment of existing systems
   - PIA involves defining assessment scope, data collection methods and plan for data retention
   - Internation Association of Privacy Professionals (IAPP) publishes guids and resources related to privacy efforts including PIA
-- **RFC 1087, Ethics and the Internet**: actions that compromise the 📝"privacy of users" are explicitly considered unacceptable and unethical
+- **RFC 1087, Ethics and the Internet**: actions that compromise the 📝"privacy of users" are explicitly considered unacceptable and unethical. RFC 1087 does provide a code of ethics for the ✏️internet, but it is not binding on any individual.
   
 - **Geographic Considerations**: Different laws and regulations may apply depending on the location (data residency) of the
  - data subject
@@ -406,6 +415,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - **Business Continuity Planning (BCP)**: involves assessing the risk to organizational processes and creating policies, plans, and procedures to minimize the impact those risks might have on the organization if they were to occur
   - BCP is used to maintain the ❄️continuous operation of a business in the event of an emergency, with a goal to implement a combination of policies, procedures, and processes
   - Business continuity requires a lot of planning and preparation; actual implementation of business continuity processes occur quite infrequently
+  - Individuals with specific business continuity roles should receive training on at least an ✴️annual basis.
+  - The safety of ✴️people/human life must always be the paramount concern in business continuity planning. 
   - business organization analysis is the first step of the process, and the results are used to aid in the selection of team members and the design of the BCP process.
   - The primary facets of business continuity are:
     - Resilience: (e.g. within a data center and between sites or data centers) 
@@ -413,7 +424,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - Contingency: a last resort in case resilience and recovery prove ineffective
 - Following are the steps for BCP:
     - ✏️Project initiation: Develop a contingency planning policy statement, Conduct business impact analysis (BIA), Identify preventive control, Develop strategies for recovery, Develop an IT contingency plan, Plan testing, training, and exercises, Maintenance planning
-    - ✏️Scope: Initiation of the plan, Final approval of the plan, Demonstration of due care and due diligence to the satisfaction of management
+    - ✏️Scope: Initiation of the plan, Final approval of the plan, Demonstration of due care and due diligence to the satisfaction of management.  The most significant resource utilization will be the time dedicated by members of the BCP team to the planning process i.e personnel.
     - ✏️Business impact analysis: Identify critical assets, Conduct risk assessment, Determine maximum tolerable downtime (MTD), Failure and recovery metrics
     - ✏️Identify preventive control
     - ✏️Recovery strategy: Supply chain management (acquisition of computer equipment is assured during disaster), Telecommunication management (availability of electronic communication during disaster), Utility management (Availability of utilities like power, gas, water, etc.)
@@ -478,6 +489,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - 1.9.1 Candidate screening and hiring
   - The following strategies can reduce your risk:
     - **Candidate screening and hiring**: To properly plan for security, you shold have standards in place for job descriptions, job classification, work tasks, job responsibilities, prevention of collusion, candidate screening, background checks, security clearances, employment agreements, and nondisclosure agreements 
+      - ⭐Nondisclosure agreements (NDAs) typically require either mutual or one-way confidentiality in a business relationship. ⭐Noncompete agreements (NCAs) limit the future employment possibilities of employees by restricting an employee’s ability to work with or start a competing business for a certain period after leaving the organization.
       - screening employment candidates thoroughly is a key part of the hiring process
       - be sure to conduct a full background check that includes a criminal records check, job history verification, education verification, certification validation and confirmation of other accolades when possible
       - all references should be contacted
@@ -534,6 +546,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **🔥Threat** (a potential cause of an incident that may result in harm)
   - **🔥Vulnerability** (a weakness that can be exploited by a threat)
   - **🔥Impact** (the potential harm caused by a threat exploiting a vulnerability)
+  - Risk analysis identifies risks, quantifies the impact of threats, and aids in budgeting for security. It helps integrate the needs and objectives of the security policy with the organization's business goals and intentions. The risk analysis/risk assessment is a "point in time" metric, meaning Security is always changing thus continuous improvement is required.
   - Instead upper management must decide which risks are acceptable, and which are not; There are two primary risk-assessment methodologies:
       - **Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations e.g ✏️FAIR (Factor Analysis of Information Risk) is a quantitative risk management framework
       - **Qualitative Risk Analysis**: assigns subjective and intangible values to the loss of an asset and takes into account perspectives, feelings, intuition, preferences, ideas, and gut reactions. It relies on subjective judgments to rank risk.
@@ -544,7 +557,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - 1.10.3 Risk response
   - **Risk response**: the formulation of a plan for each identified risk; for a given risk, you have a choice for a possible risk response:
     - **Risk Mitigation**: reducing risk, or risk mitigation, is the implementation of safeguards, security controls, and countermeasures to reduce and/or eliminate vulnerabilities or block threats
-    - **Risk Assignment**: assigning or transferring risk is the placement of the responsibility of loss due to a risk onto another entity or organization; AKA assignment of risk and transference of risk
+    - **Risk Assignment**: assigning or transferring risk is the placement of the responsibility of loss due to a risk onto another entity or organization; AKA assignment of risk and transference of risk. ❄️Insurance is a form of risk assignment or transference
     - **Risk Deterrence**: deterrence is the process of implementing deterrents for would-be violators of security and policy 
       - the goal is to convince a threat agent not to attack; 
       - e.g. implementing auditing, security cameras, and warning banners; using security guards
@@ -554,7 +567,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - For acceptable risks, the documentation should include a rationale for that decision and a list of potential future events that might warrant a reconsideration of that determination. The documentation would not include controls used to mitigate acceptable risks, since acceptable risks do not require mitigation.
     - **Risk Rejection**: an unacceptable possible response to risk is to reject risk or ignore risk; denying that risk exists and hoping that it will never be realized are not valid prudent due care/due diligence responses to risk
     - **Risk Transference**: paying an external party to accept the financial impact of a given risk
-  - **Inherent Risk**: the level of natural, native, or default risk that exists in an environment, system, or product prior to any risk management efforts being performed (AKA initial or starting risk); this is the risk identified by the risk assessment process
+  - **Inherent Risk**: the level of natural, native, or default risk that exists in an environment, system, or product prior to any risk management efforts being performed (AKA ✴️initial or starting risk); this is the risk identified by the risk assessment process
   - **Residual Risk**: consists of threats to specific assets against which management chooses not to implement (the risk that management has chosen to accept rather than mitigate); risk remaining after security controls have been put in place
   - **Total Risk**: the amount of risk an org would face if no safeguards were implemented
   - **Conceptual Total Risk Formula**: threats * vulnerabilities * asset value = total risk
@@ -701,6 +714,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - trustworthy, 
     - reputable organizations that disclose their practices and security requirements to their business partners (not necessarily to the public)
   - Each link in the chain should be responsible and accountable to the next link in the chain; each handoff is properly organized, documented, managed, and audited
+  - Supply chain risk could be ✴️Hardware-focused, ✴️Software-focused, ✴️Services-focused.
     - The goal of a secure supply chain is that the finished product is of sufficient quality, meets performance and operational goals, provides stated security mechanisms, and that at no point in the process was any element counterfeited or subject to unauthorized or malicious manipulation or sabotage
   - The supply chain can be a threat vector, where materials, software, hardware, or data is being obtained from a supposedly trusted source but the supply chain behind the source could have been compromised and asset poisoned or modified
   - Void **Authorization to operate (ATO)**: The situation of voiding the ATO of a vendor describes the fact that the vendor is not meeting minimal security requirements which are necessary to the protection of the service and its customers.
@@ -723,10 +737,11 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - As part of assessment, the minimum security requirements must be established; in some cases, the minimum security requirements are your company’s security requirements, in other cases, new minimum security requirements need to be established 
     - In such scenarios, the minimum security requirements should have a defined period
 - 1.12.4 Service-level requirements
-  - **Service Level Agreements (SLAs)**: companies have SLAs for internal operations (such as how long it takes for the helpdesk to respond to a new ticket), for customers (such as the availability of a public-facing service) and for partner orgs (such as how much support a vendor provides a partner) 
+  - **🔥Service Level Agreements (SLAs)**: companies have SLAs for internal operations (such as how long it takes for the helpdesk to respond to a new ticket), for customers (such as the availability of a public-facing service) and for partner orgs (such as how much support a vendor provides a partner) 
     - All SLAs should be reviewed; a company sometimes has an SLA standard that should be applied, when possible, to the service level agreements as part of working with another company
       - this can sometimes take time, as the acquiring company might have to support established SLAs until they expire or are up for renewal 
-
+  - **🔥Service Level Requirements (SLRs)**: A service-level requirement (SLR) is a statement of the expectations of service and performance from the product or service of a vendor. Often, an SLR is provided by the ❄️customer/client prior to the establishment of the service-level agreement (SLA) (which should incorporate the elements of the SLR if the vendor expects the customer to sign the agreement). 
+  - 
 [1.13](#1.13) Establish and maintain a security awareness, education, and training program (OSG-9 Chpt 2)
 - 1.13.1 Methods and techniques to present awareness and training (e.g., social engineering, phishing, security champions, gamification)
   - Before actual training takes place, user security awareness needs to take place; from there, training, or teaching employees to perform their work tasks and to comply with the security policy can begin
