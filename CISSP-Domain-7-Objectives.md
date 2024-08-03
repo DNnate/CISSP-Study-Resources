@@ -404,7 +404,7 @@ of litigation is imminent.
     - **Recovery:** Restoring systems and data to their normal state (e.g., by restoring from backups, rebuilding systems, and re-enabling compromised accounts)
     - **Lessons Learned:** Documenting the incident and learning from it to improve future responses (e.g., by identifying areas where the incident response process can be improved and by sharing lessons learned with other organizations). Advisable to recruit an independent moderator or external consultant to facilitate the session.
 
-- The following steps (🔥Detection, 🔥Response, 🔥Mitigation, 🔥Reporting, 🔥Recovery, 🔥Remediation, and 🔥Lessons Learned) are on the exam
+- The following steps (🔥Detection, 🔥Response, 🔥Mitigation, 🔥Reporting, 🔥Recovery, 🔥Remediation, and 🔥Lessons Learned) are on the exam 🟡DRMRRRL 
 - 7.6.1 Detection
     - **Detection:** the identification of potential security incidents via monitoring and analyzing security logs, threat intelligence, or incident reports; as above, understanding the distinction between an event and an incident, the goal of detection is to identify an adverse event (an incident) and begin dealing with it
     - Common methods to detect incidents:
