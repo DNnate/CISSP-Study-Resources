@@ -563,12 +563,12 @@ Factors, entities or conditions outside the organisation upon which the organisa
 
 - 1.10.3 Risk response
   - **Risk response**: the formulation of a plan for each identified risk; for a given risk, you have a choice for a possible risk response:
-    - **Risk Mitigation**: reducing risk, or risk mitigation, is the implementation of safeguards, security controls, and countermeasures to reduce and/or eliminate vulnerabilities or block threats
+    - **Risk Mitigation**: reducing risk, or risk mitigation, is the implementation of safeguards, security controls, and countermeasures to reduce and/or eliminate vulnerabilities or block threats. Risk mitigation strategies attempt to lower the probability and/or impact of a risk occurring. Intrusion prevention systems attempt to reduce the probability of a successful attack and are, therefore, examples of risk mitigation.
     - **Risk Assignment**: assigning or transferring risk is the placement of the responsibility of loss due to a risk onto another entity or organization; AKA assignment of risk and transference of risk. ❄️Insurance is a form of risk assignment or transference
     - **Risk Deterrence**: deterrence is the process of implementing deterrents for would-be violators of security and policy 
       - the goal is to convince a threat agent not to attack; 
       - e.g. implementing auditing, security cameras, and warning banners; using security guards
-    - **Risk Avoidance**: determining that the impact or likelihood of a specific risk is too greate to be offset by potential benefits, and not performing a particular business function due to that determiniation; the process of selecting alternate options or activities that have less associated risk than the default, common, expedient, or cheap option
+    - **Risk Avoidance**: Risk avoidance alters business activities to make a risk irrelevant. determining that the impact or likelihood of a specific risk is too greate to be offset by potential benefits, and not performing a particular business function due to that determiniation; the process of selecting alternate options or activities that have less associated risk than the default, common, expedient, or cheap option
     - **Risk Acceptance**: the result after a cost/benefit analysis determines that countermeasure costs would outweigh the possible cost of loss due to a risk 
       - also means that management has agreed to accept the consequences/loss if the risk is realized
       - For acceptable risks, the documentation should include a rationale for that decision and a list of potential future events that might warrant a reconsideration of that determination. The documentation would not include controls used to mitigate acceptable risks, since acceptable risks do not require mitigation.
@@ -590,7 +590,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - security controls, countermeasures, and safeguards can be implemented administratively, logically / technically, or physically 
       - these 3 categories should be implemented in a conceptual layered defense-in-depth manner to provide maximum benefit
       - based on the concept that policies (part of administrative controls) drive all aspects of security and thus form the initial protection layer around assets
-      - Defense in depth is simply the use of multiple controls in a series. No one control can protect against all possible threats. Using a multilayered solution allows for numerous, different controls to guard against whatever threats come to pass. Some of the terms that relate to or are based on defense in depth include: Layering, Classifications, Zones, Realms, Compartments, Silos, Segmentations, Lattice structure, Protection rings
+      - **Defense in depth** is simply the use of multiple controls in a series. No one control can protect against all possible threats. Using a multilayered solution allows for numerous, different controls to guard against whatever threats come to pass.
+      - Defense in depth states that organizations should have overlapping security controls designed to meet the same security objectives whenever possible. This approach provides security in the event of a single control failure.
+      - Some of the terms that relate to or are based on defense in depth include: Layering, Classifications, Zones, Realms, Compartments, Silos, Segmentations, Lattice structure, Protection rings
       - then, logical and technical controls provide protection against logical attacks and exploits 
       - then, physical controls provide protection against real-world physical attacks against facilities and devices
 - 1.10.5 Applicable types of controls (e.g., preventive, detective, corrective)
@@ -607,6 +609,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **🔥Recovery**: An extension of corrective controls but have more advanced or complex abilities; a recovery control attempts to repair or restore resources, functions, and capabilities after a security policy violation 
     - recovery controls typically address more significant damaging events compared to corrective controls, especially when security violations may have occurred
   - **🔥Directive**: A directive control is deployed to direct, confine, or control the actions of subjects to force or encourage compliance with security policies
+  - 🔥Security through obscurity attempts to hide the details of security controls to add security to them
 - 1.10.6 Control assessments (security and privacy)
   - Periodically assess security and privacy controls: what’s working, what isn’t 
     - As part of this assessment, the existing documents should be thoroughly reviewed, and some of the controls tested randomly 
