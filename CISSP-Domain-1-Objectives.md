@@ -45,7 +45,7 @@
 
 [1.2](#1.2) Understand and apply security concepts (OSG-9 Chpt 1)
 - 1.2.1 Confidentiality, integrity, and availability, authenticity and nonrepudiation (5 Pillars)
-  - **Confidentiality**:
+  - 🔴**Confidentiality**:
     - Concept of measures used to ensure the protection of the secrecy of data, objects, and resources
     - is the duty to ensure privacy. It focuses on data
     - It is a legal obligation in regulatory scenarios and a due care obligation in U.S law
@@ -53,36 +53,40 @@
     - Preserving authorized restrictions on information access and disclosure, including the means for protecting personal privacy and prioprietary information
     - Sensitive data, including personally identifiable information (PII) must be kept confidential; confidentiality is different from secrecy
     - Preserving confidentiality means protecting an asset or data, even if it's not a secret
+    - Violations of confidentiality include stealing passwords, eavesdropping, and social engineering.
   
-  - **Integrity**:
+  - 🔴**Integrity**:
     - Concept of protecting the reliability and correctness of data; guarding against improper info modification/destruction; includes ensuring non-repudiation and authenticity
     - Integrity protection prevents unauthorized alterations of data
     - Preventing unauthorized subjects from making modifications
     - Preventing authorized subjects from making unauthorized modifications, such as mistakes
     - Maintaining the internal and external consistency of objects
 
-  - **Availability**:
+  - 🔴**Availability**:
     - Authorized subjects are granted timely and uninterrupted access to objects
     - To ensure high availability of services and data, use techniques like failover clustering, site resiliency, automatic failover, load balancing, redundancy of hardware and software components, and fault tolerance
 
-  - **Authenticity**: ensuring a transmission, message or sender is legitimate (Proof of Origin)   
+  - 🔴**Authenticity**: ensuring a transmission, message or sender is legitimate (Proof of Origin)   
     - See the NIST glossary for examples: https://csrc.nist.gov/glossary/term/authenticity
 
-  - **Nonrepudiation**: 
+  - 🔴**Nonrepudiation**: 
     - Ensures that the subject of activity or who caused an event cannot deny that the event occurred
     - Nonrepudiation is made possible through identification, authentication, authorization, accountability, and auditing
 
-  - **AAA Services**:
-    - Identification: claiming to be an identity when attempting to access a secured area or system
-    - Authentication: proving that you are that claimed identity via one or more factors (something you have, something you know, something you are)
-    - Authorization: defining the needed resources, permissions (i.e. allow/grant and/or deny) to a resource, and object access for a specific identity or subject
-    - Auditing: recording a log of the events and activities related to the system and subjects
-    - Accounting: (aka accountability) access control process which records info about attempts by all entities to access resources; reviewing log files to check for compliance and violations in order to hold subjects accountable for their actions, especially violations of organizational security policy
+  - 🔴**AAA Services**: The required elements of accountability, as defined in AAA services, are as follows: identification (which is sometimes considered an element of authentication, a silent first step of AAA services, or represented by IAAA), authentication (i.e., identification verification), authorization (i.e., access control), auditing (i.e., logging and monitoring), and accounting.
+    - 🍮Identification: claiming to be an identity when attempting to access a secured area or system
+    - 🍮Authentication: proving that you are that claimed identity via one or more factors (something you have, something you know, something you are)
+    - 🍮Authorization: defining the needed resources, permissions (i.e. allow/grant and/or deny) to a resource, and object access for a specific identity or subject
+    - 🍮Auditing: recording a log of the events and activities related to the system and subjects
+    - 🍮Accounting: (aka accountability) access control process which records info about attempts by all entities to access resources; reviewing log files to check for compliance and violations in order to hold subjects accountable for their actions, especially violations of organizational security policy
  
 [1.3](#1.3) Evaluate and apply security governance principles (OSG-9 Chpt 1)
  
 - **Security governance**: 🌠the collection of policies, roles, processes/practices used to make security decisions in an org; related to supporting, evaluating, defining, and directing the security efforts of an org 
-  - 🌠Security governance is the implementation of a security solution and a management method that are tightly interconnected
+  - 🌠Security governance is the implementation of a security solution and a management method that are tightly interconnected. It is NOT an IT-only issue.
+  - 🌠The **top-down approach** is the aspect of security governance that is based on the idea that senior management is responsible for the success or failure of a security endeavor. 
+  - 🌠Security governance is the collection of practices related to supporting, defining, and directing the security efforts of an organization.
+  - 🌠Security governance directly oversees and gets involved in all levels of security.
   - 🌠Security governance requires a clear understanding of the objectives of the organization as the core concepts of security and indeed the primary goals and objectives of security should be the CIA Triad
   - 🌠Security governance seeks to compare the security processes and infrastructure used within the organization with knowledge and insight obtained from external sources.
   - 🌠Security governance should include acquisitions, divestitures, and governance committees. 
@@ -93,10 +97,9 @@
 - **Third-party governance**: external entity oversight that may be mandated by law, regulation, industry standards, contractual obligation, or licensing requirement; outside investigator or auditors are often involved
 - 1.3.1 Alignment of security function to business strategy, goals, mission, and objectives
   - **Security Management Planning**: ensures proper creation/implementation/enforcment of a security policy, and alignment with org strategy, goals, mission, and objectives
-  - **Strategic Plan**: a strategic plan is a 🔥long-term plan (useful for 5 years); it defines the org's security purpose 
-    - A strategic plan should include risk assessment
-  - **Tactical Plan**: mid-term plan (🔥1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan or can be crafted ad hoc based on unpredicted events
-  - **Operational Plan**: a 🔥short-term, highly detailed plan based on strategic or tactical plans. It is valid or useful only for a short time. 
+       - **Strategic Plan**: a strategic plan is a 🔥long-term plan (useful for 5 years); it defines the org's security purpose. A strategic plan should include risk assessment
+       - **Tactical Plan**: mid-term plan (🔥1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan or can be crafted ad hoc based on unpredicted events
+       - **Operational Plan**: a 🔥short-term, highly detailed plan based on strategic or tactical plans. It is valid or useful only for a short time. 
 - Strategy ▶️ goals ▶️ missions and objectives — support each other in a heirarchy
     - **Objectives**: are closest to the ground-level and represent small efforts to help you achieve a mission 
     - **Missions**: represent a collection of objectives, and one or more missions lead to goals; when you reach your goals, you are achieving the strategy
@@ -104,7 +107,8 @@
 - 1.3.2 Organizational processes (e.g., acquistions, divestitures, governance committees)
   - Security governance should address every aspect of an org, including organizational processes of acquisitions, divestitures, and governance
   - Be aware of the risks in acquisitions (since the state of the IT environment to be integrated is unknown, due diligence is key) and divestitures (how to split the IT infrastructure and what to do with identities and credentials)
-  - Acquisitions and mergers place an organization at an increased level of risk. Such risks include ✏️inappropriate information disclosure, ✏️data loss, ✏️downtime, and ✏️failure to achieve sufficient return on investment (ROI)
+  - 🔮Acquisitions and mergers place an organization at an increased level of risk. Such risks include ✏️inappropriate information disclosure, ✏️data loss, ✏️downtime, and ✏️failure to achieve sufficient return on investment (ROI)
+  - 🔮Divestiture occurs when something is being removed from the organization, whether a device, service, employee, or partnership. Security processes should be implemented at these times to reduce the risk of ✏️data loss and ✏️data leakage, such as sanitizing assets, remove and destroy storage media, and debrief ex-employees.
   - Understand the value of governance committees (vendor governance, project governance, architecture governance, etc.)
   - Executives, managers and appointed individuals meet to review architecture, projects and incidents (security or otherwise),and provide approvals for new strategies or directions 
     - The goal is a fresh set of eyes, often eyes that are not purely focused on information security
@@ -121,9 +125,13 @@
   - Auditor: responsible for reviewing and verifying that the security policy is properly implemented
 - 1.3.4 Security control frameworks **🔥🔥Focuses on the HOW🔥🔥**
   - A **security control framework**: It is a prescriptive set of cybersecurity safeguards and best practices to protect an organizations assets. It helps in implementing risk managment strategy. outlines the org's approach to security, including a list of specific security processes, procedures, and solutions used; it is important in planning the structure of an org's security solution;
+  -  ✴️Security Control Assessment (SCA) is the formal evaluation of a security infrastructure's individual mechanisms against a baseline or reliability expectation. The goals of an SCA are to
+       - 🍮ensure the effectiveness of the security mechanisms
+       - 🍮evaluate the quality and thoroughness of the risk management processes of the organization, and
+       - 🍮produce a report of the relative strengths and weaknesses of the deployed security infrastructure. 
   - If a security control's benefits cannot be quantified, evaluated, or compared, then it does not actually provide any security.
   - there are many frameworks to choose from, such as:
-    -  **Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
+    -  🔴**Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
         - COBIT is a documented set of best IT security practices by ISACA
         - Six key principles (🟡Sally Has Daring Goals To Excel SHDGTE) :
           - ✏️provide stakeholder value
@@ -132,13 +140,13 @@
           - ✏️governance distinct from management
           - ✏️tailored to enterprise needs
           - ✏️end-to-end governance system   
-    -  ISO 27000 series (27000, 27001, 27002, etc.).
+    -  🔴ISO 27000 series (27000, 27001, 27002, etc.).
           - 15408 evaluation Criteria
           - 22301  security and resilience
           - **27001 (🔥🔥Focuses on WHAT and WHY🔥🔥)** information security standards/controls: Outlines a framework for implementing, maintaining and continually improving ISMS Information Security Management System (ISMS is a set of policies, processes and controls that helps organization protect thier information assets). ISO 27001 Guides organizations in identifying assets and assessing thier values and information risks AND implementing mitigating security controls based on ISO 27002. CLoud platforms all have ISO 27001.
           - **27002 (🔥🔥Focuses on HOW🔥🔥)** titled "Information technology—Security techniques—Code of practice for information security management: offers information security guidance: Offers best practices and Control objectives related to key aspects of cybersecurity in support of ISO/IEC 27001. Focuses on cryptography, human resource security, operational security, and incident response. Serves as an official blueprint for orgs aiming to effectively safeguard information assets from cyber threats.
           - 27031 Business continuity    
-    -  **SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It 🧠integrates security into the business processes and aligns security measures with business goals🧠. provides a structured method for designing, implementing and managing security architectures.
+    -  🔴**SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It 🧠integrates security into the business processes and aligns security measures with business goals🧠. provides a structured method for designing, implementing and managing security architectures.
     -  It provides a holistic, business-­driven approach to security architecture, encompassing everything from assessing business requirements to implementation and metrics.
     -  It is recognized for its comprehensive life cycle approach to security architecture, from assessing business requirements to establishing a “chain of traceability” through strategy, concept, design, implementation, and metrics stages
     -  SABSA Lifecycle Phases: 🟡 SDIM
@@ -146,7 +154,7 @@
         - ✏️Design Phase: Developing the detailed architecture.
         - ✏️Implementation Phase: Deploying the security solutions.
         - ✏️Management Phase: Ongoing management and adaptation of the security architecture.  
-    -  **FedRAMP (Federal Risk and Authorization Managment Programme)** regulates 🧠cloud security for US Gov. FedRAMP specifies a set of security controls based on NIST SP 800-53. It provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services.
+    -  🔴**FedRAMP (Federal Risk and Authorization Managment Programme)** regulates 🧠cloud security for US Gov. FedRAMP specifies a set of security controls based on NIST SP 800-53. It provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services.
     -  FedRAMP is a U.S. government compliance program that standardizes how cloud services are assessed, monitored, and handle authorization. There is a FedRAMP marketplace for service providers and services that have been authorized by FedRAMP. 
     -  FIPS 140-3 Security requirement for cryptographic modules
     -  NIST
@@ -159,7 +167,7 @@
           - 800-12 is an introduction to computer security
           - 800-34 covers contingency planning
           - 800-86 is the “Guide to Integrating Forensic Techniques into Incident Response.”
-    -  NIST **CyberSecurity Framework (CSF)**
+    -  🔴NIST **CyberSecurity Framework (CSF)**
         - designed for commerical orgs and critical infrastructure, CSF 1.1 consists of five functions:
           - identify
           - protect
@@ -196,14 +204,16 @@
   - After establishing a framework for governance, security awareness training should be implemented, including all new hires, who complete the security awareness training as they come on board, and existing employees who should recertify regularly (typically yearly)
   - ***The Prudent Man Rule*** requires that a fiduciary, such as a senior executives and trustee, act with the care, skill, prudence, and diligence that a prudent person acting in a like capacity would use. FOrmalised by the Federal Sentencing Guidelines released in 1991 provided punishment guidelines to help federal judges interpret computer crime laws.
 
-
 [1.4](#1.4) Determine compliance and other requirements (OSG-9 Chpt 4)
 - 1.4.1 Contractual, legal, industry standards, and regulatory requirements
   - Understand the difference between criminal, civil, and administrative law.
     - **Criminal law**: protects society against acts that violate the basic principles we believe in; violations of criminal law are prosecuted by federal and state governments
     - **Civil law**: provides the framework for the transaction of business between people and organizations; violations of civil law are brought to the court and argued by the two affected parties
+         - ✴️Civil (Tort) Law: Refers to a branch of civil law that deals with civil wrongs and legal disputes where one party claims to have been harmed by the wrongful conduct of another party. It is focused on compensating the injured party rather than punishing the wrongdoer.
+         - ✴️Civil Code Law: Refers to a comprehensive set of legal rules and statutes that govern private rights and obligations in a civil law system. It is a codified system of laws that covers a broad range of legal issues including contracts, property, family law, and obligations. 
     - **Administrative law**: used by government agencies to effectively carry out their day-to-day business
-    	- Administrative laws do not require an act of the legislative branch to implement at the federal level. Administrative laws consist of the policies, procedures, and regulations promulgated by agencies of the executive branch of government. Although they do not require an act of Congress, these laws are subject to judicial review and must 🧠comply with criminal and civil laws enacted by the legislative branch. 
+    	- Administrative laws do not require an act of the legislative branch to implement at the federal level. Administrative laws consist of the policies, procedures, and regulations promulgated by agencies of the executive branch of government. Although they do not require an act of Congress, these laws are subject to judicial review and must 🧠comply with criminal and civil laws enacted by the legislative branch. HIPAA is an example of administrative law.
+     - **Common law**: is precedent based rather than statutes or written law. ✏️Precedent: A legal principle or rule established in a previous judicial decision that is used to guide judges in deciding subsequent cases with similar issues or facts. ✏️Stare Decisis: This is the doctrine of adhering to established precedents. It means “to stand by things decided” and ensures consistency and predictability in the law by requiring courts to follow the decisions made in earlier cases.
   - **Compliance**: Organizations may find themselves subject to a wide variety of laws, and regulations imposed by regulatory agencies or contractual obligation
     - **Payment Card Industry Data Security Standard (PCI DSS)** - governs the security of credit card information and is enforced through the terms of a merchant agreement between a business that accepts CC payments, and the bank that processes the business' transactions. It includes requirements that merchants promptly report incidents affecting the security of credit card information. Because it is not a law, PCI DSS violations cannot incur criminal sanctions.
     - **Sarbanes-Oxley (SOX)** - governs the financial records of publicly traded companies. financial systems may be audited to ensure security controls are sufficient to ensure compliance with SOX. It ✏️protects investors.  required publicly traded companies to implement a wide range of controls intended to ✏️minimize conflicts of interest, ✏️provide investors with appropriate risk information, place civil and ✏️criminal penalties👮 on executives for providing false financial disclosures, and provide protections for ✏️whistleblowers who report inappropriate actions to regulators.
@@ -378,12 +388,12 @@
 [1.6](#1.6) Understand requirements for investigation types (i.e., administrative, criminal, civil, regulatory, industry standards) (OSG-9 Chpt 19)
 
 - An investigation will vary based on incident type; e.g. for a financial services company, a financial system compromise might cause a regulatory investigation; a system breach or website compromise might cause a criminal investigation; each type of investigation has special considerations:
-  - **Administrative**: an administrative investigation has a primary purpose of providing the appropriate authorities with incident information; thereafter, authorities will determine the proper action, if any 
-    - Administrative investigations are often tied to HR scenarios, such as when a manager has been accused of improprieties
-  - **Criminal**: a criminal investigation occurs when a crime has been committed and you are working with a law enforcement agency to convict the alleged perpetrator; in such a case, it is common to gather evidence for a court of law, and to share the evidence with the defense
+  - **Administrative Investigation**: an administrative investigation has a primary purpose of providing the appropriate authorities with incident information; thereafter, authorities will determine the proper action, if any 
+    - Administrative investigations are often tied to HR scenarios, such as when a manager has been accused of improprieties. Unlike criminal or civil cases, administrative investigations are an internal matter, and there is no set standard of proof that you must apply.  However, it would still be wise for the organization to include a standard burden of proof in their own internal procedures to ensure the thoroughness and fairness of investigations.
+  - **Criminal Investigation**: a criminal investigation occurs when a crime has been committed and you are working with a law enforcement agency to convict the alleged perpetrator; in such a case, it is common to gather evidence for a court of law, and to share the evidence with the defense
     - You need to gather and handle the information using methods that ensure the evidence can be used in court
     - In a criminal case, a suspect must be proven guilty beyond a 📝reasonable doubt📝; a higher bar compared to a civil case, which is showing a preponderance of evidence
-  - **Civil**: in a civil case, one person or entity sues another; e.g. one company could sue another for a trademark violation 
+  - **Civil Investigation**: in a civil case, one person or entity sues another; e.g. one company could sue another for a trademark violation 
     - A civil case is typically about monetary damages, and doesn't involve criminality
     -  it relates to a contract dispute and will likely wind up being litigated in civil court
     - In a civil case, a 📝preponderance of evidence📝 is required to secure a victory; differing from criminal cases, where a suspect is innocent until proven guilty beyond a reasonable doubt
@@ -403,20 +413,20 @@
   - This policy defines a level of acceptable performance and expectation of behavior and activity; failure to comply with the policy may result in job action warnings, penalties, or termination
 
 - Security Standards, Baselines and Guidelines: once the main security policies are set, the remaining security docuemntation can be crafted from these policies
-  - **Standards**: specific mandates explicity stating expections of performance/conformance; more descriptive than policies, standards define :compulsary requirements for the homogenous use of hardware, software, technology, and security controls, uniformly implemented throughout the org. It could be internal or external.
+  - 🔥**Standards**: specific mandates explicity stating expections of performance/conformance; more descriptive than policies, standards define :compulsary requirements for the homogenous use of hardware, software, technology, and security controls, uniformly implemented throughout the org. It could be internal or external.
     - A standard defines compulsory requirements for the homogenous use of hardware, software, technology, and security controls.
     - Standards are ❄️Mandatory
-  - **Baseline**: ✏️defines a minimum level of security that every system throughout the organization must meet; baselines are usually ✏️system specific and refer to industry / government standards. It is often related to configuration. 
+  - 🔥**Baseline**: ✏️defines a minimum level of security that every system throughout the organization must meet; baselines are usually ✏️system specific and refer to industry / government standards. It is often related to configuration. 
     - A baseline is a more operationally focused form of a standard.
     - e.g. a baseline for  server builds would be a list of configuration areas that should be applied to every server that is built
     - Baselines are ❄️Mandatory. All systems not complying with the baseline should be taken out of production until they can be brought up to the baseline.
     - A Group Policy Object (GPO) in a Windows network is sometimes used to comply with standards; configuration management solutions can also help you establish baselines and spot configurations that are not in alignment
-  - **Guideline**: offers ❄️Recommendations on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
+  - 🔥**Guideline**: offers ❄️Recommendations on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
     - Guidelines are flexible, and can be customized for unique systems or conditions; they state which security mechanism should be deployed instead of prescribing a specific product or control; they are not complusory; suggested practices and expectations of activity to best accomplish tasks and goals
     - **Framework** are a set of guidlines
-  - **Procedure** (AKA Standard Operating Procedure or SOP): detailed, ❄️step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution
-  - **Laws** Legal rules created by government entities e.g legislature. Must be followed or can result in civil or criminal penalties
-  - **Regulations** rules created by governmental agencies. Must be followed or can result in civil or criminal penalties
+  - 🔥**Procedure** (AKA Standard Operating Procedure or SOP): detailed, ❄️step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution
+  - 🔥**Laws** Legal rules created by government entities e.g legislature. Must be followed or can result in civil or criminal penalties
+  - 🔥**Regulations** rules created by governmental agencies. Must be followed or can result in civil or criminal penalties
 
 [1.7.2](#1.7.2) External Dependencies (New in 2024)
 Factors, entities or conditions outside the organisation upon which the organisations business continutiy plans and operation resilience may depend. EG suppliers, vendors, utilities, transportation. Do not rely on one supply that may be affected by the same disaster.
@@ -434,11 +444,11 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - Recovery: if a service becomes unavailable, you need to recover it as soon as possible
     - Contingency: a last resort in case resilience and recovery prove ineffective
 - Following are the steps for BCP:
-    - ✏️Project initiation: Develop a contingency planning policy statement, Conduct business impact analysis (BIA), Identify preventive control, Develop strategies for recovery, Develop an IT contingency plan, Plan testing, training, and exercises, Maintenance planning
-    - ✏️Scope: Initiation of the plan, Final approval of the plan, Demonstration of due care and due diligence to the satisfaction of management.  The most significant resource utilization will be the time dedicated by members of the BCP team to the planning process i.e personnel.
+    - ✏️Project initiation: Develop policy statement and document
+    - ✏️Scope/Planning: The project scope and planning phase includes four actions: a structured analysis of the organization, the creation of a BCP team, an assessment of available resources, and an analysis of the legal and regulatory landscape. Initiation of the plan, Final approval of the plan, Demonstration of due care and due diligence to the satisfaction of management.  The most significant resource utilization will be the time dedicated by members of the BCP team to the planning process i.e personnel.
     - ✏️Business impact analysis: Identify critical assets, Conduct risk assessment, Determine maximum tolerable downtime (MTD), Failure and recovery metrics
     - ✏️Identify preventive control
-    - ✏️Recovery strategy: Supply chain management (acquisition of computer equipment is assured during disaster), Telecommunication management (availability of electronic communication during disaster), Utility management (Availability of utilities like power, gas, water, etc.)
+    - ✏️Recovery strategy: Supply chain management (acquisition of computer equipment is assured during disaster), Telecommunication management (availability of electronic communication during disaster), Utility management (Availability of utilities like power, gas, water, etc.) Also develop an IT contingency plan.
     - ✏️Designing and development: approval
     - ✏️Implementation, training, and testing
     - ✏️BCP maintenance: Change management, Version control, Accounting for mistakes
@@ -452,7 +462,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 
 - 1.8.2 Develop and document the scope and the plan
   - The BCP process has four main steps (Project scope and planning, Business Impact Analysis, Continuity planning, and Approval and implementation):
-    - **Project scope and planning**: Developing the project scope and plan starts with gaining support of the management team, making a business case (cost/benefit analysis, regulatory or compliance reasons etc.) and gaining approval to move forward. 
+    - 🔴**Project scope and planning**: Developing the project scope and plan starts with gaining support of the management team, making a business case (cost/benefit analysis, regulatory or compliance reasons etc.) and gaining approval to move forward. 
       - Next, you need to form a team with representatives from the business as well as IT. This will require an initial analysis of the Business organization to aid in the selection of team members
       - Next, start with a business continuity policy statement, then conduct a business impact analysis (see next item), and then develop the remaining components: 
         - preventive controls
@@ -461,7 +471,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
         - testing
         - training and maintenance
 - 1.8.1 Business Impact Analysis (BIA)
-    - **Business impact analysis (BIA)**: Identify the systems and services that the business relies on and assess the impacts that a disruption or outage would cause, including the impacts on business processes like accounts receivable and sales. This should be the first step i.e identify the business's priorities
+    - 🔴**Business impact analysis (BIA)**: Identify the systems and services that the business relies on and assess the impacts that a disruption or outage would cause, including the impacts on business processes like accounts receivable and sales. This should be the first step i.e identify the business's priorities
       - Also decide which systems and services you need to get things running again (think foundational IT services such as the network and directory, which many other systems rely on)
       - The “business impact” asset valuation method involves evaluating the potential impact on the organization’s operations, reputation, or bottom line if the asset is compromised. The other options correspond to different asset valuation methods: “✏️financial value,” “✏️market value,” and “✏️intangible value,” respectively.
       - Finally, prioritize the order in which critical systems and services are recovered or brought back online. 
@@ -477,13 +487,13 @@ Factors, entities or conditions outside the organisation upon which the organisa
         - ✏️Defining systems: identifying and describing the various systems within an organization, including their roles, functions, and interdependencies.
         - ✏️Reducing systems: Consolidation and removal of complexity
         - ✏️Alternative systems: refers to backup systems, redundant systems 
-    - **Continuity planning**: The first two phases of the BCP process (project scope and planning and the business impact analysis) focus on determining how the BCP process will work and prioritizing the business assets that need to be protected against interruption
+    - 🔴**Continuity planning**: The first two phases of the BCP process (project scope and planning and the business impact analysis) focus on determining how the BCP process will work and prioritizing the business assets that need to be protected against interruption
       - The next phase of BCP development, continuity planning, focuses on the development and implementation of a continuity strategy to minimize the impact realized risks might have on protected assets
       - There are two primary subtasks involved in continuity planning:
         - Strategy development
         - Provisions and processes: In the provisions and processes phase, the BCP team also designs the procedures and mechanisms to mitigate risks that were deemed unacceptable during the strategy development phase.
       - The goal of this process is to create a **continuity of operations plan** (COOP), which focuses on how an org will carry out critical business functions starting shortly after a disruption occurs and extending up to one month of sustained operations
-    - **Approval and implementation**:
+    - 🔴**Approval and implementation**:
       - BCP plan now needs sr. management buy-in (should be endorsed by the org's top exec)
       - You should strive to have the highest-­ranking person possible sign the BCP’s statement of importance.
       - BCP team should create an implementation schedule, and all personnel involed should receive training on the plan
@@ -554,7 +564,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - A risk matrix or risk heat map is a form of risk assessment that is performed on a basic graph or chart
   - Likelihood assessment is a component of a risk assessment that determines the likelihood that a risk will materialize
   - **❄️Risk** is threat with a vulnerability. Risk is the possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result.
-       - Risk = threat * vulnerability (or probability of harm * severity of harm)
+       - ✏️Risk = threat * vulnerability (or probability of harm * severity of harm)
+       - ✏️Risk is a calculation of the 📝probability of occurrence and the level of damage that could be caused if an exposure is realized (i.e., actually occurs).
+       - ✏️Risk is presence of a vulnerability when a related threat exists
        - Addressing either the threat or threat agent or vulnerability directly results in a reduction of risk (known as threat mitigation)
        - All IT systems have risk; all orgs have risk; there is no way to elminiate 100% of all risks. Risk is typically composed of three Components:
   - **❄️Threat** (a potential cause of an incident that may result in harm)
@@ -660,14 +672,14 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **Risk management** facilitates the balance of operational and economic costs of protective measures with gains in mission capability.  Risk management is a systematic approach to identifying, assessing, and prioritizing risks to organizational operations, assets, or individuals resulting from the operation of information systems and the information processed, stored, or transmitted by those systems.
        - It involves evaluating the likelihood and impact of risks and implementing cost-effective measures to reduce them to an acceptable level.
        - By considering the costs of implementing protective measures against the benefits of mission capability, risk management helps organizations make informed decisions about how to allocate their resources to achieve their security goals. Performance testing, security audit, and risk assessment are all important components of a risk management program.
-       - ✴️**Key risk indicators (KRIs)** are often used to monitor risk for organizations that establish an ongoing risk management program. Using automated data gathering and tools that allow data to be digested and summarized can provide predictive information about how organizational risks are changing.
+       - ✴️**Key risk indicators (KRIs)** are often used to monitor risk for organizations that establish an ongoing risk management program. Using 🪧automated data gathering and tools that allow data to be digested and summarized can 🪧provide predictive information about how organizational risks are changing. It can 🪧Provide warnings before issues occur, 🪧Provide historical views of past incidents, 🪧Provide insight into risk tolerance for the organization. It does not Provide real-time incident response information. Monitoring and detection systems like IPS, SIEM, and other tools are better suited to handling actual attacks
   - CSF is aimed at ✏️private (commercial) businesses and purely optional
   - RMF's audience is ✏️federal government agencies and is mandatory for thosie to which it applies
   - The RMF is intended as a risk management process to identify and respond to threats, and is defined in three core, interrelated Special Publications: 
     - SP 800-37 Rev 2, Risk Management Framework for Information Systems and Organizations
     - SP 800-39, Managing Information Security Risk
     - SP 800-30 Rev 1, Guide for Conducting Risk Assessments
-    - The **📝RMF 800-37 has 7 steps**, and **six cyclical phases**: (PCSIAAM 🟡People Can See I AM ALWAYS Monitoring)
+    - 🔴**📝RMF 800-37 has 7 steps**, and **six cyclical phases**: (PCSIAAM 🟡People Can See I AM ALWAYS Monitoring)
       - **🔥Prepare** to execute the RMF from an organization and system-level perspective by establishing a context and priorities for managing security and privacy risk
       - **🔥Categorize** the system and the information processed, stored, and transmitted by the system based on an analysis of the impact of loss
       - **🔥Select** an initial set of controls for the system and tailor the controls as needed to reduce risk to an acceptable level based on an assessment of risk
@@ -694,14 +706,14 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - It has two objectives:
     - Reduce the number of security-related design and coding defects
     - Reduce the severity of any remaining defects
-- Microsoft developed the **STRIDE threat model**: Also useful for threat categorization during aplication threat modeling
+- 🔴**STRIDE threat model**: Microsoft developed the STRIDE threat model: Also useful for threat categorization during aplication threat modeling
   - ✏️Spoofing: an attack with the goal of gaining access to a target system through the use of falsified identity
   - ✏️Tampering: any action resulting in unauthorized changes or manipulation of data, whether in transit or in storage
   - ✏️Repudiation: the ability of a user or attacker to deny having performed an action or activity by maintaining plausible deniability
   - ✏️Information Disclosure: the revelation or distribution of private, confidential, or controlled information to external or unauthorized entities
   - ✏️Denial of Service (DoS): an attack that attempts to prevent authorized use of a resource; this can be done through flaw exploitation, connection overloading, or traffic flooding
   - ✏️Elevation of privilege: an attack where a limited user account is transformed into an account with greater privileges, powers, and access
-- **Process for Attack Simulation and Threat Analysis (PASTA)**: PASTA is a risk-­centric approach that aims at selecting or developing countermeasures in relation to the value of the assets to be protected. A seven-stage threat modeling methodology: _(🟡Our Technical Application Tackles Vulnerabilities And Risks)_
+- 🔴**Process for Attack Simulation and Threat Analysis (PASTA)**: PASTA is a risk-­centric approach that aims at selecting or developing countermeasures in relation to the value of the assets to be protected. A seven-stage threat modeling methodology: _(🟡Our Technical Application Tackles Vulnerabilities And Risks)_
   - ✏️Stage I: Definition of the Objectives (DO) for the Analysis of Risk
   - ✏️Stage II: Definition of the Technical Scope (DTS)
   - ✏️Stage III: Application Decomposition and Analysis (ADA)
@@ -710,23 +722,23 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - ✏️Stage VI: Attack Modeling and Simulation (AMS)
   - ✏️Stage VII: Risk Analysis and Management (RAM)
 - Each stage of PASTA has a specific list of objectives to achieve and deliverables to produce in order to complete the stage
-- **DREAD**: The DREAD model, developed in 2002, is a quantitative risk analysis model that involves rating the severity of security threats by assigning numeric values (typically from 1 to 10) that represent different levels of severity.
+- 🔴**DREAD**: The DREAD model, developed in 2002, is a quantitative risk analysis model that involves rating the severity of security threats by assigning numeric values (typically from 1 to 10) that represent different levels of severity.
      - ✏️Damage: What is the total amount of damage the threat is capable of causing to your business?
      - ✏️Reproducibility: How easily can an attack on the particular threat be replicated?
      - ✏️Exploitability: How much effort is required for the threat to be exploited by an attacker?
      - ✏️Affected users: How many people, either inside or outside of your organization, will be affected by the security threat?
-     - Discoverability: How easily can the vulnerability be found?
- - **MITRE's ATT&CK framework** is broadly adopted by threat modeling and threat intelligence organizations and is used as a default model in many software packages and tools.
+     - ✏️Discoverability: How easily can the vulnerability be found?
+ - 🔴**MITRE's ATT&CK framework** is broadly adopted by threat modeling and threat intelligence organizations and is used as a default model in many software packages and tools.
  - ATT&CK is used to map out and understand adversarial behaviors and techniques, allowing organizations to improve detection and response capabilities based on ❄️known attack methods.
  - It is a comprehensive knowledge base of adversary tactics and techniques based on real-world observations and using ❄️pre-existing tools. It includes:
      - ✏️Tactics: The goals of an adversary during an attack (e.g., Initial Access, Execution, Persistence).
      - ✏️Techniques: Specific methods used to achieve tactics (e.g., Phishing, PowerShell).
-  - **The Diamond Model** specifically addresses how to think about intrusions but does not address broader threats, and the other answers were made up for this question. The Diamond Model focuses on four key elements that interact with each other to create a threat scenario: i.e Adversary to Infrastructure, Adversary to Capability, Infrastructure to Capability, and Victim to Capability.
+  - 🔴**The Diamond Model** specifically addresses how to think about intrusions but does not address broader threats, and the other answers were made up for this question. The Diamond Model focuses on four key elements that interact with each other to create a threat scenario: i.e Adversary to Infrastructure, Adversary to Capability, Infrastructure to Capability, and Victim to Capability.
       - ✏️Adversary: The entity or individual initiating the attack.
       - ✏️Infrastructure: The systems, tools, or networks used by the adversary to conduct the attack.
       - ✏️Capability: The techniques, tools, or methods used by the adversary to exploit vulnerabilities and achieve their goals.
       - ✏️Victim: The target of the attack, which could be a person, organization, system, or data.
-- **Visual, Agile, and Simple Threat (VAST)**: a threat modeling concept that integrates threat and risk management into an Agile programming environment on a scalable basis
+- 🔴**Visual, Agile, and Simple Threat (VAST)**: a threat modeling concept that integrates threat and risk management into an Agile programming environment on a scalable basis
 - Part of the job of the security team is to identify threats, using different methods:
    - ✏️Focus on attackers: this is a useful method in specific situations;
     - e.g. suppose that a developer’s employment is terminated, and that post-offboarding and review of developer’s computer, a determination is made that the person was disgruntled and angry
@@ -734,7 +746,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
    - ✏️Focus on assets: an org’s most valuable assets are likely to be targeted by attackers
    - ✏️Focus on software: orgs that develop applications in house, and can be viewed as part of the threat landscape; the goal isn’t to identify every possible attack, but to focus on the big picture, identifying risks and attack vectors
 - Understanding threats to the org allow the documentation of potential attack vectors; diagramming can be used to list various technologies under threat
-- **Reduction Analysis** (Also known as Decomposiing the application, system or environment): The purpose is to gain a greater understanding of the logic of a product, its internal components as well as its interactions and external elements: The five key concepts of decomposition are
+- 🔴**Reduction Analysis** (Also known as Decomposiing the application, system or environment): The purpose is to gain a greater understanding of the logic of a product, its internal components as well as its interactions and external elements: The five key concepts of decomposition are
   - ✏️trust boundaries
   - ✏️dataflow paths
   - ✏️input points
@@ -768,7 +780,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - 🔮Process/policy review is a mechanism that requests copies of their security policies, processes/procedures, and documentation of incidents and responses for review. Minimum security requirements should be modeled on your existing security policy. This is based on the idea that when working with a third party, that third party should have at least the same security as your organization.
     - 🔮Document exchange and review is a mechanism to investigate the means by which datasets and documentation are exchanged as well as the formal processes by which they perform assessments and reviews. During document review, your goal is to thoroughly review all the architecture, designs, implementations, policies, procedures, etc. 
     - A good understanding of the current state of the environment, especially to understand any shortcomings or compliance issues prior to integrating the IT infrastructures
-    - The level of access and depth of information obtained is usually proportional to how closely the companies will work together 
+    - The level of access and depth of information obtained is usually proportional to how closely the companies will work together
+    - 📝Multiparty risk exists when several entities or organizations are involved in a project. The risk or threats are often due to the variations of objectives, expectations, timelines, budgets, and security priorities of those involved.
 - 1.12.3 Minimum security requirements
   - As part of assessment, the minimum security requirements must be established; in some cases, the minimum security requirements are your company’s security requirements, in other cases, new minimum security requirements need to be established 
     - In such scenarios, the minimum security requirements should have a defined period
@@ -776,16 +789,19 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **🔥Service Level Agreements (SLAs)**: companies have SLAs for internal operations (such as how long it takes for the helpdesk to respond to a new ticket), for customers (such as the availability of a public-facing service) and for partner orgs (such as how much support a vendor provides a partner) 
     - All SLAs should be reviewed; a company sometimes has an SLA standard that should be applied, when possible, to the service level agreements as part of working with another company
       - this can sometimes take time, as the acquiring company might have to support established SLAs until they expire or are up for renewal
-      - The primary place where the minimum-security requirements or SLR for a third-party should be documented is in the contract or service-level agreement (SLA) established with that vendor. A business partners agreement (BPA) and interconnection security agreement (ISA) could also be viable answers. 
+      - The primary place where the minimum-security requirements or SLR for a third-party should be documented is in the contract or service-level agreement (SLA) established with that vendor. A business partners agreement (BPA) and (❄️interconnection security agreement (ISA): is a formal declaration of the security stance, risk, and technical requirements of a link between two organizations’ IT infrastructures) could also be viable answers. 
   - **🔥Service Level Requirements (SLRs)**: A service-level requirement (SLR) is a statement of the expectations of service and performance from the product or service of a vendor. Often, an SLR is provided by the ❄️customer/client prior to the establishment of the service-level agreement (SLA) (which should incorporate the elements of the SLR if the vendor expects the customer to sign the agreement). 
   - 
 [1.13](#1.13) Establish and maintain a security awareness, education, and training program (OSG-9 Chpt 2)
 - 1.13.1 Methods and techniques to present awareness and training (e.g., social engineering, phishing, security champions, gamification)
   - Before actual training takes place, user security awareness needs to take place; from there, training, or teaching employees to perform their work tasks and to comply with the security policy can begin
+  - 📝Never assume that just because a worker was marked as attending or completing a training event that they actually learned anything or will be changing their behavior.
+  - 📝Event and incident logs should be reviewed for the rate of occurrences of security violations due to employee actions and behaviors to see if there is any noticeable difference in the rate of occurrence or trends of incidents before and after a training presentation.
   - **Training** is teaching employees to perform their work tasks and to comply with the security policy. Training is typically hosted by an organization and is targeted to groups of employees with similar job functions. 
     - All new employees require some level of training so that they will be able to comply with all standards, guidelines, and procedures mandated by the security policy
     - Training should be mandatory and provided both to new employees and yearly (at a minimum) for ongoing training
     - Program effectiveness evaluation, such as giving a quiz or monitoring security incident rate changes over time, can be used to measure whether the training is beneficial or a waste of time and resources
+    -  quiz or exam immediately after an awareness or training event and a follow-up quiz/exam months later
   - **Education** is a more detailed endeavor in which students/users learn much more than they actually need to know to perform their work tasks 
     - Education is most often associated with users pursuing certification or seeking job promotion
   - **Awareness** establishes a common baseline or foundation of security understanding across the entire organization and focuses on key or basic topics and issues related to security that all employees must understand. Although it
@@ -793,20 +809,20 @@ is provided by the organization, it is not targeted to groups of workers since i
 employees.
   - Employees need to understand what to be aware of (e.g. types of threats, such as phishing and free USB sticks), how to perform their jobs securely (e.g. encrypt sensitive data, physically protect valuable assets) and how security plays a role in the big picture (company reputation, profits,and losses) 
     - Routine tests of operational security should be performed (such as phishing test campaigns, tailgating at company doors and social engineering tests)
-    - Social engineering: while many orgs don’t perform social engineering campaigns (testing employees using benign social engineering attempts) as part of security awareness, it is likely to gain traction. 
+    - ✴️**Social engineering Campaign**: while many orgs don’t perform social engineering campaigns (testing employees using benign social engineering attempts) as part of security awareness, it is likely to gain traction. 
       - outside of campaigns, presenting social engineering scenarios and information is a common way to educate
-    - Phishing: phishing campaigns are popular, and many orgs use third-party services to routinely test their employees with fake phishing emails 
+    - ✴️**Phishing Campaign**: phishing campaigns are popular, and many orgs use third-party services to routinely test their employees with fake phishing emails. Phishing simulations are designed to bring interactivity to the effort and make it more interesting and engaging for users
       - such campaigns produce valuable data, such as the percentage of employees who open the phishing email, the percentage who open attachments or click links, and the percentage who report the fake phishing email as malicious
     - **Security champions**: the term “champion” has been gaining ground; orgs often use it to designate a person on a team who is a subject matter expert in a particular area or responsible for a specific area
       - e.g. somebody on the team could be a monitoring champion — they have deep knowledge around monitoring and evangelize the benefits of monitoring to the team or other teams
       - a security champion is a person responsible for evangelizing security, helping bring security to areas that require attention, and helping the team enhance their skills
       - Security champions are often
 non-­security employees who take up the mantle to encourage others to support and adopt more security practices and behaviors.
-    - **Gamification**: legacy training and education are typically based on reading and then answering multiple-choice questions to prove knowledge; gamification aims to make training and education more fun and engaging by packing educational material into a game
+    - **Gamification**: legacy training and education are typically based on reading and then answering multiple-choice questions to prove knowledge; gamification aims to make training and education more fun and engaging by packing educational material into a game. 📝Users generally find policy reviews and classroom training boring.
       - gamification has enabled organizations to get more out of the typical employee training
       - Gamification is a means to encourage compliance and engagement by integrating common elements of game play into other activities, such as security compliance and behavior change. This can include rewarding compliance behaviors and potentially punishing violating behaviors. Many aspects of game play can be integrated into security training and adoption, such as ✏️scoring points, ✏️earning achievements or badges (i.e., earn recognition), competing with others, ✏️cooperating with others (i.e., team up with coworkers), following a set of common/standard rules, having a defined goal, seeking rewards, developing group stories/experiences, and avoiding pitfalls or negative game events
 
-- **Social Engineering Attacks**
+- **Social Engineering Attacks**: Note that some of these activities described is an opportunistic unauthorized access attack, which is not technically a social engineering attack since there was no interaction with the victim, just the opportunity when the victim walked away or is not paying attention.
 	- **Phishing**: This involves sending fraudulent emails that appear to come from reputable sources. The goal is to trick recipients into providing sensitive information such as usernames, passwords, and credit card details.
 	- **Spear Phishing**: A more targeted form of phishing, spear phishing involves sending emails to specific individuals or organizations, often using personal information to make the attack more convincing.
 	- **Whaling**: This type of phishing targets high-profile individuals like executives or important decision-makers within an organization. The emails are crafted to look like critical business communications.
@@ -837,7 +853,11 @@ Also see my articles on risk management:
   - we also review the important step of reporting out our risk analysis and recommended responses, noting differences in requirements for messaging by group
 
 
-**TCB Common Criteria ISO/IEC 15408-1 Evaluation Assurance Levels 🟡"Ice Fishermen Sing Merry Melodies, So Stay Friendly!"**
+- **TCB Common Criteria ISO/IEC 15408-1**: One of the critical aspects of test results when using the common criteria is the
+- ⭐protection profile: which is an implementation-independent set of security requirements for a category of product/systems that meet specific consumer security needs. it includes category of product e.g Firewall
+- ⭐Target of Evaluation ToE:  i.e the actual product e.g Cisco ASA 5520 patch 2.7.2
+- ⭐Security Target: This defines the conditions of the test and is implementation-specific. It is a set of security requirements and specifications to be used as the basis for evaluation of an identified product/system.
+-  **Common Criteria Evaluation Assurance Levels 🟡"Ice Fishermen Sing Merry Melodies, So Stay Friendly!"**
 - EAL0 –Inadequate assurance
 - EAL1 –Functionally tested
 - EAL2 –Structurally tested
