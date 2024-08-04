@@ -118,7 +118,7 @@
     - process/policy review
     - third-party audit
 - 1.3.3 Organizational Roles and Responsibilities
-  - ✴️Senior Manager: has a responsibility for organizational security and to maximize profits and shareholder value
+  - ✴️Senior Manager: has a responsibility for organizational security and to maximize profits and shareholder value. Senior managers play several business continuity planning roles. These include setting priorities, obtaining resources, and arbitrating disputes among team members.
   - ✴️Security Professional: has the functional responsibility for security, including writing the security policy and implementing it
   - ✴️Asset/Data Owner: responsible for ✏️classifying information✏️ for placement or protection within the security solution. Data owner is typically a senior leader who delegates operational responsibility to a data custodian
   - ✴️Custodian: responsible for the task of implementing the proscribed protection defined by the security policy and senior management. The data custodian role is assigned to an individual who is responsible for implementing the security controls defined by policy and senior management. 
@@ -128,7 +128,8 @@
   -  ✴️Security Control Assessment (SCA) is the formal evaluation of a security infrastructure's individual mechanisms against a baseline or reliability expectation. The goals of an SCA are to
        - 🍮ensure the effectiveness of the security mechanisms
        - 🍮evaluate the quality and thoroughness of the risk management processes of the organization, and
-       - 🍮produce a report of the relative strengths and weaknesses of the deployed security infrastructure. 
+       - 🍮produce a report of the relative strengths and weaknesses of the deployed security infrastructure.
+  - Security is established by understanding the assets of an organization that need protection and understanding the threats that could cause harm to those assets. Then Security controls are selected that provide protection for the CIA Triad of the assets at risk
   - If a security control's benefits cannot be quantified, evaluated, or compared, then it does not actually provide any security.
   - there are many frameworks to choose from, such as:
     -  🔴**Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
@@ -234,7 +235,7 @@
     - **Supreme Court rulings** contain interpretations of law and are not laws themselves. 
     - **Personal Information Protection Law (PIPL)**: effective since 2021 aims to establish a comprehensive framework for the protection of personal information in 🔥China
     - **Protection of Personal Information Act (POPIA)**: enacted in 2013, establishes regulatios for the responsible processing of personal information by both public and private entities in 🔥South Africa.
-    - **Personal Information Protection and Electronic Documents Act (PIPEDA)**, is 🔥Canada's data privacy law.
+    - **Personal Information Protection and Electronic Documents Act (PIPEDA)**, is 🔥Canada's data privacy law. This Canadian federal privacy law governs the collection, use, and disclosure of personal information in the course of commercial business.
     - The **Privacy Act of 1974** limits the ways government agencies may use information that private citizens disclose to them under certain circumstances. The Privacy Act regulates what information ✏️government agencies may collect and maintain about individuals.
     - **The Lanham Act** regulates the issuance of 🧠trademarks to protect intellectual property.
     - **The Copyright Act** creates the mechanics for issuing and enforcing copyrights but does not cover the actions of online service providers. 
@@ -325,7 +326,7 @@
       - buy, sell, or share the personal information of 100k or more California residents or households; or
       - get 50% or more of their annual revenue from selling or sharing California residents’ personal information
     - The CCPA imposes separate obligations on service providers and contractors (who contract with businesses to process personal info) and other recipients of personal information from businesses
-    - The CCPA does not generally apply to nonprofit orgs or government agencies
+    - The 📝CCPA does not generally apply to nonprofit orgs or government agencies
     - California residents have the right to: 🟡 LOCKED
       - ✏️(L)imit use and disclosure of personal info
       - ✏️(O)pt-out of sale or cross-context advertising
@@ -333,13 +334,14 @@
       - ✏️(K)now what personal info business have and share
       - ✏️(E)qual treatment / nondiscrimination
       - ✏️(D)elete info business have on them
-
+  - **The California Online Privacy Protection Act (CalOPPA)** is a state law in California that requires commercial websites and online services to include a privacy policy on their website. The law aims to protect the personal information of individuals/users from California who visit websites or use online services by ensuring transparency about data collection, use, and disclosure.
+  
   - **Children's Online Privacy Protection Act (COPPA)** of 1998:
     - COPPA makes a series of demands on websites that cater to children or knowingly collect information from children:
-      - Websites must have a privacy notice that clearly states the types of info they collect and what it's used for (including whether infor is disclosed to third parties); must also include contact infor for site operators
-      - Parents must be able to review any info collected from children and permanently delete it from the site's records
-      - It regulates websites that cater to children or knowingly collect information from children under the age of 13
-      - Parents must give verifiable consent to the collection of info about children younger than the age of 📝13 prior to any such collection
+      - ✏️Websites must have a privacy notice that clearly states the types of info they collect and what it's used for (including whether infor is disclosed to third parties); must also include contact infor for site operators
+      - ✏️Parents must be able to review any info collected from children and permanently delete it from the site's records
+      - ✏️It regulates websites that cater to children or knowingly collect information from children under the age of 13
+      - ✏️Parents must give verifiable consent to the collection of info about children younger than the age of 📝13 prior to any such collection
   - GLBA: see above
   - **US Patriot Act of 2002**: enacted following the September 11 attacks with the stated goal of tightening U.S. national security, particularly as it related to ❄️foreign terrorism
     - The act included three main provisions:
@@ -425,7 +427,7 @@
     - e.g. a baseline for  server builds would be a list of configuration areas that should be applied to every server that is built
     - Baselines are ❄️Mandatory. All systems not complying with the baseline should be taken out of production until they can be brought up to the baseline.
     - A Group Policy Object (GPO) in a Windows network is sometimes used to comply with standards; configuration management solutions can also help you establish baselines and spot configurations that are not in alignment
-  - 🔥**Guideline**: offers ❄️Recommendations on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
+  - 🔥**Guideline**: offers ❄️Recommendations and best practices on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
     - Guidelines are flexible, and can be customized for unique systems or conditions; they state which security mechanism should be deployed instead of prescribing a specific product or control; they are not complusory; suggested practices and expectations of activity to best accomplish tasks and goals
     - **Framework** are a set of guidlines
   - 🔥**Procedure** (AKA Standard Operating Procedure or SOP): detailed, ❄️step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution
@@ -459,11 +461,21 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - NIST SP800-34 provides a guideline for developing a logical BCP. It can be found at: http://csrc.nist.gov/publications/nistpubs/800-34-rev1/sp800-34-rev1_errata-Nov11-2010.pdf
   
 - BCP vs DR: 
-  - BCP activities are typically strategically focused at a high level and center themselves on business processes and operations
-  - DR plans tend to be more tactical and describe technical activities such as recovery sites, backups, and fault tolerance. It ensures sufficient technical controls in place to recover operations after a disruption
+  - 🔥BCP activities are typically strategically focused at a high level and center themselves on business processes and operations
+  - 🔥DR plans tend to be more tactical and describe technical activities such as recovery sites, backups, and fault tolerance. It ensures sufficient technical controls in place to recover operations after a disruption. Ensures that the organization has sufficient technical controls in place to recover operations after a disruption. Disaster recovery plans pick up where business continuity plans leave off. After a disaster strikes and the business is interrupted, the disaster recovery plan guides response teams in their efforts to quickly restore business operations to normal levels.
 
 - The overall goal of BCP is to provide a quick, calm, and efficient response in the event of an emergency and to enhance a company's ability to quickly recover from a distruptive event
 - 📝The emergency response guidelines should include the immediate steps an organization should follow in response to an emergency situation. These include immediate response procedures, a list of individuals who should be notified of the emergency, and secondary response procedures for first responders
+- 🚒Business continuity plan documentation normally includes the
+    - continuity planning goals
+    - a statement of importance
+    - statement of priorities
+    - statement of organizational responsibility
+    - statement of urgency and timing
+    - risk assessment and risk acceptance and mitigation documentation
+    - a vital records program
+    - emergency response guidelines
+    - and documentation for maintaining and testing the plan.
 
 - 1.8.2 Develop and document the scope and the plan
   - The BCP process has four main steps (Project scope and planning, Business Impact Analysis, Continuity planning, and Approval and implementation):
@@ -580,7 +592,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
        - ✏️Threat agents or threat actors: Entities that intentionally exploit vulnerabilities.
        - ✏️Threat events: Accidental occurrences and intentional exploitations of vulnerabilities.
        - ✏️Threat vector: The path or means by which an attack or attacker can gain access to a target in order to cause harm. 
-  - **❄️Vulnerability** (a weakness that can be exploited by a threat). It is the weakness in an asset, or the absence or the weakness of a safeguard or countermeasure. 📝The Common Vulnerability Scoring System (CVSS) is a standardized approach to rating the severity of vulnerabilities 
+  - **❄️Vulnerability** (a weakness that can be exploited by a threat). It is the weakness in an asset, or the absence or the weakness of a safeguard or countermeasure. Vulnerabilities and risks are evaluated based on their threats against one or more of the CIA Triad principles. 📝The Common Vulnerability Scoring System (CVSS) is a standardized approach to rating the severity of vulnerabilities 
   - **❄️Impact** (the potential harm caused by a threat exploiting a vulnerability)
   - **Risk analysis** identifies risks, quantifies the impact of threats, and aids in budgeting for security. It helps integrate the needs and objectives of the security policy with the organization's business goals and intentions. The risk analysis/risk assessment is a "point in time" metric, meaning Security is always changing thus continuous improvement is required.
        - Risk analysis includes analyzing an environment for risks
@@ -620,6 +632,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - For exam prep, understand how the concepts are integrated into your environment; this is not a step-by-step technical configuration, but the process of the implementation — where you start, in which order it occurs and how you finish
     - ⭐When developing an organization's information security budget, it is important that the  expected risk can be managed appropriately with the funds allocated.
     - ⭐The annual costs of safeguards should not exceed the expected annual cost of asset value loss.
+    - ⭐The result of the applied countermeasure should make the cost of an attack greater for the perpetrator than the derived benefit from an attack;
+    - ⭐The countermeasure should provide a solution to a real and identified problem;
+    - ⭐The benefit of the countermeasure should be testable and verifiable. 
     - Bear in mind that security should be designed to support and enable business tasks and functions
       - security controls, countermeasures, and safeguards can be implemented administratively, logically / technically, or physically 
       - these 3 categories should be implemented in a conceptual layered defense-in-depth manner to provide maximum benefit
@@ -642,7 +657,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **🔥Corrective**: a corrective control modifies the environment to return systems to normal after an unwanted or unauthorized activity as occurred; it attempts to correct any problems resulting from a security incident
   - **🔥Recovery**: An extension of corrective controls but have more advanced or complex abilities; a recovery control attempts to repair or restore resources, functions, and capabilities after a security policy violation 
     - recovery controls typically address more significant damaging events compared to corrective controls, especially when security violations may have occurred
-  - **🔥Directive**: A directive control is deployed to direct, confine, or control the actions of subjects to force or encourage compliance with security policies
+  - **🔥Directive**: A directive control is deployed to direct, confine, or control the actions of subjects to force or encourage compliance with security policies. Notifications and procedures like the signs posted at doors for are examples of directive access controls.
   - 🔥Security through obscurity attempts to hide the details of security controls to add security to them
 - 1.10.6 Control assessments (security and privacy)
   - Periodically assess security and privacy controls: what’s working, what isn’t 
@@ -693,7 +708,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - **🔥Select** an initial set of controls for the system and tailor the controls as needed to reduce risk to an acceptable level based on an assessment of risk
       - **🔥Implement** the controls and describe how the controls are employed within the system and its environment of operation
       - **🔥Assess** the controls to determine if the controls are implemented correctly, operating as intended, and producing the desired outcomes with respect to satisfying the security and privacy requirements
-      - **🔥Authorize** the system or common controls based on a determination that the risk to organizational operations and assets, individuals, and other organizations, and the nation is acceptable
+      - **🔥Authorize** the system or common controls based on a determination that the risk to organizational operations and assets, individuals, and other organizations, and the nation is acceptable/reasonable
       - **🔥Monitor** the system and associated controls on an on-going basis to include assessing control effectiveness, documenting changes to the system and environment of operation, conducting risk assessments and impact analysis, and reporting the security and privacy posture of the system
     - See my overview article, [The NIST Risk Management Framework](https://blog.balancedsec.com/p/the-nist-risk-management-framework)
   - There are other risk frameworks, such as the British Standard BS 31100 -- be familiar with frameworks and their goals
