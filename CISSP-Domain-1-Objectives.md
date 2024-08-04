@@ -107,8 +107,8 @@
 - 1.3.2 Organizational processes (e.g., acquistions, divestitures, governance committees)
   - Security governance should address every aspect of an org, including organizational processes of acquisitions, divestitures, and governance
   - Be aware of the risks in acquisitions (since the state of the IT environment to be integrated is unknown, due diligence is key) and divestitures (how to split the IT infrastructure and what to do with identities and credentials)
-  - 🔮Acquisitions and mergers place an organization at an increased level of risk. Such risks include ✏️inappropriate information disclosure, ✏️data loss, ✏️downtime, and ✏️failure to achieve sufficient return on investment (ROI)
-  - 🔮Divestiture occurs when something is being removed from the organization, whether a device, service, employee, or partnership. Security processes should be implemented at these times to reduce the risk of ✏️data loss and ✏️data leakage, such as sanitizing assets, remove and destroy storage media, and debrief ex-employees.
+  - 🔮Acquisitions and mergers place an organization at an increased level of risk. Such risks include ✏️inappropriate information disclosure, ✏️data loss, ✏️downtime, and ✏️failure to achieve sufficient return on investment (ROI). Acquisition concerns include consolidating security functions and policies as well as integrating security tools.
+  - 🔮Divestiture occurs when something is being removed from the organization, whether a device, service, employee, or partnership. Security processes should be implemented at these times to reduce the risk of ✏️data loss and ✏️data leakage, such as sanitizing assets, remove and destroy storage media, and debrief ex-employees. The ✏️protection of intellectual property is a greater concern during a divestiture, where a subsidiary is being spun off into a separate organization, than an acquisition, where one firm has purchased another. 
   - Understand the value of governance committees (vendor governance, project governance, architecture governance, etc.)
   - Executives, managers and appointed individuals meet to review architecture, projects and incidents (security or otherwise),and provide approvals for new strategies or directions 
     - The goal is a fresh set of eyes, often eyes that are not purely focused on information security
@@ -124,7 +124,7 @@
   - ✴️Custodian: responsible for the task of implementing the proscribed protection defined by the security policy and senior management. The data custodian role is assigned to an individual who is responsible for implementing the security controls defined by policy and senior management. 
   - Auditor: responsible for reviewing and verifying that the security policy is properly implemented
 - 1.3.4 Security control frameworks **🔥🔥Focuses on the HOW🔥🔥**
-  - A **security control framework**: It is a prescriptive set of cybersecurity safeguards and best practices to protect an organizations assets. It helps in implementing risk managment strategy. outlines the org's approach to security, including a list of specific security processes, procedures, and solutions used; it is important in planning the structure of an org's security solution;
+  - **Security Control Framework**: It is a prescriptive set of cybersecurity safeguards and best practices to protect an organizations assets. It helps in implementing risk managment strategy. outlines the org's approach to security, including a list of specific security processes, procedures, and solutions used; it is important in planning the structure of an org's security solution;
   -  ✴️Security Control Assessment (SCA) is the formal evaluation of a security infrastructure's individual mechanisms against a baseline or reliability expectation. The goals of an SCA are to
        - 🍮ensure the effectiveness of the security mechanisms
        - 🍮evaluate the quality and thoroughness of the risk management processes of the organization, and
@@ -143,7 +143,7 @@
     -  🔴ISO 27000 series (27000, 27001, 27002, etc.).
           - 15408 evaluation Criteria
           - 22301  security and resilience
-          - **27001 (🔥🔥Focuses on WHAT and WHY🔥🔥)** information security standards/controls: Outlines a framework for implementing, maintaining and continually improving ISMS Information Security Management System (ISMS is a set of policies, processes and controls that helps organization protect thier information assets). ISO 27001 Guides organizations in identifying assets and assessing thier values and information risks AND implementing mitigating security controls based on ISO 27002. CLoud platforms all have ISO 27001.
+          - **27001 (🔥🔥Focuses on WHAT and WHY🔥🔥)** information security standards/controls: Outlines a framework for implementing, maintaining and continually improving ISMS Information Security Management System (ISMS is a set of policies, processes and controls that helps organization protect thier information assets). ISO 27001 Guides organizations in identifying assets and assessing thier values and information risks AND implementing mitigating security controls based on ISO 27002. CLoud platforms all have ISO 27001.  ISO 27001 is an international standard on how to manage information security and is not specific to U.S. federal systems. 
           - **27002 (🔥🔥Focuses on HOW🔥🔥)** titled "Information technology—Security techniques—Code of practice for information security management: offers information security guidance: Offers best practices and Control objectives related to key aspects of cybersecurity in support of ISO/IEC 27001. Focuses on cryptography, human resource security, operational security, and incident response. Serves as an official blueprint for orgs aiming to effectively safeguard information assets from cyber threats.
           - 27031 Business continuity    
     -  🔴**SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It 🧠integrates security into the business processes and aligns security measures with business goals🧠. provides a structured method for designing, implementing and managing security architectures.
@@ -167,8 +167,8 @@
           - 800-12 is an introduction to computer security
           - 800-34 covers contingency planning
           - 800-86 is the “Guide to Integrating Forensic Techniques into Incident Response.”
-    -  🔴NIST **CyberSecurity Framework (CSF)**
-        - designed for commerical orgs and critical infrastructure, CSF 1.1 consists of five functions:
+    -  🔴NIST **CyberSecurity Framework (CSF)**: NIST 800-53 is the standard that describes the security controls mandatory for use on 📝U.S. federal government systems. It provides a catalog of security and privacy controls for all U.S. federal information systems except those related to national security
+        - designed for ✴️commerical orgs and critical infrastructure, CSF 1.1 consists of five functions:
           - identify
           - protect
           - detect
@@ -204,6 +204,7 @@
   - The due care principle states that an individual should 🧠react in a situation using the same level of care that would be expected from any reasonable person. It is a very broad standard.
   - After establishing a framework for governance, security awareness training should be implemented, including all new hires, who complete the security awareness training as they come on board, and existing employees who should recertify regularly (typically yearly)
   - ***The Prudent Man Rule*** requires that a fiduciary, such as a senior executives and trustee, act with the care, skill, prudence, and diligence that a prudent person acting in a like capacity would use. FOrmalised by the Federal Sentencing Guidelines released in 1991 provided punishment guidelines to help federal judges interpret computer crime laws.
+  - **Computer Crime**: is any violation of a law or regulation that involves a computer. It is a computer crime if the violation involves a computer, either as the target or as a tool. ✏️Computer-Assisted crime - e.g unauthorized decryption, ✏️Computer-Targeted crime e.g hacking and Computer-Incidental crime e.g using computer to save names of drug dealers partners.
 
 [1.4](#1.4) Determine compliance and other requirements (OSG-9 Chpt 4)
 - 1.4.1 Contractual, legal, industry standards, and regulatory requirements
@@ -233,9 +234,11 @@
     - **Supreme Court rulings** contain interpretations of law and are not laws themselves. 
     - **Personal Information Protection Law (PIPL)**: effective since 2021 aims to establish a comprehensive framework for the protection of personal information in 🔥China
     - **Protection of Personal Information Act (POPIA)**: enacted in 2013, establishes regulatios for the responsible processing of personal information by both public and private entities in 🔥South Africa.
+    - **Personal Information Protection and Electronic Documents Act (PIPEDA)**, is 🔥Canada's data privacy law.
     - The **Privacy Act of 1974** limits the ways government agencies may use information that private citizens disclose to them under certain circumstances. The Privacy Act regulates what information ✏️government agencies may collect and maintain about individuals.
     - **The Lanham Act** regulates the issuance of 🧠trademarks to protect intellectual property.
-    - **Digital Millennium Copyright Act (DMCA)** - prohibits the circumvention of copyright protection mechanisms placed in digital media or on a protected work by the copyright holder and 🧠limits the liability of internet service providers for the activities of their users
+    - **The Copyright Act** creates the mechanics for issuing and enforcing copyrights but does not cover the actions of online service providers. 
+    - **Digital Millennium Copyright Act (DMCA)** - prohibits the circumvention of copyright protection mechanisms placed in digital media or on a protected work by the copyright holder and 🧠limits the liability of internet service providers for the activities of their users. It also sets forth the requirements for online service providers when handling copyright complaints received from third parties.
     - **The Economic Espionage Act** imposes fines and jail sentences on anyone found guilty of stealing trade secrets from a U.S. corporation. It gives true teeth to the intellectual property rights of trade secret owners. 
     - **The Wassenaar Arrangement** on Export Controls for Conventional Arms and Dual-Use Goods and Technologies is a multilateral 🔥export control regime established on 12 July 1996, in Wassenaar, near The Hague, Netherlands. According to the Wassenaar Arrangement document, it was "established to contribute to regional and international security and stability by promoting transparency and greater responsibility in transfers of conventional arms and dual-use goods and technologies, thus preventing destabilizing accumulations. Participating states seek, through their national policies, to ensure that transfers of these items do not contribute to the development or enhancement of ✏️military capabilities which undermine these goals, and are not diverted to support such capabilities. It also addresses cyber weapons, including malicious software, Command and Control (C2) software, and internet surveillance software.
     - **Information Assurance Technical Framework (IATF)** The IATF is a framework developed by the International Organization for Standardization (ISO) to provide guidelines for assessing the security and privacy aspects of information technology systems provides and technical guidance for protecting the information infrastructures of the U.S. Government and industry. It covers various areas such as risk management, security controls, and data privacy. The four major technology focus areas of the ✴️Defense-in-Depth Strategy, ✴️Defend the Enclave Boundary, ✴️Defend the Computing Environment, and Defend ✴️Supporting Infrastructures. 
@@ -308,8 +311,8 @@
          8. ✏️Accountability: Organizations should ensure compliance with the guidelines and be able to demonstrate their adherence to these principles. 
   - **Fourth Amendment** to the US Constitution: the right of the people to be secure in their persons, houses, papers, effects against unreasonable search and seizure
   - It sets the “📝probable cause📝” standard that law enforcement officers must follow when conducting searches and/or seizures of private property. It also states that those officers must obtain a warrant before gaining involuntary access to such property. 
-  - **Electronic Communication Privacy Act (ECPA)**: as amended, protects wire, oral, and electronic communications while those communications are being made, are in transit, and when they are stored on computers; makes it a ✏️crime to invade electronic privacy of an individual, and it broadened the Federal Wiretap Act
-      - ECPA passed in 1986 to expand and revise federal wiretapping and electronic eavesdropping provisions, making it a crime to intercept or procure electronic communications, and includes important provisions that ✏️protect a person’s wire and electronic communications from being intercepted by another private individual
+  - **Electronic Communication Privacy Act (ECPA)**: as amended, protects wire, oral, and electronic communications including emails while those communications are being made, are in transit, and when they are stored on computers; makes it a ✏️crime to invade electronic privacy of an individual, It prohibits the unauthorized monitoring of email and voicemail communications, and it broadened the Federal Wiretap Act
+      - ECPA passed in 1986 to expand and revise federal 🎧wiretapping and electronic 🎧eavesdropping provisions, making it a crime to intercept or procure electronic communications, and includes important provisions that ✏️protect a person’s wire and electronic communications from being intercepted by another private individual
   - HIPAA: see above
   - HITECH: see above
   - California SB 1386 (2002): immediate disclosure to individuals for PII breach
@@ -354,7 +357,7 @@
     - security
     - accountability
   - The EU-US **Privacy Shield** (formerly the EU-US Safe Harbor agreement): controls data flow from the EU to the United States; the EU has more stringent privacy protections and without the Privacy Shield, personal data flow from the EU to the United States would not be allowed. It is no longer valid
-  - **The Communications Assistance for Law Enforcement Act (CALEA)** required that communications carriers assist law enforcement with the implementation of 🎧wiretaps when done under an appropriate court order. CALEA only applies to communications carriers
+  - **The Communications Assistance for Law Enforcement Act (CALEA)** required that communications carriers assist 👮law enforcement with the implementation of 🎧wiretaps when done under an appropriate court order. CALEA only applies to communications carriers
   - **Privacy Impact Assesment (PIA)**: is designed to identify the privacy data being collected, processed or stored by a system, and assess the effects of a data breach. Several privacy laws require PIA as a planning tool for identifying and implementing required privacy controls including GDPR and HIPPA
   - Conducting a PIA typically begins when a system or process is being evaluated.
   - Evolving privacy regulations neccessitates assessment of existing systems
@@ -563,6 +566,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - 1.10.1 Risk assessment/analysis
   - **Risk Assessment**: used to identify the risks and set criticality priorities, and then risk response is used to determine the best defense for each identified risk
   - The primary goal of a security risk assessment is to identify and analyze risks and then develop strategies to reduce them to an acceptable level.
+  - It also involves assigning an asset value using valuation methods such as Purchase cost, Depreciated cost, Replacement cost etc if the risk where to materialize.
   - A risk matrix or risk heat map is a form of risk assessment that is performed on a basic graph or chart
   - Likelihood assessment is a component of a risk assessment that determines the likelihood that a risk will materialize
   - **❄️Risk** is threat with a vulnerability. Risk is the possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result.
@@ -586,6 +590,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - There are two primary risk-assessment methodologies:
       - **Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations e.g ✏️FAIR (Factor Analysis of Information Risk) is a quantitative risk management framework. Quantitative analysis uses numeric ratings to address tangible risks.
       - **Qualitative Risk Analysis**: assigns subjective and intangible values to the loss of an asset and takes into account perspectives, feelings, intuition, preferences, ideas, and gut reactions. It relies on subjective judgments to rank risk. The use of a ⭐probability/impact matrix is the hallmark of a qualitative risk assessment. It uses subjective measures of probability and impact, such as "high" and "low," in place of quantitative measures. qualitative risk assessment is a good tool for intangible risks
+      - Qualitative tools are often used in business impact assessment to capture the impact on intangible factors such as customer confidence, employee morale, and reputation.
     - Most orgs employ a hybrid of both risk assessment methodologies
     - The goal of risk assessment is to identify risks (based on asset-threat parings) and rank them in order of criticality
     - The two most important elements of a qualitative risk assessment are determining the ❄️probability and ❄️impact of each risk upon the organization. Likelihood is another word for probability.
@@ -670,7 +675,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - A risk framework is a guide or recipe for how risk is to be accessed, resolved, and monitored
   - provide a structured approach to identifying, assessing, prioritizing and manging risk to guide decision making
   - provides the overaching structure for making risk informed decisions
-  - NIST established the **Risk Management Framework** (RMF) and the **Cybersecurity Framework** (CSF): the CSF is a set of guidelines for mitigating organizational cybersecurity risks, based on existing standards, guidelines, and practices
+  - NIST established the **Risk Management Framework** (RMF) and the **Cybersecurity Framework** (CSF): the CSF is a set of guidelines for mitigating organizational cybersecurity risks, based on existing standards, guidelines, and practices. 🔥CSF is aimed at ✏️private (commercial) businesses and purely optional. 🔥RMF's audience is ✏️federal government agencies and is mandatory for those to which it applies.
   - **Risk management** facilitates the balance of operational and economic costs of protective measures with gains in mission capability.  Risk management is a systematic approach to identifying, assessing, and prioritizing risks to organizational operations, assets, or individuals resulting from the operation of information systems and the information processed, stored, or transmitted by those systems.
        - It involves evaluating the likelihood and impact of risks and implementing cost-effective measures to reduce them to an acceptable level.
        - By considering the costs of implementing protective measures against the benefits of mission capability, risk management helps organizations make informed decisions about how to allocate their resources to achieve their security goals. Performance testing, security audit, and risk assessment are all important components of a risk management program.
@@ -678,8 +683,6 @@ Factors, entities or conditions outside the organisation upon which the organisa
             - 🍎provide predictive information about how organizational risks are changing. It can 🍎Provide warnings before issues occur
             - 🍎Provide historical views of past incidents
             - 🍎Provide insight into risk tolerance for the organization. 
-  - CSF is aimed at ✏️private (commercial) businesses and purely optional
-  - RMF's audience is ✏️federal government agencies and is mandatory for thosie to which it applies
   - The RMF is intended as a risk management process to identify and respond to threats, and is defined in three core, interrelated Special Publications: 
     - SP 800-37 Rev 2, Risk Management Framework for Information Systems and Organizations
     - SP 800-39, Managing Information Security Risk
@@ -803,13 +806,14 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - 📝Never assume that just because a worker was marked as attending or completing a training event that they actually learned anything or will be changing their behavior.
   - 📝Event and incident logs should be reviewed for the rate of occurrences of security violations due to employee actions and behaviors to see if there is any noticeable difference in the rate of occurrence or trends of incidents before and after a training presentation.
   - 📝Key Performance indicator (KPI): KPI can be used to measure performance (and success) of the awareness programe. 
-  - **Training** is teaching employees to perform their work tasks and to comply with the security policy. Training is typically hosted by an organization and is targeted to groups of employees with similar job functions. 
+  - **Training** is teaching employees to perform their work tasks and to comply with the security policy. Training is typically hosted by an organization and is targeted to groups of employees with 📝similar job functions. 
     - All new employees require some level of training so that they will be able to comply with all standards, guidelines, and procedures mandated by the security policy
     - Training should be mandatory and provided both to new employees and yearly (at a minimum) for ongoing training
     - Program effectiveness evaluation, such as giving a quiz or monitoring security incident rate changes over time, can be used to measure whether the training is beneficial or a waste of time and resources
     -  quiz or exam immediately after an awareness or training event and a follow-up quiz/exam months later
   - **Education** is a more detailed endeavor in which students/users learn much more than they actually need to know to perform their work tasks 
     - Education is most often associated with users pursuing certification or seeking job promotion
+    -  Most education programs are not hosted by the employer but by training organizations or colleges or universities. Education is not provided to workers in groups based on their job positions.
   - **Awareness** establishes a common baseline or foundation of security understanding across the entire organization and focuses on key or basic topics and issues related to security that all employees must understand. Although it
 is provided by the organization, it is not targeted to groups of workers since it applies to all
 employees.
