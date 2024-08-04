@@ -4,21 +4,20 @@
 - Asset security includes the concepts, principles, and standards of monitoring and securing any asset important to the organization
 - Anything that removes a vulnerability or protects against one or more specific threats is considered a safeguard or a countermeasure. The annual costs of safeguards should not exceed the expected annual cost of asset value loss.
 - **Salami Attack** is a type of cyberattack or fraud where a perpetrator takes small, seemingly insignificant actions that individually appear harmless but collectively result in a substantial impact. The term "salami" is used metaphorically, implying that the attack slices off small pieces, like slicing a salami, which are not noticeable individually but accumulate to cause significant harm.
-
+- **Bitrot** describes the slow loss of data on aging media
 - The Asset Security domain focuses on collecting, handling, and protecting information throughout its lifecycle; the first step is classifying information based on its value to the organization
 - **Asset**: anything of value owned by the organization
-  - **Intangible Assets**: Patents, databases, and formulas
-  - **Tangible Assets**: hardware, cables, and buildings
-  - **Personnel Assets**: Employees
+     - **Intangible Assets**: Patents, databases, and formulas
+     - **Tangible Assets**: hardware, cables, and buildings
+     - **Personnel Assets**: Employees
 - **Asset lifecycle**: phases an asset goes through, from creation (or collection) to destruction
-- **Threat** is any _potential occurrence_ that may cause an undesirable or unwanted outcome for an organization or for a
-specific asset. e.g threat/likelihood of fire
-- **Vulnerability** is the _weakness_ in an asset, or the absence or the weakness of a safeguard or countermeasure. e.g lack of fire extinguishers
-- **Exposure** is being _susceptible_ to asset loss because of a threat; there is the possibility that a vulnerability can or will be exploited. It is the presence of a vulnerability when a related threat exists
-- **Risk** is the _possibility, probability, chance or likelihood_ that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result. e.g damage to equipment.
-  - Risk = Threat * Vulnerability
-  - Every instance of exposure is a risk
-- **Risk Analysis**: is simply the evaluation of threats against assets in regard to rate of occurrence and levels of consequence.
+- 🔴**Risk** is the _possibility, probability, chance or likelihood_ that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result. e.g damage to equipment.
+     - Risk = Threat ✖️ Vulnerability
+     - 🍋**Threat** is any _potential occurrence_ that may cause an undesirable or unwanted outcome for an organization or for a specific asset. e.g threat/likelihood of fire
+     - 🍋**Vulnerability** is the _weakness_ in an asset, or the absence or the weakness of a safeguard or countermeasure. e.g lack of fire extinguishers
+     - 🍋**Exposure** is being _susceptible_ to asset loss because of a threat; there is the possibility that a vulnerability can or will be exploited. It is the presence of a vulnerability when a related threat exists. - Every instance of exposure is a risk.
+     - 🍋**Risk Analysis**: is simply the evaluation of threats against assets in regard to rate of occurrence and levels of consequence.
+     - 🍋**Risk Assessment**: A risk assessment would help identify which controls are needed to protect the assets
 
 [2.1](#2.1) Identify and classify information assets (OSG-9 Chpt 5)
 
@@ -33,18 +32,17 @@ specific asset. e.g threat/likelihood of fire
   - **Protected Health Information (PHI)**: any health-related information that can be related to a specific person
   - **Proprietary data**: any data that helps an organization maintain a competitive edge
   - Organizations classify data using labels
-    - government classification labels include:   
-      - **Top Secret**: if disclosed, could cause massive damage to national security, such as the disclosure of spy satellite information
-      - **Secret**: if disclosed, can adversely affect national security
-      - **Confidential**: Confidential data is usually data that is exempt from disclosure under laws such as the Freedom of Information Act but is not classified as national security data.
-      - **Sensitive**: But Unclassified (SBU): SBU data is data that is not considered vital to national security, but its disclosure would do some harm. Many agencies classify data they collect from citizens as SBU. In Canada, the SBU classification is referred to as protected (A, B, C).
-      - **Unclassified**: not sensitive
-    - non-government organizations use labels such as:
-      - **Confidential/Proprietary**: only used within the org and, in the case of unauthorized disclosure, it could suffer serious consequences
-      - **Private**: may include personal information, such as credit card data and bank accounts; unauthorized disclosure can be disastrous
-      - **Sensitive**: needs extraordinary precautions to ensure confidentiality and integrity
-      - **Public**: can be viewed by the general public and, therefore, the disclosure of this data would not cause damage
-    - labels can be as granular and custom as required by the org
+  - 🔴**Governmental data classification**The impact to national security is more typically associated with government classification schemes. government classification labels include:  🟡TSCSU
+      - ❄️**Top Secret**: if disclosed, could cause massive damage to national security, such as the disclosure of spy satellite information
+      - ❄️**Secret**: if disclosed, can adversely affect national security
+      - ❄️**Confidential**: Confidential data is usually data that is exempt from disclosure under laws such as the Freedom of Information Act but is not classified as national security data.
+      - ❄️**Sensitive**: But Unclassified (SBU): SBU data is data that is not considered vital to national security, but its disclosure would do some harm. Many agencies classify data they collect from citizens as SBU. In Canada, the SBU classification is referred to as protected (A, B, C).
+      - ❄️**Unclassified**: not sensitive
+  - 🔴**Commercial/Non-Governmental data classification** 🟡CPSP often takes into account the value of the data, any regulatory or legal requirements that may apply to the data, and how long the data is useful—its lifespan. non-government organizations use labels such as:
+      - 🍮**Confidential/Proprietary**: only used within the org and, in the case of unauthorized disclosure, it could suffer serious consequences. It is the most sensitive data.
+      - 🍮**Private**: may include personal information, such as credit card data and bank accounts; unauthorized disclosure can be disastrous. Private data is internal business data that shouldn't be exposed but that doesn't meet the threshold for confidential or proprietary data. 
+      - 🍮**Sensitive**: needs extraordinary precautions to ensure confidentiality and integrity. Sensitive data may help attackers or otherwise create risk.
+      - 🍮**Public**: can be viewed by the general public and, therefore, the disclosure of this data would not cause damage
   -  It is important to protect data in all states: at rest, in transit, or in use
   -  The best way to protect data confidentiality is via use of strong encryption
 - **Declassification** is the process of moving an object into a lower level of classification once it is determined that it no longer justifies being placed at a higher level. In a Bell-LaPadula implementation, for example, Only a trusted subject can perform declassification because this action is a violation of the verbiage of the star property of Bell–LaPadula, but not the spirit or intent, which is to prevent unauthorized disclosure.
@@ -58,32 +56,37 @@ specific asset. e.g threat/likelihood of fire
     - before a user is granted access they should be educated on working with that level of classification
   - Classification levels can be used by businesses during acquisitions, ensuring only personnel who need to know are involved in the assessment or transition
   - In general, classification labels help users use data and assets properly, for instance by restricting dissemination or use of assets by their classification
+  - **Sensitive data scanning tools:** To identify data that should be classified that already exists in an environment, Sensitive data scanning tools can be used. They are designed to scan for and flag sensitive data types using known formatting and structure. Social Security numbers, credit card numbers, and other regularly structured data that follows known rules can be identified and then addressed as needed. examples include Microsoft Azure Information Protection (AIP), Varonis Data Security Platform, Vormetric Data Security Platform. Some DLP solutions also offer this tool/capability as part of thier broader solution.
 
 [2.2](#2.2) Establish information and asset handling requirements (OSG-9 Chpt 5)
 
 - **Asset handling**: refers to secure transport of media through its lifetime
 - The data and asset handling key goal is to prevent data breaches, by using:
   - **Data Maintenance**: on-going efforts to organize and care for data through its life cycle
-  - **Data Loss Prevention (DLP)**: systems that detect and block data exfiltration attempts; two primary types:
+  - **Data Loss Prevention (DLP)**: systems that detect and block data exfiltration attempts; DLP systems can use labels on data to determine the appropriate controls to apply to the data. two primary types:
     - network-based DLP
     - endpoint-based DLP
-- **Marking**: (AKA labeling) sensitive information/assets ensures proper handling (both physically and electronically)
+- **Marking (AKA labeling)**: sensitive information/assets ensures proper handling (both physically and electronically).
+     - Media is typically labeled with the highest classification level of data it contains. This prevents the data from being handled or accessed at a lower classification level.
+     - labels can be as granular and custom as required by the org
+     - Data labeling can help ensure that controls are applied to the right systems and data.
 - **Data Collection Limitation**: prevent loss by not collecting unnecessary sensitive data
 - **Data Location**: keep dup copies of backups, on- and off-site
 - **Storage**: define storage locations and procedures by storage type; use physical locks for paper-based media, and encrypt electronic data
-- **Destruction**: destroy data no longer needed by the organization; policy should define acceptable destruction methods by type and classification ([see NIST SP-800-88 for details](https://csrc.nist.gov/publications/detail/sp/800-88/rev-1/final))
-  - **Erasing**: usually refers to a delete operation on media, leaving data remanence. It rarely remove the data from media but instead mark it for deletion
-  - **Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data or scrubbing un-needed data
-  - **Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools (see below) -- not considered acceptable for top secret data.
+- **Data Remanence**: data remaining on media after typical erasure; Remanence describes data left on media after an attempt is made to remove the data. 
+- 🔥sanitization is a series of processes that removes data from a system or media while ensuring that the data is unrecoverable by any means. Sanitization methods (such as clearing, purging, and destroying) help ensure that data cannot be recovered
+  - ✴️**Destruction**: destroy data no longer needed by the organization; policy should define acceptable destruction methods by type and classification ([see NIST SP-800-88 for details](https://csrc.nist.gov/publications/detail/sp/800-88/rev-1/final)) ✏️Physical destruction: used for SSD/electronic components, or in combination with other less-secure methods. Due to problems with remnant data, the U.S. National Security Agency requires physical destruction of SSDs.
+      - 🍎**SSD**: Spare sectors, bad sectors, and space provided for wear leveling on SSDs (over provisioned space) may all contain data that was written to the space that will not be cleared when the drive is wiped. This is a form of data remanence and is a concern for organizations that do not want data to potentially be accessible. Many wiping utilities only deal with currently addressable space on the drive. SSDs cannot be degaussed, and wear leveling space cannot be reliably used to hide data. These spaces are still addressable by the drive, although they may not be seen by the operating system.
+  - ✴️**Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data or scrubbing un-needed data. Clearing describes preparing media for 📝reuse in same-security/sensitivity level. When media is cleared, unclassified data is written over all addressable locations on the media. Once that's completed, the media can be reused
+  - ✴️**Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools-- not considered acceptable for top secret data.
       - Purging overwrites the media with random bits multiple times and includes additional steps to ensure that data is removed. It ensures there isn’t any data remanence.
-      - Sanitization methods (such as clearing, purging, and destroying) help ensure that data cannot be recovered
-- **Data Remanence**: data remaining on media after typical erasure; to ensure all remanence is removed, the following tools can help:
-  - **Degaussing**: used on magentic media. Degaussing the disks often damages the electronics but doesn’t reliably remove the data.
-  - **Overwriting**: Same as Clearing and also known as 🔥Purging. Overwriting the disks multiple times will remove all existing data. This is called purging, and purged media can then be used again.
+      - Purging is a more intensive form of clearing for 📝reuse in lower-security areas
+  - ✴️**Overwriting**: Same as Clearing and also known as 🔥Purging. Overwriting the disks multiple times will remove all existing data. This is called purging, and purged media can then be 📝re-used again.
        - Single-pass wipe: involves overwriting the entire hard drive with random data once (e.g replacing with 0s and 1s).
        - Multi-pass wipes: involves overwriting the drive multiple times, and is more secure against advanced recovery techniques.
-  - **(Physical) destruction**: used for SSD/electronic components, or in combination with other less-secure methods. Due to problems with remnant data, the U.S. National Security Agency requires physical destruction of SSDs
-  - **Cryptographic Erasure**: AKA cryptoshedding, basically destroying encryption key; may be only secure method for 🧠cloud storage
+  - ✴️**Degaussing**: used on magentic media. Degaussing the disks often damages the electronics but doesn’t reliably remove the data. Tapes can be erased by degaussing, but degaussing is not always fully effective. 
+  - ✴️**Erasing**: usually refers to a delete operation on media, leaving data remanence. It rarely remove the data from media but instead mark it for deletion. Erasing is the deletion of files or media and may not include all of the data on the device or media, making it the 📝worst choice here.
+  - ✴️**Cryptographic Erasure**: AKA cryptoshedding, basically destroying encryption key; may be only secure method for 🧠cloud storage
   - The standard methods for clearing magnetic tapes, according to the NIST Guidelines for Media Sanitization, are overwriting the tape with nonsensitive data, degaussing, and physical destruction via shredding or incineration. Reformatting a tape does not remove remnant data.
 
 [2.3](#2.3) Provision resources securely (OSG-9 Chpt 16)
@@ -122,32 +125,34 @@ specific asset. e.g threat/likelihood of fire
 
 [2.4](#2.4) Manage data lifecycle (OSG-9 Chpt 5)
 - 2.4.1 Data roles (i.e., owners, controllers, custodians, processors, users/subjects)
-  - **System owner**: controls the computer storing the data; usually includes software and hardware configurations and support services (e.g. cloud implementation)
-    - data owner is the person respsonible for classifying, categorizing, and permitting access to the data; the data owner is the person who is best familiar with the importance of the data to the business
-    - system owners are responsible for the systems that process the data
-    - system owner is responsible for system operation and maintenance, and associated updating/patching as well as related procurement activities
-  - **Data Subject**: the person who the information is about.
-  - **Data Owner**: the entity that collects/creates the PII and is legally responsible and accountable for protecting it and educating others about how to protect the data through dissemination of intellectual property rights documentation, policies and regulatory requirements,
+  - 🔴**Business/Mission Owners**:-  Typically own processes or programs. they ensure that all operations fit within the business goals and mission. This task includes ensuring that collected data is necessary for the business to function. Collecting unnecessary data wastes time and resources. Because the business/mission owner is primarily concerned with the overall business, conflicts between data owners, data custodians, and system owners may need to be resolved by the business/mission owner, who will need to make the best decision for the organization. Business owners are most likely to select and apply COBIT to balance the need for security controls against business requirements. Business owners have to balance the need to provide value with regulatory, security, and other requirements. This makes the adoption of a common framework like COBIT attractive. Business owners are typically project or system owners who are tasked with making sure systems provide value to their users or customers.
+  - 🔴**Data Owner**: the entity that collects/creates the PII and is legally responsible and accountable for protecting it and educating others about how to protect the data through dissemination of intellectual property rights documentation, policies and regulatory requirements,
        - specific protective measures that are expected of custodians, and compliance requirements.
        - Data owners are tasked with making decisions about data, such as who receives access to it and how it is used.
        - The data owner has ultimate responsibility for data belonging to an organization and is typically the CEO, president, or another senior employee
+       - Data owners are more likely to ask that those responsible for control selection identify a standard to use if they are not also acting as business owners. 
        - The data owner is the person responsible for classifying data.
        - A data controller decides what data to process and directs the data processor to process the data.
-  - **Data controller**: decide what data to process and how to process it
+   - 🔴**System owner**: controls the computer storing the data; usually includes software and hardware configurations and support services (e.g. cloud implementation)
+    - data owner is the person respsonible for classifying, categorizing, and permitting access to the data; the data owner is the person who is best familiar with the importance of the data to the business
+    - system owners are responsible for the systems that process the data
+    - system owner is responsible for system operation and maintenance, and associated updating/patching as well as related procurement activities
+    - system ownership is an important part of making sure baselines are implemented and maintained
+  - 🔴**Data Subject**: the person who the information is about.
+  - 🔴**Data controller**: decide what data to process and how to process it
     - the data controller is the person or entity that controls the processing of the data - deciding what data to process, why this data should be processed, and how it is processed
     - e.g. a company that collects personal information on employees for payroll is a data controller (but, if they pass this info to a third-party to process payroll, the payroll company is the data processor, see below)
-  - **Data processor**: an entity working on behalf (or the direction) of the data controller, that processes PII; they have a responsibility to protect the privacy of the data and not use it for any purpose other than directed by the data controller; generally, a data processor is any system used to process data
-    - a controller can hire a third party to process data, and in this context, the third party is the data processor; data processors are often third-party entities that process data for an org at the direction of the data controller
+  - 🔴**Data processor**: 📯🅾️an entity working on behalf (or the direction) of the data controller, that processes PII; they have a responsibility to protect the privacy of the data and not use it for any purpose other than directed by the data controller; **OR** 📯🅾️ Data processor is any system used to process data. 
+    - a data controller can hire a third party to process data, and in this context, the third party is the data processor; data processors are often third-party entities that process data for an org at the direction of the data controller
     - note GDPR definition: "a natural or legal person, public authority, agency, or other body, which processes personal data soley on behalf of the data controller"
       - GDPR also restricts data tranfers to countries outside EU, with fines for violations
       - many orgs have created dedicated roles to oversee GDPR data laws are followed
-  - **Data custodian**: a custodian is delegated, from the system owner, day-to-day responsibilities for properly storing and protecting data; responsible for the protection of data through maintenance activities, backing up and archiving, and preventing the loss or corruption and recovering data
-  - **Data Steward**: a newer concept related to users of the data; those who use the data for the business purpose.
-  - **Business/Mission Owners**:-  Typically own processes or programs. they ensure that all operations fit within the business goals and mission. This task includes ensuring that collected data is necessary for the business to function. Collecting unnecessary data wastes time and resources. Because the business/mission owner is primarily concerned with the overall business, conflicts between data owners, data custodians, and system owners may need to be resolved by the business/mission owner, who will need to make the best decision for the organization.
-  - **Security administrator**: responsible for ensuring the overall security of entire infrastructure; they perform tasks that lead to the discovery of vulnerabilities, monitor network traffic and configure tools to protect the network (like firewalls and antivirus software) 
+  - 🔴**Data custodian**: a custodian is delegated, from the system owner, day-to-day responsibilities for properly storing and protecting data; responsible for the protection of data through maintenance activities, backing up and archiving, and preventing the loss or corruption and recovering data. They include ✏️IT Staff in an information technology (IT) department who are delegated responsibility for day-to-day tasks. Custodians are trusted to ensure the day-to-day security of the data and should do so by ensuring that the baseline is met and maintained.
+  - 🔴**Data Steward**: a newer concept related to users of the data; those who use the data for the business purpose. In many organizations, data stewards are internal roles that oversee how data is used
+  - 🔴**Security administrator**: responsible for ensuring the overall security of entire infrastructure; they perform tasks that lead to the discovery of vulnerabilities, monitor network traffic and configure tools to protect the network (like firewalls and antivirus software) 
     - security admins also devise security policies, plans for business continuity and disaster recovery and train staff
-  - **Supervisors**: responsible for overseeing the activities of all the above entities and all support personnel; they ensure team activities are conducted smoothly and that personnel is properly skilled for the tasks assigned
-  - **Users**: any person who accesses data from a computer device or system to accomplish work (think of users as employees or end users)
+  - 🔴**Supervisors**: responsible for overseeing the activities of all the above entities and all support personnel; they ensure team activities are conducted smoothly and that personnel is properly skilled for the tasks assigned
+  - 🔴**Users**: any person who accesses data from a computer device or system to accomplish work (think of users as employees or end users)
     - users should have access to the data they need to perform tasks; users should have access to data according to their roles and their need to access info
     - must comply with rules, mandatory policies, standards and procedures
     - users fall into the category of subjects, and a subject is any entity that accesses an object such as a file or folder 
@@ -162,6 +167,8 @@ specific asset. e.g threat/likelihood of fire
 
 - 2.4.4 Data maintenance
   - **Data maintenance**: managing data through the data lifecycle (creation, usage, retirement); data maintenance is the process (often automated) of making sure the data is available (or not available) based on where it is in the lifecycle
+  - Data lifecycle: Data Collection ➡️ Data Analysis ➡️ Data Usage ➡️ Data Retention ➡️ Data Destruction
+  - In a typical data lifecycle, collection is the first stage. Once collected, data can be analyzed, used, stored, and disposed of at the end of its useful life. Policies may be created at any time, and organizations often have data before they have policies. Labels are added to data during the analysis, usage, or retention cycle.
   - Ensuring appropriate asset protection requires that sensitive data be preserved for a period of not less than what is business-required, but for no longer than necessary
   - Encrypt sensitive data
   - Safeguard assets via basic security controls to enforce appropriate levels of confidentiality, integrity and availability and act per security policies, standards, procedures and guidelines
@@ -169,10 +176,11 @@ specific asset. e.g threat/likelihood of fire
   - Retention requirements apply to data or records, media holding sensitive data, systems that process sensitive data, and personnel who have access to sensitive data. Record retention policies define the amount of time to keep data, and laws or regulations often drive these policies.
     - **record retention**: retaining and maintaining info as long as it is needed, and destroying it when its no longer needed
       - note: a current trend in many orgs is to reduce legal liabilities by implementing short retention policies with email
+      - A data retention policy can help to ensure that outdated data is purged, removing potential additional costs for discovery. Many organizations have aggressive retention policies to both reduce the cost of storage and limit the amount of data that is kept on hand and discoverable.
   - Three fundamental retention policy questions:
-    - **how to retain**: data should be kept in a manner that makes it accessible whenever required; take taxonomy (or the scheme for data classification) into account
-    - **how long to retain data**: general guidelines for business data is 7 years (but can vary by country/region/regulation)
-    - **what data**: to retain per org requirements
+    - 🔥**how to retain**: data should be kept in a manner that makes it accessible whenever required; take taxonomy (or the scheme for data classification) into account
+    - 🔥**how long to retain data**: general guidelines for business data is 7 years (but can vary by country/region/regulation)
+    - 🔥**what data**: to retain per org requirements
 - 2.4.6 Data remanence
   - **Data remanence**: the data remaining on media after the data is supposedly erased
     - typically refers to data on a hard drive as residual magnetic flux or slack space (unused space within a disk cluster)
@@ -191,8 +199,8 @@ specific asset. e.g threat/likelihood of fire
 - Hardware: even if you maintain data for the appropriate retention period, it won’t do you any good if you don’t have hardware that can read the data
 - Personnel: beyond retaining data for required time periods and maintaining hardware to read the data, you need personnel who know how to operate the hardware to execute restoraton processes
 
-- **End-Of-Life (EOL)**: often identified by vendors as the time when they stop offering a product for sale
-- **End-Of-Support (EOS)/End-Of-Service-Life (EOSL)**: often used to identify when support ends for a product
+- 🍮**End-Of-Life (EOL)**: often identified by vendors as the time when they stop offering a product for sale
+- 🍮**End-Of-Support (EOS)/End-Of-Service-Life (EOSL)**: often used to identify when support ends for a product
 - EOL,EOS/EOSL can apply to either software or hardware
 
 [2.6](#2.6) Determine data security controls and compliance requirements (OSG-9 Chpt 5)
@@ -203,21 +211,21 @@ specific asset. e.g threat/likelihood of fire
 
 - 2.6.1 Data states (e.g., in use, in transit, at rest)
   - The three data states are at rest, in transit, and in use
-    - **Data at rest**: any data stored on media such as hard drives or external media: Protecting Data at Rest: AES encryption, Access Control, redundancy/backup, Bitlocker, FileVault, symmetric encrytion e.g Serpent, IDEA
+    - 🔴**Data at rest**: any data stored on media such as hard drives or external media: Protecting Data at Rest: AES encryption, Access Control, redundancy/backup, Bitlocker, FileVault, symmetric encrytion e.g Serpent, IDEA
 
-    - **Data in transit**: any data transmitted over a network: Protecting Data in Motion: TLS encryption, email encrytion (SMIME, PGP), IPSEC, VPN, SSH
-        - SSH-2: Provides improved security with more robust encryption e.g AES and key exchange mechanisms. It also adds support for simultaneous shell sessions over a single SSH connection and Supports optional compression of data to improve  performance
-        - IPsec: Provides strong encryption and is used in many VPNs. Operates at the Network layer. Transport Mode: Encrypts only the payload of the IP packet, leaving the header intact. Tunnel Mode: Encrypts both the payload and the header, creating a new IP header.
-        - L2TP: Provides tunneling but requires IPsec for encryption. Operates at the Data link layer. perates at the data link layer and provides a framework for tunneling protocols. L2TP alone does not offer encryption or security but is typically used with IPsec to provide these features (L2TP/IPsec). often used in Point-to-Point Protocol PPP scenarios.
-        - L2TPV3: L2TPv3 (Layer 2 Tunneling Protocol version 3) is an extension of L2TP (Layer 2 Tunneling Protocol) designed to provide more advanced features and improved capabilities. Extends L2TP to support tunneling of Layer 2 frames over IP networks, similar to the original L2TP but with additional features and improvements. Primarily used to carry Layer 2 traffic (e.g., Ethernet frames) over IP networks. It is useful for applications that require the transmission of Layer 2 protocols across an IP backbone.
-        - PPTP: Older and less secure, generally not recommended. Operates at the Data link layer. Encapsulates PPP (Point-to-Point Protocol) frames into IP packets for transmission over the internet. PPTP itself provides encryption but is considered less secure compared to more modern protocols.
-        - SSL/TLS: Strong encryption, often used in remote access VPNs. Operates at the Application link layer. Often used in remote access VPNs (SSL VPNs) and for securing web traffic (HTTPS).
-        - IKEv2: Enhances IPsec with better performance and security. Operates at the Network layer (enhances IPsec).  Provides strong security and supports features like NAT traversal and seamless connection resumption.
-        - OpenVPN: Flexible and secure with strong encryption, highly configurable. Operates at the Application layer (uses SSL/TLS).      
+    - 🔴**Data in transit**: any data transmitted over a network: Protecting Data in Motion: TLS encryption, email encrytion (SMIME, PGP), IPSEC, VPN, SSH
+        - ⭐SSH-2: Provides improved security with more robust encryption e.g AES and key exchange mechanisms. It also adds support for simultaneous shell sessions over a single SSH connection and Supports optional compression of data to improve  performance
+        - ⭐IPsec: Provides strong encryption and is used in many VPNs. Operates at the Network layer. Transport Mode: Encrypts only the payload of the IP packet, leaving the header intact. Tunnel Mode: Encrypts both the payload and the header, creating a new IP header.
+        - ⭐L2TP: Provides tunneling but requires IPsec for encryption. Operates at the Data link layer. perates at the data link layer and provides a framework for tunneling protocols. L2TP alone does not offer encryption or security but is typically used with IPsec to provide these features (L2TP/IPsec). often used in Point-to-Point Protocol PPP scenarios.
+        - ⭐L2TPV3: L2TPv3 (Layer 2 Tunneling Protocol version 3) is an extension of L2TP (Layer 2 Tunneling Protocol) designed to provide more advanced features and improved capabilities. Extends L2TP to support tunneling of Layer 2 frames over IP networks, similar to the original L2TP but with additional features and improvements. Primarily used to carry Layer 2 traffic (e.g., Ethernet frames) over IP networks. It is useful for applications that require the transmission of Layer 2 protocols across an IP backbone.
+        - ⭐PPTP: Older and less secure, generally not recommended. Operates at the Data link layer. Encapsulates PPP (Point-to-Point Protocol) frames into IP packets for transmission over the internet. PPTP itself provides encryption but is considered less secure compared to more modern protocols.
+        - ⭐SSL/TLS: Strong encryption, often used in remote access VPNs. Operates at the Application link layer. Often used in remote access VPNs (SSL VPNs) and for securing web traffic (HTTPS).
+        - ⭐IKEv2: Enhances IPsec with better performance and security. Operates at the Network layer (enhances IPsec).  Provides strong security and supports features like NAT traversal and seamless connection resumption.
+        - ⭐OpenVPN: Flexible and secure with strong encryption, highly configurable. Operates at the Application layer (uses SSL/TLS).      
       - encryption methods protect data at rest and in transit
       - Asymmetric encryption (along with symmetric encryption) protects data in transit.
-    - **Data in use**: data in memory and used by an application
-      - applications should flush memory buffers to remove data after it is no longer needed: Protecting Data in Use (Harder to protect): RAM/memory data,
+    - 🔴**Data in use**: data in memory or in buffer and used by an application
+      - applications should flush memory buffers to remove data after it is no longer needed: Protecting Data in Use (📝Harder to protect): RAM/memory data,
       - pervasive encryption,
       - prevent shoulder surfing,
       - parameter checking against buffer overflow,
@@ -230,22 +238,28 @@ specific asset. e.g threat/likelihood of fire
     - EPROM/UVEPROM chips may be erased with ultraviolet light. EEPROM chips may be erased with electrical current.
     - RAM chips are 🔥volatile and lose their contents when the computer is powered off.     
     - **Type of RAM**: Static RAM and dynamic RAM are types of real memory and thus are all the same concept in relation to being 🔥volatile—­meaning they lose any data they were holding when power is lost or cycled. They are often classified under primary memory.
-         - Static RAM SRAM: Stores data using flip-flops. This means the data is retained as long as power is supplied. Faster because it doesn’t need to refresh. It can quickly read and write data. More expensive because it uses more transistors per bit of data and consumes more power.
-         - Dynamic RAM DRAM: Stores data using capacitors and transistors. The data needs to be refreshed periodically to maintain its integrity. Slower due to the need for periodic refreshing of the data stored in capacitors. cost-effective for larger memory capacities and consumes less power.
-    - Secondary memory is a term used to describe magnetic, optical, or flash media (i.e., typical storage devices like HDD, SSD, CD, DVD, and thumb drives). These devices will retain their contents after being removed from the computer and may later be read by another user. They are therefore 🔥non-volatile.
+         - ✴️Static RAM SRAM: Stores data using flip-flops. This means the data is ✏️retained as long as power is supplied. ✏️Faster because it doesn’t need to refresh. It can quickly read and write data. More expensive because it uses more transistors per bit of data and consumes more power. 🔥volatile
+         - ✴️Dynamic RAM DRAM: Stores data using capacitors and transistors. The data needs to be refreshed periodically to maintain its integrity. ✏️Slower due to the need for periodic refreshing of the data stored in capacitors. cost-effective for ✏️larger memory capacities and ✏️consumes less power. 🔥volatile
+    - ✴️Secondary memory is a term used to describe magnetic, optical, or flash media (i.e., typical storage devices like HDD, SSD, CD, DVD, and thumb drives). These devices will ✏️retain their contents after being removed from the computer and may later be read by another user. They are therefore 🔥non-volatile.
 
 - 2.6.2 Scoping and tailoring
-  - **Baseline**: documented, lowest level of security config allowed by a standard or org
-  - After selecting a control baseline, orgs fine-tune with tailoring and scoping processes; a big part of the tailoring process is aligning controls with an org's specific security requirements
-  - **Tailoring**: refers to modifying the list of ✏️ security controls ✏️ within a baseline to align with the org's mission
+  - 🔴**Baseline**: documented, lowest level of security config allowed by a standard or organisation
+       - After selecting a control baseline, orgs fine-tune with tailoring and scoping processes; a big part of the tailoring process is aligning controls with an org's specific security requirements
+       - They provide a good starting point that can be tailored to organizational needs.
+       - The Microsoft's Windows 10 security baseline, The NSA Windows 10 Secure Host Baseline, and The CIS Windows 10 baseline are all useful for building a Windows 10 security standard
+       - The Center for Internet Security (CIS) works with subject matter experts from a variety of industries to create lists of security controls for operating systems, mobile devices, server software, and network devices.
+       - The controls implemented from a security baseline should match the data classification of the data used or stored on the system. 
+  - 🔴**Tailoring**: refers to modifying the list of ✏️ security controls ✏️ within a baseline to align with the org's mission
     - includes the following activities:
       - identifying and designating common controls; specificaion of organization-defined parameters in the security controls via explicit assignment and selection statements
       - applying scoping guidance/considerations
       - selecting/specifying compensating controls
       - assigning control values
-  - **Scoping**: limiting the general baseline recommendations by removing those that do not apply; part of the tailoring process and refers to reviewing a list of baseline ✏️ security controls ✏️ and selecting only those controls that apply to the systems you're trying to protect
+      - tailoring matches your organization's mission and the controls from a selected baseline. 
+  - 🔴**Scoping**: limiting the general baseline recommendations by removing those that do not apply; part of the tailoring process and refers to reviewing a list of baseline ✏️ security controls ✏️ and selecting only those controls that apply to the systems you're trying to protect
     - scoping processes eliminate controls that are recommended in a baseline
     - Scoping is a part of the tailoring process and refers to reviewing a list of security controls and selecting the security controls that apply.
+    - Scoping involves selecting only the controls that are appropriate for your IT systems
 
 - 2.6.3 Standards selection
   - Organizations need to identify the standards (e.g. PCI DSS, GDPR etc) that apply and ensure that the security controls they select fully comply with these standards
@@ -262,21 +276,24 @@ specific asset. e.g threat/likelihood of fire
          - Persistent online authentication
          - Automatic expiration
          - Continuous audit trail  
-    - **Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network
+    - **Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network and  providing monitoring and policy enforcement capabilities
          - A cloud access security broker (CASB) is software placed logically between users and cloud-­based resources, and it can enforce security policies used in an internal network.
       - note that entities must comply with the EU GDPR, and use additional data protection methods such as pseudonymization, tokenization, and anonymization
   - One of the primary methods of protecting the confidentiality of data is encryption
   - Options for protecting your data vary depending on its state:
-    - **Data at rest**: consider encryption for operating system volumes and data volumes, and backups as well
+    - 🌟**Data at rest**: consider encryption for operating system volumes and data volumes, and backups as well
       - be sure to consider all locations for data at rest, such as tapes, USB drives, external drives, RAID arrays, SAN, NAS, and optical media
-      - DRM is useful for data at rest because DRM "travels with the data" regardless of the data state
-        - DRM is especially useful when you can’t encrypt data volumes
-    - Data in transit: think of data in transit wholistically -- moving data from anywhere to anywhere; use encryption for data in transit 
+      - ✏️AES is a strong modern symmetric encryption algorithm that is appropriate for encrypting data at rest.
+      - ✏️DRM is useful for data at rest because DRM "travels with the data" regardless of the data state
+      - For example, A watermark is used to digitally label data and can be used to indicate ownership, as well as to assist a digital rights management (DRM) system in identifying data that should be protected.
+      - DRM is especially useful when you can’t encrypt data volumes
+    - 🌟**Data in transit**: think of data in transit wholistically -- moving data from anywhere to anywhere; use ✏️encryption for data in transit 
+      - TLS is frequently used to secure data when it is in transit.
       - e.g. a web server uses a certificate to encrypt data being viewed by a user, or IPsec encrypting a communication session 
       - most important point is to use encryption whenever possible, including for internal-only web apps
-      - DLP solutions are useful for data in transit, scanning data on the wire, and stopping the transmission/transfer, based on the DLP rules set (e.g. outbound data that contains numbers matching a social security number pattern, a DLP rule can be used to block that traffic)
-    - **Data in use**: 
-      - CASB solution often combines DLP, a web application firewall with some type of authentication and authorization, and a network firewall in a single solution; A CASB solution is helpful for protecting data in use (and data in transit)
+      - ✏️DLP solutions are useful for data in transit, scanning data on the wire, and stopping the transmission/transfer, based on the DLP rules set (e.g. outbound data that contains numbers matching a social security number pattern, a DLP rule can be used to block that traffic)
+    - 🌟**Data in use**: 
+      - ✏️CASB solution often combines DLP, a web application firewall with some type of authentication and authorization, and a network firewall in a single solution; A CASB solution is helpful for protecting data in use (and data in transit)
   - **Pseudonymization**: refers to the process of using pseudonyms or alias to represent other data
     - A pseudonym is an alias, and pseudonymization can prevent data from directly identifying an entity (i.e. person)
     - the process can be reversed
