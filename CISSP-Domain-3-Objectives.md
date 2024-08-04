@@ -280,6 +280,9 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - ✏️log all activity
 - 3.5.6 Cloud-based systems (e.g., Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))
     - **Cloud-based systems**: on-demand access to computing resources available from almost anywhere
+        - 🍎Public Cloud: Operates a multitenant environments, where the services are delivered over the public Internet and shared across different organizations.
+        - 🍎Private/Dedicated cloud: also known as a private cloud, is infrastructure operated solely for a single organization, whether managed internally or by a third-party, and hosted either internally or externally.
+        - 🍎Hybrid cloud: is a composition of two or more cloud delivery models (private, community, or public) that remain distinct entities but are bound together, offering the benefits of multiple deployment models.
     - Cloud's primary challenge: resources are outside the org’s direct control, making it more difficult to manage risk
     - Orgs should formally define requirements to store and process data stored in the cloud
     - Focus your efforts on areas that you can control, such as the network entry and exit points (i.e. firewalls and similar security solutions)
