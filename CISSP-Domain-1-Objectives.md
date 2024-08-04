@@ -179,6 +179,7 @@
       - gathering information through discovery, risk assessments and review of existing documentation 
       - ✏️developing a formalized security structure containing a security policy, standards, baselines guidlines, and procedures 
       - documentation to establish written policies
+      - due diligence includes the preparation and research
       - disseminating the information to the organization
       - Due diligence is ✏️knowing what should be done and planning for it.
       - The due diligence principle is a more specific component of due care that states that an individual assigned a responsibility should exercise due care to complete it accurately and in a timely manner.
@@ -188,6 +189,7 @@
   - Security documentation is the security policy
   - Due care is ✏️doing the right action at the right time.
   - exercise reasonable security measures to protect assets
+  - Once due dilligence is done, you must use due care while undertaking the actions to protect the interests of the organization, and the customers information
   - Due care is the ✏️continued application of a security structure onto the IT infrastructure of an organization.
   - Due care also includes periodic security audits
   - The due care principle states that an individual should 🧠react in a situation using the same level of care that would be expected from any reasonable person. It is a very broad standard.
@@ -383,6 +385,7 @@
     - In a criminal case, a suspect must be proven guilty beyond a 📝reasonable doubt📝; a higher bar compared to a civil case, which is showing a preponderance of evidence
   - **Civil**: in a civil case, one person or entity sues another; e.g. one company could sue another for a trademark violation 
     - A civil case is typically about monetary damages, and doesn't involve criminality
+    -  it relates to a contract dispute and will likely wind up being litigated in civil court
     - In a civil case, a 📝preponderance of evidence📝 is required to secure a victory; differing from criminal cases, where a suspect is innocent until proven guilty beyond a reasonable doubt
   - **Industry Standards**: an industry standards investigation is intended to determine whether an org is adhering to a specific industry standard or set of standards, such as logging and auditing failed logon attempts 
     - Because industry standards represent well-understood and widely implemented best practices, many orgs try to adhere to them even when they are not required to do so in order to improve security, and reduce operational and other risks
@@ -772,7 +775,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - 1.12.4 Service-level requirements
   - **🔥Service Level Agreements (SLAs)**: companies have SLAs for internal operations (such as how long it takes for the helpdesk to respond to a new ticket), for customers (such as the availability of a public-facing service) and for partner orgs (such as how much support a vendor provides a partner) 
     - All SLAs should be reviewed; a company sometimes has an SLA standard that should be applied, when possible, to the service level agreements as part of working with another company
-      - this can sometimes take time, as the acquiring company might have to support established SLAs until they expire or are up for renewal 
+      - this can sometimes take time, as the acquiring company might have to support established SLAs until they expire or are up for renewal
+      - The primary place where the minimum-security requirements or SLR for a third-party should be documented is in the contract or service-level agreement (SLA) established with that vendor. A business partners agreement (BPA) and interconnection security agreement (ISA) could also be viable answers. 
   - **🔥Service Level Requirements (SLRs)**: A service-level requirement (SLR) is a statement of the expectations of service and performance from the product or service of a vendor. Often, an SLR is provided by the ❄️customer/client prior to the establishment of the service-level agreement (SLA) (which should incorporate the elements of the SLR if the vendor expects the customer to sign the agreement). 
   - 
 [1.13](#1.13) Establish and maintain a security awareness, education, and training program (OSG-9 Chpt 2)
