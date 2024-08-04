@@ -133,7 +133,7 @@
   - If a security control's benefits cannot be quantified, evaluated, or compared, then it does not actually provide any security.
   - there are many frameworks to choose from, such as:
     -  🔴**Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
-        - COBIT is a documented set of best IT security practices by ISACA
+        - COBIT is a documented set of best IT security practices by ISACA for information technology (IT) management and governance.
         - Six key principles (🟡Sally Has Daring Goals To Excel SHDGTE) :
           - ✏️provide stakeholder value
           - ✏️holistic approach
@@ -399,6 +399,7 @@
   - **Criminal Investigation**: a criminal investigation occurs when a crime has been committed and you are working with a law enforcement agency to convict the alleged perpetrator; in such a case, it is common to gather evidence for a court of law, and to share the evidence with the defense
     - You need to gather and handle the information using methods that ensure the evidence can be used in court
     - In a criminal case, a suspect must be proven guilty beyond a 📝reasonable doubt📝; a higher bar compared to a civil case, which is showing a preponderance of evidence
+  - **Operational investigations** are performed by internal teams to troubleshoot performance or other technical issues. They are not intended to produce evidence for use in court and, therefore, do not have the rigid collection standards of criminal, civil, or regulatory investigations. 
   - **Civil Investigation**: in a civil case, one person or entity sues another; e.g. one company could sue another for a trademark violation 
     - A civil case is typically about monetary damages, and doesn't involve criminality
     -  it relates to a contract dispute and will likely wind up being litigated in civil court
