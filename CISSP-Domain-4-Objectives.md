@@ -633,7 +633,7 @@ available before it can be used and then disassembled after the transmission is 
             - SDN on the hypervisor can control the VLANs, port isolation, bandwidth and other aspects just as if it was a physical port
 - 4.3.6 Third-party connectivity
     - Any time an org’s network is connected directly to another entity’s network, their local threats and risks affect each other
-        - **memorandum of understanding (MOU)** or **memorandum of agreement (MOA)**: (Note: MOU = letter of intent) an expression of agreement or aligned intent, will, or purpose between two entities
+        - **memorandum of understanding (MOU)** or **memorandum of agreement (MOA)**: (Note: MOU = letter of intent) an expression of agreement or aligned intent, will, or purpose between two entities.  it is only a statement of intentions and not a legal contract.
         - **interconnection security agreement (ISA)**: a formal declaration of the security stance, risk, and technical requirements of a link between two organizations’ IT infrastructures
     - Remote workers are another form of third-party connectivity
     - Vendors (like IT auditing firms) may need to connect to your network, and attackers are routinely looking for creative ways to gain organizational access -- third-party connectivity is one option
