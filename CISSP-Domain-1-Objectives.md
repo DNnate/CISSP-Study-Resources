@@ -255,7 +255,7 @@
     - California Consumer Privacy Act (CCPA)
     - Be familiar with the EU Data Protection Directive
     - Be familiar with the requirements around healthcare data, credit card data and other PII data as it relates to various countries and their laws and regulations
-    - The European Union provides 🔥**standard contractual clauses** that may be used to facilitate data transfer. That would be the best choice in a case where two ✏️different companies e.g one in Europe and one in the United States are sharing data.
+    - The European Union provides 🔥**standard contractual clauses** that may be used to facilitate data transfer. That would be the best choice in a case where two ✏️different companies e.g one in Europe and one in the United States are sharing data. This applies susually between partners, subsidiaries
     - **🔥binding corporate rules**:If the data were being shared internally within the ✏️same company, binding corporate rules would also be an option
 
 [1.5](#1.5) Understand legal and regulatory issues that pertain to information security in a holistic context (OSG-9 Chpt 4)
@@ -443,6 +443,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - BCP is used to maintain the ❄️continuous operation of a business in the event of an emergency, with a goal to implement a combination of policies, procedures, and processes
   - Business continuity requires a lot of planning and preparation; actual implementation of business continuity processes occur quite infrequently
   - Individuals with specific business continuity roles should receive training on at least an ✴️annual basis.
+  - Everyone in the organization should receive basic training on the nature and scope of the business continuity program. Those with specific roles, such as first responders and senior executives, should also receive detailed, role-specific training.
   - The safety of ✴️people/human life must always be the paramount concern in business continuity planning. 
   - business organization analysis is the first step of the process, and the results are used to aid in the selection of team members and the design of the BCP process.
   - The primary facets of business continuity are:
@@ -461,8 +462,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
 - NIST SP800-34 provides a guideline for developing a logical BCP. It can be found at: http://csrc.nist.gov/publications/nistpubs/800-34-rev1/sp800-34-rev1_errata-Nov11-2010.pdf
   
 - BCP vs DR: 
-  - 🔥BCP activities are typically strategically focused at a high level and center themselves on business processes and operations
-  - 🔥DR plans tend to be more tactical and describe technical activities such as recovery sites, backups, and fault tolerance. It ensures sufficient technical controls in place to recover operations after a disruption. Ensures that the organization has sufficient technical controls in place to recover operations after a disruption. Disaster recovery plans pick up where business continuity plans leave off. After a disaster strikes and the business is interrupted, the disaster recovery plan guides response teams in their efforts to quickly restore business operations to normal levels.
+  - 🔥BCP activities are typically strategically focused at a high level and center themselves on business processes and operations. E.g 📝RAID technology provides fault tolerance for hard drive failures and is an example of a business continuity action. 
+  - 🔥DR plans tend to be more tactical and describe technical activities such as recovery sites, backups, and fault tolerance. It ensures sufficient technical controls in place to recover operations after a disruption. Ensures that the organization has sufficient technical controls in place to recover operations after a disruption. Disaster recovery plans pick up where business continuity plans leave off. After a disaster strikes and the business is interrupted, the disaster recovery plan guides response teams in their efforts to quickly restore business operations to normal levels. 📝Restoring from backup tapes, 📝relocating to a cold site, and 📝restarting business operations are all disaster recovery actions.
 
 - The overall goal of BCP is to provide a quick, calm, and efficient response in the event of an emergency and to enhance a company's ability to quickly recover from a distruptive event
 - 📝The emergency response guidelines should include the immediate steps an organization should follow in response to an emergency situation. These include immediate response procedures, a list of individuals who should be notified of the emergency, and secondary response procedures for first responders
@@ -812,9 +813,11 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **🔥Service Level Agreements (SLAs)**: companies have SLAs for internal operations (such as how long it takes for the helpdesk to respond to a new ticket), for customers (such as the availability of a public-facing service) and for partner orgs (such as how much support a vendor provides a partner) 
     - All SLAs should be reviewed; a company sometimes has an SLA standard that should be applied, when possible, to the service level agreements as part of working with another company
       - this can sometimes take time, as the acquiring company might have to support established SLAs until they expire or are up for renewal
-      - The primary place where the minimum-security requirements or SLR for a third-party should be documented is in the contract or service-level agreement (SLA) established with that vendor. A business partners agreement (BPA) and (❄️interconnection security agreement (ISA): is a formal declaration of the security stance, risk, and technical requirements of a link between two organizations’ IT infrastructures) could also be viable answers. 
+      - The primary place where the minimum-security requirements or SLR for a third-party should be documented is in the contract or service-level agreement (SLA) established with that vendor. A business partners agreement (BPA) and interconnection security agreement (ISA) are also useful options.
+      - ❄️Business partners agreement (BPA) is a contract between two entities dictating the terms of their business relationship. It clearly defines the expectations and obligations of each partner in the endeavor. It focuses on the business partner relationship rather than that of a customer to a vendor.
+      - ❄️interconnection security agreement (ISA): is a formal declaration of the security stance, risk, and technical requirements of a link between two organizations’ IT infrastructures) could also be viable answers. 
   - **🔥Service Level Requirements (SLRs)**: A service-level requirement (SLR) is a statement of the expectations of service and performance from the product or service of a vendor. Often, an SLR is provided by the ❄️customer/client prior to the establishment of the service-level agreement (SLA) (which should incorporate the elements of the SLR if the vendor expects the customer to sign the agreement). 
-  - 
+  -  **Vendor management system (VMS)**: VMS is a software solution that assists with the management and procurement of staffing services, hardware, software, and other needed products and services. A VMS can offer ordering convenience, order distribution, order training, consolidated billing, and more and they are a means to view, manage, or optimize the relationship between an organization and third-party suppliers. 
 [1.13](#1.13) Establish and maintain a security awareness, education, and training program (OSG-9 Chpt 2)
 - 1.13.1 Methods and techniques to present awareness and training (e.g., social engineering, phishing, security champions, gamification)
   - Before actual training takes place, user security awareness needs to take place; from there, training, or teaching employees to perform their work tasks and to comply with the security policy can begin
