@@ -69,6 +69,8 @@
      - Media is typically labeled with the highest classification level of data it contains. This prevents the data from being handled or accessed at a lower classification level.
      - labels can be as granular and custom as required by the org
      - Data labeling can help ensure that controls are applied to the right systems and data.
+     - Data labels are crucial to identify the classification level of information contained on the media, and labeling data at creation helps to ensure that it is properly handled throughout its lifecycle. 
+     - Tagging: Tags that include information about the lifespan of the data and when it has expired can help with lifecycle management processes. Tags can be as simple as timestamps, or they can include additional metadata like the data type, creator, or purpose that can help inform the retention and disposal process.
   - 🏷️**Data Collection Limitation**: Providing consent, or agreeing to data collection and use, is important in many data collection scenarios and may be required by law. Prevent loss by not collecting unnecessary sensitive data. 🥇Sometimes it is better to collect limited information🥇
   - 🏷️**Data Location**: keep duplicate copies of backups, on- and off-site
   - 🏷️**Storage**: define storage locations and procedures by storage type; use physical locks for paper-based media, and encrypt electronic data. It is cost effective to purchase high-quality media to contain sensitive data becuase the value of the data often far exceeds the cost of the media. This makes more expensive media that may have a longer life span or additional capabilities like encryption support a good choice for sensitive data.
@@ -165,8 +167,8 @@
   - Consider distance between data/storage locations to mitigate potential mutual (primary and backup) damage risk
 
 - 2.4.4 Data maintenance
-  - **Data maintenance**: managing data through the data lifecycle (creation, usage, retirement); data maintenance is the process (often automated) of making sure the data is available (or not available) based on where it is in the lifecycle
-  - Data lifecycle: Data Collection ➡️ Data Analysis ➡️ Data Usage ➡️ Data Retention ➡️ Data Destruction
+  - **Data maintenance**: managing data through the data lifecycle (creation, usage, retirement); data maintenance is the process (often automated) of making sure the data is available (or not available) based on where it is in the lifecycle. During the data maintenance phase of a typical data lifecycle, activities like data scrubbing occur to remove unneeded, incorrect, or out-of-date data.
+  - Data lifecycle:  Data Maintenance ↪️🔄 Data Collection ➡️ Data Analysis ➡️ Data Usage ➡️ Data Retention ➡️ Data Destruction ↩️🔄 Data Maintenance 
   - In a typical data lifecycle, collection is the first stage. Once collected, data can be analyzed, used, stored, and disposed of at the end of its useful life. Policies may be created at any time, and organizations often have data before they have policies. Labels are added to data during the analysis, usage, or retention cycle.
   - Ensuring appropriate asset protection requires that sensitive data be preserved for a period of not less than what is business-required, but for no longer than necessary
   - Encrypt sensitive data
