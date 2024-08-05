@@ -136,9 +136,13 @@
        - They are responsible for classifying the data that they own as well as assisting with or advising the system owners on security requirements and control selection
        - The data owner is the person responsible for classifying data, selecting the required controls for each classification, and selecting baseline security standards for the organization.
        - data owner is the person respsonible for classifying, categorizing, and permitting access to the data; the data owner is the person who is best familiar with the importance of the data to the business
+       - The data owner sets the rules for use and protection of data.
    - 🔴**System owner**: controls the computer storing the data; usually includes software and hardware configurations and support services (e.g. cloud implementation)
     - system owners are responsible for the systems that process the data
     - system owner is responsible for system operation and maintenance, and associated updating/patching as well as related procurement activities
+    - Develops a system security plan
+    - Ensures that system users receive appropriate security training
+    - Identifies and implements security controls
     - system ownership is an important part of making sure baselines are implemented and maintained
     - Typically, system owners, such as a department head, delegate authority to system administrators/custodians
   - 🔴**Data controller**: decide what data to process and how to process it
