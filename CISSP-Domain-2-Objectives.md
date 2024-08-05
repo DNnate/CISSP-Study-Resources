@@ -1,13 +1,9 @@
 [Domain 2](#domain2-top) **Asset Security**
 
 - Domain 2 of the CISSP exam covers asset security making up ~10% of the test 
-- Asset security includes the concepts, principles, and standards of monitoring and securing any asset important to the organization
+- Asset security includes the concepts, principles, and standards of monitoring and securing any asset important to the organization. Asset: anything of value owned by the organization
 - Anything that removes a vulnerability or protects against one or more specific threats is considered a safeguard or a countermeasure. The annual costs of safeguards should not exceed the expected annual cost of asset value loss.
 - The Asset Security domain focuses on collecting, handling, and protecting information throughout its lifecycle; the first step is classifying information based on its value to the organization. Classification should be conducted based on the ✏️value of the data to the organization, its ✏️sensitivity, and the amount of ✏️harm that could result from exposure of the data. When data is stored in a mixed classification environment, it is typically classified based on the highest classification of data included.
-- **Asset**: anything of value owned by the organization
-     - **Intangible Assets**: Patents, databases, and formulas
-     - **Tangible Assets**: hardware, cables, and buildings
-     - **Personnel Assets**: Employees
 - **Asset lifecycle**: phases an asset goes through, from creation (or collection) to destruction
 - 🔴**Risk** is the _possibility, probability, chance or likelihood_ that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result. e.g damage to equipment.
      - Risk = Threat ✖️ Vulnerability
@@ -70,7 +66,7 @@
      - labels can be as granular and custom as required by the org
      - Data labeling can help ensure that controls are applied to the right systems and data.
      - Data labels are crucial to identify the classification level of information contained on the media, and labeling data at creation helps to ensure that it is properly handled throughout its lifecycle. 
-     - Tagging: Tags that include information about the lifespan of the data and when it has expired can help with lifecycle management processes. Tags can be as simple as timestamps, or they can include additional metadata like the data type, creator, or purpose that can help inform the retention and disposal process.
+     - Tagging: Tags that include information about the lifespan of the data and when it has expired can help with lifecycle management processes. Tags can be as simple as timestamps, or they can include additional metadata like the data type, creator, or purpose that can help inform the retention and disposal process. Metadata tagging allow organisations to use technical tools like DLP and DRM to handle and track data, based on its type and content.
   - 🏷️**Data Collection Limitation**: Providing consent, or agreeing to data collection and use, is important in many data collection scenarios and may be required by law. Prevent loss by not collecting unnecessary sensitive data. 🥇Sometimes it is better to collect limited information🥇
   - 🏷️**Data Location**: keep duplicate copies of backups, on- and off-site
   - 🏷️**Storage**: define storage locations and procedures by storage type; use physical locks for paper-based media, and encrypt electronic data. It is cost effective to purchase high-quality media to contain sensitive data becuase the value of the data often far exceeds the cost of the media. This makes more expensive media that may have a longer life span or additional capabilities like encryption support a good choice for sensitive data.
@@ -82,6 +78,7 @@
   - ✴️**Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools-- not considered acceptable for top secret data.
       - Purging overwrites the media with random bits multiple times and includes additional steps to ensure that data is removed. It ensures there isn’t any data remanence.
       - Purging is a more intensive form of clearing for 📝reuse in lower-security areas
+      - The 🍎NIST SP 800-88 process for sanitization and disposition shows that media that will be reused and was classified at a moderate level should be purged and then that purge should be validated. Finally, it should be documented.
   - ✴️**Overwriting**: Same as Clearing and also known as 🔥Purging. Overwriting the disks multiple times will remove all existing data. This is called purging, and purged media can then be 📝re-used again.
        - Single-pass wipe: involves overwriting the entire hard drive with random data once (e.g replacing with 0s and 1s).
        - Multi-pass wipes: involves overwriting the drive multiple times, and is more secure against advanced recovery techniques.
@@ -101,11 +98,12 @@
   - **Data owner**: the person who has ultimate organizational responsibility for data; usually sr. manager (CEO,president, dept. head); data owners typically delegate data protection tasks to others in the org
 
 - 2.3.2 Asset inventory (e.g., tangible, intangible)
-  - **Inventory**: complete list of items
-  - **Tangible assets**: include hardware and software assets owned by the company
-  - **Intangible assets**: things like patents, copyrights, a company’s reputation, and other assets representing potential revenue
+  - **Inventory**: complete list of items. In most organizations, changing processes so that new systems and devices are added to inventory before they are deployed is the first step in making sure asset inventories are current. While it can be a lot of work, the most complete inventory of active systems and devices can be created by determining what is connected to the network and then finding those assets.
+  - 🍏**Tangible assets**: include hardware and software assets, cables, and buildings owned by the company. 
+  - 🍏**Intangible assets**: things like Patents, databases, and formulas, copyrights, a company’s reputation, and other assets representing potential revenue
     - an org should keep track of intangible assets, like intellectual property, patents, trademarks, and company’s reputation, and copyrights to protect them
     - note: patents in the US are valid for 20 years
+  - 🍏**Personnel Assets**: Employees 
 
 - 2.3.3 Asset management
   - Asset management refers to managing both tangible and intangible assets; this starts with inventories of assets, tracking the assets, and taking additional steps to protect them throughout their lifetime
@@ -131,28 +129,37 @@
        - specific protective measures that are expected of custodians, and compliance requirements.
        - Data owners are tasked with making decisions about data, such as who receives access to it and how it is used.
        - The data owner has ultimate responsibility for data belonging to an organization and is typically the CEO, president, or another senior employee
-       - Data owners are more likely to ask that those responsible for control selection identify a standard to use if they are not also acting as business owners. 
-       - The data owner is the person responsible for classifying data.
-       - A data controller decides what data to process and directs the data processor to process the data.
+       - Data owners are more likely to ask that those responsible for control selection identify a standard to use if they are not also acting as business owners.
+       - They are responsible for classifying the data that they own as well as assisting with or advising the system owners on security requirements and control selection
+       - The data owner is the person responsible for classifying data, selecting the required controls for each classification, and selecting baseline security standards for the organization.
+       - data owner is the person respsonible for classifying, categorizing, and permitting access to the data; the data owner is the person who is best familiar with the importance of the data to the business
    - 🔴**System owner**: controls the computer storing the data; usually includes software and hardware configurations and support services (e.g. cloud implementation)
-    - data owner is the person respsonible for classifying, categorizing, and permitting access to the data; the data owner is the person who is best familiar with the importance of the data to the business
     - system owners are responsible for the systems that process the data
     - system owner is responsible for system operation and maintenance, and associated updating/patching as well as related procurement activities
     - system ownership is an important part of making sure baselines are implemented and maintained
-  - 🔴**Data Subject**: the person who the information is about.
+    - Typically, system owners, such as a department head, delegate authority to system administrators/custodians
   - 🔴**Data controller**: decide what data to process and how to process it
     - the data controller is the person or entity that controls the processing of the data - deciding what data to process, why this data should be processed, and how it is processed
     - e.g. a company that collects personal information on employees for payroll is a data controller (but, if they pass this info to a third-party to process payroll, the payroll company is the data processor, see below)
+    - A data controller decides what data to process and directs the data processor to process the data.
   - 🔴**Data processor**: 📯🅾️an entity working on behalf (or the direction) of the data controller, that processes PII; they have a responsibility to protect the privacy of the data and not use it for any purpose other than directed by the data controller; **OR** 📯🅾️ Data processor is any system used to process data. 
     - a data controller can hire a third party to process data, and in this context, the third party is the data processor; data processors are often third-party entities that process data for an org at the direction of the data controller
+    - Third-party organizations that process personal data on behalf of a data controller are known as data processors. The organization that they are contracting with would act in the role of the business or mission owners, and others within the third party organization would have the role of data administrators, granting access as needed to the data based on their operational procedures and data classification.
     - note GDPR definition: "a natural or legal person, public authority, agency, or other body, which processes personal data soley on behalf of the data controller"
       - GDPR also restricts data tranfers to countries outside EU, with fines for violations
       - many orgs have created dedicated roles to oversee GDPR data laws are followed
-  - 🔴**Data custodian**: a custodian is delegated, from the system owner, day-to-day responsibilities for properly storing and protecting data; responsible for the protection of data through maintenance activities, backing up and archiving, and preventing the loss or corruption and recovering data. They include ✏️IT Staff in an information technology (IT) department who are delegated responsibility for day-to-day tasks. Custodians are trusted to ensure the day-to-day security of the data and should do so by ensuring that the baseline is met and maintained. He/She is responsible for the technical environment, including things like database structures and the technical implementations of data policies.
+  - 🔴**Data custodian**: a custodian is delegated, from the system owner, day-to-day responsibilities for properly storing and protecting data;
+      - responsible for the protection of data through maintenance activities, backing up and archiving, and preventing the loss or corruption and recovering data.
+      - They include ✏️IT Staff in an information technology (IT) department who are delegated responsibility for day-to-day tasks.
+      - Custodians are trusted to ensure the day-to-day security of the data and should do so by ensuring that the baseline is met and maintained.
+      - He/She is responsible for the technical environment, including things like database structures and the technical implementations of data policies.
+      - The system administrators can act in the roles of data administrators who grant access and will also act as custodians who are tasked with the day-to-day application of security controls such as providing/granting/managing user access.
+      - Controls are scoped and tailored, applied and enforced by Custodians.
   - 🔴**Data Steward**: a newer concept related to users of the data; those who use the data for the business purpose. In many organizations, data stewards are internal roles that oversee how data is used
   - 🔴**Security administrator**: responsible for ensuring the overall security of entire infrastructure; they perform tasks that lead to the discovery of vulnerabilities, monitor network traffic and configure tools to protect the network (like firewalls and antivirus software) 
     - security admins also devise security policies, plans for business continuity and disaster recovery and train staff
   - 🔴**Supervisors**: responsible for overseeing the activities of all the above entities and all support personnel; they ensure team activities are conducted smoothly and that personnel is properly skilled for the tasks assigned
+  - 🔴**Data Subject**: the person who the information is about.
   - 🔴**Users**: any person who accesses data from a computer device or system to accomplish work (think of users as employees or end users)
     - users should have access to the data they need to perform tasks; users should have access to data according to their roles and their need to access info
     - must comply with rules, mandatory policies, standards and procedures
@@ -213,7 +220,7 @@
 - 2.6.1 Data states (e.g., in use, in transit, at rest)
   - The three data states are at rest, in transit, and in use
     - 🔴**Data at rest**: any data stored on media such as hard drives or external media: Protecting Data at Rest: AES encryption, Access Control, redundancy/backup, Bitlocker, FileVault, symmetric encrytion e.g Serpent, IDEA.  Data breaches cause the greatest reputational damage as a result of threats to data at rest.  Data at rest with a high level of sensitivity is often encrypted to help prevent this.
-    - 🔴**Data in transit**: any data transmitted over a network: Protecting Data in Motion: TLS encryption, email encrytion (SMIME, PGP), IPSEC, VPN, SSH
+    - 🔴**Data in transit**: any data transmitted over a network: Protecting Data in Motion: Data in transit is data that is traversing a network or is otherwise in motion. TLS, VPNs, and IPsec tunnels are all techniques used to protect data in transit. TLS encryption, email encrytion (SMIME, PGP), IPSEC, VPN, SSH
         - ⭐SSH-2: Provides improved security with more robust encryption e.g AES and key exchange mechanisms. It also adds support for simultaneous shell sessions over a single SSH connection and Supports optional compression of data to improve  performance
         - ⭐IPsec: Provides strong encryption and is used in many VPNs. Operates at the Network layer. Transport Mode: Encrypts only the payload of the IP packet, leaving the header intact. Tunnel Mode: Encrypts both the payload and the header, creating a new IP header.
         - ⭐L2TP: Provides tunneling but requires IPsec for encryption. Operates at the Data link layer. perates at the data link layer and provides a framework for tunneling protocols. L2TP alone does not offer encryption or security but is typically used with IPsec to provide these features (L2TP/IPsec). often used in Point-to-Point Protocol PPP scenarios.
@@ -225,7 +232,7 @@
       - encryption methods protect data at rest and in transit
       - Asymmetric encryption (along with symmetric encryption) protects data in transit.
     - 🔴**Data in use**: data in memory or in buffer and used by an application
-      - applications should flush memory buffers to remove data after it is no longer needed: Protecting Data in Use (📝Harder to protect): RAM/memory data,
+      - applications should flush memory buffers to remove data after it is no longer needed: Protecting Data in Use (📝Harder to protect): RAM/memory data: The most difficult location to secure for encryption keys and similar highly sensitive information is in active memory because the data needs to be decrypted to be used. 
       - pervasive encryption,
       - prevent shoulder surfing,
       - parameter checking against buffer overflow,
