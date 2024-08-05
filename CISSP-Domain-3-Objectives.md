@@ -583,7 +583,8 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - Digital signatures rely on a combination of two major concepts — public key cryptography, and hashing functions 
         - Digitally signed messages assure the recipient that the message truly came from the claimed sender, enforcing nonrepudiation
         - Digitally signed messages assure the recipient that the message was not altered while in transit; protecting against both malicious modification (third party altering message meaning), and unintentional modification (faults in the communication process) 
-        - Digital signature process does not provide confidentiality in and of itself (only ensures integrity, authentication, and nonrepudiation) 
+        - Digital signature process does not provide confidentiality in and of itself (only ensures integrity, authentication, and nonrepudiation)
+        - Electronic signatures, prove that the signature was provided by the intended signer. Electronic signatures are intended to ensure that electronic records are "trustworthy, reliable, and generally equivalent to paper records and handwritten signatures executed on paper." An electronic signature (e-signature) is a broad term that refers to any electronic means used to indicate agreement or approval on a digital document or transaction. It can include various forms, such as typed names, scanned images of handwritten signatures, or click-to-sign methods. A digital signature is a specific type of electronic signature that uses cryptographic techniques to ensure the authenticity, integrity, and non-repudiation of a digital document or message. 
 - 3.6.6 Digital Non-repudiation
     - Here non-repudiation refers to methods ensuring certainty about data origins; in general, the inability to deny
     - Non-repudiation of origin: sender cannot deny having sent a particular message
