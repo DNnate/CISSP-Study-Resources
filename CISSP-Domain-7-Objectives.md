@@ -1013,10 +1013,10 @@ list review, team members each review the contents of their disaster recovery ch
 - **Trusted Computing Base (TCB)**: This encompasses all the hardware, software, and firmware that are critical to the system's security. It includes the Security Kernel but also includes other components involved in the security of the system.
 - **Security Kernel**: The actual implementation within the OS that enforces the security policies and manages the interfaces between the hardware, OS, and other parts of the system. It is part of an operating system (OS) responsible for providing security interfaces among the hardware, OS, and other parts of the computing system
 - **RING PROTECTION**:Ring protection is a feature of CPU architectures that provides a way to enforce different levels of privilege or protection for different parts of the system. It uses a hierarchy of privilege levels, typically referred to as "rings," where Ring 0 (the innermost ring) has the highest level of privilege and direct access to hardware, while Ring 3 (the outermost ring) has the lowest level of privilege and is used for user applications.
- - Ring 0 The kernel lies within the central ring
- - Ring 1 Conceptually contains other operating system components.
- - Ring 2 is used for drivers and protocols.
- - Ring 3 User-level programs and applications run at 3. 
+    - Ring 0 The kernel lies within the central ring
+    - Ring 1 Conceptually contains other operating system components.
+    - Ring 2 is used for drivers and protocols.
+    - Ring 3 User-level programs and applications run at 3. 
 - Note📝 Rings 0 through 2 run in privileged mode while Ring 3 runs in user mode. It is important to note that many modern operating systems do not fully ­implement this model.
 - **Reference Monitor**: This concept refers to an abstract model that 🔥enforces access control policies in a system. It's a theoretical component that must be implemented by the Security Kernel.
 - 
