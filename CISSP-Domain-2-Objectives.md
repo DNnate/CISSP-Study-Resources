@@ -48,6 +48,8 @@
       - Classification identifies the value of data to an organization
       - 📝Asset classifications should match data classification, i.e. if a computer is processing top secret data, the computer should be classified as a top secret asset
       - Handling requirements and tools include visual indicators like a distinctive screen background and can help employees remember what level of classification they are dealing with and thus the handling requirements that they are expected to follow.
+      - In a single-level security environment, systems should be assigned the classification level of the highest classification of information they are ever expected to process.
+      - Information should be classified based upon its sensitivity. This may be due to the value of the information to the organization, the damage caused if lost or compromised, or other factors.
       - **Reclassifying Data**: When the value of data changes due to legal, compliance, or business reasons, reviewing classifications and reclassifying the data is an appropriate response. Once the review is complete, data can be reclassified and handled according to its classification level. 
       - **Clearance**: relates to access of certain classfication of data or equipment, and who has access to that level or classification
       - A **Formal Access Approval Process** should be used to change user access; the process should involve approval from the data/asset owner, and the user should be informed about rules and limits
@@ -62,10 +64,11 @@
 - The data and asset handling key goal is to prevent data breaches, by using:
   - **Data Maintenance**: on-going efforts to organize and care for data through its life cycle
   - 🏷️**Data Loss Prevention (DLP)**: systems that detect and block data exfiltration attempts; DLP systems can use labels on data to determine the appropriate controls to apply to the data. DLP system or software is designed to identify labeled data or data that fits specific patterns and descriptions to help prevent it from leaving the organization. A data loss prevention (DLP) system can tag, monitor, and limit where files are transferred to. There are two primary types:
-     - network-based DLP
-     - endpoint-based DLP
+     - 🩰Network-based DLP: Network-based DLP would not detect stored information unless the user transmits it over the network. 
+     - 🩰Endpoint-based DLP: identify the presence of information on endpoint devices
   - 🏷️**Marking (AKA labeling)**: sensitive information/assets ensures proper handling (both physically and electronically).
      - Media is typically labeled with the highest classification level of data it contains. This prevents the data from being handled or accessed at a lower classification level.
+     - Systems and media should be labeled with the highest level of sensitivity that they store or handle.
      - labels can be as granular and custom as required by the org
      - Data labeling can help ensure that controls are applied to the right systems and data.
      - Data labels are crucial to identify the classification level of information contained on the media, and labeling data at creation helps to ensure that it is properly handled throughout its lifecycle.
@@ -78,6 +81,7 @@
 - 🔥sanitization is a series of processes that removes data from a system or media while ensuring that the data is unrecoverable by any means. Sanitization methods (such as clearing, purging, and destroying) help ensure that data cannot be recovered. 📝Note: Downgrading systems and media is rare due to the difficulty of ensuring that sanitization is complete. The need to completely wipe (or destroy) the media that systems use means that the ✏️cost of reuse is often significant and may exceed the cost of purchasing a new system or media i.e sanitazation cost ▶ cost of new media.
   - ✴️**Destruction**: destroy data no longer needed by the organization; policy should define acceptable destruction methods by type and classification ([see NIST SP-800-88 for details](https://csrc.nist.gov/publications/detail/sp/800-88/rev-1/final)) ✏️Physical destruction: used for SSD/electronic components, or in combination with other less-secure methods. Due to problems with remnant data, the U.S. National Security Agency requires physical destruction of SSDs. Incineration, pulverizing, crushing, shredding, and disintegration all describe data destruction.
       - 🍎**SSD**: Spare sectors, bad sectors, and space provided for wear leveling on SSDs (over provisioned space) may all contain data that was written to the space that will not be cleared when the drive is wiped. This is a form of data remanence and is a concern for organizations that do not want data to potentially be accessible. Many wiping utilities only deal with currently addressable space on the drive. SSDs cannot be degaussed, and wear leveling space cannot be reliably used to hide data. These spaces are still addressable by the drive, although they may not be seen by the operating system. The two valid options for destroying data on SSD drives are ATA Secure Erase and destruction. Destruction is the best method for SSD drives.
+      - 🍎**shredding**: is a type of physical destruction. Though this term is sometimes used in relation to overwriting of data, here shredding  refers to the process of making unrecoverable any data printed on hard copy or on smaller objects, such as credit cards, floppy or optical disks. There are industrial shredders capable of shredding larger devices like servers and hard disks.
   - ✴️**Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data or scrubbing un-needed data. Clearing describes preparing media for 📝reuse in same-security/sensitivity level. When media is cleared, unclassified data is written over all addressable locations on the media. Once that's completed, the media can be reused
   - ✴️**Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools-- not considered acceptable for top secret data.
       - Purging overwrites the media with random bits multiple times and includes additional steps to ensure that data is removed. It ensures there isn’t any data remanence.
@@ -104,9 +108,9 @@
   - ☪️**Asset Owner**: identifies the individual(s) responsible for protecting the asset or for delegating the task of protecting the asset
 
 - 2.3.2 Asset inventory (e.g., tangible, intangible)
-  - **Inventory**: complete list of items. In most organizations, changing processes so that new systems and devices are added to inventory before they are deployed is the first step in making sure asset inventories are current. While it can be a lot of work, the most complete inventory of active systems and devices can be created by determining what is connected to the network by looking at logs, and then finding those assets. RFID tags are a common solution for tracking hardware assets and equipment. They can be queried wirelessly at varying ranges depending on the tags and may be built-in to hand-held readers or even included in doorways or arches to track items as they enter or leave a facility. Visual inventory relies on staff checking items, MAC addresses are hardware addresses for networked devices.
-  - 🍏**Tangible assets**: include hardware and software assets, cables, and buildings owned by the company. 
-  - 🍏**Intangible assets**: things like Patents, databases, and formulas, copyrights, a company’s reputation, and other assets representing potential revenue
+  - **Inventory**: complete list of items.  In most organizations, changing processes so that new systems and devices are added to inventory before they are deployed is the first step in making sure asset inventories are current. A system inventory is most frequently used to associate individuals with systems or devices. This can help when tracking their support history and aids in provisioning the proper tools, permissions, and data to a system. While it can be a lot of work, the most complete inventory of active systems and devices can be created by determining what is connected to the network by looking at logs, and then finding those assets. Barcodes & RFID tags are a common solution for tracking hardware assets and equipment. RFID tags can be queried wirelessly at varying ranges depending on the tags and may be built-in to hand-held readers or even included in doorways or arches to track items as they enter or leave a facility. Visual inventory relies on staff checking items, MAC addresses are hardware addresses for networked devices.
+  - 🍏**Tangible assets**: include hardware and software assets, cables, and buildings owned by the company. Tangible asset inventories include physical items owned by the organization. 
+  - 🍏**Intangible assets**: things like Patents, databases, and formulas, copyrights, a company’s reputation, Intellectual property, files stored on a server, and other assets representing potential revenue
     - an org should keep track of intangible assets, like intellectual property, patents, trademarks, and company’s reputation, and copyrights to protect them
     - To protect intangible inventories (like intellectual property, patents, trademarks, and company’s reputation, and copyrights), they need to be tracked
     - note: patents in the US are valid for 20 years
@@ -150,6 +154,7 @@
    - 🔴**System owner**: controls the computer storing the data; usually includes software and hardware configurations and support services (e.g. cloud implementation)
     - system owners are responsible for the systems that process the data
     - system owner is responsible for system operation and maintenance, and associated updating/patching as well as related procurement activities
+    - NIST SP 800-18 describes system owner responsibilities that include helping to develop system security plans, maintaining the plan, ensuring training, and identifying, implementing, and assessing security controls. 
     - Develops a system security plan
     - Ensures that system users receive appropriate security training
     - Identifies and implements security controls
@@ -180,6 +185,7 @@
   - 🔴**Security administrator**: responsible for ensuring the overall security of entire infrastructure; they perform tasks that lead to the discovery of vulnerabilities, monitor network traffic and configure tools to protect the network (like firewalls and antivirus software) 
     - security admins also devise security policies, plans for business continuity and disaster recovery and train staff
   - 🔴**Supervisors**: responsible for overseeing the activities of all the above entities and all support personnel; they ensure team activities are conducted smoothly and that personnel is properly skilled for the tasks assigned
+  - 🔴**Data Object**: In the subject/object model, the object is the resource being requested by a subject.
   - 🔴**Data Subject**: the person who the information is about.
   - 🔴**Users**: any person who accesses data from a computer device or system to accomplish work (think of users as employees or end users)
     - users should have access to the data they need to perform tasks; users should have access to data according to their roles and their need to access info
@@ -207,6 +213,7 @@
       - note: a current trend in many orgs is to reduce legal liabilities by implementing short retention policies with email
       - A data storage policy describes how and why data is stored.
       - A data retention policy can help to ensure that outdated data is purged, removing potential additional costs for discovery, and reducing the amount of data that may need to be produced for lawsuits. Many organizations have aggressive retention policies to both reduce the cost of storage and limit the amount of data that is kept on hand and discoverable.
+      - Always consult the organization's record retentions policy to determine the appropriate length of time to preserve records
   - Three fundamental retention policy questions:
     - 🔥**how to retain**: data should be kept in a manner that makes it accessible whenever required; take taxonomy (or the scheme for data classification) into account
     - 🔥**how long to retain data**: general guidelines for business data is 7 years (but can vary by country/region/regulation)
@@ -217,6 +224,7 @@
       - note that many OSs store files in clusters, which are groups of sectors (the smallest storage unit on a hard disk drive)
     - if media includes any type of private and sensitive data, it is important to eliminate data remanence
     - note that some OSs fill slack space with data from memory, which is why personnel should never process classified data on unclassified systems
+    - Remnant data is data that is left after attempts have been made to remove or erase it. itis also referred to as residual data.
     
 - 2.4.7 Data destruction
   - Destroy sensitive data when it is no longer needed
@@ -278,7 +286,7 @@
     - 🍎**Real Memory**: Static RAM and dynamic RAM are types of real memory and thus are all the same concept in relation to being 🔥volatile—­meaning they lose any data they were holding when power is lost or cycled. They are often classified under primary memory. Real or primary memory, such as RAM, is directly accessible by the CPU and is used to hold instructions and data for currently executing processes. 
          - ✴️Static RAM SRAM: Stores data using flip-flops. This means the data is ✏️retained as long as power is supplied. ✏️Faster because it doesn’t need to refresh. It can quickly read and write data. More expensive because it uses more transistors per bit of data and consumes more power. 🔥volatile
          - ✴️Dynamic RAM DRAM: Stores data using capacitors and transistors. The data needs to be refreshed periodically to maintain its integrity. ✏️Slower due to the need for periodic refreshing of the data stored in capacitors. cost-effective for ✏️larger memory capacities and ✏️consumes less power. 🔥volatile
-    - 🍎**Secondary Memory** is a term used to describe magnetic, optical, or flash media (i.e., typical storage devices like HDD, SSD, CD, DVD, and thumb drives). These devices will ✏️retain their contents after being removed from the computer and may later be read by another user. They are therefore 🔥non-volatile. Secondary memory, such as disk-based memory, is not directly accessible by the CPU.
+    - 🍎**Secondary Memory** is a term used to describe magnetic, optical, or flash media (i.e., typical storage devices like HDD, SSD, CD, DVD, and thumb drives). These devices will ✏️retain their contents after being removed from the computer and may later be read by another user. They are therefore 🔥non-volatile. Secondary memory, such as disk-based memory, is not directly accessible by the CPU. 📝The best way to ensure that data on DVDs is fully gone is to destroy them, and pulverizing DVDs is an appropriate means of destruction. DVD-ROMs are write-only media, meaning that secure erase and zero wipes won't work.
 
 - 2.6.2 Scoping and tailoring
   - 🔴**Baseline**: documented, lowest level of security config allowed by a standard or organisation
@@ -298,6 +306,7 @@
   - 🔴**Scoping**: limiting the general baseline recommendations by removing those that do not apply; part of the tailoring process and refers to reviewing a list of baseline ✏️ security controls ✏️ and selecting only those controls that apply to the systems you're trying to protect
     - scoping processes eliminate controls that are recommended in a baseline
     - Scoping is a part of the tailoring process and refers to reviewing a list of security controls and selecting the security controls that apply.
+    - Scoping is the process of reviewing and selecting security controls based on the system that they will be applied to. 
     - Scoping involves selecting only the controls that are appropriate for your IT systems
     - Scoping involves setting the boundaries of security control implementations.
 
