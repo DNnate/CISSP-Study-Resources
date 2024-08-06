@@ -19,10 +19,10 @@
   - Managing the data lifecycle refers to protecting it from cradle to grave -- steps need to be taken to protect data when it's first created until it's destroyed
   - One of the first steps in the lifecycle is identifying and classifying information and assets, often within a security policy
   - In this context, assets include sensitive data, the hardware used to process that data, and the media used to store/hold it
-  - **Data categorization**: process of grouping sets of data, info or knowledge that have comparable sensativities (e.g. impact or loss rating), and have similar law/contract/compliance security needs
+  - **Data categorization**: process of grouping sets of data, info or knowledge that have comparable sensativities (e.g. impact or loss rating), and have similar law/contract/compliance security needs. In the 🍎NIST SP 800-60 diagram, the process determines appropriate categorization levels resulting in security categorization and then uses that as an input to determine controls. 
   - **Sensitive data**: any information that isn't public or unclassified, and can include anything an org needs to protect due to its value, or to comply with existing laws and regulations
   - **Personally Identifiable Information (PII)**: any information that can identify an individual
-    - more specifically, info about an individual including (1) any info that can be used to distinguish or trace an individual‘s identity, such as name, social security number, date and place of birth, mother‘s maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information ([NIST SP 800-122](https://csrc.nist.gov/publications/detail/sp/800-122/final)) NIST Special Publication ✴️800-122
+    - more specifically, info about an individual including (1) any info that can be used to distinguish or trace an individual‘s identity, such as name, social security number, date and place of birth, mother‘s maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information. This would also include any other unique identifier (including a student ID number). ❗ZIP/Post code, by itself, does not uniquely identify an individual. ([NIST SP 800-122](https://csrc.nist.gov/publications/detail/sp/800-122/final)) NIST Special Publication ✴️800-122
   - **Protected Health Information (PHI)**: any health-related information that can be related to a specific person
   - **Proprietary data**: any data that helps an organization maintain a competitive edge
   - Organizations classify data using labels
@@ -45,15 +45,16 @@
 - 2.1.2 Asset Classification
   - It's important to identify and classify assets, such as systems, mobile devices etc.
   - **Classification**: derived from compliance mandates, the process of recognizing organizational impacts if information suffers any security compromise (whether to confidentiality, integrity, availability, non-repudiation, authenticity, privacy, or safety)
-  - Classification identifies the value of data to an organization
-  - 📝Asset classifications should match data classification, i.e. if a computer is processing top secret data, the computer should be classified as a top secret asset
-  - Handling requirements and tools include visual indicators like a distinctive screen background and can help employees remember what level of classification they are dealing with and thus the handling requirements that they are expected to follow.
-  - **Clearance**: relates to access of certain classfication of data or equipment, and who has access to that level or classification
-  - A **formal access approval process** should be used to change user access; the process should involve approval from the data/asset owner, and the user should be informed about rules and limits
-    - before a user is granted access they should be educated on working with that level of classification
-  - Classification levels can be used by businesses during acquisitions, ensuring only personnel who need to know are involved in the assessment or transition
-  - In general, classification labels help users use data and assets properly, for instance by restricting dissemination or use of assets by their classification
-  - **Sensitive data scanning tools:** To identify data that should be classified that already exists in an environment, Sensitive data scanning tools can be used. They are designed to scan for and flag sensitive data types using known formatting and structure. Social Security numbers, credit card numbers, and other regularly structured data that follows known rules can be identified and then addressed as needed. examples include Microsoft Azure Information Protection (AIP), Varonis Data Security Platform, Vormetric Data Security Platform. Some DLP solutions also offer this tool/capability as part of thier broader solution.
+      - Classification identifies the value of data to an organization
+      - 📝Asset classifications should match data classification, i.e. if a computer is processing top secret data, the computer should be classified as a top secret asset
+      - Handling requirements and tools include visual indicators like a distinctive screen background and can help employees remember what level of classification they are dealing with and thus the handling requirements that they are expected to follow.
+      - **Reclassifying Data**: When the value of data changes due to legal, compliance, or business reasons, reviewing classifications and reclassifying the data is an appropriate response. Once the review is complete, data can be reclassified and handled according to its classification level. 
+      - **Clearance**: relates to access of certain classfication of data or equipment, and who has access to that level or classification
+      - A **Formal Access Approval Process** should be used to change user access; the process should involve approval from the data/asset owner, and the user should be informed about rules and limits
+      - before a user is granted access they should be educated on working with that level of classification
+      - Classification levels can be used by businesses during acquisitions, ensuring only personnel who need to know are involved in the assessment or transition
+      - In general, classification labels help users use data and assets properly, for instance by restricting dissemination or use of assets by their classification
+      - **Sensitive Data Scanning Tools:** To identify data that should be classified that already exists in an environment, Sensitive data scanning tools can be used. They are designed to scan for and flag sensitive data types using known formatting and structure. Social Security numbers, credit card numbers, and other regularly structured data that follows known rules can be identified and then addressed as needed. examples include Microsoft Azure Information Protection (AIP), Varonis Data Security Platform, Vormetric Data Security Platform. Some DLP solutions also offer this tool/capability as part of thier broader solution.
 
 [2.2](#2.2) Establish information and asset handling requirements (OSG-9 Chpt 5)
 
@@ -83,9 +84,10 @@
       - Purging is a more intensive form of clearing for 📝reuse in lower-security areas
       - The 🍎NIST SP 800-88 process for sanitization and disposition shows that media that will be reused and was classified at a moderate level should be purged and then that purge should be validated. Finally, it should be documented. ✏️Validation processes are conducted to ensure that the sanitization process was completed, avoiding data remanence. A validation form  helps to ensure that each device has been checked and that it was properly wiped, purged, or sanitized. 
   - ✴️**Overwriting**: Same as Clearing and also known as 🔥Purging. Overwriting the disks multiple times will remove all existing data. This is called purging, and purged media can then be 📝re-used again.
-       - Single-pass wipe: involves overwriting the entire hard drive with random data once (e.g replacing with 0s and 1s).
+       - Single-pass wipe: involves overwriting the entire hard drive with random data once (e.g replacing with 0s and 1s). 
        - Multi-pass wipes: involves overwriting the drive multiple times, and is more secure against advanced recovery techniques.
-  - ✴️**Degaussing**: used on magentic media. Degaussing the disks often damages the electronics but doesn’t reliably remove the data. Tapes can be erased by degaussing, but degaussing is not always fully effective. 
+       - Zero fill wipes a drive by replacing data with zeros
+  - ✴️**Degaussing**: used on ✏️magentic media. Degaussing the disks often damages the electronics but doesn’t reliably remove the data. Tapes can be erased by degaussing, but degaussing is not always fully effective. 
   - ✴️**Erasing**: usually refers to a delete operation on media, leaving data remanence. It rarely remove the data from media but instead mark it for deletion. Erasing is the deletion of files or media and may not include all of the data on the device or media, making it the 📝worst choice here. Erasing, which describes a typical deletion process in many operating systems, typically removes only the link to the file and leaves the data that makes up the file itself. The data will remain in place but not indexed until the space is needed and it is overwritten. 
   - ✴️**Cryptographic Erasure**: AKA cryptoshedding, basically destroying encryption key; may be only secure method for 🧠cloud storage
   - The standard methods for clearing magnetic tapes, according to the NIST Guidelines for Media Sanitization, are overwriting the tape with nonsensitive data, degaussing, and physical destruction via shredding or incineration. Reformatting a tape does not remove remnant data.
@@ -98,43 +100,51 @@
 - **Least privilege**: a principle stating that subjects are granted only the privileges necessary to perform assigned work tasks and no more
 
 - 2.3.1 Information and asset ownership
-  - **Data owner**: the person who has ultimate organizational responsibility for data; usually sr. manager (CEO,president, dept. head); data owners typically delegate data protection tasks to others in the org
+  - ☪️**Data owner**: the person who has ultimate organizational responsibility for data; usually sr. manager (CEO,president, dept. head); data owners typically delegate data protection tasks to others in the org
+  - ☪️**Asset Owner**: identifies the individual(s) responsible for protecting the asset or for delegating the task of protecting the asset
 
 - 2.3.2 Asset inventory (e.g., tangible, intangible)
-  - **Inventory**: complete list of items. In most organizations, changing processes so that new systems and devices are added to inventory before they are deployed is the first step in making sure asset inventories are current. While it can be a lot of work, the most complete inventory of active systems and devices can be created by determining what is connected to the network and then finding those assets.
+  - **Inventory**: complete list of items. In most organizations, changing processes so that new systems and devices are added to inventory before they are deployed is the first step in making sure asset inventories are current. While it can be a lot of work, the most complete inventory of active systems and devices can be created by determining what is connected to the network by looking at logs, and then finding those assets. RFID tags are a common solution for tracking hardware assets and equipment. They can be queried wirelessly at varying ranges depending on the tags and may be built-in to hand-held readers or even included in doorways or arches to track items as they enter or leave a facility. Visual inventory relies on staff checking items, MAC addresses are hardware addresses for networked devices.
   - 🍏**Tangible assets**: include hardware and software assets, cables, and buildings owned by the company. 
   - 🍏**Intangible assets**: things like Patents, databases, and formulas, copyrights, a company’s reputation, and other assets representing potential revenue
     - an org should keep track of intangible assets, like intellectual property, patents, trademarks, and company’s reputation, and copyrights to protect them
+    - To protect intangible inventories (like intellectual property, patents, trademarks, and company’s reputation, and copyrights), they need to be tracked
     - note: patents in the US are valid for 20 years
   - 🍏**Personnel Assets**: Employees 
 
 - 2.3.3 Asset management
   - Asset management refers to managing both tangible and intangible assets; this starts with inventories of assets, tracking the assets, and taking additional steps to protect them throughout their lifetime
   - **Accountability**: ensures that account management has assurance that only authorized users are accessing a system and using it properly
-  - **Hardware assets**: IT resources such as computers, servers, routers, switches and peripherals
+  - 🍏**Hardware assets**: IT resources such as computers, servers, routers, switches and peripherals
     - use an automated configuration management system (CMS) to help with hardware asset management
     - use barcodes, RFID tags to track hardware assets
-  - **Software assets**: operating systems and applications 
+  - 🍏**Software assets**: operating systems and applications 
     - important to monitor license compliance to avoid legal issues
     - software licensing also refers to ensuring that systems do not have unauthorized software installed
-  - To protect intangible inventories (like intellectual property, patents, trademarks, and company’s reputation, and copyrights), they need to be tracked
-- **NIST SPECIAL PUBLICATION 1800-5**: IT Asset Management Reference Architecture
-     -  Tier 1 Systems: Tier 1 systems collect, store, and analyze the data that they receive from the Tier 2 systems. They allow users to analyze the data and to visualize it for further analysis. e.g splunk
-     -  Tier 2 Systems: Tier 2 is composed of systems that each perform a unique task. Each Tier 2 system is fully capable of collecting, storing, and analyzing data pertaining to its unique task. The middle tier systems filter relevant and desired data from the raw data collected and forward this data to the analysis engine and visualization tool for further analysis e.g Fathom, Bro, Snort, OpenVAS, WSUS, BelManage, BelManage Data Analytics, Puppet, openswan, iStar/C-Cure Controller
-     -  Tier 3 Systems: Tier 3 systems are the assets (end points) on the enterprise network that are owned by the enterprise, such as workstations, switches, servers, users’ laptops, virtual machines, and other devices. All enterprise assets are monitored from the start of their lifecycle until disposal by the systems in the Tier 2. Device location, owner, installed software catalog, current security vulnerabilities, and abnormal traffic activity are captured to allow for better visibility by administrators e.g AD, camera, PC, laptops, mobile phones, router and firewall
-     -  
-
+- **NIST Special Publication 1800-5**: IT Asset Management Reference Architecture
+     -  🎈Tier 1 Systems: Tier 1 systems collect, store, and analyze the data that they receive from the Tier 2 systems. They allow users to analyze the data and to visualize it for further analysis. e.g splunk
+     -  🎈Tier 2 Systems: Tier 2 is composed of systems that each perform a unique task. Each Tier 2 system is fully capable of collecting, storing, and analyzing data pertaining to its unique task. The middle tier systems filter relevant and desired data from the raw data collected and forward this data to the analysis engine and visualization tool for further analysis e.g Fathom, Bro, Snort, OpenVAS, WSUS, BelManage, BelManage Data Analytics, Puppet, openswan, iStar/C-Cure Controller
+     -  🎈Tier 3 Systems: Tier 3 systems are the assets (end points) on the enterprise network that are owned by the enterprise, such as workstations, switches, servers, users’ laptops, virtual machines, and other devices. All enterprise assets are monitored from the start of their lifecycle until disposal by the systems in the Tier 2. Device location, owner, installed software catalog, current security vulnerabilities, and abnormal traffic activity are captured to allow for better visibility by administrators e.g AD, camera, PC, laptops, mobile phones, router and firewall
 
 [2.4](#2.4) Manage data lifecycle (OSG-9 Chpt 5)
 - 2.4.1 Data roles (i.e., owners, controllers, custodians, processors, users/subjects)
-  - 🔴**Business/Mission Owners**:-  Typically own processes or programs. they ensure that all operations fit within the business goals and mission. This task includes ensuring that collected data is necessary for the business to function. Collecting unnecessary data wastes time and resources. Because the business/mission owner is primarily concerned with the overall business, conflicts between data owners, data custodians, and system owners may need to be resolved by the business/mission owner, who will need to make the best decision for the organization. Business owners are most likely to select and apply COBIT to balance the need for security controls against business requirements. Business owners have to balance the need to provide value with regulatory, security, and other requirements. This makes the adoption of a common framework like COBIT attractive. Business owners are typically project or system owners who are tasked with making sure systems provide value to their users or customers.
-  - 🔴**Data Owner**: the entity that collects/creates the PII and is legally responsible and accountable for protecting it and educating others about how to protect the data through dissemination of intellectual property rights documentation, policies and regulatory requirements,
-       - specific protective measures that are expected of custodians, and compliance requirements.
+  - 🔴**Business/Mission Owners**:-  Typically own processes or programs. they ensure that all operations fit within the business goals and mission.
+      - This task includes ensuring that collected data is necessary for the business to function. Collecting unnecessary data wastes time and resources.
+      - Because the business/mission owner is primarily concerned with the overall business
+      - Conflicts between data owners, data custodians, and system owners may need to be resolved by the business/mission owner, who will need to make the best decision for the organization.
+      - business owners are tasked with ensuring that systems are fulfilling their business purpose
+      - Business owners are most likely to select and apply COBIT to balance the need for security controls against business requirements.
+      - Business owners have to balance the need to provide value with regulatory, security, and other requirements. This makes the adoption of a common framework like COBIT attractive.
+      - Business owners are typically project or system owners who are tasked with making sure systems provide value to their users or customers.
+      - Mission owners are typically program or information system owners.
+
+  - 🔴**Data Owner**: the entity that collects/creates the PII and is legally responsible and accountable for protecting it and educating others about how to protect the data through dissemination of intellectual property rights documentation, policies and regulatory requirements, specific protective measures that are expected of custodians, and compliance requirements.
        - Data owners are tasked with making decisions about data, such as who receives access to it and how it is used.
+       - The data owner bears responsibility for categorizing information systems 
        - The data owner has ultimate responsibility for data belonging to an organization and is typically the CEO, president, or another senior employee
        - Data owners are more likely to ask that those responsible for control selection identify a standard to use if they are not also acting as business owners.
        - They are responsible for classifying the data that they own as well as assisting with or advising the system owners on security requirements and control selection
-       - The data owner is the person responsible for classifying data, selecting the required controls for each classification, and selecting baseline security standards for the organization.
+       - The data owner is the person responsible for classifying data, delegates selection of the required controls for each classification to system owners, and selecting baseline security standards for the organization.
        - data owner is the person respsonible for classifying, categorizing, and permitting access to the data; the data owner is the person who is best familiar with the importance of the data to the business
        - The data owner sets the rules for use and protection of data.
    - 🔴**System owner**: controls the computer storing the data; usually includes software and hardware configurations and support services (e.g. cloud implementation)
@@ -150,7 +160,7 @@
     - e.g. a company that collects personal information on employees for payroll is a data controller (but, if they pass this info to a third-party to process payroll, the payroll company is the data processor, see below)
     - A data controller decides what data to process and directs the data processor to process the data.
   - 🔴**Data processor**: 📯🅾️an entity working on behalf (or the direction) of the data controller, that processes PII; they have a responsibility to protect the privacy of the data and not use it for any purpose other than directed by the data controller; **OR** 📯🅾️ Data processor is any system used to process data. 
-    - a data controller can hire a third party to process data, and in this context, the third party is the data processor; data processors are often third-party entities that process data for an org at the direction of the data controller
+    - a data controller can hire a third party to process data, and in this context, the third party is the data processor; data processors are often 🧠third-party entities that process data for an org at the direction of the data controller
     - Third-party organizations that process personal data on behalf of a data controller are known as data processors. The organization that they are contracting with would act in the role of the business or mission owners, and others within the third party organization would have the role of data administrators, granting access as needed to the data based on their operational procedures and data classification.
     - note GDPR definition: "a natural or legal person, public authority, agency, or other body, which processes personal data soley on behalf of the data controller"
       - GDPR also restricts data tranfers to countries outside EU, with fines for violations
@@ -159,9 +169,13 @@
       - responsible for the protection of data through maintenance activities, backing up and archiving, and preventing the loss or corruption and recovering data.
       - They include ✏️IT Staff in an information technology (IT) department who are delegated responsibility for day-to-day tasks.
       - Custodians are trusted to ensure the day-to-day security of the data and should do so by ensuring that the baseline is met and maintained.
+      - Custodians are tasked with the day-to-day monitoring of the integrity and security of data. 
       - He/She is responsible for the technical environment, including things like database structures and the technical implementations of data policies.
-      - The system administrators can act in the roles of data administrators who grant access and will also act as custodians who are tasked with the day-to-day application of security controls such as providing/granting/managing user access.
       - Controls are scoped and tailored, applied and enforced by Custodians.
+      - custodians implement the controls
+      - custodians are granted rights to perform day-to-day tasks when handling data
+  - 🔴**Administrators** have the rights to apply the permissions to access and handle data.
+      - The system administrators can act in the roles of data administrators who grant access and will also act as custodians who are tasked with the day-to-day application of security controls such as providing/granting/managing user access.
   - 🔴**Data Steward**: a newer concept related to users of the data; those who use the data for the business purpose. In many organizations, data stewards are internal roles that oversee how data is used
   - 🔴**Security administrator**: responsible for ensuring the overall security of entire infrastructure; they perform tasks that lead to the discovery of vulnerabilities, monitor network traffic and configure tools to protect the network (like firewalls and antivirus software) 
     - security admins also devise security policies, plans for business continuity and disaster recovery and train staff
@@ -181,7 +195,7 @@
   - Consider distance between data/storage locations to mitigate potential mutual (primary and backup) damage risk
 
 - 2.4.4 Data maintenance
-  - **Data maintenance**: managing data through the data lifecycle (creation, usage, retirement); data maintenance is the process (often automated) of making sure the data is available (or not available) based on where it is in the lifecycle. During the data maintenance phase of a typical data lifecycle, activities like data scrubbing occur to remove unneeded, incorrect, or out-of-date data.
+  - 🔵**Data Maintenance**: managing data through the data lifecycle (creation, usage, retirement); data maintenance is the process (often automated) of making sure the data is available (or not available) based on where it is in the lifecycle. During the data maintenance phase of a typical data lifecycle, activities like data scrubbing occur to remove unneeded, incorrect, or out-of-date data.
   - Data lifecycle:  Data Maintenance ↪️🔄 Data Collection ➡️ Data Analysis ➡️ Data Usage ➡️ Data Retention ➡️ Data Destruction ↩️🔄 Data Maintenance 
   - In a typical data lifecycle, collection is the first stage. Once collected, data can be analyzed, used, stored, and disposed of at the end of its useful life. Policies may be created at any time, and organizations often have data before they have policies. Labels are added to data during the analysis, usage, or retention cycle.
   - Ensuring appropriate asset protection requires that sensitive data be preserved for a period of not less than what is business-required, but for no longer than necessary
@@ -189,15 +203,16 @@
   - Safeguard assets via basic security controls to enforce appropriate levels of confidentiality, integrity and availability and act per security policies, standards, procedures and guidelines
 - 2.4.5 Data retention
   - Retention requirements apply to data or records, media holding sensitive data, systems that process sensitive data, and personnel who have access to sensitive data. Record retention policies define the amount of time to keep data, and laws or regulations often drive these policies.
-    - **record retention**: retaining and maintaining info as long as it is needed, and destroying it when its no longer needed
+    - 🔵**Record Retention**: Record retention is the process of retaining and maintaining information for as long as it is needed. 
       - note: a current trend in many orgs is to reduce legal liabilities by implementing short retention policies with email
-      - A data retention policy can help to ensure that outdated data is purged, removing potential additional costs for discovery. Many organizations have aggressive retention policies to both reduce the cost of storage and limit the amount of data that is kept on hand and discoverable.
+      - A data storage policy describes how and why data is stored.
+      - A data retention policy can help to ensure that outdated data is purged, removing potential additional costs for discovery, and reducing the amount of data that may need to be produced for lawsuits. Many organizations have aggressive retention policies to both reduce the cost of storage and limit the amount of data that is kept on hand and discoverable.
   - Three fundamental retention policy questions:
     - 🔥**how to retain**: data should be kept in a manner that makes it accessible whenever required; take taxonomy (or the scheme for data classification) into account
     - 🔥**how long to retain data**: general guidelines for business data is 7 years (but can vary by country/region/regulation)
     - 🔥**what data**: to retain per org requirements
 - 2.4.6 Data remanence
-  - **Data remanence**: the data remaining on media after the data is supposedly erased
+  - 🔵**Data Remanence**: the data remaining on media after the data is supposedly erased
     - typically refers to data on a hard drive as residual magnetic flux or slack space (unused space within a disk cluster)
       - note that many OSs store files in clusters, which are groups of sectors (the smallest storage unit on a hard disk drive)
     - if media includes any type of private and sensitive data, it is important to eliminate data remanence
@@ -222,7 +237,6 @@
 
 - You need security controls that protect data in each possible state: at rest, in transit or in use
 - Each state requires a different approach to security; note that there aren’t as many security options for data in use as there are for data at rest or data in transit
-  -  keeping the systems patched, maintaining a standard computer build process, and running anti-virus/malware are typically the real-world primary protections for data in use
 
 - 2.6.1 Data states (e.g., in use, in transit, at rest)
   - The three data states are at rest, in transit, and in use
@@ -246,6 +260,7 @@
       - parameter checking against buffer overflow,
       - Address space layout randomization (ASLR) is a memory-protection process for operating systems (OSes) that guards against buffer-overflow attacks by randomizing the location where system executables are loaded into memory
       - Purging memory buffers removes all remnants of data after a program has used it.
+      - keeping the systems patched, maintaining a standard computer build process, and running anti-virus/malware are typically the real-world primary protections for data in use
    
 - **Different types of memory**:
     - ROM is 🔥nonvolatile and can’t be written to by the end user.
@@ -289,7 +304,7 @@
 
 - 2.6.4 Data protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB)) 
   - **Data protection methods** include: 
-    - **digital rights management (DRM)**: methods used in attempt to protect copyrighted materials. there is hardware and software based DRMs. Methods used with DRM include:
+    - **Digital Rights Management (DRM)**: methods used in attempt to protect copyrighted materials. there is hardware and software based DRMs. Methods used with DRM include:
          - Persistent online authentication
          - Automatic expiration
          - Continuous audit trail  
@@ -302,6 +317,7 @@
       - be sure to consider all locations for data at rest, such as tapes, USB drives, external drives, RAID arrays, SAN, NAS, and optical media
       - ✏️AES is a strong modern symmetric encryption algorithm that is appropriate for encrypting data at rest. Using strong encryption, like AES-256, can help ensure that loss of removable media like tapes doesn't result in a data breach.
       - ✏️Full disk encryption like Bitlocker can protect data at rest.
+      - Tapes may be vulnerable to theft or loss in transit. That means that tapes that are leaving their normal storage facility should be handled according to the organization's classification schemes and handling requirements.
       - ✏️DRM is useful for data at rest because DRM "travels with the data" regardless of the data state
       - For example, A watermark is used to digitally label data and can be used to indicate ownership, as well as to assist a digital rights management (DRM) system in identifying data that should be protected.
       - DRM is especially useful when you can’t encrypt data volumes
@@ -312,30 +328,28 @@
       - ✏️DLP solutions are useful for data in transit, scanning data on the wire, and stopping the transmission/transfer, based on the DLP rules set (e.g. outbound data that contains numbers matching a social security number pattern, a DLP rule can be used to block that traffic)
     - 🌟**Data in use**: 
       - ✏️CASB solution often combines DLP, a web application firewall with some type of authentication and authorization, and a network firewall in a single solution; A CASB solution is helpful for protecting data in use (and data in transit)
-  - **Pseudonymization**: refers to the process of using pseudonyms or alias to represent other data
-    - A pseudonym is an alias, and pseudonymization can prevent data from directly identifying an entity (i.e. person)
-    - the process can be reversed
-  - **Tokenization**: use of a token, typically a random string of characters, to replace other data
-    - note that tokenization is similar to pseudonymization in that they are both used to represent other data, and the token or pseudonym have no meaning or value outside the process that creates and links them to that data
-    - If company are reselling products to the same customers, they can use tokenization to save tokens that match the credit card data, instead of saving and storing credit card data.
-    - example of tokenization used in CC transactions:
-    - registration: app on user's smart phone securely sends CC info to the credit card processor (CCP)
-    - The CCP sends the CC info to a tokenization vault, creating a token and associating it with the user's phone
-    - usage: when the user makes a purchase, the POS system sends the token to the CCP for authorization
-    - validation: the CCP sends the token to the tokenization vault; the vault replies with the CC info, the charge is processed
-    - completing the sale: the CCP sends a reply to the POS indicating the charge is approved
-    - this system prevents CC theft at the POS system
-    - Tokenization replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
-- **Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified.
-    -  Anonymization techniques remove all personal data and make the data unusable for reuse on the website. Techniques of Data Anonymization
-  1. Data masking: obscures some, but not all, data
-  2. Pseudonymization: Pseudonymization involves replacing identifiable information with pseudonyms or identifiers that do not directly reveal the identity of individuals. The original data can only be restored if additional information, kept separate, is used.
-  3. Generalization
-  4. Data swapping: Swapping data involves exchanging data between different records, which can still potentially allow for some degree of identification, especially if the data structure or patterns are recognizable.
-  5. Data perturbation: is the use of false or misleading data in a database management system in order to redirect or thwart information confidentiality attacks.
-  6. Synthetic data
--
-- **Randomizing data** Randomizing data is a common approach to anonymization. It involves replacing PII with artificial but realistic-looking data. This technique ensures that the data in a test environment does not correspond to any actual individuals, thus protecting privacy while maintaining the data’s utility for testing purposes.
+  - 🟢**Pseudonymization**: refers to the process of using pseudonyms or alias to represent other data
+       - A pseudonym is an alias, and pseudonymization can prevent data from directly identifying an entity (i.e. person)
+       - the process can be reversed
+  - 🟢**Tokenization**: use of a token, typically a random string of characters that ✏️remains the same for each instance of that data, to replace other data. Tokenization replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
+       - note that tokenization is similar to pseudonymization in that they are both used to represent other data, and the token or pseudonym have no meaning or value outside the process that creates and links them to that data
+       - If company are reselling products to the same customers, they can use tokenization to save tokens that match the credit card data, instead of saving and storing credit card data.
+       - example of tokenization used in Credit Card transactions:
+       - registration: app on user's smart phone securely sends CC info to the credit card processor (CCP)
+       - The CCP sends the CC info to a tokenization vault, creating a token and associating it with the user's phone
+       - usage: when the user makes a purchase, the POS system sends the token to the CCP for authorization
+       - validation: the CCP sends the token to the tokenization vault; the vault replies with the CC info, the charge is processed
+       - completing the sale: the CCP sends a reply to the POS indicating the charge is approved
+       - this system prevents CC theft at the POS system
+  - 🟢**Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified.
+       - Anonymization techniques remove all personal data and make the data unusable for reuse on the website. Techniques of Data Anonymization
+       - 1. Data masking: obscures some, but not all, data
+         2. Pseudonymization: Pseudonymization involves replacing identifiable information with pseudonyms or identifiers that do not directly reveal the identity of individuals. The original data can only be restored if additional information, kept separate, is used.
+         3. Generalization
+         4. Data swapping: Swapping data involves exchanging data between different records, which can still potentially allow for some degree of identification, especially if the data structure or patterns are recognizable.
+         5. Data perturbation: is the use of false or misleading data in a database management system in order to redirect or thwart information confidentiality attacks.
+         6. Synthetic data
+  - 🟢**Randomizing data** Randomizing data is a common approach to anonymization. It involves replacing PII with artificial but realistic-looking data. This technique ensures that the data in a test environment does not correspond to any actual individuals, thus protecting privacy while maintaining the data’s utility for testing purposes.
 
 - **Policy ▶️ Standard ▶️ Baseline ▶️ Guideline ▶️Procedure**
     - **Policy**: Policy is High level from Management 
