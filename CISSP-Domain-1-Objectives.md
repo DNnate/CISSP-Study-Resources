@@ -79,6 +79,10 @@
     - 🍮Authorization: defining the needed resources, permissions (i.e. allow/grant and/or deny) to a resource, and object access for a specific identity or subject
     - 🍮Auditing: recording a log of the events and activities related to the system and subjects
     - 🍮Accounting: (aka accountability) access control process which records info about attempts by all entities to access resources; reviewing log files to check for compliance and violations in order to hold subjects accountable for their actions, especially violations of organizational security policy
+- 🔵**disclosure, alteration, and destruction (DAD)**: The CIA triad may also be described by its opposite: disclosure, alteration, and destruction (DAD). While the order of the individual components of the CIA acronym sometimes changes, the DAD acronym is shown in that order
+     - Disclosure is the unauthorized release of information,
+     - Alteration is the unauthorized modification of data, and
+     - Destruction is making systems or data unavailable. 
  
 [1.3](#1.3) Evaluate and apply security governance principles (OSG-9 Chpt 1)
  
@@ -197,6 +201,7 @@
   - 🔴**Due care**: 🧑‍🏭 practicing the individual activities that maintain the due diligence/ security effort; due care is about your legal responsibility within the law or within org policies to implement your org’s controls, follow security policies, do the right thing and make reasonable choices
   - Security documentation is the security policy
   - Due care is ✏️doing the right action at the right time.
+  - It is often called the prudent man rule. Gross negligence is the opposite of due care.
   - exercise reasonable security measures to protect assets
   - it imposes a standard of care upon an individual that is broad and equivalent to what one would expect from a reasonable person under the circumstances
   - Once due dilligence is done, you must use due care while undertaking the actions to protect the interests of the organization, and the customers information
@@ -218,7 +223,13 @@
     	- Administrative laws do not require an act of the legislative branch to implement at the federal level. Administrative laws consist of the policies, procedures, and regulations promulgated by agencies of the executive branch of government. Although they do not require an act of Congress or an act of the legislative branch to implement at the federal level, these laws are subject to judicial review and must 🧠comply with criminal and civil laws enacted by the legislative branch. HIPAA is an example of administrative law.
      - **Common law**: is precedent based rather than statutes or written law. ✏️Precedent: A legal principle or rule established in a previous judicial decision that is used to guide judges in deciding subsequent cases with similar issues or facts. ✏️Stare Decisis: This is the doctrine of adhering to established precedents. It means “to stand by things decided” and ensures consistency and predictability in the law by requiring courts to follow the decisions made in earlier cases.
   - **Compliance**: Organizations may find themselves subject to a wide variety of laws, and regulations imposed by regulatory agencies or contractual obligation
-    - **Payment Card Industry Data Security Standard (PCI DSS)** - governs the security of credit card information and is enforced through the terms of a merchant agreement between a business that accepts CC payments, and the bank that processes the business' transactions. It includes requirements that merchants promptly report incidents affecting the security of credit card information. Because it is not a law, PCI DSS violations cannot incur criminal sanctions. It is enforced through contractual relationships between merchants and their banks. Therefore, the 🍎bank would be the appropriate entity to initiate an investigation under PCI DSS. 
+    - **Payment Card Industry Data Security Standard (PCI DSS)** - governs the security of credit card information and is enforced through the terms of a merchant agreement between a business that accepts CC payments, and the bank that processes the business' transactions. It includes requirements that merchants promptly report incidents affecting the security of credit card information. Because it is not a law, PCI DSS violations cannot incur criminal sanctions. It is enforced through contractual relationships between merchants and their banks. Therefore, the 🍎bank would be the appropriate entity to initiate an investigation under PCI DSS. The core principles of PCI-DSS (available at https://www.pcisecuritystandardsnorg/security_standards/index.php) are
+      - • Build and Maintain a Secure Network and Systems
+      - • Protect Cardholder Data
+      - • Maintain a Vulnerability Management Program
+      - • Implement Strong Access Control Measures
+      - • Regularly Monitor and Test Networks
+      - • Maintain an Information Security Policy
     - **Sarbanes-Oxley (SOX)** - governs the financial records of publicly traded companies. financial systems may be audited to ensure security controls are sufficient to ensure compliance with SOX. It ✏️protects investors.  required publicly traded companies to implement a wide range of controls intended to ✏️minimize conflicts of interest, ✏️provide investors with appropriate risk information, place civil and ✏️criminal penalties👮 on executives for providing false financial disclosures, and provide protections for ✏️whistleblowers who report inappropriate actions to regulators.
     - **Gramm-Leach-Bliley Act (GLBA)** - covers the customer records of financial institutions. ✏️affects banks, insurance companies, and credit providers; included a number of ✏️limitations on the types of information that could be exchanged even among subsidiaries of the same corp, and required financial institutions to provide ✏️written privacy policies to all their customers. It contains provisions regulating the privacy of customer financial information. It applies specifically to financial institutions.
     - **Health Insurance Portability and Accountability Act (HIPAA)** - privacy and security regulations requiring strict security measures for hospitals, physicians, insurance companies, and other organizations that process or store private medical information about individuals, including information about an individual's medical bills; also clearly defines the rights of individuals who are the subject of medical records and requires organizations that maintain such records to disclose these rights in writing. It is a U.S. law governing the healthcare sector that does provide for criminal👮 penalties.
@@ -408,6 +419,10 @@
     - Because industry standards represent well-understood and widely implemented best practices, many orgs try to adhere to them even when they are not required to do so in order to improve security, and reduce operational and other risks
   - **Regulatory**: A regulatory investigation is conducted by a regulatory body, such as the Securities and Exchange Commission (SEC) or Financial Industry Regulatory Authority (FINRA), against an org suspected of an infraction 
     - Here the org is required to comply with the investigation, e.g., by not hiding or destroying evidence
+- **Liability:** Questions of liability often turn into questions regarding potential negligence. When attempting to determine whether certain actions or inactions constitute negligence, the ✏️Prudent Man Rule, which we will define shortly, is often applied
+     - 🎈Statutory Statutory damages are those prescribed by law, which can be awarded to the victim even if the victim incurred no actual loss or injury
+     - 🎈Compensatory The purpose of compensatory damages is to provide the victim with a financial award in effort to compensate for the loss or injury incurred as a direct result of the wrongdoing
+     - 🎈Punitive The intent of punitive damages is to punish an individual or organization. These damages are typically awarded to attempt to discourage a particularly egregious violation where the compensatory or statutory damages alone would not act as a deterrent
 
 [1.7](#1.7) Develop, document, and implement security policy, standards, procedures and guidelines (OSG-9 Chpt 1)
 - The top tier of a formalized hierarchical organization security documentation is the security policy
@@ -423,15 +438,16 @@
   - 🔥**Standards**: specific mandates explicity stating expections of performance/conformance; more descriptive than policies, standards define :compulsary requirements for the homogenous use of hardware, software, technology, and security controls, uniformly implemented throughout the org. It could be internal or external.
     - A standard defines compulsory requirements for the homogenous use of hardware, software, technology, and security controls.
     - Standards are ❄️Mandatory
+    - A standard describes the specific use of technology, often applied to hardware and software. “All employees will receive an ACME Nexus-6 laptop with 8 GB of memory, a 3.3 GHZ quad core central processing unit (CPU), and 500-gigabyte disk” is an example of a hardware standard. “The laptops will run Windows 10 Enterprise, 64-bit version” is an example of a software (operating system) standard.
   - 🔥**Baseline**: ✏️defines a minimum level of security that every system throughout the organization must meet; baselines are usually ✏️system specific and refer to industry / government standards. It is often related to configuration. 
     - A baseline is a more operationally focused form of a standard.
     - e.g. a baseline for  server builds would be a list of configuration areas that should be applied to every server that is built
-    - Baselines are ❄️Mandatory. All systems not complying with the baseline should be taken out of production until they can be brought up to the baseline.
+    - Baselines are ❄️Mandatory and discretionary. All systems not complying with the baseline should be taken out of production until they can be brought up to the baseline.
     - A Group Policy Object (GPO) in a Windows network is sometimes used to comply with standards; configuration management solutions can also help you establish baselines and spot configurations that are not in alignment
   - 🔥**Guideline**: offers ❄️Recommendations and best practices on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
     - Guidelines are flexible, and can be customized for unique systems or conditions; they state which security mechanism should be deployed instead of prescribing a specific product or control; they are not complusory; suggested practices and expectations of activity to best accomplish tasks and goals
     - **Framework** are a set of guidlines
-  - 🔥**Procedure** (AKA Standard Operating Procedure or SOP): detailed, ❄️step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution
+  - 🔥**Procedure** (AKA Standard Operating Procedure or SOP): detailed, ❄️step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution. Procedures are ❄️Mandatory
   - 🔥**Laws** Legal rules created by government entities e.g legislature. Must be followed or can result in civil or criminal penalties
   - 🔥**Regulations** rules created by governmental agencies. Must be followed or can result in civil or criminal penalties
 
@@ -660,6 +676,11 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **🔥Recovery**: An extension of corrective controls but have more advanced or complex abilities; a recovery control attempts to repair or restore resources, functions, and capabilities after a security policy violation 
     - recovery controls typically address more significant damaging events compared to corrective controls, especially when security violations may have occurred
   - **🔥Directive**: A directive control is deployed to direct, confine, or control the actions of subjects to force or encourage compliance with security policies. Notifications and procedures like the signs posted at doors for are examples of directive access controls.
+  - These access control types can fall into one of three categories: administrative, technical, or physical.
+       - 1. Administrative (also called directive) controls are implemented by creating and following organizational policy, procedure, or regulation. User training and awareness also fall into this category.
+         2. Technical controls are implemented using software, hardware, or firmware that restricts logical access on an IT system. Examples include firewalls, routers, encryption, etc.
+         3. Physical controls are implemented with physical devices, such as locks, fences, gates, and 
+security guards.
   - 🔥Security through obscurity attempts to hide the details of security controls to add security to them
 - 1.10.6 Control assessments (security and privacy)
   - Periodically assess security and privacy controls: what’s working, what isn’t 
@@ -707,7 +728,16 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - The RMF is intended as a risk management process to identify and respond to threats, and is defined in three core, interrelated Special Publications: 
     - SP 800-37 Rev 2, Risk Management Framework for Information Systems and Organizations
     - SP 800-39, Managing Information Security Risk
-    - SP 800-30 Rev 1, Guide for Conducting Risk Assessments
+    - 🔴**SP 800-30 Rev 1, Guide for Conducting Risk Assessments**
+         - 1. System Characterization
+           2. Threat Identification
+           3. Vulnerability Identification
+           4. Control Analysis
+           5. Likelihood Determination
+           6. Impact Analysis
+           7. Risk Determination
+           8. Control Recommendations
+           9. Results Documentation6
     - 🔴**📝RMF 800-37 has 7 steps**, and **six cyclical phases**: (PCSIAAM 🟡People Can See I AM ALWAYS Monitoring)
       - **🔥Prepare** to execute the RMF from an organization and system-level perspective by establishing a context and priorities for managing security and privacy risk
       - **🔥Categorize** the system and the information processed, stored, and transmitted by the system based on an analysis of the impact of loss
@@ -781,7 +811,10 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - ✏️input points
   - ✏️privileged operations
   - ✏️Details about security stance and approach.
-
+- 🔴**OCTAVE®**: OCTAVE® stands for Operationally Critical Threat, Asset, and Vulnerability Evaluationsm, a risk management framework from Carnegie Mellon University. OCTAVE® describes a three-phase process for managing risk.
+    - Phase 1 identifies staff knowledge, assets, and threats.
+    - Phase 2 identifies vulnerabilities and evaluates safeguards.
+    - Phase 3 conducts the risk analysis and develops the risk mitigation strategy.
 [1.12](#1.12) Apply Supply Chain Risk Management (SRM) concepts (OSG-9 Chpt 1)
 - 1.12.1 Risks associated with hardware, software, and services
   - **Supply Chain Risk Management (SCRM)**: the means to ensure that all of the vendors or links in the supply chain are: 
@@ -821,7 +854,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - The primary place where the minimum-security requirements or SLR for a third-party should be documented is in the contract or service-level agreement (SLA) established with that vendor. A business partners agreement (BPA) and interconnection security agreement (ISA) are also useful options.
       - ❄️Business partners agreement (BPA) is a contract between two entities dictating the terms of their business relationship. It clearly defines the expectations and obligations of each partner in the endeavor. It focuses on the business partner relationship rather than that of a customer to a vendor.
       - ❄️interconnection security agreement (ISA): is a formal declaration of the security stance, risk, and technical requirements of a link between two organizations’ IT infrastructures) could also be viable answers. 
-  - **🔥Service Level Requirements (SLRs)**: A service-level requirement (SLR) is a statement of the expectations of service and performance from the product or service of a vendor. Often, an SLR is provided by the ❄️customer/client prior to the establishment of the service-level agreement (SLA) (which should incorporate the elements of the SLR if the vendor expects the customer to sign the agreement). 
+  - **🔥Service Level Requirements (SLRs)**: A service-level requirement (SLR) is a statement of the expectations of service and performance from the product or service of a vendor. Often, an SLR is provided by the ❄️customer/client prior to the establishment of the service-level agreement (SLA) (which should incorporate the elements of the SLR if the vendor expects the customer to sign the agreement).
+  - **🔥Attestation**: information security attestation involves having a third-party organization review the practices of the service provider and make a statement about the security posture of the organization. The goal of the service provider is to provide evidence that they can and should be trusted. Typically, a third party provides attestation after performing an ✏️audit of the service provider against a known baseline.
   -  **Vendor management system (VMS)**: VMS is a software solution that assists with the management and procurement of staffing services, hardware, software, and other needed products and services. A VMS can offer ordering convenience, order distribution, order training, consolidated billing, and more and they are a means to view, manage, or optimize the relationship between an organization and third-party suppliers. 
 [1.13](#1.13) Establish and maintain a security awareness, education, and training program (OSG-9 Chpt 2)
 - 1.13.1 Methods and techniques to present awareness and training (e.g., social engineering, phishing, security champions, gamification)
@@ -895,20 +929,21 @@ Also see my articles on risk management:
   - we look at the categories and types of controls and the idea of layering them to provide several different types of protection mechanisms 
   - we also review the important step of reporting out our risk analysis and recommended responses, noting differences in requirements for messaging by group
 
-
-- **TCB Common Criteria ISO/IEC 15408-1**: One of the critical aspects of test results when using the common criteria is the
-- ⭐protection profile: which is an implementation-independent set of security requirements for a category of product/systems that meet specific consumer security needs. it includes category of product e.g Firewall
-- ⭐Target of Evaluation ToE:  i.e the actual product e.g Cisco ASA 5520 patch 2.7.2
-- ⭐Security Target: This defines the conditions of the test and is implementation-specific. It is a set of security requirements and specifications to be used as the basis for evaluation of an identified product/system.
--  **Common Criteria Evaluation Assurance Levels 🟡"Ice Fishermen Sing Merry Melodies, So Stay Friendly!"**
-- EAL0 –Inadequate assurance
-- EAL1 –Functionally tested
-- EAL2 –Structurally tested
-- EAL3 –Methodically tested and checked
-- EAL4 –Methodically designed, tested and reviewed
-- EAL5 –Semi formally designed and tested
-- EAL6 –Semi formally verified design and tested
-- EAL7 –Formally verified design and tested
+- **TCB Common Criteria ISO/IEC 15408-1**: The International Common Criteria is an internationally agreed-upon standard for describing and testing the security of information technology (IT) products. The Common Criteria uses specific terms when defining specific portions of the testing process.
+- ⭐Security Target: This defines the conditions of the test and is implementation-specific. It is a set of security requirements and specifications to be used as the basis for evaluation of an identified product/system. The documentation describing the ToE, including the security requirements and 
+operational environment
+- ⭐Target of Evaluation ToE: The system or product that is being evaluated i.e the actual product e.g Cisco ASA 5520 patch 2.7.2
+- ⭐protection profile: which is an implementation-independent set of security requirements for a category of product/systems that meet specific consumer security needs. it includes category of product e.g Firewall.  An independent set of security requirements and objectives for a specific 
+category of products or systems, such as firewalls or intrusion detection systems
+-  ⭐Evaluation assurance level (EAL): The evaluation score of the tested product or syste. The Common Criteria Evaluation Assurance Levels 🟡"Ice Fishermen Sing Merry Melodies, So Stay Friendly!" are
+    - EAL0 –Inadequate assurance
+    - EAL1 –Functionally tested
+    - EAL2 –Structurally tested
+    - EAL3 –Methodically tested and checked
+    - EAL4 –Methodically designed, tested and reviewed
+    - EAL5 –Semi formally designed and tested
+    - EAL6 –Semi formally verified design and tested
+    - EAL7 –Formally verified design and tested
 
  - **System and Organization Controls (SOC)**: A security audit systematically evaluates an organization’s security policies,
 standards, and procedures to ensure compliance with established security requirements.
@@ -918,31 +953,26 @@ standards, and procedures to ensure compliance with established security require
 - SOC 3: This is a “lite” version of a SOC 2 report and abstracts or removes all sensitive details. A SOC 3 report generally indicates whether an organization has demonstrated each of the five Trust Services principles without disclosing specifics (like exactly what they do or don’t do). Companies make SOC 3 reports available to the public and restrict SOC 2 reports to trusted parties.
 
 - **QUANTITATIVE RISK MANAGEMENT**:
-
-- **EF**: The exposure factor is the percentage of the facility that risk managers expect will be damaged if a risk materializes. It is calculated by dividing the amount of damage by the asset value. 
+- 🔴**EF**: The exposure factor is the percentage of the facility that risk managers expect will be damaged if a risk materializes. It is calculated by dividing the amount of damage by the asset value. 
   - EF is the percentage of an asset's value that is expected to be lost if a specific threat event occurs.
   - Formula🔥: EF = (Loss due to the threat event ➗ Total asset value) ✖️ 100
-  - Example: If a fire destroys 40% of a building's value, the EF is 40%.
-    
-- **ARO**: The annualized rate of occurrence is the number of times that risk analysts expect a risk to happen in any given year. 
+  - Example: If a fire destroys 40% of a building's value, the EF is 40%.    
+- 🔴**ARO**: The annualized rate of occurrence is the number of times that risk analysts expect a risk to happen in any given year. 
   - ARO is the expected frequency with which a specific threat will occur within a year.
   - ARO can be a whole number or a fraction, representing the number of occurrences per year.
   - Formula🔥: ARO = Number of occurence ➗ Number of Years
   - Example: 🔥If historical data suggests that a power outage happens twice a year, the ARO is 2. 🔥If a flood is expected to occur once every 10 years, the ARO is 0.1.
-  - A 📝countermeasure primary affects the annualized rate of occurrence (ARO), because the countermeasure is designed to prevent (or mitigate or reduce) the occurrence of the risk, thus reducing its frequency per year.
-    
-- **SLE**: The single loss expectancy (SLE) is the product of the asset value (AV) and the exposure factor (EF).
+  - A 📝countermeasure primary affects the annualized rate of occurrence (ARO), because the countermeasure is designed to prevent (or mitigate or reduce) the occurrence of the risk, thus reducing its frequency per year. 
+- 🔴**SLE**: The single loss expectancy (SLE) is the product of the asset value (AV) and the exposure factor (EF).
   - SLE is the monetary loss expected from a single occurrence of a threat event.
   - Formula🔥: SLE = Asset Value (AV) ✖️ Exposure Factor (EF)
   - Example: If the asset value of a server is $10,000 and the EF for a fire is 40%, the SLE is $10,000 * 0.40 = $4,000.
-
-- **ALE**: The annualized loss expectancy (ALE) represents the amount of money a business expects to lose to a given risk each year. The annualized loss expectancy is calculated by multiplying the single loss expectancy (SLE) by the annualized rate of occurrence (ARO).
+- 🔴**ALE**: The annualized loss expectancy (ALE) represents the amount of money a business expects to lose to a given risk each year. The annualized loss expectancy is calculated by multiplying the single loss expectancy (SLE) by the annualized rate of occurrence (ARO).
   - ALE is the expected monetary loss for an asset due to a specific threat over a one-year period.
   - Formula🔥: ALE = Single Loss Expectancy (SLE) ✖️ Annualized Rate of Occurrence (ARO)
   - Formula🔥: ALE = AV ✖️ EF ✖️ ARO
   - Example: If the SLE for a fire affecting a server is $4,000 and the ARO is 0.1, the ALE is $4,000 * 0.1 = $400.
-
-- **Cost/Benefit Equation for Safeguards**: Anything that removes a vulnerability or protects against one or more specific threats is considered a safeguard or a countermeasure.
+- 🔴**Cost/Benefit Equation for Safeguards**: Anything that removes a vulnerability or protects against one or more specific threats is considered a safeguard or a countermeasure.
   -Formula🔥: ALE before safeguard – ALE after implementing the safeguard – annual cost of safeguard [(ALE1 – ALE2) – ACS]. 
 
 - **Example Calculation**
@@ -952,5 +982,21 @@ standards, and procedures to ensure compliance with established security require
   - Estimate the Annualized Rate of Occurrence (ARO): Based on historical data, a fire might occur once every 25 years. i.e ARO = 1/25 = 0.04
   - Calculate the Annualized Loss Expectancy (ALE): ALE = SLE * ARO, i.e ALE = $15,000 * 0.04 = $600
 
-**ISO 28000:2007,** “Specification for security management systems for the supply chain,” provides a broad framework for managing supply chain risk.
-  - ISO 28000:2007 relies heavily on the continuous process improvement model of plan, do, check, act (PDCA or Deming cycle) to improve the security management system and to assure organizational conformance to the security practice.
+- 🍏**ISO 28000:2007,** “Specification for security management systems for the supply chain,” provides a broad framework for managing supply chain risk.
+   - ISO 28000:2007 relies heavily on the continuous process improvement model of plan, do, check, act (PDCA or Deming cycle) to improve the security management system and to assure organizational conformance to the security practice.
+
+- 🍏**ISO 17799 and the ISO 27000 Series**: ISO 17799 was a broad-based approach for the information security code of practice by the International Organization for Standardization, based in Geneva, Switzerland. The full title is ISO/IEC 17799:2005 Information technology—Security Techniques—Code of Practice for Information Security Management.
+- ISO 17799:2005 signifies the 2005 version of the standard, based on BS (British Standard) 7799 Part 1. ISO 17799 had 11 areas, focusing on specific information security controls:
+     - 1. Policy
+       2. Organization of information security
+       3. Asset management
+       4. Human resources security
+       5. Physical and environmental security
+       6. Communications and operations management
+       7. Access control
+       8. Information systems acquisition, development, and maintenance
+       9. Information security incident management
+       10. Business continuity management
+       11. Compliance
+- ISO 17799 was renumbered to ISO 27002 in 2005 in order to make it consistent with the 27000 series of ISO security standards. ISO 27001 is a related standard, formally called ISO/IEC 27001:2005 Information technology—Security techniques—Information Security Management Systems—Requirements. ISO 27001 was based 
+on BS 7799 Part 2
