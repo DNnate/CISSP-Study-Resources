@@ -47,7 +47,10 @@
 - 2.1.2 Asset Classification
   - It's important to identify and classify assets, such as systems, mobile devices etc.
   - **Classification**: derived from compliance mandates, the process of recognizing organizational impacts if information suffers any security compromise (whether to confidentiality, integrity, availability, non-repudiation, authenticity, privacy, or safety)
-      - Classification identifies the value of data to an organization
+  - 🔥Assets are classified based on the data that they hold or process.
+  - 🔥Data is classified based on its value to the organization. 
+      - Data Classification identifies the value of data to an organization
+      - Asset classification identifies the classification of assets based on the classification of data the assets hold or process. Assets are protected using various security controls, and these controls are selected based on the classification of the data
       - 📝Asset classifications should match data classification, i.e. if a computer is processing top secret data, the computer should be classified as a top secret asset
       - Handling requirements and tools include visual indicators like a distinctive screen background and can help employees remember what level of classification they are dealing with and thus the handling requirements that they are expected to follow.
       - In a single-level security environment, systems should be assigned the classification level of the highest classification of information they are ever expected to process.
@@ -88,6 +91,7 @@
   - ✴️**Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data or scrubbing un-needed data. Clearing describes preparing media for 📝reuse in same-security/sensitivity level. When media is cleared, unclassified data is written over all addressable locations on the media. Once that's completed, the media can be reused
   - ✴️**Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools-- not considered acceptable for top secret data.
       - Purging overwrites the media with random bits multiple times and includes additional steps to ensure that data is removed. It ensures there isn’t any data remanence.
+      - Purged media can then be reused in less secure environments. 
       - Purging is a more intensive form of clearing for 📝reuse in lower-security areas
       - The 🍎NIST SP 800-88 process for sanitization and disposition shows that media that will be reused and was classified at a moderate level should be purged and then that purge should be validated. Finally, it should be documented. ✏️Validation processes are conducted to ensure that the sanitization process was completed, avoiding data remanence. A validation form  helps to ensure that each device has been checked and that it was properly wiped, purged, or sanitized. 
   - ✴️**Overwriting**: Same as Clearing and also known as 🔥Purging. Overwriting the disks multiple times will remove all existing data. This is called purging, and purged media can then be 📝re-used again.
@@ -107,7 +111,7 @@
 - **Least privilege**: a principle stating that subjects are granted only the privileges necessary to perform assigned work tasks and no more
 
 - 2.3.1 Information and asset ownership
-  - ☪️**Data owner**: the person who has ultimate organizational responsibility for data; usually sr. manager (CEO,president, dept. head); data owners typically delegate data protection tasks to others in the org
+  - ☪️**Data owner**: the person who has ultimate organizational responsibility for data; usually sr. manager (CEO,president, dept. head); data owners typically delegate data protection tasks to others in the org 
   - ☪️**Asset Owner**: identifies the individual(s) responsible for protecting the asset or for delegating the task of protecting the asset
 
 - 2.3.2 Asset inventory (e.g., tangible, intangible)
@@ -303,6 +307,7 @@
   - 🔴**Tailoring**: refers to modifying the list of ✏️ security controls ✏️ within a baseline to align with the org's mission
     - includes the following activities:
       - identifying and designating common controls; specificaion of organization-defined parameters in the security controls via explicit assignment and selection statements
+      - Tailoring refers to modifying a list of security controls to align with the organization's mission. 
       - applying scoping guidance/considerations
       - selecting/specifying compensating controls
       - assigning control values
@@ -326,11 +331,11 @@
 
 - 2.6.4 Data protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB)) 
   - **Data protection methods** include: 
-    - **Digital Rights Management (DRM)**: methods used in attempt to protect copyrighted materials. there is hardware and software based DRMs. Methods used with DRM include:
-         - Persistent online authentication
-         - Automatic expiration
-         - Continuous audit trail  
-    - **Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network and  providing monitoring and policy enforcement capabilities
+    - 💻**Digital Rights Management (DRM)**: methods used in attempt to protect copyrighted materials. there is hardware and software based DRMs. Methods used with DRM include:
+         - ✈️Persistent online authentication
+         - ✈️Automatic expiration
+         - ✈️Continuous audit trail  
+    - 💻**Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network and  providing monitoring and policy enforcement capabilities
          - A cloud access security broker (CASB) is software placed logically between users and cloud-­based resources, and it can enforce security policies used in an internal network.
       - note that entities must comply with the EU GDPR, and use additional data protection methods such as pseudonymization, tokenization, and anonymization
   - One of the primary methods of protecting the confidentiality of data is encryption
@@ -376,7 +381,7 @@
 - **Policy ▶️ Standard ▶️ Baseline ▶️ Guideline ▶️Procedure**
     - **Policy**: Policy is High level from Management 
     - **Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53
-    - **Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks
+    - **Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks, or imaging. Imaging is done to deploy an identical configuration to multiple systems, but this is typically done after identifying security controls.
     - **Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88
 
 - **Salami Attack** is a type of cyberattack or fraud where a perpetrator takes small, seemingly insignificant actions that individually appear harmless but collectively result in a substantial impact. The term "salami" is used metaphorically, implying that the attack slices off small pieces, like slicing a salami, which are not noticeable individually but accumulate to cause significant harm.
