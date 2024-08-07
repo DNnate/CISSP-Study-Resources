@@ -82,7 +82,7 @@
      - Tagging: Tags that include information about the lifespan of the data and when it has expired can help with lifecycle management processes. Tags can be as simple as timestamps, or they can include additional metadata like the data type, creator, or purpose that can help inform the retention and disposal process. Metadata tagging allow organisations to use technical tools like DLP and DRM to handle and track data, based on its type and content.
   - 🏷️**Data Collection Limitation**: Providing ✏️consent, or agreeing to data collection and use, is important in many data collection scenarios and may be required by law. ✏️Only required data is collected, that individuals are made aware of the data collection, and that they consent to the collection. Similarly, data should only be collected ✏️lawfully and via fair methods. Prevent loss by not collecting unnecessary sensitive data. 🥇Sometimes it is better to collect limited information🥇
   - 🏷️**Data Location**: keep duplicate copies of backups, on- and off-site
-  - 🏷️**Storage**: define storage locations and procedures by storage type; use physical locks for paper-based media, and encrypt electronic data. It is cost effective to purchase high-quality media to contain sensitive data becuase the value of the data often far exceeds the cost of the media. This makes more expensive media that may have a longer life span or additional capabilities like encryption support a good choice for sensitive data. Backup media should be protected with the same level of protection afforded the data it contains e.g using a secure offsite storage facility
+  - 🏷️**Storage**: define storage locations and procedures by storage type; use physical locks for paper-based media, and encrypt electronic data. It is cost effective to purchase high-quality media to contain sensitive data becuase the value of the data often far exceeds the cost of the media. This makes more expensive media that may have a longer life span or additional capabilities like encryption support a good choice for sensitive data. Backup media should be protected with the same level of protection afforded the data it contains e.g using a secure offsite storage facility. Backup tapes should be removed from service when they begin to generate errors. 
   - **Data Remanence**: data remaining on media after typical erasure; Remanence describes data left on media after an attempt is made to remove the data. 
 - 🔥sanitization is a series of processes that removes data from a system or media while ensuring that the data is unrecoverable by any means. Sanitization methods (such as clearing, purging, and destroying) help ensure that data cannot be recovered. 📝Note: Downgrading systems and media is rare due to the difficulty of ensuring that sanitization is complete. The need to completely wipe (or destroy) the media that systems use means that the ✏️cost of reuse is often significant and may exceed the cost of purchasing a new system or media i.e sanitazation cost ▶ cost of new media.
   - ✴️**Destruction**: destroy data no longer needed by the organization; policy should define acceptable destruction methods by type and classification ([see NIST SP-800-88 for details](https://csrc.nist.gov/publications/detail/sp/800-88/rev-1/final)) ✏️Physical destruction: used for SSD/electronic components, or in combination with other less-secure methods. Due to problems with remnant data, the U.S. National Security Agency requires physical destruction of SSDs. Incineration, pulverizing, crushing, shredding, and disintegration all describe data destruction. Physical destruction is the most secure method of deleting data on optical media such asa DVD. 
@@ -138,7 +138,7 @@
      -  🎈Tier 1 Systems: Tier 1 systems collect, store, and analyze the data that they receive from the Tier 2 systems. They allow users to analyze the data and to visualize it for further analysis. e.g splunk
      -  🎈Tier 2 Systems: Tier 2 is composed of systems that each perform a unique task. Each Tier 2 system is fully capable of collecting, storing, and analyzing data pertaining to its unique task. The middle tier systems filter relevant and desired data from the raw data collected and forward this data to the analysis engine and visualization tool for further analysis e.g Fathom, Bro, Snort, OpenVAS, WSUS, BelManage, BelManage Data Analytics, Puppet, openswan, iStar/C-Cure Controller
      -  🎈Tier 3 Systems: Tier 3 systems are the assets (end points) on the enterprise network that are owned by the enterprise, such as workstations, switches, servers, users’ laptops, virtual machines, and other devices. All enterprise assets are monitored from the start of their lifecycle until disposal by the systems in the Tier 2. Device location, owner, installed software catalog, current security vulnerabilities, and abnormal traffic activity are captured to allow for better visibility by administrators e.g AD, camera, PC, laptops, mobile phones, router and firewall
-
+- An automated configuration management system CMS connects to systems over the network and can assist with hardware asset management by verifying systems are in the network and operational. 📝 A CMS can verify changes are implemented, but it doesn't include the entire change management process.
 [2.4](#2.4) Manage data lifecycle (OSG-9 Chpt 5)
 - 2.4.1 Data roles (i.e., owners, controllers, custodians, processors, users/subjects)
   - 🔴**Business/Mission Owners**:-  Typically own processes or programs. they ensure that all operations fit within the business goals and mission.
@@ -158,6 +158,7 @@
        - Data owners are more likely to ask that those responsible for control selection identify a standard to use if they are not also acting as business owners.
        - They are responsible for classifying the data that they own as well as assisting with or advising the system owners on security requirements and control selection
        - The data owner is the person responsible for classifying data, delegates selection of the required controls for each classification to system owners, and selecting baseline security standards for the organization.
+       - Data owner roles is ultimately responsible for due diligence in protecting the company's data. They may be liable for negligence if they fail to perform due diligence in establishing and enforcing security policies to protect and sustain sensitive data.
        - data owner is the person respsonible for classifying, categorizing, and permitting access to the data; the data owner is the person who is best familiar with the importance of the data to the business
        - The data owner sets the rules for use and protection of data.
    - 🔴**System owner**: controls the computer storing the data; usually includes software and hardware configurations and support services (e.g. cloud implementation)
@@ -185,13 +186,13 @@
       - They include ✏️IT Staff in an information technology (IT) department who are delegated responsibility for day-to-day tasks.
       - Custodians are trusted to ensure the day-to-day security of the data and should do so by ensuring that the baseline is met and maintained.
       - Custodians are tasked with the day-to-day monitoring of the integrity and security of data. 
-      - He/She is responsible for the technical environment, including things like database structures, data backup and the technical implementations of data policies.
+      - He/She is responsible for the technical environment, including things like database structures, performing data backup and the technical implementations of data policies.
       - Controls are scoped and tailored, applied and enforced by Custodians.
       - custodians implement the controls
       - custodians are granted rights to perform day-to-day tasks when handling data
   - 🔴**Administrators** have the rights to apply the permissions to access and handle data.
       - The system administrators can act in the roles of data administrators who grant access and will also act as custodians who are tasked with the day-to-day application of security controls such as providing/granting/managing user access.
-  - 🔴**Data Steward**: a newer concept related to users of the data; those who use the data for the business purpose. In many organizations, data stewards are internal roles that oversee how data is used
+  - 🔴**Data Steward**: a newer concept related to users of the data; those who use the data for the business purpose. In many organizations, data stewards are internal roles that oversee how data is used. They can be referred to as data custodians.
   - 🔴**Security administrator**: responsible for ensuring the overall security of entire infrastructure; they perform tasks that lead to the discovery of vulnerabilities, monitor network traffic and configure tools to protect the network (like firewalls and antivirus software) 
     - security admins also devise security policies, plans for business continuity and disaster recovery and train staff
   - 🔴**Supervisors**: responsible for overseeing the activities of all the above entities and all support personnel; they ensure team activities are conducted smoothly and that personnel is properly skilled for the tasks assigned
@@ -233,8 +234,9 @@
     - 🔥**what data**: to retain per org requirements
 - 2.4.6 Data remanence
   - 🔵**Data Remanence**: the data remaining on media after the data is supposedly erased
-    - typically refers to data on a hard drive as residual magnetic flux or slack space (unused space within a disk cluster)
+    - typically refers to data on a hard drive as residual ✏️magnetic flux or ✏️slack space (unused space within a disk cluster)
       - note that many OSs store files in clusters, which are groups of sectors (the smallest storage unit on a hard disk drive)
+      - Slack space is the unused space in a cluster. However, slack space can still contain data previously stored in memory. Clusters are groups of sectors. One way of eliminating data remanence is by overwriting clusters with random bits. 
     - if media includes any type of private and sensitive data, it is important to eliminate data remanence
     - note that some OSs fill slack space with data from memory, which is why personnel should never process classified data on unclassified systems
     - Remnant data is data that is left after attempts have been made to remove or erase it. itis also referred to as residual data.
@@ -319,9 +321,11 @@
       - selecting/specifying compensating controls
       - assigning control values
       - tailoring matches your organization's mission and the controls from a selected baseline.
-      - Tailoring ensures that assessment methods are appropriate to the systems, services, and other assets that are being validated and is the best answer here. 
+      - Tailoring ensures that assessment methods are appropriate to the systems, services, and other assets that are being validated and is the best answer here.
+      - The tailoring process refers to modifying a list of controls to align with the organization's mission. One way it does so is by modifying control parameters, such as changing the account lockout threshold. While tailoring includes scoping, assigning different values for controls only apples to tailoring. Tailoring is done after selecting a baseline.
   - 🔴**Scoping**: limiting the general baseline recommendations by removing those that do not apply; part of the tailoring process and refers to reviewing a list of baseline ✏️ security controls ✏️ and selecting only those controls that apply to the systems you're trying to protect
     - scoping processes eliminate controls that are recommended in a baseline
+    - Scoping is specifically used to remove controls from a suggested baseline. 
     - Scoping is a part of the tailoring process and refers to reviewing a list of security controls and selecting the security controls that apply.
     - Scoping is the process of reviewing and selecting security controls based on the system that they will be applied to. 
     - Scoping involves selecting only the controls that are appropriate for your IT systems
@@ -339,7 +343,7 @@
 
 - 2.6.4 Data protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB)) 
   - **Data protection methods** include: 
-    - 💻**Digital Rights Management (DRM)**: methods used in attempt to protect copyrighted materials. there is hardware and software based DRMs. Methods used with DRM include:
+    - 💻**Digital Rights Management (DRM)**: methods used in attempt to protect copyrighted materials, including intellectual property. They do not provide protection for trademarks, patents, or trade secrets. There are hardware and software based DRMs. Methods used with DRM include:
          - ✈️Persistent online authentication
          - ✈️Automatic expiration
          - ✈️Continuous audit trail  
@@ -354,7 +358,7 @@
       - ✏️Full disk encryption like Bitlocker can protect data at rest.
       - Tapes may be vulnerable to theft or loss in transit. That means that tapes that are leaving their normal storage facility should be handled according to the organization's classification schemes and handling requirements.
       - ✏️DRM is useful for data at rest because DRM "travels with the data" regardless of the data state
-      - For example, A 🧠watermark is used to digitally label data and can be used to indicate ownership, as well as to assist a digital rights management (DRM) system in identifying data that should be protected. Digital watermarking places labels or marking in files (digital data). Other methods, such as data loss prevention (DLP) and digital rights management (DRM), can detect the labels.
+      - Watermarks can detect the unauthorized copying of documents, including photos. For example, A 🧠watermark is used to digitally label data and can be used to indicate ownership, as well as to assist a digital rights management (DRM) system in identifying data that should be protected. Digital watermarking places labels or marking in files (digital data). Other methods, such as data loss prevention (DLP) and digital rights management (DRM), can detect the labels.
       - DRM is especially useful when you can’t encrypt data volumes. 
     - 🌟**Data in transit**: think of data in transit wholistically -- moving data from anywhere to anywhere; use ✏️encryption for data in transit 
       - TLS is frequently used to secure data when it is in transit.
@@ -378,9 +382,9 @@
        - validation: the CCP sends the token to the tokenization vault; the vault replies with the CC info, the charge is processed
        - completing the sale: the CCP sends a reply to the POS indicating the charge is approved
        - this system prevents CC theft at the POS system
-  - 🟢**Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified. Anonymization techniques remove all data so that it is difficult to identify the original identities. When done correctly, the GDPR no longer applies. 
+  - 🟢**Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified. Unlike peudonymization, removing personal data without using an identifier is closer to anonymization. Anonymization techniques remove all data so that it is difficult to identify the original identities. When done correctly, the GDPR no longer applies. 
        - Anonymization techniques remove all personal data and make the data unusable for reuse on the website. Techniques of Data Anonymization
-       - 1. Data masking: obscures some, but not all, data
+       - 1. Data masking: obscures some, but not all data. Data masking is a method used to anonymize data and protect the privacy of individuals in a dataset. It replaces privacy data (such as names) with incorrect data, but the dataset still retains usable data for instance when needed for reserach
          2. Pseudonymization: Pseudonymization involves replacing identifiable information with pseudonyms or identifiers that do not directly reveal the identity of individuals. The original data can only be restored if additional information, kept separate, is used.
          3. Generalization
          4. Data swapping: Swapping data involves exchanging data between different records, which can still potentially allow for some degree of identification, especially if the data structure or patterns are recognizable.
