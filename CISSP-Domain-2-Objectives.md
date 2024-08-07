@@ -67,6 +67,7 @@
      - 🩰Network-based DLP: Network-based DLP would not detect stored information unless the user transmits it over the network. 
      - 🩰Endpoint-based DLP: identify the presence of information on endpoint devices
   - 🏷️**Marking (AKA labeling)**: sensitive information/assets ensures proper handling (both physically and electronically).
+     - Security labeling identifies the classification of data such as sensitive, secret, and so on. Media holding sensitive data should be labeled. Similarly, systems that hold or process sensitive data should also be marked
      - Media is typically labeled with the highest classification level of data it contains. This prevents the data from being handled or accessed at a lower classification level.
      - Systems and media should be labeled with the highest level of sensitivity that they store or handle.
      - labels can be as granular and custom as required by the org
