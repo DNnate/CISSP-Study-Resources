@@ -88,9 +88,10 @@
   - ✴️**Destruction**: destroy data no longer needed by the organization; policy should define acceptable destruction methods by type and classification ([see NIST SP-800-88 for details](https://csrc.nist.gov/publications/detail/sp/800-88/rev-1/final)) ✏️Physical destruction: used for SSD/electronic components, or in combination with other less-secure methods. Due to problems with remnant data, the U.S. National Security Agency requires physical destruction of SSDs. Incineration, pulverizing, crushing, shredding, and disintegration all describe data destruction.
       - 🍎**SSD**: Spare sectors, bad sectors, and space provided for wear leveling on SSDs (over provisioned space) may all contain data that was written to the space that will not be cleared when the drive is wiped. This is a form of data remanence and is a concern for organizations that do not want data to potentially be accessible. Many wiping utilities only deal with currently addressable space on the drive. SSDs cannot be degaussed, and wear leveling space cannot be reliably used to hide data. These spaces are still addressable by the drive, although they may not be seen by the operating system. The two valid options for destroying data on SSD drives are ATA Secure Erase and destruction. Destruction is the best method for SSD drives.
       - 🍎**shredding**: is a type of physical destruction. Though this term is sometimes used in relation to overwriting of data, here shredding  refers to the process of making unrecoverable any data printed on hard copy or on smaller objects, such as credit cards, floppy or optical disks. There are industrial shredders capable of shredding larger devices like servers and hard disks.
-  - ✴️**Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data or scrubbing un-needed data. Clearing describes preparing media for 📝reuse in same-security/sensitivity level. When media is cleared, unclassified data is written over all addressable locations on the media. Once that's completed, the media can be reused
+  - ✴️**Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data or scrubbing un-needed data. Clearing describes preparing media for 📝reuse in same-security/sensitivity level. When media is cleared, unclassified data is written over all addressable locations on the media. Once that's completed, the media can be reused. Clearing (sometimes called overwriting) overwrites the disk drive with different bits in three separate passes.
   - ✴️**Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools-- not considered acceptable for top secret data.
       - Purging overwrites the media with random bits multiple times and includes additional steps to ensure that data is removed. It ensures there isn’t any data remanence.
+      - When done properly, purged data is not recoverable using any known methods. 
       - Purged media can then be reused in less secure environments. 
       - Purging is a more intensive form of clearing for 📝reuse in lower-security areas
       - The 🍎NIST SP 800-88 process for sanitization and disposition shows that media that will be reused and was classified at a moderate level should be purged and then that purge should be validated. Finally, it should be documented. ✏️Validation processes are conducted to ensure that the sanitization process was completed, avoiding data remanence. A validation form  helps to ensure that each device has been checked and that it was properly wiped, purged, or sanitized. 
@@ -202,7 +203,7 @@
       - note that subjects can be users, programs, processes, services, computers, or anything else that can access a resource (OSG-9 Chpts 8, 13)
 - 2.4.2 Data Collection
   - One of the easiest ways of preventing the loss of data is to simply not collect it
-  - **Data Collection Guideline**: if the data doesn't have a clear purpose for use, don't collect it, and don't store it; this is why many privacy regulations mention limiting data collection. Providing consent, or agreeing to data collection and use, is important in many data collection scenarios and may be required by law.
+  - **Data Collection Guideline**: if the data doesn't have a clear purpose for use, don't collect it, and don't store it; this is why many privacy regulations mention limiting data collection. Providing consent, or agreeing to data collection and use, is important in many data collection scenarios and may be required by law. A best practice when collecting customer data is to limit the amount of data collected to only what is needed. (minimization)
 - 2.4.3 Data location
   - **Data Location**: in this context, refers to the location of data backups or data copies
   - If a company's system is on-prem, keeps data on-site, but regularly backups up data, best practice is to keep a backup copy on site and backup copy off-site
@@ -257,8 +258,9 @@
 
 - 2.6.1 Data states (e.g., in use, in transit, at rest)
   - The three data states are at rest, in transit, and in use
-    - 🔴**Data at rest**: any data stored on media such as hard drives or external media: Protecting Data at Rest: AES encryption, Access Control, redundancy/backup, Bitlocker, FileVault, symmetric encrytion e.g Serpent, IDEA.  Data breaches cause the greatest reputational damage as a result of threats to data at rest.  Data at rest with a high level of sensitivity is often encrypted to help prevent this.
+    - 🔴**Data at rest**: any data stored on media such as hard drives or external media: Protecting Data at Rest: AES encryption, Access Control, redundancy/backup, Bitlocker, FileVault, symmetric encrytion e.g Serpent, IDEA.  Data breaches cause the greatest reputational damage as a result of threats to data at rest.  Data at rest with a high level of sensitivity is often encrypted to help prevent this.  Disk-level encryption and column-level encryption protects data at rest.
     - 🔴**Data in transit**: any data transmitted over a network: Protecting Data in Motion: Data in transit is data that is traversing a network or is otherwise in motion. TLS, VPNs, and IPsec tunnels are all techniques used to protect data in transit. TLS encryption, email encrytion (SMIME, PGP), IPSEC, VPN, SSH
+    - Network-level encryption protects data in transit. 
         - ⭐SSH-2: Provides improved security with more robust encryption e.g AES and key exchange mechanisms. It also adds support for simultaneous shell sessions over a single SSH connection and Supports optional compression of data to improve  performance
         - ⭐IPsec: Provides strong encryption and is used in many VPNs. Operates at the Network layer. Transport Mode: Encrypts only the payload of the IP packet, leaving the header intact. Tunnel Mode: Encrypts both the payload and the header, creating a new IP header.
         - ⭐L2TP: Provides tunneling but requires IPsec for encryption. Operates at the Data link layer. perates at the data link layer and provides a framework for tunneling protocols. L2TP alone does not offer encryption or security but is typically used with IPsec to provide these features (L2TP/IPsec). often used in Point-to-Point Protocol PPP scenarios.
@@ -346,8 +348,8 @@
       - ✏️Full disk encryption like Bitlocker can protect data at rest.
       - Tapes may be vulnerable to theft or loss in transit. That means that tapes that are leaving their normal storage facility should be handled according to the organization's classification schemes and handling requirements.
       - ✏️DRM is useful for data at rest because DRM "travels with the data" regardless of the data state
-      - For example, A watermark is used to digitally label data and can be used to indicate ownership, as well as to assist a digital rights management (DRM) system in identifying data that should be protected.
-      - DRM is especially useful when you can’t encrypt data volumes
+      - For example, A 🧠watermark is used to digitally label data and can be used to indicate ownership, as well as to assist a digital rights management (DRM) system in identifying data that should be protected. Digital watermarking places labels or marking in files (digital data). Other methods, such as data loss prevention (DLP) and digital rights management (DRM), can detect the labels.
+      - DRM is especially useful when you can’t encrypt data volumes. 
     - 🌟**Data in transit**: think of data in transit wholistically -- moving data from anywhere to anywhere; use ✏️encryption for data in transit 
       - TLS is frequently used to secure data when it is in transit.
       - e.g. a web server uses a certificate to encrypt data being viewed by a user, or IPsec encrypting a communication session 
@@ -356,7 +358,9 @@
     - 🌟**Data in use**: 
       - ✏️CASB solution often combines DLP, a web application firewall with some type of authentication and authorization, and a network firewall in a single solution; A CASB solution is helpful for protecting data in use (and data in transit)
   - 🟢**Pseudonymization**: refers to the process of using pseudonyms or alias to represent other data
-       - A pseudonym is an alias, and pseudonymization can prevent data from directly identifying an entity (i.e. person)
+       - A pseudonym is an alias, and pseudonymization can prevent data from directly identifying an entity (i.e. person).
+       -  Pseudonymization is the process of replacing some data with an identifier, such as apseudonym.
+       - However, if applying pseudonymization techniques, the GDPR still applies
        - the process can be reversed
   - 🟢**Tokenization**: use of a token, typically a random string of characters that ✏️remains the same for each instance of that data, to replace other data. Tokenization replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
        - note that tokenization is similar to pseudonymization in that they are both used to represent other data, and the token or pseudonym have no meaning or value outside the process that creates and links them to that data
@@ -368,7 +372,7 @@
        - validation: the CCP sends the token to the tokenization vault; the vault replies with the CC info, the charge is processed
        - completing the sale: the CCP sends a reply to the POS indicating the charge is approved
        - this system prevents CC theft at the POS system
-  - 🟢**Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified.
+  - 🟢**Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified. Anonymization techniques remove all data so that it is difficult to identify the original identities. When done correctly, the GDPR no longer applies. 
        - Anonymization techniques remove all personal data and make the data unusable for reuse on the website. Techniques of Data Anonymization
        - 1. Data masking: obscures some, but not all, data
          2. Pseudonymization: Pseudonymization involves replacing identifiable information with pseudonyms or identifiers that do not directly reveal the identity of individuals. The original data can only be restored if additional information, kept separate, is used.
@@ -380,7 +384,7 @@
 
 - **Policy ▶️ Standard ▶️ Baseline ▶️ Guideline ▶️Procedure**
     - **Policy**: Policy is High level from Management 
-    - **Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53
+    - **Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53. Standards selection refers to adding security controls based on external standards.
     - **Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks, or imaging. Imaging is done to deploy an identical configuration to multiple systems, but this is typically done after identifying security controls.
     - **Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88
 
