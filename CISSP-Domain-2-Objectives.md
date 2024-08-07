@@ -216,6 +216,7 @@
     - 🔵**Record Retention**: Record retention is the process of retaining and maintaining information for as long as it is needed. 
       - note: a current trend in many orgs is to reduce legal liabilities by implementing short retention policies with email
       - A data storage policy describes how and why data is stored.
+      - Record retention policies define the amount of time to keep data, and laws or regulations often drive these policies
       - A data retention policy can help to ensure that outdated data is purged, removing potential additional costs for discovery, and reducing the amount of data that may need to be produced for lawsuits. Many organizations have aggressive retention policies to both reduce the cost of storage and limit the amount of data that is kept on hand and discoverable.
       - Always consult the organization's record retentions policy to determine the appropriate length of time to preserve records
   - Three fundamental retention policy questions:
