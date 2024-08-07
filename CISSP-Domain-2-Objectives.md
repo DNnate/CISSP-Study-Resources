@@ -99,7 +99,7 @@
        - Single-pass wipe: involves overwriting the entire hard drive with random data once (e.g replacing with 0s and 1s). 
        - Multi-pass wipes: involves overwriting the drive multiple times, and is more secure against advanced recovery techniques.
        - Zero fill wipes a drive by replacing data with zeros
-  - ✴️**Degaussing**: used on ✏️magentic media. Degaussing the disks often damages the electronics but doesn’t reliably remove the data. Tapes can be erased by degaussing, but degaussing is not always fully effective. 
+  - ✴️**Degaussing**: used on ✏️magentic media including Tape media, floppy disks, Magnetic Stripe Cards, Zip drives, VHS and audio cassette tapes, and hard disk drives. Degaussing the disks often damages the electronics but doesn’t reliably remove the data. Tapes can be erased by degaussing, but degaussing is not always fully effective. 
   - ✴️**Erasing**: usually refers to a delete operation on media, leaving data remanence. It rarely remove the data from media but instead mark it for deletion. Erasing is the deletion of files or media and may not include all of the data on the device or media, making it the 📝worst choice here. Erasing, which describes a typical deletion process in many operating systems, typically removes only the link to the file and leaves the data that makes up the file itself. The data will remain in place but not indexed until the space is needed and it is overwritten. 
   - ✴️**Cryptographic Erasure**: AKA cryptoshedding, basically destroying encryption key; may be only secure method for 🧠cloud storage
   - The standard methods for clearing magnetic tapes, according to the NIST Guidelines for Media Sanitization, are overwriting the tape with nonsensitive data, degaussing, and physical destruction via shredding or incineration. Reformatting a tape does not remove remnant data.
@@ -122,10 +122,11 @@
     - an org should keep track of intangible assets, like intellectual property, patents, trademarks, and company’s reputation, and copyrights to protect them
     - To protect intangible inventories (like intellectual property, patents, trademarks, and company’s reputation, and copyrights), they need to be tracked
     - note: patents in the US are valid for 20 years
-  - 🍏**Personnel Assets**: Employees 
+  - 🍏**Personnel Assets**: Employees
 
 - 2.3.3 Asset management
   - Asset management refers to managing both tangible and intangible assets; this starts with inventories of assets, tracking the assets, and taking additional steps to protect them throughout their lifetime
+  - An effective asset management program helps prevent losses by tracking and protecting assets throughout their lifetime. 
   - **Accountability**: ensures that account management has assurance that only authorized users are accessing a system and using it properly
   - 🍏**Hardware assets**: IT resources such as computers, servers, routers, switches and peripherals
     - use an automated configuration management system (CMS) to help with hardware asset management
@@ -305,7 +306,9 @@
        - They provide a good starting point that can be tailored to organizational needs.
        - The Microsoft's Windows 10 security baseline, The NSA Windows 10 Secure Host Baseline, and The CIS Windows 10 baseline are all useful for building a Windows 10 security standard. Group Policy can then be used to monitor and apply settings in a security baseline. 
        - The Center for Internet Security (CIS) works with subject matter experts from a variety of industries to create lists of security controls for operating systems, mobile devices, server software, and network devices.
-       - The controls implemented from a security baseline should match the data classification of the data used or stored on the system. 
+       - The controls implemented from a security baseline should match the data classification of the data used or stored on the system.
+       - A baseline is a listing of security controls that provide a minimum level of security. Organizations can tailor a baseline to meet their needs.
+       - The baseline is a starting point, and it does not ensure maximum security. A baseline provides a listing of controls an organization can apply, but it isn't necessarily a listing of applied controls.
   - 🔴**Tailoring**: refers to modifying the list of ✏️ security controls ✏️ within a baseline to align with the org's mission
     - includes the following activities:
       - identifying and designating common controls; specificaion of organization-defined parameters in the security controls via explicit assignment and selection statements
@@ -321,6 +324,7 @@
     - Scoping is the process of reviewing and selecting security controls based on the system that they will be applied to. 
     - Scoping involves selecting only the controls that are appropriate for your IT systems
     - Scoping involves setting the boundaries of security control implementations.
+    - The scoping process removes controls from a list of controls from a suggested baseline. 
 
 - 2.6.3 Standards selection
   - Organizations need to identify the standards (e.g. PCI DSS, GDPR etc) that apply and ensure that the security controls they select fully comply with these standards
@@ -357,9 +361,9 @@
       - ✏️DLP solutions are useful for data in transit, scanning data on the wire, and stopping the transmission/transfer, based on the DLP rules set (e.g. outbound data that contains numbers matching a social security number pattern, a DLP rule can be used to block that traffic)
     - 🌟**Data in use**: 
       - ✏️CASB solution often combines DLP, a web application firewall with some type of authentication and authorization, and a network firewall in a single solution; A CASB solution is helpful for protecting data in use (and data in transit)
-  - 🟢**Pseudonymization**: refers to the process of using pseudonyms or alias to represent other data
+  - 🟢**Pseudonymization**: refers to the process of using pseudonyms or alias to represent other data. An external dataset holds the original data along with the pseudonym so that the original dataset can be re-created.
        - A pseudonym is an alias, and pseudonymization can prevent data from directly identifying an entity (i.e. person).
-       -  Pseudonymization is the process of replacing some data with an identifier, such as apseudonym.
+       -  Pseudonymization is the process of replacing some data with an identifier, such as a pseudonym.
        - However, if applying pseudonymization techniques, the GDPR still applies
        - the process can be reversed
   - 🟢**Tokenization**: use of a token, typically a random string of characters that ✏️remains the same for each instance of that data, to replace other data. Tokenization replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
@@ -380,12 +384,13 @@
          4. Data swapping: Swapping data involves exchanging data between different records, which can still potentially allow for some degree of identification, especially if the data structure or patterns are recognizable.
          5. Data perturbation: is the use of false or misleading data in a database management system in order to redirect or thwart information confidentiality attacks.
          6. Synthetic data
+         7. Randomized masking: is one of many anonymization methods. When done correctly, it cannot be reversed to discover the original data. 
   - 🟢**Randomizing data** Randomizing data is a common approach to anonymization. It involves replacing PII with artificial but realistic-looking data. This technique ensures that the data in a test environment does not correspond to any actual individuals, thus protecting privacy while maintaining the data’s utility for testing purposes.
 
 - **Policy ▶️ Standard ▶️ Baseline ▶️ Guideline ▶️Procedure**
     - **Policy**: Policy is High level from Management 
     - **Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53. Standards selection refers to adding security controls based on external standards.
-    - **Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks, or imaging. Imaging is done to deploy an identical configuration to multiple systems, but this is typically done after identifying security controls.
+    - **Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks, or imaging. Imaging is done to deploy an identical configuration to multiple systems, but this is typically done after identifying security controls. Baselines are starting points, generally using lists, and they typically require modifications. Baselines are often used when creating images of OS
     - **Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88
 
 - **Salami Attack** is a type of cyberattack or fraud where a perpetrator takes small, seemingly insignificant actions that individually appear harmless but collectively result in a substantial impact. The term "salami" is used metaphorically, implying that the attack slices off small pieces, like slicing a salami, which are not noticeable individually but accumulate to cause significant harm.
