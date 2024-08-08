@@ -79,9 +79,9 @@
      - Data labeling can help ensure that controls are applied to the right systems and data.
      - Data labels are crucial to identify the classification level of information contained on the media, and labeling data at creation helps to ensure that it is properly handled throughout its lifecycle.
      - Requiring all media to have a label means that when unlabeled media is found, it should immediately be considered suspicious. This helps to prevent mistakes that might leave sensitive data unlabeled.
-     - Tagging: Tags that include information about the lifespan of the data and when it has expired can help with lifecycle management processes. Tags can be as simple as timestamps, or they can include additional metadata like the data type, creator, or purpose that can help inform the retention and disposal process. Metadata tagging allow organisations to use technical tools like DLP and DRM to handle and track data, based on its type and content.
+     - Tagging: Tags that include information about the lifespan of the data and when it has expired can help with lifecycle management processes. Tags can be as simple as timestamps, or they can include additional metadata like the data type, creator, or purpose that can help inform the retention and disposal process. Metadata tagging allow organisations to use technical tools like DLP and DRM to handle and track data, based on its type and content. Asset tagging is used to make sure that individuals working with assets can determine the security level or practices they require.
   - 🏷️**Data Collection Limitation**: Providing ✏️consent, or agreeing to data collection and use, is important in many data collection scenarios and may be required by law. ✏️Only required data is collected, that individuals are made aware of the data collection, and that they consent to the collection. Similarly, data should only be collected ✏️lawfully and via fair methods. Prevent loss by not collecting unnecessary sensitive data. 🥇Sometimes it is better to collect limited information🥇
-  - 🏷️**Data Location**: keep duplicate copies of backups, on- and off-site
+  - 🏷️**Data Location**: keep duplicate copies of backups, on- and off-site. Data location, particularly at rest, may drive compliance requirements based on local or national laws. This concern drives the majority of data location concerns
   - 🏷️**Storage**: define storage locations and procedures by storage type; use physical locks for paper-based media, and encrypt electronic data. It is cost effective to purchase high-quality media to contain sensitive data becuase the value of the data often far exceeds the cost of the media. This makes more expensive media that may have a longer life span or additional capabilities like encryption support a good choice for sensitive data. Backup media should be protected with the same level of protection afforded the data it contains e.g using a secure offsite storage facility. Backup tapes should be removed from service when they begin to generate errors. 
   - **Data Remanence**: data remaining on media after typical erasure; Remanence describes data left on media after an attempt is made to remove the data. 
 - 🔥sanitization is a series of processes that removes data from a system or media while ensuring that the data is unrecoverable by any means. Sanitization methods (such as clearing, purging, and destroying) help ensure that data cannot be recovered. 📝Note: Downgrading systems and media is rare due to the difficulty of ensuring that sanitization is complete. The need to completely wipe (or destroy) the media that systems use means that the ✏️cost of reuse is often significant and may exceed the cost of purchasing a new system or media i.e sanitazation cost ▶ cost of new media.
@@ -113,7 +113,7 @@
 
 - 2.3.1 Information and asset ownership
   - ☪️**Data owner**: the person who has ultimate organizational responsibility for data; usually sr. manager (CEO,president, dept. head); data owners typically delegate data protection tasks to others in the org 
-  - ☪️**Asset Owner**: identifies the individual(s) responsible for protecting the asset or for delegating the task of protecting the asset
+  - ☪️**Asset Owner**: identifies the individual(s) responsible for protecting the asset or for delegating the task of protecting the asset. Asset owners are responsible for assets in an organization, including their procurement, management, and life cycle.
 
 - 2.3.2 Asset inventory (e.g., tangible, intangible)
   - **Inventory**: complete list of items.  In most organizations, changing processes so that new systems and devices are added to inventory before they are deployed is the first step in making sure asset inventories are current. A system inventory is most frequently used to associate individuals with systems or devices. This can help when tracking their support history and aids in provisioning the proper tools, permissions, and data to a system. While it can be a lot of work, the most complete inventory of active systems and devices can be created by determining what is connected to the network by looking at logs, and then finding those assets. Barcodes & RFID tags are a common solution for tracking hardware assets and equipment. RFID tags can be queried wirelessly at varying ranges depending on the tags and may be built-in to hand-held readers or even included in doorways or arches to track items as they enter or leave a facility. Visual inventory relies on staff checking items, MAC addresses are hardware addresses for networked devices.
@@ -192,7 +192,7 @@
       - custodians are granted rights to perform day-to-day tasks when handling data
   - 🔴**Administrators** have the rights to apply the permissions to access and handle data.
       - The system administrators can act in the roles of data administrators who grant access and will also act as custodians who are tasked with the day-to-day application of security controls such as providing/granting/managing user access.
-  - 🔴**Data Steward**: a newer concept related to users of the data; those who use the data for the business purpose. In many organizations, data stewards are internal roles that oversee how data is used. They can be referred to as data custodians.
+  - 🔴**Data Steward**: a newer concept related to users of the data; those who use the data for the business purpose. In many organizations, data stewards are internal roles that oversee how data is used. They can be referred to as data custodians. Data stewards provide oversight and data governance.
   - 🔴**Security administrator**: responsible for ensuring the overall security of entire infrastructure; they perform tasks that lead to the discovery of vulnerabilities, monitor network traffic and configure tools to protect the network (like firewalls and antivirus software) 
     - security admins also devise security policies, plans for business continuity and disaster recovery and train staff
   - 🔴**Supervisors**: responsible for overseeing the activities of all the above entities and all support personnel; they ensure team activities are conducted smoothly and that personnel is properly skilled for the tasks assigned
@@ -253,9 +253,9 @@
 - Personnel: beyond retaining data for required time periods and maintaining hardware to read the data, you need personnel who know how to operate the hardware to execute restoraton processes
 
 - 🍮**End-Of-Life (EOL)**: often identified by vendors as the time when they stop offering a product for sale. At the end of their life (EOL) for workstations, they should be destroyed. Destruction is the most complete method of ensuring that data cannot be exposed, and organizations often opt to destroy either the drive or the entire workstation or device to ensure that data cannot be recovered or exposed.
-- 🍮**End-Of-Support (EOS)/End-Of-Service-Life (EOSL)**: often used to identify when support ends for a product. 📝Instead of vendor, a company company can intentionally end support and needs to address what happens to the devices next—secure disposal, destruction, or re-sale—depending on data security requirements and policies set by the company. For example, A company’s policy of issuing new phones every two years suggests that they have a planned schedule for replacement, which can be seen as aligning with an EOS policy, even though the old phones are still functional and receiving updates.
+- 🍮**End-Of-Support (EOS)/End-Of-Service-Life (EOSL)**: often used to identify when support/update ends for a product. 📝Instead of vendor, a company company can intentionally end support and needs to address what happens to the devices next—secure disposal, destruction, or re-sale—depending on data security requirements and policies set by the company. For example, A company’s policy of issuing new phones every two years suggests that they have a planned schedule for replacement, which can be seen as aligning with an EOS policy, even though the old phones are still functional and receiving updates.
 - EOL,EOS/EOSL can apply to either software or hardware
-
+- 🍮**End of development** occurs when no new software updates or patches are being released
 [2.6](#2.6) Determine data security controls and compliance requirements (OSG-9 Chpt 5)
 
 - You need security controls that protect data in each possible state: at rest, in transit or in use
@@ -304,12 +304,12 @@
          - ✴️Dynamic RAM DRAM: Stores data using capacitors and transistors. The data needs to be refreshed periodically to maintain its integrity. ✏️Slower due to the need for periodic refreshing of the data stored in capacitors. cost-effective for ✏️larger memory capacities and ✏️consumes less power. 🔥volatile
     - 🍎**Secondary Memory** is a term used to describe magnetic, optical, or flash media (i.e., typical storage devices like HDD, SSD, CD, DVD, and thumb drives). These devices will ✏️retain their contents after being removed from the computer and may later be read by another user. They are therefore 🔥non-volatile. Secondary memory, such as disk-based memory, is not directly accessible by the CPU. 📝The best way to ensure that data on DVDs is fully gone is to destroy them, and pulverizing DVDs is an appropriate means of destruction. DVD-ROMs are write-only media, meaning that secure erase and zero wipes won't work.
 
-- 2.6.2 Scoping and tailoring
+- 2.6.2 Scoping and tailoring: 📝Modifying baselines to better suit an organization is known as tailoring. Scoping occurs when baselines are reviewed to ensure that only controls suited to the environment or system are used. 
   - 🔴**Baseline**: documented, lowest level of security config allowed by a standard or organisation
        - After selecting a control baseline, orgs fine-tune with tailoring and scoping processes; a big part of the tailoring process is aligning controls with an org's specific security requirements
        - They provide a good starting point that can be tailored to organizational needs.
        - The Microsoft's Windows 10 security baseline, The NSA Windows 10 Secure Host Baseline, and The CIS Windows 10 baseline are all useful for building a Windows 10 security standard. Group Policy can then be used to monitor and apply settings in a security baseline. 
-       - The Center for Internet Security (CIS) works with subject matter experts from a variety of industries to create lists of security controls for operating systems, mobile devices, server software, and network devices.
+       - The 🌰Center for Internet Security (CIS) works with subject matter experts from a variety of industries to create lists of security controls for operating systems, mobile devices, server software, and network devices. CIS provides OS, application, and hardware security configuration guides for a wide range of products.
        - The controls implemented from a security baseline should match the data classification of the data used or stored on the system.
        - A baseline is a listing of security controls that provide a minimum level of security. Organizations can tailor a baseline to meet their needs.
        - The baseline is a starting point, and it does not ensure maximum security. A baseline provides a listing of controls an organization can apply, but it isn't necessarily a listing of applied controls.
@@ -321,6 +321,7 @@
       - selecting/specifying compensating controls
       - assigning control values
       - tailoring matches your organization's mission and the controls from a selected baseline.
+      - Tailoring adjusts security requirements to organizational needs.
       - Tailoring ensures that assessment methods are appropriate to the systems, services, and other assets that are being validated and is the best answer here.
       - The tailoring process refers to modifying a list of controls to align with the organization's mission. One way it does so is by modifying control parameters, such as changing the account lockout threshold. While tailoring includes scoping, assigning different values for controls only apples to tailoring. Tailoring is done after selecting a baseline.
   - 🔴**Scoping**: limiting the general baseline recommendations by removing those that do not apply; part of the tailoring process and refers to reviewing a list of baseline ✏️ security controls ✏️ and selecting only those controls that apply to the systems you're trying to protect
@@ -330,8 +331,8 @@
     - Scoping is the process of reviewing and selecting security controls based on the system that they will be applied to. 
     - Scoping involves selecting only the controls that are appropriate for your IT systems
     - Scoping involves setting the boundaries of security control implementations.
-    - The scoping process removes controls from a list of controls from a suggested baseline. 
-
+    - The scoping process removes controls from a list of controls from a suggested baseline.
+    - Scoping is the process of determining which controls are appropriate to an organization, environment, or implementation.
 - 2.6.3 Standards selection
   - Organizations need to identify the standards (e.g. PCI DSS, GDPR etc) that apply and ensure that the security controls they select fully comply with these standards
   - Even if the org doesn't have to comply with a specific standard, using a well-designed community standard can be helpful (e.g. NIST SP 800 documents)
@@ -349,6 +350,7 @@
          - ✈️Continuous audit trail  
     - 💻**Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network and  providing monitoring and policy enforcement capabilities
          - A cloud access security broker (CASB) is software placed logically between users and cloud-­based resources, and it can enforce security policies used in an internal network.
+         - CASB can be on-site or cloud-based and are security policy enforcement points that operate between users and cloud services. A CASB can provide insight into what users are doing, enforce policies, provide threat protection, and even provide data loss prevention capabilities. 
       - note that entities must comply with the EU GDPR, and use additional data protection methods such as pseudonymization, tokenization, and anonymization
   - One of the primary methods of protecting the confidentiality of data is encryption
   - Options for protecting your data vary depending on its state:
