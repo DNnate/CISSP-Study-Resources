@@ -119,56 +119,56 @@ You may find this domain to be more technical than others, and if you have exper
     - Enable people to access only the data classified for their clearance level
     - A security model provides a framework to implement a security policy.
     - **The State Machine Model** describes a system that is always secure no matter what state it is in. A secure state machine model system always boots into a secure state, maintains a secure state across all transitions, and allows subjects to access resources only in a secure manner compliant with the security policy. Bell–LaPadula and Biba are built on a state machine model.
-- **Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification
+- 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification
     - Focuse is on confidentiality ✏️
     - Simple security property: 🔥No read-up 
     - Star (*) property: No write-down (AKA confinement property)
     - Discretionary Security Property: uses an access matrix (need to know in order to access)
     - Doesn't address covert channels
-- **Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
+- 🔴**Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
     - Focus is on integrity ✏️
     -  is based on information flow, and is a multilevel model.
     - Simple security property: “🔥No read down” (for example, users with a Top Secret clearance can’t read data classified as Secret)
     - Star (*) property: “No write up” (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
     - By combining it with Bell-LaPadula, you get both confidentiality and integrity
-- **Take-Grant**: 
+- 🔴**Take-Grant**: 
     - The take-grant model employs a directed graph to dictate how rights can be passed from one subject to another, or from a subject to an object
     - Four rules: 
         - ✏️take 
         - ✏️grant 
         - ✏️create The principle can be summed up as “The enemy knows the system.”The principle can be summed up as “The enemy knows the system.”
         - ✏️remove
-- **Clark-Wilson**:
+- 🔴**Clark-Wilson**:
     - Focus is on integrity ✏️
     - Designed to protect integrity using the access control triplet (‼️Subject, ‼️Object, ‼️Program/Interface)
     - A program interface is used to limit what is done by a subject; if the focus of an intermediary program between subject and object is to protect integrity, then it is an implementation of the Clark-Wilson model
-- **Brewer and Nash Model**:
+- 🔴**Brewer and Nash Model**:
     - AKA "ethical wall", and "cone of silence"
     - created to permit access controls to change dynamically based on a user's previous activity
     - prevents conflicts of interest. ✏️
-- **Goguen-Meseguer Model**:
+- 🔴**Goguen-Meseguer Model**:
     - An integrity model ✏️
     - it is based on 🔥predetermining the set or domain (i.e., a list) of objects that a subject can access.
     - Foundation of noninterference conceptual theories
     - **Noninterference** is the concept of limiting the actions of a subject at a higher security level so that they do not affect the system state or the actions of a subject at a lower security level.
-- **Sutherland Model**:
+- 🔴**Sutherland Model**:
     - Focuses on preventing 🔥interference in support of integrity
     - Focus is on Integrity ✏️
-- **Graham-Denning Model**
+- 🔴**Graham-Denning Model**
     - Focused on the secure creation and deletion of both subjects and objects
     - 8 primary protection rules or actions
         - ✏️1-4:securely create/delete a subject/object
         - ✏️5-8:securely provide the read/grant/delete/transfer access right
-- **Harrison-Ruzzo-Ullman Model**:
+- 🔴**Harrison-Ruzzo-Ullman Model**:
     - Focuses on the assignment of object access rights to subjects as well as the integrity/resilience of those assigned rights
     - HRU is an 🔥extension of Graham-Denning model
-- **Star Model**: 
+- 🔴**Star Model**: 
     - Not an official model, but name refers to using asterisks (stars) to dictate whether a person at a specific level of confidentiality is allowed to write data to a lower level of confidentiality
     - Also determines whether a person can read or write to a higher or lower level of confidentiality
-- **Access Control Matrix**: 
+- 🔴**Access Control Matrix**: 
     - An access control matrix assembles ACLs from multiple objects into a single table.
     - The rows of that table are the ACEs of a subject across those objects, thus a capabilities list.
-- **Capability Tables**: 
+- 🔴**Capability Tables**: 
     - They are different from ACLs in that a capability table is focused on subjects (such as users, groups, or roles).
     - For example, a capability table created for the accounting role will include a list of all objects that the accounting role can access as well as the specific privileges assigned to the accounting role for these objects. In con-
 trast, ACLs are focused on objects.
@@ -374,8 +374,6 @@ a specific server. This is also known as function as a service (FaaS).
             - ebedded systems should be isolated from the internet, and from a private production network to minimize exposure to remote exploitation, remote control, and malware
             - use secure boot feature and physically protecting the hardware
      - **Cyber-physical systems** refer to devices that offer a computational means to control something in the physical world. In the past these might have been referred to as 🎵 embedded systems 🎵, but the category of cyber-physical seems to focus more on the physical world results rather than the computational aspects.
-     - 
-
 - 3.5.13 High-Performance Computing (HPC) systems
     - **High-performance computing (HPC)** systems: platforms designed to perform complex calculations/data manipulation at extremely high speeds (e.g. super computers or MPP (Massively Parallel Processing)); often used by large orgs, universities, or gov agencies
         - An HPC solution is composed of three main elements: 
