@@ -14,7 +14,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - **Ethical Wall**: the use of administrative, phyiscal/logical controls to establih/enforce separation of information, assets or job functions for need-to-know boundaries or prevent conflict of interest situations; AKA compartmentalization
 - **Granularity of controls**: level of abstraction or detail which in a security function can be configured or tuned for performance and sensitivity
 - **IDaaS**: cloud-based service that broker IAM functions to target systems on customers' premise and/or in the cloud
-- **Identity proofing**: process of collecting/verifying info about someone who has requested access/credential/special privilege to establish a relationship with that person
+- **Identity proofing**: process of collecting/verifying info about someone who has requested access/credential/special privilege to establish a relationship with that person. Identity proofing is the process of validating that the entity or individual claiming an identity is the actual person or organization that they claim to be. This commonly relies on additional information like documents or knowledge that others would not have. 
 - **Self-service identity management**: elemnts of the identity management lifecycle which the end-user (identity in question) can initiate or perform on their own (e.g. password reset, changes to challenge questions etc)
 - **Whaling attack**: phishing attacks targeting highly-placed officials/private individuals with sizeable assets authorizing large fund wire transfers
 
