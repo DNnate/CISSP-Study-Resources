@@ -50,67 +50,72 @@ You may find this domain to be more technical than others, and if you have exper
 [3.1](#3.1) Research, implement, and manage engineering processes using secure design principles (OSG-9 Chpts 1,8,9,16)
 
 - 3.1.1 Threat Modeling
-    - **Threat modeling**: a security process where potential threats are identified, categorized, and analyzed. It can be performed as a proactive measure during design and development or as an reactive measure once a product has been deployed
+    - ❄️**Threat modeling**: a security process where potential threats are identified, categorized, and analyzed. It can be performed as a
+         - 🍉proactive measure during design and development
+         - 🍉reactive measure once a product has been deployed
         - Threat modeling identifies the potential harm, the probability of occurrence, the priority of concern, and the means to eradicate or reduce the threat
 - 3.1.2 Least Privilege
-    - **Least privilege**: states that subjects are granted only the privileges necessary to perform assigned work tasks and no more; this concept extends to data and systems
+    - ❄️**Least privilege**: states that subjects are granted only the privileges necessary to perform assigned work tasks and no more; this concept extends to data and systems
         - Limiting and controlling privileges based on this concept protects confidentiality and data integrity
+        - Privilege creep indicates that an employee has accumulated permissions that they no longer require, indicating a violation of the least privilege principle.
 - 3.1.3 Defense in Depth
-    - **Defense in Depth**: AKA layering, is the use of multiple controls in a series, where a single failed control should not result in exposure of systems or data. Layers should be used in a series (one after the other), NOT in parallel. When you see the terms levels, multilevel, layers, classifications, zones, realms, compartments, protection rings etc think about Defense in Depth
+    - ❄️**Defense in Depth**: AKA layering, is the use of multiple controls in a series, where a single failed control should not result in exposure of systems or data. Layers should be used in a series (one after the other), NOT in parallel. When you see the terms levels, multilevel, layers, classifications, zones, realms, compartments, protection rings etc think about Defense in Depth
+    - It is a security strategy that employs multiple layers of protection to safeguard an organization's assets. It involves implementing various security measures at different levels to provide overlapping layers of defense, thereby enhancing overall security. By implementing a variety of security controls across different layers (physical, technical, and administrative), organizations can better safeguard their resources against various threats. 
 - 3.1.4 Secure defaults
-    - **Secure defaults**: when you think about defaults, consider how something operates brand new, just turned over to you by the vendor
+    - ❄️**Secure defaults**: when you think about defaults, consider how something operates brand new, just turned over to you by the vendor
         - e.g. wireless router default admin password, or firewall configuration requiring changes to meet an organization's needs
 - 3.1.5 Fail securely
-    - **Fail securely**: if a system, asset, or process fails, it shouldn't reveal sensitive information, or be less secure than during normal operation. Failing securely could involve reverting to defaults
+    - ❄️**Fail securely**: if a system, asset, or process fails, it shouldn't reveal sensitive information, or be less secure than during normal operation. Failing securely could involve reverting to defaults. The fail securely principle says that security controls should default to a secure state in the event of a control failure. 
 - 3.1.6 Separation of duties (SoD)
-    - **Separation of duties (SoD)**: separation of duties (SoD) and responsibilities ensures that no single person has total control over a critical function or system;  SoD is a process to minimize opportunities for misuse of data or environment damage 
+    - ❄️**Separation of duties (SoD)**: separation of duties (SoD) and responsibilities ensures that no single person has total control over a critical function or system;  SoD is a process to minimize opportunities for misuse of data or environment damage 
         - e.g. one person sells tickets, another collects tickets and restricts access to ticket holders in a movie theater
 - 3.1.7 Keep it simple
-    - **Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design
+    - ❄️**Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design. The keep it simple principle says that security controls and other technologies should remain as simple as possible while still completing their objectives.
     3.1.8 Zero Trust
-    - **Zero Trust**: Security architecture where no entity is trusted by default. Based on 3 principles
-        - Assume Breach ⭐
-        - Verify Explicitly ⭐
-        - Least Privilege Access ⭐    
+    - ❄️**Zero Trust**: Security architecture where no entity is trusted by default. Based on 3 principles
+        - ⭐Assume Breach 
+        - ⭐Verify Explicitly 
+        - ⭐Least Privilege Access     
         - it is a security concept and alternative of the traditional (castle/moat) approach where nothing is automatically trusted; instead each request for activity or access is assumed to be from an unknown and untrusted location until otherwise verified
         - It suppports defense-in-depth which advises a layered approach to security
         - replaces trust but verify as a security design principle by asserting that all activities by all users/entities must be subject to control, authentication, authorization, and management at the most granular level possible (Trust but Verify invlolves a network perimeter beyond which everything is untrusted)
         - Zero trust addresses the limitations of the legacy network perimeter-based security model. It treats identity as the control plane and assumes compromise/breach when verifying every request.
         - Goal is to have every access request authenticated, authorized, and encrypted prior to access being granted to an asset or resource
+        - 🛑In a zero-trust network architecture, access control decisions should never be made based upon a system's location on the network. Therefore, an IP address should never be used and would be the least appropriate of these options. 
         - See my article on an [Overview of Zero Trust Basics](https://blog.balancedsec.com/p/an-overview-of-zero-trust-basics)
 - 3.1.9 Privacy by design
-    - **Privacy by design (PbD)**: a guideline to integrate privacy protections into products during the earliest design phase rather than tacking it on at the end of development
+    - ❄️**Privacy by design (PbD)**: a guideline to integrate privacy protections into products during the earliest design phase rather than tacking it on at the end of development
         - Same overall concept as "security by design" or "integrated security" where security is an element of design and architecture of a product starting at initiation and continuing through the software development lifecycle (SDLC)
         - There are 7 recognized principles to achieve privacy by design:
-            - ✏️ Proactive, preventative: think ahead and design for things that you anticipate might happen
-            - ✏️ Default setting: make private by default, e.g. social media app shouldn't share user data with everybody by default
-            - ✏️ Embedded: build privacy in; don’t add it later
-            - ✏️ Full functionality, positive-sum: achieve both security and privacy, not just one or the other
-            - ✏️ Full lifecycle protection: privacy should be achieved before, during and after a transaction. Part of this is securely disposing of data when it is no longer needed
-            - ✏️ Visibility, transparency, open: publish the requirements and goals; audit them and publish the findings
-            - ✏️ Respect, user-centric: involve end users, providing the right amount of information for them to make informed decisions about their data
+            - 1. 🚸Proactive, preventative; preventive, not remedial: think ahead and design for things that you anticipate might happen
+              2. 🚸Privacy as the default setting: make private by default, e.g. social media app shouldn't share user data with everybody by default
+              3. 🚸Privacy embedded into design: build privacy in; don’t add it later
+              4. 🚸Full functionality—positive-sum, not zero-sum: achieve both security and privacy, not just one or the other
+              5. 🚸End-to-end security—full lifecycle protection: privacy should be achieved before, during and after a transaction. Part of this is securely disposing of data when it is no longer needed
+              6. 🚸Visibility and transparency—keep it open: publish the requirements and goals; audit them and publish the findings
+              7. 🚸Respect for user privacy—keep it user-centric: involve end users, providing the right amount of information for them to make informed decisions about their data
 - 3.1.10 Trust by verify
-    - **Trust but verify**: based on a Russian proverb, and no longer sufficient; it's the traditional approach of trusting subjects and devices within a company's security perimeter automatically, leaving an org vulnerable to insider attacks and providing intruders the ability to easily perform lateral movement
-- 3.1.11 Shared responsibility 🔥
-    - **Shared responsibility**: the security design principle that indicates that organizations do not operate in isolation
-        - ✏️Everyone in an organization has some level of security responsibility
-        - ✏️the job of the CISO and security team is to establish & maintain security
-        - ✏️The job of regular employees to perform their tasks within the confines of security
-        - ✏️The job of the auditor is to monitor the environment for violations
-        - ✏️When working with third parties, especially with cloud providers, each entity needs to understand their portion of the shared responsibility of performing work operations and maintaining security. This is often referenced as the **cloud shared responsibility model**
-        - ✏️Organizations are responsible to their stakeholders for making good security decisions in order to sustain the organization.
-        - ✏️As we become aware of new vulnerabilities and threats, we should consider it our responsibility (if not our duty) to responsibly disclose that information to the proper vendor or to an information sharing center.
+    - ❄️**Trust but verify**: based on a Russian proverb, and no longer sufficient; it's the traditional approach of trusting subjects and devices within a company's security perimeter automatically, leaving an org vulnerable to insider attacks and providing intruders the ability to easily perform lateral movement. The trust but verify principle says that organizations should use auditing to ensure that control objectives are met. 
+- 3.1.11 Shared responsibility 
+    - ❄️**Shared responsibility**: the security design principle that indicates that organizations do not operate in isolation
+        - ⭐Everyone in an organization has some level of security responsibility
+        - ⭐the job of the CISO and security team is to establish & maintain security
+        - ⭐The job of regular employees to perform their tasks within the confines of security
+        - ⭐The job of the auditor is to monitor the environment for violations
+        - ⭐When working with third parties, especially with cloud providers, each entity needs to understand their portion of the shared responsibility of performing work operations and maintaining security. This is often referenced as the **cloud shared responsibility model**
+        - ⭐Organizations are responsible to their stakeholders for making good security decisions in order to sustain the organization.
+        - As we become aware of new vulnerabilities and threats, we should consider it our responsibility (if not our duty) to responsibly disclose that information to the proper vendor or to an information sharing center.
 
 - 3.1.12 Secure Access Service Edge (SASE)
-    - **SASE**: A design philosophy closely related to Zero trust Network Architecture. 🔥Brings together networking and security functions and delivers them as an integrated cloud service.
+    - ❄️**SASE**: A design philosophy closely related to Zero trust Network Architecture. 🔥Brings together networking and security functions and delivers them as an integrated cloud service.
     - Described as Gartner in 2019 as a networking model that merges traditional WAN managment and security capabilites into a unified whole
     - It is built, implemented and managed  using 🔥cloud-native architectures. It is a responde to the the edge-centric trends in mobility, cloud, SD-WAN and the internet of things. It is WAN implmentation in the world of hybrid and public cloud. SASE compnents include:
-     - Firewall services
-     - secure web gateway
-     - anti-malware services
-     - intrusion prevention services
-     - cloud access service broker (CASB)
-     - Data Loss Prevention (DLP) 
+     - ⭐Firewall services
+     - ⭐secure web gateway
+     - ⭐anti-malware services
+     - ⭐intrusion prevention services
+     - ⭐cloud access service broker (CASB)
+     - ⭐Data Loss Prevention (DLP) 
 
 [3.2](#3.2) Understand the fundamental concepts of security modles (e.g. Biba, Star Model, Bell-LaPadula) (OSG-9 Chpt 8)
 - Security models:
@@ -122,14 +127,14 @@ You may find this domain to be more technical than others, and if you have exper
 - 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification
     - Focuse is on confidentiality ✏️
     - Simple security property: 🔥No read-up 
-    - Star (*) property: No write-down (AKA confinement property)
+    - Star (*) security property: 🔥No write-down ( an individual may not write to a file at a lower classification level than that of the individual. AKA confinement property)
     - Discretionary Security Property: uses an access matrix (need to know in order to access)
     - Doesn't address covert channels
 - 🔴**Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
     - Focus is on integrity ✏️
     -  is based on information flow, and is a multilevel model.
-    - Simple integrity property: “🔥No read down” ( individual may not read a file classified at a lower security level than the individual's security clearance. for example, users with a Top Secret clearance can’t read data classified as Secret)
-    - Star (*) property: “No write up” (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
+    - Simple integrity property: 🔥No read down ( individual may not read a file classified at a lower security level than the individual's security clearance. for example, users with a Top Secret clearance can’t read data classified as Secret)
+    - Star (*) integrity property: 🔥No write up (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
     - By combining it with Bell-LaPadula, you get both confidentiality and integrity
 - 🔴**Take-Grant**: 
     - The take-grant model employs a directed graph to dictate how rights can be passed from one subject to another, or from a subject to an object
@@ -205,15 +210,14 @@ trast, ACLs are focused on objects.
 [3.4](#3.4) Understand security capabilities of Information Systems (IS) (e.g. memory protection, Trusted Platform Model (TPM), encryption/decryption) (OSG-9 Chpt 8)
 
 - Security capabilities of information systems include memory protection, virtualization, Trusted Platform Module (TPM), encryption/decryption, interfaces, and fault tolerance
-- A computing device is likely running multiple apps and services simultaneously, each occupying a segment of memory; the goal of memory protection is to prevent one app or service from impacting another
+- 🟣**Memory Protection:** A computing device is likely running multiple apps and services simultaneously, each occupying a segment of memory; the goal of memory protection is to prevent one app or service from impacting another
 - Memory protection is a core security component that must be designed and implemented into an operating system. It must be enforced regardless of the programs executing in the system. Otherwise, instability, violation of integrity, denial of service, and disclosure are likely results.
 - There are two primary memory protection methods:
-    - **Process isolation**: OS provides separate memory spaces for each processes instructions and data, and prevents one process from impacting another
-    - **Hardware segmentation**: forces separation via physical hardware controls rather than logical processes; in this type of segmentation, the operating system maps processes to dedicated memory locations
-- **Confinment/Constrained Process**: A constrained process is one that can access only certain memory locations.
-- **Virtualization**: technology used to host one or more operating systems within the memory of a single host, or to run applications that are not compatible with the host OS; the goal is to protect the hypervisor and ensure that compromising one VM doesn't affect others on that host
-
-- **Trusted Platform Module (TPM)**: a cryptographic chip that is sometimes included with a client computer or server; a TPM enhances the capabilities of a computer by offering hardware-based cryptographic operations
+    - 🐊**Process isolation**: OS provides separate memory spaces for each processes instructions and data, and prevents one process from impacting another
+    - 🐊**Hardware segmentation**: forces separation via physical hardware controls rather than logical processes; in this type of segmentation, the operating system maps processes to dedicated memory locations
+- 🟣**Confinement/Constrained Process**: A constrained process is one that can access only certain memory locations. Using a sandbox is an example of confinement, where the system restricts the access of a particular process to limit its ability to affect other processes running on the same system.
+- 🟣**Virtualization**: technology used to host one or more operating systems within the memory of a single host, or to run applications that are not compatible with the host OS; the goal is to protect the hypervisor and ensure that compromising one VM doesn't affect others on that host
+- 🟣**Trusted Platform Module (TPM)**: a cryptographic chip that is sometimes included with a client computer or server; a TPM enhances the capabilities of a computer by offering hardware-based cryptographic operations
     - 🔥TPM is a tamper-resistant integrated circuit built into some motherboards that can perform cryptographic operations (including key gen) and protect small amoutns of sensitive info, like passwords and cryptographic keys
     - The Trusted Platform Module (TPM) is a hardware security technique that stores an encryption key on a chip on the motherboard and prevents someone from accessing an encrypted drive by installing it in another computer.
     - Many security products and encryption solutions require a TPM
@@ -221,16 +225,17 @@ trast, ACLs are focused on objects.
     - TPM does include  Storage Root Key (SRK), which is used for managing and protecting cryptographic operations and keys within the TPM.
     - A TPM is an example of a hardware security module (HSM)
     - **hardware security module (HSM)**: a cryptoprocessor used to manage and store digital encryption keys, accelerate crypto operations, support faster digital signatures, and improve authentication. HSMs include root keys and are used for high-security key management. They are generally used in server environments rather than directly on endpoints.
-
-- **User interface**: a constrained UI can be used in an application to restrict what users can do or see based on their privileges
+- 🟣**User interface**: a constrained UI can be used in an application to restrict what users can do or see based on their privileges
     - e.g. dimming/graying out capabilities for users without the correct privilege
     - A constrained or restricted interface is implemented within an application to restrict what users can do or see based on their privileges. The purpose of a constrained interface is to limit or restrict the actions of both authorized and unauthorized users.
     - An interface is also the method by which two or more systems communicate
 - Be aware of the common security capabilities of interfaces:
     - **Encryption/decryption**: when communications are encrypted, a client and server can communicate without exposing information to the network; when an interface doesn’t provide such a capability, use IPsec or another encrypted transport mechanism
+         - In the context of Virtual Private Networks (VPNs), ESP (Encapsulating Security Payload) and AH (Authentication Header) are two different protocols used in IPsec (Internet Protocol Security) to secure network communications.
+              -  **🎬ESP (Encapsulating Security Payload)**: The Encapsulating Security Payload (ESP) protocol provides confidentiality and integrity for packet contents. It encrypts packet payloads and provides limited authentication and protection against replay attacks. ESP provides confidentiality by encrypting the data being transmitted. ESP can also provide optional authentication, which verifies the integrity of the data and ensures that it has not been tampered with.
+              -  **🎬AH (Authentication Header)**: AH provides data integrity and authentication by adding a header to the IP packet. This header contains a cryptographic checksum (or hash) that ensures the data has not been altered in transit and verifies the identity of the sender. Unlike ESP, AH does not provide encryption, so the data itself remains visible to anyone who intercepts it. It only ensures that the data has not been modified and that it comes from a legitimate source. AH is less commonly used on its own in VPNs because it does not offer encryption. It’s often used in conjunction with ESP to provide a more comprehensive security solution.
     - **Signing**: used for 🔥non-repudiation; in a high-security environment, both encrypt and sign all communications if possible
-
-- **Fault tolerance**: capability used to enhance availability; in the event of an attack (e.g. DoS), or system failure, fault tolerance helps keep a system up and running
+- 🟣**Fault tolerance**: capability used to enhance availability; in the event of an attack (e.g. DoS), or system failure, fault tolerance helps keep a system up and running
 
 [3.5](#3.5) Assess and mitigate the vulnerabilities of security architectures, designs and solution elements (OSG-9 Chpts 9,16,20)
 
@@ -256,7 +261,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - 3.5.4 Cryptographic systems
     - Goal of a well-implemented cryptographic system is to make compromise too time-consuming and/or expensive 
     - Each component has vulnerabilities:
-        - **Kerckhoff's Principle** (AKA Kerckhoff's assumption): a cryptographic system should be secure even if everything about the system, except the key, is public knowledge. The principle can be summed up as “The enemy knows the system.”
+        - 🍎**Kerckhoff's Principle** (AKA Kerckhoff's assumption): a cryptographic system should be secure even if everything about the system, except the key, is public knowledge. The principle can be summed up as “The enemy knows the system.”
         - Software: used to encrypt/decrypt data; can be a standalone app, command-line, built into the OS or called via API; like any software, there are likely bugs/issues, so regular patching is important
         - Keys: dictate how encryption is applied through an algorithm; a key should remain secret, otherwise the security of the encrypted data is at risk  
             - **key space**: represents all possible permutations of a key
@@ -274,7 +279,8 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - 3.5.5 Industrial Control Systems (ICS)
     - **Industrial control systems (ICS)**: a form of computer-management device that controls industrial processes and machines, also known as operational technology (OT): ICS examples include distributed control systems (DCSs), programmable logic controllers (PLCs), and supervisory control and data acquisition (SCADA).
     - **Supervisory control and data acquisition (SCADA)**: systems used to control physical devices like those in an electrical power plant or factory; SCADA systems are well suited for distributed environments, such as those spanning continents 
-        - some SCADA systems still rely on legacy or proprietary communications, putting them at risk, especially as attackers gain knowledge of such systems and their vulnerabilities      
+        - some SCADA systems still rely on legacy or proprietary communications, putting them at risk, especially as attackers gain knowledge of such systems and their vulnerabilities
+        - Supervisory Control and Data Acquisition systems, or SCADA systems, provide a graphical interface to monitor industrial control systems (ICS). 
         - SCADA risk mitigations:
             - ✏️isolate networks 
             - ✏️limit access physically and logically 
@@ -821,7 +827,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - this is a system that collects power into a battery but can switch over to pulling power from the battery when the power grid fails
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
 
-- **Administrative Physical Controls**: The six common physical security control mechanisms is ✏️Deter, ✏️Deny, ✏️Detect, ✏️Delay, ✏️Determine, ✏️Decide. 
+- 🔴**Administrative Physical Controls**: The six common physical security control mechanisms is ✏️Deter, ✏️Deny, ✏️Detect, ✏️Delay, ✏️Determine, ✏️Decide. 
     - facility construction and selection
     - site management
     - building design
@@ -832,7 +838,9 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
             - Not all environments and facilities support security guards. This may be because of actual human incompatibility or the layout, design, location, and construction of the facility.
             - Not all security guards are themselves reliable.
             - Prescreening, bonding, and training do not guarantee that you won’t end up with an ineffective or unreliable security guard.
-- **Technical Physical Controls**
+- Physical Access Control:
+     - Locks and Keys, Security Guards, CCTV, Security Alarms
+- 🔴**Technical Physical Controls**
      - **Motion Detectors**: A motion detector, or motion sensor, is a device that senses movement or sound in a specific area, and it is a common element of intruder detection systems. Many types of motion detectors exist, including the following:
          - digital motion detector monitors for  changes in the digital pattern of a monitored area (smart security camera).
          - passive infrared (PIR) or heat-based motion detector monitors for changes in the heat levels and patterns.
@@ -854,6 +862,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
          - should also be used to monitor activities around valuable assets and to provide additional protection in public areas such as parking structures and walkways
          -  should be positioned to have clear sight lines of all exterior walls, entrance and exit points, and interior hallways.
          -  Simple motion recognition or motion-triggered cameras may be fooled by animals, birds, insects, weather, or foliage. In order to distinguish between a false alarm and an intrusion, a secondary verification mechanism should be used.
+         - **Closed-circuit television (CCTV)** systems act as a secondary verification mechanism for physical presence because they allow security officials to view the interior of the facility when a motion alarm sounds to determine the current occupants and their activities.
          -  **Enhanced video surveillance (EVS)**: systems are capable of object detection, which can include faces, devices, and weapons. Some can even automatically identify individuals and track their motion (gait analysis).  EVSs can be enhanced using machine learning to improve video monitoring through automation, improved image recognition, and pattern/activity interpretation
      - **Lighting**: Lighting is often claimed to be the most commonly deployed physical security mechanism. However, lighting is only a deterrent and not a strong deterrent. It should not be used as the primary or sole protection mechanism except in areas with a low threat level. Your entire site, inside and out, should be well lit. This provides for easy identification of personnel and makes it easier to notice intrusions.
      - Key locks are also most common and inexpensive form of physical access control device for both interior and exterior use. 
@@ -864,15 +873,10 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
          - Smoke-actuated systems use photoelectric or radioactive ionization sensors as triggers. Either method monitors for light or radiation obstruction or reduction across an air gap caused by particles in the air. It is intended to be triggered by smoke, but dust and steam can sometimes trigger the alarm.
          - The radioactive ionization-based smoke detectors use americium as a source of alpha particles and a Geiger counter to detect the rate of these particles' transmission across the air gap. This element produces such low levels of radiation that a layer of dead skin cells is sufficient to block its transmission.
          - Incipient smoke detection systems, also known as aspirating sensors, are able to detect the chemicals typically associated with the very early stages of combustion before a fire is other wise detectible via other means. These devices are even more costly than flame-actuated sensors and are also only used in high-risk or critical environments.
-
-- Physical Access Control:
-     - Locks and Keys, Security Guards, CCTV, Security Alarms
-     - Closed-circuit television (CCTV) systems act as a secondary verification mechanism for physical presence because they allow security officials to view the interior of the facility when a motion alarm sounds to determine the current occupants and their activities.
-- Administrative Access Control:
+- 🔴**Administrative Access Control**:
      - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
-- Technical Access Control:
+- 🔴**Technical Access Control**:
      - passwords, multi-factor authentication (MFA), or digital certificates, Encryption, Firewalls, IDS/IPS, Access Control Lists (ACLs), Access Cards/Biometric Systems
-- **Defense-in-depth** is a security strategy that employs multiple layers of protection to safeguard an organization's assets. It involves implementing various security measures at different levels to provide overlapping layers of defense, thereby enhancing overall security. By implementing a variety of security controls across different layers (physical, technical, and administrative), organizations can better safeguard their resources against various threats. 
            
 - 3.10 Information System Life Cycle
     - a structured framework for managing an information system from its intial conception to its retirement.
@@ -930,7 +934,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - TLS - In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is ­protected using symmetric cryptography.
 
 - **Key Excahnge Algorithms**:
-    - Diffie-Hellman (DH): Based on the mathematical difficulty of the discrete logarithm problem. Susceptible to man-in-the-middle attacks if not properly authenticated. Variants include Ephemeral Diffie-Hellman (DHE) for forward secrecy.
+    - Diffie-Hellman (DH): Based on the mathematical difficulty of the discrete logarithm problem. Susceptible to man-in-the-middle attacks if not properly authenticated. Variants include Ephemeral Diffie-Hellman (DHE) for forward secrecy. The Diffie-Hellman algorithm allows for the secure exchange of symmetric encryption keys over a public network
     - RSA (Rivest-Shamir-Adleman): Public key algorithm that can be used for both encryption and digital signatures, including key exchange. Based on the computational difficulty of factoring large prime numbers. Can be used to securely exchange symmetric keys by encrypting them with the recipient’s public key.
     - Elliptic Curve Diffie-Hellman (ECDH): An adaptation of Diffie-Hellman using elliptic curve cryptography to provide equivalent security with smaller key sizes. More efficient and faster compared to traditional Diffie-Hellman. Commonly used in modern secure communications (e.g., TLS).
     - Elliptic Curve Integrated Encryption Scheme (ECIES): Combines elliptic curve cryptography for key exchange with symmetric encryption and message authentication. Provides confidentiality, integrity, and authenticity. Utilizes ECDH for key exchange and AES for encryption.
