@@ -520,6 +520,8 @@ taxed by inefficient implementations of software and VMs.
     - 🔴**Asymmetric** encryption: process that uses different keys for encryption and decryption, and in which the decryption key is computationally not possible to determine given the encryption key itself
         - uses public and private key
         - In an asymmetric cryptosystem, the sender of a message encrypts the message using the recipient's public key. The recipient may then decrypt that message using their own private key, which only they should possess.
+        - total number of keys required to completely connect n parties using assymmetric cryptography is given by this formula: 
+            - **n(2)** 🥇 Asymmetric cryptosystems use a pair of keys for each user. E.g with 1,000 users, the system will require 2,000 keys.
         - Asymmetric (AKA public key, since one key of a pair is available to anybody) algorithms provide convenient key exchange mechanisms and are scalable to very large numbers of users (addressing the two most significant challenges for users of symmetric cryptosystems) 
         - Asymmetric cryptosystems avoid the challenge of sharing the same secret key between users, by using pairs of public and private keys to allow secure communication without the overhead of complex key distribution
         - **Public key**: one part of the matching key pair, which can be shared or published
@@ -636,61 +638,60 @@ taxed by inefficient implementations of software and VMs.
         - one technique proves helpful against simple ciphers is frequency analysis (counting the number of times each letter appears in the ciphertext)
         - An attacker without any special access to the system would only be able to perform ciphertext-­only attacks.
 - 3.7.3 Known plaintext
-    - **Known plaintext**: in this attack, the attacker has a copy of the encrypted message along with the plaintext message used to generate the ciphertext (the copy); this knowledge greatly assists the attacker in breaking weaker codes. Known plaintext and chosen plaintext attacks require the ability to encrypt data.
+    - 🍮**Known plaintext**: in this attack, the attacker has a copy of the encrypted message along with the plaintext message used to generate the ciphertext (the copy); this knowledge greatly assists the attacker in breaking weaker codes. Known plaintext and chosen plaintext attacks require the ability to encrypt data.
 - 3.7.4 Frequency analysis
-    - **Frequency analysis**: an attack where the characteristics of a language are used to defeat substitution ciphers
+    - 🍮**Frequency analysis**: an attack where the characteristics of a language are used to defeat substitution ciphers
         - for example in English, the letter "E" is the most common, so the most common letter in an encrypted cyphertext could be a substitution for "E"
         - other examples might include letters that appear twice in sequence, as well as the most common words used in a language 
 - 3.7.5 Chosen ciphertext
-    - **Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to one or more ciphertexts and their plaintexts; i.e. the attacker has the ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext. Known plaintext and chosen plaintext attacks require the ability to encrypt data.
-    - **Differential cryptanalysis**: a type of chosen plaintext attack, and a general form of cryptanalysis applicable primarily to block ciphers, but also to stream ciphers and cryptographic hash functions; in the broadest sense, it is the study of how differences in information input can affect the resultant difference at the output; advanced methods such as differential cryptanalysis are types of chosen plaintext attacks
+    - 🍮**Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to one or more ciphertexts and their plaintexts; i.e. the attacker has the ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext. Known plaintext and chosen plaintext attacks require the ability to encrypt data.
+    - 🍮**Differential cryptanalysis**: a type of chosen plaintext attack, and a general form of cryptanalysis applicable primarily to block ciphers, but also to stream ciphers and cryptographic hash functions; in the broadest sense, it is the study of how differences in information input can affect the resultant difference at the output; advanced methods such as differential cryptanalysis are types of chosen plaintext attacks
         - as an example, an attacker may try to get the receiver to decrypt modified ciphertext, looking for that modification to cause a predictable change to the plaintext
 - 3.7.6 Implementation attacks
-    - **Implementation attack**: attempts to exploit weaknesses in the implementation of a cryptography system
+    - 🍮**Implementation attack**: attempts to exploit weaknesses in the implementation of a cryptography system
         - focuses on exploiting the software code, not just errors or flaws but the methodology employed to program the encryption system
         - in this type of attack, attackers look for weaknesses in the implementation, such as a software bug or outdated firmware
 - 3.7.7 Side-channel: Side-channel attacks seek to use information about system activity and retrieve information that is actively being encrypted
-    - **Side-channel**: these attacks seek to use the way computer systems generate characteristic footprints of activity, such as changes in processor utilization, power consumption, or electromagnetic radiation to monitor system activity and retrieve information that is actively being encrypted
+    - 🍮**Side-channel**: these attacks seek to use the way computer systems generate characteristic footprints of activity, such as changes in processor utilization, power consumption, or electromagnetic radiation to monitor system activity and retrieve information that is actively being encrypted
         - similar to an implementation attack, side-channel attacks look for weaknesses outside of the core cryptography functions themselves
         - a side-channel attack could target a computer’s CPU, or attempt to gain key information about the environment during encryption or decryption by looking for electromagnetic emissions or the amount of execution time required during decryption
         - side-channel characteristics information are often combined together to try to break down the cryptography
         - timing attack is an example
 - 3.7.8 Side-channel
-    - **Fault-Injection**: the attacker attempts to compromise the integrity of a cryptographic device by causing some type of external fault 
+    - 🍮**Fault-Injection**: the attacker attempts to compromise the integrity of a cryptographic device by causing some type of external fault 
         - for example, using high-voltage electricity, high or low temperature, or other factors to cause a malfunction that undermines the security of the device.
         - Fault injection attacks require physical access to the facility.
 - 3.7.9 Timing
-    - **Timing**: timing attacks are an example of a side-channel attack where the attacker measures precisely how long cryptographic operations take to complete, gaining information about the cryptographic process that may be used to undermine its security.
+    - 🍮**Timing**: timing attacks are an example of a side-channel attack where the attacker measures precisely how long cryptographic operations take to complete, gaining information about the cryptographic process that may be used to undermine its security.
         - By analyzing these timing variations, an attacker can infer details about the cryptographic keys or the data being processed.
-        - If an encryption algorithm takes longer to process certain values or operations due to conditional statements or variable-length operations, an attacker might exploit these timing differences to gain insights into the key or plaintext.   
+        - If an encryption algorithm takes longer to process certain values or operations due to conditional statements or variable-length operations, an attacker might exploit these timing differences to gain insights into the key or plaintext.
+             - 🍓**Race condition**: The exploitation of the reliance of a system’s behavior on the sequence of events that occur externally. Time of Check to Time of Use (TOCTOU) attack (attacker exploits the difference in time btw when a security control is verified and the data protected by the control is actually used)
 - 3.7.10 Man-in-the-middle (MITM)
-    - **Man-in-the-middle (MITM) (AKA on-path)**: in this attack a malicious individual sits between two communicating parties and intercepts all communications (including the setup of the cryptographic session) 
+    - 🍮**Man-in-the-middle (MITM) (AKA on-path)**: in this attack a malicious individual sits between two communicating parties and intercepts all communications (including the setup of the cryptographic session) 
         - attacker responds to the originator's initialization requests and sets up a secure session with the originator 
         - attacker then establishes a second secure session with the intended recipient using a different key and posing as the originator 
         - attacker can then "sit in the middle" of the communication and read all traffic as it passes between the two parties
 - 3.7.11 Pass the hash
-    - **Pass the hash (PtH)**: a technique where an attacker captures a password hash (as opposed to the password characters) and then simply passes it through for authentication and potentially lateral access to other networked systems 
+    - 🍮**Pass the hash (PtH)**: a technique where an attacker captures a password hash (as opposed to the password characters) and then simply passes it through for authentication and potentially lateral access to other networked systems 
         - the threat actor doesn’t need to decrypt the hash to obtain a plain text password
         - PtH attacks exploit the authentication protocol, as the passwords hash remains static for every session until the password is rotated
         - 📝NTLM is known to be susceptible to pass-­the-­hash attacks
-        - attackers commonly obtain hashes by scraping a system’s active memory and other techniques. MIMIKATZ is a popular tool to exploit pass the hash
-- 3.7.12 Kerberos exploitation
-    - **Overpass the Hash**: alternative to the PtH attack, used when 🧠NTLM is disabled on the network (AKA pass the key) 
-    - **Pass the Ticket**: in this attack, attackers attempt to harvest tickets held in the lsass.exe process and if succesful, is able to move laterally using authenticated credentials. In a Pass the Ticket attack, an attacker acquires a valid ticket-granting ticket (TGT) or session key from a compromised account or system and uses it to authenticate and impersonate a legitimate user. This allows the attacker to gain unauthorized access to other systems and move laterally within the network without the need for further authentication. It is a common technique used in advanced persistent threats (APTs) to maintain persistent access and expand control within a network.
-    - **Silver Ticket**: a silver ticket uses the captured NTLM hash of a service account to create a ticket-granting service (TGS) ticket (the silver ticket grants the attacker all the privileges granted to the service account) 
-    - **Golden Ticket**: if an attacker obtains the hash of the Kerberos service account (KRBTGT), they can create tickets at will within Active Directory (this provides so much power it is referred to as having a golden ticket) 
-    - **Kerberos Brute-Force**: attackers use the Python script kerbrute.py on Linux, and Rubeus on Windows systems; tools can guess usernames and passwords 
-    - **ASREPRoast**: ASREPRoast identifies users that don’t have Kerberos preauthentication enabled or not enforced in AD. This can be discovered using tools such as GetNPUsers from the Impacket suite. The name "ASREPRoast" is derived from the combination of "AS-REP" (Authentication Service Response) and "Roast" (a term used to describe the process of extracting and cracking hashes).
-    - **Kerberoasting**: kerberoasting collects encrypted ticket-granting service (TGS) tickets
+        - attackers commonly obtain hashes by scraping a system’s active memory and other techniques. MIMIKATZ is a popular tool to exploit pass the hash on Active Directory accounts 
+- 3.7.12 🍮**Kerberos exploitation**
+    - 🍓**Overpass the Hash**: alternative to the PtH attack, used when 🧠NTLM is disabled on the network (AKA pass the key) 
+    - 🍓**Pass the Ticket**: in this attack, attackers attempt to harvest tickets held in the lsass.exe process and if succesful, is able to move laterally using authenticated credentials. In a Pass the Ticket attack, an attacker acquires a valid ticket-granting ticket (TGT) or session key from a compromised account or system and uses it to authenticate and impersonate a legitimate user. This allows the attacker to gain unauthorized access to other systems and move laterally within the network without the need for further authentication. It is a common technique used in advanced persistent threats (APTs) to maintain persistent access and expand control within a network.
+    - 🍓**Silver Ticket**: a silver ticket uses the captured NTLM hash of a service account to create a ticket-granting service (TGS) ticket (the silver ticket grants the attacker all the privileges granted to the service account) 
+    - 🍓**Golden Ticket**: if an attacker obtains the hash of the Kerberos service account (KRBTGT), they can create tickets at will within Active Directory (this provides so much power it is referred to as having a golden ticket) 
+    - 🍓**Kerberos Brute-Force**: attackers use the Python script kerbrute.py on Linux, and Rubeus on Windows systems; tools can guess usernames and passwords 
+    - 🍓**ASREPRoast**: ASREPRoast identifies users that don’t have Kerberos preauthentication enabled or not enforced in AD. This can be discovered using tools such as GetNPUsers from the Impacket suite. The name "ASREPRoast" is derived from the combination of "AS-REP" (Authentication Service Response) and "Roast" (a term used to describe the process of extracting and cracking hashes).
+    - 🍓**Kerberoasting**: kerberoasting collects encrypted ticket-granting service (TGS) tickets
 - 3.7.13 Ransomeware
-    - **Ransomware**: a type of malware that weaponizes cryptography 
+    - 🍮**Ransomware**: a type of malware that weaponizes cryptography 
         - using many of the same techniques as other types of malware, ransomware gens an encryption key, and encrypts critical files 
         - this encryption renders the data inaccessible to the authorized user or anyone else other than the malware author 
         - often threatning to publically release sensitive data if ransome is not paid 
         - 2020 study, 56% of orgs suffered a ransomeware attack, 27% of orgs who reported an attack chose to pay, on average ~$1.1m 
         - seek legal advice prior to engaging with ransomware authors
-     
-**Race condition**: The exploitation of the reliance of a system’s behavior on the sequence of events that occur externally. Time of Check to Time of Use (TOCTOU) attack (attacker exploits the difference in time btw when a security control is verified and the data protected by the control is actually used)
 
 [3.8](#3.8) Apply security principles to site and facility design (OSG-9 Chpt 10)
 
@@ -918,7 +919,7 @@ taxed by inefficient implementations of software and VMs.
     - HAVAL - Lenght 128, 160, 192, 224, 256 bits
     - MD2 - Lenght 128 bits(16 bytes)
     - MD4 - Lenght 128 bits(16 bytes)
-    - MD5 - Lenght 128 bits(16 bytes) 📝(All Message Digest variants have the same hash lenght. MD2-5 have been replaced by MD6)
+    - MD5 - Lenght 128 bits(16 bytes) 📝(All Message Digest variants have the same hash lenght. MD2-5 have been replaced by MD6) The MD5 hash algorithm has known collisions and, as of 2005, is no longer considered secure for use in modern environments
     - SHA-1 - Lenght ✏️160 (a real-world collision attack against SHA 1 was announced in early 2017)
     - SHA-224 - Lenght 224, produces 224-­bit digests
     - SHA-256 - Lenght 256, produces 256-­bit digests (sometimes called SHA 2)
