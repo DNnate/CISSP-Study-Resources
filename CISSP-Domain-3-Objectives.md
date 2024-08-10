@@ -60,7 +60,8 @@ You may find this domain to be more technical than others, and if you have exper
         - Privilege creep indicates that an employee has accumulated permissions that they no longer require, indicating a violation of the least privilege principle.
 - 3.1.3 Defense in Depth
     - ❄️**Defense in Depth**: AKA layering, is the use of multiple controls in a series, where a single failed control should not result in exposure of systems or data. Layers should be used in a series (one after the other), NOT in parallel. When you see the terms levels, multilevel, layers, classifications, zones, realms, compartments, protection rings etc think about Defense in Depth
-    - It is a security strategy that employs multiple layers of protection to safeguard an organization's assets. It involves implementing various security measures at different levels to provide overlapping layers of defense, thereby enhancing overall security. By implementing a variety of security controls across different layers (physical, technical, and administrative), organizations can better safeguard their resources against various threats. 
+    - It is a security strategy that employs multiple layers of protection to safeguard an organization's assets. It involves implementing various security measures at different levels to provide overlapping layers of defense, thereby enhancing overall security. By implementing a variety of security controls across different layers (physical, technical, and administrative), organizations can better safeguard their resources against various threats.
+    - The defense-in-depth principle suggests using multiple overlapping security controls to achieve the same control objective. E.g combined use of Network and host firewalls are both designed to limit network traffic and therefore are an example of defense in depth
 - 3.1.4 Secure defaults
     - ❄️**Secure defaults**: when you think about defaults, consider how something operates brand new, just turned over to you by the vendor
         - e.g. wireless router default admin password, or firewall configuration requiring changes to meet an organization's needs
@@ -175,11 +176,14 @@ You may find this domain to be more technical than others, and if you have exper
     - Also determines whether a person can read or write to a higher or lower level of confidentiality
 - 🔴**Access Control Matrix**: 
     - An access control matrix assembles ACLs from multiple objects into a single table.
+         - Access control list is a list of individual users who may access the file.  An ACL is a list of permissions attached to an object (such as a file, directory, or network resource) that specifies which users or systems are granted access and what kind of access they are permitted. Access Control List  consists of multiple access control entries.
+         - Access Control Entry: An ACE is a single entry within an ACL that defines the access rights for a specific user or group on a particular resource. Each ACE in an ACL specifies the permissions granted to a single user or group. It essentially defines a rule for access control in the context of the larger ACL.
+     - 📝ACL: Refers to the entire list of access control rules for a particular resource. 📝ACE: Refers to a single entry within that list, specifying permissions for one user or group.
     - The rows of that table are the ACEs of a subject across those objects, thus a capabilities list.
 - 🔴**Capability Tables**: 
     - They are different from ACLs in that a capability table is focused on subjects (such as users, groups, or roles).
-    - For example, a capability table created for the accounting role will include a list of all objects that the accounting role can access as well as the specific privileges assigned to the accounting role for these objects. In con-
-trast, ACLs are focused on objects.
+    - For example, a capability table created for the accounting role will include a list of all objects that the accounting role can access as well as the specific privileges assigned to the accounting role for these objects. In contrast, ACLs are focused on objects.
+- **Multistate systems** are certified to handle data from different security classifications simultaneously by implementing protection mechanisms that segregate data appropriately.
 
 [3.3](#3.3) Select controls based upon systems security requirements (OSG-9 Chpt 8)
 
@@ -876,9 +880,6 @@ taxed by inefficient implementations of software and VMs.
      - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
 - 🔴**Technical Access Control**:
      - passwords, multi-factor authentication (MFA), or digital certificates, Encryption, Firewalls, IDS/IPS, Access Control Lists (ACLs), Access Cards/Biometric Systems
-     - Access control list is a list of individual users who may access the file.  An ACL is a list of permissions attached to an object (such as a file, directory, or network resource) that specifies which users or systems are granted access and what kind of access they are permitted. Access Control List  consists of multiple access control entries.
-     - Access Control Entry: An ACE is a single entry within an ACL that defines the access rights for a specific user or group on a particular resource. Each ACE in an ACL specifies the permissions granted to a single user or group. It essentially defines a rule for access control in the context of the larger ACL.
-     - 📝ACL: Refers to the entire list of access control rules for a particular resource. 📝ACE: Refers to a single entry within that list, specifying permissions for one user or group.
            
 - 3.10 Information System Life Cycle
     - a structured framework for managing an information system from its intial conception to its retirement.
