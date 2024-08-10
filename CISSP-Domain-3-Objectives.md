@@ -795,21 +795,21 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - carbon dioxide (CO2) suppresses the oxygen supply
         - halon substitutes and other nonflammable gases interfere with the chemistry of combustion and/or suppress the oxygen supply
     - Fire stages:
-        - 🍐**Stage 1**: incipient stage: early warning of fire. At this stage, there is only air ionization and no smoke
-        - 🍐**Stage 2**: smoke stage: smoke is visible from the point of ignition
-        - 🍐**Stage 3**: flame stage: this is when a flame can be seen with the naked eye
-        - 🍐**Stage 4**: heat stage: at stage 4, there is an intense heat buildup and everything in the area burns
+        - 🍐**Stage 1**: ✏️incipient stage: early warning of fire. At this stage, there is only air ionization and no smoke
+        - 🍐**Stage 2**: ✏️smoke stage: smoke is visible from the point of ignition
+        - 🍐**Stage 3**: ✏️flame stage: this is when a flame can be seen with the naked eye
+        - 🍐**Stage 4**: ✏️heat stage: at stage 4, there is an intense heat buildup and everything in the area burns
     - Fire extinguisher classes:
-        - **Class A**: common combustibles
-        - **Class B**: liquids
-        - **Class C**: electrical
-        - **Class D**: metal
-        - **Class K**: cooking material (oil/grease)
+        - **🧯Class A**: common combustibles
+        - **🧯Class B**: liquids
+        - **🧯Class C**: electrical
+        - **🧯Class D**: metal
+        - **🧯Class K**: cooking material (oil/grease)
     - Four main types of suppression:
-        - **wet pipe system**: (AKA closed head system): is always filled with water; water discharges immediately when suppression is triggered
-        - **dry pipe system**: contains compressed inert gas
-        - **preaction system**: a variation of the dry pipe system that uses a two-stage detection and release mechanism. It is the best type of water-­based fire suppression system for a computer facility because it provides the opportunity to prevent the release of water in the event of a false alarm or false initial trigger. The most common cause of false positive for water-based fire suppression systems is humans.
-        - **deluge system**: uses larger pipes and delivers larger volume of water
+        - **👨‍🚒wet pipe system**: (AKA closed head system): is always ✏️filled with water; water discharges immediately when suppression is triggered
+        - **👨‍🚒dry pipe system**: contains compressed inert ✏️gas
+        - **👨‍🚒preaction system**: a variation of the dry pipe system that uses a ✏️two-stage detection and release mechanism. It is the best type of water-­based fire suppression system for a computer facility because it provides the opportunity to prevent the release of water in the event of a false alarm or false initial trigger. The most common cause of false positive for water-based fire suppression systems is humans.
+        - **👨‍🚒deluge system**: uses larger pipes and delivers ✏️larger volume of water
     - Note: Most sprinkler heads feature a glass bulb filled with a glycerin-based liquid; this liquid expands when it comes in contact with air heated to between 135 and 165 degrees; when the liquid expands, it shatters its glass confines and the sprinkler head activates
 - 3.9.9 Power (e.g., redundant, backup)
     - Consider designing power to provide for high availability
