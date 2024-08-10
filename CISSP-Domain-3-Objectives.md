@@ -64,11 +64,13 @@ You may find this domain to be more technical than others, and if you have exper
 - 3.1.4 Secure defaults
     - ❄️**Secure defaults**: when you think about defaults, consider how something operates brand new, just turned over to you by the vendor
         - e.g. wireless router default admin password, or firewall configuration requiring changes to meet an organization's needs
+        -  The idea that systems should be designed to operate in a secure manner if the user performs no other configuration is the secure defaults principle
 - 3.1.5 Fail securely
     - ❄️**Fail securely**: if a system, asset, or process fails, it shouldn't reveal sensitive information, or be less secure than during normal operation. Failing securely could involve reverting to defaults. The fail securely principle says that security controls should default to a secure state in the event of a control failure. 
 - 3.1.6 Separation of duties (SoD)
     - ❄️**Separation of duties (SoD)**: separation of duties (SoD) and responsibilities ensures that no single person has total control over a critical function or system;  SoD is a process to minimize opportunities for misuse of data or environment damage 
         - e.g. one person sells tickets, another collects tickets and restricts access to ticket holders in a movie theater
+        - The separation of duties principle says that no employee should have permission to perform two tasks that, when combined, would pose a security risk
 - 3.1.7 Keep it simple
     - ❄️**Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design. The keep it simple principle says that security controls and other technologies should remain as simple as possible while still completing their objectives.
     3.1.8 Zero Trust
@@ -192,9 +194,8 @@ trast, ACLs are focused on objects.
     - The evaluation will attempt to gauge the confidence level of a security feature 
     - **Security assurance requirements (SARs)**: Assurance is the degree of confidence that an organization has that its security controls are correctly implemented. It must be continually monitored and reverified. SAR is a description of how the TOE is to be evaluated, based on the development of the solution
     - Key actions during development and testing should be captured 
-    - An **evaluation assurance level (EAL)**: a numerical rating used to assess the rigor of an evaluation; the scale is
-        - ✏️EAL 1 (cheap and easy) to EAL7 (expensive and complex):
-        - ✏️EAL1: functionally tested
+    - An **evaluation assurance level (EAL)**: a numerical rating used to assess the rigor of an evaluation; the scale is EAL 1 (cheap and easy) to EAL7 (expensive and complex):
+        - ✏️EAL1: functionally tested (lowest level of assurance)
         - ✏️EAL2: structurally tested
         - ✏️EAL3: methodically tested and checked
         - ✏️EAL4: methodically designed, tested, and reviewed
@@ -430,20 +431,15 @@ taxed by inefficient implementations of software and VMs.
                 - keep highly sensitive systems and data on separate physical machines
                 - keep all hypervisor software current with vendor-released patches
                 - monitor attack, exposure and abuse indexes for new threats to virtual machines (which might be better protected); often, virtualization administrators have access to all virtuals
-
-- **A system on a chip (SoC)** is an integrated circuit (IC) or chip that has all of the elements of a computer integrated into a single chip. This often includes the main CPU, RAM, a GPU, Wi-Fi, wired networking, peripheral interfaces (such as USB), and power management. In most cases, the only item missing from an SoC compared to a full computer is bulk storage. Often a bulk storage device must be attached or connected to the SoC to store its programs and other files, since the SoC usually contains only enough memory to retain its own firmware or OS.
+- 🔵**System on a Chip (SoC)** is an integrated circuit (IC) or chip that has all of the elements of a computer integrated into a single chip. This often includes the main CPU, RAM, a GPU, Wi-Fi, wired networking, peripheral interfaces (such as USB), and power management. In most cases, the only item missing from an SoC compared to a full computer is bulk storage. Often a bulk storage device must be attached or connected to the SoC to store its programs and other files, since the SoC usually contains only enough memory to retain its own firmware or OS.
     - The security risks of an SoC include the fact that the firmware or OS of an SoC is often minimal, which leaves little room for most security features.
-    - A few devices that use an SoC include the mini-computer Raspberry Pi, fitness trackers, smart watches, and some smartphones.
-      
-- **Static systems/environments** are applications, OSs, hardware sets, or networks that are configured for a specific need, capability, or function, and then set to remain unaltered.
+    - A few devices that use an SoC include the mini-computer Raspberry Pi, fitness trackers, smart watches, and some smartphones.    
+- 🔵**Static systems/environments** are applications, OSs, hardware sets, or networks that are configured for a specific need, capability, or function, and then set to remain unaltered.
      - A nonpersistent system or static system is a computer system that does not allow, support, or retain changes. Thus between uses and/or reboots, the operating environment and installed software are exactly the same. Changes may be blocked or simply discarded after each system use.
-     - A nonpersistent system is able to maintain its configuration and security in spite of user attempts to imple-
-ment change.
-
-- **parallel data systems**: . Systems designed to perform numerous calculations simultaneously include SMP, AMP, and MPP. Grid computing is a form of parallel distributed processing that loosely groups a significant number of processing nodes to work toward a specific processing goal. Peer-to-peer (P2P) technologies are networking and distributed application solutions that share tasks and workloads among peers.
-  
-- **Microcontrollers**: A microcontroller is similar to but less complex than a system on a chip (SoC). A microcontroller may be a component of an SoC. A microcontroller is a small computer consisting of a CPU (with one or more cores), memory, various
-input/output capabilities, RAM, and often nonvolatile storage in the form of flash or ROM/PROM/EEPROM. Examples include Raspberry Pi, Arduino, and FPGA.
+     - A nonpersistent system is able to maintain its configuration and security in spite of user attempts to implement change.
+- 🔵**parallel data systems**: . Systems designed to perform numerous calculations simultaneously include SMP, AMP, and MPP. Grid computing is a form of parallel distributed processing that loosely groups a significant number of processing nodes to work toward a specific processing goal. Peer-to-peer (P2P) technologies are networking and distributed application solutions that share tasks and workloads among peers.
+    -  🛑Isolation Breach: One of the main risks of grid computing is an isolation breach. An isolation breach in the distributed computing client could be catastrophic, allowing someone who compromises the controller to assume control of every device in the organization. 
+- 🔵**Microcontrollers**: A microcontroller is similar to but less complex than a system on a chip (SoC). A microcontroller may be a component of an SoC. A microcontroller is a small computer consisting of a CPU (with one or more cores), memory, various input/output capabilities, RAM, and often nonvolatile storage in the form of flash or ROM/PROM/EEPROM. Examples include Raspberry Pi, Arduino, and FPGA.
 
 [3.6](#3.6) Select and determine cryptographic solutions (OSG-9 Chpts 6,7)
 - FIPS 140-2: Established to aid in the protection of digitally stored unclassified , yet sensitive information.
@@ -480,7 +476,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - legacy (the algorithm and/or key length is outdated and should be avoided when possible) 
         - disallowed (algorithm and/or key length is no longer allowed for the indicated use)
 - 3.6.2 Cryptographic methods (e.g., symmetric, asymmetric, elliptic curves, quantum)
-    - **Symmetric** encryption: uses the same key for encryption and decryption
+    - 🔴**Symmetric** encryption: uses the same key for encryption and decryption
         - symmetric encryption uses a shared secret key available to all users of the cryptosystem 
         - symmetric encryption is faster than asymmetric encryption because smaller keys can be used for the same level of protection 
         - downside is that users or systems must find a way to securely share the key and hope the key is used only for the specified communication
@@ -508,7 +504,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
                 -  They typically have lower latency compared to block ciphers, making them suitable for real-time applications.
                 -  Disadvantage is that if the key stream is reused (keystream reuse), it can compromise security, as it makes the cipher vulnerable to attacks. Ensuring that the same key stream is not reused is critical and can complicate key management.
  
-    - **Asymmetric** encryption: process that uses different keys for encryption and decryption, and in which the decryption key is computationally not possible to determine given the encryption key itself
+    - 🔴**Asymmetric** encryption: process that uses different keys for encryption and decryption, and in which the decryption key is computationally not possible to determine given the encryption key itself
         - uses public and private key
         - In an asymmetric cryptosystem, the sender of a message encrypts the message using the recipient's public key. The recipient may then decrypt that message using their own private key, which only they should possess.
         - Asymmetric (AKA public key, since one key of a pair is available to anybody) algorithms provide convenient key exchange mechanisms and are scalable to very large numbers of users (addressing the two most significant challenges for users of symmetric cryptosystems) 
@@ -564,17 +560,17 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
             - Quantum Key Distribution: 🥇 a secure communication that involves components of quantum mechanics. Enables a party to generate a shared random key known only to them. This secret key can then be used to encrypt and decrypt messages. it has the ability to detect eavesdropping by any 3rd party trying to gain knowledge of the key. eavesdropper interception introduces detectable anomalies. Not the same as quantum cryptography. it relies on having an authenticated classical channel of communication. it means the parties have already exchanged symmetric keys of sufficient lenght or public keys of suffcient security level. Only used for key distribution and not to transmit data. used in high security scenarios.
         - Key management can be difficult with symmetric encryption but is much simpler with asymmetric encryption
         - There are several tasks related to key management:
-            - **Key Creation**: Encryption keys should be generated using FIPS 140-2/3 validated modules
-            - **Key distribution**: the process of sending a key to a user or system; it must be secure and it must be stored in a secure way on the computing device
+            - ✴️**Key Creation**: Encryption keys should be generated using FIPS 140-2/3 validated modules
+            - ✴️**Key distribution**: the process of sending a key to a user or system; it must be secure and it must be stored in a secure way on the computing device
                 - keys are stored before and after distribution; when distributed to a user, it can't hang out on a user's desktop
             - Keys shouldn't be in cleartext outside the crypography device. Encrypt keys with a sepereate encryption key before distributing to other parties.
             - Key distribution and maintenance should be automated (and hidden from the user)
             - Keys should be backed up!
-            - **Key Storage**: Keys should never be stored in plain text.  This includes keys in volatile and persistent memory.
-            - **Key Usage**: AUP determines guard rails for key usage
-            - **Key Destruction**: Removal of an encryption key from its operational location
-            - **Key Deletion**: Removing any information that can be used to reconstruct the key e.g device wipe in MDM such as Airwatch & MS Intune
-            - **Key escrow**: process or entity that can recover lost or corrupted cryptographic keys
+            - ✴️**Key Storage**: Keys should never be stored in plain text.  This includes keys in volatile and persistent memory.
+            - ✴️**Key Usage**: AUP determines guard rails for key usage
+            - ✴️**Key Destruction**: Removal of an encryption key from its operational location
+            - ✴️**Key Deletion**: Removing any information that can be used to reconstruct the key e.g device wipe in MDM such as Airwatch & MS Intune
+            - ✴️**Key escrow**: process or entity that can recover lost or corrupted cryptographic keys
                 - **multiparty key recovery**: when two or more entities are required to reconstruct or recover a key
                 - **m of n control**: 🥇 you designate a group of (n) people as recovery agents, but only need subset (m) of them for key recovery. M of N Control requires that a minimum number of agents (M) out of the total number of agents (N) work together to perform high-­security tasks. M of N Control is an example of a split knowledge technique, but not all split knowledge techniques are used for key escrow. In an m of n control system, at least m of n possible escrow agents must collaborate to retrieve an encryption key from the escrow database.
                 - **split custody**: enables two or more people to share access to a key (e.g. for example, two people each hold half the password to the key)
