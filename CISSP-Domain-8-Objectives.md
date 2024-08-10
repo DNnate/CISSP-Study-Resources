@@ -109,7 +109,7 @@ temporarily separated from each other so that one does not interfere with the ot
 - **Source code**: program statements in human-readable form using a formal programming language's rules for syntax and semantics
 - **Spyware/Adware**: software that performas a variety of monitoring and data gathering functions; AKA potentailly unwanted programs/applications (PUP/PUA), may be used in monitoring employee activities/use of resources (spyware), or advertising efforts (adware); both may be legit/authorized by system owners or unwanted intruders
 - **Strong data typing**: feature of a programming language preventing data type mismatch errors; strongly typed languages will generate errors at compile time
-- **Input validation** verifies that user-supplied input does not violate security conditions. Effective against buffer overflow, XSS and SQL Injection attacks
+- **Input validation** verifies that user-supplied input does not violate security conditions. Effective against buffer overflow, XSS and SQL Injection attacks. Parameter checking, or input validation, is used to ensure that input provided by users to an application matches the expected parameters for the application. Developers may use parameter checking to ensure that input does not exceed the expected length, preventing a buffer overflow attack.
 - **Bounds checking** is a form of input validation, but it is typically used to ensure that numeric input falls within an acceptable range
 - **Limit Check** which is the verification that input is within a preset range or domain
 - **Threat surface**: total set of penetrations of a boundary or perimeter that surrounds or contains system elements
