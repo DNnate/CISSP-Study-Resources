@@ -213,7 +213,7 @@ You may find this domain to be more technical than others, and if you have exper
 - **System Assurance Processes:**
   - 🍌Certification: Evaluating a system to ensure it meets specified security requirements.
   - 🍌Verification: The verification process is similar to the certification process in that it validates security controls. Verification may go a step further by involving a 📝third-party testing service and compiling results that may be trusted by many different organizations.
-  - 🍌Accreditation: is the act of management formally accepting an evaluating system, not evaluating the system itself. 
+  - 🍌Accreditation: Officially authorizing the system to operate based on its security certification. It is the act of management formally accepting an evaluating system, not evaluating the system itself. 
 [3.4](#3.4) Understand security capabilities of Information Systems (IS) (e.g. memory protection, Trusted Platform Model (TPM), encryption/decryption) (OSG-9 Chpt 8)
 - 🍎**Trusted Computer System Evaluation Criteria (TCSEC)**, also known as the Orange Book. These modes are used to categorize the security features of a computer system based on its ability to enforce confidentiality and access control policies.
     - ✴️**Dedicated Mode**: In Dedicated mode, the system is used for information of a single classification level, and all users must have at least the clearance level necessary to access that information.
@@ -381,6 +381,7 @@ derivative of SOA is microservices.
     - **Serverless architecture** (AKA **function as a service (FaaS)**): a cloud computing concept where code is managed by the customer and the platform (i.e. supporting hardware and software) or servers are managed by the CSP
         - Applications developed on serverless architecture are similar to microservices, and each function is created to operate independently and automonomously
         - A serverless model, as in other CSP models, is a shared security model,and your org and the CSP share security responsibility
+        - In a serverless computing model, the vendor does not expose details of the operating system to its customers. Therefore, the vendor retains full responsibility for configuring it securely under the shared responsibility model of cloud computing.
         - There is always a physical server running the code, but this execution model allows the software designer/architect/programmer/developer to focus on the logic of their code and not have to be concerned about the parameters or limitations of a specific server. This is also known as function as a service (FaaS).
 
 - **Infrastructure as Code**: Infrastructure as Code (IaC) is a concept where you manage and provision IT infrastructure using code rather than manual processes. 
