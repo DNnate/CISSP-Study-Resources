@@ -146,6 +146,7 @@ You may find this domain to be more technical than others, and if you have exper
     - AKA "ethical wall", and "cone of silence"
     - created to permit access controls to change dynamically based on a user's previous activity
     - prevents conflicts of interest. ✏️
+    - implemented in environments where data from different clients exist 
 - 🔴**Goguen-Meseguer Model**:
     - An integrity model ✏️
     - it is based on 🔥predetermining the set or domain (i.e., a list) of objects that a subject can access.
@@ -567,7 +568,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
             - **Key Deletion**: Removing any information that can be used to reconstruct the key e.g device wipe in MDM such as Airwatch & MS Intune
             - **Key escrow**: process or entity that can recover lost or corrupted cryptographic keys
                 - **multiparty key recovery**: when two or more entities are required to reconstruct or recover a key
-                - **m of n control**: 🥇 you designate a group of (n) people as recovery agents, but only need subset (m) of them for key recovery. M of N Control requires that a minimum number of agents (M) out of the total number of agents (N) work together to perform high-­security tasks. M of N Control is an example of a split knowledge technique, but not all split knowledge techniques are used for key escrow.
+                - **m of n control**: 🥇 you designate a group of (n) people as recovery agents, but only need subset (m) of them for key recovery. M of N Control requires that a minimum number of agents (M) out of the total number of agents (N) work together to perform high-­security tasks. M of N Control is an example of a split knowledge technique, but not all split knowledge techniques are used for key escrow. In an m of n control system, at least m of n possible escrow agents must collaborate to retrieve an encryption key from the escrow database.
                 - **split custody**: enables two or more people to share access to a key (e.g. for example, two people each hold half the password to the key)
             - Key rotation: rotate keys (retire old keys, implement new) to reduce the risks of a compromised key having access
             - Key states:
@@ -792,10 +793,10 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - carbon dioxide (CO2) suppresses the oxygen supply
         - halon substitutes and other nonflammable gases interfere with the chemistry of combustion and/or suppress the oxygen supply
     - Fire stages:
-        - **Stage 1**: incipient stage: at this stage, there is only air ionization and no smoke
-        - **Stage 2**: smoke stage: smoke is visible from the point of ignition
-        - **Stage 3**: flame stage: this is when a flame can be seen with the naked eye
-        - **Stage 4**: heat stage: at stage 4, there is an intense heat buildup and everything in the area burns
+        - 🍐**Stage 1**: incipient stage: early warning of fire. At this stage, there is only air ionization and no smoke
+        - 🍐**Stage 2**: smoke stage: smoke is visible from the point of ignition
+        - 🍐**Stage 3**: flame stage: this is when a flame can be seen with the naked eye
+        - 🍐**Stage 4**: heat stage: at stage 4, there is an intense heat buildup and everything in the area burns
     - Fire extinguisher classes:
         - **Class A**: common combustibles
         - **Class B**: liquids
@@ -864,6 +865,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
 
 - Physical Access Control:
      - Locks and Keys, Security Guards, CCTV, Security Alarms
+     - Closed-circuit television (CCTV) systems act as a secondary verification mechanism for physical presence because they allow security officials to view the interior of the facility when a motion alarm sounds to determine the current occupants and their activities.
 - Administrative Access Control:
      - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
 - Technical Access Control:
