@@ -183,7 +183,6 @@ You may find this domain to be more technical than others, and if you have exper
 - 🔴**Capability Tables**: 
     - They are different from ACLs in that a capability table is focused on subjects (such as users, groups, or roles).
     - For example, a capability table created for the accounting role will include a list of all objects that the accounting role can access as well as the specific privileges assigned to the accounting role for these objects. In contrast, ACLs are focused on objects.
-- **Multistate systems** are certified to handle data from different security classifications simultaneously by implementing protection mechanisms that segregate data appropriately.
 
 [3.3](#3.3) Select controls based upon systems security requirements (OSG-9 Chpt 8)
 
@@ -213,6 +212,11 @@ You may find this domain to be more technical than others, and if you have exper
     - ✏️Denial of Authorization.
 
 [3.4](#3.4) Understand security capabilities of Information Systems (IS) (e.g. memory protection, Trusted Platform Model (TPM), encryption/decryption) (OSG-9 Chpt 8)
+- 🍎**Trusted Computer System Evaluation Criteria (TCSEC)**, also known as the Orange Book. These modes are used to categorize the security features of a computer system based on its ability to enforce confidentiality and access control policies.
+    - ✴️**Dedicated Mode**: In Dedicated mode, the system is used for information of a single classification level, and all users must have at least the clearance level necessary to access that information.
+    - ✴️**Controlled Access Mode**: In Controlled Access mode, the system enforces access controls based on user identity and clearance levels but does not require that all users have the highest clearance level.
+    - ✴️**Multilevel/Multistate Mode**: In Multilevel mode, the system can handle information at multiple classification levels simultaneously. Users can access information according to their clearance and need-to-know basis, and the system dynamically enforces access controls based on the classification of the data. 📝Multistate systems are certified to handle data from different security classifications simultaneously by implementing protection mechanisms that segregate data appropriately.
+    - ✴️**System High mode**: : In System High mode, the system enforces access control based on the classification level of the information, and all users must have a security clearance that is at least equal to the highest classification level of the information they can access. For systems running in System High mode, the user must have a valid security clearance for all information processed by the system, access approval for all information processed by the system, and a valid need to know for some, but not necessarily all, information processed by the system.
 
 - Security capabilities of information systems include memory protection, virtualization, Trusted Platform Module (TPM), encryption/decryption, interfaces, and fault tolerance
 - 🟣**Memory Protection:** A computing device is likely running multiple apps and services simultaneously, each occupying a segment of memory; the goal of memory protection is to prevent one app or service from impacting another
