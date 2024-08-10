@@ -629,22 +629,24 @@ taxed by inefficient implementations of software and VMs.
 
 [3.7](#3.7) Understand methods of cryptanalytic attacks (OSG-9 Chpts 7,14,21)
 - 3.7.1 Brute force
-    - **Brute force**: an attack that attempts every possible valid combination for a key or password
-        - they involve using massive amounts of processing power to methodically guess the key used to secure cryptographic communications.
+    - 🍮**Brute force**: an attack that attempts every possible valid combination for a key or password
+        - they involve using massive amounts of processing power to methodically guess the key used to secure cryptographic communications.  In a brute-force attack, the attacker simply tries all possible key combinations.
         - Rainbow tables contain precomputed hash values for commonly used passwords and may be used to increase the efficiency of password-­cracking attacks.
 - 3.7.2 Ciphertext only
-    - **Ciphertext only**: an attack where you only have the encrypted ciphertext message at your disposal (not the plaintext)
+    - 🍮**Ciphertext only**: an attack where you only have the encrypted ciphertext message at your disposal (not the plaintext)
         - if you have enough ciphertext samples, the idea is that you can decrypt the target ciphertext based on the samples
         - one technique proves helpful against simple ciphers is frequency analysis (counting the number of times each letter appears in the ciphertext)
         - An attacker without any special access to the system would only be able to perform ciphertext-­only attacks.
 - 3.7.3 Known plaintext
-    - 🍮**Known plaintext**: in this attack, the attacker has a copy of the encrypted message along with the plaintext message used to generate the ciphertext (the copy); this knowledge greatly assists the attacker in breaking weaker codes. Known plaintext and chosen plaintext attacks require the ability to encrypt data.
+    - 🍮**Known plaintext**: in this attack, the attacker has a copy of the encrypted message along with the plaintext message used to generate the ciphertext (the copy); this knowledge greatly assists the attacker in breaking weaker codes.
+         - 🛑In a chosen plaintext attack, the attacker has the ability to choose the plaintext to be encrypted.
+         - Known plaintext and chosen plaintext attacks require the ability to encrypt data.
 - 3.7.4 Frequency analysis
     - 🍮**Frequency analysis**: an attack where the characteristics of a language are used to defeat substitution ciphers
         - for example in English, the letter "E" is the most common, so the most common letter in an encrypted cyphertext could be a substitution for "E"
         - other examples might include letters that appear twice in sequence, as well as the most common words used in a language 
 - 3.7.5 Chosen ciphertext
-    - 🍮**Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to one or more ciphertexts and their plaintexts; i.e. the attacker has the ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext. Known plaintext and chosen plaintext attacks require the ability to encrypt data.
+    - 🍮**Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to one or more ciphertexts and their plaintexts; i.e. the attacker has the ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext. Known plaintext and chosen plaintext attacks require the ability to encrypt data. In a chosen ciphertext attack, the attacker can choose the ciphertext output
     - 🍮**Differential cryptanalysis**: a type of chosen plaintext attack, and a general form of cryptanalysis applicable primarily to block ciphers, but also to stream ciphers and cryptographic hash functions; in the broadest sense, it is the study of how differences in information input can affect the resultant difference at the output; advanced methods such as differential cryptanalysis are types of chosen plaintext attacks
         - as an example, an attacker may try to get the receiver to decrypt modified ciphertext, looking for that modification to cause a predictable change to the plaintext
 - 3.7.6 Implementation attacks
@@ -665,7 +667,7 @@ taxed by inefficient implementations of software and VMs.
     - 🍮**Timing**: timing attacks are an example of a side-channel attack where the attacker measures precisely how long cryptographic operations take to complete, gaining information about the cryptographic process that may be used to undermine its security.
         - By analyzing these timing variations, an attacker can infer details about the cryptographic keys or the data being processed.
         - If an encryption algorithm takes longer to process certain values or operations due to conditional statements or variable-length operations, an attacker might exploit these timing differences to gain insights into the key or plaintext.
-             - 🍓**Race condition**: The exploitation of the reliance of a system’s behavior on the sequence of events that occur externally. Time of Check to Time of Use (TOCTOU) attack (attacker exploits the difference in time btw when a security control is verified and the data protected by the control is actually used)
+             - 🍓**Race condition**: The exploitation of the reliance of a system’s behavior on the sequence of events that occur externally. Time of Check to Time of Use (TOCTOU) attack (attacker exploits the difference in time btw when a security control is verified and the data protected by the control is actually used). 
 - 3.7.10 Man-in-the-middle (MITM)
     - 🍮**Man-in-the-middle (MITM) (AKA on-path)**: in this attack a malicious individual sits between two communicating parties and intercepts all communications (including the setup of the cryptographic session) 
         - attacker responds to the originator's initialization requests and sets up a secure session with the originator 
