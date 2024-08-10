@@ -185,7 +185,7 @@ trast, ACLs are focused on objects.
     - The evaluation process will look at the **✏️Security Target (ST)**, specifying the claims of security from the vendor that are built into a TOE (the ST is usually published to customers and partners and available to internal staff). STs are considered the implemented security measures or the 🔥"I will provide"🔥 from the vendor.
     - An organization's PP is compared to various STs from the selected vendor's TOEs, and the closest or best match is what the org purchases
     - The evaluation will attempt to gauge the confidence level of a security feature 
-    - **Security assurance requirements (SARs)**: a description of how the TOE is to be evaluated, based on the development of the solution
+    - **Security assurance requirements (SARs)**: Assurance is the degree of confidence that an organization has that its security controls are correctly implemented. It must be continually monitored and reverified. SAR is a description of how the TOE is to be evaluated, based on the development of the solution
     - Key actions during development and testing should be captured 
     - An **evaluation assurance level (EAL)**: a numerical rating used to assess the rigor of an evaluation; the scale is
         - ✏️EAL 1 (cheap and easy) to EAL7 (expensive and complex):
