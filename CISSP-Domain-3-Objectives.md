@@ -348,6 +348,7 @@ derivative of SOA is microservices.
         - A microservice is simply one element, feature, capability, business logic, or function of a web app that can be called upon or used by other web apps
         - Microservices are usually small and focused on a single operation, engineered with few dependencies, and based on fast, short-term development cycles (similar to Agile)
         - It is the conversion or transformation of a capability of one web application into a microservice that can be called upon by numerous other web applications. The relationship to an application programming interface (API) is that each microservice must have a clearly defined (and secured!) API to allow for I/O between multi-­microservices as well as to and from other applications.
+        - creating many discrete software objects and then binds them together using APIs is an example of a micro services architecture. Each of the component micro services performs a discrete task and then communicates with other micro services using APIs
         - Securing microservices: 
             - use HTTPS only 
             - encrypt everything possible and use routine scanning
@@ -368,8 +369,7 @@ derivative of SOA is microservices.
     - **Serverless architecture** (AKA **function as a service (FaaS)**): a cloud computing concept where code is managed by the customer and the platform (i.e. supporting hardware and software) or servers are managed by the CSP
         - Applications developed on serverless architecture are similar to microservices, and each function is created to operate independently and automonomously
         - A serverless model, as in other CSP models, is a shared security model,and your org and the CSP share security responsibility
-        - There is always a physical server running the code, but this execution model allows the software designer/architect/programmer/developer to focus on the logic of their code and not have to be concerned about the parameters or limitations of
-a specific server. This is also known as function as a service (FaaS).
+        - There is always a physical server running the code, but this execution model allows the software designer/architect/programmer/developer to focus on the logic of their code and not have to be concerned about the parameters or limitations of a specific server. This is also known as function as a service (FaaS).
 
 - **Infrastructure as Code**: Infrastructure as Code (IaC) is a concept where you manage and provision IT infrastructure using code rather than manual processes. 
 
@@ -876,6 +876,9 @@ taxed by inefficient implementations of software and VMs.
      - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
 - 🔴**Technical Access Control**:
      - passwords, multi-factor authentication (MFA), or digital certificates, Encryption, Firewalls, IDS/IPS, Access Control Lists (ACLs), Access Cards/Biometric Systems
+     - Access control list is a list of individual users who may access the file.  An ACL is a list of permissions attached to an object (such as a file, directory, or network resource) that specifies which users or systems are granted access and what kind of access they are permitted. Access Control List  consists of multiple access control entries.
+     - Access Control Entry: An ACE is a single entry within an ACL that defines the access rights for a specific user or group on a particular resource. Each ACE in an ACL specifies the permissions granted to a single user or group. It essentially defines a rule for access control in the context of the larger ACL.
+     - 📝ACL: Refers to the entire list of access control rules for a particular resource. 📝ACE: Refers to a single entry within that list, specifying permissions for one user or group.
            
 - 3.10 Information System Life Cycle
     - a structured framework for managing an information system from its intial conception to its retirement.
