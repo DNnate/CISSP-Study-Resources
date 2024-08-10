@@ -696,14 +696,14 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     -  **Crime Prevention Through Environmental Design (CPTED)**: a well-established school of thought on "secure architecture" - an archiectural approach to building and space design that emphasizes passive features to reduce the likelihood of criminal activity
         - core principle of CPTED is that the design of the physical environment can be managed/manipulated, and crafted with intention in order to create behavioral effects or changes in people present in those areas that result in reduction of crime as well as a reduction of the fear of crime
         - CPTED stresses three main principles:
-            - **natural access control**: the subtle guidance of those entering and leaving a building
+            - **🐤natural access control**: the subtle guidance of those entering and leaving a building
                 - make the entrance point obvious
                 - create internal security zones
                 - areas of the same access level should be open, but restricted/closed areas should seem more difficult to access
-            - **natural surveillance**: any means to make criminals feel uneasy through increased opportunities to be observed
+            - **🐤natural surveillance**: any means to make criminals feel uneasy through increased opportunities to be observed
                 - walkways/stairways are open, open areas around entrances
                 - areas should be well lit
-            - **natural territorial reinforcement**: attempt to make the area feel like an inclusive, caring community
+            - **🐤natural territorial reinforcement**: attempt to make the area feel like an inclusive, caring community
     - Overall goal is to deter unauthorized people from gaining access to a location (or a secure portion), prevent unauthorized personnel from hiding inside or around the location, and prevent unauthorized from committing crime
     - There are several smaller activities tied to site and facility design, such as upkeep and maintenance: if property is run down or appears to be in disrepair, it gives attackers the impression that they can act with impunity on the property
 
@@ -716,14 +716,16 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - usually includes telephony and network devices, alarm systems, circuit breaker panels, punch-down blocks, WAPs, video/security
         - may include a small number of servers 
         - access to the wiring closest/IDF should be restricted to authorized personnel responsible for managing the IT hardware 
-        - use door access control (i.e. electronic badge system or electronic combination lock) 
+        - use door access control (i.e. electronic badge system or electronic combination lock, or Use sensors on doors to log entries.)
+        - Perform regular inspections of the closet.
+        - Do not store flammable items in the closet.
         - from a layout perspective, wiring closets should be accessible only in private areas of the building interiors; people must pass through a visitor center and a controlled doorway prior to be able to enter a wiring closet
-        -  - **Cable Plant Management Policy**: A cable plant management policy is used to define the physical structure and deployment of network cabling and related devices within a facility. A cable plant is the collection of interconnected cables and intermediary devices (such as cross-connects, patch panels, and switches) that establish the physical network. Elements of a cable plant include the following:
-            - Entrance facility: Also known as the demarcation point or MDF, is the entrance point to the building where the cable from the provider connects the internal cable plant.
-            - Equipment room: is the main wiring closet for the building, often connected to or adjacent to the MDF.
-            - Backbone distribution system: provides wired connections between the equipment room and the telecommunications room, including cross-floor connections.
-            - TeleComms Room: This serves the connection needs of a floor or a section of a large building by providing space for networking equipment and cabling systems. It also serves as the interconnection point between the backbone distribution system and the horizontal distribution system. The wiring closet is also known as premises wire distribution room, main distribution frame (MDF), intermediate distribution frame (IDF), and telecommunications room, and it is referred to as intermediate distribution facilities in (ISC)2 CISSP objective 3.9.1).
-            - Horizontal distribution system:  provides the connection between the telecommunications room and work areas, often including cabling, cross-connection blocks, patch panels, and supporting hardware infrastructure (such as cable trays, cable hangers, and conduits).
+    - **Cable Plant Management Policy**: A cable plant management policy is used to define the physical structure and deployment of network cabling and related devices within a facility. A cable plant is the collection of interconnected cables and intermediary devices (such as cross-connects, patch panels, and switches) that establish the physical network. Elements of a cable plant include the following:
+            - 🐊Entrance facility: Also known as the demarcation point or MDF, is the entrance point to the building where the cable from the provider connects the internal cable plant.
+            - 🐊Equipment room: is the main wiring closet for the building, often connected to or adjacent to the MDF.
+            - 🐊Backbone distribution system: provides wired connections between the equipment room and the telecommunications room, including cross-floor connections.
+            - 🐊TeleComms Room: This serves the connection needs of a floor or a section of a large building by providing space for networking equipment and cabling systems. It also serves as the interconnection point between the backbone distribution system and the horizontal distribution system. The wiring closet is also known as premises wire distribution room, main distribution frame (MDF), intermediate distribution frame (IDF), and telecommunications room, and it is referred to as intermediate distribution facilities in (ISC)2 CISSP objective 3.9.1).
+            - 🐊Horizontal distribution system:  provides the connection between the telecommunications room and work areas, often including cabling, cross-connection blocks, patch panels, and supporting hardware infrastructure (such as cable trays, cable hangers, and conduits).
 - 3.9.2 Server rooms/data centers
     - **Server rooms/data centers**: server rooms, data centers, communication rooms, server vaults, and IT closets are enclosed, restricted, and protected rooms where mission critical servers and networks are housed
         - a server room is a bigger version of a wiring closet, much smaller than a data center
@@ -832,6 +834,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - site management
     - building design
     - personnel controls e.g Badges, identification cards, and security IDs, turnstile, mantraps, access control vestibules (An access control vestibule is a double set of doors that is often protected by a guard and used to contain a subject until their identity and authentication is verified.)
+    - Mantraps use two sets of doors to control access to a facility. This may be used to prevent piggybacking by monitoring use of the mantrap to allow only a single individual to enter a facility at a time. They may also be used to allow manual inspection of individuals or perform other security screening. Mantraps are also commonly known as access control vestibules.
     - awareness training
     - emergency response and procedures.
         - **Security Guards**: are usually unaware of the scope of the operations within a facility and are therefore not thoroughly equipped to know how to respond to every situation. Though this is considered a disadvantage, the lack of knowledge of the scope of the operations within a facility can also be considered an advantage because this supports confidentiality of those operations and thus helps reduce the possibility that a security guard will be involved in the disclosure of confidential information. The main disadvantages of security guards include:
