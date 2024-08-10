@@ -365,6 +365,7 @@ derivative of SOA is microservices.
 - 3.5.10 Containerization
     - **Containerization**: AKA OS virtualization, is based on the concept of eliminating the duplication of OS elements in a virtual machine; instead each app is placed into a container that includes only the actual resources needed to support the enclosed app, and the common or shared OS elements are then part of the hypervisor
         - Containerization is able to provide 10 to 100 x more application density per physical server compared to traditional virtualization
+        - the use of Docker is best described as a containerization technology
         - Vendors often have security benchmarks and hardening guidelines to follow to enhance container security
         - Securing containers: 
             - container challenges include the lack of isolation compared to a traditional infrastructure of physical servers and VMs
