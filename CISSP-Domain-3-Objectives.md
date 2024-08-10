@@ -128,7 +128,7 @@ You may find this domain to be more technical than others, and if you have exper
 - 🔴**Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
     - Focus is on integrity ✏️
     -  is based on information flow, and is a multilevel model.
-    - Simple security property: “🔥No read down” (for example, users with a Top Secret clearance can’t read data classified as Secret)
+    - Simple integrity property: “🔥No read down” ( individual may not read a file classified at a lower security level than the individual's security clearance. for example, users with a Top Secret clearance can’t read data classified as Secret)
     - Star (*) property: “No write up” (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
     - By combining it with Bell-LaPadula, you get both confidentiality and integrity
 - 🔴**Take-Grant**: 
@@ -215,6 +215,7 @@ trast, ACLs are focused on objects.
 
 - **Trusted Platform Module (TPM)**: a cryptographic chip that is sometimes included with a client computer or server; a TPM enhances the capabilities of a computer by offering hardware-based cryptographic operations
     - 🔥TPM is a tamper-resistant integrated circuit built into some motherboards that can perform cryptographic operations (including key gen) and protect small amoutns of sensitive info, like passwords and cryptographic keys
+    - The Trusted Platform Module (TPM) is a hardware security technique that stores an encryption key on a chip on the motherboard and prevents someone from accessing an encrypted drive by installing it in another computer.
     - Many security products and encryption solutions require a TPM
     - TPM is both a specification for a cryptoprocessor chip on a motherboard and the general name for implementation of the specification
     - TPM does include  Storage Root Key (SRK), which is used for managing and protecting cryptographic operations and keys within the TPM.
@@ -502,7 +503,8 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
                 -  Disadvantage is that if the key stream is reused (keystream reuse), it can compromise security, as it makes the cipher vulnerable to attacks. Ensuring that the same key stream is not reused is critical and can complicate key management.
  
     - **Asymmetric** encryption: process that uses different keys for encryption and decryption, and in which the decryption key is computationally not possible to determine given the encryption key itself
-        - uses public and private key 
+        - uses public and private key
+        - In an asymmetric cryptosystem, the sender of a message encrypts the message using the recipient's public key. The recipient may then decrypt that message using their own private key, which only they should possess.
         - Asymmetric (AKA public key, since one key of a pair is available to anybody) algorithms provide convenient key exchange mechanisms and are scalable to very large numbers of users (addressing the two most significant challenges for users of symmetric cryptosystems) 
         - Asymmetric cryptosystems avoid the challenge of sharing the same secret key between users, by using pairs of public and private keys to allow secure communication without the overhead of complex key distribution
         - **Public key**: one part of the matching key pair, which can be shared or published
@@ -514,7 +516,7 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
             - Diffie-Hellman 
             - ElGamal - The major disadvantage of the ElGamal cryptosystem is that it doubles the length of any message it encrypts.
             - Eliptical Curve Cryptography (ECC) - The elliptic curve cryptosystem requires significantly shorter keys to achieve encryption that would be the same strength as encryption achieved with the RSA encryption algorithm. A 3,072-­bit RSA key is cryptographically equivalent to a 256-­bit elliptic curve cryptosystem key.
-        - **Scenario**: If 🅰️ wants to send a message to 🅱️. 🅰️ must encrypt the message using 🅱️’s public key so that 🅱️ can decrypt it using 🅱️ private key. If 🅰️ encrypted the message with his own public key, 🅱️ would need to know 🅰️’s private key to decrypt the message. If 🅰️ encrypted it with his own private key, any user could decrypt the message using 🅰️’s freely available public key. 🅰️ could not encrypt the message using 🅱️’s private key because 🅰️ does not have access to it. If 🅰️ did, any user could decrypt it using 🅱️’s freely available public key.
+        - **Scenario**: If 🅰️ wants to send a message to 🅱️. 🅰️ must encrypt the message using 🅱️’s public key so that only 🅱️ can decrypt it using 🅱️ private key. If 🅰️ encrypted the message with his own public key, 🅱️ would need to know 🅰️’s private key to decrypt the message. If 🅰️ encrypted it with his own private key, any user could decrypt the message using 🅰️’s freely available public key. 🅰️ could not encrypt the message using 🅱️’s private key because 🅰️ does not have access to it. If 🅰️ did, any user could decrypt it using 🅱️’s freely available public key.
 
 - 3.6.3 Public Key Infrastructure (PKI)
     - **Public Key Infrastructure (PKI)**: hierarchy of trust relationships permitting the combination of asymmetric and symmetric cryptography along with hashing and digital certificates (giving us hybrid cryptography) 
@@ -599,14 +601,14 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
         - hash function implements encryption with a specified algorithm, but without a key
         - Provides a fixed-size hash value from variable-length input, used for ensuring data integrity.
         - used to ensure message sent by the originator is the same one received by recipient
-        - input can be of any length 
+        - input can be of any length. They take variable-length input.
         - output has a fixed length 
         - the hash function is relatively easy to compute for any input 
-        - the hash function is one-way, meaning it is extremely difficult to determine the input given the hash function output 
-        - the hash function should be collision-resistant, meaning it is extremely hard to find two messages that produce the same hash value output
+        - the hash function is one-way, meaning it is extremely difficult to determine the input given the hash function output. They are irreversible.
+        - the hash function should be collision-resistant, meaning it is extremely hard to find two messages that produce the same hash value output. It is very difficult to find two messages with the same hash value.
         - hashes are used for storing passwords, with email, and for file download integrity verification
     - Hashing and integrity: if the hash generated by sender, and separately by the receiver match, then we have integrity
-    - Cryptographic salt values are added to the passwords in password files before hashing to defeat rainbow table and dictionary attacks.
+    - Cryptographic salt values are added to the passwords in password files before hashing to defeat rainbow table and dictionary attacks. The salt is a random value added to a password before it is hashed by the operating system. The salt is then stored in a password file with the hashed password. This increases the complexity of cryptanalytic attacks by negating the usefulness of attacks that use precomputed hash values, such as rainbow tables.
 
 [3.7](#3.7) Understand methods of cryptanalytic attacks (OSG-9 Chpts 7,14,21)
 - 3.7.1 Brute force
@@ -901,9 +903,9 @@ input/output capabilities, RAM, and often nonvolatile storage in the form of fla
     - MD2 - Lenght 128 bits(16 bytes)
     - MD4 - Lenght 128 bits(16 bytes)
     - MD5 - Lenght 128 bits(16 bytes) 📝(All Message Digest variants have the same hash lenght. MD2-5 have been replaced by MD6)
-    - SHA-1 - Lenght ✏️160
+    - SHA-1 - Lenght ✏️160 (a real-world collision attack against SHA 1 was announced in early 2017)
     - SHA-224 - Lenght 224, produces 224-­bit digests
-    - SHA-256 - Lenght 256, produces 256-­bit digests
+    - SHA-256 - Lenght 256, produces 256-­bit digests (sometimes called SHA 2)
     - SHA-384 - Lenght 384, produces 384-­bit digests 
     - SHA-512 - Lenght 512, produces 512-­bit digests 🥇
 
