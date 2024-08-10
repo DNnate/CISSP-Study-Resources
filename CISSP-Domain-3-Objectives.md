@@ -186,31 +186,34 @@ You may find this domain to be more technical than others, and if you have exper
 
 [3.3](#3.3) Select controls based upon systems security requirements (OSG-9 Chpt 8)
 
-- Be familiar with the **Common Criteria (CC)** for Information Technology Security Evaluation
+- 📗**Common Criteria (CC)** for Information Technology Security Evaluation
 - The CC provides a standard to evaluate systems, defining various levels of testing and confirmation of systems' security capabilities 
 - The number of the level indicates what kind of testing and confirmation has been performed
 - The important concepts:
-    - To perform an evaluation, you need to select the **✏️Target of Evaluation (TOE)** (e.g. firewall or an anti-malware app)
-    - The evaluation process will look at the **✏️Protection Profile (PP)**, which is a document that outlines the security needs (customer 🔥"I wants"🔥); a vendor might use a specific protection profile for a particular solution
-    - The evaluation process will look at the **✏️Security Target (ST)**, specifying the claims of security from the vendor that are built into a TOE (the ST is usually published to customers and partners and available to internal staff). STs are considered the implemented security measures or the 🔥"I will provide"🔥 from the vendor.
+    - ✴️**Target of Evaluation (TOE)** To perform an evaluation, you need to select the TOE (e.g. firewall or an anti-malware app)
+    - ✴️**Protection Profile (PP)** The evaluation process will look at the PP, which is a document that outlines the security needs (customer 🔥"I wants"🔥); a vendor might use a specific protection profile for a particular solution
+    - ✴️**Security Target (ST)** The evaluation process will look at the ST, specifying the claims of security from the vendor that are built into a TOE (the ST is usually published to customers and partners and available to internal staff). STs are considered the implemented security measures or the 🔥"I will provide"🔥 from the vendor.
     - An organization's PP is compared to various STs from the selected vendor's TOEs, and the closest or best match is what the org purchases
     - The evaluation will attempt to gauge the confidence level of a security feature 
     - **Security assurance requirements (SARs)**: Assurance is the degree of confidence that an organization has that its security controls are correctly implemented. It must be continually monitored and reverified. SAR is a description of how the TOE is to be evaluated, based on the development of the solution
     - Key actions during development and testing should be captured 
     - An **evaluation assurance level (EAL)**: a numerical rating used to assess the rigor of an evaluation; the scale is EAL 1 (cheap and easy) to EAL7 (expensive and complex):
-        - ✏️EAL1: functionally tested (lowest level of assurance)
-        - ✏️EAL2: structurally tested
-        - ✏️EAL3: methodically tested and checked
-        - ✏️EAL4: methodically designed, tested, and reviewed
-        - ✏️EAL5: semi-formally designed and tested
-        - ✏️EAL6: semi-formally verified, designed, and tested
-        - ✏️EAL7: formally verified, designed, and tested
+        - 🍐EAL1: functionally tested (lowest level of assurance)
+        - 🍐EAL2: structurally tested
+        - 🍐EAL3: methodically tested and checked
+        - 🍐EAL4: methodically designed, tested, and reviewed
+        - 🍐EAL5: semi-formally designed and tested
+        - 🍐EAL6: semi-formally verified, designed, and tested
+        - 🍐EAL7: formally verified, designed, and tested
 - **Authorization to Operate (ATO)**: official auth to use specific IT systems to perform tasks/accept identified risks: The four types of ATOs are
-    - ✏️Authorization to Operate
-    - ✏️Common Control Authorization
-    - ✏️Authorization to Use
-    - ✏️Denial of Authorization.
-
+    - 🍊Authorization to Operate
+    - 🍊Common Control Authorization
+    - 🍊Authorization to Use
+    - 🍊Denial of Authorization.
+- **System Assurance Processes:**
+  - 🍌Certification: Evaluating a system to ensure it meets specified security requirements.
+  - 🍌Verification: The verification process is similar to the certification process in that it validates security controls. Verification may go a step further by involving a 📝third-party testing service and compiling results that may be trusted by many different organizations.
+  - 🍌Accreditation: is the act of management formally accepting an evaluating system, not evaluating the system itself. 
 [3.4](#3.4) Understand security capabilities of Information Systems (IS) (e.g. memory protection, Trusted Platform Model (TPM), encryption/decryption) (OSG-9 Chpt 8)
 - 🍎**Trusted Computer System Evaluation Criteria (TCSEC)**, also known as the Orange Book. These modes are used to categorize the security features of a computer system based on its ability to enforce confidentiality and access control policies.
     - ✴️**Dedicated Mode**: In Dedicated mode, the system is used for information of a single classification level, and all users must have at least the clearance level necessary to access that information.
