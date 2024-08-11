@@ -675,6 +675,10 @@ taxed by inefficient implementations of software and VMs.
         - attacker responds to the originator's initialization requests and sets up a secure session with the originator 
         - attacker then establishes a second secure session with the intended recipient using a different key and posing as the originator 
         - attacker can then "sit in the middle" of the communication and read all traffic as it passes between the two parties
+   - 🍮**Meet-in-the-Middle**: A Meet-in-the-Middle (MitM) attack is a type of cryptographic attack that targets symmetric key encryption algorithms, specifically when dealing with scenarios where the brute-force search space is reduced by exploiting the structure of the encryption process. The attack is used to efficiently break encryption schemes by reducing the time complexity compared to a naive brute-force approach.
+        - A meet-in-the-middle attack is an attack against cryptographic algorithms that use multiple rounds of encryption.
+        - The Meet-in-the-Middle attack is typically used in situations involving two rounds of encryption or decryption, such as in double encryption scenarios.
+        - It works by splitting the problem into two separate problems and then combining the results to find the solution more efficiently than brute-forcing through all possible key combinations.
 - 3.7.11 Pass the hash
     - 🍮**Pass the hash (PtH)**: a technique where an attacker captures a password hash (as opposed to the password characters) and then simply passes it through for authentication and potentially lateral access to other networked systems 
         - the threat actor doesn’t need to decrypt the hash to obtain a plain text password
