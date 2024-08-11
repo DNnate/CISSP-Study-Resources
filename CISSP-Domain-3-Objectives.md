@@ -303,7 +303,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - ✏️log all activity
 - 3.5.6 Cloud-based systems (e.g., Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))
     - **Cloud-based systems**: on-demand access to computing resources available from almost anywhere
-        - 🍎Public Cloud: Operates a multitenant environments, where the services are delivered over the public Internet and shared across different organizations.
+        - 🍎Public Cloud: Operates a multitenant environments, where the services are delivered over the public Internet and shared across different organizations. In the public cloud computing model, the vendor builds a single platform that is shared among many different customers. This is also known as the shared tenancy model.
         - 🍎Private/Dedicated cloud: also known as a private cloud, is infrastructure operated solely for a single organization, whether managed internally or by a third-party, and hosted either internally or externally.
         - 🍎Hybrid cloud: is a composition of two or more cloud delivery models (private, community, or public) that remain distinct entities but are bound together, offering the benefits of multiple deployment models.
     - Cloud's primary challenge: resources are outside the org’s direct control, making it more difficult to manage risk
@@ -544,22 +544,24 @@ taxed by inefficient implementations of software and VMs.
 
 - 3.6.3 Public Key Infrastructure (PKI)
     - **Public Key Infrastructure (PKI)**: hierarchy of trust relationships permitting the combination of asymmetric and symmetric cryptography along with hashing and digital certificates (giving us hybrid cryptography) 
+        - The purpose of a digital certificate is to provide the general public with an authenticated copy of the certificate subject's public key.
+        - The last step of the certificate creation process is the digital signature. During this step, the certificate authority signs the certificate using its own private key.
         - A PKI issues certificates to computing devices and users, enabling them to apply cryptography (e.g., to send encrypted email messages, encrypt websites or use IPsec to encrypt data communications)
         - 📝X.509 standards governs digital certificates and the public key infrastructure (PKI). It defines the appropriate content for a digital certificate and the processes used by certificate authorities to generate and revoke certificates.
         - 📝X.500 standards governs directory access
         - Many vendors provide PKI services; you can run a PKI privately and solely for your own org, you can acquire certificates from a trusted third-party provider, or you can do both (which is common) 
         - A PKI is made up of 
-            - **certification authorities (CAs)**: servers that provide one or more PKI functions, such as providing policies or issuing certificates 
-            - certificates: issued to other certification authorities or to devices and users 
-            - policies and procedures: such as how the PKI is secured, and 
-            - templates: a predefined configuration for specific uses, such as a web server template
-            - Certificate Revocation List CRL: is a list maintained by a Certificate Authority (CA) that contains identifiers for certificates that have been revoked before their scheduled expiration date. These certificates might be revoked for various reasons, such as being compromised, having been issued incorrectly, or no longer being needed. Delta CRLs: To efficiently handle updates, delta CRLs can be used to list only the changes (i.e., new revocations or reinstatements) since the last full CRL was issued. The certificate revocation list contains
-                - Serial Number: The unique identifier of the revoked certificate.
-                - Revocation Date: The date on which the certificate was revoked.
-                - Revocation Reason: The reason for the revocation, such as key compromise, CA compromise, affiliation change, or cessation of operation.
-                - Issuer Information: Details about the Certificate Authority (CA) that issued the CRL.
-                - Next Update Date: The date when the next CRL is expected to be published.
-                - CRL Number: A unique identifier for the CRL itself, which helps in tracking and referencing different versions of the list. 
+            - 🎈**certification authorities (CAs)**: servers that provide one or more PKI functions, such as providing policies or issuing certificates 
+            - 🎈certificates: issued to other certification authorities or to devices and users 
+            - 🎈policies and procedures: such as how the PKI is secured, and 
+            - 🎈templates: a predefined configuration for specific uses, such as a web server template
+            - 🎈Certificate Revocation List CRL: is a list maintained by a Certificate Authority (CA) that contains identifiers for certificates that have been revoked before their scheduled expiration date. These certificates might be revoked for various reasons, such as being compromised, having been issued incorrectly, or no longer being needed. Delta CRLs: To efficiently handle updates, delta CRLs can be used to list only the changes (i.e., new revocations or reinstatements) since the last full CRL was issued. The certificate revocation list contains
+                - 🥥Serial Number: The unique identifier of the revoked certificate.
+                - 🥥Revocation Date: The date on which the certificate was revoked.
+                - 🥥Revocation Reason: The reason for the revocation, such as key compromise, CA compromise, affiliation change, or cessation of operation.
+                - 🥥Issuer Information: Details about the Certificate Authority (CA) that issued the CRL.
+                - 🥥Next Update Date: The date when the next CRL is expected to be published.
+                - 🥥CRL Number: A unique identifier for the CRL itself, which helps in tracking and referencing different versions of the list. 
         - There are other components and concepts you should know for the exam:
             - A PKI can have multiple tiers:    
                 - single tier means you have one or more servers that perform all the functions of a PKI 
@@ -576,9 +578,9 @@ taxed by inefficient implementations of software and VMs.
                 - a PKI needs to be able to provide certificate revocation information to clients. Note: Certificate revocation lists (CRLs) introduce an inherent latency to the certificate expiration process due to the time lag between CRL distributions.
                 - if an administrator revokes a certificate that has been issued, clients must be able to get that info from your PKI
                 - storage of private keys and info about issued certificates (can be stored in a database or a directory)
-                    - The PFX format is most closely associated with Windows systems that store certificates in binary format. File Extension are typically .pfx or .p12. PFX typically contains a private key, a certificate, and potentially a certificate chain in a single file. Used for importing/exporting certificates and private keys in a single file, often in Windows environments.
-                    - P7B format is used for Windows systems storing files in text format. P7B: Contains only certificates (the certificate chain), not private keys. It can be base64-encoded with headers and footers (e.g., -----BEGIN PKCS7-----), or binary. Used primarily for handling certificates and certificate chains, not for private keys, and is often used in Windows and Java environments. File Extension typically .p7b or .p7c.
-                    - The PEM format is another text format that is base64 ASCII-encoded. PEM usually represents individual components (like separate files for private keys and certificates). File Extension are typically .pem, .crt, .cer, or .key (depending on the contents). PEM is common in Unix/Linux environments and for tasks requiring separate certificate and key files.
+                    - 🍊The PFX format is most closely associated with Windows systems that store certificates in binary format. File Extension are typically .pfx or .p12. PFX typically contains a private key, a certificate, and potentially a certificate chain in a single file. Used for importing/exporting certificates and private keys in a single file, often in Windows environments.
+                    - 🍊P7B format is used for Windows systems storing files in text format. P7B: Contains only certificates (the certificate chain), not private keys. It can be base64-encoded with headers and footers (e.g., -----BEGIN PKCS7-----), or binary. Used primarily for handling certificates and certificate chains, not for private keys, and is often used in Windows and Java environments. File Extension typically .p7b or .p7c.
+                    - 🍊The PEM format is another text format that is base64 ASCII-encoded. PEM usually represents individual components (like separate files for private keys and certificates). File Extension are typically .pem, .crt, .cer, or .key (depending on the contents). PEM is common in Unix/Linux environments and for tasks requiring separate certificate and key files.
             - PKI uses LDAP when integrating digital certs into transmissions 
 - 3.6.4 Key management practices
     - **Key management practices**: include safeguards surrounding the creation, distribution, storage, destruction, recovery, and escrow of secret keys
