@@ -146,7 +146,7 @@ You may find this domain to be more technical than others, and if you have exper
     - Four rules: 
         - ✏️take: The right to remove or take permissions from other users. The take rule allows a subject to take the rights belonging to another object. 
         - ✏️grant: The grant rule allows a subject to grant rights that it possesses on an object to another subject.
-        - ✏️create 
+        - ✏️create: The create rule allows a subject to create new objects and also creates an edge from the subject to that object, granting rights on the new object.
         - ✏️remove
 - 🔴**Clark-Wilson**:
     - Focus is on integrity ✏️
@@ -544,7 +544,8 @@ taxed by inefficient implementations of software and VMs.
 - 3.6.3 Public Key Infrastructure (PKI)
     - **Public Key Infrastructure (PKI)**: hierarchy of trust relationships permitting the combination of asymmetric and symmetric cryptography along with hashing and digital certificates (giving us hybrid cryptography) 
         - A PKI issues certificates to computing devices and users, enabling them to apply cryptography (e.g., to send encrypted email messages, encrypt websites or use IPsec to encrypt data communications)
-        - X.509 governs digital certificates and the public key infrastructure (PKI). It defines the appropriate content for a digital certificate and the processes used by certificate authorities to generate and revoke certificates.
+        - 📝X.509 standards governs digital certificates and the public key infrastructure (PKI). It defines the appropriate content for a digital certificate and the processes used by certificate authorities to generate and revoke certificates.
+        - 📝X.500 standards governs directory access
         - Many vendors provide PKI services; you can run a PKI privately and solely for your own org, you can acquire certificates from a trusted third-party provider, or you can do both (which is common) 
         - A PKI is made up of 
             - **certification authorities (CAs)**: servers that provide one or more PKI functions, such as providing policies or issuing certificates 
