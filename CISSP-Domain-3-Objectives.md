@@ -72,6 +72,7 @@ You may find this domain to be more technical than others, and if you have exper
     - ❄️**Separation of duties (SoD)**: separation of duties (SoD) and responsibilities ensures that no single person has total control over a critical function or system;  SoD is a process to minimize opportunities for misuse of data or environment damage 
         - e.g. one person sells tickets, another collects tickets and restricts access to ticket holders in a movie theater
         - The separation of duties principle says that no employee should have permission to perform two tasks that, when combined, would pose a security risk
+    - ❄️**Two-Person Control**: where two people must concur to perform a sensitive action. E.g emergency access to system administrator privileges. Under this procedure, two qualified administrators must agree to retrieve emergency credentials. 
 - 3.1.7 Keep it simple
     - ❄️**Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design. The keep it simple principle says that security controls and other technologies should remain as simple as possible while still completing their objectives.
     3.1.8 Zero Trust
@@ -236,6 +237,9 @@ You may find this domain to be more technical than others, and if you have exper
     - The Trusted Platform Module (TPM) is a hardware security technique that stores an encryption key on a chip on the motherboard and prevents someone from accessing an encrypted drive by installing it in another computer.
     - Many security products and encryption solutions require a TPM
     - TPM is both a specification for a cryptoprocessor chip on a motherboard and the general name for implementation of the specification
+    - Remote attestation creates a hash value from the system configuration to confirm the integrity of the configuration.
+    - Binding and sealing are techniques used by the TPM to encrypt data.
+    - The random number generator (RNG) function of the TPM is used to support cryptographic operations.
     - TPM does include  Storage Root Key (SRK), which is used for managing and protecting cryptographic operations and keys within the TPM.
     - A TPM is an example of a hardware security module (HSM)
     - **hardware security module (HSM)**: a cryptoprocessor used to manage and store digital encryption keys, accelerate crypto operations, support faster digital signatures, and improve authentication. HSMs include root keys and are used for high-security key management. They are generally used in server environments rather than directly on endpoints.
@@ -497,7 +501,7 @@ taxed by inefficient implementations of software and VMs.
         - disallowed (algorithm and/or key length is no longer allowed for the indicated use)
 - 3.6.2 Cryptographic methods (e.g., symmetric, asymmetric, elliptic curves, quantum)
     - 🔴**Symmetric** encryption: uses the same key for encryption and decryption
-        - symmetric encryption uses a shared secret key available to all users of the cryptosystem 
+        - symmetric encryption uses a 📝shared secret key available to all users of the cryptosystem 
         - symmetric encryption is faster than asymmetric encryption because smaller keys can be used for the same level of protection 
         - downside is that users or systems must find a way to securely share the key and hope the key is used only for the specified communication
         - symmetric encryption uses session keys. In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is protected using symmetric cryptography.
@@ -546,6 +550,7 @@ taxed by inefficient implementations of software and VMs.
     - **Public Key Infrastructure (PKI)**: hierarchy of trust relationships permitting the combination of asymmetric and symmetric cryptography along with hashing and digital certificates (giving us hybrid cryptography) 
         - The purpose of a digital certificate is to provide the general public with an authenticated copy of the certificate subject's public key.
         - The last step of the certificate creation process is the digital signature. During this step, the certificate authority signs the certificate using its own private key.
+        - When an individual receives a copy of a digital certificate, the person verifies the authenticity of that certificate by using the CA's public key to validate the digital signature contained on the certificate.
         - A PKI issues certificates to computing devices and users, enabling them to apply cryptography (e.g., to send encrypted email messages, encrypt websites or use IPsec to encrypt data communications)
         - 📝X.509 standards governs digital certificates and the public key infrastructure (PKI). It defines the appropriate content for a digital certificate and the processes used by certificate authorities to generate and revoke certificates.
         - 📝X.500 standards governs directory access
@@ -555,7 +560,7 @@ taxed by inefficient implementations of software and VMs.
             - 🎈certificates: issued to other certification authorities or to devices and users 
             - 🎈policies and procedures: such as how the PKI is secured, and 
             - 🎈templates: a predefined configuration for specific uses, such as a web server template
-            - 🎈Certificate Revocation List CRL: is a list maintained by a Certificate Authority (CA) that contains identifiers for certificates that have been revoked before their scheduled expiration date. These certificates might be revoked for various reasons, such as being compromised, having been issued incorrectly, or no longer being needed. Delta CRLs: To efficiently handle updates, delta CRLs can be used to list only the changes (i.e., new revocations or reinstatements) since the last full CRL was issued. The certificate revocation list contains
+            - 🎈Certificate Revocation List CRL: is a list maintained by a Certificate Authority (CA) that contains identifiers for certificates that have been revoked before their scheduled expiration date. Certificates may only be added to a certificate revocation list by the certificate authority that created the digital certificate. These certificates might be revoked for various reasons, such as being compromised, having been issued incorrectly, or no longer being needed. Delta CRLs: To efficiently handle updates, delta CRLs can be used to list only the changes (i.e., new revocations or reinstatements) since the last full CRL was issued. The certificate revocation list contains
                 - 🥥Serial Number: The unique identifier of the revoked certificate.
                 - 🥥Revocation Date: The date on which the certificate was revoked.
                 - 🥥Revocation Reason: The reason for the revocation, such as key compromise, CA compromise, affiliation change, or cessation of operation.
@@ -581,7 +586,18 @@ taxed by inefficient implementations of software and VMs.
                     - 🍊The PFX format is most closely associated with Windows systems that store certificates in binary format. File Extension are typically .pfx or .p12. PFX typically contains a private key, a certificate, and potentially a certificate chain in a single file. Used for importing/exporting certificates and private keys in a single file, often in Windows environments.
                     - 🍊P7B format is used for Windows systems storing files in text format. P7B: Contains only certificates (the certificate chain), not private keys. It can be base64-encoded with headers and footers (e.g., -----BEGIN PKCS7-----), or binary. Used primarily for handling certificates and certificate chains, not for private keys, and is often used in Windows and Java environments. File Extension typically .p7b or .p7c.
                     - 🍊The PEM format is another text format that is base64 ASCII-encoded. PEM usually represents individual components (like separate files for private keys and certificates). File Extension are typically .pem, .crt, .cer, or .key (depending on the contents). PEM is common in Unix/Linux environments and for tasks requiring separate certificate and key files.
-            - PKI uses LDAP when integrating digital certs into transmissions 
+            - PKI uses LDAP when integrating digital certs into transmissions
+      - 🔥The process of issuing certificates by a public Certificate Authority (CA):
+          - 1. Certificate Request: Submission of Certificate Signing Request (CSR) to the CA. The CSR includes the applicant's public key and identifying information. 
+            2.  Certificate Authority Verification/Validation: The CA performs the necessary checks to ensure that the applicant’s identity and credentials are valid. This could involve verifying domain ownership, business registration, or other relevant details.
+            3.  Certificate Generation: The CA creates the certificate by embedding the applicant’s public key and identifying information into the certificate template. The certificate also includes details about the CA, the certificate’s validity period, and the certificate’s serial number.
+            4.  Signing: The CA digitally signs the certificate using its private key. This digital signature ensures the integrity and authenticity of the certificate, allowing recipients to trust the certificate.
+            5.  Certificate Distribution: The signed certificate is sent back to the applicant. The applicant can now install the certificate on their server or device as needed.
+            6.  Publishing: The certificate is often published in a publicly accessible repository or directory, such as a Certificate Revocation List (CRL) or an online Certificate Status Protocol (OCSP) responder, so that other parties can verify its validity.
+            7.  End-User Verification: Users and systems verify the certificate’s validity by checking the CA's digital signature against the CA’s public key. They also verify that the certificate is not expired or revoked by consulting the CRL or OCSP responder.
+            8.  Key Considerations: Trust Model: The CA operates within a trust model where its certificate is trusted by browsers, operating systems, and applications. Trust in the CA’s ability to accurately validate and issue certificates is crucial.
+
+    
 - 3.6.4 Key management practices
     - **Key management practices**: include safeguards surrounding the creation, distribution, storage, destruction, recovery, and escrow of secret keys
         - Cryptography can be used as a security mechanism to provide confidentiality, integrity, and availability only if keys are not compromised
@@ -642,7 +658,7 @@ taxed by inefficient implementations of software and VMs.
         - the hash function should be collision-resistant, meaning it is extremely hard to find two messages that produce the same hash value output. It is very difficult to find two messages with the same hash value.
         - 📝hashes are used for storing passwords, with email, and for file download integrity verification
     - Hashing and integrity: if the hash generated by sender, and separately by the receiver match, then we have integrity
-    - Cryptographic salt values are added to the passwords in password files before hashing to defeat rainbow table and dictionary attacks. The salt is a random value added to a password before it is hashed by the operating system. The salt is then stored in a password file with the hashed password. This increases the complexity of cryptanalytic attacks by negating the usefulness of attacks that use precomputed hash values, such as rainbow tables.
+    - Cryptographic salt values are added to the passwords in password files before hashing to defeat rainbow table and dictionary attacks. The salt is a random value added to a password before it is hashed by the operating system. The salt is then stored in a password file with the hashed password. This increases the complexity of cryptanalytic attacks by negating the usefulness of attacks that use precomputed hash values, such as rainbow tables. Salting adds random text to the password before hashing in an attempt to defeat automated password cracking attacks that use precomputed values. 
 
 [3.7](#3.7) Understand methods of cryptanalytic attacks (OSG-9 Chpts 7,14,21)
 - 3.7.1 Brute force
