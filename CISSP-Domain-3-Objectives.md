@@ -108,7 +108,7 @@ You may find this domain to be more technical than others, and if you have exper
         - ⭐The job of the auditor is to monitor the environment for violations
         - ⭐When working with third parties, especially with cloud providers, each entity needs to understand their portion of the shared responsibility of performing work operations and maintaining security. This is often referenced as the **cloud shared responsibility model**
         - ⭐Organizations are responsible to their stakeholders for making good security decisions in order to sustain the organization.
-        - As we become aware of new vulnerabilities and threats, we should consider it our responsibility (if not our duty) to responsibly disclose that information to the proper vendor or to an information sharing center.
+        - ⭐As we become aware of new vulnerabilities and threats, we should consider it our responsibility (if not our duty) to responsibly disclose that information to the proper vendor or to an information sharing center.
 
 - 3.1.12 Secure Access Service Edge (SASE)
     - ❄️**SASE**: A design philosophy closely related to Zero trust Network Architecture. 🔥Brings together networking and security functions and delivers them as an integrated cloud service.
@@ -129,7 +129,7 @@ You may find this domain to be more technical than others, and if you have exper
     - A security model provides a framework to implement a security policy.
     - **The State Machine Model** describes a system that is always secure no matter what state it is in. A secure state machine model system always boots into a secure state, maintains a secure state across all transitions, and allows subjects to access resources only in a secure manner compliant with the security policy. Bell–LaPadula and Biba are built on a state machine model.
          - The information flow model applies state machines to the flow of information.
-         - The Bell-LaPadula model applies the information flow model to confidentiality while the Biba model applies it to integrity. They both use security labels on objects and clearances for subjects and is therefore a MAC model.
+         - The Bell-LaPadula model applies the information flow model to confidentiality while the Biba model applies it to integrity. They both use security labels on objects and clearances for subjects and is therefore a MAC model. They are both multilevel models.
 - 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification
     - Focuse is on confidentiality ✏️
     - Simple security property: 🔥No read-up 
@@ -139,7 +139,7 @@ You may find this domain to be more technical than others, and if you have exper
 - 🔴**Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
     - Focus is on integrity ✏️
     -  is based on information flow, and is a multilevel model.
-    - Simple integrity property: 🔥No read down ( individual may not read a file classified at a lower security level than the individual's security clearance. for example, users with a Top Secret clearance can’t read data classified as Secret)
+    - Simple integrity property: 🔥No read down ( individual may not read a file classified at a lower security level than the individual's security clearance. for example, users with a Top Secret clearance can’t read data classified as Secret). the implied allowed opposite is read-up.
     - Star (*) integrity property: 🔥No write up (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
     - By combining it with Bell-LaPadula, you get both confidentiality and integrity
 - 🔴**Take-Grant**: 
@@ -151,7 +151,7 @@ You may find this domain to be more technical than others, and if you have exper
         - ✏️remove
 - 🔴**Clark-Wilson**: The Clark–Wilson model uses a multifaceted approach to enforcing data integrity. Instead of defining a formal state machine, the Clark–Wilson model defines each data item and allowable data transformations. 
     - Focus is on integrity ✏️
-    - Designed to protect integrity using the access control triplet (‼️Subject, ‼️Object, ‼️Program/Interface)
+    - Designed to protect integrity using the access control 📝triplet (‼️Subject, ‼️Object, ‼️Program/Interface)
     - A program interface is used to limit what is done by a subject; if the focus of an intermediary program between subject and object is to protect integrity, then it is an implementation of the Clark-Wilson model
 - 🔴**Brewer and Nash Model**:
     - AKA "ethical wall", and "cone of silence"
