@@ -210,6 +210,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - **SSH**: remote management protocol, which operates over TCP/IP
         - all communications are encrypted
         - primarily used by IT administrators to manage devices such as servers and network devices
+        - SSH2 adds support for 📝simultaneous shell sessions over a single SSH connection. Both SSH1 and SSH2 are capable of supporting multifactor authentication. SSH2 actually drops support for the IDEA algorithm, whereas both SSH1 and SSH2 support 3DES.
     - **IPSec**: an IETF standard suite of protocols that is used to connect nodes (e.g. computers or office locations) together
         - widely used in virtual private networks (VPNs)
         - IPSec provides encryption, authentication and data integrity
