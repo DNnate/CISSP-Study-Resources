@@ -241,6 +241,7 @@ You may find this domain to be more technical than others, and if you have exper
     - Binding and sealing are techniques used by the TPM to encrypt data.
     - The random number generator (RNG) function of the TPM is used to support cryptographic operations.
     - TPM does include  Storage Root Key (SRK), which is used for managing and protecting cryptographic operations and keys within the TPM.
+    - in a TPM iplementation, the files on the drive are at their most secure when the system is off and the drive is encrypted and not in a readable state. BitLocker decrypts files as needed when in use, meaning that any time after the system is booted files may be accessed, particularly if the user is logged in and access to the system can be gained or if malware is running.
     - A TPM is an example of a hardware security module (HSM)
     - **hardware security module (HSM)**: a cryptoprocessor used to manage and store digital encryption keys, accelerate crypto operations, support faster digital signatures, and improve authentication. HSMs include root keys and are used for high-security key management. They are generally used in server environments rather than directly on endpoints.
 - 🟣**User interface**: a constrained UI can be used in an application to restrict what users can do or see based on their privileges
@@ -331,6 +332,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - IaaS models provide basic computing resources to customers
             - customers install OSs and apps and perform required maintenance
             - the vendor maintains cloud-based infra, ensuring that customers have access to leased systems
+        - 🥑Identity as a service (IDaaS) provides capabilities such as account provisioning, management, authentication, authorization, reporting, and monitoring. 
 - 3.5.7 Distributed systems
     - ❄️**Distributed computing environment (DCE)**: a collection of individual systems that work together to support a resource or provide a service 
     - DCEs are designed to support communication and coordination among their members in order to achieve a common function, goal, or operation 
@@ -347,7 +349,8 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - 3.5.8 Internet of Things (IoT)
     - ❄️**Internet of things (IoT)**: a class of smart devices that are internet-connected in order to provide automation, remote control, or AI processing to appliances or devices 
         - An IoT device is almost always separate/distinct hardware used on its own or in conjunction with an existing system
-        - IoT security concerns often relate to access and encryption 
+        - IoT security concerns often relate to access and encryption
+        - IoT biggest concern should be the long-term security, patching model and supportability of the IoT devices. 
         - IoT is often not designed with security as a core concept, resulting in security breaches; once an attacker has remote access to the device they may be able to pivot
         - Securing IoT:
             - deploy a distinct network for IoT equipment, kept separate and isolated (known as **three dumb routers**) 
@@ -593,7 +596,7 @@ taxed by inefficient implementations of software and VMs.
             3.  Certificate Generation: The CA creates the certificate by embedding the applicant’s public key and identifying information into the certificate template. The certificate also includes details about the CA, the certificate’s validity period, and the certificate’s serial number.
             4.  Signing: The CA digitally signs the certificate using its private key. This digital signature ensures the integrity and authenticity of the certificate, allowing recipients to trust the certificate.
             5.  Certificate Distribution: The signed certificate is sent back to the applicant. The applicant can now install the certificate on their server or device as needed.
-            6.  Publishing: The certificate is often published in a publicly accessible repository or directory, such as a Certificate Revocation List (CRL) or an online Certificate Status Protocol (OCSP) responder, so that other parties can verify its validity.
+            6.  Publishing: The certificate is often published in a publicly accessible repository or directory, such as a Certificate Revocation List (CRL) or an online Certificate Status Protocol (OCSP) responder, so that other parties can verify its validity. The Online Certificate Status Protocol (OCSP) eliminates the latency inherent in the use of certificate revocation lists by providing a means for real-time certificate verification.
             7.  End-User Verification: Users and systems verify the certificate’s validity by checking the CA's digital signature against the CA’s public key. They also verify that the certificate is not expired or revoked by consulting the CRL or OCSP responder.
             8.  Key Considerations: Trust Model: The CA operates within a trust model where its certificate is trusted by browsers, operating systems, and applications. Trust in the CA’s ability to accurately validate and issue certificates is crucial.
 
