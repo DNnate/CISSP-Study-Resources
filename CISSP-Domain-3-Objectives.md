@@ -144,7 +144,7 @@ You may find this domain to be more technical than others, and if you have exper
 - 🔴**Take-Grant**: 
     - The take-grant model employs a directed graph to dictate how rights can be passed from one subject to another, or from a subject to an object
     - Four rules: 
-        - ✏️take: The right to remove or take permissions from other users.
+        - ✏️take: The right to remove or take permissions from other users. The take rule allows a subject to take the rights belonging to another object. 
         - ✏️grant: The grant rule allows a subject to grant rights that it possesses on an object to another subject.
         - ✏️create 
         - ✏️remove
@@ -667,12 +667,13 @@ taxed by inefficient implementations of software and VMs.
 - 3.7.7 Side-channel: Side-channel attacks seek to use information about system activity and retrieve information that is actively being encrypted
     - 🍮**Side-channel**: these attacks seek to use the way computer systems generate characteristic footprints of activity, such as changes in processor utilization, power consumption, or electromagnetic radiation to monitor system activity and retrieve information that is actively being encrypted
         - similar to an implementation attack, side-channel attacks look for weaknesses outside of the core cryptography functions themselves
+        - Side-channel attacks seek to use information about system activity and retrieve information that is actively being encrypted. 
         - a side-channel attack could target a computer’s CPU, or attempt to gain key information about the environment during encryption or decryption by looking for electromagnetic emissions or the amount of execution time required during decryption
         - side-channel characteristics information are often combined together to try to break down the cryptography
         - timing attack is an example
-- 3.7.8 Side-channel
+- 3.7.8 Fault-Injection
     - 🍮**Fault-Injection**: the attacker attempts to compromise the integrity of a cryptographic device by causing some type of external fault 
-        - for example, using high-voltage electricity, high or low temperature, or other factors to cause a malfunction that undermines the security of the device.
+        - for example, using high-voltage electricity, dry ice, high or low temperature, or other factors to cause a malfunction that undermines the security of the device.
         - Fault injection attacks require physical access to the facility.
 - 3.7.9 Timing
     - 🍮**Timing**: timing attacks are an example of a side-channel attack where the attacker measures precisely how long cryptographic operations take to complete, gaining information about the cryptographic process that may be used to undermine its security.
