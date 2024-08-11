@@ -128,7 +128,7 @@ You may find this domain to be more technical than others, and if you have exper
     - A security model provides a framework to implement a security policy.
     - **The State Machine Model** describes a system that is always secure no matter what state it is in. A secure state machine model system always boots into a secure state, maintains a secure state across all transitions, and allows subjects to access resources only in a secure manner compliant with the security policy. Bell–LaPadula and Biba are built on a state machine model.
          - The information flow model applies state machines to the flow of information.
-         - The Bell-LaPadula model applies the information flow model to confidentiality while the Biba model applies it to integrity. 
+         - The Bell-LaPadula model applies the information flow model to confidentiality while the Biba model applies it to integrity. They both use security labels on objects and clearances for subjects and is therefore a MAC model.
 - 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification
     - Focuse is on confidentiality ✏️
     - Simple security property: 🔥No read-up 
