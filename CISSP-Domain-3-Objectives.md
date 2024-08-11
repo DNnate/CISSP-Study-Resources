@@ -990,7 +990,7 @@ taxed by inefficient implementations of software and VMs.
 - **ASSYMETRIC (use a pair of keys for each user)**
     - RSA - Key Transport Algorithm, ✏️Size 512
     - Diffie-Hellman - Key Exchange Algorithm
-    - EL Gamal - Key Exchange Algorithm
+    - EL Gamal - Key Exchange Algorithm (doubles the length of any message it encrypts)
     - ECC - Elliptic Curve Algorithm, Size Variable (smaller key size due to 160 EC Key = 1024 RSA)
     - TLS - In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is ­protected using symmetric cryptography.
 
