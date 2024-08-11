@@ -1021,10 +1021,10 @@ taxed by inefficient implementations of software and VMs.
    -  Choose your own device (CYOD): The concept of CYOD provides users with a list of approved devices from which to select the
 device to implement.
 
-- Consider the following
-- X: 0 1 1 0 1 0
-- Y: 0 0 1 1 0 1
-- The ⊕ symbol represents the XOR function and returns a true value when only one of the input values is true. If both values are false or both values are true, the output of the XOR function is false: 0 1 0 1 1 1
-- The ∧ symbol is the result if these two values were combined using the AND (the ∧ symbol) function, which returns a value of true if the two values are both true: 0 0 1 0 0 0
-- The ∨ symbol is the result if these two values were combined using the OR (the ∨ symbol) function, which returns a value of true if either input values is true: 0 1 1 1 1 1
-- the ~ symbol is the result if only the X value was subjected to the NOR (the ~ symbol) function, which reverses the value of an input: 1 0 0 1 0 1
+- Consider the following:
+    - X: 0 1 1 0 1 0
+    - Y: 0 0 1 1 0 1
+         - 🕯️⊕ symbol represents the ♏XOR function and returns a true value when only one of the input values is true. If both values are false or both values are true, the output of the XOR function is false: 0 1 0 1 1 1
+         - 🕯️ ∧ symbol is the result if these two values were combined using the 🔼AND (the ∧ symbol) function, which returns a value of true if the two values are both true: 0 0 1 0 0 0
+         - 🕯️ ∨ symbol is the result if these two values were combined using the 🔽OR (the ∨ symbol) function, which returns a value of true if either input values is true: 0 1 1 1 1 1
+         - 🕯️ ~ symbol is the result if only the X value was subjected to the ⛔NOR (the ~ symbol) function, which reverses the value of an input: 1 0 0 1 0 1
