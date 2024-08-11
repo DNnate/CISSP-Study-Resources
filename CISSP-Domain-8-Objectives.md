@@ -309,7 +309,7 @@ used are called STRIDE, DREAD, and PASTA.
         - compiled code is generally less prone to manipulation by a third party, however easier to embed backdoors or other security flaws without detection
     - **Decompilers**: convert binary executable back into source code
     - **Disassemblers**: convert back into machine-readable assembly language (an intermediate step during the compilation process)
-    - **Interpreted language**: uses an interpreter to execute;sourcecode is viewable; e.g. Python, R, JavaScript, VBScript
+    - **Interpreted language**: uses an interpreter to execute;sourcecode is viewable; e.g. Python, R, JavaScript, VBScript. 📝JavaScript remains the one mobile code technology that may affect the security of modern browsers and their host OSs. 
     - **Object-oriented programming (OOP)**: defines an object to be set of a software that offers one or more methods, internal to the object, that software external to that object can request to access; each method may require specific inputs and resources and may produce a specified set of outputs; focuses on the objects involved in an interaction
         - OOP languages include C++, Java, and .NET
         - think of OOP as a group of objects that can be requested to perform certain operations or exhibit certain behaviors, working together to provide a system’s functionality or capabilities
