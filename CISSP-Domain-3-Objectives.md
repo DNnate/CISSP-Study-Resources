@@ -149,7 +149,7 @@ You may find this domain to be more technical than others, and if you have exper
         - ✏️grant: The grant rule allows a subject to grant rights that it possesses on an object to another subject.
         - ✏️create: The create rule allows a subject to create new objects and also creates an edge from the subject to that object, granting rights on the new object.
         - ✏️remove
-- 🔴**Clark-Wilson**:
+- 🔴**Clark-Wilson**: The Clark–Wilson model uses a multifaceted approach to enforcing data integrity. Instead of defining a formal state machine, the Clark–Wilson model defines each data item and allowable data transformations. 
     - Focus is on integrity ✏️
     - Designed to protect integrity using the access control triplet (‼️Subject, ‼️Object, ‼️Program/Interface)
     - A program interface is used to limit what is done by a subject; if the focus of an intermediary program between subject and object is to protect integrity, then it is an implementation of the Clark-Wilson model
