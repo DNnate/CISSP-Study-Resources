@@ -127,6 +127,8 @@ You may find this domain to be more technical than others, and if you have exper
     - Enable people to access only the data classified for their clearance level
     - A security model provides a framework to implement a security policy.
     - **The State Machine Model** describes a system that is always secure no matter what state it is in. A secure state machine model system always boots into a secure state, maintains a secure state across all transitions, and allows subjects to access resources only in a secure manner compliant with the security policy. Bell–LaPadula and Biba are built on a state machine model.
+         - The information flow model applies state machines to the flow of information.
+         - The Bell-LaPadula model applies the information flow model to confidentiality while the Biba model applies it to integrity. 
 - 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification
     - Focuse is on confidentiality ✏️
     - Simple security property: 🔥No read-up 
@@ -857,17 +859,17 @@ taxed by inefficient implementations of software and VMs.
      - Locks and Keys, Security Guards, CCTV, Security Alarms
 - 🔴**Technical Physical Controls**
      - **Motion Detectors**: A motion detector, or motion sensor, is a device that senses movement or sound in a specific area, and it is a common element of intruder detection systems. Many types of motion detectors exist, including the following:
-         - digital motion detector monitors for  changes in the digital pattern of a monitored area (smart security camera).
-         - passive infrared (PIR) or heat-based motion detector monitors for changes in the heat levels and patterns.
-         - wave pattern motion detector transmits a consistent low ultrasonic or high microwave frequency signal into a monitored area and monitors for changes or disturbances in the reflected pattern.
-         - capacitance motion detector senses changes in the electrical or magnetic field surrounding a monitored object.
-         - photoelectric motion detector senses changes in visible light levels. Usually  deployed in dark rooms.
-         - passive audio motion detector listens for abnormal sounds in the monitored area.
+         - 🍳digital motion detector monitors for  changes in the digital pattern of a monitored area (smart security camera).
+         - 🍳passive infrared (PIR) or heat-based motion detector monitors for changes in the heat levels and patterns.
+         - 🍳wave pattern motion detector transmits a consistent low ultrasonic or high microwave frequency signal into a monitored area and monitors for changes or disturbances in the reflected pattern.
+         - 🍳capacitance motion detector senses changes in the electrical or magnetic field surrounding a monitored object.
+         - 🍳photoelectric motion detector senses changes in visible light levels. Usually  deployed in dark rooms.
+         - 🍳passive audio motion detector listens for abnormal sounds in the monitored area.
 
      - **Intrusion Alarms**: Whenever a motion detector registers a significant or meaningful change in the environment, it triggers an alarm. An alarm is a separate mechanism that triggers a deterrent, a repellent, and/or a notification.:
-         - Deterrent alarms: trigger deterrents may engage additional locks, shut doors, and so on. The goal of such an alarm is to make further intrusion or attack more difficult.
-         - Repellent alarms: Alarms that trigger repellents usually sound an audio siren or bell and turn on lights.
-         - Notification alarms: trigger notification often silent from the intruder/attacker perspective to notify administrators, security guards, and law enforcement.
+         - 🍊Deterrent alarms: trigger deterrents may engage additional locks, shut doors, and so on. The goal of such an alarm is to make further intrusion or attack more difficult.
+         - 🍊Repellent alarms: Alarms that trigger repellents usually sound an audio siren or bell and turn on lights.
+         - 🍊Notification alarms: trigger notification often silent from the intruder/attacker perspective to notify administrators, security guards, and law enforcement.
          - Alarms are also categorized by where they are located: local, centralized or proprietary, or auxiliary.
              - Local alarm system: Local alarm systems must broadcast an audible (up to 120 decibels [dB]) alarm signal that can be easily heard up to 400 feet away. must be protected from tampering and disablement. to be effective, a security team or guards must be positioned nearby who can respond when the alarm is triggered.
              - Central station system: The alarm is usually silent locally, but offsite monitoring agents are notified so that they can respond to the security breach. Most residential security systems are of this type such as Brinks and ADT. In a proprietary system, the organization has its own onsite security staff waiting to respond to security breaches.
