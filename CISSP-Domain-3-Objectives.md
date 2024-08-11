@@ -548,7 +548,14 @@ taxed by inefficient implementations of software and VMs.
             - **certification authorities (CAs)**: servers that provide one or more PKI functions, such as providing policies or issuing certificates 
             - certificates: issued to other certification authorities or to devices and users 
             - policies and procedures: such as how the PKI is secured, and 
-            - templates: a predefined configuration for specific uses, such as a web server template 
+            - templates: a predefined configuration for specific uses, such as a web server template
+            - Certificate Revocation List CRL: is a list maintained by a Certificate Authority (CA) that contains identifiers for certificates that have been revoked before their scheduled expiration date. These certificates might be revoked for various reasons, such as being compromised, having been issued incorrectly, or no longer being needed. Delta CRLs: To efficiently handle updates, delta CRLs can be used to list only the changes (i.e., new revocations or reinstatements) since the last full CRL was issued. The certificate revocation list contains
+                - Serial Number: The unique identifier of the revoked certificate.
+                - Revocation Date: The date on which the certificate was revoked.
+                - Revocation Reason: The reason for the revocation, such as key compromise, CA compromise, affiliation change, or cessation of operation.
+                - Issuer Information: Details about the Certificate Authority (CA) that issued the CRL.
+                - Next Update Date: The date when the next CRL is expected to be published.
+                - CRL Number: A unique identifier for the CRL itself, which helps in tracking and referencing different versions of the list. 
         - There are other components and concepts you should know for the exam:
             - A PKI can have multiple tiers:    
                 - single tier means you have one or more servers that perform all the functions of a PKI 
@@ -802,9 +809,9 @@ taxed by inefficient implementations of software and VMs.
     - Other environmental issues include earthquakes, power outages, tornados and wind
     - Secondary facilities should be located far enough away from the primary to ensure they won't be damaged by the same event
     - **Recommendations**:
-        - Temperature: Rooms intended primarily to house computers should generally be kept between 59 and 89.6 degrees Fahrenheit (15 and 32 degrees Celsius). Some systems might require even lower temperatures.
-        - Humidity: Humidity in a computer room should be maintained between 20 and 80 percent. Too much humidity can cause condensation leading to corrosion. Too little humidity causes static voltage\electricity to build up.
-        - Static Voltage:
+        - 🔨Temperature: Rooms intended primarily to house computers should generally be kept between 59 and 89.6 degrees Fahrenheit (15 and 32 degrees Celsius). Some systems might require even lower temperatures.
+        - 🔨Humidity: Humidity in a computer room should be maintained between 40 and 60 percent. Too much humidity can cause condensation leading to corrosion. Too little humidity causes static voltage\electricity to build up.
+        - 🔨Static Voltage:
              - 40 can cause Destruction of sensitive circuits and other electronic components
              - 1,000 ca cause Scrambling of monitor displays
              - 1,500 can cause Destruction of data stored on hard drives
