@@ -292,7 +292,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - algorithms themselves are not secret; they have extensive public details about history and how they function
 
 - 3.5.5 Industrial Control Systems (ICS)
-    - **Industrial control systems (ICS)**: a form of computer-management device that controls industrial processes and machines, also known as operational technology (OT): ICS examples include distributed control systems (DCSs), programmable logic controllers (PLCs), and supervisory control and data acquisition (SCADA).
+    - ❄️**Industrial control systems (ICS)**: a form of computer-management device that controls industrial processes and machines, also known as operational technology (OT): ICS examples include distributed control systems (DCSs), programmable logic controllers (PLCs), and supervisory control and data acquisition (SCADA).
     - **Supervisory control and data acquisition (SCADA)**: systems used to control physical devices like those in an electrical power plant or factory; SCADA systems are well suited for distributed environments, such as those spanning continents 
         - some SCADA systems still rely on legacy or proprietary communications, putting them at risk, especially as attackers gain knowledge of such systems and their vulnerabilities
         - Supervisory Control and Data Acquisition systems, or SCADA systems, provide a graphical interface to monitor industrial control systems (ICS). 
@@ -328,7 +328,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - customers install OSs and apps and perform required maintenance
             - the vendor maintains cloud-based infra, ensuring that customers have access to leased systems
 - 3.5.7 Distributed systems
-    - **Distributed computing environment (DCE)**: a collection of individual systems that work together to support a resource or provide a service 
+    - ❄️**Distributed computing environment (DCE)**: a collection of individual systems that work together to support a resource or provide a service 
     - DCEs are designed to support communication and coordination among their members in order to achieve a common function, goal, or operation 
     - Most DCEs have duplicate or concurrent components, are asynchronous, and allow for fail-soft or independent failure of components
     - DCE is AKA concurrent computing, parallel computing, and distributed computing 
@@ -341,7 +341,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - ✏️processing and storage are distributed on multiple clients and servers, and all must be secured 
             - ✏️network links must be secured and protected
 - 3.5.8 Internet of Things (IoT)
-    - **Internet of things (IoT)**: a class of smart devices that are internet-connected in order to provide automation, remote control, or AI processing to appliances or devices 
+    - ❄️**Internet of things (IoT)**: a class of smart devices that are internet-connected in order to provide automation, remote control, or AI processing to appliances or devices 
         - An IoT device is almost always separate/distinct hardware used on its own or in conjunction with an existing system
         - IoT security concerns often relate to access and encryption 
         - IoT is often not designed with security as a core concept, resulting in security breaches; once an attacker has remote access to the device they may be able to pivot
@@ -359,7 +359,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - 3.5.9 Microservices
 - Service-oriented architecture (SOA) constructs new applications or functions out of existing but separate and distinct software services. The resulting application is often new; thus, its security issues are unknown, untested, and unprotected. A
 derivative of SOA is microservices.
-    - **Microservices**: a feature of web-based solutions and derivative of SOA 
+    - ❄️**Microservices**: a feature of web-based solutions and derivative of SOA 
         - A microservice is simply one element, feature, capability, business logic, or function of a web app that can be called upon or used by other web apps
         - Microservices are usually small and focused on a single operation, engineered with few dependencies, and based on fast, short-term development cycles (similar to Agile)
         - It is the conversion or transformation of a capability of one web application into a microservice that can be called upon by numerous other web applications. The relationship to an application programming interface (API) is that each microservice must have a clearly defined (and secured!) API to allow for I/O between multi-­microservices as well as to and from other applications.
@@ -370,7 +370,7 @@ derivative of SOA is microservices.
             - closely aligned with microservices is the concept of shifting left, or addressing security earlier in the SDLC; also integrating it into the CI/CD pipeline 
             - consider the software supplychain or dependencies of libries used, when addressing updates and patching
 - 3.5.10 Containerization
-    - **Containerization**: AKA OS virtualization, is based on the concept of eliminating the duplication of OS elements in a virtual machine; instead each app is placed into a container that includes only the actual resources needed to support the enclosed app, and the common or shared OS elements are then part of the hypervisor
+    - ❄️**Containerization**: AKA OS virtualization, is based on the concept of eliminating the duplication of OS elements in a virtual machine; instead each app is placed into a container that includes only the actual resources needed to support the enclosed app, and the common or shared OS elements are then part of the hypervisor
         - Containerization is able to provide 10 to 100 x more application density per physical server compared to traditional virtualization
         - the use of Docker is best described as a containerization technology
         - Vendors often have security benchmarks and hardening guidelines to follow to enhance container security
@@ -382,17 +382,17 @@ derivative of SOA is microservices.
             - harden container deployment including the OS of the underlying host, using firewalls, and VPC rules, and use limited access accounts
             - reduce the attack surface by minimizing the number of components in each container, and update and scan them frequently 
 - 3.5.11 Serverless
-    - **Serverless architecture** (AKA **function as a service (FaaS)**): a cloud computing concept where code is managed by the customer and the platform (i.e. supporting hardware and software) or servers are managed by the CSP
+    - ❄️**Serverless architecture** (AKA **function as a service (FaaS)**): a cloud computing concept where code is managed by the customer and the platform (i.e. supporting hardware and software) or servers are managed by the CSP
         - Applications developed on serverless architecture are similar to microservices, and each function is created to operate independently and automonomously
         - A serverless model, as in other CSP models, is a shared security model,and your org and the CSP share security responsibility
         - In a serverless computing model, the vendor does not expose details of the operating system to its customers. Therefore, the vendor retains full responsibility for configuring it securely under the shared responsibility model of cloud computing.
         - There is always a physical server running the code, but this execution model allows the software designer/architect/programmer/developer to focus on the logic of their code and not have to be concerned about the parameters or limitations of a specific server. This is also known as function as a service (FaaS).
         - 📝FaaS is a subcategory of platform as a service (PaaS)
 
-- **Infrastructure as Code**: Infrastructure as Code (IaC) is a concept where you manage and provision IT infrastructure using code rather than manual processes. 
+- ❄️**Infrastructure as Code**: Infrastructure as Code (IaC) is a concept where you manage and provision IT infrastructure using code rather than manual processes. 
 
 - 3.5.12 Embedded systems
-    - **Embedded systems**: any form of computing component added to an existing mechanical or electrical system for the purpose of providing automation, remote control, and/or monitoring; usually including a limited set of specific functions
+    - ❄️**Embedded systems**: any form of computing component added to an existing mechanical or electrical system for the purpose of providing automation, remote control, and/or monitoring; usually including a limited set of specific functions
         - Embedded systems can be a security risk because they are generally static, with admins having no way to update or address security vulns (or vendors are slow to patch)
         - Embedded systems focus on minimizing cost and extraneous features
         - Embedded systems are often in control of/associated with physical 📝 systems, and can have real-world impact
@@ -400,9 +400,9 @@ derivative of SOA is microservices.
         - Securing embedded systems:
             - ebedded systems should be isolated from the internet, and from a private production network to minimize exposure to remote exploitation, remote control, and malware
             - use secure boot feature and physically protecting the hardware
-     - **Cyber-physical systems** refer to devices that offer a computational means to control something in the physical world. In the past these might have been referred to as 🎵 embedded systems 🎵, but the category of cyber-physical seems to focus more on the physical world results rather than the computational aspects.
+     - ❄️**Cyber-physical systems** refer to devices that offer a computational means to control something in the physical world. In the past these might have been referred to as 🎵 embedded systems 🎵, but the category of cyber-physical seems to focus more on the physical world results rather than the computational aspects.
 - 3.5.13 High-Performance Computing (HPC) systems
-    - **High-performance computing (HPC)** systems: platforms designed to perform complex calculations/data manipulation at extremely high speeds (e.g. super computers or MPP (Massively Parallel Processing)); often used by large orgs, universities, or gov agencies
+    - ❄️**High-performance computing (HPC)** systems: platforms designed to perform complex calculations/data manipulation at extremely high speeds (e.g. super computers or MPP (Massively Parallel Processing)); often used by large orgs, universities, or gov agencies
         - An HPC solution is composed of three main elements: 
             - compute resources 
             - network capabilities 
@@ -415,7 +415,7 @@ derivative of SOA is microservices.
             - deploy head nodes and route all outside traffic through them, isolating parts of a system 
             - "fingerprint" HPC systems to understand use, and detect anomalous behavior
 - 3.5.14 Edge computing systems
-    - **Edge computing**: philosophy of network design where data and compute resources are located as close as possible, at or near the network edge, to optimize bandwidth use while minimizing latency
+    - ❄️**Edge computing**: philosophy of network design where data and compute resources are located as close as possible, at or near the network edge, to optimize bandwidth use while minimizing latency
     - In edge computing, the intelligence and processing are contained within each device. Thus, rather than having to send data off to a master processing entity, each device can process its own data locally.
     - The architecture of edge computing performs computations closer to the data source, which is at or near the edge of the network.
         - Securing edge computing:
@@ -428,24 +428,25 @@ derivative of SOA is microservices.
             - deploy IDS on the network side to monitor for malicious traffic
             - in many scenarios, you are an edge customer, and likely will need to rely on a vendor for some of the security and vulnerability remediation
 
-- **Fog computing** is another example of advanced computation architectures, which is also often used as an element in an IIoT deployment. Fog computing relies upon sensors, IoT devices, or even edge computing devices to collect data, and then transfer it back to a central location for processing. Thus, intelligence and processing is centralized.
+- ❄️**Fog computing** is another example of advanced computation architectures, which is also often used as an element in an IIoT deployment. Fog computing relies upon sensors, IoT devices, or even edge computing devices to collect data, and then transfer it back to a central location for processing. Thus, intelligence and processing is centralized.
     - Both edge and fog computing can often take advantage of or integrate the use of microcontrollers, embedded devices, static devices, cyber-physical systems, and IoT equipment.
   
 - 3.5.15 Virtualized systems
-    - **Virtualized systems**: used to host one or more OSs within the memory of a single host computer, or to run apps not compatible with the host OS
+    - ❄️**Virtualized systems**: used to host one or more OSs within the memory of a single host computer, or to run apps not compatible with the host OS
         - Securing virtualized systems:
             - the primary component in virtualization is a hypervisor which manages the VMs, virtual data storage, virtual network components
             - The hypervisor is responsible for coordinating access to physical hardware and enforcing isolation between different virtual machines running on the same physical platform.
             - the hypervisor represents an additional attack surface
+            - The hypervisor runs within the virtualization platform and serves as the moderator between virtual resources and physical resources.
             - in virtualized environments, you need to protect both the VMs and the physical infrastructure/hypervisor
             - hypervisor admin accounts/credentials and service accounts are targets because they often provide access to VMs and their data; these accounts should be protected
             - virtual hosts should be hardened; to protect the host, avoid using it for anything other than hosting virtualized elements
             - virtualized systems should be security tested via vuln assessment and penetration testing
             - virtualization doesn't lessen the security management requirements of an OS, patch management is still required
             - be aware of VM Sprawl and Shadow IT
-            - **VM Sprawl** occurs when organizations fail to plan their IT/IS needs and just deploy new systems, software, and VMs whenever their production needs demand it. This often results in obtaining underpowered equipment that is then over-
+            - 🍍**VM Sprawl** occurs when organizations fail to plan their IT/IS needs and just deploy new systems, software, and VMs whenever their production needs demand it. This often results in obtaining underpowered equipment that is then over-
 taxed by inefficient implementations of software and VMs.
-            - **VM escape**: occurs when software within a guest OS is able to breach the isolation protection provided by the hypervisor
+            - 🍍**VM escape**: occurs when software within a guest OS is able to breach the isolation protection provided by the hypervisor
             - VM escape minimizaton:
                 - keep highly sensitive systems and data on separate physical machines
                 - keep all hypervisor software current with vendor-released patches
