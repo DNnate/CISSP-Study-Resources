@@ -281,6 +281,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - **key space**: represents all possible permutations of a key
             - key space best practices: 
                 - key length is an important consideration; use as long of a key as possible (your goal is to outpace projected increase in cryptanalytic capability during the time the data must be kept safe); longer keys discourage brute-force attacks
+                    - Binary keyspaces contain a number of keys equal to 2 raised to the power of the number of bits. For example, incresing key space by 8 bits, two to the eighth power is 256, so the keyspace will increase by a factor of 256.
                     - a 256-bit key is typically minimum recommendation for symmetric encryption
                     - 2048-bit key typically the minimum for asymmetric
                 - always store secret keys securely, and if you must transmit them over a network, do so in a manner that protects them from unauthorized disclosure 
@@ -386,6 +387,7 @@ derivative of SOA is microservices.
         - A serverless model, as in other CSP models, is a shared security model,and your org and the CSP share security responsibility
         - In a serverless computing model, the vendor does not expose details of the operating system to its customers. Therefore, the vendor retains full responsibility for configuring it securely under the shared responsibility model of cloud computing.
         - There is always a physical server running the code, but this execution model allows the software designer/architect/programmer/developer to focus on the logic of their code and not have to be concerned about the parameters or limitations of a specific server. This is also known as function as a service (FaaS).
+        - 📝FaaS is a subcategory of platform as a service (PaaS)
 
 - **Infrastructure as Code**: Infrastructure as Code (IaC) is a concept where you manage and provision IT infrastructure using code rather than manual processes. 
 
@@ -642,6 +644,7 @@ taxed by inefficient implementations of software and VMs.
 - 3.7.1 Brute force
     - 🍮**Brute force**: an attack that attempts every possible valid combination for a key or password
         - they involve using massive amounts of processing power to methodically guess the key used to secure cryptographic communications.  In a brute-force attack, the attacker simply tries all possible key combinations.
+        - An attacker has intercepted a large amount of data that was all encrypted with the same algorithm and encryption key. With no further information they can attempt a brute force attack.
         - Rainbow tables contain precomputed hash values for commonly used passwords and may be used to increase the efficiency of password-­cracking attacks.
 - 3.7.2 Ciphertext only
     - 🍮**Ciphertext only**: an attack where you only have the encrypted ciphertext message at your disposal (not the plaintext)
@@ -655,9 +658,10 @@ taxed by inefficient implementations of software and VMs.
 - 3.7.4 Frequency analysis
     - 🍮**Frequency analysis**: an attack where the characteristics of a language are used to defeat substitution ciphers
         - for example in English, the letter "E" is the most common, so the most common letter in an encrypted cyphertext could be a substitution for "E"
+        - An attacker has intercepted a large amount of data that was all encrypted with the same algorithm and encryption key. With no further information they can attemt a frequency analysis attack
         - other examples might include letters that appear twice in sequence, as well as the most common words used in a language 
 - 3.7.5 Chosen ciphertext
-    - 🍮**Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to one or more ciphertexts and their plaintexts; i.e. the attacker has the ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext. Known plaintext and chosen plaintext attacks require the ability to encrypt data. In a chosen ciphertext attack, the attacker can choose the ciphertext output
+    - 🍮**Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to one or more ciphertexts and their plaintexts; i.e. the attacker has the 📝ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext. Known plaintext and chosen plaintext attacks require the ability to encrypt data. In a chosen ciphertext attack, the attacker can choose the ciphertext output
     - 🍮**Differential cryptanalysis**: a type of chosen plaintext attack, and a general form of cryptanalysis applicable primarily to block ciphers, but also to stream ciphers and cryptographic hash functions; in the broadest sense, it is the study of how differences in information input can affect the resultant difference at the output; advanced methods such as differential cryptanalysis are types of chosen plaintext attacks
         - as an example, an attacker may try to get the receiver to decrypt modified ciphertext, looking for that modification to cause a predictable change to the plaintext
 - 3.7.6 Implementation attacks
@@ -829,7 +833,7 @@ taxed by inefficient implementations of software and VMs.
         - water suppresses temperature
         - soda acid and other dry powders suppress the fuel supply
         - carbon dioxide (CO2) suppresses the oxygen supply
-        - halon substitutes and other nonflammable gases interfere with the chemistry of combustion and/or suppress the oxygen supply
+        - halon substitutes and other nonflammable gases interfere with the chemistry of combustion and/or suppress the oxygen supply. FM-200 is a chemical suppressant commonly used in place of water in data centers.
     - Fire stages:
         - 🍐**Stage 1**: ✏️incipient stage: early warning of fire. At this stage, there is only air ionization and no smoke
         - 🍐**Stage 2**: ✏️smoke stage: smoke is visible from the point of ignition
@@ -870,7 +874,7 @@ taxed by inefficient implementations of software and VMs.
             - Not all security guards are themselves reliable.
             - Prescreening, bonding, and training do not guarantee that you won’t end up with an ineffective or unreliable security guard.
 - Physical Access Control:
-     - Locks and Keys, Security Guards, CCTV, Security Alarms
+     - Locks and Keys, Security Guards, Guard dogs, CCTV, Security Alarms
 - 🔴**Technical Physical Controls**
      - **Motion Detectors**: A motion detector, or motion sensor, is a device that senses movement or sound in a specific area, and it is a common element of intruder detection systems. Many types of motion detectors exist, including the following:
          - 🍳digital motion detector monitors for  changes in the digital pattern of a monitored area (smart security camera).
@@ -885,9 +889,9 @@ taxed by inefficient implementations of software and VMs.
          - 🍊Repellent alarms: Alarms that trigger repellents usually sound an audio siren or bell and turn on lights.
          - 🍊Notification alarms: trigger notification often silent from the intruder/attacker perspective to notify administrators, security guards, and law enforcement.
          - Alarms are also categorized by where they are located: local, centralized or proprietary, or auxiliary.
-             - Local alarm system: Local alarm systems must broadcast an audible (up to 120 decibels [dB]) alarm signal that can be easily heard up to 400 feet away. must be protected from tampering and disablement. to be effective, a security team or guards must be positioned nearby who can respond when the alarm is triggered.
-             - Central station system: The alarm is usually silent locally, but offsite monitoring agents are notified so that they can respond to the security breach. Most residential security systems are of this type such as Brinks and ADT. In a proprietary system, the organization has its own onsite security staff waiting to respond to security breaches.
-             - Auxiliary alarm system: Auxiliary alarm systems can be added to either local or centralized alarm systems. When the security perimeter is breached, emergency services are notified to respond to the incident and arrive at the location. This can include fire, police, and medical services.
+             - 🔔Local alarm system: Local alarm systems must broadcast an audible (up to 120 decibels [dB]) alarm signal that can be easily heard up to 400 feet away. must be protected from tampering and disablement. to be effective, a security team or guards must be positioned nearby who can respond when the alarm is triggered.
+             - 🔔Central station system: The alarm is usually silent locally, but offsite monitoring agents are notified so that they can respond to the security breach. Most residential security systems are of this type such as Brinks and ADT. In a proprietary system, the organization has its own onsite security staff waiting to respond to security breaches.
+             - 🔔Auxiliary alarm system: Auxiliary alarm systems can be added to either local or centralized alarm systems. When the security perimeter is breached, emergency services are notified to respond to the incident and arrive at the location. This can include fire, police, and medical services.
      - Heartbeat Sensors: is a  technology that issues an alert if the communications lines for the alarm system are unexpectedly cut. Heartbeat sensors send periodic status messages from the alarm system to the monitoring center. The monitoring center triggers an alarm if it does not receive a status message for a prolonged period of time, indicating that communications were disrupted.  
      - **Cameras**: Can be overt and obvious in order to provide a deterrent benefit, or hidden and concealed in order to primarily provide a detective benefit. Vary in type, including visible light, infrared, and motion-triggered recording. Some cameras are fixed, whereas others support remote control of automated pan, tilt, and zoom (PTZ).
          - should be positioned to watch exit and entry points allowing any change in authorization or access level.
@@ -900,11 +904,11 @@ taxed by inefficient implementations of software and VMs.
      - Key locks are also most common and inexpensive form of physical access control device for both interior and exterior use. 
      - **Fire Detectors**: There are many types of fire detection systems:
          - Fixed-temperature detection systems: trigger suppression when a specific temperature is reached. inexpensive and is the most common with potentially visible sprinkler head which serves as both the detection and release mechanism (plastic that melts at a specific temperature or small glass vial containing chemicals that vaporize to over-pressurize and shatter the container at a specific temperature to trigger release). This system is inexpensive and very reliable
-         - Rate-of-rise detection systems: trigger suppression when the speed at which the temperature changes reaches a specific level. These are often digital temperature measuring devices, which can be fooled by HVAC heating during winter months and thus are not widely deployed.
-         - Flame-actuated systems trigger suppression based on the infrared energy of flames. This is fast and reliable but often fairly expensive and is often only used in high-risk environments.
-         - Smoke-actuated systems use photoelectric or radioactive ionization sensors as triggers. Either method monitors for light or radiation obstruction or reduction across an air gap caused by particles in the air. It is intended to be triggered by smoke, but dust and steam can sometimes trigger the alarm.
-         - The radioactive ionization-based smoke detectors use americium as a source of alpha particles and a Geiger counter to detect the rate of these particles' transmission across the air gap. This element produces such low levels of radiation that a layer of dead skin cells is sufficient to block its transmission.
-         - Incipient smoke detection systems, also known as aspirating sensors, are able to detect the chemicals typically associated with the very early stages of combustion before a fire is other wise detectible via other means. These devices are even more costly than flame-actuated sensors and are also only used in high-risk or critical environments.
+         - 🚒Rate-of-rise detection systems: trigger suppression when the speed at which the temperature changes reaches a specific level. These are often digital temperature measuring devices, which can be fooled by HVAC heating during winter months and thus are not widely deployed.
+         - 🚒Flame-actuated systems trigger suppression based on the infrared energy of flames. This is fast and reliable but often fairly expensive and is often only used in high-risk environments.
+         - 🚒Smoke-actuated systems use photoelectric or radioactive ionization sensors as triggers. Either method monitors for light or radiation obstruction or reduction across an air gap caused by particles in the air. It is intended to be triggered by smoke, but dust and steam can sometimes trigger the alarm.
+         - 🚒The radioactive ionization-based smoke detectors use americium as a source of alpha particles and a Geiger counter to detect the rate of these particles' transmission across the air gap. This element produces such low levels of radiation that a layer of dead skin cells is sufficient to block its transmission.
+         - 🚒Incipient smoke detection systems, also known as aspirating sensors, are able to detect the chemicals typically associated with the very early stages of combustion before a fire is other wise detectible via other means. These devices are even more costly than flame-actuated sensors and are also only used in high-risk or critical environments.
 - 🔴**Administrative Access Control**:
      - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
 - 🔴**Technical Access Control**:
@@ -942,7 +946,7 @@ taxed by inefficient implementations of software and VMs.
     - SHA-1 - Lenght ✏️160 (a real-world collision attack against SHA 1 was announced in early 2017)
     - SHA-224 - Lenght 224, produces 224-­bit digests
     - SHA-256 - Lenght 256, produces 256-­bit digests (sometimes called SHA 2)
-    - SHA-384 - Lenght 384, produces 384-­bit digests 
+    - SHA-384 - Lenght 384, produces 384-­bit digests (SHA-3 is, however, less efficient than SHA-2)
     - SHA-512 - Lenght 512, produces 512-­bit digests 🥇
 
 - **SYMMETRIC**
