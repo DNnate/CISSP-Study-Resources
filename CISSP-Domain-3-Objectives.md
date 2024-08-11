@@ -671,12 +671,12 @@ taxed by inefficient implementations of software and VMs.
         - An attacker has intercepted a large amount of data that was all encrypted with the same algorithm and encryption key. With no further information they can attempt a brute force attack.
         - Rainbow tables contain precomputed hash values for commonly used passwords and may be used to increase the efficiency of password-­cracking attacks.
 - 3.7.2 Ciphertext only
-    - 🍮**Ciphertext only**: an attack where you only have the encrypted ciphertext message at your disposal (not the plaintext)
+    - 🍮**Ciphertext only**: an attack where you only have the 📝encrypted ciphertext message at your disposal (not the plaintext)
         - if you have enough ciphertext samples, the idea is that you can decrypt the target ciphertext based on the samples
         - one technique proves helpful against simple ciphers is frequency analysis (counting the number of times each letter appears in the ciphertext)
         - An attacker without any special access to the system would only be able to perform ciphertext-­only attacks.
 - 3.7.3 Known plaintext
-    - 🍮**Known plaintext**: in this attack, the attacker has a copy of the encrypted message along with the plaintext message used to generate the ciphertext (the copy); this knowledge greatly assists the attacker in breaking weaker codes.
+    - 🍮**Known plaintext**: in this attack, the attacker has a copy of the 📝encrypted message along with the 📝plaintext message used to generate the ciphertext (the copy); this knowledge greatly assists the attacker in breaking weaker codes.
          - 🛑In a chosen plaintext attack, the attacker has the ability to choose the plaintext to be encrypted.
          - Known plaintext and chosen plaintext attacks require the ability to encrypt data.
 - 3.7.4 Frequency analysis
@@ -957,7 +957,7 @@ taxed by inefficient implementations of software and VMs.
       - **Phase 8 Operations & Maintenance/Sustainment**: Ongoing operations and managment to ensure availability and performance e.g troubleshooting, applying updates, addressing vulnerabilities, incident response. The key activities include patch managment, system monitoring, incident response, config managment, change control. The goal is to ensure continous maintenance of security posture.
       - **Phase 9 Retirement/Disposal**: secure decommissiong or disposal when the sytem reaches the end of its useful life or obsolete. focus is on preventing data exposure and respecting data retention periods. The key activities include data archival, secure disposal of hardware and media. The goal is to prevent data exposure, proper hardware disposel, data sanitization and compliance with data retention requirements;
        
-- **DIGITAL SIGNATURES**: The Digital Signature Standard FIPS 186-4 approves three encryption algorithms for use in digital signatures: 
+- **DIGITAL SIGNATURES**: The Digital Signature Standard FIPS 186-4 approves three encryption algorithms for use in digital signatures: oddly with sha1🤯
     - the Digital Signature Algorithm (DSA)
     - the Rivest, Shamir, Adleman (RSA)algorithm;
     - the Elliptic Curve DSA (ECDSA) algorithm. 🥇
