@@ -335,7 +335,8 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - 🥑Identity as a service (IDaaS) provides capabilities such as account provisioning, management, authentication, authorization, reporting, and monitoring. 
 - 3.5.7 Distributed systems
     - ❄️**Distributed computing environment (DCE)**: a collection of individual systems that work together to support a resource or provide a service 
-    - DCEs are designed to support communication and coordination among their members in order to achieve a common function, goal, or operation 
+    - DCEs are designed to support communication and coordination among their members in order to achieve a common function, goal, or operation
+    - The primary security concern of a distributed computing environment (DCE) is the interconnectedness of the components. This configuration could allow for error or malware propagation as well. If an adversary compromises one component, it may grant them the ability to compromise other components in the collective through pivoting and lateral movement. 
     - Most DCEs have duplicate or concurrent components, are asynchronous, and allow for fail-soft or independent failure of components
     - DCE is AKA concurrent computing, parallel computing, and distributed computing 
     - DCE solutions are implemented as client-server, three-tier, multi-tier, and peer-to-peer
@@ -465,6 +466,7 @@ taxed by inefficient implementations of software and VMs.
      - A nonpersistent system or static system is a computer system that does not allow, support, or retain changes. Thus between uses and/or reboots, the operating environment and installed software are exactly the same. Changes may be blocked or simply discarded after each system use.
      - A nonpersistent system is able to maintain its configuration and security in spite of user attempts to implement change.
 - 🔵**parallel data systems**: . Systems designed to perform numerous calculations simultaneously include SMP, AMP, and MPP. Grid computing is a form of parallel distributed processing that loosely groups a significant number of processing nodes to work toward a specific processing goal. Peer-to-peer (P2P) technologies are networking and distributed application solutions that share tasks and workloads among peers.
+    - In many grid computing implementations, grid members can access the contents of the distributed work segments or divisions. This grid computing over the internet is not usually the best platform for sensitive operations. 
     -  🛑Isolation Breach: One of the main risks of grid computing is an isolation breach. An isolation breach in the distributed computing client could be catastrophic, allowing someone who compromises the controller to assume control of every device in the organization. 
 - 🔵**Microcontrollers**: A microcontroller is similar to but less complex than a system on a chip (SoC). A microcontroller may be a component of an SoC. A microcontroller is a small computer consisting of a CPU (with one or more cores), memory, various input/output capabilities, RAM, and often nonvolatile storage in the form of flash or ROM/PROM/EEPROM. Examples include Raspberry Pi, Arduino, and FPGA.
 
