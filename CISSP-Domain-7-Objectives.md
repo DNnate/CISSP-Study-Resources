@@ -537,7 +537,7 @@ of litigation is imminent.
 
 - 7.7.2 Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS): Network-­based intrusion detection systems (NIDSs) and intrusion protection systems (IPSs) primarily monitor ✏️incoming traffic for threats.
     - Intrusion Detection Systems (IDSs) and Intrusion Prevention Systems (IPSs) are two methods organizations typically implement to detect and prevent attacks
-    - **Intrusion detection**: a specific form of monitoring events, usually in real time, to detect abnormal activity indicating a potential incident or intrusion
+    - ❄️**Intrusion detection**: a specific form of monitoring events, usually in real time, to detect abnormal activity indicating a potential incident or intrusion
         - Intrusion Detection System (IDS) automates the inspection of logs and real-time system events to detect intrusion attempts and system failures
         - IDSs are an effective method of detecting many DoS and DDoS attacks
         - an IDS actively watches for suspicious activity by monitoring network traffic and inspecting logs
@@ -548,7 +548,7 @@ of litigation is imminent.
         - A network-­based IDS can be both signature based and anomaly based.
         - **🔥knowledge-based detection**: AKA 🎆signature-based or 🎆pattern-matching detection, the most common method used by an IDS. It uses known signatures to detect attacks. It can only detect attacks from known threats.
         - **🔥behavior-based detection**: AKA 🎆statistical intrusion, 🎆anomaly-based, and 🎆heuristics-based detection; behavior-based IDSs use baseline, activity stats, and heuristic eval techniques to compare current activity against previous activity to detect potentially malicious events. It requires a baseline, and it then monitors traffic for any anomalies or changes when compared to the baseline.  The baseline can be outdated if the network is modified, so it must be updated when the environment changes. It can detect new security threats.
-    - **Intrusion prevention**: An IPS includes detection capabilities, you’ll see them referred to as intrusion detection and prevention systems (IDPSs)
+    - ❄️**Intrusion prevention**: An IPS includes detection capabilities, you’ll see them referred to as intrusion detection and prevention systems (IDPSs)
         - an IPS includes all the capabilities of an IDS but can also take additional steps to stop or prevent intrusions
     - IDS/IPS should be deployed at strategic network locations to monitor traffic, such as at the perimeters, or between network segments, and should be configured to alert for specific types of scans and traffic patterns
     - 📝IPS is usually placed in line with the network traffic, so it is placed before the switch.
@@ -556,8 +556,8 @@ of litigation is imminent.
 
 - 7.7.3 Whitelisting/blacklisting
     - Method used to control which applications run and which applications can’t is allow list and deny list (AKA whitelists and blacklists)
-    - **Allow list**:: identifies a list of apps authorized to run on a system and blocks all other apps
-    - **Deny list**: identifies a list of apps that are not authorized to run on a system
+    - 🎱**Allow list (Whitelist)**:: identifies a list of apps authorized to run on a system and blocks all other apps
+    - 🎱**Deny list (Blacklist)**: identifies a list of apps that are not authorized to run on a system. The blacklisting approach to application control allows users to install any software they wish except for packages specifically identified by the administrator as prohibited. This would be an appropriate approach in a scenario where users should be able to install any non malicious software they wish to use.
     - Allow and deny lists use for applications help to prevent malware infections
     - Important to note: a system would only use one list, either allow or deny
     - Apple iOS running on iPhones/iPads is an example of an extreme version of an allow list; users are only able to install apps from the App Store
@@ -566,7 +566,7 @@ of litigation is imminent.
     - Some outside compliance entities (e.g. PCI DSS) require orgs to ensure that service providers comply
     - OSG also mentions that some SaaS vendors provide security services via the cloud (e.g. next-gen firewalls, UTM devices, and email gateways for spam and malware filtering)
 - 7.7.5 Sandboxing
-    - **Sandboxing**: refers to a security technique where a separate, secure environment is created to run and analyze untested or untrusted programs or code without risking harm to the host device or network; this isolated environment, known as a **sandbox**, effectively contains the execution of the code, allowing it to run and behave as if it were in a normal computing environment, but without the ability to affect the host system or access critical resources and data 
+    - **Sandboxing**: refers to a security technique where a separate, secure environment is created to run and analyze untested or untrusted programs or code without risking harm to the host device or network; this isolated environment, known as a sandbox, effectively contains the execution of the code, allowing it to run and behave as if it were in a normal computing environment, but without the ability to affect the host system or access critical resources and data 
     - Sandboxing provides a security boundary for applications and prevents the app from interacting with other apps; can be used as part of development, integration, or acceptance testing, as part of malware screening, or as part of a honeynet
     - Using a sandbox is an example of confinement, where the system restricts the access of a particular process to limit its ability to affect other processes running on the same system.
 - 7.7.6 Honeypots/honeynets
