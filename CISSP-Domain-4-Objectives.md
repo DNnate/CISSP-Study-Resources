@@ -368,11 +368,12 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - larger transmission footprint than MEO, but higher latency
 
 - **Network Performance Metrics**:
-  -  Bandwidth: The maximum amount of data or capacity that can be transmitted over a network in a given amount of time. Theoretical maximum transfer rate. Key: A highway with many lanes can carry more cars than a highway with only one lane.
-  -  Throughput: The actual amount of data successfully transferred over the network in a given amount of time. Actual data transfer rate considering factors like latency, packet loss and congestion. Key: How many cars actually pass through a toll booth per hour, not just how many cars the highway can theoretically handle.
-  -  Latency: The time it takes for a data packet to travel from the source to the destination. It has an inverse relationship to throughput.
-  -  Jitter: The variation in time delay between data packets arriving. Affects QOS for real-time applications. Key: If some cars on a highway arrive faster than others even though they left at the same time.
-  -  Signal to Noise Ratio (SNR): A measure of the signal strength relative to background noise. Commonly used in wireless communications. Key: How clearly you can hear someone speaking in a noisy room; higher SNR means a clearer signal and less interferance.
+  -  🍎Bandwidth: The maximum amount of data or capacity that can be transmitted over a network in a given amount of time. Theoretical maximum transfer rate. Key: A highway with many lanes can carry more cars than a highway with only one lane.
+  -  🍎Throughput: The actual amount of data successfully transferred over the network in a given amount of time. Actual data transfer rate considering factors like latency, packet loss and congestion. Key: How many cars actually pass through a toll booth per hour, not just how many cars the highway can theoretically handle.
+  -  🍎Latency: The time it takes for a data packet to travel from the source to the destination. It has an inverse relationship to throughput. Latency is a delay in the delivery of packets from their source to their destination.
+  -  🍎Jitter: The variation in time delay between data packets arriving. Affects QOS for real-time applications. Key: If some cars on a highway arrive faster than others even though they left at the same time. Jitter is a variation in the latency for different packets.
+  -  🍎Packet Loss: Packet loss is the disappearance of packets in transit that requires retransmission.
+  -  🍎Signal to Noise Ratio (SNR): A measure of the signal strength relative to background noise. Commonly used in wireless communications. Key: How clearly you can hear someone speaking in a noisy room; higher SNR means a clearer signal and less interferance.
 
 
 - 4.1.8 Cellular networks (e.g. 4G, 5G)
