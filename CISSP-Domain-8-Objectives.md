@@ -511,7 +511,9 @@ used are called STRIDE, DREAD, and PASTA.
         - source code vulns are caused by design or implementation flaws
         - **design flaw**: if dev did everything correctly, there would still be a vulnerability
         - **implementation flaw**: dev incorrectly implemented part of a good design
-    - The Open Web Application Security Project (OWASP) is widely considered as the most authoritative source on web application security issues. The OWASP top 10 vulnerabilities for 2021:
+    - The Open Web Application Security Project (OWASP) is widely considered as the most authoritative source on web application security issues.
+    - The Open Web Application Security Project (OWASP) produces an annual list of the top ten web application security issues that developers and security professionals around the world rely upon for education and training purposes. The OWASP vulnerabilities form the basis for many web application security testing products.
+    - The OWASP top 10 vulnerabilities for 2021:
         - Broken access control
         - Cryptographic failures
         - Injection
