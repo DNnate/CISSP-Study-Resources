@@ -316,12 +316,13 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - Ensure cloud configuration matches or exceeds your on-premise security requirements
     - Understand the cloud vendor's security strategy
     - Cloud shared responsibility by model:
-        - Software as a Service (SaaS):
+        - 🥑Software as a Service (SaaS):
             - the vendor is responsible for all maintenance of the SaaS services
-        - Platform as a Service (PaaS):
+        - 🥑Platform as a Service (PaaS):
             - customers deploy apps that they’ve created or acquired, manage their apps, and modify config settings on the host
             - the vendor is responsible for maintenance of the host and the underlying cloud infrastructure
-        - Infrastructure as a Service (IaaS): 
+            - Cloud computing systems where the customer only provides application code for execution on a vendor-supplied computing platform are examples of platform as a service (PaaS) computing.
+        - 🥑Infrastructure as a Service (IaaS): 
             - IaaS models provide basic computing resources to customers
             - customers install OSs and apps and perform required maintenance
             - the vendor maintains cloud-based infra, ensuring that customers have access to leased systems
@@ -432,6 +433,7 @@ derivative of SOA is microservices.
     - **Virtualized systems**: used to host one or more OSs within the memory of a single host computer, or to run apps not compatible with the host OS
         - Securing virtualized systems:
             - the primary component in virtualization is a hypervisor which manages the VMs, virtual data storage, virtual network components
+            - The hypervisor is responsible for coordinating access to physical hardware and enforcing isolation between different virtual machines running on the same physical platform.
             - the hypervisor represents an additional attack surface
             - in virtualized environments, you need to protect both the VMs and the physical infrastructure/hypervisor
             - hypervisor admin accounts/credentials and service accounts are targets because they often provide access to VMs and their data; these accounts should be protected
@@ -495,7 +497,7 @@ taxed by inefficient implementations of software and VMs.
         - symmetric encryption uses a shared secret key available to all users of the cryptosystem 
         - symmetric encryption is faster than asymmetric encryption because smaller keys can be used for the same level of protection 
         - downside is that users or systems must find a way to securely share the key and hope the key is used only for the specified communication
-        - symmetric encryption uses session keys
+        - symmetric encryption uses session keys. In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is protected using symmetric cryptography.
         - primarily employed to perform bulk encryption and provides only for the security service of confidentiality
         - 🧠Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message. Asymmetric cryptography is used for Nonrepudiation. Sender encrypt message (digital signature) with private key and receive decrypt message with sender's public key. This validates integrity and Nonrepudiation.
         - 🧠Nonrepudiation cannot be achieved with a symmetric cryptosystem, such as AES.
@@ -779,13 +781,13 @@ taxed by inefficient implementations of software and VMs.
         - double conversion: functions by taking power from the wall outlet, storing it in a battery, pulling power out of the battery and feeding that power to the device/devices
         - line-interactive: has a surge protector, battery charger/inverter and voltage regulator positioned between the grid power source and the equipment (battery is not in line under normal conditions)
     - Commercial power problem types:
-        - **fault**: momentary loss of power
-        - **blackout**: complete loss of power
-        - **sag**: momentary low voltage
-        - **brownout**: prolonged low voltage
-        - **spike**: momentary high voltage
-        - **surge**: prolonged high voltage
-        - **inrush**: initial surge of power associated with connecting to a power source
+        - ⚒️**fault**: momentary loss of power
+        - ⚒️**blackout**: complete loss of power
+        - ⚒️**sag**: momentary low voltage
+        - ⚒️**brownout**: prolonged low voltage
+        - ⚒️**spike**: momentary high voltage
+        - ⚒️**surge**: prolonged high voltage
+        - ⚒️**inrush**: initial surge of power associated with connecting to a power source
     - Think through types of physical controls for HVAC:
         - restrict duct space continuity to controlled areas
         - use separate and redundant HVAC systems for computer equipment
