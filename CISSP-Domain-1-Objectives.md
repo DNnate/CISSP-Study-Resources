@@ -657,9 +657,18 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - security controls, countermeasures, and safeguards can be implemented administratively, logically / technically, or physically 
       - these 3 categories should be implemented in a conceptual layered defense-in-depth manner to provide maximum benefit
       - based on the concept that policies (part of administrative controls) drive all aspects of security and thus form the initial protection layer around assets
-      - **Defense in depth** is simply the use of multiple controls in a series. No one control can protect against all possible threats. Using a multilayered solution allows for numerous, different controls to guard against whatever threats come to pass.
+      - ❄️**Defense in depth** is simply the use of multiple controls in a series. No one control can protect against all possible threats. Using a multilayered solution allows for numerous, different controls to guard against whatever threats come to pass.
       - Defense in depth states that organizations should have overlapping security controls designed to meet the same security objectives whenever possible. This approach provides security in the event of a single control failure.
-      - Some of the terms that relate to or are based on defense in depth include: Layering, Classifications, Zones, Realms, Compartments, Silos, Segmentations, Lattice structure, Protection rings
+      - Some of the terms that relate to or are based on defense in depth include:
+          - 🎈Layering
+          - 🎈Classifications
+          - 🎈Zones
+          - 🎈Realms
+          - 🎈Compartments
+          - 🎈Silos
+          - 🎈Segmentations
+          - 🎈Lattice structure
+          - 🎈Protection rings
       - then, logical and technical controls provide protection against logical attacks and exploits 
       - then, physical controls provide protection against real-world physical attacks against facilities and devices
 - 1.10.5 Applicable types of controls (e.g., preventive, detective, corrective)
@@ -761,7 +770,7 @@ security guards.
     - 🔥Proactive Approach: This is a proactive approach to threat modeling, which is also known as the ❄️defensive approach.  Defensive approach to threat modeling takes place during the early stages of development; the method is based on predicting threats and designing in specific defenses during the coding and crafting process
   - Security solutions are more cost effective in this phase than later; this concept should be considered a proactive approach to threat management. During the early stages of systems development, the team considers the vulnerabilities, threats, and risks of their solution and integrates protections against unwanted outcomes.
     - 🔥Reactive approach or adversarial approach to threat modeling takes place after a product has been created and deployed. Threat hunting usually happens at this stage.
-- Microsoft uses the **Security Development Lifecycle** (SDL) with the motto: "Secure by ✴️design, secure by ✴️default, secure in ✴️deployment and ✴️communication" (also known as 🟡SD3+C)
+- 🔴**Security Development Lifecycle** (SDL): Microsoft uses the Security Development Lifecycle (SDL) with the motto: "Secure by ✴️design, secure by ✴️default, secure in ✴️deployment and ✴️communication" (also known as 🟡SD3+C)
   - It has two objectives:
     - Reduce the number of security-related design and coding defects
     - Reduce the severity of any remaining defects
@@ -772,7 +781,7 @@ security guards.
   - ✏️Information Disclosure: the revelation or distribution of private, confidential, or controlled information to external or unauthorized entities
   - ✏️Denial of Service (DoS): an attack that attempts to prevent authorized use of a resource; this can be done through flaw exploitation, connection overloading, or traffic flooding
   - ✏️Elevation of privilege: an attack where a limited user account is transformed into an account with greater privileges, powers, and access
-- 🔴**Process for Attack Simulation and Threat Analysis (PASTA)**: PASTA is a risk-­centric approach that aims at selecting or developing countermeasures in relation to the value of the assets to be protected. A seven-stage threat modeling methodology: _(🟡Our Technical Application Tackles Vulnerabilities And Risks)_
+- 🔴**Process for Attack Simulation and Threat Analysis (PASTA)**: PASTA is a risk-­centric approach that aims at selecting or developing 📝countermeasures in relation to the value of the assets to be protected. A seven-stage threat modeling methodology: _(🟡Our Technical Application Tackles Vulnerabilities And Risks)_
   - ✏️Stage I: Definition of the Objectives (DO) for the Analysis of Risk
   - ✏️Stage II: Definition of the Technical Scope (DTS)
   - ✏️Stage III: Application Decomposition and Analysis (ADA)
@@ -797,7 +806,7 @@ security guards.
       - ✏️Infrastructure: The systems, tools, or networks used by the adversary to conduct the attack.
       - ✏️Capability: The techniques, tools, or methods used by the adversary to exploit vulnerabilities and achieve their goals.
       - ✏️Victim: The target of the attack, which could be a person, organization, system, or data.
-- 🔴**Visual, Agile, and Simple Threat (VAST)**: a threat modeling concept that integrates threat and risk management into an Agile programming environment on a scalable basis
+- 🔴**Visual, Agile, and Simple Threat (VAST)**: a threat modeling concept that integrates threat and risk management into an 📝Agile programming environment on a scalable basis
 - Part of the job of the security team is to identify threats, using different methods:
    - ✏️Focus on attackers: this is a useful method in specific situations;
     - e.g. suppose that a developer’s employment is terminated, and that post-offboarding and review of developer’s computer, a determination is made that the person was disgruntled and angry
