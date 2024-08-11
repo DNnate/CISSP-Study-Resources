@@ -142,9 +142,9 @@ You may find this domain to be more technical than others, and if you have exper
 - 🔴**Take-Grant**: 
     - The take-grant model employs a directed graph to dictate how rights can be passed from one subject to another, or from a subject to an object
     - Four rules: 
-        - ✏️take 
-        - ✏️grant 
-        - ✏️create The principle can be summed up as “The enemy knows the system.”The principle can be summed up as “The enemy knows the system.”
+        - ✏️take: The right to remove or take permissions from other users.
+        - ✏️grant: The grant rule allows a subject to grant rights that it possesses on an object to another subject.
+        - ✏️create 
         - ✏️remove
 - 🔴**Clark-Wilson**:
     - Focus is on integrity ✏️
@@ -267,8 +267,8 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - 3.5.3 Database systems
     - Databases often store a company's most sensitive data (e.g. proprietary, CC info, PHI, and PII)
     - Attackers may use inference or aggregation to obtain confidential information
-    - **Aggregation attack**: process where SQL provides a number of functions that combine records from one or more tables to produce potentially useful info
-    - **Inference attack**: involves combining several pieces of nonsensitive info to gain access to that which should be classified at a higher level; inference makes use of the human mind’s deductive capacity rather than the raw mathematical ability of database platforms
+    - ✴️**Aggregation attack**: process where SQL provides a number of functions that combine records from one or more tables to produce potentially useful info. In an aggregation attack, individual(s) use their access to specific pieces of information to piece together a larger picture that they are not authorized to access.
+    - ✴️**Inference attack**: involves combining several pieces of nonsensitive info to gain access to that which should be classified at a higher level; inference makes use of the human mind’s deductive capacity rather than the raw mathematical ability of database platforms
 
 - 3.5.4 Cryptographic systems
     - Goal of a well-implemented cryptographic system is to make compromise too time-consuming and/or expensive 
@@ -962,7 +962,7 @@ taxed by inefficient implementations of software and VMs.
 
 - **TEMPEST-derived technology** allows the electronic emanations that devices produce (known as Van Eck radiation) to be read from a distance (this process is known as Van Eck phreaking). TEMPEST eavesdropping or Van Eck phreaking countermeasures include the following:
     - Faraday Cage: A Faraday cage is an enclosure that blocks or absorbs electromagnetic fields or signals. Faraday cage containers, computer cases, rack-­mount systems, rooms, or even building materials are used to create a blockage against the transmission of data, information, metadata, or other emanations from computers and other electronics. Devices inside a Faraday cage can use EM fields for communications, such as wireless or Bluetooth, but devices outside of the cage will not be able to eavesdrop on the signals of the systems within the cage.
-    - White Noise
+    - White Noise:  White noise generates false emanations that effectively "jam" the true emanations from electronic equipment. It is a physical security control that broadcasts false emanations constantly to mask the presence of true electromagnetic emanations from computing equipment.
     - Control Zone
 - The TEMPEST program creates technology that is not susceptible to Van Eck phreaking attacks because it reduces or suppresses natural electromagnetic emanations.
 
