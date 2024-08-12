@@ -352,22 +352,22 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
      - it simply provides a means to transport the logon credentials from the client to the authentication server.
      - Also used by PPP servers.
 - 📗**Zigbee**: IoT equipment communications concept based on Bluetooth. It requires close proximity of devices and communications are encrypted.
-        - Low power/low throughput
-        - Requires close proximity
-        - Encrypted using 128-bit AES symmetric algorithm
-        - Uses AES to prtect traffic
+     - Low power/low throughput
+     - Requires close proximity
+     - Encrypted using 128-bit AES symmetric algorithm
+     - Uses AES to prtect traffic
 - 📗**Satellite***: primarily uses radio waves between terrestrial locations and an orbiting artificial satellite
-        - Supports telephone, tv, radio, internet, military communications
-        - 3 primary orbits:
-            - LEO: low Earth orbit (160-2k km)
-                - have stronger signals
-                - multiple devices needed to maintain coverage (e.g. Starlink)
-            - MEO: medium Earth orbit (2k-35768 km)
-                - above a terrestrial location longer than LEO
-                - higher orbit, additional delay/weaker signal
-            - GEO: geostationary orbit (35768 km)
-                - maintain a fixed position above a terrestrial location, and ground stations can use fixed antennas
-                - larger transmission footprint than MEO, but higher latency
+     - Supports telephone, tv, radio, internet, military communications
+     - 3 primary orbits:
+          - 🎤LEO: low Earth orbit (160-2k km)
+               - have stronger signals
+               - multiple devices needed to maintain coverage (e.g. Starlink)
+          - 🎤MEO: medium Earth orbit (2k-35768 km)
+               - above a terrestrial location longer than LEO
+               - higher orbit, additional delay/weaker signal
+          - 🎤GEO: geostationary orbit (35768 km)
+               - maintain a fixed position above a terrestrial location, and ground stations can use fixed antennas
+               - larger transmission footprint than MEO, but higher latency
 - **Network Performance Metrics**:
   -  🍎Bandwidth: The maximum amount of data or capacity that can be transmitted over a network in a given amount of time. Theoretical maximum transfer rate. Key: A highway with many lanes can carry more cars than a highway with only one lane.
   -  🍎Throughput: The actual amount of data successfully transferred over the network in a given amount of time. Actual data transfer rate considering factors like latency, packet loss and congestion. Key: How many cars actually pass through a toll booth per hour, not just how many cars the highway can theoretically handle.
