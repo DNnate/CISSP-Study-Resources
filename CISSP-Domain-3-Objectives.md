@@ -89,6 +89,10 @@ You may find this domain to be more technical than others, and if you have exper
         - Goal is to have every access request authenticated, authorized, and encrypted prior to access being granted to an asset or resource
         - The primary driver behind the adoption of the zero trust model has been the proliferation of endpoint devices. An endpoint device could be a user's workstation, a tablet, a smartphone, an IoT device, an ICS system, an edge computing sensor, and any public-facing servers in a screened subnet or extranet.
         - Being able to control, much less trust, all of these devices has caused the loss of a clearly defined security perimeter between the outside untrusted world and the inside trusted organization. This results in the "assume breach" stance, which requires organizations to "never trust, always verify."
+        - In a zero trust network architecture,
+             - 🍍The policy engine (PE) is responsible for making policy decisions based upon rules and external data sources. It uses a trust algorithm to decide whether to grant, deny, or revoke access, considering factors like identity management, threat intelligence, and security information and event management (SIEM) data.
+             - 🍍The policy administrator (PA), on the other hand, acts based on the decisions made by the policy engine, establishing or removing communication paths and managing session-specific credentials.
+             - 🍍The policy enforcement point (PEP) enforces these decisions by controlling access to resources based on instructions from the policy administrator. Lastly, the subject refers to users, services, or systems that request access or attempt to use rights and is not involved in decision-making.
         - 🛑In a zero-trust network architecture, access control decisions should never be made based upon a system's location on the network. Therefore, an IP address should never be used and would be the least appropriate of these options. 
         - See my article on an [Overview of Zero Trust Basics](https://blog.balancedsec.com/p/an-overview-of-zero-trust-basics)
 - 3.1.9 Privacy by design
@@ -387,6 +391,7 @@ derivative of SOA is microservices.
     - ❄️**Microservices**: a feature of web-based solutions and derivative of SOA 
         - A microservice is simply one element, feature, capability, business logic, or function of a web app that can be called upon or used by other web apps
         - It is a software concept
+        - microservices utilize loosely coupled services that communicate via lightweight protocols to accomplish specific tasks that are then combined to achieve overall goals.
         - Microservices are usually small and focused on a single operation, engineered with few dependencies, and based on fast, short-term development cycles (similar to Agile)
         - It is the conversion or transformation of a capability of one web application into a microservice that can be called upon by numerous other web applications. The relationship to an application programming interface (API) is that each microservice must have a clearly defined (and secured!) API to allow for I/O between multi-­microservices as well as to and from other applications.
         - Microservices are often created as a means to provide purpose-specific business capabilities through services that are independently deployed.
@@ -423,6 +428,7 @@ derivative of SOA is microservices.
         - In a serverless computing model, the vendor does not expose details of the operating system to its customers. Therefore, the vendor retains full responsibility for configuring it securely under the shared responsibility model of cloud computing.
         - There is always a physical server running the code, but this execution model allows the software designer/architect/programmer/developer to focus on the logic of their code and not have to be concerned about the parameters or limitations of a specific server. This is also known as function as a service (FaaS).
         - 📝FaaS is a subcategory of platform as a service (PaaS)
+        -  Serverless computing solutions like AWS Lambda, Microsoft Azure Functions, and Google Cloud functions require less overhead when applications are designed from the ground up to leverage function as a service technology.
 
 - ❄️**Infrastructure as Code**: Infrastructure as Code (IaC) is a concept where you manage and provision IT infrastructure using code rather than manual processes. 
 
@@ -455,6 +461,7 @@ derivative of SOA is microservices.
 - 3.5.14 Edge computing systems
     - ❄️**Edge computing**: philosophy of network design where data and compute resources are located as close as possible, at or near the network edge, to optimize bandwidth use while minimizing latency
     - In edge computing, the intelligence and processing are contained within each device. Thus, rather than having to send data off to a master processing entity, each device can process its own data locally.
+    - Edge computing is a technology that involves placing infrastructure closer to the point of use. This approach offers several benefits such as reduced latency, improved performance for local processing, and reduced traffic to remote data centers or the cloud.
     - The architecture of edge computing performs computations closer to the data source, which is at or near the edge of the network.
         - Securing edge computing:
             - this technology creates additional network edges that result in increased levels of complexity
@@ -768,7 +775,9 @@ taxed by inefficient implementations of software and VMs.
         - the threat actor doesn’t need to decrypt the hash to obtain a plain text password
         - PtH attacks exploit the authentication protocol, as the passwords hash remains static for every session until the password is rotated
         - 📝NTLM is known to be susceptible to pass-­the-­hash attacks
-        - attackers commonly obtain hashes by scraping a system’s active memory and other techniques. MIMIKATZ is a popular tool to exploit pass the hash on Active Directory accounts 
+        - attackers commonly obtain hashes by scraping a system’s active memory and other techniques.
+        - MIMIKATZ is a popular tool to exploit pass the hash on Active Directory accounts
+        - Pass-the-hash attacks (PtH) often rely on dumped local account databases (the SAM), capturing credentials from the network while they are in transit or from active memory.
 - 3.7.12 🍮**Kerberos exploitation**
     - 🍓**Overpass the Hash**: alternative to the PtH attack, used when 🧠NTLM is disabled on the network (AKA pass the key) 
     - 🍓**Pass the Ticket**: in this attack, attackers attempt to harvest tickets held in the lsass.exe process and if succesful, is able to move laterally using authenticated credentials. In a Pass the Ticket attack, an attacker acquires a valid ticket-granting ticket (TGT) or session key from a compromised account or system and uses it to authenticate and impersonate a legitimate user. This allows the attacker to gain unauthorized access to other systems and move laterally within the network without the need for further authentication. It is a common technique used in advanced persistent threats (APTs) to maintain persistent access and expand control within a network.
