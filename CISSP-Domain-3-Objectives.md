@@ -152,6 +152,7 @@ You may find this domain to be more technical than others, and if you have exper
 - 🔴**Clark-Wilson**: The Clark–Wilson model uses a multifaceted approach to enforcing data integrity. Instead of defining a formal state machine, the Clark–Wilson model defines each data item and allowable data transformations. 
     - Focus is on integrity ✏️
     - Designed to protect integrity using the access control 📝triplet (‼️Subject, ‼️Object, ‼️Program/Interface)
+    - The Clark–Wilson model defines the constrained data item, transformation procedures, and integrity verification procedure.
     - A program interface is used to limit what is done by a subject; if the focus of an intermediary program between subject and object is to protect integrity, then it is an implementation of the Clark-Wilson model
 - 🔴**Brewer and Nash Model**:
     - AKA "ethical wall", and "cone of silence"
