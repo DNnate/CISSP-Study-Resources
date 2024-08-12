@@ -312,7 +312,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - 4.1.7 Wireless networks (e.g. LiFi, Wi-Fi, Zigbee, satellite)
 
     - Li-Fi: **light fidelity (Li-Fi)**: a form of wireless communication technology that relies on light to transmit data, with theorectical speeds up to 224Gbits/sec. It is not susceptible to EM interference
-    - **Wi-Fi**: Wirless LAN IEEE 802.11x; associated with computer networking, Wi-Fi uses 802.11x spec to create a public or private wireless LAN
+    - **Wi-Fi**: Wirless LAN IEEE 802.11x; associated with computer networking, Wi-Fi uses 802.11x spec to create a public or private wireless LAN.
+    - ad hoc mode, which directly connects two clients. It can be easy to confuse this with standalone mode, which connects clients using a wireless access point but not to wired resources like a central network. Infrastructure mode connects endpoints to a central network, not directly to each other. Finally, wired extension mode uses a wireless access point to link wireless clients to a wired network.
         - **Wired Equivalent Privacy (WEP)**:
             - WEP is defined by the original IEEE 802.11 standard
             - WEP uses a predefined shared Rivest Cipher 4 (RC4) secret key for both authentication (SKA) and encryption
@@ -405,11 +406,11 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
   - North-South Traffic: Data traffic that moves between a data center and external networks or clients. Traffic moves to/from endpoints on internal network to nodes on the public cloud/internet. Involves untrusted nodes. This brings security concerns like data comprise, DDoS attacks, inadequate authentication. 
 
 - 4.1.9 Content Distribution Networks (CDN)
-
     - **Content Distribution Network (CDN)**: a collection of resource services deployed in numerous data centers across the internet in order to provide low latency, high performance, and high availability of the hosted content
         - CDNs provide multimedia performance quality through the concept of distributed data hosts, geographically distributed, closer to groups of customers
         - Provides geographic and logical load balancing; lower-latency and higher-quality throughput
     - Client-based CDN is often referred to as P2P (peer-to-peer)
+    - BitTorrent is an example of a peer-to-peer (P2P) content delivery network. It is commonly used for legitimate purposes to distribute large files like Linux ISOs and other freely distributed software packages and files in addition to its less legitimate uses. CloudFlare, CloudFront, and Akamai's Edge are all hosted CDNs.
 
 - 4.1.12 Edge Networks 
     - Distributed networks that bring compute and storage resources physically closer to end users and devices on the edge of the network.
