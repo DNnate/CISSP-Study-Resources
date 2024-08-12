@@ -321,6 +321,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - **Wi-Fi Protected Access II (WPA2)**:
             - IEEE 802.11i WPA2 replaced WEP and WPA.
             - WPA2 enterprise uses 🔥RADIUS authentication for users rather than a preshared key. This means a password attack is more likely to fail as password attempts for a given user may result in account lockout.
+            - TKIP was introduced with the original version of WPA and was replaced with the AES-based CCMP in WPA2
             - EAP is an authentication framework used in wireless networks to provide various methods for authenticating users. In WPA2, 🔥EAP is often used in conjunction with the Advanced Encryption Standard (AES) to provide strong encryption and secure authentication for wireless communications.
             - Uses AES-CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol)
         - Frequency table:
@@ -335,7 +336,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         | 802.11ac   | Wi-Fi 5    | 1 Gbps  |5 GHz                |
         | 802.11ax   | Wi-Fi 6/Wi-Fi 6E     |9.5 Gbps |1-5(6)GHz  |
 
-***Wi-Fi Protected Access 3 (WPA3)***: WPA3-ENT uses 192-bit AES CCMP encryption, and WPA3-PER remains at 128-bit AES CCMP. WPA3-PER replaces the preshared key authentication with Simultaneous Authentication of Equals (SAE). SAE performs a zero-knowledge proof process known as Dragonfly Key Exchange, which is itself a derivative of Diffie–Hellman. 
+***Wi-Fi Protected Access 3 (WPA3)***: WPA3-ENT uses 192-bit AES CCMP encryption, and WPA3-PER remains at 128-bit AES CCMP. WPA3-PER replaces the preshared key authentication with Simultaneous Authentication of Equals (SAE). Simultaneous Authentication of Equals (SAE) was introduced with WPA3 as an alternative to preshared keys. SAE performs a zero-knowledge proof process known as Dragonfly Key Exchange, which is itself a derivative of Diffie–Hellman. 
 
 ***802.1X/EAP***: WPA, WPA2, and WPA3 support the enterprise (ENT) authentication known as 802.1X/EAP, a standard port-based network access control. Through the use of 802.1X, other solutions such as Remote Authentication Dial-In User Service (RADIUS), Terminal Access Controller Access Control System (TACACS), certificates, smartcards, token devices, and biometrics can be integrated into wireless networks, providing techniques for both mutual and multifactor authentication.
 
