@@ -342,6 +342,16 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - DCE is AKA concurrent computing, parallel computing, and distributed computing 
     - DCE solutions are implemented as client-server, three-tier, multi-tier, and peer-to-peer
     - Distributed control systems (DCSs) are typically used in industrial process plants where the need to gather data and implement control over a large-­scale environment from a single location is essential.
+    - A DCE typically includes an interface definition language (IDL). An IDL is a language used to define the interface between client and server processes or objects in a distributed system. Some examples of DCE IDL include
+         -  Remote procedure calls (RPC)
+         -  The Common Object Request Broker Architecture (CORBA)
+         -  Distributed Component Object Model (DCOM)
+         -  Message-Oriented Middleware (MOM)
+         -  gRPC
+         -  Java RMI (Remote Method Invocation)
+         -  Web Services (SOAP and REST)
+         -  WebSockets
+         -  Apache thrift
     - Securing distributed systems:
         - in distributed systems, integrity is sometimes a concern because data and software are spread across various systems, often in different locations
         - Client/server model network is AKA a distributed system or distributed architecture 
