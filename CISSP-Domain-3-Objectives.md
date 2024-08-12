@@ -380,6 +380,8 @@ derivative of SOA is microservices.
 - 3.5.10 Containerization
     - ❄️**Containerization**: AKA OS virtualization, is based on the concept of eliminating the duplication of OS elements in a virtual machine; instead each app is placed into a container that includes only the actual resources needed to support the enclosed app, and the common or shared OS elements are then part of the hypervisor
         - Containerization is able to provide 10 to 100 x more application density per physical server compared to traditional virtualization
+        - Containerization or OS virtualization is based on the concept of eliminating the duplication of OS elements in a virtual machine.
+        - Some containerization solutions allow for multiple concurrent applications withing a single container, whereas others are limited to one per container. Many containerization solutions allow for customization of how much interaction applications in separate containers is allowed. 
         - the use of Docker is best described as a containerization technology
         - Vendors often have security benchmarks and hardening guidelines to follow to enhance container security
         - Securing containers: 
@@ -733,7 +735,7 @@ taxed by inefficient implementations of software and VMs.
     - 🍓**Overpass the Hash**: alternative to the PtH attack, used when 🧠NTLM is disabled on the network (AKA pass the key) 
     - 🍓**Pass the Ticket**: in this attack, attackers attempt to harvest tickets held in the lsass.exe process and if succesful, is able to move laterally using authenticated credentials. In a Pass the Ticket attack, an attacker acquires a valid ticket-granting ticket (TGT) or session key from a compromised account or system and uses it to authenticate and impersonate a legitimate user. This allows the attacker to gain unauthorized access to other systems and move laterally within the network without the need for further authentication. It is a common technique used in advanced persistent threats (APTs) to maintain persistent access and expand control within a network.
     - 🍓**Silver Ticket**: a silver ticket uses the captured NTLM hash of a service account to create a ticket-granting service (TGS) ticket (the silver ticket grants the attacker all the privileges granted to the service account) 
-    - 🍓**Golden Ticket**: if an attacker obtains the hash of the Kerberos service account (KRBTGT), they can create tickets at will within Active Directory (this provides so much power it is referred to as having a golden ticket) 
+    - 🍓**Golden Ticket**: if an attacker obtains the hash of the Kerberos service account (📝KRBTGT), they can create tickets at will within Active Directory (this provides so much power it is referred to as having a golden ticket) 
     - 🍓**Kerberos Brute-Force**: attackers use the Python script kerbrute.py on Linux, and Rubeus on Windows systems; tools can guess usernames and passwords 
     - 🍓**ASREPRoast**: ASREPRoast identifies users that don’t have Kerberos preauthentication enabled or not enforced in AD. This can be discovered using tools such as GetNPUsers from the Impacket suite. The name "ASREPRoast" is derived from the combination of "AS-REP" (Authentication Service Response) and "Roast" (a term used to describe the process of extracting and cracking hashes).
     - 🍓**Kerberoasting**: kerberoasting collects encrypted ticket-granting service (TGS) tickets
