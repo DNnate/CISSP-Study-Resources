@@ -409,6 +409,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Provides geographic and logical load balancing; lower-latency and higher-quality throughput
     - Client-based CDN is often referred to as P2P (peer-to-peer)
     - BitTorrent is an example of a peer-to-peer (P2P) content delivery network. It is commonly used for legitimate purposes to distribute large files like Linux ISOs and other freely distributed software packages and files in addition to its less legitimate uses. CloudFlare, CloudFront, and Akamai's Edge are all hosted CDNs.
+    -Thus a content delivery network, or CDN, run by a major provider can handle large-scale DDoS attacks more easily than local server implementations.
 
 - 4.1.12 Edge Networks 
     - Distributed networks that bring compute and storage resources physically closer to end users and devices on the edge of the network.
@@ -537,7 +538,7 @@ The components of a network make up the backbone of the logical infrastructure f
 - 4.3.1 Voice
     - **Voice of Internet Protocol (VoIP)**: set of technologies that enables voice to be sent over a packet network
     - As more orgs switch to VoIP, protocols like SIP become more common, and introducing additional management, either via dedicated voice VLANs, or by establishing quality of service (QoS) levels to ensure voice traffic priority
-    - SIPS, the secure version of the Session Initialization Protocol for VoIP, adds TLS encryption to keep the session initialization process secure. 
+    - 🔥SIPS, the secure version of the Session Initialization Protocol for VoIP, adds TLS encryption to keep the session initialization process secure. 📝SIPS and SRTP are appropriate for a VoIP environment, but are not generally a complete solution for a modern multimedia collaboration platform like Microsoft Teams, Zoom, or WebEx. (Modern collaboration platforms support TLS throughout their communications allowing clients to securely connect to the service and to encrypt communications.)
     - Web-based voice apps can be more difficult to manage, causing additional unplanned bandwidth consumption
     - VoIP is at risk for caller ID spoofing, vishing, call manager software/firmware attacks, phone hardware attacks, DoS, MitM/on-path attacks, spoofing, and switch hopping.
     - Phreaking is a specific type of attack in which various types of technology are used to circumvent the telephone system to make free long-distance calls, to alter the function of telephone service, to steal specialized services, or to cause service disruptions. A phreaker is an attacker who performs phreaking. 
@@ -737,44 +738,55 @@ uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km 
 
 Synchronous Digital Hierarchy (SDH) and Synchronous Optical Network (SONET) are fiber-optic high-speed networking standards. SDH was standardized by the International Telecommunications Union (ITU) and SONET by the American National Standards Institute (ANSI). SDH and SONET are mostly hardware or physical layer standards defining infrastructure and line speed requirements. SDH and SONET use synchronous time-division multiplexing (TDM) to high-speed duplex communications with minimal need for control and management overhead.
 
-***Common VPN Protocols***
-
-VPNs can be implemented using software or hardware solutions. In either case, there are
-several common VPN protocols: PPTP, L2TP, SSH, OpenVPN (i.e., TLS), and IPsec.
-
--**Point-to-Point Tunneling Protocol PPTP)**: is an obsolete encapsulation protocol developed from the dial-up Point-to-Point Protocol. It operates at the Data Link layer (layer 2) of the OSI model and is used on IP networks. PPTP uses TCP port 1723. PPTP offers protection for authentication traffic through the same authentication protocols supported by PPP: Password Authentication Protocol (PAP), CHAP, EAP, Microsoft Challenge Handshake Authentication Protocol (MS-CHAPv2).  initial tunnel negotiation process used by PPTP is not encrypted. Most modern uses of PPTP have adopted the Microsoft customized implementation(MS-CHAPv2), which supports data encryption using Microsoft Point-to-Point Encryption MPPE and which supports various secure authentication options.
-
--**Layer 2 Tunneling Protocol (L2TP)** L2TP  was developed by combining features of PPTP and Cisco’s Layer 2 Forwarding (L2F) VPN protocol. Since its development, L2TP has become an internet standard (RFC 2661). Obviously, L2TP operates at layer 2 and thus can support just about any layer 3 networking protocol. L2TP uses UDP port 1701. L2TP can rely on PPP’s supported authentication protocols, specifically IEEE 802.1X, which is a derivative of EAP from PPP. IEEE 802.1X enables L2TP to leverage or borrow authentication services from any available AAA server on the network, such as RADIUS or TACACS+. L2TP does not offer native encryption, but it supports the use of payload encryption protocols. Although it isn’t required, L2TP is most often deployed using IPsec’s ESP for payload encryption. 
-
--**Generic Routing Encapsulation (GRE)** is also a proprietary Cisco tunneling protocol that can be used to establish VPNs. GRE provides encapsulation but not encryption.
-
--**SSH**: Secure Shell (SSH) is a secure replacement for Telnet (TCP port 23) and many of the Unix “r” tools, such as rlogin, rsh, rexec, and rcp. While Telnet provides plaintext remote access to a system, all SSH transmissions (both authentication and data exchange) are encrypted. SSH operates over TCP port 22. it can be used to encrypt protocols (such as SFTP, SEXEC, SLOGIN, and SCP) similar to how TLS operates; and it can be used as a VPN protocol. However, as a VPN, SSH is limited to transport mode (i.e., end-to-end encryption between individual hosts, aka link encryption and host-to-host VPN). The tool OpenSSH is a means to implement SSH VPNs. For most secure protocols, if the S in the name is a prefix, like with SFTP, then the encryption is provided by SSH (which has an S as its first letter). If the S in the name is a suffix, like with HTTPS, then the encryption is provided by TLS (which has S as its last letter).
-
--**OpenVPN**: OpenVPN is based on TLS (formally SSL) and provides an easy-to-configure but robustly secured VPN option. OpenVPN is an open source implementation that can use either pre-shared passwords or certificates for authentication. Many WAPs support OpenVPN, which is a native VPN option for using a home or business WAP as a VPN gateway.
-
--**IP Security Protocol**: Internet Protocol Security (IPsec) is a standard of IP security extensions used as an add-on for IPv4 and integrated into IPv6. IPsec is sometimes paired with L2TP as L2TP/IPsec. IPsec isn’t a single protocol but rather a collection of protocols, including AH, ESP, HMAC, IPComp, and IKE.
-- Authentication Header (AH) provides assurances of message integrity and nonrepudiation. AH also provides the primary authentication function for IPsec, implements session access control, and prevents replay attacks.
-- Encapsulating Security Payload (ESP) provides confidentiality and integrity of payload contents. It provides encryption, offers limited authentication, and prevents replay attacks. Modern IPsec ESP typically uses advanced encryption standard (AES) encryption. The limited authentication allows ESP to either establish its own links without using AH and perform periodic mid-session reauthentication to detect and respond to session hijacking. ESP can operate in either transport mode or tunnel mode.
-- Hash-based Message Authentication Code (HMAC) is the primary hashing or integrity mechanism used by IPsec. 
-- IP Payload Compression (IPComp) is a compression tool used by IPsec to compress data prior to ESP encrypting it in order to attempt to keep up with wire speed transmission.
-- Internet Key Exchange (IKE) is the mechanism of IPsec that manages cryptography keys and is composed of three elements: OAKLEY, SKEME, and ISAKMP.
-- 📝Replay Attacks are where the attacker stole an authentication token and used it to impersonate the user 
-- IPsec uses public-key cryptography and symmetric cryptography to provide encryption (aka hybrid cryptography), secure key exchange, access control, nonrepudiation, and message authentication, all using standard internet protocols and algorithms. The mechanism of IPsec that manages cryptography keys is Internet Key Exchange (IKE). IKE is composed of three elements: OAKLEY, SKEME, and ISAKMP. 
-- ✏️OAKLEY is a key generation and exchange protocol similar to Diffie–Hellman. 
-- ✏️Secure Key Exchange Mechanism (SKEME) is a means to exchange keys securely, similar to a digital envelope. Modern IKE implementations may also use ECDHE for key exchange. 
-- ✏️Internet Security Association and Key Management Protocol (ISAKMP) is used to organize and manage the encryption keys that have been generated and exchanged by OAKLEY and SKEME. A security association is the agreed-on method of authentication and encryption used by two entities (a bit like a digital keyring).  ISAKMP is used to negotiate and provide authenticated keying material (a common method of authentication) for security associations in a secured manner. Each IPsec VPN uses two security associations, one for encrypted transmission and the other for encrypted reception. Thus, each IPsec VPN is composed of two simplex communication channels that are independently encrypted. ISAKMP’s use of two security associations per VPN is what enables IPsec to support multiple simultaneous VPNs from each host.
-- IPsec, or Internet Protocol Security, using public key cryptography, can provide
-- encryption, access control,
-- nonrepudiation,
-- message authentication . 
-
-- **PRIVATE IP**
-These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
-- 10.0.0.0–10.255.255.255 (a full Class A range).
-- 172.16.0.0–172.31.255.255 (16 Class B ranges).
-- 192.168.0.0–192.168.255.255 (256 Class C ranges).
-
-***Centralized Remote Authentication Services***
-- RADIUS: Users pass login credentials to a RADIUS server for authentication. By default, RADIUS uses UDP and only encrypts passwords. RADIUS supports TCP and TLS, but this is not a default setting.
-- Diameter: is essentially the successor to RADIUS. One significant improvement Diameter provides is added reliability. Diameter is often used in prepaid and credit-­based usage models in mobile device services, and similar applications.
-- TACACS: available in three versions: original TACACS, Extended TACACS (XTACACS), and TACACS+. TACACS integrates the authentication and authorization processes. XTACACS keeps the authentication, authorization, and accounting processes separate. TACACS+ improves XTACACS by adding two-­factor authentication. 
+- **Common VPN Protocols**: VPNs can be implemented using software or hardware solutions. In either case, there are several common VPN protocols: PPTP, L2TP, L2F (Cisco), SSH, OpenVPN (i.e., TLS), and IPsec.
+    - ⚒️**TLS**:  TLS is also used for an increasingly large percentage of VPN connections and may appear at some point in the CISSP exam.  
+    - ⚒️**Point-to-Point Tunneling Protocol (PPTP)**: is an obsolete encapsulation protocol developed from the dial-up Point-to-Point Protocol.
+        - It operates at the Data Link layer (layer 2) of the OSI model and is used on IP networks.
+        - PPTP uses TCP port 1723.
+        - PPTP offers protection for authentication traffic through the same authentication protocols supported by PPP: Password Authentication Protocol (PAP), CHAP, EAP, Microsoft Challenge Handshake Authentication Protocol (MS-CHAPv2).
+        - Initial tunnel negotiation process used by PPTP is not encrypted.
+        - Most modern uses of PPTP have adopted the Microsoft customized implementation(MS-CHAPv2), which supports data encryption using Microsoft Point-to-Point Encryption MPPE and which supports various secure authentication options.
+    - ⚒️**Layer 2 Tunneling Protocol (L2TP)** L2TP  was developed by combining features of PPTP and Cisco’s Layer 2 Forwarding (L2F) VPN protocol.
+        - Since its development, L2TP has become an internet standard (RFC 2661).
+        - Obviously, L2TP operates at layer 2 and thus can support just about any layer 3 networking protocol.
+        - L2TP uses UDP port 1701. L2TP can rely on PPP’s supported authentication protocols, specifically IEEE 802.1X, which is a derivative of EAP from PPP.
+        - IEEE 802.1X enables L2TP to leverage or borrow authentication services from any available AAA server on the network, such as RADIUS or TACACS+.
+        - L2TP does not offer native encryption, but it supports the use of payload encryption protocols.
+        - Although it isn’t required, L2TP is most often deployed using IPsec’s ESP for payload encryption. 
+    - ⚒️**Generic Routing Encapsulation (GRE)** is also a proprietary Cisco tunneling protocol that can be used to establish VPNs.
+        - GRE provides encapsulation but not encryption.
+    - ⚒️**SSH**: Secure Shell (SSH) is a secure replacement for Telnet (TCP port 23) and many of the Unix “r” tools, such as rlogin, rsh, rexec, and rcp.
+        - While Telnet provides plaintext remote access to a system, all SSH transmissions (both authentication and data exchange) are encrypted.
+        - SSH operates over TCP port 22.
+        - it can be used to encrypt protocols (such as SFTP, SEXEC, SLOGIN, and SCP) similar to how TLS operates; and it can be used as a VPN protocol.
+        - However, as a VPN, SSH is limited to transport mode (i.e., end-to-end encryption between individual hosts, aka link encryption and host-to-host VPN).
+        - The tool OpenSSH is a means to implement SSH VPNs. For most secure protocols, if the S in the name is a prefix, like with SFTP, then the encryption is provided by SSH (which has an S as its first letter).
+        - If the S in the name is a suffix, like with HTTPS, then the encryption is provided by TLS (which has S as its last letter).
+    - ⚒️**OpenVPN**: OpenVPN is based on TLS (formally SSL) and provides an easy-to-configure but robustly secured VPN option.
+        - OpenVPN is an open source implementation that can use either pre-shared passwords or certificates for authentication.
+        - Many WAPs support OpenVPN, which is a native VPN option for using a home or business WAP as a VPN gateway.
+    - ⚒️**Internet Protocol Security (IPsec)** is a standard of IP security extensions used as an add-on for IPv4 and integrated into IPv6.
+        - IPsec is sometimes paired with L2TP as L2TP/IPsec.
+        - IPsec isn’t a single protocol but rather a collection of protocols, including AH, ESP, HMAC, IPComp, and IKE.
+            - 🐍Authentication Header (AH) provides assurances of message integrity and nonrepudiation. AH also provides the primary authentication function for IPsec, implements session access control, and prevents replay attacks.
+            - 🐍Encapsulating Security Payload (ESP) provides confidentiality and integrity of payload contents. It provides encryption, offers limited authentication, and prevents replay attacks. Modern IPsec ESP typically uses advanced encryption standard (AES) encryption. The limited authentication allows ESP to either establish its own links without using AH and perform periodic mid-session reauthentication to detect and respond to session hijacking. ESP can operate in either transport mode or tunnel mode.
+            - 🐍Hash-based Message Authentication Code (HMAC) is the primary hashing or integrity mechanism used by IPsec.
+            - 🐍IP Payload Compression (IPComp) is a compression tool used by IPsec to compress data prior to ESP encrypting it in order to attempt to keep up with wire speed transmission.
+            - 🐍Internet Key Exchange (IKE) is the mechanism of IPsec that manages cryptography keys and is composed of three elements: OAKLEY, SKEME, and ISAKMP. The mechanism of IPsec that manages cryptography keys is Internet Key Exchange (IKE). IKE is composed of three elements: OAKLEY, SKEME, and ISAKMP. 
+                - ✏️OAKLEY is a key generation and exchange protocol similar to Diffie–Hellman.
+                - ✏️Secure Key Exchange Mechanism (SKEME) is a means to exchange keys securely, similar to a digital envelope. Modern IKE implementations may also use ECDHE for key exchange.
+                - ✏️Internet Security Association and Key Management Protocol (ISAKMP) is used to organize and manage the encryption keys that have been generated and exchanged by OAKLEY and SKEME. A security association is the agreed-on method of authentication and encryption used by two entities (a bit like a digital keyring).  ISAKMP is used to negotiate and provide authenticated keying material (a common method of authentication) for security associations in a secured manner. Each IPsec VPN uses two security associations, one for encrypted transmission and the other for encrypted reception. Thus, each IPsec VPN is composed of two simplex communication channels that are independently encrypted. ISAKMP’s use of two security associations per VPN is what enables IPsec to support multiple simultaneous VPNs from each host.
+        - IPsec uses public-key cryptography and symmetric cryptography to provide encryption (aka hybrid cryptography), secure key exchange, access control, nonrepudiation, and message authentication, all using standard internet protocols and algorithms.
+        - IPsec, or Internet Protocol Security, using public key cryptography, can provide
+            - encryption, access control
+            - nonrepudiation
+            - message authentication .
+         - 📝Replay Attacks are where the attacker stole an authentication token and used it to impersonate the user
+- **PRIVATE IP**: These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
+    - 10.0.0.0–10.255.255.255 (a full Class A range).
+    - 172.16.0.0–172.31.255.255 (16 Class B ranges).
+    - 192.168.0.0–192.168.255.255 (256 Class C ranges).
+- **Centralized Remote Authentication Services**
+    - RADIUS: Users pass login credentials to a RADIUS server for authentication. By default, RADIUS uses UDP and only encrypts passwords. RADIUS supports TCP and TLS, but this is not a default setting.
+    - Diameter: is essentially the successor to RADIUS. One significant improvement Diameter provides is added reliability. Diameter is often used in prepaid and credit-­based usage models in mobile device services, and similar applications.
+    - TACACS: available in three versions: original TACACS, Extended TACACS (XTACACS), and TACACS+. TACACS integrates the authentication and authorization processes. XTACACS keeps the authentication, authorization, and accounting processes separate. TACACS+ improves XTACACS by adding two-­factor authentication.
