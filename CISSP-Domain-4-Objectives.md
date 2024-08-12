@@ -13,6 +13,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
 - **Bridge**: device that aggregates separate network segments into a single network segment, operating at OSI layer 2
 - **CSMA/CA**: Carrier Sense Multiple Access with Collission Avoidance is a method of network flow control. 802.11 wireless networking is an example of a network that employs CSMA/CA technologies. CSMA/CA attempts to avoid collisions by granting only a single permission to communicate at any given time.
 - **CSMA/CD**: Carrier Sense Multiple Access with Colliion Detection is a method of network flow control, where if > 1 station accesses the network at the same time, other stations detect and re-try their transmission. Ethernet networks employ the CSMA/CD technology. CSMA/CD responds to collisions by having each member of the collision domain wait for a short but random period of time before starting the process over.
+    - A collision domain is the set of systems that could cause a collision if they transmitted at the same time. Systems outside a collision domain cannot cause a collision if they send at the same time. This is important, as the number of systems in a collision domain increases the likelihood of network congestion due to an increase in collisions. A broadcast domain is the set of systems that can receive a broadcast from each other.
 - **Circuit-switched network**: network that uses a dedicated circuit between endpoints
 - **CDMA**: Code-Division Multiple Access: a method of encoding several sources of data so they can all be transmitted over a single RF carrier by one transmitter, or by using a single RF carrier frequency with multiple transmitters; the data from each call is encoded with a unique key, and calls are transmitted at once
 - **Concentrator**: provides communication capability between many low-speed, usually asynchronous channels and one or more high-speed, usually synchronous channels. Usually different speeds, codes, and protocols can be accommodated on the low-speed side; multiplexed into one signal
@@ -206,7 +207,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - The original versions of TLS (1.0 and 1.1) are considered deprecated and organizations should be relying on TLS 1.2 or TLS 1.3
         - TLS supports both one-­way and two-­way authentication.
         - TLS and SSL are not interoperable or backward compatible.
-    - **SFTP**: a version of FTP that includes encryption and is used for transferring files between two devices (often a client / server)
+    - **SFTP**: a version of FTP that includes encryption and is used for transferring files between two devices (often a client / server). TFTP is trivial FTP, an insecure quick transfer method often used to transfer files for network devices, among other uses.
     - **SSH**: remote management protocol, which operates over TCP/IP
         - all communications are encrypted
         - primarily used by IT administrators to manage devices such as servers and network devices
