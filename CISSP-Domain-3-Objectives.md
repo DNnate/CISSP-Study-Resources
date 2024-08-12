@@ -59,7 +59,7 @@ You may find this domain to be more technical than others, and if you have exper
         - Limiting and controlling privileges based on this concept protects confidentiality and data integrity
         - Privilege creep indicates that an employee has accumulated permissions that they no longer require, indicating a violation of the least privilege principle.
 - 3.1.3 Defense in Depth
-    - ❄️**Defense in Depth**: AKA layering, is the use of multiple controls in a series, where a single failed control should not result in exposure of systems or data. Layers should be used in a series (one after the other), NOT in parallel. When you see the terms levels, multilevel, layers, classifications, zones, realms, compartments, protection rings etc think about Defense in Depth
+    - ❄️**Defense in Depth**: AKA layering, is the use of multiple controls in a 📝series, where a single failed control should not result in exposure of systems or data. Layers should be used in a series (one after the other), 🚫NOT in parallel. When you see the terms levels, multilevel, layers, classifications, zones, realms, compartments, protection rings etc think about Defense in Depth
     - It is a security strategy that employs multiple layers of protection to safeguard an organization's assets. It involves implementing various security measures at different levels to provide overlapping layers of defense, thereby enhancing overall security. By implementing a variety of security controls across different layers (physical, technical, and administrative), organizations can better safeguard their resources against various threats.
     - The defense-in-depth principle suggests using multiple overlapping security controls to achieve the same control objective. E.g combined use of Network and host firewalls are both designed to limit network traffic and therefore are an example of defense in depth
 - 3.1.4 Secure defaults
@@ -891,7 +891,7 @@ taxed by inefficient implementations of software and VMs.
         - this is a system that collects power into a battery but can switch over to pulling power from the battery when the power grid fails
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
 
-- 🔴**Administrative Physical Controls**: The six common physical security control mechanisms is ✏️Deter, ✏️Deny, ✏️Detect, ✏️Delay, ✏️Determine, ✏️Decide. 
+- 🔴**Administrative Physical Controls**: The six common physical security control mechanisms is ✏️Deter (guard dogs, Lighting), ✏️Deny (mantrap, turnstile, gate), ✏️Detect (CCTV,motion sensor), ✏️Delay (locks), ✏️Determine, ✏️Decide. 
     - facility construction and selection
     - site management
     - building design
