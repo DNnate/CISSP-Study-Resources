@@ -1017,7 +1017,7 @@ taxed by inefficient implementations of software and VMs.
     - Control Zone
 - The TEMPEST program creates technology that is not susceptible to Van Eck phreaking attacks because it reduces or suppresses natural electromagnetic emanations.
 
-- **Mobile Device Concepts**:
+- **Mobile Device Concepts MDM**:
    - Corporate-­owned: A corporate-­owned mobile strategy is when the company purchases mobile devices that can support compliance with the security policy. These devices are to be used exclusively for company purposes, and users should not perform any personal tasks on them.
      - This option often requires workers to carry a second device for personal use.
      - Corporate-­owned clearly assigns responsibility for device oversight to the organization.
