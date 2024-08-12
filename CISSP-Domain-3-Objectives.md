@@ -53,7 +53,10 @@ You may find this domain to be more technical than others, and if you have exper
     - ❄️**Threat modeling**: a security process where potential threats are identified, categorized, and analyzed. It can be performed as a
          - 🍉proactive measure during design and development
          - 🍉reactive measure once a product has been deployed
-        - Threat modeling identifies the potential harm, the probability of occurrence, the priority of concern, and the means to eradicate or reduce the threat
+        - Threat modeling identifies the potential harm, the probability of occurrence, the priority of concern, and the means to eradicate or reduce the threat. The three common threat modeling approaches are
+             - 🥩focus on attackers
+             - 🥩focus on assets
+             - 🥩focus on software. 
 - 3.1.2 Least Privilege
     - ❄️**Least privilege**: states that subjects are granted only the privileges necessary to perform assigned work tasks and no more; this concept extends to data and systems
         - Limiting and controlling privileges based on this concept protects confidentiality and data integrity
@@ -343,15 +346,15 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - DCE solutions are implemented as client-server, three-tier, multi-tier, and peer-to-peer
     - Distributed control systems (DCSs) are typically used in industrial process plants where the need to gather data and implement control over a large-­scale environment from a single location is essential.
     - A DCE typically includes an interface definition language (IDL). An IDL is a language used to define the interface between client and server processes or objects in a distributed system. Some examples of DCE IDL include
-         -  Remote procedure calls (RPC)
-         -  The Common Object Request Broker Architecture (CORBA)
-         -  Distributed Component Object Model (DCOM)
-         -  Message-Oriented Middleware (MOM)
-         -  gRPC
-         -  Java RMI (Remote Method Invocation)
-         -  Web Services (SOAP and REST)
-         -  WebSockets
-         -  Apache thrift
+         -  🍖Remote procedure calls (RPC)
+         -  🍖The Common Object Request Broker Architecture (CORBA)
+         -  🍖Distributed Component Object Model (DCOM)
+         -  🍖Message-Oriented Middleware (MOM)
+         -  🍖gRPC
+         -  🍖Java RMI (Remote Method Invocation)
+         -  🍖Web Services (SOAP and REST)
+         -  🍖WebSockets
+         -  🍖Apache thrift
     - Securing distributed systems:
         - in distributed systems, integrity is sometimes a concern because data and software are spread across various systems, often in different locations
         - Client/server model network is AKA a distributed system or distributed architecture 
@@ -365,16 +368,16 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - IoT biggest concern should be the long-term security, patching model and supportability of the IoT devices. 
         - IoT is often not designed with security as a core concept, resulting in security breaches; once an attacker has remote access to the device they may be able to pivot
         - Securing IoT:
-            - deploy a distinct network for IoT equipment, kept separate and isolated (known as **three dumb routers**) 
-            - keep systems patched 
-            - limit physical and logical access 
-            - monitor activity 
-            - implement firewalls and filtering 
-            - never assume IoT defaults are good enough, evaluate settings and config options, and make changes to optimize security while supporting business function
-            - disable remote management and enable secure communication only (such as over HTTPS)
-            - review IoT vendor to understand their history with reported vulnerabilities, response time to vulnerabilities and their overall approach to security
-            - not all IoT devices are suitable for enterprise networks
-            - Mirai malware affectes IoT, transforming them into a botnet
+            - 🏓deploy a distinct network for IoT equipment, kept separate and isolated (known as **three dumb routers**) 
+            - 🏓keep systems patched 
+            - 🏓limit physical and logical access 
+            - 🏓monitor activity 
+            - 🏓implement firewalls and filtering 
+            - 🏓never assume IoT defaults are good enough, evaluate settings and config options, and make changes to optimize security while supporting business function
+            - 🏓disable remote management and enable secure communication only (such as over HTTPS)
+            - 🏓review IoT vendor to understand their history with reported vulnerabilities, response time to vulnerabilities and their overall approach to security
+            - 🏓not all IoT devices are suitable for enterprise networks
+            - 🏓Mirai malware affectes IoT, transforming them into a botnet
 - 3.5.9 Microservices
 - Service-oriented architecture (SOA) constructs new applications or functions out of existing but separate and distinct software services. The resulting application is often new; thus, its security issues are unknown, untested, and unprotected. A
 derivative of SOA is microservices.
@@ -384,10 +387,10 @@ derivative of SOA is microservices.
         - It is the conversion or transformation of a capability of one web application into a microservice that can be called upon by numerous other web applications. The relationship to an application programming interface (API) is that each microservice must have a clearly defined (and secured!) API to allow for I/O between multi-­microservices as well as to and from other applications.
         - creating many discrete software objects and then binds them together using APIs is an example of a micro services architecture. Each of the component micro services performs a discrete task and then communicates with other micro services using APIs
         - Securing microservices: 
-            - use HTTPS only 
-            - encrypt everything possible and use routine scanning
-            - closely aligned with microservices is the concept of shifting left, or addressing security earlier in the SDLC; also integrating it into the CI/CD pipeline 
-            - consider the software supplychain or dependencies of libries used, when addressing updates and patching
+            - 🥩use HTTPS only 
+            - 🥩encrypt everything possible and use routine scanning
+            - 🥩closely aligned with microservices is the concept of shifting left, or addressing security earlier in the SDLC; also integrating it into the CI/CD pipeline 
+            - 🥩consider the software supplychain or dependencies of libries used, when addressing updates and patching
 - 3.5.10 Containerization
     - ❄️**Containerization**: AKA OS virtualization, is based on the concept of eliminating the duplication of OS elements in a virtual machine; instead each app is placed into a container that includes only the actual resources needed to support the enclosed app, and the common or shared OS elements are then part of the hypervisor
         - Containerization is able to provide 10 to 100 x more application density per physical server compared to traditional virtualization
@@ -396,12 +399,12 @@ derivative of SOA is microservices.
         - the use of Docker is best described as a containerization technology
         - Vendors often have security benchmarks and hardening guidelines to follow to enhance container security
         - Securing containers: 
-            - container challenges include the lack of isolation compared to a traditional infrastructure of physical servers and VMs
-            - scan container images to reveal software with vulns
-            - secure your registries: use access controls to limit who can publish images, or even access the registry
-            - require images to be signed
-            - harden container deployment including the OS of the underlying host, using firewalls, and VPC rules, and use limited access accounts
-            - reduce the attack surface by minimizing the number of components in each container, and update and scan them frequently 
+            - 🐍container challenges include the lack of isolation compared to a traditional infrastructure of physical servers and VMs
+            - 🐍scan container images to reveal software with vulns
+            - 🐍secure your registries: use access controls to limit who can publish images, or even access the registry
+            - 🐍require images to be signed
+            - 🐍harden container deployment including the OS of the underlying host, using firewalls, and VPC rules, and use limited access accounts
+            - 🐍reduce the attack surface by minimizing the number of components in each container, and update and scan them frequently 
 - 3.5.11 Serverless
     - ❄️**Serverless architecture** (AKA **function as a service (FaaS)**): a cloud computing concept where code is managed by the customer and the platform (i.e. supporting hardware and software) or servers are managed by the CSP
         - Applications developed on serverless architecture are similar to microservices, and each function is created to operate independently and automonomously
@@ -425,9 +428,9 @@ derivative of SOA is microservices.
 - 3.5.13 High-Performance Computing (HPC) systems
     - ❄️**High-performance computing (HPC)** systems: platforms designed to perform complex calculations/data manipulation at extremely high speeds (e.g. super computers or MPP (Massively Parallel Processing)); often used by large orgs, universities, or gov agencies
         - An HPC solution is composed of three main elements: 
-            - compute resources 
-            - network capabilities 
-            - storage capacity
+            - 🐌compute resources 
+            - 🐌network capabilities 
+            - 🐌storage capacity
         - HPCs often implement real-time OS (RTOS)
              - **Real-time operating system (RTOS)** is designed to process or handle data as it arrives on the system with minimal latency or delay. An RTOS is usually stored on read-only memory (ROM) and is designed to operate in a hard real-time or soft real-time condition.
              - It minimizes latency and delay, storing code in ROM, and optimizing for mission-­critical operations
@@ -500,9 +503,9 @@ taxed by inefficient implementations of software and VMs.
    - Level 3: Includes tamper-resistance, identity-based authentication, and sepereation between interfaces
    - Level 4: Adds protections against environmental attacks and more stringent physical security requirements. Requires the ability to be tamper-active, erasing the content of the device if it detects various forms of environmental attack.
 - **Cyprtographic Modules**: Can store secrets such as password, symmetric and assymetric keys, HSM backed keys, textual data and even X.509 certificates
-   - Hardware: e.g SafeNet Luna HSM (Thales), Gemalto SafeNet HSM (Thales), nShield HSM (Entrust), Ultimaco CryptoServer HSM
-   - Software: OpenSSL FIPS Object Module, Microsoft Windows Crypto Modules, Bouncy Castle FIPS Modules
-   - Cloud: Microsoft Azure Key Vault, Amazon Key Management Service (KMS), Google cloud Key Managment Service (KMS)
+   - 🍍Hardware: e.g SafeNet Luna HSM (Thales), Gemalto SafeNet HSM (Thales), nShield HSM (Entrust), Ultimaco CryptoServer HSM
+   - 🍍Software: OpenSSL FIPS Object Module, Microsoft Windows Crypto Modules, Bouncy Castle FIPS Modules
+   - 🍍Cloud: Microsoft Azure Key Vault, Amazon Key Management Service (KMS), Google cloud Key Managment Service (KMS)
 - **Level of Protection:** dictates that encryption keys must be secured at the same level of control or higher as the data they protect. Sensitivity of the data dictates this level of protection as defined in the org security policies.
 - **Key Recovery:** Circumstances where you need to recover a key for a particular user, without that users cooperation such as termination or key loss.
 - **Key Escrow:** Copies of keys are held by a trusted 3rd party in a secure environment. Comes up in conversations around disasater recovery, business continuity, law enforcement access, regulatory compliance etc
@@ -624,10 +627,10 @@ taxed by inefficient implementations of software and VMs.
     - **Key management practices**: include safeguards surrounding the creation, distribution, storage, destruction, recovery, and escrow of secret keys
         - Cryptography can be used as a security mechanism to provide confidentiality, integrity, and availability only if keys are not compromised
         - Three main methods are used to exchange secret keys: 
-            - offline distribution
-            - public key encryption, and 
-            - the Diffie-Hellman key exchange algorithm
-            - Quantum Key Distribution: 🥇 a secure communication that involves components of quantum mechanics. Enables a party to generate a shared random key known only to them. This secret key can then be used to encrypt and decrypt messages. it has the ability to detect eavesdropping by any 3rd party trying to gain knowledge of the key. eavesdropper interception introduces detectable anomalies. Not the same as quantum cryptography. it relies on having an authenticated classical channel of communication. it means the parties have already exchanged symmetric keys of sufficient lenght or public keys of suffcient security level. Only used for key distribution and not to transmit data. used in high security scenarios.
+            - 🐌offline distribution
+            - 🐌public key encryption, and 
+            - 🐌the Diffie-Hellman key exchange algorithm
+            - 🐌Quantum Key Distribution: 🥇 a secure communication that involves components of quantum mechanics. Enables a party to generate a shared random key known only to them. This secret key can then be used to encrypt and decrypt messages. it has the ability to detect eavesdropping by any 3rd party trying to gain knowledge of the key. eavesdropper interception introduces detectable anomalies. Not the same as quantum cryptography. it relies on having an authenticated classical channel of communication. it means the parties have already exchanged symmetric keys of sufficient lenght or public keys of suffcient security level. Only used for key distribution and not to transmit data. used in high security scenarios.
         - Key management can be difficult with symmetric encryption but is much simpler with asymmetric encryption
         - There are several tasks related to key management:
             - ✴️**Key Creation**: Encryption keys should be generated using FIPS 140-2/3 validated modules
@@ -669,7 +672,7 @@ taxed by inefficient implementations of software and VMs.
     - The recipient (or anyone else) can demonstrate that process to a third party providing nonrepudiation
     - Data encryption provides confidentiality
 - 3.6.7 Integrity (e.g., hashing)
-    - Hash Functions have a very simple purpose — they take a potentially long message and generate a unique output value derived from the content of the message called a **message digest**
+    - Hash Functions have a very simple purpose — they take a potentially long message and generate a unique output value derived from the content of the message called a **Message Digest**
         - hash function implements encryption with a specified algorithm, but without a key
         - Provides a fixed-size hash value from variable-length input, used for ensuring data integrity.
         - used to ensure message sent by the originator is the same one received by recipient
@@ -680,7 +683,7 @@ taxed by inefficient implementations of software and VMs.
         - the hash function should be collision-resistant, meaning it is extremely hard to find two messages that produce the same hash value output. It is very difficult to find two messages with the same hash value.
         - 📝hashes are used for storing passwords, with email, and for file download integrity verification
     - Hashing and integrity: if the hash generated by sender, and separately by the receiver match, then we have integrity
-    - Cryptographic salt values are added to the passwords in password files before hashing to defeat rainbow table and dictionary attacks.  Rainbow-table attacks are offline password attacks. The salt is a random value added to a password before it is hashed by the operating system. The salt is then stored in a password file with the hashed password. This increases the complexity of cryptanalytic attacks by negating the usefulness of attacks that use precomputed hash values, such as rainbow tables. Salting adds random text to the password before hashing in an attempt to defeat automated password cracking attacks that use precomputed values. 
+    - **Cryptographic Salt** values are added to the passwords in password files before hashing to defeat rainbow table and dictionary attacks.  Rainbow-table attacks are offline password attacks. The salt is a random value added to a password before it is hashed by the operating system. The salt is then stored in a password file with the hashed password. This increases the complexity of cryptanalytic attacks by negating the usefulness of attacks that use precomputed hash values, such as rainbow tables. Salting adds random text to the password before hashing in an attempt to defeat automated password cracking attacks that use precomputed values. 
 
 [3.7](#3.7) Understand methods of cryptanalytic attacks (OSG-9 Chpts 7,14,21)
 - 3.7.1 Brute force
@@ -762,14 +765,14 @@ taxed by inefficient implementations of software and VMs.
 [3.8](#3.8) Apply security principles to site and facility design (OSG-9 Chpt 10)
 
 - **Secure facility plan**: outlines the security needs of your organization and emphasizes methods or mechanisms to employ to provide security, developed through risk assessment and critical path analysis
-    - **critical path analysis (CPA)**: a systematic effort to identify relationships between mission-critical applications, processes, and operations and all the necessary supporting components
-    - During CPA, evaluate potential **technology convergence**: the tendency for various technologies, solutions, utilities, and systems to evolve and merge over time, which can result in a single point of failure
+    - 🔮**Critical Path Analysis (CPA)**: a systematic effort to identify relationships between mission-critical applications, processes, and operations and all the necessary supporting components
+    - 🔮**Technology Convergence**: During CPA, evaluate potential technology convergence: the tendency for various technologies, solutions, utilities, and systems to evolve and merge over time, which can result in a single point of failure
     - A secure facility plan is based on a layered defense model
     - Site selection should take into account cost, location, and size (but security should always take precedence), that the building can withstand local extreme weather events, vulnerable entry points, and exterior objects that could conceal break-ins
 - Facility Design: 
     - The top priority of security should always be the protection of the life and safety of personnel
     - In the US, follow the guidelines and requirements from Occupational Safety and Health Administration (OSHA), and Environmental Protection Agency (EPA)
-    -  **Crime Prevention Through Environmental Design (CPTED)**: a well-established school of thought on "secure architecture" - an archiectural approach to building and space design that emphasizes passive features to reduce the likelihood of criminal activity
+    - 🔮**Crime Prevention Through Environmental Design (CPTED)**: a well-established school of thought on "secure architecture" - an archiectural approach to building and space design that emphasizes passive features to reduce the likelihood of criminal activity
         - core principle of CPTED is that the design of the physical environment can be managed/manipulated, and crafted with intention in order to create behavioral effects or changes in people present in those areas that result in reduction of crime as well as a reduction of the fear of crime
         - CPTED stresses three main principles:
             - **🐤natural access control**: the subtle guidance of those entering and leaving a building
@@ -834,8 +837,8 @@ taxed by inefficient implementations of software and VMs.
 - 3.9.6 Utilities and heating, ventilation, and air conditioning (HVAC)
     - Power management in ascending order: surge protectors, power/power-line conditioner, uninterruptible power supply (UPS), generators
     - Types of UPS:
-        - double conversion: functions by taking power from the wall outlet, storing it in a battery, pulling power out of the battery and feeding that power to the device/devices
-        - line-interactive: has a surge protector, battery charger/inverter and voltage regulator positioned between the grid power source and the equipment (battery is not in line under normal conditions)
+        - 🐍double conversion: functions by taking power from the wall outlet, storing it in a battery, pulling power out of the battery and feeding that power to the device/devices
+        - 🐍line-interactive: has a surge protector, battery charger/inverter and voltage regulator positioned between the grid power source and the equipment (battery is not in line under normal conditions)
     - Commercial power problem types:
         - ⚒️**fault**: momentary loss of power
         - ⚒️**blackout**: complete loss of power
@@ -966,15 +969,15 @@ taxed by inefficient implementations of software and VMs.
       - Deploying, Operating and Maintaining
       - Decommissioning
     - There are 9 Phases called out in the syllabus:
-      - **Phase 1: Stakeholder Needs and Requirements:** identify the problems the system needs to solve. Define functional and security features requried, identify compliance requirements. Key activities include stakeholder interviews, define project scope. The goal is to establish baseline security expectaions.
-      - **Phase 2: Requirement Analysis:** Analyse requirements to ensure they are consistent complete and unambigous. Key activities include prioritize requirements, create requirement specification documents, risk analysis. Map requirements to security controls and conduct feasibility studies. Goal is to translate high-level security expectations into actionable security requirements and controls. This should address risks identified.
-      - **Phase 3: Architectural Design**: develop a high level blue print of the overall architecture of the sytem, including hardware, software and network components, with consideration to security and performance. Key activities include creating system architecture diagrams, evaluate architectural options, interfaces, data flows, and threat modelling. The goal is to incorporate security by design. Architectural decsions should address identified risks and aim for defence-in-depth approach.
-      - **Phase 4: Developement/Implementation**: The actual build, development and implementation based on the architectural design. Key activities include procuring hardware/software, conducting code reviews,  and implement security configurations. Goal is to ensure secure implementation of the design. This include security hardening, and secure coding practices
-      - **Phase 5: Integration**: ensuring components function together by aligning with the overall system architecture.  Key activities include perform integration testing and documenting  any integration issues. The goal is to maintian security and integrity during the integration, and identify and address any security gaps that surface
-      - **Phase 6: Verification and Validation:** Confirm that system meets intended requirements (Verification) and address overall stakeholder/business needs (Validation). Key activites include employing various testing techniques, review test result and obtain stakeholder feedback. The goal is to rigourours test if security requirements are met, vulnerabilities are minimized and the system doesnt introduce unacceptable risk levels.
-      - **Phase 7 Transition/Deployment**: Move system from development into production in a controlled manner. The Key activites include developing implementation plans, conduct user training, perform a pilot rollout if applicable and perform a full system implementation. The goal is to ensure secure and controlled transition, protect data during migration, apply security configs and ensure operational security policies are in place.
-      - **Phase 8 Operations & Maintenance/Sustainment**: Ongoing operations and managment to ensure availability and performance e.g troubleshooting, applying updates, addressing vulnerabilities, incident response. The key activities include patch managment, system monitoring, incident response, config managment, change control. The goal is to ensure continous maintenance of security posture.
-      - **Phase 9 Retirement/Disposal**: secure decommissiong or disposal when the sytem reaches the end of its useful life or obsolete. focus is on preventing data exposure and respecting data retention periods. The key activities include data archival, secure disposal of hardware and media. The goal is to prevent data exposure, proper hardware disposel, data sanitization and compliance with data retention requirements;
+      - 🗂️**Phase 1: Stakeholder Needs and Requirements:** identify the problems the system needs to solve. Define functional and security features requried, identify compliance requirements. Key activities include stakeholder interviews, define project scope. The goal is to establish baseline security expectaions.
+      - 🗂️**Phase 2: Requirement Analysis:** Analyse requirements to ensure they are consistent complete and unambigous. Key activities include prioritize requirements, create requirement specification documents, risk analysis. Map requirements to security controls and conduct feasibility studies. Goal is to translate high-level security expectations into actionable security requirements and controls. This should address risks identified.
+      - 🗂️**Phase 3: Architectural Design**: develop a high level blue print of the overall architecture of the sytem, including hardware, software and network components, with consideration to security and performance. Key activities include creating system architecture diagrams, evaluate architectural options, interfaces, data flows, and threat modelling. The goal is to incorporate security by design. Architectural decsions should address identified risks and aim for defence-in-depth approach.
+      - 🗂️**Phase 4: Developement/Implementation**: The actual build, development and implementation based on the architectural design. Key activities include procuring hardware/software, conducting code reviews,  and implement security configurations. Goal is to ensure secure implementation of the design. This include security hardening, and secure coding practices
+      - 🗂️**Phase 5: Integration**: ensuring components function together by aligning with the overall system architecture.  Key activities include perform integration testing and documenting  any integration issues. The goal is to maintian security and integrity during the integration, and identify and address any security gaps that surface
+      - 🗂️**Phase 6: Verification and Validation:** Confirm that system meets intended requirements (Verification) and address overall stakeholder/business needs (Validation). Key activites include employing various testing techniques, review test result and obtain stakeholder feedback. The goal is to rigourours test if security requirements are met, vulnerabilities are minimized and the system doesnt introduce unacceptable risk levels.
+      - 🗂️**Phase 7 Transition/Deployment**: Move system from development into production in a controlled manner. The Key activites include developing implementation plans, conduct user training, perform a pilot rollout if applicable and perform a full system implementation. The goal is to ensure secure and controlled transition, protect data during migration, apply security configs and ensure operational security policies are in place.
+      - 🗂️**Phase 8 Operations & Maintenance/Sustainment**: Ongoing operations and managment to ensure availability and performance e.g troubleshooting, applying updates, addressing vulnerabilities, incident response. The key activities include patch managment, system monitoring, incident response, config managment, change control. The goal is to ensure continous maintenance of security posture.
+      - 🗂️**Phase 9 Retirement/Disposal**: secure decommissiong or disposal when the sytem reaches the end of its useful life or obsolete. focus is on preventing data exposure and respecting data retention periods. The key activities include data archival, secure disposal of hardware and media. The goal is to prevent data exposure, proper hardware disposel, data sanitization and compliance with data retention requirements;
        
 - **DIGITAL SIGNATURES**: The Digital Signature Standard FIPS 186-4 approves three encryption algorithms for use in digital signatures: oddly with sha1🤯
     - the Digital Signature Algorithm (DSA)
@@ -1017,14 +1020,14 @@ taxed by inefficient implementations of software and VMs.
     - TLS - In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is ­protected using symmetric cryptography.
 
 - **Key Excahnge Algorithms**:
-    - Diffie-Hellman (DH): Based on the mathematical difficulty of the discrete logarithm problem. Susceptible to man-in-the-middle attacks if not properly authenticated. Variants include Ephemeral Diffie-Hellman (DHE) for forward secrecy. The Diffie-Hellman algorithm allows for the secure exchange of symmetric encryption keys over a public network
-    - RSA (Rivest-Shamir-Adleman): Public key algorithm that can be used for both encryption and digital signatures, including key exchange. Based on the computational difficulty of factoring large prime numbers. Can be used to securely exchange symmetric keys by encrypting them with the recipient’s public key.
-    - Elliptic Curve Diffie-Hellman (ECDH): An adaptation of Diffie-Hellman using elliptic curve cryptography to provide equivalent security with smaller key sizes. More efficient and faster compared to traditional Diffie-Hellman. Commonly used in modern secure communications (e.g., TLS).
-    - Elliptic Curve Integrated Encryption Scheme (ECIES): Combines elliptic curve cryptography for key exchange with symmetric encryption and message authentication. Provides confidentiality, integrity, and authenticity. Utilizes ECDH for key exchange and AES for encryption.
-    - Menezes-Qu-Vanstone (MQV): An authenticated protocol for key exchange using elliptic curves, enhancing security by incorporating digital signatures. Provides resistance to certain attacks. Used in various standards, including IEEE P1363 and NIST.
-    - Station-to-Station (STS) Protocol: Combines Diffie-Hellman key exchange with digital signatures to authenticate the communicating parties. Mitigates man-in-the-middle attacks by authenticating the exchanged keys. Utilizes both public key cryptography and Diffie-Hellman.
-    - Internet Key Exchange (IKE): A protocol used to set up a secure and authenticated communication channel, often used with IPsec. Supports mutual authentication and dynamic key exchange.
-    - Secure Remote Password (SRP): A password-based key exchange protocol that ensures mutual authentication without transmitting the actual password. Provides resistance against dictionary attacks and man-in-the-middle attacks. Useful in secure login scenarios where passwords are used.
+    - ✈️Diffie-Hellman (DH): Based on the mathematical difficulty of the discrete logarithm problem. Susceptible to man-in-the-middle attacks if not properly authenticated. Variants include Ephemeral Diffie-Hellman (DHE) for forward secrecy. The Diffie-Hellman algorithm allows for the secure exchange of symmetric encryption keys over a public network
+    - ✈️RSA (Rivest-Shamir-Adleman): Public key algorithm that can be used for both encryption and digital signatures, including key exchange. Based on the computational difficulty of factoring large prime numbers. Can be used to securely exchange symmetric keys by encrypting them with the recipient’s public key.
+    - ✈️Elliptic Curve Diffie-Hellman (ECDH): An adaptation of Diffie-Hellman using elliptic curve cryptography to provide equivalent security with smaller key sizes. More efficient and faster compared to traditional Diffie-Hellman. Commonly used in modern secure communications (e.g., TLS).
+    - ✈️Elliptic Curve Integrated Encryption Scheme (ECIES): Combines elliptic curve cryptography for key exchange with symmetric encryption and message authentication. Provides confidentiality, integrity, and authenticity. Utilizes ECDH for key exchange and AES for encryption.
+    - ✈️Menezes-Qu-Vanstone (MQV): An authenticated protocol for key exchange using elliptic curves, enhancing security by incorporating digital signatures. Provides resistance to certain attacks. Used in various standards, including IEEE P1363 and NIST.
+    - ✈️Station-to-Station (STS) Protocol: Combines Diffie-Hellman key exchange with digital signatures to authenticate the communicating parties. Mitigates man-in-the-middle attacks by authenticating the exchanged keys. Utilizes both public key cryptography and Diffie-Hellman.
+    - ✈️Internet Key Exchange (IKE): A protocol used to set up a secure and authenticated communication channel, often used with IPsec. Supports mutual authentication and dynamic key exchange.
+    - ✈️Secure Remote Password (SRP): A password-based key exchange protocol that ensures mutual authentication without transmitting the actual password. Provides resistance against dictionary attacks and man-in-the-middle attacks. Useful in secure login scenarios where passwords are used.
 
 **In a zero-knowledge proof**, one individual demonstrates to another that they can achieve a result that requires sensitive information without actually disclosing the sensitive information
 
@@ -1044,7 +1047,7 @@ taxed by inefficient implementations of software and VMs.
    -  Choose your own device (CYOD): The concept of CYOD provides users with a list of approved devices from which to select the
 device to implement.
 
-- Consider the following:
+- **Binary Calculations**: Consider the following:
     - X: 0 1 1 0 1 0
     - Y: 0 0 1 1 0 1
          - 🕯️⊕ symbol represents the ♏XOR function and returns a true value when only one of the input values is true. If both values are false or both values are true, the output of the XOR function is false: 0 1 0 1 1 1
