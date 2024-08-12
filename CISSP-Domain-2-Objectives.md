@@ -135,6 +135,10 @@
   - 🍏**Hardware assets**: IT resources such as computers, servers, routers, switches and peripherals
     - use an automated configuration management system (CMS) to help with hardware asset management
     - use barcodes, RFID tags to track hardware assets
+        - Proximity Devices
+            - 🎈Field-powered proximity device: RFID (radio-frequency identification) is effectively a field-powered proximity device. It has an antenna to generate current from a magnet field provided by an external source.
+            - 🎈Passive proximity device is often a magnet;
+            - 🎈Self-powered proximity device has its own battery,
   - 🍏**Software assets**: operating systems and applications 
     - important to monitor license compliance to avoid legal issues
     - software licensing also refers to ensuring that systems do not have unauthorized software installed
