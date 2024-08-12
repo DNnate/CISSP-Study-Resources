@@ -239,7 +239,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - FCoE typically requires 🧠10 Gbps Ethernet in order to support the Fibre Channel protocol.
             - FCoE used to encapsulate Fibre Channel over Ethernet networks
             - with this technology, FCoE operates at Layer 2, but the Fibre Channel operates as a Network layer (OSI layer 3) protocol, replacing IP as the payload of a standard Ethernet network. So FCoE often relies on an underlying Layer 3 infrastructure (such as IP) to handle network routing and management tasks. 
-        - 🔴**Internet Small Computer Sysetms Interface (iSCSI)**: operating at 🧠Network Layer (OSI layer 3), iSCSI is a network storage standard based on IP, used to enable location-independent file storage, transmission, and retrieval over LAN, WAN, or public internet connections. It encapsulates SCSI commands and responses within TCP/IP packets, which means it operates over IP networks at the transport layer (Layer 4) but leverages the network's Layer 3 capabilities for addressing and routing.
+        - 🔴**Internet Small Computer Sysetms Interface (iSCSI)**: operating at 🧠Network Layer (OSI layer 3), iSCSI is a network storage standard based on IP, used to enable location-independent file storage, transmission, and retrieval over LAN, WAN, or public internet connections. It encapsulates SCSI commands and responses within TCP/IP packets, which means it operates over IP networks at the transport layer (Layer 4) but leverages the network's Layer 3 capabilities for addressing and routing. iSCSI is a converged protocol that allows location-independent file services over traditional network technologies. It costs less than traditional Fibre Channel.
         - 🔴**Multiprotocol Label Switching (MPLS)**: a WAN protocol that operates at both layer 2 and 3 and does label switching; MPLS is a high-throughput/high-performance network technology that directs data across a network based on 🧠short path labels rather than longer network addresses. It requires the first router in the path to determine the full path the packet will travel, removing the need for other routers in the path to make independent determinations.
         - 🔴**Voice over Internet Protocol (VoIP)**: a tunneling mechanism that encapsulates audio, video, and other data into IP packets to support voice calls and multimedia collab
             - VoIP is considered a converged protocol because it combines audio and video encapsulation technology (operating as application layer protocols) with the protocol stack of TCP/IP
@@ -265,17 +265,15 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Allows up to 16 million virtual networks (VLAN limit is 4096)
         - VXLAN can be used as a means to implement microsegmentation without limiting segments to local entities only
         - Defined in RFC 7348
-
-    - Encapsulation:
+    - **Encapsulation:**
         - the OSI model represents a protocol stack, or a layered collection of multiple protocols, and communication between protocol layers occurs via encapsulation and deencapsulation (defined above)
-
     - **Software-defined wide area network (SD-WAN)**: an evolution of SDN that can be used to manage the connectivity and control services between distant data centers, remote locations, and cloud services over WAN links; put another way, SDN-WAN is an extension of SDN practices to connect entities spread across the internet, supporing WAN architecture; espcially related to cloud migration
     - **Transport Architecture**:
      - Management Plane: The management plane is responsible for network administration tasks. It handles configuration, monitoring, security management, and policy enforcement. E.g SNMP, SSH, NETCONF
-     - Control Plane: is responsible for making decisions and determine optimal paths about where and how data packets should be forwarded. It manages routing, signaling, and network topology. E.g routing protocols like OSPF, BGP
-     - Data Plane: is responsible for the actual movement of packets through the network. It handles the forwarding of data based on the decisions made by the control plane. e.g QOS, packet forwarding by switch or router using mac address table or routing tables respectively, packet filtering e.g firewalls, load balancers
-       - Cut-Through Switching:  is a method of forwarding packets in which a switch starts forwarding a frame before the entire frame has been received. There is minimal error checking and it is used in low-latency networks
-       - Store-and-forward Switching: is a method where the entire frame is received and error-checked before being forwarded. Used in environements where liability is essential. 
+     - ✈️Control Plane: is responsible for making decisions and determine optimal paths about where and how data packets should be forwarded. It manages routing, signaling, and network topology. E.g routing protocols like OSPF, BGP
+     - ✈️Data Plane: is responsible for the actual movement of packets through the network. It handles the forwarding of data based on the decisions made by the control plane. e.g QOS, packet forwarding by switch or router using mac address table or routing tables respectively, packet filtering e.g firewalls, load balancers
+       - 🍊Cut-Through Switching:  is a method of forwarding packets in which a switch starts forwarding a frame before the entire frame has been received. There is minimal error checking and it is used in low-latency networks
+       - 🍊Store-and-forward Switching: is a method where the entire frame is received and error-checked before being forwarded. Used in environements where liability is essential. 
 
 - **Network Segmentation**: Benefits include boosting performance where system that need to communicate are located in the same segment. It reduces communication problems such as broadcast storms to individual segments, and improves security by isolating traffic to segments
   - Intranet: Data traffic that moves between a data center and external networks or clients.
@@ -309,12 +307,12 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - 🎈Standalone Mode: Ad hoc mode can be easy to confuse this with standalone mode, which connects clients using a wireless access point but not to wired resources like a central network.
         - 🎈Infrastructure mode connects endpoints to a central network, not directly to each other.
         - 🎈Wired extension mode uses a wireless access point to link wireless clients to a wired network.
-        - **Wired Equivalent Privacy (WEP)**:
+        - 📘**Wired Equivalent Privacy (WEP)**:
             - WEP is defined by the original IEEE 802.11 standard
             - WEP uses a predefined shared Rivest Cipher 4 (RC4) secret key for both authentication (SKA) and encryption
             - Shared key is static
             - WEP is weak from RC4 flaws 
-        - **Wi-Fi Protected Access II (WPA2)**:
+        - 📘**Wi-Fi Protected Access II (WPA2)**:
             - IEEE 802.11i WPA2 replaced WEP and WPA.
             - WPA2 enterprise uses 🔥RADIUS authentication for users rather than a preshared key. This means a password attack is more likely to fail as password attempts for a given user may result in account lockout.
             - TKIP was introduced with the original version of WPA and was replaced with the AES-based CCMP in WPA2
@@ -332,31 +330,33 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         | 802.11ac   | Wi-Fi 5    | 1 Gbps  |5 GHz                |
         | 802.11ax   | Wi-Fi 6/Wi-Fi 6E     |9.5 Gbps |1-5(6)GHz  |
 
-        - **Wi-Fi Protected Access 3 (WPA3)**: WPA3-ENT uses 192-bit AES CCMP encryption, and WPA3-PER remains at 128-bit AES CCMP.
+        - 📘**Wi-Fi Protected Access 3 (WPA3)**: WPA3-ENT uses 192-bit AES CCMP encryption, and WPA3-PER remains at 128-bit AES CCMP.
              - WPA3-PER replaces the preshared key authentication with Simultaneous Authentication of Equals (SAE).
              - WPA3's new SAE (simultaneous authentication of equals) mode improves on WPA2's PSK mode by allowing for secure authentication between clients and the wireless network without enterprise user accounts.
              - Simultaneous Authentication of Equals (SAE) was introduced with WPA3 as an alternative to preshared keys.
              - SAE performs a zero-knowledge proof process known as Dragonfly Key Exchange, which is itself a derivative of Diffie–Hellman.
-               
-***802.1X/EAP***: WPA, WPA2, and WPA3 support the enterprise (ENT) authentication known as 802.1X/EAP, a standard port-based network access control. Through the use of 802.1X, other solutions such as Remote Authentication Dial-In User Service (RADIUS), Terminal Access Controller Access Control System (TACACS), certificates, smartcards, token devices, and biometrics can be integrated into wireless networks, providing techniques for both mutual and multifactor authentication.
-
-***Extensible Authentication Protocol (EAP)***: is not a specific mechanism of authentication; rather it is an authentication framework. Effectively, EAP allows for new authentication technologies to be compatible with existing wireless or point-to-point connection technologies. More than 40 EAP methods have been defined, including ✏️LEAP, ✏️PEAP, ✏️EAP-­SIM, ✏️EAP-­FAST, ✏️EAP-­MD5, ✏️EAP-­POTP, ✏️EAP-­TLS, and ✏️EAP-­TTLS.
-
-***LEAP***: Lightweight Extensible Authentication Protocol (LEAP) is a Cisco proprietary alternative to TKIP for WPA. This was developed to address deficiencies in TKIP before the 802.11i/WPA2 system was ratified as a standard. An attack tool known as asleap was released in 2004 that could exploit LEAP; use of EAP-TLS as an alternative is recommended, but if LEAP is used, a complex password is strongly recommended.
-
-***PEAP***:Protected Extensible Authentication Protocol (PEAP) encapsulates EAP methods within a TLS tunnel that provides authentication and potentially encryption. Since EAP was originally designed for use over physically isolated channels and hence assumed secured pathways, EAP is usually not encrypted. So PEAP can provide encryption for EAP methods.
-
-***CHAP***:Challenge-Handshake Authentication Protocol, or CHAP, is used by PPP servers to authenticate remote clients. It encrypts both the username and password and performs periodic reauthentication while connected using techniques to prevent replay attacks. 
-
-***Password Authentication Protocol (PAP)***: PAP transmits usernames and passwords in cleartext. It offers no form of encryption; it simply provides a means to transport the logon credentials from the client to the authentication server. Also used by PPP servers.
-
-***Zigbee***: IoT equipment communications concept based on Bluetooth. It requires close proximity of devices and communications are encrypted.
+- 📗**802.1X/EAP**: WPA, WPA2, and WPA3 support the enterprise (ENT) authentication known as 802.1X/EAP, a standard port-based network access control.
+     - Through the use of 802.1X, other solutions such as Remote Authentication Dial-In User Service (RADIUS), Terminal Access Controller Access Control System (TACACS), certificates, smartcards, token devices, and biometrics can be integrated into wireless networks, providing techniques for both mutual and multifactor authentication.
+- 📗**Extensible Authentication Protocol (EAP)***: is not a specific mechanism of authentication; rather it is an authentication framework. Effectively, EAP allows for new authentication technologies to be compatible with existing wireless or point-to-point connection technologies. More than 40 EAP methods have been defined, including ✏️LEAP, ✏️PEAP, ✏️EAP-­SIM, ✏️EAP-­FAST, ✏️EAP-­MD5, ✏️EAP-­POTP, ✏️EAP-­TLS, and ✏️EAP-­TTLS.
+- 📗**LEAP**: Lightweight Extensible Authentication Protocol (LEAP) is a Cisco proprietary alternative to TKIP for WPA.
+     - This was developed to address deficiencies in TKIP before the 802.11i/WPA2 system was ratified as a standard.
+     - An attack tool known as asleap was released in 2004 that could exploit LEAP;
+     - use of EAP-TLS as an alternative is recommended, but if LEAP is used, a complex password is strongly recommended.
+- 📗**PEAP**:Protected Extensible Authentication Protocol (PEAP) encapsulates EAP methods within a TLS tunnel that provides authentication and potentially encryption.
+     - Since EAP was originally designed for use over physically isolated channels and hence assumed secured pathways, EAP is usually not encrypted.
+     - So PEAP can provide encryption for EAP methods.
+- 📗**CHAP**:Challenge-Handshake Authentication Protocol, or CHAP, is used by PPP servers to authenticate remote clients.
+     - It encrypts both the username and password and performs periodic reauthentication while connected using techniques to prevent replay attacks. 
+- 📗**Password Authentication Protocol (PAP)**: PAP transmits usernames and passwords in cleartext.
+     - It offers no form of encryption;
+     - it simply provides a means to transport the logon credentials from the client to the authentication server.
+     - Also used by PPP servers.
+- 📗**Zigbee**: IoT equipment communications concept based on Bluetooth. It requires close proximity of devices and communications are encrypted.
         - Low power/low throughput
         - Requires close proximity
-        - Encrypted using 128-bit symmetric algorithm
+        - Encrypted using 128-bit AES symmetric algorithm
         - Uses AES to prtect traffic
-        
-***Satellite***: primarily uses radio waves between terrestrial locations and an orbiting artificial satellite
+- 📗**Satellite***: primarily uses radio waves between terrestrial locations and an orbiting artificial satellite
         - Supports telephone, tv, radio, internet, military communications
         - 3 primary orbits:
             - LEO: low Earth orbit (160-2k km)
@@ -368,7 +368,6 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - GEO: geostationary orbit (35768 km)
                 - maintain a fixed position above a terrestrial location, and ground stations can use fixed antennas
                 - larger transmission footprint than MEO, but higher latency
-
 - **Network Performance Metrics**:
   -  🍎Bandwidth: The maximum amount of data or capacity that can be transmitted over a network in a given amount of time. Theoretical maximum transfer rate. Key: A highway with many lanes can carry more cars than a highway with only one lane.
   -  🍎Throughput: The actual amount of data successfully transferred over the network in a given amount of time. Actual data transfer rate considering factors like latency, packet loss and congestion. Key: How many cars actually pass through a toll booth per hour, not just how many cars the highway can theoretically handle.
@@ -376,23 +375,23 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
   -  🍎Jitter: The variation in time delay between data packets arriving. Affects QOS for real-time applications. Key: If some cars on a highway arrive faster than others even though they left at the same time. Jitter is a variation in the latency for different packets.
   -  🍎Packet Loss: Packet loss is the disappearance of packets in transit that requires retransmission.
   -  🍎Signal to Noise Ratio (SNR): A measure of the signal strength relative to background noise. Commonly used in wireless communications. Key: How clearly you can hear someone speaking in a noisy room; higher SNR means a clearer signal and less interferance.
-
-
 - 4.1.8 Cellular networks (e.g. 4G, 5G)
-
     - A cellular network or a wireless network is the primary communications technology used by many mobile devices
     - Cells are primary transceiver (cell site/tower)
     - Generally encrypted between mobile device and transmission tower; plaintext over wire; use encryption like TLS/VPN
-    - **4G**
-        - 4G allows for mobile devices to achieve 100 Mbps, and stationary devices can reach 1 Gbps
-        - LTE and WiMAX are common transmission systems
+    - ❄️**4G**
+        - 4G allows for mobile devices to achieve 📝100 Mbps, and stationary devices can reach 📝1 Gbps
+        - LTE and WiMAX are common 4G transmission systems
         - **WiMAX**: Broadband Wireless Access IEEE 802.16 is a well-known example of wireless broadband; WiMAX can potentially deliver data rates of > 30 Mbps
-    - **5G**
+        - 4G has been in use since the early 2000s and most cellular devices support 4G communications. 
+    - ❄️**5G**
         - 5G uses higher frequencies than previous tech, allowing for higher transmission speeds — up to 10 Gbps, but at reduced distances
         - 5G supports up to 10 Gbps
         - 5G coverage is the most limited since it is the latest technology and still not universally deployed
         - 5G tower covers less area than a 4G tower.
         - Orgs need to enforce security requirements on 5G
+        - 5G is the latest mobile service technology that is available for use on some mobile phones, tablets, and other equipment.
+        - Many ICS, IoT, and specialty devices may have embedded 5G capabilities.
     - Security issues with wireless:
         - provider network (voice or data) is not necessarily secure
         - your cell phone can be intercepted
@@ -418,7 +417,6 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - **Caching**: Caching popular contents like video, audio and web pages. Provides better user experience in SaaS subscriber scenarios. eg CDNs.
     - **Compute**: Granular compute functions, containarized, to provide low-latency processing near end users and devices. Also known as Edge Computing. Edge computing is a technology that processes data near the source of data generation, such as IoT devices or local servers, rather than sending it to a central data center or cloud for processing.
     - **Storage**: Multiple edge locations to reduce latency for accessing data and updating data. E.g file servers that are synchronized across location like DFS.
-
 - **Grid computing** is a form of distributed computing where multiple computers work together to solve complex problems or process large amounts of data. In simple terms, it's like combining the power of many computers to achieve a task more efficiently than a single computer could alone.
      - In many grid computing implementations, grid members can access the contents of the distributed work segments or divisions.
      - Grid computing over the internet is not usually the best platform for sensitive operations.
@@ -436,9 +434,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - Fault Detection and Handling: Discovering, diagnosing and responding to problems like failed devices, connectivity losses, performance slow downs. includes alerting and automatic failover. 
 
 [4.2](#4.2) Secure network components (OSG-9 Chpt 11)
-
 The components of a network make up the backbone of the logical infrastructure for an organization; these components are often critical to day-to-day operations, and an outage or security issue can be very costly
-
 - 4.2.1 Operation of hardware (e.g. redundant, power, warranty, support)
     - Modems provide modulation/demodulation of binary data into analog signals for transmission; modems are a type of Channel Service Unit/Data Service Unit (CSU/DSU) typically used for converting analog signals into digital;  the CSU handles communication to the provider network, the DSU handles communication with the internal digital equipment (in most cases, a router)
         - modems typically operate at Layer 2 
@@ -447,7 +443,6 @@ The components of a network make up the backbone of the logical infrastructure f
         - switches help provide internal connectivity, as well as create separate broadcast domains when configured with VLANs 
         - switches typically operate at Layer 2 of the OSI model, but many switches can operate at both Layer 2 and Layer 3
         - access points can be configured in the network topology to provide wireless access using one of the protocols and encryption algorithms
-    
     - Redundant power: most home equipment use a single power supply, if that supply fails, the device loses power
         - redundant power is typically used with components such as servers, routers, and firewalls
         - redundant power is usually paired with other types of redundancies to provide high availability
@@ -465,9 +460,11 @@ The components of a network make up the backbone of the logical infrastructure f
                 - **thinnet (10Base2)**: used to connect systems to backbond trunks of thicknet cabling (185m, 10Mbps)
                 - **thicknet (10Base5)**: can span 500 meters and provide up to 10Mbps
         - ethernet can be used to describe many mediums, it is typically associated with Category 5/6 unshielded twisted-pair (UTP) or shielded twisted pair (STP), and can be plenum-rated
+        - 📝A repeater, switch, or concentrator can be used to amplify signals, ensuring that the 100-meter distance limitation of 1000BaseT is not an issue.
+        -  STP cable is limited to 155 Mbps and 100 meters
         - fiber typically comes in two options: single-mode or multi-mode
-            - Single-mode is typically used for long-distance communication, over several kilometers or miles
-            - Multi-mode fiber is typically used for faster transmission, but with a distance limit depending on the desired speed
+            - 🥑Single-mode is typically used for long-distance communication, over several kilometers or miles
+            - 🥑Multi-mode fiber is typically used for faster transmission, but with a distance limit depending on the desired speed
             - Fiber is most often used in the datacenter for backend components
 
         | Category | Throughput | Notes |
@@ -766,18 +763,16 @@ several common VPN protocols: PPTP, L2TP, SSH, OpenVPN (i.e., TLS), and IPsec.
 - ✏️OAKLEY is a key generation and exchange protocol similar to Diffie–Hellman. 
 - ✏️Secure Key Exchange Mechanism (SKEME) is a means to exchange keys securely, similar to a digital envelope. Modern IKE implementations may also use ECDHE for key exchange. 
 - ✏️Internet Security Association and Key Management Protocol (ISAKMP) is used to organize and manage the encryption keys that have been generated and exchanged by OAKLEY and SKEME. A security association is the agreed-on method of authentication and encryption used by two entities (a bit like a digital keyring).  ISAKMP is used to negotiate and provide authenticated keying material (a common method of authentication) for security associations in a secured manner. Each IPsec VPN uses two security associations, one for encrypted transmission and the other for encrypted reception. Thus, each IPsec VPN is composed of two simplex communication channels that are independently encrypted. ISAKMP’s use of two security associations per VPN is what enables IPsec to support multiple simultaneous VPNs from each host.
+- IPsec, or Internet Protocol Security, using public key cryptography, can provide
+- encryption, access control,
+- nonrepudiation,
+- message authentication . 
 
-***PRIVATE IP***
-
+- **PRIVATE IP**
 These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
 - 10.0.0.0–10.255.255.255 (a full Class A range).
 - 172.16.0.0–172.31.255.255 (16 Class B ranges).
 - 192.168.0.0–192.168.255.255 (256 Class C ranges).
-
-
-**4G** has been in use since the early 2000s and most cellular devices support 4G communications. The 4G standard allows for mobile devices to achieve 100 Mbps, whereas stationary devices can reach 1 Gbps. 4G is primarily using IP-based Communications for both voice and data, rather than the traditional circuit-switching telephony services of the past. 4G is provided by various transmission systems, the most common being LTE, followed by WiMAX.
-
-**5G** is the latest mobile service technology that is available for use on some mobile phones, tablets, and other equipment. Many ICS, IoT, and specialty devices may have embedded 5G capabilities. 5G uses higher frequencies than previous cellular technologies, which has allowed for higher transmission speeds (up to 10 Gbps) but at a reduced distance. Organizations need to be aware of when and where 5G is available for use and enforce security requirements on such communications.
 
 ***Centralized Remote Authentication Services***
 - RADIUS: Users pass login credentials to a RADIUS server for authentication. By default, RADIUS uses UDP and only encrypts passwords. RADIUS supports TCP and TLS, but this is not a default setting.
