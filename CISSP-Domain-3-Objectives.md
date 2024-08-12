@@ -998,6 +998,9 @@ taxed by inefficient implementations of software and VMs.
     - EL Gamal - Key Exchange Algorithm (doubles the length of any message it encrypts)
     - ECC - Elliptic Curve Algorithm, Size Variable (smaller key size due to 160 EC Key = 1024 RSA)
     - TLS - In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is ­protected using symmetric cryptography.
+    - In symmetric key cryptography, both block size and key size are critical parameters that define the characteristics and security of an encryption algorithm. 
+         - 💠Block Size: Determines the size of data chunks processed in one encryption or decryption operation. If the plaintext is not a multiple of the block size, padding may be required to ensure that the entire block is filled. A larger block size allows the algorithm to handle larger amounts of data per encryption operation, which can improve efficiency and security.
+         - 💠Key Size: Determines the strength of the encryption by defining the length of the key used in the encryption algorithm. Larger key sizes can result in increased computational overhead during encryption and decryption, potentially impacting performance, but offers increased security by making it harder to perform brute-force attacks.
 
 - **Key Excahnge Algorithms**:
     - Diffie-Hellman (DH): Based on the mathematical difficulty of the discrete logarithm problem. Susceptible to man-in-the-middle attacks if not properly authenticated. Variants include Ephemeral Diffie-Hellman (DHE) for forward secrecy. The Diffie-Hellman algorithm allows for the secure exchange of symmetric encryption keys over a public network
