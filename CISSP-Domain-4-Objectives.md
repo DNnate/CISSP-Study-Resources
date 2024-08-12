@@ -312,8 +312,11 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - 4.1.7 Wireless networks (e.g. LiFi, Wi-Fi, Zigbee, satellite)
 
     - Li-Fi: **light fidelity (Li-Fi)**: a form of wireless communication technology that relies on light to transmit data, with theorectical speeds up to 224Gbits/sec. It is not susceptible to EM interference
-    - **Wi-Fi**: Wirless LAN IEEE 802.11x; associated with computer networking, Wi-Fi uses 802.11x spec to create a public or private wireless LAN.
-    - ad hoc mode, which directly connects two clients. It can be easy to confuse this with standalone mode, which connects clients using a wireless access point but not to wired resources like a central network. Infrastructure mode connects endpoints to a central network, not directly to each other. Finally, wired extension mode uses a wireless access point to link wireless clients to a wired network.
+    - **Wi-Fi**: Wirless LAN IEEE 802.11x; associated with computer networking, Wi-Fi uses 802.11x spec to create a public or private wireless LAN. There are several modes of connecting to WiFi
+        - 🎈Ad hoc mode: Directly connects two clients.
+        - 🎈Standalone Mode: Ad hoc mode can be easy to confuse this with standalone mode, which connects clients using a wireless access point but not to wired resources like a central network.
+        - 🎈Infrastructure mode connects endpoints to a central network, not directly to each other.
+        - 🎈Wired extension mode uses a wireless access point to link wireless clients to a wired network.
         - **Wired Equivalent Privacy (WEP)**:
             - WEP is defined by the original IEEE 802.11 standard
             - WEP uses a predefined shared Rivest Cipher 4 (RC4) secret key for both authentication (SKA) and encryption
