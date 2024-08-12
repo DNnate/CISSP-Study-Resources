@@ -47,7 +47,7 @@ You may find this domain to be more technical than others, and if you have exper
     - Each one-time pad must be used only once.
     -  The one-time pad must be physically protected against disclosure. 
 
-[3.1](#3.1) Research, implement, and manage engineering processes using secure design principles (OSG-9 Chpts 1,8,9,16)
+[3.1](#3.1) Research, implement, and manage engineering processes using secure design principles (OSG-9 Chpts 1,8,9,16). The standard secure design principles are: ❄️threat modeling, ❄️least privilege, ❄️defense in depth, ❄️secure defaults, ❄️fail securely, ❄️separation of duties, ❄️keep it simple, ❄️zero trust, ❄️privacy by design, and ❄️trust but verify. 
 
 - 3.1.1 Threat Modeling
     - ❄️**Threat modeling**: a security process where potential threats are identified, categorized, and analyzed. It can be performed as a
@@ -74,7 +74,7 @@ You may find this domain to be more technical than others, and if you have exper
         - The separation of duties principle says that no employee should have permission to perform two tasks that, when combined, would pose a security risk
     - ❄️**Two-Person Control**: where two people must concur to perform a sensitive action. E.g emergency access to system administrator privileges. Under this procedure, two qualified administrators must agree to retrieve emergency credentials. 
 - 3.1.7 Keep it simple
-    - ❄️**Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design. The keep it simple principle says that security controls and other technologies should remain as simple as possible while still completing their objectives.
+    - ✴️**Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design. The keep it simple principle says that security controls and other technologies should remain as simple as possible while still completing their objectives.
     3.1.8 Zero Trust
     - ❄️**Zero Trust**: Security architecture where no entity is trusted by default. Based on 3 principles
         - ⭐Assume Breach 
@@ -101,7 +101,7 @@ You may find this domain to be more technical than others, and if you have exper
 - 3.1.10 Trust by verify
     - ❄️**Trust but verify**: based on a Russian proverb, and no longer sufficient; it's the traditional approach of trusting subjects and devices within a company's security perimeter automatically, leaving an org vulnerable to insider attacks and providing intruders the ability to easily perform lateral movement. The trust but verify principle says that organizations should use auditing to ensure that control objectives are met. 
 - 3.1.11 Shared responsibility 
-    - ❄️**Shared responsibility**: the security design principle that indicates that organizations do not operate in isolation
+    - 🟣**Shared responsibility**: the security design principle that indicates that organizations do not operate in isolation
         - ⭐Everyone in an organization has some level of security responsibility
         - ⭐the job of the CISO and security team is to establish & maintain security
         - ⭐The job of regular employees to perform their tasks within the confines of security
@@ -111,7 +111,7 @@ You may find this domain to be more technical than others, and if you have exper
         - ⭐As we become aware of new vulnerabilities and threats, we should consider it our responsibility (if not our duty) to responsibly disclose that information to the proper vendor or to an information sharing center.
 
 - 3.1.12 Secure Access Service Edge (SASE)
-    - ❄️**SASE**: A design philosophy closely related to Zero trust Network Architecture. 🔥Brings together networking and security functions and delivers them as an integrated cloud service.
+    - 🟣**SASE**: A design philosophy closely related to Zero trust Network Architecture. 🔥Brings together networking and security functions and delivers them as an integrated cloud service.
     - Described as Gartner in 2019 as a networking model that merges traditional WAN managment and security capabilites into a unified whole
     - It is built, implemented and managed  using 🔥cloud-native architectures. It is a responde to the the edge-centric trends in mobility, cloud, SD-WAN and the internet of things. It is WAN implmentation in the world of hybrid and public cloud. SASE compnents include:
      - ⭐Firewall services
