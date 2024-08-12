@@ -389,6 +389,11 @@ derivative of SOA is microservices.
         - It is a software concept
         - Microservices are usually small and focused on a single operation, engineered with few dependencies, and based on fast, short-term development cycles (similar to Agile)
         - It is the conversion or transformation of a capability of one web application into a microservice that can be called upon by numerous other web applications. The relationship to an application programming interface (API) is that each microservice must have a clearly defined (and secured!) API to allow for I/O between multi-­microservices as well as to and from other applications.
+        - Microservices are often created as a means to provide purpose-specific business capabilities through services that are independently deployed.
+        - microservices are small and focused on a singular operation
+        - microservices are designed with few dependencies
+        - microservices are based on fast short-term development cycles (similar to Agile).
+        - It is also common to deploy microservices based on immutable architecture. 
         - creating many discrete software objects and then binds them together using APIs is an example of a micro services architecture. Each of the component micro services performs a discrete task and then communicates with other micro services using APIs
         - Securing microservices: 
             - 🥩use HTTPS only 
@@ -399,7 +404,9 @@ derivative of SOA is microservices.
     - ❄️**Containerization**: AKA OS virtualization, is based on the concept of eliminating the duplication of OS elements in a virtual machine; instead each app is placed into a container that includes only the actual resources needed to support the enclosed app, and the common or shared OS elements are then part of the hypervisor
         - Containerization is able to provide 10 to 100 x more application density per physical server compared to traditional virtualization
         - Containerization or OS virtualization is based on the concept of eliminating the duplication of OS elements in a virtual machine.
-        - Some containerization solutions allow for multiple concurrent applications withing a single container, whereas others are limited to one per container. Many containerization solutions allow for customization of how much interaction applications in separate containers is allowed. 
+        - Crafted to host a single application, including only the OS resources needed, and sharing a common binaries and libraries
+        - Some containerization solutions allow for multiple concurrent applications withing a single container, whereas others are limited to one per container.
+        - Many containerization solutions allow for customization of how much interaction applications in separate containers is allowed. 
         - the use of Docker is best described as a containerization technology
         - Vendors often have security benchmarks and hardening guidelines to follow to enhance container security
         - Securing containers: 
@@ -432,6 +439,8 @@ derivative of SOA is microservices.
      - ❄️**Cyber-physical systems** refer to devices that offer a computational means to control something in the physical world. In the past these might have been referred to as 🎵 embedded systems 🎵, but the category of cyber-physical seems to focus more on the physical world results rather than the computational aspects.
 - 3.5.13 High-Performance Computing (HPC) systems
     - ❄️**High-performance computing (HPC)** systems: platforms designed to perform complex calculations/data manipulation at extremely high speeds (e.g. super computers or MPP (Massively Parallel Processing)); often used by large orgs, universities, or gov agencies
+        - High-performance computing (HPC) systems are used when real-time or near-real-time processing of massive data is necessary for a particular task or application.
+        - These applications can include scientific studies, industrial research, medical analysis, societal solutions, and commercial endeavors. This type of solution is composed of three main elements and each element must be able to provide equivalent capabilities in order to optimize overall performance
         - An HPC solution is composed of three main elements: 
             - 🐌compute resources 
             - 🐌network capabilities 
@@ -486,12 +495,12 @@ taxed by inefficient implementations of software and VMs.
 - 🔵**Static systems/environments** are applications, OSs, hardware sets, or networks that are configured for a specific need, capability, or function, and then set to remain unaltered.
      - A nonpersistent system or static system is a computer system that does not allow, support, or retain changes. Thus between uses and/or reboots, the operating environment and installed software are exactly the same. Changes may be blocked or simply discarded after each system use.
      - A nonpersistent system is able to maintain its configuration and security in spite of user attempts to implement change.
-- 🔵**Parallel Data Systems**: . Systems designed to perform numerous calculations simultaneously include SMP, AMP, and MPP. Grid computing is a form of parallel distributed processing that loosely groups a significant number of processing nodes to work toward a specific processing goal.
+- 🔵**Parallel Data Systems**: . Systems designed to perform numerous calculations simultaneously include SMP, AMP, and MPP. Multicore, the ability to process multiple execution threads simultaneously, is often a key component of modern SMP, AMP, and MPP deployments in addition to standard single CPU systems.
      - 🍍Asymmetric multiprocessing (AMP) systems usually have independent processors, each with their own assigned instruction set, memory, and bus. AMP on its own is not quite suited for very large processing requirements.
      - 🍍Massive parallel processing (MPP) system: An MPP is usually constructed of numerous AMPs linked together. MPP systems can encompass thousands of processors. MPPs are managed by a central coordination system.
      - 🍍Symmetric multiprocessing (SMP) systems: have multiple processors, but they share a common OS, bus, and memory resources. 
 - 🔵**Peer-to-peer (P2P)**: Peer-to-peer (P2P) technologies are networking and distributed application solutions that share tasks and workloads among peers.
- - 🔵**Grid Computing**: In many grid computing implementations, grid members can access the contents of the distributed work segments or divisions. This grid computing over the internet is not usually the best platform for sensitive operations. 
+ - 🔵**Grid Computing**:  Grid computing is a form of parallel distributed processing that loosely groups a significant number of processing nodes to work toward a specific processing goal. In many grid computing implementations, grid members can access the contents of the distributed work segments or divisions. This grid computing over the internet is not usually the best platform for sensitive operations. 
     -  🛑Isolation Breach: One of the main risks of grid computing is an isolation breach. An isolation breach in the distributed computing client could be catastrophic, allowing someone who compromises the controller to assume control of every device in the organization. 
 - 🔵**Microcontrollers**: A microcontroller is similar to but less complex than a system on a chip (SoC). A microcontroller may be a component of an SoC. A microcontroller is a small computer consisting of a CPU (with one or more cores), memory, various input/output capabilities, RAM, and often nonvolatile storage in the form of flash or ROM/PROM/EEPROM. Examples include Raspberry Pi, Arduino, and FPGA.
     - ⚒️Arduino is an open source hardware and software organization that creates single-board 8-bit microcontrollers for building digital devices. An Arduino device has limited RAM, a single USB port, and I/O pins for controlling additional electronics (such as servo motors or LED lights), and does not include an OS or support networking. Instead, Arduino can execute C++ programs specifically written to its limited instruction set.
@@ -806,6 +815,8 @@ taxed by inefficient implementations of software and VMs.
     - **Wiring closets/intermediate distribution facilities (IDF)**: A wiring closet  or IDF is typically the smallest room that holds IT
     hardware
         - wiring closet is AKA premises wire distribution room, main distribution frame (MDF), intermediate distribution frame (IDF), and telecommunications room, and it is referred to as an IDF in (ISC)^2 CISSP objective 3.9.1
+        - A wiring closet is the infrastructure component often located in the same position across multiple floors in order to provide a convenient means of linking floor-based networks together.
+        - A wiring closet is where the networking cables are connected to other essential equipment, such as patch panels, switches, routers, local area network (LAN) extenders, and WAN backbone channels. 
         - usually includes telephony and network devices, alarm systems, circuit breaker panels, punch-down blocks, WAPs, video/security
         - may include a small number of servers 
         - access to the wiring closest/IDF should be restricted to authorized personnel responsible for managing the IT hardware 
@@ -901,11 +912,11 @@ taxed by inefficient implementations of software and VMs.
         - 🍐**Stage 3**: ✏️flame stage: this is when a flame can be seen with the naked eye
         - 🍐**Stage 4**: ✏️heat stage: at stage 4, there is an intense heat buildup and everything in the area burns
     - Fire extinguisher classes:
-        - **🧯Class A**: common combustibles
-        - **🧯Class B**: liquids
-        - **🧯Class C**: electrical
-        - **🧯Class D**: metal
-        - **🧯Class K**: cooking material (oil/grease)
+        - **🧯Class A**: common combustibles 🟡Ash (water, foam, wet chemical agent)
+        - **🧯Class B**: liquids      🟡boil (CO2, Halon or an acceptable halon substitute, and soda acid)
+        - **🧯Class C**: electrical   🟡conduct (FM-200, CO2, dry chemical agents)
+        - **🧯Class D**: metal        🟡dilythium (Sodium Chloride (NaCl), Dry Powder Extinguishers)
+        - **🧯Class K**: cooking material (oil/grease) 🟡kitchen (Potassium Acetate Solution, Ansul R-102)
     - Four main types of suppression:
         - **👨‍🚒wet pipe system**: (AKA closed head system): is always ✏️filled with water; water discharges immediately when suppression is triggered
         - **👨‍🚒dry pipe system**: contains compressed inert ✏️gas
