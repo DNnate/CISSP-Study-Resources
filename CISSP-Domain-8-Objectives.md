@@ -628,7 +628,7 @@ access rights.
     - Multitasking is processing more than one task at the same time. In most cases, multitasking is simulated by the OS (using multiprogramming or pseudo-­simultaneous execution) even when not supported by the processor.
     - - Multicore is also able to perform simultaneous execution but does so with multiple execution cores on one or more CPUs.
       - Multistate is a type of system that can operate at various security levels (or classifications, risk levels, etc.)
-      - Multithreading permits multiple concurrent tasks (i.e., threads) to be performed within a single process.
+      - Multithreading permits multiple concurrent tasks (i.e., threads) to be performed within a single process. A dual-core single-processor system can operate on two threads at a time (one by each core). A single-core single processor system would be limited to one thread executing at a time. 
       - Multiprocessing: In a multiprocessing environment, a multiprocessor computing system (that is, one with more than one CPU) harnesses the power of more than one processor to complete the execution of a multithreaded application.
 
 - **Application Resilience**: two related principles: Scalability and elasticity are common features of cloud platforms and are a major driver toward the use of these platforms in enterprise computing environments.
