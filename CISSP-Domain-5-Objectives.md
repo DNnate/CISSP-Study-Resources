@@ -72,7 +72,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.2.2 Single/Multi-Factor Authentication (MFA)
 - **Authentication Methods**:
   - Passwords Only: the least secure 😠
-  - Password and (SMS or Voice) ☹️
+  - Password and (SMS or Voice) ☹️ SMS messages are not encrypted, meaning that they could be sniffed and captured. 
   - Password and (Authenticator App, Software OATH/Tokens OTP, Hardware OATH/Tokens OTP). OTH tokens are one-time codes that changes every few minutes/seconds. 🙂
   - Passwordless: It is convinient and also reduces phishing exposure. Strong passwords can be diffuclt to remember. Reduces password re-use. Passwords are also subject to replay attacks. The are cost concerns, and biometric privacy concerns. 😄 Examples include:
      - Windows Hello for Business: Uses biometrics and supports relying party that supports Fast ID Online FIDO v2.0 authentication
