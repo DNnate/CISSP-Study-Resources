@@ -194,7 +194,8 @@ You may find this domain to be more technical than others, and if you have exper
 [3.3](#3.3) Select controls based upon systems security requirements (OSG-9 Chpt 8)
 
 - 📗**Common Criteria (CC)** for Information Technology Security Evaluation
-- The CC provides a standard to evaluate systems, defining various levels of testing and confirmation of systems' security capabilities 
+- The CC provides a standard to evaluate systems, defining various levels of testing and confirmation of systems' security capabilities
+- The primary distinction of the current Common Criteria (CC) from the previous security evaluation criteria systems it replaced is that the CC is a dynamic and subjective evaluation of security mechanisms and functions via the protection profiles (PPs) and security targets (STs) comparison mechanism. Most previous systems were static in their evaluation of security protection mechanisms.
 - The number of the level indicates what kind of testing and confirmation has been performed
 - The important concepts:
     - ✴️**Target of Evaluation (TOE)** To perform an evaluation, you need to select the TOE (e.g. firewall or an anti-malware app)
@@ -383,6 +384,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 derivative of SOA is microservices.
     - ❄️**Microservices**: a feature of web-based solutions and derivative of SOA 
         - A microservice is simply one element, feature, capability, business logic, or function of a web app that can be called upon or used by other web apps
+        - It is a software concept
         - Microservices are usually small and focused on a single operation, engineered with few dependencies, and based on fast, short-term development cycles (similar to Agile)
         - It is the conversion or transformation of a capability of one web application into a microservice that can be called upon by numerous other web applications. The relationship to an application programming interface (API) is that each microservice must have a clearly defined (and secured!) API to allow for I/O between multi-­microservices as well as to and from other applications.
         - creating many discrete software objects and then binds them together using APIs is an example of a micro services architecture. Each of the component micro services performs a discrete task and then communicates with other micro services using APIs
@@ -418,6 +420,7 @@ derivative of SOA is microservices.
 - 3.5.12 Embedded systems
     - ❄️**Embedded systems**: any form of computing component added to an existing mechanical or electrical system for the purpose of providing automation, remote control, and/or monitoring; usually including a limited set of specific functions
         - Embedded systems can be a security risk because they are generally static, with admins having no way to update or address security vulns (or vendors are slow to patch)
+        - An embedded system is a computer implemented as part of a larger system. The embedded system is typically designed around a limited set of specific functions in relation to the larger product of which it's a component. It may consist of the same components found in a typical computer system, or it may be a microcontroller.
         - Embedded systems focus on minimizing cost and extraneous features
         - Embedded systems are often in control of/associated with physical 📝 systems, and can have real-world impact
         - Because an embedded system is often in control of a mechanism in the physical world, a security breach could cause harm to people and property (aka cyber-­physical).
@@ -1037,14 +1040,16 @@ taxed by inefficient implementations of software and VMs.
     - Control Zone
 - The TEMPEST program creates technology that is not susceptible to Van Eck phreaking attacks because it reduces or suppresses natural electromagnetic emanations.
 
-- **Mobile Device Concepts MDM**:
-   - Corporate-­owned: A corporate-­owned mobile strategy is when the company purchases mobile devices that can support compliance with the security policy. These devices are to be used exclusively for company purposes, and users should not perform any personal tasks on them.
+- **Mobile Device Management (MDM) Concepts**:
+- ❄️Mobile Device Management (MDM) are systems used to manage and secure endpoints within an organization. MDM primarily focused on managing mobile devices such as smartphones and tablets and supported Devices generally includes mobile operating systems like iOS, Android, and Windows Mobile.
+- ❄️Unified Endpoint Management (UEM) are also systems used to manage and secure endpoints within an organization. Unified endpoint management (UEM) is type of software tool that provides a single management platform to control mobile, PC, IoT, wearables, ICSs, and other devices. UEM is intended to replace MDM and enterprise mobility management (EMM) products by combining the features of numerous products into one solution. UEM and MDM are a software solution to the challenging task of managing the myriad mobile devices that employees use to access company resources. The goals of UEM and MDM are to improve security, provide monitoring, enable remote management, and support troubleshooting. Application allow listing may be an element of mobile device management but is only part of a full UEM/MDM solution.
+   - 🍊Corporate-­owned: A corporate-­owned mobile strategy is when the company purchases mobile devices that can support compliance with the security policy. These devices are to be used exclusively for company purposes, and users should not perform any personal tasks on them.
      - This option often requires workers to carry a second device for personal use.
      - Corporate-­owned clearly assigns responsibility for device oversight to the organization.
      - The following allow for comingling of data and have unclear or vague security responsibility assignments as a concept or policy basis.
-   - Bring Your Own Device BYOD: is a policy that allows employees to bring their own personal mobile devices to work and use those devices to connect to business resources and/or the internet through the company net work.
-   - Corporate-­owned, personally enabled (COPE): The concept of COPE means the organization purchases devices and provides them to employees. Each user is then able to customize the device and use it for both work activities and personal activities.
-   -  Choose your own device (CYOD): The concept of CYOD provides users with a list of approved devices from which to select the
+   - 🍊Bring Your Own Device BYOD: is a policy that allows employees to bring their own personal mobile devices to work and use those devices to connect to business resources and/or the internet through the company net work.
+   - 🍊Corporate-­owned, personally enabled (COPE): The concept of COPE means the organization purchases devices and provides them to employees. Each user is then able to customize the device and use it for both work activities and personal activities.
+   -  🍊Choose your own device (CYOD): The concept of CYOD provides users with a list of approved devices from which to select the
 device to implement.
 
 - **Binary Calculations**: Consider the following:
