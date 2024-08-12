@@ -151,49 +151,39 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - 🍌**bus**: all devices are connected to a single cable (backbone) terminated on both ends
         - Know commonly used twisted-pair cable categories
         - Know cable types & characteristics
-     
-**DNP3 (Distributed Network Protocol 3)** is primarily used in the electric and water utility and management industries. It is used to support communications between data acquisition systems and the system control equipment. This includes substation computers, remote terminal units (RTUs) (i.e., devices controlled by an embedded microprocessor), intelligent electronic devices (IEDs), and SCADA primary stations (i.e., control centers). DNP3 is an open and public standard. It is a multilayer protocol that functions similarly to TCP/IP in that it has link, transport, and transportation layers. It utilizes the **Data Link Layer** for reliable node-to-node data transfer. and at the **Trasnsport layer**, DNP3 uses this layer to provide end-to-end communication, ensuring that data packets are transmitted across the network reliably and in the correct sequence. And At the **Application Layer**, DNP3 defines the format of messages, the functions that can be requested (e.g., reading or writing data points), and the way in which data points are represented. At the **Network layer**, DNP3 messages can be encapsulated within IP packets for transmission over IP networks.
 
-**TCP/IP Model**
-        - Application layer
-        - Transport layer
-        - Internet layer
-        - Network Access layer
 - 4.1.2 Internet Protocol (IP) networking (e.g., Internet Protocol Security (IPSec), Internet Protocol (IP) v4/6)
      - IP is part of the TCP/IP (Transmission Control Protocol/Internet Protocol) suite
         - TCP/IP is the name of IETF's four-layer networking model, and its protocol stack; the four layers are link (physical), internet (network-to-network), transport (channels for connection/connectionless data exchange) and application (where apps make use of network services)
-        - IP provides the foundation for other protocols to be able to communicate; IP itself is a connectionless protocol
-        - IPv4: dominant protocol that operates at layer 3; IP is responsible for addressing packets, uses 32-bit addresses
-        - IPv6: modernization of IPv4, uses 128-bit addresses, supporting 2128 hosts
+        - Network layer’s packet header includes the source and destination IP addresses. IP provides the foundation for other protocols to be able to communicate; IP itself is a connectionless protocol
         - TCP or UDP is used to communicate over IP 
         - IPSec provides data authentication, integrity and confidentiality
-    - **Logical address**: occurs when an address is assigned and used by software or a protocol rather than being provided/controlled by hardware
-    - Network layer’s packet header includes the source and destination IP addresses
-    - Network Access Layer: defines the protocols and hardware required to deliver data across a physical network
-    - Internet Layer: defines the protocols for logically transmitting packets over the network
-    - Transport Layer: defines protocols for setting up the level of transmission service for applications; this layer is responsible for the reliable transmission of data and the error-free delivery of packets
-    - Application Layer: defines protocols for node-to-node application communication and provides services to the application software running on a computer
-
-- 🍏**IPv4**: 
- - Format: IPv4 addresses are 32-bit numerical labels written in decimal format as four octets separated by periods (e.g., 192.168.1.1).
- - Size: The IPv4 header is 20 to 60 bytes in length.
- - Fragmentation: Routers can fragment IPv4 packets to accommodate the maximum transmission unit (MTU) of the network path.
- - Built-in Security: IPv4 does not have built-in security features, but it can use IPsec (Internet Protocol Security) for encryption and authentication.
-
-- 🍏**IPv6**:
- - Format: IPv6 addresses are 128-bit hexadecimal labels written in eight groups of four hexadecimal digits separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
- - Size: The IPv6 header is 40 bytes in length.
- - Fragmentation: IPv6 requires fragmentation to be handled by the sending host rather than by routers, improving efficiency.
- - Built-in Security: IPv6 was designed with IPsec as a mandatory component, providing native support for encryption and authentication.
-
-- 🍎**Multicast:** One to Many. Supported by both IPv4 and IPv6.
-- 🍎**Broadcast:** One to all. Not Supported by IPv6. IPv6 replaces broadcast with multicast and anycast to improve network efficiency and reduce unnecessary traffic.
-- 🍎**Unicast:** One to One communication. Supported by bothIPv4 and IPv6.
-- 🍎**Anycast:** From single source to the nearest or optimal recipient or group of recipients. Supported natively by IPv6. Used for CDN and for streaming.
-- The means by which IPv6 and IPv4 can coexist on the same network is to use one or more of three primary options: dual stack, tunneling, or NAT-­PT.
-    - Dual stack is to have most systems operate both IPv4 and IPv6 and use the appropriate protocol for each conversation.
-    - Tunneling allows most systems to operate a single stack of either IPv4 or IPv6 and use an encapsulation tunnel to access systems of the other protocol.
-    - Network Address Translation-­Protocol Translation (NAT-­PT) (RFC-­2766) can be used to convert between IPv4 and IPv6 network segments similar to how NAT converts between internal and external addresses.
+    - **Logical Address**: occurs when an address is assigned and used by software or a protocol rather than being provided/controlled by hardware.
+         - 🍎**Multicast:** One to Many. Supported by both IPv4 and IPv6.
+         - 🍎**Broadcast:** One to all. Not Supported by IPv6. IPv6 replaces broadcast with multicast and anycast to improve network efficiency and reduce unnecessary traffic.
+         - 🍎**Unicast:** One to One communication. Supported by both IPv4 and IPv6.
+         - 🍎**Anycast:** From single source to the nearest or optimal recipient or group of recipients. Supported natively by IPv6. Used for CDN and for streaming. 
+        - 🍏**IPv4**:
+             - dominant protocol that operates at layer 3; IP is responsible for addressing packets, uses 32-bit addresses
+             - Format: IPv4 addresses are 32-bit numerical labels written in decimal format as four octets separated by periods (e.g., 192.168.1.1).
+             - Size: The IPv4 header is 20 to 60 bytes in length.
+             - Fragmentation: Routers can fragment IPv4 packets to accommodate the maximum transmission unit (MTU) of the network path.
+             - Built-in Security: IPv4 does not have built-in security features, but it can use IPsec (Internet Protocol Security) for encryption and authentication.
+        - 🍏**IPv6**:
+             - modernization of IPv4, uses 128-bit addresses, supporting 2128 hosts
+             - Format: IPv6 addresses are 128-bit hexadecimal labels written in eight groups of four hexadecimal digits separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+             - Size: The IPv6 header is 40 bytes in length.
+             - Fragmentation: IPv6 requires fragmentation to be handled by the sending host rather than by routers, improving efficiency.
+             - Built-in Security: IPv6 was designed with IPsec as a mandatory component, providing native support for encryption and authentication.
+        - 🍏**Dual Stack**: The means by which IPv6 and IPv4 can coexist on the same network is to use one or more of three primary options: dual stack, tunneling, or NAT-­PT.
+             - 🎈Dual stack is to have most systems operate both IPv4 and IPv6 and use the appropriate protocol for each conversation.
+             - 🎈Tunneling allows most systems to operate a single stack of either IPv4 or IPv6 and use an encapsulation tunnel to access systems of the other protocol.
+             - 🎈Network Address Translation-­Protocol Translation (NAT-­PT) (RFC-­2766) can be used to convert between IPv4 and IPv6 network segments similar to how NAT converts between internal and external addresses.
+    - **TCP/IP Model**
+        - Application layer: Application Layer: defines protocols for node-to-node application communication and provides services to the application software running on a computer
+        - Transport layer: Transport Layer: defines protocols for setting up the level of transmission service for applications; this layer is responsible for the reliable transmission of data and the error-free delivery of packets
+        - Internet layer: Internet Layer: defines the protocols for logically transmitting packets over the network
+        - Network Access layer: Network Access Layer: defines the protocols and hardware required to deliver data across a physical network
 
 - 4.1.3 Secure protocols
     - ❄️**Kerberos**: standards-based network authentication protocol, used in many products (most notably Microsoft Active Directory Domain Services or AD DS)     
@@ -227,6 +217,11 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - encapsulating can be used to bypass filters: Encapsulation is both a benefit and a potentially harmful implication of multilayer protocols. Encapsulation allows for encryption, flexibility, and resiliency, while also enabling covert channels, filter bypass, and overstepping network segmentation boundaries.
         - logical network segments can be traversed
         - Generally, Multilayer protocols include the risk of VLAN hopping, multiple encapsulation, and filter evasion using tunneling.
+        - **DNP3 (Distributed Network Protocol 3)**: Multilayer protocols like DNP3 allow SCADA and other systems to use TCP/IP-based networks to communicate. DNP3 is primarily used in the electric and water utility and management industries. It is used to support communications between data acquisition systems and the system control equipment. This includes substation computers, remote terminal units (RTUs) (i.e., devices controlled by an embedded microprocessor), intelligent electronic devices (IEDs), and SCADA primary stations (i.e., control centers). DNP3 is an open and public standard. It is a multilayer protocol that functions similarly to TCP/IP in that it has link, transport, and transportation layers.
+             - It utilizes the **Data Link Layer** for reliable node-to-node data transfer.
+             - At the **Trasnsport layer**, DNP3 uses this layer to provide end-to-end communication, ensuring that data packets are transmitted across the network reliably and in the correct sequence.
+             - At the **Application Layer**, DNP3 defines the format of messages, the functions that can be requested (e.g., reading or writing data points), and the way in which data points are represented.
+             - At the **Network layer**, DNP3 messages can be encapsulated within IP packets for transmission over IP networks.
 
 - 4.1.5 Converged protocols (e.g., Fiber Channel Over Ethernet (FCoE), Internet Small Computer Sysetms Interface (iSCSI), Voice over Internet Protocol (VoIP))
     - **Converged protocols**: merged specialty or proprietary with standard protocols, such as those from the TCP/IP suite
