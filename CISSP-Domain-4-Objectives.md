@@ -70,61 +70,61 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - Mnemonics:
         - from top: All People Seem To Need Delicious Pizza
         - from bottom: Please Do Not Throw Sausage Pizza Away
-    - Application Layer (7)
+    - ❄️**Application Layer (7)**
         - Responsible for:
             - interfacing user applications, network services, or the operating system with the protocol stack 
             - identifying and establishing availability of communication partners 
             - determining resource availability and 
             - synchronizing communication
-    - Presentation Layer (6)
+    - ❄️**Presentation Layer (6)**
         - Responsible for transforming data into the format that any system following the OSI model can understand
         - Associated tasks:
             - data representation
             - character conversion
             - data compression
             - data encryption
-    - Session Layer (5)
+    - ❄️**Session Layer (5)**
         - Responsible for establishing, maintaining, and terminating communication sessions between two computers
         - Three communication session phases: 
             - connection establishment
-                - **simplex**: one-way 
-                - **half-duplex**: both comm devices can transmit/receive, but not at the same time
-                - **full-duplex**: both comm devices can transmit/receive at same time
+                - 🎈**simplex**: one-way 
+                - 🎈**half-duplex**: both comm devices can transmit/receive, but not at the same time
+                - 🎈**full-duplex**: both comm devices can transmit/receive at same time
             - data transfer
             - connection release
-    - Transport Layer (4)
+    - ❄️**Transport Layer (4)**
         - Responsible for managing the integrity of a connection and controlling the session; providing transparent data transport and end-to-end transmission control
         - Defines session rules like how much data each segment can contain, how to verify message integrity, and how to determine whether data has been lost
         - Protocols that operate at the Transport layer:
-            - Transmission Control Protocol (TCP)
+            - 🛠️Transmission Control Protocol (TCP)
                 - the major transport protocol in the internet suite of protocols providing reliable, connection-oriented, full-duplex streams
                 - emphasizing: full-duplex, connection-oriented protocol
                 - uses three-way handshake
-            - User Datagram Protocol (UDP)
+            - 🛠️User Datagram Protocol (UDP)
                 - connectionless protocol that provides fast, best-effort delivery of **datagrams** (self-container unit of data)
-                - it is also considered a simplex protocol (Typically, there is no acknowledgment or feedback from the receiver to the sender, because the channel only allows data to flow in one direction.)
-            - Transport Layer Security (TLS)
-    - Network Layer (3)
+                - it is also considered a 📝simplex protocol (Typically, there is no acknowledgment or feedback from the receiver to the sender, because the channel only allows data to flow in one direction.)
+            - 🛠️Transport Layer Security (TLS)
+    - ❄️**Network Layer (3)**
         - Responsible for logical addressing, and providing routing or delivery guidance (but not necessarily verifying guaranteed delivery), manages error detection and traffic control
         - **routing protocols**: move routed protocol messages across a network
             - includes RIP, OSPF, IS-IS, IGRP, and BGP
             - routing protocols are defined at the Network Layer and specify how routers communicate
             - routing protocols can be static or dynamic, and categorized as interior or exterior
-            - **static routing protocol**: requires an admin to create/update routes on the router
-            - **dynamic**: can discover routers and determine best route to a given destination; routing table is periodically updated
-            - **distance-vector**: (interior) makes routing decisions based on distance (e.g. hop count), and vector (router egress interface); examples:
+            - 🏺**static routing protocol**: requires an admin to create/update routes on the router
+            - 🏺**dynamic**: can discover routers and determine best route to a given destination; routing table is periodically updated
+            - 🍍**distance-vector**: (interior) makes routing decisions based on distance (e.g. hop count), and vector (router egress interface);  Distance-vector protocols use metrics including the direction and distance in hops to remote networks to make decisions. examples:
                 - **Routing Information Protocol (RIP)**: a distance-vector protocol that uses hop count as its routing metric
                 - Interior Gateway Routing Protocol (IGRP)
                 - Enhanced Interior Gateway Routing Protocol (EIGRP). This is Cisco Proprietary.
-            - **link state**: (interior) uses router characteristics (e.g. speed, latency, error rates) to make next hop routing decisions; examples:
+            - 🍍**link state**: (interior) uses router characteristics (e.g. speed, latency, error rates) to make next hop routing decisions based on the shortest distance to a remote network. examples:
                 - **Open Shortest Path First (OSPF)**: an interior gateway routing protocol developed for IP networks based on shorest path first or link-state algorithm
                 - Intermediate System to Intermediate System (IS-IS)
             - interior vs exterior:
-                - interior routing protocols ("myopic") make next hop decisions based only on info related to the next immediate hop
-                - exterior routing protocols ("far-sighted") make hop decisions based on the entire remaining path (i.e.) vector
+                - 🍎interior routing protocols ("myopic") make next hop decisions based only on info related to the next immediate hop
+                - 🍎exterior routing protocols ("far-sighted") make hop decisions based on the entire remaining path (i.e.) vector
                 - **Border Gateway Protocol (BGP)**: an exterior/path vector protocol
         - Routed protocols include Internetwork Package Exchange (IPX) and Internet Protocol (IP)  
-    - Data Link Layer (2)
+    - ❄️**Data Link Layer (2)**
         - Responsible for formatting a packet for transmission
         - Adds the source and destination hardware addresses to the frame
         - Media Access Control (MAC) - (hardware-based) address/AKA NIC address
@@ -139,27 +139,26 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - in ARP poisoning,  an attacker sends malicious ARP replies to the network. These replies contain incorrect mappings of IP addresses to MAC addresses. Devices on the network, upon receiving these forged ARP replies, update their ARP tables with the incorrect information.
             - It can be used for Man-in-the-Middle (MitM) Attacks, Denial of Service (DoS), and Session Hijacking.
 
-    - Physical Layer (1)
+    - ❄️**Physical Layer (1)**
         - Converts a frame into bits for transmission/receiving over the physical connection medium
         - Network hardware devices that function at layer 1 include NICs, hubs, repeaters, concentrators, amplifiers
         - Know four basic network topologies:
-            - **star**: each individual node on the network is directly connect to a switch/hub/concentrator
-            - **mesh**: all systems are interconnected; partial mesh can be created by adding multiple NICs or server clustering
-            - **ring**: closed loop that connects end devices in a continuous ring (all communication travels in a single direction around the ring);
+            - 🍌**star**: each individual node on the network is directly connect to a switch/hub/concentrator
+            - 🍌**mesh**: all systems are interconnected; partial mesh can be created by adding multiple NICs or server clustering
+            - 🍌**ring**: closed loop that connects end devices in a continuous ring (all communication travels in a single direction around the ring);
                 - **Multistation Access Unit** (MSAU or MAU) connects individual devices
                 - used in token ring and FDDI networks
-            - **bus**: all devices are connected to a single cable (backbone) terminated on both ends
+            - 🍌**bus**: all devices are connected to a single cable (backbone) terminated on both ends
         - Know commonly used twisted-pair cable categories
         - Know cable types & characteristics
      
 **DNP3 (Distributed Network Protocol 3)** is primarily used in the electric and water utility and management industries. It is used to support communications between data acquisition systems and the system control equipment. This includes substation computers, remote terminal units (RTUs) (i.e., devices controlled by an embedded microprocessor), intelligent electronic devices (IEDs), and SCADA primary stations (i.e., control centers). DNP3 is an open and public standard. It is a multilayer protocol that functions similarly to TCP/IP in that it has link, transport, and transportation layers. It utilizes the **Data Link Layer** for reliable node-to-node data transfer. and at the **Trasnsport layer**, DNP3 uses this layer to provide end-to-end communication, ensuring that data packets are transmitted across the network reliably and in the correct sequence. And At the **Application Layer**, DNP3 defines the format of messages, the functions that can be requested (e.g., reading or writing data points), and the way in which data points are represented. At the **Network layer**, DNP3 messages can be encapsulated within IP packets for transmission over IP networks.
 
-***TCP/IP Model***
+**TCP/IP Model**
         - Application layer
         - Transport layer
         - Internet layer
         - Network Access layer
-
 - 4.1.2 Internet Protocol (IP) networking (e.g., Internet Protocol Security (IPSec), Internet Protocol (IP) v4/6)
      - IP is part of the TCP/IP (Transmission Control Protocol/Internet Protocol) suite
         - TCP/IP is the name of IETF's four-layer networking model, and its protocol stack; the four layers are link (physical), internet (network-to-network), transport (channels for connection/connectionless data exchange) and application (where apps make use of network services)
@@ -175,44 +174,43 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - Transport Layer: defines protocols for setting up the level of transmission service for applications; this layer is responsible for the reliable transmission of data and the error-free delivery of packets
     - Application Layer: defines protocols for node-to-node application communication and provides services to the application software running on a computer
 
-- **IPv4**: 
+- 🍏**IPv4**: 
  - Format: IPv4 addresses are 32-bit numerical labels written in decimal format as four octets separated by periods (e.g., 192.168.1.1).
  - Size: The IPv4 header is 20 to 60 bytes in length.
  - Fragmentation: Routers can fragment IPv4 packets to accommodate the maximum transmission unit (MTU) of the network path.
  - Built-in Security: IPv4 does not have built-in security features, but it can use IPsec (Internet Protocol Security) for encryption and authentication.
 
-- **IPv6**:
+- 🍏**IPv6**:
  - Format: IPv6 addresses are 128-bit hexadecimal labels written in eight groups of four hexadecimal digits separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
  - Size: The IPv6 header is 40 bytes in length.
  - Fragmentation: IPv6 requires fragmentation to be handled by the sending host rather than by routers, improving efficiency.
  - Built-in Security: IPv6 was designed with IPsec as a mandatory component, providing native support for encryption and authentication.
 
-- **Multicast:** One to Many. Supported by both IPv4 and IPv6.
-- **Broadcast:** One to all. Not Supported by IPv6. IPv6 replaces broadcast with multicast and anycast to improve network efficiency and reduce unnecessary traffic.
-- **Unicast:** One to One communication. Supported by bothIPv4 and IPv6.
-- **Anycast:** From single source to the nearest or optimal recipient or group of recipients. Supported natively by IPv6. Used for CDN and for streaming.
+- 🍎**Multicast:** One to Many. Supported by both IPv4 and IPv6.
+- 🍎**Broadcast:** One to all. Not Supported by IPv6. IPv6 replaces broadcast with multicast and anycast to improve network efficiency and reduce unnecessary traffic.
+- 🍎**Unicast:** One to One communication. Supported by bothIPv4 and IPv6.
+- 🍎**Anycast:** From single source to the nearest or optimal recipient or group of recipients. Supported natively by IPv6. Used for CDN and for streaming.
 - The means by which IPv6 and IPv4 can coexist on the same network is to use one or more of three primary options: dual stack, tunneling, or NAT-­PT.
     - Dual stack is to have most systems operate both IPv4 and IPv6 and use the appropriate protocol for each conversation.
     - Tunneling allows most systems to operate a single stack of either IPv4 or IPv6 and use an encapsulation tunnel to access systems of the other protocol.
     - Network Address Translation-­Protocol Translation (NAT-­PT) (RFC-­2766) can be used to convert between IPv4 and IPv6 network segments similar to how NAT converts between internal and external addresses.
 
 - 4.1.3 Secure protocols
-    - **Kerberos**: standards-based network authentication protocol, used in many products (most notably Microsoft Active Directory Domain Services or AD DS)     
+    - ❄️**Kerberos**: standards-based network authentication protocol, used in many products (most notably Microsoft Active Directory Domain Services or AD DS)     
         - Kerberos is mostly used on LANs for organization-wide authentication, single sign-on (SSO) and authorization
-
-    - SSL and TLS: data protection used for protecting website transactions (e.g. banking, ecommerce)
+    - ❄️**SSL and TLS**: data protection used for protecting website transactions (e.g. banking, ecommerce)
         - SSL and TLS both offer data encryption, integrity and authentication 
         - TLS has supplanted SSL (the original protocol, considered legacy/insecure) 
         - TLS was initially introduced in 1999 but didn’t gain widespread use until years later
         - The original versions of TLS (1.0 and 1.1) are considered deprecated and organizations should be relying on TLS 1.2 or TLS 1.3
         - TLS supports both one-­way and two-­way authentication.
         - TLS and SSL are not interoperable or backward compatible.
-    - **SFTP**: a version of FTP that includes encryption and is used for transferring files between two devices (often a client / server). TFTP is trivial FTP, an insecure quick transfer method often used to transfer files for network devices, among other uses.
-    - **SSH**: remote management protocol, which operates over TCP/IP
+    - ❄️**SFTP**: a version of FTP that includes encryption and is used for transferring files between two devices (often a client / server). TFTP is trivial FTP, an insecure quick transfer method often used to transfer files for network devices, among other uses.
+    - ❄️**SSH**: remote management protocol, which operates over TCP/IP
         - all communications are encrypted
         - primarily used by IT administrators to manage devices such as servers and network devices
         - SSH2 adds support for 📝simultaneous shell sessions over a single SSH connection. Both SSH1 and SSH2 are capable of supporting multifactor authentication. SSH2 actually drops support for the IDEA algorithm, whereas both SSH1 and SSH2 support 3DES.
-    - **IPSec**: an IETF standard suite of protocols that is used to connect nodes (e.g. computers or office locations) together
+    - ❄️**IPSec**: an IETF standard suite of protocols that is used to connect nodes (e.g. computers or office locations) together
         - widely used in virtual private networks (VPNs)
         - IPSec provides encryption, authentication and data integrity
 
@@ -220,11 +218,11 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - TCP/IP is a multilayer protocol, and derives several associated benefits
         - this means that protocols can be encapsulated within others (e.g. HTTP is encapsulated within TCP, which is in turn encapsulated in IP, which is in Ethernet), and additional security protocols can also be encapsulated in this chain (e.g. TLS between HTTP and TCP, which is HTTPS)
         - note that VPNs use encapsulation to enclose (or tunnel) one protocol inside another
-    - Multilayer benefits:
+    - 🍀Multilayer benefits:
         - many different protocols can be used at higher layers
         - encryption can be incorporated (at various layers)
         - it provides flexibility and resiliiency in complex networks
-    Multilayer disadvantages:
+    - 🍀Multilayer disadvantages:
         - nothing stops an added layer from being covert
         - encapsulating can be used to bypass filters: Encapsulation is both a benefit and a potentially harmful implication of multilayer protocols. Encapsulation allows for encryption, flexibility, and resiliency, while also enabling covert channels, filter bypass, and overstepping network segmentation boundaries.
         - logical network segments can be traversed
@@ -234,25 +232,24 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - **Converged protocols**: merged specialty or proprietary with standard protocols, such as those from the TCP/IP suite
         - converged protocols provide the ability to use existing TCP/IP supporting network infrastructure to host special or proprietary services without the need to deploy different hardware
     - Examples of converged protocols:
-        - **Storage Area Network (SAN)**: a secondary network (distinct from the primary network) used to consolidate/manage various storage devices into single network-accessible storage
+        - 🔴**Storage Area Network (SAN)**: a secondary network (distinct from the primary network) used to consolidate/manage various storage devices into single network-accessible storage
            -  In some instances, a SAN may implement deduplication in order to save space by not retaining multiple copies of the same file. However, this can sometimes result in data loss if the one retained original is corrupted.
            -  ✏️Deduplication replaces multiple copies of a file with a pointer to one copy. If the one remaining file is damaged, then all of the linked copies are damaged or inaccessible as well.
            -  Deduplication: is particularly effective when an organization is dealing with a large amount of redundant data, as it ensures that only unique instances of data are stored, thereby optimizing storage utilization and improving overall efficiency.
            -  Compression: While compression reduces the size of data, it does not specifically address the problem of redundant data. Compression can help save space but may not be as effective in cases where the primary issue is data redundancy.
            -  Caching: Caching improves performance by temporarily storing frequently accessed data in a faster storage medium, but it does not address storage issues related to redundant data. It’s more about speeding up access rather than optimizing storage space.
-        - **Fibre Channel over Ethernet (FCoE)**: operating at 🧠Data Link Layer (layer 2), Fibre Channel is a network data-storage solution (SAN or network-attached storage (NAS)) that allows for high-speed file transfers of (up to) 🧠128 Gbps
+        - 🔴**Fibre Channel over Ethernet (FCoE)**: operating at 🧠Data Link Layer (layer 2), Fibre Channel is a network data-storage solution (SAN or network-attached storage (NAS)) that allows for high-speed file transfers of (up to) 🧠128 Gbps
         - designed to be operated over fiber-optic cables support for copper cables was added later to offer less expensive options. Fibre Channel typically requires its own dedicated infrastructure (separate cables). However, Fibre Channel over Ethernet (FCoE) can be used to support it over the existing network infrastructure. 
             - FCoE can be used over existing network infrastructure
             - FCoE typically requires 🧠10 Gbps Ethernet in order to support the Fibre Channel protocol.
             - FCoE used to encapsulate Fibre Channel over Ethernet networks
             - with this technology, FCoE operates at Layer 2, but the Fibre Channel operates as a Network layer (OSI layer 3) protocol, replacing IP as the payload of a standard Ethernet network. So FCoE often relies on an underlying Layer 3 infrastructure (such as IP) to handle network routing and management tasks. 
-        - **Internet Small Computer Sysetms Interface (iSCSI)**: operating at 🧠Network Layer (OSI layer 3), iSCSI is a network storage standard based on IP, used to enable location-independent file storage, transmission, and retrieval over LAN, WAN, or public internet connections. It encapsulates SCSI commands and responses within TCP/IP packets, which means it operates over IP networks at the transport layer (Layer 4) but leverages the network's Layer 3 capabilities for addressing and routing.
-        - **Multiprotocol Label Switching (MPLS)**: a WAN protocol that operates at both layer 2 and 3 and does label switching; MPLS is a high-throughput/high-performance network technology that directs data across a network based on 🧠short path labels rather than longer network addresses. It requires the first router in the path to determine the full path the packet will travel, removing the need for other routers in the path to make independent determinations.
-        - **Voice over Internet Protocol (VoIP)**: a tunneling mechanism that encapsulates audio, video, and other data into IP packets to support voice calls and multimedia collab
+        - 🔴**Internet Small Computer Sysetms Interface (iSCSI)**: operating at 🧠Network Layer (OSI layer 3), iSCSI is a network storage standard based on IP, used to enable location-independent file storage, transmission, and retrieval over LAN, WAN, or public internet connections. It encapsulates SCSI commands and responses within TCP/IP packets, which means it operates over IP networks at the transport layer (Layer 4) but leverages the network's Layer 3 capabilities for addressing and routing.
+        - 🔴**Multiprotocol Label Switching (MPLS)**: a WAN protocol that operates at both layer 2 and 3 and does label switching; MPLS is a high-throughput/high-performance network technology that directs data across a network based on 🧠short path labels rather than longer network addresses. It requires the first router in the path to determine the full path the packet will travel, removing the need for other routers in the path to make independent determinations.
+        - 🔴**Voice over Internet Protocol (VoIP)**: a tunneling mechanism that encapsulates audio, video, and other data into IP packets to support voice calls and multimedia collab
             - VoIP is considered a converged protocol because it combines audio and video encapsulation technology (operating as application layer protocols) with the protocol stack of TCP/IP
-        - **Infini Band Over Ethernet**: a network protocol that allows remote direct memory access (RDMA) over ethernet network. It is a low-latency high throughput networking technology commonly used in high-performance computing (HPC), data centers, and enterprise environments. Supports speeds of up to 🧠200Gbps per link.
-        - **Compute Express Link (CXL)**: is an open standard interconnect designed to improve communication between CPUs and other high-speed devices such as accelerators, memory expanders, and smart I/O devices. It is used for high-speed, high-capacity CPU-to-Device and CPU-to-Memory connections.
-
+        - 🔴**Infini Band Over Ethernet**: a network protocol that allows remote direct memory access (RDMA) over ethernet network. It is a low-latency high throughput networking technology commonly used in high-performance computing (HPC), data centers, and enterprise environments. Supports speeds of up to 🧠200Gbps per link.
+        - 🔴**Compute Express Link (CXL)**: is an open standard interconnect designed to improve communication between CPUs and other high-speed devices such as accelerators, memory expanders, and smart I/O devices. It is used for high-speed, high-capacity CPU-to-Device and CPU-to-Memory connections.
 
 - 4.1.6 Micro-segmentation:
 - **Micro-Segmentation**: involves creating fine-grained, policy-driven segments that can isolate individual workloads or devices. It takes the concept of logical segmentation to a more granular level. The small segments contain specific workload or functionally similar or identical nodes. It limits scope of breach and lateral movement. Cisco Trsutsec is an example of Micro segmentation.
@@ -505,11 +502,10 @@ The components of a network make up the backbone of the logical infrastructure f
         - dissolvable: usually written in a web/mobile language and is executed on each local machine when the specific management web page is accessed (such as captive portal)
         - permanent: installed on the monitored system as a persistent background service
     - Just as you need to control physical access to equipment and wiring, you need to use logical controls to protect a network; there are a variety of devices that provide this type of protection, including:
-        - stateful and stateless firewalls can perform inspection of the network packets and use rules, signatures and patterns to determine whether the packet should be delivered. Circuit-level firewalls (aka circuit proxies) are used to estab-
-lish communication sessions between trusted partners. In theory, they operate at the
-Session layer (layer 5) of the OSI model.
+        - stateful and stateless firewalls can perform inspection of the network packets and use rules, signatures and patterns to determine whether the packet should be delivered. Circuit-level firewalls (aka circuit proxies) are used to establish communication sessions between trusted partners. In theory, they operate at the Session layer (layer 5) of the OSI model.
             - reasons for dropping a packet could include addresses that don’t exist on the network, ports or addresses that are blocked, or the content of the packet (e.g malicious packets blocked by admin policy)
-            - Tier 1 Firewall - One protected Zone e.g Internet & Tier 2 Firewall - Two Protected Zones e.g Internet and DMZ and so on.
+            - ⚒️Tier 1 Firewall - One protected Zone e.g Internet 
+            - ⚒️Tier 2 Firewall - Two Protected Zones e.g Internet and DMZ and so on.
         - IDP devices, which monitor the network for unusual network traffic and MAC or IP address spoofing, and then either alert on or actively stop this type of traffic
         - proxy/reverse proxies: 
             - proxy servers can be used to proxy internet-bound traffic, instead of letting clients talk directly
@@ -546,6 +542,7 @@ Session layer (layer 5) of the OSI model.
 - 4.3.1 Voice
     - **Voice of Internet Protocol (VoIP)**: set of technologies that enables voice to be sent over a packet network
     - As more orgs switch to VoIP, protocols like SIP become more common, and introducing additional management, either via dedicated voice VLANs, or by establishing quality of service (QoS) levels to ensure voice traffic priority
+    - SIPS, the secure version of the Session Initialization Protocol for VoIP, adds TLS encryption to keep the session initialization process secure. 
     - Web-based voice apps can be more difficult to manage, causing additional unplanned bandwidth consumption
     - VoIP is at risk for caller ID spoofing, vishing, call manager software/firmware attacks, phone hardware attacks, DoS, MitM/on-path attacks, spoofing, and switch hopping.
     - Phreaking is a specific type of attack in which various types of technology are used to circumvent the telephone system to make free long-distance calls, to alter the function of telephone service, to steal specialized services, or to cause service disruptions. A phreaker is an attacker who performs phreaking. 
