@@ -87,6 +87,8 @@ You may find this domain to be more technical than others, and if you have exper
         - replaces trust but verify as a security design principle by asserting that all activities by all users/entities must be subject to control, authentication, authorization, and management at the most granular level possible (Trust but Verify invlolves a network perimeter beyond which everything is untrusted)
         - Zero trust addresses the limitations of the legacy network perimeter-based security model. It treats identity as the control plane and assumes compromise/breach when verifying every request.
         - Goal is to have every access request authenticated, authorized, and encrypted prior to access being granted to an asset or resource
+        - The primary driver behind the adoption of the zero trust model has been the proliferation of endpoint devices. An endpoint device could be a user's workstation, a tablet, a smartphone, an IoT device, an ICS system, an edge computing sensor, and any public-facing servers in a screened subnet or extranet.
+        - Being able to control, much less trust, all of these devices has caused the loss of a clearly defined security perimeter between the outside untrusted world and the inside trusted organization. This results in the "assume breach" stance, which requires organizations to "never trust, always verify."
         - 🛑In a zero-trust network architecture, access control decisions should never be made based upon a system's location on the network. Therefore, an IP address should never be used and would be the least appropriate of these options. 
         - See my article on an [Overview of Zero Trust Basics](https://blog.balancedsec.com/p/an-overview-of-zero-trust-basics)
 - 3.1.9 Privacy by design
