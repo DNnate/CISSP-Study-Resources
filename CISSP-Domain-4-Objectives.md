@@ -255,7 +255,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - SDN is a broad range of techniques enabling network management, routing, forwarding, and control functions to be directed by software
         - SDN is effectively network virtualization, and separates the infrastructure layer (aka the data or forwarding plane) - hardware and hardware-based settings, from the control layer - network services of data transmission management
         - SDN introduces a centralized controller that manages the network infrastructure and allows for dynamic and programmable network configurations. While SDN offers advantages in terms of flexibility and automation, it also 🧠expands the attack surface of the network. With SDN, there is a single point of control that, if compromised, can have a significant impact on the entire network.
-            - NOTE: the **control plane**: uses protocols to decide where to send traffic, and the **data plane**: includes rules that decide whether traffic will be forwarded
+            - NOTE: the 👘**control plane**: uses protocols to decide where to send traffic, The control plane receives instructions and sends them to the network. The 👘**data plane**: includes rules that decide whether traffic will be forwarded. The 👘**application plane** of a software-defined network (SDN) is where applications run that use application programming interfaces (APIs) to communicate with the SDN about needed resources.
         - typically ABAC-based
         - an SDN solution provides the option to handle traffic routing using simpler network devices that accept instructions from the SDN controller
         - SDN offers a network design that is directly programmable from a central location, is flexible, vendor neutral, and based on open standards
@@ -264,6 +264,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - an encapsulation protocol that enables VLANs to be stretched across subnets and geographic distances
         - VLANs allow network admins to use switches to create software-based LAN segments that can be defined based on factors other than physical location
         - Typically restricted to layer 2
+        - VXLAN tunnels layer 2 connections over a layer 3 network, in essence extending a LAN over distances or networks that it might not otherwise function over.
         - Allows up to 16 million virtual networks (VLAN limit is 4096)
         - VXLAN can be used as a means to implement microsegmentation without limiting segments to local entities only
         - Defined in RFC 7348
@@ -298,9 +299,9 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - **Firewall Types**: - 📝IM clients can utilize random port numbers which makes it challenging for firewalls to control.
    - 🍇**Next-­generation firewall (NGFW)** is a unified threat management (UTM) device that is designed to provide advanced security features at the network perimeter and is based on a traditional firewall with numerous other integrated network and security services. It provides a comprehensive range of security features, including perimeter protection, application control, and advanced threat detection.
    - 🍇**Internal Segmentation Firewall (ISFW)** is a security device or technology used to enforce security policies and controls within an internal network, particularly to segment different internal network zones. Unlike traditional firewalls that primarily focus on perimeter security, an ISFW operates within the internal network to create additional layers of security. It focuses on internal network segmentation and access control between internal segments.
-   - 🍇**Application-­level firewall** is able to make access control decisions based on the content of communications as well as the parameters of the associated protocol and software.
-   - 🍇**Web Application Firewall WAF**: is a software-based app that monitors and filters exchanges between applications and a host; usually inspect and filter conversations like HTTP/S. It is an appliance, server add-­on, virtual service, or system filter that defines a strict set of communication rules for a website
-   - 🍇**Stateful inspection firewalls** make access control decisions based on the content and context of communications, but are not typically limited to a single application-­layer protocol.
+   - 🍇**Application-­level firewall** is able to make access control decisions based on the content of communications as well as the parameters of the associated protocol and software. application-level gateway firewalls proxy traffic for specific applications.
+   - 🍇**Web Application Firewall WAF**: is a software-based app that monitors and filters exchanges between applications and a host; usually inspect and filter conversations like HTTP/S. It is an appliance, server add-­on, virtual service, or system filter that defines a strict set of communication rules for a website. 
+   - 🍇**Stateful inspection firewalls** make access control decisions based on the content and context of communications, but are not typically limited to a single application-­layer protocol. Stateful packet inspection firewalls, also known as dynamic packet filtering firewalls, track the state of a conversation and can allow a response from a remote system based on an internal system being allowed to start the communication.
    - 🍇**Circuit-­level firewalls** are able to make permit and deny decisions in regard to circuit establishment either based on simple rules for IP and port, using captive portals, requiring port authentication via 802.1X, or more complex elements such as context-­or attribute-­based access control.
    - 🍇**Static packet-­filtering firewalls** filter traffic by examining data from a message header. Usually, the rules are concerned with source and destination IP address (layer 3) and port numbers (layer 4).
    - 🍇**TCP Wrapper**: is a host-based access control system that can be used to restrict access to Internet services based on IP address or hostname. It acts as a gateway between network services and the network, allowing administrators to control which hosts can connect to services like SSH, FTP, and others. TCP Wrapper allows administrators to specify which hosts (by IP address or hostname) are allowed or denied access to specific services, such as SSH, FTP, or HTTP, based on the requesting host.
@@ -393,6 +394,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - ❄️**5G**
         - 5G uses higher frequencies than previous tech, allowing for higher transmission speeds — up to 10 Gbps, but at reduced distances
         - 5G supports up to 10 Gbps
+        - Enhanced subscriber identity protection
+        - Mutual authentication capabilities
         - 5G coverage is the most limited since it is the latest technology and still not universally deployed
         - 5G tower covers less area than a 4G tower.
         - Orgs need to enforce security requirements on 5G
@@ -497,8 +500,8 @@ The components of a network make up the backbone of the logical infrastructure f
         - use identities to perform access control
         - detect/block rogue devices
     - NAC can be implemented with a preadmission or postadmission philosophy:
-        - **preadmission philosohpy**: requires a system to meet all current security requirements (such as patch application and malware scanner updates) before it is allowed to communicate with the network
-        - **postadmission philosophy**: allows and denies access based on user activity, which is based on a predefined authorization matrix
+        - 🍮**pre-admission philosohpy**: requires a system to meet all current security requirements (such as patch application and malware scanner updates) before it is allowed to communicate with the network. A pre-admit, client-based NAC system will test systems before they are allowed on the network using a client that can determine more about a system than a clientless model can.
+        - 🍮**post-admission philosophy**: allows and denies access based on user activity, which is based on a predefined authorization matrix
     - Agent-based NAC:
         - installed on each management system, checks config files regularly, and can quarantine for non-compliance
         - dissolvable: usually written in a web/mobile language and is executed on each local machine when the specific management web page is accessed (such as captive portal)
