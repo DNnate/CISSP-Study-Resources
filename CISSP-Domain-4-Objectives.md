@@ -270,6 +270,9 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - **Encapsulation:**
         - the OSI model represents a protocol stack, or a layered collection of multiple protocols, and communication between protocol layers occurs via encapsulation and deencapsulation (defined above)
     - **Software-defined wide area network (SD-WAN)**: an evolution of SDN that can be used to manage the connectivity and control services between distant data centers, remote locations, and cloud services over WAN links; put another way, SDN-WAN is an extension of SDN practices to connect entities spread across the internet, supporing WAN architecture; espcially related to cloud migration
+        - The network uses predefined rules to optimize performance.
+        - The network conducts continuous monitoring to support better performance.
+        - The network uses self-learning techniques to respond to changes in the network.
     - **Transport Architecture**:
      - Management Plane: The management plane is responsible for network administration tasks. It handles configuration, monitoring, security management, and policy enforcement. E.g SNMP, SSH, NETCONF
      - ✈️Control Plane: is responsible for making decisions and determine optimal paths about where and how data packets should be forwarded. It manages routing, signaling, and network topology. E.g routing protocols like OSPF, BGP
@@ -485,7 +488,7 @@ The components of a network make up the backbone of the logical infrastructure f
         | Cat 8    |   40 Gbps  |        |
 
 - 4.2.3 Network Access Control (NAC) devices
-- Port security can refer to several concepts, including network access control (NAC), Transport layer ports, and RJ-­45 jack ports. 📝NAC requires authentication before devices can communicate on the network. 📝Transport-­layer port security involves using firewalls to grant or deny communications to TCP and UDP ports. 📝physical control of all connection points. RJ-­45 jacks should be managed so that unused ports are disabled and that when a cable is disconnected, the port is disabled. This approach prevents the connection of unauthorized devices.
+- Port security can refer to several concepts, including network access control (NAC), Transport layer ports, and RJ-­45 jack ports. 📝NAC requires authentication before devices can communicate on the network. 📝Transport-­layer port security involves using firewalls to grant or deny communications to TCP and UDP ports. 📝physical control of all connection points. RJ-­45 jacks should be managed so that unused ports are disabled and that when a cable is disconnected, the port is disabled. This approach prevents the connection of unauthorized devices, cam table flooding etc.
     - **Network Access Control (NAC)**: the concept of controlling access to an environment through strict adherence to and enforcement of security policy
     - NAC is meant to be an automated detection and response system that can react in real time, ensuring all monitored systems are patched/updated and have current security configurations, as well as keep unauthorized devices out of the network. 📝 Note that it cannot reduce social engineering threats.
     - NAC goals:
