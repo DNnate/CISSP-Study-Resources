@@ -463,20 +463,21 @@ The components of a network make up the backbone of the logical infrastructure f
         - includes wireless, LiFi, Bluetooth, Zigbee, satellites
         - most common cause of network failure (i.e. violations of availability) are cable failures or misconfigurations
         - wired transmission media can typically be described in three categories: coaxial, Ethernet, fiber
-        - coaxial is typically used with cable modem installations to provide connectivity to an ISP, and requires a modem to convert the analog signals to digital
+        - 🍖Coaxial is typically used with cable modem installations to provide connectivity to an ISP, and requires a modem to convert the analog signals to digital
             - fairly resistent to EMI
             - longer lengths than twisted pair
             - requires segment terminators
             - two main types:
                 - **thinnet (10Base2)**: used to connect systems to backbond trunks of thicknet cabling (185m, 10Mbps)
                 - **thicknet (10Base5)**: can span 500 meters and provide up to 10Mbps
-        - ethernet can be used to describe many mediums, it is typically associated with Category 5/6 unshielded twisted-pair (UTP) or shielded twisted pair (STP), and can be plenum-rated
+        - 🍖Ethernet (Copper) can be used to describe many mediums, it is typically associated with Category 5/6 unshielded twisted-pair (UTP) or shielded twisted pair (STP), and can be plenum-rated
         - 📝A repeater, switch, or concentrator can be used to amplify signals, ensuring that the 100-meter (328 Feet) distance limitation of 1000BaseT or CAT 6 is not an issue.
-        -  STP cable is limited to 155 Mbps and 100 meters
+        -  STP cable is limited to 155 Mbps and 100 meters (328 Feet)
         - fiber typically comes in two options: single-mode or multi-mode
             - 🥑Single-mode is typically used for long-distance communication, over several kilometers or miles
             - 🥑Multi-mode fiber is typically used for faster transmission, but with a distance limit depending on the desired speed
             - Fiber is most often used in the datacenter for backend components
+            - it resistant to electromagnetic interference (EMI)
 
         | Category | Throughput | Notes |
         |----------|------------|--------|
@@ -503,7 +504,7 @@ The components of a network make up the backbone of the logical infrastructure f
         - detect/block rogue devices
     - NAC can be implemented with a preadmission or postadmission philosophy:
         - 🍮**pre-admission philosohpy**: requires a system to meet all current security requirements (such as patch application and malware scanner updates) before it is allowed to communicate with the network. A pre-admit, client-based NAC system will test systems before they are allowed on the network using a client that can determine more about a system than a clientless model can.
-        - 🍮**post-admission philosophy**: allows and denies access based on user activity, which is based on a predefined authorization matrix
+        - 🍮**post-admission philosophy**: allows and denies access based on user activity after connection, which is based on a predefined authorization matrix. It doesn't check the status of a machine before it connects.
     - Agent-based NAC:
         - installed on each management system, checks config files regularly, and can quarantine for non-compliance
         - dissolvable: usually written in a web/mobile language and is executed on each local machine when the specific management web page is accessed (such as captive portal)
