@@ -92,15 +92,17 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - 🎈**full-duplex**: both comm devices can transmit/receive at same time
             - data transfer
             - connection release
+            - 📝Data streams exist at the Application, Presentation, and Session layers
     - ❄️**Transport Layer (4)**
         - Responsible for managing the integrity of a connection and controlling the session; providing transparent data transport and end-to-end transmission control
         - The Transport layer provides logical connections between devices, including end-to-end transport services to ensure that data is delivered. Transport layer protocols include TCP, UDP, SSL, and TLS.
+        -  circuit level firewalls and proxies operate at this layer
         - Defines session rules like how much data each segment can contain, how to verify message integrity, and how to determine whether data has been lost
         - Protocols that operate at the Transport layer:
             - 🛠️Transmission Control Protocol (TCP)
                 - the major transport protocol in the internet suite of protocols providing reliable, connection-oriented, full-duplex streams
                 - emphasizing: full-duplex, connection-oriented protocol
-                - uses three-way handshake
+                - uses three-way handshake, which makes it a connection-oriented protocol. 
             - 🛠️User Datagram Protocol (UDP)
                 - connectionless protocol that provides fast, best-effort delivery of **datagrams** (self-container unit of data)
                 - it is also considered a 📝simplex protocol (Typically, there is no acknowledgment or feedback from the receiver to the sender, because the channel only allows data to flow in one direction.)
@@ -124,9 +126,11 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - 🍎interior routing protocols ("myopic") make next hop decisions based only on info related to the next immediate hop
                 - 🍎exterior routing protocols ("far-sighted") make hop decisions based on the entire remaining path (i.e.) vector
                 - **Border Gateway Protocol (BGP)**: an exterior/path vector protocol
-        - Routed protocols include Internetwork Package Exchange (IPX) and Internet Protocol (IP)  
+        - Routed protocols include Internetwork Package Exchange (IPX) and Internet Protocol (IP)
+        - Network hardware devices, including routers, function at layer 3  
     - ❄️**Data Link Layer (2)**
         - Responsible for formatting a packet for transmission
+        - When a message reaches the Data Link layer, it is called a frame
         - Adds the source and destination hardware addresses to the frame
         - Media Access Control (MAC) - (hardware-based) address/AKA NIC address
             - MAC address is a 6-byte (48-bit) binary address written in hex
@@ -143,7 +147,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - ❄️**Physical Layer (1)**
         - Converts a frame into bits for transmission/receiving over the physical connection medium
         - The Physical layer includes electrical specifications, protocols, and standards that allow control of throughput, handling line noise, and a variety of other electrical interface and signaling requirements
-        - Network hardware devices that function at layer 1 include NICs, hubs, repeaters, concentrators, amplifiers
+        - Network hardware devices that function at layer 1 include 📝NICs, 📝hubs, 📝repeaters, 📝concentrators, 📝amplifiers
         - Know four basic network topologies:
             - 🍌**star**: each individual node on the network is directly connect to a switch/hub/concentrator
             - 🍌**mesh**: all systems are interconnected; partial mesh can be created by adding multiple NICs or server clustering
@@ -177,10 +181,17 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
              - Size: The IPv6 header is 40 bytes in length.
              - Fragmentation: IPv6 requires fragmentation to be handled by the sending host rather than by routers, improving efficiency.
              - Built-in Security: IPv6 was designed with IPsec as a mandatory component, providing native support for encryption and authentication.
-        - 🍏**Dual Stack**: The means by which IPv6 and IPv4 can coexist on the same network is to use one or more of three primary options: dual stack, tunneling, or NAT-­PT.
+        - 🍏**IPV4 to IPV4 Transition**: The means by which IPv6 and IPv4 can coexist on the same network is to use one or more of three primary options: dual stack, tunneling, or NAT-­PT.
              - 🎈Dual stack is to have most systems operate both IPv4 and IPv6 and use the appropriate protocol for each conversation.
              - 🎈Tunneling allows most systems to operate a single stack of either IPv4 or IPv6 and use an encapsulation tunnel to access systems of the other protocol.
+                  - 🐝6to4: Encapsulates IPv6 packets within IPv4 packets, allowing IPv6 communication over an IPv4 network
+                  - 🐝Toredo Tunneling: Windows implementation. Provides IPv6 connectivity through NAT (Network Address Translation) devices using UDP (User Datagram Protocol) to encapsulate IPv6 traffic.
+                  - 🐝ISATAP (Intra-Site Automatic Tunnel Addressing Protocol): Allows IPv6 packets to be transmitted over an IPv4 network within an organization and with 📝compatibile routers and endpoints.
              - 🎈Network Address Translation-­Protocol Translation (NAT-­PT) (RFC-­2766) can be used to convert between IPv4 and IPv6 network segments similar to how NAT converts between internal and external addresses.
+             -  🎈Translation Techniques
+                  -  🐝NAT64 (Network Address Translation 64):  Translates IPv6 addresses to IPv4 addresses and vice versa, allowing IPv6-only devices to communicate with IPv4 devices. Requires NAT64 📝gateways or appliances
+                  -  🐝DNS64: Works with NAT64 to synthesize IPv6 addresses from IPv4 addresses in DNS responses.
+             
     - **TCP/IP Model**
         - Application layer: Application Layer: defines protocols for node-to-node application communication and provides services to the application software running on a computer
         - Transport layer: Transport Layer: defines protocols for setting up the level of transmission service for applications; this layer is responsible for the reliable transmission of data and the error-free delivery of packets
@@ -386,6 +397,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - 4.1.8 Cellular networks (e.g. 4G, 5G)
     - A cellular network or a wireless network is the primary communications technology used by many mobile devices
     - Cells are primary transceiver (cell site/tower)
+    - Cellular networks have the same issues that any public network does.
     - Generally encrypted between mobile device and transmission tower; plaintext over wire; use encryption like TLS/VPN
     - ❄️**4G**
         - 4G allows for mobile devices to achieve 📝100 Mbps, and stationary devices can reach 📝1 Gbps
