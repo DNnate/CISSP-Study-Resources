@@ -94,6 +94,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - connection release
     - ❄️**Transport Layer (4)**
         - Responsible for managing the integrity of a connection and controlling the session; providing transparent data transport and end-to-end transmission control
+        - The Transport layer provides logical connections between devices, including end-to-end transport services to ensure that data is delivered. Transport layer protocols include TCP, UDP, SSL, and TLS.
         - Defines session rules like how much data each segment can contain, how to verify message integrity, and how to determine whether data has been lost
         - Protocols that operate at the Transport layer:
             - 🛠️Transmission Control Protocol (TCP)
@@ -141,6 +142,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 
     - ❄️**Physical Layer (1)**
         - Converts a frame into bits for transmission/receiving over the physical connection medium
+        - The Physical layer includes electrical specifications, protocols, and standards that allow control of throughput, handling line noise, and a variety of other electrical interface and signaling requirements
         - Network hardware devices that function at layer 1 include NICs, hubs, repeaters, concentrators, amplifiers
         - Know four basic network topologies:
             - 🍌**star**: each individual node on the network is directly connect to a switch/hub/concentrator
@@ -563,6 +565,7 @@ The components of a network make up the backbone of the logical infrastructure f
     -   Securing VoIP communications often involves specific application of many common security concepts:
         - Use strong passwords and two-factor authentication.
         - Record call logs and inspect for unusual activity.
+        -  consider the use of a dedicated VLAN for VoIP devices to help separate them from other networked devices
         - Block international calling.
         - Outsource VoIP to a trusted SaaS.
         - Update VoIP equipment firmware.
@@ -783,9 +786,9 @@ Synchronous Digital Hierarchy (SDH) and Synchronous Optical Network (SONET) are 
             - message authentication .
          - 📝Replay Attacks are where the attacker stole an authentication token and used it to impersonate the user
 - **PRIVATE IP**: These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
-    - 10.0.0.0–10.255.255.255 (a full Class A range).
-    - 172.16.0.0–172.31.255.255 (16 Class B ranges).
-    - 192.168.0.0–192.168.255.255 (256 Class C ranges).
+    - 10.0.0.0–10.255.255.255 (a full Class A range)./8
+    - 172.16.0.0–172.31.255.255 (16 Class B ranges)./12
+    - 192.168.0.0–192.168.255.255 (256 Class C ranges)./16
 - **Centralized Remote Authentication Services**
     - RADIUS: Users pass login credentials to a RADIUS server for authentication. By default, RADIUS uses UDP and only encrypts passwords. RADIUS supports TCP and TLS, but this is not a default setting.
     - Diameter: is essentially the successor to RADIUS. One significant improvement Diameter provides is added reliability. Diameter is often used in prepaid and credit-­based usage models in mobile device services, and similar applications.
