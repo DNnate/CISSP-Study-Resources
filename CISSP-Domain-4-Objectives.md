@@ -197,7 +197,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - The original versions of TLS (1.0 and 1.1) are considered deprecated and organizations should be relying on TLS 1.2 or TLS 1.3
         - TLS supports both one-­way and two-­way authentication.
         - TLS and SSL are not interoperable or backward compatible.
-    - ❄️**SFTP**: a version of FTP that includes encryption and is used for transferring files between two devices (often a client / server). TFTP is trivial FTP, an insecure quick transfer method often used to transfer files for network devices, among other uses.
+    - ❄️**SFTP**: a version of FTP that includes encryption and is used for transferring files between two devices (often a client / server). TFTP is trivial FTP, an insecure quick transfer method often used to transfer files for network devices, among other uses. SCP (Secure Copy), is a secure file transfer method.
     - ❄️**SSH**: remote management protocol, which operates over TCP/IP
         - all communications are encrypted
         - primarily used by IT administrators to manage devices such as servers and network devices
@@ -471,7 +471,7 @@ The components of a network make up the backbone of the logical infrastructure f
                 - **thinnet (10Base2)**: used to connect systems to backbond trunks of thicknet cabling (185m, 10Mbps)
                 - **thicknet (10Base5)**: can span 500 meters and provide up to 10Mbps
         - ethernet can be used to describe many mediums, it is typically associated with Category 5/6 unshielded twisted-pair (UTP) or shielded twisted pair (STP), and can be plenum-rated
-        - 📝A repeater, switch, or concentrator can be used to amplify signals, ensuring that the 100-meter distance limitation of 1000BaseT is not an issue.
+        - 📝A repeater, switch, or concentrator can be used to amplify signals, ensuring that the 100-meter (328 Feet) distance limitation of 1000BaseT or CAT 6 is not an issue.
         -  STP cable is limited to 155 Mbps and 100 meters
         - fiber typically comes in two options: single-mode or multi-mode
             - 🥑Single-mode is typically used for long-distance communication, over several kilometers or miles
@@ -514,8 +514,9 @@ The components of a network make up the backbone of the logical infrastructure f
             - ⚒️Tier 1 Firewall - One protected Zone e.g Internet 
             - ⚒️Tier 2 Firewall - Two Protected Zones e.g Internet and DMZ and so on.
         - IDP devices, which monitor the network for unusual network traffic and MAC or IP address spoofing, and then either alert on or actively stop this type of traffic
-        - proxy/reverse proxies: 
+    -**proxy/reverse proxies:**
             - proxy servers can be used to proxy internet-bound traffic, instead of letting clients talk directly
+            - Proxy servers can act to anonymize web requests by hiding their true source IP addresses and removing identifying information. 
             - reverse proxies are often deployed to a perimeter network; they proxy communication from the internet to an internal host, such as a web server
             - like a firewall, a reverse proxy can use rules and policies to block certain types of communication
 - 4.2.4 Endpoint security
@@ -754,7 +755,7 @@ uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km 
 Synchronous Digital Hierarchy (SDH) and Synchronous Optical Network (SONET) are fiber-optic high-speed networking standards. SDH was standardized by the International Telecommunications Union (ITU) and SONET by the American National Standards Institute (ANSI). SDH and SONET are mostly hardware or physical layer standards defining infrastructure and line speed requirements. SDH and SONET use synchronous time-division multiplexing (TDM) to high-speed duplex communications with minimal need for control and management overhead.
 
 - **Common VPN Protocols**: VPNs can be implemented using software or hardware solutions. In either case, there are several common VPN protocols: PPTP, L2TP, L2F (Cisco), SSH, OpenVPN (i.e., TLS), and IPsec.
-    - ⚒️**TLS**:  TLS is also used for an increasingly large percentage of VPN connections and may appear at some point in the CISSP exam.  
+    - ⚒️**TLS**:  TLS is also used for an increasingly large percentage of VPN connections and may appear at some point in the CISSP exam.  An HTML-based VPN, often referred to as a web-based VPN, is a type of VPN solution that allows users to securely connect to a private network via a web browser. Instead of installing dedicated VPN client software, users access the VPN through a web interface.  the web-based VPN creates a secure connection between the user’s browser and the VPN server. This connection might use technologies like WebVPN or SSL/TLS
     - ⚒️**Point-to-Point Tunneling Protocol (PPTP)**: is an obsolete encapsulation protocol developed from the dial-up Point-to-Point Protocol.
         - It operates at the Data Link layer (layer 2) of the OSI model and is used on IP networks.
         - PPTP uses TCP port 1723.
@@ -783,8 +784,8 @@ Synchronous Digital Hierarchy (SDH) and Synchronous Optical Network (SONET) are 
     - ⚒️**Internet Protocol Security (IPsec)** is a standard of IP security extensions used as an add-on for IPv4 and integrated into IPv6.
         - IPsec is sometimes paired with L2TP as L2TP/IPsec.
         - IPsec isn’t a single protocol but rather a collection of protocols, including AH, ESP, HMAC, IPComp, and IKE.
-            - 🐍Authentication Header (AH) provides assurances of message integrity and nonrepudiation. AH also provides the primary authentication function for IPsec, implements session access control, and prevents replay attacks.
-            - 🐍Encapsulating Security Payload (ESP) provides confidentiality and integrity of payload contents. It provides encryption, offers limited authentication, and prevents replay attacks. Modern IPsec ESP typically uses advanced encryption standard (AES) encryption. The limited authentication allows ESP to either establish its own links without using AH and perform periodic mid-session reauthentication to detect and respond to session hijacking. ESP can operate in either transport mode or tunnel mode.
+            - 🐍Authentication Header (AH) provides assurances of message integrity and nonrepudiation. AH also provides the primary authentication function for IPsec, implements session access control, and prevents replay attacks. The Authentication Header provides authentication, integrity, and nonrepudiation for IPsec connections. 
+            - 🐍Encapsulating Security Payload (ESP) provides confidentiality and integrity of payload contents, hence confidentiality. It provides encryption, offers limited authentication, and prevents replay attacks. Modern IPsec ESP typically uses advanced encryption standard (AES) encryption. The limited authentication allows ESP to either establish its own links without using AH and perform periodic mid-session reauthentication to detect and respond to session hijacking. ESP can operate in either transport mode or tunnel mode.
             - 🐍Hash-based Message Authentication Code (HMAC) is the primary hashing or integrity mechanism used by IPsec.
             - 🐍IP Payload Compression (IPComp) is a compression tool used by IPsec to compress data prior to ESP encrypting it in order to attempt to keep up with wire speed transmission.
             - 🐍Internet Key Exchange (IKE) is the mechanism of IPsec that manages cryptography keys and is composed of three elements: OAKLEY, SKEME, and ISAKMP. The mechanism of IPsec that manages cryptography keys is Internet Key Exchange (IKE). IKE is composed of three elements: OAKLEY, SKEME, and ISAKMP. 
