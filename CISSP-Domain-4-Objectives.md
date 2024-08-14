@@ -39,7 +39,10 @@ Networking can be one of the more complex exam topics; if you have a networking 
 - **PLC**: Packet Loss Concealment used in VoIP communications to mask the effect of dropped packets
 - **Packet-Switched Network**: a network that doesn't use a dedicated connection between endpoints
 - **Point-to-Point Protocol**: a standard method for transporting multiprotocol datagrams over point-to-point links
-- **Port Address Translation**: an extension of NAT (Network Address Translation) translating all addresses to one routable IP address and translate the source port number in the packet to a unique value
+- **Port Address Translation**: an extension of NAT (Network Address Translation) translating all addresses to one routable IP address and translate the source port number in the packet to a unique value. NAT offers many benefits.
+     - NAT hides the internal IP addressing scheme
+     - NAT enables the sharing of a few public internet addresses with a large number of internal clients.
+     - NAT supports the use of the private IP addresses from RFC 1918 on an internal network. 
 - **RPC**: Remote Procedure Call is a protocol that enables one system to execute instructions on other hosts across a network infrastructure
 - **Root of Trust**: a source that can always be trusted within a cryptographic system; because cryptographic security is dependent on keys to encrypt and decrypt data and perform functions such as generating digital signatures and verifying signatures, RoT schemes generally include a hardened hardware module; a RoT guarantees the integrity of the hardware prior to loading the OS of a computer
 - **SNMP**: Simple Network Management Protocol, is a protocol for collecting and organizing info about managed devices on IP networks; it can be used to determine the health of devices such as routers, switches, servers, workstations, etc
@@ -96,7 +99,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - ❄️**Transport Layer (4)**
         - Responsible for managing the integrity of a connection and controlling the session; providing transparent data transport and end-to-end transmission control
         - The Transport layer provides logical connections between devices, including end-to-end transport services to ensure that data is delivered. Transport layer protocols include TCP, UDP, SSL, and TLS.
-        -  circuit level firewalls and proxies operate at this layer
+        -  📝circuit level firewalls and proxies operate at this layer
+        -  The primary VPNs at the Transport layer are 📝TLS and 📝SSH. 
         - Defines session rules like how much data each segment can contain, how to verify message integrity, and how to determine whether data has been lost
         - Protocols that operate at the Transport layer:
             - 🛠️Transmission Control Protocol (TCP)
@@ -127,14 +131,16 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - 🍎exterior routing protocols ("far-sighted") make hop decisions based on the entire remaining path (i.e.) vector
                 - **Border Gateway Protocol (BGP)**: an exterior/path vector protocol
         - Routed protocols include Internetwork Package Exchange (IPX) and Internet Protocol (IP)
-        - Network hardware devices, including routers, function at layer 3  
+        - 📝Network hardware devices, including routers, function at layer 3
+        - 📝IPsec operates at the Network layer (layer 3)
     - ❄️**Data Link Layer (2)**
         - Responsible for formatting a packet for transmission
+        - The primary Data Link VPNs are 📝L2TP and 📝PPTP, although wireless encryption occurs here as well.
         - When a message reaches the Data Link layer, it is called a frame
         - Adds the source and destination hardware addresses to the frame
         - Media Access Control (MAC) - (hardware-based) address/AKA NIC address
             - MAC address is a 6-byte (48-bit) binary address written in hex
-                - first 3b/24-bits: Organizationally Unique Identifier (OUI) - denotes manufacturer
+                - 📝first 3b/24-bits: Organizationally Unique Identifier (OUI) - denotes manufacturer
                 - last 3b/24-bits: unique to that interface
         - **Address Resolution Protocol (ARP)**: operates at layer 2
         - Switches & bridges function at this layer
@@ -243,11 +249,11 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - converged protocols provide the ability to use existing TCP/IP supporting network infrastructure to host special or proprietary services without the need to deploy different hardware
     - Examples of converged protocols:
         - 🔴**Storage Area Network (SAN)**: a secondary network (distinct from the primary network) used to consolidate/manage various storage devices into single network-accessible storage
-           -  In some instances, a SAN may implement deduplication in order to save space by not retaining multiple copies of the same file. However, this can sometimes result in data loss if the one retained original is corrupted.
-           -  ✏️Deduplication replaces multiple copies of a file with a pointer to one copy. If the one remaining file is damaged, then all of the linked copies are damaged or inaccessible as well.
-           -  Deduplication: is particularly effective when an organization is dealing with a large amount of redundant data, as it ensures that only unique instances of data are stored, thereby optimizing storage utilization and improving overall efficiency.
-           -  Compression: While compression reduces the size of data, it does not specifically address the problem of redundant data. Compression can help save space but may not be as effective in cases where the primary issue is data redundancy.
-           -  Caching: Caching improves performance by temporarily storing frequently accessed data in a faster storage medium, but it does not address storage issues related to redundant data. It’s more about speeding up access rather than optimizing storage space.
+           -  🍍Deduplication: is particularly effective when an organization is dealing with a large amount of redundant data, as it ensures that only unique instances of data are stored, thereby optimizing storage utilization and improving overall efficiency.
+                - In some instances, a SAN may implement deduplication in order to save space by not retaining multiple copies of the same file. However, this can sometimes result in data loss if the one retained original is corrupted.
+                - Deduplication replaces multiple copies of a file with a 📝pointer to one copy. If the one remaining file is damaged, then all of the linked copies are damaged or inaccessible as well.
+           -  🍍Compression: While compression reduces the size of data, it does not specifically address the problem of redundant data. Compression can help save space but may not be as effective in cases where the primary issue is data redundancy.
+           -  🍍Caching: Caching improves performance by temporarily storing frequently accessed data in a faster storage medium, but it does not address storage issues related to redundant data. It’s more about speeding up access rather than optimizing storage space.
         - 🔴**Fibre Channel over Ethernet (FCoE)**: operating at 🧠Data Link Layer (layer 2), Fibre Channel is a network data-storage solution (SAN or network-attached storage (NAS)) that allows for high-speed file transfers of (up to) 🧠128 Gbps
         - designed to be operated over fiber-optic cables support for copper cables was added later to offer less expensive options. Fibre Channel typically requires its own dedicated infrastructure (separate cables). However, Fibre Channel over Ethernet (FCoE) can be used to support it over the existing network infrastructure. 
             - FCoE can be used over existing network infrastructure
@@ -291,27 +297,27 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - The network conducts continuous monitoring to support better performance.
         - The network uses self-learning techniques to respond to changes in the network.
     - **Transport Architecture**:
-     - Management Plane: The management plane is responsible for network administration tasks. It handles configuration, monitoring, security management, and policy enforcement. E.g SNMP, SSH, NETCONF
+     - ✈️Management Plane: The management plane is responsible for network administration tasks. It handles configuration, monitoring, security management, and policy enforcement. E.g SNMP, SSH, NETCONF
      - ✈️Control Plane: is responsible for making decisions and determine optimal paths about where and how data packets should be forwarded. It manages routing, signaling, and network topology. E.g routing protocols like OSPF, BGP
      - ✈️Data Plane: is responsible for the actual movement of packets through the network. It handles the forwarding of data based on the decisions made by the control plane. e.g QOS, packet forwarding by switch or router using mac address table or routing tables respectively, packet filtering e.g firewalls, load balancers
        - 🍊Cut-Through Switching:  is a method of forwarding packets in which a switch starts forwarding a frame before the entire frame has been received. There is minimal error checking and it is used in low-latency networks
        - 🍊Store-and-forward Switching: is a method where the entire frame is received and error-checked before being forwarded. Used in environements where liability is essential. 
 
-- **Network Segmentation**: Benefits include boosting performance where system that need to communicate are located in the same segment. It reduces communication problems such as broadcast storms to individual segments, and improves security by isolating traffic to segments
-  - Intranet: Data traffic that moves between a data center and external networks or clients.
-  - Extranet: A controlled private network allowing access to partners, vendors, or clients. This section of the network has been sectioned off to act as as an intranet for the private network but also to serve information to the public internet. A cross between the internet and the intranet.
-  - DMZ: A buffer zone between the internal network and the external network, hosting public-facing services. An extranet for public consumption. Typically labelled perimeter network. DMZ is a specific implementation with a focus on isolating external-facing services from the internal network. 
-  - Screened subnet: is a type of security zone that can be positioned so that it operates as a buffer network between the secured private network and the internet and can host publicly accessible services. It is often placed between an internal network and an external network and can be seen as a specific type of DMZ.
- - **Physical Segmentation**:
-   - Out-of-Band: physically seperating networks into distinct zones using hardware. It is an alternate communication path for different types of traffic.
-   - Air Gap: Complete physical isolation of a network by having no wired or wireless communications. Common in high security government networks or critical infrastructures e.g industrial systems and public utilities.
- - **Logical Segmentation**:
-   - In-Band: seperate networks by configuring routers, switches, firewalls to control traffic flow e.g subnets, VLANs
-        - Switches: switch is a networking device that can be used to create 🔥digital virtual network segments (i.e., VLANs) that can be altered as needed by adjusting the settings internal to the device.
-        - Router: Provides connection to disparate networks (i.e., subnets)
-        - Proxy and Firewalls: Can be positioned between network segments to control and manage traffic
-   - Virtual Routing and Forwarding: facilitates the co-existence of multiple routing table instances on a router simultenously
-   - Virtual Domain: Network segments/chunks created through logical segmentation techniques like VRFs. In the VRF context, they are called VRF domains. Virtual domains (often referred to as virtual contexts or virtual systems) allow for the creation of separate, isolated security domains within a single firewall or security device.
+- 📁**Network Segmentation**: Benefits include boosting performance where system that need to communicate are located in the same segment. It reduces communication problems such as broadcast storms to individual segments, and improves security by isolating traffic to segments
+     - 🐝Intranet: Data traffic that moves between a data center and external networks or clients.
+     - 🐝Extranet: A controlled private network allowing access to partners, vendors, or clients. This section of the network has been sectioned off to act as as an intranet for the private network but also to serve information to the public internet. A cross between the internet and the intranet.
+     - 🐝DMZ: A buffer zone between the internal network and the external network, hosting public-facing services. An extranet for public consumption. Typically labelled perimeter network. DMZ is a specific implementation with a focus on isolating external-facing services from the internal network.
+     - 🐝Screened subnet: is a type of security zone that can be positioned so that it operates as a buffer network between the secured private network and the internet and can host publicly accessible services. It is often placed between an internal network and an external network and can be seen as a specific type of DMZ.
+ - 📁**Physical Segmentation**:
+      - 🎤Out-of-Band: physically seperating networks into distinct zones using hardware. It is an alternate communication path for different types of traffic.
+      - 🎤Air Gap: Complete physical isolation of a network by having no wired or wireless communications. Common in high security government networks or critical infrastructures e.g industrial systems and public utilities.
+ - 📁**Logical Segmentation**:
+     - 🍊In-Band: seperate networks by configuring routers, switches, firewalls to control traffic flow e.g subnets, VLANs
+          - 😈Switches: switch is a networking device that can be used to create 🔥digital virtual network segments (i.e., VLANs) that can be altered as needed by adjusting the settings internal to the device.
+          - 😈Router: Provides connection to disparate networks (i.e., subnets)
+          - 😈Proxy and Firewalls: Can be positioned between network segments to control and manage traffic
+     - 🍊Virtual Routing and Forwarding: facilitates the co-existence of multiple routing table instances on a router simultenously
+     - 🍊Virtual Domain: Network segments/chunks created through logical segmentation techniques like VRFs. In the VRF context, they are called VRF domains. Virtual domains (often referred to as virtual contexts or virtual systems) allow for the creation of separate, isolated security domains within a single firewall or security device.
 - **Firewall Types**: - 📝IM clients can utilize random port numbers which makes it challenging for firewalls to control.
    - 🍇**Next-­generation firewall (NGFW)** is a unified threat management (UTM) device that is designed to provide advanced security features at the network perimeter and is based on a traditional firewall with numerous other integrated network and security services. It provides a comprehensive range of security features, including perimeter protection, application control, and advanced threat detection.
    - 🍇**Internal Segmentation Firewall (ISFW)** is a security device or technology used to enforce security policies and controls within an internal network, particularly to segment different internal network zones. Unlike traditional firewalls that primarily focus on perimeter security, an ISFW operates within the internal network to create additional layers of security. It focuses on internal network segmentation and access control between internal segments.
@@ -427,8 +433,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     -  Cellular services, such as 4G and 5G, raise numerous security and operational concerns. Although cellular service is encrypted from device to tower, there is a risk of being fooled by a false or rogue tower. A rogue tower could offer only plaintext connections, but even if it supported encrypted transactions, the encryption only applies to the radio transmissions between the device and the tower. Once the communication is on the tower, it will be decrypted, allowing for eavesdropping and content manipulation. Even without a rogue tower, eavesdropping can occur across the cellular carrier’s interior network as well as across the internet, unless a VPN link is established between the remote mobile device and the network of the organization.
     -  Being able to establish a connection can be unreliable as 3G, 4G, and 5G coverage is not 100 percent available everywhere.
 - **Traffic FLows**:
-  - East-West Traffic: Data traffic that moves laterally within a data center, between servers or virtual machines. Involves trusted nodes and networks. Traffic remains withing the internal network or cloud. Access controls, micro-segmentation and isolations policies are used here for security.
-  - North-South Traffic: Data traffic that moves between a data center and external networks or clients. Traffic moves to/from endpoints on internal network to nodes on the public cloud/internet. Involves untrusted nodes. This brings security concerns like data comprise, DDoS attacks, inadequate authentication. 
+     - 📘East-West Traffic: Data traffic that moves laterally within a data center, between servers or virtual machines. Involves trusted nodes and networks. Traffic remains withing the internal network or cloud. Access controls, micro-segmentation and isolations policies are used here for security.
+     - 📘North-South Traffic: Data traffic that moves between a data center and external networks or clients. Traffic moves to/from endpoints on internal network to nodes on the public cloud/internet. Involves untrusted nodes. This brings security concerns like data comprise, DDoS attacks, inadequate authentication. 
 
 - 4.1.9 Content Distribution Networks (CDN)
     - **Content Distribution Network (CDN)**: a collection of resource services deployed in numerous data centers across the internet in order to provide low latency, high performance, and high availability of the hosted content
@@ -554,14 +560,14 @@ The components of a network make up the backbone of the logical infrastructure f
             - security awareness training
             - desktop env should be included in org DR
             - EDR/MDR should be considered
-- **Endpoint detection and response (EDR)** is a security mechanism that is an evolution of traditional antimalware products. EDR seeks to detect, record, evaluate, and respond to suspicious activities and events, which may be caused by problematic software or by valid and invalid users.
+- 📂**Endpoint detection and response (EDR)** is a security mechanism that is an evolution of traditional antimalware products. EDR seeks to detect, record, evaluate, and respond to suspicious activities and events, which may be caused by problematic software or by valid and invalid users.
     - It is a natural extension of continuous monitoring, focusing on both the endpoint device itself and network communications reaching the local interface.
     - Some EDR solutions employ an on-­device analysis engine whereas others report events back to a central analysis server or to a cloud solution.
     - The goal of EDR is to detect abuses that are potentially more advanced than what can be detected by traditional antivirus or HIDSs, while optimizing the response time of incident response, discarding false positives, implementing blocking for advanced threats, and protecting against multiple threats occurring simulta neously and via various threat vectors.
-- **Managed detection and response (MDR)**: focuses on threat detection and mediation but is not limited to the scope of endpoints. MDR is a service that attempts to monitor an IT environment in real-time to quickly detect and resolve threats. Often an MDR solution is a combination and integration of numerous technologies, including SIEM, network traffic analysis (NTA), EDR, and IDS.
-- **Endpoint protection platform (EPP)**: is a variation of EDR much like IPS is a variation of IDS. The focus on EPP is on four main security functions: predict, prevent, detect, and respond. Thus, EPP is the more active prevent and predict variation of the more passive EDR concept.
-- **Extended detection and response (XDR)**: components often include EDR, MDR, and EPP elements. Also, XDR is not solely focused on endpoints, but often includes NTA, NIDS, and NIPS functions as well. Managed security service provider (MSSP) can provide XDR solutions that are centrally controlled and managed.
-- **Managed security service provider MSSP**: solutions can be deployed fully on-premise, fully in the cloud, or as a hybrid structure, and can be overseen through a SOC which is itself local or remote. Typically, working with an MSSP to provide EDR, MDR, EPP, or XDR services can allow an organization to gain the benefits of these advanced security products and leverage the experience and expertise of the MSSP's staff of security management and response professionals. MDR combines antimalware capabilities with a managed service that reduces the burden on the IT team.
+- 📂**Managed detection and response (MDR)**: focuses on threat detection and mediation but is not limited to the scope of endpoints. MDR is a service that attempts to monitor an IT environment in real-time to quickly detect and resolve threats. Often an MDR solution is a combination and integration of numerous technologies, including SIEM, network traffic analysis (NTA), EDR, and IDS.
+- 📂**Endpoint protection platform (EPP)**: is a variation of EDR much like IPS is a variation of IDS. The focus on EPP is on four main security functions: predict, prevent, detect, and respond. Thus, EPP is the more active prevent and predict variation of the more passive EDR concept.
+- 📂**Extended detection and response (XDR)**: components often include EDR, MDR, and EPP elements. Also, XDR is not solely focused on endpoints, but often includes NTA, NIDS, and NIPS functions as well. Managed security service provider (MSSP) can provide XDR solutions that are centrally controlled and managed.
+- 📂**Managed security service provider MSSP**: solutions can be deployed fully on-premise, fully in the cloud, or as a hybrid structure, and can be overseen through a SOC which is itself local or remote. Typically, working with an MSSP to provide EDR, MDR, EPP, or XDR services can allow an organization to gain the benefits of these advanced security products and leverage the experience and expertise of the MSSP's staff of security management and response professionals. MDR combines antimalware capabilities with a managed service that reduces the burden on the IT team.
 
 [4.3](#4.3) Implement secure communication channels according to design ((OSG-9 Chpt 12))
 - Protocols that provide security services for application-specific communication channels are called secure communication protocols
@@ -573,37 +579,39 @@ The components of a network make up the backbone of the logical infrastructure f
          - 🍉RTP is used for the actual transmission of media streams (like audio and video) once the session has been established. After the SIP protocol has established a VoIP call, RTP is used to carry the audio data between the caller and receiver during the call.
     - Web-based voice apps can be more difficult to manage, causing additional unplanned bandwidth consumption
     - VoIP is at risk for 📝caller ID spoofing, 📝vishing, call manager 📝software/firmware attacks, phone 📝hardware attacks, 📝DoS, 📝MitM/on-path attacks, 📝spoofing, and 📝switch hopping.
-    - Call managers and VoIP phones can be thought of as servers or appliances and embedded or network devices. That means that the most likely threats that they will face are denial-of-service (DoS) attacks and attacks against the host operating system.
-    - Phreaking is a specific type of attack in which various types of technology are used to circumvent the telephone system to make free long-distance calls, to alter the function of telephone service, to steal specialized services, or to cause service disruptions. A phreaker is an attacker who performs phreaking. 
-    - Vishing: Anyone who can receive a call, whether using a traditional PSTN landline, a PBX business line, a mobile phone, or a VoIP solution, can be the target of a VoIP-originated voice-based social engineering attack. This type of attack is known as voice-based phishing.
+        - 💰DOS: Call managers and VoIP phones can be thought of as servers or appliances and embedded or network devices. That means that the most likely threats that they will face are denial-of-service (DoS) attacks and attacks against the host operating system.
+        - 💰Phreaking is a specific type of attack in which various types of technology are used to circumvent the telephone system to make free long-distance calls, to alter the function of telephone service, to steal specialized services, or to cause service disruptions. A phreaker is an attacker who performs phreaking.
+        - 💰Vishing: Anyone who can receive a call, whether using a traditional PSTN landline, a PBX business line, a mobile phone, or a VoIP solution, can be the target of a VoIP-originated voice-based social engineering attack. This type of attack is known as voice-based phishing.
+        - 💰Caller ID falsification: This refers to the practice of altering or spoofing the Caller ID information that is displayed to the recipient of a phone call. This can be used to disguise the caller's true identity or to mislead the recipient.
+        - 💰Remote dialing:  It can refer to the use of remote dialing features to place calls from a distance, such as using a phone system's remote access codes. Remote dialing, especially if not properly secured, can be a vector for unauthorized access or abuse. Remote dialing is a VoIP PBX concern.
     -  Countermeasures must be deployed to protect against interception, eavesdropping, tapping, and other types of exploitation.
     -   Countermeasures to PBX fraud and abuse include Changing default passwords on PBX systems and it provides the most effective increase in security since PBX systems typically ⛔do not support encryption, although some VoIP PBX systems may support encryption in specific conditions.
-    -   PBX and PSTN voice communications are vulnerable to interception, eavesdropping, tapping, and other exploitations. Often, physical security is required to maintain control over voice communications within the confines of your organization’s physical locations.
+    -   PBX and PSTN voice communications are vulnerable to 🔏interception, 🔏eavesdropping, 🔏tapping, and other exploitations. Often, physical security is required to maintain control over voice communications within the confines of your organization’s physical locations.
     -   Many PBX systems can be exploited by malicious individuals to avoid toll charges and hide their identity. Phreakers may be able to gain unauthorized access to personal voice mailboxes, redirect messages, block access, and redirect inbound and outbound calls.
-    -   Countermeasures to PBX fraud include:
-        - Consider replacing remote access or long-distance calling through the PBX with a credit card or calling card system.
-        - Restrict dial-in and dial-out features to authorized individuals who require such functionality for their work tasks.
-        - If you still have dial-in modems, use unpublished phone numbers that are outside the prefix block range of your voice numbers.
-        - Protect administrative interfaces for the PBX.
-        - Block or disable any unassigned access codes or accounts.
-        - Define an acceptable use policy and train users on how to properly use the system.
-        - Log and audit all activities on the PBX and review the audit trails for security and use violations.
-        - Disable maintenance modems (i.e., remote access modems used by the vendor to remotely manage, update, and tune a deployed product) and/or any form of remote administrative access.
-        - Change all default configurations, especially passwords and capabilities related to administrative or privileged features.
-        - Block remote dialing.
-        - Keep the system current with vendor/service provider updates.
-        - Deploy direct inward system access (DISA) technologies to reduce PBX fraud by external parties. Direct inward system access (DISA), like any other security feature, must be properly installed, configured, and monitored in order to obtain the desired security improvement. DISA adds authentication requirements to all external connections to the PBX. 
-    -   Securing VoIP communications often involves specific application of many common security concepts:
-        - Use strong passwords and two-factor authentication.
-        - Record call logs and inspect for unusual activity.
-        -  consider the use of a dedicated VLAN for VoIP devices to help separate them from other networked devices
-        - Block international calling.
-        - Outsource VoIP to a trusted SaaS.
-        - Update VoIP equipment firmware.
-        - Restrict physical access to VoIP-related networking equipment.
-        - Train users on VoIP security best practices.
-        - Prevent ghost or phantom calls on IP phones by blocking nonexistent or invalid-origin numbers.
-        - Implement NIPS with VoIP evaluation features.
+    - 💙Countermeasures to PBX fraud include:
+        - 🎶Consider replacing remote access or long-distance calling through the PBX with a credit card or calling card system.
+        - 🎶Restrict dial-in and dial-out features to authorized individuals who require such functionality for their work tasks.
+        - 🎶If you still have dial-in modems, use unpublished phone numbers that are outside the prefix block range of your voice numbers.
+        - 🎶Protect administrative interfaces for the PBX.
+        - 🎶Block or disable any unassigned access codes or accounts.
+        - 🎶Define an acceptable use policy and train users on how to properly use the system.
+        - 🎶Log and audit all activities on the PBX and review the audit trails for security and use violations.
+        - 🎶Disable maintenance modems (i.e., remote access modems used by the vendor to remotely manage, update, and tune a deployed product) and/or any form of remote administrative access.
+        - 🎶Change all default configurations, especially passwords and capabilities related to administrative or privileged features.
+        - 🎶Block remote dialing.
+        - 🎶Keep the system current with vendor/service provider updates.
+        - 🎶Deploy direct inward system access (DISA) technologies to reduce PBX fraud by external parties. Direct inward system access (DISA), like any other security feature, must be properly installed, configured, and monitored in order to obtain the desired security improvement. DISA adds authentication requirements to all external connections to the PBX. 
+    -  💙Securing VoIP communications often involves specific application of many common security concepts:
+        - 🎽Use strong passwords and two-factor authentication.
+        - 🎽Record call logs and inspect for unusual activity.
+        - 🎽consider the use of a dedicated VLAN for VoIP devices to help separate them from other networked devices
+        - 🎽Block international calling.
+        - 🎽Outsource VoIP to a trusted SaaS.
+        - 🎽Update VoIP equipment firmware.
+        - 🎽Restrict physical access to VoIP-related networking equipment.
+        - 🎽Train users on VoIP security best practices.
+        - 🎽Prevent ghost or phantom calls on IP phones by blocking nonexistent or invalid-origin numbers.
+        - 🎽Implement NIPS with VoIP evaluation features.
 
 - **Switching Technologies**
 
@@ -630,6 +638,11 @@ The components of a network make up the backbone of the logical infrastructure f
 - 4.3.2 Multimedia collaboration
     - There are a variety of new technologies that allow instant organizational collaboration, including smartboards, and products that enhance on-site, hybrid, or virutal meetings
     - Mobile communication apps are a huge market, and will continue to grow, increasing the complexity of mobile security
+    - Most questions that relate to the security of the multimedia collaboration product would be relevant to supporting business objectives. This includes the following questions:
+         - 🗞️Does the communication occur across an open protocol or an encrypted tunnel?
+         - 🗞️Does the service use strong authentication techniques? Are activities of users audited and logged?
+         - 🗞️What tracking mechanisms are used, can the tracking be disabled?
+         - 🗞️What is the data collected for? 
 - 4.3.3 Remote access
     - 4 main types of remote access:
         - 🥑**service specific**: gives users the ability to remotely connect to and manipulate or interact with a single service (e.g. email)
@@ -689,6 +702,7 @@ The components of a network make up the backbone of the logical infrastructure f
          - Verify the delivery of messages
          - Classify sensitive content within or attached to messages
          - Essential email concepts, which local systems can enforce and protect, include nonrepudiation, message integrity, and access restrictions.
+         - 📝Mail-bombing is the use of email as an attack mechanism by flooding a system with messages, causing a denial of service. 
      - ❄️**Secure Multipurpose Internet Mail Extensions (S/MIME)**  offers authentication and confidentiality to email through public key encryption, digital envelopes, and digital signatures.
          - Authentication is provided through X.509 digital certificates issued by trusted third-party CAs.
          - Privacy is provided through the use of Public Key Cryptography Standard (PKCS) standards-compliant encryption.
