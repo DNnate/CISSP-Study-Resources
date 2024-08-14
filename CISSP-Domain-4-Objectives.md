@@ -866,8 +866,11 @@ Synchronous Digital Hierarchy (SDH) and Synchronous Optical Network (SONET) are 
          - 📝Replay Attacks are where the attacker stole an authentication token and used it to impersonate the user
 - **PRIVATE IP**: These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
     - 10.0.0.0–10.255.255.255 (a full Class A range)./8
+        - Example: 10.0.0.1 in binary: 00001010.00000000.00000000.00000001 
     - 172.16.0.0–172.31.255.255 (16 Class B ranges)./12
+        - Example: 172.16.0.1 in binary: 10101100.00010000.00000000.00000001 
     - 192.168.0.0–192.168.255.255 (256 Class C ranges)./16
+        - Example: 192.168.1.1 in binary: 11000000.10101000.00000001.00000001
 - **Centralized Remote Authentication Services**
     - RADIUS: Users pass login credentials to a RADIUS server for authentication. By default, RADIUS uses UDP and only encrypts passwords. RADIUS supports TCP and TLS, but this is not a default setting.
     - Diameter: is essentially the successor to RADIUS. One significant improvement Diameter provides is added reliability. Diameter is often used in prepaid and credit-­based usage models in mobile device services, and similar applications.
