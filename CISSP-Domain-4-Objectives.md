@@ -11,8 +11,8 @@ Networking can be one of the more complex exam topics; if you have a networking 
 - **Bound networks**: AKA wired/Ethernet networks, where devices are connected by physical cables
 - **Boundary routers**: they advertise routes that external hosts can use to reach internal hosts
 - **Bridge**: device that aggregates separate network segments into a single network segment, operating at OSI layer 2
-- **CSMA/CA**: Carrier Sense Multiple Access with Collission Avoidance is a method of network flow control. 802.11 📝wireless networking is an example of a network that employs CSMA/CA technologies. CSMA/CA attempts to avoid collisions by granting only a single permission to communicate at any given time.
-- **CSMA/CD**: Carrier Sense Multiple Access with Colliion Detection is a method of network flow control, where if > 1 station accesses the network at the same time, other stations detect and re-try their transmission. 📝Ethernet networks employ the CSMA/CD technology. CSMA/CD responds to collisions by having each member of the collision domain wait for a short but random period of time before starting the process over.
+- **CSMA/CA**: Carrier Sense Multiple Access with Collission Avoidance is a method of network flow control. 802.11 📝wireless networking is an example of a network that employs CSMA/CA technologies. CSMA/CA attempts to avoid collisions by granting only a single permission to communicate at any given time. IEEE 802.11 wireless networks use Carrier-Sense Multiple Access with Collision Avoidance (CSMA/CA) to manage (technically avoid) collisions.
+- **CSMA/CD**: Carrier Sense Multiple Access with Colliion Detection is a method of network flow control, where if > 1 station accesses the network at the same time, other stations detect and re-try their transmission. 📝Ethernet networks employ the CSMA/CD technology. CSMA/CD responds to collisions by having each member of the collision domain wait for a short but random period of time before starting the process over. Ethernet (IEEE 802.3) uses Carrier-Sense Multiple Access with Collision Detection (CSMA/CD). 
      - A collision domain is the set of systems that could cause a collision if they transmitted at the same time. Systems outside a collision domain cannot cause a collision if they send at the same time. This is important, as the number of systems in a collision domain increases the likelihood of network congestion due to an increase in collisions.
      - A broadcast domain is the set of systems that can receive a broadcast from each other.
 - **Circuit-switched network**: network that uses a dedicated circuit between endpoints
@@ -226,6 +226,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - ❄️**IPSec**: an IETF standard suite of protocols that is used to connect nodes (e.g. computers or office locations) together
         - widely used in virtual private networks (VPNs)
         - IPSec provides encryption, authentication and data integrity
+        - IPsec is a security protocol that automatically performs 📝reauthentication of the client system throughout the connected session in order to detect session hijacking.
 
 - 4.1.4 Implications of multilayer protocols
     - TCP/IP is a multilayer protocol, and derives several associated benefits
