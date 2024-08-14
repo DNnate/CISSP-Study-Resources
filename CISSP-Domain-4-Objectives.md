@@ -24,6 +24,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
 - **North/South traffic**: in SDN terms, data flowing up (northbound) and down (southbound) the stack of data/control/application planes; data flowing from the organization to external distinations (northbound), or into the org from external sources (southbound). North-south traffic is the traffic flow that occurs inbound or outbound between internal systems and external systems.
 - **Converged protocol**: combines/converges standard protcols (such as TCP/IP) with proprietary/non-standard ones; they can complicate enterprise-wide security engineering efforts requiring specialist knowledge. eg Fibre Channel over Ethernet (FCoE), Internet Small Computer Systems Interface (iSCSI), and Voice over Internet Protocol (VoIP) are all examples of converged protocols that combine specialized protocols with standard protocols like TCP/IP.
 - **DNS**: Domain Name Service is three in interrelated elements: a service, a physical server, and a network protocol
+    - DNS Cache Poisoning involves corrupting the DNS cache of a DNS resolver or server. The DNS cache stores recent DNS query results to improve performance and reduce lookup times. An attacker manipulates this cache to insert false DNS records, causing users to be redirected to incorrect or malicious IP addresses. 
 - **DHCP**: Dynamic Host Configuration Protocol is an industry standard used to dynamically assign IP addresses to network devices
 - **Ports 1024-4951**: registered ports used with non-system applications associated with vendors and devs
 - **Ports 49152-65535**: dynamic ports (AKA private or non-reserved ports) used as temporary ports, often in association when a service is requested via a well-known port
@@ -285,6 +286,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - **Virtual extensible local area network (VXLAN)**:
         - an encapsulation protocol that enables VLANs to be stretched across subnets and geographic distances
         - VLANs allow network admins to use switches to create software-based LAN segments that can be defined based on factors other than physical location
+        - VXLAN is an encapsulation protocol that enables switch-created network segments (i.e., VLANs) to be stretched across subnets and geographic distances.
         - Typically restricted to layer 2
         - VXLAN tunnels layer 2 connections over a layer 3 network, in essence extending a LAN over distances or networks that it might not otherwise function over.
         - Allows up to 16 million virtual networks (VLAN limit is 4096)
@@ -296,6 +298,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - The network uses predefined rules to optimize performance.
         - The network conducts continuous monitoring to support better performance.
         - The network uses self-learning techniques to respond to changes in the network.
+        - SDN offers a new network design that is directly programmable from a central location, flexible, vendor neutral, and open standards based. 
     - **Transport Architecture**:
      - ✈️Management Plane: The management plane is responsible for network administration tasks. It handles configuration, monitoring, security management, and policy enforcement. E.g SNMP, SSH, NETCONF
      - ✈️Control Plane: is responsible for making decisions and determine optimal paths about where and how data packets should be forwarded. It manages routing, signaling, and network topology. E.g routing protocols like OSPF, BGP
@@ -334,7 +337,10 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - 🎈Ad hoc mode: Directly connects two clients.
         - 🎈Standalone Mode: Ad hoc mode can be easy to confuse this with standalone mode, which connects clients using a wireless access point but not to wired resources like a central network.
         - 🎈Infrastructure mode connects endpoints to a central network, not directly to each other.
-        - 🎈Wired extension mode uses a wireless access point to link wireless clients to a wired network.
+        - 🎈Wired extension mode uses a wireless access point to link wireless clients to a wired network. A wired extension is often a single WAP.
+        - 🎈Enterprise extended infrastructure mode exists when a wireless network is designed to support a large physical environment through the use of a single SSID but numerous access points. An enterprise extension is often used as an extension to a wired network and requires only a single logon event for each connected session for workers no matter where in the building they are located.
+        - 🎈A wireless bridge is used to connect to moderate distant networks together using two bridge access points.
+
         - 📘**Wired Equivalent Privacy (WEP)**:
             - WEP is defined by the original IEEE 802.11 standard
             - WEP uses a predefined shared Rivest Cipher 4 (RC4) secret key for both authentication (SKA) and encryption
@@ -500,7 +506,7 @@ The components of a network make up the backbone of the logical infrastructure f
             - 🥑Single-mode is typically used for long-distance communication, over several kilometers or miles
             - 🥑Multi-mode fiber is typically used for faster transmission, but with a distance limit depending on the desired speed
             - Fiber is most often used in the datacenter for backend components
-            - it resistant to electromagnetic interference (EMI)
+            - it is not affected by electromagnetic interference (EMI)
 
         | Category | Throughput | Notes |
         |----------|------------|--------|
