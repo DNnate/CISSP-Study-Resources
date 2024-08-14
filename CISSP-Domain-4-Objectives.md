@@ -261,7 +261,9 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 
 - 4.1.6 Micro-segmentation:
 - **Micro-Segmentation**: involves creating fine-grained, policy-driven segments that can isolate individual workloads or devices. It takes the concept of logical segmentation to a more granular level. The small segments contain specific workload or functionally similar or identical nodes. It limits scope of breach and lateral movement. Cisco Trsutsec is an example of Micro segmentation.
-- Microsegmentation can be implemented using internal segmentation firewalls (ISFWs), transactions between zones are filtered, and it can be implemented with virtual systems and virtual networks. (e.g., Software Defined Networks (SDN), Virtual eXtensible Local Area Network (VXLAN),Encapsulation, Software-Defined Wide Area Network (SD-WAN))
+     - Microsegmentation can be implemented using internal segmentation firewalls (ISFWs),
+     - transactions between zones are filtered, and
+     - it can be implemented with virtual systems and virtual networks. (e.g., Software Defined Networks (SDN), Virtual eXtensible Local Area Network (VXLAN),Encapsulation, Software-Defined Wide Area Network (SD-WAN))
     - **Software-defined networks (SDN)**:
         - SDN is a broad range of techniques enabling network management, routing, forwarding, and control functions to be directed by software
         - SDN is effectively network virtualization, and separates the infrastructure layer (aka the data or forwarding plane) - hardware and hardware-based settings, from the control layer - network services of data transmission management
@@ -349,6 +351,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         | 802.11ax   | Wi-Fi 6/Wi-Fi 6E     |9.5 Gbps |1-5(6)GHz  |
 
         - 📘**Wi-Fi Protected Access 3 (WPA3)**: WPA3-ENT uses 192-bit AES CCMP encryption, and WPA3-PER remains at 128-bit AES CCMP.
+             - WPA3 supports ENT (Enterprise Wi-Fi authentication, aka IEEE 802.1X) and SAE authentication. Simultaneous authentication of equals (SAE) still uses a password, but it no longer encrypts and sends that password across the connection to perform authentication. Instead, SAE performs a zero-knowledge proof process known as Dragonfly Key Exchange, which is itself a derivative of Diffie–Hellman.
              - WPA3-PER replaces the preshared key authentication with Simultaneous Authentication of Equals (SAE).
              - WPA3's new SAE (simultaneous authentication of equals) mode improves on WPA2's PSK mode by allowing for secure authentication between clients and the wireless network without enterprise user accounts.
              - Simultaneous Authentication of Equals (SAE) was introduced with WPA3 as an alternative to preshared keys.
@@ -768,7 +771,12 @@ uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km 
 Synchronous Digital Hierarchy (SDH) and Synchronous Optical Network (SONET) are fiber-optic high-speed networking standards. SDH was standardized by the International Telecommunications Union (ITU) and SONET by the American National Standards Institute (ANSI). SDH and SONET are mostly hardware or physical layer standards defining infrastructure and line speed requirements. SDH and SONET use synchronous time-division multiplexing (TDM) to high-speed duplex communications with minimal need for control and management overhead.
 
 - **Common VPN Protocols**: VPNs can be implemented using software or hardware solutions. In either case, there are several common VPN protocols: PPTP, L2TP, L2F (Cisco), SSH, OpenVPN (i.e., TLS), and IPsec.
-    - ⚒️**TLS**:  TLS is also used for an increasingly large percentage of VPN connections and may appear at some point in the CISSP exam.  An HTML-based VPN, often referred to as a web-based VPN, is a type of VPN solution that allows users to securely connect to a private network via a web browser. Instead of installing dedicated VPN client software, users access the VPN through a web interface.  the web-based VPN creates a secure connection between the user’s browser and the VPN server. This connection might use technologies like WebVPN or SSL/TLS
+    - ⚒️**TLS**:  TLS is also used for an increasingly large percentage of VPN connections and may appear at some point in the CISSP exam.
+        - An HTML-based VPN, often referred to as a web-based VPN, is a type of VPN solution that allows users to securely connect to a private network via a web browser. Instead of installing dedicated VPN client software, users access the VPN through a web interface.  the web-based VPN creates a secure connection between the user’s browser and the VPN server. This connection might use technologies like WebVPN or SSL/TLS.
+        - TLS allows for use of TCP port 443;
+        - prevents tampering, spoofing, and eavesdropping; and can be used as a VPN solution.
+        - TLS supports both one-way and two-way authentication.
+        - TLS and SSL are not interoperable or backward compatible.
     - ⚒️**Point-to-Point Tunneling Protocol (PPTP)**: is an obsolete encapsulation protocol developed from the dial-up Point-to-Point Protocol.
         - It operates at the Data Link layer (layer 2) of the OSI model and is used on IP networks.
         - PPTP uses TCP port 1723.
