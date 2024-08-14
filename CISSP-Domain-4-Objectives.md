@@ -534,17 +534,17 @@ The components of a network make up the backbone of the logical infrastructure f
     - NAC can be implemented with a preadmission or postadmission philosophy:
         - 🍮**pre-admission philosohpy**: requires a system to meet all current security requirements (such as patch application and malware scanner updates) before it is allowed to communicate with the network. A pre-admit, client-based NAC system will test systems before they are allowed on the network using a client that can determine more about a system than a clientless model can.
         - 🍮**post-admission philosophy**: allows and denies access based on user activity after connection, which is based on a predefined authorization matrix. It doesn't check the status of a machine before it connects.
-    - Agent-based NAC:
-        - installed on each management system, checks config files regularly, and can quarantine for non-compliance
-        - dissolvable: usually written in a web/mobile language and is executed on each local machine when the specific management web page is accessed (such as captive portal)
-        - permanent: installed on the monitored system as a persistent background service
+    - ✴️Agentless NAC: An agentless NAC performs port scans, service queries, and vulnerability scans against networked systems to determine whether devices are authorized and baseline compliant. 
+    - ✴️Agent-based NAC: installed on each management system, checks config files regularly, and can quarantine for non-compliance. Agent-based NACs can quarantine noncompliant devices and implement updates automatically.
+        - 🍈Dissolvable: usually written in a web/mobile language and is executed on each local machine when the specific management web page is accessed (such as captive portal). A dissolvable NAC agent can be set to run once and then terminate.
+        - 🍈Permanent: installed on the monitored system as a persistent background service
     - Just as you need to control physical access to equipment and wiring, you need to use logical controls to protect a network; there are a variety of devices that provide this type of protection, including:
-        - stateful and stateless firewalls can perform inspection of the network packets and use rules, signatures and patterns to determine whether the packet should be delivered. Circuit-level firewalls (aka circuit proxies) are used to establish communication sessions between trusted partners. In theory, they operate at the Session layer (layer 5) of the OSI model.
+        - **Stateful and Stateless firewalls** can perform inspection of the network packets and use rules, signatures and patterns to determine whether the packet should be delivered. Circuit-level firewalls (aka circuit proxies) are used to establish communication sessions between trusted partners. In theory, they operate at the Session layer (layer 5) of the OSI model.
             - reasons for dropping a packet could include addresses that don’t exist on the network, ports or addresses that are blocked, or the content of the packet (e.g malicious packets blocked by admin policy)
             - ⚒️Tier 1 Firewall - One protected Zone e.g Internet 
             - ⚒️Tier 2 Firewall - Two Protected Zones e.g Internet and DMZ and so on.
         - IDP devices, which monitor the network for unusual network traffic and MAC or IP address spoofing, and then either alert on or actively stop this type of traffic
-    -**proxy/reverse proxies:**
+        - **Proxy/Reverse proxies:**
             - proxy servers can be used to proxy internet-bound traffic, instead of letting clients talk directly
             - Proxy servers can act to anonymize web requests by hiding their true source IP addresses and removing identifying information. 
             - reverse proxies are often deployed to a perimeter network; they proxy communication from the internet to an internal host, such as a web server
