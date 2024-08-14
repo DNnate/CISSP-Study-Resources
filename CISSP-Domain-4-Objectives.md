@@ -457,6 +457,9 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - 4.1.9 Content Distribution Networks (CDN)
     - **Content Distribution Network (CDN)**: a collection of resource services deployed in numerous data centers across the internet in order to provide low latency, high performance, and high availability of the hosted content
         - CDNs provide multimedia performance quality through the concept of distributed data hosts, geographically distributed, closer to groups of customers
+        - It is true that a CDN is able to maintain customer demand levels of multimedia performance quality,
+        - avoids straining individual servers, and stores data close to customers,
+        - and that a client-based CDN (aka P2P) can support high-speed file exchange (i.e., BitTorrent)
         - Provides geographic and logical load balancing; lower-latency and higher-quality throughput
     - Client-based CDN is often referred to as P2P (peer-to-peer)
     - BitTorrent is an example of a peer-to-peer (P2P) content delivery network. It is commonly used for legitimate purposes to distribute large files like Linux ISOs and other freely distributed software packages and files in addition to its less legitimate uses. CloudFlare, CloudFront, and Akamai's Edge are all hosted CDNs.
