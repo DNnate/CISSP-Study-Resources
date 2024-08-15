@@ -471,7 +471,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - 4.1.12 Edge Networks 
     - Distributed networks that bring compute and storage resources physically closer to end users and devices on the edge of the network.
     - **Ingress/Egress**: Entry point for traffic entering an edge network, usually from an end user device or an external network. Important for security monitoring and traffic shaping.
-    - **Peering**: Direct interconnection between edge network locations to allow traffic exchange without travelling through a central hub. reduces latency and bottle necks which are problems in a hub-and-spoke topology.
+    - **Peering**: Direct interconnection between edge network locations to allow traffic exchange without travelling through a central hub. reduces latency and bottle necks which are problems in a hub-and-spoke topology. Peering allows you to connect directly to a Cloud Service provider's network at a peering location where they provide edge facilities. This can reduce ingress/egress costs as well as provide direct paths to their networks and services.
     - **Caching**: Caching popular contents like video, audio and web pages. Provides better user experience in SaaS subscriber scenarios. eg CDNs.
     - **Compute**: Granular compute functions, containarized, to provide low-latency processing near end users and devices. Also known as Edge Computing. Edge computing is a technology that processes data near the source of data generation, such as IoT devices or local servers, rather than sending it to a central data center or cloud for processing.
     - **Storage**: Multiple edge locations to reduce latency for accessing data and updating data. E.g file servers that are synchronized across location like DFS.
@@ -486,10 +486,10 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - Seperate VPCs can be isolated using public or private networks or segmentation. This concept exists in all major public clouds. It is refered to as VPC in AWS & Google Cloud Platforms. It is referred to as Virtual Networks (VNET) in Azure.
  
 - 4.1.18 Monitoring and Management
-    - Network Observability: Invloves collecting data and gaining visibility into the status and performance of network components and traffic flows. Supports issue identificaton and troubleshooting.
-    - Traffic FLow/Traffic Shapping: Managing and controlling the volume and priorities of different types of traffic. E,g QOS (priority to certain traffic such as real-time traffic), rate limitting (example API limiting to number of API requests that can be made by a single user in a specific period of time), throttling.
-    - Capacity Management: Tracking network utilization and planning capcity expansion to meet future demands.
-    - Fault Detection and Handling: Discovering, diagnosing and responding to problems like failed devices, connectivity losses, performance slow downs. includes alerting and automatic failover. 
+    - **Network Observability:** Invloves collecting data and gaining visibility into the status and performance of network components and traffic flows. Supports issue identificaton and troubleshooting. Observability focuses on the ability to see how an entire system, service, or environment is performing and behaving based on its external outputs. That means that telemetry data—information about what components are doing—is critical and will be gathered using logs, metrics, and real-time analysis. This means that centralizing and aggregating data, enabling alerts for critical errors, and implementing logging using standardized formats are all common practices.
+    - **Traffic FLow/Traffic Shapping:** Managing and controlling the volume and priorities of different types of traffic. E,g QOS (priority to certain traffic such as real-time traffic), rate limitting (example API limiting to number of API requests that can be made by a single user in a specific period of time), throttling.
+    - **Capacity Management:** Tracking network utilization and planning capcity expansion to meet future demands.
+    - **Fault Detection and Handling:** Discovering, diagnosing and responding to problems like failed devices, connectivity losses, performance slow downs. includes alerting and automatic failover. Feedback loops are also important, allowing administrators and others to take action when problems or issues are detected.
 
 [4.2](#4.2) Secure network components (OSG-9 Chpt 11)
 The components of a network make up the backbone of the logical infrastructure for an organization; these components are often critical to day-to-day operations, and an outage or security issue can be very costly
