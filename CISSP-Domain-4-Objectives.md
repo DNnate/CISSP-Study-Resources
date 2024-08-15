@@ -159,12 +159,12 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - The Physical layer includes electrical specifications, protocols, and standards that allow control of throughput, handling line noise, and a variety of other electrical interface and signaling requirements
         - Network hardware devices that function at layer 1 include 📝NICs, 📝hubs, 📝repeaters, 📝concentrators, 📝amplifiers
         - Know four basic network topologies:
-            - 🍌**star**: each individual node on the network is directly connect to a switch/hub/concentrator
-            - 🍌**mesh**: all systems are interconnected; partial mesh can be created by adding multiple NICs or server clustering
-            - 🍌**ring**: closed loop that connects end devices in a continuous ring (all communication travels in a single direction around the ring);
+            - 🍌**star**: each individual node on the network is directly connect to a switch/hub/concentrator. A star topology has a single point of failure at its center device
+            - 🍌**mesh**: all systems are interconnected; partial mesh can be created by adding multiple NICs or server clustering. Mesh topologies provide redundant connections to systems, allowing multiple segment failures without seriously affecting connectivity.
+            - 🍌**ring**: closed loop that connects end devices in a continuous ring (all communication travels in a single direction around the ring); A ring topology is a single point of failure at any location around the cable ring
                 - **Multistation Access Unit** (MSAU or MAU) connects individual devices
                 - used in token ring and FDDI networks
-            - 🍌**bus**: all devices are connected to a single cable (backbone) terminated on both ends
+            - 🍌**bus**: all devices are connected to a single cable (backbone) terminated on both ends. A bus topology has a single point of failure at its central backbone cable.
         - Know commonly used twisted-pair cable categories
         - Know cable types & characteristics
 
@@ -599,6 +599,7 @@ The components of a network make up the backbone of the logical infrastructure f
          - 🍉SIP is primarily used for initiating, maintaining, and terminating real-time communication sessions. It handles the setup and teardown of calls or sessions.  It deals with the signaling aspect of a communication session, including establishing session parameters.
          - 🍉RTP is used for the actual transmission of media streams (like audio and video) once the session has been established. After the SIP protocol has established a VoIP call, RTP is used to carry the audio data between the caller and receiver during the call.
     - Web-based voice apps can be more difficult to manage, causing additional unplanned bandwidth consumption
+    - In most cases, VoIP is only able to be encrypted between 📝compatible VoIP solutions, which is usually only those products provided by the same VoIP vendor, or VoIP endpoints that are from the same VoIP vendor or provider
     - VoIP is at risk for 📝caller ID spoofing, 📝vishing, call manager 📝software/firmware attacks, phone 📝hardware attacks, 📝DoS, 📝MitM/on-path attacks, 📝spoofing, and 📝switch hopping.
         - 💰DOS: Call managers and VoIP phones can be thought of as servers or appliances and embedded or network devices. That means that the most likely threats that they will face are denial-of-service (DoS) attacks and attacks against the host operating system.
         - 💰Phreaking is a specific type of attack in which various types of technology are used to circumvent the telephone system to make free long-distance calls, to alter the function of telephone service, to steal specialized services, or to cause service disruptions. A phreaker is an attacker who performs phreaking.
@@ -646,8 +647,8 @@ The components of a network make up the backbone of the logical infrastructure f
 | Outdated | Modern |
 
 - ❄️**Virtual Circuit**: (also called a communication path) is a logical pathway or circuit created over a packet-switched network between two specific endpoints. Within packet-switching systems are two types of virtual circuits: 
-    - 🍊Permanent virtual circuits (PVCs): A PVC is like a dedicated leased line; the logical circuit 📝always exists and is waiting for the customer to send data. A PVC is a predefined virtual circuit that is always available. The virtual circuit may be closed down when not in use, but it can be instantly reopened whenever needed.  A PVC is like a two-way radio or walkie-talkie. Whenever communication is needed, you press the button and start talking; the radio reopens the predefined frequency automatically (that is, the virtual circuit).
-    - 🍊Switched virtual circuits (SVCs): An SVC has to be 📝created each time it is needed using the best paths currently available before it can be used and then disassembled after the transmission is complete. An SVC is more like a shortwave or ham radio. You must tune the transmitter and receiver to a new frequency every time you want to communicate with someone.
+    - 🍊Permanent virtual circuits (PVCs): A PVC is like a dedicated leased line; the logical circuit 📝always exists and is waiting for the customer to send data. A PVC is a predefined virtual circuit that is always available. The virtual circuit may be closed down when not in use, but it can be instantly reopened whenever needed.  A PVC is like a two-way radio or walkie-talkie. Whenever communication is needed, you press the button and start talking; the radio reopens the predefined frequency automatically (that is, the virtual circuit). A PVC reestablishes a link using the same basic parameters or virtual pathway each time it connects.
+    - 🍊Switched virtual circuits (SVCs): An SVC has to be 📝created each time it is needed using the best paths currently available before it can be used and then disassembled after the transmission is complete. An SVC is more like a shortwave or ham radio. You must tune the transmitter and receiver to a new frequency every time you want to communicate with someone.  SVCs use unique settings, parameters or virtual pathway each time.
     - In either type of virtual circuit, when a data packet enters point A of a virtual circuit connection, that packet is sent directly to point B or the other end of the virtual circuit. However, the actual path of one packet may be different from the path of another packet from the same transmission. In other words, multiple paths may exist between point A and point B as the ends of the virtual circuit, but any packet entering at point A will end up at point B.
 
 - **WAN Technologies**
@@ -670,6 +671,7 @@ The components of a network make up the backbone of the logical infrastructure f
         - 🥑**remote-control**: grants a remote user the ability to fully control another system that is physically distant
         - 🥑**remote node operation**: AKA remote client connecting directly to a LAN
         - 🥑**screen scraping**: refers to 1) remote control, remote access, or remote desktop services or 2) technology that allows an automated tool to interact with a human interface
+    - Remote access include modem, VPN, WAP, thin-client, remote desktop service, and cloud-based desktop solutions
     - VPN (virtual private network) is a traditional remote access technology
     - WAP (wireless access point) - local env treats as remote access
     - VDI (virtual desktop infrastructure) / VMI (virtual mobile interface)
@@ -692,6 +694,7 @@ The components of a network make up the backbone of the logical infrastructure f
     - Corporate networks can be segmented into multiple VLANs to separate different types of resources
     - Communications should be encrypted using TLS or IPSec
 - 4.3.5 Virtualized networks
+    - A virtualized network, or network virtualization, is the combination of hardware and software networking components into a single integrated entity. The resultant system allows for software control over all network functions, management, traffic shaping, address assignment, and so on. A single management console or interface can be used to oversee every aspect of the network, a task requiring physical presence at each hardware component in the past. 
     - Allow adopting things like software-defined networks (SDNs), VLANs, virtual switches, virtual SANs, guest OSs, port isolation etc
     - Many orgs are moving to the cloud, and not continuing to build out local or on-site server infrastructure
         - however, organizations still use hypervisors to virtualize servers and desktops for increased density and reliability
@@ -869,6 +872,7 @@ Synchronous Digital Hierarchy (SDH) and Synchronous Optical Network (SONET) are 
             - nonrepudiation
             - message authentication .
          - 📝Replay Attacks are where the attacker stole an authentication token and used it to impersonate the user
+         - IPsec has always offered native data encryption. Generic Routing Encapsulation (GRE) is a proprietary Cisco tunneling protocol that can be used to establish VPNs. GRE provides encapsulation but not encryption. L2TP does not offer native data encryption, but it can support IPsec's ESP to provide encryption. PPTP did not originally provide native data encryption, but with the adoption of MS-CHAPv2 that feature was added.
 - **PRIVATE IP**: These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
     - 10.0.0.0–10.255.255.255 (a full Class A range)./8
         - Example: 10.0.0.1 in binary: 00001010.00000000.00000000.00000001 
