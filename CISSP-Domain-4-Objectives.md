@@ -267,29 +267,30 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - FCoE typically requires 🧠10 Gbps Ethernet in order to support the Fibre Channel protocol.
             - FCoE used to encapsulate Fibre Channel over Ethernet networks
             - with this technology, FCoE operates at Layer 2, but the Fibre Channel operates as a Network layer (OSI layer 3) protocol, replacing IP as the payload of a standard Ethernet network. So FCoE often relies on an underlying Layer 3 infrastructure (such as IP) to handle network routing and management tasks. 
-        - 🔴**Internet Small Computer Sysetms Interface (iSCSI)**: operating at 🧠Network Layer (OSI layer 3), iSCSI is a network storage standard based on IP, used to enable location-independent file storage, transmission, and retrieval over LAN, WAN, or public internet connections. It encapsulates SCSI commands and responses within TCP/IP packets, which means it operates over IP networks at the transport layer (Layer 4) but leverages the network's Layer 3 capabilities for addressing and routing. iSCSI is a converged protocol that allows location-independent file services over traditional network technologies. It costs less than traditional Fibre Channel.
+        - 🔴**Internet Small Computer Sysetms Interface (iSCSI)**: operating at 🧠Network Layer (OSI layer 3), iSCSI is a network storage standard based on IP, used to enable location-independent file storage, transmission, and retrieval over LAN, WAN, or public internet connections. It encapsulates SCSI commands and responses within TCP/IP packets, which means it operates over IP networks at the transport layer (Layer 4) but leverages the network's Layer 3 capabilities for addressing and routing. iSCSI is a converged protocol that allows location-independent file services over traditional network technologies. It costs less than traditional Fibre Channel. iSCSI is a converged protocol that supports SCSI storage access via Ethernet.
         - 🔴**Multiprotocol Label Switching (MPLS)**: a WAN protocol that operates at both layer 2 and 3 and does label switching; MPLS is a high-throughput/high-performance network technology that directs data across a network based on 🧠short path labels rather than longer network addresses. It requires the first router in the path to determine the full path the packet will travel, removing the need for other routers in the path to make independent determinations. MPLS (Multiprotocol Label Switching) is a high-throughput, high-performance network technology that directs data across a network based on short path labels rather than longer network addresses. It uses encapsulation to handle a wide range of protocols. This technique saves significant time over traditional IP-based routing processes, which can be quite complex.
         - 🔴**Voice over Internet Protocol (VoIP)**: a tunneling mechanism that encapsulates audio, video, and other data into IP packets to support voice calls and multimedia collab
             - VoIP is considered a converged protocol because it combines audio and video encapsulation technology (operating as application layer protocols) with the protocol stack of TCP/IP
         - 🔴**Infini Band Over Ethernet**: a network protocol that allows remote direct memory access (RDMA) over ethernet network. It is a low-latency high throughput networking technology commonly used in high-performance computing (HPC), data centers, and enterprise environments. Supports speeds of up to 🧠200Gbps per link.
-        - 🔴**Compute Express Link (CXL)**: is an open standard interconnect designed to improve communication between CPUs and other high-speed devices such as accelerators, memory expanders, and smart I/O devices. It is used for high-speed, high-capacity CPU-to-Device and CPU-to-Memory connections.
+        - 🔴**Compute Express Link (CXL)**: is an open standard interconnect designed to improve communication between CPUs and other high-speed devices such as accelerators, memory expanders, and smart I/O devices. It is used for high-speed, high-capacity CPU-to-Device and CPU-to-Memory connections. CXL is Compute Express Link, often used to interconnect memory, CPUs, and accelerators. 
 
 - 4.1.6 Micro-segmentation:
-- **Micro-Segmentation**: involves creating fine-grained, policy-driven segments that can isolate individual workloads or devices. It takes the concept of logical segmentation to a more granular level. The small segments contain specific workload or functionally similar or identical nodes. It limits scope of breach and lateral movement. Cisco Trsutsec is an example of Micro segmentation.
+- 📁**Micro-Segmentation**: involves creating fine-grained, policy-driven segments that can isolate individual workloads or devices. It takes the concept of logical segmentation to a more granular level. The small segments contain specific workload or functionally similar or identical nodes. It limits scope of breach and lateral movement. Micro-segmentation is used to logically separate systems and services by defining boundaries between them. This is often part of a zero trust architecture including the use of on-demand access to services. Cisco Trsutsec is an example of Micro segmentation.
      - Microsegmentation can be implemented using internal segmentation firewalls (ISFWs),
      - transactions between zones are filtered, and
      - it can be implemented with virtual systems and virtual networks. (e.g., Software Defined Networks (SDN), Virtual eXtensible Local Area Network (VXLAN),Encapsulation, Software-Defined Wide Area Network (SD-WAN))
-    - **Software-defined networks (SDN)**:
+    - ❄️**Software-defined networks (SDN)**:
         - SDN is a broad range of techniques enabling network management, routing, forwarding, and control functions to be directed by software
         - SDN is effectively network virtualization, and separates the infrastructure layer (aka the data or forwarding plane) - hardware and hardware-based settings, from the control layer - network services of data transmission management
-        - Software-defined networking (SDN) is a converged protocol that allows virtualization concepts and practices to be applied to networks. 
+        - Software-defined networking (SDN) is a converged protocol that allows virtualization concepts and practices to be applied to networks.
+        - Software-defined networking (SDN) uses code to configure and control the network. This allows for agile, programmatic control and configuration as needed from a central control point. ❗SD-WAN provides the same sort of control for wide area network links
         - SDN introduces a centralized controller that manages the network infrastructure and allows for dynamic and programmable network configurations. While SDN offers advantages in terms of flexibility and automation, it also 🧠expands the attack surface of the network. With SDN, there is a single point of control that, if compromised, can have a significant impact on the entire network.
             - NOTE: the 👘**control plane**: uses protocols to decide where to send traffic, The control plane receives instructions and sends them to the network. The 👘**data plane**: includes rules that decide whether traffic will be forwarded. The 👘**application plane** of a software-defined network (SDN) is where applications run that use application programming interfaces (APIs) to communicate with the SDN about needed resources.
         - typically ABAC-based. A software-defined network (SDN) typically uses an attribute-based access control (ABAC) model. 
         - an SDN solution provides the option to handle traffic routing using simpler network devices that accept instructions from the SDN controller
         - SDN offers a network design that is directly programmable from a central location, is flexible, vendor neutral, and based on open standards
         - Allows org to mix/match hardware
-    - **Virtual extensible local area network (VXLAN)**:
+    - ❄️**Virtual extensible local area network (VXLAN)**:
         - an encapsulation protocol that enables VLANs to be stretched across subnets and geographic distances
         - VLANs allow network admins to use switches to create software-based LAN segments that can be defined based on factors other than physical location
         - VXLAN is an encapsulation protocol that enables switch-created network segments (i.e., VLANs) to be stretched across subnets and geographic distances.
@@ -298,9 +299,9 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Allows up to 16 million virtual networks (VLAN limit is 4096)
         - VXLAN can be used as a means to implement microsegmentation without limiting segments to local entities only
         - Defined in RFC 7348
-    - **Encapsulation:**
+    - ❄️**Encapsulation:**
         - the OSI model represents a protocol stack, or a layered collection of multiple protocols, and communication between protocol layers occurs via encapsulation and deencapsulation (defined above)
-    - **Software-defined wide area network (SD-WAN)**: an evolution of SDN that can be used to manage the connectivity and control services between distant data centers, remote locations, and cloud services over WAN links; put another way, SDN-WAN is an extension of SDN practices to connect entities spread across the internet, supporing WAN architecture; espcially related to cloud migration
+    - ❄️**Software-defined wide area network (SD-WAN)**: an evolution of SDN that can be used to manage the connectivity and control services between distant data centers, remote locations, and cloud services over WAN links; put another way, SDN-WAN is an extension of SDN practices to connect entities spread across the internet, supporing WAN architecture; espcially related to cloud migration
         - The network uses predefined rules to optimize performance.
         - The network conducts continuous monitoring to support better performance.
         - The network uses self-learning techniques to respond to changes in the network.
@@ -329,7 +330,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
           - 😈Router: Provides connection to disparate networks (i.e., subnets)
           - 😈Proxy and Firewalls: Can be positioned between network segments to control and manage traffic
      - 🍊Virtual Routing and Forwarding: facilitates the co-existence of multiple routing table instances on a router simultenously
-     - 🍊Virtual Domain: Network segments/chunks created through logical segmentation techniques like VRFs. In the VRF context, they are called VRF domains. Virtual domains (often referred to as virtual contexts or virtual systems) allow for the creation of separate, isolated security domains within a single firewall or security device.
+     - 🍊Virtual Domain VDOM: Network segments/chunks created through logical segmentation techniques like VRFs. In the VRF context, they are called VRF domains. Virtual domains (often referred to as virtual contexts or virtual systems) allow for the creation of separate, isolated security domains within a single firewall or security device. VDOMs are instances of firewalls, each with their own interfaces and rulesets allowing granular configurations based on security requirements. VDOMs are commonly used to accommodate different purposes, customers, or other needs where separately managed firewall instances are desirable.
 - **Firewall Types**: - 📝IM clients can utilize random port numbers which makes it challenging for firewalls to control.
    - 🍇**Next-­generation firewall (NGFW)** is a unified threat management (UTM) device that is designed to provide advanced security features at the network perimeter and is based on a traditional firewall with numerous other integrated network and security services. It provides a comprehensive range of security features, including perimeter protection, application control, and advanced threat detection.
    - 🍇**Internal Segmentation Firewall (ISFW)** is a security device or technology used to enforce security policies and controls within an internal network, particularly to segment different internal network zones. Unlike traditional firewalls that primarily focus on perimeter security, an ISFW operates within the internal network to create additional layers of security. It focuses on internal network segmentation and access control between internal segments.
@@ -374,7 +375,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         | 802.11b   |  Wi-Fi 1    | 11 Mbps |2.4 GHz              |
         | 802.11g   |  Wi-Fi 3    | 54 Mbps |2.4 GHz              |
         | 802.11n   |  Wi-Fi 4    | 200+ Mbps |2.4GHz or 5 GHz    |
-        | 802.11ac   | Wi-Fi 5    | 1 Gbps  |5 GHz                |
+        | 802.11ac   | Wi-Fi 5    |1-5.9Gbps  |5 GHz              |
         | 802.11ax   | Wi-Fi 6/Wi-Fi 6E     |9.5 Gbps |1-5(6)GHz  |
 
         - 📘**Wi-Fi Protected Access 3 (WPA3)**: WPA3-ENT uses 192-bit AES CCMP encryption, and WPA3-PER remains at 128-bit AES CCMP.
