@@ -483,6 +483,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - 4.1.17 Virtual Private Cloud (VPC)
     - Virtual networks, public and private subnets, segmentation and API inspection and integration are important elements of cloud security.
     - VPC is a virtual network that consists of cloud resources, where the VM of one company is isolated from the resources of another company.
+    - A VPC, or virtual private cloud, is the environment many organizations operate inside of public clouds. They provide on-demand access to configurable, shared resources operated by the cloud provider inside of their isolated boundaries.
     - Seperate VPCs can be isolated using public or private networks or segmentation. This concept exists in all major public clouds. It is refered to as VPC in AWS & Google Cloud Platforms. It is referred to as Virtual Networks (VNET) in Azure.
  
 - 4.1.18 Monitoring and Management
