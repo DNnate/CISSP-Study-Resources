@@ -44,13 +44,14 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
      
    
 [5.2](#5.2) Manage identification and authentication of people, devices, and services (OSG-9 Chpt 13)
-- **Identification**: the process of a subject claiming, or professing an identity
+- **Identification**: the process of a subject claiming, or professing an identity. 
 - **Authentication**: verifies the subject’s identity by comparing one or more factors against a database of valid identities, such as user accounts
     - a core principle with authentication is that all subjects must have unique identities
     - identification and authentication occur together as a single two-step process
     - users identify themselves with usernames and authenticate (or prove their identity) with passwords. ✏️NIST SP 800-­63B recommends users only be required to change their password if their current password is compromised. They do not recommend that users be required to change their password regularly at any interval.
-    - Note: The practice of 🔥salting passwords (Salted hashes are stored and compared to passwords after they are salted and hashed) was specifically introduced to thwart rainbow table attacks, but it also thwarts the effectiveness of offline dictionary and brute-­force attacks.
-- **Authorization**: Authorization provides a user with capabilities or rights. 
+    - Password complexity is driven by length, and a longer password will be more effective against brute-force attacks than a shorter password. Each character of additional length increases the difficulty by the size of the potential character set (for example, a single lowercase character makes the passwords 26 times more difficult to crack.
+    - Note: The practice of 🔥salting passwords (Salted hashes are stored and compared to passwords after they are salted and hashed) was specifically introduced to thwart rainbow table attacks, but it also thwarts the effectiveness of offline dictionary and brute-­force attacks. 📝Rainbow tables are databases of pre-hashed passwords paired with high-speed lookup functions. Since they can quickly compare known hashes against those in a file, using rainbow tables is the fastest way to quickly determine passwords from hashes. 
+- **Authorization**: Authorization verifies the identity of a subject by checking a factor like a password.  Authorization provides a user with capabilities or rights. 
 - 5.2.1 Identiy management (IdM) implementation
     - Identity and access management is a collection of processes and techologies that are used to control access to critical assets; it's purpose is the management of access to information, systems, devices, and facilities
     - Identity Management (IdM) implementation techniques generally fall into two categories:
@@ -107,7 +108,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - ✴️Palm Scans: Palm scanners scan the palm of the hand for identification. They use near-infrared light to measure vein patterns in the palm, which are as unique as fingerprints.
     - Biometric devices are rated for performance by examining the different types of errors they produce:
       - **🔥Crossover Error Rate CER**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent. Devices with lower CERs are more accurate than devices with higher CERs
-      - **🔥FRR**: False Rejection Rate (Type 1 Error) incorrectly denying authentication to a legit identity and therefore denying access (Similar to False Positive of IPS)
+      - **🔥FRR**: False Rejection Rate (Type 1 Error) incorrectly denying authentication to a legit identity and therefore denying access (Similar to False Positive of IPS). Organizations that have very strict security requirements that don't have a tolerance for false acceptance want to lower the false acceptance rate, or FAR, to be as near to zero as possible. That often means that the false rejection rate, or FRR, increases. 
       - **🔥FAR**: False Acceptance Rate (Type 2 Error) incorrectly authenticating a claimed identity as legit, recognizing and granting access on that basis (Similar to False negetive of IPS)
 
 - 5.2.3 Accountability
@@ -120,6 +121,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - Auditing provides accountability
         - Auditing occurs after the logs have been created
         - Logs record events, including who took an action, but without accurate identification and authentication, the logs can’t be relied on.
+        - Audit logging when combined with user accounts that can reliably be expected to only be accessible to a specific user due to the use of multifactor authentication is frequently used to provide strong accountability for actions taken via systems and applications. 
         - **File Integrity Checker** is designed specifically to monitor and detect changes to files and directories. It works by creating a baseline of file attributes (such as checksums or hashes) and then 🧠regularly checking/actively monitoring for any deviations from this baseline. This allows it to identify unauthorized or unexpected changes to content.
         - **Audit Logs**: track and record activities on a system, including changes to files and content. While they provide valuable information about who made changes and when, they are more about recording events rather than actively monitoring for unauthorized changes.
 - 5.2.4 Session management
@@ -179,14 +181,15 @@ that a user has in a website to execute code on the user’s computer. **XSRF** 
     - JIT systems commonly use SAML to exchange required data
 
 [5.3](#5.3) Federated Identity with a third-party service (OSG-9 Chpt 13)
-- 5.3.1 On-premise
+- 5.3.1 🥩On-premise
     - Federated identity management can be hosted on-premise, and typically provides an organization with the most control
-- 5.3.2 Cloud
+- 5.3.2 🥩Cloud
     - Cloud-based apps used federated identify management (FIM) systems, which are a form of SSO. E.g Shibboleth is a federated identity solution designed to allow web-based SSO
     - Cloud-based federation typically uses a third-party service to hsare federated identities (e.g. training sites use federated SSO systems)
         - commonly matching the user's internal login ID with a federated identify
-- 5.3.3 Hybrid
+- 5.3.3 🥩Hybrid
     - A hybrid federation is a combination of a cloud-based solution and an on-premise solution
+    -  Adopting a hybrid cloud and local authentication system can ensure that internet or server outages are handled, allowing authentication to work regardless of where the user is or if their home organization is online.
 
 [5.4](#5.4) Implement and manage authorization mechanisms (OSG-9 Chpt 14)
 - 5.4.1 ❄️**Role Based Access Control (RBAC)**
@@ -270,9 +273,11 @@ that describe the object that can be impacted; and contextual attributes like lo
 - 5.5.2 Provisioning and deprovisioning
     - Identity and access provisioning lifecycle refers to the creation, management, and deletion of accounts
         - this lifecycle is important because without properly defined and maintained user accounts, a system is unable to establish accurate identity, perform authentication, provide authorization, and track accountability
-    - Provisioning/Onboarding
+    - 🌲**Provisioning/Onboarding**
         - proper user account creation, or provisioning, ensures that personnel follow specific procedures when creating accounts
             - new-user account creation is AKA enrollment or registration
+            - 🩹Registration is the process of adding a user to an identity management system. This includes creating their unique identifier and adding any attribute information that is associated with their identity.
+            -  review of provisioning processes typically involves checking logs, reviewing the audit trail, or performing a manual review of permissions granted during the provisioning process.
         - **automated provisioning**: information is provided to an app, that then creates the accounts via pre-defined rules (assigning to appropriate groups based on roles)
             - automated provisioning systems create accounts consistently
         - provisioning also includes issuing hardware, tokens, smartcards etc to employees
@@ -285,7 +290,7 @@ that describe the object that can be impacted; and contextual attributes like lo
             - configure a password manager
             - explaining how to access help desk
             - show to access, share and save resources
-    - Deprovisioning/Offboarding
+    - 🌲**Deprovisioning/Offboarding**
         - Deprovisioning/offboarding occurs when an employee leaves the organization or is transferred to a different department
         - **Account revocation**: deleting an account is the easiest way to deprovision
             - an employee's account is usually first disabled
@@ -332,7 +337,10 @@ that describe the object that can be impacted; and contextual attributes like lo
     - 🏔️**Security Assertion Markup Language (SAML)**: an open XML-based standard commonly used to 📝exchange authentication and authorization (AA) information between federated orgs
     - it is used to make authorization and authentication data on first access
     - SAML provides SSO capabilities for browser access
+    - SAML Integration: 🔃 User attempts to access 3rd part application ➡️ SAML integrated 3rd party solution sends a redirect to SSO URL ➡️ Browser accesses SSO URL and sends to Home organisation ➡️ Home organisation authenticates user and sends SAML response to web browser ➡️ Browser sends SAML response to integrated 3rd party solution ➡️ SAML responsie is verified and user is logged on to the 3rd party organisation.
     - SAML is a popular SSO standard on the internet - used to exchange authentication and authorization (AA) information
+    - SAML does not have a security mode and relies on 📝TLS and 📝digital signatures to ensure security if needed.
+    - While many solutions are technical, if a trusted third party redirects to an unexpected authentication site, awareness is often the best defense.
     - Organization for the Advancement of Structure Information Standards (OASIS) maintains it
     - SAML 2 spec utilizes three entities:
         - 🍊Principal or User Agent
