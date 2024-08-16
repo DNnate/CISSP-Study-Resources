@@ -58,13 +58,14 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.2.1 Identiy management (IdM) implementation
     - Identity and access management is a collection of processes and techologies that are used to control access to critical assets; it's purpose is the management of access to information, systems, devices, and facilities
     - Identity Management (IdM) implementation techniques generally fall into two categories:
-        - **centralized access control**: implies a single entity within a system performs all authorization verification
+        - ♈**centralized access control**: implies a single entity within a system performs all authorization verification
             - potentially creates a single point of failure
             - small team can manage initially, and can scale to more users
-        - **decentralized access control**: (AKA distributed access control) implies several entities located throughout a system perform auth verification
+        - ♈**decentralized access control**: (AKA distributed access control) implies several entities located throughout a system perform auth verification
             - requires more individuals or teams to manage, and admin may be spred across numerous locations
             - difficult to maintain consistency
             - changes made to any individual access control point needs to be repeated at others
+            - When network connectivity to a central control point is a problem or if rules and regulations may vary significantly from location to location, centralized control can be less desirable than decentralized control despite its challenges with consistency. 
     - With ubiquitious mobile computing and anywhere, anytime access (to apps & data), identity is the "new perimeter"
     - **Roles & Groups**:
     - provides centralized managment of access control policies, sreamlining administration across different scenarios. It also enforces ✏️least privilege by tailoring permission to roles.
@@ -110,9 +111,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - ✴️Iris Scans: Focusing on the colored area around the pupil, iris scans are the second most accurate form of biometric authentication. Iris scans are considered more acceptable by general users than retina scans because scans can occur from far away and are less intrusive. Scans can often be done from 6 to 12 meters away (about 20 to 40 feet). However, some scanners can be fooled with a high-quality image in place of a person’s eye. Additionally, accuracy can be affected by changes in lighting and the usage of some glasses and contact lenses.
     - ✴️Palm Scans: Palm scanners scan the palm of the hand for identification. They use near-infrared light to measure vein patterns in the palm, which are as unique as fingerprints.
     - Biometric devices are rated for performance by examining the different types of errors they produce:
-      - **🔥Crossover Error Rate CER**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent. Devices with lower CERs are more accurate than devices with higher CERs. The CER is less subject to manipulation and is, therefore, the best metric to use for evaluating systems. 
+      - **🔥Crossover Error Rate CER**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent. Devices with lower CERs are more accurate than devices with higher CERs. The CER is less subject to manipulation and is, therefore, the best metric to use for evaluating systems. It is used as a way to measure the accuracy of biometric systems.
       - **🔥FRR**: False Rejection Rate (👘Type 1 Error) incorrectly denying authentication to a legit identity and therefore denying access (Similar to False Positive of IPS). Organizations that have very strict security requirements that don't have a tolerance for false acceptance want to lower the false acceptance rate, or FAR, to be as near to zero as possible. That often means that the false rejection rate, or FRR, increases. 
-      - **🔥FAR**: False Acceptance Rate (👘Type 2 Error) incorrectly authenticating a claimed identity as legit, recognizing and granting access on that basis (Similar to False negetive of IPS). Type 2 errors occur in biometric systems when an invalid subject is incorrectly authenticated as a valid user.
+      - **🔥FAR**: False Acceptance Rate (👘Type 2 Error) incorrectly authenticating a claimed identity as legit, recognizing and granting access on that basis (Similar to False negetive of IPS). Type 2 errors occur in biometric systems when an invalid subject is incorrectly authenticated as a valid user. Adding a second factor can ensure that users who might be incorrectly accepted are not given access due to a higher than desired false acceptance rate (FAR) from accessing a system. 
 
 - 5.2.3 Accountability
     - Two important security elements in an access control system are authorization and accountability
@@ -240,8 +241,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - ❄️**Attribute-Based Access Control (ABAC)**: an access control paradigm where access rights are granted to users with policies that combine attributes together. Attributes used for ABAC often fall into one of four categories: 🐝subject attributes like department or title; 🐝action attributes like the ability to view, edit, or delete; 🐝object attributes that describe the object that can be impacted; and 🐝contextual attributes like location, time, or elements.
     - A key characteristic of the ABAC model is its use of rules that can include multiple attributes
         - this allows it to be much more flexible than a rule-based access control model that applies the rules to all subjects equally
-        - many software-defined networks (SDNs) use the ABAC model
+        - many software-defined networks (📝SDNs) use the ABAC model
     - ABAC allows administrators to create rules within a policy using plain language statements such as "Allow Managers to access the WAN using a mobile device"
+    -  Attribute-based information controls like those described in NIST SP 800-162 can take many details about the user, actions, and objects into consideration before allowing access to occur.
 - 5.4.6 ❄️**Risk based access control**
     - Risk-based access control model grants access after evaluating risk; evaluating the environment and the situation and making risk-based decisions using policies embeded within software
         - Using machine learning, making predictive conclusions about current activity based on past activity
