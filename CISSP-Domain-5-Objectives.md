@@ -88,22 +88,22 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - **Multifactor authentication (MFA)**: any authentication using two or more factors
         - multifactor auth must use multiple types or factors, such as something you know and something you have
         - note: requiring users to enter a password and a PIN is NOT multifactor (both are something you know)
-        - Type 1 + Type 2 + Type 3: A user needs to enter a password (Type 1 something you know ✏️), use a smart card (Type 2 something you have ✏️), and undergo a retina scan (Type 3 something you are ✏️).
+        - Type 1 + Type 2 + Type 3: A user needs to enter a password (🛎️Type 1 something you know ✏️), use a smart card (🛎️Type 2 something you have ✏️), and undergo a retina scan (🛎️Type 3 something you are ✏️). 🛎️Somehwere you are: A callback to a landline phone number is an example of a "somewhere you are" factor because of the fixed physical location of a wired phone. 
         - Yubikeys, Titan Security Keys, and similar devices are examples of tokens i.e Type 2
         - **🔔Synchronous** soft tokens, such as Google Authenticator, use a time-based algorithm that generates a constantly changing series of codes. A synchronous token generates and displays onetime passwords e.g every 60 seconds, that are synchronized with an authentication server.
         - **🔔Asynchronous** tokens typically require a challenge to be entered on the token to allow it to calculate a response, which the server compares to the response it expects. An asynchronous token uses a challenge-­response process to generate the onetime password.
     - Two-factor methods:
-        - **HMAC-based One-Time Password (HOTP)** Hash Message Authentication Code (HMAC) includes a hash function used by the HMAC-based One-Time Password (HOTP) standard to create onetime passwords. It typically creates HOTP values of six to eight numbers. This is similar to the asynchronous dynamic passwords created by tokens. The HOTP value remains valid until used.
-        - **Time-based One-Time Password (TOTP)**: similar to HOTP, but uses a timestamp and remains valid for a certain time frame (e.g. 30 or 60 seconds). It is similar to the synchronous dynamic passwords used by tokens. The TOTP password expires if the user doesn’t use it within the time frame. 
+        - 🍖**HMAC-based One-Time Password (HOTP)** Hash Message Authentication Code (HMAC) includes a hash function used by the HMAC-based One-Time Password (HOTP) standard to create onetime passwords. It typically creates HOTP values of six to eight numbers. This is similar to the 📝asynchronous dynamic passwords created by tokens. The HOTP value remains valid until used.
+        - 🍖**Time-based One-Time Password (TOTP)**: similar to HOTP, but uses a timestamp and remains valid for a certain time frame (e.g. 30 or 60 seconds). It is similar to the 📝synchronous dynamic passwords used by tokens. The TOTP password expires if the user doesn’t use it within the time frame. 
             - e.g. phone-based authenticator app, where your phone is mimicking a hardware TOTP token (combined with userid/password is considered two-factor or two-step authentication)
-        - **Email challenge**: popular method, used by websites, sending the user an email with a PIN
-        - Short Message Service (SMS) to send users a text with a PIN is another 2-factor method; note that ✏️NIST SP 800-63B points out vulnerabilities, and deprecates use of SMS as a two-factor method for federal agencies
+        - 🍖**Email challenge**: popular method, used by websites, sending the user an email with a PIN
+        - 🍖**Short Message Service (SMS)** to send users a text with a PIN is another 2-factor method; note that ✏️NIST SP 800-63B points out vulnerabilities, and deprecates use of SMS as a two-factor method for federal agencies
 - **Biometric**: Biometric methods identify users based on physical characteristics such as fingerprints. During enrollment, a subject’s biometric factor is sampled and stored in the device’s database. This stored sample of a biometric factor is the 🔔reference profile (also known as a 🔔reference template). The 🔔throughput rate (ideally 6 seconds) is the amount of time the system requires to scan a subject and approve or deny access. The more complex or detailed a biometric characteristic, the longer processing takes. Physiological biometric methods include fingerprints, face scans, retina scans, iris scans, palm scans (also known as palm topography or palm geography), and voice patterns:
-    - Fingerprints: Fingerprints have loops, whorls, ridges, and bifurcations (also called minutiae) and fingerprint readers match the minutiae to data within a database.
-    - Face Scans: Face scans use the geometric patterns of faces for detection and recognition.
-    - Retina Scans: Retina scans focus on the pattern of blood vessels at the back of the eye. They are the most accurate form of biometric authentication and can differentiate between identical twins. However, some privacy proponents object to their use because they can reveal medical conditions, such as high blood pressure and pregnancy.
-    - Iris Scans: Focusing on the colored area around the pupil, iris scans are the second most accurate form of biometric authentication. Iris scans are considered more acceptable by general users than retina scans because scans can occur from far away and are less intrusive. Scans can often be done from 6 to 12 meters away (about 20 to 40 feet). However, some scanners can be fooled with a high-quality image in place of a person’s eye. Additionally, accuracy can be affected by changes in lighting and the usage of some glasses and contact lenses.
-    - Palm Scans: Palm scanners scan the palm of the hand for identification. They use near-infrared light to measure vein patterns in the palm, which are as unique as fingerprints.
+    - ✴️Fingerprints: Fingerprints have loops, whorls, ridges, and bifurcations (also called minutiae) and fingerprint readers match the minutiae to data within a database.
+    - ✴️Face Scans: Face scans use the geometric patterns of faces for detection and recognition.
+    - ✴️Retina Scans: Retina scans focus on the pattern of blood vessels at the back of the eye. They are the most accurate form of biometric authentication and can differentiate between identical twins. However, some privacy proponents object to their use because they can reveal medical conditions, such as high blood pressure and pregnancy.
+    - ✴️Iris Scans: Focusing on the colored area around the pupil, iris scans are the second most accurate form of biometric authentication. Iris scans are considered more acceptable by general users than retina scans because scans can occur from far away and are less intrusive. Scans can often be done from 6 to 12 meters away (about 20 to 40 feet). However, some scanners can be fooled with a high-quality image in place of a person’s eye. Additionally, accuracy can be affected by changes in lighting and the usage of some glasses and contact lenses.
+    - ✴️Palm Scans: Palm scanners scan the palm of the hand for identification. They use near-infrared light to measure vein patterns in the palm, which are as unique as fingerprints.
     - Biometric devices are rated for performance by examining the different types of errors they produce:
       - **🔥Crossover Error Rate CER**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent. Devices with lower CERs are more accurate than devices with higher CERs
       - **🔥FRR**: False Rejection Rate (Type 1 Error) incorrectly denying authentication to a legit identity and therefore denying access (Similar to False Positive of IPS)
@@ -124,9 +124,10 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.2.4 Session management
     - Session management is important to use with any type of authentication system to prevent unauthorized access
     - Desktop/laptops: recommendation to use screensavers, although modern OSs have timeout/lock features
-    - Secure online sessions should terminate after a timeout period. Common session management techniques include the use of cookies, hidden form fields, URL rewriting, and built-in frameworks like Java’s HTTPSession.
+    - Secure online sessions should terminate after a timeout period. Common session management techniques include the use of 📝cookies, 📝hidden form fields, 📝URL rewriting, and built-in frameworks like Java’s 📝HTTPSession.
     - long session ID (often 128 bits or longer) and session ID entropy (randomness)  make session guessing difficult for hackers
     - The Open Web Application Security Project (OWASP) publishes “cheat sheets” that provide app developer’s specific recommendations
+    - It is also a best practice to make sure the session ID itself is meaningless to prevent information disclosure attacks
 - 5.2.5 Registration, proofing, and establishment of identity
     - Within an organization, new employees prove their identity with appropriate documentation during the hiring process
         - in-person identity proofing includes things like passport, DL, birth cert etc
@@ -169,7 +170,7 @@ that a user has in a website to execute code on the user’s computer. **XSRF** 
     - Disadvantages:
         - once an account is compromised, an attacker gains unrestricted access to all of the authorized resources
     - Within an organization, a central access control system, such as a directory service, is often used for SSO
-        - **directory service**: a centralized database that includes information about subjects and objects, including authentication data
+        - **Directory Service**: a centralized database that includes information about subjects and objects, including authentication data
         - many directory services are based on the Lightweight Directory Access Protocol (LDAP)
 - 5.2.9 Just-In_time (JIT)
     - Federated identity solutions that support just-in-time (JIT) provisioning automatically create the relationship between two entities so that new users can access resources
@@ -187,7 +188,7 @@ that a user has in a website to execute code on the user’s computer. **XSRF** 
     - A hybrid federation is a combination of a cloud-based solution and an on-premise solution
 
 [5.4](#5.4) Implement and manage authorization mechanisms (OSG-9 Chpt 14)
-- 5.4.1 **Role Based Access Control (RBAC)**
+- 5.4.1 ❄️**Role Based Access Control (RBAC)**
     - A key characteristic of the Role-Based Access Control (RBAC) model is the use of roles or groups
     - Instead of assigning permissions directly to users, user accounts are placed in roles and administrators assign privileges to the roles (typically defined by job function)
         - if the user account is in a role, the user has all privileges assigned to the role
@@ -196,17 +197,18 @@ that a user has in a website to execute code on the user’s computer. **XSRF** 
     - it is based on role or group membership, and users can be members of multiple groups. Users are not limited to only a single role.
     - RBAC models are based on the hierarchy of an organization, so they are hierarchy based.
     - It is nondiscretionary model managed by a central authority🔥 to determine which objects subjects can access
-- 5.4.2 **Rule Based access control**
+- 5.4.2 ❄️**Rule Based access control**
     - A key characteristic of the Rule-Based access control model is that it applies global rules to all subjects
         - e.g. firewalls uses rules that allow or block traffic to all users equally
     - Rules within the rule-based access control model are sometimes referred to as restrictions or filters
     - It uses a global rules applied to all users and other subjects equally.
     - It is a Nondiscretionary access controls that uses centralized management 🔥, such as a rules deployed on a firewall.
 - 5.4.3 Mandatory Access Control (MAC)
-    - **Mandatory Access Control (MAC)**: access control that requires the _system_ itself to manage access controls in accordance with the org's security policies. Users cannot delegate rights.
+    - ❄️**Mandatory Access Control (MAC)**: access control that requires the _system_ itself to manage access controls in accordance with the org's security policies. Users cannot delegate rights.
     - A key characteristic of the MAC model is the use of labels applied to both subjects and objects
         - e.g. a label of top secret grants access to top-secret documents
-    - When documented in a table, the MAC model sometimes resembles a lattice or matrix (i.e. climbing rosebush framework), so it is referred to as a lattice-based model. Biba integrity model uses this.
+    - When documented in a table, the MAC model sometimes resembles a 📝lattice or matrix (i.e. climbing rosebush framework), so it is referred to as a lattice-based model. 📝Biba integrity model uses this.
+    - Mandatory access control systems are based on a lattice-based model. Lattice-based models use a matrix of classification labels to compartmentalize data.
     - 📝 MAC model doesn’t use a centralized environment.
     - MAC is a nondiscretionary access control model that uses labels🔥
     - (MAC) model supports three environments: hierarchical, compartmentalized, and hybrid.
@@ -215,24 +217,24 @@ that a user has in a website to execute code on the user’s computer. **XSRF** 
         - ☑️hybrid environment is a combination of a hierarchical and compartmentalized environment.
 
 - 5.4.4 Discretionary Access Control (DAC)
-    - **Discretionary Access Control (DAC)**: access control model in which the system owner decides who gets access
+    - ❄️**Discretionary Access Control (DAC)**: access control model in which the system owner decides who gets access
     - A key characteristic of the DAC model is that every object has an owner, and the owner can grant or deny access to any other subjects
         - e.g. you create a file and are the owner, and can grant permissions to that file
     - New Technology File System (NTFS) used in Windows, uses the DAC model
     - MAC, RBAC, and rule-­based access control) are nondiscretionary models.
 - 5.4.5 Attribute Based Access Control (ABAC) or Policy-Based Access Control
-    - **Attribute-Based Access Control (ABAC)**: an access control paradigm where access rights are granted to users with policies that combine attributes together. Attributes used for ABAC often fall into one of four categories: subject attributes like department or title; action attributes like the ability to view, edit, or delete; object attributes
+    - ❄️**Attribute-Based Access Control (ABAC)**: an access control paradigm where access rights are granted to users with policies that combine attributes together. Attributes used for ABAC often fall into one of four categories: subject attributes like department or title; action attributes like the ability to view, edit, or delete; object attributes
 that describe the object that can be impacted; and contextual attributes like location, time, or elements.
     - A key characteristic of the ABAC model is its use of rules that can include multiple attributes
         - this allows it to be much more flexible than a rule-based access control model that applies the rules to all subjects equally
         - many software-defined networks (SDNs) use the ABAC model
     - ABAC allows administrators to create rules within a policy using plain language statements such as "Allow Managers to access the WAN using a mobile device"
-- 5.4.6 **Risk based access control**
+- 5.4.6 ❄️**Risk based access control**
     - Risk-based access control model grants access after evaluating risk; evaluating the environment and the situation and making risk-based decisions using policies embeded within software
         - Using machine learning, making predictive conclusions about current activity based on past activity
         - risk-­based access control model can require users to authenticate with multifactor authentication
         - it evaluates the environment and the situation and then makes access decisions based on coded policies
-- 5.4.7 **Task based access control**
+- 5.4.7 ❄️**Task based access control**
     - TBAC is similar to RBAC, but instead of being assigned to one or more roles, each user is assigned an array of tasks.
 - **Access Policy Enforcement**:
   - **Policy Enforcement Point (PEP)**: Responsible for enabling, monitoring and terminating connections between a subject (such as user or device) and an enterprise resource.
@@ -245,13 +247,13 @@ that describe the object that can be impacted; and contextual attributes like lo
      - it considers the 5 Ws (Who, What, When, Where, Why)
      - PDP makes access decision based on contextual information
   - With regards to the key elements of Zero trust architecture, as it relates to access policy enforcment, the following are described in NIST 800-207.
-    - **Control Plane**: These drive the policy-based decision logic for the concept of Zero trust. Involves the following:
+    - 🍮**Control Plane**: These drive the policy-based decision logic for the concept of Zero trust. Involves the following:
        - Adaptive Identity: Changes the way that the system asks a user to authenticate based on context of the request. e.g user location, device health, approved app, riks levels of user
        - Threat Scope reduction: An end goal of ZTNA to decrease risks to the organisation.
        - Policy-Driven Access Control: Control based on a users identity rather than simply thier systems location. example conditional access feature in MIcrosft's Entra ID.
        - Policy Administrator: Responsible for communicating the decisions made by the policy engine It is a funtion not a person.
        - Policy Engine: Decides whether to grant access to a resource for a given subject. E.g Microsoft Entra ID is a policy engine. The policy administrator and the policy engine together give us the PDP functionality.
-    - **Data Plane**: These enforces the decision defined in the control plane. Involves the following:
+    - 🍮**Data Plane**: These enforces the decision defined in the control plane. Involves the following:
        - Implicit Trust Zones: Part of the traditional security approach in which firewalls and other security devices formed a perimeter. systems belonging to an organisation are placed inside this boundary.
        - Subject/System: Subject is the user who wishes to access a resource. The system is a non-human entity often used by the user to access this resource.   
        - Policy Enforcement Point: When a user or system request access to a resource, it is the PEP that evaluates it against predefined policies and applies the neccessary controls.
@@ -296,8 +298,8 @@ that describe the object that can be impacted; and contextual attributes like lo
 - 5.5.4 Privilege escalation (e.g. managed service accounts, use of usdo, minimizing its use)
     - Privilege escalation refers to any situation that gives users more privileges than they should have
     - Attackers use privilege escalation techniques to gain elevated privileges
-    - **Horizontal privilege escalation**: gives an attacker similar privileges as the first compromised user, but from other accounts
-    - **Vertical privilege escalation**: provides an attacker with significantly greater privileges
+    - 🍍**Horizontal privilege escalation**: gives an attacker similar privileges as the first compromised user, but from other accounts
+    - 🍍**Vertical privilege escalation**: provides an attacker with significantly greater privileges
         - e.g. after compromising a regular user’s account an attacker can use vertical privilege escalation techniques to gain administrator privileges on the user’s computer
         - the attacker can then use horizontal privilege escalation techniques to access other computers in the network
         - this horizontal privilege escalation throughout the network is AKA **lateral movement**
@@ -309,34 +311,33 @@ that describe the object that can be impacted; and contextual attributes like lo
 - 
 [5.6](#5.6) Implement authentication systems (OSG-9 Chpt 14)
 - 5.6.1 OpenID Connect (OIDC) / Open Authorization (Oauth)
-    - **OAuth 2.0** authorization framework enables third-party apps to obtain limited access to an HTTP service, either on behalf of a resource owner (by orchestrating an approval interaction), or by allowing third-party applications to obtain access on its own behalf
-    - OAuth is an open framework used for authentication and authorization protocols 
+    - ❄️**OAuth 2.0** authorization framework enables third-party apps to obtain limited access to an HTTP service, either on behalf of a resource owner (by orchestrating an approval interaction), or by allowing third-party applications to obtain access on its own behalf
+    - OAuth is an open framework used for authentication and authorization protocols
+    - OAuth is an open standard for authentication allowing the use of credentials from one site on third-party sites 
     - The most common protocol built on OAuth is OpenID Connect (OIDC) 
     - OAuth 2.0 is often used for delegated access to applications, e.g. a mobile game that automatically finds all of your new friends from a social media app is likely using OAuth 2.0
     - Conversely, if you sign into a new mobile game using a social media account (instead of creating a user account just for the game), that process might use OIDC
-    - **OpenID Connect (OIDC)**: an authentication layer using the OAuth 2.0 authorization framework, maintained by the OpenID Foundation, providing both authentication and authorization
-    - OIDC uses JSON (JavaScript Object Notation) Web Tokens (JWT) -- AKA ID token that provides both authentication and profile information for internet-­based single sign-­on
+    - ❄️**OpenID Connect (OIDC)**: an authentication layer using the OAuth 2.0 authorization framework, maintained by the OpenID Foundation, providing both authentication and authorization
+    - OIDC uses 📝JSON (JavaScript Object Notation) Web Tokens (JWT) -- AKA ID token that provides both authentication and profile information for internet-­based single sign-­on
     - OAuth and OIDC are used with many web-based applications to share information without sharing credentials
         - OAuth provides authorization
         - OIDC uses the OAuth framework for authorization and builds on the OpenID technologies for authentication
     - 📝OpenID on its own provides authentication but doesn’t include profile information. However OpenID Connect provides both authentication and profile information
 - 5.6.2 Security Assertion Markup Language (SAML)
-    - **Security Assertion Markup Language (SAML)**: an open XML-based standard commonly used to exchange authentication and authorization (AA) information between federated orgs
+    - 🏔️**Security Assertion Markup Language (SAML)**: an open XML-based standard commonly used to 📝exchange authentication and authorization (AA) information between federated orgs
     - it is used to make authorization and authentication data on first access
     - SAML provides SSO capabilities for browser access
     - SAML is a popular SSO standard on the internet - used to exchange authentication and authorization (AA) information
     - Organization for the Advancement of Structure Information Standards (OASIS) maintains it
     - SAML 2 spec utilizes three entities:
-        - Principal or User Agent
-        - Service Provider (SP): providing the service a user is interested in using
-        - Identity Provider (IdP): a third-party that holds the user authentication and authorization info
-    - IdP can send three types of XML messages known as assertions:
-        - Authentication Assertion: provides proof that the user agent provided the proper credentials, identifies the identification method, and identifies the time the user agent logged on
-        - Authorization Assertion: indicates whether the user agent is authorized to access the requested service; if denied, includes why
-        - Attribute Assertion: attributes can be any information about the user agent
- - **Other Markup Languages**
-    - Service Provisioning Markup Language (SPML) is an XML-based language designed to allow platforms to generate and respond to provisioning requests.
-    - Extensible Access Control Markup Language (XACML) is used to describe access controls.
+        - 🍊Principal or User Agent
+        - 🍊Service Provider (SP): providing the service a user is interested in using
+        - 🍊Identity Provider (IdP): a third-party that holds the user authentication and authorization info. IdP can send three types of XML messages known as assertions:
+             - 🍉Authentication Assertion: provides proof that the user agent provided the proper credentials, identifies the identification method, and identifies the time the user agent logged on
+             - 🍉Authorization Assertion: indicates whether the user agent is authorized to access the requested service; if denied, includes why
+             - 🍉Attribute Assertion: attributes can be any information about the user agent
+    - 🏔️**Service Provisioning Markup Language (SPML)** is an XML-based language designed to allow platforms to generate and respond to provisioning requests.
+    - 🏔️**Extensible Access Control Markup Language (XACML)** is used to describe access controls.
   
 - 5.6.3 Kerberos
     - **Kerberos** is a network authentication protocol widely used in corporate and private networks and found in many LDAP and directory services solutions such as Microsoft Active Directory
@@ -380,16 +381,16 @@ that describe the object that can be impacted; and contextual attributes like lo
         - once identity and authorization are verified, Kerberos activity is complete
             - the server or service host then opens a session with the client and begins communication or data transmission
 - 5.6.4 Remote Authentication Dial-in User Service (RADIUS) / Terminal Access Controller Access Control System Plus (TACACS+)
-    - **Remote Authentication Dial-in User Service (RADIUS)**: centralizes authentication for remote access connections, such as VPNs or dial-up access
+    - ❄️**Remote Authentication Dial-in User Service (RADIUS)**: centralizes authentication for remote access connections, such as VPNs or dial-up access
         - a user can connect to any network access server, which then passes on the user’s credentials to the RADIUS server to verify authentication and authorization and to track accounting
         - in this context, the network access server is the RADIUS client e.g router, switch, and a RADIUS server acts as an authentication server
         - the RADIUS server also provides AAA services for multiple remote access servers
         - RADIUS uses the User Datagram Protocol (UDP) by default and encrypts only the password’s exchange
-        - RADIUS using Transport Layer Security (TLS) over TCP (port 2083) is defined by RFC 6614 
+        - RADIUS using Transport Layer Security (TLS) over TCP (port 📝2083) is defined by RFC 6614 
         - RADIUS uses UDP port 1812 for RADIUS messages and UDP port 1813 for RADIUS Accounting messages
         - RADIUS encrypts only the password’s exchange by default
         - it is possible to use RADIUS/TLS to encrypt the entire session
-    - **TACACS**: Cisco developed Terminal Access Control Access Control System Plus (TACACS+) and released it as an open standard
+    - ❄️**TACACS**: Cisco developed Terminal Access Control Access Control System Plus (TACACS+) and released it as an open standard
         - provides improvements over the earlier version and over RADIUS, it separates authentication, authorization, and accounting into separate processes, which can be hosted on three different servers
         - TACACS+ allows authentication, authorization, and accounting to be handled independently, providing more granular control.
         - additionally, TACACS+ encrypts all of the authentication information, not just the password, as RADIUS does
