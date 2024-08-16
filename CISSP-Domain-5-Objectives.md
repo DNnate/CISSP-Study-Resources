@@ -149,6 +149,10 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.2.6 Federated Identity Management (FIM)
     - Federated Identity Management (FIM) systems (a form of SSO. 📝SSO is a benefit of identity management, not a type of identity management.) are often used by cloud-based apps
     - A federated identity links a user’s identity in one system with multiple identity management systems
+        - 🔶Two-Way Transitive Trust: Both domains trust each other, and this trust extends to other domains that they trust. If Domain A trusts Domain B, and Domain B trusts Domain C, then Domain A also trusts Domain C automatically.
+        - 🔶One-Way Transitive Trust: Only one domain trusts the other, and this trust can extend to other domains. If Domain A trusts Domain B, users from Domain B can access resources in Domain A, but not the other way around. If Domain B also trusts Domain C, then users from Domain C could access Domain A's resources as well.
+        - 🔶One-Way Nontransitive Trust: Only one domain trusts the other, and this trust does not extend to any other domains.
+        - 🔶Two-Way Nontransitive Trust: Both domains trust each other, but the trust does not extend to any other domains. Domain A and Domain B trust each other directly. However, if Domain B trusts Domain C, this trust doesn't extend to Domain A. Domain A and C would need a separate trust set up if they need to communicate.
     - Identity systems from different orgs have established trust among themselves and agree to trust each other’s identity assertions
     - FIM allows multiple orgs to join a federation or group, agreeing to share identity information
         - users in each org can log in once in their own org, and their credentials are matched with a federated identity
