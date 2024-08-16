@@ -136,10 +136,12 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.2.5 Registration, proofing, and establishment of identity
     - Within an organization, new employees prove their identity with appropriate documentation during the hiring process
         - in-person identity proofing includes things like passport, DL, birth cert etc
-    - Online orgs often use knowledge-based authentication (KBA) for identity-proofing of someone new (e.g. a new customer creating a new bank/savings account)
+    - 🆎Knowledge-based authentication relies on preset questions such as "What is your pet's name?" and the answers. Online orgs often use knowledge-based authentication (KBA) for identity-proofing of someone new (e.g. a new customer creating a new bank/savings account). It can be susceptible to attacks because of the availability of the answers on social media or other sites.
+    - 🆎Dynamic knowledge-based authentication relies on facts or data that the user already knows that can be used to create questions they can answer on an as-needed basis (for example, a previous address or a school they attended).
         - example questions include past vehicle purchases, amount of mortgage payment, previous addresses, DL numbers
-        - Identity proofing can be done by comparing user information that the organization already has, like account numbers or personal information.
-        - they then query authoritative information (e.g. credit bureaus or gov agencies) for matches
+        - 🥛Identity proofing can be done by comparing user information that the organization already has, like account numbers or personal information.
+             - they then query authoritative information (e.g. credit bureaus or gov agencies) for matches
+        - 🥛Out-of-band identity proofing relies on an alternate channel like a phone call or text message. 
     - Cognitive Passwords: security questions that are gathered during account creation, which are later used as questions for authentication (e.g. name of pet, color of first car etc)
         - one of the flaws associated with cognitive passwords is that the information is often available on social media sites or general internet searches
 - 5.2.6 Federated Identity Management (FIM)
@@ -156,7 +158,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - 🍊OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
         - OpenID is used for 🧠authentication
         - OpenID Connect is a RESTful, JSON-based authentication protocol that, when paired with OAuth, can provide identity verification and basic profile information.
-             - OpenID Provider (OP): The service that authenticates users. Relying Party (RP): The website or app trusting the OP for user authentication. End User: The person logging in using OpenID credentials. User logs in to the RP using their OpenID.
+             - OpenID Provider (OP): The service that authenticates users.
+             - Relying Party (RP): The website or app trusting the OP for user authentication.
+             - End User: The person logging in using OpenID credentials. User logs in to the RP using their OpenID.
              - RP redirects to the OP e.g Google for authentication. OP authenticates the user and sends a response back to the RP.
              - RP verifies the response. User gains access to the RP. **Note** Allowing the relying party to provide the redirect to the OpenID provider could allow a phishing attack by directing clients to a fake OpenID provider that can capture valid credentials.
     - **Proxied federation** is a method of identity management that allows identity providers (IdPs) and relying parties (RPs) to communicate through a third-party service, known as a proxy. This allows the IdP and RP to remain anonymous to each other, and it helps to protect the privacy of subscriber lists. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other.
@@ -328,6 +332,7 @@ that describe the object that can be impacted; and contextual attributes like lo
     - OAuth is an open framework used for authentication and authorization protocols
     - OAuth is an open standard for authentication allowing the use of credentials from one site on third-party sites
     - OAuth Integration: 🔃 User attempts to access e-commerce application and chooses to login with Google Federation ➡️ Anti-Forgery token is created and sent to Google Server ➡️ Toke COnfirmation and authorization code is sent to by Google server to Ecommerce application server ➡️ Ecommerce application server sends an exchange code access and ID token to Google Server ➡️ BGoogle server sends a response token ➡️ Ecommerce application calls Google API using token.
+    - The anti-forgery state token exchanged during OAuth sessions is intended to prevent cross-site request forgery 📝XSRF/CSRF. This makes sure that the unique session token with the authentication response from Google's OAuth service is available to verify that the user, not an attacker, is making a request.
     - The most common protocol built on OAuth is OpenID Connect (OIDC) 
     - OAuth 2.0 is often used for delegated access to applications, e.g. a mobile game that automatically finds all of your new friends from a social media app is likely using OAuth 2.0
     - Conversely, if you sign into a new mobile game using a social media account (instead of creating a user account just for the game), that process might use OIDC
@@ -426,20 +431,17 @@ that describe the object that can be impacted; and contextual attributes like lo
        - Secrets and keys can be protected either by software of by FIPS 14-2(3) Level 2 validated HSMs.
     - 🗳️**Enterprise password management tools** allow passwords to be securely generated, stored, and managed. They can provide logs of who uses passwords, when they were updated, and if they meet complexity and other requirements. Of course, this means that the keys to your environment are all in one place, so securing and managing the enterprise password manager is very important!
   
-***Authorization Mecahanisms***
-
-- Implicit Deny: ensures that access to an object is denied unless access has been explicitly granted to a subject. (deny by default)
-- Access Control Matrix: a table that includes subjects, objects, and assigned privileges. 
-- Capability Tables: Capability tables list the privileges assigned to subjects and identify the objects that subjects can access. They are different from ACLs in that a capability table is focused on subjects (such as users, groups, or roles). In contrast, ACLs are focused on objects. 
-- Constrained Interface: Applications use constrained interfaces or restricted interfaces to restrict what users can do or see based on their privileges. 
-- Content-­Dependent Control: This restrict access to data based on the content within an object. A database view is a content-­dependent control.
-- Context-­Dependent Control: These require specific activity before granting users access. e.g Time-based controls to logon on at certain hours
-- Need to Know: ensures that subjects are granted access only to what they need to know for their work tasks and job functions. The need-­to-­know policy operates on the basis that any given system user should be granted access only to portions of sensitive information or materials necessary to perform some task. It is the requirement to have access to, knowledge about, or possession of data to perform specific work tasks, but no more.
-    - 🔔Need to know refers to permissions only
-- Least Privilege: This ensures that subjects are granted only the privileges they need to perform their work tasks and job functions. This is sometimes lumped together with need to know. The only difference is that least privilege will also include rights to take action on a system. An organization applies the least privilege principle to ensure employees receive only the
-access they need to complete their job responsibilities.
-    - 🔔The principle of least privilege includes both rights and permissions
-- Separation of Duties and Responsibilities: (Somtimes shorted SED) This ensures that sensitive functions are split into tasks performed by two or more employees. It helps prevent fraud and errors by creating a system of checks and balances. It ensures that no single entity can perform all the tasks for a job or function.
-- Job Rotation: A job rotation policy has employees rotate jobs or job responsibilities and can help detect collusion and fraud.
-- Mandatory Vacation policies: ensure that employees take an extended time away from their jobs, requiring someone else to perform their job responsibilities, which increases the likelihood of discovering fraud.
+- **Authorization Mecahanisms**
+    - 🍏Implicit Deny: ensures that access to an object is denied unless access has been explicitly granted to a subject. (deny by default)
+    - 🍏Access Control Matrix: a table that includes subjects, objects, and assigned privileges.
+    - 🍏Access control lists focus on objects and which subjects can access them.
+    - 🍏Capability Tables: Capability tables list the privileges assigned to subjects and identify the objects that subjects can access. It list subjects and what objects they can access.They are different from ACLs in that a capability table is focused on subjects (such as users, groups, or roles). In contrast, ACLs are focused on objects.
+    - 🍏Constrained Interface: Applications use constrained interfaces or restricted interfaces to restrict what users can do or see based on their privileges.
+    - 🍏Content-­Dependent Control: This restrict access to data based on the content within an object. A database view is a content-­dependent control.
+    - 🍏Context-­Dependent Control: These require specific activity before granting users access. e.g Time-based controls to logon on at certain hours
+    - 🍏Need to Know: ensures that subjects are granted access only to what they need to know for their work tasks and job functions. The need-­to-­know policy operates on the basis that any given system user should be granted access only to portions of sensitive information or materials necessary to perform some task. It is the requirement to have access to, knowledge about, or possession of data to perform specific work tasks, but no more. 🔔Need to know refers to permissions only
+    - 🍏Least Privilege: This ensures that subjects are granted only the privileges they need to perform their work tasks and job functions. This is sometimes lumped together with need to know. The only difference is that least privilege will also include rights to take action on a system. An organization applies the least privilege principle to ensure employees receive only the access they need to complete their job responsibilities. 🔔The principle of least privilege includes both rights and permissions
+      - 🍏Separation of Duties and Responsibilities: (Somtimes shorted SED) This ensures that sensitive functions are split into tasks performed by two or more employees. It helps prevent fraud and errors by creating a system of checks and balances. It ensures that no single entity can perform all the tasks for a job or function.
+      - 🍏Job Rotation: A job rotation policy has employees rotate jobs or job responsibilities and can help detect collusion and fraud.
+      - 🍏Mandatory Vacation policies: ensure that employees take an extended time away from their jobs, requiring someone else to perform their job responsibilities, which increases the likelihood of discovering fraud.
 - Note📝 When creating new user accounts, default acceess for new users should always be "No Access", if no authorization mechanism is specified.
