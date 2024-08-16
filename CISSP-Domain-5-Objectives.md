@@ -108,8 +108,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - ✴️Palm Scans: Palm scanners scan the palm of the hand for identification. They use near-infrared light to measure vein patterns in the palm, which are as unique as fingerprints.
     - Biometric devices are rated for performance by examining the different types of errors they produce:
       - **🔥Crossover Error Rate CER**: point at which false acceptance (Type 2) error rate equals the false rejection (Type 1) error rate for a given sensor, in a given system and context; it is the optimal point of operation if the potential impacts of both types of errors are equivalent. Devices with lower CERs are more accurate than devices with higher CERs
-      - **🔥FRR**: False Rejection Rate (Type 1 Error) incorrectly denying authentication to a legit identity and therefore denying access (Similar to False Positive of IPS). Organizations that have very strict security requirements that don't have a tolerance for false acceptance want to lower the false acceptance rate, or FAR, to be as near to zero as possible. That often means that the false rejection rate, or FRR, increases. 
-      - **🔥FAR**: False Acceptance Rate (Type 2 Error) incorrectly authenticating a claimed identity as legit, recognizing and granting access on that basis (Similar to False negetive of IPS)
+      - **🔥FRR**: False Rejection Rate (👘Type 1 Error) incorrectly denying authentication to a legit identity and therefore denying access (Similar to False Positive of IPS). Organizations that have very strict security requirements that don't have a tolerance for false acceptance want to lower the false acceptance rate, or FAR, to be as near to zero as possible. That often means that the false rejection rate, or FRR, increases. 
+      - **🔥FAR**: False Acceptance Rate (👘Type 2 Error) incorrectly authenticating a claimed identity as legit, recognizing and granting access on that basis (Similar to False negetive of IPS). Type 2 errors occur in biometric systems when an invalid subject is incorrectly authenticated as a valid user.
 
 - 5.2.3 Accountability
     - Two important security elements in an access control system are authorization and accountability
@@ -136,6 +136,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - in-person identity proofing includes things like passport, DL, birth cert etc
     - Online orgs often use knowledge-based authentication (KBA) for identity-proofing of someone new (e.g. a new customer creating a new bank/savings account)
         - example questions include past vehicle purchases, amount of mortgage payment, previous addresses, DL numbers
+        - Identity proofing can be done by comparing user information that the organization already has, like account numbers or personal information.
         - they then query authoritative information (e.g. credit bureaus or gov agencies) for matches
     - Cognitive Passwords: security questions that are gathered during account creation, which are later used as questions for authentication (e.g. name of pet, color of first car etc)
         - one of the flaws associated with cognitive passwords is that the information is often available on social media sites or general internet searches
@@ -148,14 +149,14 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - users can then use this federated identity to access resources in any other org within the group
         - where each organization decides what resources to share
     - Methods used to implement federated identity management systems include:
-        - Security Assertion Markup Language (SAML)
-        - OAuth (most widely used and integrates with 3rd Parties). The anti-forgery state token exchanged during OAuth  sessions is intended to prevent cross-site request forgery. Cross-­site request forgery attacks, abbreviated as XSRF or CSRF attacks, are similar to cross-­site scripting attacks but exploit a different trust relationship. XSS attacks exploit the trust
-that a user has in a website to execute code on the user’s computer. **XSRF** attacks exploit the trust that remote sites have in a user’s system to execute commands on the user’s behalf.
-        - OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
+        - 🍊Security Assertion Markup Language (SAML)
+        - 🍊OAuth (most widely used and integrates with 3rd Parties). OAuth is the most widely used open standard for 🧠authorization and delegation of rights for cloud services. The anti-forgery state token exchanged during OAuth  sessions is intended to prevent cross-site request forgery. Cross-­site request forgery attacks, abbreviated as XSRF or CSRF attacks, are similar to cross-­site scripting attacks but exploit a different trust relationship. XSS attacks exploit the trust that a user has in a website to execute code on the user’s computer. **XSRF** attacks exploit the trust that remote sites have in a user’s system to execute commands on the user’s behalf.
+        - 🍊OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
+        - OpenID is used for 🧠authentication
         - OpenID Connect is a RESTful, JSON-based authentication protocol that, when paired with OAuth, can provide identity verification and basic profile information.
-        - OpenID Provider (OP): The service that authenticates users. Relying Party (RP): The website or app trusting the OP for user authentication. End User: The person logging in using OpenID credentials. User logs in to the RP using their OpenID.
-        - RP redirects to the OP e.g Google for authentication. OP authenticates the user and sends a response back to the RP.
-        - RP verifies the response. User gains access to the RP. **Note** Allowing the relying party to provide the redirect to the OpenID provider could allow a phishing attack by directing clients to a fake OpenID provider that can capture valid credentials.
+             - OpenID Provider (OP): The service that authenticates users. Relying Party (RP): The website or app trusting the OP for user authentication. End User: The person logging in using OpenID credentials. User logs in to the RP using their OpenID.
+             - RP redirects to the OP e.g Google for authentication. OP authenticates the user and sends a response back to the RP.
+             - RP verifies the response. User gains access to the RP. **Note** Allowing the relying party to provide the redirect to the OpenID provider could allow a phishing attack by directing clients to a fake OpenID provider that can capture valid credentials.
     - **Proxied federation** is a method of identity management that allows identity providers (IdPs) and relying parties (RPs) to communicate through a third-party service, known as a proxy. This allows the IdP and RP to remain anonymous to each other, and it helps to protect the privacy of subscriber lists. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other.
     - Cloud-based federation typically uses a third-party service to share federated identities
     - Federated identity management systems can be hosted on-premises, in the cloud, or in a combination of the two as a hybrid system. Hybrid federation e.g occurs where authentication occurs on-premises and services are provided through a federated identity service in the cloud
@@ -337,7 +338,7 @@ that describe the object that can be impacted; and contextual attributes like lo
     - 🏔️**Security Assertion Markup Language (SAML)**: an open XML-based standard commonly used to 📝exchange authentication and authorization (AA) information between federated orgs
     - it is used to make authorization and authentication data on first access
     - SAML provides SSO capabilities for browser access
-    - SAML Integration: 🔃 User attempts to access 3rd part application ➡️ SAML integrated 3rd party solution sends a redirect to SSO URL ➡️ Browser accesses SSO URL and sends to Home organisation ➡️ Home organisation authenticates user and sends SAML response to web browser ➡️ Browser sends SAML response to integrated 3rd party solution ➡️ SAML responsie is verified and user is logged on to the 3rd party organisation.
+    - SAML Integration: 🔃 User attempts to access 3rd part application ➡️ SAML integrated 3rd party solution sends a redirect to SSO URL ➡️ Browser accesses SSO URL and sends to Home organisation (IDP) ➡️ Home organisation authenticates user and sends SAML response to web browser ➡️ Browser sends SAML response to integrated 3rd party solution ➡️ SAML responsie is verified and user is logged on to the 3rd party organisation.
     - SAML is a popular SSO standard on the internet - used to exchange authentication and authorization (AA) information
     - SAML does not have a security mode and relies on 📝TLS and 📝digital signatures to ensure security if needed.
     - While many solutions are technical, if a trusted third party redirects to an unexpected authentication site, awareness is often the best defense.
