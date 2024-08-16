@@ -285,6 +285,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - 🌲**Provisioning/Onboarding**
         - proper user account creation, or provisioning, ensures that personnel follow specific procedures when creating accounts
         - 📝Provisioning includes the creation, maintenance, and removal of user objects from applications, systems, and directories. Registration occurs when users are enrolled in a biometric system for example;
+            - 🩹Enrollment, or registration, is the initial creation of a user account in the provisioning process. Clearance verification and background checks are sometimes part of the process that ensures that the identity of the person being enrolled matches who they claim to be
             - new-user account creation is AKA enrollment or registration
             - 🩹Registration is the process of adding a user to an identity management system. This includes creating their unique identifier and adding any attribute information that is associated with their identity.
             -  review of provisioning processes typically involves checking logs, reviewing the audit trail, or performing a manual review of permissions granted during the provisioning process.
