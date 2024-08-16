@@ -326,7 +326,8 @@ that describe the object that can be impacted; and contextual attributes like lo
 - 5.6.1 OpenID Connect (OIDC) / Open Authorization (Oauth)
     - ❄️**OAuth 2.0** authorization framework enables third-party apps to obtain limited access to an HTTP service, either on behalf of a resource owner (by orchestrating an approval interaction), or by allowing third-party applications to obtain access on its own behalf
     - OAuth is an open framework used for authentication and authorization protocols
-    - OAuth is an open standard for authentication allowing the use of credentials from one site on third-party sites 
+    - OAuth is an open standard for authentication allowing the use of credentials from one site on third-party sites
+    - OAuth Integration: 🔃 User attempts to access e-commerce application and chooses to login with Google Federation ➡️ Anti-Forgery token is created and sent to Google Server ➡️ Toke COnfirmation and authorization code is sent to by Google server to Ecommerce application server ➡️ Ecommerce application server sends an exchange code access and ID token to Google Server ➡️ BGoogle server sends a response token ➡️ Ecommerce application calls Google API using token.
     - The most common protocol built on OAuth is OpenID Connect (OIDC) 
     - OAuth 2.0 is often used for delegated access to applications, e.g. a mobile game that automatically finds all of your new friends from a social media app is likely using OAuth 2.0
     - Conversely, if you sign into a new mobile game using a social media account (instead of creating a user account just for the game), that process might use OIDC
