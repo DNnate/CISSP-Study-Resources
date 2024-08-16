@@ -212,7 +212,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - It is a Nondiscretionary access controls that uses centralized management 🔥, such as a rules deployed on a firewall.
 - 5.4.3 Mandatory Access Control (MAC)
     - ❄️**Mandatory Access Control (MAC)**: access control that requires the _system_ itself to manage access controls in accordance with the org's security policies. Users cannot delegate rights.
-    - A key characteristic of the MAC model is the use of labels applied to both subjects and objects
+    - A key characteristic of the MAC model is the use of labels applied to 📝both subjects and objects
         - e.g. a label of top secret grants access to top-secret documents
     - When documented in a table, the MAC model sometimes resembles a 📝lattice or matrix (i.e. climbing rosebush framework), so it is referred to as a lattice-based model. 📝Biba integrity model uses this.
     - Mandatory access control systems are based on a lattice-based model. Lattice-based models use a matrix of classification labels to compartmentalize data.
