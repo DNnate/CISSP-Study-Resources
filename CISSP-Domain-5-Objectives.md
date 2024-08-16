@@ -286,6 +286,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
             - new-user account creation is AKA enrollment or registration
             - 🩹Registration is the process of adding a user to an identity management system. This includes creating their unique identifier and adding any attribute information that is associated with their identity.
             -  review of provisioning processes typically involves checking logs, reviewing the audit trail, or performing a manual review of permissions granted during the provisioning process.
+        - **Workflow provisioning**: Provisioning that occurs through an established workflow, such as through an HR process, is workflow-based account provisioning
         - **automated provisioning**: information is provided to an app, that then creates the accounts via pre-defined rules (assigning to appropriate groups based on roles)
             - automated provisioning systems create accounts consistently
         - provisioning also includes issuing hardware, tokens, smartcards etc to employees
@@ -447,4 +448,4 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
       - 🍏Separation of Duties and Responsibilities: (Somtimes shorted SED) This ensures that sensitive functions are split into tasks performed by two or more employees. It helps prevent fraud and errors by creating a system of checks and balances. It ensures that no single entity can perform all the tasks for a job or function.
       - 🍏Job Rotation: A job rotation policy has employees rotate jobs or job responsibilities and can help detect collusion and fraud.
       - 🍏Mandatory Vacation policies: ensure that employees take an extended time away from their jobs, requiring someone else to perform their job responsibilities, which increases the likelihood of discovering fraud.
-- Note📝 When creating new user accounts, default acceess for new users should always be "No Access", if no authorization mechanism is specified.
+- Note📝 When creating new user accounts, default acceess for new users should always be "No Access", if no authorization mechanism is specified. Before granting any user access to information, you should verify that the user has an appropriate security clearance as well as a business need to know the information in question.
