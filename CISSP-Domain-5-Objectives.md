@@ -225,8 +225,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - 📝 MAC model doesn’t use a centralized environment.
     - MAC is a nondiscretionary access control model that uses labels🔥
     - (MAC) model supports three environments: hierarchical, compartmentalized, and hybrid.
-        - ☑️In a hierarchical environment, the various classification labels are assigned in an ordered structure from low security to high security.
-        - ☑️compartmentalized environment ignores the levels, and instead only allows access for individual compartments on any level.
+        - ☑️In a hierarchical environment, the various classification labels are assigned in an ordered structure from low security to high security. Mandatory access control systems can be hierarchical, where each domain is ordered and related to other domains above and below it;
+        - ☑️compartmentalized environment ignores the levels, and instead only allows access for individual compartments on any level.  MAC systems can be compartmentalized, where there is no relationship between each domain;
         - ☑️hybrid environment is a combination of a hierarchical and compartmentalized environment.
 
 - 5.4.4 Discretionary Access Control (DAC)
@@ -283,6 +283,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - this lifecycle is important because without properly defined and maintained user accounts, a system is unable to establish accurate identity, perform authentication, provide authorization, and track accountability
     - 🌲**Provisioning/Onboarding**
         - proper user account creation, or provisioning, ensures that personnel follow specific procedures when creating accounts
+        - 📝Provisioning includes the creation, maintenance, and removal of user objects from applications, systems, and directories. Registration occurs when users are enrolled in a biometric system for example;
             - new-user account creation is AKA enrollment or registration
             - 🩹Registration is the process of adding a user to an identity management system. This includes creating their unique identifier and adding any attribute information that is associated with their identity.
             -  review of provisioning processes typically involves checking logs, reviewing the audit trail, or performing a manual review of permissions granted during the provisioning process.
@@ -347,7 +348,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - OIDC uses the OAuth framework for authorization and builds on the OpenID technologies for authentication
     - 📝OpenID on its own provides authentication but doesn’t include profile information. However OpenID Connect provides both authentication and profile information
 - 5.6.2 Security Assertion Markup Language (SAML)
-    - 🏔️**Security Assertion Markup Language (SAML)**: an open XML-based standard commonly used to 📝exchange authentication and authorization (AA) information between federated orgs
+    - 🏔️**Security Assertion Markup Language (SAML)**: an open XML-based standard commonly used to 📝exchange authentication and authorization (AA) information between federated orgs, particularly for browser-based SSO.
     - it is used to make authorization and authentication data on first access
     - SAML provides SSO capabilities for browser access
     - SAML Integration: 🔃 User attempts to access 3rd part application ➡️ SAML integrated 3rd party solution sends a redirect to SSO URL ➡️ Browser accesses SSO URL and sends to Home organisation (IDP) ➡️ Home organisation authenticates user and sends SAML response to web browser ➡️ Browser sends SAML response to integrated 3rd party solution ➡️ SAML responsie is verified and user is logged on to the 3rd party organisation.
@@ -416,7 +417,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - RADIUS uses UDP port 1812 for RADIUS messages and UDP port 1813 for RADIUS Accounting messages
         - RADIUS encrypts only the password’s exchange by default
         - it is possible to use RADIUS/TLS to encrypt the entire session
-    - ❄️**TACACS**: Cisco developed Terminal Access Control Access Control System Plus (TACACS+) and released it as an open standard
+    - ❄️**TACACS**: Cisco developed Terminal Access Control Access Control System Plus (TACACS+) and released it as an open standard. XTACACS is an earlier version.
         - provides improvements over the earlier version and over RADIUS, it separates authentication, authorization, and accounting into separate processes, which can be hosted on three different servers
         - TACACS+ allows authentication, authorization, and accounting to be handled independently, providing more granular control.
         - additionally, TACACS+ encrypts all of the authentication information, not just the password, as RADIUS does
