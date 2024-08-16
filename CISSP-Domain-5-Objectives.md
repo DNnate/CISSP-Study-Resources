@@ -171,6 +171,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - **Credential management systems**: provide storage space for usernames and password
         - e.g. web browsers that remember usernames and passwords for visited sites
     - The World Wide Web Consortium (W3C) published the Credential Management Level 1 API as a working draft in January 2019, which many browsers have adopted
+    - Credential management systems offer features like password management, multi-factor authentication to retrieve passwords, logging, audit, and password rotation capabilities. 
     - Some federated identity management solutions use the Credential Management API, allowing web apps to implement SSO using a federated identity provider
         - e.g. using your Google or Facebook account to sign into Zoom
 - 5.2.8 Singe Sign On (SSO)
