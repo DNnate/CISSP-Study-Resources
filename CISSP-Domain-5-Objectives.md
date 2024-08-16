@@ -48,10 +48,12 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - **Authentication**: verifies the subject’s identity by comparing one or more factors against a database of valid identities, such as user accounts
     - a core principle with authentication is that all subjects must have unique identities
     - identification and authentication occur together as a single two-step process
-    - users identify themselves with usernames and authenticate (or prove their identity) with passwords. ✏️NIST SP 800-­63B recommends users only be required to change their password if their current password is compromised. They do not recommend that users be required to change their password regularly at any interval.
+    - users identify themselves with usernames and authenticate (or prove their identity) with passwords.
+    - When you input a username and password, you are authenticating yourself by providing a unique identifier and a verification that you are the person who should have that identifier (the password). 
+    - ✏️NIST SP 800-­63B recommends users only be required to change their password if their current password is compromised. They do not recommend that users be required to change their password regularly at any interval.
     - Password complexity is driven by length, and a longer password will be more effective against brute-force attacks than a shorter password. Each character of additional length increases the difficulty by the size of the potential character set (for example, a single lowercase character makes the passwords 26 times more difficult to crack.
     - Note: The practice of 🔥salting passwords (Salted hashes are stored and compared to passwords after they are salted and hashed) was specifically introduced to thwart rainbow table attacks, but it also thwarts the effectiveness of offline dictionary and brute-­force attacks. 📝Rainbow tables are databases of pre-hashed passwords paired with high-speed lookup functions. Since they can quickly compare known hashes against those in a file, using rainbow tables is the fastest way to quickly determine passwords from hashes. 
-- **Authorization**: Authorization verifies the identity of a subject by checking a factor like a password.  Authorization provides a user with capabilities or rights. 
+- **Authorization**: Authorization verifies the identity of a subject by checking a factor like a password.  Authorization provides a user with capabilities or rights. It is the process of determining what a user is allowed to do.
 - 5.2.1 Identiy management (IdM) implementation
     - Identity and access management is a collection of processes and techologies that are used to control access to critical assets; it's purpose is the management of access to information, systems, devices, and facilities
     - Identity Management (IdM) implementation techniques generally fall into two categories:
@@ -411,16 +413,17 @@ that describe the object that can be impacted; and contextual attributes like lo
         - TACACS+ uses TCP port 49, providing a higher level of reliability for the packet transmissions
 
 - 5.6.5 Credential Managment System
-    - **Password Vault**: stored locally on the device and stores password so the user doesnt have to remember them
+    - 🗳️**Password Vault**: stored locally on the device and stores password so the user doesnt have to remember them
        - uses trong encyrption e.g AES-256 for secure storage
        - only as secure as the secure owner password used to protect the vault itself
        - Often uses MFA
        - Some password vaults exists in the cloud for DevOps scenarios
-    - **Key Managment Systems**: CSPs offer a cloud service for centralized secure stroage and access for application secrets called vaults. In Azure (Key Vault), in AWS (KMS), in Google Cloud (KMS Vault)
+    - 🗳️**Key Managment Systems**: CSPs offer a cloud service for centralized secure stroage and access for application secrets called vaults. In Azure (Key Vault), in AWS (KMS), in Google Cloud (KMS Vault)
        - secrets can include API keys, passwords, certificates, tokens, cryptographic keys
        - The services will typicall offer programmatic access via API to support DevOps and CI/CD
        - Access control is handled at the vault-instance level and often at a secret level within
        - Secrets and keys can be protected either by software of by FIPS 14-2(3) Level 2 validated HSMs.
+    - 🗳️**Enterprise password management tools** allow passwords to be securely generated, stored, and managed. They can provide logs of who uses passwords, when they were updated, and if they meet complexity and other requirements. Of course, this means that the keys to your environment are all in one place, so securing and managing the enterprise password manager is very important!
   
 ***Authorization Mecahanisms***
 
