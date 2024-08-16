@@ -95,7 +95,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - Type 1 + Type 2 + Type 3: A user needs to enter a password (🛎️Type 1 something you know ✏️), use a smart card (🛎️Type 2 something you have ✏️), and undergo a retina scan (🛎️Type 3 something you are ✏️). 🛎️Somehwere you are: A callback to a landline phone number is an example of a "somewhere you are" factor because of the fixed physical location of a wired phone. 
         - Yubikeys, Titan Security Keys, and similar devices are examples of tokens i.e Type 2
         - **🔔Synchronous** soft tokens, such as Google Authenticator, use a time-based algorithm that generates a constantly changing series of codes. A synchronous token generates and displays onetime passwords e.g every 60 seconds, that are synchronized with an authentication server.
-        - **🔔Asynchronous** tokens typically require a challenge to be entered on the token to allow it to calculate a response, which the server compares to the response it expects. An asynchronous token uses a challenge-­response process to generate the onetime password.
+        - **🔔Asynchronous** tokens typically require a 📝challenge to be entered on the token to allow it to calculate a response, which the server compares to the response it expects. An asynchronous token uses a challenge-­response process to generate the onetime password.
     - Two-factor methods:
         - 🍖**HMAC-based One-Time Password (HOTP)** Hash Message Authentication Code (HMAC) includes a hash function used by the HMAC-based One-Time Password (HOTP) standard to create onetime passwords. It typically creates HOTP values of six to eight numbers. This is similar to the 📝asynchronous dynamic passwords created by tokens. The HOTP value remains valid until used.
         - 🍖**Time-based One-Time Password (TOTP)**: similar to HOTP, but uses a timestamp and remains valid for a certain time frame (e.g. 30 or 60 seconds). It is similar to the 📝synchronous dynamic passwords used by tokens. The TOTP password expires if the user doesn’t use it within the time frame. 
@@ -130,7 +130,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - Session management is important to use with any type of authentication system to prevent unauthorized access
     - Desktop/laptops: recommendation to use screensavers, although modern OSs have timeout/lock features
     - Secure online sessions should terminate after a timeout period. Common session management techniques include the use of 📝cookies, 📝hidden form fields, 📝URL rewriting, and built-in frameworks like Java’s 📝HTTPSession.
-    - long session ID (often 128 bits or longer) and session ID entropy (randomness)  make session guessing difficult for hackers
+    - long session ID (often 128 bits or longer) and session ID entropy (randomness)  make 📝session guessing difficult for hackers. This makes brute-force or algorithmic guessing attacks unlikely unless there is a flaw in the implementation. 
     - The Open Web Application Security Project (OWASP) publishes “cheat sheets” that provide app developer’s specific recommendations
     - It is also a best practice to make sure the session ID itself is meaningless to prevent information disclosure attacks
 - 5.2.5 Registration, proofing, and establishment of identity
@@ -156,7 +156,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - 🍊Security Assertion Markup Language (SAML)
         - 🍊OAuth (most widely used and integrates with 3rd Parties). OAuth is the most widely used open standard for 🧠authorization and delegation of rights for cloud services. The anti-forgery state token exchanged during OAuth  sessions is intended to prevent cross-site request forgery. Cross-­site request forgery attacks, abbreviated as XSRF or CSRF attacks, are similar to cross-­site scripting attacks but exploit a different trust relationship. XSS attacks exploit the trust that a user has in a website to execute code on the user’s computer. **XSRF** attacks exploit the trust that remote sites have in a user’s system to execute commands on the user’s behalf.
         - 🍊OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
-        - OpenID is used for 🧠authentication
+        - OpenID is used for 🧠authentication. OpenID would you to use an account from another service with your application.
         - OpenID Connect is a RESTful, JSON-based authentication protocol that, when paired with OAuth, can provide identity verification and basic profile information.
              - OpenID Provider (OP): The service that authenticates users.
              - Relying Party (RP): The website or app trusting the OP for user authentication.
@@ -219,6 +219,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - A key characteristic of the MAC model is the use of labels applied to 📝both subjects and objects
         - e.g. a label of top secret grants access to top-secret documents
     - When documented in a table, the MAC model sometimes resembles a 📝lattice or matrix (i.e. climbing rosebush framework), so it is referred to as a lattice-based model. 📝Biba integrity model uses this.
+    - In a mandatory access control system, the 📝operating system enforces access control,
     - Mandatory access control systems are based on a lattice-based model. Lattice-based models use a matrix of classification labels to compartmentalize data.
     - 📝 MAC model doesn’t use a centralized environment.
     - MAC is a nondiscretionary access control model that uses labels🔥
@@ -234,8 +235,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - New Technology File System (NTFS) used in Windows, uses the DAC model
     - MAC, RBAC, and rule-­based access control) are nondiscretionary models.
 - 5.4.5 Attribute Based Access Control (ABAC) or Policy-Based Access Control
-    - ❄️**Attribute-Based Access Control (ABAC)**: an access control paradigm where access rights are granted to users with policies that combine attributes together. Attributes used for ABAC often fall into one of four categories: subject attributes like department or title; action attributes like the ability to view, edit, or delete; object attributes
-that describe the object that can be impacted; and contextual attributes like location, time, or elements.
+    - ❄️**Attribute-Based Access Control (ABAC)**: an access control paradigm where access rights are granted to users with policies that combine attributes together. Attributes used for ABAC often fall into one of four categories: 🐝subject attributes like department or title; 🐝action attributes like the ability to view, edit, or delete; 🐝object attributes that describe the object that can be impacted; and 🐝contextual attributes like location, time, or elements.
     - A key characteristic of the ABAC model is its use of rules that can include multiple attributes
         - this allows it to be much more flexible than a rule-based access control model that applies the rules to all subjects equally
         - many software-defined networks (SDNs) use the ABAC model
@@ -325,11 +325,13 @@ that describe the object that can be impacted; and contextual attributes like lo
    - In the cloud, it is often called service principle.
    - In the cloud, similar concepts exists for clud resources such as VMs, that provides an identity for that resource to access other resources. In Azure (_Managed Identity_), in AWS (_Service Roles_), in Google cloud (_Service Account Identity_).
    - Least privilege and life cycle managment are all equally important for service accounts.
-- 
+   - The most important step in securing service accounts is to ensure that they have only the rights that are absolutely needed to accomplish the task they are designed for. Disabling interactive logins is important as well
 [5.6](#5.6) Implement authentication systems (OSG-9 Chpt 14)
 - 5.6.1 OpenID Connect (OIDC) / Open Authorization (Oauth)
     - ❄️**OAuth 2.0** authorization framework enables third-party apps to obtain limited access to an HTTP service, either on behalf of a resource owner (by orchestrating an approval interaction), or by allowing third-party applications to obtain access on its own behalf
     - OAuth is an open framework used for authentication and authorization protocols
+    - OAuth provides authorization
+    - OAuth provides the ability to access resources from another service 
     - OAuth is an open standard for authentication allowing the use of credentials from one site on third-party sites
     - OAuth Integration: 🔃 User attempts to access e-commerce application and chooses to login with Google Federation ➡️ Anti-Forgery token is created and sent to Google Server ➡️ Toke COnfirmation and authorization code is sent to by Google server to Ecommerce application server ➡️ Ecommerce application server sends an exchange code access and ID token to Google Server ➡️ BGoogle server sends a response token ➡️ Ecommerce application calls Google API using token.
     - The anti-forgery state token exchanged during OAuth sessions is intended to prevent cross-site request forgery 📝XSRF/CSRF. This makes sure that the unique session token with the authentication response from Google's OAuth service is available to verify that the user, not an attacker, is making a request.
@@ -339,7 +341,7 @@ that describe the object that can be impacted; and contextual attributes like lo
     - ❄️**OpenID Connect (OIDC)**: an authentication layer using the OAuth 2.0 authorization framework, maintained by the OpenID Foundation, providing both authentication and authorization
     - OIDC uses 📝JSON (JavaScript Object Notation) Web Tokens (JWT) -- AKA ID token that provides both authentication and profile information for internet-­based single sign-­on
     - OAuth and OIDC are used with many web-based applications to share information without sharing credentials
-        - OAuth provides authorization
+        - OpenID Connect is a RESTful, JSON-based authentication protocol that, when paired with OAuth, can provide identity verification and basic profile information. 
         - OIDC uses the OAuth framework for authorization and builds on the OpenID technologies for authentication
     - 📝OpenID on its own provides authentication but doesn’t include profile information. However OpenID Connect provides both authentication and profile information
 - 5.6.2 Security Assertion Markup Language (SAML)
