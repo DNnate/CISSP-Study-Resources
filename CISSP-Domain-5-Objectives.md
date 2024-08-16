@@ -49,7 +49,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - a core principle with authentication is that all subjects must have unique identities
     - identification and authentication occur together as a single two-step process
     - users identify themselves with usernames and authenticate (or prove their identity) with passwords. ✏️NIST SP 800-­63B recommends users only be required to change their password if their current password is compromised. They do not recommend that users be required to change their password regularly at any interval.
-    - Note: The practice of 🔥salting passwords (Salted hashes are stored and compared to passwords after they are salted and hashed) was specifically introduced to thwart rainbow table attacks, but it also thwarts the effectiveness of offline dictionary and brute-­force attacks. 
+    - Note: The practice of 🔥salting passwords (Salted hashes are stored and compared to passwords after they are salted and hashed) was specifically introduced to thwart rainbow table attacks, but it also thwarts the effectiveness of offline dictionary and brute-­force attacks.
+- **Authorization**: Authorization provides a user with capabilities or rights. 
 - 5.2.1 Identiy management (IdM) implementation
     - Identity and access management is a collection of processes and techologies that are used to control access to critical assets; it's purpose is the management of access to information, systems, devices, and facilities
     - Identity Management (IdM) implementation techniques generally fall into two categories:
@@ -264,8 +265,8 @@ that describe the object that can be impacted; and contextual attributes like lo
     - Be careful in using the local system account as an application service account; although it allows the app to run without creating a special service account, it usually grants the app more access than it needs
     - You can use scripts to run periodically and check for unused accounts, and check priveleged group membership, removing unauthorized accounts
     - Guard against two access control issues:
-        - excessive privilege: occurs when users have more privileges than assigned work tasks dictate; these privileges should be revoked
-        - creeping privileges (AKA privilege creep or aggregation): user accounts accumulating additional privileges over time as job roles and assigned tasks change
+        - 🔔excessive privilege: occurs when users have more privileges than assigned work tasks dictate; these privileges should be revoked
+        - 🔔creeping privileges (AKA privilege creep or aggregation): user accounts accumulating additional privileges over time as job roles and assigned tasks change
 - 5.5.2 Provisioning and deprovisioning
     - Identity and access provisioning lifecycle refers to the creation, management, and deletion of accounts
         - this lifecycle is important because without properly defined and maintained user accounts, a system is unable to establish accurate identity, perform authentication, provide authorization, and track accountability
@@ -298,11 +299,15 @@ that describe the object that can be impacted; and contextual attributes like lo
 - 5.5.4 Privilege escalation (e.g. managed service accounts, use of usdo, minimizing its use)
     - Privilege escalation refers to any situation that gives users more privileges than they should have
     - Attackers use privilege escalation techniques to gain elevated privileges
-    - 🍍**Horizontal privilege escalation**: gives an attacker similar privileges as the first compromised user, but from other accounts
+    - 🍍**Horizontal privilege escalation**: gives an attacker similar privileges as the first compromised user, but from other accounts. Multifactor authentication is most likely to limit horizontal privilege escalation by making it difficult to access user accounts and to authenticate to a compromised account. Limiting permissions for groups and accounts can also help
+        - Horizontal privilege escalation occurs when a user gains access to the privileges of another user who has similar permissions. In this type of attack, the malicious user does not increase their privilege level but rather "horizontally" moves to impersonate or access another user’s data or capabilities.
+        - If Alice exploits a vulnerability to access Bob’s account and perform actions as if she were Bob, this would be horizontal privilege escalation. 
     - 🍍**Vertical privilege escalation**: provides an attacker with significantly greater privileges
         - e.g. after compromising a regular user’s account an attacker can use vertical privilege escalation techniques to gain administrator privileges on the user’s computer
+        - Vertical privilege escalation occurs when a user gains access to higher-level privileges than they are supposed to have. This usually means moving from a lower privilege level, like a standard user, to a higher one, such as an administrator or root user.
         - the attacker can then use horizontal privilege escalation techniques to access other computers in the network
-        - this horizontal privilege escalation throughout the network is AKA **lateral movement**
+        - this horizontal privilege escalation throughout the network is AKA 📝lateral movement
+        - Disabling unused ports and services and sanitizing user inputs both address threats that are most frequently associated with vertical privilege escalation attacks.
 - **Service Accounts**: When a software is installed on a computer, it may require privileged access to run and access other resources (systems/data). Service accounts are a low level adminsitrative accounts without human intervention.
    - it is an account used to run an application
    - In the cloud, it is often called service principle.
