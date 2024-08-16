@@ -41,13 +41,13 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
    - Devices
    - Cloud services
    - Sites and Facilities
-     
    
 [5.2](#5.2) Manage identification and authentication of people, devices, and services (OSG-9 Chpt 13)
 - **Identification**: the process of a subject claiming, or professing an identity. 
 - **Authentication**: verifies the subject’s identity by comparing one or more factors against a database of valid identities, such as user accounts
     - a core principle with authentication is that all subjects must have unique identities
     - identification and authentication occur together as a single two-step process
+    - Access control systems rely on identification and authentication to provide 📝accountability. 
     - users identify themselves with usernames and authenticate (or prove their identity) with passwords.
     - When you input a username and password, you are authenticating yourself by providing a unique identifier and a verification that you are the person who should have that identifier (the password). 
     - ✏️NIST SP 800-­63B recommends users only be required to change their password if their current password is compromised. They do not recommend that users be required to change their password regularly at any interval.
