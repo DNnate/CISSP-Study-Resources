@@ -363,7 +363,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - 🏔️**Service Provisioning Markup Language (SPML)** is an XML-based language designed to allow platforms to generate and respond to provisioning requests.
     - 🏔️**Extensible Access Control Markup Language (XACML)** is used to describe access controls.
   
-- 5.6.3 Kerberos
+- 5.6.3 Kerberos: 🔄 Clients wants to access a Windows Server ➡️ Client sends a request to AS (part of KDC) ➡️ AS verifies client and responds with TGT ➡️ Client sends the TGT to TGS (part of the KDC) ➡️ TGS decrypts the TGT, verify the client, sends a service ticket and Session Key to client ➡️ client sends the service ticket and a new authenticator (encrypted with the session key) to the Windows server ➡️ The server decrypts the service ticket with its own secret key and verifies the client's identity using the authenticator ➡️ CLient is granted access to the server if all OK. 🔄
     - **Kerberos** is a network authentication protocol widely used in corporate and private networks and found in many LDAP and directory services solutions such as Microsoft Active Directory
     - It provides single sign-on and uses cryptography to strengthen the authentication process
     - The primary purpose of Kerberos is authentication, since it allows users to prove their identity.
@@ -374,12 +374,12 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - Kerberos version 5 relies on symmetric-key cryptography (AKA secret-key cryptography) using the Advanced Encryption Standard (AES) symmetric encryption protocol
     - Kerberos provides confidentiality and integrity for authentication traffic using end-to-end security and helps protect against eavesdropping and replay attacks
     - Kerberos elements:
-        - **Key Distribution Center (KDC)**: the trusted third party that provides authentication services
-        - **Kerberos Authentication Server**: hosts the functions of the KDC:
-            - **ticket-granting service (TGS)**: provides proof that a subject has authenticated through a KDC and is authorized to request tickets to access other objects
+        - **Key Distribution Center (KDC)**: the trusted third party that provides authentication services. It has two main parts: Kerberos Authentication Server (AS) and the ticket-granting service (TGS):
+            - 🍮**ticket-granting service (TGS)**: provides proof that a subject has authenticated through a KDC and is authorized to request tickets to access other objects
+                - The TGS, or ticket-granting service (which is usually on the same server as the KDC), receives a TGT from the client. It validates the TGT and the user's rights to access the service they are requesting to use. The TGS then issues a ticket and session keys to the client. 
                 - a TGT is encrypted and includes a symmetric key, an expiration time, and user’s IP address. 📝 a scenario where TGT is compromised, Attackers can create golden tickets after successfully exploiting Kerberos and obtaining the Kerberos service account (KRBTGT).
                 - subjects present the TGT when requesting tickets to access objects
-            - **authentication service (AS)**: verifies or rejects the authenticity and timeliness of tickets. Often referred to as the KDC
+            - 🍮**authentication service (AS)**: hosts the functions of the KDC. It verifies or rejects the authenticity and timeliness of tickets. Often referred to as the KDC. The AS serves as the authentication server, which forwards the username to the KDC. It's worth noting that the client doesn't communicate with the KDC directly. Instead, it will communicate with the TGT and the AS, which means KDC isn't an appropriate answer here.
         - **ticket (AKA service ticket (ST))**: an encrypted message that provides proof that a subject is authorized to access an object
         - **Kerberos Principal**: typically a user but can be any entity that can request a ticket
         - **Kerberos realm**: a logical area (such as a domain or network) ruled by Kerberos
