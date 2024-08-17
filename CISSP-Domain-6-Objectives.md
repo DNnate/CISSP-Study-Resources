@@ -115,17 +115,17 @@
             - **Open Vulnerability and Assessment Language (OVAL)**: provides a language for describing security testing procedures
     - Vulnerability scans automatically probe systems, applications, and networks looking for weaknesses that could be exploited by an attacker. Vulnerability Scanners scan remote machines to gather information, including fingerprints from responses to queries and connections, banner information from services, and related data.
     - Four main categories of vulnerability scans:
-        - network discovery scans: Network discovery scanners use many different techniques to identify open ports on remote systems:
+        - 📗Network discovery scans: Network discovery scanners use many different techniques to identify open ports on remote systems:
             - 🔔TCP SYN Scanning Sends a single packet to each scanned port with the SYN flag set. This indicates a request to open a new connection. If the scanner receives a response that has the SYN and ACK flags set, this indicates that the system is moving to the second phase in the three-­way TCP handshake and that the port is open. TCP SYN scanning is also known as 📝“half-­open” scanning.
             - 🔔TCP Connect Scanning Opens a full connection to the remote system on the specified port. This scan type is used when the user running the scan does not have the necessary permissions to run a half-­open scan. Most other scan types require the ability to send raw packets, and a user may be restricted by the operating system from sending hand-crafted packets. The TCP SYN scan sends a SYN packet and receives a SYN ACK
             - 🔔TCP ACK Scanning Sends a packet with the ACK flag set, indicating that it is part of an open connection. This type of scan may be done in an attempt to determine the rules enforced by a firewall and the firewall methodology. 
             - 🔔UDP Scanning Performs a scan of the remote system using the UDP protocol, checking for active UDP services. This scan type does not use the three-­way handshake, because UDP is a connectionless protocol.
             - 🔔Xmas Scanning Sends a packet with the FIN, PSH, and URG flags set. A packet with so many flags set is said to be “lit up like a Christmas tree,” leading to the scan’s name.
-        - 🔔Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Note: Nmap only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! **nmap states** are Open Port: The port is accessible on the remote system and an application is accepting connections on that port. Closed Port: The port is not accessible on the remote system. Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port.
-        - web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af
-        - database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
-    - 🔔Active Scanning is useful for testing IDS or IPS systems. Scripted attacks are part of active scanning
-    - 🔔Passive scanning can help identify rogue devices by capturing MAC address vendor IDs that do not match deployed devices, by verifying that systems match inventories of organizationally owned hardware by hardware address, and by monitoring for rogue SSIDs or connections.
+        - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Note: Nmap only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! **nmap states** are Open Port: The port is accessible on the remote system and an application is accepting connections on that port. Closed Port: The port is not accessible on the remote system. Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port.
+        - 📗Web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af
+        - 📗Database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
+    - ✴️Active Scanning is useful for testing IDS or IPS systems. Scripted attacks are part of active scanning
+    - ✴️Passive scanning can help identify rogue devices by capturing MAC address vendor IDs that do not match deployed devices, by verifying that systems match inventories of organizationally owned hardware by hardware address, and by monitoring for rogue SSIDs or connections.
     - 🔔Authenticated Vulnerability scans use a read-only account to access configuration files, allowing more accurate testing of vulnerabilities. It  provides the most accurate and detailed information about the security state of a server.
         - Authenticated scans can read configuration information from the target system and reduce the instances of false positive and false negative reports.
 
@@ -399,10 +399,9 @@ reassembles the activity of individual users to track their interaction with a w
       - Application Programming Interfaces (APIs)
       - User Interfaces (UIs)
       - Physical Interfaces (For appliacations that manipulate machinery and logic controllers)
-
     - **Misuse Case Testing**: or abuse case testing to evaluate the vulnerability of their software to users attempt
 to misuse the application
-    - **Mutation Testing**: Mutation testing (automatically) modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation.
+    - **Mutation Testing**: Mutation testing (automatically) modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation. It is a method used to automatically design new software tests and to ensure the quality of tests
     - **Regression Testing**: In cases where the project is releasing updates to an existing system, regression testing formalizes the process of verifying that the new code performs in the same manner as the old code, other than any changes expected as part of the new release. They Key performance measure of Regression testing is more specifically covered by defect recurrence rates.        
     - **Test Coverage Analysis**:
             - Test Coverage = number of use cases Tested/Total umber of use cases. ­Coverage rates are used to measure how effective code testing is.
@@ -486,15 +485,13 @@ to misuse the application
 
 NIST Cybersecurity Framework (CSF): The NIST Cybersecurity Framework consists of standards, guidelines, and best practices to manage cybersecurity risk. It is organized into five core functions: Identify, Protect, Detect, Respond, and Recover.
 
-**Federal Information Processing Standards (FIPS):**
-
+- **Federal Information Processing Standards (FIPS):**
 - FIPS 199: "Standards for Security Categorization of Federal Information and Information Systems" - Establishes security categories for information and information systems.
 - FIPS 200: "Minimum Security Requirements for Federal Information and Information Systems" - Specifies minimum security requirements for federal information systems.
 - FIPS 140-2: "Security Requirements for Cryptographic Modules" - Specifies requirements for cryptographic modules.
 - FIPS 140-3: is the successor to FIPS 140-2, providing updated requirements for cryptographic modules
 
-**ISO/IEC 27000 Series:**
-
+- **ISO/IEC 27000 Series:**
 - ISO/IEC 27001: "Information Security Management Systems (ISMS) – Requirements" - Specifies the requirements for establishing, implementing, maintaining, and continually improving an information security management system.
 - ISO/IEC 27002: "Code of Practice for Information Security Controls" - Provides guidelines and general principles for initiating, implementing, maintaining, and improving information security management in an organization.
 - ISO/IEC 27005: "Information Security Risk Management" - Provides guidelines for information security risk management, including risk assessment and treatment.
@@ -504,17 +501,15 @@ NIST Cybersecurity Framework (CSF): The NIST Cybersecurity Framework consists of
 - ISO/IEC 27035: "Information Security Incident Management" - Provides guidelines for the management of information security incidents, including planning and response.
 - ISO/IEC 27701: "Privacy Information Management System" - Provides guidelines for establishing, implementing, maintaining, and continually improving a Privacy Information Management System (PIMS) based on the requirements of ISO/IEC 27001.
 
-**ISO 31000 Series:**
-
+- **ISO 31000 Series:**
 - ISO 31000: "Risk Management – Guidelines" - Provides principles and generic guidelines on risk management.
 - ISO 31010: "Risk Management – Risk Assessment Techniques" - Provides guidance on the selection and application of techniques for assessing risk in a wide range of situations.
 
-**ISO/IEC 20000 Series:**
-
+- **ISO/IEC 20000 Series:**
 - ISO/IEC 20000-1: "Information Technology – Service Management – Part 1: Service Management System Requirements" - Specifies requirements for establishing, implementing, maintaining, and continually improving a service management system (SMS).
 - ISO/IEC 20000-2: "Information Technology – Service Management – Part 2: Guidance on the Application of Service Management Systems" Provides guidance on the application of an SMS based on ISO/IEC 20000-1.
 
-**SSAE 18:** "Attestation Standards: Clarification and Recodification" - This standard, effective since May 1, 2017, provides guidance on performing and reporting on examination, review, and agreed-upon procedures engagements. It includes guidelines for reports on controls at service organizations, consolidating and clarifying previous standards.
+- **SSAE 18:** "Attestation Standards: Clarification and Recodification" - This standard, effective since May 1, 2017, provides guidance on performing and reporting on examination, review, and agreed-upon procedures engagements. It includes guidelines for reports on controls at service organizations, consolidating and clarifying previous standards.
 - SOC Reports under SSAE 18:
     - SOC 1 (which focuses on controls at a service organization relevant to user entities’ internal control over financial reporting) and SOC 2 (which controls relevant to security, availability, processing integrity, confidentiality, and privacy) both have Type I (provides an opinion on the operating effectiveness of those controls at a 🔥specific point in time) and Type II (provides opinion on the suitability and effectiveness of security controls after evaluating them over a 🔥specified period of time) reports.
     - SOC 3 does not have separate Type I or Type II reports; it provides a general-purpose report suitable for public distribution.
