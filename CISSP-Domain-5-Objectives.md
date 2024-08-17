@@ -355,7 +355,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - The most common protocol built on OAuth is OpenID Connect (OIDC) 
     - OAuth 2.0 is often used for delegated access to applications, e.g. a mobile game that automatically finds all of your new friends from a social media app is likely using OAuth 2.0
     - Conversely, if you sign into a new mobile game using a social media account (instead of creating a user account just for the game), that process might use OIDC
+    - RFC 📝6749 describes OAuth and is maintained by the Internet Engineering Task Force (IETF). 
     - ❄️**OpenID Connect (OIDC)**: an authentication layer using the OAuth 2.0 authorization framework, maintained by the OpenID Foundation, providing both authentication and authorization
+    - OpenID Connect (OIDC) uses the OAuth framework (described in RFC 6749) and is maintained by the OpenID Foundation. The OpenID foundation also maintains OpenID.
     - OIDC uses 📝JSON (JavaScript Object Notation) Web Tokens (JWT) -- AKA ID token that provides both authentication and profile information for internet-­based single sign-­on
     - OAuth and OIDC are used with many web-based applications to share information without sharing credentials
         - OpenID Connect is a RESTful, JSON-based authentication protocol that, when paired with OAuth, can provide identity verification and basic profile information. 
