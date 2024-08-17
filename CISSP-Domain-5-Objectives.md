@@ -159,7 +159,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - users can then use this federated identity to access resources in any other org within the group
         - where each organization decides what resources to share
     - Methods used to implement federated identity management systems include:
-        - 🍊Security Assertion Markup Language (SAML)
+        - 🍊Security Assertion Markup Language (SAML): SAML is an XML-based framework used to exchange user information for single sign-on(SSO) between federated organizations within a federated identity management system. 
         - 🍊OAuth (most widely used and integrates with 3rd Parties). OAuth is the most widely used open standard for 🧠authorization and 🧠delegation of rights for cloud services. The anti-forgery state token exchanged during OAuth  sessions is intended to prevent cross-site request forgery. Cross-­site request forgery attacks, abbreviated as XSRF or CSRF attacks, are similar to cross-­site scripting attacks but exploit a different trust relationship. XSS attacks exploit the trust that a user has in a website to execute code on the user’s computer. **XSRF** attacks exploit the trust that remote sites have in a user’s system to execute commands on the user’s behalf.
         - 🍊OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
         - OpenID is used for 🧠authentication. OpenID would you to use an account from another service with your application. OpenID is used to sign in using credentials from an identity provider to other services, such as when you log in with Google to other sites
@@ -384,6 +384,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - The primary purpose of Kerberos is authentication, since it allows users to prove their identity.
     - Kerberos requires computer times to be within 5 minutes of each other
     - The purpose of Kerberos is authentication; Kerberos offers a single sign-on solution for users and protects logon credentials
+    - Kerberos supports SSO in a single organization (not federation)
     - Ticket authentication is a mechanism that employs a third-party entity to prove identification and provide authentication - Kerberos is a well-known ticket system
     - After users authenticate and prove their identity, Kerberos uses their proven identity to issue tickets, and user accounts present these tickets when accessing resources
     - Kerberos version 5 relies on symmetric-key cryptography (AKA secret-key cryptography) using the Advanced Encryption Standard (AES) symmetric encryption protocol
