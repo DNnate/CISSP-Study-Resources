@@ -106,13 +106,13 @@
     - Vulnerability assessments are some of the most important testing tools in the information security professional’s toolkit
     - **Security Content Automation Protocol (SCAP)**: provides a common framework for discussion and facilitation of automation of interactions between different security systems (sponsored by NIST)
         - SCAP components related to vulnerability assessments:
-            - **Common Vulnerabilities and Exposures (CVE)**: provides a naming system for describing security vulnerabilities
-            - **Common Vulnerability Scoring Systems (CVSS)**: provides a standardized scoring system for describing the severity of security vulnerabilities. The score can range from 0.0 (least severe) to 10.0 (most severe).
-            - **Common Configuration Enumeration (CCE)**: provides a naming system for system config issues
-            - **Common Platform Enumeration (CPE)**: provides a naming system for operating systems, applications, and devices
-            - **Extensible Configuration Checklist Description Format (XCCDF)**: provides a language for specifying security checklists
-            - **Script Check Engine (SCE)** is designed to make scripts ­interoperable with security policy definitions.
-            - **Open Vulnerability and Assessment Language (OVAL)**: provides a language for describing security testing procedures
+            - 📚**Common Vulnerabilities and Exposures (CVE)**: provides a naming system for describing security vulnerabilities
+            - 📚**Common Vulnerability Scoring Systems (CVSS)**: CVSS, the Common Vulnerability Scoring System, is used to describe the severity of security vulnerabilities. It provides a standardized scoring system for describing the severity of security vulnerabilities. The score can range from 0.0 (least severe) to 10.0 (most severe).
+            - 📚**Common Configuration Enumeration (CCE)**: CCE is Common Configuration Enumeration, a naming system for configuration issues. It provides a naming system for system config issues
+            - 📚**Common Platform Enumeration (CPE)**: provides a naming system for operating systems, applications, and devices. CPE is Common Platform Enumeration, which names operating systems, applications, and devices. 
+            - 📚**Extensible Configuration Checklist Description Format (XCCDF)**: provides a language for specifying security checklists
+            - 📚**Script Check Engine (SCE)** is designed to make scripts ­interoperable with security policy definitions.
+            - 📚**Open Vulnerability and Assessment Language (OVAL)**: provides a language for describing security testing procedures
     - Vulnerability scans automatically probe systems, applications, and networks looking for weaknesses that could be exploited by an attacker. Vulnerability Scanners scan remote machines to gather information, including fingerprints from responses to queries and connections, banner information from services, and related data.
     - Four main categories of vulnerability scans:
         - 📗Network discovery scans: Network discovery scanners use many different techniques to identify open ports on remote systems:
@@ -121,7 +121,12 @@
             - 🔔TCP ACK Scanning Sends a packet with the ACK flag set, indicating that it is part of an open connection. This type of scan may be done in an attempt to determine the rules enforced by a firewall and the firewall methodology. 
             - 🔔UDP Scanning Performs a scan of the remote system using the UDP protocol, checking for active UDP services. This scan type does not use the three-­way handshake, because UDP is a connectionless protocol.
             - 🔔Xmas Scanning Sends a packet with the FIN, PSH, and URG flags set. A packet with so many flags set is said to be “lit up like a Christmas tree,” leading to the scan’s name.
-        - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Note: Nmap only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! **nmap states** are Open Port: The port is accessible on the remote system and an application is accepting connections on that port. Closed Port: The port is not accessible on the remote system. Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port.
+        - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable.
+            - **Nmap** only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! Nmap states include:
+                - 🔨Open Port: The port is accessible on the remote system and an application is accepting connections on that port.
+                - 🔨Closed Port: The port is not accessible on the remote system.
+                - 🔨Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port.
+            - **OpenVAS**: OpenVAS is an open source vulnerability scanning tool that provide report of the vulnerabilities that it can identify from a remote, network-based scan. 
         - 📗Web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af
         - 📗Database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
     - ✴️Active Scanning is useful for testing IDS or IPS systems. Scripted attacks are part of active scanning
