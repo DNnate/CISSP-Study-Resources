@@ -188,12 +188,12 @@
     - Information security managers should also periodically conduct log reviews, particularly for sensitive functions, to ensure that privileged users are not abusing their privileges
     - **Network flow** (NetFlow) NetFlow records contain an entry for every network communication session that took place on a network and can be compared to a list of known malicious hosts. It is routinely saved as a matter of normal activity. Cisco has developed a version of NetFlow called Flexible NetFlow (FNF), which can be combined with secure transmission methods. However, the specific built-in decryption capability for NetFlow data is generally referred to as **Encrypted Traffic Analytics (ETA)**. ETA is designed to provide visibility into network traffic, even when the traffic is encrypted. 
     - 📚**Active monitoring (Synthetic monitoring)** uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. e.g Grafana, Zabbix, Selenium. It performs artificial transactions against a website to assess performance. Synthetic monitoring uses simulated or recorded traffic and thus can be used to proactively identify problems. Synthetic monitoring uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. 
-    - 📚**Passive monitoring** uses a span port or other method to copy traffic and monitor it in real time. e.g wireshark, PRTG, Cacti, ntoping, prometheus. **Real user monitoring (RUM)** is a variant of passive monitoring where the monitoring tool
-reassembles the activity of individual users to track their interaction with a website. RUM records user interaction with an application or system to ensure performance and proper application behavior. Passive monitoring works only after issues have occurred because it requires actual traffic.
+    - 📚**Passive monitoring** uses a span port or other method to copy traffic and monitor it in real time. e.g wireshark, PRTG, Cacti, ntoping, prometheus.  Passive monitoring uses a network tap or other capture technology to allow monitoring of actual traffic to a system or application.
+        - **Real user monitoring (RUM)** is a variant of passive monitoring where the monitoring tool reassembles the activity of individual users to track their interaction with a website. RUM records user interaction with an application or system to ensure performance and proper application behavior. Passive monitoring works only after issues have occurred because it requires actual traffic.
     - **Identity and access management (IAM)** systems combine lifecycle management and monitoring tools to ensure that identity and authorization are properly handled throughout an organization. e.g AD, DUO, OKTA. Identity and access management (IAM) systems can be configured to use appropriate workflows and to generate the logs and reports to tracks all changes to accounts through their lifecycle. 
 
 - 6.2.4 Synthetic transactions
-    - **Synthetic transactions**: scripted transactions with known expected results
+    - **Synthetic transactions**: scripted transactions with known expected results.  synthetic transactions, which can use recorded or generated transactions with data that fits the expected requirements of the web application to verify that it responds to typical customer behavior.
     - Dynamic testing may include the use of synthetic transactions to verify system performance; synthetic transactions are run against code and compare out to expected state
 
 - 6.2.5 Code review and testing
@@ -213,6 +213,7 @@ reassembles the activity of individual users to track their interaction with a w
 - 6.2.6 Misuse case testing
     - **Misuse case testing**: AKA abuse case testing - used by software testers to evaluate the vulnerability of their software to known risks
     - In misuse case testing, testers first enumerate the known misuse cases, then attempt to exploit those use cases with manual or automated attack techniques
+    - **Use case testing**: use case testing is to verify that the application responds properly to actual use cases
 
 - 6.2.7 Test coverage analysis
     - A test coverage analysis is used to estimate the degree of testing conducted against new software
@@ -401,6 +402,7 @@ reassembles the activity of individual users to track their interaction with a w
     - ❄️**Fuzz Testng**: is a specialized dynamic testing technique that provides many different, and sometimes invalid types of input to software to stress its limits and find previously undetected flaws.  Fuzzing uses modified inputs to test software performance under unexpected circumstances.It is imited to detecting simple vulnerabilities.
     - zzuf is a fuzzing tool thats tests web browsers ability to handle unexpected data
     - Fuzzers are tools that are designed to provide invalid or unexpected input to applications, testing for vulnerabilities like format string vulnerabilities, buffer overflow issues, and other problems.
+    - Fuzzing involves sending unexpected inputs to a program to see how it responds
         - 🔔Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input. It uses bit flipping and other techniques to slightly modify previous inputs to a program in an attempt to detect software flaws. It  modifies known inputs to generate synthetic inputs that may trigger unexpected behavior
         - 🔔Generational (Intelligent) Fuzzing Develops data models and creates new fuzzed input based on an understanding of the types of data used by the program. It develops inputs based on models of expected inputs to perform the same task.
     - ❄️**Interface Testing**: assesses the performance of modules against the interface specifications to ensure that they will work together properly. Interfaces to be tested include
