@@ -213,7 +213,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - MS Windows OS uses this model with groups
     - A role-­based access control (RBAC) model can group users into roles based on the organization’s hierarchy
     - it is based on role or group membership, and users can be members of multiple groups. Users are not limited to only a single role.
-    - RBAC models are based on the hierarchy of an organization, so they are hierarchy based.
+    - RBAC models are based on the hierarchy of an organization, so they are 📝hierarchy based.
     - It is nondiscretionary model managed by a central authority🔥 to determine which objects subjects can access
 - 5.4.2 ❄️**Rule Based access control**
     - A key characteristic of the Rule-Based access control model is that it applies global rules to all subjects
@@ -447,8 +447,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
   
 - **Authorization Mecahanisms**
     - 🍏Implicit Deny: ensures that access to an object is denied unless access has been explicitly granted to a subject. (deny by default)
-    - 🍏Access Control Matrix: a table that includes subjects, objects, and assigned privileges.
-    - 🍏Access control lists focus on objects and which subjects can access them.
+    - 🍏Access Control Matrix: a table that includes subjects, objects, and assigned privileges. An access control matrix includes multiple objects and subjects. It identifies access granted to subjects (such as users) to objects (such as files)
+    - 🍏Access control lists focus on objects and which subjects can access them. A single list of subjects for any specific object within an access control matrix is an access control list. 
     - 🍏Capability Tables: Capability tables list the privileges assigned to subjects and identify the objects that subjects can access. It list subjects and what objects they can access.They are different from ACLs in that a capability table is focused on subjects (such as users, groups, or roles). In contrast, ACLs are focused on objects.
     - 🍏Constrained Interface: Applications use constrained interfaces or restricted interfaces to restrict what users can do or see based on their privileges.
     - 🍏Content-­Dependent Control: This restrict access to data based on the content within an object. A database view is a content-­dependent control.
