@@ -47,38 +47,38 @@
 - 6.1.3 Third-party
     - Third-party audits are conducted by, or on behalf of, another org
     - In the case of a third-party audit, the org initiating the audit generally selects the auditors and designs the scope of the audit
-    - The statement on **Standards for Attestation Engagements document 18 (SSAE 18)**, titled Reporting on Controls, provides a common standard to be used by auditors performing assessments of service orgs with the intent of allowing the org to conduct external assessments, instead of multiple third-party assessments, and then sharing the resulting report with customers and potential customers
+    - ❄️**Standards for Attestation Engagements document 18 (SSAE 18)**, The statement on SSAE 18 titled Reporting on Controls, provides a common standard to be used by auditors performing assessments of service orgs with the intent of allowing the org to conduct external assessments, instead of multiple third-party assessments, and then sharing the resulting report with customers and potential customers
         - outside of the US, similar engagements are conducted under the International Standard for Attestation Engagements (ISAE) 3402, Assurance Reports on Controls at a Service Organization
     - SSAE 18 and ISAE 3402 engagements are commonly referred to as a service organization controls (SOC) audits
     - Three forms of SOC audits:
-        - **SOC 1 Engagements**: assess the organization’s controls that might impact the accuracy of financial reporting
-        - **SOC 2 Engagements**: assess the organization’s controls that affect the security (confidentiality, integrity, and availability) and privacy of information stored in a system
+        - 📙**SOC 1 Engagements**: assess the organization’s controls that might impact the accuracy of financial reporting
+        - 📙**SOC 2 Engagements**: assess the organization’s controls that affect the security (confidentiality, integrity, and availability) and privacy of information stored in a system
             - SOC 2 audit results are confidential and are usually only shared outside an org under an NDA
-        - **SOC 3 Engagements**: assess the organization’s controls that affect the security (confidentiality, integrity, and availability) and privacy information stored in a system
-            - however, SOC3 audit results are intended for public disclosure, and intended for distribution to third parties
+        - 📙**SOC 3 Engagements**: assess the organization’s controls that affect the security (confidentiality, integrity, and availability) and privacy information stored in a system
+            - however, SOC3 audit results are intended for 📝public disclosure, and intended for distribution to third parties
     - Two types of SOC reports:
-        - **Type I Reports**: provide the auditor’s opinion on the description provided by management and the suitability of the design of the controls
-            - type I reports also cover only a specific point in time, rather than an extended period
+        - 💥**Type I Reports**: provide the auditor’s opinion on the description provided by management and the suitability of the design of the controls
+            - type I reports also cover only a specific 📝point in time, rather than an extended period
             - think of Type I report as more of a documentation review
             -  takes a “snapshot-in-time” approach, setting a baseline for future audits of your service organization’s system.
-        - **Type II Reports**: go further and also provide the auditor’s opinion on the operating effectiveness of the controls
+        - 💥**Type II Reports**: go further and also provide the auditor’s opinion on the operating effectiveness of the controls
             - the auditor actually confirms the controls are functioning properly
-            - Type II reports also cover an extended period of time, at least 6 months
+            - Type II reports also cover an extended 📝period of time, at least 6 months
             - think of Type II report as similar to a traditional audit; the auditor is checking the paperwork, and verifying the controls are functioning properly
         - Type II reports are considered much more reliable than Type I reports (Type I reports simply take the service orgs word that the controls are implemented as described)
      
 - 6.1.4 Location for Auditing
     - Third-party audits are conducted by, or on behalf of, another org
-    - **On-Premise**:
+    - 🟢**On-Premise**:
         - Physical Access: Auditors typically need physical access to hardware, network devices, and data centres for inspection, configuration reviews and testing
         - Control and Visibility: Organisation retains greater control over its infrastructure thus auditors have ore direct visibility into security configurations
         - Scope: Audits may be focused on traditional IT infrastructure , including network security, operating systems, physical safeguards etc
-    - **Cloud**:
+    - 🟢**Cloud**:
         - Shared Responsibility: Security is a shared responsibility between the organisation and the cloud provider. Audit focus shifts towards how the organisation uses the cloud services
         - Documentation & APIs: Auditors typically will rely on heavily on cloud provider documentations, service configurations, and access to relevant APIs for gathering evidence.
         - Compliance Focus: Emphasis often on meeting cloud-specific security standards (e.g SOC 2, ISO 27001, FedRAMP), and the organisations configuration of cloud services. CSPs provide attestation documents for certification of the underlying infrastructure but the customer still needs to configure the cloud service in a compliant manner.
         - Customer right-to-audit is often limited, and be  mindful of rules of engagement when it comes to penetration testing
-    - **Hybrid**:
+    - 🟢**Hybrid**:
         - Increased Complexity: presents the most complexity due to the mix of on-premise and cloud components that need auditing
         - Data Flows: Understanding how data moves between on-premise and cloud environments is crucial for risk assessment
         - Integrated Controls: Auditors must evaluate the evaluate the effectiveness of security controls accros the entire hybrid landscape.
@@ -104,7 +104,7 @@
     - The goal of a vulnerability assessment is to identify elements in an environment that are not adequately protected -- and not necessarily from a technical perspective; you can also assess the vulnerability of physical security or the external reliance on power, for instance
         - can include personnel testing, physical testing, system and network testing, and other facilities tests
     - Vulnerability assessments are some of the most important testing tools in the information security professional’s toolkit
-    - **Security Content Automation Protocol (SCAP)**: provides a common framework for discussion and facilitation of automation of interactions between different security systems (sponsored by NIST)
+    - ❄️**Security Content Automation Protocol (SCAP)**: provides a common framework for discussion and facilitation of automation of interactions between different security systems (sponsored by NIST)
         - SCAP components related to vulnerability assessments:
             - 📚**Common Vulnerabilities and Exposures (CVE)**: provides a naming system for describing security vulnerabilities
             - 📚**Common Vulnerability Scoring Systems (CVSS)**: CVSS, the Common Vulnerability Scoring System, is used to describe the severity of security vulnerabilities. It provides a standardized scoring system for describing the severity of security vulnerabilities. The score can range from 0.0 (least severe) to 10.0 (most severe).
@@ -136,26 +136,26 @@
 
 - 6.2.2 Penetration testing
     - Penetration tests goes beyond vulnerability testing techniques because it actually attempts to exploit systems. In most organizations, senior management needs to approve penetration tests due to the risk to the organization and the potential impact of the test. In a small number of organizations, the service owner may be able to make this decision, but penetration tests often have broader impacts than a single service, meaning that senior management is the proper approval path.
-    - NIST defines the penetration testing process as consisting of four phases:
-    - **planning**: includes agreement on the scope of the test and the rules of engagement
+    - NIST defines the penetration testing process as consisting of four phases: PIAR 🟡
+    - 🚡**planning**: includes agreement on the scope of the test and the rules of engagement
         - ensures that both the testing team and management are in agreement about the nature of the test and that it is explicitly authorized
-    - **information gathering and discovery**: uses manual and automated tools to collect information about the target environment
+    - 🚡**information gathering and discovery**: uses manual and automated tools to collect information about the target environment
         - basic reconnaissance (website mapping)
         - network discovery
         - testers probe for system weaknesses using network, web and db vuln scans
-    - **attack**: seeks to use manual and automated exploit tools to attempt to defeat system security
+    - 🚡**attack**: seeks to use manual and automated exploit tools to attempt to defeat system security
         - step where pen testing goes beyond vuln scanning as vuln scans don’t attempt to actually exploit detected vulns
-    - **reporting**: summarizes the results of the pen testing and makes recommendations for improvements to system security
+    - 🚡**reporting**: summarizes the results of the pen testing and makes recommendations for improvements to system security
     - tests are normally categorized into three groups:
-        - **white-box penetration test**:
+        - 🔴**white-box penetration test (crystal)**:
             - provides the attackers with **detailed information** about the systems they target
             - this bypasses many of the reconnaissance steps that normally precede attacks, shortening the time of the attack and increasing the likelihood that it will find security flaws
             - these tests are sometimes called "**known environment**" tests
-        - **gray-box penetration test**:
+        - 🔴**gray-box penetration test**:
             - AKA **partial knowledge tests**, these are sometimes chosen to balance the advantages and disadvantages of white- and black-box penetration tests
             - this is particularly common when black-box results are desired but costs or time constraints mean that some knowledge is needed to complete the testing
             - these tests are sometimes called "**partially known environment**" tests
-        - **black-box penetration test**:
+        - 🔴**black-box penetration test**:
             - does not provide attackers with any information prior to the attack
             - this simulates an external attacker trying to gain access to information about the business and technical environment before engaging in an attack
             - these tests are sometimes called "**unknown environment**" tests
@@ -186,8 +186,8 @@
     - Examples include SPlunk, LogRythm, Microsoft Azure Sentinel, IBM Qradar
     - Information security managers should also periodically conduct log reviews, particularly for sensitive functions, to ensure that privileged users are not abusing their privileges
     - **Network flow** (NetFlow) NetFlow records contain an entry for every network communication session that took place on a network and can be compared to a list of known malicious hosts. It is routinely saved as a matter of normal activity. Cisco has developed a version of NetFlow called Flexible NetFlow (FNF), which can be combined with secure transmission methods. However, the specific built-in decryption capability for NetFlow data is generally referred to as **Encrypted Traffic Analytics (ETA)**. ETA is designed to provide visibility into network traffic, even when the traffic is encrypted. 
-    - **Synthetic monitoring (or active monitoring)** uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. e.g Grafana, Zabbix, Selenium. It performs artificial transactions against a website to assess performance. Synthetic monitoring uses simulated or recorded traffic and thus can be used to proactively identify problems.
-    - **Passive monitoring** uses a span port or other method to copy traffic and monitor it in real time. e.g wireshark,  PRTG, Cacti, ntoping, prometheus. **Real user monitoring (RUM)** is a variant of passive monitoring where the monitoring tool
+    - 📚**Active monitoring (Synthetic monitoring)** uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. e.g Grafana, Zabbix, Selenium. It performs artificial transactions against a website to assess performance. Synthetic monitoring uses simulated or recorded traffic and thus can be used to proactively identify problems.
+    - 📚**Passive monitoring** uses a span port or other method to copy traffic and monitor it in real time. e.g wireshark,  PRTG, Cacti, ntoping, prometheus. **Real user monitoring (RUM)** is a variant of passive monitoring where the monitoring tool
 reassembles the activity of individual users to track their interaction with a website. RUM records user interaction with an application or system to ensure performance and proper application behavior. Passive monitoring works only after issues have occurred because it requires actual traffic.
     - **Identity and access management (IAM)** systems combine lifecycle management and monitoring tools to ensure that identity and authorization are properly handled throughout an organization. e.g AD, DUO, OKTA
 
@@ -227,11 +227,11 @@ reassembles the activity of individual users to track their interaction with a w
 - 6.2.8 Interface testing
     - Interface testing assesses the performance of modules against the interface specs to ensure that they will work together properly when all the development efforts are complete
     - Three types of interfaces should be tested:
-        - application programming interfaces (APIs): offer a standardized way for code modules to interact and may be exposed to the outside world through web services
+        - 📚**application programming interfaces (APIs)**: offer a standardized way for code modules to interact and may be exposed to the outside world through web services
             - should test APIs to ensure they enforce all security requirements
-        - user interfaces (UIs): examples include graphical user interfaces (GUIs) and command-line interfaces
+        - 📚**user interfaces (UIs)**: examples include graphical user interfaces (GUIs) and command-line interfaces
             - UIs provide end users with the ability to interact with the software, and tests should include reviews of all UIs
-        - physical interfaces: exist in some apps that manipulate machinery, logic controllers, or other objects
+        - 📚**physical interfaces**: exist in some apps that manipulate machinery, logic controllers, or other objects
             - software testers should pay careful attention to physical interfaces because of the potential consequences if they fail
 
 - 6.2.9 Breach attack simulations
@@ -261,7 +261,9 @@ reassembles the activity of individual users to track their interaction with a w
     - Account management reviews ensure that users only retain authorized permissions and that unauthorized modifications do not occur
     - Full review of accounts: time-consuming to review all, and often done only for highly privileged accounts
     - Organizations that don’t have time to conduct a full review process may use sampling, but only if sampling is truely random
-    - The two main methods of choosing records from a large pool for further analysis are sampling and clipping. **Sampling** uses statistical techniques to choose a sample that is representative of the entire pool, while **clipping** uses threshold values to select those records that exceed a predefined threshold because they may be of most interest to analysts.
+    - The two main methods of choosing records from a large pool for further analysis are sampling and clipping.
+        - ⚛️**Sampling** uses statistical techniques to choose a sample that is representative of the entire pool
+        - ⚛️**Clipping** uses threshold values to select those records that exceed a predefined threshold because they may be of most interest to analysts.
     - Adding accounts: should be a well-defined process, and users should sign AUP
     - Adding, removing, and modifying accounts and permissions should be carefully controlled and documented
     - Accounts that are no longer needed should be suspended
