@@ -259,6 +259,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - many software-defined networks (📝SDNs) use the ABAC model
     - ABAC allows administrators to create rules within a policy using plain language statements such as "Allow Managers to access the WAN using a mobile device"
     -  Attribute-based information controls like those described in NIST SP 800-162 can take many details about the user, actions, and objects into consideration before allowing access to occur.
+        - Authentication that takes attributes such as location, device, and time of day into account is context-aware authentication. This allows organizations to make choices about whether the authentication is appropriate and allowed in addition to the use of credentials. The decision is based on contextual information, not user knowledge or identity factors, which are used only to authenticate. 
 - 5.4.6 ❄️**Risk based access control**
     - Risk-based access control model grants access after evaluating risk; evaluating the environment and the situation and making risk-based decisions using policies embeded within software
         - Using machine learning, making predictive conclusions about current activity based on past activity
