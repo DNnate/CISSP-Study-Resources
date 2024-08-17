@@ -89,8 +89,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - **OATH token**: is a hardware or software-based authentication device that generates a one-time password (OTP) for secure access to systems, applications, or data. It is based on the OATH (Initiative for Open Authentication) standards, particularly the Time-based One-Time Password (TOTP) and HMAC-based One-Time Password (HOTP) algorithms.
   - **TOTP**: Generates OTPs based on the current time and a shared secret. The OTP is typically valid for a short period (e.g., 30 seconds).
   - **HOTP**: Generates OTPs based on a counter that increments each time an OTP is requested, along with a shared secret.
-  - **Hardware Tokens**: Physical devices that display OTPs, such as key fobs or cards. Displays a key that refreshes every 30 seconds.
-  - **Software Tokens**: Applications that run on smartphones or computers, generating OTPs. Examples include Google Authenticator or Authy. Microsoft Authenticator App is a software based OATH.
+  - **Tokens** are hardware devices (something you have) that generate a one-time password (OTP) based on time or an algorithm. They are typically combined with another factor like a password to authenticate users.
+      - 🌤️**Hardware Tokens**: Physical devices that display OTPs, such as key fobs or cards. Displays a key that refreshes every 30 seconds.
+      - 🌤️**Software Tokens**: Applications that run on smartphones or computers, generating OTPs. Examples include Google Authenticator or Authy. Microsoft Authenticator App is a software based OATH.
     - **Single-factor authentication**: any authentication using only one proof of identity
     - **Two-factor authentication (2FA)**: requires two different proofs of identity
     - **Multifactor authentication (MFA)**: any authentication using two or more factors
