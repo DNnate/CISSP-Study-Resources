@@ -155,19 +155,19 @@
             - this simulates an external attacker trying to gain access to information about the business and technical environment before engaging in an attack
             - these tests are sometimes called "**unknown environment**" tests
 - **Excersice Types**:
-    - **Red Team**: A group of security professionals who simulate real-world attacks to test the defenses of an organization.
+    - 📗**Red Team**: A group of security professionals who simulate real-world attacks to test the defenses of an organization.
         - They are an internal or external entity dedicated to testing the effectiveness of a security program by emulating tools and techniques of likely attackers in the most realistic way possible
         - They are offence
         - Think of attackers testing the system for weaknesses.
-    - **Blue Team**: A group of security professionals responsible for defending an organization’s IT infrastructure from attacks.
+    - 📗**Blue Team**: A group of security professionals responsible for defending an organization’s IT infrastructure from attacks.
         - They are internal security team that defends against Red Team and real attackers
         - They are defence
         - Think of defenders protecting the system from attacks.
-    - **Purple Team**: A collaboration between the red team and blue team to improve the overall security of an organization.
+    - 📗**Purple Team**: A collaboration between the red team and blue team to improve the overall security of an organization.
         - exist to ensure and maximise the effectiveness of the red and blue teams
         - They are for process improvement
         - Think of a cooperative effort where attackers and defenders work together to strengthen security.
-   - **White Team**: responsible for overseeing an engagement/competition between a Red Team of mock attackers and a Blue Team of actual defenders.
+   - 📗**White Team**: responsible for overseeing an engagement/competition between a Red Team of mock attackers and a Blue Team of actual defenders.
         - They do not participate directly in the attack (red team) or defense (blue team) activities but ensure fair play and adherence to the rules.
         - Facilitate communication and coordination between red and blue teams.
         - Observe the security exercise to ensure that it is realistic and that all parties follow the guidelines.
@@ -201,8 +201,8 @@ reassembles the activity of individual users to track their interaction with a w
         4) inspection
         5) rework
         6) follow-up
-    - **Static application security testing (SAST)**: evaluates the security of software without running it by analyzing either the source code or the compiled application
-    - **Dynamic application security testing (DAST)**: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else
+    - 🔖**Static application security testing (SAST)**: evaluates the security of software without running it by analyzing either the source code or the compiled application
+    - 🔖**Dynamic application security testing (DAST)**: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else
 
 - 6.2.6 Misuse case testing
     - **Misuse case testing**: AKA abuse case testing - used by software testers to evaluate the vulnerability of their software to known risks
@@ -213,11 +213,11 @@ reassembles the activity of individual users to track their interaction with a w
     - **Test coverage** = number of use cases tested / total number of use cases
         - requires enumerating possible use cases (which is a difficult task), and anyone using test coverage calcs to understand the process used to develop the input values
     - Five common criteria used for test coverage analysis:
-        - **branch coverage**: has every IF statement been executed under all IF and ELSE conditions?
-        - **condition coverage**: has every logical test in the code been executed under all sets of inputs?
-        - **functional coverage**: has every function in the code been called and returned results?
-        - **loop coverage**: has every loop in the code been executed under conditions that cause code execution multiple times, only once, and not at all?
-        - **statement coverage**: has every line of code been executed during the test?
+        - 🛎️**branch coverage**: has every IF statement been executed under all IF and ELSE conditions?
+        - 🛎️**condition coverage**: has every logical test in the code been executed under all sets of inputs?
+        - 🛎️**functional coverage**: has every function in the code been called and returned results?
+        - 🛎️**loop coverage**: has every loop in the code been executed under conditions that cause code execution multiple times, only once, and not at all?
+        - 🛎️**statement coverage**: has every line of code been executed during the test?
 
 - 6.2.8 Interface testing
     - Interface testing assesses the performance of modules against the interface specs to ensure that they will work together properly when all the development efforts are complete
@@ -383,26 +383,26 @@ reassembles the activity of individual users to track their interaction with a w
     - Hybrid:
       
 - [6.6](#6.6) Software testing: Security Assessment and Testing (OSG-9 Chpt 15)
-    - **Code Review**: Code review is the foundation of software assessment programs. During a code review, also known as a peer review, developers other than the one who wrote the code review it for defects. Static program reviews are typically performed by an automated tool. Program understanding, program comprehension, pair programming, software inspections, and software walk-throughs are all human-centric methods for reviewing code.
+    - ❄️**Code Review**: Code review is the foundation of software assessment programs. During a code review, also known as a peer review, developers other than the one who wrote the code review it for defects. Static program reviews are typically performed by an automated tool. Program understanding, program comprehension, pair programming, software inspections, and software walk-throughs are all human-centric methods for reviewing code.
     - an example of Code review is by using the 6 steps Fagan process: 1.Planning, 2.Overview, 3.Preparation, 4.Inspection, 5.Rework, 6.Follow-­up
-    - **Static Testing** SAST: evaluates the security of software without running it by analyzing either the source code or the compiled application
+    - ❄️**Static Testing** SAST: evaluates the security of software without running it by analyzing either the source code or the compiled application
         - Developers use static code analysis tools network
-    - **Dynamic Testing** DAST: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else. In those cases, testers often do not have access to the underlying source code.
+    - ❄️**Dynamic Testing** DAST: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else. In those cases, testers often do not have access to the underlying source code.
         - common example of dynamic software testing is the use of web application scanning tools to detect the presence of cross-­site scripting, SQL injection, or other flaws in web applications. Note📝 SQL injection is a web vulnerability.
         - Another example is the use of synthetic transactions to verify system performance. These are scripted transactions with known expected results.
-    - **Fuzz Testng**: is a specialized dynamic testing technique that provides many different, and sometimes invalid types of input to software to stress its limits and find previously undetected flaws.  Fuzzing uses modified inputs to test software performance under unexpected circumstances.It is imited to detecting simple vulnerabilities.
+    - ❄️**Fuzz Testng**: is a specialized dynamic testing technique that provides many different, and sometimes invalid types of input to software to stress its limits and find previously undetected flaws.  Fuzzing uses modified inputs to test software performance under unexpected circumstances.It is imited to detecting simple vulnerabilities.
     - zzuf is a fuzzing tool thats tests web browsers ability to handle unexpected data
     - Fuzzers are tools that are designed to provide invalid or unexpected input to applications, testing for vulnerabilities like format string vulnerabilities, buffer overflow issues, and other problems.
         - 🔔Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input. It uses bit flipping and other techniques to slightly modify previous inputs to a program in an attempt to detect software flaws. It  modifies known inputs to generate synthetic inputs that may trigger unexpected behavior
         - 🔔Generational (Intelligent) Fuzzing Develops data models and creates new fuzzed input based on an understanding of the types of data used by the program. It develops inputs based on models of expected inputs to perform the same task.
-    - **Interface Testing**: assesses the performance of modules against the interface specifications to ensure that they will work together properly. Interfaces to be tested include
+    - ❄️**Interface Testing**: assesses the performance of modules against the interface specifications to ensure that they will work together properly. Interfaces to be tested include
       - Application Programming Interfaces (APIs)
       - User Interfaces (UIs)
       - Physical Interfaces (For appliacations that manipulate machinery and logic controllers)
-    - **Misuse Case Testing**: or abuse case testing to evaluate the vulnerability of their software to users attempt
+    - ❄️**Misuse Case Testing**: or abuse case testing to evaluate the vulnerability of their software to users attempt
 to misuse the application
-    - **Mutation Testing**: Mutation testing (automatically) modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation. It is a method used to automatically design new software tests and to ensure the quality of tests
-    - **Regression Testing**: In cases where the project is releasing updates to an existing system, regression testing formalizes the process of verifying that the new code performs in the same manner as the old code, other than any changes expected as part of the new release. They Key performance measure of Regression testing is more specifically covered by defect recurrence rates.        
+    - ❄️**Mutation Testing**: Mutation testing (automatically) modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation. It is a method used to automatically design new software tests and to ensure the quality of tests
+    - ❄️**Regression Testing**: In cases where the project is releasing updates to an existing system, regression testing formalizes the process of verifying that the new code performs in the same manner as the old code, other than any changes expected as part of the new release. They Key performance measure of Regression testing is more specifically covered by defect recurrence rates.        
     - **Test Coverage Analysis**:
             - Test Coverage = number of use cases Tested/Total umber of use cases. ­Coverage rates are used to measure how effective code testing is.
             - Branch Coverage: Test all If/Esle Statements
