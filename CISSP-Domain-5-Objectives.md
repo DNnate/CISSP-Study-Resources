@@ -217,6 +217,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - if the user account is in a role, the user has all privileges assigned to the role
     - MS Windows OS uses this model with groups
     - A role-­based access control (RBAC) model can group users into roles based on the organization’s hierarchy
+    - RBAC uses a well-defined collection of named job roles for access control. Administrators grant each job role with the privileges they need to perform their jobs. 
     - it is based on role or group membership, and users can be members of multiple groups. Users are not limited to only a single role.
     - RBAC models are based on the hierarchy of an organization, so they are 📝hierarchy based.
     - It is nondiscretionary model managed by a central authority🔥 to determine which objects subjects can access
@@ -232,7 +233,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - A key characteristic of the MAC model is the use of labels applied to 📝both subjects and objects
         - e.g. a label of top secret grants access to top-secret documents
     - When documented in a table, the MAC model sometimes resembles a 📝lattice or matrix (i.e. climbing rosebush framework), so it is referred to as a lattice-based model. 📝Biba integrity model uses this.
-    - The MAC model uses labels to identify the upper and lower bounds of classification levels, and these define the level of access for subjects. 
+    - The MAC model uses labels to identify the upper and lower bounds of classification levels, and these define the level of access for subjects.
+    - MAC model assigns access based on a user's 📝need to know and organization policies.
     - In a mandatory access control system, the 📝operating system enforces access control,
     - Mandatory access control systems are based on a lattice-based model. Lattice-based models use a matrix of classification labels to compartmentalize data.
     - 📝 MAC model doesn’t use a centralized environment.
@@ -348,6 +350,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 [5.6](#5.6) Implement authentication systems (OSG-9 Chpt 14)
 - 5.6.1 OpenID Connect (OIDC) / Open Authorization (Oauth)
     - ❄️**OAuth 2.0** authorization framework enables third-party apps to obtain limited access to an HTTP service, either on behalf of a resource owner (by orchestrating an approval interaction), or by allowing third-party applications to obtain access on its own behalf
+    - For example, you can log onto your social media account and then connect to the web-based application without authenticating again. 
     - OAuth is an open framework used for authentication and authorization protocols
     - OAuth provides authorization
     - OAuth is used to provide secure delegated access
