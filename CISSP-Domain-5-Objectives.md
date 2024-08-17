@@ -267,13 +267,13 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - A risk-based access control model can be coded to block malicious traffic from infected IoT devices. It evaluates the environment and the situation and makes decisions to block traffic that is abnormal. 
 - 5.4.7 ❄️**Task based access control**
     - TBAC is similar to RBAC, but instead of being assigned to one or more roles, each user is assigned an array of tasks.
-- **Access Policy Enforcement**:
-  - **Policy Enforcement Point (PEP)**: Responsible for enabling, monitoring and terminating connections between a subject (such as user or device) and an enterprise resource.
+- [5.5](#5.5.0) 🔴**Zero-Trust Access Policy Enforcement**:
+  - 📁**Policy Enforcement Point (PEP)**: Responsible for enabling, monitoring and terminating connections between a subject (such as user or device) and an enterprise resource.
      - It acts as a gateway the enforces access control policies.
      - When an access request occurs, the PEP evaluates the request against predifined policies and then applies the neccessary controls.
      - E.g PEP might enforce MFA authentications for access request from unexpected locations. in this case, it is dynamic based on conditions/contexts
      - PEP enforces policies at the connection level
-  - **Policy Decision Point (PDP)**: This is where the decisions are made based on various factors such as user identity, device health and risk assessment.
+  - 📁**Policy Decision Point (PDP)**: This is where the decisions are made based on various factors such as user identity, device health and risk assessment.
      - it evaluates the context of an access request and decides whether it should be allowed, denied, or subjected to additonal controls
      - it considers the 5 Ws (Who, What, When, Where, Why)
      - PDP makes access decision based on contextual information
