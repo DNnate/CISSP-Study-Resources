@@ -313,6 +313,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
     - ❄️**Industrial control systems (ICS)**: a form of computer-management device that controls industrial processes and machines, also known as operational technology (OT): ICS examples include distributed control systems (DCSs), programmable logic controllers (PLCs), and supervisory control and data acquisition (SCADA).
     - **Supervisory control and data acquisition (SCADA)**: systems used to control physical devices like those in an electrical power plant or factory; SCADA systems are well suited for distributed environments, such as those spanning continents 
         - some SCADA systems still rely on legacy or proprietary communications, putting them at risk, especially as attackers gain knowledge of such systems and their vulnerabilities
+        - In industrial control systems (ICSs), ensuring the availability of ♨️real-time control signals is a primary concern. The immediate and continuous availability of control signals is critical for the proper functioning of industrial processes.
         - Supervisory Control and Data Acquisition systems, or SCADA systems, provide a graphical interface to monitor industrial control systems (ICS). 
         - SCADA risk mitigations:
             - ✏️isolate networks 
