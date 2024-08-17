@@ -180,7 +180,7 @@
         - Think of judge or referee
       
 - 6.2.3 Log reviews
-    - **Security Information and Event Management (SIEM)**: packages that collect information using the syslog functionality present in many devices, operating systems, and applications. Note: Windows systems generate logs in the Windows native logging format. To send syslog events, Windows systems require a helper application or tool.
+    - **Security Information and Event Management (SIEM)**: packages that collect information using the syslog functionality present in many devices, operating systems, and applications. Note📝 Windows systems generate logs in the Windows native logging format. To send syslog events, Windows systems require a helper application or tool.
     - Admins may choose to deploy logging policies through Windows Group Policy Objects (GPOs)
     - Logging systems should also make use of the Network Time Protocol (NTP) to ensure that clocks are synchronized on systems sending log entries to the SIEM as well as the SIEM itself, ensuring info from multiple sources have a consistent timeline
     - Examples include SPlunk, LogRythm, Microsoft Azure Sentinel, IBM Qradar
