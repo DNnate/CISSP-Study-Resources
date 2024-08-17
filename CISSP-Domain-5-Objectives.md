@@ -270,6 +270,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - [5.5](#5.5.0) 🔴**Zero-Trust Access Policy Enforcement**:
   - 📁**Policy Enforcement Point (PEP)**: Responsible for enabling, monitoring and terminating connections between a subject (such as user or device) and an enterprise resource.
      - It acts as a gateway the enforces access control policies.
+     - A policy enforcement point in a zero trust environment receives authorization requests and then sends them to the policy decision point. They are used anywhere that authorization controls are needed.
      - When an access request occurs, the PEP evaluates the request against predifined policies and then applies the neccessary controls.
      - E.g PEP might enforce MFA authentications for access request from unexpected locations. in this case, it is dynamic based on conditions/contexts
      - PEP enforces policies at the connection level
