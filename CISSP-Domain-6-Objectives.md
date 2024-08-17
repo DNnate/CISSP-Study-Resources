@@ -137,6 +137,7 @@
 
 - 6.2.2 Penetration testing
     - Penetration tests goes beyond vulnerability testing techniques because it actually attempts to exploit systems. In most organizations, senior management needs to approve penetration tests due to the risk to the organization and the potential impact of the test. In a small number of organizations, the service owner may be able to make this decision, but penetration tests often have broader impacts than a single service, meaning that senior management is the proper approval path.
+    -  Application crashes; denial of service due to system, network, or application failures; and even data corruption can all be hazards of penetration tests.
     - NIST defines the penetration testing process as consisting of four phases: PIAR 🟡
     - 🚡**planning**: includes agreement on the scope of the test and the rules of engagement
         - ensures that both the testing team and management are in agreement about the nature of the test and that it is explicitly authorized
@@ -439,69 +440,67 @@ to misuse the application
 
 **Time to remediate a vulnerability**is a commonly used key performance indicator for security teams.
 
-**Common Audit Frameworks**
-- SSAE 18 is the Statement on Standards for Attestation Engagements that is used by auditors when performing audits for SOC 2.
-- ISO/IEC 15408-­1:2009, “Information technology —­Security techniques —­ Evaluation criteria for IT security,” is the foundation for the Common Criteria certification, which is a formal assessment process for technology products against a defined set of security functional requirements. This document and ISO/IEC 18045 are available free of charge.
-- ISO/IEC 18045:2008, “Information technology —­Security techniques —­Methodology for IT security evaluation,” is a companion to ISO 15048 and provides standards for consistent criteria and evaluation methods.
-- ISO/IEC 27006:2015, “Information technology —­Security techniques —­ Requirements for bodies providing audit and certification of information security management systems,” is the official set of requirements and guidance for auditors performing certification audits against ISO 27001.
-- NIST Special Publication (SP) 800-­53A, “Assessing Security and Privacy Controls in Federal Information Systems and Organizations,” is a guide to assessing the controls outlined in NIST SP 800-­53. It introduces a simple set of testing procedures to assess control effectiveness: test, examine, or interview. 
-- The NIST Cybersecurity Framework (CSF) and FedRAMP Security Assessment Framework (SAF) are both freely available as well and may be used to perform assessments with evaluation methods similar to those in NIST SP 800-­53A.
-- COBIT the Control Objectives for Information and Related Technologies, is commonly used as an audit framework for organizations.
+- **Common Audit Frameworks**
+    - 👽SSAE 18 is the Statement on Standards for Attestation Engagements that is used by auditors when performing audits for SOC 2.
+    - 👽ISO/IEC 15408-­1:2009, “Information technology —­Security techniques —­ Evaluation criteria for IT security,” is the foundation for the Common Criteria certification, which is a formal assessment process for technology products against a defined set of security functional requirements. This document and ISO/IEC 18045 are available free of charge.
+- 👽ISO/IEC 18045:2008, “Information technology —­Security techniques —­Methodology for IT security evaluation,” is a companion to ISO 15048 and provides standards for consistent criteria and evaluation methods.
+- 👽ISO/IEC 27006:2015, “Information technology —­Security techniques —­ Requirements for bodies providing audit and certification of information security management systems,” is the official set of requirements and guidance for auditors performing certification 📝audits against ISO 27001.
+- 👽NIST Special Publication (SP) 800-­53A, “Assessing Security and Privacy Controls in Federal Information Systems and Organizations,” is a guide to assessing the 📝controls outlined in NIST SP 800-­53. It introduces a simple set of testing procedures to assess control effectiveness: test, examine, or interview and covers methods for assessing and measuring controls. 
+- 👽The NIST Cybersecurity Framework (CSF) and FedRAMP Security Assessment Framework (SAF) are both freely available as well and may be used to perform assessments with evaluation methods similar to those in NIST SP 800-­53A.
+- 👽COBIT the Control Objectives for Information and Related Technologies, is commonly used as an audit framework for organizations.
 
-**Common Ports**
-- Line Printer Daemon (LPD) protocol: Port 515 
-- RAW or JetDirect protocol: Port 9100
-- FTP (File Transfer Protocol): Port 20 (Data Transfer), Port 21 (Control)
-- FTPS (FTP Secure): Ports 989 and 990
-- SFTP (SSH File Transfer Protocol): Port 22
-- SSH (Secure Shell): Port 22
-- Telnet: Port 23
-- SMTP (Simple Mail Transfer Protocol):Port 25
-- IMAP (Internet Message Access Protocol): Port 143
-- IMAPS (IMAP Secure): Port 993
-- POP3 (Post Office Protocol version 3): Port 110
-- POP3S (POP3 Secure): Port 995
-- TFTP (Trivial File Transfer Protocol): Port 69
-- SNMP (Simple Network Management Protocol): Port 161 (Agent), Port 162 (Manager)
-- LDAP (Lightweight Directory Access Protocol): Port 389
-- LDAPS (LDAP Secure): Port 636
-- RDP (Remote Desktop Protocol): Port 3389
-- SMB (Server Message Block): Port 445
-- Syslog: Port 514
-- Kerberos: Port 88
-- SQL Server: Port 1433
-- MySQL: Port 3306
-- Oracle DB: Port 1521
-- NTP (Network Time Protocol): Port 123
-- BGP (Border Gateway Protocol): Port 179
-- IKE (Internet Key Exchange): Port 500
-- L2TP (Layer 2 Tunneling Protocol): Port 1701
-- PPTP (Point-to-Point Tunneling Protocol): Port 1723
-- RADIUS (Remote Authentication Dial-In User Service): Port 1812 (Authentication), Port 1813 (Accounting)
-- NetBIOS: Ports 137-139
-- TACAS: Port 49
-- XMPP (Extensible Messaging and Presence Protocol): Port 5222
-- VNC (Virtual Network Computing): Port 5900
-- NFS (Network File System): Port 2049
-- OpenVPN: Port 1194
-- PostgreSQL: Port 5432
+- **Common Ports**
+    - 🎨Line Printer Daemon (LPD) protocol: Port 515
+    - 🎨RAW or JetDirect protocol: Port 9100
+    - 🎨FTP (File Transfer Protocol): Port 20 (Data Transfer), Port 21 (Control)
+    - 🎨FTPS (FTP Secure): Ports 989 and 990
+    - 🎨SFTP (SSH File Transfer Protocol): Port 22
+    - 🎨SSH (Secure Shell): Port 22
+    - 🎨Telnet: Port 23
+    - 🎨SMTP (Simple Mail Transfer Protocol):Port 25
+    - 🎨IMAP (Internet Message Access Protocol): Port 143
+    - 🎨IMAPS (IMAP Secure): Port 993
+    - 🎨POP3 (Post Office Protocol version 3): Port 110
+    - 🎨POP3S (POP3 Secure): Port 995
+    - 🎨TFTP (Trivial File Transfer Protocol): Port 69
+    - 🎨SNMP (Simple Network Management Protocol): Port 161 (Agent), Port 162 (Manager)
+    - 🎨LDAP (Lightweight Directory Access Protocol): Port 389
+    - 🎨LDAPS (LDAP Secure): Port 636
+    - 🎨RDP (Remote Desktop Protocol): Port 3389
+    - 🎨SMB (Server Message Block): Port 445
+    - 🎨Syslog: Port 514
+    - 🎨Kerberos: Port 88
+    - 🎨SQL Server: Port 1433
+    - 🎨MySQL: Port 3306
+    - 🎨Oracle DB: Port 1521
+    - 🎨NTP (Network Time Protocol): Port 123
+    - 🎨BGP (Border Gateway Protocol): Port 179
+    - 🎨IKE (Internet Key Exchange): Port 500
+    - 🎨L2TP (Layer 2 Tunneling Protocol): Port 1701
+    - 🎨PPTP (Point-to-Point Tunneling Protocol): Port 1723
+    - 🎨RADIUS (Remote Authentication Dial-In User Service): Port 1812 (Authentication), Port 1813 (Accounting)
+    - 🎨NetBIOS: Ports 137-139
+    - 🎨TACAS: Port 49
+    - 🎨XMPP (Extensible Messaging and Presence Protocol): Port 5222
+    - 🎨VNC (Virtual Network Computing): Port 5900
+    - 🎨NFS (Network File System): Port 2049
+    - 🎨OpenVPN: Port 1194
+    - 🎨PostgreSQL: Port 5432
 
-**NIST Special Publication (SP) 800 Series:**
-
-- NIST SP 800-30: "Guide for Conducting Risk Assessments" - Provides guidance on conducting risk assessments.
-- NIST SP 800-37: "Risk Management Framework for Information Systems and Organizations" - Outlines the Risk Management Framework (RMF) for federal information systems.
-- NIST SP 800-39: "Managing Information Security Risk" - Provides guidelines for an integrated, organization-wide program for managing information security risk.
-- NIST SP 800-53: "Security and Privacy Controls for Information Systems and Organizations" - Provides a catalog of security and privacy controls for federal information systems and organizations.
-- NIST SP 800-61: "Computer Security Incident Handling Guide" - Offers guidelines for handling computer security incidents.
-- NIST SP 800-82: "Guide to Industrial Control Systems (ICS) Security" - Provides guidance on securing industrial control systems.
-- NIST SP 800-86: "Guide to Integrating Forensic Techniques into Incident Response" - Discusses how to integrate forensic techniques into incident response.
-- NIST SP 800-94 Guide to Intrusion Detection and Prevention Systems provides comprehensive coverage of both IDS and IPS
-- NIST SP 800-137: titled "Information Security Continuous Monitoring (ISCM) for Federal Information Systems and Organizations," provides guidelines for implementing continuous monitoring strategie
-- NIST SP 800-115: titled "Technical Guide to Information Security Testing and Assessment," provides guidance on the planning, conducting, analyzing, and documenting information security/penetration testing and assessment activities. (Plan, Discover, Attack, Report _PDAC_)
-- NIST SP 800-122: "Guide to Protecting the Confidentiality of Personally Identifiable Information (PII)" - Provides guidelines for protecting the confidentiality of PII.
-- NIST SP 800-171: "Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations" - Specifies requirements for protecting controlled unclassified information.
-
-NIST Cybersecurity Framework (CSF): The NIST Cybersecurity Framework consists of standards, guidelines, and best practices to manage cybersecurity risk. It is organized into five core functions: Identify, Protect, Detect, Respond, and Recover.
+- **NIST Special Publication (SP) 800 Series:**
+    - ⚒️NIST SP 800-30: "Guide for Conducting Risk Assessments" - Provides guidance on conducting risk assessments.
+    - ⚒️NIST SP 800-37: "Risk Management Framework for Information Systems and Organizations" - Outlines the Risk Management Framework (RMF) for federal information systems.
+- ⚒️NIST SP 800-39: "Managing Information Security Risk" - Provides guidelines for an integrated, organization-wide program for managing information security risk.
+- ⚒️NIST SP 800-53: "Security and Privacy Controls for Information Systems and Organizations" - Provides a catalog of security and privacy controls for federal information systems and organizations.
+- ⚒️NIST SP 800-61: "Computer Security Incident Handling Guide" - Offers guidelines for handling computer security incidents.
+- ⚒️NIST SP 800-82: "Guide to Industrial Control Systems (ICS) Security" - Provides guidance on securing industrial control systems.
+- ⚒️NIST SP 800-86: "Guide to Integrating Forensic Techniques into Incident Response" - Discusses how to integrate forensic techniques into incident response.
+- ⚒️NIST SP 800-94 Guide to Intrusion Detection and Prevention Systems provides comprehensive coverage of both IDS and IPS
+- ⚒️NIST SP 800-137: titled "Information Security Continuous Monitoring (ISCM) for Federal Information Systems and Organizations," provides guidelines for implementing continuous monitoring strategie
+- ⚒️NIST SP 800-115: titled "Technical Guide to Information Security Testing and Assessment," provides guidance on the planning, conducting, analyzing, and documenting information security/penetration testing and assessment activities. (Plan, Discover, Attack, Report _PDAC_)
+- ⚒️NIST SP 800-122: "Guide to Protecting the Confidentiality of Personally Identifiable Information (PII)" - Provides guidelines for protecting the confidentiality of PII.
+- ⚒️NIST SP 800-171: "Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations" Specifies requirements for protecting controlled unclassified information.
+- ⚒️NIST Cybersecurity Framework (CSF): The NIST Cybersecurity Framework consists of standards, guidelines, and best practices to manage cybersecurity risk. It is organized into five core functions: Identify, Protect, Detect, Respond, and Recover.
 
 - **Federal Information Processing Standards (FIPS):**
 - FIPS 199: "Standards for Security Categorization of Federal Information and Information Systems" - Establishes security categories for information and information systems.
