@@ -79,13 +79,13 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
       - 
 - 5.2.2 Single/Multi-Factor Authentication (MFA)
 - **Authentication Methods**:
-  - Passwords Only: the least secure 😠
-  - Password and (SMS or Voice) ☹️ SMS messages are not encrypted, meaning that they could be sniffed and captured. 
-  - Password and (Authenticator App, Software OATH/Tokens OTP, Hardware OATH/Tokens OTP). OTH tokens are one-time codes that changes every few minutes/seconds. 🙂
-  - Passwordless: It is convinient and also reduces phishing exposure. Strong passwords can be diffuclt to remember. Reduces password re-use. Passwords are also subject to replay attacks. The are cost concerns, and biometric privacy concerns. 😄 Examples include:
-     - Windows Hello for Business: Uses biometrics and supports relying party that supports Fast ID Online FIDO v2.0 authentication
-     - FIDO2 Security Key: Hardware that uses public-key assymetric cryptograpgy for user authentication
-     - Authenticator App: Authenticator Apps can also be used as the primary form of authentication to sign into popular cloud identities. It can also be used as additional verification option for self-service password reset or MFA. 
+  - 📗Passwords Only: the least secure 😠
+  - 📗Password and (SMS or Voice) ☹️ SMS messages are not encrypted, meaning that they could be sniffed and captured. 
+  - 📗Password and (Authenticator App, Software OATH/Tokens OTP, Hardware OATH/Tokens OTP). OTH tokens are one-time codes that changes every few minutes/seconds. 🙂
+  - 📗Passwordless: It is convinient and also reduces phishing exposure. Strong passwords can be diffuclt to remember. Reduces password re-use. Passwords are also subject to replay attacks. The are cost concerns, and biometric privacy concerns. Passwordless authentication leverages applications and capabilities such as built-in biometric authentication mechanisms. 😄 Examples include:
+     - 🔔Windows Hello for Business: Uses biometrics and supports relying party that supports Fast ID Online FIDO v2.0 authentication
+     - 🔔FIDO2 Security Key: Hardware that uses 📝public-key assymetric cryptograpgy for user authentication
+     - 🔔Authenticator App: Authenticator Apps can also be used as the primary form of authentication to sign into popular cloud identities. It can also be used as additional verification option for self-service password reset or MFA. 
 - **OATH token**: is a hardware or software-based authentication device that generates a one-time password (OTP) for secure access to systems, applications, or data. It is based on the OATH (Initiative for Open Authentication) standards, particularly the Time-based One-Time Password (TOTP) and HMAC-based One-Time Password (HOTP) algorithms.
   - **TOTP**: Generates OTPs based on the current time and a shared secret. The OTP is typically valid for a short period (e.g., 30 seconds).
   - **HOTP**: Generates OTPs based on a counter that increments each time an OTP is requested, along with a shared secret.
@@ -345,12 +345,13 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - the attacker can then use horizontal privilege escalation techniques to access other computers in the network
         - this horizontal privilege escalation throughout the network is AKA 📝lateral movement
         - Disabling unused ports and services and sanitizing user inputs both address threats that are most frequently associated with vertical privilege escalation attacks.
-- **Service Accounts**: When a software is installed on a computer, it may require privileged access to run and access other resources (systems/data). Service accounts are a low level adminsitrative accounts without human intervention.
+- ✴️**Service Accounts**: When a software is installed on a computer, it may require privileged access to run and access other resources (systems/data). Service accounts are a low level adminsitrative accounts without human intervention.
    - it is an account used to run an application
    - In the cloud, it is often called service principle.
    - In the cloud, similar concepts exists for clud resources such as VMs, that provides an identity for that resource to access other resources. In Azure (_Managed Identity_), in AWS (_Service Roles_), in Google cloud (_Service Account Identity_).
    - Least privilege and life cycle managment are all equally important for service accounts.
-   - The most important step in securing service accounts is to ensure that they have only the rights that are absolutely needed to accomplish the task they are designed for. Disabling interactive logins is important as well
+   - The most important step in securing service accounts is to ensure that they have only the rights that are absolutely needed to accomplish the task they are designed for. Disabling interactive logins is important as well.
+   - Service accounts are commonly set to not have expiring passwords to prevent service outages. Organizations may choose to rotate passwords on a regular basis using automation tools as part of their password management strategy to help avoid issues with exposed or compromised service passwords.
 [5.6](#5.6) Implement authentication systems (OSG-9 Chpt 14)
 - 5.6.1 OpenID Connect (OIDC) / Open Authorization (Oauth)
     - ❄️**OAuth 2.0** authorization framework enables third-party apps to obtain limited access to an HTTP service, either on behalf of a resource owner (by orchestrating an approval interaction), or by allowing third-party applications to obtain access on its own behalf
