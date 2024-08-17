@@ -122,7 +122,7 @@
             - 🔔TCP ACK Scanning Sends a packet with the ACK flag set, indicating that it is part of an open connection. This type of scan may be done in an attempt to determine the rules enforced by a firewall and the firewall methodology. 
             - 🔔UDP Scanning Performs a scan of the remote system using the UDP protocol, checking for active UDP services. This scan type does not use the three-­way handshake, because UDP is a connectionless protocol.
             - 🔔Xmas Scanning Sends a packet with the FIN, PSH, and URG flags set. A packet with so many flags set is said to be “lit up like a Christmas tree,” leading to the scan’s name.
-        - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable.
+        - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Nmap, Nessus, and Nikto all have OS fingerprinting or other operating system identification capabilities.
             - **Nmap** only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! Nmap states include:
                 - 🔨Open Port: The port is accessible on the remote system and an application is accepting connections on that port.
                 - 🔨Closed Port: The port is not accessible on the remote system.
@@ -189,7 +189,7 @@
     - **Network flow** (NetFlow) NetFlow records contain an entry for every network communication session that took place on a network and can be compared to a list of known malicious hosts. It is routinely saved as a matter of normal activity. Cisco has developed a version of NetFlow called Flexible NetFlow (FNF), which can be combined with secure transmission methods. However, the specific built-in decryption capability for NetFlow data is generally referred to as **Encrypted Traffic Analytics (ETA)**. ETA is designed to provide visibility into network traffic, even when the traffic is encrypted. 
     - 📚**Active monitoring (Synthetic monitoring)** uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. e.g Grafana, Zabbix, Selenium. It performs artificial transactions against a website to assess performance. Synthetic monitoring uses simulated or recorded traffic and thus can be used to proactively identify problems. Synthetic monitoring uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. 
     - 📚**Passive monitoring** uses a span port or other method to copy traffic and monitor it in real time. e.g wireshark, PRTG, Cacti, ntoping, prometheus.  Passive monitoring uses a network tap or other capture technology to allow monitoring of actual traffic to a system or application.
-        - **Real user monitoring (RUM)** is a variant of passive monitoring where the monitoring tool reassembles the activity of individual users to track their interaction with a website. RUM records user interaction with an application or system to ensure performance and proper application behavior. RUM is often used as part of a predeployment process using the actual user interface.
+        - **Real user monitoring (RUM)** is a variant of passive monitoring where the monitoring tool reassembles the activity of individual users to track their interaction with a website. RUM records user interaction with an application or system to ensure performance and proper application behavior. RUM is often used as part of a predeployment process using the actual user interface. It is a passive monitoring technique records all user interaction with an application or website to ensure quality and performance?
         - Passive monitoring works only after issues have occurred because it requires actual traffic.
     - **Identity and access management (IAM)** systems combine lifecycle management and monitoring tools to ensure that identity and authorization are properly handled throughout an organization. e.g AD, DUO, OKTA. Identity and access management (IAM) systems can be configured to use appropriate workflows and to generate the logs and reports to tracks all changes to accounts through their lifecycle. 
 
@@ -277,7 +277,7 @@
         - act: formally do the management review
 
 - 6.3.3 Key performance and risk indicators
-    - **Key Performance Indicator (KPIs)**: measures that provide significance of showing the performance an ISMS compared to stated goals
+    - 🍮**Key Performance Indicator (KPIs)**: measures that provide significance of showing the performance an ISMS compared to stated goals
     - Choose the factors that can show the state of security
     - Define baselines for some (or better yet all) of the factors
     - Develop a plan for periodically capturing factor values (use automation!)
@@ -291,7 +291,8 @@
         - repeat audit findings
         - user attempts to visit known malicious sites
     - Develop a dashboard of metrics and track them
-
+   - 🍮**Key Risk Indicator (KRIs)**: Key risk indicators are used to tell those in charge of risk management how risky an activity is and how much impact changes are having on that risk profile. Identifying key risk indicators and monitoring them can help to identify high-risk areas earlier in their lifecycle. 
+    - Choose
 - 6.3.4 Backup verification data
     - Managers should periodically inspect the results of backups to verify that the process functions effectively and meets the organization’s data protection needs
         - this might include reviewing logs, inspecting hash values, or requesting an actual restore of a system or file
@@ -401,7 +402,7 @@
         - common example of dynamic software testing is the use of web application scanning tools to detect the presence of cross-­site scripting, SQL injection, or other flaws in web applications. Note📝 SQL injection is a web vulnerability.
         - Another example is the use of synthetic transactions to verify system performance. These are scripted transactions with known expected results.
     - ❄️**Fuzz Testng**: is a specialized dynamic testing technique that provides many different, and sometimes invalid types of input to software to stress its limits and find previously undetected flaws.  Fuzzing uses modified inputs to test software performance under unexpected circumstances.It is imited to detecting simple vulnerabilities.
-    - zzuf is a fuzzing tool thats tests web browsers ability to handle unexpected data
+    - zzuf is a fuzzing tool thats tests web browsers ability to handle unexpected data. zzuf is specifically designed to work with tools like web browsers, image viewers, and similar software by modifying network and file input to application.
     - Fuzzers are tools that are designed to provide invalid or unexpected input to applications, testing for vulnerabilities like format string vulnerabilities, buffer overflow issues, and other problems.
     - Fuzzing involves sending unexpected inputs to a program to see how it responds
         - 🔔Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input. It uses bit flipping and other techniques to slightly modify previous inputs to a program in an attempt to detect software flaws. It  modifies known inputs to generate synthetic inputs that may trigger unexpected behavior
