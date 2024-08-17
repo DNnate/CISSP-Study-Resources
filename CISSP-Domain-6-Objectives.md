@@ -527,8 +527,9 @@ to misuse the application
         - ISO/IEC 20000-2: "Information Technology – Service Management – Part 2: Guidance on the Application of Service Management Systems" Provides guidance on the application of an SMS based on ISO/IEC 20000-1.
 
 - ❄️**SSAE 18:** "Attestation Standards: Clarification and Recodification" - This standard, effective since May 1, 2017, provides guidance on performing and reporting on examination, review, and agreed-upon procedures engagements. It includes guidelines for reports on controls at service organizations, consolidating and clarifying previous standards.
-- SOC Reports under SSAE 18:
-    - SOC 1 (which focuses on controls at a service organization relevant to user entities’ internal control over financial reporting) and SOC 2 (which controls relevant to security, availability, processing integrity, confidentiality, and privacy) both have Type I (provides an opinion on the operating effectiveness of those controls at a 🔥specific point in time) and Type II (provides opinion on the suitability and effectiveness of security controls after evaluating them over a 🔥specified period of time) reports.
-    - SOC 3 does not have separate Type I or Type II reports; it provides a general-purpose report suitable for public distribution.
+    - SOC Reports under SSAE 18:
+        - 🍼SOC 1 (which focuses on controls at a service organization relevant to user entities’ internal control over financial reporting)
+        - 🍼SOC 2 (which controls relevant to security, availability, processing integrity, confidentiality, and privacy) both have Type I (provides an opinion on the operating effectiveness of those controls at a 🔥specific point in time) and Type II (provides opinion on the suitability and effectiveness of security controls after evaluating them over a 🔥specified period of time) reports.
+        - 🍼SOC 3 does not have separate Type I or Type II reports; it provides a general-purpose report suitable for public distribution.
     - Note📝 There are only two types of SOC report: Type I and Type II. Both reports provide information on the suitability of the design of security controls.
 
