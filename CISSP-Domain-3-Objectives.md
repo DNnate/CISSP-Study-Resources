@@ -948,6 +948,10 @@ taxed by inefficient implementations of software and VMs.
     - facility construction and selection
     - site management
     - building design
+    - Locks:
+         - A cipher lock is a type of mechanical or electronic lock that requires users to enter a combination or code to unlock it, rather than using a traditional key. Cipher locks are commonly used to control access to secure areas, such as offices, server rooms, or other restricted locations.
+             - Mechanical Cipher Locks: These locks are purely mechanical, with no electronics involved. They use physical buttons that, when pressed in the correct sequence, allow the door to be opened.
+             - Electronic Cipher Locks: These locks use an electronic keypad and may include additional features such as keycards, biometrics, or logging of access attempts 
     - personnel controls e.g Badges, identification cards, and security IDs, turnstile, mantraps, access control vestibules (An access control vestibule is a double set of doors that is often protected by a guard and used to contain a subject until their identity and authentication is verified.)
     - Mantraps use two sets of doors to control access to a facility. This may be used to prevent piggybacking by monitoring use of the mantrap to allow only a single individual to enter a facility at a time. They may also be used to allow manual inspection of individuals or perform other security screening. Mantraps are also commonly known as access control vestibules.
     - awareness training
