@@ -43,7 +43,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
    - Sites and Facilities
    
 [5.2](#5.2) Manage identification and authentication of people, devices, and services (OSG-9 Chpt 13)
-- **Identification**: the process of a subject claiming, or professing an identity. 
+- **Identification**: the process of a subject claiming, or professing an identity. A user professes an identity with a login ID. The 📝combination of the login ID and the password provides authentication.
 - **Authentication**: verifies the subject’s identity by comparing one or more factors against a database of valid identities, such as user accounts
     - a core principle with authentication is that all subjects must have unique identities
     - identification and authentication occur together as a single two-step process
