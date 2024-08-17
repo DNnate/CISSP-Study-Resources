@@ -111,7 +111,7 @@
             - 📚**Common Vulnerability Scoring Systems (CVSS)**: CVSS, the Common Vulnerability Scoring System, is used to describe the severity of security vulnerabilities. It provides a standardized scoring system for describing the severity of security vulnerabilities. The score can range from 0.0 (least severe) to 10.0 (most severe).
             - 📚**Common Configuration Enumeration (CCE)**: CCE is Common Configuration Enumeration, a naming system for configuration issues. It provides a naming system for system config issues
             - 📚**Common Platform Enumeration (CPE)**: provides a naming system for operating systems, applications, and devices. CPE is Common Platform Enumeration, which names operating systems, applications, and devices. 
-            - 📚**Extensible Configuration Checklist Description Format (XCCDF)**: provides a language for specifying security checklists
+            - 📚**Extensible Configuration Checklist Description Format (XCCDF)**: provides a standardised language for specifying security checklists
             - 📚**Script Check Engine (SCE)** is designed to make scripts ­interoperable with security policy definitions.
             - 📚**Open Vulnerability and Assessment Language (OVAL)**: provides a language for describing security testing procedures
     - Vulnerability scans automatically probe systems, applications, and networks looking for weaknesses that could be exploited by an attacker. Vulnerability Scanners scan remote machines to gather information, including fingerprints from responses to queries and connections, banner information from services, and related data.
