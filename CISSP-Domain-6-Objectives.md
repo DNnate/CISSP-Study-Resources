@@ -140,12 +140,16 @@
     - NIST defines the penetration testing process as consisting of four phases: PIAR 🟡
     - 🚡**planning**: includes agreement on the scope of the test and the rules of engagement
         - ensures that both the testing team and management are in agreement about the nature of the test and that it is explicitly authorized
+        - determining how vulnerability data should be stored and sent is critical becuase penetration test reports often include information that could result in additional exposure if they were accidentally released or stolen.
     - 🚡**information gathering and discovery**: uses manual and automated tools to collect information about the target environment
         - basic reconnaissance (website mapping)
-        - network discovery
-        - testers probe for system weaknesses using network, web and db vuln scans
+        - Discovery can include both active and passive discovery.
+        - Port scanning is commonly done during discovery to assess what services the target provides, and nmap is one of the most popular tools used for this purpose. 
+        - network discovery e.g using nmap
+        - testers probe for system weaknesses using network, web and db vuln scans e.g Nessus and Nikto
     - 🚡**attack**: seeks to use manual and automated exploit tools to attempt to defeat system security
         - step where pen testing goes beyond vuln scanning as vuln scans don’t attempt to actually exploit detected vulns
+        - e.g John, Metasploit
     - 🚡**reporting**: summarizes the results of the pen testing and makes recommendations for improvements to system security
     - tests are normally categorized into three groups:
         - 🔴**white-box penetration test (crystal)**:
@@ -187,10 +191,10 @@
     - Examples include SPlunk, LogRythm, Microsoft Azure Sentinel, IBM Qradar
     - Information security managers should also periodically conduct log reviews, particularly for sensitive functions, to ensure that privileged users are not abusing their privileges
     - **Network flow** (NetFlow) NetFlow records contain an entry for every network communication session that took place on a network and can be compared to a list of known malicious hosts. It is routinely saved as a matter of normal activity. Cisco has developed a version of NetFlow called Flexible NetFlow (FNF), which can be combined with secure transmission methods. However, the specific built-in decryption capability for NetFlow data is generally referred to as **Encrypted Traffic Analytics (ETA)**. ETA is designed to provide visibility into network traffic, even when the traffic is encrypted. 
-    - 📚**Active monitoring (Synthetic monitoring)** uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. e.g Grafana, Zabbix, Selenium. It performs artificial transactions against a website to assess performance. Synthetic monitoring uses simulated or recorded traffic and thus can be used to proactively identify problems. Synthetic monitoring uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. 
+    - 📚**Active monitoring (Synthetic monitoring)** uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. e.g Grafana, Zabbix, Selenium. It performs artificial transactions against a website to assess performance. Synthetic monitoring uses simulated or recorded traffic and thus can be used to 📝proactively identify problems. Synthetic monitoring uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. 
     - 📚**Passive monitoring** uses a span port or other method to copy traffic and monitor it in real time. e.g wireshark, PRTG, Cacti, ntoping, prometheus.  Passive monitoring uses a network tap or other capture technology to allow monitoring of actual traffic to a system or application.
         - **Real user monitoring (RUM)** is a variant of passive monitoring where the monitoring tool reassembles the activity of individual users to track their interaction with a website. RUM records user interaction with an application or system to ensure performance and proper application behavior. RUM is often used as part of a predeployment process using the actual user interface. It is a passive monitoring technique records all user interaction with an application or website to ensure quality and performance?
-        - Passive monitoring works only after issues have occurred because it requires actual traffic.
+        - 📝Passive monitoring works only after issues have occurred because it requires actual traffic.
     - **Identity and access management (IAM)** systems combine lifecycle management and monitoring tools to ensure that identity and authorization are properly handled throughout an organization. e.g AD, DUO, OKTA. Identity and access management (IAM) systems can be configured to use appropriate workflows and to generate the logs and reports to tracks all changes to accounts through their lifecycle. 
 
 - 6.2.4 Synthetic transactions
@@ -427,6 +431,7 @@ to misuse the application
 - Penetration test report is provided when a penetration test is conducted.
 - Code coverage report covers how much of the code has been tested
 - Line coverage report is a type of code coverage report.
+- Code coverage testing most frequently requires that every function has been called, that each statement has been executed, that all branches have been fully explored, and that each condition has been evaluated for all possibilities.
 
 **Time of Check to Time of Use**
 - Computer systems perform tasks with rigid precision. Computers excel at repeatable tasks. Attackers can develop attacks based on the predictability of task execution. The common sequence of events for an algorithm is to check that a resource is available and then access it if you are permitted. The **time of check (TOC)** is the time at which the subject checks on the status of the object. There may be several decisions to make before returning to the object to access it. When the decision is made to access the object, the procedure accesses it at the **time of use (TOU)**. The difference between the TOC and the TOU is sometimes large enough for an attacker to replace the original object with another object that suits their own needs. Time of check to time of use (TOCTTOU or TOC/TOU) attacks are often called race conditions. When testing in a non-production environment, the changes from a testing environment with instrumentation inserted into the code and the production environment for the code can mask timing-related issues like race conditions.
