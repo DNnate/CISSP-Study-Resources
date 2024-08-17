@@ -164,8 +164,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - users can then use this federated identity to access resources in any other org within the group
         - where each organization decides what resources to share
     - Methods used to implement federated identity management systems include:
-        - 🍊Security Assertion Markup Language (SAML): SAML is an XML-based framework used to exchange user information for single sign-on(SSO) between federated organizations within a federated identity management system. Federated organizations use the Security Assertion Markup Language (SAML) to support single sign-on (SSO) capabilities on the internet. 
-        - 🍊OAuth (most widely used and integrates with 3rd Parties). OAuth is the most widely used open standard for 🧠authorization and 🧠delegation of rights for cloud services. The anti-forgery state token exchanged during OAuth  sessions is intended to prevent cross-site request forgery. Cross-­site request forgery attacks, abbreviated as XSRF or CSRF attacks, are similar to cross-­site scripting attacks but exploit a different trust relationship. XSS attacks exploit the trust that a user has in a website to execute code on the user’s computer. **XSRF** attacks exploit the trust that remote sites have in a user’s system to execute commands on the user’s behalf.
+        - 🍊Security Assertion Markup Language (SAML): SAML is an 📝XML-based framework used to exchange user information for single sign-on(SSO) between federated organizations within a federated identity management system. Federated organizations use the Security Assertion Markup Language (SAML) to support single sign-on (SSO) capabilities on the internet. SAML is an open, XML-based standard used to provide authorization, attribute information, and authentication data.
+        - 🍊OAuth (most widely used and integrates with 3rd Parties). OAuth is the most widely used open standard for 🧠authorization and 🧠delegation of rights for cloud services. OAuth is an authorization framework that exchanges information using 📝APIs. The anti-forgery state token exchanged during OAuth  sessions is intended to prevent cross-site request forgery. Cross-­site request forgery attacks, abbreviated as XSRF or CSRF attacks, are similar to cross-­site scripting attacks but exploit a different trust relationship. XSS attacks exploit the trust that a user has in a website to execute code on the user’s computer. **XSRF** attacks exploit the trust that remote sites have in a user’s system to execute commands on the user’s behalf.
         - 🍊OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
         - OpenID is used for 🧠authentication. OpenID would you to use an account from another service with your application. OpenID is used to sign in using credentials from an identity provider to other services, such as when you log in with Google to other sites
         - OpenID Connect is a RESTful, JSON-based authentication protocol that, when paired with OAuth, can provide identity verification and basic profile information.
@@ -270,7 +270,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - TBAC is similar to RBAC, but instead of being assigned to one or more roles, each user is assigned an array of tasks.
 - [5.5](#5.5.0) 🔴**Zero-Trust Access Policy Enforcement**:
   - 📁**Policy Enforcement Point (PEP)**: Responsible for enabling, monitoring and terminating connections between a subject (such as user or device) and an enterprise resource.
-     - It acts as a gateway the enforces access control policies.
+     - It acts as a 📝gateway the enforces access control policies.
+     - In a zero trust reference model-based design, subjects connect through a policy enforcement point.
      - A policy enforcement point in a zero trust environment receives authorization requests and then sends them to the policy decision point. They are used anywhere that authorization controls are needed.
      - When an access request occurs, the PEP evaluates the request against predifined policies and then applies the neccessary controls.
      - E.g PEP might enforce MFA authentications for access request from unexpected locations. in this case, it is dynamic based on conditions/contexts
@@ -279,7 +280,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
      - it evaluates the context of an access request and decides whether it should be allowed, denied, or subjected to additonal controls
      - it considers the 5 Ws (Who, What, When, Where, Why)
      - PDP makes access decision based on contextual information
-  - With regards to the key elements of Zero trust architecture, as it relates to access policy enforcment, the following are described in NIST 800-207.
+     - The NIST zero trust reference design includes both the 📝Policy Engine and the 📝Policy Administrator as part of the policy decision point.
+          - 📁**Policy Engine (PE)**: The policy engine makes policy decisions based on rles that are then acted on by the policy administrator, granting or denying access to enterprise resources. 
+     - With regards to the key elements of Zero trust architecture, as it relates to access policy enforcment, the following are described in NIST 800-207.
     - 🍮**Control Plane**: These drive the policy-based decision logic for the concept of Zero trust. Involves the following:
        - Adaptive Identity: Changes the way that the system asks a user to authenticate based on context of the request. e.g user location, device health, approved app, riks levels of user
        - Threat Scope reduction: An end goal of ZTNA to decrease risks to the organisation.
@@ -479,3 +482,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
       - 🍏Job Rotation: A job rotation policy has employees rotate jobs or job responsibilities and can help detect collusion and fraud.
       - 🍏Mandatory Vacation policies: ensure that employees take an extended time away from their jobs, requiring someone else to perform their job responsibilities, which increases the likelihood of discovering fraud.
 - Note📝 When creating new user accounts, default acceess for new users should always be "No Access", if no authorization mechanism is specified. Before granting any user access to information, you should verify that the user has an appropriate clearance (clearance could be a note from CFO) as well as a business need to know the information in question.
+
+- ❄️**Linux Admin Basic:**
+    - 🐍The sudo command allows a permitted user to execute a command as the superuser (root) or another user, as specified by the sudoers file. When using sudo, you enter your own user password (not the root password) to confirm your identity.
+    - 🐍The su command is used to switch to another user account, including the root account, within the current session. su is typically used when you need to operate as another user for an extended session, not just for a single command.
+    - 🐍The sudoers file is a configuration file located at /etc/sudoers. It defines which users or groups can run which commands as which users, and under what conditions. The sudoers file controls the behavior of the sudo command. It allows administrators to define privileges and policies for different users, limiting what commands they can run with sudo.
+    - 🏖️Ensure that users cannot bypass logging by switching to the root user using sudo su -. Instead, users who need the ability to perform privileged actions should be added to the sudoers list and then logged as themselves performing the actions. 
