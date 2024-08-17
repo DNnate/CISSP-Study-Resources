@@ -54,6 +54,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - Password complexity is driven by length, and a longer password will be more effective against brute-force attacks than a shorter password. Each character of additional length increases the difficulty by the size of the potential character set (for example, a single lowercase character makes the passwords 26 times more difficult to crack.
     - 🔬Salting: The practice of 🔥salting passwords (Salted hashes are stored and compared to passwords after they are salted and hashed) was specifically introduced to thwart rainbow table attacks, but it also thwarts the effectiveness of offline dictionary and brute-­force attacks. 📝Rainbow tables are databases of pre-hashed passwords paired with high-speed lookup functions. Since they can quickly compare known hashes against those in a file, using rainbow tables is the fastest way to quickly determine passwords from hashes.
     - 🔬Shadowed password refers to a system where user password hashes are stored in a separate file, typically called the "shadow file", instead of the standard "/etc/passwd" file on Unix or Linux systems. When a system is configured to use shadowed passwords, the /etc/passwd file contains only the character x in the place of a password. When a system uses shadowed passwords, the hashed password value is stored in /etc/shadow instead of /etc/passwd.
+    - 🔬Mutual authentication ensures that a server provides authentication before the client provides authentication. This prevents employees from revealing their credentials to rogue servers.
 - **Authorization**: Authorization verifies the identity of a subject by checking a factor like a password.  Authorization provides a user with capabilities or rights. It is the process of determining what a user is allowed to do.
 - 5.2.1 Identiy management (IdM) implementation
     - Identity and access management is a collection of processes and techologies that are used to control access to critical assets; it's purpose is the management of access to information, systems, devices, and facilities
@@ -181,10 +182,11 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - e.g. using your Google or Facebook account to sign into Zoom
 - 5.2.8 Singe Sign On (SSO)
     - **Single Sign-On (SSO)**: a centralized access control technique allowing a subject to be authenticated once on a system and access multiple resources without authenticating again
-    - Advantages of using SSO include:
+    - 🚡Advantages of using SSO include:
         - reduces the number of passwords that users need to remember, and they are less likely to write them down
         - eases administration by reducing the number of accounts
-    - Disadvantages:
+        - SSO solutions and centralized administration and make it easier for administrators to manage user accounts.
+    - 🚡Disadvantages:
         - once an account is compromised, an attacker gains unrestricted access to all of the authorized resources
     - Within an organization, a central access control system, such as a directory service, is often used for SSO
         - **Directory Service**: a centralized database that includes information about subjects and objects, including authentication data
