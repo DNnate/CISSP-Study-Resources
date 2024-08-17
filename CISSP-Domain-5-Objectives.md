@@ -138,13 +138,13 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.2.5 Registration, proofing, and establishment of identity
     - Within an organization, new employees prove their identity with appropriate documentation during the hiring process
         - in-person identity proofing includes things like passport, DL, birth cert etc
-    - 🆎Knowledge-based authentication relies on preset questions such as "What is your pet's name?" and the answers. Online orgs often use knowledge-based authentication (KBA) for identity-proofing of someone new (e.g. a new customer creating a new bank/savings account). It can be susceptible to attacks because of the availability of the answers on social media or other sites.
+    - 🆎Knowledge-based authentication relies on preset questions such as "What is your pet's name?" and the answers. Online orgs often use knowledge-based authentication (KBA) for identity-proofing of someone new (e.g. a new customer creating a new bank/savings account). It can be susceptible to attacks because of the availability of the answers on social media or other sites. Knowledge-based authentication (KBA) processes ask a user a series of questions based on their history that is recorded in 📝authoritative sources.
     - 🆎Dynamic knowledge-based authentication relies on facts or data that the user already knows that can be used to create questions they can answer on an as-needed basis (for example, a previous address or a school they attended).
         - example questions include past vehicle purchases, amount of mortgage payment, previous addresses, DL numbers
         - 🥛Identity proofing can be done by comparing user information that the organization already has, like account numbers or personal information.
              - they then query authoritative information (e.g. credit bureaus or gov agencies) for matches
         - 🥛Out-of-band identity proofing relies on an alternate channel like a phone call or text message. 
-    - 🆎 Cognitive Passwords: security questions that are gathered during account creation, which are later used as questions for authentication (e.g. name of pet, color of first car etc). A cognitive password authenticates users based on a series of facts or answers to questions that they know. Preset questions for cognitive passwords typically rely on common information about a user like their mother's maiden name or the name of their pet, and that information can frequently be found on the internet. The best cognitive password systems let users make up their own questions.
+    - 🆎 Cognitive Passwords: security questions that are gathered during account creation, which are later used as questions for authentication (e.g. name of pet, color of first car etc). A cognitive password asks a series of questions, but these are questions that the user previously answered, such as your favorite color. A cognitive password authenticates users based on a series of facts or answers to questions that they know. Preset questions for cognitive passwords typically rely on common information about a user like their mother's maiden name or the name of their pet, and that information can frequently be found on the internet. The best cognitive password systems let users make up their own questions.
         - one of the flaws associated with cognitive passwords is that the information is often available on social media sites or general internet searches
 - 5.2.6 Federated Identity Management (FIM)
     - Federated Identity Management (FIM) systems (a form of SSO. 📝SSO is a benefit of identity management, not a type of identity management.) are often used by cloud-based apps
@@ -217,6 +217,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - It is nondiscretionary model managed by a central authority🔥 to determine which objects subjects can access
 - 5.4.2 ❄️**Rule Based access control**
     - A key characteristic of the Rule-Based access control model is that it applies global rules to all subjects
+    - A rule-based access control model uses 📝global rules applied to all users and other subjects equally.
         - e.g. firewalls uses rules that allow or block traffic to all users equally
     - Rules within the rule-based access control model are sometimes referred to as restrictions or filters
     - It uses a global rules applied to all users and other subjects equally.
@@ -226,12 +227,13 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - A key characteristic of the MAC model is the use of labels applied to 📝both subjects and objects
         - e.g. a label of top secret grants access to top-secret documents
     - When documented in a table, the MAC model sometimes resembles a 📝lattice or matrix (i.e. climbing rosebush framework), so it is referred to as a lattice-based model. 📝Biba integrity model uses this.
+    - The MAC model uses labels to identify the upper and lower bounds of classification levels, and these define the level of access for subjects. 
     - In a mandatory access control system, the 📝operating system enforces access control,
     - Mandatory access control systems are based on a lattice-based model. Lattice-based models use a matrix of classification labels to compartmentalize data.
     - 📝 MAC model doesn’t use a centralized environment.
     - MAC is a nondiscretionary access control model that uses labels🔥
     - (MAC) model supports three environments: hierarchical, compartmentalized, and hybrid.
-        - ☑️In a hierarchical environment, the various classification labels are assigned in an ordered structure from low security to high security. Mandatory access control systems can be hierarchical, where each domain is ordered and related to other domains above and below it;
+        - ☑️In a hierarchical environment, the various classification labels are assigned in an ordered structure from low security to high security. Mandatory access control systems can be hierarchical, where each domain is ordered and related to other domains above and below it. It grants users access using predefined labels for specific labels.
         - ☑️compartmentalized environment ignores the levels, and instead only allows access for individual compartments on any level.  MAC systems can be compartmentalized, where there is no relationship between each domain;
         - ☑️hybrid environment is a combination of a hierarchical and compartmentalized environment.
 
@@ -252,7 +254,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - Risk-based access control model grants access after evaluating risk; evaluating the environment and the situation and making risk-based decisions using policies embeded within software
         - Using machine learning, making predictive conclusions about current activity based on past activity
         - risk-­based access control model can require users to authenticate with multifactor authentication
-        - it evaluates the environment and the situation and then makes access decisions based on coded policies
+        - it evaluates the 📝environment and the 📝situation and then makes access decisions based on coded policies
+        - A risk-based access control model can be coded to block malicious traffic from infected IoT devices. It evaluates the environment and the situation and makes decisions to block traffic that is abnormal. 
 - 5.4.7 ❄️**Task based access control**
     - TBAC is similar to RBAC, but instead of being assigned to one or more roles, each user is assigned an array of tasks.
 - **Access Policy Enforcement**:
