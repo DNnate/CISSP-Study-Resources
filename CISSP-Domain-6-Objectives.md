@@ -47,6 +47,7 @@
 - 6.1.3 Third-party
     - Third-party audits are conducted by, or on behalf of, another org
     - In the case of a third-party audit, the org initiating the audit generally selects the auditors and designs the scope of the audit
+    - Large organizations hire  Qualified Security Assessor QSAs, or qualified security assessors, to conduct compliance checks. Third-party certification is required for large organizations by PCI-DSS, although smaller organizations can self-certify.
     - ❄️**Standards for Attestation Engagements document 18 (SSAE 18)**, The statement on SSAE 18 titled Reporting on Controls, provides a common standard to be used by auditors performing assessments of service orgs with the intent of allowing the org to conduct external assessments, instead of multiple third-party assessments, and then sharing the resulting report with customers and potential customers
         - outside of the US, similar engagements are conducted under the International Standard for Attestation Engagements (ISAE) 3402, Assurance Reports on Controls at a Service Organization
     - SSAE 18 and ISAE 3402 engagements are commonly referred to as a service organization controls (SOC) audits
@@ -197,7 +198,7 @@ reassembles the activity of individual users to track their interaction with a w
 
 - 6.2.5 Code review and testing
     - Code review and testing is "one of the most critical components of a software testing program"
-    - These procedures provide third-party reviews of the work performed by developers before moving code into a production environment, possibly discovering security, performance, or reliability flaws in apps before they go live and negatively impact business operations
+    - These procedures provide third-party reviews of the work performed by developers before moving code into a production environment, possibly discovering security, performance, bugs or reliability flaws in apps before they go live and negatively impact business operations
     - In code review, AKA peer review, developers other than the one who wrote the code review it for defects
     - **Fagan inspections**: the most formal code review process follows six steps:
         1) planning
