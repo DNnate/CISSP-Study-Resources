@@ -43,7 +43,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
    - Sites and Facilities
    
 [5.2](#5.2) Manage identification and authentication of people, devices, and services (OSG-9 Chpt 13)
-- **Identification**: the process of a subject claiming, or professing an identity. A user professes an identity with a login ID. The 📝combination of the login ID and the password provides authentication.
+- **Identification**: the process of a subject claiming, or professing an identity. A user professes an identity with a login ID. The 📝combination of the login ID and the password provides authentication. A user account must have an account identifier (also known as a username).
 - **Authentication**: verifies the subject’s identity by comparing one or more factors against a database of valid identities, such as user accounts
     - a core principle with authentication is that all subjects must have unique identities
     - identification and authentication occur together as a single two-step process
@@ -55,6 +55,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - 🔬Salting: The practice of 🔥salting passwords (Salted hashes are stored and compared to passwords after they are salted and hashed) was specifically introduced to thwart rainbow table attacks, but it also thwarts the effectiveness of offline dictionary and brute-­force attacks. 📝Rainbow tables are databases of pre-hashed passwords paired with high-speed lookup functions. Since they can quickly compare known hashes against those in a file, using rainbow tables is the fastest way to quickly determine passwords from hashes.
     - 🔬Shadowed password refers to a system where user password hashes are stored in a separate file, typically called the "shadow file", instead of the standard "/etc/passwd" file on Unix or Linux systems. When a system is configured to use shadowed passwords, the /etc/passwd file contains only the character x in the place of a password. When a system uses shadowed passwords, the hashed password value is stored in /etc/shadow instead of /etc/passwd.
     - 🔬Mutual authentication ensures that a server provides authentication before the client provides authentication. This prevents employees from revealing their credentials to rogue servers.
+    - 🔬Credential Management API is a web-based API that allows developers to store, retrieve, and manage user credentials in a secure and user-friendly manner. It’s part of modern web standards and plays a crucial role in simplifying user authentication while enhancing security. The Credential Management application programming interface (API) was published by the World Wide Web Consortium (W3C) as a working draft in January 2019 and allow customers to be automatically logged on when they visit a website.
 - **Authorization**: Authorization verifies the identity of a subject by checking a factor like a password.  Authorization provides a user with capabilities or rights. It is the process of determining what a user is allowed to do.
 - 5.2.1 Identiy management (IdM) implementation
     - Identity and access management is a collection of processes and techologies that are used to control access to critical assets; it's purpose is the management of access to information, systems, devices, and facilities
@@ -125,7 +126,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - **Accountability**: users and other subjects can be held accountable for their actions when auditing is implemented
             - Accurate identification and authentication are required to support accountability.
             - Authentication is necessary to ensure a network supports accountability. Note that authentication indicates that a user claimed an identity such as with a username and proved the identity such as with a password. In other words, valid authentication includes identification. However, identification doesn't include authentication. If users could just claim an identity without proving it's their identity, the system doesn't support accountability.
-    - **Auditing**: tracks subjects and records when they access objects, creating an audit trail in one or more audit logs
+    - **Auditing**: tracks subjects and records when they access objects, creating an audit trail in one or more audit logs. Audit trails provide documentation on what happened, when it happened, and who did it. IT personnel create audit trails by examining logs.
         - Auditing provides accountability
         - Auditing occurs after the logs have been created
         - Logs record events, including who took an action, but without accurate identification and authentication, the logs can’t be relied on.
@@ -163,7 +164,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - users can then use this federated identity to access resources in any other org within the group
         - where each organization decides what resources to share
     - Methods used to implement federated identity management systems include:
-        - 🍊Security Assertion Markup Language (SAML): SAML is an XML-based framework used to exchange user information for single sign-on(SSO) between federated organizations within a federated identity management system. 
+        - 🍊Security Assertion Markup Language (SAML): SAML is an XML-based framework used to exchange user information for single sign-on(SSO) between federated organizations within a federated identity management system. Federated organizations use the Security Assertion Markup Language (SAML) to support single sign-on (SSO) capabilities on the internet. 
         - 🍊OAuth (most widely used and integrates with 3rd Parties). OAuth is the most widely used open standard for 🧠authorization and 🧠delegation of rights for cloud services. The anti-forgery state token exchanged during OAuth  sessions is intended to prevent cross-site request forgery. Cross-­site request forgery attacks, abbreviated as XSRF or CSRF attacks, are similar to cross-­site scripting attacks but exploit a different trust relationship. XSS attacks exploit the trust that a user has in a website to execute code on the user’s computer. **XSRF** attacks exploit the trust that remote sites have in a user’s system to execute commands on the user’s behalf.
         - 🍊OpenID Connect (OIDC) (used for authentication): would allow to use an account from another service to acces an  application
         - OpenID is used for 🧠authentication. OpenID would you to use an account from another service with your application. OpenID is used to sign in using credentials from an identity provider to other services, such as when you log in with Google to other sites
@@ -240,9 +241,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - 📝 MAC model doesn’t use a centralized environment.
     - MAC is a nondiscretionary access control model that uses labels🔥
     - (MAC) model supports three environments: hierarchical, compartmentalized, and hybrid.
-        - ☑️In a hierarchical environment, the various classification labels are assigned in an ordered structure from low security to high security. Mandatory access control systems can be hierarchical, where each domain is ordered and related to other domains above and below it. It grants users access using predefined labels for specific labels.
-        - ☑️compartmentalized environment ignores the levels, and instead only allows access for individual compartments on any level.  MAC systems can be compartmentalized, where there is no relationship between each domain;
-        - ☑️hybrid environment is a combination of a hierarchical and compartmentalized environment.
+        - ☑️In a hierarchical environment, the various classification labels are assigned in an ordered structure from low security to high security. Mandatory access control systems can be hierarchical, where each domain is ordered and related to other domains above and below it. It grants users access using predefined labels for specific labels. The hierarchical environment uses levels to assign access.
+        - ☑️compartmentalized environment ignores the levels, and instead only allows access for individual compartments on any level.  MAC systems can be compartmentalized, where there is no relationship between each domain; 
+        - ☑️hybrid environment is a combination of a hierarchical and compartmentalized environment. Hybrid environments combine both hierarchical and compartmentalized environments so that security levels have sub-compartments.  
 
 - 5.4.4 Discretionary Access Control (DAC)
     - ❄️**Discretionary Access Control (DAC)**: access control model in which the system owner decides who gets access
@@ -395,7 +396,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - The primary purpose of Kerberos is authentication, since it allows users to prove their identity.
     - Kerberos requires computer times to be within 5 minutes of each other
     - The purpose of Kerberos is authentication; Kerberos offers a single sign-on solution for users and protects logon credentials
-    - Kerberos supports SSO in a single organization (not federation)
+    - Kerberos supports SSO in a single organization (not federation) it doesnt use 🚫SAML
     - Ticket authentication is a mechanism that employs a third-party entity to prove identification and provide authentication - Kerberos is a well-known ticket system
     - After users authenticate and prove their identity, Kerberos uses their proven identity to issue tickets, and user accounts present these tickets when accessing resources
     - Kerberos version 5 relies on symmetric-key cryptography (AKA secret-key cryptography) using the Advanced Encryption Standard (AES) symmetric encryption protocol
