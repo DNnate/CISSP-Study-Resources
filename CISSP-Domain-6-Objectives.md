@@ -38,6 +38,7 @@
     - Designing the audit strategy should include laying out applicable regulatory requirements and compliance goals
     - Internal audits are performed by an organization’s internal audit staff and are typically intended for internal audiences
     - It is entirely appropriate to distribute internal audit reports to anyone in the organization who has a valid need to know. This may include both management and individual contributors responsible for remediating issues as well as board members charged with oversight
+    - The chief audit executive (CAE) should report to the most senior possible leader e.g CEO to avoid conflicts of interest.  It is also possible to provide an added degree of independence by having the CAE report to the board of directors, either as a primary reporting line or as a dotted line relationship.
 - 6.1.2 🔴External
     - An external audit strategy should complement the internal strategy, providing regular checks to ensure that procedures are being followed and the organization is meeting its compliance goals
     - External audits are performed by an outside auditing firm
