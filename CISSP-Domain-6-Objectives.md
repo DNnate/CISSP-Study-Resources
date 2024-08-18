@@ -307,7 +307,7 @@
     - Full review of accounts: time-consuming to review all, and often done only for highly privileged accounts
     - Organizations that don’t have time to conduct a full review process may use sampling, but only if sampling is truely random
     - The two main methods of choosing records from a large pool for further analysis are sampling and clipping.
-        - ⚛️**Sampling** uses statistical techniques to choose a sample that is representative of the entire pool
+        - ⚛️**Sampling** uses statistical techniques to choose a sample that is representative of the entire pool. Sampling should be done randomly to avoid human bias. Sampling is an effective process if it is done on a truly random sample of sufficient size to provide effective coverage of the userbase. It is infeasible for a single person to review every single record. 
         - ⚛️**Clipping** uses threshold values to select those records that exceed a predefined threshold because they may be of most interest to analysts.
     - Adding accounts: should be a well-defined process, and users should sign AUP
     - Adding, removing, and modifying accounts and permissions should be carefully controlled and documented
