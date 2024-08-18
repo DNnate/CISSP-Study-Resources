@@ -31,20 +31,18 @@
 - **Trust Services Criteria (TSC)**: used by an auditor when evaluating the suitability of the design and operating effectiveness of controls relevant to the security, availabiliity, or processing integrity of information and systems or the confidentiality or privacy of the info processed by the entity
 
 [6.1](#6.1) Design and validate assessment, test, and audit strategies (OSG-9 Chpt 15)
-- 6.1.1 Internal
+- 6.1.1 🔴Internal
     - An organization’s security staff can perform security tests and assessments, and the results are meant for internal use only, designed to evaluate controls with an eye toward finding potential improvements
     - An internal audit strategy should be aligned to the organization’s business and day-to-day operations
         - e.g. a publicly traded company will have a more rigorous internal auditing strategy than a privately held company
     - Designing the audit strategy should include laying out applicable regulatory requirements and compliance goals
     - Internal audits are performed by an organization’s internal audit staff and are typically intended for internal audiences
-    
-- 6.1.2 External
+- 6.1.2 🔴External
     - An external audit strategy should complement the internal strategy, providing regular checks to ensure that procedures are being followed and the organization is meeting its compliance goals
     - External audits are performed by an outside auditing firm
         - these audits have a high degree of external validity because the auditors performing the assessment theoretically have no conflict of interest with the org itself
         - audits by these firms are generally considered acceptable by most investors and governing bodies
-    
-- 6.1.3 Third-party
+- 6.1.3 🔴Third-party
     - Third-party audits are conducted by, or on behalf of, another org
     - In the case of a third-party audit, the org initiating the audit generally selects the auditors and designs the scope of the audit
     - Large organizations hire  Qualified Security Assessor QSAs, or qualified security assessors, to conduct compliance checks. Third-party certification is required for large organizations by PCI-DSS, although smaller organizations can self-certify.
@@ -282,11 +280,11 @@
     - Adding accounts: should be a well-defined process, and users should sign AUP
     - Adding, removing, and modifying accounts and permissions should be carefully controlled and documented
     - Accounts that are no longer needed should be suspended
-    - ISO 9000 standards use a Plan-Do-Check-Act loop
-        - plan: foundation of everything in the ISMS, determines goals and drives policies
-        - do: security operations
-        - check: security assessment and testing (this objective)
-        - act: formally do the management review
+    - 📝ISO 9000 standards use a Plan-Do-Check-Act loop
+        - 🎤plan: foundation of everything in the ISMS, determines goals and drives policies
+        - 🎤do: security operations
+        - 🎤check: security assessment and testing (this objective)
+        - 🎤act: formally do the management review
 
 - 6.3.3 Key performance and risk indicators
     - 🍮**Key Performance Indicator (KPIs)**: measures that provide significance of showing the performance an ISMS compared to stated goals
@@ -328,14 +326,13 @@
         - Crisis management involves handling the overall strategy and high-level decisions during a crisis or disaster. It focuses on managing the organization's response at a strategic level, ensuring that the organization can navigate through the crisis effectively and make decisions that align with its long-term goals and survival.
 
 [6.4](#6.4) Analyze test output and generate report (OSG-9 Chpt 15)
-- Step 1: review and understand the data
+- 💥Step 1: review and understand the data
     - The goal of the analysis process is to proceed logically from facts to actionable info
     - A list of vulns and policy exceptions is of little value to business leaders unless it's used in context, so once all results have been analyzed, you're ready to start writing the official report
-- Step 2: determine the business impact of those facts
+- 💥Step 2: determine the business impact of those facts
     - Ask "so what?"
-- Step 3: determine what is actionable
+- 💥Step 3: determine what is actionable
     - The analysis process leads to valuable results only if they are actionable
-
 - 6.4.1 Remediation
     - Rather than software defects, most vulnerabilities in average orgs come from misconfigured systems, inadequate policies, unsound business processes, or unaware staff
     - Vuln remediation should include all stakeholders, not just IT 
@@ -355,7 +352,7 @@
         - if the vuln is not corrected, then public disclosure of the vuln is warrented, such that other professionals can make informed decisions about future use of the product(s)
 
 [6.5](#6.5) Conduct or facilitate security audits (OSG-9 Chpt 15)
-- 6.5.1 Internal
+- 6.5.1 🔴Internal
     - Having an internal team conduct security audits has several advantages:
         - understanding of the internal environment reduces time
         - an internal team can delve into all parts of systems, because they have insider knowledge
@@ -364,12 +361,10 @@
         - the team may have limited exposure to new/other methodologies (e.g. the team may have depth but not breadth of experience and knowledge)
         - potential conflicts of interest (e.g. reluctance to throw other teams under the bus and accurately report their findings)
         - audit team members may start with an agenda (say to secure funding) and overstate faults, or have interpersonal motives
-
-- 6.5.2 External
+- 6.5.2 🔴External
     - An external audit (sometimes called a second-party audit) is one conducted by (or on behalf of) a business partner
     - External audits are tied to contracts; by definition, an external audit should be scoped to include only the contractual obligations of an organization
-
-- 6.5.3 Third-party
+- 6.5.3 🔴Third-party
     - Third-party audits are often needed to demonstrate compliance with some government regulation or industry standard
     - Advantages of having a third-party audit an organization:
         - they likely have breadth of experience auditing many types of systems, across many types of organizations
@@ -377,7 +372,6 @@
     - Disadvantage of using a third-party auditor:
         - cost: third-party auditors are going to be much more costly than internal teams; this means that the organization is likely to conduct audits as frequently
         - internal resources are still required to assist or accompany auditors, to answer questions and guide
-     
 - 6.5.4 Location: Facilitating Security Audit
     - On-Premise:
     - **Cloud**: distributed nature and scale of cloud infrastructure makes conducting an audit of cloud infrasturcture challenging.
@@ -386,23 +380,23 @@
         - Common technique in cloud auditing is sampling - picking a subset of the physical infrastructure to inspect
         - CSPs can collect evidence that provides auditors with sufficient assurance that they have collected a representative sample to save time and expense while still mainting accuracy
         - In relation to audit compliance, the 3 audit standards commonly used by the big CSPs include SSAE, ISAE, and CSA.
-            - **SSAE (Statement on Standards for Attestation Engagements)**: SSAE is a standard developed by the American Institute of Certified Public Accountants (AICPA) for reporting on the controls at a service organization.
+            - 📗️**SSAE (Statement on Standards for Attestation Engagements)**: SSAE is a standard developed by the American Institute of Certified Public Accountants (AICPA) for reporting on the controls at a service organization.
                 - SSAE 18 is designed to enhance the quality and usefulness of SOC reports
                 - SSAE is the framework for creating System and Organization Controls (SOC) reports, such as SOC 1, SOC 2, and SOC 3.
-                  - SOC 1: report that focuses on financial reporting by certified public accountants.
-                  - SOC 2 Type I: report that focuses on security, availability, processing integrity, confidentiality, and privacy controls at a specific point in time. Also Acts as baseline for future audits.
-                  - SOC 2 Type II: report that asseses the security, availability, processing integrity, confidentiality, and privacy controls over time by overving operations for at least 6 months. You can get these reports on demand from CSPs but may require you to sign an NDA.
-                  - SOC 3: Similar to SOC 2 but intended for broader distribution and contains auditors general opinions.
+                  - 🛠️SOC 1: report that focuses on financial reporting by certified public accountants.
+                  - 🛠️SOC 2 Type I: report that focuses on security, availability, processing integrity, confidentiality, and privacy controls at a specific point in time. Also Acts as baseline for future audits.
+                  - 🛠️SOC 2 Type II: report that asseses the security, availability, processing integrity, confidentiality, and privacy controls over time by overving operations for at least 6 months. You can get these reports on demand from CSPs but may require you to sign an NDA.
+                  - 🛠️SOC 3: Similar to SOC 2 but intended for broader distribution and contains auditors general opinions.
                 - It includes audit standards and suggested report formats to guide and assits auditors
                 - Example a cloud service provider undergoes an SSAE 18 audit to prove to clients that their data is secure and managed properly. 
-            - **ISAE (International Standard on Assurance Engagements)**:  ISAE is a set of standards issued by the International Auditing and Assurance Standards Board (IAASB) for assurance engagements, including reports on controls at service organizations. 
+            - 📗**ISAE (International Standard on Assurance Engagements)**:  ISAE is a set of standards issued by the International Auditing and Assurance Standards Board (IAASB) for assurance engagements, including reports on controls at service organizations. 
                 - The board and its standards are both similar to those of SSAE.
                 - ISAE 3402: The most relevant standard for cloud services, similar to SSAE 18, used internationally. it is roughly the equivalent of SOC 2 reports in SSAE.
-            - **CSA (Cloud Security Alliance)**: CSA is an organization that defines best practices and provides certifications for securing cloud computing environments.
+            - 📗**CSA (Cloud Security Alliance)**: CSA is an organization that defines best practices and provides certifications for securing cloud computing environments.
                 - it offers the CSA STAR program: The Security, Trust, Assurance, and Risk (STAR) program is a certification for cloud service providers based on CSA's Cloud Controls Matrix (CCM).
                 - STAR consists of two level of certification which provide increasing levels of assurance
-                   - Level 1 Self-Assesment: is based on self-assessment where Providers assess their own security practices against the CCM. It documents the security offering provided by the CSP.
-                   - Level 2 Third Party Audit: Requires the CSP to engage an independent auditor to evaluate the CSPs controls against the CSA standard. It is stronger.
+                   - 🛠️Level 1 Self-Assesment: is based on self-assessment where Providers assess their own security practices against the CCM. It documents the security offering provided by the CSP.
+                   - 🛠️Level 2 Third Party Audit: Requires the CSP to engage an independent auditor to evaluate the CSPs controls against the CSA standard. It is stronger.
                 - Can be used by CSPs, cloud consumers, auditors or consultants
                 - It is designed to demonstrate compliance to a desired level of assurance.
     - Hybrid:
