@@ -456,7 +456,7 @@
             - Can miss issues in compiled libraries
             - Cannot detect runtime errors easily
             - The source code actually deployed might differ from the one being analyzed 
-        - an example of Code review is by using the 6 steps 🔥Fagan process: 🟡 POPIRU
+        - an example of Code review is by using the 6 steps 🔥Fagan process (Fagan inspection is a highly formalized review and testing process): 🟡 POPIRU
             - 1.Planning
             - 2.Overview
             - 3.Preparation
