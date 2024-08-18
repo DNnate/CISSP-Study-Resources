@@ -144,7 +144,8 @@
             - Tests the code that is actually being exposed
         - ⚒️Disadvantages:
             - Too late in the SDLC
-            - Front-impact testing only 
+            - Front-impact testing only
+            - penetration testing can only cover the point in time when it is conducted. 
     -  📝Application crashes; 📝denial of service due to system, 📝network failures, or 📝application failures; and 📝data corruption can all be hazards of penetration tests.
     - NIST defines the penetration testing process as consisting of four phases: PIAR 🟡
     - 🚡**planning**: includes agreement on the scope of the test and the rules of engagement
@@ -160,7 +161,7 @@
         - step where pen testing goes beyond vuln scanning as vuln scans don’t attempt to actually exploit detected vulns
         - NIST 800-115 specifies four attack phase steps: gaining access, escalating privileges, system browsing, and installing additional tools. Once attackers install additional tools, penetration testers will typically use them to gain additional access.
         - e.g John, Metasploit, privilege escalation
-            - Metasploit is an exploitation package that is designed to assist penetration testers. A tester using Metasploit can exploit known vulnerabilities for which an exploit has been created or can create their own exploits using the tool. While Metasploit provides built-in access to some vulnerability scanning functionality, a tester using Metasploit should primarily be expected to perform actual tests of exploitable vulnerabilities. Similarly, Metasploit supports creating buffer overflow attacks, but it is not a purpose-built buffer overflow testing tool,
+            - Metasploit is an exploitation package that is designed to assist penetration testers. A tester using Metasploit can exploit known vulnerabilities for which an exploit has been created or can create their own exploits using the tool. Metasploit provides an extensible framework, allowing penetration testers to create their own exploits in addition to those that are built into the tool. While Metasploit provides built-in access to some vulnerability scanning functionality, a tester using Metasploit should primarily be expected to perform actual tests of exploitable vulnerabilities. Similarly, Metasploit supports creating buffer overflow attacks, but it is not a purpose-built buffer overflow testing tool,
     - 🚡**Reporting**: summarizes the results of the pen testing and makes recommendations for improvements to system security. Penetration testing reports often do not include the specific/sensitive data captured during the assessment, as the readers of the report may not be authorized to access all of the data, and exposure of the report could result in additional problems for the organization. A listing of the issues\vulnerabilities discovered, risk ratings, and remediation guidance are all common parts of a penetration test report.
         - Vulnerability reports can be classified as:
             - 🔖True positive report: the scan detected the vulnerability and the vulnerability actually existed.
