@@ -319,7 +319,8 @@
 
 - 6.3.2 Management review and approval
     - Account management reviews ensure that users only retain authorized permissions and that unauthorized modifications do not occur
-    - Full review of accounts: time-consuming to review all, and often done only for highly privileged accounts
+    - The management review and approval process ensures that each account was appropriately authorized and remains necessary to meet business needs.
+    - Full review of accounts: time-consuming to review all, and often done only for highly privileged accounts. 
     - Organizations that don’t have time to conduct a full review process may use sampling, but only if sampling is truely random
     - The two main methods of choosing records from a large pool for further analysis are sampling and clipping.
         - ⚛️**Sampling** uses statistical techniques to choose a sample that is representative of the entire pool. Sampling should be done randomly to avoid human bias. Sampling is an effective process if it is done on a truly random sample of sufficient size to provide effective coverage of the userbase. It is infeasible for a single person to review every single record. 
