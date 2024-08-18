@@ -354,7 +354,8 @@
 - 6.3.4 Backup verification data
     - Managers should periodically inspect the results of backups to verify that the process functions effectively and meets the organization’s data protection needs
         - this might include reviewing logs, inspecting hash values, or requesting an actual restore of a system or file
-        -  ensures that the organization’s data protection requirements are met effectively
+        -  ensures that the organization’s 📝data protection requirements are met effectively
+        -  The backup verification process ensures that backups are running properly and thus meeting the organization's data protection objectives.
 
 - 6.3.5 Training and awareness
     - Training and awareness programs play a crucial role in preparing an organization’s workforce to support information security programs
