@@ -135,7 +135,7 @@
 
 - 6.2.2 Penetration testing
     - Penetration tests goes beyond vulnerability testing techniques because it actually attempts to exploit systems. In most organizations, senior management needs to approve penetration tests due to the risk to the organization and the potential impact of the test. In a small number of organizations, the service owner may be able to make this decision, but penetration tests often have broader impacts than a single service, meaning that senior management is the proper approval path.
-    -  Application crashes; denial of service due to system, network, or application failures; and even data corruption can all be hazards of penetration tests.
+    -  📝Application crashes; 📝denial of service due to system, 📝network failures, or 📝application failures; and 📝data corruption can all be hazards of penetration tests.
     - NIST defines the penetration testing process as consisting of four phases: PIAR 🟡
     - 🚡**planning**: includes agreement on the scope of the test and the rules of engagement
         - ensures that both the testing team and management are in agreement about the nature of the test and that it is explicitly authorized
