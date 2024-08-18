@@ -266,10 +266,10 @@
             - software testers should pay careful attention to physical interfaces because of the potential consequences if they fail
 
 - 6.2.9 Breach attack simulations
-    - **Breach and attack simulation (BAS)**: platforms that seek to automate some aspects of penetration testing
-    - The BAS platform is not actually waging attacks, but conducting automated testing of security controls to identify deficencies
-    - Breach and Attack Simulation, systems are systems that combine red team (attack) and blue team (defense) techniques together with automation to simulate advanced persistent threats and other advanced threat actors when run against your environment. This allows a variety of threats to be replicated and assessed in an environment without as much overhead as a fully staffed purple team would.
-    - Designed to inject threat indicators onto systems and networks in an effort to trigger other security controls (e.g. place a suspicious file on a server)
+    - 📁**Breach and attack simulation (BAS)**: platforms that seek to automate some aspects of penetration testing
+        - The BAS platform is not actually waging attacks, but conducting automated testing of security controls to identify deficencies
+        - Breach and Attack Simulation, systems are systems that combine red team (attack) and blue team (defense) techniques together with automation to simulate advanced persistent threats and other advanced threat actors when run against your environment. This allows a variety of threats to be replicated and assessed in an environment without as much overhead as a fully staffed purple team would.
+        - Designed to inject threat indicators onto systems and networks in an effort to trigger other security controls (e.g. place a suspicious file on a server)
         - detection and prevention controls should immediately detect and/or block this traffic as potentially malicious
     - See:
         - OWASP Web Security Testing Guide
@@ -306,12 +306,12 @@
 
 - 6.3.3 Key performance and risk indicators
     - 🍮**Key Performance Indicator (KPIs)**: measures that provide significance of showing the performance an ISMS compared to stated goals
-    - Choose the factors that can show the state of security
-    - Define baselines for some (or better yet all) of the factors
-    - Develop a plan for periodically capturing factor values (use automation!)
-    - Analyze and interpret the data and report the results
-    - Time to remediate a vulnerability is a commonly used key performance indicator for security teams and patching related KPIs.
-    - Rate of defect recurrence  is an appropriate measure for regression testing.
+        - Choose the factors that can show the state of security
+        - Define baselines for some (or better yet all) of the factors
+        - Develop a plan for periodically capturing factor values (use automation!)
+        - Analyze and interpret the data and report the results
+        - Time to remediate a vulnerability is a commonly used key performance indicator for security teams and patching related KPIs.
+        - Rate of defect recurrence  is an appropriate measure for regression testing.
     - Key metrics or KPIs that should be monitored by security managers may vary from org to org, but could include:
         - 👽number of open vulns
         - 👽time to resolve vulns
@@ -393,7 +393,7 @@
         - internal resources are still required to assist or accompany auditors, to answer questions and guide
 - 6.5.4 Location: Facilitating Security Audit
     - On-Premise:
-    - **Cloud**: distributed nature and scale of cloud infrastructure makes conducting an audit of cloud infrasturcture challenging.
+    - 📁**Cloud**: distributed nature and scale of cloud infrastructure makes conducting an audit of cloud infrasturcture challenging.
         - You generally cannot audit the underlying infrastructure managed by the CSP
         - cloud computing enables distributed services , with systems that can replicate globally. The impact is the additional geographic locations auditors must consider when performing an audit
         - Common technique in cloud auditing is sampling - picking a subset of the physical infrastructure to inspect
@@ -435,22 +435,23 @@
     - ❄️**Dynamic Testing** DAST: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else. In those cases, testers often do not have access to the underlying source code.
         - common example of dynamic software testing is the use of web application scanning tools to detect the presence of cross-­site scripting, SQL injection, or other flaws in web applications. Note📝 SQL injection is a web vulnerability.
         - Another example is the use of synthetic transactions to verify system performance. These are scripted transactions with known expected results.
-    - ❄️**Fuzz Testng**: is a specialized dynamic testing technique that provides many different, and sometimes invalid types of input to software to stress its limits and find previously undetected flaws.  Fuzzing uses modified inputs to test software performance under unexpected circumstances.It is imited to detecting simple vulnerabilities.
-    - zzuf is a fuzzing tool thats tests web browsers ability to handle unexpected data. zzuf is specifically designed to work with tools like web browsers, image viewers, and similar software by modifying network and file input to application.
-    - Fuzzers are tools that are designed to provide invalid or unexpected input to applications, testing for vulnerabilities like format string vulnerabilities, buffer overflow issues, and other problems.
+    - ❄️**Fuzz Testng**: is a specialized dynamic testing technique that provides many different, and sometimes invalid types of input to software to stress its limits and find previously undetected flaws.  Fuzzing uses modified inputs to test software performance under unexpected circumstances.
+        - It is imited to detecting 📝simple vulnerabilities.
+        - zzuf is a fuzzing tool thats tests web browsers ability to handle unexpected data. zzuf is specifically designed to work with tools like web browsers, image viewers, and similar software by modifying network and file input to application.
+        - Fuzzers are tools that are designed to provide invalid or unexpected input to applications, testing for vulnerabilities like format string vulnerabilities, buffer overflow issues, and other problems.
     - Fuzzing involves sending unexpected inputs to a program to see how it responds
         - 🔔Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input. It uses bit flipping and other techniques to slightly modify previous inputs to a program in an attempt to detect software flaws. It  modifies known inputs to generate synthetic inputs that may trigger unexpected behavior
         - 🔔Generational (Intelligent) Fuzzing Develops data models and creates new fuzzed input based on an understanding of the types of data used by the program. It develops inputs based on models of expected inputs to perform the same task.
     - ❄️**Interface Testing**: assesses the performance of modules against the interface specifications to ensure that they will work together properly. Interfaces to be tested include
       - Application Programming Interfaces (APIs)
       - User Interfaces (UIs)
-      - Physical Interfaces (For appliacations that manipulate machinery and logic controllers)
+      - Physical Interfaces (For applications that manipulate machinery and logic controllers)
     - ❄️**Misuse Case Testing**: or abuse case testing to evaluate the vulnerability of their software to users attempt
 to misuse the application
     - ❄️**Mutation Testing**: Mutation testing (automatically) modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation. It is a method used to automatically design new software tests and to ensure the quality of tests
     - ❄️**Regression Testing**: In cases where the project is releasing updates to an existing system, regression testing formalizes the process of verifying that the new code performs in the same manner as the old code, other than any changes expected as part of the new release. They Key performance measure of Regression testing is more specifically covered by defect recurrence rates.        
 
-- **Time of Check to Time of Use (TOCTTOU or TOC/TOU)**: Computer systems perform tasks with rigid precision. Computers excel at repeatable tasks. Attackers can develop attacks based on the predictability of task execution. The common sequence of events for an algorithm is to check that a resource is available and then access it if you are permitted.
+- 🔴**Time of Check to Time of Use (TOCTTOU or TOC/TOU)**: Computer systems perform tasks with rigid precision. Computers excel at repeatable tasks. Attackers can develop attacks based on the predictability of task execution. The common sequence of events for an algorithm is to check that a resource is available and then access it if you are permitted.
     - ⚔️**Time of Check (TOC)** is the time at which the subject checks on the status of the object. There may be several decisions to make before returning to the object to access it.
     - ⚔️**Time of Use (TOU)**: When the decision is made to access the object, the procedure accesses it at the "time of use (TOU). The difference between the TOC and the TOU is sometimes large enough for an attacker to replace the original object with another object that suits their own needs.
     - ⚔️**Race Conditions (TOCTTOU or TOC/TOU)**: Time of check to time of use (TOCTTOU or TOC/TOU) attacks are often called race conditions. 📝When testing in a non-production environment, the changes from a testing environment with instrumentation inserted into the code and the production environment for the code can mask timing-related issues like race conditions.
