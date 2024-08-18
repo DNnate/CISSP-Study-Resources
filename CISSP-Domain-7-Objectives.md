@@ -924,6 +924,7 @@ list review, team members each review the contents of their disaster recovery ch
         - unlike read-throughs and walk-throughs, some of these response measures are then tested
         -  ❗Simulation tests may shut down noncritical business units. 
         - this may involve the interruption of noncritical business activities and the use of some operational personnel
+        - Simulations are the most complete test that can be conducted without the risk that a full failover test creates. 
 - Checklist tests, structured walk-­throughs, and simulations are all test types that do not involve actually activating the alternate site.
 - 7.12.4 Parallel
     - **Parallel tests**: represent the next level, and involve 🔥relocating personnel to the alternate recovery site and implementing site activation procedures
