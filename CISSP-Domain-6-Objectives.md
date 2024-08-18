@@ -308,6 +308,7 @@
     - Preferred attacker techniques for obtaining privilege user access include:    
         - compromising an existing privileged account: mitigated through use of strong authentication (strong passwords and multifactor), and by admins use of privileged accounts only for specific tasks
         - privelege escalation of a regular account or creation of a new account: these approaches can be mitigated by paying attention to the creation, modification, and use of user accounts
+        - The most frequent target of account management reviews are highly 📝privileged accounts, as they create the greatest risk.
 
 - 6.3.2 Management review and approval
     - Account management reviews ensure that users only retain authorized permissions and that unauthorized modifications do not occur
