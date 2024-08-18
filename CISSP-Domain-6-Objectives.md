@@ -160,7 +160,12 @@
         - NIST 800-115 specifies four attack phase steps: gaining access, escalating privileges, system browsing, and installing additional tools. Once attackers install additional tools, penetration testers will typically use them to gain additional access.
         - e.g John, Metasploit, privilege escalation
             - Metasploit is an exploitation package that is designed to assist penetration testers. A tester using Metasploit can exploit known vulnerabilities for which an exploit has been created or can create their own exploits using the tool. While Metasploit provides built-in access to some vulnerability scanning functionality, a tester using Metasploit should primarily be expected to perform actual tests of exploitable vulnerabilities. Similarly, Metasploit supports creating buffer overflow attacks, but it is not a purpose-built buffer overflow testing tool,
-    - 🚡**reporting**: summarizes the results of the pen testing and makes recommendations for improvements to system security. Penetration testing reports often do not include the specific/sensitive data captured during the assessment, as the readers of the report may not be authorized to access all of the data, and exposure of the report could result in additional problems for the organization. A listing of the issues\vulnerabilities discovered, risk ratings, and remediation guidance are all common parts of a penetration test report.
+    - 🚡**Reporting**: summarizes the results of the pen testing and makes recommendations for improvements to system security. Penetration testing reports often do not include the specific/sensitive data captured during the assessment, as the readers of the report may not be authorized to access all of the data, and exposure of the report could result in additional problems for the organization. A listing of the issues\vulnerabilities discovered, risk ratings, and remediation guidance are all common parts of a penetration test report.
+        - Vulnerability reports can be classified as:
+            - 🔖True positive report: the scan detected the vulnerability and the vulnerability actually existed.
+            - 🔖True negatives occur when scans correctly note the absence of a vulnerability.
+            - 🔖False positives occur when scans report the presence of a vulnerability that does not actually exist.
+            - 🔖False negatives occur when scans report that no vulnerability exists when one does, in fact, exist.
     - Penetration tests are normally categorized into three groups:
         - 🔴**white-box penetration test (crystal)**:
             - provides the attackers with **detailed information** about the systems they target
@@ -276,7 +281,7 @@
             - software testers should pay careful attention to physical interfaces because of the potential consequences if they fail
 
 - 6.2.9 Breach attack simulations
-    - 📁**Breach and attack simulation (BAS)**: platforms that seek to automate some aspects of penetration testing
+    - 📁**Breach and attack simulation (BAS)**: platforms that seek to 📝automate some aspects of penetration testing
         - The BAS platform is not actually waging attacks, but conducting automated testing of security controls to identify deficencies
         - Breach and Attack Simulation, systems are systems that combine red team (attack) and blue team (defense) techniques together with automation to simulate advanced persistent threats and other advanced threat actors when run against your environment. This allows a variety of threats to be replicated and assessed in an environment without as much overhead as a fully staffed purple team would.
         - Designed to inject threat indicators onto systems and networks in an effort to trigger other security controls (e.g. place a suspicious file on a server)
@@ -328,16 +333,16 @@
         - Time to remediate a vulnerability is a commonly used key performance indicator for security teams and patching related KPIs.
         - Rate of defect recurrence  is an appropriate measure for regression testing.
     - Key metrics or KPIs that should be monitored by security managers may vary from org to org, but could include:
-        - 👽number of open vulns
-        - 👽time to resolve vulns
+        - 👽number of open vulnerability
+        - 👽time to resolve vulnerability
         - 👽vulnerability/defect recurrence
         - 👽number of compromised accounts
         - 👽number of software flaws detected in pre-production scanning
         - 👽repeat audit findings
-        - 👽user attempts to visit known malicious sites
+        - 👽number of account compromise
+        - 👽number of times user attempts to visit known malicious sites
     - Develop a dashboard of metrics and track them
    - 🍮**Key Risk Indicator (KRIs)**: Key risk indicators are used to tell those in charge of risk management how risky an activity is and how much impact changes are having on that risk profile. Identifying key risk indicators and monitoring them can help to identify high-risk areas earlier in their lifecycle. 
-    - Choose
 - 6.3.4 Backup verification data
     - Managers should periodically inspect the results of backups to verify that the process functions effectively and meets the organization’s data protection needs
         - this might include reviewing logs, inspecting hash values, or requesting an actual restore of a system or file
