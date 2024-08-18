@@ -200,7 +200,7 @@
         - They are internal security team that 📝defends against Red Team and real attackers
         - They are defence
         - Think of defenders protecting the system from attacks.
-    - 📗**Purple Team**: A collaboration between the red team and blue team to improve the overall security of an organization.
+    - 📗**Purple Team**: A collaboration between the red team and blue team to improve the overall security of an organization and for knowledge sharing.
         - exist to ensure and maximise the effectiveness of the red and blue teams
         - They are for process improvement
         - Think of a 📝cooperative effort where attackers and defenders work together to strengthen security.
