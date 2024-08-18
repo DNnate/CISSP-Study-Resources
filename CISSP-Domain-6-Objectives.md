@@ -65,10 +65,12 @@
             - type I reports also cover only a specific 📝point in time, rather than an extended period
             - think of Type I report as more of a documentation review
             -  takes a “snapshot-in-time” approach, setting a baseline for future audits of your service organization’s system.
+            -  Type I reports provide the auditor's opinion on the description of controls provided by management and the suitability of the design of those controls, 📝without performing any testing of the controls.
         - 💥**Type II Reports**: go further and also provide the auditor’s opinion on the operating effectiveness of the controls
             - the auditor actually confirms the controls are functioning properly
             - Type II reports also cover an extended 📝period of time, at least 6 months
             - think of Type II report as similar to a traditional audit; the auditor is checking the paperwork, and verifying the controls are functioning properly
+            -  Type II reports go further and also provide the auditor's opinion on the operating effectiveness of the controls based upon testing. 
         - Type II reports are considered much more reliable than Type I reports (Type I reports simply take the service orgs word that the controls are implemented as described)
      
 - 6.1.4 Location for Auditing
