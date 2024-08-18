@@ -356,6 +356,7 @@
         - this might include reviewing logs, inspecting hash values, or requesting an actual restore of a system or file
         -  ensures that the organization’s 📝data protection requirements are met effectively
         -  The backup verification process ensures that backups are running properly and thus meeting the organization's data protection objectives.
+        -  The recovery point objective (RPO) specifies the maximum amount of data that may be lost during a disaster and should be used to guide backup strategies. 
 
 - 6.3.5 Training and awareness
     - Training and awareness programs play a crucial role in preparing an organization’s workforce to support information security programs
