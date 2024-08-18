@@ -138,6 +138,7 @@
         - Authenticated scans can read configuration information from the target system and reduce the instances of false positive and false negative reports.
 
 - 6.2.2 ❄️Penetration testing
+    - Penetration testing is the attempt to bypass security controls to test overall system security
     - Penetration tests goes beyond vulnerability testing techniques because it actually attempts to exploit systems. In most organizations, senior management needs to approve penetration tests due to the risk to the organization and the potential impact of the test. In a small number of organizations, the service owner may be able to make this decision, but penetration tests often have broader impacts than a single service, meaning that senior management is the proper approval path.
         - ⚒️Advantages:
             - Can be fast (and therefore cheap)
