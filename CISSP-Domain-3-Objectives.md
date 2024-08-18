@@ -1001,7 +1001,13 @@ taxed by inefficient implementations of software and VMs.
      - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
 - 🔴**Technical Access Control**:
      - passwords, multi-factor authentication (MFA), or digital certificates, Encryption, Firewalls, IDS/IPS, Access Control Lists (ACLs), Access Cards/Biometric Systems
-           
+- 🔴**Compensatory Access Control**:
+     - Provide alternative methods to achieve security objectives when primary controls are not feasible.
+     - Implementing additional layers of authentication when standard methods are insufficient.
+- 🔴**Corrective Access Control**:
+     - Correct or mitigate the impact of security incidents after they have occurred.
+     - Examples include Incident Response Plans/Procedures for responding to and managing security breaches, Data Backup and Recovery to restore data to its original state following loss or corruption and Patch Management to apply software patches and updates to fix vulnerabilities.
+                 
 - 3.10 Information System Life Cycle
     - a structured framework for managing an information system from its intial conception to its retirement.
     - The goal is to ensure that a system is developed and managed in a way that meets business needs , remains secure and operates efficiently through its lifespan
