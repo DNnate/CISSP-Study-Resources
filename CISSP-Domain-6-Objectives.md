@@ -157,6 +157,7 @@
             - provides the attackers with **detailed information** about the systems they target
             - this bypasses many of the reconnaissance steps that normally precede attacks, shortening the time of the attack and increasing the likelihood that it will find security flaws
             - these tests are sometimes called "**known environment**" tests
+            - To fully test code, a white-box test is required. Without full visibility of the code, error conditions or other code could be missed.
         - 🔴**gray-box penetration test**:
             - AKA **partial knowledge tests**, these are sometimes chosen to balance the advantages and disadvantages of white- and black-box penetration tests
             - this is particularly common when black-box results are desired but costs or time constraints mean that some knowledge is needed to complete the testing
@@ -213,17 +214,18 @@
         4) inspection
         5) rework
         6) follow-up
-    - 🔖**Static application security testing (SAST)**: evaluates the security of software without running it by analyzing either the source code or the compiled application
+    - 🔖**Static application security testing (SAST)**: evaluates the security of software without running it by analyzing either the source code or the compiled application. Static reviews are typically performed by an automated tool.
     - 🔖**Dynamic application security testing (DAST)**: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else
 
 - 6.2.6 Misuse case testing
-    - **Misuse case testing**: AKA abuse case testing - used by software testers to evaluate the vulnerability of their software to known risks
+    - 🔨**Misuse case testing**: AKA abuse case testing - used by software testers to evaluate the vulnerability of their software to known risks
     - In misuse case testing, testers first enumerate the known misuse cases, then attempt to exploit those use cases with manual or automated attack techniques
-    - **Use case testing**: use case testing is to verify that the application responds properly to actual use cases
+    - 🔨**Use case testing**: use case testing is to verify that the application responds properly to actual use cases
 
-- 6.2.7 Test coverage analysis
+- 6.2.7 **Test coverage analysis**
     - A test coverage analysis is used to estimate the degree of testing conducted against new software
-    - **Test coverage** = number of use cases tested / total number of use cases
+    - 🧠Test coverage = number of use cases tested / total number of use cases
+        - ­Coverage rates are used to measure how effective code testing is.
         - requires enumerating possible use cases (which is a difficult task), and anyone using test coverage calcs to understand the process used to develop the input values
     - Five common criteria used for test coverage analysis:
         - 🛎️**branch coverage**: has every IF statement been executed under all IF and ELSE conditions?
@@ -231,7 +233,12 @@
         - 🛎️**functional coverage**: has every function in the code been called and returned results?
         - 🛎️**loop coverage**: has every loop in the code been executed under conditions that cause code execution multiple times, only once, and not at all?
         - 🛎️**statement coverage**: has every line of code been executed during the test?
-
+    
+- ✴️**Test coverage report**: measures how many of the test cases have been completed and is used as a way to provide test metrics when using test cases.
+    - Penetration test report is provided when a penetration test is conducted.
+    - Code coverage report covers how much of the code has been tested
+    - Line coverage report is a type of code coverage report.
+    - Code coverage testing most frequently requires that every function has been called, that each statement has been executed, that all branches have been fully explored, and that each condition has been evaluated for all possibilities.
 - 6.2.8 Interface testing
     - Interface testing assesses the performance of modules against the interface specs to ensure that they will work together properly when all the development efforts are complete
     - Three types of interfaces should be tested:
@@ -405,6 +412,7 @@
     - an example of Code review is by using the 6 steps Fagan process: 1.Planning, 2.Overview, 3.Preparation, 4.Inspection, 5.Rework, 6.Follow-­up
     - ❄️**Static Testing** SAST: evaluates the security of software without running it by analyzing either the source code or the compiled application
         - Developers use static code analysis tools network
+        - Static program reviews are typically performed by an automated tool
     - ❄️**Dynamic Testing** DAST: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else. In those cases, testers often do not have access to the underlying source code.
         - common example of dynamic software testing is the use of web application scanning tools to detect the presence of cross-­site scripting, SQL injection, or other flaws in web applications. Note📝 SQL injection is a web vulnerability.
         - Another example is the use of synthetic transactions to verify system performance. These are scripted transactions with known expected results.
@@ -422,19 +430,6 @@
 to misuse the application
     - ❄️**Mutation Testing**: Mutation testing (automatically) modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation. It is a method used to automatically design new software tests and to ensure the quality of tests
     - ❄️**Regression Testing**: In cases where the project is releasing updates to an existing system, regression testing formalizes the process of verifying that the new code performs in the same manner as the old code, other than any changes expected as part of the new release. They Key performance measure of Regression testing is more specifically covered by defect recurrence rates.        
-    - **Test Coverage Analysis**:
-            - Test Coverage = number of use cases Tested/Total umber of use cases. ­Coverage rates are used to measure how effective code testing is.
-            - Branch Coverage: Test all If/Esle Statements
-            - Condition Coverage
-            - Function Coverage
-            - Loop Coverage
-            - Statement Coverage
-
-- Test coverage report measures how many of the test cases have been completed and is used as a way to provide test metrics when using test cases.
-- Penetration test report is provided when a penetration test is conducted.
-- Code coverage report covers how much of the code has been tested
-- Line coverage report is a type of code coverage report.
-- Code coverage testing most frequently requires that every function has been called, that each statement has been executed, that all branches have been fully explored, and that each condition has been evaluated for all possibilities.
 
 **Time of Check to Time of Use**
 - Computer systems perform tasks with rigid precision. Computers excel at repeatable tasks. Attackers can develop attacks based on the predictability of task execution. The common sequence of events for an algorithm is to check that a resource is available and then access it if you are permitted. The **time of check (TOC)** is the time at which the subject checks on the status of the object. There may be several decisions to make before returning to the object to access it. When the decision is made to access the object, the procedure accesses it at the **time of use (TOU)**. The difference between the TOC and the TOU is sometimes large enough for an attacker to replace the original object with another object that suits their own needs. Time of check to time of use (TOCTTOU or TOC/TOU) attacks are often called race conditions. When testing in a non-production environment, the changes from a testing environment with instrumentation inserted into the code and the production environment for the code can mask timing-related issues like race conditions.
