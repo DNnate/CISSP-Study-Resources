@@ -506,7 +506,12 @@ Factors, entities or conditions outside the organisation upon which the organisa
         - testing
         - training and maintenance
 - 1.8.1 Business Impact Analysis (BIA)
-    - 🔴**Business impact analysis (BIA)**: Identify the systems and services that the business relies on and assess the impacts that a disruption or outage would cause, including the impacts on business processes like accounts receivable and sales. This should be the first step i.e identify the business's priorities
+    - 🔴**Business impact analysis (BIA)**:
+        - ⚒️Phase 1: Identification of priorities
+        - ⚒️Phase 2: Risk identification
+        - ⚒️Phase 3: Likelihood assessment
+        - ⚒️Phase 4: Resource prioritization.
+    - Identify the systems and services that the business relies on and assess the impacts that a disruption or outage would cause, including the impacts on business processes like accounts receivable and sales. This should be the first step i.e identify the business's priorities
       - Also decide which systems and services you need to get things running again (think foundational IT services such as the network and directory, which many other systems rely on)
       - The “business impact” asset valuation method involves evaluating the potential impact on the organization’s operations, reputation, or bottom line if the asset is compromised. The other options correspond to different asset valuation methods: “✏️financial value,” “✏️market value,” and “✏️intangible value,” respectively.
       - Finally, prioritize the order in which critical systems and services are recovered or brought back online. 
