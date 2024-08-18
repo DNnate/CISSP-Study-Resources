@@ -863,6 +863,7 @@ security guards.
     - In such scenarios, the minimum security requirements should have a defined period
 - 1.12.4 Service-level requirements
   - **🔥Service Level Agreements (SLAs)**: companies have SLAs for internal operations (such as how long it takes for the helpdesk to respond to a new ticket), for customers (such as the availability of a public-facing service) and for partner orgs (such as how much support a vendor provides a partner) 
+    - A service-level agreement may require you to meet the business continuity objectives of your customers.
     - All SLAs should be reviewed; a company sometimes has an SLA standard that should be applied, when possible, to the service level agreements as part of working with another company
       - this can sometimes take time, as the acquiring company might have to support established SLAs until they expire or are up for renewal
       - The primary place where the minimum-security requirements or SLR for a third-party should be documented is in the contract or service-level agreement (SLA) established with that vendor. A business partners agreement (BPA) and interconnection security agreement (ISA) are also useful options.
