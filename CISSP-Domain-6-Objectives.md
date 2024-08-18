@@ -157,7 +157,7 @@
         - basic reconnaissance (website mapping)
         - Discovery can include both active and passive discovery.
         - Port scanning is commonly done during discovery to assess what services the target provides, and nmap is one of the most popular tools used for this purpose. 
-        - network discovery e.g using nmap, dumpster diving, 
+        - network discovery e.g using nmap, dumpster diving, War dialing (an attempt to locate modems and fax machines by dialing phone numbers).
         - testers probe for system weaknesses using network, web and db vuln scans e.g Nessus and Nikto
     - 🚡**attack**: seeks to use manual and automated exploit tools to attempt to defeat system security
         - step where pen testing goes beyond vuln scanning as vuln scans don’t attempt to actually exploit detected vulns
