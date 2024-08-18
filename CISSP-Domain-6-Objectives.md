@@ -124,7 +124,8 @@
             - 🔔UDP Scanning Performs a scan of the remote system using the UDP protocol, checking for active UDP services. This scan type does not use the three-­way handshake, because UDP is a connectionless protocol.
             - 🔔Xmas Scanning Sends a packet with the FIN, PSH, and URG flags set. A packet with so many flags set is said to be “lit up like a Christmas tree,” leading to the scan’s name.
         - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Nmap, Nessus, and Nikto all have OS fingerprinting or other operating system identification capabilities.
-            - **Nmap** only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! Nmap states include:
+            - **Nmap** only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! 📝Both TCP and UDP port numbers are a 16-digit binary number, which means there can be 216 ports, or 65,536 ports, numbered from 0 to 65,535.
+            - Nmap states include:
                 - 🔨Open Port: The port is accessible on the remote system and an application is accepting connections on that port.
                 - 🔨Closed Port: The port is not accessible on the remote system.
                 - 🔨Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port.
