@@ -237,12 +237,12 @@
         5) rework
         6) follow-up
     - 🔖**Static application security testing (SAST)**: evaluates the security of software without running it by analyzing either the source code or the compiled application. Static reviews are typically performed by an automated tool.
-    - 🔖**Dynamic application security testing (DAST)**: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else
+    - 🔖**Dynamic application security testing (DAST)**: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else. Dynamic testing is also used to determine how code handles variables that change over time.
 
 - 6.2.6 Misuse case testing
     - 🔨**Misuse case testing**: AKA abuse case testing - used by software testers to evaluate the vulnerability of their software to known risks
     - In misuse case testing, testers first enumerate the known misuse cases, then attempt to exploit those use cases with manual or automated attack techniques
-    - 🔨**Use case testing**: use case testing is to verify that the application responds properly to actual use cases
+    - 🔨**Use case testing**: use case testing is to verify that the application responds properly to actual use cases. It involves testing for desired functionality.
 
 - 6.2.7 **Test coverage analysis**
     - A test coverage analysis is used to estimate the degree of testing conducted against new software
