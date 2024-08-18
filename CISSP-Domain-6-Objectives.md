@@ -53,7 +53,7 @@
         - 📙**SOC 1 Engagements**: assess the organization’s controls that might impact the accuracy of financial reporting
         - 📙**SOC 2 Engagements**: assess the organization’s controls that affect the security (confidentiality, integrity, and availability) and privacy of information stored in a system
             - SOC 2 audit results are confidential and are usually only shared outside an org under an NDA
-        - 📙**SOC 3 Engagements**: assess the organization’s controls that affect the security (confidentiality, integrity, and availability) and privacy information stored in a system
+        - 📙**SOC 3 Engagements**: assess the organization’s controls that affect the security (confidentiality, integrity, and availability) and privacy information stored in a system. 
             - however, SOC3 audit results are intended for 📝public disclosure, and intended for distribution to third parties
     - Two types of SOC reports:
         - 💥**Type I Reports**: provide the auditor’s opinion on the description provided by management and the suitability of the design of the controls
@@ -404,10 +404,10 @@
                 - SSAE is the framework for creating System and Organization Controls (SOC) reports, such as SOC 1, SOC 2, and SOC 3.
                   - 🛠️SOC 1: report that focuses on financial reporting by certified public accountants.
                   - 🛠️SOC 2 Type I: report that focuses on security, availability, processing integrity, confidentiality, and privacy controls at a specific point in time. Also Acts as baseline for future audits.
-                  - 🛠️SOC 2 Type II: report that asseses the security, availability, processing integrity, confidentiality, and privacy controls over time by overving operations for at least 6 months. You can get these reports on demand from CSPs but may require you to sign an NDA.
+                  - 🛠️SOC 2 Type II: report that asseses the security, availability, processing integrity, confidentiality, and privacy controls over time by overving operations for at least 6 months. You can get these reports on demand from CSPs but may require you to sign an NDA. SOC 2 reports are confidential.
                   - 🛠️SOC 3: Similar to SOC 2 but intended for broader distribution and contains auditors general opinions.
                 - It includes audit standards and suggested report formats to guide and assits auditors
-                - Example a cloud service provider undergoes an SSAE 18 audit to prove to clients that their data is secure and managed properly. 
+                - Example a cloud service provider undergoes an SSAE 18 audit to prove to clients that their data is secure and managed properly. SOC 3 report, is intended for distribution to third parties. They include the auditor's opinions and management assertions, along with information about the service organization. SOC3 reports are specifically intended for external release.
             - 📗**ISAE (International Standard on Assurance Engagements)**:  ISAE is a set of standards issued by the International Auditing and Assurance Standards Board (IAASB) for assurance engagements, including reports on controls at service organizations. 
                 - The board and its standards are both similar to those of SSAE.
                 - ISAE 3402: The most relevant standard for cloud services, similar to SSAE 18, used internationally. it is roughly the equivalent of SOC 2 reports in SSAE.
