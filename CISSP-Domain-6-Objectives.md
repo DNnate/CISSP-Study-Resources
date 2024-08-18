@@ -132,7 +132,7 @@
                 - 🔨Closed Port: The port is not accessible on the remote system.
                 - 🔨Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port. Also Nmap us unable to determine if it is open or closed.
             - **OpenVAS**: OpenVAS is an open source vulnerability scanning tool that provide report of the vulnerabilities that it can identify from a remote, network-based scan. 
-        - 📗Web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af, Wapiti. They detect web vulnerabilities such as 📝SQL injection and 📝Cross-site scripting attacks.  
+        - 📗Web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af, Wapiti. They detect web vulnerabilities such as 📝SQL injection and 📝Cross-site scripting attacks. While SQL injection attacks do target databases, they do so by using web servers as intermediaries. Therefore, SQL injection attacks take place over web ports, such as 80 and 443, and not database ports, such as 1433 and 1521.
         - 📗Database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
     - ✴️Active Scanning is useful for testing IDS or IPS systems. Scripted attacks are part of active scanning
     - ✴️Passive scanning can help identify rogue devices by capturing MAC address vendor IDs that do not match deployed devices, by verifying that systems match inventories of organizationally owned hardware by hardware address, and by monitoring for rogue SSIDs or connections.
