@@ -166,32 +166,38 @@
             - this simulates an external attacker trying to gain access to information about the business and technical environment before engaging in an attack
             - these tests are sometimes called "**unknown environment**" tests
 - **Excersice Types**:
-    - 📗**Red Team**: A group of security professionals who simulate real-world attacks to test the defenses of an organization.
+    - 📗**Red Team**: A group of security professionals who simulate real-world 📝attacks to test the defenses of an organization.
         - They are an internal or external entity dedicated to testing the effectiveness of a security program by emulating tools and techniques of likely attackers in the most realistic way possible
         - They are offence
         - Think of attackers testing the system for weaknesses.
     - 📗**Blue Team**: A group of security professionals responsible for defending an organization’s IT infrastructure from attacks.
-        - They are internal security team that defends against Red Team and real attackers
+        - They are internal security team that 📝defends against Red Team and real attackers
         - They are defence
         - Think of defenders protecting the system from attacks.
     - 📗**Purple Team**: A collaboration between the red team and blue team to improve the overall security of an organization.
         - exist to ensure and maximise the effectiveness of the red and blue teams
         - They are for process improvement
-        - Think of a cooperative effort where attackers and defenders work together to strengthen security.
+        - Think of a 📝cooperative effort where attackers and defenders work together to strengthen security.
    - 📗**White Team**: responsible for overseeing an engagement/competition between a Red Team of mock attackers and a Blue Team of actual defenders.
         - They do not participate directly in the attack (red team) or defense (blue team) activities but ensure fair play and adherence to the rules.
         - Facilitate communication and coordination between red and blue teams.
         - Observe the security exercise to ensure that it is realistic and that all parties follow the guidelines.
         - Set the boundaries and objectives of the security exercise to ensure it is controlled and focused.
-        - Think of judge or referee
+        - Think of judge or 📝referee
       
 - 6.2.3 Log reviews
+    -  Log management system designs must take into account
+        -  ♈the volume of log data
+        -  ♈the network bandwidth it consumes
+        -  ♈the security of the data
+        -  ♈the amount of effort required to analyze the data.
     - **Security Information and Event Management (SIEM)**: packages that collect information using the syslog functionality present in many devices, operating systems, and applications. Note📝 Windows systems generate logs in the Windows native logging format. To send syslog events, Windows systems require a helper application or tool.
-    - Admins may choose to deploy logging policies through Windows Group Policy Objects (GPOs)
-    - Logging systems should also make use of the Network Time Protocol (NTP) to ensure that clocks are synchronized on systems sending log entries to the SIEM as well as the SIEM itself, ensuring info from multiple sources have a consistent timeline
-    - Examples include SPlunk, LogRythm, Microsoft Azure Sentinel, IBM Qradar
-    - Information security managers should also periodically conduct log reviews, particularly for sensitive functions, to ensure that privileged users are not abusing their privileges
-    - **Network flow** (NetFlow) NetFlow records contain an entry for every network communication session that took place on a network and can be compared to a list of known malicious hosts. It is routinely saved as a matter of normal activity. Cisco has developed a version of NetFlow called Flexible NetFlow (FNF), which can be combined with secure transmission methods. However, the specific built-in decryption capability for NetFlow data is generally referred to as **Encrypted Traffic Analytics (ETA)**. ETA is designed to provide visibility into network traffic, even when the traffic is encrypted. 
+        - Admins may choose to deploy logging policies through Windows Group Policy Objects (GPOs)
+        - Logging systems should also make use of the Network Time Protocol (NTP) to ensure that clocks are synchronized on systems sending log entries to the SIEM as well as the SIEM itself, ensuring info from multiple sources have a consistent timeline
+        - Examples include SPlunk, LogRythm, Microsoft Azure Sentinel, IBM Qradar
+        - Information security managers should also periodically conduct log reviews, particularly for sensitive functions, to ensure that privileged users are not abusing their privileges
+    - **Network flow** (NetFlow) NetFlow records contain an entry for every network communication session that took place on a network and can be compared to a list of known malicious hosts. It is routinely saved as a matter of normal activity.
+        - Cisco has developed a version of NetFlow called Flexible NetFlow (FNF), which can be combined with secure transmission methods. However, the specific built-in decryption capability for NetFlow data is generally referred to as **Encrypted Traffic Analytics (ETA)**. ETA is designed to provide visibility into network traffic, even when the traffic is encrypted. 
     - 📚**Active monitoring (Synthetic monitoring)** uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. e.g Grafana, Zabbix, Selenium. It performs artificial transactions against a website to assess performance. Synthetic monitoring uses simulated or recorded traffic and thus can be used to 📝proactively identify problems. Synthetic monitoring uses emulated or recorded transactions to monitor for performance changes in response time, functionality, or other performance monitors. 
     - 📚**Passive monitoring** uses a span port or other method to copy traffic and monitor it in real time. e.g wireshark, PRTG, Cacti, ntoping, prometheus.  Passive monitoring uses a network tap or other capture technology to allow monitoring of actual traffic to a system or application.
         - **Real user monitoring (RUM)** is a variant of passive monitoring where the monitoring tool reassembles the activity of individual users to track their interaction with a website. RUM records user interaction with an application or system to ensure performance and proper application behavior. RUM is often used as part of a predeployment process using the actual user interface. It is a passive monitoring technique records all user interaction with an application or website to ensure quality and performance?
