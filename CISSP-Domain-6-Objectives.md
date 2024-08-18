@@ -287,7 +287,8 @@
     - Define baselines for some (or better yet all) of the factors
     - Develop a plan for periodically capturing factor values (use automation!)
     - Analyze and interpret the data and report the results
-    - Time to remediate a vulnerability is a commonly used key performance indicator for security teams.
+    - Time to remediate a vulnerability is a commonly used key performance indicator for security teams and patching related KPIs.
+    - Rate of defect recurrence  is an appropriate measure for regression testing.
     - Key metrics or KPIs that should be monitored by security managers may vary from org to org, but could include:
         - 👽number of open vulns
         - 👽time to resolve vulns
