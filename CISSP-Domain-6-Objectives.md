@@ -269,7 +269,7 @@
 - 6.2.8 Interface testing
     - Interface testing assesses the performance of modules against the interface specs to ensure that they will work together properly when all the development efforts are complete
     - Three types of interfaces should be tested:
-        - 📚**application programming interfaces (APIs)**: offer a standardized way for code modules to interact and may be exposed to the outside world through web services
+        - 📚**application programming interfaces (APIs)**: offer a standardized way for code modules to interact and may be exposed to the outside world through web services. API interface testing would identify flaws in a program's ability to interact with other programs via web services.
             - should test APIs to ensure they enforce all security requirements
             - API Security: API Security focuses on strategies and solutions to understand and mitigate the unique vulnerabilities and security risks of Application Programming Interfaces (APIs). OWASP API Security Top 10 2023 are:
                 - API1:2023 - 🛎️**Broken Object Level Authorization**: APIs tend to expose endpoints that handle object identifiers, creating a wide attack surface of Object Level Access Control issues. Object level authorization checks should be considered in every function that accesses a data source using an ID from the user.
