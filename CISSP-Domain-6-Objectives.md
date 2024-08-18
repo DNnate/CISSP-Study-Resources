@@ -149,6 +149,7 @@
     - 🚡**attack**: seeks to use manual and automated exploit tools to attempt to defeat system security
         - step where pen testing goes beyond vuln scanning as vuln scans don’t attempt to actually exploit detected vulns
         - e.g John, Metasploit
+            - Metasploit is an exploitation package that is designed to assist penetration testers. A tester using Metasploit can exploit known vulnerabilities for which an exploit has been created or can create their own exploits using the tool. While Metasploit provides built-in access to some vulnerability scanning functionality, a tester using Metasploit should primarily be expected to perform actual tests of exploitable vulnerabilities. Similarly, Metasploit supports creating buffer overflow attacks, but it is not a purpose-built buffer overflow testing tool,
     - 🚡**reporting**: summarizes the results of the pen testing and makes recommendations for improvements to system security
     - tests are normally categorized into three groups:
         - 🔴**white-box penetration test (crystal)**:
