@@ -413,7 +413,8 @@
     - **Ethical disclosure**: the idea that security pros who detect a vuln have a responsibility to report it to the vendor, providing them with enough time to patch or remediate
         - the disclosure should be made privately to the vendor providing reasonable amount of time to correct
         - if the vuln is not corrected, then public disclosure of the vuln is warrented, such that other professionals can make informed decisions about future use of the product(s)
-
+        - Unlike bug bounties, this does not rely on organizations providing financial or other rewards.
+    - **Bug bounties** are programs offered by organizations to incentivize security researchers, ethical hackers, and sometimes the general public to find and report security vulnerabilities in their software, websites, or systems. These programs are a proactive approach to identifying and fixing potential security issues before they can be exploited by malicious actors.
 [6.5](#6.5) Conduct or facilitate security audits (OSG-9 Chpt 15)
 - 6.5.1 🔴Internal
     - Having an internal team conduct security audits has several advantages:
