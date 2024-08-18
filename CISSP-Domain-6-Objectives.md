@@ -293,6 +293,7 @@
 - 6.2.9 Breach attack simulations
     - 📁**Breach and attack simulation (BAS)**: platforms that seek to 📝automate some aspects of penetration testing
         - The BAS platform is not actually waging attacks, but conducting automated testing of security controls to identify deficencies
+        - Breach and attack simulation (BAS) systems are designed to inject threat indicators onto systems and networks in an effort to trigger other security controls.
         - Breach and Attack Simulation, systems are systems that combine red team (attack) and blue team (defense) techniques together with automation to simulate advanced persistent threats and other advanced threat actors when run against your environment. This allows a variety of threats to be replicated and assessed in an environment without as much overhead as a fully staffed purple team would.
         - Designed to inject threat indicators onto systems and networks in an effort to trigger other security controls (e.g. place a suspicious file on a server)
         - detection and prevention controls should immediately detect and/or block this traffic as potentially malicious
