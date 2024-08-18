@@ -92,8 +92,8 @@
 - **Assurance Challenges with Virtualization & Cloud**: The cloud is made possible by virualization technologies that enable dynamic environments needed for a global provider platform.
     -  Depending on the cloud arhitecture deployed, the cloud security professional may need to perorm multiple layers of auditing.
     -  To be effective, the auditor must understand the virualization architecture of the cloud provider
-        - Provider (Cloud Service Provider): The CSP i.e Microsoft, Amazon & Google will usually be responsible for the audits of controls over the hypervisor
-        - Customer (Cloud conusmers):  VMs deployed on top of the hardware are usually owned by the customer
+        - 🔨Provider (Cloud Service Provider): The CSP i.e Microsoft, Amazon & Google will usually be responsible for the audits of controls over the hypervisor. Most CSPs will not allow customers to conduct an audit of their systems and infrastructure. You are likely to be able to obtain third-party audit reports which typically either make these available publicly or to paying or prospective customers
+        - 🔨Customer (Cloud conusmers):  VMs deployed on top of the hardware are usually owned by the customer
         - **Right-to-Audit**:
             - The customer can request right-to-audit the service provider to ensure compliance with the security requirements agreed in the contract
             - Contracts are often written to allow CSPs standard audits (SOC 2, ISO 27001) to be used in place of customer-performed audit.
