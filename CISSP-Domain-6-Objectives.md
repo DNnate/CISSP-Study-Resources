@@ -330,7 +330,7 @@
         - 🎤act: formally do the management review
 
 - 6.3.3 Key performance and risk indicators
-    - 🍮**Key Performance Indicator (KPIs)**: measures that provide significance of showing the performance an ISMS compared to stated goals
+    - 🍮**Key Performance Indicator (KPIs)**: measures that provide significance of showing the performance an Information Security Management System ISMS compared to stated goals. KPIs are used to determine how effective practices, procedures, and staff are.
         - Choose the factors that can show the state of security
         - Define baselines for some (or better yet all) of the factors
         - Develop a plan for periodically capturing factor values (use automation!)
@@ -499,7 +499,7 @@ to misuse the application
     - 👽ISO/IEC 27006:2015, “Information technology —­Security techniques —­ Requirements for bodies providing audit and certification of information security management systems,” is the official set of requirements and guidance for auditors performing certification 📝audits against ISO 27001.
     - 👽NIST Special Publication (SP) 800-­53A, “Assessing Security and Privacy Controls in Federal Information Systems and Organizations,” is a guide to assessing the 📝controls outlined in NIST SP 800-­53. It introduces a simple set of testing procedures to assess control effectiveness: test, examine, or interview and covers methods for assessing and measuring controls.
     - 👽The NIST Cybersecurity Framework (CSF) and FedRAMP Security Assessment Framework (SAF) are both freely available as well and may be used to perform assessments with evaluation methods similar to those in NIST SP 800-­53A.
-    - 👽COBIT the Control Objectives for Information and Related Technologies, is commonly used as an audit framework for organizations.
+    - 👽COBIT the Control Objectives for Information and Related Technologies, is commonly used as an audit framework for organizations. The COBIT, or Control Objectives for Information and related Technologies, framework describes common requirements that organizations should have in place for their information systems. 
 
 - 🔴**Common Ports**
     - 🎨Line Printer Daemon (LPD) protocol: Port 515
