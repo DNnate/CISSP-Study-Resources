@@ -366,6 +366,8 @@
     - Training and awareness should continue to take place throughout the year, reminding employees of their responsibilities and updating them on changes to the organization’s operating environment and threat landscape
     - The number of staff who took a given training and the average change in their awareness from before the training to after the training can provide insight into how many trained staff you have and how impactful the training was.
     - Use phishing simulations to evaluate the effectiveness of their security awareness programs
+    - Phishing simulations test the effectiveness of security training by actually identifying the percentage of users likely to fall victim to a phishing attack.
+    - Surveys, which is the most common, would also measure this but with lesser effectiveness because they depend upon self-reported perceptions
 
 - 6.3.6 Disaster Recover (DR) and Business Continuity (BC)
     - **Business Continuity (BC)**: the processes used by an organization to ensure, holistically, that its vital business processes remain unaffected or can be quickly restored following a serious incident. Preventing business interruption is the goal of business continuity
