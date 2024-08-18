@@ -247,6 +247,7 @@
 - 6.2.6 Misuse case testing
     - 🔨**Misuse case testing**: AKA abuse case testing - used by software testers to evaluate the vulnerability of their software to known risks
         - In misuse case testing, testers first enumerate the known misuse cases, then attempt to exploit those use cases with manual or automated attack techniques
+        - a list of possible ways that an attacker might exploit the application is identified, and testers work through each scenario, testing the application to see if it is vulnerable to that exploit
     - 🔨**Use case testing**: use case testing is to verify that the application responds properly to actual use cases. It involves testing for desired functionality.
 
 - 6.2.7 **Test coverage analysis**
