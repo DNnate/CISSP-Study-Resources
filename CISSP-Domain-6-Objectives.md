@@ -176,6 +176,7 @@
             - To fully test code, a white-box test is required. Without full visibility of the code, error conditions or other code could be missed.
         - 🔴**gray-box penetration test**:
             - AKA **partial knowledge tests**, these are sometimes chosen to balance the advantages and disadvantages of white- and black-box penetration tests
+            - In a gray-box test, the tester evaluates the software from a user perspective but has access to the source code as the test is conducted. 
             - this is particularly common when black-box results are desired but costs or time constraints mean that some knowledge is needed to complete the testing
             - these tests are sometimes called "**partially known environment**" tests
         - 🔴**black-box penetration test**:
