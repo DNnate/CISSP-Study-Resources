@@ -134,8 +134,15 @@
     - 🔔Authenticated Vulnerability scans use a read-only account to access configuration files, allowing more accurate testing of vulnerabilities. It  provides the most accurate and detailed information about the security state of a server.
         - Authenticated scans can read configuration information from the target system and reduce the instances of false positive and false negative reports.
 
-- 6.2.2 Penetration testing
+- 6.2.2 ❄️Penetration testing
     - Penetration tests goes beyond vulnerability testing techniques because it actually attempts to exploit systems. In most organizations, senior management needs to approve penetration tests due to the risk to the organization and the potential impact of the test. In a small number of organizations, the service owner may be able to make this decision, but penetration tests often have broader impacts than a single service, meaning that senior management is the proper approval path.
+        - ⚒️Advantages:
+            - Can be fast (and therefore cheap)
+            - Requires a relatively lower skill-set than source code review
+            - Tests the code that is actually being exposed
+        - ⚒️Disadvantages:
+            - Too late in the SDLC
+            - Front-impact testing only 
     -  📝Application crashes; 📝denial of service due to system, 📝network failures, or 📝application failures; and 📝data corruption can all be hazards of penetration tests.
     - NIST defines the penetration testing process as consisting of four phases: PIAR 🟡
     - 🚡**planning**: includes agreement on the scope of the test and the rules of engagement
@@ -145,11 +152,11 @@
         - basic reconnaissance (website mapping)
         - Discovery can include both active and passive discovery.
         - Port scanning is commonly done during discovery to assess what services the target provides, and nmap is one of the most popular tools used for this purpose. 
-        - network discovery e.g using nmap
+        - network discovery e.g using nmap, dumpster diving, 
         - testers probe for system weaknesses using network, web and db vuln scans e.g Nessus and Nikto
     - 🚡**attack**: seeks to use manual and automated exploit tools to attempt to defeat system security
         - step where pen testing goes beyond vuln scanning as vuln scans don’t attempt to actually exploit detected vulns
-        - e.g John, Metasploit
+        - e.g John, Metasploit, privilege escalation
             - Metasploit is an exploitation package that is designed to assist penetration testers. A tester using Metasploit can exploit known vulnerabilities for which an exploit has been created or can create their own exploits using the tool. While Metasploit provides built-in access to some vulnerability scanning functionality, a tester using Metasploit should primarily be expected to perform actual tests of exploitable vulnerabilities. Similarly, Metasploit supports creating buffer overflow attacks, but it is not a purpose-built buffer overflow testing tool,
     - 🚡**reporting**: summarizes the results of the pen testing and makes recommendations for improvements to system security
     - tests are normally categorized into three groups:
@@ -273,9 +280,14 @@
         - Designed to inject threat indicators onto systems and networks in an effort to trigger other security controls (e.g. place a suspicious file on a server)
         - detection and prevention controls should immediately detect and/or block this traffic as potentially malicious
     - See:
-        - OWASP Web Security Testing Guide
+        - OWASP Web Security Testing Guide 
+            - 🖱️Phase 1 Before Development Begins: Define a SDLC, Review Policies and Standards, Develop Measurement and Metrics Criteria and Ensure Traceability
+            - 🖱️Phase 2 During Definition and Design: Review Security Requirements, Review Design and Architecture, Create and Review UML Models, Create and Review Threat Models
+            - 🖱️Phase 3 During Development: Code Walkthrough, Code Reviews
+            - 🖱️Phase 4 During Deployment: Application Penetration Testing, Configuration Management Testing
+            - 🖱️Phase 5 During Maintenance and Operations: Conduct Operational Management Reviews, Conduct Periodic Health Checks, Ensure Change Verification
         - OSSTMM (Open Source Security Testing Methodology Manual)
-        - NIST 800-115
+        - NIST 800-115 (🎤Planning, 🎤Discovery, 🎤Attack, 🎤Reporting)
         - FedRAMP Penetration Test Guidance
         - PCI DSS Information Supplemental on Penetration Testing Note📝 PCI DSS requires a rescan of  application at least annually and after any change in the application.
 
@@ -334,6 +346,7 @@
     - They educate employees about current threats and advise them on best practices for protecting information and systems under their care from attacks
     - Program should begin with initial training designed to provide foundation knowledge to employees who are joining the org or moving to a new role; the initial training should be tailored to an individual’s role
     - Training and awareness should continue to take place throughout the year, reminding employees of their responsibilities and updating them on changes to the organization’s operating environment and threat landscape
+    - The number of staff who took a given training and the average change in their awareness from before the training to after the training can provide insight into how many trained staff you have and how impactful the training was.
     - Use phishing simulations to evaluate the effectiveness of their security awareness programs
 
 - 6.3.6 Disaster Recover (DR) and Business Continuity (BC)
@@ -424,6 +437,15 @@
       
 - [6.6](#6.6) Software testing: Security Assessment and Testing (OSG-9 Chpt 15)
     - ❄️**Code Review**: Code review is the foundation of software assessment programs. During a code review, also known as a peer review, developers other than the one who wrote the code review it for defects. Static program reviews are typically performed by an automated tool. Program understanding, program comprehension, pair programming, software inspections, and software walk-throughs are all human-centric methods for reviewing code.
+        - 🐍Advantages:
+            - Completeness and effectiveness
+            - Accuracy
+            - Fast (for competent reviewers)
+        - 🐍Disadvantages
+            - Requires highly skilled security aware developers
+            - Can miss issues in compiled libraries
+            - Cannot detect runtime errors easily
+            - The source code actually deployed might differ from the one being analyzed 
         - an example of Code review is by using the 6 steps 🔥Fagan process: 🟡 POPIRU
             - 1.Planning
             - 2.Overview
