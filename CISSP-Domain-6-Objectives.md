@@ -409,7 +409,13 @@
       
 - [6.6](#6.6) Software testing: Security Assessment and Testing (OSG-9 Chpt 15)
     - ❄️**Code Review**: Code review is the foundation of software assessment programs. During a code review, also known as a peer review, developers other than the one who wrote the code review it for defects. Static program reviews are typically performed by an automated tool. Program understanding, program comprehension, pair programming, software inspections, and software walk-throughs are all human-centric methods for reviewing code.
-    - an example of Code review is by using the 6 steps Fagan process: 1.Planning, 2.Overview, 3.Preparation, 4.Inspection, 5.Rework, 6.Follow-­up
+        - an example of Code review is by using the 6 steps 🔥Fagan process: 🟡 POPIRU
+            - 1.Planning
+            - 2.Overview
+            - 3.Preparation
+            - 4.Inspection
+            - 5.Rework
+            - 6.Follow-­up
     - ❄️**Static Testing** SAST: evaluates the security of software without running it by analyzing either the source code or the compiled application
         - Developers use static code analysis tools network
         - Static program reviews are typically performed by an automated tool
