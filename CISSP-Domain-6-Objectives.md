@@ -128,7 +128,7 @@
             - Nmap states include:
                 - 🔨Open Port: The port is accessible on the remote system and an application is accepting connections on that port.
                 - 🔨Closed Port: The port is not accessible on the remote system.
-                - 🔨Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port.
+                - 🔨Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port. Also Nmap us unable to determine if it is open or closed.
             - **OpenVAS**: OpenVAS is an open source vulnerability scanning tool that provide report of the vulnerabilities that it can identify from a remote, network-based scan. 
         - 📗Web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af, Wapiti
         - 📗Database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus
