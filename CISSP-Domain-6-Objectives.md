@@ -1,5 +1,7 @@
 [Domain 6](#domain6-top) **Security Assessment and Testing**
-
+- Security assessment and testing programs are an important mechanism for validating the on-going effectiveness of security controls
+    - they include a variety of tools, such as vulnerability assessments, penetration tests, software testing, audits, and other control validation
+    - Every org should have a security assessment and testing program defined and operational
 - **Artifact**: piece of evidence such as text, or a reference to a resource which is submitted in response to a question
 - **Assessment**: testing or evaluation of controls to understand which are implemented correctly, operating as intended and producing the desired outcome in meeting the security or privacy requirements of a system or org
 - **Audit**: process of reviewing a system for compliance against a standard or baseline (e.g. audit of security controls, baselines, financial records) can be formal and independent, or informal/internal
@@ -18,13 +20,12 @@
 - **Testing**: process of exersizing one or more assessment objects (activities or mechanisms) under specified conditions to compare actual to expected behaior
 - **Trust Services Criteria (TSC)**: used by an auditor when evaluating the suitability of the design and operating effectiveness of controls relevant to the security, availabiliity, or processing integrity of information and systems or the confidentiality or privacy of the info processed by the entity
 
-- 📂**Security Assessment and Testing**: Security assessment and testing programs are an important mechanism for validating the on-going effectiveness of security controls
-    - they include a variety of tools, such as vulnerability assessments, penetration tests, software testing, audits, and other control validation
-    - Every org should have a security assessment and testing program defined and operational
-- 💥**Security assessments**: comprehensive reviews of the security of a system, application, or other tested environment
+- 📂**Security assessments**: comprehensive reviews of the security of a system, application, or other tested environment
     - during a security assessment, a trained information security professional performs a risk assessment that identifies vulnerabilities in the tested environment that may allow a compromise and makes recommendations for remediation, as needed
     - a security assessment includes the use of security testing tools, but go beyond scanning and manual penetration tests
     - the main work product of a security assessment is normally an assessment report addressed to management that contains the results of the assessment in nontechnical language and concludes with specific recommendations for improving the security of the tested environment
+    - Security assessment reports should be addressed to the organization's management. For this reason, they should be written in plain English and avoid technical jargon.
+    - Security assessments include many types of tests designed to identify vulnerabilities, and the assessment report normally includes recommendations for mitigation. The assessment does not, however, include actual mitigation of those vulnerabilities.
     - The 📝sensitivity of information stored on the system, 📝difficulty of performing the test, and 📝likelihood of an attacker targeting the system are all valid considerations when planning a security testing schedule.
 - An organization’s audit strategy will depend on its size, industry, financial status and other factors
     - a small non-profit, a small private company and a small public company will have different requirements and goals for their audit strategies
