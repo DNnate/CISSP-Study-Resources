@@ -979,9 +979,11 @@ standards, and procedures to ensure compliance with established security require
   - A 📝countermeasure primary affects the annualized rate of occurrence (ARO), because the countermeasure is designed to prevent (or mitigate or reduce) the occurrence of the risk, thus reducing its frequency per year. 
 - 🔴**SLE**: The single loss expectancy (SLE) is the product of the asset value (AV) and the exposure factor (EF).
   - SLE is the monetary loss expected from a single occurrence of a threat event.
+  - It is a measure of 💰risk impact.
   - Formula🔥: SLE = Asset Value (AV) ✖️ Exposure Factor (EF)
   - Example: If the asset value of a server is $10,000 and the EF for a fire is 40%, the SLE is $10,000 * 0.40 = $4,000.
 - 🔴**ALE**: The annualized loss expectancy (ALE) represents the amount of money a business expects to lose to a given risk each year. ALE is the best metric to compare 📝relative risks because it incorporates both the likelihood and the impact of those risks. The annualized loss expectancy is calculated by multiplying the single loss expectancy (SLE) by the annualized rate of occurrence (ARO).
+  - 💰 it is measure of relative risks
   - ALE is the expected monetary loss for an asset due to a specific threat over a one-year period.
   - Formula🔥: ALE = Single Loss Expectancy (SLE) ✖️ Annualized Rate of Occurrence (ARO)
   - Formula🔥: ALE = AV ✖️ EF ✖️ ARO
