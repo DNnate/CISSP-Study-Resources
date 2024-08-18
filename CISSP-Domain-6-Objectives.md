@@ -282,7 +282,7 @@
                 - API8:2023 - 🛎️**Security Misconfiguration**: APIs and the systems supporting them typically contain complex configurations, meant to make the APIs more customizable. Software and DevOps engineers can miss these configurations, or don’t follow security best practices when it comes to configuration, opening the door for different types of attacks.
                 - API9:2023 - 🛎️**Improper Inventory Management**: APIs tend to expose more endpoints than traditional web applications, making proper and updated documentation highly important. A proper inventory of hosts and deployed API versions also are important to mitigate issues such as deprecated API versions and exposed debug endpoints.
                 - API10:2023 - 🛎️**Unsafe Consumption of APIs**: Developers tend to trust data received from third-party APIs more than user input, and so tend to adopt weaker security standards. In order to compromise APIs, attackers go after integrated third-party services instead of trying to compromise the target API directly.
-        - 📚**user interfaces (UIs)**: examples include graphical user interfaces (GUIs) and command-line interfaces
+        - 📚**user interfaces (UIs)**: examples include graphical user interfaces (📝GUIs) and 📝command-line interfaces
             - UIs provide end users with the ability to interact with the software, and tests should include reviews of all UIs
         - 📚**physical interfaces**: exist in some apps that manipulate machinery, logic controllers, or other objects
             - software testers should pay careful attention to physical interfaces because of the potential consequences if they fail
