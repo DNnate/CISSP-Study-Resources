@@ -751,7 +751,7 @@ failures, hardware/software failures, labor difficulties, theft, and vandalism.
       
 - 7.10.3 Multiple processing sites
     - One of the most important elements of the disaster recovery plan is the selection of alternate processing sites to be used when the primary sites are unavailable
-        - **cold sites**: standby facilities large enough to handle the processing load of an organization and equipped with appropriate electrical and environmental support systems
+        - 📁**cold sites**: standby facilities large enough to handle the processing load of an organization and equipped with appropriate electrical and environmental support systems
             - a cold site has NO COMPUTING FACILITIES (hardware or software) preinstalled. Installation can take weeks!
             - a cold site has no active broadband comm links
             - advantages:
@@ -760,13 +760,13 @@ failures, hardware/software failures, labor difficulties, theft, and vandalism.
                 - tremendous lag to activate the site, often measured in weeks, which can yield a false sense of security
                 - difficult to test
                 - A rented space with power, cooling, and connectivity that can accept equipment as part of a recovery effort
-        - **warm sites**: a warm site is better than a cold site because, in addition to the shell of a building, basic equipment is installed
+        - 📁**warm sites**: a warm site is better than a cold site because, in addition to the shell of a building, basic equipment is installed
             - a warm site contains the data links and preconfigured equipment necessary to begin restoring operations, but no usable data for information
             - ✏️contain workstations, servers, and the communications circuits necessary to achieve operational status but require the 🎆restoration of data from backup.
             - unlike hot sites, however, warm sites do not typically contain copies of the client’s data
             - activation of a warm site typically takes at least 12 hours from the time a disaster is declared
             - It relies on shared storage and backups for recovery
-        - **hot sites**: a fully operational offsite data processing facility equipped with hardware and software; a backup facility that is maintained in constant working order, with a full complement of servers, workstations, and comm links
+        - 📁**hot sites**: a fully operational offsite data processing facility equipped with hardware and software; a backup facility that is maintained in constant working order, with a full complement of servers, workstations, and comm links
             - a hot site is usually a subscription service
             - the data on the primary site servers is periodically or continuously replicated to corresponding servers at the hot site, ensuring that the hot site has up-to-date data
             - ✏️contain workstations, servers, and the communications circuits necessary to achieve operational status as well as 🎆current data or near-­real-­time copies of the operational data
