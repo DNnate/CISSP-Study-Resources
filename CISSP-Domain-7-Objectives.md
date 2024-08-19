@@ -678,9 +678,9 @@ of litigation is imminent.
 [7.10](#7.10) Implement recovery strategies (OSG-9 Chpt 18)
 - **Recovery strategy**: a plan for restoring critical business components, systems, and operations following a disruption
 - **Disaster recovery (DR)**: set of practices that enables an organization to minimize loss of, and restore, mission-critical technology infrastructure after a catastrophic incident. A disaster is any event that can disrupt normal IT operations and can be either natural or manmade. Hacking and terrorism are examples of manmade disasters, while flooding and fire are examples of natural disasters. Tip❗The term 100-­year flood plain is used to describe an area where flooding is expected once every 100 years. It is, however, more mathematically correct to say that this label indicates a 1 percent probability of flooding in any given year❗
-     - Natural disasters: earthquakes, floods, storms, fires, tsunamis, and volcanic eruptions.
-     - Human-­made disasters: Explosions, electrical fires, terrorist acts, power outages, other utility failures, infrastructure
-failures, hardware/software failures, labor difficulties, theft, and vandalism.
+     - 👖Natural disasters: earthquakes, floods, storms, fires, tsunamis, and volcanic eruptions.
+     - 👖Human-­made disasters: Explosions, electrical fires, terrorist acts, power outages, other utility failures, infrastructure
+failures, hardware/software failures, labor difficulties, theft, hacking incident and vandalism.
 - **Business continuity (BC)**: set of practices that enables an organization to continue performing its critical functions through and after any disruptive event
 - 7.10.1 Backup storage strategies
     - Backup strategies are driven by org goals and objectives and usually focus on backup and restore time as well as storage needs
@@ -690,12 +690,12 @@ failures, hardware/software failures, labor difficulties, theft, and vandalism.
     - Different backup strategies deal with the archive bit differently; Incremental and differential backup strategies don't treat the archive bit in the same manner
         - once a full backup is complete, the archive bit on every file is reset, turned off, or set to 0
     - Three types of backups:
-        - **Full backup**: store a complete copy of the data contained on the protected device or backup media; full backups duplicate every file on the system regardless of the setting of the archive bit
-        - **Incremental backup**: changes since the last incremental backup
+        - **📁Full backup**: store a complete copy of the data contained on the protected device or backup media; full backups duplicate every file on the system regardless of the setting of the archive bit
+        - **📁Incremental backup**: changes since the last incremental backup
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - once an incremental backup is complete, the archive bit on all duplicated files is reset, turned off, or set to 0
             - Incremental backups provide the option that includes the smallest amount of data. 
-        - **Differential backup**: changes since the last full backup
+        - **📁Differential backup**: changes since the last full backup
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - unlike full and incremental backups, the differential backup process does not change the archive bit
             - Differential backups involve always storing copies of all files modified since the most recent full backup, regardless of any incremental or differential backups created during the intervening time period.
