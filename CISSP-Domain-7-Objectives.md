@@ -106,23 +106,23 @@ of litigation is imminent.
         - acquisition
         - preservation
     - Types of evidence:
-        - **primary evidence**:
+        - 🧑‍⚖️**primary evidence**:
             - most reliable and used at trial
             - original documents (e.g. legal contracts), no copies or duplicates
-        - **secondary evidence**:
+        - 🧑‍⚖️**secondary evidence**:
             - less powerful and reliable than primary evidence (e.g. copies of originals, witness oral evidence etc)
             - if primary evidence is available secondary of the same content is not valid
-        - **Real Evidence**: also known as object evidence. this type of evidence includes physical objects, such as computers, hard drives, and other storage devices, that can be brought into a court of law. Real evidence must be either ✴️uniquely identified by a witness or authenticated through a ✴️documented chain of custody.  Real evidence is object evidence—tangible things that can be brought into a court of law. 
-        - **Documentary Evidence**: includes any 📝written items brought into court to prove a fact at hand. This type of evidence must also be authenticated. Two additional evidence rules apply specifically to documentary evidence:
+        - 🧑‍⚖️**Real Evidence**: also known as object evidence. this type of evidence includes physical objects, such as computers, hard drives, and other storage devices, that can be brought into a court of law. Real evidence must be either 📝uniquely identified by a witness or authenticated through a 📝documented chain of custody.  Real evidence is object evidence—tangible things that can be brought into a court of law. 
+        - 🧑‍⚖️**Documentary Evidence**: includes any 📝written items brought into court to prove a fact at hand. This type of evidence must also be authenticated. Two additional evidence rules apply specifically to documentary evidence:
              - ✴️The best evidence rule states that when a document is used as evidence in a court proceeding, the original document must be introduced.
              - ✴️The parol evidence rule states that when an agreement between parties is put into written form, the written document is assumed to contain all the terms of the agreement and no verbal agreements may modify the written agreement.
-        - **direct evidence**: this type of evidence is based on the observations of a witness or expert opinion and can be used to prove a fact at hand (with backup evidence support)
-        - **circumstantial evidence**: this type of evidence is based on inference and can be used to support a conclusion, but not prove it
-        - **corroborative evidence**: this type of evidence is used to support other evidence and can be used to strengthen a case
-        - **Demonstrative Evidence** is evidence used to support testimonial evidence. It consists of items that may or may not be admitted into evidence themselves but are used to help a witness explain a concept or clarify an issue. 
-        - **Testimonial Evidence** is, quite simply, evidence consisting of the testimony of a witness, either verbal testimony in court or written testimony in a recorded deposition. Witnesses must take an oath agreeing to tell the truth.
-        - **hearsay evidence**: type of evidence that is based on statements made by someone outside of court and is generally not admissible
-        - **best evidence rule**: states that the original evidence should be presented in court, rather than a copy or other secondary evidence
+        - 🧑‍⚖️**Direct evidence**: this type of evidence is based on the observations of a witness or expert opinion and can be used to prove a fact at hand (with backup evidence support)
+        - 🧑‍⚖️**Circumstantial evidence**: this type of evidence is based on inference and can be used to support a conclusion, but not prove it
+        - 🧑‍⚖️**Corroborative evidence**: this type of evidence is used to support other evidence and can be used to strengthen a case
+        - 🧑‍⚖️**Demonstrative Evidence** is evidence used to support testimonial evidence. It consists of items that may or may not be admitted into evidence themselves but are used to help a witness explain a concept or clarify an issue. 
+        - 🧑‍⚖️**Testimonial Evidence** is, quite simply, evidence consisting of the testimony of a witness, either verbal testimony in court or written testimony in a recorded deposition. Witnesses must take an oath agreeing to tell the truth.
+        - 🧑‍⚖️**Hearsay evidence**: type of evidence that is based on statements made by someone outside of court and is generally not admissible
+        - 🧑‍⚖️**Best evidence rule**: states that the original evidence should be presented in court, rather than a copy or other secondary evidence
     - It is important to note that evidence should be collected and handled in a forensically sound manner to ensure that it is admissible in court and to avoid any legal issues
     - The chain of custody: focuses on having control of the evidence -- who collected and handled what evidence, when, and where
         - think about establishing the chain of custody as:
@@ -272,13 +272,13 @@ of litigation is imminent.
         - engage the target with the selected weapon
         - evaluate the effectiveness of the attack
     - Orgs have adapted this model for cybersecurity: Lockheed Martin created the **Cyber Kill Chain** framework including seven ordered stages of an attack:
-        - **reconnaissance**: attackers gather info on the target
-        - **weaponize**: attackers identify an exploit that the target is vulnerable to, along with methods to send the exploit
-        - **delivery**: attackers send the weapon to the target via phishing attacks, malicious email attachments, compromised websites, or other common social engineering methods
-        - **exploitation**: the weapon exploits a vulnerability on the target system
-        - **installation**: code that exploits the vulnerability then installs malware with a backdoor allowing attacker remote access
-        - **command and control**: attackers maintain a command and control system, which controls the target and other compromised systems. Social media is commonly used as a command-and-control system for botnet activity.
-        - **actions on objectives**: attackers execute their original goals such as theft of money, or data, destruction of assets, or installing additional malicious code (eg. ransomware)
+        - ♋**reconnaissance**: attackers gather info on the target
+        - ♋**weaponize**: attackers identify an exploit that the target is vulnerable to, along with methods to send the exploit
+        - ♋**delivery**: attackers send the weapon to the target via phishing attacks, malicious email attachments, compromised websites, or other common social engineering methods
+        - ♋**exploitation**: the weapon exploits a vulnerability on the target system
+        - ♋**installation**: code that exploits the vulnerability then installs malware with a backdoor allowing attacker remote access
+        - ♋**command and control**: attackers maintain a command and control system, which controls the target and other compromised systems. Social media is commonly used as a command-and-control system for botnet activity.
+        - ♋**actions on objectives**: attackers execute their original goals such as theft of money, or data, destruction of assets, or installing additional malicious code (eg. ransomware)
 
 - **The MITRE ATT&CK Matrix**: (created by MITRE and viewable at attack.mitre.org) is a knowledge base of identified tactics, techniques, and procedures (TTPs) used by attackers in various attacks. It is complementary to kill chain models, such as the Cyber Kill Chain. However, unlike kill chain models, the tactics are not an ordered set of attacks. Instead, ATT&CK lists the TTPs within a matrix. Additionally, attackers are constantly modifying their attack methods, so the ATT&CK Matrix is a living document that is updated at least twice a year. The matrix includes the following tactics:
      - Reconnaissance
@@ -328,27 +328,28 @@ of litigation is imminent.
 - Implementing common security operations concepts, along with performing periodic security audits and reviews, demonstrates a level of due care and due diligence. Note📝 Security audits and reviews help ensure that an organization is following its policies but wouldn’t directly check systems for vulnerabilities.
 
 - 7.4.1 Need-to-know/least privilege
-    - **Need-to-know principle**: imposes the requirement to grant users access only to data or resources they need to perform assigned work tasks
-    - **Least privilege principle**: states that subjects are granted only the privileges necessary to perform assigned work tasks and no more
+    - 💥**Need-to-know principle**: imposes the requirement to grant users access only to data or resources they need to perform assigned work tasks
+    - 💥**Least privilege principle**: states that subjects are granted only the privileges necessary to perform assigned work tasks and no more
         - privilege in this context includes both permissions to data and rights to perform systems tasks
         - limiting and controlling privileges based on this concept protects confidentiality and data integrity
         - principle relies on the assumption that all users have a well-defined job description that personnel understand
         - least privilege is typically focused on ensuring that user privileges are restricted, but it also applies to apps or processes (e.g. if an app or service is compromised, the attacker can assume the service account’s privileges)
+        - New user accounts should have no access permissions by default and then give each user the necessary permissions to perform their job responsibilities.
 - 7.4.2 Separation of Duties (SoD) and responsibilities
-    - **Separation of Duties (SoD)**: ensures that no single person has total control over a critical function or system
+    - 💥**Separation of Duties (SoD)**: ensures that no single person has total control over a critical function or system
         - SoD policies help reduce fraud by requiring collusion between two or more people to perform unauthorized activity
         - example of how SoD can be enforced, is by dividing the security or admin capabilities and functions among multiple trusted individuals
-    - **Two-person control**: (AKA two-man rule) requires the approval of two individuals for critical tasks
+    - 💥**Two-person control**: (AKA two-man rule) requires the approval of two individuals for critical tasks
         - using two-person controls within an org ensures peer review and reduces the likelihood of collusion and fraud
         - ex: privilege access management (PAM) solutions that create special admin accounts for emergency use only; perhaps a password is split in half so that two people need to enter the password to log on
-    - **Split knowledge**: combines the concepts of separation of duties and two-person control into a single solution; the info or privilege required to perform an operation is divided among two or more users, ensuring that no single person has sufficient privileges to compromise the security of the environment
+    - 💥**Split knowledge**: combines the concepts of separation of duties and two-person control into a single solution; the info or privilege required to perform an operation is divided among two or more users, ensuring that no single person has sufficient privileges to compromise the security of the environment
     - Principles such as least privilege and separation of duties help prevent security policy violations, and monitoring helps to deter and detect any violations that occur despite the use of preventive controls
 
 - 7.4.3 Privilege account management
     - **Privileged Account Management (PAM)**: solutions that restrict access to privileged accounts or detect when accounts use any elevated privileges (e.g. admin accounts)
         - Microsoft domains, this includes local admin accounts, Domain and Enterprise Admins groups
         - Linux includes root or sudo accounts
-    - PAM solutions should monitor actions taken by privileged accounts, new user accounts, new routes to a router table, altering config of a firewall, accessing system log and audit files
+    - PAM solutions should monitor actions taken by privileged accounts, new user accounts, new routes to a router table, altering config of a firewall, accessing system log and audit files, backup restore, purging log entries etc
     - Privileged access reviews are one of the most critical components of an organization’s security program because they ensure that only authorized users have access to perform the most sensitive operations. They should take place whenever a user with privileged access leaves the organization or changes roles as well as on a regular, recurring basis
     
 - 7.4.4 Job rotation
@@ -556,8 +557,8 @@ of litigation is imminent.
 
 - 7.7.3 Whitelisting/blacklisting
     - Method used to control which applications run and which applications can’t is allow list and deny list (AKA whitelists and blacklists)
-    - 🎱**Allow list (Whitelist)**:: identifies a list of apps authorized to run on a system and blocks all other apps
-    - 🎱**Deny list (Blacklist)**: identifies a list of apps that are not authorized to run on a system. The blacklisting approach to application control allows users to install any software they wish except for packages specifically identified by the administrator as prohibited. This would be an appropriate approach in a scenario where users should be able to install any non malicious software they wish to use.
+    - 🎱**Allow list (Whitelist)**:: identifies a list of apps authorized to run on a system and blocks all other apps. A whitelist of allowed applications will ensure that users can run only the applications that you preapproves.
+    - 🎱**Deny list (Blacklist)**: identifies a list of apps that are not authorized to run on a system. The blacklisting approach to application control allows users to install any software they wish except for packages specifically identified by the administrator as prohibited. This would be an appropriate approach in a scenario where users should be able to install any non malicious software they wish to use. Blacklists would require you to maintain a list of every application that you don't want to allow, which is an almost impossible task.
     - Allow and deny lists use for applications help to prevent malware infections
     - Important to note: a system would only use one list, either allow or deny
     - Apple iOS running on iPhones/iPads is an example of an extreme version of an allow list; users are only able to install apps from the App Store
@@ -570,8 +571,8 @@ of litigation is imminent.
     - Sandboxing provides a security boundary for applications and prevents the app from interacting with other apps; can be used as part of development, integration, or acceptance testing, as part of malware screening, or as part of a honeynet
     - Using a sandbox is an example of confinement, where the system restricts the access of a particular process to limit its ability to affect other processes running on the same system.
 - 7.7.6 Honeypots/honeynets
-    - **Honeypots**: individual computers created as a trap or a decoy for intruders or insider threats
-    - **Honeynet**: two or more networked honeypots used together to simulate a network
+    - 🍏**Honeypots**: individual computers created as a trap or a decoy for intruders or insider threats. A pseudoflaw is a false vulnerability in a system that may distract an attacker. These are often used in honeypot system to consume an attacker's time while alerting administrators.
+    - 🍏**Honeynet**: two or more networked honeypots used together to simulate a network
     - They look and act like legit systems, but they do not host data of any real value for an attacker; admins often configure honeypots with vulnerabilities to tempt intruders into attacking them
     - In addition to keeping the attacker away from a production environment, the honeypot allows administrators to observe an attacker’s activity without compromising the live environment
     - A pseudoflaw is a false vulnerability in a system that may distract an attacker. This can also be added to honeypots
