@@ -44,7 +44,7 @@ information or assets and/or violate a security policy. e.g backup failure, unau
         - taking images of the scene
         - documenting evidence: Companies have an obligation to preserve evidence whenever they believe that the threat
 of litigation is imminent.
-        - ensuring evidence (e.g. computers, mobile devices, portable drives etc) is not contacted, tampered with, or destroyed. To be admissible, evidence must be relevant, material, and competent (legally obtained).
+        - ensuring evidence (e.g. computers, mobile devices, portable drives etc) is not contacted, tampered with, or destroyed. To be admissible, evidence must be 📝relevant, 📝material to the case at hand, and 📝competent (legally obtained).
         - Proportionality: The benefits of additional discovery must be proportional to the additional costs that they will require. This prevents additional discovery requests from becoming inordinately expensive, and the requester will typically have to justify these requests to the judge presiding over the case.
         - _Interviews_ occur when investigators meet with an individual who may have information relevant to their investigation but is not a suspect. If the individual is a suspect, then the meeting is an _interrogation_.
     - general principles:
@@ -64,16 +64,16 @@ of litigation is imminent.
     - prevent future occurrences
     - mitigate the impact of the incident on the organization
 - Types of investigations:
-    - **administrative**: an investigation that is focused on policy violations. They are internal to an orgaisation.
+    - 📕**administrative**: an investigation that is focused on policy violations. They are internal to an orgaisation.
         - Operational investigations have the loosest standards for collection of information. They are not intended to produce evidence because they are for internal operational purposes only. In addition to resolving the operational issue, operational investigations often conduct a root cause analysis that seeks to identify the reason that an operational issue occurred. 
-    - **criminal**: conducted by law enforcement, this type of investigation tries to determine if there is cause to believe (beyond a reasonable doubt) that someone committed a crime
+    - 📕**criminal**: conducted by law enforcement, this type of investigation tries to determine if there is cause to believe (beyond a reasonable doubt) that someone committed a crime
         - the goal is to gather evidence that can be used to convict in court
         - the job of a security professional is to preserve evidence, ensure law enforcement has been contacted, and assist as necessary
-    - **civil**: non-criminal investigation for matters such as contract disputes
+    - 📕**civil**: non-criminal investigation for matters such as contract disputes
         - the goal of a civil investigation is to gather evidence that can be used to support a legal claim in court, and is typically triggered from an imminent or on-going lawsuit
         - the level of proof is much lower for a civil compared to a criminal investigation
         - Most civil cases do not follow the beyond a reasonable doubt standard of proof. Instead, they use the weaker preponderance of the evidence standard. 
-    - **regulatory**: investigation initiated by a government regulator when there is reason to believe an organization is not in compliance
+    - 📕**regulatory**: investigation initiated by a government regulator when there is reason to believe an organization is not in compliance
         -  this type of investigation varies significantly in scope and could look like any of the other three types of investigation depending on the severity of the allegations
         - as with criminal investigations, it is key to preserve evidence, and assist the regulator’s investigators
 - **Electronic Discovery**: In 🧠legal proceedings, each side has a duty to preserve evidence related to the case and, through the discovery process, share information with their adversary in the proceedings. This discovery process applies to both paper records and electronic records, and the electronic discovery (or eDiscovery) process facilitates the processing of electronic information for disclosure. The Electronic Discovery Reference Model (EDRM) describes a standard process for conducting eDiscovery with nine aspects:
@@ -728,9 +728,9 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
         - **🔥remote mirroring**: the most advanced db backup solution, and the most expensive, with remote mirroring, a live db server is maintained at the backup site; the remote server receives copies of the db modifications at the same time they are applied to the production server at the primary site. When you use remote mirroring, an exact copy of the database is maintained at an alternative location. You keep the remote copy up to date by executing all transactions on both the primary and remote sites at the same time.
 
 - **Backup Tape Rotation** There are several commonly used tape rotation strategies for backups:
-	- the Grandfather-­Father-­Son (GFS) strategy: This is a tiered backup scheme that uses daily (son), weekly (father), and monthly (Grandfather) backup tapes.
- 	- the Tower of Hanoi strategy: Uses a series of tapes labeled with numbers that follow the recursive pattern of the Tower of Hanoi puzzle. The nth backup tape is used at intervals of 2^𝑛 days
-	- the Six Cartridge Weekly Backup strategy: A simple weekly backup rotation strategy that uses Six tapes labeled Monday through Saturday.
+	- ⚒️the Grandfather-­Father-­Son (GFS) strategy: This is a tiered backup scheme that uses daily (son), weekly (father), and monthly (Grandfather) backup tapes.
+ 	- ⚒️the Tower of Hanoi strategy: Uses a series of tapes labeled with numbers that follow the recursive pattern of the Tower of Hanoi puzzle. The nth backup tape is used at intervals of 2^𝑛 days
+	- ⚒️the Six Cartridge Weekly Backup strategy: A simple weekly backup rotation strategy that uses Six tapes labeled Monday through Saturday.
  - These strategies can be fairly complex, especially with large tape sets. They can be implemented manually using a pencil and a calendar or automatically by using either commercial backup software or a fully automated hierarchical storage management (HSM) system. An HSM system is an automated robotic backup jukebox consisting of 32 or 64 optical or tape backup devices. All the drive elements within an HSM system are configured as a single drive array (a bit like RAID).
 
 - Online Storage: This is for data that is frequently accessed and actively used. It’s the most accessible and typically the most expensive form of storage.
@@ -914,35 +914,36 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
     - simulation tests
     - parallel tests
     - full-interruption tests
-- 7.12.0 **checklist tests:** The checklist review is the least disruptive type of disaster recovery test. During a check-
+- 7.12.0 📙**checklist tests:** The checklist review is the 📝least disruptive type of disaster recovery test. During a check-
 list review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes.
 
 - 7.12.1 Read-through/tabletop
-    - **Read-through test**: one of the simplest to conduct, but also one of the most critical; copies of a DR plan are distributed to the members of the DR team for review, accomplishing three goals:
+    - 📙**Read-through test**: one of the 📝simplest to conduct, but also one of the most critical; copies of a DR plan are distributed to the members of the DR team for review, accomplishing three goals:
         - ensure that key personnel are aware of their responsibilities and have that knowledge refreshed periodically
         - provide individuals with an opportunity to review and update plans, remvoving obsolete info
         - helps identify situations in which key personnel have left the company and the DR responsibility needs to be re-assigned (note that DR responsibilities should be included in job descriptions)
-        - During a tabletop exercise, team members come together and walk through a scenario without making any changes to information systems.
+        - During a tabletop exercise, team members come together and walk through a scenario 📝without making any changes to information systems.
 - 7.12.2 Walkthrough
-    - **Structured walk-through**: AKA tabletop exercise, takes testing one step further, where members of the DR team gather in a large conference room and role-play a disaster scenario
+    - 📙**Structured walk-through**: AKA tabletop exercise, takes testing one step further, where members of the DR team gather in a large conference room and role-play a disaster scenario
         - the team refers to their copies of the DR plan and discuss the appropriate responses to that particular type of disaster
 - 7.12.3 Simulation
-    - **Simulation tests**: similar to the structured walk-throughs, where team members are presented with a scenario and asked to develop an appropriate response
+    - 📙**Simulation tests**: similar to the structured walk-throughs, where team members are presented with a scenario and asked to develop an appropriate response
         - unlike read-throughs and walk-throughs, some of these response measures are then tested
         -  ❗Simulation tests may shut down noncritical business units. 
         - this may involve the interruption of noncritical business activities and the use of some operational personnel
-        - Simulations are the most complete test that can be conducted without the risk that a full failover test creates. 
+        - Simulations are the 📝most complete test that can be conducted without the risk that a full failover test creates. 
 - Checklist tests, structured walk-­throughs, and simulations are all test types that do not involve actually activating the alternate site.
 - 7.12.4 Parallel
-    - **Parallel tests**: represent the next level, and involve 🔥relocating personnel to the alternate recovery site and implementing site activation procedures
+    - 📙**Parallel tests**: represent the next level, and involve 📝relocating personnel to the alternate recovery site and implementing site activation procedures
         - the relocated employees perform their DR responsibilities just as they would for an actual disaster
         - operations at the main facility are not interrupted
         - During a parallel test, the team actually activates the disaster recovery site for testing, but the primary site remains operational.
         -  it fully evaluates operations at the backup facility but does not shift primary operations responsibility from the main site
 
 - 7.12.5 Full interruption
-    - **Full-interruption tests**: operate like parallel tests, but involve actually shutting down operations at the primary site and shifting them to the recovery site
-        - these tests involve a significant risk (shutting down the primary site, transfer recovery ops, followed by the reverse) and therefore are extremely difficult to arrange (management resistance to these tests are likely)
+    - 📙**Full-interruption tests**: operate like parallel tests, but involve actually shutting down operations at the primary site and shifting them to the recovery site
+        - 📝most disruptive
+        - these tests involve a significant risk (📝shutting down the primary site, transfer recovery ops, followed by the reverse) and therefore are extremely difficult to arrange (management resistance to these tests are likely)
         - During a full interruption test, the team takes down the primary site and confirms that the disaster recovery site is capable of handling regular operations. The full interruption test is the most thorough test but also the most disruptive.
      
 - 7.12.6 Communication
