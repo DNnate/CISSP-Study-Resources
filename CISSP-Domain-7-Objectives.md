@@ -14,7 +14,7 @@
 - **Heuristics**: method of machine learning which identifies patterns of acceptable activity, so that deviations from the patterns will be identified
 	- Heuristic-based antimalware software has a higher likelihood of detecting a zero-day exploit than signature-based methods. Heuristic-based software does not require frequent ­signature updates because it does not rely upon monitoring systems for the presence of known malware. The trade-off with this approach is that it has a higher false positive rate
 than signature detection methods. 
-- **Incident**: an event which potentially or actually jeopardizes the CIA of an information system or the info the system processes, stores, transmits. Security incidents negatively affect the confidentiality, integrity, or availability of
+- **Incident**: an event which potentially or actually jeopardizes the CIA of an information system or the info the system processes, stores, transmits. Security incidents negatively affect the confidentiality, integrity, or availability 📝CIA of
 information or assets and/or violate a security policy. e.g backup failure, unauthorized vulnerability scan, ransomware
 - **Indicator**: technical artifact or observable occurrence suggesting that an attack is imminent, currently underway, or already occured
 - **Indicators of Compromise (IoC)**: a signal that an intrusion, malware, or other predefined hostile or hazardous set of events has or is occurring
@@ -198,10 +198,11 @@ of litigation is imminent.
 - 7.2.1 Intrusion detection and prevention
     - **Intrusion**: a security event, or a combination of multiple security events that constitutes an incident; occurs when an attacker attempts to bypass or can bypass or thwart security mechanisms and access an organization’s resources without the authority to do so
     - **Intrusion detection**: a specific form of monitoring events, usually in real time, to detect abnormal activity indicating a potential incident or intrusion
-    - **Intrusion Detection System (IDS)**: a security service that monitors and analyzes network or system events for the purpose of finding/providing realtime/neartime warnings of unauthorized attempts to access system resources; automates the inspection of logs and real-time system events to detect intrusion attempts and system failures. It provides only _passive_ responses, such as alerting administrators to a suspected attack
+    - 🍀**Intrusion Detection System (IDS)**: a security service that monitors and analyzes network or system events for the purpose of finding/providing realtime/neartime warnings of unauthorized attempts to access system resources; automates the inspection of logs and real-time system events to detect intrusion attempts and system failures. It provides only 📝_passive_ responses, such as alerting administrators to a suspected attack
         - an IDS is intended as part of a defense-in-depth security plan
-    - **Intrusion Prevention Systems (IPS)**: a security service that uses available info to determine if an attack is underway, alerting and also blocking attacks from reaching intended target; includes detection capabilities, you’ll also see them referred to as intrusion detection and prevention systems (IDPSs)
+    - 🍀**Intrusion Prevention Systems (IPS)**: a security service that uses available info to determine if an attack is underway, alerting and also blocking attacks from reaching intended target; includes detection capabilities, you’ll also see them referred to as intrusion detection and prevention systems (IDPSs)
     - NIST SP 800-94 Guide to Intrusion Detection and Prevention Systems provides comprehensive coverage of both IDS and IPS
+    - They provide 📝active response to a security event.
     - **Host-­based IDSs (HIDSs)** can monitor activity on a single system only. A drawback is that attackers can discover and disable them. HIDS may be able to detect unauthorized processes running on a system.
     - **Network-­based IDS (NIDS)** can monitor activity on a network, and an NIDS isn’t as visible to attackers. They may  not notice rogue processes
 - 7.2.2 Security Information and Event Management (SIEM)
@@ -725,7 +726,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
     - Three main techniques used to create offsite copies of DB content: electronic vaulting, remote journaling, and remote mirroring
         - **🔥electronic vaulting**: where database backups are moved to a remote site using bulk transfers, but it does not do so in real time.
         - **🔥remote journaling**: data transfers are performed in a more expeditious manner; remote journaling is similar to electronic vaulting in that transaction logs transferred to the remote site are not applied to a live database server but are maintained in a backup device. Remote journaling options send logs, rather than full data replicas, to the remote location.
-        - **🔥remote mirroring**: the most advanced db backup solution, and the most expensive, with remote mirroring, a live db server is maintained at the backup site; the remote server receives copies of the db modifications at the same time they are applied to the production server at the primary site. When you use remote mirroring, an exact copy of the database is maintained at an alternative location. You keep the remote copy up to date by executing all transactions on both the primary and remote sites at the same time.
+        - **🔥remote mirroring**: the most advanced db backup solution, and the most expensive, with remote mirroring, a live db server is maintained at the backup site; the remote server receives copies of the db modifications at the same time they are applied to the production server at the primary site. When you use remote mirroring, an exact copy of the database is maintained at an alternative location. You keep the remote copy up to date by executing all transactions on both the primary and remote sites at the 📝same time.
 
 - **Backup Tape Rotation** There are several commonly used tape rotation strategies for backups:
 	- ⚒️the Grandfather-­Father-­Son (GFS) strategy: This is a tiered backup scheme that uses daily (son), weekly (father), and monthly (Grandfather) backup tapes.
@@ -889,7 +890,8 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
         - brief awareness refreshers for all other employees
         - **Entitlement** refers to the privileges granted to new users when an account is first provisioned.
 - 7.11.7 Lessons learned
-    - A lessons learned session should be conducted at the conclusion of any disaster recovery operation or other security incident
+    - A lessons learned session should be conducted at the conclusion of any disaster recovery operation or other security incident.
+    - A lessons learned document is often created and distributed to involved parties after a postmortem review to ensure that those who were involved in the incident and others who may benefit from the knowledge are aware of what they can do to prevent future issues and to improve response in the event that one occurs.
     - The lessons learned process is designed to provide everyone involved with the incident response effort an opportunity to reflect on their individual roles and the teams overall response
     - Time is of the essence in conducting a lesson learned, before memories fade
     - Usually a lessons learned session is led by trained facilitators
