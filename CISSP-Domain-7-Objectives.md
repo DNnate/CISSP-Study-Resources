@@ -49,7 +49,11 @@ of litigation is imminent.
         - _Interviews_ occur when investigators meet with an individual who may have information relevant to their investigation but is not a suspect. If the individual is a suspect, then the meeting is an _interrogation_.
     - general principles:
         - identify and secure the scene
-        - protect evidence -- proper collection of evidence preserves its integrity and the chain of custody. For example A forensic disk controller or hardware write-block device is a specialized type of computer hard disk controller made for the purpose of gaining read-only access to computer hard drives without the risk of damaging the drive's contents. It  intercept write commands from the host operating system, preventing them from reaching the drive. The other three functions include returning data requested by a read operation, returning access-significant information from the device, and reporting errors from the device back to the forensic host.
+        - protect evidence -- proper collection of evidence preserves its integrity and the chain of custody. For example A forensic disk controller or hardware write-block device is a specialized type of computer hard disk controller made for the purpose of gaining read-only access to computer hard drives without the risk of damaging the drive's contents.
+            - 🍾It  intercept write commands from the host operating system, preventing them from reaching the drive.
+            - 🍾It returns data requested by a read operation
+            - 🍾It returns access-significant information from the device
+            - 🍾It reports errors from the device back to the forensic host.
         - identification and examination of the evidence
         - further analysis of the most compelling evidence
         - final reporting of findings
