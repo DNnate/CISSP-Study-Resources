@@ -600,7 +600,14 @@ taxed by inefficient implementations of software and VMs.
         - **Scenario**: If 🅰️ wants to send a message to 🅱️. 🅰️ must encrypt the message using 🅱️’s public key so that only 🅱️ can decrypt it using 🅱️ private key. If 🅰️ encrypted the message with his own public key, 🅱️ would need to know 🅰️’s private key to decrypt the message. If 🅰️ encrypted it with his own private key, any user could decrypt the message using 🅰️’s freely available public key. 🅰️ could not encrypt the message using 🅱️’s private key because 🅰️ does not have access to it. If 🅰️ did, any user could decrypt it using 🅱️’s freely available public key.
 
 - 3.6.3 Public Key Infrastructure (PKI)
-    - **Public Key Infrastructure (PKI)**: hierarchy of trust relationships permitting the combination of asymmetric and symmetric cryptography along with hashing and digital certificates (giving us hybrid cryptography) 
+    - **Public Key Infrastructure (PKI)**: hierarchy of trust relationships permitting the combination of asymmetric and symmetric cryptography along with hashing and digital certificates (giving us hybrid cryptography)
+    - The key/certificate life-cycle management consists of six phases:
+        - 🧭pre-certification
+        - 🧭initialization
+        - 🧭certification
+        - 🧭operational
+        - 🧭suspension
+        - 🧭termination.  
         - The purpose of a digital certificate is to provide the general public with an authenticated copy of the certificate subject's public key.
         - The last step of the certificate creation process is the digital signature. During this step, the certificate authority signs the certificate using its own private key.
         - When an individual receives a copy of a digital certificate, the person verifies the authenticity of that certificate by using the CA's public key to validate the digital signature contained on the certificate.
