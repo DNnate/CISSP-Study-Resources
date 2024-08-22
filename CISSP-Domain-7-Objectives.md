@@ -349,7 +349,7 @@ of litigation is imminent.
         - ex: privilege access management (PAM) solutions that create special admin accounts for emergency use only; perhaps a password is split in half so that two people need to enter the password to log on
     - 💥**Split knowledge**: combines the concepts of separation of duties and two-person control into a single solution; the info or privilege required to perform an operation is divided among two or more users, ensuring that no single person has sufficient privileges to compromise the security of the environment
     - Principles such as least privilege and separation of duties help prevent security policy violations, and monitoring helps to deter and detect any violations that occur despite the use of preventive controls. Before granting access, you should verify that the user has a valid security clearance and a business need to know the information. 
-
+    - Segregation of duties matrix: is used to ensure that one person does not obtain two privileges that would create a potential conflict.
 - 7.4.3 Privilege account management
     - **Privileged Account Management (PAM)**: solutions that restrict access to privileged accounts or detect when accounts use any elevated privileges (e.g. admin accounts)
         - Microsoft domains, this includes local admin accounts, Domain and Enterprise Admins groups
