@@ -552,7 +552,7 @@ of litigation is imminent.
     - reporting requirements.
     
 - 7.7.1 Firewalls (e.g. next generation, web application, network)
-    - Firewalls are preventive and technical controls
+    - Firewalls are preventive and technical controls: For egress traffic, only Traffic with a destination address on an external network should generally be allowed.
     - Types of firewalls:
         - 📗Application gateway firewall: filters traffic based on specific application requirements
         - 📗Circuit-level gateway firewall: designed to provide connection security to internal and external computers in a network's session layer, they filter traffic based on the communications circuit; they do not engage in packet filtering based on packet contents
