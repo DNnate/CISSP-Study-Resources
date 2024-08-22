@@ -134,11 +134,11 @@ of litigation is imminent.
             - bag, and 
             - carry the evidence
     - Five rules of evidence: five evidence characteristics providing the best chance of surviving legal and other scrutiny:
-        - **authentic**: evidence is not fabricated or planted, and can be proven through crime scene photos, or bit-for-bit copies of storage
-        - **accurate**: evidence that has integrity (not been modified)
-        - **complete**: evidence must be complete, and all parts available and shared, whether they support the case or not
-        - **convincing**: evidence must be easy to understand, and convey integrity
-        - **admissible**: evidence must be accepted as part of a case
+        - 🚦**authentic**: evidence is not fabricated or planted, and can be proven through crime scene photos, or bit-for-bit copies of storage
+        - 🚦**accurate**: evidence that has integrity (not been modified)
+        - 🚦**complete**: evidence must be complete, and all parts available and shared, whether they support the case or not
+        - 🚦**convincing**: evidence must be easy to understand, and convey integrity
+        - 🚦**admissible**: evidence must be accepted as part of a case
 
 - 7.1.2 Reporting and documentation
     - Each investigation should result in a final report that documents the goals of the investigation, the procedures followed, the evidence collected, and the final results
@@ -155,10 +155,10 @@ of litigation is imminent.
         - further analysis of the most compelling evidence
         - final reporting
     - Sources of information and evidence:
-        - oral/written statements: given to police, investigators, or as testimony in court by people who witness a crime or who may have pertient information
-        - written documents: checks, printed contracts, handrwitten letters/notes
-        - computer systems: components, local/portable storage, memory etc
-        - visual/audio: visual and audio evidence pertient to a security investigation could include photographs, video, taped recordings, and surveillance footage from security cameras
+        - 🔨oral/written statements: given to police, investigators, or as testimony in court by people who witness a crime or who may have pertient information
+        - 🔨written documents: checks, printed contracts, handrwitten letters/notes
+        - 🔨computer systems: components, local/portable storage, memory etc
+        - 🔨visual/audio: visual and audio evidence pertient to a security investigation could include photographs, video, taped recordings, and surveillance footage from security cameras
     - Several investigative techniques can be used when conducting analysis:
         -  media analysis: examining the bits on a hard drive that are intact dispite not having an index
         - software analysis: focuses on an applications and malware, determining how it works and what it's trying to do, with a goal of attribution
@@ -405,45 +405,47 @@ of litigation is imminent.
     - Maintain or restore business continuity
     - Defend against future attacks
 
-- An important distinction needs to be made to know when an incident response process should be initiated: events take place continually, and the vast majority are insignificant; however, events that lead to some type of adversity can be deemed incidents, and those incidents should trigger an org's incident response process steps:
-    - **Preparation**: includes developing the IR process, assigning IR team members, and everything related to what happens when an incident is identified; preparation is critical, and will anticipate the steps to follow
-    - **Analysis:** Gathering and analyzing information about the incident to determine its scope, impact, and root cause (e.g., by interviewing witnesses, collecting and analyzing evidence, and reviewing system logs)
-    - **Containment:** Limiting the impact of the incident and preventing further damage (e.g., by isolating affected systems, changing passwords, and implementing security controls)
-    - **Eradication:** Removing the cause of the incident from the environment (e.g., by removing malware, patching vulnerabilities, and disabling compromised accounts)
-    - **Recovery:** Restoring systems and data to their normal state (e.g., by restoring from backups, rebuilding systems, and re-enabling compromised accounts)
-    - **Lessons Learned:** Documenting the incident and learning from it to improve future responses (e.g., by identifying areas where the incident response process can be improved and by sharing lessons learned with other organizations). Advisable to recruit an independent moderator or external consultant to facilitate the session.
+- An important distinction needs to be made to know when an incident response process should be initiated: events take place continually, and the vast majority are insignificant; however, events that lead to some type of adversity can be deemed incidents, and those incidents should trigger an org's incident response process steps: 🟡PACERL
+    - *️⃣**Preparation**: includes developing the IR process, assigning IR team members, and everything related to what happens when an incident is identified; preparation is critical, and will anticipate the steps to follow
+    - *️⃣**Analysis:** Gathering and analyzing information about the incident to determine its scope, impact, and root cause (e.g., by interviewing witnesses, collecting and analyzing evidence, and reviewing system logs)
+    - *️⃣**Containment:** Limiting the impact of the incident and preventing further damage (e.g., by isolating affected systems, changing passwords, and implementing security controls)
+    - *️⃣**Eradication:** Removing the cause of the incident from the environment (e.g., by removing malware, patching vulnerabilities, and disabling compromised accounts)
+    - *️⃣**Recovery:** Restoring systems and data to their normal state (e.g., by restoring from backups, rebuilding systems, and re-enabling compromised accounts)
+    - *️⃣**Lessons Learned:** Documenting the incident and learning from it to improve future responses (e.g., by identifying areas where the incident response process can be improved and by sharing lessons learned with other organizations). Advisable to recruit an independent moderator or external consultant to facilitate the session.
 
 - The following steps (🔥Detection, 🔥Response, 🔥Mitigation, 🔥Reporting, 🔥Recovery, 🔥Remediation, and 🔥Lessons Learned) are on the exam 🟡DRMRRRL 
 - 7.6.1 Detection
-    - **Detection:** the identification of potential security incidents via monitoring and analyzing security logs, threat intelligence, or incident reports; as above, understanding the distinction between an event and an incident, the goal of detection is to identify an adverse event (an incident) and begin dealing with it
+    - ❄️**Detection:** the 📝identification of potential security incidents via monitoring and analyzing security logs, threat intelligence, or incident reports; as above, understanding the distinction between an event and an incident, the goal of detection is to identify an adverse event (an incident) and begin dealing with it
     - Common methods to detect incidents:
         - intrusion detection and prevention systems
         - antimalware
         - automated tools that scan audit logs looking for predefined events
         - end users sometimes detect irregular activity and contact support
     - Note: receiving an alert or complaint doesn’t always mean an incident has occurred
-- 7.6.2 Response
-    - After detecting and verifying an incident, the next step is activate an Incident Response (IR) or CSIRT team
+- 7.6.2 ❄️**Response**
+    - After detecting and verifying an incident, the next step is 📝activate an Incident Response (IR) or CSIRT team
     - CSIRT representation normally includes at least representatives of senior management, information security professionals, legal representatives, public affairs staff, and engineering/technical staff.
     - An IR team is AKA computer incident response team (CIRT) or computer security incident response team (CSIRT)
     - Among the first steps taken by the IR Team will be an impact assessment to determine the scale of the incident, how long the impact might be experienced, who else might need to be involved etc.
     - The IR team typicall investigate the incident, assess the damage, collect evidence, report the incident, perform recovery procedures, and participate in the remediation and lessons learned stages, helping with root cause analysis
     - its important to protect all data as evidence during an investigation, and computers should not be turned off
+    - The response phase includes steps taken to assemble a team and triage the incident.
 
 - 7.6.3 Mitigation
-    - **Migitation**: attempt to contain an incident; in addition to conducting an impact assessment, the IR Team will attempt to minimize or contain the damage or impact from the incident
+    - ❄️**Migitation**: attempt to contain an incident; in addition to conducting an impact assessment, the IR Team will attempt to minimize or contain the damage or impact from the incident
     - The IR Team's job at this point is not to fix the problem; it's simply to try and prevent further damage
     - Note this may involve disconnecting a computer from the network; sometimes responders take steps to mitigate the incident, but without letting the attacker know that the attack has been detected
+    - The mitigation phase of incident response focuses on actions that can contain the damage incurred during an incident. This includes 📝limiting the scope and or effectiveness of the incident. 
 
-- 7.6.4 Reporting
+- 7.6.4 ❄️**Reporting**
     - Reporting occurs throughout the incident response process 
     - Once an incident is mitigated, formal reporting occurs because numerous stakeholders often need to understand what has happened
     - Jurisdictions may have specific laws governing the protection of personally identifiable information (PII), and must report if it's been exposed
     - Additionally, some third-party standards, such as the Payment Card Industry Data Security Standard (PCI DSS), require orgs to report certain security incidents to law enforcement
 
-- 7.6.5 Recovery
+- 7.6.5 ❄️**Recovery**
     - At this point, the goal is to start returning to normal
-    - Recovery is the next step, returning a system to a fully functioning state
+    - Recovery is the next step, 📝returning a system to a fully functioning state
     - The most secure method of restoring a system after an incident is completely rebuilding the system from scratch, including restoring all data from the most recent backup
         - effective configuration and change management will provide the necessary documentation to ensure the rebuilt systems are configured properly
     - According to the OGS, you should check these areas as part of recovery:
@@ -454,11 +456,11 @@ of litigation is imminent.
         - known compromises have been reversed
 
 - 7.6.6 Remediation
-    - **Remdiation**: changes to a system's config to immediately limit or reduce the change of reoccurance of an incident;
-    - Remediation stage: personnel look at the incident, identify what allowed it to occur, and then implement methods to prevent it from happening again
+    - ❄️**Remdiation**: changes to a system's config to immediately limit or reduce the change of reoccurance of an incident;
+    - Remediation stage: personnel look at the incident, identify what allowed it to occur, and then implement methods to 📝prevent it from happening again
     - Remediation includes performing a root cause analysis (which examines the incident to determine what allowed it to happen), and if the root cause analysis identifies a vulnerability that can be mitigated, this stage will recommend a change
 
-- 7.6.7 Lessons Learned
+- 7.6.7 ❄️**Lessons Learned**
     - Lessons learned stage: an all-encompassing view of the situation related to an incident, where personnel, including the IR team and other key stakeholders, examine the incident and the response to see if there are any lessons to be learned
         - the output of this stage can be fed back to the detection stage of incident management
     - It's common for the IR team to create a report when they complete a lessons learned review
@@ -500,7 +502,7 @@ of litigation is imminent.
         - antivirus software
         - firewalls
         - intrusion prevention systems
-- A detective control is deployed to discover or detect unwanted or unauthorized activity; detective controls operate after the fact
+- 📁**A detective control** is deployed to discover or detect unwanted or unauthorized activity; detective controls operate after the fact
     - Examples:
         - security guards
         - motion detectors
@@ -514,7 +516,7 @@ of litigation is imminent.
         - violation reports
         - supervision and reviews of users
         - incident investigations
-- Some preventative measures:
+- 📁**A preventive control** is  designed to stop or prevent security incidents or breaches from occurring. Some preventative measures:
     - Keep systems and applications up to date
     - Remove or disable unneeded services and protocols
     - Use intrusion detection and prevention systems
@@ -537,12 +539,12 @@ of litigation is imminent.
 - 7.7.1 Firewalls (e.g. next generation, web application, network)
     - Firewalls are preventive and technical controls
     - Types of firewalls:
-        - application gateway firewall: filters traffic based on specific application requirements
-        - circuit-level gateway firewall: designed to provide connection security to internal and external computers in a network's session layer, they filter traffic based on the communications circuit; they do not engage in packet filtering based on packet contents
-        - third-generation firewalls: (AKA stateful inspection firewalls and dynamic packet filtering firewalls) filter traffic based on its state within a stream of traffic. Stateful protocol analysis uses blacklists, whitelists, thresholds, and program code viewing to provide various security capabilities.
-        - app firewalls: control traffic going to or from a specific app or service
+        - 📗Application gateway firewall: filters traffic based on specific application requirements
+        - 📗Circuit-level gateway firewall: designed to provide connection security to internal and external computers in a network's session layer, they filter traffic based on the communications circuit; they do not engage in packet filtering based on packet contents
+        - 📗Third-generation firewalls: (AKA stateful inspection firewalls and dynamic packet filtering firewalls) filter traffic based on its state within a stream of traffic. Stateful protocol analysis uses blacklists, whitelists, thresholds, and program code viewing to provide various security capabilities.
+        - 📗App firewalls: control traffic going to or from a specific app or service
             - e.g. a web application firewall (WAF) inspects traffic going to a web server and can block malicious traffic such as SQL injection attacks and cross-site scripting (XSS) attacks
-        - next-generation firewall (NGFW): functions as a unified threat management (UTM) device and combines several capabilities, including traditional functions such as packet filtering and stateful inspection, and can also perform packet inspection allowing identification and blocking of malicious traffic
+        - 📗Next-generation firewall (NGFW): functions as a unified threat management (UTM) device and combines several capabilities, including traditional functions such as packet filtering and stateful inspection, and can also perform packet inspection allowing identification and blocking of malicious traffic
 
 - 7.7.2 Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS): Network-­based intrusion detection systems (NIDSs) and intrusion protection systems (IPSs) primarily monitor ✏️incoming traffic for threats.
     - Intrusion Detection Systems (IDSs) and Intrusion Prevention Systems (IPSs) are two methods organizations typically implement to detect and prevent attacks
@@ -613,13 +615,12 @@ of litigation is imminent.
         - 🔥Spyware is software designed to gather information about a user or system without their consent.
         - 🔥Advanced Persistent Threat (APT) is a sophisticated and prolonged cyberattack where an adversary gains unauthorized access to a network and remains undetected for an extended period. APTs are characterized by their use of advanced techniques and tools. Attackers employ sophisticated methods to bypass security measures and remain undetected. APTs are designed to stay in the target environment for a long time, often months or even years. The attackers aim to maintain a long-term presence to achieve their objectives. APTs are typically targeted at specific organizations, sectors, or individuals. The attackers often conduct extensive reconnaissance to tailor their attack to the specific vulnerabilities of their target.
 
-
-- **Saboage**: An attack committed against an organization by an insider, such as an employee, is known as sabotage. Sabotage refers to deliberate actions intended to disrupt, damage, destroy, or compromise an organization's operations, assets, infrastructure, or reputation.
-- **Espionage**: This involve the theft of sensitive information and unauthorized access or collection of sensitive or confidential information for the purpose of gaining a competitive advantage, political advantage, or other nefarious motives.
+- 🍮**Saboage**: An attack committed against an organization by an insider, such as an employee, is known as sabotage. Sabotage refers to deliberate actions intended to disrupt, damage, destroy, or compromise an organization's operations, assets, infrastructure, or reputation.
+- 🍮**Espionage**: This involve the theft of sensitive information and unauthorized access or collection of sensitive or confidential information for the purpose of gaining a competitive advantage, political advantage, or other nefarious motives.
 
 - 7.7.8 Machine learning and Artificial Intelligence (AI) based tools
-    - **AI**: gives machines the ability to do things that a human can do better or allows a machine to perform tasks that we previously thought required human intelligence
-    - **Machine Learning**: a subset of AI and refers to a system that can improve automatically through experience
+    - 📘**AI**: gives machines the ability to do things that a human can do better or allows a machine to perform tasks that we previously thought required human intelligence
+    - 📘**Machine Learning**: a subset of AI and refers to a system that can improve automatically through experience
         - a ML system starts with a set of rules or guidelines
         - an AI system starts with nothing and progressively learns the rules, creating its own algorithms as it learns the rules and applies ML techniques based on these rules
     - Behavior-based detection is one way ML and AI can apply to cybersecurity
@@ -628,10 +629,10 @@ of litigation is imminent.
     - An AI system starts without a baseline, monitors traffic and slowly creates its own baseline based on the traffic it observes
         - as it creates the baseline it also looks for anomalies
         - an AI system also relies on feedback from admins to learn if alarms are valid or false positives
-- **Neural networks** attempt to use complex computational techniques to model the behavior of the human mind. Through the use of the Delta rule or Learning rule, neural networks are able to learn from experience.
-- **Knowledge banks** are a component of expert systems, which are designed to capture and reapply human knowledge.
-- **Decision support systems** are designed to provide advice to those carrying out standard procedures and are often driven by expert systems.
-- **Expert Systems** uses details about the current situation, and the inference engine uses a combination of logical reasoning and fuzzy logic techniques to draw a conclusion based on past experience. Expert systems use a knowledge base consisting of a series of 🧠“if/then” statements to form decisions based on the previous experience of human experts.
+    - 📘**Neural networks** attempt to use complex computational techniques to model the behavior of the human mind. Through the use of the Delta rule or Learning rule, neural networks are able to learn from experience.
+    - 📘**Knowledge banks** are a component of expert systems, which are designed to capture and reapply human knowledge.
+    - 📘**Decision support systems** are designed to provide advice to those carrying out standard procedures and are often driven by expert systems.
+    - 📘**Expert Systems** uses details about the current situation, and the inference engine uses a combination of logical reasoning and fuzzy logic techniques to draw a conclusion based on past experience. Expert systems use a knowledge base consisting of a series of 🧠“if/then” statements to form decisions based on the previous experience of human experts.
 
 
 [7.8](#7.8) Implement and support patch and vulnerability management (OSG-9 Chpt 16)
@@ -681,11 +682,11 @@ of litigation is imminent.
 
 [7.10](#7.10) Implement recovery strategies (OSG-9 Chpt 18)
 - **Recovery strategy**: a plan for restoring critical business components, systems, and operations following a disruption
-- **Disaster recovery (DR)**: set of practices that enables an organization to minimize loss of, and restore, mission-critical technology infrastructure after a catastrophic incident. A disaster is any event that can disrupt normal IT operations and can be either natural or manmade. Hacking and terrorism are examples of manmade disasters, while flooding and fire are examples of natural disasters. Tip❗The term 100-­year flood plain is used to describe an area where flooding is expected once every 100 years. It is, however, more mathematically correct to say that this label indicates a 1 percent probability of flooding in any given year❗
+- ❄️**Disaster recovery (DR)**: set of practices that enables an organization to minimize loss of, and restore, mission-critical technology infrastructure after a catastrophic incident. A disaster is any event that can disrupt normal IT operations and can be either natural or manmade. Hacking and terrorism are examples of manmade disasters, while flooding and fire are examples of natural disasters. Tip❗The term 100-­year flood plain is used to describe an area where flooding is expected once every 100 years. It is, however, more mathematically correct to say that this label indicates a 1 percent probability of flooding in any given year❗
      - 👖Natural disasters: earthquakes, floods, storms, fires, tsunamis, and volcanic eruptions.
      - 👖Human-­made disasters: Explosions, electrical fires, terrorist acts, power outages, other utility failures, infrastructure
 failures, hardware/software failures, labor difficulties, theft, hacking incident and vandalism.
-- **Business continuity (BC)**: set of practices that enables an organization to continue performing its critical functions through and after any disruptive event
+- ❄️**Business continuity (BC)**: set of practices that enables an organization to continue performing its critical functions through and after any disruptive event
 - 7.10.1 Backup storage strategies
     - Backup strategies are driven by org goals and objectives and usually focus on backup and restore time as well as storage needs
     - **Archive bit**: technical detail (metadata) that indicates the status of a backup relative to a given backup strategy
@@ -785,7 +786,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
                 - extremely costly, likely doubling an org’s budget for hardware, software and services, and requires the use of additional employees to maintain the site
                 - has (by definition) copies of all production data, and therefore increases your attack surface
                 - A site with dedicated storage and real-time data replication, often with shared equipment that allows restoration of service in a very short time
-        - **Mobile sites**: non-mainstream alternatives to traditional recovery sites; usually configured as cold or warm sites, if your DR plan depends on a workgroup recovery strategy, mobile sites are an excellent way to implement that approach
+        - 📁**Mobile sites**: non-mainstream alternatives to traditional recovery sites; usually configured as cold or warm sites, if your DR plan depends on a workgroup recovery strategy, mobile sites are an excellent way to implement that approach
         - Cloud computing: many orgs now turn to cloud computing as their preferred disaster recovery option
             - some companies that maintain their own datacenters may choose to use these IaaS options as backup service providers
     - Note: A hot site is a subscription service, while a redundant site, in contrast, is a site owned and maintained by the org (and a redudant site may be "hot" in terms of capabilities)
@@ -975,10 +976,10 @@ list review, team members each review the contents of their disaster recovery ch
     - Training the staff
     - Testing, exercising, and maintaining the plans and solutions
 -  Plan-Do-Check-Act model:
-    - ✏️PLAN: Ensure that business continuity policy, objectives, targets, controls, processes and procedures relevant to improving business continuity have been established.
-    - ✏️DO: Ensure the business continuity policy, controls, processes, and procedures have been implemented.
-    - ✏️ACT: Maintain and improve the Business Continuity Management (BCM) system by taking corrective action, based on the results of management review.
-    - ✏️CHECK: Monitor and review performance against business continuity policy and objectives, report the results to management for review, and determine and authorize actions for remediation and improvement.
+    - ✏️⚒️PLAN: Ensure that business continuity policy, objectives, targets, controls, processes and procedures relevant to improving business continuity have been established.
+    - ✏️⚒️DO: Ensure the business continuity policy, controls, processes, and procedures have been implemented.
+    - ✏️⚒️ACT: Maintain and improve the Business Continuity Management (BCM) system by taking corrective action, based on the results of management review.
+    - ✏️⚒️CHECK: Monitor and review performance against business continuity policy and objectives, report the results to management for review, and determine and authorize actions for remediation and improvement.
 
 
 [7.14](#7.14) Implement and manage physical security (OSG-9 Chpt 10)
