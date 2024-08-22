@@ -715,7 +715,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
         - **📁Incremental backup**: changes since the last incremental backup
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - once an incremental backup is complete, the archive bit on all duplicated files is reset, turned off, or set to 0
-            - Incremental backups provide the option that includes the smallest amount of data. 
+            - Incremental backups provide the option that includes the 📝smallest amount of data. In this case, that would be only the data modified since the most recent incremental backup.
         - **📁Differential backup**: changes since the last full backup
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - unlike full and incremental backups, the differential backup process does not change the archive bit
