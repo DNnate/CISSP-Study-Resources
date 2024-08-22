@@ -897,7 +897,8 @@ taxed by inefficient implementations of software and VMs.
     - Datacenter: 
         - should be on different power circuits from occupied areas
         - common to use a backup generator
-        - Generators are capable of providing backup power for a sustained period of time in the event of a power loss, but they take time to activate. Uninterruptible power supplies (UPS) provide immediate, battery-driven power for a short period of time to cover momentary losses of power, which would not cover a sustained period of power loss.
+        - 💢Generators are capable of providing backup power for a 📝sustained period of time in the event of a power loss, but they take time to activate.
+        - 💢Uninterruptible power supplies (UPS) provide immediate, battery-driven power for a 📝short period of time to cover momentary losses of power, which would not cover a sustained period of power loss.
 - 3.9.7 Environmental issues
     - Environmental monitoring is the process of measuring and evaluating the quality of the environment within a given structure (e.g. temperature, humidity, dust, smoke), using things like chemical, biological, radiological, and microbiological detectors
     - Halon starves a fire of oxygen by disrupting the chemical reaction of combustion, but degrades into toxic gases at 900 degrees Fahrenheit, and is not environmentally friendly
