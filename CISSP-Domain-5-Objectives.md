@@ -303,7 +303,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - You can use scripts to run periodically and check for unused accounts, and check priveleged group membership, removing unauthorized accounts
     - Guard against two access control issues:
         - 🔔excessive privilege: occurs when users have more privileges than assigned work tasks dictate; these privileges should be revoked
-        - 🔔creeping privileges (AKA privilege creep or aggregation): user accounts accumulating additional privileges over time as job roles and assigned tasks change
+        - 🔔creeping privileges (AKA privilege creep or 📝aggregation): user accounts accumulating additional privileges over time as job roles and assigned tasks change
 - 5.5.2 Provisioning and deprovisioning
     - Identity and access provisioning lifecycle refers to the creation, management, and deletion of accounts
         - this lifecycle is important because without properly defined and maintained user accounts, a system is unable to establish accurate identity, perform authentication, provide authorization, and track accountability
@@ -314,6 +314,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
             - new-user account creation is AKA enrollment or registration
             - 🩹Registration is the process of adding a user to an identity management system. This includes creating their unique identifier and adding any attribute information that is associated with their identity.
             -  review of provisioning processes typically involves checking logs, reviewing the audit trail, or performing a manual review of permissions granted during the provisioning process.
+        - 🌑User access Modification: involves updating or changing a user's access rights when their role within the organization changes.
+        - 🌑User access Recertification: Involves periodic reviews to confirm that users have the appropriate access rights,
         - **Workflow provisioning**: Provisioning that occurs through an established workflow, such as through an HR process, is workflow-based account provisioning
         - **automated provisioning**: information is provided to an app, that then creates the accounts via pre-defined rules (assigning to appropriate groups based on roles)
             - automated provisioning systems create accounts consistently
