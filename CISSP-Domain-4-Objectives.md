@@ -593,6 +593,11 @@ The components of a network make up the backbone of the logical infrastructure f
     - It is a natural extension of continuous monitoring, focusing on both the endpoint device itself and network communications reaching the local interface.
     - Some EDR solutions employ an on-­device analysis engine whereas others report events back to a central analysis server or to a cloud solution.
     - The goal of EDR is to detect abuses that are potentially more advanced than what can be detected by traditional antivirus or HIDSs, while optimizing the response time of incident response, discarding false positives, implementing blocking for advanced threats, and protecting against multiple threats occurring simulta neously and via various threat vectors.
+    - The most common features of EDR systems are
+        - 🔨analyzing endpoint memory, filesystem, and network activity for signs of malicious activity;
+        - 🔨isolating possible malicious activity to contain the potential damage;
+        - 🔨integrating with threat intelligence sources;
+        - 🔨integrating with other incident response mechanisms
 - 📂**Managed detection and response (MDR)**: focuses on threat detection and mediation but is not limited to the scope of endpoints. MDR is a service that attempts to monitor an IT environment in real-time to quickly detect and resolve threats. Often an MDR solution is a combination and integration of numerous technologies, including SIEM, network traffic analysis (NTA), EDR, and IDS.
 - 📂**Endpoint protection platform (EPP)**: is a variation of EDR much like IPS is a variation of IDS. The focus on EPP is on four main security functions: predict, prevent, detect, and respond. Thus, EPP is the more active prevent and predict variation of the more passive EDR concept.
 - 📂**Extended detection and response (XDR)**: components often include EDR, MDR, and EPP elements. Also, XDR is not solely focused on endpoints, but often includes NTA, NIDS, and NIPS functions as well. Managed security service provider (MSSP) can provide XDR solutions that are centrally controlled and managed.
