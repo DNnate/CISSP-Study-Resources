@@ -239,8 +239,8 @@ of litigation is imminent.
 🔄 Log Collection ↪️ SIEM ↪️ SOAR ↪️ SOC Team 🔄 Log Collection
 - 7.2.2.1 Security Orchestration, Automation, and Response (SOAR)
     - **Security Orchestration, Automation, and Response (SOAR)**: refers to a group of technologies that allow orgs to respond to some incidents automatically. It is a centralized alert and response automation tool with threat specific playbooks and runbooks. Response is in a digital work-flow format and could be automated or sem-automated (requiring a single click). It often uses AI, Machine Learning and Threat Intelligence.
-    - **Playbook**: a document or checklist that defines how to verify/define an incident and the action taken. Playbook is the paperwork.
-    - **Runbook**: implements the playbook data into an automated tool. When integrated with SIEM, some runbooks are invokable from the SIEM. Runbook is the automated technology.
+        - 🐍**Playbook**: a document or checklist that defines how to verify/define an incident and the action taken. Playbook is the paperwork.
+        - 🐍**Runbook**: implements the playbook data into an automated tool. When integrated with SIEM, some runbooks are invokable from the SIEM. Runbook is the automated technology.
     - SOAR allows security admins to define these incidents and the response, typically using playbooks and runbooks
     - Both SOAR and SIEM integrated platforms can help detect and, in the case of SOAR, respond to threats against your software development efforts. It reduces Mean Time to Detection MTTD and accelerates response.
     - Security information and event management (SIEM) systems do correlate information from multiple sources and perform analysis, but they stop short of providing automated playbook responses. That is the realm of security orchestration, automation, and response (SOAR) platforms.
@@ -249,8 +249,8 @@ of litigation is imminent.
 - **Syslog**: RFC 5424, the Syslog Protocol, describes the syslog protocol, which is used to send event notification messages. A centralized syslog server receives these syslog messages from devices on a network. The protocol defines how to format the messages and how to ✏️send them to the syslog server but ✏️not how to handle them. Syslog has historically been used in Unix and Linux systems. These systems include the syslogd daemon, which handles all incoming syslog messages, similar to how a SIEM server provides centralized logging. Some syslogd extensions, such as syslog-­ng and rsyslog, allow the syslog server to accept messages from any source, not just Unix and Linux systems.
 - **Sampling or data extraction**, is the process of extracting specific elements from a large collection of data to construct a meaningful representation or summary of the whole. In other words, sampling is a form of data reduction that allows someone to glean valuable information by looking at only a small sample of data in an audit trail.
 - Both statistical and nonstatistical sampling are valid mechanisms to create summaries or overviews of large bodies of audit data. However, statistical sampling is more reliable and mathematically defensible.
-     - Statistical sampling uses precise mathematical functions to extract meaningful information from a large volume of data. There is always a risk that sampled data is not an accurate representation of the whole body of data, and statistical sampling can identify the margin of error.
-     - Nonstatistical sampling is discretionary sampling, or sampling at the auditor’s discretion. It doesn’t offer an accurate representation of the whole body of data and will ignore events that don’t reach the clipping level threshold. However, it is effective when used to focus on specific events. Additionally, nonstatistical sampling is less expensive and easier to implement than statistical sampling.
+     - 🍮Statistical sampling uses precise mathematical functions to extract meaningful information from a large volume of data. There is always a risk that sampled data is not an accurate representation of the whole body of data, and statistical sampling can identify the margin of error.
+     - 🍮Nonstatistical sampling is discretionary sampling, or sampling at the auditor’s discretion. It doesn’t offer an accurate representation of the whole body of data and will ignore events that don’t reach the 📝clipping level threshold. However, it is effective when used to focus on specific events. Additionally, nonstatistical sampling is less expensive and easier to implement than statistical sampling.
           - Clipping Levels: Clipping is a form of nonstatistical sampling. It selects only events that exceed a clipping level, which is a predefined threshold for the event. The system ignores events until they reach this threshold.
           - For example, failed logon attempts are common in any system, since users can easily enter the wrong password once or twice. Instead of raising an alarm for every single failed logon attempt, a clipping level can be set to raise an alarm only if it detects five failed logon attempts within a 30-­minute period.
           - Many account lockout controls use a similar clipping level. They don’t lock the account after a single failed logon. Instead, they count the failed logons and lock the account only when the predefined threshold is reached.
@@ -258,7 +258,7 @@ of litigation is imminent.
 	  
 - 7.2.3 Continuous monitoring
     - After a SIEM is set up, configured, tuned, and running, it must be routinely updated and continuously monitored to function effectively
-    - Effective continuous monitoring encompasses technology, processes, and people
+    - Effective continuous monitoring encompasses 📝technology, 📝processes, and 📝people
     - Continuous monitoring steps are:
         - Define
         - Establish
@@ -274,9 +274,10 @@ of litigation is imminent.
         - log analysis isn’t necessarily in response to an incident, it’s a periodic task
     
 - 7.2.4 Egress monitoring
-    - It’s important to monitor traffic exiting as well as entering a network, and **Egress monitoring** refers to monitoring outgoing traffic to detect unauthorized data transfer outside the org (AKA data exfiltration)
+    - ✴️**Egress monitoring** refers to monitoring outgoing traffic to detect unauthorized data transfer outside the org (AKA data exfiltration). It’s important to monitor traffic exiting as well as entering a network
     - Common methods used to detect or prevent data exfiltration are data loss prevention (DLP) techniques and monitoring for steganography. Note stegaography (embedded and not visible to naked eye) and watermark (visible to naked eye)
-    - A network-­based data loss prevention (DLP) system monitors outgoing traffic (egress monitoring) and can thwart data exfiltration attempts.
+        - 🛠️Network-­based data loss prevention (DLP) system monitors outgoing traffic (egress monitoring) and can thwart data exfiltration attempts.
+        - 🛠️Firewalls: For egress traffic, only Traffic with a destination address on an external network should generally be allowed.
 - 7.2.5 Log management
     - **Log management**: refers to all the methods used to collect, process, and protect log entries (see SIEM definition above)
     - **rollover logging**: allows admins to set a maximum log size, when the log reaches that max, the system begins overwriting the oldest events in the log
@@ -552,7 +553,7 @@ of litigation is imminent.
     - reporting requirements.
     
 - 7.7.1 Firewalls (e.g. next generation, web application, network)
-    - Firewalls are preventive and technical controls: For egress traffic, only Traffic with a destination address on an external network should generally be allowed.
+    - Firewalls are preventive and technical controls: 
     - Types of firewalls:
         - 📗Application gateway firewall: filters traffic based on specific application requirements
         - 📗Circuit-level gateway firewall: designed to provide connection security to internal and external computers in a network's session layer, they filter traffic based on the communications circuit; they do not engage in packet filtering based on packet contents
