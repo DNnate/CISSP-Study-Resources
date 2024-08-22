@@ -14,8 +14,23 @@
 	- Heuristic-based antimalware software has a higher likelihood of detecting a zero-day exploit than signature-based methods. Heuristic-based software does not require frequent ­signature updates because it does not rely upon monitoring systems for the presence of known malware. The trade-off with this approach is that it has a higher false positive rate
 than signature detection methods.
 - 🍎**Security Event**: observable occurance in a network or system
+    - A security event is any observable occurrence in a system or network that is relevant to the security of the system or data. Events can be benign, suspicious, or malicious, and not all security events are harmful or indicative of a problem.
+    - Security events can be routine (such as a successful user login) or unusual (such as multiple failed login attempts).
+    - Many security events do not indicate a security breach or issue by themselves. They might be part of normal operations or could be false positives.
+    - Examples include
+        - A user logging into a system.
+        - An email containing a suspicious attachment.
+        - A firewall blocking an inbound connection attempt.
+        - An unusual spike in network traffic.
 - 🍎**Security Incident**: an event which 📝potentially or 📝actually jeopardizes the CIA of an information system or the info the system processes, stores, transmits. Security incidents negatively affect the confidentiality, integrity, or availability 📝CIA of information or assets and/or violate a security policy. e.g backup failure, unauthorized vulnerability scan, ransomware
     - Any 📝attempt to undermine the security of an organization or violation of a security policy is a security incident.
+    - A security incident is a specific type of security event that has been identified as a threat to the security of information or systems. It represents a breach of security policies, an attempted or successful unauthorized access, or any activity that poses a risk to the confidentiality, integrity, or availability of information.
+    - A security incident may lead to data loss, system downtime, unauthorized access, or other forms of damage.
+    - Examples include
+        - A successful phishing attack where an attacker gains access to sensitive data.
+        - A malware infection spreading across the network.
+        - An unauthorized user accessing confidential information.
+        - A denial-of-service (DoS) attack that disrupts service availability.
     - ⚒️**Indicator**: technical artifact or observable occurrence suggesting that an attack is imminent, currently underway, or already occured
     - ⚒️**Indicators of Compromise (IoC)**: a signal that an intrusion, malware, or other predefined hostile or hazardous set of events has or is occurring
 - **Information Security Continuous Monitoring (ICSM)**: maintaining ongoing awareness of information security, vulnerabilities and threats to support organizational risk management decisions; ongoing monitoring sufficient to ensure and assure effectiveness of security controls
