@@ -344,8 +344,10 @@ of litigation is imminent.
     - 💥**Separation of Duties (SoD)**: ensures that no single person has total control over a critical function or system
         - SoD policies help reduce fraud by requiring collusion between two or more people to perform unauthorized activity
         - example of how SoD can be enforced, is by dividing the security or admin capabilities and functions among multiple trusted individuals
+        - - example Separation of duties applied to a situation where the same person may not have both the ability to initiate a request and the ability to approve a request. 
     - 💥**Two-person control**: (AKA two-man rule) requires the approval of two individuals for critical tasks
         - using two-person controls within an org ensures peer review and reduces the likelihood of collusion and fraud
+        - a process that requires the concurrence of two people to perform a sensitive action
         - the principle of two-person control by requiring simultaneous action by two separate authorized individuals to gain access is designed for highly sensitive operations
         - ex: privilege access management (PAM) solutions that create special admin accounts for emergency use only; perhaps a password is split in half so that two people need to enter the password to log on
     - 💥**Split knowledge**: combines the concepts of separation of duties and two-person control into a single solution; the info or privilege required to perform an operation is divided among two or more users, ensuring that no single person has sufficient privileges to compromise the security of the environment
@@ -918,7 +920,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
     - parallel tests
     - full-interruption tests
 - 7.12.0 📙**checklist tests:** The checklist review is the 📝least disruptive type of disaster recovery test. During a check-
-list review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes.
+list review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes. It also has a very minimal 📝time commitment. 
 
 - 7.12.1 Read-through/tabletop
     - 📙**Read-through test**: one of the 📝simplest to conduct, but also one of the most critical; copies of a DR plan are distributed to the members of the DR team for review, accomplishing three goals:
