@@ -914,7 +914,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
     - A lessons learned document is often created and distributed to involved parties after a postmortem review to ensure that those who were involved in the incident and others who may benefit from the knowledge are aware of what they can do to prevent future issues and to improve response in the event that one occurs.
     - The lessons learned process is designed to provide everyone involved with the incident response effort an opportunity to reflect on their individual roles and the teams overall response
     - Time is of the essence in conducting a lesson learned, before memories fade
-    - Usually a lessons learned session is led by trained facilitators
+    - Usually a lessons learned session is led by 📝trained facilitators or 📝External Consultants
     - NIST SP 800-61 offers a series of questions to use in the lessons learned process:
         - exactly what happened and at what times?
         - how well did staff and management perform in dealing with the incident?
