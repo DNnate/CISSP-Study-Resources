@@ -346,6 +346,7 @@ of litigation is imminent.
         - example of how SoD can be enforced, is by dividing the security or admin capabilities and functions among multiple trusted individuals
     - 💥**Two-person control**: (AKA two-man rule) requires the approval of two individuals for critical tasks
         - using two-person controls within an org ensures peer review and reduces the likelihood of collusion and fraud
+        - the principle of two-person control by requiring simultaneous action by two separate authorized individuals to gain access is designed for highly sensitive operations
         - ex: privilege access management (PAM) solutions that create special admin accounts for emergency use only; perhaps a password is split in half so that two people need to enter the password to log on
     - 💥**Split knowledge**: combines the concepts of separation of duties and two-person control into a single solution; the info or privilege required to perform an operation is divided among two or more users, ensuring that no single person has sufficient privileges to compromise the security of the environment
     - Principles such as least privilege and separation of duties help prevent security policy violations, and monitoring helps to deter and detect any violations that occur despite the use of preventive controls. Before granting access, you should verify that the user has a valid security clearance and a business need to know the information. 
