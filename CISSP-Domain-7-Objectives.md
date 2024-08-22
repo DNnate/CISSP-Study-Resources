@@ -9,15 +9,15 @@
 - **Disruption**: unplanned event that causes a system to be inoperable for a length of time
 - **Egress monitoring**: monitoring the flow of info out of an org's boundaries
 - **Entity**: any form of a user including hardware device, software daemon, task, processing thread or human, which is attempting to use or access system resources; e.g. endpoint devices are entities that human (or non-human) users use to access a system; should be subject to access control and accounting
-- **Event**: observable occurance in a network or system
 - **Hackback**: actions taken by a victim of hacking to compromise the systems of the alleged attacker
 - **Heuristics**: method of machine learning which identifies patterns of acceptable activity, so that deviations from the patterns will be identified
 	- Heuristic-based antimalware software has a higher likelihood of detecting a zero-day exploit than signature-based methods. Heuristic-based software does not require frequent ­signature updates because it does not rely upon monitoring systems for the presence of known malware. The trade-off with this approach is that it has a higher false positive rate
-than signature detection methods. 
-- **Incident**: an event which potentially or actually jeopardizes the CIA of an information system or the info the system processes, stores, transmits. Security incidents negatively affect the confidentiality, integrity, or availability 📝CIA of
-information or assets and/or violate a security policy. e.g backup failure, unauthorized vulnerability scan, ransomware
-- **Indicator**: technical artifact or observable occurrence suggesting that an attack is imminent, currently underway, or already occured
-- **Indicators of Compromise (IoC)**: a signal that an intrusion, malware, or other predefined hostile or hazardous set of events has or is occurring
+than signature detection methods.
+- 🍎**Security Event**: observable occurance in a network or system
+- 🍎**Security Incident**: an event which 📝potentially or 📝actually jeopardizes the CIA of an information system or the info the system processes, stores, transmits. Security incidents negatively affect the confidentiality, integrity, or availability 📝CIA of information or assets and/or violate a security policy. e.g backup failure, unauthorized vulnerability scan, ransomware
+    - Any 📝attempt to undermine the security of an organization or violation of a security policy is a security incident.
+    - ⚒️**Indicator**: technical artifact or observable occurrence suggesting that an attack is imminent, currently underway, or already occured
+    - ⚒️**Indicators of Compromise (IoC)**: a signal that an intrusion, malware, or other predefined hostile or hazardous set of events has or is occurring
 - **Information Security Continuous Monitoring (ICSM)**: maintaining ongoing awareness of information security, vulnerabilities and threats to support organizational risk management decisions; ongoing monitoring sufficient to ensure and assure effectiveness of security controls
 - **Information Sharing and Analysis Center (ISAC)**: entity or collab created for the purposes of analyzing critical cyber and related info to better understand security problems and interdependencies to ensure CIA
 - **Log**: record of actions/events that have taken place on a system
