@@ -939,8 +939,9 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
     - simulation tests
     - parallel tests
     - full-interruption tests
-- 7.12.0 📙**checklist tests:** The checklist review is the 📝least disruptive type of disaster recovery test. During a check-
-list review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes. It also has a very minimal 📝time commitment. 
+- 7.12.0 📙**checklist tests:**
+- The checklist review is the 📝least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes. It also has a very minimal 📝time commitment.
+    - The checklist review is the least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and 📝suggest any necessary changes.  
 
 - 7.12.1 Read-through/tabletop
     - 📙**Read-through test**: one of the 📝simplest to conduct, but also one of the most critical; copies of a DR plan are distributed to the members of the DR team for review, accomplishing three goals:
@@ -956,6 +957,7 @@ list review, team members each review the contents of their disaster recovery ch
         - unlike read-throughs and walk-throughs, some of these response measures are then tested
         -  ❗Simulation tests may shut down noncritical business units. 
         - this may involve the interruption of noncritical business activities and the use of some operational personnel
+        - A simulation test involves a role-play of a prepared scenario overseen by a moderator. Responses are assessed to help improve the organization's response process. 
         - Simulations are the 📝most complete test that can be conducted without the risk that a full failover test creates. 
 - Checklist tests, structured walk-­throughs, and simulations are all test types that do not involve actually activating the alternate site.
 - 7.12.4 Parallel
@@ -964,6 +966,7 @@ list review, team members each review the contents of their disaster recovery ch
         - operations at the main facility are not interrupted
         - During a parallel test, the team actually activates the disaster recovery site for testing, but the primary site remains operational.
         -  it fully evaluates operations at the backup facility but does not shift primary operations responsibility from the main site
+        -  During a parallel test, the team activates the disaster recovery site for testing, but the primary site remains operational. 
 
 - 7.12.5 Full interruption
     - 📙**Full-interruption tests**: operate like parallel tests, but involve actually shutting down operations at the primary site and shifting them to the recovery site
