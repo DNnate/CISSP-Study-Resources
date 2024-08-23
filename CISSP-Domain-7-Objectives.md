@@ -277,7 +277,7 @@ of litigation is imminent.
     - ✴️**Egress monitoring** refers to monitoring outgoing traffic to detect unauthorized data transfer outside the org (AKA data exfiltration). It’s important to monitor traffic exiting as well as entering a network
     - Common methods used to detect or prevent data exfiltration are data loss prevention (DLP) techniques and monitoring for steganography. Note stegaography (embedded and not visible to naked eye) and watermark (visible to naked eye)
         - 🛠️Network-­based data loss prevention (DLP) system monitors outgoing traffic (egress monitoring) and can thwart data exfiltration attempts.
-        - 🛠️Firewalls: For egress traffic, only Traffic with a destination address on an external network should generally be allowed.
+        - 🛠️Firewalls: For egress traffic, only Traffic with a destination address on an external network should generally be allowed. Also, All packets leaving the network should have a source address from your public IP address block.
 - 7.2.5 Log management
     - **Log management**: refers to all the methods used to collect, process, and protect log entries (see SIEM definition above)
     - **rollover logging**: allows admins to set a maximum log size, when the log reaches that max, the system begins overwriting the oldest events in the log
