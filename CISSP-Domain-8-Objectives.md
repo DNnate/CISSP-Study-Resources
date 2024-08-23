@@ -595,6 +595,7 @@ Fail-Open: Opens up or grants access during a failure, allowing processes to con
         - Cross-Site Scripting (XSS): By encoding malicious scripts or payloads in URLs, attackers can attempt to inject these scripts into web pages viewed by other users.
         - Directory Traversal: Encoded characters can be used to traverse directories and access unauthorized files on the server.
         - Parameter Manipulation: Encoding can be used to manipulate parameters and alter the intended functionality of web applications.
+            - Cross-site tracing (XST): leverages the HTTP TRACE or TRACK methods and could be used to steal a user's cookies via cross-site scripting (XSS).
 
 
 - **Malware: (Malicious Software)** is a general term used to describe any software intentionally designed to cause damage to a computer, server, client, or computer network. It encompasses a wide range of malicious programs, including but not limited to:       
