@@ -593,10 +593,9 @@ Fail-Open: Opens up or grants access during a failure, allowing processes to con
     - URL encoding: This in itself is not an attack; rather, it is a method used to represent characters in a URL string using a percent sign (%) followed by two hexadecimal digits. This encoding is necessary to transmit data safely over the Internet, especially when the data contains special characters that might be misinterpreted by the web server or browser. In URL encoding, the . character is replaced by %252E, and the / character is replaced by %252F. However, URL encoding can be misused in certain contexts to facilitate attacks such as:
         - SQL Injection: Attackers may use URL encoding to bypass input validation and inject malicious SQL queries into the application.
         - Cross-Site Scripting (XSS): By encoding malicious scripts or payloads in URLs, attackers can attempt to inject these scripts into web pages viewed by other users.
+            - Cross-site tracing (XST): leverages the HTTP TRACE or TRACK methods and could be used to steal a user's cookies via cross-site scripting (XSS).
         - Directory Traversal: Encoded characters can be used to traverse directories and access unauthorized files on the server.
         - Parameter Manipulation: Encoding can be used to manipulate parameters and alter the intended functionality of web applications.
-            - Cross-site tracing (XST): leverages the HTTP TRACE or TRACK methods and could be used to steal a user's cookies via cross-site scripting (XSS).
-
 
 - **Malware: (Malicious Software)** is a general term used to describe any software intentionally designed to cause damage to a computer, server, client, or computer network. It encompasses a wide range of malicious programs, including but not limited to:       
     - Viruses: Programs that replicate themselves and infect other files on a computer. Require humn intervention to replicate.
