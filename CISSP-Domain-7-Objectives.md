@@ -661,11 +661,11 @@ of litigation is imminent.
     - in the context of security, admins are primarily concerned with security patches, which are patches that affect a system’s vulns
 - **Patch Management**: systematic notification, identification, deployment, installation and verification of OS and app code revisions known as patches, hot fixes, and service packs  
     - an effective patch management program ensures that systems are kept up to date with current patches
-- **Patch Tuesday**: several big-tech orgs (e.g. Microsoft, Adobe, Oracle etc) regularly release patches on the second Tuesday of every month
+    - **Patch Tuesday**: several big-tech orgs (e.g. Microsoft, Adobe, Oracle etc) regularly release patches on the second Tuesday of every month
 - There are three methods for determining patch levels:
-    - agent: update software (agent) installed on devices
-    - agentless: remotely connect to each device
-    - passive: monitor traffic to infer patch levels
+    - 🚸Agent: update software (agent) installed on devices
+    - 🚸Agentless: remotely connect to each device
+    - 🚸Passive: monitor traffic to infer patch levels
 - Deploying patches can be done manually or automatically
 - Common steps within an effective program:
     - evaluate patches: determine if they apply to your systems
@@ -681,23 +681,23 @@ of litigation is imminent.
 [7.9](#7.9) Understand and participate in change management processes (OSG-9 Chpt 16)
 - **Change management**: formal process an org uses to transition from the current state to a future state; typically includes mechanisms to request, evaluate, approve, implement, verify, and learn the change; ensures that the costs and benefits of changes are analyzed and changes are made in a controlled manner to reduce risks
     - Change management processes allow various IT experts to review proposed changes for unintended consequences before implementing
-    - Change management controls provide a process to control, document, track, and audit all system changes
-- The change management process includes multiple steps that build upon each other:
-    - Change request: a change request can come from any part of an org and pertain to almost any topic; companies typically use some type of change management software
-    - Assess impact: after a change request is made, however small the request might be, the impact of the potential change must be assessed
-    - Approval/reject: based on the requested change and related impact assessment, common sense plays a big part in the approval process
-    - Build and test: after approval, any change should be developed and tested, ideally in a test environment. ✏️UAT: Before implementing any change, tests should be performed, preferably in a closed environment such as an operational system taken off-line or replicated, which mainly depends on the business capacities.
-    - Schedule/notification: prior to implementing any change, key stakeholders should be notified
-    - Implement: after testing and notification of stakeholders, the change should be implemented; it's important to have a roll-back plan, allowing personnel to undo the change
-    - Validation: once implemented, senior management and stakeholders should again be notified to validate the change
-    - Document the change: documentation should take place at each step; it's critical to ensure all documentation is complete and to identify the version and baseline related to a given change
+    - Change management controls provide a process to control, document, track, and audit all system changes.
+    - The change management process includes multiple steps that build upon each other:
+        - 🔐Change request: a change request can come from any part of an org and pertain to almost any topic; companies typically use some type of change management software
+        - 🔐Assess impact: after a change request is made, however small the request might be, the impact of the potential change must be assessed
+        - 🔐Approval/reject: based on the requested change and related impact assessment, common sense plays a big part in the approval process
+        - 🔐Build and test: after approval, any change should be developed and tested, ideally in a test environment. ✏️UAT: Before implementing any change, tests should be performed, preferably in a closed environment such as an operational system taken off-line or replicated, which mainly depends on the business capacities.
+        - 🔐Schedule/notification: prior to implementing any change, key stakeholders should be notified
+        - 🔐Implement: after testing and notification of stakeholders, the change should be implemented; it's important to have a roll-back plan, allowing personnel to undo the change
+        - 🔐Validation: once implemented, senior management and stakeholders should again be notified to validate the change
+        - 🔐Document the change: documentation should take place at each step; it's critical to ensure all documentation is complete and to identify the version and baseline related to a given change
 - When a change management process is enforced, it creates documentation for all changes to a system, providing a trail of info if personnel need to reverse the change, or make the same change on other systems
 - Change management control is a mandatory element for some security assurance requirements (SARs) in the ISO Common Criteria
-- Change Management roles
-     - Program Sponsor is the role that provides overall direction, support, and oversight for a project or change initiative. They are typically a senior executive or manager who is responsible for ensuring that the project aligns with organizational goals and has the resources and support needed for success. The program sponsor plays a critical role in endorsing and championing the change throughout the organization, addressing high-level issues, and facilitating necessary resources and support.
-     - Project Manager: The project manager is responsible for planning, executing, and closing the project. They focus on managing the project’s scope, schedule, and resources but may not have the same level of executive support and overall responsibility as the program sponsor.
-     - Change Implementer: The change implementer is responsible for executing the change according to the plan but does not typically handle the overarching support and strategic alignment that the program sponsor provides.
-     - Change Driver: This term is less commonly used but generally refers to the person or entity that initiates or advocates for the change.
+- Change Management roles:
+     - 🔮**Program Sponsor** is the role that provides overall direction, support, and oversight for a project or change initiative. They are typically a senior executive or manager who is responsible for ensuring that the project aligns with organizational goals and has the resources and support needed for success. The program sponsor plays a critical role in endorsing and championing the change throughout the organization, addressing high-level issues, and facilitating necessary resources and support.
+     - 🔮**Project Manager**: The project manager is responsible for planning, executing, and closing the project. They focus on managing the project’s scope, schedule, and resources but may not have the same level of executive support and overall responsibility as the program sponsor.
+     - 🔮**Change Implementer**: The change implementer is responsible for executing the change according to the plan but does not typically handle the overarching support and strategic alignment that the program sponsor provides.
+     - 🔮**Change Driver**: This term is less commonly used but generally refers to the person or entity that initiates or advocates for the change.
 
 [7.10](#7.10) Implement recovery strategies (OSG-9 Chpt 18)
 - **Recovery strategy**: a plan for restoring critical business components, systems, and operations following a disruption
@@ -850,9 +850,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
     | Warm Site            | Moderate cost; a compromise between cold and hot sites, includes some pre-installed hardware and connectivity that can be quickly activated | Faster recovery than a cold site as the infrastructure is partially ready, but data and systems might still need updates to be fully operational |
     | Hot Site             | High cost; a duplicate of the original site with full computer systems and near-real-time replication of data and ready to take over operations immediately | Minimal recovery time, designed for seamless takeover with data and systems up-to-date, allowing for critical operations to continue with little to no downtime |
     | Redundant Site       | Highest cost; essentially operates as an active-active configuration where both sites are running simultaneously, fully mirroring each other | Instantaneous recovery, as the redundant site is already running in parallel with the primary site, ensuring no interruption in service |
-
-
-   
+ 
 [7.11](#7.11) Implement Disaster Recovery (DR) processes (OSG-9 Chpt 18)
 
 - **Business Continuity Management (BCM)**: the process and function by which an organization is responsible for creating, maintaining, and testing BCP and DRP plans
@@ -871,16 +869,17 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
     - Maintenance
 
 - Four key measurements for BCP and DRP procedures:
-    - RPO (recovery point objective): max tolerable data loss measured in time and should be used to guide backup strategies
-    - RTO (recovery time objective): max tolerable time to recover systems to a defined service level
-    - WRT (work recovery time): max time available to verify system and data integrity as part of the resumption of normal ops
-    - MTD (max tollerable downtime): max time-critical system, function, or process can be disrupted before unacceptable/irrecoverable consequences to the business
+    - ⚒️RPO (recovery point objective): max tolerable data loss measured in time and should be used to guide backup strategies
+    - ⚒️RTO (recovery time objective): max tolerable time to recover systems to a defined service level
+    - ⚒️WRT (work recovery time): max time available to verify system and data integrity as part of the resumption of normal ops
+    - ⚒️MTD (max tollerable downtime): max time-critical system, function, or process can be disrupted before unacceptable/irrecoverable consequences to the business
 
-- 7.11.1 Response
+- 7.11.1 ❄️Response
     - A disaster recovery plan should contain simple yet comprehensive instructions for essential personnel to follow immediately upon recognizing that a disaster is in progress or imminent
     - Emergency-response plans are often put together in a form of checklists provided to responders; arrange the checklist tasks in order of priority, with the most important task first!
     - The response plan should include clear criteria for activation of the disaster recovery plan, define who has the authority to declare a disaster, and then discuss notification procedures
-- 7.11.2 Personnel
+    - The emergency response guidelines should include the immediate steps an organization should follow in response to an emergency situation. These include immediate response procedures, a list of individuals who should be notified of the emergency, and secondary response procedures for first responders. 
+- 7.11.2 ❄️Personnel
     - A disaster recovery plan should contain a list of personnel to contact in the event of a disaster
         - usually includes key members of the DRP team as well as critical personnel
     - Businesses need to make sure employees are trained on DR procedures and that they have the necessary resources to implement the DR plan
@@ -889,7 +888,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
 		- conduct regular DR drills
 		- provid eemployees with necessary resources and tools to implement the DR plan
 		- communicate the DR plan to all employees
-- 7.11.3 Communications
+- 7.11.3 ❄️Communications
     - Ensure that response checklists provide first responders with a clear plan to protect life and property and ensure the continuity of operations
         - the notification checklist should be supplied to all personnel who might respond to a disaster
 - 7.11.4 Assessment
@@ -897,14 +896,14 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
         - this normally occurs in a rolling fashion, with the first responders performing a simple assessment to triage the situation and get the disaster response under way
         - as the incident progresses more detailed assessments will take place to gauge effectiveness, and prioritize the assignment of resources
     
-- 7.11.5 Restoration
+- 7.11.5 ❄️Restoration
     - Note that recovery and restoration are separate concepts
     - **Restoration**: bringing a business facility and environment back to a workable state
     - **Recovery**: bringing business operations and processes back to a working state
     - System recovery includes the restoration of all affected files and services actively in use on the system at the time of the failure or crash
     - When designing a disaster recovery plan, it’s important to keep your goal in mind — the restoration of workgroups to the point that they can resume their activities in their usual work locations
 
-- 7.11.6 Training and awareness
+- 7.11.6 ❄️Training and awareness
     - As with a business continuity plan, it is essential that you provide training to all personnel who will be involved in the disaster recovery effort
     - When designing a training plan consider the following:
         - orientation training for all new employees
@@ -912,13 +911,13 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
         - detailed refresher training for DR team members
         - brief awareness refreshers for all other employees
         - **Entitlement** refers to the privileges granted to new users when an account is first provisioned.
-- 7.11.7 Lessons learned
+- 7.11.7 ❄️Lessons learned
     - A lessons learned session should be conducted at the conclusion of any disaster recovery operation or other security incident.
     - A lessons learned document is often created and distributed to involved parties after a postmortem review to ensure that those who were involved in the incident and others who may benefit from the knowledge are aware of what they can do to prevent future issues and to improve response in the event that one occurs.
     - The lessons learned process is designed to provide everyone involved with the incident response effort an opportunity to reflect on their individual roles and the teams overall response
     - Time is of the essence in conducting a lesson learned, before memories fade
     - Usually a lessons learned session is led by 📝trained facilitators or 📝External Consultants
-    - NIST SP 800-61 offers a series of questions to use in the lessons learned process:
+    - 📂NIST SP 800-61 offers a series of questions to use in the lessons learned process:
         - exactly what happened and at what times?
         - how well did staff and management perform in dealing with the incident?
         - were documented procedures followed?
@@ -975,7 +974,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
         - During a full interruption test, the team takes down the primary site and confirms that the disaster recovery site is capable of handling regular operations. The full interruption test is the most thorough test but also the most disruptive.
      
 - 7.12.6 Communication
-    - **DR Comunication**: DR testing communication encompasses various internal and external stakeholders with different needs and communication methods/preferences
+    - ❄️**DR Comunication**: DR testing communication encompasses various internal and external stakeholders with different needs and communication methods/preferences
         - 🔥Internal Stakeholders:
             - Disaster Recovery Team: Reliable real-time channels for real-time cordination, problem-solving and decision making e.g Chats, Teams, Zoom
             - Managment: Needs periodic updates on progress and potential impact on normal operations. e.g emails
@@ -1008,26 +1007,26 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
 - Physical access control mechanisms deployed to control, monitor and manage access to a facility
     - Sections, divisions, or areas within a site should be clearly designated as public, private, or restricted with appropriate sinage
 - 7.14.1 Perimeter security controls
-    - A fence is a perimeter-defining device and can consist of:
+    - 🍮**Fence** is a perimeter-defining device and can consist of:
         - stripes painted on the ground
         - chain link fences
         - barbed wire
         - concrete walls
         - invisible perimeters using laser, motion, or heat detection
-    - **Perimeter intrusion detection and assessment system (PIDAS)**: an advanced form of fencing that has two or three fences used in concert to optimize security
-    - **Gate**: controlled exit and entry point in a fence or wall
-    - **turnstile**: form of gate that prevents more than one person at a time from gaining entry and often restricts movement in one direction
-    - **access control vestibule**: (AKA mantrap) a double set of doors that is often protected by a guard or other physical layout preventing piggybacking and can trap individuals at the discretion of security personnel
-    - **Security bollards**: a key element of physical security, which prevent vehicles from ramming access points and entrances
-    - **Barricades**: in addition to fencing, are used to control both foot traffic and vehicles
-    - Lighting is the most commonly used form of perimeter security control providing the security benefit of deterrence (primary purpose is to discourage casual intruders, trespassers etc)
+    - 🍮**Perimeter intrusion detection and assessment system (PIDAS)**: an advanced form of fencing that has two or three fences used in concert to optimize security
+    - 🍮**Gate**: controlled exit and entry point in a fence or wall
+    - 🍮**Turnstile**: form of gate that prevents more than one person at a time from gaining entry and often restricts movement in one direction
+    - 🍮**Access control vestibule**: (AKA mantrap) a double set of doors that is often protected by a guard or other physical layout preventing piggybacking and can trap individuals at the discretion of security personnel
+    - 🍮**Security bollards**: a key element of physical security, which prevent vehicles from ramming access points and entrances
+    - 🍮**Barricades**: in addition to fencing, are used to control both foot traffic and vehicles
+    - 🍮**Lighting** is the most commonly used form of perimeter security control providing the security benefit of deterrence (primary purpose is to discourage casual intruders, trespassers etc)
     - All physical security controls ultimately rely on personnel to intervene and stop actual intrusions and attacks
 - 7.14.2 Internal security controls
     - In all circumstances and under all conditions, the most important aspect of security is protecting people
     - If a facility is designed with restricted areas to control physical security, a mechanism to handle visitors is required
-    - **Visitor logs**: manual (or automated) list of nonemployee entries or access to a facility/location
+    - 🏀**Visitor logs**: manual (or automated) list of nonemployee entries or access to a facility/location
         - physical access logs can establish context for interpretation of logical logs
-    - Locks: designed to prevent access without proper authorization; a lock is a crude form of an identification and authorization mechanism
+    - 🏀**Locks**: designed to prevent access without proper authorization; a lock is a crude form of an identification and authorization mechanism
 
 [7.15](#7.15) Address personnel safety and security concerns (OSG-9 Chpt 16)
 - 7.15.1 Travel
@@ -1049,15 +1048,15 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
     - If a duress system is activated accidentally code word(s) can be used to assure responding personnel it was an accident, or omit the word(s) keying an actual response
 
 - **Trusted Computing Base (TCB)**: This encompasses all the hardware, software, and firmware that are critical to the system's security. It includes the Security Kernel but also includes other components involved in the security of the system.
-- **Security Kernel**: The actual implementation within the OS that enforces the security policies and manages the interfaces between the hardware, OS, and other parts of the system. It is part of an operating system (OS) responsible for providing security interfaces among the hardware, OS, and other parts of the computing system
+- 📘**Security Kernel**: The actual implementation within the OS that enforces the security policies and manages the interfaces between the hardware, OS, and other parts of the system. It is part of an operating system (OS) responsible for providing security interfaces among the hardware, OS, and other parts of the computing system
     - **Ring Protection**:Ring protection is a feature of CPU architectures that provides a way to enforce different levels of privilege or protection for different parts of the system. It uses a hierarchy of privilege levels, typically referred to as "rings," where Ring 0 (the innermost ring) has the highest level of privilege and direct access to hardware, while Ring 3 (the outermost ring) has the lowest level of privilege and is used for user applications.
-        - Ring 0 The kernel lies within the central ring. contains the operating system's kernel
-        - Ring 1 Conceptually contains other operating system components.
-        - Ring 2 is used for drivers and protocols.
-        - Ring 3 User-level programs and applications run at 3. 
+        - 🎈Ring 0 The kernel lies within the central ring. contains the operating system's kernel
+        - 🎈Ring 1 Conceptually contains other operating system components.
+        - 🎈Ring 2 is used for drivers and protocols.
+        - 🎈Ring 3 User-level programs and applications run at 3. 
     - Note📝 Rings 0 through 2 run in privileged mode while Ring 3 runs in user mode. Layers 1 and 2 contain device drivers but are not normally implemented in practice, since they are often collapsed into layer 0. It is important to note that many modern operating systems do not fully ­implement this model.
     - **Reference Monitor**: This concept refers to an abstract model that 🔥enforces access control policies in a system. It's a theoretical component that must be implemented by the Security Kernel.
-- **DDOS Attacks**: Performing a load or stress test to validate how applications/systems performs under both expected and extreme loads to know what a denial-of-service attack based on load will look like is a good practice.
+- 🔴**DDOS Attacks**: Performing a load or stress test to validate how applications/systems performs under both expected and extreme loads to know what a denial-of-service attack based on load will look like is a good practice.
     - 🔥SYN Flood: In a SYN flood attack, the attacker sends a large number of SYN packets to a system but does not respond to the SYN/ACK packets, attempting to overwhelm the attacked system’s connection state table with half-open connections. Many firewalls have a built-in anti–SYN flood defense (SYN-ACK Spoofing) that responds to SYNs on behalf of protected systems. It is a TCP attack.
     - 🔥Smurf: A Smurf attack is a type of DDoS (Distributed Denial of Service) attack where an attacker sends a large number of ICMP echo request packets to a broadcast address, with the source address spoofed to that of the target.
     - 🔥Ping Flood (or ICMP Flood): attack involves overwhelming the target with a large number of ICMP echo request (ping) packets. Unlike a Smurf attack, it doesn't rely on amplification via broadcast addresses
@@ -1069,7 +1068,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
     - 🔥Land: In a land attack, the attack sends spoofed SYN packets to a victim using the victim’s IP address as both the source and destination IP address. A variant is a banana attack, which redirects outgoing messages from a system back to the system, shutting down all external communication (legacy).
     - 🔥DNS Amplification Attack: where an attacker sends false requests to third-party DNS servers with a forged source IP address belonging to the targeted system. Because the attack uses UDP requests, there is no three-way handshake. The attack packets are carefully crafted to elicit a lengthy response from a short query. The purpose of these queries is to generate responses headed to the target system that are sufficiently large and numerous enough to overwhelm the targeted network or system.
 
-- **Man-­in-­the-­middle attack**: (sometimes called an on-­path attack) occurs when a malicious user is able to gain a logical position between the two endpoints of a communications link. Although it takes a significant amount of sophistication on the part of an attacker to complete a man-­in-­the middle attack, the amount of data obtained from the attack can be significant.
+- 🔴**Man-­in-­the-­middle attack**: (sometimes called an on-­path attack) occurs when a malicious user is able to gain a logical position between the two endpoints of a communications link. Although it takes a significant amount of sophistication on the part of an attacker to complete a man-­in-­the middle attack, the amount of data obtained from the attack can be significant.
     - 🔥IP Spoofing: In this attack, an attacker sends IP packets from a false (spoofed) source address to impersonate a trusted host. The attacker intercepts and modifies traffic between two parties who believe they are communicating directly with each other.
     - 🔥DNS Spoofing (DNS Cache Poisoning): This involves corrupting the DNS resolution process to redirect users to malicious websites. The attacker manipulates the DNS server to cache incorrect IP address information, leading users to unintended destinations.
     - 🔥ARP Spoofing (ARP Cache Poisoning): Address Resolution Protocol (ARP) spoofing occurs when an attacker sends fake ARP messages over a local area network, associating their MAC address with the IP address of a legitimate network device. This enables the attacker to intercept data intended for the targeted device.
