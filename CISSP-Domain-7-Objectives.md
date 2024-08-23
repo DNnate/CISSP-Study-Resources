@@ -477,7 +477,7 @@ of litigation is imminent.
 - 7.6.6 Remediation
     - ❄️**Remdiation**: changes to a system's config to immediately limit or reduce the change of reoccurance of an incident;
     - Remediation stage: personnel look at the incident, identify what allowed it to occur, and then implement methods to 📝prevent it from happening again
-    - Remediation includes performing a root cause analysis (which examines the incident to determine what allowed it to happen), and if the root cause analysis identifies a vulnerability that can be mitigated, this stage will recommend a change
+    - Remediation includes performing a 📝root cause analysis (which examines the incident to determine what allowed it to happen), and if the root cause analysis identifies a vulnerability that can be mitigated, this stage will recommend a change
 
 - 7.6.7 ❄️**Lessons Learned**
     - Lessons learned stage: an all-encompassing view of the situation related to an incident, where personnel, including the IR team and other key stakeholders, examine the incident and the response to see if there are any lessons to be learned
