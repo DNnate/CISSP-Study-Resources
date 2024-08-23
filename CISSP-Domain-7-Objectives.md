@@ -783,6 +783,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
         - 📁**cold sites**: standby facilities large enough to handle the processing load of an organization and equipped with appropriate electrical and environmental support systems
             - a cold site has NO COMPUTING FACILITIES (hardware or software) preinstalled. Installation can take weeks!
             - a cold site has no active broadband comm links
+            - A rented space with power, cooling, and connectivity that can accept equipment as part of a recovery effort.
             - advantages:
                 - a cold site is the LEAST EXPENSIVE OPTION and perhaps the most practical
             - disadvantages:
@@ -791,12 +792,14 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
                 - A rented space with power, cooling, and connectivity that can accept equipment as part of a recovery effort
         - 📁**warm sites**: a warm site is better than a cold site because, in addition to the shell of a building, basic equipment is installed
             - a warm site contains the data links and preconfigured equipment necessary to begin restoring operations, but no usable data for information
+            - Warm site relies on shared storage and backups for recovery.
             - ✏️contain workstations, servers, and the communications circuits necessary to achieve operational status but require the 🎆restoration of data from backup.
             - unlike hot sites, however, warm sites do not typically contain copies of the client’s data
             - activation of a warm site typically takes at least 12 hours from the time a disaster is declared
             - It relies on shared storage and backups for recovery
         - 📁**hot sites**: a fully operational offsite data processing facility equipped with hardware and software; a backup facility that is maintained in constant working order, with a full complement of servers, workstations, and comm links
             - a hot site is usually a subscription service
+            - A site with dedicated storage and real-time data replication, often with shared equipment that allows restoration of service in a very short time.
             - the data on the primary site servers is periodically or continuously replicated to corresponding servers at the hot site, ensuring that the hot site has up-to-date data
             - ✏️contain workstations, servers, and the communications circuits necessary to achieve operational status as well as 🎆current data or near-­real-­time copies of the operational data
             - advantages:
@@ -806,7 +809,9 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
                 - has (by definition) copies of all production data, and therefore increases your attack surface
                 - A site with dedicated storage and real-time data replication, often with shared equipment that allows restoration of service in a very short time
         - 📁**Mobile sites**: non-mainstream alternatives to traditional recovery sites; usually configured as cold or warm sites, if your DR plan depends on a workgroup recovery strategy, mobile sites are an excellent way to implement that approach
-        - Cloud computing: many orgs now turn to cloud computing as their preferred disaster recovery option
+            -  Non-mainstream alternatives to traditional recovery sites. They typically consist of self-contained trailers or other easily relocated units.
+            -  Mobile sites are usually configured as cold sites or warm sites, depending on the disaster recovery plan they are designed to support. 
+        - 📁**Cloud computing**: many orgs now turn to cloud computing as their preferred disaster recovery option
             - some companies that maintain their own datacenters may choose to use these IaaS options as backup service providers
     - Note: A hot site is a subscription service, while a redundant site, in contrast, is a site owned and maintained by the org (and a redudant site may be "hot" in terms of capabilities)
         - the exam differentiates between a hot site (a subscription service) and a redundant site (owned by the organization)
