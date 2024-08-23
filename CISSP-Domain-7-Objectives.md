@@ -319,11 +319,11 @@ of litigation is imminent.
      - Impact
   
 - 7.2.7 User and Entity Behavior Analytics (UEBA)
-    - **UEBA (aka UBA)**: focuses on the analysis of user and entity behavior as a way of detecting inappropriate or unauthorized activity (e.g. fraud, malware, insider attacks etc); analysis engines are typically included with SIEM solutions or may be added via subscription
-    - **Behavior-based detection**: AKA statistical intrusion, anomaly, and heuristics-based detection, starts by creating a baseline of normal activities and events; once enough baseline data has been accumulated to determine normal activity, it can detect abnormal activity (that may indicate a malicious intrusion or event)
+    - ✈️**UEBA (aka UBA)**: focuses on the analysis of user and entity behavior as a way of detecting inappropriate or unauthorized activity (e.g. fraud, malware, insider attacks etc); analysis engines are typically included with SIEM solutions or may be added via subscription
+    - ✈️**Behavior-based detection**: (AKA statistical intrusion, anomaly, and heuristics-based detection), starts by creating a baseline of normal activities and events; once enough baseline data has been accumulated to determine normal activity, it can detect abnormal activity (that may indicate a malicious intrusion or event)
     - Behavior-based IDSs use the baseline, profiles, activity statistics, and heuristic evaluation techniques to compare current activity against previous activity to detect potentially malicious events
-    - **Static code scanning techniques**: the scanner scans code in files, similar to white box testing
-    - **Dynamic techniques**: the scanner runs executable files in a sandbox to observe their behavior.
+    - ✈️**Static code scanning techniques**: the scanner scans code in files, similar to white box testing
+    - ✈️**Dynamic techniques**: the scanner runs executable files in a sandbox to observe their behavior.
 
 [7.3](#7.3) Perform Configuration Management (CM) (e.g. provisioning, baselining, automation) (OSG-9 Chpt 16)
 - **Configuration Management (CM)**: collection of activities focused on establishing and maintaining the integrity of IT products and info systems, via the control of processes for initializing, changing, and monitoring the configurations of those products/systems through their lifecycle; the process of identifying, controlling, and verifying the configuration of systems and components throughout their lifecycle
@@ -331,12 +331,12 @@ of litigation is imminent.
     - CM helps ensure that systems are deployed in a secure, consistent state and that they stay in a secure, consistent state throughout their lifecycle
 - **Provisioning**: taking a particular config baseline, making additional or modified copies, and placing those copies into the environment in which they belong; refers to installing and configuring the operating system and needed apps on new systems
     - new systems should be configured to reduce vulnerabilities introduced via default configurations; the key is to harden a system based on intended useage
-- **Hardening a system**: process of applying security configurations, and locking down various hardware, communications systems, software (e.g. OS, web/app server, apps etc); normally performed based on industry guidelines and benchmarks like the Center for Internet Securit (CIS); 
+- **Hardening a system**: process of applying security configurations, and locking down various hardware, communications systems, software (e.g. OS, web/app server, apps etc); normally performed based on industry guidelines and benchmarks like the Center for Internet Security ⚖️(CIS); 
     - makes it more secure than the default configuration and includes the following:
-        - disable all unused services
-        - close all unused logical ports
-        - remove all unused apps
-        - change default passwords
+        - 🎈disable all unused services
+        - 🎈close all unused logical ports
+        - 🎈remove all unused apps
+        - 🎈change default passwords
 - **Baseline**: in the context of configuration management, it is the starting point or starting config for a system
     - an easy way to think of a baseline is as a list of services; an OS baseline identifies all the settings to harden specific systems
     - many organizations use images to deploy baselines; baseline images improve the security of systems by ensuring that desired security settings are always configured correctly
