@@ -331,7 +331,7 @@ of litigation is imminent.
     - CM helps ensure that systems are deployed in a secure, consistent state and that they stay in a secure, consistent state throughout their lifecycle
 - **Provisioning**: taking a particular config baseline, making additional or modified copies, and placing those copies into the environment in which they belong; refers to installing and configuring the operating system and needed apps on new systems
     - new systems should be configured to reduce vulnerabilities introduced via default configurations; the key is to harden a system based on intended useage
-- **Hardening a system**: process of applying security configurations, and locking down various hardware, communications systems, software (e.g. OS, web/app server, apps etc); normally performed based on industry guidelines and benchmarks like the Center for Internet Security ⚖️(CIS); 
+- **Hardening a system**: process of applying security configurations, and locking down various hardware, communications systems, software (e.g. OS, web/app server, apps etc); normally performed based on industry guidelines and benchmarks like the Center for Internet Security ⚖️(CIS); The CIS benchmarks provide a useful security standard and baseline to assess systems against or to configure them to. Organizations can adapt and modify the baseline to meet their specific needs while speeding up deployment by using an accepted industry standard. 
     - makes it more secure than the default configuration and includes the following:
         - 🎈disable all unused services
         - 🎈close all unused logical ports
