@@ -423,12 +423,12 @@ of litigation is imminent.
     - Defend against future attacks
 
 - An important distinction needs to be made to know when an incident response process should be initiated: events take place continually, and the vast majority are insignificant; however, events that lead to some type of adversity can be deemed incidents, and those incidents should trigger an org's incident response process steps: 🟡PACERL
-    - *️⃣**Preparation**: includes developing the IR process, assigning IR team members, and everything related to what happens when an incident is identified; preparation is critical, and will anticipate the steps to follow
-    - *️⃣**Analysis:** Gathering and analyzing information about the incident to determine its scope, impact, and root cause (e.g., by interviewing witnesses, collecting and analyzing evidence, and reviewing system logs)
-    - *️⃣**Containment:** Limiting the impact of the incident and preventing further damage (e.g., by isolating affected systems, changing passwords, and implementing security controls)
-    - *️⃣**Eradication:** Removing the cause of the incident from the environment (e.g., by removing malware, patching vulnerabilities, and disabling compromised accounts)
-    - *️⃣**Recovery:** Restoring systems and data to their normal state (e.g., by restoring from backups, rebuilding systems, and re-enabling compromised accounts)
-    - *️⃣**Lessons Learned:** Documenting the incident and learning from it to improve future responses (e.g., by identifying areas where the incident response process can be improved and by sharing lessons learned with other organizations). Advisable to recruit an independent moderator or external consultant to facilitate the session.
+    - 💢**Preparation**: includes developing the IR process, assigning IR team members, and everything related to what happens when an incident is identified; preparation is critical, and will anticipate the steps to follow
+    - 💢**Analysis:** Gathering and analyzing information about the incident to determine its scope, impact, and root cause (e.g., by interviewing witnesses, collecting and analyzing evidence, and reviewing system logs)
+    - 💢**Containment:** Limiting the impact of the incident and preventing further damage (e.g., by isolating affected systems, changing passwords, and implementing security controls)
+    - 💢**Eradication:** Removing the cause of the incident from the environment (e.g., by removing malware, patching vulnerabilities, and disabling compromised accounts)
+    - 💢**Recovery:** Restoring systems and data to their normal state (e.g., by restoring from backups, rebuilding systems, and re-enabling compromised accounts)
+    - 💢**Lessons Learned:** Documenting the incident and learning from it to improve future responses (e.g., by identifying areas where the incident response process can be improved and by sharing lessons learned with other organizations). Advisable to recruit an independent moderator or external consultant to facilitate the session.
 
 - The following steps (🔥Detection, 🔥Response, 🔥Mitigation, 🔥Reporting, 🔥Recovery, 🔥Remediation, and 🔥Lessons Learned) are on the exam 🟡DRMRRRL 
 - 7.6.1 Detection
@@ -455,7 +455,8 @@ of litigation is imminent.
     - The mitigation phase of incident response focuses on actions that can contain the damage incurred during an incident. This includes 📝limiting the scope and or effectiveness of the incident. 
 
 - 7.6.4 ❄️**Reporting**
-    - Reporting occurs throughout the incident response process 
+    - Reporting occurs throughout the incident response process
+    - During the Reporting phase, incident responders assess their obligations under laws and regulations to report the incident to government agencies and other regulators.
     - Once an incident is mitigated, formal reporting occurs because numerous stakeholders often need to understand what has happened
     - Jurisdictions may have specific laws governing the protection of personally identifiable information (PII), and must report if it's been exposed
     - Additionally, some third-party standards, such as the Payment Card Industry Data Security Standard (PCI DSS), require orgs to report certain security incidents to law enforcement
