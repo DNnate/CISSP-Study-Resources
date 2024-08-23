@@ -1012,6 +1012,7 @@ taxed by inefficient implementations of software and VMs.
 - 🔴**Compensatory Access Control**:
      - Provide alternative methods to achieve security objectives when primary controls are not feasible.
      - Implementing additional layers of authentication when standard methods are insufficient.
+     - A compensating control attempts to make up for 📝problems with an existing control or to add additional controls to improve a primary control.
 - 🔴**Corrective Access Control**:
      - Correct or mitigate the impact of security incidents after they have occurred.
      - Examples include Incident Response Plans/Procedures for responding to and managing security breaches, Data Backup and Recovery to restore data to its original state following loss or corruption and Patch Management to apply software patches and updates to fix vulnerabilities.
