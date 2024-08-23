@@ -555,6 +555,7 @@ of litigation is imminent.
 - 7.7.1 Firewalls (e.g. next generation, web application, network)
     - Firewalls are preventive and technical controls: 
     - Types of firewalls:
+        - 📗Packet Filter: Static packet filtering firewalls are known as first-generation firewalls and do not track connection state. 
         - 📗Application gateway firewall: filters traffic based on specific application requirements
         - 📗Circuit-level gateway firewall: designed to provide connection security to internal and external computers in a network's session layer, they filter traffic based on the communications circuit; they do not engage in packet filtering based on packet contents
         - 📗Third-generation firewalls: (AKA stateful inspection firewalls and dynamic packet filtering firewalls) filter traffic based on its state within a stream of traffic. Stateful protocol analysis uses blacklists, whitelists, thresholds, and program code viewing to provide various security capabilities.
