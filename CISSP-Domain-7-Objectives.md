@@ -692,6 +692,7 @@ of litigation is imminent.
     - it isn’t possible to eliminate risks, and it isn’t possible to eliminate all vulnerabilities
     - a vuln managment program helps ensure that an org is regularly evaluating vulns and mitigating those that represent the greatest risk
     - one of the most common vulnerabilities within an org is an unpatched system, and so a vuln management program will often work in conjunction with a patch management program
+    - Vulnerability scanners are used to check systems for known issues and are part of an overall vulnerability management program.
 
 [7.9](#7.9) Understand and participate in change management processes (OSG-9 Chpt 16)
 - **Change management**: formal process an org uses to transition from the current state to a future state; typically includes mechanisms to request, evaluate, approve, implement, verify, and learn the change; ensures that the costs and benefits of changes are analyzed and changes are made in a controlled manner to reduce risks
