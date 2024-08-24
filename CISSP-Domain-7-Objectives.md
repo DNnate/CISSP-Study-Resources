@@ -212,6 +212,8 @@ of litigation is imminent.
 
 - 7.2.1 Intrusion detection and prevention
     - **Intrusion**: a security event, or a combination of multiple security events that constitutes an incident; occurs when an attacker attempts to bypass or can bypass or thwart security mechanisms and access an organization’s resources without the authority to do so
+        - 🎈A false negative occurs when there is an attack but the IDS/IPS doesn't detect it and raise an alarm.
+        - 🎈A false positive occurs when an IDS/IPS incorrectly raises an alarm, even though there isn't an attack. 
     - **Intrusion detection**: a specific form of monitoring events, usually in real time, to detect abnormal activity indicating a potential incident or intrusion
     - 🍀**Intrusion Detection System (IDS)**: a security service that monitors and analyzes network or system events for the purpose of finding/providing realtime/neartime warnings of unauthorized attempts to access system resources; automates the inspection of logs and real-time system events to detect intrusion attempts and system failures. It provides only 📝_passive_ responses, such as alerting administrators to a suspected attack
         - an IDS is intended as part of a defense-in-depth security plan
