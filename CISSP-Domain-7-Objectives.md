@@ -908,7 +908,7 @@ of litigation is imminent.
     - 🚡Identify controls
     - 🚡Create contingency strategies
     - 🚡Develop contingency plan
-    - 🚡Ensure testing, training, and exercises
+    - 🚡Ensure testing, training, and exercises (Conducting regular business continuity exercises, such as practical continuity work, keeps knowledge fresh)
     - 🚡Maintenance
 
 - Four key measurements for BCP and DRP procedures:
