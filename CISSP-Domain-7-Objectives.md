@@ -92,13 +92,13 @@ of litigation is imminent.
     - 📕**regulatory**: investigation initiated by a government regulator when there is reason to believe an organization is not in compliance
         -  this type of investigation varies significantly in scope and could look like any of the other three types of investigation depending on the severity of the allegations
         - as with criminal investigations, it is key to preserve evidence, and assist the regulator’s investigators
-- **Electronic Discovery**: In 🧠legal proceedings, each side has a duty to preserve evidence related to the case and, through the discovery process, share information with their adversary in the proceedings. This discovery process applies to both paper records and electronic records, and the electronic discovery (or eDiscovery) process facilitates the processing of electronic information for disclosure. The Electronic Discovery Reference Model (EDRM) describes a standard process for conducting eDiscovery with nine aspects:
+- ❄️**Electronic Discovery**: In 🧠legal proceedings, each side has a duty to preserve evidence related to the case and, through the discovery process, share information with their adversary in the proceedings. This discovery process applies to both paper records and electronic records, and the electronic discovery (or eDiscovery) process facilitates the processing of electronic information for disclosure. The Electronic Discovery Reference Model (EDRM) describes a standard process for conducting eDiscovery with nine aspects:
     - ✏️Information Governance: Ensures that information is well organized for future eDiscovery efforts.
     - ✏️Identification: Locates the information that may be responsive to a discovery request when the organization believes that litigation is likely.
     - ✏️Preservation: Ensures that potentially discoverable information is protected against alteration or deletion.
     - ✏️Collection: Gathers the relevant information centrally for use in the eDiscovery process.
     - ✏️Processing: Screens the collected information to perform a “rough cut” of irrelevant information, reducing the amount of information requiring detailed screening.
-    - ✏️Review: Examines the remaining information to determine what information is relevant to the request and removing any information protected by attorney-­client privilege.
+    - ✏️Review: Examines the remaining information to determine what information is relevant to the request and removing any information protected by 📝attorney-­client privilege.
     - ✏️Analysis: Performs deeper inspection of the content and context of remaining information.
     - ✏️Production: Places the information into a format that may be shared with others and delivers it to other parties, such as opposing counsel.
     - ✏️Presentation: Displays the information to witnesses, the court, and other parties.
