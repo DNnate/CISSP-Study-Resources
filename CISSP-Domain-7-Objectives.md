@@ -1092,23 +1092,25 @@ of litigation is imminent.
     - 🏀**Locks**: designed to prevent access without proper authorization; a lock is a crude form of an identification and authorization mechanism. Key locks are the most common and inexpensive form of physical access control device for both interior and exterior use. 
 
 [7.15](#7.15) Address personnel safety and security concerns (OSG-9 Chpt 16)
-- 7.15.1 Travel
+- 7.15.1 🔴Travel
     - Training personnel on safe practices while traveling can increase their safety and prevent security incidents:
         - sensitive data: devices traveling with the employee shouldn’t contain sensitive data
         - malware and monitoring devices: possibilities include physical devices being installed in a hotel room of a foreign country
         - free wi-fi: sounds appealing but can be a used to capture a user's traffic
         - VPNs: employers should have access to VPNs that they can use to create secure connections
 
-- 7.15.2 Security training and awareness
+- 7.15.2 🔴Security training and awareness
     - Orgs should add personnel saftey and security topics to their training and awareness program and help ensure that personnel are aware of duress systems, travel best practices, emergency management plans, and general safety and security best practices
+    - security training and awareness programs usually focus on broader and more universally applicable topics like insider threats, which address risks from employees or contractors; social media impact, which covers the risks of sharing information online; and 2FA fatigue, which relates to the weariness or complacency in using two-factor authentication. These are relevant to a wider audience and are crucial for overall organizational security awareness. 
     - Training programs should stress the importance of protecting people
 - 7.15.3 Emergency management
     - Emergency management plans and practices help an organization address personnel safety and security after a disaster
     - Safety of personnel should be a primary consideration during any disaster
-- 7.15.4 Duress
+- 7.15.4 💥Duress
     - An example of a duress system is a button that sends a distress call
     - Duress systems are useful when personnel are working alone
     - If a duress system is activated accidentally code word(s) can be used to assure responding personnel it was an accident, or omit the word(s) keying an actual response
+    - Cipher lock: Some cipher locks can be programmed with more than one code. One code can open the door, and another code can open the door and also raise a silent duress alarm. 
 
 - **Trusted Computing Base (TCB)**: This encompasses all the hardware, software, and firmware that are critical to the system's security. It includes the Security Kernel but also includes other components involved in the security of the system.
 - 📘**Security Kernel**: The actual implementation within the OS that enforces the security policies and manages the interfaces between the hardware, OS, and other parts of the system. It is part of an operating system (OS) responsible for providing security interfaces among the hardware, OS, and other parts of the computing system
