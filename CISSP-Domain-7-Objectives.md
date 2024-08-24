@@ -764,6 +764,7 @@ of litigation is imminent.
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - once an incremental backup is complete, the archive bit on all duplicated files is reset, turned off, or set to 0
             - Incremental backups provide the option that includes the 📝smallest amount of data. In this case, that would be only the data modified since the most recent incremental backup.
+            -  Incremental backups are created faster than differential backups because of the number of files it is necessary to back up each time.
         - **📁Differential backup**: changes since the last full backup
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - unlike full and incremental backups, the differential backup process does not change the archive bit
@@ -794,7 +795,7 @@ of litigation is imminent.
     - Three main techniques used to create offsite copies of DB content: electronic vaulting, remote journaling, and remote mirroring
         - **🔥electronic vaulting**: where database backups are moved to a remote site using bulk transfers, but it does not do so in real time.
         - **🔥remote journaling**: data transfers are performed in a more expeditious manner; remote journaling is similar to electronic vaulting in that transaction logs transferred to the remote site are not applied to a live database server but are maintained in a backup device. Remote journaling options send logs, rather than full data replicas, to the remote location.
-        - **🔥remote mirroring**: the most advanced db backup solution, and the most expensive, with remote mirroring, a live db server is maintained at the backup site; the remote server receives copies of the db modifications at the same time they are applied to the production server at the primary site. When you use remote mirroring, an exact copy of the database is maintained at an alternative location. You keep the remote copy up to date by executing all transactions on both the primary and remote sites at the 📝same time.
+        - **🔥remote mirroring**: the most advanced db backup solution, and the most expensive, with remote mirroring, a live db server is maintained at the backup site; the remote server receives copies of the db modifications at the same time they are applied to the production server at the primary site. When you use remote mirroring, an exact copy of the database is maintained at an alternative location. You keep the remote copy up to date by executing all transactions on both the primary and remote sites at the 📝same time. Remote mirroring is the only backup option in which a live backup server at a remote site maintains a bit-for-bit copy of the contents of the primary server, synchronized as closely as the latency in the link between primary and remote systems will allow.
 
 - **Backup Tape Rotation** There are several commonly used tape rotation strategies for backups:
 	- ⚒️the Grandfather-­Father-­Son (GFS) strategy: This is a tiered backup scheme that uses daily (son), weekly (father), and monthly (Grandfather) backup tapes.
