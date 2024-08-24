@@ -1026,6 +1026,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
     - 🍮**Gate**: controlled exit and entry point in a fence or wall
     - 🍮**Turnstile**: form of gate that prevents more than one person at a time from gaining entry and often restricts movement in one direction
     - 🍮**Access control vestibule**: (AKA mantrap) a double set of doors that is often protected by a guard or other physical layout preventing piggybacking and can trap individuals at the discretion of security personnel
+        - A mantrap uses two sets of doors, only one of which can open at a time. A mantrap is a type of 📝preventive access control, although its implementation is a physical control.
     - 🍮**Security bollards**: a key element of physical security, which prevent vehicles from ramming access points and entrances
     - 🍮**Barricades**: in addition to fencing, are used to control both foot traffic and vehicles
     - 🍮**Lighting** is the most commonly used form of perimeter security control providing the security benefit of deterrence (primary purpose is to discourage casual intruders, trespassers etc)
