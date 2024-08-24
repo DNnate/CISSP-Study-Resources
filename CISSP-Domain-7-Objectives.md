@@ -740,8 +740,7 @@ of litigation is imminent.
 - **Recovery strategy**: a plan for restoring critical business components, systems, and operations following a disruption
 - ❄️**Disaster recovery (DR)**: set of practices that enables an organization to minimize loss of, and restore, mission-critical technology infrastructure after a catastrophic incident. A disaster is any event that can disrupt normal IT operations and can be either natural or manmade. Hacking and terrorism are examples of manmade disasters, while flooding and fire are examples of natural disasters. Tip❗The term 100-­year flood plain is used to describe an area where flooding is expected once every 100 years. It is, however, more mathematically correct to say that this label indicates a 1 percent probability of flooding in any given year❗
      - 👖Natural disasters: earthquakes, floods, storms, fires, tsunamis, and volcanic eruptions.
-     - 👖Human-­made disasters: Explosions, electrical fires, terrorist acts, power outages, other utility failures, infrastructure
-failures, hardware/software failures, labor difficulties, theft, hacking incident and vandalism.
+     - 👖Human-­made disasters: Explosions, electrical fires, terrorist acts, power outages, other utility failures, infrastructure failures, hardware/software failures, labor difficulties, theft, hacking incident and vandalism, power outage.
 - ❄️**Business continuity (BC)**: set of practices that enables an organization to continue performing its critical functions through and after any disruptive event
 - 7.10.1 Backup storage strategies
     - Backup strategies are driven by org goals and objectives and usually focus on backup and restore time as well as storage needs
