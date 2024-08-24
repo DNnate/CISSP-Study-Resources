@@ -240,13 +240,13 @@
     - Code review and testing is "one of the most critical components of a software testing program"
     - These procedures provide third-party reviews of the work performed by developers before moving code into a production environment, possibly discovering security, performance, bugs or reliability flaws in apps before they go live and negatively impact business operations
     - In code review, AKA peer review, developers other than the one who wrote the code review it for defects
-    - **Fagan inspections**: the most formal code review process follows six steps:
-        1) planning
-        2) overview
-        3) preparation
-        4) inspection
-        5) rework
-        6) follow-up
+        - **Fagan inspections**: the most formal code review process follows six steps:
+            1) planning
+            2) overview
+            3) preparation
+            4) inspection
+            5) rework
+            6) follow-up
     - 🔖**Static application security testing (SAST)**: evaluates the security of software without running it by analyzing either the source code or the compiled application. Static reviews are typically performed by an automated tool.
     - 🔖**Dynamic application security testing (DAST)**: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else. Dynamic testing is also used to determine how code handles variables that change over time.
 
