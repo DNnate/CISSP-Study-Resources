@@ -538,7 +538,7 @@ of litigation is imminent.
         - recording and reviewing of events captured by security cameras
         - job rotation policies
         - mandatory vacation policies (At least 1 week)
-        - audit trails (Audit trails provide documentation on what happened, when it happened, and who did it. IT personnel create audit trails by examining logs.)
+        - ✴️audit trails (Audit trails provide documentation on what happened, when it happened, and who did it. IT personnel create audit trails by examining logs.)
         - honeypots or honeynets (A honeypot is a system that typically has pseudo flaws and fake data to lure intruders. A honeynet is two or more honeypots in a network.)
         - Darknet: A monitored network without any hosts. It is a segment of unused network address space that should have no network activity and, therefore, may be easily used to monitor for illicit activity.
         - intrusion detection systems
@@ -693,6 +693,7 @@ of litigation is imminent.
     - a vuln managment program helps ensure that an org is regularly evaluating vulns and mitigating those that represent the greatest risk
     - one of the most common vulnerabilities within an org is an unpatched system, and so a vuln management program will often work in conjunction with a patch management program
     - Vulnerability scanners are used to check systems for known issues and are part of an overall vulnerability management program.
+    - A vulnerability scan will list or enumerate all security risks within a system.
 
 [7.9](#7.9) Understand and participate in change management processes (OSG-9 Chpt 16)
 - **Change management**: formal process an org uses to transition from the current state to a future state; typically includes mechanisms to request, evaluate, approve, implement, verify, and learn the change; ensures that the costs and benefits of changes are analyzed and changes are made in a controlled manner to reduce risks
