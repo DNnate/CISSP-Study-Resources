@@ -365,6 +365,7 @@ of litigation is imminent.
         - principle relies on the assumption that all users have a well-defined job description that personnel understand
         - least privilege is typically focused on ensuring that user privileges are restricted, but it also applies to apps or processes (e.g. if an app or service is compromised, the attacker can assume the service account’s privileges)
         - New user accounts should have no access permissions by default and then give each user the necessary permissions to perform their job responsibilities.
+        -  The principle of least privilege includes both rights and permissions
 - 7.4.2 Separation of Duties (SoD) and responsibilities
     - 💥**Separation of Duties (SoD)**: ensures that no single person has total control over a critical function or system
         - SoD policies help reduce fraud by requiring collusion between two or more people to perform unauthorized activity
