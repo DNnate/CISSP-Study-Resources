@@ -80,7 +80,8 @@ of litigation is imminent.
     - mitigate the impact of the incident on the organization
 - Types of investigations:
     - 📕**administrative**: an investigation that is focused on policy violations. They are internal to an orgaisation.
-        - Operational investigations have the loosest standards for collection of information. They are not intended to produce evidence because they are for internal operational purposes only. In addition to resolving the operational issue, operational investigations often conduct a root cause analysis that seeks to identify the reason that an operational issue occurred. 
+        - Operational investigations have the loosest standards for collection of information. They are not intended to produce evidence because they are for internal operational purposes only. In addition to resolving the operational issue, operational investigations often conduct a root cause analysis that seeks to identify the reason that an operational issue occurred.
+        - Internal investigations usually operate under the authority of senior managers, who grant access (i.e., voluntary surrender) to all information and resources necessary to conduct the investigation. 
     - 📕**criminal**: conducted by law enforcement, this type of investigation tries to determine if there is cause to believe (beyond a reasonable doubt) that someone committed a crime
         - the goal is to gather evidence that can be used to convict in court
         - the job of a security professional is to preserve evidence, ensure law enforcement has been contacted, and assist as necessary
@@ -1061,7 +1062,8 @@ of litigation is imminent.
         - barbed wire
         - concrete walls
         - invisible perimeters using laser, motion, or heat detection
-    - 🍮**Perimeter intrusion detection and assessment system (PIDAS)**: an advanced form of fencing that has two or three fences used in concert to optimize security
+    - 🍮**Perimeter intrusion detection and assessment system (PIDAS)**: an advanced form of fencing that has two or three fences used in concert to optimize security. A PIDAS (perimeter intrusion detection and assessment system) is a 📝fence system that has two or three fences used in concert to optimize security. The space between the fences can serve as a corridor for guard patrols or wandering guard dogs. One or more fences can support touch detection technologies. An exterior fence is used to keep animals and casual trespassers from accessing the main fence. This reduces the nuisance alarm rate (NAR) or false positives.
+    - 🍮**Sensitive compartmented information facility (SCIF)** is often used by government and military agencies, divisions, and contractors to provide a secure environment for highly sensitive data storage and computation. An SCIF is typically located within a structure, although an entire structure can be implemented as an SCIF. 
     - 🍮**Gate**: controlled exit and entry point in a fence or wall
     - 🍮**Turnstile**: form of gate that prevents more than one person at a time from gaining entry and often restricts movement in one direction
     - 🍮**Access control vestibule**: (AKA mantrap) a double set of doors that is often protected by a guard or other physical layout preventing piggybacking and can trap individuals at the discretion of security personnel
