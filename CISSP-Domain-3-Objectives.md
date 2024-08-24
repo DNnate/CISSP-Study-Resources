@@ -855,6 +855,7 @@ taxed by inefficient implementations of software and VMs.
         - a server room typically houses network equipment, backup infrastructure and servers (more archaic versions include telephony equipment)
         - server rooms should be designed to support optimal operation of IT infrastructure and to block unauthorirzed human access or intervention
         - server rooms should be located at the core of the building (avoid ground floor, top floor, or in the basement)
+        - Data centers should be located in the core of a building. Locating it on lower floors makes it susceptible to flooding and physical break-ins. Locating it on the top floor makes it vulnerable to wind and roof damage.
         - server rooms should have a single entrance (and an emergency exit)
         - server room should block unauthorized access, and entries and exits should be logged
         - datacenters are usually more protected than server rooms, and can include guards and mantraps
