@@ -378,8 +378,9 @@ of litigation is imminent.
 - 7.4.2 Separation of Duties (SoD) and responsibilities
     - 💥**Separation of Duties (SoD)**: ensures that no single person has total control over a critical function or system
         - SoD policies help reduce fraud by requiring collusion between two or more people to perform unauthorized activity
+        - A separation of duties (SoD) policy prevents a single person from controlling all elements of a process. When applied to security settings, it can prevent a person from making major security changes without assistance
         - example of how SoD can be enforced, is by dividing the security or admin capabilities and functions among multiple trusted individuals
-        - - example Separation of duties applied to a situation where the same person may not have both the ability to initiate a request and the ability to approve a request. 
+        - example Separation of duties applied to a situation where the same person may not have both the ability to initiate a request and the ability to approve a request. 
     - 💥**Two-person control**: (AKA two-man rule) requires the approval of two individuals for critical tasks
         - using two-person controls within an org ensures peer review and reduces the likelihood of collusion and fraud
         - a process that requires the concurrence of two people to perform a sensitive action
@@ -398,10 +399,11 @@ of litigation is imminent.
     - **Privileged Access Reviews**: Privileged access reviews are one of the most critical components of an organization’s security program because they ensure that only authorized users have access to perform the most sensitive operations. They should take place whenever a user with privileged access leaves the organization or changes roles as well as on a regular, recurring basis
     
 - 7.4.4 Job rotation
-    - **Job rotation**: (AKA rotation of duties) means that employees rotate through jobs or rotate job responsibilities with other employees
+    - 💥**Job rotation**: (AKA rotation of duties) means that employees rotate through jobs or rotate job responsibilities with other employees
         - using job rotation as a security control provides peer review, reduces fraud, and enables cross-training
         - job rotation policy can act as both a deterrent and a detection mechanism
-        - Job rotation and separation of duties policies help prevent fraud. 
+        - Job rotation and separation of duties policies help prevent fraud.
+        - Job rotation helps ensure that multiple people can do the same job and can help prevent the organization from losing information when a single person leaves. 
 - 7.4.5 Service Level Agreements (SLA)
     - 💢**Service Level Agreement (SLA)**: an agreement between an organization and an outside entity, such as a vendor, where the SLA stipulates performance expectations and often includes penalties if the vendor doesn’t meet these expectations. A service level agreement, or SLA, contains details about how the service will be provided, what level of outages or downtime is acceptable, and what remedies may exist in the case of outages or other issues. 
     - 💢**Memoradum of Understanding (MOU)**: documents the intention of two entities to work together toward a common goal
@@ -627,7 +629,7 @@ of litigation is imminent.
     - Some outside compliance entities (e.g. PCI DSS) require orgs to ensure that service providers comply
     - OSG also mentions that some SaaS vendors provide security services via the cloud (e.g. next-gen firewalls, UTM devices, and email gateways for spam and malware filtering)
 - 7.7.5 Sandboxing
-    - **Sandboxing**: refers to a security technique where a separate, secure environment is created to run and analyze untested or untrusted programs or code without risking harm to the host device or network; this isolated environment, known as a sandbox, effectively contains the execution of the code, allowing it to run and behave as if it were in a normal computing environment, but without the ability to affect the host system or access critical resources and data 
+    - 💥**Sandboxing**: refers to a security technique where a separate, secure environment is created to run and analyze untested or untrusted programs or code without risking harm to the host device or network; this isolated environment, known as a sandbox, effectively contains the execution of the code, allowing it to run and behave as if it were in a normal computing environment, but without the ability to affect the host system or access critical resources and data 
     - Sandboxing provides a security boundary for applications and prevents the app from interacting with other apps; can be used as part of development, integration, or acceptance testing, as part of malware screening, or as part of a honeynet
     - Using a sandbox is an example of confinement, where the system restricts the access of a particular process to limit its ability to affect other processes running on the same system.
 - 7.7.6 Honeypots/honeynets
@@ -637,7 +639,7 @@ of litigation is imminent.
     - In addition to keeping the attacker away from a production environment, the honeypot allows administrators to observe an attacker’s activity without compromising the live environment
     - 🍏**pseudoflaw** is a false vulnerability in a system that may distract an attacker. This can also be added to honeypots
 - 7.7.7 Anti-malware
-    - **Malware**: program inserted into a system with the intent of compromising the CIA of the victim's data, applications, or  OS; malicious software that negatively impacts a system
+    - 💥**Malware**: program inserted into a system with the intent of compromising the CIA of the victim's data, applications, or  OS; malicious software that negatively impacts a system
     - The most important protection against malicious code is the use of antimalware software with up-to-date signature files and heuristic capabilities
         - multi-pronged approach with antimalware software on each system in addition to filtering internet content helps protect systems from infections
         - following the principle of least privilege, ensuring users do not have admin permissions on systems won’t be able to install apps that may be malicious
