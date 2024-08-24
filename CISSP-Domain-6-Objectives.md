@@ -360,6 +360,14 @@
         - 👽number of account compromise
         - 👽number of times user attempts to visit known malicious sites
     - Develop a dashboard of metrics and track them
+    - There are many key performance indicators(KPIs) that are relevant to 📝physical security. Some are:
+        - 🩹number of successful intrusions
+        - 🩹number of successful disruptions
+        - 🩹number of unsuccessful incidents
+        - 🩹time to detect incidents
+        - 🩹time to respond to incidents
+        - 🩹level of organizational impact of incidents
+        - 🩹number of false positives (i.e., false detection alerts/alarms). 
    - 🍮**Key Risk Indicator (KRIs)**: Key risk indicators are used to tell those in charge of risk management how risky an activity is and how much impact changes are having on that risk profile. Identifying key risk indicators and monitoring them can help to identify high-risk areas earlier in their lifecycle. 
 - 6.3.4 Backup verification data
     - Managers should periodically inspect the results of backups to verify that the process functions effectively and meets the organization’s data protection needs
