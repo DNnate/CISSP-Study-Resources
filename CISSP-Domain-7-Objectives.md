@@ -858,8 +858,10 @@ of litigation is imminent.
         - 📁**Mobile sites**: non-mainstream alternatives to traditional recovery sites; usually configured as cold or warm sites, if your DR plan depends on a workgroup recovery strategy, mobile sites are an excellent way to implement that approach
             -  Non-mainstream alternatives to traditional recovery sites. They typically consist of self-contained trailers or other easily relocated units.
             -  Mobile sites are usually configured as cold sites or warm sites, depending on the disaster recovery plan they are designed to support. 
-        - 📁**Cloud computing**: many orgs now turn to cloud computing as their preferred disaster recovery option
+        - 📁**Cloud Sites**: many orgs now turn to cloud computing as their preferred disaster recovery option
             - some companies that maintain their own datacenters may choose to use these IaaS options as backup service providers
+            - Cloud service providers offer Infrastructure-as-a-Service options that are ideal backup sites.
+            - Cloud sites are alternate processing facility that take advantage of Infrastructure-as-a-Service (IaaS) providers
     - Note: A hot site is a subscription service, while a redundant site, in contrast, is a site owned and maintained by the org (and a redudant site may be "hot" in terms of capabilities)
         - the exam differentiates between a hot site (a subscription service) and a redundant site (owned by the organization)
 
