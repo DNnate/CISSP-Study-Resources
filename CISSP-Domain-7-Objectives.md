@@ -221,7 +221,13 @@ of litigation is imminent.
     - They provide 📝active response to a security event.
     - **Host-­based IDSs (HIDSs)** can monitor activity on a single system only. A drawback is that attackers can discover and disable them. HIDS may be able to detect unauthorized processes running on a system.
     - **Network-­based IDS (NIDS)** can monitor activity on a network, and an NIDS isn’t as visible to attackers. They may  not notice rogue processes
-- 7.2.2 Security Information and Event Management (SIEM)
+- 7.2.2 ❄️**Security Information and Event Management (SIEM)**
+    - NIST Special Publication 800-92, the Guide to Computer Security Log Management, describes four types of common challenges to log management:
+        - 🔨Many log sources
+        - 🔨Inconsistent log content
+        - 🔨Inconsistent timestamps
+        - 🔨Inconsistent log formats
+    - A security information and event management (SIEM) tool is designed to centralize logs from many locations in many formats and to ensure that logs are read and analyzed despite differences between different systems and devices.
     - Security Information and Event Management (SIEM): systems that collects/ingest logs from multiple sources, compile and analyze log entries, and report relevant information
         - SIEM systems are complex and require expertise to install and tune
         - Provide real-time monitoring, traffic analysis, & notification of potential attack
@@ -229,17 +235,17 @@ of litigation is imminent.
         - SIEM systems represent technology, process, and people, and each is important to overall effectiveness
         - a SIEM includes significant intelligence functionality, allowing large amounts of logged events and analysis and correlation of the same to occur very quickly
     - SIEM capabilities include:
-        - Log Centralization & Aggregation
-        - Normalization data into a common event schema
-        - Data Integrity
-        - Correlation
-        - Secure storage
-        - Analysis: Broad visibility across data, apps, identities, endpoints, and infrastructure
-        - Automated and Continous/Investigative Monitoring and response
-        - Alerting and Reporting
+        - 🎵Log Centralization & Aggregation
+        - 🎵Normalization data into a common event schema
+        - 🎵Data Integrity
+        - 🎵Correlation
+        - 🎵Secure storage
+        - 🎵Analysis: Broad visibility across data, apps, identities, endpoints, and infrastructure
+        - 🎵Automated and Continous/Investigative Monitoring and response
+        - 🎵Alerting and Reporting
 🔄 Log Collection ↪️ SIEM ↪️ SOAR ↪️ SOC Team 🔄 Log Collection
 - 7.2.2.1 Security Orchestration, Automation, and Response (SOAR)
-    - **Security Orchestration, Automation, and Response (SOAR)**: refers to a group of technologies that allow orgs to respond to some incidents automatically. It is a centralized alert and response automation tool with threat specific playbooks and runbooks. Response is in a digital work-flow format and could be automated or sem-automated (requiring a single click). It often uses AI, Machine Learning and Threat Intelligence.
+    - ❄️**Security Orchestration, Automation, and Response (SOAR)**: refers to a group of technologies that allow orgs to respond to some incidents automatically. It is a centralized alert and response automation tool with threat specific playbooks and runbooks. Response is in a digital work-flow format and could be automated or sem-automated (requiring a single click). It often uses AI, Machine Learning and Threat Intelligence.
         - 🐍**Playbook**: a document or checklist that defines how to verify/define an incident and the action taken. Playbook is the paperwork.
         - 🐍**Runbook**: implements the playbook data into an automated tool. When integrated with SIEM, some runbooks are invokable from the SIEM. Runbook is the automated technology.
     - SOAR allows security admins to define these incidents and the response, typically using playbooks and runbooks
@@ -250,7 +256,7 @@ of litigation is imminent.
 - **Syslog**: RFC 5424, the Syslog Protocol, describes the syslog protocol, which is used to send event notification messages. A centralized syslog server receives these syslog messages from devices on a network. The protocol defines how to format the messages and how to ✏️send them to the syslog server but ✏️not how to handle them. Syslog has historically been used in Unix and Linux systems. These systems include the syslogd daemon, which handles all incoming syslog messages, similar to how a SIEM server provides centralized logging. Some syslogd extensions, such as syslog-­ng and rsyslog, allow the syslog server to accept messages from any source, not just Unix and Linux systems.
     - Implementations of syslog vary, but most provide a setting for severity level, allowing configuration of a value that determines what messages are sent. Typical severity levels include debug, informational, notice, warning, error, critical, alert, and emergency. The facility code is also supported by syslog, but is associated with which services are being logged.
     - Syslog uses UDP port 📝514. TCP-based implementations of syslog typically use port 📝6514.
-- **Sampling or data extraction**, is the process of extracting specific elements from a large collection of data to construct a meaningful representation or summary of the whole. In other words, sampling is a form of data reduction that allows someone to glean valuable information by looking at only a small sample of data in an audit trail.
+- **Sampling or Data Extraction**, is the process of extracting specific elements from a large collection of data to construct a meaningful representation or summary of the whole. In other words, sampling is a form of data reduction that allows someone to glean valuable information by looking at only a small sample of data in an audit trail.
 - Both statistical and nonstatistical sampling are valid mechanisms to create summaries or overviews of large bodies of audit data. However, statistical sampling is more reliable and mathematically defensible.
      - 🍮Statistical sampling uses precise mathematical functions to extract meaningful information from a large volume of data. There is always a risk that sampled data is not an accurate representation of the whole body of data, and statistical sampling can identify the margin of error.
      - 🍮Nonstatistical sampling is discretionary sampling, or sampling at the auditor’s discretion. It doesn’t offer an accurate representation of the whole body of data and will ignore events that don’t reach the 📝clipping level threshold. However, it is effective when used to focus on specific events. Additionally, nonstatistical sampling is less expensive and easier to implement than statistical sampling.
