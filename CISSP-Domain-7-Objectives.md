@@ -296,6 +296,7 @@ of litigation is imminent.
     - Common methods used to detect or prevent data exfiltration are data loss prevention (DLP) techniques and monitoring for steganography. Note stegaography (embedded and not visible to naked eye) and watermark (visible to naked eye)
         - 🛠️Network-­based data loss prevention (DLP) system monitors outgoing traffic (egress monitoring) and can thwart data exfiltration attempts.
         - 🛠️Firewalls: For egress traffic, only Traffic with a destination address on an external network should generally be allowed. Also, All packets leaving the network should have a source address from your public IP address block.
+          - For Ingress traffic, Packets with internal source IP addresses should not be allowed to enter the network from the outside because they are likely spoofed. Packets with internal source IP addresses should be able to exit the network from the inside, and packets with external source IP addresses should be able to enter the network from the outside, as these are both normal network activity. Packets with public IP addresses should be able to pass through the firewall in both directions, assuming that they meet other security requirements.
 - 7.2.5 Log management
     - **Log management**: refers to all the methods used to collect, process, and protect log entries (see SIEM definition above)
     - **rollover logging**: allows admins to set a maximum log size, when the log reaches that max, the system begins overwriting the oldest events in the log
