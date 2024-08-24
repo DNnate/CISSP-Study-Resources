@@ -105,21 +105,21 @@ of litigation is imminent.
 - 7.1.1 Evidence collection and handling
     - Evidence (or artifacts) collection is complex, should be done by professionals, and can be thrown out of court if incorrectly handled
     - It’s important to preserve original evidence
-    - 🧚‍♂️International Organization on Computer Evidence (IOCE) six principles for media, network and software analysis:
+    - 🔥**International Organization on Computer Evidence (IOCE)** six principles for media, network and software analysis:
         - all general forensic and procedural principles must be applied to digital evidence collection 
         - seizing digital evidence shouldn't change the evidence
         - accessing original digital evidence should only be done by trained professionals
         - all activity relating to seizure, access, storage, or transfer of digital evidence must be fully documented, preserved, and available for review
         - a person in possession of digital evidence is responsible for all actions taken with respect to that evidence
         - any agency that is responsible for seizing, accessing, storing, or transferring digital evidence is responsible for compliance with these principles
-    - Scientific Working Group on Digital Evidence (SWGDE) developed principles for standardized recovery of computer-based evidence:
+    - 🔥**Scientific Working Group on Digital Evidence (SWGDE)** developed principles for standardized recovery of computer-based evidence:
         - legal system consistency
         - use of a common language
         - durability
         - ability to cross international and state boundaries
         - instill confidence in evidence integrity
         - forensic evidence applicability at the individual, agency, and country levels
-    - **ISO/IEC 27037: Guidelines for Identification, Collection, Acquisition, and Preservation of Digital Evidence**: the international standard on digital evidence handling, with four phases:
+    - 🔥**ISO/IEC 27037: Guidelines for Identification, Collection, Acquisition, and Preservation of Digital Evidence**: the international standard on digital evidence handling, with four phases:
         - identification
         - collection 
         - acquisition
@@ -174,17 +174,14 @@ of litigation is imminent.
         - 🔨written documents: checks, printed contracts, handrwitten letters/notes
         - 🔨computer systems: components, local/portable storage, memory etc
         - 🔨visual/audio: visual and audio evidence pertient to a security investigation could include photographs, video, taped recordings, and surveillance footage from security cameras
-    - Several investigative techniques can be used when conducting analysis:
-        -  media analysis: examining the bits on a hard drive that are intact dispite not having an index
-        - software analysis: focuses on an applications and malware, determining how it works and what it's trying to do, with a goal of attribution
 
 - 7.1.4 Digital forensics tools, tactics, and procedures
     - Digital forensics: the scientific examination and analysis of data from storage media so that the information can be used as part of an investigation to identify the culprit or the root cause of an incident
-    - **Live evidence**: data stored in a running system e.g. random access memory (RAM), cache, and buffers
-    - Examining a live system can change the state of the evidence 
-        - small changes like interacting with the keyboard, mouse, loading/unloading programs, or of course powering off the system, can change or eliminate live evidence
-    - Whenever a forensic investigation of a storage drive is conducted, two identical bit-for-bit copies of the original drive should be created first
-    - **eDiscovery**: the process of identifying, collecting, and producing electronic evidence in legal proceedings
+    - 🍍**Live evidence**: data stored in a running system e.g. random access memory (RAM), cache, and buffers
+        - Examining a live system can change the state of the evidence 
+            - small changes like interacting with the keyboard, mouse, loading/unloading programs, or of course powering off the system, can change or eliminate live evidence
+        - Whenever a forensic investigation of a storage drive is conducted, two identical bit-for-bit copies of the original drive should be created first
+    - 🍍**eDiscovery**: the process of identifying, collecting, and producing electronic evidence in legal proceedings
 
 - 7.1.5 Artifacts (e.g. computer, network, mobile device)
     - Forensic artifacts: remnants of a system or network breach/attempted breach, which and may or may not be relevant to an investigation or response
@@ -193,20 +190,22 @@ of litigation is imminent.
         - web browsers
         - mobile devices
         - hard drives, flash drives
-- Forensics:
-    - Media Analysis: a branch of computer forensic analysis, involves the identification and extraction of information from storage media e.g magnetic media (e.g., hard disks, tapes) or optical media (e.g., CDs, DVDs, Blu-­ray discs). Analysts should never access hard drives or other media from a live system. Instead, they should power off the system (after collecting other evidence), remove and then attach the storage device to a dedicated forensic workstation, using a write blocker. Write blockers are hardware adapters that physically sever the portion of the cable used to connect the storage device that would write data to the device, reducing the likelihood of accidental tampering with the device. The analyst should immediately calculate a cryptographic hash of the device contents and then use forensic tools to create a forensic image of the device: a bitwise copy of the data stored on the device. The analyst should then compute the cryptographic hash of that image to ensure that it is identical to the original media contents.
-    - Memory Analysis: This is a tricky undertaking, since it can be difficult to work with memory without actually altering its contents. When gathering the contents of memory, analysts should use trusted tools to generate a memory dump file and place it on a forensically prepared device, such as a USB drive. As with other types of digital evidence, the analyst should compute a cryptographic hash of the dump file to later prove its authenticity.
-    - Network Analysis: This is often difficult to reconstruct due to the volatility of network data—­if it isn’t deliberately recorded at the time it occurs, it generally is not preserved. Network forensic analysis depend on the use of preexisting security controls that log network activity.
-    - Software Analysis: review of software code, looking for backdoors, logic bombs, or other security vulnerabilities. 📝Maintenance hooks, otherwise known as backdoors, provide developers with easy access to a system, bypassing normal security controls. If not removed prior to finalizing code, they pose a significant security vulnerability if an attacker discovers the maintenance hook.
-    - Hardware/Embedded Device Analysis: This may include a review of Personal computers, Smartphones, Tablet computers, Embedded computers in cars, security systems, and other devices. Analysts conducting these reviews must have specialized knowledge of the systems under review. 
+- Forensics: Several investigative techniques can be used when conducting analysis:
+    - 💢Media Analysis: a branch of computer forensic analysis, involves the identification and extraction of information from storage media e.g magnetic media (e.g., hard disks, tapes) or optical media (e.g., CDs, DVDs, Blu-­ray discs). Analysts should never access hard drives or other media from a live system. Instead, they should power off the system (after collecting other evidence), remove and then attach the storage device to a dedicated forensic workstation, using a write blocker. Write blockers are hardware adapters that physically sever the portion of the cable used to connect the storage device that would write data to the device, reducing the likelihood of accidental tampering with the device. The analyst should immediately calculate a cryptographic hash of the device contents and then use forensic tools to create a forensic image of the device: a bitwise copy of the data stored on the device. The analyst should then compute the cryptographic hash of that image to ensure that it is identical to the original media contents.
+        - media analysis: examining the bits on a hard drive that are intact dispite not having an index 
+    - 💢Memory Analysis: This is a tricky undertaking, since it can be difficult to work with memory without actually altering its contents. When gathering the contents of memory, analysts should use trusted tools to generate a memory dump file and place it on a forensically prepared device, such as a USB drive. As with other types of digital evidence, the analyst should compute a cryptographic hash of the dump file to later prove its authenticity.
+    - 💢Network Analysis: This is often difficult to reconstruct due to the volatility of network data—­if it isn’t deliberately recorded at the time it occurs, it generally is not preserved. Network forensic analysis depend on the use of preexisting security controls that log network activity.
+    - 💢Software Analysis: review of software code, looking for backdoors, logic bombs, or other security vulnerabilities. 📝Maintenance hooks, otherwise known as backdoors, provide developers with easy access to a system, bypassing normal security controls. If not removed prior to finalizing code, they pose a significant security vulnerability if an attacker discovers the maintenance hook.
+        - software analysis: focuses on an applications and malware, determining how it works and what it's trying to do, with a goal of attribution 
+    - 💢Hardware/Embedded Device Analysis: This may include a review of Personal computers, Smartphones, Tablet computers, Embedded computers in cars, security systems, and other devices. Analysts conducting these reviews must have specialized knowledge of the systems under review. 
 - **Major Categories of Computer Crime**: A computer crime is a crime (or violation of a law or regulation) that involves a computer. The crime could be against the computer, or the computer could have been used in the actual commission of the crime.
-    - Military and intelligence attacks:attacks are launched primarily to obtain secret and restricted information from law enforcement or military and technological research sources. 
-    - Business attacks: The gathering of a competitor’s confidential intellectual property, also called corporate espionage or industrial espionage. focus on illegally jeopardizing the confidentiality, integrity, or availability of information and systems operated by a business
-    - Financial attacks:  carried out to unlawfully obtain money or services. Financial attacks may also take the form of cybercrime for hire
-    - Terrorist attacks: The purpose of a terrorist attack is to disrupt normal life and instill fear, whereas a military or intelligence attack is designed to extract secret information. 
-    - Grudge attacks:  attacks that are carried out to damage an organization or a person. The damage could be in the loss of information or information processing capabilities or harm to the organization or a person’s reputation. The motivation behind a grudge attack is usually a feeling of resentment
-    - Thrill attacks: are the attacks launched only for the fun of it. Attackers who lack the ability to devise their own attacks will often download programs that do their work for them. These attackers are often called script kiddies 
-    - Hacktivist attacks: These attackers, known as hacktivists (a combination of hacker and activist), often combine political motivations with the thrill of hacking. Anonymous and LulzSec and use tools like the Low Orbit Ion Cannon (LOIC) to create large-­scale DoS attacks. At the extreme end of hacktivism, suicide hackers engage in highly destructive activity with the knowledge that they will most likely be caught.
+    - ✈️Military and intelligence attacks:attacks are launched primarily to obtain secret and restricted information from law enforcement or military and technological research sources. 
+    - ✈️Business attacks: The gathering of a competitor’s confidential intellectual property, also called corporate espionage or industrial espionage. focus on illegally jeopardizing the confidentiality, integrity, or availability of information and systems operated by a business
+    - ✈️Financial attacks:  carried out to unlawfully obtain money or services. Financial attacks may also take the form of cybercrime for hire
+    - ✈️Terrorist attacks: The purpose of a terrorist attack is to disrupt normal life and instill fear, whereas a military or intelligence attack is designed to extract secret information. 
+    - ✈️Grudge attacks:  attacks that are carried out to damage an organization or a person. The damage could be in the loss of information or information processing capabilities or harm to the organization or a person’s reputation. The motivation behind a grudge attack is usually a feeling of resentment
+    - ✈️Thrill attacks: are the attacks launched only for the fun of it. Attackers who lack the ability to devise their own attacks will often download programs that do their work for them. These attackers are often called script kiddies 
+    - ✈️Hacktivist attacks: These attackers, known as hacktivists (a combination of hacker and activist), often combine political motivations with the thrill of hacking. Anonymous and LulzSec and use tools like the Low Orbit Ion Cannon (LOIC) to create large-­scale DoS attacks. At the extreme end of hacktivism, suicide hackers engage in highly destructive activity with the knowledge that they will most likely be caught.
 
 [7.2](#7.2) Conduct logging and monitoring activities (OSG-9 Chpts 17,21)
 
@@ -215,12 +214,12 @@ of litigation is imminent.
     - **Intrusion detection**: a specific form of monitoring events, usually in real time, to detect abnormal activity indicating a potential incident or intrusion
     - 🍀**Intrusion Detection System (IDS)**: a security service that monitors and analyzes network or system events for the purpose of finding/providing realtime/neartime warnings of unauthorized attempts to access system resources; automates the inspection of logs and real-time system events to detect intrusion attempts and system failures. It provides only 📝_passive_ responses, such as alerting administrators to a suspected attack
         - an IDS is intended as part of a defense-in-depth security plan
-        - Anomaly-based intrusion detection systems may identify a zero-day vulnerability because it deviates from normal patterns of activity. 
+        - Anomaly-based intrusion detection systems may identify a zero-day vulnerability because it deviates from normal patterns of activity.
+            - 🍊**Host-­based IDSs (HIDSs)** can monitor activity on a single system only. A drawback is that attackers can discover and disable them. HIDS may be able to detect unauthorized processes running on a system. Host-based IDSs have some difficulty with detecting and tracking down DoS attacks.
+            - 🍊**Network-­based IDS (NIDS)** can monitor activity on a network, and an NIDS isn’t as visible to attackers. They may  not notice rogue processes. Network-based IDSs are usually able to detect the initiation of an attack or the ongoing attempts to perpetrate an attack (including denial of service, or DoS). They are, however, unable to provide information about whether an attack was successful or which specific systems, user accounts, files, or applications were affected.
     - 🍀**Intrusion Prevention Systems (IPS)**: a security service that uses available info to determine if an attack is underway, alerting and also blocking attacks from reaching intended target; includes detection capabilities, you’ll also see them referred to as intrusion detection and prevention systems (IDPSs)
     - NIST SP 800-94 Guide to Intrusion Detection and Prevention Systems provides comprehensive coverage of both IDS and IPS
-    - They provide 📝active response to a security event.
-    - **Host-­based IDSs (HIDSs)** can monitor activity on a single system only. A drawback is that attackers can discover and disable them. HIDS may be able to detect unauthorized processes running on a system.
-    - **Network-­based IDS (NIDS)** can monitor activity on a network, and an NIDS isn’t as visible to attackers. They may  not notice rogue processes
+    - They provide 📝active response to a security event. 
 - 7.2.2 ❄️**Security Information and Event Management (SIEM)**
     - NIST Special Publication 800-92, the Guide to Computer Security Log Management, describes four types of common challenges to log management:
         - 🔨Many log sources
