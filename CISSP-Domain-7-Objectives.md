@@ -390,11 +390,11 @@ of litigation is imminent.
         - using job rotation as a security control provides peer review, reduces fraud, and enables cross-training
         - job rotation policy can act as both a deterrent and a detection mechanism
 - 7.4.5 Service Level Agreements (SLA)
-    - **Service Level Agreement (SLA)**: an agreement between an organization and an outside entity, such as a vendor, where the SLA stipulates performance expectations and often includes penalties if the vendor doesn’t meet these expectations
-    - **Memoradum of Understanding (MOU)**: documents the intention of two entities to work together toward a common goal
-    - **Operational Level Agreement (OLA)**: is between internal service organizations and does not involve customers.
-    - **Statement of Work (SOW)**: SOW is an addendum to a contract describing work to be performed.
-    - **Software Escrow Agreements** place a copy of the source code for a software package in the hands of an independent third party who will turn the code over to the customer if the vendor ceases business operations. Software escrow agreements place the application source code in the hands of an independent third party, thus providing firms with a “safety net” in the event a developer goes out of business or fails to honor the terms of a service agreement.
+    - 💢**Service Level Agreement (SLA)**: an agreement between an organization and an outside entity, such as a vendor, where the SLA stipulates performance expectations and often includes penalties if the vendor doesn’t meet these expectations. A service level agreement, or SLA, contains details about how the service will be provided, what level of outages or downtime is acceptable, and what remedies may exist in the case of outages or other issues. 
+    - 💢**Memoradum of Understanding (MOU)**: documents the intention of two entities to work together toward a common goal
+    - 💢**Operational Level Agreement (OLA)**: is between internal service organizations and does not involve customers.
+    - 💢**Statement of Work (SOW)**: SOW is an addendum to a contract describing work to be performed.
+    - 💢**Software Escrow Agreements** place a copy of the source code for a software package in the hands of an independent third party who will turn the code over to the customer if the vendor ceases business operations. Software escrow agreements place the application source code in the hands of an independent third party, thus providing firms with a “safety net” in the event a developer goes out of business or fails to honor the terms of a service agreement.
 
 [7.5](#7.5) Apply resource protection (OSG-9 Chpt 16)
 - Media management should consider all types of media as well as short- and long-term needs and evaluate:
@@ -805,6 +805,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
                 - A rented space with power, cooling, and connectivity that can accept equipment as part of a recovery effort
         - 📁**warm sites**: a warm site is better than a cold site because, in addition to the shell of a building, basic equipment is installed
             - a warm site contains the data links and preconfigured equipment necessary to begin restoring operations, but no usable data for information
+            - It provides a good 📝balance between cost and recovery time. It is less expensive than a hot site but facilitates faster recovery than a cold site. 
             - Warm site relies on shared storage and backups for recovery.
             - it balances cost and recovery time, allowing activation in about one week after a disaster is declared
             - ✏️contain workstations, servers, and the communications circuits necessary to achieve operational status but require the 🎆restoration of data from backup.
