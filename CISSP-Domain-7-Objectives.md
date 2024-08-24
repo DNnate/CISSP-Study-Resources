@@ -538,7 +538,7 @@ of litigation is imminent.
         - recording and reviewing of events captured by security cameras
         - job rotation policies
         - mandatory vacation policies (At least 1 week)
-        - ✴️audit trails (Audit trails provide documentation on what happened, when it happened, and who did it. IT personnel create audit trails by examining logs.)
+        - 🔮audit trails (Audit trails provide documentation on what happened, when it happened, and who did it. IT personnel create audit trails by examining logs.)
         - honeypots or honeynets (A honeypot is a system that typically has pseudo flaws and fake data to lure intruders. A honeynet is two or more honeypots in a network.)
         - Darknet: A monitored network without any hosts. It is a segment of unused network address space that should have no network activity and, therefore, may be easily used to monitor for illicit activity.
         - intrusion detection systems
