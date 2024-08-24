@@ -382,6 +382,7 @@ of litigation is imminent.
 - 7.4.3 Privilege account management
     - **Privileged Account Management (PAM)**: solutions that restrict access to privileged accounts or detect when accounts use any elevated privileges (e.g. admin accounts)
         - Microsoft domains, this includes local admin accounts, Domain and Enterprise Admins groups
+        - Microsoft domains include a privileged account management solution that grants administrators elevated privileges when they need them but restrict the access using a time-limited ticket.
         - Linux includes root or sudo accounts
     - PAM solutions should monitor actions taken by privileged accounts, new user accounts, new routes to a router table, altering config of a firewall, accessing system log and audit files, backup restore, purging log entries etc
     - **Privileged Access Reviews**: Privileged access reviews are one of the most critical components of an organization’s security program because they ensure that only authorized users have access to perform the most sensitive operations. They should take place whenever a user with privileged access leaves the organization or changes roles as well as on a regular, recurring basis
