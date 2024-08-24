@@ -236,7 +236,7 @@ of litigation is imminent.
     - A security information and event management (SIEM) tool is designed to centralize logs from many locations in many formats and to ensure that logs are read and analyzed despite differences between different systems and devices.
     - Security Information and Event Management (SIEM): systems that collects/ingest logs from multiple sources, compile and analyze log entries, and report relevant information
         - SIEM systems are complex and require expertise to install and tune
-        - Provide real-time monitoring, traffic analysis, & notification of potential attack
+        - Provide real-time monitoring, traffic analysis, & notification of potential attack (Traffic analysis focuses more on the patterns and trends of data rather than the actual content)
         - require a properly trained team that understands how to read and interpret info, and escalation procedures to follow when a legitimate alert is raised
         - SIEM systems represent technology, process, and people, and each is important to overall effectiveness
         - a SIEM includes significant intelligence functionality, allowing large amounts of logged events and analysis and correlation of the same to occur very quickly
