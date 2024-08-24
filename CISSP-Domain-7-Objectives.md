@@ -887,20 +887,20 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
  
 [7.11](#7.11) Implement Disaster Recovery (DR) processes (OSG-9 Chpt 18)
 
-- **Business Continuity Management (BCM)**: the process and function by which an organization is responsible for creating, maintaining, and testing BCP and DRP plans
-- **Business Continuity Planning (BCP)**: focuses on the survival of the business processes when something unexpected impacts it. Business continuity planning is focused on keeping business functions uninterrupted when a disaster strikes. Preventing business interruption is the goal of business continuity
-- **Disaster Recovery Planning (DRP)**: focuses on the recovery of vital technology infrastructure and systems. disaster recovery planning picks up where business continuity planning leaves off. Disaster recovery planning guides an organization through recovery of normal operations at the primary facility. The goal of DRP is to restore regular business activity as quickly as possible
+- 🔴**Business Continuity Management (BCM)**: the process and function by which an organization is responsible for creating, maintaining, and testing BCP and DRP plans
+    - 🧮**Business Continuity Planning (BCP)**: focuses on the survival of the business processes when something unexpected impacts it. Business continuity planning is focused on 📝keeping business functions uninterrupted when a disaster strikes. Preventing business interruption is the goal of business continuity
+    - 🧮**Disaster Recovery Planning (DRP)**: focuses on the recovery of vital technology infrastructure and systems. disaster recovery planning picks up where business continuity planning leaves off. Disaster recovery planning guides an organization through recovery of normal operations at the primary facility. The goal of DRP is to 📝restore regular business activity as quickly as possible
 - Organizations can choose whether to develop business continuity planning or disaster recovery planning plans, although it is highly recommended that they do both.
 - Tip❗People should always be your highest priority in business continuity planning. Any life safety systems, e.g fire suppression systems, should always receive high prioritization❗
     - BCM, BCP, and DRP are ultimately used to achieve the same goal: the continuity of the business and its critical and essential functions, processes, and services
 - The key BCP/DRP steps are:
-    - Develop contingency planning policy
-    - Conduct BIA (business Impact Analysis): During the business impact analysis phase, you must identify the business priorities of your organization to assist with the allocation of BCP resources. You can use this same information to drive the disaster recovery planning business unit prioritization.
-    - Identify controls
-    - Create contingency strategies
-    - Develop contingency plan
-    - Ensure testing, training, and exercises
-    - Maintenance
+    - 🚡Develop contingency planning policy
+    - 🚡Conduct BIA (business Impact Analysis): During the business impact analysis phase, you must identify the business priorities of your organization to assist with the allocation of BCP resources. You can use this same information to drive the disaster recovery planning business unit prioritization.
+    - 🚡Identify controls
+    - 🚡Create contingency strategies
+    - 🚡Develop contingency plan
+    - 🚡Ensure testing, training, and exercises
+    - 🚡Maintenance
 
 - Four key measurements for BCP and DRP procedures:
     - ⚒️RPO (recovery point objective): max tolerable data loss measured in time and should be used to guide backup strategies
