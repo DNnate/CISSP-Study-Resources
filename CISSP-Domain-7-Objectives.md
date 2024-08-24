@@ -675,6 +675,7 @@ of litigation is imminent.
 - **Patch Management**: systematic notification, identification, deployment, installation and verification of OS and app code revisions known as patches, hot fixes, and service packs  
     - an effective patch management program ensures that systems are kept up to date with current patches
     - An effective patch management program evaluates and tests patches before deploying them.
+    - A patch management system ensures that systems have required patches. In addition to deploying patches, it would also check the systems to verify they accepted the patches. 
     - **Patch Tuesday**: several big-tech orgs (e.g. Microsoft, Adobe, Oracle etc) regularly release patches on the second Tuesday of every month
 - There are three methods for determining patch levels:
     - 🚸Agent: update software (agent) installed on devices
