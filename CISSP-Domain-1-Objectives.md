@@ -976,6 +976,7 @@ standards, and procedures to ensure compliance with established security require
   - ARO can be a whole number or a fraction, representing the number of occurrences per year.
   - Formula🔥: ARO = Number of occurence ➗ Number of Years
   - Example: 🔥If historical data suggests that a power outage happens twice a year, the ARO is 2. 🔥If a flood is expected to occur once every 10 years, the ARO is 0.1.
+  - Example: 🔥The term 100-year flood plain is used to describe an area where flooding is expected once every 100 years. It is, however, more mathematically correct to say that this label indicates a 1 percent probability of flooding in any given year.
   - A 📝countermeasure primary affects the annualized rate of occurrence (ARO), because the countermeasure is designed to prevent (or mitigate or reduce) the occurrence of the risk, thus reducing its frequency per year. 
 - 🔴**SLE**: The single loss expectancy (SLE) is the product of the asset value (AV) and the exposure factor (EF).
   - SLE is the monetary loss expected from a single occurrence of a threat event.
