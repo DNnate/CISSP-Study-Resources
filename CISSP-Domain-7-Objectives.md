@@ -694,6 +694,7 @@ of litigation is imminent.
 [7.9](#7.9) Understand and participate in change management processes (OSG-9 Chpt 16)
 - **Change management**: formal process an org uses to transition from the current state to a future state; typically includes mechanisms to request, evaluate, approve, implement, verify, and learn the change; ensures that the costs and benefits of changes are analyzed and changes are made in a controlled manner to reduce risks
     - Change management processes allow various IT experts to review proposed changes for unintended consequences before implementing
+    - Change management aims to ensure that any change does not result in unintended outages or reduce security. 
     - 💢The request control process provides an organized framework within which users can request modifications, managers can conduct cost/benefit analyses, and developers can prioritize tasks.
     - 💢Change control provides an organized framework within which multiple developers can create and test solutions prior to rolling them out into a production environment.
     - 💢Release control includes acceptance testing to ensure that any alterations to end-user work tasks are understood and functional.
