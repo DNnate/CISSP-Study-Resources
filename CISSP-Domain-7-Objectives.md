@@ -925,7 +925,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
 - 7.11.3 ❄️Communications
     - Ensure that response checklists provide first responders with a clear plan to protect life and property and ensure the continuity of operations
         - the notification checklist should be supplied to all personnel who might respond to a disaster
-- 7.11.4 Assessment
+- 7.11.4 ❄️Assessment
     - When the DR team arrives on site, one of their first tasks is to assess the situation
         - this normally occurs in a rolling fashion, with the first responders performing a simple assessment to triage the situation and get the disaster response under way
         - as the incident progresses more detailed assessments will take place to gauge effectiveness, and prioritize the assignment of resources
