@@ -795,6 +795,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
         - 📁**warm sites**: a warm site is better than a cold site because, in addition to the shell of a building, basic equipment is installed
             - a warm site contains the data links and preconfigured equipment necessary to begin restoring operations, but no usable data for information
             - Warm site relies on shared storage and backups for recovery.
+            - it balances cost and recovery time, allowing activation in about one week after a disaster is declared
             - ✏️contain workstations, servers, and the communications circuits necessary to achieve operational status but require the 🎆restoration of data from backup.
             - unlike hot sites, however, warm sites do not typically contain copies of the client’s data
             - activation of a warm site typically takes at least 12 hours from the time a disaster is declared
