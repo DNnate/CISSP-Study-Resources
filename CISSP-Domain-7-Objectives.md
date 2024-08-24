@@ -470,6 +470,7 @@ of litigation is imminent.
 - 7.6.3 Mitigation
     - ❄️**Migitation**: attempt to contain an incident; in addition to conducting an impact assessment, the IR Team will attempt to minimize or contain the damage or impact from the incident
     - The IR Team's job at this point is not to fix the problem; it's simply to try and prevent further damage
+    - responders attempt to contain the incident in the mitigation step. 
     - Note this may involve disconnecting a computer from the network; sometimes responders take steps to mitigate the incident, but without letting the attacker know that the attack has been detected
     - The mitigation phase of incident response focuses on actions that can contain the damage incurred during an incident. This includes 📝limiting the scope and or effectiveness of the incident. 
 
@@ -858,7 +859,7 @@ of litigation is imminent.
 - 7.10.4 System resilience, High Availability (HA), Quality of Service (QoS), and fault tolerance
     - **System resilience**: the ability of a system to maintain an acceptable level of service during an adverse event
      - **High Availability (HA)**: the use of redundant technology components to allow a system to quickly recover from a failure after experiencing a brief disruption
-        - ✴️**Clustering**: refers to a group of systems working together to handle workloads; often seen in the context of web servers that use a load balancer to manage incoming traffic, and distributes requests to multiple web servers (the cluster).
+        - ✴️**Clustering**: refers to a group of systems working together to handle workloads; often seen in the context of web servers that use a load balancer to manage incoming traffic, and distributes requests to multiple web servers (the cluster). Clustering servers adds a degree of fault tolerance, protecting against the impact of a single server failure.
             - ⚒️Active-active HA cluster: each member actively processes data in advance of a failure. This is commonly referred to as load balancing. Having systems in an active-active or load-balancing configuration is typically more costly
             - ⚒️Active-Passive or hot standby configuration, where the backup systems only begin processing when a failure is detected. An example is the Windows failover cluster, where DB1 and DB2 are both configured as database servers. At any given time, only one will function as the active database server, while the other remains ready to assume responsibility if the first one fails.
         - ✴️**Redundancy**: unlike a cluster, where all members work together, redundancy typically involves a primary and secondary system; the primary system does all the work, and the secondary system is in standby mode unless the primary system fails, at which time activity can fail over to the secondary
