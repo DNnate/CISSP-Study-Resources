@@ -1027,7 +1027,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
 - Physical access control mechanisms deployed to control, monitor and manage access to a facility
     - Sections, divisions, or areas within a site should be clearly designated as public, private, or restricted with appropriate sinage
 - 7.14.1 Perimeter security controls
-    - 🍮**Fence** is a perimeter-defining device and can consist of:
+    - 🍮**Fence** is a perimeter-defining (outdoor) device and can consist of:
         - stripes painted on the ground
         - chain link fences
         - barbed wire
@@ -1040,14 +1040,14 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
         - A mantrap uses two sets of doors, only one of which can open at a time. A mantrap is a type of 📝preventive access control, although its implementation is a physical control.
     - 🍮**Security bollards**: a key element of physical security, which prevent vehicles from ramming access points and entrances
     - 🍮**Barricades**: in addition to fencing, are used to control both foot traffic and vehicles
-    - 🍮**Lighting** is the most commonly used form of perimeter security control providing the security benefit of deterrence (primary purpose is to discourage casual intruders, trespassers etc)
+    - 🍮**Lighting** is the 📝most commonly used form of perimeter security control providing the security benefit of deterrence (primary purpose is to discourage casual intruders, trespassers etc)
     - All physical security controls ultimately rely on personnel to intervene and stop actual intrusions and attacks
 - 7.14.2 Internal security controls
     - In all circumstances and under all conditions, the most important aspect of security is protecting people
     - If a facility is designed with restricted areas to control physical security, a mechanism to handle visitors is required
     - 🏀**Visitor logs**: manual (or automated) list of nonemployee entries or access to a facility/location
         - physical access logs can establish context for interpretation of logical logs
-    - 🏀**Locks**: designed to prevent access without proper authorization; a lock is a crude form of an identification and authorization mechanism
+    - 🏀**Locks**: designed to prevent access without proper authorization; a lock is a crude form of an identification and authorization mechanism. Key locks are the most common and inexpensive form of physical access control device for both interior and exterior use. 
 
 [7.15](#7.15) Address personnel safety and security concerns (OSG-9 Chpt 16)
 - 7.15.1 Travel
