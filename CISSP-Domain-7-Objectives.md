@@ -740,7 +740,7 @@ of litigation is imminent.
 - **Recovery strategy**: a plan for restoring critical business components, systems, and operations following a disruption
 - ❄️**Disaster recovery (DR)**: set of practices that enables an organization to minimize loss of, and restore, mission-critical technology infrastructure after a catastrophic incident. A disaster is any event that can disrupt normal IT operations and can be either natural or manmade. Hacking and terrorism are examples of manmade disasters, while flooding and fire are examples of natural disasters. Tip❗The term 100-­year flood plain is used to describe an area where flooding is expected once every 100 years. It is, however, more mathematically correct to say that this label indicates a 1 percent probability of flooding in any given year❗
      - 👖Natural disasters: earthquakes, floods, storms, fires, tsunamis, and volcanic eruptions.
-     - 👖Human-­made disasters: Explosions, electrical fires, terrorist acts, power outages, other utility failures, infrastructure failures, hardware/software failures, labor difficulties, theft, hacking incident and vandalism, power outage.
+     - 👖Human-­made disasters: Explosions, electrical fires, terrorist acts, power outages, other utility failures, infrastructure failures, hardware/software failures, labor difficulties, theft, hacking incident and vandalism, power outage. 📝Most general business insurance and homeowner's insurance policies do not provide any protection against the risk of flooding or flash floods. If floods pose a risk to your organization, you should consider purchasing supplemental flood insurance under FEMA's National Flood Insurance Program.
 - ❄️**Business continuity (BC)**: set of practices that enables an organization to continue performing its critical functions through and after any disruptive event
 - 7.10.1 Backup storage strategies
     - Backup strategies are driven by org goals and objectives and usually focus on backup and restore time as well as storage needs
@@ -981,13 +981,14 @@ of litigation is imminent.
     - simulation tests
     - parallel tests
     - full-interruption tests
-- 7.12.0 📙**checklist tests:**
+- 7.12.0 📙**Checklist tests:**
 - The checklist review is the 📝least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes. It also has a very minimal 📝time commitment.
     - The checklist review is the least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and 📝suggest any necessary changes.  
 
 - 7.12.1 Read-through/tabletop
     - 📙**Read-through test**: one of the 📝simplest to conduct, but also one of the most critical; copies of a DR plan are distributed to the members of the DR team for review, accomplishing three goals:
         - ensure that key personnel are aware of their responsibilities and have that knowledge refreshed periodically
+        - In the read-through test, you distribute copies of the disaster recovery plan to key personnel for review but do not actually meet or perform live testing
         - provide individuals with an opportunity to review and update plans, remvoving obsolete info
         - helps identify situations in which key personnel have left the company and the DR responsibility needs to be re-assigned (note that DR responsibilities should be included in job descriptions)
         - During a tabletop exercise, team members come together and walk through a scenario 📝without making any changes to information systems.
