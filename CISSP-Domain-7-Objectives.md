@@ -358,8 +358,8 @@ of litigation is imminent.
 - Implementing common security operations concepts, along with performing periodic security audits and reviews, demonstrates a level of due care and due diligence. Note📝 Security audits and reviews help ensure that an organization is following its policies but wouldn’t directly check systems for vulnerabilities.
 
 - 7.4.1 Need-to-know/least privilege
-    - 💥**Need-to-know principle**: imposes the requirement to grant users access only to data or resources they need to perform assigned work tasks
-    - 💥**Least privilege principle**: states that subjects are granted only the privileges necessary to perform assigned work tasks and no more
+    - 💥**Need-to-know principle**: imposes the requirement to grant users 📝access only to data or resources they need to perform assigned work tasks. The need-to-know policy operates on the basis that any given system user should be granted access only to portions of sensitive information or materials necessary to perform some task.
+    - 💥**Least privilege principle**: states that subjects are granted only the privileges necessary to perform assigned work tasks and no more.  The principle of least privilege ensures that personnel are granted only the 📝permissions they need to perform their job and no more.
         - privilege in this context includes both permissions to data and rights to perform systems tasks
         - limiting and controlling privileges based on this concept protects confidentiality and data integrity
         - principle relies on the assumption that all users have a well-defined job description that personnel understand
