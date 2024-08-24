@@ -631,18 +631,21 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - The two most important elements of a qualitative risk assessment are determining the ❄️probability and ❄️impact of each risk upon the organization. Likelihood is another word for probability.
 
 - 1.10.3 Risk response
-  - **Risk response**: the formulation of a plan for each identified risk; for a given risk, you have a choice for a possible risk response:
-    - **Risk Mitigation**: reducing risk, or risk mitigation, is the implementation of safeguards, security controls, and countermeasures to reduce and/or eliminate vulnerabilities or block threats. Risk mitigation strategies attempt to lower the probability and/or impact of a risk occurring. Intrusion prevention systems attempt to reduce the probability of a successful attack and are, therefore, examples of risk mitigation.
-    - **Risk Assignment**: assigning or transferring risk is the placement of the responsibility of loss due to a risk onto another entity or organization; AKA assignment of risk and transference of risk. ❄️Insurance is a form of risk assignment or transference
-    - **Risk Deterrence**: deterrence is the process of implementing deterrents for would-be violators of security and policy 
+  - **Risk response**: the formulation of a plan for each identified risk;
+  - Risk response involves evaluating countermeasures, safeguards, and security controls using a cost/benefit analysis; adjusting findings based on other conditions, concerns, priorities, and resources; and providing a proposal of response options in a report to senior management
+  - for a given risk, you have a choice for a possible risk response:
+    - 💥**Risk Mitigation**: reducing risk, or risk mitigation, is the implementation of safeguards, security controls, and countermeasures to reduce and/or eliminate vulnerabilities or block threats. Risk mitigation strategies attempt to lower the probability and/or impact of a risk occurring. Intrusion prevention systems attempt to reduce the probability of a successful attack and are, therefore, examples of risk mitigation.
+    - 💥**Risk Assignment**: assigning or transferring risk is the placement of the responsibility of loss due to a risk onto another entity or organization; AKA assignment of risk and transference of risk. ❄️Insurance is a form of risk assignment or transference
+    - 💥**Risk perspectives**, also known as risk management perspectives or approaches, are different lenses through which organizations and individuals can view
+    - 💥**Risk Deterrence**: deterrence is the process of implementing deterrents for would-be violators of security and policy 
       - the goal is to convince a threat agent not to attack; 
       - e.g. implementing auditing, security cameras, and warning banners; using security guards
-    - **Risk Avoidance**: Risk avoidance alters business activities to make a risk irrelevant. determining that the impact or likelihood of a specific risk is too greate to be offset by potential benefits, and not performing a particular business function due to that determiniation; the process of selecting alternate options or activities that have less associated risk than the default, common, expedient, or cheap option
-    - **Risk Acceptance**: the result after a cost/benefit analysis determines that countermeasure costs would outweigh the possible cost of loss due to a risk 
+    - 💥**Risk Avoidance**: Risk avoidance alters business activities to make a risk irrelevant. determining that the impact or likelihood of a specific risk is too greate to be offset by potential benefits, and not performing a particular business function due to that determiniation; the process of selecting alternate options or activities that have less associated risk than the default, common, expedient, or cheap option
+    - 💥**Risk Acceptance**: the result after a cost/benefit analysis determines that countermeasure costs would outweigh the possible cost of loss due to a risk 
       - also means that management has agreed to accept the consequences/loss if the risk is realized
       - For acceptable risks, the documentation should include a rationale for that decision and a list of potential future events that might warrant a reconsideration of that determination. The documentation would not include controls used to mitigate acceptable risks, since acceptable risks do not require mitigation.
-    - **Risk Rejection**: an unacceptable possible response to risk is to reject risk or ignore risk; denying that risk exists and hoping that it will never be realized are not valid prudent due care/due diligence responses to risk
-    - **Risk Transference**: paying an external party to accept the financial impact of a given risk
+    - 💥**Risk Rejection**: an unacceptable possible response to risk is to reject risk or ignore risk; denying that risk exists and hoping that it will never be realized are not valid prudent due care/due diligence responses to risk
+    - 💥**Risk Transference**: paying an external party to accept the financial impact of a given risk
   - **Inherent Risk**: the level of natural, native, or default risk that exists in an environment, system, or product prior to any risk management efforts being performed (AKA ✴️initial or starting risk); this is the risk identified by the risk assessment process
   - **Residual Risk**: consists of threats to specific assets against which management chooses not to implement (the risk that management has chosen to accept rather than mitigate); risk remaining after security controls have been put in place
   - **Total Risk**: the amount of risk an org would face if no safeguards were implemented
@@ -707,7 +710,7 @@ security guards.
   - If a security breach occurs, monitored systems and data become valuable from a forensics perspective; rrom the ability to derive root cause of an incident to making adjustments to minimize the chances of reoccurance 
 - 1.10.8 Reporting
   - 🔥Risk Reporting is a key task to perform at the conclusion of risk analysis (i.e. production and presentation of a summarizing report). Risk reporting involves the production of a risk report and a presentation of that report to the interested/relevant parties
-  - 🔥A Risk Register or Risk Log is a document that inventories all identified risks to an org or system or within an individual project 
+  - 🔥A Risk Register or Risk Log is a document that inventories all identified risks to an org or system or within an individual project. 
     - A risk register is used to record and track the activities of risk management, including:
       - identifying risks
       - evaluating the severity of, and prioritizing those risks
