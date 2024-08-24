@@ -548,6 +548,7 @@ of litigation is imminent.
         - job rotation policies
         - mandatory vacation policies (At least 1 week)
         - 🔮audit trails (Audit trails provide documentation on what happened, when it happened, and who did it. IT personnel create audit trails by examining logs.)
+        - A SIEM system is a detective control. It is centralized application that monitors multiple systems and can detect attacks after they occur, not prevent them.
         - honeypots or honeynets (A honeypot is a system that typically has pseudo flaws and fake data to lure intruders. A honeynet is two or more honeypots in a network.)
         - Darknet: A monitored network without any hosts. It is a segment of unused network address space that should have no network activity and, therefore, may be easily used to monitor for illicit activity.
         - intrusion detection systems
@@ -561,8 +562,9 @@ of litigation is imminent.
     - Use up-to-date antimalware software
     - Use firewalls
     - Implement configuration and system management processes
+- 📁**Corrective control** Security Orchestration, Automation, and Response (SOAR) technologies are a combination of detective and corrective controls. They can detect attacks and apply automated actions to mitigate the attacks.
 
-- **NIST SP 800-137**: organizations should use the following factors to ­determine assessment and monitoring frequency:
+- 🔴**NIST SP 800-137**: organizations should use the following factors to ­determine assessment and monitoring frequency:
     - security control volatility: refers to how frequently a security control might need to be changed or updated over time
     - system ­categorizations/impact levels
     - security controls or specific assessment objects providing ­critical functions
@@ -574,7 +576,7 @@ of litigation is imminent.
     - the output of ­monitoring strategy reviews
     - reporting requirements.
     
-- 7.7.1 Firewalls (e.g. next generation, web application, network)
+- 7.7.1 🔴Firewalls (e.g. next generation, web application, network)
     - Firewalls are preventive and technical controls: Most appliance (i.e., hardware) firewalls offer extensive logging, auditing, and monitoring capabilities as well as alarms/alerts and even basic IDS functions. It is also true that firewalls are unable to prevent internal attacks that do not cross the firewall. Firewalls are unable to block new phishing scams, unless phishing scam's URL is already on a block list.
     - Types of firewalls:
         - 📗Packet Filter: Static packet filtering firewalls are known as first-generation firewalls and do not track connection state. Static packet-filtering firewalls filter traffic by examining data from a message header. Usually, the rules are concerned with source and destination IP address (layer 3) and port numbers (layer 4).
