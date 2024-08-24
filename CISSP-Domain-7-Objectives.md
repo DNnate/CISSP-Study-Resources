@@ -221,7 +221,8 @@ of litigation is imminent.
             - 🍊**Network-­based IDS (NIDS)** can monitor activity on a network, and an NIDS isn’t as visible to attackers. They may  not notice rogue processes. Network-based IDSs are usually able to detect the initiation of an attack or the ongoing attempts to perpetrate an attack (including denial of service, or DoS). They are, however, unable to provide information about whether an attack was successful or which specific systems, user accounts, files, or applications were affected.
     - 🍀**Intrusion Prevention Systems (IPS)**: a security service that uses available info to determine if an attack is underway, alerting and also blocking attacks from reaching intended target; includes detection capabilities, you’ll also see them referred to as intrusion detection and prevention systems (IDPSs)
     - NIST SP 800-94 Guide to Intrusion Detection and Prevention Systems provides comprehensive coverage of both IDS and IPS
-    - They provide 📝active response to a security event. 
+    - They provide 📝active response to a security event.
+    - A network-based intrusion prevention system (NIPS) is placed in line with the traffic.
 - 7.2.2 ❄️**Security Information and Event Management (SIEM)**
     - NIST Special Publication 800-92, the Guide to Computer Security Log Management, describes four types of common challenges to log management:
         - 🔨Many log sources
