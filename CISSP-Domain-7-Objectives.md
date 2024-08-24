@@ -215,7 +215,8 @@ of litigation is imminent.
     - **Intrusion detection**: a specific form of monitoring events, usually in real time, to detect abnormal activity indicating a potential incident or intrusion
     - 🍀**Intrusion Detection System (IDS)**: a security service that monitors and analyzes network or system events for the purpose of finding/providing realtime/neartime warnings of unauthorized attempts to access system resources; automates the inspection of logs and real-time system events to detect intrusion attempts and system failures. It provides only 📝_passive_ responses, such as alerting administrators to a suspected attack
         - an IDS is intended as part of a defense-in-depth security plan
-        - Anomaly-based intrusion detection systems may identify a zero-day vulnerability because it deviates from normal patterns of activity.
+        - 🍏Anomaly-based intrusion detection systems may identify a zero-day vulnerability because it deviates from normal patterns of activity. An anomaly-based IDS requires a 📝baseline, and it then monitors traffic for any anomalies or changes when compared to the baseline. It's also called 📝behavior based and 📝heuristics based. 
+        - 🍏Pattern-based detection (also known as 📝knowledge-based detection and 📝signature-based detection) uses known signatures to detect attacks.
             - 🍊**Host-­based IDSs (HIDSs)** can monitor activity on a single system only. A drawback is that attackers can discover and disable them. HIDS may be able to detect unauthorized processes running on a system. Host-based IDSs have some difficulty with detecting and tracking down DoS attacks.
             - 🍊**Network-­based IDS (NIDS)** can monitor activity on a network, and an NIDS isn’t as visible to attackers. They may  not notice rogue processes. Network-based IDSs are usually able to detect the initiation of an attack or the ongoing attempts to perpetrate an attack (including denial of service, or DoS). They are, however, unable to provide information about whether an attack was successful or which specific systems, user accounts, files, or applications were affected.
     - 🍀**Intrusion Prevention Systems (IPS)**: a security service that uses available info to determine if an attack is underway, alerting and also blocking attacks from reaching intended target; includes detection capabilities, you’ll also see them referred to as intrusion detection and prevention systems (IDPSs)
@@ -617,7 +618,7 @@ of litigation is imminent.
     - 🍏**Honeynet**: two or more networked honeypots used together to simulate a network
     - They look and act like legit systems, but they do not host data of any real value for an attacker; admins often configure honeypots with vulnerabilities to tempt intruders into attacking them
     - In addition to keeping the attacker away from a production environment, the honeypot allows administrators to observe an attacker’s activity without compromising the live environment
-    - A pseudoflaw is a false vulnerability in a system that may distract an attacker. This can also be added to honeypots
+    - 🍏**pseudoflaw** is a false vulnerability in a system that may distract an attacker. This can also be added to honeypots
 - 7.7.7 Anti-malware
     - **Malware**: program inserted into a system with the intent of compromising the CIA of the victim's data, applications, or  OS; malicious software that negatively impacts a system
     - The most important protection against malicious code is the use of antimalware software with up-to-date signature files and heuristic capabilities
