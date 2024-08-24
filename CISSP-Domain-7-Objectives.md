@@ -398,6 +398,7 @@ of litigation is imminent.
     - PAM solutions should monitor actions taken by privileged accounts, new user accounts, new routes to a router table, altering config of a firewall, accessing system log and audit files, backup restore, purging log entries etc
     - Privileged account management ensures that personnel do not have more privileges than they need and do not misuse their privileges. It can identify whether users have excessive privileges violating the least privilege principle.
     - **Privileged Access Reviews**: Privileged access reviews are one of the most critical components of an organization’s security program because they ensure that only authorized users have access to perform the most sensitive operations. They should take place whenever a user with privileged access leaves the organization or changes roles as well as on a regular, recurring basis
+        - A periodic account access review can discover when users have more privileges than they need and could be used to  discover privilege creep. 
     
 - 7.4.4 Job rotation
     - 💥**Job rotation**: (AKA rotation of duties) means that employees rotate through jobs or rotate job responsibilities with other employees
