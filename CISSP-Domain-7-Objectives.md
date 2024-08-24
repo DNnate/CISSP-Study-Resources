@@ -84,10 +84,11 @@ of litigation is imminent.
     - 📕**criminal**: conducted by law enforcement, this type of investigation tries to determine if there is cause to believe (beyond a reasonable doubt) that someone committed a crime
         - the goal is to gather evidence that can be used to convict in court
         - the job of a security professional is to preserve evidence, ensure law enforcement has been contacted, and assist as necessary
+        - follows the 📝beyond a reasonable doubt standard of proof
     - 📕**civil**: non-criminal investigation for matters such as contract disputes
         - the goal of a civil investigation is to gather evidence that can be used to support a legal claim in court, and is typically triggered from an imminent or on-going lawsuit
         - the level of proof is much lower for a civil compared to a criminal investigation
-        - Most civil cases do not follow the beyond a reasonable doubt standard of proof. Instead, they use the weaker preponderance of the evidence standard. 
+        - follow the 📝preponderance of the evidence standard. 
     - 📕**regulatory**: investigation initiated by a government regulator when there is reason to believe an organization is not in compliance
         -  this type of investigation varies significantly in scope and could look like any of the other three types of investigation depending on the severity of the allegations
         - as with criminal investigations, it is key to preserve evidence, and assist the regulator’s investigators
@@ -133,7 +134,7 @@ of litigation is imminent.
             - if primary evidence is available secondary of the same content is not valid
         - 🧑‍⚖️**Real Evidence**: also known as object evidence. this type of evidence includes physical objects, such as computers, hard drives, and other storage devices, that can be brought into a court of law. Real evidence must be either 📝uniquely identified by a witness or authenticated through a 📝documented chain of custody.  Real evidence is object evidence—tangible things that can be brought into a court of law. 
         - 🧑‍⚖️**Documentary Evidence**: includes any 📝written items brought into court to prove a fact at hand. This type of evidence must also be authenticated. Two additional evidence rules apply specifically to documentary evidence:
-             - ✴️The best evidence rule states that when a document is used as evidence in a court proceeding, the original document must be introduced.
+             - ✴️The best evidence rule states that when a document is used as evidence in a court proceeding, the original document must be introduced. Best evidence is a form of documentary evidence, but specifically it is the original document rather than a copy or description.
              - ✴️The parol evidence rule states that when an agreement between parties is put into written form, the written document is assumed to contain all the terms of the agreement and no verbal agreements may modify the written agreement.
         - 🧑‍⚖️**Direct evidence**: this type of evidence is based on the observations of a witness or expert opinion and can be used to prove a fact at hand (with backup evidence support)
         - 🧑‍⚖️**Circumstantial evidence**: this type of evidence is based on inference and can be used to support a conclusion, but not prove it
