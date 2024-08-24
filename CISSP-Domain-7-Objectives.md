@@ -693,6 +693,7 @@ of litigation is imminent.
     - 💢The request control process provides an organized framework within which users can request modifications, managers can conduct cost/benefit analyses, and developers can prioritize tasks.
     - 💢Change control provides an organized framework within which multiple developers can create and test solutions prior to rolling them out into a production environment.
     - 💢Release control includes acceptance testing to ensure that any alterations to end-user work tasks are understood and functional.
+    - 💢Configuration control ensures that changes to software versions are made in accordance with the change control and configuration management process. Updates can be made only from authorized distributions in accordance with those policies.
     - Change management controls provide a process to control, document, track, and audit all system changes.
     - The change management process includes multiple steps that build upon each other:
         - 🔐Change request: a change request can come from any part of an org and pertain to almost any topic; companies typically use some type of change management software. 
