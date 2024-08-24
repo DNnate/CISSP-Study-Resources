@@ -129,9 +129,10 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
             - Accurate identification and authentication are required to support accountability.
             - Authentication is necessary to ensure a network supports accountability. Note that authentication indicates that a user claimed an identity such as with a username and proved the identity such as with a password. In other words, valid authentication includes identification. However, identification doesn't include authentication. If users could just claim an identity without proving it's their identity, the system doesn't support accountability.
     - **Auditing**: tracks subjects and records when they access objects, creating an audit trail in one or more audit logs. Audit trails provide documentation on what happened, when it happened, and who did it. IT personnel create audit trails by examining logs.
-        - Auditing provides accountability
+        - Auditing provides 📝accountability
         - Auditing occurs after the logs have been created
         - Logs record events, including who took an action, but without accurate identification and authentication, the logs can’t be relied on.
+        - identification when combined with authentication provides accountability.
         - Audit logging when combined with user accounts that can reliably be expected to only be accessible to a specific user due to the use of multifactor authentication is frequently used to provide strong accountability for actions taken via systems and applications. 
         - **File Integrity Checker** is designed specifically to monitor and detect changes to files and directories. It works by creating a baseline of file attributes (such as checksums or hashes) and then 🧠regularly checking/actively monitoring for any deviations from this baseline. This allows it to identify unauthorized or unexpected changes to content.
         - **Audit Logs**: track and record activities on a system, including changes to files and content. While they provide valuable information about who made changes and when, they are more about recording events rather than actively monitoring for unauthorized changes. Accountability is possible by reviewing logs and tracking user activity. 
