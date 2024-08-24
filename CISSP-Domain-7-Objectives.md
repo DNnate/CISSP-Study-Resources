@@ -225,7 +225,8 @@ of litigation is imminent.
     - 🍀**Intrusion Prevention Systems (IPS)**: a security service that uses available info to determine if an attack is underway, alerting and also blocking attacks from reaching intended target; includes detection capabilities, you’ll also see them referred to as intrusion detection and prevention systems (IDPSs)
     - NIST SP 800-94 Guide to Intrusion Detection and Prevention Systems provides comprehensive coverage of both IDS and IPS
     - They provide 📝active response to a security event.
-    - A network-based intrusion prevention system (NIPS) is placed in line with the traffic.
+    - A network-based intrusion prevention system (NIPS) is placed in line with the traffic and can prevent attacks from reaching an internal network
+    - NIPSs can also detect attacks using pattern-matching (also known as signature-based detection and knowledge-based detection). 
 - 7.2.2 ❄️**Security Information and Event Management (SIEM)**
     - NIST Special Publication 800-92, the Guide to Computer Security Log Management, describes four types of common challenges to log management:
         - 🔨Many log sources
@@ -354,6 +355,7 @@ of litigation is imminent.
     - an easy way to think of a baseline is as a list of services; an OS baseline identifies all the settings to harden specific systems
     - many organizations use images to deploy baselines; baseline images improve the security of systems by ensuring that desired security settings are always configured correctly
     - baseline images improve the security of systems by ensuring that desired security settings are always configured correctly; they also reduce the amount of time required to deploy and maintain systems, reducing overall maintenance costs
+    - Images are an effective provisioning method that ensures systems receive an initial, known baseline configuration. 
 - Automation: it's typical to create a baseline, and then use automated methods to add additional apps, features, or settings for specific groups of computers
     - note that admins can use create/modify group policy settings to create domain-level standardization or to make security-related Windows registry changes
 
@@ -397,6 +399,7 @@ of litigation is imminent.
     - **Job rotation**: (AKA rotation of duties) means that employees rotate through jobs or rotate job responsibilities with other employees
         - using job rotation as a security control provides peer review, reduces fraud, and enables cross-training
         - job rotation policy can act as both a deterrent and a detection mechanism
+        - Job rotation and separation of duties policies help prevent fraud. 
 - 7.4.5 Service Level Agreements (SLA)
     - 💢**Service Level Agreement (SLA)**: an agreement between an organization and an outside entity, such as a vendor, where the SLA stipulates performance expectations and often includes penalties if the vendor doesn’t meet these expectations. A service level agreement, or SLA, contains details about how the service will be provided, what level of outages or downtime is acceptable, and what remedies may exist in the case of outages or other issues. 
     - 💢**Memoradum of Understanding (MOU)**: documents the intention of two entities to work together toward a common goal
@@ -683,6 +686,10 @@ of litigation is imminent.
     - An effective patch management program evaluates and tests patches before deploying them.
     - A patch management system ensures that systems have required patches. In addition to deploying patches, it would also check the systems to verify they accepted the patches. 
     - **Patch Tuesday**: several big-tech orgs (e.g. Microsoft, Adobe, Oracle etc) regularly release patches on the second Tuesday of every month
+    - A patch management process includes evaluating patches, testing patches, and auditing patches.
+        - 🎤Evaluating patches determines what patches should be deployed.
+        - 🎤Testing helps discover unintended problems before they are deployed.
+        - 🎤Auditing ensures required patches have been deployed.
 - There are three methods for determining patch levels:
     - 🚸Agent: update software (agent) installed on devices
     - 🚸Agentless: remotely connect to each device
@@ -989,6 +996,7 @@ failures, hardware/software failures, labor difficulties, theft, hacking inciden
 - 7.12.3 Simulation
     - 📙**Simulation tests**: similar to the structured walk-throughs, where team members are presented with a scenario and asked to develop an appropriate response
         - unlike read-throughs and walk-throughs, some of these response measures are then tested
+        - In simulation tests, disaster recovery team members are presented with a scenario and asked to develop an 📝appropriate response. 
         -  ❗Simulation tests may shut down noncritical business units. 
         - this may involve the interruption of noncritical business activities and the use of some operational personnel
         - A simulation test involves a role-play of a prepared scenario overseen by a moderator. Responses are assessed to help improve the organization's response process. 
