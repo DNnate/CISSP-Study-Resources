@@ -999,16 +999,17 @@ of litigation is imminent.
 - The checklist review is the 📝least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes. It also has a very minimal 📝time commitment.
     - The checklist review is the least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and 📝suggest any necessary changes.  
 
-- 7.12.1 Read-through/tabletop
+- 7.12.1 
     - 📙**Read-through test**: one of the 📝simplest to conduct, but also one of the most critical; copies of a DR plan are distributed to the members of the DR team for review, accomplishing three goals:
         - ensure that key personnel are aware of their responsibilities and have that knowledge refreshed periodically
         - In the read-through test, you distribute copies of the disaster recovery plan to key personnel for review but do not actually meet or perform live testing
         - provide individuals with an opportunity to review and update plans, remvoving obsolete info
         - helps identify situations in which key personnel have left the company and the DR responsibility needs to be re-assigned (note that DR responsibilities should be included in job descriptions)
-        - During a tabletop exercise, team members come together and walk through a scenario 📝without making any changes to information systems.
 - 7.12.2 Walkthrough
-    - 📙**Structured walk-through**: AKA tabletop exercise, takes testing one step further, where members of the DR team gather in a large conference room and role-play a disaster scenario
+    - 📙**Structured walk-through/Tabletop**: AKA tabletop exercise, takes testing one step further, where members of the DR team gather in a large conference room and role-play a disaster scenario
         - the team refers to their copies of the DR plan and discuss the appropriate responses to that particular type of disaster
+        - Tabletop exercises are designed to walk teams through a scenario,
+        - During a tabletop exercise, team members come together and walk through a scenario 📝without making any changes to information systems.
 - 7.12.3 Simulation
     - 📙**Simulation tests**: similar to the structured walk-throughs, where team members are presented with a scenario and asked to develop an appropriate response
         - unlike read-throughs and walk-throughs, some of these response measures are then tested
