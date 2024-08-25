@@ -71,13 +71,7 @@
 - **Procedural programming**: emphasizes the logical sequence of steps to be peformed, where a procedure is a set of software that performs a particular function, requiring specific input data, producing a specific set of outputs, and procedures can invoke other procedures
 - **Query attack**: use of query tools to access data not normally allowed by the trusted front end, including the views controlled by the query application; could also result from malformed queries using SQL to bypass security controls; improper/incomplese checks on queries can be used in a similar way to bypass access controls
 - **Ransom attack**: form of attack that threatens destruction, denial, or unauthorized public release/remarketing of private information assets; usually involves encrypting assets and withhold the decryption key until a ransom is paid by the victim
-- **Refactoring**: partial or complete rewrite of a set of software to perform the same functions, but in a more straightforward, more efficient, or more maintainable form
-- **Regression testing**: test a system to ascertain whether recently approved modifications have changed performance of other approved functions or introduced other unautorized behavior.
-    - Regression testing is performed after developers make changes to an application. It reruns a number of test cases and compares the results to baseline results. 
-    - Orthogonal array testing is a method for generating test cases based on statistical analysis.
-    - Pattern testing uses records of past software bugs to inform the analysis.
-    - Matrix testing develops a matrix of all possible
-inputs and outputs to inform the test plan. 
+- **Refactoring**: partial or complete rewrite of a set of software to perform the same functions, but in a more straightforward, more efficient, or more maintainable form 
 - ❄️**Relational database model**: data elements and records arragned in tables which are related or linked to each other to implement business logic, where data records of different structures or types are needed together in the same activity. Records are identified using a variety of keys.
     - ✈️**Candidate Keys**: is a subset of attributes that can be used to uniquely identify any record in a table. No two records in the same table will ever contain the same values for all attributes composing a candidate key. Each table may have one or more candidate keys, which are chosen from column headings.
     - ✈️**Primary Keys**: is selected from the set of candidate keys for a table to be used to 🧠uniquely identify the records in a table. Each table has only one primary key, selected by the database designer from the set of candidate keys. The RDBMS enforces the uniqueness of primary keys by disallowing the insertion of multiple records with the same primary key.
@@ -417,6 +411,13 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
   - 🔖**System testing**: Testing on a complete integrated product
   - 🔖**User Acceptance Testing**: (UAT) is typically the last phase of the testing process. It verifies that the solution developed meets user requirements and validates it against use cases.
   - 🔖**Static vs Dynamic testing**, white-box testing, and code review approaches all require access to the source code of the application but dynamic testing does not. Both static and dynamic testing may use automated tools
+  - 🔖**Regression testing**: test a system to ascertain whether recently approved modifications have changed performance of other approved functions or introduced other unautorized behavior.
+      - Regression testing is software testing that runs a set of known inputs against an application and then compares the results to those produced by an earlier version of the software. It is designed to capture unanticipated consequences of deploying new code versions prior to introducing them into a production environment.
+      - Regression testing is performed after developers make changes to an application. It reruns a number of test cases and compares the results to baseline results.
+      - Orthogonal array testing is a method for generating test cases based on statistical analysis.
+      - Pattern testing uses records of past software bugs to inform the analysis.
+      - Matrix testing develops a matrix of all possible
+inputs and outputs to inform the test plan.
   - 🔖**Positive Testing**: also known as "happy path" testing, involves providing valid and expected inputs to the software to ensure that it behaves as intended. The focus is on verifying that the application performs its expected functions correctly when given correct and anticipated data.
   - 🔖**Negetive Testing**: Negative testing involves providing invalid, unexpected, or erroneous inputs to the software to ensure that it handles these situations gracefully. The aim is to verify that the application can handle incorrect data or operations without crashing, producing incorrect results, or compromising security.
   - 🔖**Complete coverage**: It is a process to ensure that all of the functions of their software are testedCoverage analysis is performed to ensure that functionality, requirements, or other elements are completely tested.
