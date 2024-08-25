@@ -115,11 +115,25 @@ temporarily separated from each other so that one does not interfere with the ot
         - Agile development emphasizes:
             - the delivery of working software in short iterations, helping to get the software to market faster 
             - reduced risk by frequently testing and providing feedback, helping to identify and resolve issues earlier in the development process
+        - Here's the list of Agile software development steps in the correct order:
+            - ⚓Planning
+            - ⚓Requirements Gathering (User Stories)
+            - ⚓Backlog Creation and Prioritization
+            - ⚓Sprint Planning
+            - ⚓Sprint (Development and Testing)
+            - ⚓Daily Standups
+            - ⚓Continuous Integration (CI)
+            - ⚓Sprint Review
+            - ⚓Sprint Retrospective
+            - ⚓Product Increment
+            - ⚓Release Planning
+            - ⚓Deployment
+            - ⚓Stakeholder Feedback
         - Agile was started by 17 pioneers in 2001, producing the "Manifesto for Agile Software Development" (agilemanifesto.org) that lays out the core philosophy of the Agile approach:
-            - **individuals and interactions** over processes and tools
-            - **working software** over comprehensive documentation
-            - **customer collaboration** over contract negotiation
-            - **responding to change** over following a plan
+            - 🔔**individuals and interactions** over processes and tools
+            - 🔔**working software** over comprehensive documentation
+            - 🔔**customer collaboration** over contract negotiation
+            - 🔔**responding to change** over following a plan
         - Agile Manifesto also defines 12 principles:
             - the highest priority is to satisfy the customer through early and continuous delivery of valuable software
             - 🧠It does not prioritize security over other requirements.
