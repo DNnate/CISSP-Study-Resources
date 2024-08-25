@@ -1044,7 +1044,7 @@ taxed by inefficient implementations of software and VMs.
 - **HASHING**
     - HMAC - Lenght variable (✏️very strong)
     - HAVAL - Lenght 128, 160, 192, 224, 256 bits
-    - MD2 - Lenght 128 bits(16 bytes)
+    - MD2 - Lenght 128 bits(16 bytes)-MD2 is a one-way hash function designed by Ron Rivest that creates a 128-bit message digest value. It is not necessarily any weaker than the other algorithms in the "MD" family, but it is much slower.
     - MD4 - Lenght 128 bits(16 bytes)
     - MD5 - Lenght 128 bits(16 bytes) 📝(All Message Digest variants have the same hash lenght. MD2-5 have been replaced by MD6) The MD5 hash algorithm has known collisions and, as of 2005, is no longer considered secure for use in modern environments
     - SHA-1 - Lenght ✏️160 (a real-world collision attack against SHA 1 was announced in early 2017)
