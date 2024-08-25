@@ -434,7 +434,7 @@
   - 🔖**Black-box testing** begins with no prior knowledge of the system implementation, simulating a user perspective. They do not have access to source code.
   - 🔖**Gray-box testing** provide partial knowledge of the system, respectively, in advance of the test. In a gray-box test, the tester evaluates the software from a user perspective but has access to the source code as the test is conducted.
   - 🔖**Unit testing** focuses on the smallest parts of an application, like functions, methods, or classes, ensuring they operate correctly in isolation. Unit tests are often automated, allowing developers to run them frequently to catch issues early in the development process, ensuring each component works correctly. Unit testing focuses on testing each module of a program instead of against its previous functional state. 
-  - 🔖**Integration testing**: A testing method used to validate how software modules work together
+  - 🔖**Integration testing**: A testing method used to validate how software modules work together. Sometimes, integration testing is performed when a new product is deployed or integrated into a real or simulated production environment to ensure that all previously function work tasks still work and all newly added or expected work tasks work as well.
   - 🔖**System testing**: Testing on a complete integrated product
   - 🔖**User Acceptance Testing**: (UAT) is typically the last phase of the testing process. It verifies that the solution developed meets user requirements and validates it against use cases.
   - 🔖**Static vs Dynamic testing**, white-box testing, and code review approaches all require access to the source code of the application but dynamic testing does not. Both static and dynamic testing may use automated tools
@@ -726,6 +726,8 @@ access rights. A rootkit is used to achieve or maintain elevated privileges on a
     - 🔥**Ransom attack**: form of attack that threatens destruction, denial, or unauthorized public release/remarketing of private information assets; usually involves encrypting assets and withhold the decryption key until a ransom is paid by the victim
     - 🔥**Living off the land** (non-malware based ransom attack): system attack where the system/resources compromised are used in pursuit of additional attacks (i.e. the attacker's agenda); anti-malware defence doesn't detect/prevent the attack given the attacker's methodology
     - 🔥**Malformed input attack**: not currently handling input data is a common source of code errors that can result in arbitrary code exec, or misdirection of the program to other resources/locations
+    - 🔥**Lateral movement**: which is when an intruder is able to gain remote control over another internal system after pivoting from the initial system they compromised.
+    - 🔥**Passive reconnaissance** which is gathering information about a target in such a way as to not to be noticed by said target. 
 - 🟦**Computing Resilience**:        
     - 🛠️Multitasking is processing more than one task at the same time. In most cases, multitasking is simulated by the OS (using multiprogramming or pseudo-­simultaneous execution) even when not supported by the processor.
     - 🛠️Multicore is also able to perform simultaneous execution but does so with multiple execution cores on one or more CPUs.
