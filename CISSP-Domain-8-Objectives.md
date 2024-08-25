@@ -228,7 +228,7 @@
             - 🆎Level 2: **Repeatable**: in this phase, basic lifecycle management processes are introduced. Reuse of code in an organized fashion begins, and repeatable results are expected from similar projects. The key process areas for this level include Requirements Management, Software Project Planning, Software Project Tracking and Oversight, Software Subcontract Management, Software Quality Assurance, and Software Configuration Management.
             - 🆎Level 3: **Defined**: in this phase, software devs operate according to a set of formal, documented software development processes. The Defined stage of the SW-CMM is marked by the presence of basic lifecycle management processes and reuse of code. It includes the use of requirements management, software project planning, quality assurance, and configuration management practices.
             - 🆎Level 4: **Managed**: in this phase, there is better management of the software process. The organization uses 📝quantitative measures to gain a detailed understanding of the development process. Software Quality Management is a process that occurs during level 4, the Managed stage of the SW-CMM.
-            - Level 5: Optimizing: in this phase continuous improvement occurs
+            - 🆎Level 5: **Optimizing**: in this phase continuous improvement occurs
     - 🟢**Software Assurance Maturity Model (SAMM)**: an open source project maintained by the Open Web Application Security Project (OWASP)
         - provides a framework for integrating security into the software development and maintenance processes and provides orgs with the ability to assess their maturity
         - SAMM associates software development with 5 business functions:
