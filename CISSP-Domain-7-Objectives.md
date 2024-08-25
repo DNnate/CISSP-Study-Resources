@@ -413,6 +413,8 @@ of litigation is imminent.
     - 💢**Operational Level Agreement (OLA)**: is between internal service organizations and does not involve customers.
     - 💢**Statement of Work (SOW)**: SOW is an addendum to a contract describing work to be performed.
     - 💢**Software Escrow Agreements** place a copy of the source code for a software package in the hands of an independent third party who will turn the code over to the customer if the vendor ceases business operations. Software escrow agreements place the application source code in the hands of an independent third party, thus providing firms with a “safety net” in the event a developer goes out of business or fails to honor the terms of a service agreement.
+    - 💢**Resource capacity agreement** specifically addresses the availability of resources in a disaster scenario. This type of agreement ensures that the cloud provider has sufficient resources to meet the needs of their clients, even in the event of multiple simultaneous disasters. It directly tackles the issue of resource allocation and availability
+    - 💢**Mutual assistance agreement** typically involves agreements between organizations for support during emergencies. 
 
 [7.5](#7.5) Apply resource protection (OSG-9 Chpt 16)
 - Media management should consider all types of media as well as short- and long-term needs and evaluate:
