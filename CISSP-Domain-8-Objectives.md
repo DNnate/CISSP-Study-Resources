@@ -592,22 +592,22 @@ inputs and outputs to inform the test plan.
 
 - 8.5.4 Software-defined security
     - A **security model** provides a framework to implement a security policy.A security model provides a way for designers to map abstract statements into a solution that prescribes the algorithms and data structures necessary to build hardware and software. Thus, a security model gives software designers something against which to measure their design and implementation. 
-    - **Software-defined security (SDS or SDSec)**: a security model in which security functions such as firewalling, IDS/IPS, and network segmentation are implemented in software within an SDN environment 
+    - 🍏**Software-defined security (SDS or SDSec)**: a security model in which security functions such as firewalling, IDS/IPS, and network segmentation are implemented in software within an SDN environment 
         - one of the advantages of this approach is that sensors (for systems like IDS/IPS) can be dynamically repositioned depending on the threat
         - SDS provides a decoupling from physical devices, because it abstracts security functions into software that can run on any compatible physical or virtual infrastructure, critical for supporting cloud services dynamic scaling and virtualized data centers
     - DevSecOps supports the concept of software-defined security, where security controls are actively managed into the CI/CD pipeline
     - security infrastructure may be easily manipulated by code. It is an example of  infrastructure as code (IaC) implementation.
-        
-- **Fail-Safe**: Ensures the system defaults to a safe state in the event of a failure.e.g An automatic door locks when the power goes out, preventing unauthorized access. 
-- **Fail-Secure** (Synonym of Fail Closed): Maintains a secure state during a failure, prioritizing security over other concerns. e.g  Blue screen of death to ensure that security is not compromised during a failure.
-- **Fail-Closed**: Closes or shuts down access when a failure occurs, restricting entry or use. e.g a network firewall that blocks all traffic if it encounters a malfunction. Sacrifices availability for security.
-Fail-Open: Opens up or grants access during a failure, allowing processes to continue to maintain  availability, potentially at the cost of security.
-- **Fail-Soft**: Allows a system to continue operating in a reduced or limited capacity after a failure. e.g A computer that turns off non-critical services to keep essential services running after a hardware failure.
+- 📕**Failure Management**        
+    - 🍆**Fail-Safe**: Ensures the system defaults to a safe state in the event of a failure.e.g An automatic door locks when the power goes out, preventing unauthorized access.
+    - 🍆**Fail-Secure** (Synonym of Fail Closed): Maintains a secure state during a failure, prioritizing security over other concerns. e.g  Blue screen of death to ensure that security is not compromised during a failure.
+    - 🍆**Fail-Closed**: Closes or shuts down access when a failure occurs, restricting entry or use. e.g a network firewall that blocks all traffic if it encounters a malfunction. Sacrifices availability for security. The fail closed approach prevents any activity from taking place during a system security failure and is the most 📝conservative approach to failure management.
+    - 🍆**Fail-Open**: Opens up or grants access during a failure, allowing processes to continue to maintain  availability, potentially at the cost of security.
+    - 🍆**Fail-Soft**: Allows a system to continue operating in a reduced or limited capacity after a failure. e.g A computer that turns off non-critical services to keep essential services running after a hardware failure.
 
-- **Database Security**
+- 📕**Database Security**
     - 🍍Concurrency, or edit control: is a preventive security mechanism that ensures that the information stored in the database is always correct or at least has its integrity and availability protected. This feature can be employed on a single-­level or multilevel database. Databases that fail to implement concurrency correctly may suffer from the following issues:
-        - **Lost Updates** Occur when two different processes make updates to a database, unaware of each other’s activity. Lost updates occur when one transaction writes a value to the database that overwrites a value needed by transactions that have earlier precedence, causing those transactions to read an incorrect value. 
-        - **Dirty Reads** Occur when a process reads a record from a transaction that did not successfully commit. 
+        - 🔨**Lost Updates** Occur when two different processes make updates to a database, unaware of each other’s activity. Lost updates occur when one transaction writes a value to the database that overwrites a value needed by transactions that have earlier precedence, causing those transactions to read an incorrect value. 
+        - 🔨**Dirty Reads** Occur when a process reads a record from a transaction that did not successfully commit. 
     - 🍍Aggregation: SQL provides a number of functions that combine records from one or more tables to produce potentially useful information. This process is called aggregation. Aggregation attacks are used to collect numerous low-­ level security items or low-­value items and combine them to create something of a higher security level or value. Aggregation is a security issue that arises when a collection of facts has a higher classification than the classification of any of those facts standing alone. 
     - 🍍Inference: Inference attacks involve combining several pieces of nonsensitive information to gain access to information that should be classified at a higher level. However, inference makes use of the human mind’s deductive capacity rather than the raw mathematical ability of modern database platforms. An inference problem occurs when an attacker can pull together pieces of less sensitive information and use them to derive information of greater sensitivity. 
     - 🍍Cell suppression: is the concept of hiding individual database fields or cells or imposing more security restrictions on them.
