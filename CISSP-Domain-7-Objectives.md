@@ -696,6 +696,7 @@ of litigation is imminent.
     - 📘**AI**: gives machines the ability to do things that a human can do better or allows a machine to perform tasks that we previously thought required human intelligence
     - 📘**Machine Learning**: a subset of AI and refers to a system that can improve automatically through experience
         - a ML system starts with a set of rules or guidelines
+        - Machine learning uses 📝mathematical approaches to analyze data, searching for patterns that predict future activity. 
         - an AI system starts with nothing and progressively learns the rules, creating its own algorithms as it learns the rules and applies ML techniques based on these rules
     - Behavior-based detection is one way ML and AI can apply to cybersecurity
         - an admin relates a baseline of normal activities and traffic on a network; the baseline in this case is similar to a set of rules given to a ML system
@@ -706,7 +707,7 @@ of litigation is imminent.
     - 📘**Neural networks** attempt to use complex computational techniques to model the behavior of the human mind. Through the use of the Delta rule or Learning rule, neural networks are able to learn from experience.
     - 📘**Knowledge banks** are a component of expert systems, which are designed to capture and reapply human knowledge.
     - 📘**Decision support systems** are designed to provide advice to those carrying out standard procedures and are often driven by expert systems.
-    - 📘**Expert Systems** uses details about the current situation, and the inference engine uses a combination of logical reasoning and fuzzy logic techniques to draw a conclusion based on past experience. Expert systems use a knowledge base consisting of a series of 🧠“if/then” statements to form decisions based on the previous experience of human experts.
+    - 📘**Expert Systems** uses details about the current situation, and the inference engine uses a combination of logical reasoning and fuzzy logic techniques to draw a conclusion based on past experience. Expert systems use a knowledge base consisting of a series of 🧠“if/then” statements to form decisions based on the previous experience of human experts. Expert systems contain business logic.
 
 
 [7.8](#7.8) Implement and support patch and vulnerability management (OSG-9 Chpt 16)
