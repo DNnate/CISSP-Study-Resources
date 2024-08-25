@@ -303,7 +303,10 @@ of litigation is imminent.
 - 7.2.6 Threat intelligence (e.g. threat feeds, threat hunting)
     - 🍎**Threat hunting** is the process of actively searching for infections or attacks within a network. The basic assumption of a threat hunting exercise is the so-called 📝presumption of compromise. Threat intelligence refers to the actionable intelligence created after analyzing incoming data, such as threat feeds. Threat hunters use threat intelligence to search for specific threats. Additionally, they may use a kill chain model to mitigate these threats. Threat hunters regularly monitor threat feeds and using that information to check systems within the network. Their goal is to discover any infections or attacks that haven’t been detected by existing tools.
     - 🍎**Threat Feeds**:Threat feeds provide organizations with a steady stream of raw data. By analyzing threat feeds, security administrators can learn of current threats. They can then use this knowledge to search through the network, looking for signs of these threats.
-    - 🍎**Threat intelligence**: an umbrella term encompassing threat research and analysis and emerging threat trends; gathering data on potential threats, including various sources to get timely info on current threats; information that is aggregated, transformed, analyzed, interpreted, or enriched to provide the necessary context for the decision-making process
+    - 🍎**Threat intelligence**: an umbrella term encompassing threat research and analysis and emerging threat trends; gathering data on potential threats, including various sources to get timely info on current threats; information that is aggregated, transformed, analyzed, interpreted, or enriched to provide the necessary context for the decision-making process. Examples of threat intelligence feed standards include. 
+        - 🐍CAPEC, or Common Attack Pattern Enumeration and Classification, is a dictionary of known attack patterns.
+        - 🐍STIX is the Structured Threat Information eXpression language used to describe threats in a standardized way
+        - 🐍TAXII, the Trusted Automated eXchange of Indicator Information, defines how threat information can be shared and exchanged. 
     - **Kill chain**: military model (used for both offense and defense):
         - find/identify a target through reconnaissance
         - get the target’s location
@@ -413,7 +416,7 @@ of litigation is imminent.
     - 💢**Operational Level Agreement (OLA)**: is between internal service organizations and does not involve customers.
     - 💢**Statement of Work (SOW)**: SOW is an addendum to a contract describing work to be performed.
     - 💢**Software Escrow Agreements** place a copy of the source code for a software package in the hands of an independent third party who will turn the code over to the customer if the vendor ceases business operations. Software escrow agreements place the application source code in the hands of an independent third party, thus providing firms with a “safety net” in the event a developer goes out of business or fails to honor the terms of a service agreement.
-    - 💢**Resource capacity agreement** specifically addresses the availability of resources in a disaster scenario. This type of agreement ensures that the cloud provider has sufficient resources to meet the needs of their clients, even in the event of multiple simultaneous disasters. It directly tackles the issue of resource allocation and availability
+    - 💢**Resource capacity agreement** specifically addresses the availability of resources in a disaster scenario. This type of agreement ensures that the cloud provider has sufficient resources to meet the needs of their clients, even in the event of multiple simultaneous disasters. It directly tackles the issue of resource allocation and availability. Resource capacity agreements are used to ensure that appropriate resources will be available in a recovery scenario.
     - 💢**Mutual assistance agreement** typically involves agreements between organizations for support during emergencies. 
 
 [7.5](#7.5) Apply resource protection (OSG-9 Chpt 16)
