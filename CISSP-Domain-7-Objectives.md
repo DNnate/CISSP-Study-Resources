@@ -374,6 +374,7 @@ of litigation is imminent.
 
 - 7.4.1 Need-to-know/least privilege
     - 💥**Need-to-know principle**: imposes the requirement to grant users 📝access only to data or resources they need to perform assigned work tasks. The need-to-know policy operates on the basis that any given system user should be granted access only to portions of sensitive information or materials necessary to perform some task.
+        - The Need-To-Know (NTK) principle is used to determine if a user’s access to certain information is necessary to perform their job role sufficiently. If a user does not need read access to data to carry out their job role, they should not be granted access. The need-to-know principle differs from least privilege because the need-to-know principle is only concerned with read access. 
     - 💥**Least privilege principle**: states that subjects are granted only the privileges necessary to perform assigned work tasks and no more.  The principle of least privilege ensures that personnel are granted only the 📝permissions they need to perform their job and no more.
         - privilege in this context includes both permissions to data and rights to perform systems tasks
         - limiting and controlling privileges based on this concept protects confidentiality and data integrity
@@ -381,6 +382,7 @@ of litigation is imminent.
         - least privilege is typically focused on ensuring that user privileges are restricted, but it also applies to apps or processes (e.g. if an app or service is compromised, the attacker can assume the service account’s privileges)
         - New user accounts should have no access permissions by default and then give each user the necessary permissions to perform their job responsibilities.
         -  The principle of least privilege includes both rights and permissions
+        -  If a user has an NTK then the question is what level of permission do they need. Do they need read, write, full control, or another level? The best idea is to give them as little permission as possible, just enough to do their job. This is called the principle of least privilege. 
 - 7.4.2 Separation of Duties (SoD) and responsibilities
     - 💥**Separation of Duties (SoD)**: ensures that no single person has total control over a critical function or system
         - SoD policies help reduce fraud by requiring collusion between two or more people to perform unauthorized activity
