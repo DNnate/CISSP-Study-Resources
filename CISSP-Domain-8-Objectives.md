@@ -453,6 +453,7 @@ inputs and outputs to inform the test plan.
 [8.3](#8.3) Assess the effectiveness of software security (OSG-9 Chpts 20,21)
 - 8.3.1 Auditing and logging of changes
     - Applications should be configured to log details of errors and other security events to a centralized log repository
+    - Changes should be logged to support 📝auditing, 📝investigations, 📝troubleshooting, and 📝analysis efforts.
     - The Open Web Application Security Project (OWASP) Secure Coding Practices suggest logging the following events:
         - input validation failures
         - authentication attempts, especially failures
