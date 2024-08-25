@@ -285,8 +285,9 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
     
 
 - 🟢**A Gantt chart** is a type of bar chart that shows the interrelationships over time between projects and schedules. It provides a graphical illustration of a schedule that helps you plan, coordinate, and track specific tasks in a project. They are particularly useful when coordinating tasks that require the use of the same team members or other resources.
+    - Gantt charts use a different format with a row for each task and lines showing the expected duration of the task. 
 - 🟢**Program Evaluation Review Technique (PERT)** is a project-­scheduling tool used to judge the size of a software product in development and calculate the standard deviation (SD) for risk assessment. PERT relates the estimated lowest possible size, the most likely size, and the highest possible size of each component. The PERT chart  shows the dependencies between different project tasks.
-    - PERT charts use nodes to represent milestones or deliverables and then show the estimated time to move between milestones 
+    - PERT charts use 📝nodes to represent milestones or deliverables and then show the estimated time to move between milestones 
 - 🟢**Rapid Application Development, or RAD**, focuses on fast development and the ability to quickly adjust to changing requirements.
     - RAD uses four phases:
         - 🎈requirements planning
@@ -432,9 +433,9 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
   - 🔖**Regression testing**: test a system to ascertain whether recently approved modifications have changed performance of other approved functions or introduced other unautorized behavior.
       - Regression testing is software testing that runs a set of known inputs against an application and then compares the results to those produced by an earlier version of the software. It is designed to capture unanticipated consequences of deploying new code versions prior to introducing them into a production environment.
       - Regression testing is performed after developers make changes to an application. It reruns a number of test cases and compares the results to baseline results.
-      - Orthogonal array testing is a method for generating test cases based on statistical analysis.
-      - Pattern testing uses records of past software bugs to inform the analysis.
-      - Matrix testing develops a matrix of all possible
+  - 🔖**Orthogonal array testing** is a method for generating test cases based on statistical analysis.
+  - 🔖**Pattern testing** uses records of past software bugs to inform the analysis.
+  - 🔖**Matrix testing** develops a matrix of all possible
 inputs and outputs to inform the test plan.
   - 🔖**Positive Testing**: also known as "happy path" testing, involves providing valid and expected inputs to the software to ensure that it behaves as intended. The focus is on verifying that the application performs its expected functions correctly when given correct and anticipated data.
   - 🔖**Negetive Testing**: Negative testing involves providing invalid, unexpected, or erroneous inputs to the software to ensure that it handles these situations gracefully. The aim is to verify that the application can handle incorrect data or operations without crashing, producing incorrect results, or compromising security.
