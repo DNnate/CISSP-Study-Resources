@@ -698,6 +698,8 @@ of litigation is imminent.
         - a ML system starts with a set of rules or guidelines
         - Machine learning uses 📝mathematical approaches to analyze data, searching for patterns that predict future activity. 
         - an AI system starts with nothing and progressively learns the rules, creating its own algorithms as it learns the rules and applies ML techniques based on these rules
+            - 🛠️supervised learning: uses of labeled datasets.
+            -  🛠️unsupervised learning: uses unlabeled datasets.  
     - Behavior-based detection is one way ML and AI can apply to cybersecurity
         - an admin relates a baseline of normal activities and traffic on a network; the baseline in this case is similar to a set of rules given to a ML system
         - during normal operations, it detects anomalies and reports them; if the detection is a **🔥false positive** (incorrectly classifying a benign activity, system state, or configuration as malicious or vulnerable), the ML system learns
