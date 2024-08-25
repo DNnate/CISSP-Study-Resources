@@ -130,7 +130,7 @@
         - Agile was started by 17 pioneers in 2001, producing the "Manifesto for Agile Software Development" (agilemanifesto.org) that lays out the core philosophy of the Agile approach:
             - 🔔**individuals and interactions** over processes and tools
             - 🔔**working software** over comprehensive documentation
-            - 🔔**customer collaboration** over contract negotiation
+            - 🔔**customer collaboration** over contract negotiation (The Agile development process requires that business users interact with developers on a daily basis)
             - 🔔**responding to change** over following a plan
         - Agile Manifesto also defines 💥12 principles:
             - 🆎the highest priority is to satisfy the customer through early and continuous delivery of valuable software. 🧠It does not prioritize security over other requirements.
