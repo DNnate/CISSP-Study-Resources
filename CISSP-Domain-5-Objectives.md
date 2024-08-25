@@ -197,6 +197,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - reduces the number of passwords that users need to remember, and they are less likely to write them down
         - eases administration by reducing the number of accounts
         - SSO solutions and centralized administration and make it easier for administrators to manage user accounts.
+        - The primary purpose of Single Sign-On (SSO) is to address Accountability and Assurance.
+            - 🔨Accountability: SSO helps in ensuring that user activities can be accurately traced back to the individual user, which is crucial for maintaining accountability. This is because SSO centralizes authentication, ensuring that users are properly authenticated and their actions can be logged and audited.
+            - 🔨Assurance: SSO also provides assurance that the authentication process is robust and secure, reducing the risk of unauthorized access by enforcing strong authentication mechanisms consistently across multiple applications.
     - 🚡Disadvantages:
         - once an account is compromised, an attacker gains unrestricted access to all of the authorized resources
     - Within an organization, a central access control system, such as a directory service, is often used for SSO
