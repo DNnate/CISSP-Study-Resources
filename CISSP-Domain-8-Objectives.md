@@ -215,19 +215,19 @@ temporarily separated from each other so that one does not interfere with the ot
 
 - 8.1.2 Maturity models (e.g., Capability Maturity Model (CMM), Software Assurance Maturity Model (SAMM))
     - Software Engineering Institute (SEI) (Carnegie Mellon University) created the Capability Maturity Model for Software (AKA Software Capability Maturity Model, abbreviated SW-CMM, CMM, or SCMM)
-        - **SW-CMM**: a management process to foster the ongoing and continuous improvement of an org's processes and workflows for developing, maintaining and using software
+    - 🟢 **SW-CMM**: a management process to foster the ongoing and continuous improvement of an org's processes and workflows for developing, maintaining and using software
         - all software development moves through a set of maturity phases in sequential fashion, and CMM describes the principles and practices underlying software process maturity, intended to help improve the maturity and quality of software processes
         - note that CMM doesn't explicitly address security
         - stages of the CMM:
-            - Level 1: Initial: process is disorganized; usually little or no defined software development process
-            - Level 2: Repeatable: in this phase, basic lifecycle management processes are introduced
-            - Level 3: Defined: in this phase, software devs operate according to a set of formal, documented software development processes
-            - Level 4: Managed: in this phase, there is better management of the software process. The organization uses quantitative measures to gain a detailed understanding of the development process.
+            - 🆎Level 1: **Initial**: process is disorganized; usually little or no defined software development process
+            - 🆎Level 2: **Repeatable**: in this phase, basic lifecycle management processes are introduced
+            - 🆎Level 3: **Defined**: in this phase, software devs operate according to a set of formal, documented software development processes. The Defined stage of the SW-CMM is marked by the presence of basic lifecycle management processes and reuse of code. It includes the use of requirements management, software project planning, quality assurance, and configuration management practices.
+            - 🆎Level 4: **Managed**: in this phase, there is better management of the software process. The organization uses 📝quantitative measures to gain a detailed understanding of the development process.
             - Level 5: Optimizing: in this phase continuous improvement occurs
-    - **Software Assurance Maturity Model (SAMM)**: an open source project maintained by the Open Web Application Security Project (OWASP)
+    - 🟢**Software Assurance Maturity Model (SAMM)**: an open source project maintained by the Open Web Application Security Project (OWASP)
         - provides a framework for integrating security into the software development and maintenance processes and provides orgs with the ability to assess their maturity
         - SAMM associates software development with 5 business functions:
-            - 📝Governance: the activities needed to manage software development processes
+            - 🛎️Governance: the activities needed to manage software development processes
                 - this function includes practices for:
                     - strategy
                     - metrics
@@ -235,30 +235,30 @@ temporarily separated from each other so that one does not interfere with the ot
                     - compliance
                     - education
                     - guidance
-            - 📝Design: process used to define software requirements and develop software
+            - 🛎️Design: process used to define software requirements and develop software
                 - this function includes practices for:
                     - 💥Threat modeling: designed to reduce the number of security-related design and coding flaws as well as the severity of other flaws. **Threat modeling** is a process by which potential security threats and vulnerabilities can
-be identified, and mitigations can be prioritized. Threat modeling can be used to help securely ✏️develop applications or to help reduce risk in an already ✏️deployed application. There are numerous approaches to threat modeling, but three of the most commonly
+be identified, and mitigations can be prioritized. Threat modeling can be used to help securely 📝develop applications or to help reduce risk in an already 📝deployed application. There are numerous approaches to threat modeling, but three of the most commonly
 used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed to reduce the number of security-related design and coding flaws as well as the severity of other non-security related flaws. 
                     - threat assessment using threatmodelling techniques
                     - security requirements
                     - security architecture
-            - 📝Implementation: process of building and deploying software components and managing flaws
+            - 🛎️Implementation: process of building and deploying software components and managing flaws
                 - this function includes:
                     - secure build
                     - secure deployment
                     - defect management practices
-            - 📝Verification: activities undertaken to confirm code meets business and security requirements
+            - 🛎️Verification: activities undertaken to confirm code meets business and security requirements
                 - this function includes:
                     - architecture assessment
                     - requirements-driven testing
                     - security testing
-            - 📝Operations: actions taken to maintain security throughout the software lifecycle after code is released
+            - 🛎️Operations: actions taken to maintain security throughout the software lifecycle after code is released
                 - function includes:
                     - incident management
                     - environment management
                     - operational management
-    - **IDEAL Model**: developed by SEI, a model for software development that uses many of the SW-CMM attributes, using 5 phases:
+    - 🟢**IDEAL Model**: developed by SEI, a model for software development that uses many of the SW-CMM attributes, using 5 phases:
         - Initiating: business reasons for the change are outlined, support is built, and applicable infrastructure is allocated
         - Diagnosing: in this phase, engineers analyze the current state of the organization and make general recommendations for change
         - Establishing: development of a specific plan of action based on the diagnosing phase recommendations
@@ -276,10 +276,15 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
         | Learning| Optimizing|
     
 
-- **A Gantt chart** is a type of bar chart that shows the interrelationships over time between projects and schedules. It provides a graphical illustration of a schedule that helps you plan, coordinate, and track specific tasks in a project. They are particularly useful when coordinating tasks that require the use of the same team members or other resources.
-- **Program Evaluation Review Technique (PERT)** is a project-­scheduling tool used to judge the size of a software product in development and calculate the standard deviation (SD) for risk assessment. PERT relates the estimated lowest possible size, the most likely size, and the highest possible size of each component. The PERT chart  shows the dependencies between different project tasks.
+- 🟢**A Gantt chart** is a type of bar chart that shows the interrelationships over time between projects and schedules. It provides a graphical illustration of a schedule that helps you plan, coordinate, and track specific tasks in a project. They are particularly useful when coordinating tasks that require the use of the same team members or other resources.
+- 🟢**Program Evaluation Review Technique (PERT)** is a project-­scheduling tool used to judge the size of a software product in development and calculate the standard deviation (SD) for risk assessment. PERT relates the estimated lowest possible size, the most likely size, and the highest possible size of each component. The PERT chart  shows the dependencies between different project tasks.
     - PERT charts use nodes to represent milestones or deliverables and then show the estimated time to move between milestones 
-- **Rapid Application Development, or RAD**, focuses on fast development and the ability to quickly adjust to changing requirements. RAD uses four phases: requirements planning, user design, construction, and cutover.
+- 🟢**Rapid Application Development, or RAD**, focuses on fast development and the ability to quickly adjust to changing requirements.
+    - RAD uses four phases:
+        - 🎈requirements planning
+        - 🎈user design
+        - 🎈construction
+        - 🎈cutover.
 
 - 8.1.3 Operations and maintenance
     - Once delivered to the production environment, software devs must make any additional changes to accomodate unexpected bugs, vulnerabilities, or interoperability issues
@@ -305,16 +310,16 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
 - Applications, including custom systems, can present significant risks and vulnerabilities, and to protect against these it's important to introduce security controls into the entire system’s development lifecycle
 - 8.2.1 Programming languages
     - Computers understand 1s and 0s (binary), and each CPU has its own (machine) language
-    - **Assembly language**: a way of using mnemonics to represent the basic instruction set of a CPU
-    - **Assemblers**: tools that convert assembly language source code into machine code 
-    - Third-generation programming languages, such as C/C++, Java, and Python, are known as high-level languages
+    - ⚒️**Assembly language**: a way of using mnemonics to represent the basic instruction set of a CPU
+        - **Assemblers**: tools that convert assembly language source code into machine code
+        - **Disassemblers**: convert back into machine-readable assembly language (an intermediate step during the compilation process)
+    - ⚒️**High-level languages** Third-generation programming languages, such as C/C++, Java, and Python, are known as high-level languages
         - high-level languages allow developers to write instructions that better approximate human communication
-    - **Compiled language**: converts source code into machine-executable format
+    - ⚒️**Compiled language**: converts source code into machine-executable format
         - compiled code is generally less prone to manipulation by a third party, however easier to embed backdoors or other security flaws without detection
-    - **Decompilers**: convert binary executable back into source code
-    - **Disassemblers**: convert back into machine-readable assembly language (an intermediate step during the compilation process)
-    - **Interpreted language**: uses an interpreter to execute;sourcecode is viewable; e.g. Python, R, JavaScript, VBScript. 📝JavaScript remains the one mobile code technology that may affect the security of modern browsers and their host OSs. 
-    - **Object-oriented programming (OOP)**: defines an object to be set of a software that offers one or more methods, internal to the object, that software external to that object can request to access; each method may require specific inputs and resources and may produce a specified set of outputs; focuses on the objects involved in an interaction
+        - **Decompilers**: convert binary executable back into source code
+    - ⚒️**Interpreted language**: uses an interpreter to execute;sourcecode is viewable; e.g. Python, R, JavaScript, VBScript. 📝JavaScript remains the one mobile code technology that may affect the security of modern browsers and their host OSs. 
+    - ⚒️**Object-oriented programming (OOP)**: defines an object to be set of a software that offers one or more methods, internal to the object, that software external to that object can request to access; each method may require specific inputs and resources and may produce a specified set of outputs; focuses on the objects involved in an interaction
         - OOP languages include C++, Java, and .NET
         - think of OOP as a group of objects that can be requested to perform certain operations or exhibit certain behaviors, working together to provide a system’s functionality or capabilities
         - OOP has the potential to be more reliable and to reduce the propagation of program change errors, and is better suited to modeling or mimicking the real world
@@ -322,18 +327,18 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
         - objects can also be subclasses of other objects and inherit methods from their parent class; the subclasses can use all the methods of the parent class and have additional class-specific methods
         - from a security standpoint, object-oriented programming provides a black-box approach to abstraction
         - OOP terms:
-            - **message**: a communication to or input of an object
-            - **method**: internal code that defines the actions of an object
-            - **behavior**: results or output exhibited by an object
+            - 🩹**Message**: a communication to or input of an object
+            - 🩹**Method**: internal code that defines the actions of an object
+            - 🩹**Behavior**: results or output exhibited by an object
                 - behaviors are the results of a message being processed through a method
-            - **class**: a collection of the common methods, from a set of objects that defines the behavior of those objects
-            - **instance**: objects are instances of or examples of classes that contain their methods
-            - **inheritance**: occurs when the methods from a class (parent or superclass) are inherited by another subclass (child) or object
-            - **delegation**: the forwarding of a request by an object to another object or delegate
-            - **polymorphism**: the characteristic of an object that allows it to respond with different behaviors to the same message or method because of changes in external conditions
-            - **cohesion**: describes the strength of the relationship between the purposes of the methods within the same class
+            - 🩹**Class**: a collection of the common methods, from a set of objects that defines the behavior of those objects
+            - 🩹**Instance**: objects are instances of or examples of classes that contain their methods
+            - 🩹**Inheritance**: occurs when the methods from a class (parent or superclass) are inherited by another subclass (child) or object
+            - 🩹**Delegation**: the forwarding of a request by an object to another object or delegate
+            - 🩹**Polymorphism**: the characteristic of an object that allows it to respond with different behaviors to the same message or method because of changes in external conditions
+            - 🩹**Cohesion**: describes the strength of the relationship between the purposes of the methods within the same class
                 - if all methods have similar purposes, there is high cohesion, and a sign of good design
-            - **coupling**: the level of interaction between objects
+            - 🩹**Coupling**: the level of interaction between objects
                 - lower coupling: means less interaction
                 - lower coupling provides better software design because objects are more independent, and code is easier to troubleshoot and update
     
