@@ -395,6 +395,7 @@ of litigation is imminent.
     - 💥**Split knowledge**: combines the concepts of separation of duties and two-person control into a single solution; the info or privilege required to perform an operation is divided among two or more users, ensuring that no single person has sufficient privileges to compromise the security of the environment
     - Principles such as least privilege and separation of duties help prevent security policy violations, and monitoring helps to deter and detect any violations that occur despite the use of preventive controls. Before granting access, you should verify that the user has a valid security clearance and a business need to know the information. 
     - Segregation of duties matrix: is used to ensure that one person does not obtain two privileges that would create a potential conflict.
+    - 💥**Entitlement** refers to the privileges granted to new users when an account is first provisioned. Entitlement refers to the level of privileges granted to a user. If a user has been granted access to an object, they are entitled to it.
 - 7.4.3 Privilege account management
     - **Privileged Account Management (PAM)**: solutions that restrict access to privileged accounts or detect when accounts use any elevated privileges (e.g. admin accounts)
         - Microsoft domains, this includes local admin accounts, Domain and Enterprise Admins groups
@@ -985,7 +986,6 @@ of litigation is imminent.
         - initial training for employees taking on a new DR role for the first time
         - detailed refresher training for DR team members
         - brief awareness refreshers for all other employees
-        - **Entitlement** refers to the privileges granted to new users when an account is first provisioned.
 - 7.11.7 ❄️Lessons learned
     - A lessons learned session should be conducted at the conclusion of any disaster recovery operation or other security incident.
     - A lessons learned document is often created and distributed to involved parties after a postmortem review to ensure that those who were involved in the incident and others who may benefit from the knowledge are aware of what they can do to prevent future issues and to improve response in the event that one occurs.
