@@ -370,6 +370,7 @@
 - 8.2.5 Runtime
     - 💥**RunTime Environments (RTE)**: allows the portable execution of code across different operating systems or platforms without recompiling (e.g. Java Virtual Manager (JVM))
         - this is known as portable code, which needs translation between each environment, the role of the RTE
+        - The JVM is the runtime virtual machine that allows the execution of Java code on a device. The JVM implements the Java sandbox but that is only one of its many functions.
         - 🔨**Runtime Application Security Protection (RASP)**: security agents comprised of small code units built into an app which can 🧠detect set of security violations; upon detection, the RASP agent can cause the app to terminate, or take other protective actions
 - 8.2.6 Continuous Integration and Continuous Delivery (CI/CD)
     - 📙**Continuous Integration and Continuous Delivery**: workflow automation processes and tools that attempt to reduce, if not eliminate, the need for manual communication and coordination between the steps of a software development process
