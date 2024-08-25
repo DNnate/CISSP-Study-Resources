@@ -526,13 +526,27 @@ used are called STRIDE, DREAD, and PASTA.
         - Server Side Request Forgery (SSRF)
 
 - 8.5.2 Security of Application Programming Interfaces (APIs)
-     - **Application Programming Interface (API)**: specifies the manner in which a software component interacts with other components
+     - 🔴**Application Programming Interface (API)**: specifies the manner in which a software component interacts with other components
         - API's reduce the effort of providing secure component interactions by providing easy implementation for security controls 
         - API's reduce code maintenance by encouraging software resue, and keeping the location of changes in one place
-- **Closed system** is designed to work well with a narrow range of other systems, generally all from the same manufacturer. The standards for closed systems are often proprietary and not normally disclosed. A closed system is one that uses largely proprietary or unpublished protocols and standards.
-- **Open systems** are designed using agreed-upon industry standards. Open systems are much easier to integrate with systems from different manufacturers that support the same standards or that use compatible application programming interfaces (APIs).
-        - **Parameter validation**: ensuring that any API parameter is checked against being malformed, invalid, or malicious helps ensure API secure use; validation confirms that the parameter values being received by an app are within defined limits before they are processed by the system
-
+        - **Securing APIs**
+            - 1. Authentication: Use OAuth2 or OpenID Connect: Implement strong, token-based authentication mechanisms and Multi-Factor Authentication (MFA) for sensitive API endpoints.
+              2. Authorization: use RBAC and Limit API access to only what the client application needs.
+              3. Input Validation (Parameter validation): ensuring that any API parameter is checked against being malformed, invalid, or malicious helps ensure API secure use; validation confirms that the parameter values being received by an app are within defined limits before they are processed by the system
+              4. Output Encoding: Sanitize Outputs/Encode outputs to prevent the injection of malicious scripts (e.g., XSS attacks).
+              5. Secure API Endpoints: Avoid Exposing Unnecessary Endpoints. Ensure that GET requests are safe and do not modify state, and use POST, PUT, DELETE, etc., appropriately.
+              6. Rate Limiting and Throttling: Prevent Abuse by Implement rate limiting to prevent excessive requests from overloading the API.
+              7. Error Handling: Avoid revealing details about the internal structure of the API in error messages. Use consistent error codes that provide enough information without exposing sensitive details.
+              8. Secure Session Management: Use Secure Cookies for APIs that rely on session-based authentication, ensure that cookies are secure, HttpOnly, and have appropriate expiration. Implement session timeouts to reduce the risk of session hijacking.
+              9. Logging and Monitoring: Ensure that all security-relevant events, such as authentication failures and unauthorized access attempts, are logged. Continuously monitor logs for signs of malicious activity.
+              10. Secure Data Handling: Limit the amount of data exposed by the API, especially sensitive information. Mask Sensitive Data: Ensure that sensitive information, such as credit card numbers, is masked or encrypted in API responses.
+              11. Secure API Documentation: Ensure that API documentation is only accessible to authorized users and does not expose sensitive information.
+              12. Security Headers: CORS (Cross-Origin Resource Sharing): Implement secure CORS policies to control which domains can interact with your API. Apply Content Security Policy (CSP) headers to protect against cross-site scripting (XSS).
+              13. Code Security Practices: Regularly review API code for security vulnerabilities using Static and Dynamic Analysis Tools
+              14. API Hardening: Disable Unused Features: Turn off any API features or endpoints that are not actively used. Avoid providing unnecessary details in API responses that could aid an attacker.
+        - 🔨**Closed system** is designed to work well with a narrow range of other systems, generally all from the same manufacturer. The standards for closed systems are often proprietary and not normally disclosed. A closed system is one that uses largely proprietary or unpublished protocols and standards.
+        - 🔨**Open systems** are designed using agreed-upon industry standards. Open systems are much easier to integrate with systems from different manufacturers that support the same standards or that use compatible application programming interfaces (APIs).
+        
 - 8.5.3 Security coding practices
     - Secure coding practices can be summarized as standards and guidelines
         - **standards**: mandatory activities, actions, or rules
