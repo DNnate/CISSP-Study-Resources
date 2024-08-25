@@ -339,9 +339,9 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
     
 - 8.2.2 Libraries
     - **Software library (Code Libraries)**: a pre-written collection of components (classes, procedures, scripts etc) that do specific tasks, useful to other components (e.g. software libraries for encryption algorithms, managing network connections, or displaying graphics)
-    - Shared software libraries contain reusable code, improving developer's efficiency, and reducing the need to write well-known algorithms from scratch; often available as open source
+    - Shared software libraries contain 📝reusable code, improving developer's efficiency, and reducing the need to write well-known algorithms from scratch; often available as open source
         - shared libraries can also include many security issues (e.g. Heartbleed), and devs should be aware of the origins of the shared code that they use, and keep informed about any security vulns that might be discovered in these libraries
-        - Code repositories may be used to manage the distribution and updating of these libraries.
+        - 📝Code repositories may be used to manage the distribution and updating of these libraries.
         - **Software Development Kits SDK**: Organizations trying to make libraries more accessible to developers often publish SDKs. SDKs are collections of software libraries combined with documentation, examples, and other resources designed to help programmers get up and running quickly in a development environment. SDKs also often include specialized utilities designed to help developers design and test code.
     
 - 8.2.3 Tool sets
@@ -356,12 +356,12 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
         - this is known as portable code, which needs translation between each environment, the role of the RTE
 - 8.2.6 Continuous Integration and Continuous Delivery (CI/CD)
     - **Continuous Integration and Continuous Delivery**: workflow automation processes and tools that attempt to reduce, if not eliminate, the need for manual communication and coordination between the steps of a software development process
-    - **Continuous integration (CI)**: all new code is integrated into the rest of the system as soon as the developer writes it, merging it into a shared repo
-        - this merge triggers a batch of unit tests
-        - if it merges without error, it's subjected to integration tests
-        - CI improves software development efficiency by identifying errors early and often
-        - CI also allows the practice of continuous delivery (CD)
-    - **Continuous Delivery (CD)**: incrementally building a software product that can be released at any time; because all processes and tests are automated, code can be released to production daily or more often
+        - 🔔**Continuous integration (CI)**: all new code is integrated into the rest of the system as soon as the developer writes it, merging it into a shared repo
+            - this merge triggers a batch of unit tests
+            - if it merges without error, it's subjected to integration tests
+            - CI improves software development efficiency by identifying errors early and often
+            - CI also allows the practice of continuous delivery (CD)
+        - 🔔**Continuous Delivery (CD)**: incrementally building a software product that can be released at any time; because all processes and tests are automated, code can be released to production daily or more often
     - CI/CD relies on automation and often third-party tools which can have vulnerabilities or be compromised
     - Secure practices such as threat modeling, least privilege, defense in depth, and zero trust can help reduce possible threats to these tools and systems
 
@@ -372,8 +372,9 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
  
 - 8.2.9 Code repositories
     - Software development is a collaborative effort, and larger projects require teams of devs working simultaneously on different parts
+    - Code repositories may be used to manage the distribution and updating of code libraries
     - Code repositories support collaborations, acting as a central storage point for source code
-        - github, bitbucket, and sourceforge are examples of systems that provide version control, bug tracking, web hosting, release management, and communications functionality
+        - github, bitbucket, and sourceforge are examples of systems that provide 📝version control, bug tracking, web hosting, release management, and communications functionality
     
 - 8.2.10 Application security testing (e.g., Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST))
     - 📗**Static Application Security Testing (SAST)**: (Inside Out) AKA static analysis, tools and technique to help identify software defects (e.g. data type errors, loop/structure bounds violations, unreachable code) or security policy violations and is carried out by examining the code without executing the program (or before the program is compiled)
