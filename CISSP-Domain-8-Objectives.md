@@ -171,6 +171,10 @@
             - ❄️**Scaled Agile Framework® (SAFe)**: a set of org and workflow patterns for implementing agile practices at an enterprise scale; the framework is a body of knowledge that includes structured guidance on roles and responsibilities, how to plan and manage the work, and values to uphold.
                - it includes structured guidance on roles and responsibilities, how to plan and mage the work and which values to uphold.
                - promotes alignment, collaboration and delivery across large numbers of agile teams
+                   - ⚒️Full SAFe is designed to support enterprises in building and maintaining large integrated solutions with the collaboration of hundreds of practitioners. It provides the most extensive level of guidance, with roles, responsibilities, and activities needed to sustainably deliver complex solutions.
+                   - ⚒️Essential SAFe focuses on the basic elements of the framework needed to be agile
+                   - ⚒️Large Solution SAFe is for developing large and complex solutions that do not require the constructs of the portfolio level
+                   - ⚒️Portfolio SAFe is for aligning enterprise strategy with execution but does not address the complexity of building large solutions that Full SAFe is designed for.
                - It builds on several Agile concepts. It does not replace Agile, rather it adds neccessary layers to make Agile work in large enterprise-level context
                    - Cordination Across Teams
                    - Strategic alignment with orgs business objectives
