@@ -204,7 +204,7 @@ temporarily separated from each other so that one does not interfere with the ot
         - security must be tightly integrated and move with the same agility
         - The DevOps approach to technology management seeks to integrate software development, operations, and quality assurance in a seamless approach that builds collaboration between the three disciplines.
         - The three elements of the DevOps model are 🔥software development, 🔥quality assurance, and 🔥IT operations.
-    - **DevSecOps**: refers to the integration of development, security, and operations
+    - 📁**DevSecOps**: refers to the integration of development, security, and operations
         - provides for a merger of phased review (as in the waterfall SDLC) with the DevOps method, to incorporate the needs for security, safety, resilience or other emerging properties in the final system, at each turn of the cycle of development
         - DevSecOps supports the concept of software-defined security, where security controls are actively managed into the CI/CD pipeline
         - The four elements of the DevSecOps model are 🔥software development, 🔥quality assurance, 🔥IT operations and 🔥Information security (introduced in the DevSecOps model)
