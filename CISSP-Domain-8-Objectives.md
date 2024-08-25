@@ -30,7 +30,8 @@
 - **Configuration Control**: process of controlling modifications to hardware, firmware, software, and documentation to protect the information system against improper modifications prior to, during, and after system implementation
 - **Configuration Management (CM)**: collection of activities focused on establishing and maintaining integrity of IT products and information systems, through the control of processes for initialization, changing and monitoring the configurations of those products and systems throughout the system development lifecycle
 - **Covert Channels/Paths**: communication pathways that violate security policy or requirement (deliberately or unwittingly)
-- **Data Contamination**: attackers attempt to use malformed inputs, at the field, record, transaction, or file level, in an attempt to disrupt the proper functioning of the system. 🔥Can also be referred to as the mixing of data from a higher classification level and/or need-­to-­know requirement with data from a lower classification level and/or need-­to-­know requirement.
+- **Data Contamination**: attackers attempt to use malformed inputs, at the field, record, transaction, or file level, in an attempt to disrupt the proper functioning of the system.
+    - 🔥Can also be referred to as the mixing of data from a higher classification level and/or need-­to-­know requirement with data from a lower classification level and/or need-­to-­know requirement.
 - **Data Lake**: a data warehouse incorporating multiple types of streams of unstructured or semi-structured data
 - **Data Mining**: analysis and decision-making technique that relies on extracting deeper meanings from many different instances and types of data; often applied to data warehouse content
 - **Data Modeling**: design process that identifies all data elements that the system will need to input, create, store, modify, output, and destroy during operational use; should be one of the first steps in analysis and design
@@ -287,7 +288,8 @@
     - Gantt chart shows the proposed start and end dates for different activities. It is developed based on the work breakdown structure (WBS), which is developed based on functional requirements.
 - 🟢**Work breakdown structure (WBS)** WBS is an important project management tool that divides the work done for a large project into smaller components. It is not a project plan because it does not describe timing or resources. 
 - 🟢**Program Evaluation Review Technique (PERT)** is a project-­scheduling tool used to judge the size of a software product in development and calculate the standard deviation (SD) for risk assessment. PERT relates the estimated lowest possible size, the most likely size, and the highest possible size of each component. The PERT chart  shows the dependencies between different project tasks.
-    - PERT charts use 📝nodes to represent milestones or deliverables and then show the estimated time to move between milestones 
+    - PERT charts use 📝nodes to represent milestones or deliverables and then show the estimated time to move between milestones
+    - A PERT chart focuses on the interrelationships between tasks rather than the specific details of the schedule. 
 - 🟢**Rapid Application Development, or RAD**, focuses on fast development and the ability to quickly adjust to changing requirements.
     - RAD uses four phases:
         - 🎈requirements planning
