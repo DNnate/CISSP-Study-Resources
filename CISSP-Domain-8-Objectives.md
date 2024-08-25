@@ -458,7 +458,6 @@ inputs and outputs to inform the test plan.
         - use of admin privileges
         - Transport Layer Security (TLS) failures
         - cryptographic errors
-    - 💥**Code Signing**: Code signing provides developers/entity/organisation with a way to confirm the authenticity of their code to end users. Developers use a cryptographic function to digitally sign their code with their own private key, and then browsers can use the developer’s public key to verify that signature and ensure that the code is legitimate and was not modified by unauthorized individuals.
 - 8.3.2 Risk analysis and mitigation
     - Risk management is at the center of secure software development, in particular regarding the mapping of identified risks and implemented controls
         - this is a difficult part of secure software dev, especially related to auditing
@@ -499,6 +498,7 @@ inputs and outputs to inform the test plan.
     - As orgs continue to migrate to the cloud (SaaS, IaaS, PaaS), they should increase the security assessment of those services
     - The top reasons for cloud breaches continues to be misconfigurations, lack of visibility into access settings, and poor access controls
         - cloud service providers have tools to help mitigate these issues, and orgs should consider bringing in third-party experts to help if they don't have the internal expertise
+        - One of the most important security concern in relation to a CSP is the data retention policy. TThe data retention policy defines what information or data is being collected by the CSP, how long it will be kept, how it is destroyed, why it is kept, and who can access it. 
 
 - 8.4.5 **Cloud Service Models**
     - 🔴**Infrastructure as a Service (IaaS)**: Provides virtualized computing resources over the internet. Examples: AWS EC2, Microsoft Azure Virtual Machines, Google Compute Engine.
@@ -543,13 +543,17 @@ inputs and outputs to inform the test plan.
 
 [8.5](#8.5) Define and apply secure coding guidelines and standards (OSG-9 Chpts 20,21)
 - **Secure Coding Guidelines and Standards**: best practices identified by a variety of software and security professionals, that when used correctly can dramatically reduce the number of exploitable vulnerabilities introduced during development that remain in the operationally-deployed system
+    - Programmers need to adopt secure coding practices, which include using stored procedures, code signing, and server-side validation.
+        - 💥**Code Signing**: Code signing provides developers/entity/organisation with a way to confirm the authenticity of their code to end users. Developers use a cryptographic function to digitally sign their code with their own private key, and then browsers can use the developer’s public key to verify that signature and ensure that the code is legitimate and was not modified by unauthorized individuals. Code signing is the activity of crafting a digital signature of a software program in order to confirm that it was not changed and who it is from.
+        - 💥**stored procedure** is a subroutine or software module that can be called on or accessed by applications interacting with a relational database management system (RDBMS). 
+        - 💥**Server-side** data validation is suited for protecting a system against input submitted by a malicious user
 - 8.5.1 Security weaknesses and vulnerabilities at the source-code level
     - A source code vulnerability is a code defect providing a threat actor with an opportunity to compromise the security of a software system
         - source code vulns are caused by design or implementation flaws
         - **design flaw**: if dev did everything correctly, there would still be a vulnerability
         - **implementation flaw**: dev incorrectly implemented part of a good design
     - The Open Web Application Security Project (OWASP) is widely considered as the most authoritative source on web application security issues.
-    - The Open Web Application Security Project (OWASP) produces an annual list of the top ten web application security issues that developers and security professionals around the world rely upon for education and training purposes. The OWASP vulnerabilities form the basis for many web application security testing products.
+    - 🔥**Open Web Application Security Project (OWASP**) produces an annual list of the top ten web application security issues that developers and security professionals around the world rely upon for education and training purposes. The OWASP vulnerabilities form the basis for many web application security testing products.
     - The OWASP top 10 vulnerabilities for 2021:
         - Broken access control
         - Cryptographic failures
