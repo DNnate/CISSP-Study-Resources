@@ -227,7 +227,7 @@ temporarily separated from each other so that one does not interfere with the ot
         - note that CMM doesn't explicitly address security
         - stages of the CMM:
             - 🆎Level 1: **Initial**: process is disorganized; usually little or no defined software development process
-            - 🆎Level 2: **Repeatable**: in this phase, basic lifecycle management processes are introduced
+            - 🆎Level 2: **Repeatable**: in this phase, basic lifecycle management processes are introduced. Reuse of code in an organized fashion begins, and repeatable results are expected from similar projects. The key process areas for this level include Requirements Management, Software Project Planning, Software Project Tracking and Oversight, Software Subcontract Management, Software Quality Assurance, and Software Configuration Management.
             - 🆎Level 3: **Defined**: in this phase, software devs operate according to a set of formal, documented software development processes. The Defined stage of the SW-CMM is marked by the presence of basic lifecycle management processes and reuse of code. It includes the use of requirements management, software project planning, quality assurance, and configuration management practices.
             - 🆎Level 4: **Managed**: in this phase, there is better management of the software process. The organization uses 📝quantitative measures to gain a detailed understanding of the development process.
             - Level 5: Optimizing: in this phase continuous improvement occurs
