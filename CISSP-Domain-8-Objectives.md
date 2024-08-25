@@ -233,9 +233,9 @@ temporarily separated from each other so that one does not interfere with the ot
                     - guidance
             - 📝Design: process used to define software requirements and develop software
                 - this function includes practices for:
-                    - threat modeling: designed to reduce the number of security-related design and coding flaws as well as the severity of other flaws. **Threat modeling** is a process by which potential security threats and vulnerabilities can
+                    - 💥Threat modeling: designed to reduce the number of security-related design and coding flaws as well as the severity of other flaws. **Threat modeling** is a process by which potential security threats and vulnerabilities can
 be identified, and mitigations can be prioritized. Threat modeling can be used to help securely ✏️develop applications or to help reduce risk in an already ✏️deployed application. There are numerous approaches to threat modeling, but three of the most commonly
-used are called STRIDE, DREAD, and PASTA.
+used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed to reduce the number of security-related design and coding flaws as well as the severity of other non-security related flaws. 
                     - threat assessment using threatmodelling techniques
                     - security requirements
                     - security architecture
