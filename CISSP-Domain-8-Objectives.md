@@ -266,11 +266,11 @@
                     - environment management
                     - operational management
     - 🟢**IDEAL Model**: developed by SEI, a model for software development that uses many of the SW-CMM attributes, using 5 phases:
-        - Initiating: business reasons for the change are outlined, support is built, and applicable infrastructure is allocated
-        - Diagnosing: in this phase, engineers analyze the current state of the organization and make general recommendations for change
-        - Establishing: development of a specific plan of action based on the diagnosing phase recommendations
-        - Acting: in this phase, the org develops solutions and then tests, refines, and implements them
-        - Learning: continuously analyze efforts to achieve these goals, and propose new actions as required
+        - ⚒️Initiating: business reasons for the change are outlined, support is built, and applicable infrastructure is allocated
+        - ⚒️Diagnosing: in this phase, engineers analyze the current state of the organization and make general recommendations for change
+        - ⚒️Establishing: development of a specific plan of action based on the diagnosing phase recommendations
+        - ⚒️Acting: in this phase, the org develops solutions and then tests, refines, and implements them
+        - ⚒️Learning: continuously analyze efforts to achieve these goals, and propose new actions as required
 
     - IDEAL vs SW-CMM: I...I, Dr. Ed, am lo
 
