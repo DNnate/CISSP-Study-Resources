@@ -397,6 +397,7 @@
 - 8.2.9 Code repositories
     - Software development is a collaborative effort, and larger projects require teams of devs working simultaneously on different parts
     - Code repositories may be used to manage the distribution and updating of code libraries
+    - The use of a code repository would provide a central location for the storage of code as well as version control to manage different releases.
     - Code repositories support collaborations, acting as a central storage point for source code
         - github, bitbucket, and sourceforge are examples of systems that provide 📝version control, bug tracking, web hosting, release management, and communications functionality
     
