@@ -326,8 +326,9 @@
         - high-level languages allow developers to write instructions that better approximate human communication
     - ⚒️**Compiled language**: converts source code into machine-executable format
         - compiled code is generally less prone to manipulation by a third party, however easier to embed backdoors or other security flaws without detection
+        - C, C++, and Java are all compiled languages—a compiler produces an executable file that is not human-readable
         - **Decompilers**: convert binary executable back into source code
-    - ⚒️**Interpreted language**: uses an interpreter to execute;sourcecode is viewable; e.g. Python, R, JavaScript, VBScript. 📝JavaScript remains the one mobile code technology that may affect the security of modern browsers and their host OSs. 
+    - ⚒️**Interpreted language**: uses an interpreter to execute;sourcecode is viewable; e.g. Python, R, JavaScript, VBScript. 📝JavaScript remains the one mobile code technology that may affect the security of modern browsers and their host OSs. JavaScript is an interpreted language so the code is not compiled prior to execution, allowing you to inspect the contents of the code. 
     - ⚒️**Object-oriented programming (OOP)**: defines an object to be set of a software that offers one or more methods, internal to the object, that software external to that object can request to access; each method may require specific inputs and resources and may produce a specified set of outputs; focuses on the objects involved in an interaction
         - OOP languages include C++, Java, and .NET
         - think of OOP as a group of objects that can be requested to perform certain operations or exhibit certain behaviors, working together to provide a system’s functionality or capabilities
