@@ -668,7 +668,7 @@ inputs and outputs to inform the test plan.
     - 🔥Adware: Displays unwanted advertisements. classed as potentially unwanted programs (PUPs)
     - 🔥Worms: Self-replicating malware that spreads over networks. e.g stuxnet, code red worm. Worms are malicious code objects that move between systems under their own power, whereas viruses require some type of human intervention.
     - 🔥Rootkits: Conceal the existence of malware or malicious processes. it is commonly used for 🧠privilege escalation. Privilege escalation attacks, such as those carried out by rootkits, seek to upgrade normal user accounts to administrative
-access rights.
+access rights. A rootkit is used to achieve or maintain elevated privileges on a victim’s host. Rootkits frequently masquerade as system-level services to help remain undetected. Rootkits often have kernel-level access and are very difficult to detect or remove.
     - 🔥Logic Bombs: Malicious code that lies dormant until certain conditions are met. Logic bombs wait until certain conditions are met before delivering their malicious payloads.
     - 🔥Cryptomalware: Designed to steals computing power and uses it to mine cryptocurrency.
     - 🔥Remote access Trojans (RATs) are designed to grant attackers remote administrative access to systems.
