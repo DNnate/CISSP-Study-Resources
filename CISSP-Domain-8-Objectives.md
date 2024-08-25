@@ -340,6 +340,7 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
 - 8.2.2 Libraries
     - **Software library (Code Libraries)**: a pre-written collection of components (classes, procedures, scripts etc) that do specific tasks, useful to other components (e.g. software libraries for encryption algorithms, managing network connections, or displaying graphics)
     - Shared software libraries contain 📝reusable code, improving developer's efficiency, and reducing the need to write well-known algorithms from scratch; often available as open source
+    - Code libraries are packages of reusable functions that may be incorporated into individual development projects.
         - shared libraries can also include many security issues (e.g. Heartbleed), and devs should be aware of the origins of the shared code that they use, and keep informed about any security vulns that might be discovered in these libraries
         - 📝Code repositories may be used to manage the distribution and updating of these libraries.
         - **Software Development Kits SDK**: Organizations trying to make libraries more accessible to developers often publish SDKs. SDKs are collections of software libraries combined with documentation, examples, and other resources designed to help programmers get up and running quickly in a development environment. SDKs also often include specialized utilities designed to help developers design and test code.
