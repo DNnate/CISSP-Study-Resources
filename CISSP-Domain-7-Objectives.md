@@ -52,7 +52,7 @@ than signature detection methods.
 - **View-Based access controls**: access control that allows the database to be logically divided into components like records, fields, or groups allowing sensitive data to be hidden from non-authorized users; admins can set up views by user type, allowing only access to assigned views
 
 [7.1](#7.1) Understand and comply with investigations (OSG-9 Chpt 19)
-- **Investigation**: a formal inquiry and systematic process that involves gathering information to determine the cause of a security incident or violation
+- 🟢**Investigation**: a formal inquiry and systematic process that involves gathering information to determine the cause of a security incident or violation
 - Investigators must be able to conduct reliable investigations that will hold up in court; securing the scene is an essential and critical part of every investigation
     - securing the scene might include any/all of the following:
         - sealing off access to the area or crime scene
@@ -73,7 +73,7 @@ of litigation is imminent.
         - further analysis of the most compelling evidence
         - final reporting of findings
     
-- **Locard exchange principle**: whenever a crime is commited something is taken, and something is left behind
+- 💥**Locard exchange principle**: whenever a crime is commited something is taken, and something is left behind. Locard's principle suggests that any contact between two objects results in an exchange of materials. In the context of digital forensics, this principle implies that there is always some form of digital trace or residue left behind when devices interact or when data is transferred. 
 - The purpose of an investigation is to:
     - identify the root cause of the incident
     - prevent future occurrences
