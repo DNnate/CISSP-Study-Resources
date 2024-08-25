@@ -134,20 +134,19 @@ temporarily separated from each other so that one does not interfere with the ot
             - 🔔**working software** over comprehensive documentation
             - 🔔**customer collaboration** over contract negotiation
             - 🔔**responding to change** over following a plan
-        - Agile Manifesto also defines 12 principles:
-            - the highest priority is to satisfy the customer through early and continuous delivery of valuable software
-            - 🧠It does not prioritize security over other requirements.
-            - welcome changing requirements, even late in development; Agile processes harness change for the customer’s competitive advantage
-            - deliver working software frequently, from a couple of weeks to a couple of months, with a preference for the shorter timescale
-            - business people and developers must work together daily throughout the project
-            - build projects around motivated individuals; give them the environment, support, and tools and trust them to build
-            - emphasizing face-to-face conversation
-            - working software is the primary measure of progress
-            - agile processes promote sustainable development; the them should be able to maintain a constant pace indefinitely
-            - continuous attention to technical excellence and good design enhances agility
-            - simplicity, or the art of maximizing the amount of work not done,  is essential
-            - the best architectures, requirements, and designs emerge from self-organizing teams
-            - at regular intervals, the team reviews their effective and adjusts for improvement
+        - Agile Manifesto also defines 💥12 principles:
+            - 🆎the highest priority is to satisfy the customer through early and continuous delivery of valuable software. 🧠It does not prioritize security over other requirements.
+            - 🆎welcome changing requirements, even late in development; Agile processes harness change for the customer’s competitive advantage
+            - 🆎deliver working software frequently, from a couple of weeks to a couple of months, with a preference for the shorter timescale
+            - 🆎business people and developers must work together daily throughout the project
+            - 🆎build projects around motivated individuals; give them the environment, support, and tools and trust them to build
+            - 🆎emphasizing face-to-face conversation
+            - 🆎working software is the primary measure of progress
+            - 🆎agile processes promote sustainable development; the them should be able to maintain a constant pace indefinitely
+            - 🆎continuous attention to technical excellence and good design enhances agility
+            - 🆎simplicity, or the art of maximizing the amount of work not done, is essential
+            - 🆎the best architectures, requirements, and designs emerge from self-organizing teams
+            - 🆎at regular intervals, the team reviews their effective and adjusts for improvement
         - Several methodologies have emerged that take these Agile principles and define specific processes around them:
             - ❄️**Scrum**: a management framework that teams use to self-organize and work towards a common goal; it describes a set of meetings, tools, and roles for efficient project delivery, allowing teams to self-manage, learn from experience, and adapt to change; named from the daily team meetings, called scrums
                 - It is an agile model that help agile teams to work together and deliver complex products
