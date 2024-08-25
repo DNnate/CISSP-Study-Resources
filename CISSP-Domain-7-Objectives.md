@@ -38,7 +38,6 @@ than signature detection methods.
 - **Log**: record of actions/events that have taken place on a system
 - **Precursor**: signal from events suggesting a possible change of conditions, that may alter the current threat landscape
 - **Regression testing**: testing of a system to ascertain whether recently approved modifications have changed its performance, or if other approved functions have introduced unauthorized behaviors
-- **Request For Change (RFC)**: documentation of a proposed change in support of change management activities 
 - **Root Cause Analysis**: principle-based systems approach for the identification of underlying causes associated with a particular risk set or incidents
 - **Trusted Computing Base (TCB)**: the collection of all hardware, software, and firmware components within an architecture that is specifically responsible for security and the isolation of objects;
     - TCB is a term that is usually associated with security kernels and the reference monitor
@@ -742,6 +741,7 @@ of litigation is imminent.
 [7.9](#7.9) Understand and participate in change management processes (OSG-9 Chpt 16)
 - **Change management**: formal process an org uses to transition from the current state to a future state; typically includes mechanisms to request, evaluate, approve, implement, verify, and learn the change; ensures that the costs and benefits of changes are analyzed and changes are made in a controlled manner to reduce risks
     - Change management processes allow various IT experts to review proposed changes for unintended consequences before implementing
+    - 💥**Request For Change (RFC)**: documentation of a proposed change in support of change management activities. Each change should be the result of a reviewed and approved request for change (RFC). These RFCs may be approved by the change advisory board (CAB). 
     - Change management aims to ensure that any change does not result in unintended outages or reduce security. 
     - 💢The request control process provides an organized framework within which users can request modifications, managers can conduct cost/benefit analyses, and developers can prioritize tasks.
     - 💢Change control provides an organized framework within which multiple developers can create and test solutions prior to rolling them out into a production environment.
