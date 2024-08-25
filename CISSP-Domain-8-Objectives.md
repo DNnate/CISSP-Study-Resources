@@ -384,6 +384,7 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
     - **Dynamic Application Security Testing (DAST)**: (Outside In)  AKA dynamic analysis, is the evaluation of a program while running in real time
         - tools that execute the software unit, application or system under test, in ways that attempt to drive it to reveal a potentially exploitable vulnerability
         - Dynamic testing evaluates code in a runtime environment.
+        - Dynamic testing of software typically occurs in a black-box environment where the tester does not have access to the source code. 
         - Tester has NO knowledge of the underlying framework, design, source code and implementation
         - It is by definition a form of black-box testing
         - DAST is usually performed once a program has cleared SAST and basic code flaws have been fixed 
