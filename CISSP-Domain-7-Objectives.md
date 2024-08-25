@@ -588,6 +588,9 @@ of litigation is imminent.
     - risk assessment results
     - the output of ­monitoring strategy reviews
     - reporting requirements.
+
+- 🔴**Software-Defined Security (SDS)**: Software-defined security (SDS) is an increasingly common approach to security that involves using software solutions and policies to secure environments, rather than traditional hardware-based approaches. This strategy allows for flexible and dynamic security configurations, particularly suited to the cloud's scalable nature.
+    - Policy engines contribute to decision-making in SDS and other frameworks by enforcing security policies. 
     
 - 7.7.1 🔴Firewalls (e.g. next generation, web application, network)
     - Firewalls are preventive and technical controls: Most appliance (i.e., hardware) firewalls offer extensive logging, auditing, and monitoring capabilities as well as alarms/alerts and even basic IDS functions. It is also true that firewalls are unable to prevent internal attacks that do not cross the firewall. Firewalls are unable to block new phishing scams, unless phishing scam's URL is already on a block list.
