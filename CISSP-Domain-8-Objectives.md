@@ -146,7 +146,11 @@ temporarily separated from each other so that one does not interfere with the ot
                 - primarily used for software dev but has grown to be accepted within other industries
                 - provides a set of rules, practices and roles to put the agile prinicples into action
             - ❄️**Kanban**: a 📝visual system used to manage and keep track of work as it moves through a process; the word kanban is Japanese for "card you can see"; Kanban teams focus on reducing the time a project (or user story) takes from start to finish, using a kanban board and continuously improving their flow of work
-            - ❄️**Rapid Application Development (RAD)**: an agile software development approach that focuses more on ongoing software projects and 📝user feedback and less on following a strict plan, emphasizing rapid prototyping over planning
+            - ❄️**Rapid Application Development (RAD)**: an agile software development approach that focuses more on ongoing software projects and 📝user feedback and less on following a strict plan, emphasizing rapid prototyping over planning. Rapid Application Development, or RAD, focuses on fast development and the ability to quickly adjust to changing requirements. RAD uses four phases:
+                - 🎈Requirements planning
+                - 🎈User design
+                - 🎈Construction
+                - 🎈Cutover.
             - ❄️**Rational Unified Process (RUP)**: an agile software development methodology that splits the project life cycle into four phases:
                 - 🎈Inception: which defines the scope of the project and develop business case
                 - 🎈Elaboration: Plan project, specify features, and baseline the architecture 
