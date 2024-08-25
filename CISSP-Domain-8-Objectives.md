@@ -494,6 +494,10 @@ inputs and outputs to inform the test plan.
             - 🖋️Second, if the third-party development group goes out of business, can you continue to operate with the code as is? You may need to abandon the existing code to switch to a new development group.
 - 8.4.4 Managed services (e.g. Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))
     - As orgs continue to migrate to the cloud (SaaS, IaaS, PaaS), they should increase the security assessment of those services
+        - 🎵Community cloud deployment model provides cloud-based assets to two or more organizations. It is a cloud application has been deployed and shared among several organisations with similar concerns.
+        - 🎵Public cloud model includes assets available for any consumers to rent or lease.
+        - 🎵Private cloud deployment model includes cloud-based assets that are exclusive to a single organization.
+        - 🎵Hybrid model includes a combination of two or more deployment models. It doesn't matter if it is a Software as a Service (SaaS) model or any other service model.
     - The top reasons for cloud breaches continues to be misconfigurations, lack of visibility into access settings, and poor access controls
         - cloud service providers have tools to help mitigate these issues, and orgs should consider bringing in third-party experts to help if they don't have the internal expertise
         - One of the most important security concern in relation to a CSP is the data retention policy. TThe data retention policy defines what information or data is being collected by the CSP, how long it will be kept, how it is destroyed, why it is kept, and who can access it. 
