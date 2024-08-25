@@ -444,7 +444,7 @@ inputs and outputs to inform the test plan.
   - 🔖**Negetive Testing**: Negative testing involves providing invalid, unexpected, or erroneous inputs to the software to ensure that it handles these situations gracefully. The aim is to verify that the application can handle incorrect data or operations without crashing, producing incorrect results, or compromising security.
   - 🔖**Complete coverage**: It is a process to ensure that all of the functions of their software are testedCoverage analysis is performed to ensure that functionality, requirements, or other elements are completely tested.
   - 🔖**Manual Testing** Manual testing uses human understanding of business logic to assess program flow and responses. ⛔Business logic errors are most likely to be missed by automated functional testing. If a complete coverage code test was conducted, runtime, input validation, and error handling issues are likely to have been discovered by automated testing. Any automated system is more likely to miss business logic errors, because humans are typically necessary to understand business logic issues. Manual testing/code review is best suited to identifying business logic flaws.
-
+  - 🔖**Misuse Case Testing** misuse case analysis is a process that tests code based on how it would perform if it was misused instead of used properly. Use case testing tests valid use cases,.
 [8.3](#8.3) Assess the effectiveness of software security (OSG-9 Chpts 20,21)
 - 8.3.1 Auditing and logging of changes
     - Applications should be configured to log details of errors and other security events to a centralized log repository
