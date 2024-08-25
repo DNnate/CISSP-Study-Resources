@@ -48,8 +48,6 @@
 - **Knowledge Discovery in Database (KDD)**: mathematical, statistical, and visualization method of identifying valid and useful patterns in data
 - **Knowledge Management**: efficent/effective management of info and associated resources in an enterprise to drive busienss intelligence and decision-making; may include workflow management, business process modeling, doc management, db and info systems and knowledge-based systems
 - **Level of abstraction**: how closely a source-code/design doc represents the details of the underlying object/system/component; lower-level abstractions generally have more detail than high-level ones
-- **Living off the land** (non-malware based ransom attack): system attack where the system/resources compromised are used in pursuit of additional attacks (i.e. the attacker's agenda); anti-malware defence doesn't detect/prevent the attack given the attacker's methodology
-- **Malformed input attack**: not currently handling input data is a common source of code errors that can result in arbitrary code exec, or misdirection of the program to other resources/locations
 - **Manipulation** is the authorized or unauthorized alteration of data in a database.
 - **Markup Language**: non-programming language used to express formatting or arrangement of data on a page/screen; usually extensible, allowing users to define additional/other operations to be performed; they etend the language into a programming language (e.g. in the same way JavaScript extends HTML)
 - **Metadata**: info that describes the format or meaning of other data, which can be used to provide a systematic method for describing resources and improving info retrieval
@@ -722,7 +720,9 @@ access rights. A rootkit is used to achieve or maintain elevated privileges on a
     - 🔥**Buffer overflow**: source code vulnerability allowing access to data locations outside of the storage space allocated to the buffer; can be triggered by attempting to input data larger than the size of the buffer. Input that is too large can “overflow” a data structure to affect other data stored in the computer’s memory.
     - 🔥**Bypass attack**: attempt to bypass front-end controls of a database to access information
     - 🔥**Query attack**: use of query tools to access data not normally allowed by the trusted front end, including the views controlled by the query application; could also result from malformed queries using SQL to bypass security controls; improper/incomplese checks on queries can be used in a similar way to bypass access controls
-- **Ransom attack**: form of attack that threatens destruction, denial, or unauthorized public release/remarketing of private information assets; usually involves encrypting assets and withhold the decryption key until a ransom is paid by the victim
+    - 🔥**Ransom attack**: form of attack that threatens destruction, denial, or unauthorized public release/remarketing of private information assets; usually involves encrypting assets and withhold the decryption key until a ransom is paid by the victim
+    - 🔥**Living off the land** (non-malware based ransom attack): system attack where the system/resources compromised are used in pursuit of additional attacks (i.e. the attacker's agenda); anti-malware defence doesn't detect/prevent the attack given the attacker's methodology
+    - 🔥**Malformed input attack**: not currently handling input data is a common source of code errors that can result in arbitrary code exec, or misdirection of the program to other resources/locations
 - 🟦**Computing Resilience**:        
     - 🛠️Multitasking is processing more than one task at the same time. In most cases, multitasking is simulated by the OS (using multiprogramming or pseudo-­simultaneous execution) even when not supported by the processor.
     - 🛠️Multicore is also able to perform simultaneous execution but does so with multiple execution cores on one or more CPUs.
