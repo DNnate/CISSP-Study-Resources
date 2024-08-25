@@ -311,6 +311,7 @@
             - Release control occurs after changes are finalized. With changes that are ready to be implemented in hand, release managers can follow their process with steps that typically include removing debugging code and conducting acceptance testing.  
         - 💢**Configuration control**: ensures that changes to software versions are made in accordance with the change and configuration management policies. 📝Configuration control is part of software configuration management, not the change process.
         - Configuration Control is the process of controlling modifications to hardware, firmware, software, and documentation to protect the information system against improper modifications prior to, during, and after system implementation. The Configuration control process ensures that updates can be made only from authorized distributions in accordance with configuration management policies.
+            - Configuration management is about managing change that could result in reduced security. This includes supporting rollback of changes, maintaining detailed documentation, and running configuration audits. 
 - 8.1.5 Integrated Product Team (IPT)
     - **Integrated Product Team (IPT)**:Introduced by the DoD as an approach to bring together multifunctional teams with a single goal of delivering a product or developing a process or policy, and fostering parallel, rather than sequential, decisions
     - Essentially, IPT is used to ensure that all aspects of a product, process, or policy are considered during the development process
