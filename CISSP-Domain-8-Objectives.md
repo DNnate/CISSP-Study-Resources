@@ -357,6 +357,7 @@ used are called STRIDE, DREAD, and PASTA. Software threat modeling is designed t
         - this is known as portable code, which needs translation between each environment, the role of the RTE
 - 8.2.6 Continuous Integration and Continuous Delivery (CI/CD)
     - **Continuous Integration and Continuous Delivery**: workflow automation processes and tools that attempt to reduce, if not eliminate, the need for manual communication and coordination between the steps of a software development process
+    - When organizations adopt a continuous integration/continuous delivery (CI/CD) approach to software development, they may deploy code extremely rapidly. In fact, some organizations deploy new code to production hundreds or even thousands of times per day using this approach.
         - 🔔**Continuous integration (CI)**: all new code is integrated into the rest of the system as soon as the developer writes it, merging it into a shared repo
             - this merge triggers a batch of unit tests
             - if it merges without error, it's subjected to integration tests
