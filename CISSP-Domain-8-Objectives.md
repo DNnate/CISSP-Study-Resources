@@ -147,6 +147,7 @@
             - 🆎at regular intervals, the team reviews their effective and adjusts for improvement
         - Several methodologies have emerged that take these Agile principles and define specific processes around them:
             - ❄️**Scrum**: a management framework that teams use to self-organize and work towards a common goal; it describes a set of meetings, tools, and roles for efficient project delivery, allowing teams to 📝self-manage, learn from experience, and adapt to change; named from the daily team meetings, called scrums
+                - The 📝daily stand-up meeting is a hallmark of the Scrum methodology. The meetings are called scrums and are essential to the process. Scrum is a methodology that embraces the Agile philosophy, but not all Agile approaches use the daily scrum.
                 - It is an agile model that help agile teams to work together and deliver complex products
                 - primarily used for software dev but has grown to be accepted within other industries
                 - provides a set of rules, practices and roles to put the agile prinicples into action
