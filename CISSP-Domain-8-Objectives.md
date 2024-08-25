@@ -98,14 +98,14 @@ temporarily separated from each other so that one does not interfere with the ot
 - **Software Quality Assurance**: variety of formal and informal processes that attempt to determine whether a software app or system meets all of its intended functions, doesn't perform unwanted functions, is free from known security vulns, and is free from insertion or other errors in design and function
 - **SDLC**: Software Development LifeCycle is a framework and systematic associated with tasks that are performed in a series of steps for building, deploying, and supporting software apps; 🧠begins with planning and requirements gathering, and ends with decommissioning and sunsetting; there are many different SDLCs, such as agile, DevSecOps, rapid prototyping, offering different approaches to defining and managing the software lifecycle
     - All systems development processes should have several activities in common. Although they may not necessarily share the same names, these core activities are essential to the development of sound, secure systems:
-        - Phase 1: Conceptual definition
-        - Phase 2: Functional requirements determination:  conducted by the senior team members with inputs from all the stakeholders and domain experts. Planning for the quality assurance requirements and recognization of the risks involved is also done at this stage.
-        - Phase 3: Control specifications development, feasibility studies
-        - Phase 4: Design review:  emphasizes the importance of ensuring that the appropriate security controls, objectives, and goals are identified and initiated 
-        - Phase 5: Coding
-        - Phase 6: Code review walk-­through
-        - Phase 7: System test review
-        - Phase 8: Maintenance and change management
+        - 🆎Phase 1: Conceptual definition
+        - 🆎Phase 2: Functional requirements determination:  conducted by the senior team members with inputs from all the stakeholders and domain experts. Planning for the quality assurance requirements and recognization of the risks involved is also done at this stage.
+        - 🆎Phase 3: Control specifications development, feasibility studies
+        - 🆎Phase 4: Design review:  emphasizes the importance of ensuring that the appropriate security controls, objectives, and goals are identified and initiated 
+        - 🆎Phase 5: Coding
+        - 🆎Phase 6: Code review walk-­through
+        - 🆎Phase 7: System test review
+        - 🆎Phase 8: Maintenance and change management
 - **Source code**: program statements in human-readable form using a formal programming language's rules for syntax and semantics
 - **Spyware/Adware**: software that performas a variety of monitoring and data gathering functions; AKA potentailly unwanted programs/applications (PUP/PUA), may be used in monitoring employee activities/use of resources (spyware), or advertising efforts (adware); both may be legit/authorized by system owners or unwanted intruders
 - **Strong data typing**: feature of a programming language preventing data type mismatch errors; strongly typed languages will generate errors at compile time
@@ -117,7 +117,7 @@ temporarily separated from each other so that one does not interfere with the ot
 - **Trapdoor/backdoor**: hidden mechanism that bypasses access control measures; an entry point into an architecture or system that is inserted in software by devs during development to provide a method of gaining access for modification/support; can also be inserted by an attacker, bypassing access control measures designed to prevent unauthorized software changes. Backdoors are code that allows those with knowledge of the backdoor to bypass authentication mechanisms
 
 - 8.1.1 Development methodologies (e.g. Agile, Waterfall, DevOps, DevSecOps)
-    - **Agile methodology**: a project management approach to development that involves breaking the project into phases and emphasizes continuous collaboration and improvement; teams follow a cycle of planning, executing, and evaluating
+    - 📁**Agile methodology**: a project management approach to development that involves breaking the project into phases and emphasizes continuous collaboration and improvement; teams follow a cycle of planning, executing, and evaluating
         - Agile development emphasizes:
             - the delivery of working software in short iterations, helping to get the software to market faster 
             - reduced risk by frequently testing and providing feedback, helping to identify and resolve issues earlier in the development process
@@ -141,24 +141,24 @@ temporarily separated from each other so that one does not interfere with the ot
             - the best architectures, requirements, and designs emerge from self-organizing teams
             - at regular intervals, the team reviews their effective and adjusts for improvement
         - Several methodologies have emerged that take these Agile principles and define specific processes around them:
-            - **Scrum**: a management framework that teams use to self-organize and work towards a common goal; it describes a set of meetings, tools, and roles for efficient project delivery, allowing teams to self-manage, learn from experience, and adapt to change; named from the daily team meetings, called scrums
+            - ❄️**Scrum**: a management framework that teams use to self-organize and work towards a common goal; it describes a set of meetings, tools, and roles for efficient project delivery, allowing teams to self-manage, learn from experience, and adapt to change; named from the daily team meetings, called scrums
                 - It is an agile model that help agile teams to work together and deliver complex products
                 - primarily used for software dev but has grown to be accepted within other industries
                 - provides a set of rules, practices and roles to put the agile prinicples into action
-            - **Kanban**: a visual system used to manage and keep track of work as it moves through a process; the word kanban is Japanese for "card you can see"; Kanban teams focus on reducing the time a project (or user story) takes from start to finish, using a kanban board and continuously improving their flow of work
-            - **Rapid Application Development (RAD)**: an agile software development approach that focuses more on ongoing software projects and user feedback and less on following a strict plan, emphasizing rapid prototyping over planning
-            - **Rational Unified Process (RUP)**: an agile software development methodology that splits the project life cycle into four phases:
-                - inception: which defines the scope of the project and develop business case
-                - elaboration: Plan project, specify features, and baseline the architecture 
-                - construction: Building the product
-                - transition: providing the product to its users 
+            - ❄️**Kanban**: a 📝visual system used to manage and keep track of work as it moves through a process; the word kanban is Japanese for "card you can see"; Kanban teams focus on reducing the time a project (or user story) takes from start to finish, using a kanban board and continuously improving their flow of work
+            - ❄️**Rapid Application Development (RAD)**: an agile software development approach that focuses more on ongoing software projects and 📝user feedback and less on following a strict plan, emphasizing rapid prototyping over planning
+            - ❄️**Rational Unified Process (RUP)**: an agile software development methodology that splits the project life cycle into four phases:
+                - 🎈Inception: which defines the scope of the project and develop business case
+                - 🎈Elaboration: Plan project, specify features, and baseline the architecture 
+                - 🎈Construction: Building the product
+                - 🎈Transition: providing the product to its users 
                 - during each of the phases, all six core development disciplines take place: business modeling, requirements, analysis and design, implementation, testing, and deployment
-            - **Agile Unified Process (AUP)**: a simplified version of the rational unified process, it describes a simple, easy to understand approach to developing business application software using agile techniques and concepts yet still remaining true to the RUP
-            - **Dynamic Systems Development Model (DSDM)**: an agile project delivery framework, initially used as a software development method; key principles:
-                - focus on the business need: DSDM teams establish a valid business case and ensure organizational support throughout the project
+            - ❄️**Agile Unified Process (AUP)**: a 📝simplified version of the rational unified process, it describes a simple, easy to understand approach to developing business application software using agile techniques and concepts yet still remaining true to the RUP
+            - ❄️**Dynamic Systems Development Model (DSDM)**: an agile project delivery framework, initially used as a software development method; key principles:
+                - focus on the 📝business need: DSDM teams establish a valid business case and ensure organizational support throughout the project
                 - deliver on time: work should be time-boxed and predictable, to build confidence in the development team
-            - **Extreme Programming (XP)**: an Agile project management methodology that targets speed and simplicity with short development cycles, using five guiding values, five rules, and twelve practices for programming; the goal of the rigid structure, focused sprints and continuous integrations is higher quality product
-            - **Scaled Agile Framework® (SAFe)**: a set of org and workflow patterns for implementing agile practices at an enterprise scale; the framework is a body of knowledge that includes structured guidance on roles and responsibilities, how to plan and manage the work, and values to uphold.
+            - ❄️**Extreme Programming (XP)**: an Agile project management methodology that targets 📝speed and simplicity with short development cycles, using five guiding values, five rules, and twelve practices for programming; the goal of the rigid structure, focused sprints and continuous integrations is higher quality product
+            - ❄️**Scaled Agile Framework® (SAFe)**: a set of org and workflow patterns for implementing agile practices at an enterprise scale; the framework is a body of knowledge that includes structured guidance on roles and responsibilities, how to plan and manage the work, and values to uphold.
                - it includes structured guidance on roles and responsibilities, how to plan and mage the work and which values to uphold.
                - promotes alignment, collaboration and delivery across large numbers of agile teams
                - It builds on several Agile concepts. It does not replace Agile, rather it adds neccessary layers to make Agile work in large enterprise-level context
@@ -172,7 +172,7 @@ temporarily separated from each other so that one does not interfere with the ot
                    - Agile Software Developement
                    - Lean Product Developement
                    - Systems Thinking
-    - **Waterfall**: 
+    - 📁**Waterfall**: 
         - Developed by Winston Royce in 1970, the waterfall model uses a linear sequential life-cycle approach where each phase must be completed before the next can begin; all project requirements are gathered up front, and there is no formal way to integrate changes as more information becomes available
         - Traditional model has 7 stages, as each stage is completed, the project moves into the next phase; the iterative waterfall model does allow development to return to the previous phase to correct defects 
             - System Requirements
@@ -189,14 +189,14 @@ temporarily separated from each other so that one does not interfere with the ot
         - Still used in public utility projects and even building of nuclear reactors
         - In the waterfall model, the software development process follows five sequential steps that are, in order: Requirements, Design, Coding, Testing, and Maintenance.
         - The ✏️Iterative waterfall model uses a seven-­stage approach to software development and includes a feedback loop that allows development to return to the previous phase to correct defects discovered during the subsequent phase.
-    - **Spiral model**: improved waterfall dev process providing for a cycle of Plan, Do, Check, Act (PDCA) sub-stages at each phase of the SDLC; a risk-driven development process that follows an iterative model while also including waterfall elements
+    - 📁**Spiral model**: improved waterfall dev process providing for a cycle of Plan, Do, Check, Act (PDCA) sub-stages at each phase of the SDLC; a risk-driven development process that follows an iterative model while also including waterfall elements
         - following defined phases to completion and then repeats the process, resembling a spiral
         - It allows for multiple iterations of the waterfall-style process
         - It is known as a "Metamodel" or "Model of Models"
         - the spiral model provides a solution to the major criticism of the waterfall model in that it allows devs to return to planning stages as technical demands and customer requirements iterate
         - In this approach, developers use multiple iterations of a waterfall-style software development process. This becomes a “loop” of iterations through similar processes.
         - Each loop of the spiral results in the development of a new system prototype.
-    - **DevOps (Development and Operations)**: an approach to software development, quality assurance, and technology operations that seeks to unite siloed staff, and bring the three functions together in a single operational model
+    - 📁**DevOps (Development and Operations)**: an approach to software development, quality assurance, and technology operations that seeks to unite siloed staff, and bring the three functions together in a single operational model
         - closely aligned with lean and the Agile development approach, DevOps aims to dramatically decrease the time required to develop, test, and deploy software changes
         - using the DevOps model, and continuous integration/continuous delivery (CI/CD), orgs strive to roll out code dozens or even hundreds of times per day and the can deploy code extremely rapidly.
         - this requires a high degree of 🧠automation, including integrating code repositories, the software configuration management process, and the movement of code between development, testing and production environments
