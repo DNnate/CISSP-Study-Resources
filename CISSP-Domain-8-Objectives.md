@@ -492,6 +492,9 @@ inputs and outputs to inform the test plan.
         - third-party software is not considered COTS, since the software is custom or customized
         - third-party software may rely on open-source software, but since it's customized, it may have different or additional vulns
         - it's best practice to use a third-party to do an external audit and security assessment; this should be built into the vendor's contract, with passing the audit conditional for finalizing software purchase
+        - If your organization depends on custom-developed software or software products produced through outsourced code development, then the risks of that arrangement need to be evaluated and mitigated.
+            - 🖋️First, the quality and security of the code needs to be assessed.
+            - 🖋️Second, if the third-party development group goes out of business, can you continue to operate with the code as is? You may need to abandon the existing code to switch to a new development group.
 - 8.4.4 Managed services (e.g. Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))
     - As orgs continue to migrate to the cloud (SaaS, IaaS, PaaS), they should increase the security assessment of those services
     - The top reasons for cloud breaches continues to be misconfigurations, lack of visibility into access settings, and poor access controls
