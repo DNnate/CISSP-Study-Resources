@@ -87,7 +87,6 @@ temporarily separated from each other so that one does not interfere with the ot
           
 - **Representational State Transfer (REST)**: software architectural style for synchronizing the activities of two or more apps running on different systems on a network; REST facilitiates these processes exchanging state information, usually via HTTP/S
 - **Reputation monitoring**: defensive tactic that uses the trust reputation of a website or IP address as a means of blocking an org's users, processes or systems from connecting to a possible source of malware or exploitations; possibly the only real defense against zero-day exploits; involves monitoring URLs, domains, IP addresses or other similar info to separate untrustworthy traffic
-- **Runtime Application Security Protection (RASP)**: security agents comprised of small code units built into an app which can 🧠detect set of security violations; upon detection, the RASP agent can cause the app to terminate, or take other protective actions
 - **Security Assessment**: testing, inspection, and analysis to determine the degree to which a system meets or exceeds the required security posture; may assess whether an as-built system meets the requirements in its specs, or whether an in-use system meets the current perception of the real-world security threats
 - **Software Quality Assurance**: variety of formal and informal processes that attempt to determine whether a software app or system meets all of its intended functions, doesn't perform unwanted functions, is free from known security vulns, and is free from insertion or other errors in design and function
 - ❄️**SDLC**: Software Development LifeCycle is a framework and systematic associated with tasks that are performed in a series of steps for building, deploying, and supporting software apps; 🧠begins with planning and requirements gathering, and ends with decommissioning and sunsetting; there are many different SDLCs, such as agile, DevSecOps, rapid prototyping, offering different approaches to defining and managing the software lifecycle
@@ -186,13 +185,13 @@ temporarily separated from each other so that one does not interfere with the ot
     - 📁**Waterfall**: 
         - Developed by Winston Royce in 1970, the waterfall model uses a linear sequential life-cycle approach where each phase must be completed before the next can begin; all project requirements are gathered up front, and there is no formal way to integrate changes as more information becomes available
         - Traditional model has 7 stages, as each stage is completed, the project moves into the next phase; the iterative waterfall model does allow development to return to the previous phase to correct defects 
-            - System Requirements
-            - Software Requirements
-            - Preliminary Design
-            - Detailed Design
-            - Code and Debug
-            - Testing
-            - Operations and Maintenance
+            - 🔏System Requirements
+            - 🔏Software Requirements
+            - 🔏Preliminary Design
+            - 🔏Detailed Design
+            - 🔏Code and Debug
+            - 🔏Testing
+            - 🔏Operations and Maintenance
         - It allows developers to go backacross the 7 stages to make corrections. But you can only return to a previous stage (Only on stage back)
         - A major criticism of this model is that it's very rigid, and not ideal for most complex projects which often contain many variables that affect the scope throughout the project's lifecycle
         - Despite many organizations moving to Agile, DevOps, or other more responsive development methodologies, waterfall remains a strong contender when clear objectives, upfront planning and stable requirements are combined with a need to prevent flaws and to have a high level of control over the development process and output.
@@ -369,10 +368,11 @@ temporarily separated from each other so that one does not interfere with the ot
 - 8.2.4 Integrated Development Environment (IDE)
     - **Integrated Development Environment (IDE)**: software applications, their control procedures, supporting databases, libraries and toolsets that provide a programmer or team what they need to specify, code, compile, test, and integrate code; IDEs provide developers with a single environment where they can write their code, test and debug, and compile it
 - 8.2.5 Runtime
-    - **RunTime Environments (RTE)**: allows the portable execution of code across different operating systems or platforms without recompiling (e.g. Java Virtual Manager (JVM))
+    - 💥**RunTime Environments (RTE)**: allows the portable execution of code across different operating systems or platforms without recompiling (e.g. Java Virtual Manager (JVM))
         - this is known as portable code, which needs translation between each environment, the role of the RTE
+        - 🔨**Runtime Application Security Protection (RASP)**: security agents comprised of small code units built into an app which can 🧠detect set of security violations; upon detection, the RASP agent can cause the app to terminate, or take other protective actions
 - 8.2.6 Continuous Integration and Continuous Delivery (CI/CD)
-    - **Continuous Integration and Continuous Delivery**: workflow automation processes and tools that attempt to reduce, if not eliminate, the need for manual communication and coordination between the steps of a software development process
+    - 📙**Continuous Integration and Continuous Delivery**: workflow automation processes and tools that attempt to reduce, if not eliminate, the need for manual communication and coordination between the steps of a software development process
     - When organizations adopt a continuous integration/continuous delivery (CI/CD) approach to software development, they may deploy code extremely rapidly. In fact, some organizations deploy new code to production hundreds or even thousands of times per day using this approach.
         - 🔔**Continuous integration (CI)**: all new code is integrated into the rest of the system as soon as the developer writes it, merging it into a shared repo
             - this merge triggers a batch of unit tests
@@ -408,7 +408,7 @@ temporarily separated from each other so that one does not interfere with the ot
         - It is by definition a form of black-box testing
         - DAST is usually performed once a program has cleared SAST and basic code flaws have been fixed 
         - DAST enables devs to trace subtle logical errors that are likely to cause security problems, without the need to create artificial error-inducing scenarios
-        - dynamic analysis is also effective for compatibility testing, detecting memory leakages, identifying dependencies, and analyzing software without accessing the software’s actual source code. Examples of DAST include Fuzzing and Web application vulnerability scanning
+        - dynamic analysis is also effective for compatibility testing, detecting memory leakages, identifying dependencies, and analyzing software without accessing the software’s actual source code. Examples of DAST include 📝Fuzzing and Web application 📝vulnerability scanning
     - 📗**Interactive Application Security Testing (IAST)**: testing that combines or integrates SAST and DAST to improve testing and provide behavioral analysis capabilities to pinpoint the source of vulnerabilities
         - It analyses codes for vulnerabilities while it is being used
         - it focuses on real-time reporting to optimize testing and analysis process
@@ -465,7 +465,7 @@ inputs and outputs to inform the test plan.
 
 [8.4](#8.4) Assess security impact of acquired software (OSG-9 Chpts 16,20)
 - 8.4.1 Commercial-off-the-shelf (COTS)
-    - **Commercial Off-the-Shelf (COTS)**: software elements, usually apps, that are provided as finished products (not intended for alteration by or for the end-user)
+    - ❄️**Commercial Off-the-Shelf (COTS)**: software elements, usually apps, that are provided as finished products (not intended for alteration by or for the end-user)
     - When using commercial off-the-shelf (COTS) software, customers do not generally have access to the source code and must depend upon the vendor to release security patches that correct vulnerabilities.
     - Most widely used commercial-off-the-shelf (COTS) software products have been security researcher (both benign and malicious) tested 
         - researching discovered vulnerabilities and exploits can help us understand how seriously the vendor takes security
@@ -474,7 +474,7 @@ inputs and outputs to inform the test plan.
     - If you can talk with a vendor, look for processes like defensive programming, which is a software development best practice that means as code is developed or reviewed, they are constantly looking for opportunities for things to go badly
         - e.g. treating all input routines as untrusted until proven otherwise
  
-- 8.4.2 Open source
+- 8.4.2 ❄️**Open source**
     - Open source is typically released with licensing allowing code access and inspection so devs can look for security issues
         - typically, however, this means that there is no sevice or support that comes with the software and requires in-house support for configuration, and security testing
         - An example is the OpenSSL package is a widely used implementation of TLS encryption that is available as an open source package. 
@@ -484,7 +484,7 @@ inputs and outputs to inform the test plan.
         - By monitoring assets containing open source libraries for vulnerabilities, organizations can stay informed about any newly discovered vulnerabilities or weaknesses in these libraries. This allows them to take proactive measures, such as applying patches or updates, implementing workarounds, or finding alternative solutions, to mitigate the risk of zero-day attacks.
 
 - 8.4.3 Third-party
-    - **Third-party software**: (AKA outsourced software) is software made specifically for an org by a third party
+    - ❄️**Third-party software**: (AKA outsourced software) is software made specifically for an org by a third party
         - third-party software is not considered COTS, since the software is custom or customized
         - third-party software may rely on open-source software, but since it's customized, it may have different or additional vulns
         - it's best practice to use a third-party to do an external audit and security assessment; this should be built into the vendor's contract, with passing the audit conditional for finalizing software purchase
@@ -514,24 +514,24 @@ inputs and outputs to inform the test plan.
         - 🔔Cloud Service Provider (CSP): Provides centralized identity management services such as user authentication, authorization, and access control. Offers SSO capabilities to enable users to access multiple applications and services with a single set of credentials. Manages the lifecycle of user accounts, including creating, modifying, and disabling accounts based on organizational policies. Provides options for MFA to enhance security by requiring additional verification factors beyond passwords.
         - Supports federation protocols (e.g., SAML, OAuth, OpenID Connect) to establish trust relationships between different identity domains. Implements policies and controls for managing identities and ensuring compliance with regulatory requirements. Monitors identity-related events and provides audit logs for visibility and compliance purposes. Adheres to relevant regulations and standards regarding identity management and data protection.
         - 🔔Customer: Defines and manages user accounts, roles, and permissions within the IDaaS platform. Integrates IDaaS with existing on-premises or cloud applications and services requiring authentication and access control. Configures and enforces identity and access management (IAM) policies based on organizational requirements and security best practices. Utilizes the IDaaS platform to authenticate users and enforce security measures such as password policies and MFA. Defines access policies and permissions for applications and resources accessed through the IDaaS platform. Monitors user activity and security events related to identity and access management, and responds to incidents as necessary. Provides training and awareness programs to users regarding identity security practices and the use of IDaaS services effectively.Ensures that the use of IDaaS complies with internal policies, industry regulations, and legal requirements related to identity management.
-    - **Considerations around Cloud Services when access the Impact of acquired Software**: A clear understanding of contractual responsibilities of your CSP is important for security, availability and compliance
-        - Data Security and Privacy: Evaluating the CSPs data security measures, encryption processes, access controls is crucial to confidentiality and integrity of the organizations data
+    - 🔴**Considerations around Cloud Services when access the Impact of acquired Software**: A clear understanding of contractual responsibilities of your CSP is important for security, availability and compliance
+        - 🔐Data Security and Privacy: Evaluating the CSPs data security measures, encryption processes, access controls is crucial to confidentiality and integrity of the organizations data
             - Data residency and privacy (GDPR, PCI, PHI etc) may vary based on the cloud provider you choose 
         - Shared Responsibility Model: know the model and have clear definition of the responsibilities of each party is essential to avoid security gaps or overlap.
             - know your responsibilites with any CSP hosting your app or data 
-        - CSP Security Practices: Assessing the CSPs security policies, incident response procedures and thier track record in addressing security incidents
-        - Multi-Tenenacy & Isolation: Evaluate the CSPs tenant isolation mechanism to prevent unauthorised access or data leakage between tenants. Logical and physical isolation options are fairly consistent across the big 3 CSPs.
-        - Identity & Access Managment: Assessing the CSPs IAM capabilities, including auth mechanisms (MFA), and role based access controls to ensure granular, and just-in-time controls
+        - 🔐CSP Security Practices: Assessing the CSPs security policies, incident response procedures and thier track record in addressing security incidents
+        - 🔐Multi-Tenenacy & Isolation: Evaluate the CSPs tenant isolation mechanism to prevent unauthorised access or data leakage between tenants. Logical and physical isolation options are fairly consistent across the big 3 CSPs.
+        - 🔐Identity & Access Managment: Assessing the CSPs IAM capabilities, including auth mechanisms (MFA), and role based access controls to ensure granular, and just-in-time controls
             - Also verify support for App's preferred identity providers 
-        - Monitoring, Logging & Auditing: Evaluate the CSPs logging and monitoring capabilities, log retention policies, and the organisations ability to access and analyse relevant logs. Cloud services hosting your app should have a consumable audit trail.
-        - Incident Response & Notification: Have a clear understanding of your CSPs incident response procedures and notification protocols, in the event of a security incident or data breach
+        - 🔐Monitoring, Logging & Auditing: Evaluate the CSPs logging and monitoring capabilities, log retention policies, and the organisations ability to access and analyse relevant logs. Cloud services hosting your app should have a consumable audit trail.
+        - 🔐Incident Response & Notification: Have a clear understanding of your CSPs incident response procedures and notification protocols, in the event of a security incident or data breach
             - contractual details matter becuase you cannot transfer accountabilit
             - if your CSP is breach and your customer data is compromised, your organisation's responsibility to the customer is the same 
-        - Compliance and Regulatory: Depending on the org's industry and type of data involved, there may be specific compliance and/or regulatory requirements that a CSP must adhere to. Assessing the CSPs compliance to these requirements and thier ability to provide relevant certifications is essential
-        - Data Portability and Exit Strategy: Organisations need to have a clear understanding  of their abiltiy to migrate or exit the cloud service if neccessary
+        - 🔐Compliance and Regulatory: Depending on the org's industry and type of data involved, there may be specific compliance and/or regulatory requirements that a CSP must adhere to. Assessing the CSPs compliance to these requirements and thier ability to provide relevant certifications is essential
+        - 🔐Data Portability and Exit Strategy: Organisations need to have a clear understanding  of their abiltiy to migrate or exit the cloud service if neccessary
             - Evaluate the CSPs data portability capabilties, export formats, and the organisations ability to retrieve its data in the event of service termination
             - this is crucial in maintaining business continuity and avoiding vendor lock-in
-        - Supply Chain Security: Cloud services often involve complex supply chains, with multiple 3rd party components and services integrated into the overall solution.
+        - 🔐Supply Chain Security: Cloud services often involve complex supply chains, with multiple 3rd party components and services integrated into the overall solution.
             - Evaluate the CSPs supply chain risk managment processes is important to mitigate potential vulnerabilities or threats introduced through thier supply chain      
 
 [8.5](#8.5) Define and apply secure coding guidelines and standards (OSG-9 Chpts 20,21)
