@@ -47,9 +47,6 @@
 - **Functional requirements**: describes a finite task or process the system must perform; often directly traceable to specific elements in the final system's design and construction
 - **Hierarchical database model**: data elements and records are arranged in tree-like parent-child structures
 - **Integrated Product and Process Development (IPPD)**: management technique that simultaneously integrates essential acquisition activities through the use of multidisciplinary teams to optimize the design, manufacturing, and supportability processes
-- **Integrated Product Team (IPT)**: team of stakeholders and individuals that possess different skills and who work together to acheive a defined process or product.
-    - It was designed by the Defense Department in 1995.
-    - It was a predecessor to the Agile methodology, which uses tools like the scrum approach and user stories to conduct software development work. 
 - **Interactive Application Security Testing (IAST)**: testing that combines or integrates SAST and DAST to improve testing and provide behavioral analysis capabilities to pinpoint the source of vulnerabilities
 - **Knowledge Discovery in Database (KDD)**: mathematical, statistical, and visualization method of identifying valid and useful patterns in data
 - **Knowledge Management**: efficent/effective management of info and associated resources in an enterprise to drive busienss intelligence and decision-making; may include workflow management, business process modeling, doc management, db and info systems and knowledge-based systems
@@ -105,7 +102,10 @@
     - 🔖**Limit Check** which is the verification that input is within a preset range or domain.  Limit checks are a special form of input validation that ensure that the value remains within an expected range
 - **Threat surface**: total set of penetrations of a boundary or perimeter that surrounds or contains system elements
 - 8.1.1 Development methodologies (e.g. Agile, Waterfall, DevOps, DevSecOps)
-    - 📁**The integrated product team (IPT)** IPT approach brought together cross-functional teams and was designed by the Defense Department in 1995. It was a predecessor to the Agile methodology,
+    - 📁**The integrated product team (IPT)** IPT approach brought together cross-functional teams and was designed by the Defense Department in 1995. It was a predecessor to the Agile methodology.
+        - In IPT team of stakeholders and individuals that possess different skills and who work together to acheive a defined process or product.
+        - It was designed by the Defense Department in 1995.
+        - It was a predecessor to the Agile methodology, which uses tools like the scrum approach and user stories to conduct software development work. 
     - 📁**Agile methodology**: a project management approach to development that involves breaking the project into phases and emphasizes continuous collaboration and improvement; teams follow a cycle of planning, executing, and evaluating
         - Agile development emphasizes:
             - the delivery of working software in short iterations, helping to get the software to market faster 
