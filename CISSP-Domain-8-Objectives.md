@@ -282,17 +282,17 @@ used are called STRIDE, DREAD, and PASTA.
     - They must also keep pace with changing business processes, and work closely with the operations team (typically IT), to ensure reliable operations
         - together, ops and development transition a new system to production and management of the system's config
     - The dev team must continually provide hotfixes, patches, and new releases to address discovered security issues and identified coding errors
-- 8.1.4 Change management
+- 8.1.4 🔴Change management
     - Change management (AKA control management) plays an important role when monitoring systems in a controlled environment, and has 3 basic components:
-        - **Request Control**: process that provides an organized framework within which users can request modifications, managers can conduct cost/benefit analysis, and developers can prioritize tasks
+        - 💢**Request Control**: process that provides an organized framework within which users can request modifications, managers can conduct cost/benefit analysis, and developers can prioritize tasks
             - Change Request: The request process begins with a user-initiated request for a feature. Change and release control are initiated by developers seeking to implement changes. Design review is a phase of the change approval process initiated by developers when they have a completed design.
             - Request control provides users with a framework to request changes and developers with the opportunity to prioritize those requests
             - Request control provides an organized framework for users to request modifications.
-        - **Change Control**: the process of controlling specific changes that need to take place during the life cycle of a system, serving to document the necessary change-related activities 
+        - 💢**Change Control**: the process of controlling specific changes that need to take place during the life cycle of a system, serving to document the necessary change-related activities 
             - where change management is the project manager’s responsibility for the overarching process, change control is what devs do to ensure the software or environment doesn’t break when changed
             - change control is basically the process used by devs to re-create a situation encountered by a user and analyze the appropriate changes; it provides a framework where multiple devs can create and test a solution prior to rolling it out into a prod environment
             - The change control process is responsible for providing an organized framework within which multiple developers can create and test a solution prior to rolling it out in a production environment.
-        - **Release Control**: once changes are finalized, they must be approved for release through the release control procedure. Release control manages the deployment of code into production.
+        - 💢**Release Control**: once changes are finalized, they must be approved for release through the release control procedure. Release control manages the deployment of code into production. One of the responsibilities of the release control process is ensuring that the process includes 📝acceptance testing that confirms that any alterations to end-user work tasks are understood and functional prior to code release. 
 - 8.1.5 Integrated Product Team (IPT)
     - **Integrated Product Team (IPT)**:Introduced by the DoD as an approach to bring together multifunctional teams with a single goal of delivering a product or developing a process or policy, and fostering parallel, rather than sequential, decisions
     - Essentially, IPT is used to ensure that all aspects of a product, process, or policy are considered during the development process
