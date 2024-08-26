@@ -192,6 +192,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
        - Data owners are more likely to ask that those responsible for control selection identify a standard to use if they are not also acting as business owners.
        - The data owner is responsible for determining who needs to know what and the data that they are responsible for.
        - The data owner then determines who should have access to that data. This would include assigning access to individuals based on their roles or attributes.
+       - The data owner is generally responsible for the protection of data. This includes due care responsibilities, and they will ultimately be held accountable for negligible activity leading to the disclosure of data. The Data Owner is responsible for a piece or set of data, which could be a file or a database.
        - The data owner is also responsible for determining the data’s classification level. This would then allow the owner to assist in identifying any additional security controls that are needed to protect that data.
        - They are responsible for classifying the data that they own as well as assisting with or advising the system owners on security requirements and control selection
        - The data owner is the person responsible for classifying data, delegates selection of the required controls for each classification to system owners, and selecting baseline security standards for the organization.
