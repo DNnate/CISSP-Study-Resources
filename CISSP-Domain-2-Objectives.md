@@ -37,10 +37,10 @@
       - ❄️**Unclassified**: not sensitive
   - 🔴**Commercial/Non-Governmental data classification** 🟡CPSP often takes into account the value of the data, any regulatory or legal requirements that may apply to the data, and how long the data is useful—its lifespan. non-government organizations use labels such as:
       - 🍮**For official use only**:
-      - 🍮**Confidential/Proprietary**: only used within the org and, in the case of unauthorized disclosure, it could suffer serious consequences. It is the most sensitive data. Proprietary data is information that helps organizations maintain a competitive edge or that they want to keep to their own organization or a controlled set of individuals.
-      - 🍮**Private**: may include personal information, such as credit card data,  patient X-ray data, and bank accounts; unauthorized disclosure can be disastrous. Private data is internal business data that shouldn't be exposed but that doesn't meet the threshold for confidential or proprietary data. 
-      - 🍮**Sensitive**: needs extraordinary precautions to ensure confidentiality and integrity. Sensitive data may help attackers or otherwise create risk. Financial information, essential business contacts, and board meeting minutes would likely be classified as sensitive. Sensitive data should remain within the organization but it isn't as critical as confidential or proprietary data. For instance, a breach of profit earnings and forecasts wouldn't cause issues with customers or the public, but it could cause internal problems in the organization.
-      - 🍮**Public**: can be viewed by the general public and, therefore, the disclosure of this data would not cause damage
+      - 🍮**Confidential/Proprietary**: only used within the org and, in the case of unauthorized disclosure, it could suffer serious consequences. It is the most sensitive data. Proprietary data is information that helps organizations maintain a competitive edge or that they want to keep to their own organization or a controlled set of individuals. Highest level of classified data that could cause exceptional damage to the organization if exposed. An organization’s IP or “secret sauce” could be considered proprietary data.
+      - 🍮**Private**: may include personal information, such as credit card data,  patient X-ray data, and bank accounts; unauthorized disclosure can be disastrous. Private data is internal business data that shouldn't be exposed but that doesn't meet the threshold for confidential or proprietary data.  Next-highest level of classified data and shouldn’t be shared outside the organization and could cause significant damage if exposed. PII and PHI may be classified as private data.
+      - 🍮**Sensitive**: needs extraordinary precautions to ensure confidentiality and integrity. Sensitive data may help attackers or otherwise create risk. Financial information, essential business contacts, and board meeting minutes would likely be classified as sensitive. Sensitive data should remain within the organization but it isn't as critical as confidential or proprietary data. For instance, a breach of profit earnings and forecasts wouldn't cause issues with customers or the public, but it could cause internal problems in the organization. Data that could cause damage to the organization if made public. The organization’s network layout and the devices it uses may be sensitive data.
+      - 🍮**Public**: can be viewed by the general public and, therefore, the disclosure of this data would not cause damage. This includes the contents of websites, social media, brochures, etc.
   - There are six standard data type classifications used in either a government/military or a private sector organization in this list of options: public, private, sensitive, proprietary, critical, and confidential. Some organisations used 🍮critical and 🍮internal.
   -  It is important to protect data in all states: at rest, in transit, or in use
   -  The best way to protect data confidentiality is via use of strong encryption
@@ -71,7 +71,9 @@
 - **Asset handling**: refers to secure transport of media through its lifetime
 - The data and asset handling key goal is to prevent data breaches, by using:
   - **Data Maintenance**: on-going efforts to organize and care for data through its life cycle
-  - 🏷️**Data Loss Prevention (DLP)**: systems that detect and block data exfiltration attempts; DLP systems can use labels on data to determine the appropriate controls to apply to the data. DLP system or software is designed to identify labeled data or data that fits specific patterns and descriptions to help prevent it from leaving the organization. A data loss prevention (DLP) system can tag, monitor, and limit where files are transferred to. There are two primary types:
+  - 🏷️**Data Loss Prevention (DLP)**: systems that detect and block data exfiltration attempts; DLP systems can use labels on data to determine the appropriate controls to apply to the data. DLP system or software is designed to identify labeled data or data that fits specific patterns and descriptions to help prevent it from leaving the organization.
+      -  A data loss prevention (DLP) system can tag, monitor, and limit where files are transferred to. Data must be correctly 📝classified before the Data Loss Prevention (DLP) appliance can prevent it from being leaked. If data is incorrectly classified, the DLP appliance may allow sensitive information to leave the organization.
+      -  There are two primary types:
      - 🩰Network-based DLP: Network-based DLP would not detect stored information unless the user transmits it over the network. Network DLP solutions inspect the content of network traffic, looking for signs of attempted data exfiltration and preventing it from leaving the network.
          - Network DLP is used to prevent sensitive information from being transmitted over the network. For example, network DLP can catch when a user places sensitive information such as credit card numbers in an email.  
      - 🩰Endpoint-based DLP: identify the presence of information on endpoint devices. Endpoint-based DLP involves preventing data loss at each endpoint by recognizing patterns or keywords. Additionally, endpoint-based DLP can be used to conduct an initial scan to recognize potentially sensitive information on a device. Endpoint-based DLP will simply prevent certain data from leaving a device, potentially warning the user of their action to prevent future misbehavior. For example, an endpoint DLP solution could prevent printing sensitive data or saving it to a USB drive.
@@ -187,13 +189,16 @@ rewriting with a new value or using a menu option to reset the device to the fac
        - The data owner has ultimate responsibility for data belonging to an organization and is typically the CEO, president, or another senior employee
        - Data owners are more likely to ask that those responsible for control selection identify a standard to use if they are not also acting as business owners.
        - The data owner is responsible for determining who needs to know what and the data that they are responsible for.
-       - The data owner then determines who should have access to that data.
+       - The data owner then determines who should have access to that data. This would include assigning access to individuals based on their roles or attributes.
        - The data owner is also responsible for determining the data’s classification level. This would then allow the owner to assist in identifying any additional security controls that are needed to protect that data.
        - They are responsible for classifying the data that they own as well as assisting with or advising the system owners on security requirements and control selection
        - The data owner is the person responsible for classifying data, delegates selection of the required controls for each classification to system owners, and selecting baseline security standards for the organization.
        - Data owner roles is ultimately responsible for due diligence in protecting the company's data. They may be liable for negligence if they fail to perform due diligence in establishing and enforcing security policies to protect and sustain sensitive data.
        - data owner is the person respsonible for classifying, categorizing, and permitting access to the data; the data owner is the person who is best familiar with the importance of the data to the business
        - The data owner sets the rules for use and protection of data. In a DAC system, they decide who gets access.
+           - 🛰️**GDPR**: Data Owner has overarching responsibility for data and compliance under the GDPR
+           - A data owner is ultimately responsible for data and controls its classification, labeling, and disclosure.
+           - This is often the CEO or other senior management.
    - 🔴**System owner**: controls the computer storing the data; usually includes software and hardware configurations and support services (e.g. cloud implementation)
     - system owners are responsible for the systems that process the data
     - The system owner creates the system security plan,
@@ -209,13 +214,16 @@ rewriting with a new value or using a menu option to reset the device to the fac
     - e.g. a company that collects personal information on employees for payroll is a data controller (but, if they pass this info to a third-party to process payroll, the payroll company is the data processor, see below)
     - The data controller is the entity that makes decisions about the data they are collecting.
     - A data controller decides what data to process and directs the data processor to process the data.
-    - Generally, the data controllers set policies and are the senior managers in a company. A data owner would then decide who will be given access to that data based on prior-determined policies and also maintain the data throughout the life cycle, including classifying that piece or set of data. 
+    - Generally, the data controllers set policies and are the senior managers in a company. A data owner would then decide who will be given access to that data based on prior-determined policies and also maintain the data throughout the life cycle, including classifying that piece or set of data.
+        - 🛰️**GDPR**: A data controller is responsible for defining how different types of data are collected and processed.
+        - Data controllers are also often senior management.
   - 🔴**Data processor**: 📯🅾️an entity working on behalf (or the direction) of the data controller, that processes PII; they have a responsibility to protect the privacy of the data and not use it for any purpose other than directed by the data controller; **OR** 📯🅾️ Data processor is any system used to process data. 
     - a data controller can hire a third party to process data, and in this context, the third party is the data processor; data processors are often 🧠third-party entities that process data for an org at the direction of the data controller
     - Third-party organizations that process personal data on behalf of a data controller are known as data processors. The organization that they are contracting with would act in the role of the business or mission owners, and others within the third party organization would have the role of data administrators, granting access as needed to the data based on their operational procedures and data classification.
-    - note GDPR definition: "a natural or legal person, public authority, agency, or other body, which processes personal data soley on behalf of the data controller"
-      - GDPR also restricts data tranfers to countries outside EU, with fines for violations
-      - many orgs have created dedicated roles to oversee GDPR data laws are followed
+        - 🛰️**GDPR**: Data Process is "a natural or legal person, public authority, agency, or other body, which processes personal data soley on behalf of the data controller"
+        - A data processor performs the actual processing of data, a role delegated to them by the data controller. Data processors are employees within the department who use the collected data.
+        - GDPR also restricts data tranfers to countries outside EU, with fines for violations
+        - many orgs have created dedicated roles to oversee GDPR data laws are followed
   - 🔴**Data custodian**: a custodian is delegated, from the system owner, day-to-day responsibilities for properly storing and protecting data;
       - responsible for the protection of data through maintenance activities, backing up and archiving, and preventing the loss or corruption and recovering data.
       - They include ✏️IT Staff in an information technology (IT) department who are delegated responsibility for day-to-day tasks.
@@ -226,6 +234,9 @@ rewriting with a new value or using a menu option to reset the device to the fac
       - Controls are scoped and tailored, applied and enforced by Custodians.
       - custodians implement the controls
       - custodians are granted rights to perform day-to-day tasks when handling data
+          - 🛰️**GDPR**: A data custodian handles day-to-day protection and management of data, a role delegated to them by the data owner.
+          - Data custodians are usually within the IT/security department.
+          -  They are DIRECTLY responsible for the security of sensitive data under GDPR
   - 🔴**Administrators** have the rights to apply the permissions to access and handle data.
       - The system administrators can act in the roles of data administrators who grant access and will also act as custodians who are tasked with the day-to-day application of security controls such as providing/granting/managing user access.
   - 🔴**Data Steward**: a newer concept related to users of the data; those who use the data for the business purpose. In many organizations, data stewards are internal roles that oversee how data is used. They can be referred to as data custodians. Data stewards provide oversight and data governance.
@@ -260,14 +271,14 @@ rewriting with a new value or using a menu option to reset the device to the fac
     - 🔵**Record Retention**: Record retention is the process of retaining and maintaining information for as long as it is needed. 
       - note: a current trend in many orgs is to reduce legal liabilities by implementing short retention policies with email
       - A data storage policy describes how and why data is stored.
-      - Record retention policies define the amount of time to keep data, and laws or regulations often drive these policies
+      - 💥**Record retention policies** define the amount of time to keep data, and laws or regulations often drive these policies. Record retention policies define how data should be maintained within the organization. It includes what type of data to keep, the length of retention, how to maintain the data, and how to destroy the information when it is no longer needed. Careful work should be put into ensuring the policy is a match for business needs. Having 📝legal counsel in the process is a good idea as there are 📝laws and 📝regulations that have a retention requirement or a deletion requirement.
       - A data retention policy can help to ensure that outdated data is purged, removing potential additional costs for discovery, and reducing the amount of data that may need to be produced for lawsuits. Many organizations have aggressive retention policies to both reduce the cost of storage and limit the amount of data that is kept on hand and discoverable.
       - Laws and regulations that apply to an organization often dictate how long to save data. Still, all organizations should keep data as long as they are required to do so.
       - Always consult the organization's record retentions policy to determine the appropriate length of time to preserve records
   - Three fundamental retention policy questions:
-    - 🔥**how to retain**: data should be kept in a manner that makes it accessible whenever required; take taxonomy (or the scheme for data classification) into account
-    - 🔥**how long to retain data**: general guidelines for business data is 7 years (but can vary by country/region/regulation)
-    - 🔥**what data**: to retain per org requirements
+    - ⚒️**How to retain**: data should be kept in a manner that makes it accessible whenever required; take taxonomy (or the scheme for data classification) into account
+    - ⚒️**How long to retain data**: general guidelines for business data is 7 years (but can vary by country/region/regulation)
+    - ⚒️**What data**: to retain per org requirements
 - 2.4.6 Data remanence
   - 🔵**Data Remanence**: the data remaining on media after the data is supposedly erased
     - typically refers to data on a hard drive as residual ✏️magnetic flux or ✏️slack space (unused space within a disk cluster)
@@ -312,7 +323,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
         - ⭐OpenVPN: Flexible and secure with strong encryption, highly configurable. Operates at the Application layer (uses SSL/TLS).      
       - encryption methods protect data at rest and in transit
       - Asymmetric encryption (along with symmetric encryption) protects data in transit.
-    - 🔴**Data in use**: data in memory or in buffer and used by an application
+    - 🔴**Data in use**: data in 📝memory or in buffer and used by an application. Data in a 📝CPU register is also in use.
       - Data in use is data that is in a temporary storage location while an application or process is using it. Thus, data in memory is best described as data in use or ephemeral data. 
       - applications should flush memory buffers to remove data after it is no longer needed: Protecting Data in Use (📝Harder to protect): RAM/memory data: The most difficult location to secure for encryption keys and similar highly sensitive information is in active memory because the data needs to be decrypted to be used. 
       - pervasive encryption,
@@ -437,10 +448,9 @@ rewriting with a new value or using a menu option to reset the device to the fac
 
 - **Policy ▶️ Standard ▶️ Baseline ▶️ Guideline ▶️Procedure**
     - 📩**Policy**: Policy is High level from Management. A security policy is a high-level description of an organization's security requirements. Policies are high-level documents that align security objectives with business objectives. 
-    - 📩**Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53. Standards selection refers to adding security controls based on external standards. Standards define required activities that are designed to help an organization fulfill its policy goals. Standards document, in detail, the security requirements for a subset of technology. Standards are generally referenced by and enforced in a separate security policy. 
+    - 📩**Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53. Standards selection refers to adding security controls based on external standards. Standards define required activities that are designed to help an organization fulfill its policy goals. Standards document, 📝in detail, the security requirements for a subset of technology. Standards are generally referenced by and enforced in a separate security policy. A standard documents, in detail, the security requirements for a subset of technology e.g encryption type. Standards are generally referenced by and enforced in a separate security policy.
     - 📩**Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks, or imaging. Imaging is done to deploy an identical configuration to multiple systems, but this is typically done after identifying security controls. Baselines are starting points, generally using lists, and they typically require modifications. Baselines are often used when creating images of OS. A baseline is the minimum level of acceptable security applied to a system. Baselines are used to standardize security levels across multiple systems. An example of a baseline is a Microsoft GPO that enables the host-based firewall on all systems.
     - 📩**Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88. Guidelines provide recommendations about how to do something if no specific standard exists. Guidelines are recommended actions or behaviors if a standard does not apply.
-    - 📩**Procedures** are step-by-step descriptions of how a member of an organization should achieve a security goal.
-
+    - 📩**Procedures** are step-by-step descriptions of how a member of an organization should achieve a security goal. Procedures are step-by-step instructions to accomplish a task.
 - **Salami Attack** is a type of cyberattack or fraud where a perpetrator takes small, seemingly insignificant actions that individually appear harmless but collectively result in a substantial impact. The term "salami" is used metaphorically, implying that the attack slices off small pieces, like slicing a salami, which are not noticeable individually but accumulate to cause significant harm.
 - **Bitrot** describes the slow loss of data on aging media
