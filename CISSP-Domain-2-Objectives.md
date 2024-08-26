@@ -406,10 +406,11 @@
   - 🟢**Randomizing data** Randomizing data is a common approach to anonymization. It involves replacing PII with artificial but realistic-looking data. This technique ensures that the data in a test environment does not correspond to any actual individuals, thus protecting privacy while maintaining the data’s utility for testing purposes.
 
 - **Policy ▶️ Standard ▶️ Baseline ▶️ Guideline ▶️Procedure**
-    - **Policy**: Policy is High level from Management 
-    - **Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53. Standards selection refers to adding security controls based on external standards.
-    - **Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks, or imaging. Imaging is done to deploy an identical configuration to multiple systems, but this is typically done after identifying security controls. Baselines are starting points, generally using lists, and they typically require modifications. Baselines are often used when creating images of OS
-    - **Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88
+    - 📩**Policy**: Policy is High level from Management. A security policy is a high-level description of an organization's security requirements.
+    - 📩**Standard** mandatory, must meet EXACTLY, no more, no less e.g DoD 8570, AR 25-2, NIST SP , 800 53. Standards selection refers to adding security controls based on external standards. Standards define required activities that are designed to help an organization fulfill its policy goals
+    - 📩**Baseline** mandatory, must meet AT LEAST, can do more than it requires e.g CIS Benchmarks, or imaging. Imaging is done to deploy an identical configuration to multiple systems, but this is typically done after identifying security controls. Baselines are starting points, generally using lists, and they typically require modifications. Baselines are often used when creating images of OS
+    - 📩**Guideline** suggested practices, not mandatory e.g DoD STIGs, Microsoft NSA, PCI DSS, NIST 800-88. Guidelines provide recommendations about how to do something if no specific standard exists.
+    - 📩**Procedures** are step-by-step descriptions of how a member of an organization should achieve a security goal.
 
 - **Salami Attack** is a type of cyberattack or fraud where a perpetrator takes small, seemingly insignificant actions that individually appear harmless but collectively result in a substantial impact. The term "salami" is used metaphorically, implying that the attack slices off small pieces, like slicing a salami, which are not noticeable individually but accumulate to cause significant harm.
 - **Bitrot** describes the slow loss of data on aging media
