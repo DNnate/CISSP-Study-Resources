@@ -626,11 +626,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - Threats exploit vulnerabilities, which results in exposure 
     - Exposure is risk, and risk is mitigated by safeguards 
     - Safeguards protect assets that are endangered by threats
-    - **Threat Agent/Actors**: intentionally exploit vulnerabilities
-    - **Threat Events**: accidential occurrences and intentinoal exploitations of vulnerabilities
-    - **Threat Vectors**: AKA attack vector is the path or means by which an attack or attacker can gain access to a target in order to cause harm
-    - **Exposure**: being susceptible to asset loss because of a threat; the potential for harm to occur; quantitative risk analysis value of **exposure factor (EF)** is derived from this concept
-    - **Risk**: the possiblity or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result; the > the potential harm, the > the risk
+  - **Risk**: the possiblity or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result; the > the potential harm, the > the risk
 - 1.10.1 Risk assessment/analysis
   - 📁**Risk Assessment**: used to identify the risks and set criticality priorities, and then risk response is used to determine the best defense for each identified risk
       - The primary goal of a security risk assessment is to identify and analyze risks and then develop strategies to reduce them to an acceptable level.
@@ -647,16 +643,18 @@ Factors, entities or conditions outside the organisation upon which the organisa
        - Addressing either the threat or threat agent or vulnerability directly results in a reduction of risk (known as threat mitigation)
        - All IT systems have risk; all orgs have risk; there is no way to elminiate 100% of all risks. Risk is typically composed of three Components:
   - **❄️Threat** (a potential cause of an incident that may result in harm). A threat is defined by the United States National Institute of Standards and Technology (NIST) as any circumstance or event that can negatively impact a corporation's mission, operations, function, mission, etc.
+       - A threat is something that could cause damage, alteration, loss, disclosure, etc. It is something that will impact the confidentiality, integrity, or availability of an asset
        - ✏️Threats: Any potential occurrence that may cause an undesirable or unwanted outcome for an organization or for a specific asset is a threat.
        - ✏️Threat agents or threat actors: Entities that intentionally exploit vulnerabilities.
        - ✏️Threat events: Accidental occurrences and intentional exploitations of vulnerabilities.
        - ✏️Threat vector: The path or means by which an attack or attacker can gain access to a target in order to cause harm. 
   - **❄️Vulnerability** (a weakness that can be exploited by a threat).
       - It is the weakness in an asset, or the absence or the weakness of a safeguard or countermeasure.
+      - A vulnerability is a flaw, loophole, oversight, error, limitation, frailty, or susceptibility in the IT infrastructure or any other process.
       - A vulnerability is a weakness within the systems or procedures that can be exploited by the threat actor to cause damage.
       - Vulnerabilities and risks are evaluated based on their threats against one or more of the CIA Triad principles. 📝The Common Vulnerability Scoring System (CVSS) is a standardized approach to rating the severity of vulnerabilities 
   - **❄️Impact** (the potential harm caused by a threat exploiting a vulnerability)
-  - **❄️Exposure**: Exposure is defined by NIST as the extent to which an organization is subject to risk.
+  - **❄️Exposure**: Exposure is defined by NIST as the extent to which an organization is subject to risk. Exposures are when an asset is susceptible to a threat. If there is no exposure, there is no threat to deal with. Exposure means being susceptible to asset loss because of a threat; the potential for harm to occur. The quantitative risk analysis value of exposure factor (EF) is derived from this concept
   - 🔴**Risk analysis** identifies risks, quantifies the impact of threats, and aids in budgeting for security. It helps integrate the needs and objectives of the security policy with the organization's business goals and intentions. The risk analysis/risk assessment is a "point in time" metric, meaning Security is always changing thus continuous improvement is required.
        - Risk analysis includes analyzing an environment for risks
        - evaluating each threat event as to its likelihood of occurring and the cost of the damage it would cause
