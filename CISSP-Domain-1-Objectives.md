@@ -895,7 +895,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
    - ✏️Focus on assets: an org’s most valuable assets are likely to be targeted by attackers
    - ✏️Focus on software: orgs that develop applications in house, and can be viewed as part of the threat landscape; the goal isn’t to identify every possible attack, but to focus on the big picture, identifying risks and attack vectors
 - Understanding threats to the org allow the documentation of potential attack vectors; diagramming can be used to list various technologies under threat
-- 🔴**Reduction Analysis** (Also known as Decomposiing the application, system or environment): The purpose is to gain a greater understanding of the logic of a product, its internal components as well as its interactions and external elements: The five key concepts of decomposition are
+- 🔴**Reduction Analysis** (Also known as Decomposiing the application, system or environment): The purpose is to gain a greater understanding of the logic of a product, its internal components as well as its interactions and external elements:
+- A reduction analysis supports threat modeling by identifying 📝elements common to underlying threats. If password attacks are a threat common to several applications but each of those applications relies on Microsoft Active Directory for authentication and authorization, then Microsoft Active Directory need only be evaluated once for password attacks (not for each application).
+- The five key concepts of decomposition are
   - ✏️trust boundaries
   - ✏️dataflow paths
   - ✏️input points
