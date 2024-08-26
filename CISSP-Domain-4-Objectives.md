@@ -431,6 +431,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - A cellular network or a wireless network is the primary communications technology used by many mobile devices
     - Cells are primary transceiver (cell site/tower)
     - Cellular networks have the same issues that any public network does.
+    - The National Institute of Standards and Technology (NIST) Special Publication (SP) 800-187 is security for Long Term Evolution (LTE) cellular technology.
     - Generally encrypted between mobile device and transmission tower; plaintext over wire; use encryption like TLS/VPN
     - ❄️**4G**
         - 4G allows for mobile devices to achieve 📝100 Mbps, and stationary devices can reach 📝1 Gbps
