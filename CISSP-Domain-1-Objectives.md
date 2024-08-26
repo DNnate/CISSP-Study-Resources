@@ -101,9 +101,9 @@
 - **Third-party governance**: external entity oversight that may be mandated by law, regulation, industry standards, contractual obligation, or licensing requirement; outside investigator or auditors are often involved
 - 1.3.1 Alignment of security function to business strategy, goals, mission, and objectives
   - **Security Management Planning**: ensures proper creation/implementation/enforcment of a security policy, and alignment with org strategy, goals, mission, and objectives
-       - **Strategic Plan**: a strategic plan is a 🔥long-term plan (useful for 5 years); it defines the org's security purpose. A strategic plan should include risk assessment
-       - **Tactical Plan**: mid-term plan (🔥1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan or can be crafted ad hoc based on unpredicted events
-       - **Operational Plan**: a 🔥short-term, highly detailed plan based on strategic or tactical plans. It is valid or useful only for a short time. 
+       - **Strategic Plan**: a strategic plan is a 🔥long-term plan (useful for 5 years); it defines the org's security purpose. A strategic plan should include risk assessment. Strategic plans are the longest type of security management plan. They describe overall security goals and can be viable for up to five years.
+       - **Tactical Plan**: mid-term plan (🔥1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan or can be crafted ad hoc based on unpredicted events. Tactical plans are the next longest and describe how particular goals can be accomplished. They're usually good for about a year.
+       - **Operational Plan**: a 🔥short-term, highly detailed plan based on strategic or tactical plans. It is valid or useful only for a short time. Operational plans have an extremely short duration. They provide in-depth detail on how the organization will accomplish tasks to support their strategic or tactical plans.
 - Strategy ▶️ goals ▶️ missions and objectives — support each other in a heirarchy
     - **Objectives**: are closest to the ground-level and represent small efforts to help you achieve a mission 
     - **Missions**: represent a collection of objectives, and one or more missions lead to goals; when you reach your goals, you are achieving the strategy
