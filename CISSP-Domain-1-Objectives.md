@@ -710,7 +710,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - then, logical and technical controls provide protection against logical attacks and exploits 
       - then, physical controls provide protection against real-world physical attacks against facilities and devices
 - 1.10.5 Applicable types of controls (e.g., preventive, detective, corrective)
-  - **🔥Administrative**: the policies and procedures defined by an org's security policy and other regulations or requirements
+  - **🔥Administrative**: the policies and procedures defined by an org's security policy and other regulations or requirements. Administrative controls are sometimes referred to as management controls. They are the policies or procedures defined by an organization's security program. Administrative controls include hiring processes, background checks, data classification requirements, data labeling, security awareness, and training.
   - **🔥Physical**: security mechanisms focused on providing protection to the facility and real world objects
   - **🔥Preventive**: a preventive or preventative control is deployed to thwart or stop unwanted or unauthorized activity from occurring
   - **🔥Deterrent**: a deterrent control is deployed to discourage security policy violations; deterrent and preventative controls are similar, but deterrent controls often depend on individuals being convinced not to take an unwanted action
