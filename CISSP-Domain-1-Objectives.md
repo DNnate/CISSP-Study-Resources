@@ -644,9 +644,10 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - The more info and detail in an employment agreement, the less risk (risk of a wrongful termination lawsuit, for example) the company has during a termination proceeding
     - e.g. a terminated employee might take a copy of their email with them without thinking of it as stealing, but they are less likely to do so if an employment agreement or another policy document clearly prohibits it
     - example employee agreements:
-      - non-compete 
-      - codes of conduct such as an acceptable use policy (AUP), which defines what is and isn’t acceptable acitivty, practice, or use for company equipemnt and resources
-      - nondisclosure agreement (NDA), which is a doc used to protect confidential information from being disclosed by a current or former employee
+      - ⭐Noncompete agreements (NCAs)
+      - ⭐A code of conduct is a set of guidelines and principles that outline expected behavior and ethical standards for individuals within an organization or community. 
+      - ⭐Nondisclosure agreement (NDA), which is a doc used to protect confidential information from being disclosed by a current or former employee
+      - ⭐An Acceptable Use Policy (AUP) outlines the intended use of a system and what is acceptable to the organization. It defines what is and isn’t acceptable acitivty, practice, or use for company equipemnt and resources. At a minimum, an organization should require that all employees sign an Acceptable Use Policy that outlines what is and is not acceptable behavior when using an information system.
 - 1.9.3 Onboarding, transfers and termination processes   
   - 🍏**Onboarding**: process of bringing a new employee into the org
     - creating documented processes allowing the new employee to be intgrated quickly and consistently
