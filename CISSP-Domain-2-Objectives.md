@@ -20,14 +20,14 @@
   - One of the first steps in the lifecycle is identifying and classifying information and assets, often within a security policy
   - Data classifications provide strong protection against the loss of confidentiality
   - In this context, assets include sensitive data, the hardware used to process that data, and the media used to store/hold it
-  - **Data categorization**: process of grouping sets of data, info or knowledge that have comparable sensativities (e.g. impact or loss rating), and have similar law/contract/compliance security needs. In the 🍎NIST SP 800-60 diagram, the process determines appropriate categorization levels resulting in security categorization and then uses that as an input to determine controls. 
-  - **Sensitive data**: any information that isn't public or unclassified, and can include anything an org needs to protect due to its value, or to comply with existing laws and regulations
-  - **Personally Identifiable Information (PII)**: any information that can identify an individual
-    - more specifically, info about an individual including
-        - 🔨(1) any info that can be used to distinguish or trace an individual‘s identity, such as name, social security number, date and place of birth, mother‘s maiden name, or biometric records; and
-        - 🔨(2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information. This would also include any other unique identifier (including a student ID number). ❗ZIP/Post code, by itself, does not uniquely identify an individual. ([NIST SP 800-122](https://csrc.nist.gov/publications/detail/sp/800-122/final)) NIST Special Publication ✴️800-122
-  - **Protected Health Information (PHI)**: any health-related information that can be related to a specific person
-  - **Proprietary data**: any data that helps an organization maintain a competitive edge
+      - 🎄**Data categorization**: process of grouping sets of data, info or knowledge that have comparable sensativities (e.g. impact or loss rating), and have similar law/contract/compliance security needs. In the 🍎NIST SP 800-60 diagram, the process determines appropriate categorization levels resulting in security categorization and then uses that as an input to determine controls.
+      - 🎄**Data Aggregation**: When discussing classification labels, data aggregation means that data classified at a higher level can be inferred by combining data at a lower classification level.
+      - 🎄**Sensitive data**: any information that isn't public or unclassified, and can include anything an org needs to protect due to its value, or to comply with existing laws and regulations
+      - 🎄**Personally Identifiable Information (PII)**: any information that can identify an individual, more specifically, info about an individual including
+              - 🔨(1) any info that can be used to distinguish or trace an individual‘s identity, such as name, social security number, date and place of birth, mother‘s maiden name, or biometric records; and
+              - 🔨(2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information. This would also include any other unique identifier (including a student ID number). ❗ZIP/Post code, by itself, does not uniquely identify an individual. ([NIST SP 800-122](https://csrc.nist.gov/publications/detail/sp/800-122/final)) NIST Special Publication 🍎NIST SP 800-122
+      - 🎄**Protected Health Information (PHI)**: any health-related information that can be related to a specific person
+      - 🎄**Proprietary data**: any data that helps an organization maintain a competitive edge
   - Organizations classify data using labels
   - 🔴**Governmental data classification**The impact to national security is more typically associated with government classification schemes. government classification labels include:  🟡TSCSU
       - ❄️**Top Secret**: if disclosed, could cause massive damage to national security, such as the disclosure of spy satellite information
