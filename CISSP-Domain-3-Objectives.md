@@ -326,16 +326,20 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
         - 🍎Public Cloud: Operates a multitenant environments, where the services are delivered over the public Internet and shared across different organizations. In the public cloud computing model, the vendor builds a single platform that is shared among many different customers. This is also known as the shared tenancy model.
         - 🍎Private/Dedicated cloud: also known as a private cloud, is infrastructure operated solely for a single organization, whether managed internally or by a third-party, and hosted either internally or externally.
         - 🍎Hybrid cloud: is a composition of two or more cloud delivery models (private, community, or public) that remain distinct entities but are bound together, offering the benefits of multiple deployment models.
-    - Cloud's primary challenge: resources are outside the org’s direct control, making it more difficult to manage risk
-    - Orgs should formally define requirements to store and process data stored in the cloud
-    - Focus your efforts on areas that you can control, such as the network entry and exit points (i.e. firewalls and similar security solutions)
-    - All sensitive data should be encrypted, both for network communication and data-at-rest
-    - Use centralized identity access and management system, with multifactor authentication
-    - Customers shouldn’t use encryption controlled by the vendor, eliminating risks to vendor-based insider threats, and supporting destruction using  
-    - 🔥Cryptographic erase: methods that permanently remove the cryptographic keys
-    - Capture diagnostic and security data from cloud-based systems and store in your SIEM system
-    - Ensure cloud configuration matches or exceeds your on-premise security requirements
-    - Understand the cloud vendor's security strategy
+    - Cloud's primary challenge:
+        - resources are outside the org’s direct control, making it more difficult to manage risk
+        - Orgs should formally define requirements to store and process data stored in the cloud
+        - Focus your efforts on areas that you can control, such as the network entry and exit points (i.e. firewalls and similar security solutions)
+        - All sensitive data should be encrypted, both for network communication and data-at-rest
+        - Use centralized identity access and management system, with multifactor authentication
+        - Customers shouldn’t use encryption controlled by the vendor, eliminating risks to vendor-based insider threats, and supporting destruction using
+        - Location is an important issue for backup data, as preserving it near an area with frequent natural disasters could be troublesome.
+        - Cost would be of consideration, as it would impact net income.
+        - Company reputation would reduce or increase risk with the company being backed up depending on what that reputation was. An organization may seek to incur greater costs to avoid the risk of associating with a company that has a poor reputation.
+        - 📝Cryptographic erase: methods that permanently remove the cryptographic keys
+        - Capture diagnostic and security data from cloud-based systems and store in your SIEM system
+        - Ensure cloud configuration matches or exceeds your on-premise security requirements
+        - Understand the cloud vendor's security strategy
     - Cloud shared responsibility by model:
         - 🥑Software as a Service (SaaS):
             - the vendor is responsible for all maintenance of the SaaS services
