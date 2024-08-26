@@ -31,7 +31,7 @@
       - 🎄**Proprietary data**: any data that helps an organization maintain a competitive edge
   - Organizations classify data using labels
   - 🔴**Governmental data classification**The impact to national security is more typically associated with government classification schemes. government classification labels include:  🟡TSCSU
-      - ❄️**Top Secret**: if disclosed, could cause massive damage to national security, such as the disclosure of spy satellite information
+      - ❄️**Top Secret**: if disclosed, could cause massive damage to national security, such as the disclosure of spy satellite information. It is the highest level of classification used by the government.
       - ❄️**Secret**: if disclosed, can adversely affect national security
       - ❄️**Confidential**: Confidential data is usually data that is exempt from disclosure under laws such as the Freedom of Information Act but is not classified as national security data.
       - ❄️**Sensitive but Unclassified (SBU)**: SBU data is data that is not considered vital to national security, but its disclosure would do some harm. Many agencies classify data they collect from citizens as SBU. In Canada, the SBU classification is referred to as protected (A, B, C).
@@ -93,8 +93,7 @@
   - 🏷️**Data Collection Limitation**: Providing ✏️consent, or agreeing to data collection and use, is important in many data collection scenarios and may be required by law. ✏️Only required data is collected, that individuals are made aware of the data collection, and that they consent to the collection. Similarly, data should only be collected ✏️lawfully and via fair methods. Prevent loss by not collecting unnecessary sensitive data. 🥇Sometimes it is better to collect limited information🥇
   - 🏷️**Data Location**: keep duplicate copies of backups, on- and off-site. Data location, particularly at rest, may drive compliance requirements based on local or national laws. This concern drives the majority of data location concerns
   - 🏷️**Storage**: define storage locations and procedures by storage type; use physical locks for paper-based media, and encrypt electronic data. It is cost effective to purchase high-quality media to contain sensitive data becuase the value of the data often far exceeds the cost of the media. This makes more expensive media that may have a longer life span or additional capabilities like encryption support a good choice for sensitive data. Backup media should be protected with the same level of protection afforded the data it contains e.g using a secure offsite storage facility. Backup tapes should be removed from service when they begin to generate errors. 
-  - **Data Remanence**: data remaining on media after typical erasure; Remanence describes data left on media after an attempt is made to remove the data. 
-- 🔥sanitization is a series of processes that removes data from a system or media while ensuring that the data is unrecoverable by any means. Sanitization methods (such as clearing, purging, and destroying) help ensure that data cannot be recovered. 📝Note: Downgrading systems and media is rare due to the difficulty of ensuring that sanitization is complete. The need to completely wipe (or destroy) the media that systems use means that the ✏️cost of reuse is often significant and may exceed the cost of purchasing a new system or media i.e sanitazation cost ▶ cost of new media.
+- 📕**sanitization** is a series of processes that removes data from a system or media while ensuring that the data is unrecoverable by any means. Sanitization methods (such as clearing, purging, and destroying) help ensure that data cannot be recovered. 📝Note: Downgrading systems and media is rare due to the difficulty of ensuring that sanitization is complete. The need to completely wipe (or destroy) the media that systems use means that the ✏️cost of reuse is often significant and may exceed the cost of purchasing a new system or media i.e sanitazation cost ▶ cost of new media.
   - ✴️**Destruction**: destroy data no longer needed by the organization; policy should define acceptable destruction methods by type and classification ([see NIST SP-800-88 for details](https://csrc.nist.gov/publications/detail/sp/800-88/rev-1/final)) ✏️Physical destruction: used for SSD/electronic components, or in combination with other less-secure methods. Due to problems with remnant data, the U.S. National Security Agency requires physical destruction of SSDs. Incineration, pulverizing, crushing, shredding, and disintegration all describe data destruction. Physical destruction is the most secure method of deleting data on optical media such asa DVD. 
       - 🍎**SSD**: Spare sectors, bad sectors, and space provided for wear leveling on SSDs (over provisioned space) may all contain data that was written to the space that will not be cleared when the drive is wiped. This is a form of data remanence and is a concern for organizations that do not want data to potentially be accessible. Many wiping utilities only deal with currently addressable space on the drive.
           - To prevent accidental data disclosure due to wear leveling on an SSD device before reusing the drive, encrypting data on SSD drives.
@@ -282,7 +281,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
     - ⚒️**How long to retain data**: general guidelines for business data is 7 years (but can vary by country/region/regulation)
     - ⚒️**What data**: to retain per org requirements
 - 2.4.6 Data remanence
-  - 🔵**Data Remanence**: the data remaining on media after the data is supposedly erased
+  - 🔵**Data Remanence**: the data remaining on media after the data is supposedly erased. Data remanence refers to the residual data that can be recovered and reassembled when media is not appropriately sanitized.  It is data remaining on media after typical erasure; Remanence describes data left on media after an attempt is made to remove the data. 
     - typically refers to data on a hard drive as residual ✏️magnetic flux or ✏️slack space (unused space within a disk cluster)
       - note that many OSs store files in clusters, which are groups of sectors (the smallest storage unit on a hard disk drive)
       - Slack space is the unused space in a cluster. However, slack space can still contain data previously stored in memory. Clusters are groups of sectors. One way of eliminating data remanence is by overwriting clusters with random bits. 
@@ -364,7 +363,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
        - The controls implemented from a security baseline should match the data classification of the data used or stored on the system.
        - A baseline is a listing of security controls that provide a minimum level of security. Organizations can tailor a baseline to meet their needs.
        - The baseline is a starting point, and it does not ensure maximum security. A baseline provides a listing of controls an organization can apply, but it isn't necessarily a listing of applied controls.
-  - 🔴**Tailoring**: refers to modifying the list of 📝security controls within a baseline to align with the org's mission
+  - 🔴**Tailoring**: refers to 📝modifying the list of 📝security controls within a baseline to align with the org's mission
     - includes the following activities:
       - Tailoring is 📝customizing a set of existing security controls to align with an organization’s mission and objectives. Examples of blueprints that can be tailored are ISO 27001 & 27002 and the NIST Cybersecurity Framework.
       - identifying and designating common controls; specificaion of organization-defined parameters in the security controls via explicit assignment and selection statements
@@ -377,6 +376,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
       - Tailoring ensures that assessment methods are appropriate to the systems, services, and other assets that are being validated and is the best answer here.
       - The tailoring process refers to modifying a list of controls to align with the organization's mission. One way it does so is by modifying control parameters, such as changing the account lockout threshold. While tailoring includes scoping, assigning different values for controls only apples to tailoring. Tailoring is done after selecting a baseline.
   - 🔴**Scoping**: limiting the general baseline recommendations by removing those that do not apply; part of the tailoring process and refers to reviewing a list of baseline 📝security controls and 📝selecting only those controls that apply to the systems you're trying to protect
+    - Scoping is similar to tailoring but, instead of altering standards, a business would 📝completely remove the standards that are not needed. 
     - Scoping is reviewing and selecting initial security controls for a new information system. 
     - scoping processes eliminate controls that are recommended in a baseline
     - Scoping is specifically used to remove controls from a suggested baseline. 
@@ -403,7 +403,16 @@ rewriting with a new value or using a menu option to reset the device to the fac
          - ✈️Continuous audit trail  
     - 💻**Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network and  providing monitoring and policy enforcement capabilities
          - A cloud access security broker (CASB) is software placed logically between users and cloud-­based resources, and it can enforce security policies used in an internal network.
-         - CASB can be on-site or cloud-based and are security policy enforcement points that operate between users and cloud services. A CASB can provide insight into what users are doing, enforce policies, provide threat protection, and even provide data loss prevention capabilities. 
+         - CASB can be on-site or cloud-based and are security policy enforcement points that operate between users and cloud services.
+         - CASBs offer features such as
+             - 📝provide data encryption
+             - 📝provide access control
+             - 📝provide insight into what users are doing
+             - 📝enforce policies
+             - 📝provide threat protection
+             - 📝provide data loss prevention capabilities.
+             - 📝compliance monitoring to address security concerns associated with cloud computing
+             - 📝detect what services the users are utilizing.
       - note that entities must comply with the EU GDPR, and use additional data protection methods such as pseudonymization, tokenization, and anonymization
   - One of the primary methods of protecting the confidentiality of data is encryption
   - Options for protecting your data vary depending on its state:
