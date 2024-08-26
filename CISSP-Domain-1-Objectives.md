@@ -819,7 +819,7 @@ security guards.
   - ✏️Information Disclosure: the revelation or distribution of private, confidential, or controlled information to external or unauthorized entities
   - ✏️Denial of Service (DoS): an attack that attempts to prevent authorized use of a resource; this can be done through flaw exploitation, connection overloading, or traffic flooding
   - ✏️Elevation of privilege: an attack where a limited user account is transformed into an account with greater privileges, powers, and access
-- 🔴**Process for Attack Simulation and Threat Analysis (PASTA)**: PASTA is a risk-­centric approach that aims at selecting or developing 📝countermeasures in relation to the value of the assets to be protected. A seven-stage threat modeling methodology: _(🟡Our Technical Application Tackles Vulnerabilities And Risks)_
+- 🔴**Process for Attack Simulation and Threat Analysis (PASTA)**: PASTA is a risk-­centric approach that aims at selecting or developing 📝countermeasures in relation to the 📝value of the assets to be protected. A seven-stage threat modeling methodology: _(🟡Our Technical Application Tackles Vulnerabilities And Risks)_
   - ✏️Stage I: Definition of the Objectives (DO) for the Analysis of Risk
   - ✏️Stage II: Definition of the Technical Scope (DTS)
   - ✏️Stage III: Application Decomposition and Analysis (ADA)
@@ -828,7 +828,7 @@ security guards.
   - ✏️Stage VI: Attack Modeling and Simulation (AMS)
   - ✏️Stage VII: Risk Analysis and Management (RAM)
 - Each stage of PASTA has a specific list of objectives to achieve and deliverables to produce in order to complete the stage
-- 🔴**DREAD**: The DREAD model, developed in 2002, is a quantitative risk analysis model that involves rating the severity of security threats by assigning numeric values (typically from 1 to 10) that represent different levels of severity.
+- 🔴**DREAD**: The DREAD model, developed in 2002, is a quantitative risk analysis model that involves rating the severity of security threats by assigning numeric values (typically from 1 to 10) that represent different levels of severity. DREAD classifies threats based on the Damage, Reproducibility, Exploitability, Affected users, and Discoverability of a threat.
      - ✏️Damage: What is the total amount of damage the threat is capable of causing to your business?
      - ✏️Reproducibility: How easily can an attack on the particular threat be replicated?
      - ✏️Exploitability: How much effort is required for the threat to be exploited by an attacker?
