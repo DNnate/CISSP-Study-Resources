@@ -23,7 +23,9 @@
   - **Data categorization**: process of grouping sets of data, info or knowledge that have comparable sensativities (e.g. impact or loss rating), and have similar law/contract/compliance security needs. In the 🍎NIST SP 800-60 diagram, the process determines appropriate categorization levels resulting in security categorization and then uses that as an input to determine controls. 
   - **Sensitive data**: any information that isn't public or unclassified, and can include anything an org needs to protect due to its value, or to comply with existing laws and regulations
   - **Personally Identifiable Information (PII)**: any information that can identify an individual
-    - more specifically, info about an individual including (1) any info that can be used to distinguish or trace an individual‘s identity, such as name, social security number, date and place of birth, mother‘s maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information. This would also include any other unique identifier (including a student ID number). ❗ZIP/Post code, by itself, does not uniquely identify an individual. ([NIST SP 800-122](https://csrc.nist.gov/publications/detail/sp/800-122/final)) NIST Special Publication ✴️800-122
+    - more specifically, info about an individual including
+        - 🔨(1) any info that can be used to distinguish or trace an individual‘s identity, such as name, social security number, date and place of birth, mother‘s maiden name, or biometric records; and
+        - 🔨(2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information. This would also include any other unique identifier (including a student ID number). ❗ZIP/Post code, by itself, does not uniquely identify an individual. ([NIST SP 800-122](https://csrc.nist.gov/publications/detail/sp/800-122/final)) NIST Special Publication ✴️800-122
   - **Protected Health Information (PHI)**: any health-related information that can be related to a specific person
   - **Proprietary data**: any data that helps an organization maintain a competitive edge
   - Organizations classify data using labels
@@ -36,7 +38,7 @@
   - 🔴**Commercial/Non-Governmental data classification** 🟡CPSP often takes into account the value of the data, any regulatory or legal requirements that may apply to the data, and how long the data is useful—its lifespan. non-government organizations use labels such as:
       - 🍮**Confidential/Proprietary**: only used within the org and, in the case of unauthorized disclosure, it could suffer serious consequences. It is the most sensitive data. Proprietary data is information that helps organizations maintain a competitive edge or that they want to keep to their own organization or a controlled set of individuals.
       - 🍮**Private**: may include personal information, such as credit card data,  patient X-ray data, and bank accounts; unauthorized disclosure can be disastrous. Private data is internal business data that shouldn't be exposed but that doesn't meet the threshold for confidential or proprietary data. 
-      - 🍮**Sensitive**: needs extraordinary precautions to ensure confidentiality and integrity. Sensitive data may help attackers or otherwise create risk.
+      - 🍮**Sensitive**: needs extraordinary precautions to ensure confidentiality and integrity. Sensitive data may help attackers or otherwise create risk. Financial information, essential business contacts, and board meeting minutes would likely be classified as sensitive.
       - 🍮**Public**: can be viewed by the general public and, therefore, the disclosure of this data would not cause damage
   - There are six standard data type classifications used in either a government/military or a private sector organization in this list of options: public, private, sensitive, proprietary, critical, and confidential. Some organisations used 🍮critical and 🍮internal.
   -  It is important to protect data in all states: at rest, in transit, or in use
@@ -94,13 +96,15 @@
           - Destruction is the best method for SSD drives. 
       - 🍎**shredding**: is a type of physical destruction. Though this term is sometimes used in relation to overwriting of data, here shredding  refers to the process of making unrecoverable any data printed on hard copy or on smaller objects, such as credit cards, floppy or optical disks. There are industrial shredders capable of shredding larger devices like servers and hard disks.
   - ✴️**Clearing**: removal of sensitive data from a storage device such that there is assurance data may not be reconstructed using normal functions or software recovery or software recovery utilities; over-writing existing data or scrubbing un-needed data. Clearing describes preparing media for 📝reuse in same-security/sensitivity level. When media is cleared, unclassified data is written over all addressable locations on the media. Once that's completed, the media can be reused. Clearing (sometimes called overwriting) overwrites the disk drive with different bits in three separate passes.
+      - Clearing is defined in 🍎NIST SP 800-88 as the application of logical techniques to sanitize data in all user-addressable storage locations for protection against simple non-invasive data recovery techniques, typically applied through the standard Read and Write commands to the storage device, such as by
+rewriting with a new value or using a menu option to reset the device to the factory state.  
   - ✴️**Purging (Sanitization)**: removal of sensitive data from a system or device with the intent that data cannot be reconstructed by any known technique; usually refers to mutliple clearing passes combined with other tools-- not considered acceptable for top secret data.
       - Purging overwrites the media with random bits multiple times and includes additional steps to ensure that data is removed. It ensures there isn’t any data remanence.
       - When done properly, purged data is not recoverable using any known methods. 
       - Purged media can then be reused in less secure environments. 
       - Purging is a more intensive form of clearing for 📝reuse in lower-security areas
       - The 🍎NIST SP 800-88 process for sanitization and disposition shows that media that will be reused and was classified at a moderate level should be purged and then that purge should be validated. Finally, it should be documented. ✏️Validation processes are conducted to ensure that the sanitization process was completed, avoiding data remanence. A validation form  helps to ensure that each device has been checked and that it was properly wiped, purged, or sanitized.
-          - Purging is defined in NIST SP 800-88 as using either physical or logical techniques. If a physical technique is used, then the drive can not be used again. However, the drive could be used again if a logical technique is used. When a drive is purged, the data on that drive is infeasible even if using state-of-the-art laboratory techniques. So the drive could be used again in an unclassified capacity if logically purged
+          - Purging is defined in NIST SP 800-88 as using either physical or logical techniques that render target data recovery infeasible using state-of-the-art laboratory techniques.. If a physical technique is used, then the drive can not be used again. However, the drive could be used again if a logical technique is used. When a drive is purged, the data on that drive is infeasible even if using state-of-the-art laboratory techniques. So the drive could be used again in an unclassified capacity if logically purged
   - ✴️**Overwriting**: Same as Clearing and also known as 🔥Purging. Overwriting the disks multiple times will remove all existing data. This is called purging, and purged media can then be 📝re-used again.
        - Single-pass wipe: involves overwriting the entire hard drive with random data once (e.g replacing with 0s and 1s). 
        - Multi-pass wipes: involves overwriting the drive multiple times, and is more secure against advanced recovery techniques.
@@ -339,6 +343,7 @@
        - The baseline is a starting point, and it does not ensure maximum security. A baseline provides a listing of controls an organization can apply, but it isn't necessarily a listing of applied controls.
   - 🔴**Tailoring**: refers to modifying the list of ✏️ security controls ✏️ within a baseline to align with the org's mission
     - includes the following activities:
+      - Tailoring is customizing a set of existing security controls to align with an organization’s mission and objectives. Examples of blueprints that can be tailored are ISO 27001 & 27002 and the NIST Cybersecurity Framework.
       - identifying and designating common controls; specificaion of organization-defined parameters in the security controls via explicit assignment and selection statements
       - Tailoring refers to modifying a list of security controls to align with the organization's mission. 
       - applying scoping guidance/considerations
@@ -349,6 +354,7 @@
       - Tailoring ensures that assessment methods are appropriate to the systems, services, and other assets that are being validated and is the best answer here.
       - The tailoring process refers to modifying a list of controls to align with the organization's mission. One way it does so is by modifying control parameters, such as changing the account lockout threshold. While tailoring includes scoping, assigning different values for controls only apples to tailoring. Tailoring is done after selecting a baseline.
   - 🔴**Scoping**: limiting the general baseline recommendations by removing those that do not apply; part of the tailoring process and refers to reviewing a list of baseline ✏️ security controls ✏️ and selecting only those controls that apply to the systems you're trying to protect
+    - Scoping is reviewing and selecting initial security controls for a new information system. 
     - scoping processes eliminate controls that are recommended in a baseline
     - Scoping is specifically used to remove controls from a suggested baseline. 
     - Scoping is a part of the tailoring process and refers to reviewing a list of security controls and selecting the security controls that apply.
