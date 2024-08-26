@@ -159,7 +159,22 @@
           - **27001 (🔥🔥Focuses on WHAT and WHY🔥🔥)** information security standards/controls: Outlines a framework for implementing, maintaining and continually improving ISMS Information Security Management System (ISMS is a set of policies, processes and controls that helps organization protect thier information assets). ISO 27001 Guides organizations in identifying assets and assessing thier values and information risks AND implementing mitigating security controls based on ISO 27002. CLoud platforms all have ISO 27001.  ISO 27001 is an international standard on how to manage information security and is not specific to U.S. federal systems. 
           - **27002 (🔥🔥Focuses on HOW🔥🔥)** titled "Information technology—Security techniques—Code of practice for information security management: offers information security guidance: Offers best practices and Control objectives related to key aspects of cybersecurity in support of ISO/IEC 27001. Focuses on cryptography, human resource security, operational security, and incident response. Serves as an official blueprint for orgs aiming to effectively safeguard information assets from cyber threats.
           - 27031 Business continuity    
-    -  🔴**SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It 🧠integrates security into the business processes and aligns security measures with business goals🧠. provides a structured method for designing, implementing and managing security architectures.
+    - 🔴**The Open Group Architecture Framework (TOGAF)** is a standard that helps organizations design, plan, implement, and govern information technology architecture. TOGAF uses the Architecture Development Method (ADM) to create architectures for business, data, applications, and technology.
+        - TOGAF helps organizations align their business goals with IT strategies, ensuring that all aspects of the enterprise architecture are considered and integrated effectively.
+        - Architecture Development Method (ADM): The central feature of TOGAF, the ADM provides a step-by-step approach to developing an enterprise architecture. It includes phases like:
+            - Preliminary Phase: Setting up the architecture capability.
+            - Architecture Vision: Defining the scope, stakeholders, and high-level vision.
+            - Business Architecture: Developing the business architecture.
+            - Information Systems Architecture: Developing data and application architectures.
+            - Technology Architecture: Developing the technology architecture.
+            - Opportunities and Solutions: Identifying potential solutions and opportunities.
+            - Migration Planning: Planning the implementation and migration path.
+            - Implementation Governance: Ensuring the architecture's implementation adheres to the design.
+            - Architecture Change Management: Managing changes to the architecture.
+            - Enterprise Continuum: A classification mechanism to organize reusable architecture and solution artifacts.
+            - Architecture Repository: A place to store different architectural outputs like frameworks, standards, and guidelines.
+      - TOGAF can integrate with the SABSA (Sherwood Applied Business Security Architecture) framework to address security-specific architecture. Security is embedded in every phase of the ADM. CISSP candidates should understand how TOGAF ensures that 📝security is considered throughout the architecture development process. 
+    - 🔴**SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It 🧠integrates security into the business processes and aligns security measures with business goals🧠. provides a structured method for designing, implementing and managing security architectures.
     -  It provides a holistic, business-­driven approach to security architecture, encompassing everything from assessing business requirements to implementation and metrics.
     -  It is recognized for its comprehensive life cycle approach to security architecture, from assessing business requirements to establishing a “chain of traceability” through strategy, concept, design, implementation, and metrics stages
     -  SABSA Lifecycle Phases: 🟡 SDIM
