@@ -638,6 +638,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - A risk matrix or risk heat map is a form of risk assessment that is performed on a basic graph or chart
       - Likelihood assessment is a component of a risk assessment that determines the likelihood that a risk will materialize
   - **❄️Risk** is threat with a vulnerability. Risk is the possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result. Risk is commonly defined with two keywords: likelihood or probability and impact or consequence. Risk management is used to reduce risk. Before any security policies are made, risk must always be defined and assessed within the organization.
+       - 💥**NIST SP 80-137** NIST defines risk in many different documents that are all very similar. NIST SP 80-137 defines risk as, "A measure of the extent to which an entity is threatened by a potential circumstance or event, and typically a function of:
+           - ⚒️the adverse IMPACTS that would arise if the circumstance or event occurs; and
+           - ⚒️the LIKELIHOOD of occurrence."
        - ✏️Risk = threat * vulnerability (or probability of harm * severity of harm)
        - ✏️Risk is a calculation of the 📝probability of occurrence and the level of damage that could be caused if an exposure is realized (i.e., actually occurs).
        - ✏️Risk is presence of a vulnerability when a related threat exists
