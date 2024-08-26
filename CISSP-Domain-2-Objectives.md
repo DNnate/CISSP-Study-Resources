@@ -118,8 +118,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
        - Zero fill wipes a drive by replacing data with zeros
   - ✴️**Degaussing**: used on ✏️magentic media including Tape media, floppy disks, Magnetic Stripe Cards, Zip drives, VHS and audio cassette tapes, and hard disk drives. Degaussing the disks often damages the electronics but doesn’t reliably remove the data. Tapes can be erased by degaussing, but degaussing is not always fully effective because it could allow for the platters to be installed on a new drive and data to be read. Although they are only effective on magnetic media, so they can't be used on media such as Digital Video Disks (DVDs), Compact Discs (CDs), or Solid State Drives (SSDs).
   - ✴️**Erasing**: usually refers to a delete operation on media, leaving data remanence. It rarely remove the data from media but instead mark it for deletion. Erasing is the deletion of files or media and may not include all of the data on the device or media, making it the 📝worst choice here. Erasing, which describes a typical deletion process in many operating systems, typically removes only the link to the file and leaves the data that makes up the file itself. The data will remain in place but not indexed until the space is needed and it is overwritten. 
-  - ✴️**Cryptographic Erasure**: AKA cryptoshedding, basically destroying encryption key; may be only secure method for 🧠cloud storage
-  - The standard methods for clearing magnetic tapes, according to the NIST Guidelines for Media Sanitization, are overwriting the tape with nonsensitive data, degaussing, and physical destruction via shredding or incineration. Reformatting a tape does not remove remnant data.
+  - ✴️**Cryptographic Erasure**: AKA cryptoshedding, basically destroying encryption key; may be only secure method for 🧠cloud storage. Cryptoshredding, or cryptographic erasure, destroys the cryptographic keys used to protect encrypted data. This runs the risk that the encryption algorithm may be broken in the future or a backup key might be discovered. However, it is often the only available option in cloud environments.
 
 [2.3](#2.3) Provision resources securely (OSG-9 Chpt 16)
 
@@ -290,6 +289,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
     - if media includes any type of private and sensitive data, it is important to eliminate data remanence
     - note that some OSs fill slack space with data from memory, which is why personnel should never process classified data on unclassified systems
     - Remnant data is data that is left after attempts have been made to remove or erase it. itis also referred to as residual data.
+    - The standard methods for clearing magnetic tapes, according to the NIST Guidelines for Media Sanitization, are overwriting the tape with nonsensitive data, degaussing, and physical destruction via shredding or incineration. Reformatting a tape does not remove remnant data.
     
 - 2.4.7 Data destruction
   - Destroy sensitive data when it is no longer needed
@@ -426,9 +426,12 @@ rewriting with a new value or using a menu option to reset the device to the fac
   - 🟢**Pseudonymization**: refers to the process of using pseudonyms or alias to represent other data. An external dataset holds the original data along with the pseudonym so that the original dataset can be re-created.
        - A pseudonym is an alias, and pseudonymization can prevent data from directly identifying an entity (i.e. person).
        -  Pseudonymization is the process of replacing some data with an identifier, such as a pseudonym.
+       -  Pseudonymization does not remove any data and instead provides false names for subjects.
+       -  While it may seem like an effective method to protect data, those with knowledge of the fact that the data is using pseudonyms can narrow down the actual identities of subjects based on the categories of traits. 
        - However, if applying pseudonymization techniques, the GDPR still applies
-       - the process can be reversed
+       - 📝the process can be reversed
   - 🟢**Tokenization**: use of a token, typically a random string of characters that ✏️remains the same for each instance of that data, to replace other data. Tokenization replaces other data with a random string of characters. These tokens are then matched to the actual values for secure lookups as needed. 
+       - Tokenization involves replacing sensitive data with a token that has no actual relation to the data it is replacing.
        - note that tokenization is similar to pseudonymization in that they are both used to represent other data, and the token or pseudonym have no meaning or value outside the process that creates and links them to that data
        - If company are reselling products to the same customers, they can use tokenization to save tokens that match the credit card data, instead of saving and storing credit card data.
        - example of tokenization used in Credit Card transactions:
