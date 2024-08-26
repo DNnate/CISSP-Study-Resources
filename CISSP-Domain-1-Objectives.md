@@ -542,6 +542,14 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - 🥑Implementation, training, and testing
     - 🥑BCP maintenance: Change management, Version control, Accounting for mistakes
 - NIST SP800-34 provides a guideline for developing a logical BCP. It can be found at: http://csrc.nist.gov/publications/nistpubs/800-34-rev1/sp800-34-rev1_errata-Nov11-2010.pdf
+    - The Business Continuity Plan (BCP) development as outlined by the National Institute of Standards and Technology (NIST). NIST outlines the following steps in SP 800-34:
+        - 🆎Develop the contingency planning policy statement. A formal policy provides the authority and guidance necessary to develop an effective contingency plan.
+        - 🆎Conduct the Business Impact Analysis (BIA). The BIA helps identify and prioritize information systems and components critical to supporting the organization's mission/business functions. A template for developing the BIA is provided to assist the user.
+        - 🆎Identify preventive controls. Measures taken to reduce the effects of system disruptions can increase system availability and reduce contingency life cycle costs.
+        - 🆎Create contingency strategies. Thorough recovery strategies ensure that the system may be recovered quickly and effectively following a disruption.
+        - 🆎Develop an information system contingency plan. The contingency plan should contain detailed guidance and procedures for restoring a damaged system unique to the system's security impact level and recovery requirements.
+        - 🆎Ensure plan testing, training, and exercises. Testing validates recovery capabilities, whereas training prepares recovery personnel for plan activation, and exercising the plan identifies planning gaps; combined, the activities improve plan effectiveness and overall organization preparedness.
+        - 🆎Ensure plan maintenance. The plan should be a living document that is updated regularly to remain current with system enhancements and organizational changes. 
 - In summary, the core steps of planning for business continuity issues or disasters are:
     - 🍊Policy
     - 🍊Project scope and planning
