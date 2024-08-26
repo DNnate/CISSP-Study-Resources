@@ -233,12 +233,24 @@
      - **Common law**: is precedent based rather than statutes or written law. ✏️Precedent: A legal principle or rule established in a previous judicial decision that is used to guide judges in deciding subsequent cases with similar issues or facts. ✏️Stare Decisis: This is the doctrine of adhering to established precedents. It means “to stand by things decided” and ensures consistency and predictability in the law by requiring courts to follow the decisions made in earlier cases.
   - **Compliance**: Organizations may find themselves subject to a wide variety of laws, and regulations imposed by regulatory agencies or contractual obligation
     - **Payment Card Industry Data Security Standard (PCI DSS)** - governs the security of credit card information and is enforced through the terms of a merchant agreement between a business that accepts CC payments, and the bank that processes the business' transactions. It includes requirements that merchants promptly report incidents affecting the security of credit card information. Because it is not a law, PCI DSS violations cannot incur criminal sanctions. It is enforced through contractual relationships between merchants and their banks. Therefore, the 🍎bank would be the appropriate entity to initiate an investigation under PCI DSS. The core principles of PCI-DSS (available at https://www.pcisecuritystandards.org/security_standards/index.php) are
-      - • Build and Maintain a Secure Network and Systems
-      - • Protect Cardholder Data
-      - • Maintain a Vulnerability Management Program
-      - • Implement Strong Access Control Measures
-      - • Regularly Monitor and Test Networks
-      - • Maintain an Information Security Policy
+      - 🛎️• Build and Maintain a Secure Network and Systems
+          - 1. Install and maintain a firewall configuration to protect cardholder data
+            2. Do not use vendor-supplied defaults for system passwords and other security parameters
+      - 🛎️• Protect Cardholder Data
+          - 3. Protect stored cardholder data
+          - 4. Encrypt transmission of cardholder data across open, public networks
+      - 🛎️• Maintain a Vulnerability Management Program
+          - 5. Use and regularly update anti-virus software or programs
+          - 6. Develop and maintain secure systems and applications      
+      - 🛎️• Implement Strong Access Control Measures
+          - 7. Restrict access to cardholder data by business need-to-know
+          - 8. Assign a unique ID to each person with computer access
+          - 9. Restrict physical access to cardholder data
+      - 🛎️• Regularly Monitor and Test Networks
+          - 10. Track and monitor all access to network resources and cardholder data
+          - 11. Regularly test security systems and processes
+      - 🛎️• Maintain an Information Security Policy
+          - 12. Maintain a policy that addresses information security for employees and contractors 
     - **Sarbanes-Oxley (SOX)** - governs the financial records of publicly traded companies. financial systems may be audited to ensure security controls are sufficient to ensure compliance with SOX. It ✏️protects investors.  required publicly traded companies to implement a wide range of controls intended to ✏️minimize conflicts of interest, ✏️provide investors with appropriate risk information, place civil and ✏️criminal penalties👮 on executives for providing false financial disclosures, and provide protections for ✏️whistleblowers who report inappropriate actions to regulators.
     - **Gramm-Leach-Bliley Act (GLBA)** - covers the customer records of financial institutions. ✏️affects banks, insurance companies, and credit providers; included a number of ✏️limitations on the types of information that could be exchanged even among subsidiaries of the same corp, and required financial institutions to provide ✏️written privacy policies to all their customers. It contains provisions regulating the privacy of customer financial information. It applies specifically to financial institutions.
     - **Health Insurance Portability and Accountability Act (HIPAA)** - privacy and security regulations requiring strict security measures for hospitals, physicians, insurance companies, and other organizations that process or store private medical information about individuals, including information about an individual's medical bills; also clearly defines the rights of individuals who are the subject of medical records and requires organizations that maintain such records to disclose these rights in writing. It is a U.S. law governing the healthcare sector that does provide for criminal👮 penalties.
