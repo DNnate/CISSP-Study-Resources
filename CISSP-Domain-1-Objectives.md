@@ -927,11 +927,11 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - Phase 3 conducts the risk analysis and develops the risk mitigation strategy.
 [1.12](#1.12) Apply Supply Chain Risk Management (SRM) concepts (OSG-9 Chpt 1)
 - 1.12.1 Risks associated with hardware, software, and services
-  - ❄️**Supply Chain Risk Management (SCRM)**: the means to ensure that all of the vendors or links in the supply chain are: 
-    - reliable, 
-    - trustworthy, 
-    - reputable organizations that disclose their practices and security requirements to their business partners (not necessarily to the public)
-  - Each link in the chain should be responsible and accountable to the next link in the chain; each handoff is properly organized, documented, managed, and audited
+  - ❄️**Supply Chain Risk Management (SCRM)**: Supply Chain Risk Management (SCRM) is a structured approach to managing resiliency in the sourcing of components and materials. Due to the global, interconnected nature of modern supply chains, the effects from even minor or distant disruptions can cascade to have critical institutional impacts, making supply chain risk management an essential element of broader enterprise risk management practices. It is tthe means to ensure that all of the vendors or links in the supply chain are: 
+      - reliable,
+      - trustworthy,
+      - reputable organizations that disclose their practices and security requirements to their business partners (not necessarily to the public)
+      - Each link in the chain should be responsible and accountable to the next link in the chain; each handoff is properly organized, documented, managed, and audited
   - Supply chain risk could be ✴️Hardware-focused, ✴️Software-focused, ✴️Services-focused.
     - The goal of a secure supply chain is that the finished product is of sufficient quality, meets performance and operational goals, provides stated security mechanisms, and that at no point in the process was any element counterfeited or subject to unauthorized or malicious manipulation or sabotage
   - The supply chain can be a threat vector, where materials, software, hardware, or data is being obtained from a supposedly trusted source but the supply chain behind the source could have been compromised and asset poisoned or modified
