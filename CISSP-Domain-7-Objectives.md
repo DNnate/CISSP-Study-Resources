@@ -689,6 +689,7 @@ of litigation is imminent.
             - 🔨Storage: exchange of information by writing data to a common storage medium that another process can read.
             - 🔨Timing: exchange of information through the use of timing. An example of this could be that a shared resource is used or not used.
         - 🔥Spyware is software designed to gather information about a user or system without their consent.
+        - 🔥Adware delivers advertisements.
         - 🔥Advanced Persistent Threat (APT) is a sophisticated and prolonged cyberattack where an adversary gains unauthorized access to a network and remains undetected for an extended period. APTs are characterized by their use of advanced techniques and tools. Attackers employ sophisticated methods to bypass security measures and remain undetected. APTs are designed to stay in the target environment for a long time, often months or even years. The attackers aim to maintain a long-term presence to achieve their objectives. APTs are typically targeted at specific organizations, sectors, or individuals. The attackers often conduct extensive reconnaissance to tailor their attack to the specific vulnerabilities of their target.
 
 - 🍮**Saboage**: An attack committed against an organization by an insider, such as an employee, is known as sabotage. Sabotage refers to deliberate actions intended to disrupt, damage, destroy, or compromise an organization's operations, assets, infrastructure, or reputation.
