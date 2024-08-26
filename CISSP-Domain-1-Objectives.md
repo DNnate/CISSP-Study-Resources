@@ -136,6 +136,13 @@
   - Security is established by understanding the assets of an organization that need protection and understanding the threats that could cause harm to those assets. Then Security controls are selected that provide protection for the 📝CIA Triad of the assets at risk
   - If a security control's benefits cannot be quantified, evaluated, or compared, then it does not actually provide any security.
   - An SCA's goals are to verify security, assess the effectiveness of security, and identify the strengths and weaknesses of security through its risk management processes. A Security Control Assessment (SCA) 📝does not recommend solutions.
+  - The six main types of security controls include the following:
+      - 🌲Recovery: Recovery controls restore normal operations after an incident to a greater extent than corrective ones. Backups and server clusters are examples of recovery controls.
+      - 🌲Preventive: Preventive controls are designed to stop an incident from happening. Fences, locks, and access controls are examples of preventive controls.
+      - 🌲Detective: Detective controls help identify that an incident is occurring. CCTV, audit trails, and honeypots are examples of detective controls.
+      - 🌲Corrective: Corrective controls fix issues after a security incident. Antimalware that removes an infection or an auto-close arm on a door are examples of corrective controls.
+      - 🌲Deterrent: Deterrent controls attempt to discourage an incident from occurring. Corporate policies and security cameras are examples of deterrent controls.
+      - 🌲Compensating: Compensating controls are used as a replacement when the preferred control is unusable. For example, a company renting an office in a building may put locks on the doors when it can't build a fence.
   - there are many frameworks to choose from, such as:
     -  🔴**Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
         - COBIT is a documented set of best IT security practices by ISACA for information technology (IT) management and governance.
