@@ -613,24 +613,28 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - **Exposure**: being susceptible to asset loss because of a threat; the potential for harm to occur; quantitative risk analysis value of **exposure factor (EF)** is derived from this concept
     - **Risk**: the possiblity or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result; the > the potential harm, the > the risk
 - 1.10.1 Risk assessment/analysis
-  - **Risk Assessment**: used to identify the risks and set criticality priorities, and then risk response is used to determine the best defense for each identified risk
+  - 📁**Risk Assessment**: used to identify the risks and set criticality priorities, and then risk response is used to determine the best defense for each identified risk
   - The primary goal of a security risk assessment is to identify and analyze risks and then develop strategies to reduce them to an acceptable level.
   - It also involves assigning an asset value using valuation methods such as Purchase cost, Depreciated cost, Replacement cost etc if the risk where to materialize.
   - A risk matrix or risk heat map is a form of risk assessment that is performed on a basic graph or chart
   - Likelihood assessment is a component of a risk assessment that determines the likelihood that a risk will materialize
-  - **❄️Risk** is threat with a vulnerability. Risk is the possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result.
+  - **❄️Risk** is threat with a vulnerability. Risk is the possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result. Risk is commonly defined with two keywords: likelihood or probability and impact or consequence. Risk management is used to reduce risk. Before any security policies are made, risk must always be defined and assessed within the organization.
        - ✏️Risk = threat * vulnerability (or probability of harm * severity of harm)
        - ✏️Risk is a calculation of the 📝probability of occurrence and the level of damage that could be caused if an exposure is realized (i.e., actually occurs).
        - ✏️Risk is presence of a vulnerability when a related threat exists
        - Addressing either the threat or threat agent or vulnerability directly results in a reduction of risk (known as threat mitigation)
        - All IT systems have risk; all orgs have risk; there is no way to elminiate 100% of all risks. Risk is typically composed of three Components:
-  - **❄️Threat** (a potential cause of an incident that may result in harm)
+  - **❄️Threat** (a potential cause of an incident that may result in harm). A threat is defined by the United States National Institute of Standards and Technology (NIST) as any circumstance or event that can negatively impact a corporation's mission, operations, function, mission, etc.
        - ✏️Threats: Any potential occurrence that may cause an undesirable or unwanted outcome for an organization or for a specific asset is a threat.
        - ✏️Threat agents or threat actors: Entities that intentionally exploit vulnerabilities.
        - ✏️Threat events: Accidental occurrences and intentional exploitations of vulnerabilities.
        - ✏️Threat vector: The path or means by which an attack or attacker can gain access to a target in order to cause harm. 
-  - **❄️Vulnerability** (a weakness that can be exploited by a threat). It is the weakness in an asset, or the absence or the weakness of a safeguard or countermeasure. Vulnerabilities and risks are evaluated based on their threats against one or more of the CIA Triad principles. 📝The Common Vulnerability Scoring System (CVSS) is a standardized approach to rating the severity of vulnerabilities 
+  - **❄️Vulnerability** (a weakness that can be exploited by a threat).
+      - It is the weakness in an asset, or the absence or the weakness of a safeguard or countermeasure.
+      - A vulnerability is a weakness within the systems or procedures that can be exploited by the threat actor to cause damage.
+      - Vulnerabilities and risks are evaluated based on their threats against one or more of the CIA Triad principles. 📝The Common Vulnerability Scoring System (CVSS) is a standardized approach to rating the severity of vulnerabilities 
   - **❄️Impact** (the potential harm caused by a threat exploiting a vulnerability)
+  - **❄️Exposure**: Exposure is defined by NIST as the extent to which an organization is subject to risk.
   - **Risk analysis** identifies risks, quantifies the impact of threats, and aids in budgeting for security. It helps integrate the needs and objectives of the security policy with the organization's business goals and intentions. The risk analysis/risk assessment is a "point in time" metric, meaning Security is always changing thus continuous improvement is required.
        - Risk analysis includes analyzing an environment for risks
        - evaluating each threat event as to its likelihood of occurring and the cost of the damage it would cause
