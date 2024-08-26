@@ -576,7 +576,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
         - testing
         - training and maintenance
 - 1.8.1 Business Impact Analysis (BIA)
-    - 🔴**Business impact analysis (BIA)**:
+    - 🔴**Business impact analysis (BIA)**:A BIA, or Business Impact Analysis, is a critical process used by organizations to assess the potential impacts of disruptions on their operations. It identifies and quantifies the financial, operational, and reputational consequences of various threats such as natural disasters, cyber-attacks, or supply chain disruptions. During a BIA, key business processes and their dependencies are analyzed, and the potential downtime, data loss, and recovery time objectives are determined. The findings help organizations prioritize their resources, develop business continuity and disaster recovery plans, and make informed decisions to mitigate risks and ensure continuity during adverse events.
         - ⚒️Phase 1: Identification of priorities
         - ⚒️Phase 2: Risk identification
         - ⚒️Phase 3: Likelihood assessment
