@@ -136,12 +136,13 @@ rewriting with a new value or using a menu option to reset the device to the fac
 
 - 2.3.2 Asset inventory (e.g., tangible, intangible)
   - **Inventory**: complete list of items.  In most organizations, changing processes so that new systems and devices are added to inventory before they are deployed is the first step in making sure asset inventories are current. A system inventory is most frequently used to associate individuals with systems or devices. This can help when tracking their support history and aids in provisioning the proper tools, permissions, and data to a system. While it can be a lot of work, the most complete inventory of active systems and devices can be created by determining what is connected to the network by looking at logs, and then finding those assets. Barcodes & RFID tags are a common solution for tracking hardware assets and equipment. RFID tags can be queried wirelessly at varying ranges depending on the tags and may be built-in to hand-held readers or even included in doorways or arches to track items as they enter or leave a facility. Visual inventory relies on staff checking items, MAC addresses are hardware addresses for networked devices.
-  - 🍏**Tangible assets**: include hardware and software assets, cables, and buildings owned by the company. Tangible asset inventories include physical items owned by the organization. 
-  - 🍏**Intangible assets**: things like Patents, databases, and formulas, copyrights, a company’s reputation, Intellectual property, files stored on a server, and other assets representing potential revenue
-    - an org should keep track of intangible assets, like intellectual property, patents, trademarks, and company’s reputation, and copyrights to protect them
-    - To protect intangible inventories (like intellectual property, patents, trademarks, and company’s reputation, and copyrights), they need to be tracked
-    - note: patents in the US are valid for 20 years
-  - 🍏**Personnel Assets**: Employees
+  - An asset inventory will allow all hardware, software, and intangible assets to be accounted for. Through an asset inventory, programs can be implemented to allow assets to be monitored with Radio Frequency Identification (RFID) tags, which automatically interact with software to update the asset inventory when an item is purchased.
+      - 🍏**Tangible assets**: include hardware and software assets, cables, and buildings owned by the company. Tangible asset inventories include physical items owned by the organization. This includes property owned and used by the organization every day, such as workstation computers or perhaps hardware being sold to the public. Software could be a software key or program that is sold to the public or relied upon for the function of the organization every day. Organizations would want to keep track of their software keys to prevent them from being stolen, used elsewhere, or potentially deactivated by the publisher.
+      - 🍏**Intangible assets**: things like Patents, databases, and formulas, copyrights, a company’s reputation, Intellectual property, files stored on a server, and other assets representing potential revenue.  Intangible assets could include the organization's reputation, patents, or copyrights that either bring value directly to the company or to its products
+        - an org should keep track of intangible assets, like intellectual property, patents, trademarks, and company’s reputation, and copyrights to protect them
+        - To protect intangible inventories (like intellectual property, patents, trademarks, and company’s reputation, and copyrights), they need to be tracked
+        - note: patents in the US are valid for 20 years
+      - 🍏**Personnel Assets**: Employees
 
 - 2.3.3 Asset management
   - Asset management refers to managing both tangible and intangible assets; this starts with inventories of assets, tracking the assets, and taking additional steps to protect them throughout their lifetime
@@ -379,6 +380,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
       - identifying and designating common controls; specificaion of organization-defined parameters in the security controls via explicit assignment and selection statements
       - Tailoring refers to modifying a list of security controls to align with the organization's mission. 
       - applying scoping guidance/considerations
+      - Tailoring changes the list of previously selected security controls.
       - selecting/specifying compensating controls
       - assigning control values
       - tailoring matches your organization's mission and the controls from a selected baseline.
