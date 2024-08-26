@@ -85,8 +85,9 @@
      - Destruction is making systems or data unavailable. 
  
 [1.3](#1.3) Evaluate and apply security governance principles (OSG-9 Chpt 1)
-- Governance is the process in which senior management directs an organization to meet its objectives. Governance must involve oversight to ensure that the goals set by senior management have been met. When performing security governance, security managers need to keep security objectives in alignment with business objectives.
-    - Without senior management's approval of and commitment to an information security program, it will remain weak and provide little benefit 
+- 🍎**Governance** is the process in which senior management directs an organization to meet its objectives. Governance must involve oversight to ensure that the goals set by senior management have been met. When performing security governance, security managers need to keep security objectives in alignment with business objectives.
+    - Without senior management's approval of and commitment to an information security program, it will remain weak and provide little benefit
+    - When performing security governance, IT managers need to keep security objectives in alignment with business objectives
 - **Security governance**: 🌠the collection of policies, roles, processes/practices used to make security decisions in an org; related to supporting, evaluating, defining, and directing the security efforts of an org 
   - 🌠Security governance is the implementation of a security solution and a management method that are tightly interconnected. It is NOT an IT-only issue.
   - 🌠The **top-down approach** is the aspect of security governance that is based on the idea that senior management is responsible for the success or failure of a security endeavor. 
