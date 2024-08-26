@@ -74,7 +74,8 @@ You may find this domain to be more technical than others, and if you have exper
     - ❄️**Separation of duties (SoD)**: separation of duties (SoD) and responsibilities ensures that no single person has total control over a critical function or system;  SoD is a process to minimize opportunities for misuse of data or environment damage 
         - e.g. one person sells tickets, another collects tickets and restricts access to ticket holders in a movie theater
         - The separation of duties principle says that no employee should have permission to perform two tasks that, when combined, would pose a security risk
-    - ❄️**Two-Person Control**: where two people must concur to perform a sensitive action. E.g emergency access to system administrator privileges. Under this procedure, two qualified administrators must agree to retrieve emergency credentials. 
+    - ❄️**Two-Person Control**: where two people must concur to perform a sensitive action. E.g emergency access to system administrator privileges. Under this procedure, two qualified administrators must agree to retrieve emergency credentials.
+    - ❄️**M of N control** is a multi-person and split knowledge control that requires a 📝minimum number of individuals to provide credentials before action can occur. Credentials may be in the form of physical keys, digital keys, passwords, or biometric characteristics. M is the number required to be present and N is the total number possible. 
 - 3.1.7 Keep it simple
     - ✴️**Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design. The keep it simple principle says that security controls and other technologies should remain as simple as possible while still completing their objectives.
     3.1.8 Zero Trust
