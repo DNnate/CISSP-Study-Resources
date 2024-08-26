@@ -133,7 +133,7 @@
        - 🍮ensure the effectiveness of the security mechanisms
        - 🍮evaluate the quality and thoroughness of the risk management processes of the organization, and
        - 🍮produce a report of the relative strengths and weaknesses of the deployed security infrastructure.
-  - Security is established by understanding the assets of an organization that need protection and understanding the threats that could cause harm to those assets. Then Security controls are selected that provide protection for the CIA Triad of the assets at risk
+  - Security is established by understanding the assets of an organization that need protection and understanding the threats that could cause harm to those assets. Then Security controls are selected that provide protection for the 📝CIA Triad of the assets at risk
   - If a security control's benefits cannot be quantified, evaluated, or compared, then it does not actually provide any security.
   - there are many frameworks to choose from, such as:
     -  🔴**Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
