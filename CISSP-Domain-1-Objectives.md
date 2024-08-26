@@ -85,7 +85,7 @@
      - Destruction is making systems or data unavailable. 
  
 [1.3](#1.3) Evaluate and apply security governance principles (OSG-9 Chpt 1)
- 
+- Governance is the process in which senior management directs an organization to meet its objectives. Governance must involve oversight to ensure that the goals set by senior management have been met. When performing security governance, security managers need to keep security objectives in alignment with business objectives. 
 - **Security governance**: 🌠the collection of policies, roles, processes/practices used to make security decisions in an org; related to supporting, evaluating, defining, and directing the security efforts of an org 
   - 🌠Security governance is the implementation of a security solution and a management method that are tightly interconnected. It is NOT an IT-only issue.
   - 🌠The **top-down approach** is the aspect of security governance that is based on the idea that senior management is responsible for the success or failure of a security endeavor. 
@@ -101,9 +101,9 @@
 - **Third-party governance**: external entity oversight that may be mandated by law, regulation, industry standards, contractual obligation, or licensing requirement; outside investigator or auditors are often involved
 - 1.3.1 Alignment of security function to business strategy, goals, mission, and objectives
   - **Security Management Planning**: ensures proper creation/implementation/enforcment of a security policy, and alignment with org strategy, goals, mission, and objectives
-       - **Strategic Plan**: a strategic plan is a 🔥long-term plan (useful for 5 years); it defines the org's security purpose. A strategic plan should include risk assessment. Strategic plans are the longest type of security management plan. They describe overall security goals and can be viable for up to five years.
-       - **Tactical Plan**: mid-term plan (🔥1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan or can be crafted ad hoc based on unpredicted events. Tactical plans are the next longest and describe 📝how particular goals can be accomplished. They're usually good for about a year.
-       - **Operational Plan**: a 🔥short-term, highly detailed plan based on strategic or tactical plans. It is valid or useful only for a short time. Operational plans have an extremely short duration. They provide in-depth detail on how the organization will accomplish tasks to support their strategic or tactical plans.
+       - 🥑**Strategic Plan**: a strategic plan is a 🔥long-term plan (useful for 5 years); it defines the org's security purpose. A strategic plan should include risk assessment. Strategic plans are the longest type of security management plan. They describe overall security goals and can be viable for up to five years.
+       - 🥑**Tactical Plan**: mid-term plan (🔥1 year or less) developed to provide more details on accomplishing the goals set forth in the strategic plan or can be crafted ad hoc based on unpredicted events. Tactical plans are the next longest and describe 📝how particular goals can be accomplished. They're usually good for about a year.
+       - 🥑**Operational Plan**: a 🔥short-term, highly detailed plan based on strategic or tactical plans. It is valid or useful only for a short time. Operational plans have an extremely short duration. They provide in-depth detail on how the organization will accomplish tasks to support their strategic or tactical plans.
 - Strategy ▶️ goals ▶️ missions and objectives — support each other in a heirarchy
     - **Objectives**: are closest to the ground-level and represent small efforts to help you achieve a mission 
     - **Missions**: represent a collection of objectives, and one or more missions lead to goals; when you reach your goals, you are achieving the strategy
