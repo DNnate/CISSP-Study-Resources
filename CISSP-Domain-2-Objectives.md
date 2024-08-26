@@ -103,7 +103,7 @@
        - Single-pass wipe: involves overwriting the entire hard drive with random data once (e.g replacing with 0s and 1s). 
        - Multi-pass wipes: involves overwriting the drive multiple times, and is more secure against advanced recovery techniques.
        - Zero fill wipes a drive by replacing data with zeros
-  - ✴️**Degaussing**: used on ✏️magentic media including Tape media, floppy disks, Magnetic Stripe Cards, Zip drives, VHS and audio cassette tapes, and hard disk drives. Degaussing the disks often damages the electronics but doesn’t reliably remove the data. Tapes can be erased by degaussing, but degaussing is not always fully effective. 
+  - ✴️**Degaussing**: used on ✏️magentic media including Tape media, floppy disks, Magnetic Stripe Cards, Zip drives, VHS and audio cassette tapes, and hard disk drives. Degaussing the disks often damages the electronics but doesn’t reliably remove the data. Tapes can be erased by degaussing, but degaussing is not always fully effective. Although they are only effective on magnetic media, so they can't be used on media such as Digital Video Disks (DVDs), Compact Discs (CDs), or Solid State Drives (SSDs).
   - ✴️**Erasing**: usually refers to a delete operation on media, leaving data remanence. It rarely remove the data from media but instead mark it for deletion. Erasing is the deletion of files or media and may not include all of the data on the device or media, making it the 📝worst choice here. Erasing, which describes a typical deletion process in many operating systems, typically removes only the link to the file and leaves the data that makes up the file itself. The data will remain in place but not indexed until the space is needed and it is overwritten. 
   - ✴️**Cryptographic Erasure**: AKA cryptoshedding, basically destroying encryption key; may be only secure method for 🧠cloud storage
   - The standard methods for clearing magnetic tapes, according to the NIST Guidelines for Media Sanitization, are overwriting the tape with nonsensitive data, degaussing, and physical destruction via shredding or incineration. Reformatting a tape does not remove remnant data.
@@ -282,7 +282,7 @@
 - You need security controls that protect data in each possible state: at rest, in transit or in use
 - Each state requires a different approach to security; note that there aren’t as many security options for data in use as there are for data at rest or data in transit
 
-- 2.6.1 Data states (e.g., in use, in transit, at rest)
+- 2.6.1 Data states (e.g., in use, in transit, at rest): **🥇Strong encryption is the only method that would protect data at all stages, in transit, rest, or even at the end of the life cycle.**
   - The three data states are at rest, in transit, and in use
     - 🔴**Data at rest**: any data stored on media such as hard drives or external media: Protecting Data at Rest: AES encryption, Access Control, redundancy/backup, Bitlocker, FileVault, symmetric encrytion e.g Serpent, IDEA.  Data breaches cause the greatest reputational damage as a result of threats to data at rest.  Data at rest with a high level of sensitivity is often encrypted to help prevent this.  Disk-level encryption and column-level encryption protects data at rest.
     - 🔴**Data in transit**: any data transmitted over a network: Protecting Data in Motion: Data in transit is data that is traversing a network or is otherwise in motion. TLS, VPNs, and IPsec tunnels are all techniques used to protect data in transit. TLS encryption, email encrytion (SMIME, PGP), IPSEC, VPN, SSH
