@@ -15,10 +15,11 @@
 
 [2.1](#2.1) Identify and classify information assets (OSG-9 Chpt 5)
 
-- 2.1.1 Data classification
+- 2.1.1 ❄️**Data classification**
   - Managing the data lifecycle refers to protecting it from cradle to grave -- steps need to be taken to protect data when it's first created until it's destroyed
   - One of the first steps in the lifecycle is identifying and classifying information and assets, often within a security policy
   - Data classifications provide strong protection against the loss of confidentiality
+  - Identifying the security classification for data and defining the requirements to protect the data is the primary purpose of data classification. It defines how to 📝protect data at rest and in transit, and how to back it up.
   - In this context, assets include sensitive data, the hardware used to process that data, and the media used to store/hold it
       - 🎄**Data categorization**: process of grouping sets of data, info or knowledge that have comparable sensativities (e.g. impact or loss rating), and have similar law/contract/compliance security needs. In the 🍎NIST SP 800-60 diagram, the process determines appropriate categorization levels resulting in security categorization and then uses that as an input to determine controls.
       - 🎄**Data Aggregation**: When discussing classification labels, data aggregation means that data classified at a higher level can be inferred by combining data at a lower classification level.
@@ -72,7 +73,8 @@
 - The data and asset handling key goal is to prevent data breaches, by using:
   - **Data Maintenance**: on-going efforts to organize and care for data through its life cycle
   - 🏷️**Data Loss Prevention (DLP)**: systems that detect and block data exfiltration attempts; DLP systems can use labels on data to determine the appropriate controls to apply to the data. DLP system or software is designed to identify labeled data or data that fits specific patterns and descriptions to help prevent it from leaving the organization.
-      -  A data loss prevention (DLP) system can tag, monitor, and limit where files are transferred to. Data must be correctly 📝classified before the Data Loss Prevention (DLP) appliance can prevent it from being leaked. If data is incorrectly classified, the DLP appliance may allow sensitive information to leave the organization.
+      - ⛅Inventory: Inventorying sensitive data is the first step to take prior to selecting a means of data loss prevention. By inventorying assets in terms of sensitive data, you can then figure out what you need to protect and the best way to do so.
+      - ⛅Classification:  A data loss prevention (DLP) system can tag, monitor, and limit where files are transferred to. Data must be correctly 📝classified before the Data Loss Prevention (DLP) appliance can prevent it from being leaked. If data is incorrectly classified, the DLP appliance may allow sensitive information to leave the organization.
       -  There are two primary types:
      - 🩰Network-based DLP: Network-based DLP would not detect stored information unless the user transmits it over the network. Network DLP solutions inspect the content of network traffic, looking for signs of attempted data exfiltration and preventing it from leaving the network.
          - Network DLP is used to prevent sensitive information from being transmitted over the network. For example, network DLP can catch when a user places sensitive information such as credit card numbers in an email.  
@@ -275,6 +277,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
       - A data retention policy can help to ensure that outdated data is purged, removing potential additional costs for discovery, and reducing the amount of data that may need to be produced for lawsuits. Many organizations have aggressive retention policies to both reduce the cost of storage and limit the amount of data that is kept on hand and discoverable.
       - Laws and regulations that apply to an organization often dictate how long to save data. Still, all organizations should keep data as long as they are required to do so.
       - Always consult the organization's record retentions policy to determine the appropriate length of time to preserve records
+          - 📝The organization should reference its user agreement documents along with government regulations. For example, they may want to delete data when it is no longer needed. This would allow them to follow the European Union (EU) General Data Protection Regulation (GDPR) Article 5, which states that data is to be retained only for the amount of time it is required. Additionally, this would allow the organization to avoid legal issues in the future if the data they stored was involved in a crime, but the data is no longer stored with them. By having this data still in storage, the organization may have to oblige court orders to provide copies of all data, which could be burdensome to the company.
   - Three fundamental retention policy questions:
     - ⚒️**How to retain**: data should be kept in a manner that makes it accessible whenever required; take taxonomy (or the scheme for data classification) into account
     - ⚒️**How long to retain data**: general guidelines for business data is 7 years (but can vary by country/region/regulation)
@@ -436,6 +439,8 @@ rewriting with a new value or using a menu option to reset the device to the fac
        - completing the sale: the CCP sends a reply to the POS indicating the charge is approved
        - this system prevents CC theft at the POS system
   - 🟢**Anonymization** removes all personally identifiable data to ensure that the original subject cannot be identified. Unlike peudonymization, removing personal data without using an identifier is closer to anonymization. Anonymization techniques remove all data so that it is difficult to identify the original identities. When done correctly, the GDPR no longer applies. 
+       - Anonymization is the process of removing data to the point that it is impossible to identify the subject(s). This is most effective with large data sets with many categories.
+       - Anonymization also cannot be reversed, making it impossible to use a secondary data set to retrace steps associated with the anonymization process. What sets it apart is anonymization can't be reversed because the technique requires the shuffling of a large data set and has no database to link the random data back to the original subject(s).
        - Anonymization techniques remove all personal data and make the data unusable for reuse on the website. Techniques of Data Anonymization
        - 1. Data masking: obscures some, but not all data. Data masking is a method used to anonymize data and protect the privacy of individuals in a dataset. It replaces privacy data (such as names) with incorrect data, but the dataset still retains usable data for instance when needed for reserach
          2. Pseudonymization: Pseudonymization involves replacing identifiable information with pseudonyms or identifiers that do not directly reveal the identity of individuals. The original data can only be restored if additional information, kept separate, is used.
