@@ -145,7 +145,7 @@
       - 🌲Compensating: Compensating controls are used as a replacement when the preferred control is unusable. For example, a company renting an office in a building may put locks on the doors when it can't build a fence.
   - there are many frameworks to choose from, such as:
     -  🔴**Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
-        - COBIT is a documented set of best IT security practices by ISACA for information technology (IT) management and governance.
+        - COBIT is a documented set of best IT security practices by ISACA for information technology (IT) management and governance. COBIT (formerly Control Objectives for Information and Related Technology) created by the Information Systems Audit and Control Association (ISACA) is a framework used to establish effective security governance within an organization.
         - Six key principles (🟡Sally Has Daring Goals To Excel SHDGTE) :
           - ✏️provide stakeholder value
           - ✏️holistic approach
