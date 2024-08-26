@@ -138,11 +138,11 @@
   - If a security control's benefits cannot be quantified, evaluated, or compared, then it does not actually provide any security.
   - An SCA's goals are to verify security, assess the effectiveness of security, and identify the strengths and weaknesses of security through its risk management processes. A Security Control Assessment (SCA) 📝does not recommend solutions.
   - The six main types of security controls include the following:
-      - 🌲Recovery: Recovery controls restore normal operations after an incident to a greater extent than corrective ones. Backups and server clusters are examples of recovery controls.
-      - 🌲Preventive: Preventive controls are designed to stop an incident from happening. Fences, locks, and access controls are examples of preventive controls.
-      - 🌲Detective: Detective controls help identify that an incident is occurring. CCTV, audit trails, and honeypots are examples of detective controls.
-      - 🌲Corrective: Corrective controls fix issues after a security incident. Antimalware that removes an infection or an auto-close arm on a door are examples of corrective controls.
-      - 🌲Deterrent: Deterrent controls attempt to discourage an incident from occurring. Corporate policies and security cameras are examples of deterrent controls.
+      - 🌲Recovery: Recovery controls restore normal operations after an incident to a greater extent than corrective ones. Backups and server clusters are examples of recovery controls. Recovery controls would return the system back to a normal state after Corrective control has done its job.
+      - 🌲Preventive: Preventive controls are designed to stop an incident from happening. Fences, locks, and access controls are examples of preventive controls. Preventive controls are the best at reducing risk since they directly stop an unwanted action. 
+      - 🌲Detective: Detective controls help identify that an incident is occurring. CCTV, audit trails, and honeypots are examples of detective controls. Detective controls inform by recording or notifying the operations center that there are problems somewhere. 
+      - 🌲Corrective: Corrective controls fix issues after a security incident. Antimalware that removes an infection or an auto-close arm on a door are examples of corrective controls. Corrective controls return broken systems or services to a functional state. This state is likely not a normal state, but it does allow the business to continue
+      - 🌲Deterrent: Deterrent controls attempt to discourage an incident from occurring. Corporate policies and security cameras are examples of deterrent controls. Deterrent controls have the effect that the threat actor would be dissuaded from launching an attack.
       - 🌲Compensating: Compensating controls are used as a replacement when the preferred control is unusable. For example, a company renting an office in a building may put locks on the doors when it can't build a fence.
   - there are many frameworks to choose from, such as:
     -  🔴**Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
@@ -456,7 +456,8 @@
     - Situations like this requires collaboration and legal counsel
     - Cloud practitioners must be aware of multiple sets of laws and regulations and the risk introduced by conflicting legislation across geography and jurisdiction e.g copyright and intellectual property laws, data residency and safeguards for required for privacy compliance, data breaches and data breach notifications, internation import/export laws
 
-- **Cyber Kill/Attack Chain** a seven-steps to identify and stop attacks: (RWDEICA 🟡Reckless Wizards Delve Eagerly Into Crytic Arcanum)
+- **Cyber Kill/Attack Chain**: The cybersecurity kill chain is a term that describes each step an attacker takes when attacking an asset. When designing a cybersecurity program, organizations should add controls that address each step of the kill chain to reduce an attack's likelihood of success.
+- The Cybersecurity Kill Chain developed by 📝Lockheed Martin has seven steps to identify and stop attacks: (RWDEICA 🟡Reckless Wizards Delve Eagerly Into Crytic Arcanum)
   - ✏️Stage I: Reconnaisance
   - ✏️Stage II: Weaponization
   - ✏️Stage III: Delivery
