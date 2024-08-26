@@ -961,8 +961,8 @@ taxed by inefficient implementations of software and VMs.
     - building design
     - Locks:
          - A cipher lock is a type of mechanical or electronic lock that requires users to enter a combination or code to unlock it, rather than using a traditional key. Cipher locks are commonly used to control access to secure areas, such as offices, server rooms, or other restricted locations.
-             - Mechanical Cipher Locks: These locks are purely mechanical, with no electronics involved. They use physical buttons that, when pressed in the correct sequence, allow the door to be opened.
-             - Electronic Cipher Locks: These locks use an electronic keypad and may include additional features such as keycards, biometrics, or logging of access attempts 
+             - 🥑Mechanical Cipher Locks: These locks are purely mechanical, with no electronics involved. They use physical buttons that, when pressed in the correct sequence, allow the door to be opened.
+             - 🥑Electronic Cipher Locks: These locks use an electronic keypad and may include additional features such as keycards, biometrics, or logging of access attempts 
     - personnel controls e.g Badges, identification cards, and security IDs, turnstile, mantraps, access control vestibules (An access control vestibule is a double set of doors that is often protected by a guard and used to contain a subject until their identity and authentication is verified.)
     - Mantraps use two sets of doors to control access to a facility. This may be used to prevent piggybacking by monitoring use of the mantrap to allow only a single individual to enter a facility at a time. They may also be used to allow manual inspection of individuals or perform other security screening. Mantraps are also commonly known as access control vestibules.
     - awareness training
@@ -1037,12 +1037,12 @@ taxed by inefficient implementations of software and VMs.
       - 🗂️**Phase 8 Operations & Maintenance/Sustainment**: Ongoing operations and managment to ensure availability and performance e.g troubleshooting, applying updates, addressing vulnerabilities, incident response. The key activities include patch managment, system monitoring, incident response, config managment, change control. The goal is to ensure continous maintenance of security posture.
       - 🗂️**Phase 9 Retirement/Disposal**: secure decommissiong or disposal when the sytem reaches the end of its useful life or obsolete. focus is on preventing data exposure and respecting data retention periods. The key activities include data archival, secure disposal of hardware and media. The goal is to prevent data exposure, proper hardware disposel, data sanitization and compliance with data retention requirements;
        
-- **DIGITAL SIGNATURES**: The Digital Signature Standard FIPS 186-4 approves three encryption algorithms for use in digital signatures: oddly with sha1🤯
+- 🔴**DIGITAL SIGNATURES**: The Digital Signature Standard FIPS 186-4 approves three encryption algorithms for use in digital signatures: oddly with sha1🤯
     - the Digital Signature Algorithm (DSA)
     - the Rivest, Shamir, Adleman (RSA)algorithm;
     - the Elliptic Curve DSA (ECDSA) algorithm. 🥇
 
-- **HASHING**
+- 🔴**HASHING**
     - HMAC - Lenght variable (✏️very strong)
     - HAVAL - Lenght 128, 160, 192, 224, 256 bits
     - MD2 - Lenght 128 bits(16 bytes)-MD2 is a one-way hash function designed by Ron Rivest that creates a 128-bit message digest value. It is not necessarily any weaker than the other algorithms in the "MD" family, but it is much slower.
@@ -1054,7 +1054,7 @@ taxed by inefficient implementations of software and VMs.
     - SHA-384 - Lenght 384, produces 384-­bit digests (SHA-3 is, however, less efficient than SHA-2)
     - SHA-512 - Lenght 512, produces 512-­bit digests 🥇
 
-- **SYMMETRIC**
+- 🔴**SYMMETRIC**
     - AES- Block Cipher, Bock Size 128, Key Size 128, 192, 256 🥇 (AES provides confidentiality, integrity, and authentication when implemented properly. Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.)
     - Blowfish - Bock Size 64, Key Size 32 - 448 (uses 16 round of encryption regardless of key lenght)
     - DES - Block Cipher, Bock Size 64, Key Size 56
@@ -1070,14 +1070,14 @@ taxed by inefficient implementations of software and VMs.
          - 💠Block Size: Determines the size of data chunks processed in one encryption or decryption operation. If the plaintext is not a multiple of the block size, padding may be required to ensure that the entire block is filled. A larger block size allows the algorithm to handle larger amounts of data per encryption operation, which can improve efficiency and security.
          - 💠Key Size: Determines the strength of the encryption by defining the length of the key used in the encryption algorithm. Larger key sizes can result in increased computational overhead during encryption and decryption, potentially impacting performance, but offers increased security by making it harder to perform brute-force attacks.
 
-- **ASSYMETRIC (use a pair of keys for each user)**
+- 🔴**ASSYMETRIC (use a pair of keys for each user)**
     - RSA - Key Transport Algorithm, ✏️Size 512
     - Diffie-Hellman - Key Exchange Algorithm
     - EL Gamal - Key Exchange Algorithm (doubles the length of any message it encrypts)
     - ECC - Elliptic Curve Algorithm, Size Variable (smaller key size due to 160 EC Key = 1024 RSA)
     - TLS - In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is ­protected using symmetric cryptography.
 
-- **Key Excahnge Algorithms**:
+- 🔴**Key Excahnge Algorithms**:
     - ✈️Diffie-Hellman (DH): Based on the mathematical difficulty of the discrete logarithm problem. Susceptible to man-in-the-middle attacks if not properly authenticated. Variants include Ephemeral Diffie-Hellman (DHE) for forward secrecy. The Diffie-Hellman algorithm allows for the secure exchange of symmetric encryption keys over a public network
     - ✈️RSA (Rivest-Shamir-Adleman): Public key algorithm that can be used for both encryption and digital signatures, including key exchange. Based on the computational difficulty of factoring large prime numbers. Can be used to securely exchange symmetric keys by encrypting them with the recipient’s public key.
     - ✈️Elliptic Curve Diffie-Hellman (ECDH): An adaptation of Diffie-Hellman using elliptic curve cryptography to provide equivalent security with smaller key sizes. More efficient and faster compared to traditional Diffie-Hellman. Commonly used in modern secure communications (e.g., TLS).
@@ -1095,19 +1095,22 @@ taxed by inefficient implementations of software and VMs.
     - Control Zone
 - The TEMPEST program creates technology that is not susceptible to Van Eck phreaking attacks because it reduces or suppresses natural electromagnetic emanations.
 
-- **Mobile Device Management (MDM) Concepts**:
-- ❄️Mobile Device Management (MDM) are systems used to manage and secure endpoints within an organization. MDM primarily focused on managing mobile devices such as smartphones and tablets and supported Devices generally includes mobile operating systems like iOS, Android, and Windows Mobile.
-- ❄️Unified Endpoint Management (UEM) are also systems used to manage and secure endpoints within an organization. Unified endpoint management (UEM) is type of software tool that provides a single management platform to control mobile, PC, IoT, wearables, ICSs, and other devices. UEM is intended to replace MDM and enterprise mobility management (EMM) products by combining the features of numerous products into one solution. UEM and MDM are a software solution to the challenging task of managing the myriad mobile devices that employees use to access company resources. The goals of UEM and MDM are to improve security, provide monitoring, enable remote management, and support troubleshooting. Application allow listing may be an element of mobile device management but is only part of a full UEM/MDM solution.
+- 🟢**Mobile Device Management (MDM) Concepts**:
+  - ❄️Mobile Device Management (MDM) are systems used to manage and secure endpoints within an organization. MDM primarily focused on managing mobile devices such as smartphones and tablets and supported Devices generally includes mobile operating systems like iOS, Android, and Windows Mobile.
+  - ❄️Unified Endpoint Management (UEM) are also systems used to manage and secure endpoints within an organization. Unified endpoint management (UEM) is type of software tool that provides a single management platform to control mobile, PC, IoT, wearables, ICSs, and other devices. UEM is intended to replace MDM and enterprise mobility management (EMM) products by combining the features of numerous products into one solution. UEM and MDM are a software solution to the challenging task of managing the myriad mobile devices that employees use to access company resources. The goals of UEM and MDM are to improve security, provide monitoring, enable remote management, and support troubleshooting. Application allow listing may be an element of mobile device management but is only part of a full UEM/MDM solution.
    - 🍊Corporate-­owned: A corporate-­owned mobile strategy is when the company purchases mobile devices that can support compliance with the security policy. These devices are to be used exclusively for company purposes, and users should not perform any personal tasks on them.
      - This option often requires workers to carry a second device for personal use.
      - Corporate-­owned clearly assigns responsibility for device oversight to the organization.
      - The following allow for comingling of data and have unclear or vague security responsibility assignments as a concept or policy basis.
    - 🍊Bring Your Own Device BYOD: is a policy that allows employees to bring their own personal mobile devices to work and use those devices to connect to business resources and/or the internet through the company net work.
    - 🍊Corporate-­owned, personally enabled (COPE): The concept of COPE means the organization purchases devices and provides them to employees. Each user is then able to customize the device and use it for both work activities and personal activities.
-   -  🍊Choose your own device (CYOD): The concept of CYOD provides users with a list of approved devices from which to select the
-device to implement.
-
-- **Binary Calculations**: Consider the following:
+   - 🍊Choose your own device (CYOD): The concept of CYOD provides users with a list of approved devices from which to select the device to implement.
+   -  **Mobile Security Concepts**
+       - ⚒️Geofencing is a security feature commonly utilized in conjunction with mobile devices to restrict access based on location. Location is typically determined by using the device's GPS system (which itself is referred to as geolocation services).
+       - ⚒️Geotagging refers to the ability of a mobile device to incorporate time, date, and location data into the metadata of media that is created by the device.
+       - ⚒️Rooting refers to the act of bypassing the native security restrictions of a mobile device to grant its user full device privileges
+       - ⚒️Sideloading refers to a method of mobile app installation that uses a locally executed installer to bypass the managed installation (and security screening) typically provided by an app store.
+- 🟦**Binary Calculations**: Consider the following:
     - X: 0 1 1 0 1 0
     - Y: 0 0 1 1 0 1
          - 🕯️⊕ symbol represents the ♏XOR function and returns a true value when only one of the input values is true. If both values are false or both values are true, the output of the XOR function is false: 0 1 0 1 1 1
