@@ -725,9 +725,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **🔥Directive**: A directive control is deployed to direct, confine, or control the actions of subjects to force or encourage compliance with security policies. Notifications and procedures like the signs posted at doors for are examples of directive access controls.
   - These access control types can fall into one of three categories: administrative, technical, or physical.
        - 1. Administrative (also called directive) controls are implemented by creating and following organizational policy, procedure, or regulation. User training and awareness also fall into this category.
-         2. Technical controls are implemented using software, hardware, or firmware that restricts logical access on an IT system. Examples include firewalls, routers, encryption, etc.
-         3. Physical controls are implemented with physical devices, such as locks, fences, gates, and 
-security guards.
+         2. Technical controls (Logical Controls) are implemented using software, hardware, or firmware that restricts logical access on an IT system. Examples include firewalls, routers, encryption, etc.
+         3. Physical controls are implemented with physical devices, such as locks, fences, gates, and security guards.
   - 🔥Security through obscurity attempts to hide the details of security controls to add security to them
 - 1.10.6 Control assessments (security and privacy)
   - Periodically assess security and privacy controls: what’s working, what isn’t 
