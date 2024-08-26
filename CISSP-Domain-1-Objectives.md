@@ -211,7 +211,7 @@
           - ✏️detect
           - ✏️respond
           - ✏️recover
-- 1.3.5 Due care/due diligence
+- 1.3.5 Due care/due diligence (Due care is acting upon assets to ensure their security, while due diligence is ensuring this security measure is doing what it should)
   - 🔴**Due diligence**: 🕵️ establishing a plan, policy, and process to protect the interests of the organization; due diligence is about understanding your security governance principles (policies and procedures) and the risks to your organization; actions taken by a vendor to demonstrate or provide due care
     - 💥Due diligence is defined in Black's law dictionary as "Such a measure of prudence, activity, or assiduity, as is properly to be expected from, and ordinarily exercised by, a reasonable and prudent man under the particular circumstances; not measured by any." Taking reasonable actions that a jury of your peers (if there is a jury) would agree are reasonable actions is due diligence.
     - Due diligence often involves: 
@@ -219,11 +219,12 @@
       - ✏️developing a formalized security structure containing a security policy, standards, baselines guidlines, and procedures 
       - documentation to establish written policies
       - due diligence includes the preparation and research
+      - Due diligence is a secondary measure meant to ensure the due care process is being followed and is effective.
       - disseminating the information to the organization
       - Due diligence is ✏️knowing what should be done and planning for it.
       - The due diligence principle is a more specific component of due care that states that an individual assigned a responsibility should exercise due care to complete it accurately and in a timely manner.
       - Due diligence is developing a formalized security structure containing a security policy, standards, baselines, guidelines, and procedures.
-      - The 🥇asset owner security role is ultimately responsible for due diligence in protecting a company's data. Asset owner is the person who has final corporate responsibility for the protection and storage of data. Owners may be liable for negligence if they fail to perform due diligence in establishing and enforcing security policy to protect and sustain sensitive data.
+      - The 🥇asset owner security role is ultimately responsible for due diligence in protecting a company's data. Asset owner is the person who has final corporate responsibility for the protection and storage of data. Owners may be liable for negligence if they fail to perform due diligence in establishing and enforcing security policy to protect and sustain sensitive data. For example:  A data owner can create policies and rules for data usage and assign the ability to share information with a data controller, which would be an example of due care. The data owner then watching over the data controller and ensuring all policies and procedures are being followed would be an example of due diligence.
   - 🔴**Due care**: 🧑‍🏭 practicing the individual activities that maintain the due diligence/ security effort; due care is about your legal responsibility within the law or within org policies to implement your org’s controls, follow security policies, do the right thing and make reasonable choices
       - 💥Due care is defined in Black's law dictionary as "Just, proper, and sufficient care, so far as the circumstances demand it; the absence of negligence. This term, as usually understood in cases where the gist of the action is the defendant’s negligence, implies not." Negligence occurs when harm or injury occurs because of the companies' actions or inaction. 
   - Due care is ✏️doing the right action at the right time.
