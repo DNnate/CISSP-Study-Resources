@@ -1108,7 +1108,7 @@ taxed by inefficient implementations of software and VMs.
    -  **Mobile Security Concepts**
        - ⚒️Geofencing is a security feature commonly utilized in conjunction with mobile devices to restrict access based on location. Location is typically determined by using the device's GPS system (which itself is referred to as geolocation services).
        - ⚒️Geotagging refers to the ability of a mobile device to incorporate time, date, and location data into the metadata of media that is created by the device.
-       - ⚒️Rooting refers to the act of bypassing the native security restrictions of a mobile device to grant its user full device privileges
+       - ⚒️Rooting refers to the act of bypassing the native security restrictions of a mobile device to grant its user full device privileges. Rooted devices can typically be customized in ways that unrooted devices cannot, but frequently have greater exposure to security risks.
        - ⚒️Sideloading refers to a method of mobile app installation that uses a locally executed installer to bypass the managed installation (and security screening) typically provided by an app store.
 - 🟦**Binary Calculations**: Consider the following:
     - X: 0 1 1 0 1 0
