@@ -507,8 +507,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
 
 [1.8](#1.8) Identify, analyze, and prioritize Business Continuity (BC) requirements (OSG-9 Chpt 3)
 
-- **Business Continuity Planning (BCP)**: involves assessing the risk to organizational processes and creating policies, plans, and procedures to minimize the impact those risks might have on the organization if they were to occur
-  - BCP is used to maintain the ❄️continuous operation of a business in the event of an emergency, with a goal to implement a combination of policies, procedures, and processes
+- ❄️**Business Continuity Planning (BCP)**: involves assessing the risk to organizational processes and creating policies, plans, and procedures to minimize the impact those risks might have on the organization if they were to occur
+  - BCP is used to maintain the 📝continuous operation of a business in the event of an emergency, with a goal to implement a combination of policies, procedures, and processes
   - Business continuity requires a lot of planning and preparation; actual implementation of business continuity processes occur quite infrequently
   - Individuals with specific business continuity roles should receive training on at least an ✴️annual basis.
   - Everyone in the organization should receive basic training on the nature and scope of the business continuity program. Those with specific roles, such as first responders and senior executives, should also receive detailed, role-specific training.
@@ -519,15 +519,21 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - Recovery: if a service becomes unavailable, you need to recover it as soon as possible
     - Contingency: a last resort in case resilience and recovery prove ineffective
 - Following are the steps for BCP:
-    - ✏️Project initiation: Develop policy statement and document
-    - ✏️Scope/Planning: The project scope and planning phase includes four actions: a structured analysis of the organization, the creation of a BCP team, an assessment of available resources, and an analysis of the legal and regulatory landscape. Initiation of the plan, Final approval of the plan, Demonstration of due care and due diligence to the satisfaction of management.  The most significant resource utilization will be the time dedicated by members of the BCP team to the planning process i.e personnel.
-    - ✏️Business impact analysis: Identify critical assets, Conduct risk assessment, Determine maximum tolerable downtime (MTD), Failure and recovery metrics
-    - ✏️Identify preventive control
-    - ✏️Recovery strategy: Supply chain management (acquisition of computer equipment is assured during disaster), Telecommunication management (availability of electronic communication during disaster), Utility management (Availability of utilities like power, gas, water, etc.) Also develop an IT contingency plan.
-    - ✏️Designing and development: approval
-    - ✏️Implementation, training, and testing
-    - ✏️BCP maintenance: Change management, Version control, Accounting for mistakes
+    - 🥑Project initiation: Develop policy statement and document
+    - 🥑Scope/Planning: The project scope and planning phase includes four actions: a structured analysis of the organization, the creation of a BCP team, an assessment of available resources, and an analysis of the legal and regulatory landscape. Initiation of the plan, Final approval of the plan, Demonstration of due care and due diligence to the satisfaction of management.  The most significant resource utilization will be the time dedicated by members of the BCP team to the planning process i.e personnel.
+    - 🥑Business impact analysis: Identify critical assets, Conduct risk assessment, Determine maximum tolerable downtime (MTD), Failure and recovery metrics
+    - 🥑Identify preventive control
+    - 🥑Recovery strategy: Supply chain management (acquisition of computer equipment is assured during disaster), Telecommunication management (availability of electronic communication during disaster), Utility management (Availability of utilities like power, gas, water, etc.) Also develop an IT contingency plan.
+    - 🥑️Designing and development: approval
+    - 🥑Implementation, training, and testing
+    - 🥑BCP maintenance: Change management, Version control, Accounting for mistakes
 - NIST SP800-34 provides a guideline for developing a logical BCP. It can be found at: http://csrc.nist.gov/publications/nistpubs/800-34-rev1/sp800-34-rev1_errata-Nov11-2010.pdf
+- In summary, the core steps of planning for business continuity issues or disasters are:
+    - 🍊Policy
+    - 🍊Project scope and planning
+    - 🍊Business Impact Analysis (BIA)
+    - 🍊Continuity planning
+    - 🍊Implementation and Testing
   
 - BCP vs DR: 
   - 🔥BCP activities are typically strategically focused at a high level and center themselves on business processes and operations. E.g 📝RAID technology provides fault tolerance for hard drive failures and is an example of a business continuity action. 
@@ -600,13 +606,14 @@ Factors, entities or conditions outside the organisation upon which the organisa
 
 - 1.9.1 Candidate screening and hiring
   - The following strategies can reduce your risk:
-    - **Candidate screening and hiring**: To properly plan for security, you shold have standards in place for job descriptions, job classification, work tasks, job responsibilities, prevention of collusion, candidate screening, background checks, security clearances, employment agreements, and nondisclosure agreements 
-      - ⭐Nondisclosure agreements (NDAs) typically require either mutual or one-way confidentiality in a business relationship. ⭐Noncompete agreements (NCAs) limit the future employment possibilities of employees by restricting an employee’s ability to work with or start a competing business for a certain period after leaving the organization. 📝Signing a noncompete or nondisclosure agreement is typically done at hiring.
+    - 🍏**Candidate screening and hiring**: To properly plan for security, you shold have standards in place for job descriptions, job classification, work tasks, job responsibilities, prevention of collusion, candidate screening, background checks, security clearances, employment agreements, and nondisclosure agreements 
+      - ⭐Nondisclosure agreements (NDAs) typically require either mutual or one-way confidentiality in a business relationship.
+      - ⭐Noncompete agreements (NCAs) limit the future employment possibilities of employees by restricting an employee’s ability to work with or start a competing business for a certain period after leaving the organization. 📝Signing a noncompete or nondisclosure agreement is typically done at hiring.
       - screening employment candidates thoroughly is a key part of the hiring process
       - be sure to conduct a full background check that includes a criminal records check, job history verification, education verification, certification validation and confirmation of other accolades when possible
       - all references should be contacted
 - 1.9.2 Employement agreements and policies
-  - **Employment agreement**: specifies job duties, expectations, rate of pay, benefits and info about termination; sometimes, such agreements are for a set period (for example, in a contract or short-term job). 
+  - 🍏**Employment agreement**: specifies job duties, expectations, rate of pay, benefits and info about termination; sometimes, such agreements are for a set period (for example, in a contract or short-term job). 
     - Employment agreements facilitate termination when needed for an underperforming employee 
     - The more info and detail in an employment agreement, the less risk (risk of a wrongful termination lawsuit, for example) the company has during a termination proceeding
     - e.g. a terminated employee might take a copy of their email with them without thinking of it as stealing, but they are less likely to do so if an employment agreement or another policy document clearly prohibits it
@@ -615,10 +622,10 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - codes of conduct such as an acceptable use policy (AUP), which defines what is and isn’t acceptable acitivty, practice, or use for company equipemnt and resources
       - nondisclosure agreement (NDA), which is a doc used to protect confidential information from being disclosed by a current or former employee
 - 1.9.3 Onboarding, transfers and termination processes   
-  - **Onboarding**: process of bringing a new employee into the org
+  - 🍏**Onboarding**: process of bringing a new employee into the org
     - creating documented processes allowing the new employee to be intgrated quickly and consistently
-  - **Transfer**: an employee moves from one job to another, likely requiring adjusted account access to maintain appropriate least privilege
-  - **Termination or offboarding**: offboarding is the removal of an employee's identity from the IAM system, once that person has left the org; can also be an element used when an employee transfers into a new role
+  - 🍏**Transfer**: an employee moves from one job to another, likely requiring adjusted account access to maintain appropriate least privilege
+  - 🍏**Termination or offboarding**: offboarding is the removal of an employee's identity from the IAM system, once that person has left the org; can also be an element used when an employee transfers into a new role
     - whether cordial or abrupt, the ex-employee should be escorted off the premises and not allowed to return
     - In the case of an involuntary termination under adverse circumstances, the user is being fired and may have a negative and potentially hostile reaction. For this reason, it is important to terminate access immediately upon the user being informed of the termination. Terminating access prior to notification may tip the user off to the termination in advance.
 - 1.9.4 Vendor, consultant, and contractor agreements and controls
@@ -790,7 +797,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - provide a structured approach to identifying, assessing, prioritizing and manging risk to guide decision making
   - provides the overaching structure for making risk informed decisions
   - NIST established the **Risk Management Framework** (RMF) and the **Cybersecurity Framework** (CSF): the CSF is a set of guidelines for mitigating organizational cybersecurity risks, based on existing standards, guidelines, and practices. 🔥CSF is aimed at ✏️private (commercial) businesses,  critical infrastructure and commercial organizations, and purely optional. 🔥RMF's audience is ✏️federal government agencies and is mandatory for those to which it applies.
-  - **Risk management** facilitates the balance of operational and economic costs of protective measures with gains in mission capability.  Risk management is a systematic approach to identifying, assessing, and prioritizing risks to organizational operations, assets, or individuals resulting from the operation of information systems and the information processed, stored, or transmitted by those systems.
+  - 📂**Risk management** facilitates the balance of operational and economic costs of protective measures with gains in mission capability.  Risk management is a systematic approach to identifying, assessing, and prioritizing risks to organizational operations, assets, or individuals resulting from the operation of information systems and the information processed, stored, or transmitted by those systems.
        - It involves evaluating the likelihood and impact of risks and implementing cost-effective measures to reduce them to an acceptable level.
        - By considering the costs of implementing protective measures against the benefits of mission capability, risk management helps organizations make informed decisions about how to allocate their resources to achieve their security goals. Performance testing, security audit, and risk assessment are all important components of a risk management program.
        - Risk management is composed of two primary elements: risk assessment and risk response
@@ -832,7 +839,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
      - ✴️Factor Analysis of Information Risk (FAIR)
      - ✴️Threat Agent Risk Assessment (TARA)
 [1.11](#1.11) Understand and apply threat modeling concepts and methodologies (OSG-9 Chpt 1)
-- **Threat Modeling**: security process where potential threats are identified, categorized, and analyzed; can be performed as a proactive measure during design and development or as an reactive measure once a product has been deployed   
+- ❄️**Threat Modeling**: security process where potential threats are identified, categorized, and analyzed; can be performed as a proactive measure during design and development or as an reactive measure once a product has been deployed   
   - Threat modeling identifies the potential harm, the probability of occurrence, the priority of concern, and the means to eradicate or reduce the threat
     - 🔥Proactive Approach: This is a proactive approach to threat modeling, which is also known as the ❄️defensive approach.  Defensive approach to threat modeling takes place during the early stages of development; the method is based on predicting threats and designing in specific defenses during the coding and crafting process
   - Security solutions are more cost effective in this phase than later; this concept should be considered a proactive approach to threat management. During the early stages of systems development, the team considers the vulnerabilities, threats, and risks of their solution and integrates protections against unwanted outcomes.
@@ -864,8 +871,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
      - ✏️Affected users: How many people, either inside or outside of your organization, will be affected by the security threat?
      - ✏️Discoverability: How easily can the vulnerability be found?
  - 🔴**MITRE's ATT&CK framework** is broadly adopted by threat modeling and threat intelligence organizations and is used as a default model in many software packages and tools.
- - ATT&CK is used to map out and understand adversarial behaviors and techniques, allowing organizations to improve detection and response capabilities based on ❄️known attack methods.
- - It is a comprehensive knowledge base of adversary tactics and techniques based on real-world observations and using ❄️pre-existing tools. It includes:
+ - ATT&CK is used to map out and understand adversarial behaviors and techniques, allowing organizations to improve detection and response capabilities based on 📝known attack methods.
+ - It is a comprehensive knowledge base of adversary tactics and techniques based on real-world observations and using 📝pre-existing tools. It includes:
      - ✏️Tactics: The goals of an adversary during an attack (e.g., Initial Access, Execution, Persistence).
      - ✏️Techniques: Specific methods used to achieve tactics (e.g., Phishing, PowerShell).
   - 🔴**The Diamond Model** specifically addresses how to think about intrusions but does not address broader threats, and the other answers were made up for this question. The Diamond Model focuses on four key elements that interact with each other to create a threat scenario: i.e Adversary to Infrastructure, Adversary to Capability, Infrastructure to Capability, and Victim to Capability.
@@ -894,7 +901,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - Phase 3 conducts the risk analysis and develops the risk mitigation strategy.
 [1.12](#1.12) Apply Supply Chain Risk Management (SRM) concepts (OSG-9 Chpt 1)
 - 1.12.1 Risks associated with hardware, software, and services
-  - **Supply Chain Risk Management (SCRM)**: the means to ensure that all of the vendors or links in the supply chain are: 
+  - ❄️**Supply Chain Risk Management (SCRM)**: the means to ensure that all of the vendors or links in the supply chain are: 
     - reliable, 
     - trustworthy, 
     - reputable organizations that disclose their practices and security requirements to their business partners (not necessarily to the public)
@@ -934,7 +941,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - ❄️Business partners agreement (BPA) is a contract between two entities dictating the terms of their business relationship. It clearly defines the expectations and obligations of each partner in the endeavor. It focuses on the business partner relationship rather than that of a customer to a vendor.
       - ❄️interconnection security agreement (ISA): is a formal declaration of the security stance, risk, and technical requirements of a link between two organizations’ IT infrastructures) could also be viable answers. 
   - **🔥Service Level Requirements (SLRs)**: A service-level requirement (SLR) is a statement of the expectations of service and performance from the product or service of a vendor. Often, an SLR is provided by the ❄️customer/client prior to the establishment of the service-level agreement (SLA) (which should incorporate the elements of the SLR if the vendor expects the customer to sign the agreement).
-  - **🔥Attestation**: information security attestation involves having a third-party organization review the practices of the service provider and make a statement about the security posture of the organization. The goal of the service provider is to provide evidence that they can and should be trusted. Typically, a third party provides attestation after performing an ✏️audit of the service provider against a known baseline.
+  - **🔥Attestation**: information security attestation involves having a third-party organization review the practices of the service provider and make a statement about the security posture of the organization. The goal of the service provider is to provide evidence that they can and should be trusted. Typically, a third party provides attestation after performing an 📝audit of the service provider against a known baseline.
   -  **Vendor management system (VMS)**: VMS is a software solution that assists with the management and procurement of staffing services, hardware, software, and other needed products and services. A VMS can offer ordering convenience, order distribution, order training, consolidated billing, and more and they are a means to view, manage, or optimize the relationship between an organization and third-party suppliers. 
 [1.13](#1.13) Establish and maintain a security awareness, education, and training program (OSG-9 Chpt 2)
 - 1.13.1 Methods and techniques to present awareness and training (e.g., social engineering, phishing, security champions, gamification)
@@ -1008,7 +1015,7 @@ Also see my articles on risk management:
   - we look at the categories and types of controls and the idea of layering them to provide several different types of protection mechanisms 
   - we also review the important step of reporting out our risk analysis and recommended responses, noting differences in requirements for messaging by group
 
-- **TCB Common Criteria ISO/IEC 15408-1**: The International Common Criteria is an internationally agreed-upon standard for describing and testing the security of information technology (IT) products. The Common Criteria uses specific terms when defining specific portions of the testing process.
+- 🟦**TCB Common Criteria ISO/IEC 15408-1**: The International Common Criteria is an internationally agreed-upon standard for describing and testing the security of information technology (IT) products. The Common Criteria uses specific terms when defining specific portions of the testing process.
 - ⭐Security Target: This defines the conditions of the test and is implementation-specific. It is a set of security requirements and specifications to be used as the basis for evaluation of an identified product/system. The documentation describing the ToE, including the security requirements and 
 operational environment
 - ⭐Target of Evaluation ToE: The system or product that is being evaluated i.e the actual product e.g Cisco ASA 5520 patch 2.7.2
@@ -1024,7 +1031,7 @@ category of products or systems, such as firewalls or intrusion detection system
     - EAL6 –Semi formally verified design and tested
     - EAL7 –Formally verified design and tested
 
- - **System and Organization Controls (SOC)**: A security audit systematically evaluates an organization’s security policies,
+ - 🟦**System and Organization Controls (SOC)**: A security audit systematically evaluates an organization’s security policies,
 standards, and procedures to ensure compliance with established security requirements.
 - SOC 1: An audit and compliance report that focuses strictly on a company’s financial statements and controls that can impact a customer’s financial statements. A company that performs credit card processing is likely to require a SOC
 1 audit and compliance report.
