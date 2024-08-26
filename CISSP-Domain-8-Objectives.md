@@ -368,6 +368,11 @@
     - Code libraries are packages of reusable functions that may be incorporated into individual development projects.
         - shared libraries can also include many security issues (e.g. Heartbleed), and devs should be aware of the origins of the shared code that they use, and keep informed about any security vulns that might be discovered in these libraries
         - 📝Code repositories may be used to manage the distribution and updating of these libraries.
+        - 🔥OWASP recommends four critical best practices for libraries and frameworks:
+            - 🔨using libraries and frameworks from trusted sources that are broadly used and well maintained
+            - 🔨maintaining an inventory of third-party libraries
+            - 🔨updating libraries and components proactively
+            - 🔨reducing attack surface by limiting what functions can be used.
         - **Software Development Kits SDK**: Organizations trying to make libraries more accessible to developers often publish SDKs. SDKs are collections of software libraries combined with documentation, examples, and other resources designed to help programmers get up and running quickly in a development environment. SDKs also often include specialized utilities designed to help developers design and test code.
     
 - 8.2.3 Tool sets
