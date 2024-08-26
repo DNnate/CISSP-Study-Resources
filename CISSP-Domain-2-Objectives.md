@@ -352,7 +352,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
        - The baseline is a starting point, and it does not ensure maximum security. A baseline provides a listing of controls an organization can apply, but it isn't necessarily a listing of applied controls.
   - 🔴**Tailoring**: refers to modifying the list of 📝security controls within a baseline to align with the org's mission
     - includes the following activities:
-      - Tailoring is customizing a set of existing security controls to align with an organization’s mission and objectives. Examples of blueprints that can be tailored are ISO 27001 & 27002 and the NIST Cybersecurity Framework.
+      - Tailoring is 📝customizing a set of existing security controls to align with an organization’s mission and objectives. Examples of blueprints that can be tailored are ISO 27001 & 27002 and the NIST Cybersecurity Framework.
       - identifying and designating common controls; specificaion of organization-defined parameters in the security controls via explicit assignment and selection statements
       - Tailoring refers to modifying a list of security controls to align with the organization's mission. 
       - applying scoping guidance/considerations
@@ -384,7 +384,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
 - 2.6.4 Data protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB)) 
   - **Data protection methods** include: 
     - 💻**Digital Rights Management (DRM)**: methods used in attempt to protect copyrighted materials, including intellectual property. They do not provide protection for trademarks, patents, or trade secrets. There are hardware and software based DRMs. Methods used with DRM include:
-         - ✈️Persistent online authentication
+         - ✈️Persistent online authentication. 📝in the absence of internet, Product keys and cryptographic algorithms work together to ensure the product key is legitimate to the asset. If the key does not function within this proprietary algorithm, the asset is useless to the user. This requires the user to connect to the internet one time to activate the key and provide it with the ability to interact with the algorithm. If the key has been activated, a company can confirm it is stolen.
          - ✈️Automatic expiration
          - ✈️Continuous audit trail  
     - 💻**Cloud Access Security Brokers (CASBs)**: software placed logically between users and cloud-based resources ensuring that cloud resources have the same protections as resources within a network and  providing monitoring and policy enforcement capabilities
@@ -395,10 +395,10 @@ rewriting with a new value or using a menu option to reset the device to the fac
   - Options for protecting your data vary depending on its state:
     - 🌟**Data at rest**: consider encryption for operating system volumes and data volumes, and backups as well
       - be sure to consider all locations for data at rest, such as tapes, USB drives, external drives, RAID arrays, SAN, NAS, and optical media
-      - ✏️AES is a strong modern symmetric encryption algorithm that is appropriate for encrypting data at rest. Using strong encryption, like AES-256, can help ensure that loss of removable media like tapes doesn't result in a data breach.
-      - ✏️Full disk encryption like Bitlocker can protect data at rest.
+      - ✏️AES is a strong modern 📝symmetric encryption algorithm that is appropriate for encrypting data at rest. Using strong encryption, like AES-256, can help ensure that loss of removable media like tapes doesn't result in a data breach.
+      - ✏️Full disk encryption like 📝Bitlocker can protect data at rest.
       - Tapes may be vulnerable to theft or loss in transit. That means that tapes that are leaving their normal storage facility should be handled according to the organization's classification schemes and handling requirements.
-      - ✏️DRM is useful for data at rest because DRM "travels with the data" regardless of the data state
+      - ✏️DRM is useful for data at rest because DRM 📝"travels with the data" regardless of the data state
       - ✴️Watermarks can detect the unauthorized copying of documents, including photos. For example, A 🧠watermark is used to digitally label data and can be used to indicate ownership, as well as to assist a digital rights management (DRM) system in identifying data that should be protected. Digital watermarking places labels or marking in files (digital data). Other methods, such as data loss prevention (DLP) and digital rights management (DRM), can detect the labels. Digital watermarks allow owners to track and identify assets, ⛔not prevent their use. This may also allow for an audit trail and the prosecution of users who may have stolen the product.
       - ✴️Steganography is the art of using cryptographic techniques to embed secret messages within other content. Some steganographic algorithms work by making alterations to the least significant bits of the many bits that make up image files.  Other methods, such as data loss prevention (DLP) and digital rights management (DRM), can detect these embedded information.
       - DRM is especially useful when you can’t encrypt data volumes. 
