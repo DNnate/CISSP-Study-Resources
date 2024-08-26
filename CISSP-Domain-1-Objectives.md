@@ -626,10 +626,10 @@ Factors, entities or conditions outside the organisation upon which the organisa
     - **Risk**: the possiblity or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result; the > the potential harm, the > the risk
 - 1.10.1 Risk assessment/analysis
   - 📁**Risk Assessment**: used to identify the risks and set criticality priorities, and then risk response is used to determine the best defense for each identified risk
-  - The primary goal of a security risk assessment is to identify and analyze risks and then develop strategies to reduce them to an acceptable level.
-  - It also involves assigning an asset value using valuation methods such as Purchase cost, Depreciated cost, Replacement cost etc if the risk where to materialize.
-  - A risk matrix or risk heat map is a form of risk assessment that is performed on a basic graph or chart
-  - Likelihood assessment is a component of a risk assessment that determines the likelihood that a risk will materialize
+      - The primary goal of a security risk assessment is to identify and analyze risks and then develop strategies to reduce them to an acceptable level.
+      - It also involves assigning an asset value using valuation methods such as Purchase cost, Depreciated cost, Replacement cost etc if the risk where to materialize.
+      - A risk matrix or risk heat map is a form of risk assessment that is performed on a basic graph or chart
+      - Likelihood assessment is a component of a risk assessment that determines the likelihood that a risk will materialize
   - **❄️Risk** is threat with a vulnerability. Risk is the possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result. Risk is commonly defined with two keywords: likelihood or probability and impact or consequence. Risk management is used to reduce risk. Before any security policies are made, risk must always be defined and assessed within the organization.
        - ✏️Risk = threat * vulnerability (or probability of harm * severity of harm)
        - ✏️Risk is a calculation of the 📝probability of occurrence and the level of damage that could be caused if an exposure is realized (i.e., actually occurs).
@@ -647,18 +647,22 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - Vulnerabilities and risks are evaluated based on their threats against one or more of the CIA Triad principles. 📝The Common Vulnerability Scoring System (CVSS) is a standardized approach to rating the severity of vulnerabilities 
   - **❄️Impact** (the potential harm caused by a threat exploiting a vulnerability)
   - **❄️Exposure**: Exposure is defined by NIST as the extent to which an organization is subject to risk.
-  - **Risk analysis** identifies risks, quantifies the impact of threats, and aids in budgeting for security. It helps integrate the needs and objectives of the security policy with the organization's business goals and intentions. The risk analysis/risk assessment is a "point in time" metric, meaning Security is always changing thus continuous improvement is required.
+  - 🔴**Risk analysis** identifies risks, quantifies the impact of threats, and aids in budgeting for security. It helps integrate the needs and objectives of the security policy with the organization's business goals and intentions. The risk analysis/risk assessment is a "point in time" metric, meaning Security is always changing thus continuous improvement is required.
        - Risk analysis includes analyzing an environment for risks
        - evaluating each threat event as to its likelihood of occurring and the cost of the damage it would cause
        - assessing the cost of various countermeasures for each risk, and creating a cost/benefit report for safeguards to present to upper management. 
   - It is the responsibility of upper management must decide which risks are acceptable, and which are not; Selecting safeguards is a task of upper management based on the results of risk analysis known as risk response.
   - There are two primary risk-assessment methodologies:
-      - **Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations e.g ✏️FAIR (Factor Analysis of Information Risk) is a quantitative risk management framework. Quantitative analysis uses numeric ratings to address tangible risks. A purely quantitative analysis is not possible.
-      - **Qualitative Risk Analysis**: assigns subjective and intangible values to the loss of an asset and takes into account perspectives, feelings, intuition, preferences, ideas, and gut reactions. It relies on subjective judgments to rank risk. The use of a ⭐probability/impact matrix is the hallmark of a qualitative risk assessment. It uses subjective measures of probability and impact, such as "high" and "low," in place of quantitative measures. qualitative risk assessment is a good tool for intangible risks
+      - 📕**Quantitative Risk Analysis**: assigns real dollar figures to the loss of an asset and is based on mathematical calculations e.g ✏️FAIR (Factor Analysis of Information Risk) is a quantitative risk management framework. Quantitative analysis uses numeric ratings to address tangible risks. A purely quantitative analysis is not possible.
+          - Quantitative risk analysis assigns a 📝monetary value to assets. 
+      - 📕**Qualitative Risk Analysis**: assigns subjective and intangible values to the loss of an asset and takes into account perspectives, feelings, intuition, preferences, ideas, and gut reactions. It relies on subjective judgments to rank risk. The use of a ⭐probability/impact matrix is the hallmark of a qualitative risk assessment. It uses 📝subjective measures of probability and impact, such as "high" and "low," in place of quantitative measures. qualitative risk assessment is a good tool for 📝intangible risks
       - Qualitative tools are often used in business impact assessment to capture the impact on intangible factors such as customer confidence, employee morale, and reputation.
+      - Example include qualititiva analysis tools include the Delphi method or Delphi technique, Risk Matrix (Probability/Impact Matrix), SWOT Analysis, Brainstorming, Cause-and-Effect Analysis (Ishikawa/Fishbone Diagram), Scenario Analysis, checklists.
+      - Qualitative risk analysis generally does not assign monetary values to assets. Qualitative risk analysis is generally used when a monetary value cannot be assigned.
+      - Qualitative risk analysis gives risk scores based on input from multiple parties and the assessor's experience and expertise. 
     - Most orgs employ a hybrid of both risk assessment methodologies
     - The goal of risk assessment is to identify risks (based on asset-threat parings) and rank them in order of criticality
-    - The two most important elements of a qualitative risk assessment are determining the ❄️probability and ❄️impact of each risk upon the organization. Likelihood is another word for probability.
+    - The two most important elements of a qualitative risk assessment are determining the 📝probability and 📝impact of each risk upon the organization. Likelihood is another word for probability.
 
 - 1.10.3 Risk response
   - **Risk response**: the formulation of a plan for each identified risk;
