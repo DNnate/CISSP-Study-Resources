@@ -197,7 +197,7 @@
           - 800-12 is an introduction to computer security
           - 800-34 covers contingency planning
           - 800-86 is the “Guide to Integrating Forensic Techniques into Incident Response.”
-    -  🔴NIST **CyberSecurity Framework (CSF)**: NIST 800-53 is the standard that describes the security controls mandatory for use on 📝U.S. federal government systems. It provides a catalog of security and privacy controls for all U.S. federal information systems except those related to national security
+    -  🔴NIST **CyberSecurity Framework (CSF)**: NIST 800-53 is the standard that describes the security controls mandatory for use on 📝U.S. federal government systems. It provides a catalog of security and privacy controls for all U.S. federal information systems except those related to national security. NIST SP 800-53 is a set of standards that federal agencies are required to meet. NIST SP 800-53 was created in response to the passage of the Federal Information Security Management Act (FISMA).
         - designed for ✴️commerical orgs and critical infrastructure, CSF 1.1 consists of five functions:
           - identify
           - protect
