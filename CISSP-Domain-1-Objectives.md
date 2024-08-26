@@ -212,6 +212,7 @@
           - ✏️recover
 - 1.3.5 Due care/due diligence
   - 🔴**Due diligence**: 🕵️ establishing a plan, policy, and process to protect the interests of the organization; due diligence is about understanding your security governance principles (policies and procedures) and the risks to your organization; actions taken by a vendor to demonstrate or provide due care
+    - 💥Due diligence is defined in Black's law dictionary as "Such a measure of prudence, activity, or assiduity, as is properly to be expected from, and ordinarily exercised by, a reasonable and prudent man under the particular circumstances; not measured by any." Taking reasonable actions that a jury of your peers (if there is a jury) would agree are reasonable actions is due diligence.
     - Due diligence often involves: 
       - gathering information through discovery, risk assessments and review of existing documentation 
       - ✏️developing a formalized security structure containing a security policy, standards, baselines guidlines, and procedures 
@@ -223,7 +224,7 @@
       - Due diligence is developing a formalized security structure containing a security policy, standards, baselines, guidelines, and procedures.
       - The 🥇asset owner security role is ultimately responsible for due diligence in protecting a company's data. Asset owner is the person who has final corporate responsibility for the protection and storage of data. Owners may be liable for negligence if they fail to perform due diligence in establishing and enforcing security policy to protect and sustain sensitive data.
   - 🔴**Due care**: 🧑‍🏭 practicing the individual activities that maintain the due diligence/ security effort; due care is about your legal responsibility within the law or within org policies to implement your org’s controls, follow security policies, do the right thing and make reasonable choices
-  - Security documentation is the security policy
+      - 💥Due care is defined in Black's law dictionary as "Just, proper, and sufficient care, so far as the circumstances demand it; the absence of negligence. This term, as usually understood in cases where the gist of the action is the defendant’s negligence, implies not." Negligence occurs when harm or injury occurs because of the companies' actions or inaction. 
   - Due care is ✏️doing the right action at the right time.
   - It is often called the prudent man rule. Gross negligence is the opposite of due care.
   - exercise reasonable security measures to protect assets
@@ -466,19 +467,19 @@
 [1.6](#1.6) Understand requirements for investigation types (i.e., administrative, criminal, civil, regulatory, industry standards) (OSG-9 Chpt 19)
 
 - An investigation will vary based on incident type; e.g. for a financial services company, a financial system compromise might cause a regulatory investigation; a system breach or website compromise might cause a criminal investigation; each type of investigation has special considerations:
-  - **Administrative Investigation**: an administrative investigation has a primary purpose of providing the appropriate authorities with incident information; thereafter, authorities will determine the proper action, if any 
+  - 🧯**Administrative Investigation**: an administrative investigation has a primary purpose of providing the appropriate authorities with incident information; thereafter, authorities will determine the proper action, if any 
     - Administrative investigations are often tied to HR scenarios, such as when a manager has been accused of improprieties. Unlike criminal or civil cases, administrative investigations are an internal matter, and there is no set standard of proof that you must apply.  However, it would still be wise for the organization to include a standard burden of proof in their own internal procedures to ensure the thoroughness and fairness of investigations.
-  - **Criminal Investigation**: a criminal investigation occurs when a crime has been committed and you are working with a law enforcement agency to convict the alleged perpetrator; in such a case, it is common to gather evidence for a court of law, and to share the evidence with the defense
+  - 🧯**Criminal Investigation**: a criminal investigation occurs when a crime has been committed and you are working with a law enforcement agency to convict the alleged perpetrator; in such a case, it is common to gather evidence for a court of law, and to share the evidence with the defense
     - You need to gather and handle the information using methods that ensure the evidence can be used in court
     - In a criminal case, a suspect must be proven guilty beyond a 📝reasonable doubt📝; a higher bar compared to a civil case, which is showing a preponderance of evidence
-  - **Operational investigations** are performed by internal teams to troubleshoot performance or other technical issues. They are not intended to produce evidence for use in court and, therefore, do not have the rigid collection standards of criminal, civil, or regulatory investigations. 
-  - **Civil Investigation**: in a civil case, one person or entity sues another; e.g. one company could sue another for a trademark violation 
+  - 🧯**Operational investigations** are performed by internal teams to troubleshoot performance or other technical issues. They are not intended to produce evidence for use in court and, therefore, do not have the rigid collection standards of criminal, civil, or regulatory investigations. 
+  - 🧯**Civil Investigation**: in a civil case, one person or entity sues another; e.g. one company could sue another for a trademark violation 
     - A civil case is typically about monetary damages, and doesn't involve criminality
     -  it relates to a contract dispute and will likely wind up being litigated in civil court
     - In a civil case, a 📝preponderance of evidence📝 is required to secure a victory; differing from criminal cases, where a suspect is innocent until proven guilty beyond a reasonable doubt
-  - **Industry Standards**: an industry standards investigation is intended to determine whether an org is adhering to a specific industry standard or set of standards, such as logging and auditing failed logon attempts 
+  - 🧯**Industry Standards Investigation**: an industry standards investigation is intended to determine whether an org is adhering to a specific industry standard or set of standards, such as logging and auditing failed logon attempts 
     - Because industry standards represent well-understood and widely implemented best practices, many orgs try to adhere to them even when they are not required to do so in order to improve security, and reduce operational and other risks
-  - **Regulatory**: A regulatory investigation is conducted by a regulatory body, such as the Securities and Exchange Commission (SEC) or Financial Industry Regulatory Authority (FINRA), against an org suspected of an infraction 
+  - 🧯**Regulatory Investigation**: A regulatory investigation is conducted by a regulatory body, such as the Securities and Exchange Commission (SEC) or Financial Industry Regulatory Authority (FINRA), against an org suspected of an infraction 
     - Here the org is required to comply with the investigation, e.g., by not hiding or destroying evidence
 - **Liability:** Questions of liability often turn into questions regarding potential negligence. When attempting to determine whether certain actions or inactions constitute negligence, the ✏️Prudent Man Rule, which we will define shortly, is often applied
      - 🎈Statutory Statutory damages are those prescribed by law, which can be awarded to the victim even if the victim incurred no actual loss or injury
@@ -487,28 +488,29 @@
 
 [1.7](#1.7) Develop, document, and implement security policy, standards, procedures and guidelines (OSG-9 Chpt 1)
 - The top tier of a formalized hierarchical organization security documentation is the security policy
-  - **Policy**: docs created by and published by ❄️senior management describing organizational strategic goals
+  - A security policy is a formal document that defines the scope and enforcement of security within an organization. Security policies do not frequently change and generally invoke standards, procedures, and guidelines. Security documentation is the security policy.
+  - 🔥**Policy**: docs created by and published by 📝senior management describing organizational strategic goals
   - A security policy is a document that defines the scope of security needed by the org, discussing assets that require protection and the extent to which security solutions should go to provide the necessary protections
-  - Policies are ❄️high-level documents, usually written by the management team; policies are ❄️mandatory, and a policy might ❄️provide requirements, but not the steps for implementation
+  - Policies are 📝high-level documents, usually written by the management team; policies are 📝mandatory, and a policy might 📝provide requirements, but not the steps for implementation
     - A policy is a document that defines the scope of security needed by the organization and discusses the assets that require protection and the extent to which security solutions should go to provide the necessary protection.
-  - It defines the ❄️strategic security objectives, vision, and ❄️goals and outlines the security framework of the organization
+  - It defines the 📝strategic security objectives, vision, and 📝goals and outlines the security framework of the organization
 - **Acceptable User Policy**: the AUP is a commonly produced document that exists as part of the overall security documentation infrastructure 
   - This policy defines a level of acceptable performance and expectation of behavior and activity; failure to comply with the policy may result in job action warnings, penalties, or termination
 
 - Security Standards, Baselines and Guidelines: once the main security policies are set, the remaining security docuemntation can be crafted from these policies
   - 🔥**Standards**: specific mandates explicity stating expections of performance/conformance; more descriptive than policies, standards define :compulsary requirements for the homogenous use of hardware, software, technology, and security controls, uniformly implemented throughout the org. It could be internal or external.
     - A standard defines compulsory requirements for the homogenous use of hardware, software, technology, and security controls.
-    - Standards are ❄️Mandatory
+    - Standards are 📝Mandatory
     - A standard describes the specific use of technology, often applied to hardware and software. “All employees will receive an ACME Nexus-6 laptop with 8 GB of memory, a 3.3 GHZ quad core central processing unit (CPU), and 500-gigabyte disk” is an example of a hardware standard. “The laptops will run Windows 10 Enterprise, 64-bit version” is an example of a software (operating system) standard.
-  - 🔥**Baseline**: ✏️defines a minimum level of security that every system throughout the organization must meet; baselines are usually ✏️system specific and refer to industry / government standards. It is often related to configuration. 
+  - 🔥**Baseline**: defines a 📝minimum level of security that every system throughout the organization must meet; baselines are usually 📝system specific and refer to industry / government standards. It is often related to configuration. 
     - A baseline is a more operationally focused form of a standard.
     - e.g. a baseline for  server builds would be a list of configuration areas that should be applied to every server that is built
-    - Baselines are ❄️Mandatory and discretionary. All systems not complying with the baseline should be taken out of production until they can be brought up to the baseline.
+    - Baselines are 📝semi-Mandatory and discretionary. All systems not complying with the baseline should be taken out of production until they can be brought up to the baseline.
     - A Group Policy Object (GPO) in a Windows network is sometimes used to comply with standards; configuration management solutions can also help you establish baselines and spot configurations that are not in alignment
-  - 🔥**Guideline**: offers ❄️Recommendations and best practices on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
+  - 🔥**Guideline**: offers 📝recommendations and best practices on how standards and baselines and other security requirements should be implemented & serves as an operational guide for security professionals and users 
     - Guidelines are flexible, and can be customized for unique systems or conditions; they state which security mechanism should be deployed instead of prescribing a specific product or control; they are not complusory; suggested practices and expectations of activity to best accomplish tasks and goals
     - **Framework** are a set of guidlines
-  - 🔥**Procedure** (AKA Standard Operating Procedure or SOP): detailed, ❄️step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution. Procedures are ❄️Mandatory
+  - 🔥**Procedure** (AKA Standard Operating Procedure or SOP): detailed, 📝step-by-step how-to doc that describes the exact actions necessary to implement a specific security mechanism, control, or solution. Procedures are 📝Mandatory
   - 🔥**Laws** Legal rules created by government entities e.g legislature. Must be followed or can result in civil or criminal penalties
   - 🔥**Regulations** rules created by governmental agencies. Must be followed or can result in civil or criminal penalties
 
@@ -525,9 +527,9 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - The safety of ✴️people/human life must always be the paramount concern in business continuity planning. 
   - business organization analysis is the first step of the process, and the results are used to aid in the selection of team members and the design of the BCP process.
   - The primary facets of business continuity are:
-    - Resilience: (e.g. within a data center and between sites or data centers) 
-    - Recovery: if a service becomes unavailable, you need to recover it as soon as possible
-    - Contingency: a last resort in case resilience and recovery prove ineffective
+    - ⚒️Resilience: (e.g. within a data center and between sites or data centers) 
+    - ⚒️Recovery: if a service becomes unavailable, you need to recover it as soon as possible
+    - ⚒️Contingency: a last resort in case resilience and recovery prove ineffective
 - Following are the steps for BCP:
     - 🥑Project initiation: Develop policy statement and document
     - 🥑Scope/Planning: The project scope and planning phase includes four actions: a structured analysis of the organization, the creation of a BCP team, an assessment of available resources, and an analysis of the legal and regulatory landscape. Initiation of the plan, Final approval of the plan, Demonstration of due care and due diligence to the satisfaction of management.  The most significant resource utilization will be the time dedicated by members of the BCP team to the planning process i.e personnel.
