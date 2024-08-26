@@ -183,7 +183,7 @@
        - The data owner is the person responsible for classifying data, delegates selection of the required controls for each classification to system owners, and selecting baseline security standards for the organization.
        - Data owner roles is ultimately responsible for due diligence in protecting the company's data. They may be liable for negligence if they fail to perform due diligence in establishing and enforcing security policies to protect and sustain sensitive data.
        - data owner is the person respsonible for classifying, categorizing, and permitting access to the data; the data owner is the person who is best familiar with the importance of the data to the business
-       - The data owner sets the rules for use and protection of data.
+       - The data owner sets the rules for use and protection of data. In a DAC system, they decide who gets access.
    - 🔴**System owner**: controls the computer storing the data; usually includes software and hardware configurations and support services (e.g. cloud implementation)
     - system owners are responsible for the systems that process the data
     - system owner is responsible for system operation and maintenance, and associated updating/patching as well as related procurement activities
@@ -208,6 +208,7 @@
       - responsible for the protection of data through maintenance activities, backing up and archiving, and preventing the loss or corruption and recovering data.
       - They include ✏️IT Staff in an information technology (IT) department who are delegated responsibility for day-to-day tasks.
       - Custodians are trusted to ensure the day-to-day security of the data and should do so by ensuring that the baseline is met and maintained.
+      -  The custodian has the responsibility of protecting the data they have in their possession. That includes following the corporate policies, procedures, standards, and so on. They ⛔do not determine the access levels
       - Custodians are tasked with the day-to-day monitoring of the integrity and security of data. 
       - He/She is responsible for the technical environment, including things like database structures, performing data backup and the technical implementations of data policies.
       - Controls are scoped and tailored, applied and enforced by Custodians.
