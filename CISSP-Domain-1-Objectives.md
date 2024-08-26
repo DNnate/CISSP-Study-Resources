@@ -85,7 +85,8 @@
      - Destruction is making systems or data unavailable. 
  
 [1.3](#1.3) Evaluate and apply security governance principles (OSG-9 Chpt 1)
-- Governance is the process in which senior management directs an organization to meet its objectives. Governance must involve oversight to ensure that the goals set by senior management have been met. When performing security governance, security managers need to keep security objectives in alignment with business objectives. 
+- Governance is the process in which senior management directs an organization to meet its objectives. Governance must involve oversight to ensure that the goals set by senior management have been met. When performing security governance, security managers need to keep security objectives in alignment with business objectives.
+    - Without senior management's approval of and commitment to an information security program, it will remain weak and provide little benefit 
 - **Security governance**: 🌠the collection of policies, roles, processes/practices used to make security decisions in an org; related to supporting, evaluating, defining, and directing the security efforts of an org 
   - 🌠Security governance is the implementation of a security solution and a management method that are tightly interconnected. It is NOT an IT-only issue.
   - 🌠The **top-down approach** is the aspect of security governance that is based on the idea that senior management is responsible for the success or failure of a security endeavor. 
@@ -857,7 +858,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - It has two objectives:
     - Reduce the number of security-related design and coding defects
     - Reduce the severity of any remaining defects
-- 🔴**STRIDE threat model**: Microsoft developed the STRIDE threat model: Also useful for threat categorization during aplication threat modeling
+- 🔴**STRIDE threat model**: Microsoft developed the STRIDE threat model: Also useful for 📝threat categorization during aplication threat modeling
   - ✏️Spoofing: an attack with the goal of gaining access to a target system through the use of falsified identity
   - ✏️Tampering: any action resulting in unauthorized changes or manipulation of data, whether in transit or in storage
   - ✏️Repudiation: the ability of a user or attacker to deny having performed an action or activity by maintaining plausible deniability
@@ -873,7 +874,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - ✏️Stage VI: Attack Modeling and Simulation (AMS)
   - ✏️Stage VII: Risk Analysis and Management (RAM)
 - Each stage of PASTA has a specific list of objectives to achieve and deliverables to produce in order to complete the stage
-- 🔴**DREAD**: The DREAD model, developed in 2002, is a quantitative risk analysis model that involves rating the severity of security threats by assigning numeric values (typically from 1 to 10) that represent different levels of severity. DREAD classifies threats based on the Damage, Reproducibility, Exploitability, Affected users, and Discoverability of a threat.
+- 🔴**DREAD**: The DREAD model, developed in 2002, is a quantitative risk analysis model that involves rating the severity of security threats by assigning numeric values (typically from 1 to 10) that represent different 📝levels of severity. DREAD classifies threats based on the Damage, Reproducibility, Exploitability, Affected users, and Discoverability of a threat.
      - ✏️Damage: What is the total amount of damage the threat is capable of causing to your business?
      - ✏️Reproducibility: How easily can an attack on the particular threat be replicated?
      - ✏️Exploitability: How much effort is required for the threat to be exploited by an attacker?
@@ -889,7 +890,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - ✏️Infrastructure: The systems, tools, or networks used by the adversary to conduct the attack.
       - ✏️Capability: The techniques, tools, or methods used by the adversary to exploit vulnerabilities and achieve their goals.
       - ✏️Victim: The target of the attack, which could be a person, organization, system, or data.
-- 🔴**Threat Representation, Intelligence, and Knowledge Engine (TRIKE)**. It is a threat modeling framework focused on simulating cyber threats and helping organizations identify and mitigate vulnerabilities in their systems and networks.  
+- 🔴**Threat Representation, Intelligence, and Knowledge Engine (TRIKE)**. It is a threat modeling framework focused on 📝simulating cyber threats and helping organizations identify and mitigate vulnerabilities in their systems and networks.  
 - 🔴**Visual, Agile, and Simple Threat (VAST)**: a threat modeling concept that integrates threat and risk management into an 📝Agile programming environment on a scalable basis
 - Part of the job of the security team is to identify threats, using different methods:
    - ✏️Focus on attackers: this is a useful method in specific situations;
