@@ -135,6 +135,7 @@
        - 🍮produce a report of the relative strengths and weaknesses of the deployed security infrastructure.
   - Security is established by understanding the assets of an organization that need protection and understanding the threats that could cause harm to those assets. Then Security controls are selected that provide protection for the 📝CIA Triad of the assets at risk
   - If a security control's benefits cannot be quantified, evaluated, or compared, then it does not actually provide any security.
+  - An SCA's goals are to verify security, assess the effectiveness of security, and identify the strengths and weaknesses of security through its risk management processes. A Security Control Assessment (SCA) 📝does not recommend solutions.
   - there are many frameworks to choose from, such as:
     -  🔴**Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
         - COBIT is a documented set of best IT security practices by ISACA for information technology (IT) management and governance.
