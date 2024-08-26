@@ -146,7 +146,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - MAC address is a 6-byte (48-bit) binary address written in hex
                 - 📝first 3b/24-bits: Organizationally Unique Identifier (OUI) - denotes manufacturer
                 - last 3b/24-bits: unique to that interface
-        - **Address Resolution Protocol (ARP)**: operates at layer 2
+        - 🐤**MACsec**: MACsec (Media Access Control Security) operates at Layer 2 (Data Link Layer). MACsec is a security protocol that provides confidentiality, integrity, and origin authenticity for data at the Data Link Layer. It encrypts and authenticates packets between directly connected nodes (e.g., switches, routers) on a LAN, ensuring that even if data is intercepted at this level, it cannot be understood or tampered with. 802.1AE, also known as MACsec, is an Institute of Electrical and Electronics Engineers (IEEE) standard that provides confidentiality and integrity at the data link layer of the Open Systems Interconnection (OSI) model. MACsec adds additional headers to the frame that identify it has been protected with MACsec. MACsec provides Hop-to-Hop encryption or link encryption, not end-to-end encryption.
+        - 🐤**Address Resolution Protocol (ARP)**: operates at layer 2
         - Switches & bridges function at this layer
         - Logical Link Control (LLC) is one of two sublayers that make up the Data Link Layer
         - **ARP Poisoning**: also known as ARP spoofing, is a type of cyber attack in which an attacker sends falsified Address Resolution Protocol (ARP) messages over a local network. 
