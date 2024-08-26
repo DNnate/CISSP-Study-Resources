@@ -83,6 +83,8 @@
      - 🩰Cloud-Based DLP: Cloud DLP solutions are network DLP solutions designed to operate in cloud environments.
   - 🏷️**Marking (AKA labeling)**: sensitive information/assets ensures proper handling (both physically and electronically).
      - Security labeling identifies the classification of data such as sensitive, secret, and so on. Media holding sensitive data should be labeled. Similarly, systems that hold or process sensitive data should also be marked
+     -  Labeling assets would allow all employees to know the importance of the information or items and handle them appropriately.
+     -  Labeling all assets would allow for their classification and an organized manner in which to determine the values of items and data within a company.
      - Media is typically labeled with the highest classification level of data it contains. This prevents the data from being handled or accessed at a lower classification level.
      - Systems and media should be labeled with the highest level of sensitivity that they store or handle.
      - labels can be as granular and custom as required by the org
@@ -231,6 +233,8 @@ rewriting with a new value or using a menu option to reset the device to the fac
       -  The custodian has the responsibility of protecting the data they have in their possession. That includes following the corporate policies, procedures, standards, and so on. They ⛔do not determine the access levels
       - Custodians are tasked with the day-to-day monitoring of the integrity and security of data. 
       - He/She is responsible for the technical environment, including things like database structures, performing data backup and the technical implementations of data policies.
+      - A custodian is defined as someone entrusted with guarding and protecting something. Data custodians are responsible for maintaining the data and ensuring its availability for the data owner.
+      - The data custodians are responsible for backing up data to ensure its security.
       - Controls are scoped and tailored, applied and enforced by Custodians.
       - custodians implement the controls
       - custodians are granted rights to perform day-to-day tasks when handling data
@@ -325,7 +329,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
         - ⭐OpenVPN: Flexible and secure with strong encryption, highly configurable. Operates at the Application layer (uses SSL/TLS).      
       - encryption methods protect data at rest and in transit
       - Asymmetric encryption (along with symmetric encryption) protects data in transit.
-    - 🔴**Data in use**: data in 📝memory or in buffer and used by an application. Data in a 📝CPU register is also in use.
+    - 🔴**Data in use**: data in 📝memory or in buffer and used by an application. Data in a 📝CPU register/cache is also in use.
       - Data in use is data that is in a temporary storage location while an application or process is using it. Thus, data in memory is best described as data in use or ephemeral data. 
       - applications should flush memory buffers to remove data after it is no longer needed: Protecting Data in Use (📝Harder to protect): RAM/memory data: The most difficult location to secure for encryption keys and similar highly sensitive information is in active memory because the data needs to be decrypted to be used. 
       - pervasive encryption,
