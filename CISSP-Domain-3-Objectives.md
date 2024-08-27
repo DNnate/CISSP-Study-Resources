@@ -249,10 +249,11 @@ You may find this domain to be more technical than others, and if you have exper
     - Many security products and encryption solutions require a TPM
     - TPM is both a specification for a cryptoprocessor chip on a motherboard and the general name for implementation of the specification
     - Remote attestation creates a hash value from the system configuration to confirm the integrity of the configuration.
-    - Binding and sealing are techniques used by the TPM to encrypt data.
+    - 📝Binding and 📝sealing are techniques used by the TPM to encrypt data.
     - The random number generator (RNG) function of the TPM is used to support cryptographic operations.
     - TPM does include  Storage Root Key (SRK), which is used for managing and protecting cryptographic operations and keys within the TPM.
     - in a TPM iplementation, the files on the drive are at their most secure when the system is off and the drive is encrypted and not in a readable state. BitLocker decrypts files as needed when in use, meaning that any time after the system is booted files may be accessed, particularly if the user is logged in and access to the system can be gained or if malware is running.
+    - A Trusted Platform Module (TPM) is a physical microcontroller used to store and release decryption keys securely. TPMs are frequently utilized for full-disk encryption to ensure data at rest is encrypted. Microsoft’s BitLocker leverages a TPM chip to encrypt data written to the disk.
     - A TPM is an example of a hardware security module (HSM)
          - 🚡**Hardware Security Module (HSM)**: a cryptoprocessor used to manage and store digital encryption keys, accelerate crypto operations, support faster digital signatures, and improve authentication. HSMs include root keys and are used for high-security key management.
          - They are generally used in 📝server environments rather than directly on endpoints.
@@ -313,6 +314,8 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
 - 3.5.5 Industrial Control Systems (ICS)
     - ❄️**Industrial control systems (ICS)**: a form of computer-management device that controls industrial processes and machines, also known as operational technology (OT): ICS examples include distributed control systems (DCSs), programmable logic controllers (PLCs), and supervisory control and data acquisition (SCADA).
     - **Supervisory control and data acquisition (SCADA)**: systems used to control physical devices like those in an electrical power plant or factory; SCADA systems are well suited for distributed environments, such as those spanning continents 
+        - SCADA systems are large Industrial Control Systems (ICSs) that can span large geographic areas. SCADA systems control and supervise operations using inputs from Programmable Logic Controllers (PLCs), sensors, and Human-Machine Interfaces (HMI). The supervisory computers of the SCADA system use this input to send commands to Remote Terminal Units (RTUs) to alter a process or generate alarms.
+            - 📝A Programmable Logic Controllers  (PLC) is a controller that can have multiple inputs and outputs. PLCs are often networked and controlled by a supervisory computer. A Distributed Control System (DCS) is a network of PLCs, sensors, and supervisory computers. Generally, a DCS is process-specific and does not span large geographical areas, whereas a SCADA system controls multiple processes and can span large geographical areas. 
         - some SCADA systems still rely on legacy or proprietary communications, putting them at risk, especially as attackers gain knowledge of such systems and their vulnerabilities
         - In industrial control systems (ICSs), ensuring the availability of ♨️real-time control signals is a primary concern. The immediate and continuous availability of control signals is critical for the proper functioning of industrial processes.
         - Supervisory Control and Data Acquisition systems, or SCADA systems, provide a graphical interface to monitor industrial control systems (ICS). 
@@ -625,7 +628,7 @@ taxed by inefficient implementations of software and VMs.
             - 🎈certificates: issued to other certification authorities or to devices and users 
             - 🎈policies and procedures: such as how the PKI is secured, and 
             - 🎈templates: a predefined configuration for specific uses, such as a web server template
-            - 🎈Certificate Revocation List CRL: is a list maintained by a Certificate Authority (CA) that contains identifiers for certificates that have been revoked before their scheduled expiration date. Certificates may only be added to a certificate revocation list by the certificate authority that created the digital certificate. These certificates might be revoked for various reasons, such as being compromised, having been issued incorrectly, or no longer being needed. Delta CRLs: To efficiently handle updates, delta CRLs can be used to list only the changes (i.e., new revocations or reinstatements) since the last full CRL was issued. The certificate revocation list contains
+            - 🎈Certificate Revocation List CRL: is a list maintained by a Certificate Authority (CA) that contains identifiers for certificates that have been revoked before their scheduled expiration date. Certificates may only be added to a certificate revocation list by the certificate authority that created the digital certificate. Certificate Authority (CA) administrators can invalidate a certificate before its expiration date by posting it to the CRL. When a device is authenticating a certificate before using the public key it contains, it can check the published CRL to verify it has not been revoked. These certificates might be revoked for various reasons, such as being compromised, having been issued incorrectly, or no longer being needed. Delta CRLs: To efficiently handle updates, delta CRLs can be used to list only the changes (i.e., new revocations or reinstatements) since the last full CRL was issued. The certificate revocation list contains
                 - 🥥Serial Number: The unique identifier of the revoked certificate.
                 - 🥥Revocation Date: The date on which the certificate was revoked.
                 - 🥥Revocation Reason: The reason for the revocation, such as key compromise, CA compromise, affiliation change, or cessation of operation.
@@ -634,10 +637,10 @@ taxed by inefficient implementations of software and VMs.
                 - 🥥CRL Number: A unique identifier for the CRL itself, which helps in tracking and referencing different versions of the list. 
         - There are other components and concepts you should know for the exam:
             - A PKI can have multiple tiers:    
-                - single tier means you have one or more servers that perform all the functions of a PKI 
-                - two tiers means there is an offline root CA (a server that issues certificates to the issuing CAs but remains offline most of the time) in one tier, and issuing CAs (the servers that issue certificates to computing devices and users) in the other tier
+                - 🔨single tier means you have one or more servers that perform all the functions of a PKI 
+                - 🔨two tiers means there is an offline root CA (a server that issues certificates to the issuing CAs but remains offline most of the time) in one tier, and issuing CAs (the servers that issue certificates to computing devices and users) in the other tier
                 - servers in the second tier are often referred to as intermediate CAs or subordinate CAs
-                - three tier means you can have CAs that are responsible only for issuing policies (and they represent the second tier in a three-tier hierarchy)
+                - 🔨three tier means you can have CAs that are responsible only for issuing policies (and they represent the second tier in a three-tier hierarchy)
                     - in such a scenario, the policy CAs should also remain offline and be brought online only as needed
             - Generally, the more tiers, the more security (but proper configuration is critical)
                 - the more tiers you have, the more complex and costly the PKI is to build and maintain
@@ -648,9 +651,9 @@ taxed by inefficient implementations of software and VMs.
                 - a PKI needs to be able to provide certificate revocation information to clients. Note: Certificate revocation lists (CRLs) introduce an inherent latency to the certificate expiration process due to the time lag between CRL distributions.
                 - if an administrator revokes a certificate that has been issued, clients must be able to get that info from your PKI
                 - storage of private keys and info about issued certificates (can be stored in a database or a directory)
-                    - 🍊The PFX format is most closely associated with Windows systems that store certificates in binary format. File Extension are typically .pfx or .p12. PFX typically contains a private key, a certificate, and potentially a certificate chain in a single file. Used for importing/exporting certificates and private keys in a single file, often in Windows environments.
-                    - 🍊P7B format is used for Windows systems storing files in text format. P7B: Contains only certificates (the certificate chain), not private keys. It can be base64-encoded with headers and footers (e.g., -----BEGIN PKCS7-----), or binary. Used primarily for handling certificates and certificate chains, not for private keys, and is often used in Windows and Java environments. File Extension typically .p7b or .p7c.
-                    - 🍊The PEM format is another text format that is base64 ASCII-encoded. PEM usually represents individual components (like separate files for private keys and certificates). File Extension are typically .pem, .crt, .cer, or .key (depending on the contents). PEM is common in Unix/Linux environments and for tasks requiring separate certificate and key files.
+                    - 🍊The PFX format is most closely associated with Windows systems that store certificates in binary format. File Extension are typically .pfx or .p12. PFX typically contains a 📝private key, a 📝certificate, and potentially a certificate chain in a single file. Used for importing/exporting certificates and private keys in a single file, often in Windows environments.
+                    - 🍊P7B format is used for Windows systems storing files in text format. P7B: Contains only certificates (the certificate chain), not private keys. It can be base64-encoded with headers and footers (e.g., -----BEGIN PKCS7-----), or binary. Used primarily for handling certificates and 📝certificate chains, not for ⛔private keys, and is often used in Windows and Java environments. File Extension typically .p7b or .p7c.
+                    - 🍊The PEM format is another text format that is base64 ASCII-encoded. PEM usually represents individual components (like 📝separate files for private keys and certificates). File Extension are typically .pem, .crt, .cer, or .key (depending on the contents). PEM is common in Unix/Linux environments and for tasks requiring separate certificate and key files.
             - PKI uses LDAP when integrating digital certs into transmissions
       - 🔥The process of issuing certificates by a public Certificate Authority (CA):
           - 1. Certificate Request: Submission of Certificate Signing Request (CSR) to the CA. The CSR includes the applicant's public key and identifying information. 
@@ -1059,17 +1062,17 @@ taxed by inefficient implementations of software and VMs.
     - SHA-512 - Lenght 512, produces 512-­bit digests 🥇
 
 - 🔴**SYMMETRIC**
-    - AES- Block Cipher, Bock Size 128, Key Size 128, 192, 256 🥇 (AES provides confidentiality, integrity, and authentication when implemented properly. Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.)
-    - Blowfish - Bock Size 64, Key Size 32 - 448 (uses 16 round of encryption regardless of key lenght)
-    - DES - Block Cipher, Bock Size 64, Key Size 56
+    - AES- Block Cipher, 📝Bock Size 128, 📝Key Size 128, 192, 256 🥇 (AES provides confidentiality, integrity, and authentication when implemented properly. Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.)
+    - Blowfish - 📝Bock Size 64, 📝Key Size 32 - 448 (uses 16 round of encryption regardless of key lenght)
+    - DES - Block Cipher, 📝Bock Size 64, 📝Key Size 56
     - 2DES - Block Cipher (vulnerable to meet-in-the-middle attack)
-    - 3DES - Block Cipher, Bock Size 64, Key Size 112, 168 
-    - IDEA - Bock Size 64, Key Size 128
-    - RC2 - Bock Size 128, Key Size 128
-    - RC4 - Stream Cipher, Key Size 128
-    - RC5 - RSA Block Mode Cipher, Bock Size 32, 64, 128, Key Size 0 - 2048
-    - Skipjack - Block Size 64, Key Size 80
-    - Twofish - Bock Size 128, Key Size 1-256
+    - 3DES - Block Cipher, 📝Bock Size 64, 📝Key Size 112, 168 
+    - IDEA - 📝Bock Size 64, 📝Key Size 128
+    - RC2 - 📝Bock Size 128, 📝Key Size 128
+    - RC4 - Stream Cipher, 📝Key Size 128
+    - RC5 - RSA Block Mode Cipher, 📝Bock Size 32, 64, 128, 📝Key Size 0 - 2048
+    - Skipjack - 📝Block Size 64, 📝Key Size 80
+    - Twofish - 📝Bock Size 128, 📝Key Size 1-256
     - In symmetric key cryptography, both block size and key size are critical parameters that define the characteristics and security of an encryption algorithm. 
          - 💠Block Size: Determines the size of data chunks processed in one encryption or decryption operation. If the plaintext is not a multiple of the block size, padding may be required to ensure that the entire block is filled. A larger block size allows the algorithm to handle larger amounts of data per encryption operation, which can improve efficiency and security.
          - 💠Key Size: Determines the strength of the encryption by defining the length of the key used in the encryption algorithm. Larger key sizes can result in increased computational overhead during encryption and decryption, potentially impacting performance, but offers increased security by making it harder to perform brute-force attacks.
@@ -1093,10 +1096,10 @@ taxed by inefficient implementations of software and VMs.
 
 **In a zero-knowledge proof**, one individual demonstrates to another that they can achieve a result that requires sensitive information without actually disclosing the sensitive information
 
-- **TEMPEST-derived technology** allows the electronic emanations that devices produce (known as Van Eck radiation) to be read from a distance (this process is known as Van Eck phreaking). TEMPEST eavesdropping or Van Eck phreaking countermeasures include the following:
-    - Faraday Cage: A Faraday cage is an enclosure that blocks or absorbs electromagnetic fields or signals. Faraday cage containers, computer cases, rack-­mount systems, rooms, or even building materials are used to create a blockage against the transmission of data, information, metadata, or other emanations from computers and other electronics. Devices inside a Faraday cage can use EM fields for communications, such as wireless or Bluetooth, but devices outside of the cage will not be able to eavesdrop on the signals of the systems within the cage.
-    - White Noise:  White noise generates false emanations that effectively "jam" the true emanations from electronic equipment. It is a physical security control that broadcasts false emanations constantly to mask the presence of true electromagnetic emanations from computing equipment.
-    - Control Zone
+- 🟢**TEMPEST-derived technology** allows the electronic emanations that devices produce (known as Van Eck radiation) to be read from a distance (this process is known as Van Eck phreaking). TEMPEST eavesdropping or Van Eck phreaking countermeasures include the following:
+    - 🐌Faraday Cage: A Faraday cage is an enclosure that blocks or absorbs electromagnetic fields or signals. Faraday cage containers, computer cases, rack-­mount systems, rooms, or even building materials are used to create a blockage against the transmission of data, information, metadata, or other emanations from computers and other electronics. Devices inside a Faraday cage can use EM fields for communications, such as wireless or Bluetooth, but devices outside of the cage will not be able to eavesdrop on the signals of the systems within the cage.
+    - 🐌White Noise:  White noise generates false emanations that effectively "jam" the true emanations from electronic equipment. It is a physical security control that broadcasts false emanations constantly to mask the presence of true electromagnetic emanations from computing equipment.
+    - 🐌Control Zone
 - The TEMPEST program creates technology that is not susceptible to Van Eck phreaking attacks because it reduces or suppresses natural electromagnetic emanations.
 
 - 🟢**Mobile Device Management (MDM) Concepts**:  Security. 🍎NIST SP 800-124 is a guideline for managing the security of mobile devices in the enterprise.
