@@ -154,30 +154,33 @@ You may find this domain to be more technical than others, and if you have exper
 - 🔴**Take-Grant**: 
     - The take-grant model employs a directed graph to dictate how rights can be passed from one subject to another, or from a subject to an object
     - Four rules: 
-        - ✏️take: The right to remove or take permissions from other users. The take rule allows a subject to take the rights belonging to another object. 
-        - ✏️grant: The grant rule allows a subject to grant rights that it possesses on an object to another subject.
-        - ✏️create: The create rule allows a subject to create new objects and also creates an edge from the subject to that object, granting rights on the new object.
-        - ✏️remove
+        - ⚒️take: The right to remove or take permissions from other users. The take rule allows a subject to take the rights belonging to another object. 
+        - ⚒️grant: The grant rule allows a subject to grant rights that it possesses on an object to another subject.
+        - ⚒️create: The create rule allows a subject to create new objects and also creates an edge from the subject to that object, granting rights on the new object.
+        - ⚒️remove
 - 🔴**Clark-Wilson**: The Clark–Wilson model uses a multifaceted approach to enforcing data integrity. Instead of defining a formal state machine, the Clark–Wilson model defines each data item and allowable data transformations. 
-    - Focus is on integrity ✏️
+    - Focus is on 📝integrity. Clark and Wilson defined the following as the three goals of integrity in their security model that was published in 1987.
+        - ⚒️Rule 1: Prevent unauthorized users from making any modifications.
+        - ⚒️Rule 2: Prevent authorized users from making improper modifications.
+        - ⚒️Rule 3: Maintain internal and external consistency.
     - Designed to protect integrity using the access control 📝triplet (‼️Subject, ‼️Object, ‼️Program/Interface)
     - The Clark–Wilson model defines the constrained data item, transformation procedures, and integrity verification procedure.
     - A program interface is used to limit what is done by a subject; if the focus of an intermediary program between subject and object is to protect integrity, then it is an implementation of the Clark-Wilson model
 - 🔴**Brewer and Nash Model**:
     - AKA "ethical wall", and "cone of silence"
     - created to permit access controls to change dynamically based on a user's previous activity
-    - prevents conflicts of interest. ✏️
+    - prevents conflicts of interest.📝
     - implemented in environments where data from different clients exist 
 - 🔴**Goguen-Meseguer Model**:
-    - An integrity model ✏️
-    - it is based on 🔥predetermining the set or domain (i.e., a list) of objects that a subject can access.
+    - An integrity model📝
+    - it is based on 📝predetermining the set or domain (i.e., a list) of objects that a subject can access.
     - Foundation of noninterference conceptual theories
-    - **Noninterference** is the concept of limiting the actions of a subject at a higher security level so that they do not affect the system state or the actions of a subject at a lower security level.
+        - **Noninterference** is the concept of limiting the actions of a subject at a higher security level so that they do not affect the system state or the actions of a subject at a lower security level.
 - 🔴**Sutherland Model**:
-    - Focuses on preventing 🔥interference in support of integrity
-    - Focus is on Integrity ✏️
+    - Focuses on preventing 📝interference in support of integrity
+    - Focus is on Integrity📝
 - 🔴**Graham-Denning Model**
-    - Focused on the secure creation and deletion of both subjects and objects
+    - Focused on the secure 📝creation and 📝deletion of both subjects and objects
     - 8 primary protection rules or actions
         - ✏️1-4:securely create/delete a subject/object
         - ✏️5-8:securely provide the read/grant/delete/transfer access right
