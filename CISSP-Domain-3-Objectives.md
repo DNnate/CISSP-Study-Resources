@@ -1073,7 +1073,7 @@ taxed by inefficient implementations of software and VMs.
     - DES - Block Cipher, 📝Bock Size 64, 📝Key Size 56
     - 2DES - Block Cipher (vulnerable to meet-in-the-middle attack)
     - 3DES - Block Cipher, 📝Bock Size 64, 📝Key Size 112, 168 
-    - IDEA - 📝Bock Size 64, 📝Key Size 128
+    - IDEA - 📝Bock Size 64, 📝Key Size 128 (IDEAis frequently used in Pretty Good Privacy (PGP). The IDEA block cipher was developed in response to complaints about the insufficient key length of DES algorithm.)
     - RC2 - 📝Bock Size 128, 📝Key Size 128
     - RC4 - Stream Cipher, 📝Key Size 128
     - RC5 - RSA Block Mode Cipher, 📝Bock Size 32, 64, 128, 📝Key Size 0 - 2048
