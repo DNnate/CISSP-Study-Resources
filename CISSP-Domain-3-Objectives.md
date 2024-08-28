@@ -143,6 +143,7 @@ You may find this domain to be more technical than others, and if you have exper
     - Focuse is on confidentiality ✏️
     - Simple security property: 🔥No read-up 
     - Star (*) security property: 🔥No write-down ( an individual may not write to a file at a lower classification level than that of the individual. AKA confinement property)
+    - Strong star (*) property states that a subject may not read or write information that resides at any security level, except for the level the subject is a member of.
     - Discretionary Security Property: uses an access matrix (need to know in order to access)
     - Doesn't address covert channels
 - 🔴**Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
