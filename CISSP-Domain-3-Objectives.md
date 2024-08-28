@@ -257,6 +257,7 @@ You may find this domain to be more technical than others, and if you have exper
     - The Trusted Platform Module (TPM) is a hardware security technique that stores an encryption key on a chip on the motherboard and prevents someone from accessing an encrypted drive by installing it in another computer.
     - Many security products and encryption solutions require a TPM
     - TPM is both a specification for a cryptoprocessor chip on a motherboard and the general name for implementation of the specification
+    - TPM is a motherboard component designed to support the security of hardware through integrated cryptographic keys. It frequently interoperates with the operating system to validate trusted users and deliver extended security capabilities (e.g. full disk encryption).
     - Remote attestation creates a hash value from the system configuration to confirm the integrity of the configuration.
     - 📝Binding and 📝sealing are techniques used by the TPM to encrypt data.
     - The random number generator (RNG) function of the TPM is used to support cryptographic operations.
@@ -266,6 +267,9 @@ You may find this domain to be more technical than others, and if you have exper
     - A TPM is an example of a hardware security module (HSM)
          - 🚡**Hardware Security Module (HSM)**: a cryptoprocessor used to manage and store digital encryption keys, accelerate crypto operations, support faster digital signatures, and improve authentication. HSMs include root keys and are used for high-security key management.
          - They are generally used in 📝server environments rather than directly on endpoints.
+         - Hardware Security Modules (HSM) are designed to store keys, but they are 🚫not within a computer.
+         - They are usually 📝rack-mountable devices.
+         - They support servers rather than being hardware installed within a computer on the motherboard.
          - Hardware Security Modules, or HSMs, are the most secure way to store keys associated with a CMS. They provide enhanced key management capabilities and are often required to be FIPS certified. In addition to these advantages, an HSM can improve cryptographic performance for the organization due to dedicated hardware designed for just that purpose. 
 - 🟣**User interface**: a constrained UI can be used in an application to restrict what users can do or see based on their privileges
     - e.g. dimming/graying out capabilities for users without the correct privilege
@@ -920,7 +924,7 @@ taxed by inefficient implementations of software and VMs.
         - 💢Uninterruptible power supplies (UPS) provide immediate, battery-driven power for a 📝short period of time to cover momentary losses of power, which would not cover a sustained period of power loss.
 - 3.9.7 Environmental issues
     - Environmental monitoring is the process of measuring and evaluating the quality of the environment within a given structure (e.g. temperature, humidity, dust, smoke), using things like chemical, biological, radiological, and microbiological detectors
-    - Halon starves a fire of oxygen by disrupting the chemical reaction of combustion, but degrades into toxic gases at 900 degrees Fahrenheit, and is not environmentally friendly
+    - Halon starves a fire of oxygen by disrupting the chemical reaction of combustion, but degrades into toxic gases at 900 degrees Fahrenheit, and is ⛔not environmentally friendly  (the 1987 Montreal protocol banned the creation of more of it).
     - If water-based sprinklers are used for fire suppression, damage to electronic equipment is likely; automate the shutoff of electricity prior to sprinkler trigger
     - Other environmental issues include earthquakes, power outages, tornados and wind
     - Secondary facilities should be located far enough away from the primary to ensure they won't be damaged by the same event
@@ -952,8 +956,8 @@ taxed by inefficient implementations of software and VMs.
         - 🍐**Stage 4**: ✏️heat stage: at stage 4, there is an intense heat buildup and everything in the area burns
     - Fire extinguisher classes:
         - **🧯Class A**: common combustibles 🟡Ash (water, foam, wet chemical agent)
-        - **🧯Class B**: liquids      🟡boil (CO2, Halon or an acceptable halon substitute, and soda acid)
-        - **🧯Class C**: electrical   🟡conduct (FM-200, CO2, dry chemical agents)
+        - **🧯Class B**: liquids      🟡boil (CO2, Halon or an acceptable halon substitute like FM-200, , Sodium bicarbonate, mono-ammonium phosphate and soda acid)
+        - **🧯Class C**: electrical   🟡conduct (FM-200, CO2, dry chemical agents, Sodium bicarbonate and mono-ammonium phosphate)
         - **🧯Class D**: metal        🟡dilythium (Sodium Chloride (NaCl), Dry Powder Extinguishers)
         - **🧯Class K**: cooking material (oil/grease) 🟡kitchen (Potassium Acetate Solution, Ansul R-102)
     - Four main types of suppression:
