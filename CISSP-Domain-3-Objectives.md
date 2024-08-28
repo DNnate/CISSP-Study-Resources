@@ -644,7 +644,8 @@ taxed by inefficient implementations of software and VMs.
         - 📝X.500 standards governs directory access
         - Many vendors provide PKI services; you can run a PKI privately and solely for your own org, you can acquire certificates from a trusted third-party provider, or you can do both (which is common) 
         - A PKI is made up of 
-            - 🎈**certification authorities (CAs)**: servers that provide one or more PKI functions, such as providing policies or issuing certificates 
+            - 🎈**certification authorities (CAs)**: servers that provide one or more PKI functions, such as providing policies or issuing certificates. A Certificate Authority (CA) is a trusted party that validates or signs the certificate of the user. Other parties trust this signed certificate because they trust the certificate authority. Some popular CAs include DigiCert, Let's Encrypt, and GlobalSign.
+            - 🎈**A Registration Authority (RA)** acts as the broker between a user requesting a new certificate and the CA. The RA verifies the identity of the user before the CA generates and signs the certificate. When you request a certificate, you'll typically interact with an RA, which may be a part of the CA itself or a separate entity that works with the CA. Once the RA has verified all your information, it passes this confirmation to the CA.
             - 🎈certificates: issued to other certification authorities or to devices and users 
             - 🎈policies and procedures: such as how the PKI is secured, and 
             - 🎈templates: a predefined configuration for specific uses, such as a web server template
@@ -684,7 +685,6 @@ taxed by inefficient implementations of software and VMs.
             6.  Publishing: The certificate is often published in a publicly accessible repository or directory, such as a Certificate Revocation List (CRL) or an online Certificate Status Protocol (OCSP) responder, so that other parties can verify its validity. The Online Certificate Status Protocol (OCSP) eliminates the latency inherent in the use of certificate revocation lists by providing a means for real-time certificate verification. The Online Certificate Status Protocol (OCSP) provides real-time query/response services to digital certificate users. This overcomes the latency inherent in the traditional certificate revocation list download and cross-check process. 
             7.  End-User Verification: Users and systems verify the certificate’s validity by checking the CA's digital signature against the CA’s public key. They also verify that the certificate is not expired or revoked by consulting the CRL or OCSP responder.
             8.  Key Considerations: Trust Model: The CA operates within a trust model where its certificate is trusted by browsers, operating systems, and applications. Trust in the CA’s ability to accurately validate and issue certificates is crucial.
-
     
 - 3.6.4 Key management practices
     - **Key management practices**: include safeguards surrounding the creation, distribution, storage, destruction, recovery, and escrow of secret keys
