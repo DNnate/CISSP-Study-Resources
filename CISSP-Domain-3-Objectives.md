@@ -165,7 +165,13 @@ You may find this domain to be more technical than others, and if you have exper
         - ⚒️Rule 3: Maintain internal and external consistency.
     - Designed to protect integrity using the access control 📝triplet (‼️Subject, ‼️Object, ‼️Program/Interface)
     - The Clark–Wilson model defines the constrained data item, transformation procedures, and integrity verification procedure.
-    - A program interface is used to limit what is done by a subject; if the focus of an intermediary program between subject and object is to protect integrity, then it is an implementation of the Clark-Wilson model
+    - A program interface is used to limit what is done by a subject; if the focus of an intermediary program between subject and object is to protect integrity, then it is an implementation of the Clark-Wilson model.
+        - 📝Constrained Data Items (CDI) are the pieces of data that the integrity policies are applied to.
+        - 📝Transformation Procedures (TP) apply to the concept of a Well Formed Transaction (WFT). The TP ensures that the CDI is transformed (changed) from one valid state to another.
+        - 📝Well Formed Transaction (WFT) has three fundamental ideas.
+            - 🩹A transaction is well-formed if it has not been tampered with
+            - 🩹A transaction is well-formed if it has been logged
+            - 🩹A transaction is well-formed if the values maintain consistency. 
 - 🔴**Brewer and Nash Model**:
     - AKA "ethical wall", and "cone of silence"
     - created to permit access controls to change dynamically based on a user's previous activity
