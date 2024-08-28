@@ -166,6 +166,8 @@ You may find this domain to be more technical than others, and if you have exper
         - ⚒️Rule 2: Prevent authorized users from making improper modifications.
         - ⚒️Rule 3: Maintain internal and external consistency.
     - Designed to protect integrity using the access control 📝triplet (‼️Subject, ‼️Object, ‼️Program/Interface)
+        - 🎈Object: an object is a 📝passive entity that an active subject accesses. Examples include databases, computers, programs, processes, scripts, and storage media. An object is not automated and has to be manipulated by a subject.
+        - 🎈Subject: The subject is the 📝active entity as it takes action on the object. The active entity could be a user, a process, a program, a script, etc. Anything that takes action on something else in the computer.      
     - The Clark–Wilson model defines the constrained data item, transformation procedures, and integrity verification procedure.
     - A program interface is used to limit what is done by a subject; if the focus of an intermediary program between subject and object is to protect integrity, then it is an implementation of the Clark-Wilson model.
         - 📝Constrained Data Items (CDI) are the pieces of data that the integrity policies are applied to.
