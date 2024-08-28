@@ -734,12 +734,12 @@ Connection: The DCE connects the DTE to the Frame Relay network, acting as an in
     - As organizations evaluate third-party connectivity, they need to look carefully at the principle of least privilege and at methods of monitoring use and misuse
     - The potential areas of concern related to third-party connectivity are those in which an actual outsider is to be directly connected to on-premises networks; these situations include 📝business partnerships, 📝cloud services, and 📝telecommuting. 
 
-- **Email Security**: The email infrastructure employed on the internet primarily consists of email servers using Simple Mail Transfer Protocol (SMTP) (TCP port 25) to accept messages from clients, transport those messages to other servers, and deposit them into a user’s server-based inbox.
+- 📁**Email Security**: The email infrastructure employed on the internet primarily consists of email servers using Simple Mail Transfer Protocol (SMTP) (TCP port 25) to accept messages from clients, transport those messages to other servers, and deposit them into a user’s server-based inbox.
      - In addition to email servers, the email infrastructure includes email clients.
      - Clients retrieve email from their server-based inboxes using Post Office Protocol version 3 (POP3) (TCP port 110) or Internet Message Access Protocol (IMAP) (technically version 4) (TCP port 143).
      - Internet-compatible email systems rely on the X.400 standard for addressing and message handling.
      - Sendmail is the most common SMTP server for Unix systems, and Exchange is the most common SMTP server for Microsoft systems.
-     - ❄️**SMTP** is designed to be a mail relay system. This means it relays mail from sender to intended recipient. However, you want to avoid turning your SMTP server into an open relay (also known as an open relay agent or relay agent).
+     - ❄️**SMTP**: Simple Mail Transfer Protocol (SMTP) is a protocol that enables the sending of emails. It transmits from the email client to the server. It is designed to be a mail relay system. This means it relays mail from sender to intended recipient. However, you want to avoid turning your SMTP server into an open relay (also known as an open relay agent or relay agent).
          - ✴️Open Relay: is an SMTP server that does not authenticate senders before accepting and relaying mail.
          - Open relays are prime targets for spammers because they allow spammers to send out floods of emails by piggybacking on an insecure email infrastructure. As open relays are locked down—becoming closed relays or authenticated relays—adversaries are often resorting to hijacking authenticated user accounts through social engineering or credential stuffing/spraying/guessing attacks.
      - Email Security goals include:
@@ -750,8 +750,13 @@ Connection: The DCE connects the DTE to the Frame Relay network, acting as an in
          - Verify the delivery of messages
          - Classify sensitive content within or attached to messages
          - Essential email concepts, which local systems can enforce and protect, include nonrepudiation, message integrity, and access restrictions.
-         - 📝Mail-bombing is the use of email as an attack mechanism by flooding a system with messages, causing a denial of service. 
+         - 📝Mail-bombing is the use of email as an attack mechanism by flooding a system with messages, causing a denial of service.
+     - 🔮**Post Office Protocol (POP) 3**  POP3 is a basic protocol that enables a user to access their emails. It works by downloading the messages off of the server onto the local device. That provides little security because the email is not on the central email server. However, the emails are sent in the clear and are not encrypted. There is 📝no confidentiality. Anyone listening will see the text of your email.
+     - 🔮**Internet Message Access Protocol (IMAP)** changes the older logic of POP and SMTP by leaving the emails on the server. This is what allows the same emails to show on a mobile phone, a desktop computer, and a tablet all at the same time. It too sends emails in the clear. It is possible to use Transport Layer Security (TLS) (formerly SSL) to encrypt the sent and received, which is technically known as IMAPS.
      - ❄️**Secure Multipurpose Internet Mail Extensions (S/MIME)**  offers authentication and confidentiality to email through public key encryption, digital envelopes, and digital signatures.
+         - S/MIME are used to encrypt and digitally sign emails.
+         - S/MIME uses the 📝RSA encryption algorithm and has been incorporated into many commercial products, such as Microsoft Outlook, Mozilla Thunderbird, and MAC OS X Mail.
+         - S/MIME relies on the use of the 📝X.509 certificates for exchanging cryptographic keys.
          - Authentication is provided through X.509 digital certificates issued by trusted third-party CAs.
          - Privacy is provided through the use of Public Key Cryptography Standard (PKCS) standards-compliant encryption.
          - Two types of messages can be formed using S/MIME: signed messages and secured enveloped messages.
