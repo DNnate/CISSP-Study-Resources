@@ -580,6 +580,8 @@ of litigation is imminent.
     - Use firewalls
     - Implement configuration and system management processes
 - 📁**Corrective control** Security Orchestration, Automation, and Response (SOAR) technologies are a combination of detective and corrective controls. They can detect attacks and apply automated actions to mitigate the attacks.
+    - Corrective controls are designed to take a non-functional state back to functional. For example, a Disaster Recovery (DR) site. They allow a company to function after a disaster such as a fire in the data center.
+- 📁**Compensatory control**  A compensating control is used to compensate for the anticipated failure of another control. It is with compensating controls that defense in depth is created.
 
 - 🔴**NIST SP 800-137**: organizations should use the following factors to ­determine assessment and monitoring frequency:
     - security control volatility: refers to how frequently a security control might need to be changed or updated over time
