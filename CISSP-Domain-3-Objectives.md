@@ -68,6 +68,7 @@ You may find this domain to be more technical than others, and if you have exper
     - ❄️**Secure defaults**: when you think about defaults, consider how something operates brand new, just turned over to you by the vendor
         - e.g. wireless router default admin password, or firewall configuration requiring changes to meet an organization's needs
         -  The idea that systems should be designed to operate in a secure manner if the user performs no other configuration is the secure defaults principle
+        -  The potential risks introduced by unconfigured settings are best addressed through the secure design principle of secure defaults. This principle demands product and solution teams consider the security implications of weak "default" settings in their product or solution (e.g. passwords, algorithms, or controls) and instead utilize responsible default security settings, even if those increase the complexity of implementation or use.
 - 3.1.5 Fail securely
     - ❄️**Fail securely**: if a system, asset, or process fails, it shouldn't reveal sensitive information, or be less secure than during normal operation. Failing securely could involve reverting to defaults. The fail securely principle says that security controls should default to a secure state in the event of a control failure. 
 - 3.1.6 Separation of duties (SoD)
@@ -77,7 +78,7 @@ You may find this domain to be more technical than others, and if you have exper
     - ❄️**Two-Person Control**: where two people must concur to perform a sensitive action. E.g emergency access to system administrator privileges. Under this procedure, two qualified administrators must agree to retrieve emergency credentials.
     - ❄️**M of N control** is a multi-person and split knowledge control that requires a 📝minimum number of individuals to provide credentials before action can occur. Credentials may be in the form of physical keys, digital keys, passwords, or biometric characteristics. M is the number required to be present and N is the total number possible. 
 - 3.1.7 Keep it simple
-    - ✴️**Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design. The keep it simple principle says that security controls and other technologies should remain as simple as possible while still completing their objectives.
+    - ❄️**Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design. The keep it simple principle says that security controls and other technologies should remain as simple as possible while still completing their objectives.
     3.1.8 Zero Trust
     - ❄️**Zero Trust**: Security architecture where no entity is trusted by default. Based on 3 principles
         - ⭐Assume Breach 
@@ -108,7 +109,8 @@ You may find this domain to be more technical than others, and if you have exper
               6. 🚸Visibility and transparency—keep it open: publish the requirements and goals; audit them and publish the findings
               7. 🚸Respect for user privacy—keep it user-centric: involve end users, providing the right amount of information for them to make informed decisions about their data
 - 3.1.10 Trust by verify
-    - ❄️**Trust but verify**: based on a Russian proverb, and no longer sufficient; it's the traditional approach of trusting subjects and devices within a company's security perimeter automatically, leaving an org vulnerable to insider attacks and providing intruders the ability to easily perform lateral movement. The trust but verify principle says that organizations should use auditing to ensure that control objectives are met. 
+    - ❄️**Trust but verify**: based on a Russian proverb, and no longer sufficient; it's the traditional approach of trusting subjects and devices within a company's security perimeter automatically, leaving an org vulnerable to insider attacks and providing intruders the ability to easily perform lateral movement. The trust but verify principle says that organizations should use auditing to ensure that control objectives are met.
+        - Trust but verify is a secure design principle that challenges assumptions of trust derived from certain criteria without trust being explicitly verified (e.g. traffic originating from an internal network) 
 - 3.1.11 Shared responsibility 
     - 🟣**Shared responsibility**: the security design principle that indicates that organizations do not operate in isolation
         - ⭐Everyone in an organization has some level of security responsibility
@@ -1085,7 +1087,12 @@ taxed by inefficient implementations of software and VMs.
     - 💊SHA-512 - Lenght 512, produces 512-­bit digests 🥇
 
 - 🔴**SYMMETRIC**
-    - 💊AES- Block Cipher, 📝Bock Size 128, 📝Key Size 128, 192, 256 🥇 (AES provides confidentiality, integrity, and authentication when implemented properly. Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.)
+    - 💊AES- Block Cipher, 📝Bock Size 128, 📝Key Size 128, 192, 256 🥇 (AES provides confidentiality, integrity, and authentication when implemented properly.
+        - Nonrepudiation which requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.)
+        - NIST selected the Advanced Encryption Standard (AES) in 2000 to replace the older Data Encryption Standard (DES) that had known vulnerabilities. The AES cipher allows the use of three key lengths:
+            - 128-bit keys require 10 rounds of encryption
+            - 192-bit keys require 12 rounds of encryption
+            - 256-bit keys require 14 rounds of encryption 
     - 💊Blowfish - 📝Bock Size 64, 📝Key Size 32 - 448 (uses 16 round of encryption regardless of key lenght. Blowfish was invented by Bruce Schneier who chose not to patent it but made it available for free, public use. Bruce Schneider also created twofish and threefish.)
     - 💊DES - Block Cipher, 📝Bock Size 64, 📝Key Size 56
     - 💊2DES - Block Cipher (vulnerable to meet-in-the-middle attack)
