@@ -1145,7 +1145,7 @@ of litigation is imminent.
         - 🎈Ring 0 The kernel lies within the central ring. contains the operating system's kernel
         - 🎈Ring 1 Conceptually contains other operating system components.
         - 🎈Ring 2 is used for drivers and protocols.
-        - 🎈Ring 3 User-level programs and applications run at 3. 
+        - 🎈Ring 3 User-level programs and applications. 
     - Note📝 Rings 0 through 2 run in privileged mode while Ring 3 runs in user mode. Layers 1 and 2 contain device drivers but are not normally implemented in practice, since they are often collapsed into layer 0. It is important to note that many modern operating systems do not fully ­implement this model.
     - **Reference Monitor**: This concept refers to an abstract model that 🔥enforces access control policies in a system. It's a theoretical component that must be implemented by the Security Kernel.
 - 🔴**DDOS Attacks**: Performing a load or stress test to validate how applications/systems performs under both expected and extreme loads to know what a denial-of-service attack based on load will look like is a good practice. Not all instances of DoS are the result of a malicious attack. Errors in coding OSs, services, and applications have resulted in DoS conditions. Some examples of this include a process failing to release control of the CPU or a service consuming system resources out of proportion to the service requests it is handling.  A 📝DoS attack typically originates from a single source. A 📝DDoS attack is more complex and involves multiple sources. The attacker uses a network of compromised computers (often referred to as a botnet) to launch a coordinated attack on the target. 
