@@ -1068,44 +1068,46 @@ taxed by inefficient implementations of software and VMs.
       - 🗂️**Phase 9 Retirement/Disposal**: secure decommissiong or disposal when the sytem reaches the end of its useful life or obsolete. focus is on preventing data exposure and respecting data retention periods. The key activities include data archival, secure disposal of hardware and media. The goal is to prevent data exposure, proper hardware disposel, data sanitization and compliance with data retention requirements;
        
 - 🔴**DIGITAL SIGNATURES**: The Digital Signature Standard FIPS 186-4 approves three encryption algorithms for use in digital signatures: oddly with sha1🤯
-    - the Digital Signature Algorithm (DSA)
-    - the Rivest, Shamir, Adleman (RSA)algorithm;
-    - the Elliptic Curve DSA (ECDSA) algorithm. 🥇
+    - 💊the Digital Signature Algorithm (DSA)
+    - 💊the Rivest, Shamir, Adleman (RSA)algorithm;
+    - 💊the Elliptic Curve DSA (ECDSA) algorithm. 🥇
 
 - 🔴**HASHING**
-    - HMAC - Lenght variable (✏️very strong)
-    - HAVAL - Lenght 128, 160, 192, 224, 256 bits
-    - MD2 - Lenght 128 bits(16 bytes)-MD2 is a one-way hash function designed by Ron Rivest that creates a 128-bit message digest value. It is not necessarily any weaker than the other algorithms in the "MD" family, but it is much slower.
-    - MD4 - Lenght 128 bits(16 bytes)
-    - MD5 - Lenght 128 bits(16 bytes) 📝(All Message Digest variants have the same hash lenght. MD2-5 have been replaced by MD6) The MD5 hash algorithm has known collisions and, as of 2005, is no longer considered secure for use in modern environments
-    - SHA-1 - Lenght ✏️160 (a real-world collision attack against SHA 1 was announced in early 2017)
-    - SHA-224 - Lenght 224, produces 224-­bit digests
-    - SHA-256 - Lenght 256, produces 256-­bit digests (sometimes called SHA 2)
-    - SHA-384 - Lenght 384, produces 384-­bit digests (SHA-3 is, however, less efficient than SHA-2)
-    - SHA-512 - Lenght 512, produces 512-­bit digests 🥇
+    - 💊HMAC - Lenght variable (✏️very strong)
+    - 💊HAVAL - Lenght 128, 160, 192, 224, 256 bits
+    - 💊MD2 - Lenght 128 bits(16 bytes)-MD2 is a one-way hash function designed by Ron Rivest that creates a 128-bit message digest value. It is not necessarily any weaker than the other algorithms in the "MD" family, but it is much slower.
+    - 💊MD4 - Lenght 128 bits(16 bytes)
+    - 💊MD5 - Lenght 128 bits(16 bytes) 📝(All Message Digest variants have the same hash lenght. MD2-5 have been replaced by MD6) The MD5 hash algorithm has known collisions and, as of 2005, is no longer considered secure for use in modern environments
+    - 💊SHA-1 - Lenght ✏️160 (a real-world collision attack against SHA 1 was announced in early 2017)
+    - 💊SHA-224 - Lenght 224, produces 224-­bit digests
+    - 💊SHA-256 - Lenght 256, produces 256-­bit digests (sometimes called SHA 2)
+    - 💊SHA-384 - Lenght 384, produces 384-­bit digests (SHA-3 is, however, less efficient than SHA-2)
+    - 💊SHA-512 - Lenght 512, produces 512-­bit digests 🥇
 
 - 🔴**SYMMETRIC**
-    - AES- Block Cipher, 📝Bock Size 128, 📝Key Size 128, 192, 256 🥇 (AES provides confidentiality, integrity, and authentication when implemented properly. Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.)
-    - Blowfish - 📝Bock Size 64, 📝Key Size 32 - 448 (uses 16 round of encryption regardless of key lenght)
-    - DES - Block Cipher, 📝Bock Size 64, 📝Key Size 56
-    - 2DES - Block Cipher (vulnerable to meet-in-the-middle attack)
-    - 3DES - Block Cipher, 📝Bock Size 64, 📝Key Size 112, 168 
-    - IDEA - 📝Bock Size 64, 📝Key Size 128 (IDEAis frequently used in Pretty Good Privacy (PGP). The IDEA block cipher was developed in response to complaints about the insufficient key length of DES algorithm.)
-    - RC2 - 📝Bock Size 128, 📝Key Size 128
-    - RC4 - Stream Cipher, 📝Key Size 128
-    - RC5 - RSA Block Mode Cipher, 📝Bock Size 32, 64, 128, 📝Key Size 0 - 2048
-    - Skipjack - 📝Block Size 64, 📝Key Size 80
-    - Twofish - 📝Bock Size 128, 📝Key Size 1-256
+    - 💊AES- Block Cipher, 📝Bock Size 128, 📝Key Size 128, 192, 256 🥇 (AES provides confidentiality, integrity, and authentication when implemented properly. Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.)
+    - 💊Blowfish - 📝Bock Size 64, 📝Key Size 32 - 448 (uses 16 round of encryption regardless of key lenght. Blowfish was invented by Bruce Schneier who chose not to patent it but made it available for free, public use. Bruce Schneider also created twofish and threefish.)
+    - 💊DES - Block Cipher, 📝Bock Size 64, 📝Key Size 56
+    - 💊2DES - Block Cipher (vulnerable to meet-in-the-middle attack)
+    - 💊3DES - Block Cipher, 📝Bock Size 64, 📝Key Size 112, 168 
+    - 💊IDEA - 📝Bock Size 64, 📝Key Size 128 (IDEAis frequently used in Pretty Good Privacy (PGP). The IDEA block cipher was developed in response to complaints about the insufficient key length of DES algorithm.)
+    - 💊RC2 - 📝Bock Size 128, 📝Key Size 128
+    - 💊RC4 - Stream Cipher, 📝Key Size 128
+    - 💊RC5 - RSA Block Mode Cipher, 📝Bock Size 32, 64, 128, 📝Key Size 0 - 2048
+    - 💊Skipjack - 📝Block Size 64, 📝Key Size 80
+    - 💊Twofish - 📝Bock Size 128, 📝Key Size 1-256
+    - 💊Serpent - 📝block size of 128 bits,  📝key sizes of 128, 192, or 256 bits (was created and designed by Ross Anderson, Eli Biham, and Lars Knudsen)
+    - 💊SAFER++ "Secure And Fast Encryption Routine++." - same key is used for both encryption and decryption. 📝Block sizes 64 bits or 128 bits, 📝key sizes ranging from 64 bits to 256 bits.
     - In symmetric key cryptography, both block size and key size are critical parameters that define the characteristics and security of an encryption algorithm. 
          - 💠Block Size: Determines the size of data chunks processed in one encryption or decryption operation. If the plaintext is not a multiple of the block size, padding may be required to ensure that the entire block is filled. A larger block size allows the algorithm to handle larger amounts of data per encryption operation, which can improve efficiency and security.
          - 💠Key Size: Determines the strength of the encryption by defining the length of the key used in the encryption algorithm. Larger key sizes can result in increased computational overhead during encryption and decryption, potentially impacting performance, but offers increased security by making it harder to perform brute-force attacks.
 
 - 🔴**ASSYMETRIC (use a pair of keys for each user)**
-    - RSA - Key Transport Algorithm, ✏️Size 512
-    - Diffie-Hellman - Key Exchange Algorithm
-    - EL Gamal - Key Exchange Algorithm (doubles the length of any message it encrypts)
-    - ECC - Elliptic Curve Algorithm, Size Variable (smaller key size due to 160 EC Key = 1024 RSA)
-    - TLS - In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is ­protected using symmetric cryptography.
+    - 💊RSA - Key Transport Algorithm, ✏️Size 512
+    - 💊Diffie-Hellman - Key Exchange Algorithm
+    - 💊EL Gamal - Key Exchange Algorithm (doubles the length of any message it encrypts)
+    - 💊ECC - Elliptic Curve Algorithm, Size Variable (smaller key size due to 160 EC Key = 1024 RSA)
+    - 💊TLS - In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is ­protected using symmetric cryptography.
 
 - 🔴**Key Excahnge Algorithms**:
     - ✈️Diffie-Hellman (DH): Based on the mathematical difficulty of the discrete logarithm problem. Susceptible to man-in-the-middle attacks if not properly authenticated. Variants include Ephemeral Diffie-Hellman (DHE) for forward secrecy. The Diffie-Hellman algorithm allows for the secure exchange of symmetric encryption keys over a public network
