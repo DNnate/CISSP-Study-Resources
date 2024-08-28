@@ -610,19 +610,19 @@ taxed by inefficient implementations of software and VMs.
             - **n(2)** 🥇 Asymmetric cryptosystems use a pair of keys for each user. E.g with 1,000 users, the system will require 2,000 keys.
         - Asymmetric (AKA public key, since one key of a pair is available to anybody) algorithms provide convenient key exchange mechanisms and are scalable to very large numbers of users (addressing the two most significant challenges for users of symmetric cryptosystems) 
         - Asymmetric cryptosystems avoid the challenge of sharing the same secret key between users, by using pairs of public and private keys to allow secure communication without the overhead of complex key distribution
-        - **Public key**: one part of the matching key pair, which can be shared or published
+        - 📁**Public key**: one part of the matching key pair, which can be shared or published
         - Besides the public key, there is a private key that should remain private and protected
         - Private key secrecy and integrity of an asymmetric encryption process are entirely dependent upon protecting the value of the private key
         - While asymmetric encryption is slower, it is best suited for sharing between two or more parties 
         - Most common asymmetric cryptosystems in use today:    
-            - Rivest-Shamir-Adleman (RSA) 
-            - Diffie-Hellman 
-            - ElGamal - The major disadvantage of the ElGamal cryptosystem is that it doubles the length of any message it encrypts.
-            - Eliptical Curve Cryptography (ECC) - The elliptic curve cryptosystem requires significantly shorter keys to achieve encryption that would be the same strength as encryption achieved with the RSA encryption algorithm. A 3,072-­bit RSA key is cryptographically equivalent to a 256-­bit elliptic curve cryptosystem key.
+            - 🐍**Rivest-Shamir-Adleman (RSA)**:Rivest, Shamir, & Adleman (RSA) is an asymmetric algorithm that uses public and private keys. RSA is often used to distribute symmetric encryption keys because asymmetric encryption is computationally expensive and can’t be used to efficiently encrypt large amounts of data. When using asymmetric algorithms like RSA, if a message is encrypted using the private key, it can only be decrypted using the public key; this rule also applies in reverse. If a message is encrypted with the public key, it can only be decrypted using the private key.
+            - 🐍**Diffie-Hellman**: Diffie-Hellman (DH) is an asymmetric algorithm. Mr. Diffie and Mr. Hellman wrote a paper in 1976 that theorized public and private keys. However, the algorithm they came up with does not work that way. It is an algorithm for the purpose of 📝exchanging a symmetric key only. They were unsuccessful in finding the math to use public and private keys. RSA did that in 1977.
+            - 🐍**ElGamal** - The major disadvantage of the ElGamal cryptosystem is that it 📝doubles the length of any message it encrypts.
+            - 🐍**Eliptical Curve Cryptography (ECC)** - The elliptic curve cryptosystem requires significantly 📝shorter keys to achieve encryption that would be the same strength as encryption achieved with the RSA encryption algorithm. A 3,072-­bit RSA key is cryptographically equivalent to a 256-­bit elliptic curve cryptosystem key.
         - **Scenario**: If 🅰️ wants to send a message to 🅱️. 🅰️ must encrypt the message using 🅱️’s public key so that only 🅱️ can decrypt it using 🅱️ private key. If 🅰️ encrypted the message with his own public key, 🅱️ would need to know 🅰️’s private key to decrypt the message. If 🅰️ encrypted it with his own private key, any user could decrypt the message using 🅰️’s freely available public key. 🅰️ could not encrypt the message using 🅱️’s private key because 🅰️ does not have access to it. If 🅰️ did, any user could decrypt it using 🅱️’s freely available public key.
 
 - 3.6.3 Public Key Infrastructure (PKI)
-    - **Public Key Infrastructure (PKI)**: hierarchy of trust relationships permitting the combination of asymmetric and symmetric cryptography along with hashing and digital certificates (giving us hybrid cryptography)
+    - 📂**Public Key Infrastructure (PKI)**: hierarchy of trust relationships permitting the combination of asymmetric and symmetric cryptography along with hashing and digital certificates (giving us hybrid cryptography)
     - The key/certificate life-cycle management consists of six phases:
         - 🧭pre-certification
         - 🧭initialization
