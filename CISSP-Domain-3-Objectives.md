@@ -139,9 +139,11 @@ You may find this domain to be more technical than others, and if you have exper
     - Enable people to access only the data classified for their clearance level
     - A security model provides a framework to implement a security policy.
     - ⚓**The State Machine Model** describes a system that is always secure no matter what state it is in. A secure state machine model system always boots into a secure state, maintains a secure state across all transitions, and allows subjects to access resources only in a secure manner compliant with the security policy. Bell–LaPadula and Biba are built on a state machine model.
+    - ⚓**Information-flow Model** prevents the 📝movement of information from one classification to another. Bell LaPadula and Biba are both information-flow models. The model controls the flow of information from high-security to low-security classifications. These models are used to avoid unauthorized access to data or compromises to data integrity.
          - The information flow model applies state machines to the flow of information.
          - The Bell-LaPadula model applies the information flow model to confidentiality while the Biba model applies it to integrity. They both use security labels on objects and clearances for subjects and is therefore a MAC model. They are both multilevel models.
-    - ⚓**Multilevel Security (MLS)** The concept of MLS is the idea that a system would have multiple levels of classification in the same system. Bell-LaPadula was the first mathematical model of a Multilevel Security (MLS) policy. Access control philosophies can be organized into models that define approaches to security issues. The Take-Grant model, the Bell-LaPadula model, and the Biba model are examples of different access control models.
+     - ⚓**Noninterference Model** is the concept of limiting the 📝actions of a subject at a higher security level so that they do not affect the system state or the actions of a subject at a lower security level. It is based on 📝rules to prevent 📝processes operating in different domains from affecting each other in violation of security policy. The 📝Goguen-Meseguer Model layed the foundation for this model.
+    - ⚓**Multilevel Security (MLS) Model** The concept of MLS is the idea that a system would have multiple levels of classification in the same system. Bell-LaPadula was the first mathematical model of a Multilevel Security (MLS) policy. Access control philosophies can be organized into models that define approaches to security issues. The Take-Grant model, the Bell-LaPadula model, and the Biba model are examples of different access control models.
 
 - 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification. Bell-LaPadula was released in 1976 by the US government to provide for better confidentiality
     - Focuse is on confidentiality ✏️
@@ -188,7 +190,6 @@ You may find this domain to be more technical than others, and if you have exper
     - An integrity model📝
     - it is based on 📝predetermining the set or domain (i.e., a list) of objects that a subject can access.
     - Foundation of noninterference conceptual theories
-        - **Noninterference** is the concept of limiting the actions of a subject at a higher security level so that they do not affect the system state or the actions of a subject at a lower security level.
 - 🔴**Sutherland Model**:
     - Focuses on preventing 📝interference in support of integrity
     - Focus is on Integrity📝
