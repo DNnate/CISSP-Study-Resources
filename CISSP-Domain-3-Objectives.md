@@ -136,14 +136,15 @@ You may find this domain to be more technical than others, and if you have exper
     - Provide a way for a designer to map abstract statements into a security policy prescribing the algorithms and data structures necessary to build hardware and software
     - Enable people to access only the data classified for their clearance level
     - A security model provides a framework to implement a security policy.
-    - **The State Machine Model** describes a system that is always secure no matter what state it is in. A secure state machine model system always boots into a secure state, maintains a secure state across all transitions, and allows subjects to access resources only in a secure manner compliant with the security policy. Bell–LaPadula and Biba are built on a state machine model.
+    - ⚓**The State Machine Model** describes a system that is always secure no matter what state it is in. A secure state machine model system always boots into a secure state, maintains a secure state across all transitions, and allows subjects to access resources only in a secure manner compliant with the security policy. Bell–LaPadula and Biba are built on a state machine model.
          - The information flow model applies state machines to the flow of information.
          - The Bell-LaPadula model applies the information flow model to confidentiality while the Biba model applies it to integrity. They both use security labels on objects and clearances for subjects and is therefore a MAC model. They are both multilevel models.
-- 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification
+    - ⚓**Multilevel Security (MLS)** The concept of MLS is the idea that a system would have multiple levels of classification in the same system. Bell-LaPadula was the first mathematical model of a Multilevel Security (MLS) policy. Access control philosophies can be organized into models that define approaches to security issues. The Take-Grant model, the Bell-LaPadula model, and the Biba model are examples of different access control models.
+
+- 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification. Bell-LaPadula was released in 1976 by the US government to provide for better confidentiality
     - Focuse is on confidentiality ✏️
     - Simple security property: 🔥No read-up 
     - Star (*) security property: 🔥No write-down ( an individual may not write to a file at a lower classification level than that of the individual. AKA confinement property)
-    - Strong star (*) property states that a subject may not read or write information that resides at any security level, except for the level the subject is a member of.
     - Discretionary Security Property: uses an access matrix (need to know in order to access)
     - Doesn't address covert channels
 - 🔴**Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
@@ -176,8 +177,9 @@ You may find this domain to be more technical than others, and if you have exper
 - 🔴**Brewer and Nash Model**:
     - AKA "ethical wall", and "cone of silence"
     - created to permit access controls to change dynamically based on a user's previous activity
-    - dynamically changes access controls to prevents conflicts of interest.📝
-    - implemented in environments where data from different clients exist 
+    - dynamically changes access controls to prevents 📝conflicts of interest.
+    - implemented in environments where data from different clients exist
+    -  - Focus is on Confidentiality📝
 - 🔴**Goguen-Meseguer Model**:
     - An integrity model📝
     - it is based on 📝predetermining the set or domain (i.e., a list) of objects that a subject can access.
@@ -197,6 +199,7 @@ You may find this domain to be more technical than others, and if you have exper
 - 🔴**Star Model**: 
     - Not an official model, but name refers to using asterisks (stars) to dictate whether a person at a specific level of confidentiality is allowed to write data to a lower level of confidentiality
     - Also determines whether a person can read or write to a higher or lower level of confidentiality
+    - 📝Strong star (*) property states that a subject may not read or write information that resides at any security level, except for the level the subject is a member of.
 - 🔴**Access Control Matrix**: 
     - An access control matrix assembles ACLs from multiple objects into a single table.
          - Access control list is a list of individual users who may access the file.  An ACL is a list of permissions attached to an object (such as a file, directory, or network resource) that specifies which users or systems are granted access and what kind of access they are permitted. Access Control List  consists of multiple access control entries.
