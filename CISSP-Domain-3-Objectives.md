@@ -977,9 +977,9 @@ taxed by inefficient implementations of software and VMs.
         - 🍐**Stage 3**: ✏️flame stage: this is when a flame can be seen with the naked eye
         - 🍐**Stage 4**: ✏️heat stage: at stage 4, there is an intense heat buildup and everything in the area burns
     - Fire extinguisher classes:
-        - **🧯Class A**: common combustibles 🟡Ash (water, foam, wet chemical agent)
+        - **🧯Class A**: common combustibles e.g wood or paper 🟡Ash (water, foam, wet chemical agent)
         - **🧯Class B**: liquids      🟡boil (CO2, Halon or an acceptable halon substitute like FM-200, , Sodium bicarbonate, mono-ammonium phosphate and soda acid)
-        - **🧯Class C**: electrical   🟡conduct (FM-200, CO2, dry chemical agents, Sodium bicarbonate and mono-ammonium phosphate)
+        - **🧯Class C**: electrical   🟡conduct (FM-200, CO2, dry chemical agents, Sodium bicarbonate and mono-ammonium phosphate) require carbon dioxide or dry powder to extinguish them.
         - **🧯Class D**: metal        🟡dilythium (Sodium Chloride (NaCl), Dry Powder Extinguishers)
         - **🧯Class K**: cooking material (oil/grease) 🟡kitchen (Potassium Acetate Solution, Ansul R-102)
     - Four main types of suppression:
@@ -1116,7 +1116,7 @@ taxed by inefficient implementations of software and VMs.
     - 💊RC4 - Stream Cipher, 📝Key Size 128
     - 💊RC5 - RSA Block Mode Cipher, 📝Bock Size 32, 64, 128, 📝Key Size 0 - 2048
     - 💊Skipjack - 📝Block Size 64, 📝Key Size 80
-    - 💊Twofish - 📝Bock Size 128, 📝Key Size 1-256
+    - 💊Twofish - 📝Bock Size 128, 📝Key Size 1-256 (Twofish employs 16 rounds of encryption with variable key lengths up to 256 bits.)
     - 💊Serpent - 📝block size of 128 bits,  📝key sizes of 128, 192, or 256 bits (was created and designed by Ross Anderson, Eli Biham, and Lars Knudsen)
     - 💊SAFER++ "Secure And Fast Encryption Routine++." - same key is used for both encryption and decryption. 📝Block sizes 64 bits or 128 bits, 📝key sizes ranging from 64 bits to 256 bits.
     - In symmetric key cryptography, both block size and key size are critical parameters that define the characteristics and security of an encryption algorithm. 
