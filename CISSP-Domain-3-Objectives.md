@@ -32,20 +32,24 @@ You may find this domain to be more technical than others, and if you have exper
 - 🍮**Transposition Cipher**: encryption/decription process using transposition. Transposition ciphers are a type of encryption method where the positions of the characters in the plaintext are shifted according to a certain system, effectively permuting the characters. Unlike substitution ciphers, transposition ciphers do not alter the actual characters themselves, only their 📝positions. e.g frequency of message might match known english language patterns. It can be broken with frequency analysis combined with pattern recognition.
     - Transposition is the process of altering the order of the plaintext in order to encrypt it. If the plaintext is again ‘when’ the ciphertext could be ‘hwne’. All of the letters are still there, they are just in a different order now. Today’s block cipher does a combination of both substitution and transposition. 
 - 🍮**Substituion Cipher**: Encryption/decription process using subsitution. Substitution is the method of altering plaintext by replacing a value with a different value. i.e 📝characters are replaced. Examples include
-     - 🎈Caesar Cipher: A type of substitution cipher where each letter in the plaintext is shifted a certain number of places down the alphabet.
+     - 📁**Caesar Cipher**: A type of substitution cipher where each letter in the plaintext is shifted a certain number of places down the alphabet.
      - 🎈ROT3: A specific case of the Caesar cipher where each letter is shifted by 3 places.
      - 🎈ROT13: A specific form of the Caesar cipher where each letter is shifted by 13 places.
      - 🎈AtBash: A substitution cipher where each letter of the alphabet is mapped to its reverse.
-     - 🎈Vigenere: A polyalphabetic cipher that uses a keyword to shift letters. The shifts are determined by the letters of the keyword. Vigenère ciphers are an example of a substitution cipher technique.
+     - 📁**Vigenere**: A polyalphabetic cipher that uses a keyword to shift letters. The shifts are determined by the letters of the keyword. Vigenère ciphers are an example of a substitution cipher technique.
+         - The Vigenère cipher was invented by Blaise de Vigenère in the 16th century. It is a polyalphabetic cipher. Side note, it was first described by Bellaso in 1553.
+         - Both Vernman and Vigenère are substitution ciphers.
+     - 📁**One-­time Pad**: A one-time pad (OTP) is a theoretically unbreakable encryption technique in cryptography that involves using a random key that is as long as the message being sent. It is the only known cryptosystem that is not vulnerable to attacks. All other cryptosystems, including transposition ciphers, substitution ciphers, and even AES, are vulnerable to attack, even if no attack has yet been discovered. A one-­time pad is only appropriate for use in human-­to-­human communications.
+        - 🎈The encryption key must be randomly generated (Keys must be genuinely random values)
+        - 🎈The encryption key must be at least as long as the message to be encrypted. (The key must be the same length as the message)
+        - 🎈Each one-time pad must be used only once (Keys can only be used one time)
+        - 🎈The one-time pad must be physically protected against disclosure (The sender and receiver must keep the keys secure and Keys must be exchanged securely)
+            - Gilbert Vernam invented the One-Time Pad (OTP) in 1917 and it is sometimes referred to as the 📝Vernam Cipher. A one-time pad requires a completely random key that is the same length as the message. Each bit of the message and the key are exclusive-OR (XOR) together. The resulting ciphertext is considered unbreakable by brute force as long as the key remains secure. For a one-time pad to be implemented correctly, keys cannot be reused and must truly be random.
+        - Both Vernman and Vigenère are substitution ciphers. 
      - Substitution and transposition are two different types of encryption techniques. They are both used together in block ciphers today.
 - 🍍**Work factor**: amount of effort necessary to break a cryptographic system, measured in elapsed time. When file encryption is strong, it is said to have increased the work factor level. Work factor refers to the difficulty of breaking an encrypted file. Therefore, it takes significantly more time to hack or break.
 - 🍍**Confusion**: occurs when the relationship between the plaintext and the key is so complicated that an attacker can’t merely continue altering the plaintext and analyzing the resulting ciphertext to determine the key.
 - 🍍**Diffusion** occurs when a change in the plaintext results in multiple changes spread throughout the ciphertext. Claude Shannon, at Belcore, wrote a paper in 1945 explaining that confusion and diffusion are two critical concepts in cryptography today. Diffusion speaks to the relationship between the plaintext and the ciphertext. Basically, what is wanted is to ensure that patterns in the plaintext do not appear in the ciphertext. i.e 📝eliminate patterns
-- **One-­time Pad**: A one-time pad (OTP) is a theoretically unbreakable encryption technique in cryptography that involves using a random key that is as long as the message being sent. It is the only known cryptosystem that is not vulnerable to attacks. All other cryptosystems, including transposition ciphers, substitution ciphers, and even AES, are vulnerable to attack, even if no attack has yet been discovered. A one-­time pad is only appropriate for use in human-­to-­human communications.
-    - The encryption key must be randomly generated.
-    - The encryption key must be at least as long as the message to be encrypted.
-    - Each one-time pad must be used only once.
-    -  The one-time pad must be physically protected against disclosure. 
 
 [3.1](#3.1) Research, implement, and manage engineering processes using secure design principles (OSG-9 Chpts 1,8,9,16). The standard secure design principles are: ❄️threat modeling, ❄️least privilege, ❄️defense in depth, ❄️secure defaults, ❄️fail securely, ❄️separation of duties, ❄️keep it simple, ❄️zero trust, ❄️privacy by design, and ❄️trust but verify. 
 
