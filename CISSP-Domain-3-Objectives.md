@@ -1107,12 +1107,13 @@ taxed by inefficient implementations of software and VMs.
 - 🔴**SYMMETRIC**
     - 💊AES- Block Cipher, 📝Bock Size 128, 📝Key Size 128, 192, 256 🥇 (AES provides confidentiality, integrity, and authentication when implemented properly.
         - Nonrepudiation which requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message and cannot be achieved with a symmetric cryptosystem, such as AES.)
+        - It is both substitution and transposition
         - NIST selected the Advanced Encryption Standard (AES) in 2000 to replace the older Data Encryption Standard (DES) that had known vulnerabilities. The AES cipher allows the use of three key lengths:
             - 128-bit keys require 10 rounds of encryption
             - 192-bit keys require 12 rounds of encryption
             - 256-bit keys require 14 rounds of encryption 
-    - 💊Blowfish - 📝Bock Size 64, 📝Key Size 32 - 448 (uses 16 round of encryption regardless of key lenght. Blowfish was invented by Bruce Schneier who chose not to patent it but made it available for free, public use. Bruce Schneider also created twofish and threefish.)
-    - 💊DES - Block Cipher, 📝Bock Size 64, 📝Key Size 56
+    - 💊Blowfish - 📝Bock Size 64, 📝Key Size 32 - 448 (uses 16 round of encryption regardless of key lenght. Blowfish was invented by Bruce Schneier who chose not to patent it but made it available for free, public use. Bruce Schneider also created twofish and threefish. It is both substitution and transposition.)
+    - 💊DES - Block Cipher, 📝Bock Size 64, 📝Key Size 56. It is both substitution and transposition
     - 💊2DES - Block Cipher (vulnerable to meet-in-the-middle attack)
     - 💊3DES - Block Cipher, 📝Bock Size 64, 📝Key Size 112, 168 
     - 💊IDEA - 📝Bock Size 64, 📝Key Size 128 (IDEAis frequently used in Pretty Good Privacy (PGP). The IDEA block cipher was developed in response to complaints about the insufficient key length of DES algorithm.)
