@@ -349,17 +349,17 @@ rewriting with a new value or using a menu option to reset the device to the fac
       - Homomorphic encryption algorithms may be used to protect data in use. **Homomorphic encryption** it allows for the creation and interaction of otherwise hidden code that may be sensitive or proprietary. Homomorphic encryption is a form of encryption that allows computations to be performed on encrypted data without decrypting it first. This means that data can remain encrypted while still being processed or analyzed, and the results can be decrypted to reveal the outcome of the computation.
 - 📁**CPU**
     - A CPU register is a temporary storage location located on the Central Processing Unit (CPU). It is used to store instruction sets. When a CPU executes an instruction set, it loads it from the register.
-    - Ring Architecture refers to the different privilege levels within a CPU that determine how much access a process has to system resources. There are typically four rings in this architecture, numbered from 0 to 3.
-        - Ring 0: Most privileged (Kernel Mode)
-        - Ring 1 
-        - Ring 2: 
-        - Ring 3: Least privileged (User Mode)
-    -  CPU Security Features:
-        - Trusted Execution Environment (TEE): A secure area of the main processor that ensures sensitive data is stored, processed, and protected in a secure environment.
-        - TPM/HSM: Dedicated hardware for encryption processes that enhances security by offloading sensitive operations from the main CPU.
-        - Data Execution Prevention (DEP): A CPU feature that prevents code from being executed in certain regions of memory, which helps protect against buffer overflow attacks.
-        - Address space layout randomization (ASLR): CPUs protect memory, such as through address space layout randomization (ASLR) and segmentation to prevent unauthorized access or modification of data.
-    - The Arithmetic Logic Unit (ALU) is the component of a computer processor that performs arithmetic and bitwise operations on the data it processes. Arithmetic operations include basic calculations such as addition, subtraction, multiplication, and division, while bitwise operations involve manipulating individual bits within data words, including operations like AND, OR, XOR, NOT, shifts, and rotations. The ALU is a fundamental part of the CPU, enabling it to carry out the mathematical and logical operations that underpin virtually all computer processing tasks.
+    - **Ring Architecture** refers to the different privilege levels within a CPU that determine how much access a process has to system resources. There are typically four rings in this architecture, numbered from 0 to 3.
+        - 🎈Ring 0: Most privileged mainly the operating system (Kernel Mode)
+        - 🎈Ring 1: include OS componenets
+        - 🎈Ring 2: Include device drivers and protocols
+        - 🎈Ring 3: Least privileged include User-level programs and applications. (User Mode)
+    -  **CPU Security Features**:
+        - 🩹Trusted Execution Environment (TEE): A secure area of the main processor that ensures sensitive data is stored, processed, and protected in a secure environment.
+        - 🩹TPM/HSM: Dedicated hardware for encryption processes that enhances security by offloading sensitive operations from the main CPU.
+        - 🩹Data Execution Prevention (DEP): A CPU feature that prevents code from being executed in certain regions of memory, which helps protect against buffer overflow attacks.
+        - 🩹Address space layout randomization (ASLR): CPUs protect memory, such as through address space layout randomization (ASLR) and segmentation to prevent unauthorized access or modification of data.
+    - 💥The **Arithmetic Logic Unit** (ALU) is the component of a computer processor that performs arithmetic and bitwise operations on the data it processes. Arithmetic operations include basic calculations such as addition, subtraction, multiplication, and division, while bitwise operations involve manipulating individual bits within data words, including operations like AND, OR, XOR, NOT, shifts, and rotations. The ALU is a fundamental part of the CPU, enabling it to carry out the mathematical and logical operations that underpin virtually all computer processing tasks.
 - 📁**Memory**: Memory is a series of on/off switches representing bits: 0s (off) and 1s (on). Memory may be chip based, disk based, or tape based.
     - RAM is random-access memory: “random” means the CPU may randomly access or jump to any location in memory.
     - Sequential memory, such as tape, must sequentially read memory, beginning at offset zero, to the desired portion of memory.
