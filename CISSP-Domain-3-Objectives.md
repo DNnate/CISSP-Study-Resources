@@ -1,11 +1,10 @@
 [Domain 3](#domain3-top) **Security Architecture and Engineering**
 
 You may find this domain to be more technical than others, and if you have experience woring in a security engineering role you likely have an advantage. If not, allocate extra time to this domain to ensure you have a good understanding of the topics
-- **Algorithm**: a mathmatical function that is used in the encryption and decryption process; can be simply or very complex; also defined as a set of instructions by which encryption and decryption is done
 - 📗**Cryptology** is the science of secure communications and is the study of both cryptography and cryptanalysis. It is the science of studying the methods of secure communications.
 - 📗**Cryptanalysis**: study of techniques for attempting to defeat cryptographic techniques and generally information security services. Cryptanalysis is the study of methods to break encryption technologies.
     - **Frequency analysis**: form of cryptanalys that uses frequency of occurrence of letters, words or symbols in the plaintext as a way of reducing the search space
-- 📗**Cryptography**: study of/application of methods to secure the meaning and content of messages, files etc by disguise, obscuration, or other transformations. Cryptography is the study of encryption and decryption techniques to protect the transmission and storage of data, voice, and video.
+- 📗**Cryptography**: study of/application of methods to secure the meaning and content of messages, files etc by disguise, obscuration, or other transformations. Cryptography is the study of encryption and decryption techniques to protect the transmission and storage of data, voice, and video. In cryptography, the mathematical function that determines the cryptographic operation of the encryption and decryption processes, is called the 💥algorithm. Algorithms  can be simply or very complex; Algorithms is also defined as a set of instructions by which encryption and decryption is done
     - 🔨**Encryption**: process and act of converting the message from plaintext to ciphertext (AKA enciphering)
         - 🎈**Block Mode Encryption**: using fixed-length sequences of input plaintext symbols as the unit of encryption
         - 🎈**Stream mode encryption**: system using a process that treats the input plaintext as a continuous flow of symbols, encrypting one symbol at a time; usually uses a streaming key, using part of the key as a one-time key for each symbol's encryption
