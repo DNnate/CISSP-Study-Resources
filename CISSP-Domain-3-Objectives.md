@@ -645,7 +645,14 @@ taxed by inefficient implementations of software and VMs.
               - Disadvantage is that if the key stream is reused (keystream reuse), it can compromise security, as it makes the cipher vulnerable to attacks. Ensuring that the same key stream is not reused is critical and can complicate key management.
           - 🥑Synchronous Stream Cipher: The key stream is generated independently of the plaintext and ciphertext, based solely on the key and possibly an initialization vector (IV).
           - 🥑Self-Synchronous Stream Cipher: The key stream is dependent on the previous bits of the ciphertext, meaning it can recover synchronization even if some bits are lost or corrupted during transmission. 
-    - 🔴**Hybrid encryption system**: a system that uses both symmetric and asymmetric encryption
+    - 🔴**Hybrid encryption system**: a system that uses both symmetric and asymmetric encryption. Secure Sockets Layer (SSL) and Transport Layer Security (TLS) use both asymmetric and symmetric encryption to protect data in transit. Asymmetric encryption is used to authenticate the Client or Server and securely exchange the symmetric key. Symmetric encryption is used to encrypt data after the handshake has taken place.
+        - Client sends a Client hello message to the Server
+        - Server sends the client a Server hello message encrypted with the private key
+        - Client decrypts the message using the public key
+        - Client sends pre-master secret encrypted with the public key
+        - Server decrypts the pre-master secret with the private key
+        - Both the Client and Server generate symmetric keys using the pre-master secret (ephemeral symmetric session key)
+        - Symmetric encryption begins between the Client and Server
     - 🔴**Asymmetric** encryption: process that uses different keys for encryption and decryption, and in which the decryption key is computationally not possible to determine given the encryption key itself
         - uses public and private key
         - In an asymmetric cryptosystem, the sender of a message encrypts the message using the recipient's public key. The recipient may then decrypt that message using their own private key, which only they should possess.
