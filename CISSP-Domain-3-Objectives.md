@@ -998,7 +998,7 @@ taxed by inefficient implementations of software and VMs.
         - 🍐**Stage 4**: **heat stage**: at stage 4, there is an intense heat buildup and everything in the area burns
     - Fire extinguisher classes:
         - **🧯Class A**: common combustibles e.g wood or paper 🟡Ash (water, foam, wet chemical agent)
-        - **🧯Class B**: liquids      🟡boil (CO2, Halon or an acceptable halon substitute like FM-200, , Sodium bicarbonate, mono-ammonium phosphate and soda acid)
+        - **🧯Class B**: liquids      🟡boil (CO2, Halon or an acceptable halon substitute like FM-200, , Sodium bicarbonate, mono-ammonium phosphate, foam, or dry powder. and soda acid)
         - **🧯Class C**: electrical   🟡conduct (FM-200, CO2, dry chemical agents, Sodium bicarbonate and mono-ammonium phosphate) require carbon dioxide or dry powder to extinguish them.
         - **🧯Class D**: metal        🟡dilythium (Sodium Chloride (NaCl), Dry Powder Extinguishers)
         - **🧯Class K**: cooking material (oil/grease) 🟡kitchen (Potassium Acetate Solution, Ansul R-102)
