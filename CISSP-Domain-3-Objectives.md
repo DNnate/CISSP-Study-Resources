@@ -17,11 +17,6 @@ You may find this domain to be more technical than others, and if you have exper
 - 🍮**An initialization vector (IV)** is a random bit string (a nonce) that is the same length as the block size that is XORed with the message. IVs are used to create a unique ciphertext every time the same message is encrypted with the same key.
     - An Initialization Vector (IV) is a random value used with a key to encrypt or decrypt data. The IV is used to reduce the likelihood of the same plaintext patterns being found in the ciphertext. One of the reasons Wired Equivalent Privacy (WEP) was weak was because it used a short (24-bit) and predictable IV. This caused the same IV to be used multiple times throughout the stream, allowing attackers to find patterns between messages using the same IV.
     - The IV does not change the key length in any way. The purpose is to solely hide patterns found within the plaintext so that they are not exposed in the ciphertext. 
-- **Key**: the input that controls the operation of the cryptographic algorthm, determining the behavior of the algorithm and permis the reliable encyrption and decryption of the message
-- **Key pair**: matching set of one public and one private key
-- **Key escrow**: process by which keys (asymmetric or symmetric) are placed in a trusted storage agent's custody, for later retrieval
-- **Key generation**: the process of creating a new encryption/decryption key
-- **Key recovery**: process of reconstructing an encryption key from the cyphertext alone; if there is a workable key recovery system, it means the algorithm is not secure
 - **Key space**: represents the total number of possible values of keys in a cryptographic algorithm or password
 - **Key Encryption Keys (KEK)** are encryption keys that are used to protect other keys. If there is an existing shared key it could be used to encrypt another key that makes it easier to exchange the original key.
 - **Out-of-band**: transmitting or sharing control information (e.g. encryption keys and crypto variables) by means of a separate and distinct communications path, channel, or system
@@ -590,8 +585,6 @@ taxed by inefficient implementations of software and VMs.
    - 🍍Software: OpenSSL FIPS Object Module, Microsoft Windows Crypto Modules, Bouncy Castle FIPS Modules
    - 🍍Cloud: Microsoft Azure Key Vault, Amazon Key Management Service (KMS), Google cloud Key Managment Service (KMS)
 - **Level of Protection:** dictates that encryption keys must be secured at the same level of control or higher as the data they protect. Sensitivity of the data dictates this level of protection as defined in the org security policies.
-- **Key Recovery:** Circumstances where you need to recover a key for a particular user, without that users cooperation such as termination or key loss.
-- **Key Escrow:** Copies of keys are held by a trusted 3rd party in a secure environment. Comes up in conversations around disasater recovery, business continuity, law enforcement access, regulatory compliance etc
 - 3.6.1 Cryptographic lifecycle (e.g., keys, algorithm selection)
     - Keep **Moore’s Law** in mind (processing capabilities of state-of-the-art microprocessors double about every 2 years), and have appropriate governance controls in place to ensure that algorithms, protocols, and key lengths selected are sufficient to preserve the integrity of the cryptosystems for as long as necessary -- to keep secret information safe
     - Specify the cryptographic algorithms (such as AES, 3DES, and RSA) acceptable for use in an organization
@@ -725,7 +718,10 @@ taxed by inefficient implementations of software and VMs.
             - 🐌Quantum Key Distribution: 🥇 a secure communication that involves components of quantum mechanics. Enables a party to generate a shared random key known only to them. This secret key can then be used to encrypt and decrypt messages. it has the ability to detect eavesdropping by any 3rd party trying to gain knowledge of the key. eavesdropper interception introduces detectable anomalies. Not the same as quantum cryptography. it relies on having an authenticated classical channel of communication. it means the parties have already exchanged symmetric keys of sufficient lenght or public keys of suffcient security level. Only used for key distribution and not to transmit data. used in high security scenarios.
         - Key management can be difficult with symmetric encryption but is much simpler with asymmetric encryption
         - There are several tasks related to key management:
+            - ✴️**Key**: the input that controls the operation of the cryptographic algorthm, determining the behavior of the algorithm and permis the reliable encyrption and decryption of the message
+            - ✴️**Key pair**: matching set of one public and one private key
             - ✴️**Key Creation**: Encryption keys should be generated using FIPS 140-2/3 validated modules
+            - ✴️**Key generation**: the process of creating a new encryption/decryption key
             - ✴️**Key distribution**: the process of sending a key to a user or system; it must be secure and it must be stored in a secure way on the computing device
                 - keys are stored before and after distribution; when distributed to a user, it can't hang out on a user's desktop
             - Keys shouldn't be in cleartext outside the crypography device. Encrypt keys with a sepereate encryption key before distributing to other parties.
@@ -735,7 +731,8 @@ taxed by inefficient implementations of software and VMs.
             - ✴️**Key Usage**: AUP determines guard rails for key usage
             - ✴️**Key Destruction**: Removal of an encryption key from its operational location
             - ✴️**Key Deletion**: Removing any information that can be used to reconstruct the key e.g device wipe in MDM such as Airwatch & MS Intune
-            - ✴️**Key escrow**: process or entity that can recover lost or corrupted cryptographic keys
+            - ✴️**Key escrow**: process or entity that can recover lost or corrupted cryptographic keys. It is a process by which keys (asymmetric or symmetric) are placed in a trusted storage agent's custody, for later retrieval. Copies of keys are held by a trusted 3rd party in a secure environment. Comes up in conversations around disasater recovery, business continuity, law enforcement access, regulatory compliance etc
+            - ✴️**Key Recovery:** Circumstances where you need to recover a key for a particular user, without that users cooperation such as termination or key loss. It is also the process of reconstructing an encryption key from the cyphertext alone; if there is a workable key recovery system, it means the algorithm is not secure.
                 - **multiparty key recovery**: when two or more entities are required to reconstruct or recover a key
                 - **m of n control**: 🥇 you designate a group of (n) people as recovery agents, but only need subset (m) of them for key recovery. M of N Control requires that a minimum number of agents (M) out of the total number of agents (N) work together to perform high-­security tasks. M of N Control is an example of a split knowledge technique, but not all split knowledge techniques are used for key escrow. In an m of n control system, at least m of n possible escrow agents must collaborate to retrieve an encryption key from the escrow database.
                 - **split custody**: enables two or more people to share access to a key (e.g. for example, two people each hold half the password to the key)
