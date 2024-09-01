@@ -44,6 +44,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
 - **Point-to-Point Protocol**: a standard method for transporting multiprotocol datagrams over point-to-point links
 - **Port Address Translation**: an extension of NAT (Network Address Translation) translating all addresses to one routable IP address and translate the source port number in the packet to a unique value. NAT offers many benefits.
      - NAT hides the internal IP addressing scheme
+     - Network Address Translation (NAT) rewrites Internet Protocol (IP) headers
      - NAT enables the sharing of a few public internet addresses with a large number of internal clients.
      - NAT supports the use of the private IP addresses from RFC 1918 on an internal network.
      - Static NAT is needed to allow an outside entity to initiate communications with an internal system behind a NAT proxy. 
