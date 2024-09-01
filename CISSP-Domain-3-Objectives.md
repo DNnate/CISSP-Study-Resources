@@ -650,6 +650,7 @@ taxed by inefficient implementations of software and VMs.
 
 - 3.6.3 Public Key Infrastructure (PKI)
     - 📂**Public Key Infrastructure (PKI)**: hierarchy of trust relationships permitting the combination of asymmetric and symmetric cryptography along with hashing and digital certificates (giving us hybrid cryptography)
+        - Digital certificates contain public keys that belong to someone or something (e.g. a web server). The standard package that holds the public keys is the ITU-TSS X.509 format. There are several other fields within the certificate such as the subject’s name and the Certificate Authorities (CA) signature. The CA is the trusted source of certificates. They (human and computer combined) are charged with knowing for sure who the key will belong to and then publishing the X.509 certificate. 
     - The key/certificate life-cycle management consists of six phases:
         - 🧭pre-certification
         - 🧭initialization
