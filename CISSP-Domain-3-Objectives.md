@@ -645,7 +645,9 @@ taxed by inefficient implementations of software and VMs.
               - Disadvantage is that if the key stream is reused (keystream reuse), it can compromise security, as it makes the cipher vulnerable to attacks. Ensuring that the same key stream is not reused is critical and can complicate key management.
           - 🥑Synchronous Stream Cipher: The key stream is generated independently of the plaintext and ciphertext, based solely on the key and possibly an initialization vector (IV).
           - 🥑Self-Synchronous Stream Cipher: The key stream is dependent on the previous bits of the ciphertext, meaning it can recover synchronization even if some bits are lost or corrupted during transmission. 
-    - 🔴**Hybrid encryption system**: a system that uses both symmetric and asymmetric encryption. Secure Sockets Layer (SSL) and Transport Layer Security (TLS) use both asymmetric and symmetric encryption to protect data in transit. Asymmetric encryption is used to authenticate the Client or Server and securely exchange the symmetric key. Symmetric encryption is used to encrypt data after the handshake has taken place.
+    - 🔴**Hybrid encryption system**: a system that uses both symmetric and asymmetric encryption.
+    - 🍳Pretty Good Privacy (PGP) is a hybrid cryptosystem that uses the International Data Encryption Algorithm (IDEA), a symmetric block algorithm, to encrypt the data. PGP uses a web of trust instead of a traditional Public Key Infrastructure (PKI). The commercial version uses the asymmetric algorithms of RSA and the free version uses the Diffie-Hellman key exchange. Symmetric algorithms are used to encrypt and protect the confidentiality of data.
+    - 🍳Secure Sockets Layer (SSL) and Transport Layer Security (TLS) use both asymmetric and symmetric encryption to protect data in transit. Asymmetric encryption is used to authenticate the Client or Server and securely exchange the symmetric key. Symmetric encryption is used to encrypt data after the handshake has taken place.
         - Client sends a Client hello message to the Server
         - Server sends the client a Server hello message encrypted with the private key
         - Client decrypts the message using the public key
@@ -660,6 +662,7 @@ taxed by inefficient implementations of software and VMs.
             - **n(2)** 🥇 Asymmetric cryptosystems use a pair of keys for each user. E.g with 1,000 users, the system will require 2,000 keys.
         - Asymmetric (AKA public key, since one key of a pair is available to anybody) algorithms provide convenient key exchange mechanisms and are scalable to very large numbers of users (addressing the two most significant challenges for users of symmetric cryptosystems) 
         - Asymmetric cryptosystems avoid the challenge of sharing the same secret key between users, by using pairs of public and private keys to allow secure communication without the overhead of complex key distribution
+        - Asymmetric algorithms should be used for symmetric key exchange or to digitally sign the data, but 🚫not for confidentiality as it is too slow. Asymmetric algorithms can be 1,000 to 10,000 times slower than symmetric algorithms when they are encrypting and decrypting data. 
         - 📁**Public key**: one part of the matching key pair, which can be shared or published
         - Besides the public key, there is a private key that should remain private and protected
         - Private key secrecy and integrity of an asymmetric encryption process are entirely dependent upon protecting the value of the private key
