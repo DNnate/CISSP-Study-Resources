@@ -361,6 +361,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - 📘**Wired Equivalent Privacy (WEP)**:
             - WEP is defined by the original IEEE 802.11 standard
             - WEP uses a predefined shared Rivest Cipher 4 (RC4) secret key for both authentication (SKA) and encryption
+            - Temporal Key Integrity Protocol (TKIP) is a combination of RC4 and the hashing algorithm of Michael that is used in Wireless Encryption Protocol (WEP).
             - Shared key is static
             - WEP is weak from RC4 flaws 
         - 📘**Wi-Fi Protected Access II (WPA2)**:
