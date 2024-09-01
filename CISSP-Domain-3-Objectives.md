@@ -985,8 +985,10 @@ taxed by inefficient implementations of software and VMs.
         - soda acid and other dry powders suppress the fuel supply
         - - **VESDA**: very early smoke detection process (air sensing device brand name)
         - carbon dioxide (CO2) suppresses the oxygen supply thus can be harmful to humans 
-        - halon substitutes and other nonflammable gases interfere with the chemistry of combustion and/or suppress the oxygen supply. FM-200 is a chemical suppressant commonly used in place of water in data centers.
+        - In 1994, the Montreal Protocol banned the creation of more halon. Halon is an environmental hazard because it destroys the ozone layer which protects the earth.
+        - Halon substitutes and other nonflammable gases interfere with the chemistry of combustion and/or suppress the oxygen supply. for example FM-200, which is a chemical suppressant commonly used in place of water in data centers.
             - 📝FM-200 is a gas that extinguishes fires, making it a safe suppression system for electronics. FM-200 is a colorless suppression agent that is electrically non-conductive and safe for humans. It extinguishes fire through heat absorption. It can be used to replace Halon in fire suppression systems.
+            - FM-200 uses HFC-227ea, leaves no residue, and does not require costly cleanup. FM-200 systems replaced halon. 
     - Fire stages:
         - 🍐**Stage 1**: **incipient stage**: early warning of fire. At this stage, there is only air ionization and no smoke
         - 🍐**Stage 2**: **smoke stage**: smoke is visible from the point of ignition
