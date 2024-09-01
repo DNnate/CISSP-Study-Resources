@@ -3,9 +3,9 @@
 You may find this domain to be more technical than others, and if you have experience woring in a security engineering role you likely have an advantage. If not, allocate extra time to this domain to ensure you have a good understanding of the topics
 - **Algorithm**: a mathmatical function that is used in the encryption and decryption process; can be simply or very complex; also defined as a set of instructions by which encryption and decryption is done
 - **Collision**: occurs when a hash function generates the same output for different inputs. Collision is a term related to hashing algorithms. If two pieces of plaintext hashes to the same value, there is a collision. This is the problem that the 📝birthday attack exploits.
-- **Cryptanalysis**: study of techniques for attempting to defeat cryptographic techniques and generally information security services
+- 📗**Cryptanalysis**: study of techniques for attempting to defeat cryptographic techniques and generally information security services
     - **Frequency analysis**: form of cryptanalys that uses frequency of occurrence of letters, words or symbols in the plaintext as a way of reducing the search space
-- **Cryptography**: study of/application of methods to ssecure the meaning and content of messages, files etc by disguise, obscuration, or other transformations.
+- 📗**Cryptography**: study of/application of methods to ssecure the meaning and content of messages, files etc by disguise, obscuration, or other transformations.
     - 🔨**Encryption**: process and act of converting the message from plaintext to ciphertext (AKA enciphering)
         - 🎈**Block Mode Encryption**: using fixed-length sequences of input plaintext symbols as the unit of encryption
         - 🎈**Stream mode encryption**: system using a process that treats the input plaintext as a continuous flow of symbols, encrypting one symbol at a time; usually uses a streaming key, using part of the key as a one-time key for each symbol's encryption
@@ -141,7 +141,7 @@ You may find this domain to be more technical than others, and if you have exper
      - ⭐Data Loss Prevention (DLP) 
 
 [3.2](#3.2) Understand the fundamental concepts of security modles (e.g. Biba, Star Model, Bell-LaPadula) (OSG-9 Chpt 8)
-- Security models:
+- 📗**Security models**:
     - Intended to provide an explicit set of rules that a computer can follow to implement the fundamental security concepts, processes, and procedures of a security policy 
     - Provide a way for a designer to map abstract statements into a security policy prescribing the algorithms and data structures necessary to build hardware and software
     - Enable people to access only the data classified for their clearance level
@@ -369,7 +369,7 @@ This objective relates to identifying vulnerabilities and corresponding mitigati
             - ✏️restrict code to only essential apps 
             - ✏️log all activity
 - 3.5.6 Cloud-based systems (e.g., Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))
-    - **Cloud-based systems**: on-demand access to computing resources available from almost anywhere
+    - 📗**Cloud-based systems**: on-demand access to computing resources available from almost anywhere
         - 🍎Public Cloud: Operates a multitenant environments, where the services are delivered over the public Internet and shared across different organizations. In the public cloud computing model, the vendor builds a single platform that is shared among many different customers. This is also known as the shared tenancy model.
         - 🍎Private/Dedicated cloud: also known as a private cloud, is infrastructure operated solely for a single organization, whether managed internally or by a third-party, and hosted either internally or externally.
         - 🍎Hybrid cloud: is a composition of two or more cloud delivery models (private, community, or public) that remain distinct entities but are bound together, offering the benefits of multiple deployment models.
@@ -557,7 +557,7 @@ taxed by inefficient implementations of software and VMs.
 - 🔵**Static systems/environments** are applications, OSs, hardware sets, or networks that are configured for a specific need, capability, or function, and then set to remain unaltered.
      - A nonpersistent system or static system is a computer system that does not allow, support, or retain changes. Thus between uses and/or reboots, the operating environment and installed software are exactly the same. Changes may be blocked or simply discarded after each system use.
      - A nonpersistent system is able to maintain its configuration and security in spite of user attempts to implement change.
-- 🔵**Parallel Data Systems**: . Systems designed to perform numerous calculations simultaneously include SMP, AMP, and MPP. Multicore, the ability to process multiple execution threads simultaneously, is often a key component of modern SMP, AMP, and MPP deployments in addition to standard single CPU systems.
+- 🔵**Parallel Data Systems**: Systems designed to perform numerous calculations simultaneously include SMP, AMP, and MPP. Multicore, the ability to process multiple execution threads simultaneously, is often a key component of modern SMP, AMP, and MPP deployments in addition to standard single CPU systems.
      - 🍍Asymmetric multiprocessing (AMP) systems usually have independent processors, each with their own assigned instruction set, memory, and bus. AMP on its own is not quite suited for very large processing requirements.
      - 🍍Massive parallel processing (MPP) system: An MPP is usually constructed of numerous AMPs linked together. MPP systems can encompass thousands of processors. MPPs are managed by a central coordination system.
      - 🍍Symmetric multiprocessing (SMP) systems: have multiple processors, but they share a common OS, bus, and memory resources. 
@@ -726,7 +726,7 @@ taxed by inefficient implementations of software and VMs.
             8.  Key Considerations: Trust Model: The CA operates within a trust model where its certificate is trusted by browsers, operating systems, and applications. Trust in the CA’s ability to accurately validate and issue certificates is crucial.
     
 - 3.6.4 Key management practices
-    - **Key management practices**: include safeguards surrounding the creation, distribution, storage, destruction, recovery, and escrow of secret keys
+    - 📗**Key management practices**: include safeguards surrounding the creation, distribution, storage, destruction, recovery, and escrow of secret keys
         - Cryptography can be used as a security mechanism to provide confidentiality, integrity, and availability only if keys are not compromised
         - Three main methods are used to exchange secret keys: 
             - 🐌offline distribution
@@ -741,14 +741,15 @@ taxed by inefficient implementations of software and VMs.
             - ✴️**Key generation**: the process of creating a new encryption/decryption key
             - ✴️**Key distribution**: the process of sending a key to a user or system; it must be secure and it must be stored in a secure way on the computing device
                 - keys are stored before and after distribution; when distributed to a user, it can't hang out on a user's desktop
-            - Keys shouldn't be in cleartext outside the crypography device. Encrypt keys with a sepereate encryption key before distributing to other parties.
-            - Key distribution and maintenance should be automated (and hidden from the user)
-            - Keys should be backed up!
+                - Keys shouldn't be in cleartext outside the crypography device. Encrypt keys with a sepereate encryption key before distributing to other parties.
+                - Key distribution and maintenance should be automated (and hidden from the user)
+                - Keys should be backed up!
             - ✴️**Key Storage**: Keys should never be stored in plain text.  This includes keys in volatile and persistent memory.
             - ✴️**Key Usage**: AUP determines guard rails for key usage
             - ✴️**Key Destruction**: Removal of an encryption key from its operational location
             - ✴️**Key Deletion**: Removing any information that can be used to reconstruct the key e.g device wipe in MDM such as Airwatch & MS Intune
             - ✴️**Key escrow**: process or entity that can recover lost or corrupted cryptographic keys. It is a process by which keys (asymmetric or symmetric) are placed in a trusted storage agent's custody, for later retrieval. Copies of keys are held by a trusted 3rd party in a secure environment. Comes up in conversations around disasater recovery, business continuity, law enforcement access, regulatory compliance etc
+            - ✴️**Zero-knowledge proof**: In a zero-knowledge proof, one individual demonstrates to another that they can achieve a result that requires sensitive information without actually disclosing the sensitive information. A zero-knowledge proof allows one party to demonstrate knowledge of a secret without actually disclosing that secret to the other party. It is a method commonly applied in cryptography to validate passwords and keys (for example, validating an asymmetric private key through the use of a public key).
             - ✴️**Key Recovery:** Circumstances where you need to recover a key for a particular user, without that users cooperation such as termination or key loss. It is also the process of reconstructing an encryption key from the cyphertext alone; if there is a workable key recovery system, it means the algorithm is not secure.
                 - **multiparty key recovery**: when two or more entities are required to reconstruct or recover a key
                 - **m of n control**: 🥇 you designate a group of (n) people as recovery agents, but only need subset (m) of them for key recovery. M of N Control requires that a minimum number of agents (M) out of the total number of agents (N) work together to perform high-­security tasks. M of N Control is an example of a split knowledge technique, but not all split knowledge techniques are used for key escrow. In an m of n control system, at least m of n possible escrow agents must collaborate to retrieve an encryption key from the escrow database.
@@ -761,7 +762,7 @@ taxed by inefficient implementations of software and VMs.
                 - destruction
             - See NIST 800-57, Part 1
 - 3.6.5 Digital signatures and digital certificates
-    - **Digital signatures**: provide proof that a message originated from a particular user of a cryptosystem, and ensures that the message was not modified while in transit between two parties
+    - 📗**Digital signatures**: provide proof that a message originated from a particular user of a cryptosystem, and ensures that the message was not modified while in transit between two parties
         - A digital signature is a hash of the file/message that is encrypted with the sender's private key. The receiver can decrypt the hash using the sender's public key. If verification of the hash is successful after decryption, it would prove the source of the file/message, since the sender is the only entity with a copy of the private key. Digital signatures assure the recipient that the message has not been tampered with during transmission by comparing the decrypted hash with the hash generated by the receiver.
         - Digital signatures rely on a combination of two major concepts — public key cryptography, and hashing functions 
         - Digitally signed messages assure the recipient that the message truly came from the claimed sender, enforcing nonrepudiation
@@ -778,7 +779,7 @@ taxed by inefficient implementations of software and VMs.
     - Private key should only be known to the sender, so the verification proves to the recipient that the signature came from the sender, providing origin authentication 
     - The recipient (or anyone else) can demonstrate that process to a third party providing nonrepudiation
     - Data encryption provides confidentiality
-- 3.6.7 Integrity (e.g., hashing)
+- 3.6.7 Integrity (📗**Hashing**)
     - Hash Functions have a very simple purpose — they take a potentially long message and generate a unique output value derived from the content of the message called a **Message Digest**
     - A hashing algorithm is a one-way mathematical operation that can accept an input value of any length and generate a 📝fixed-length output. Hashing algorithms are used to validate a file or message’s integrity. They are also used to store passwords. A password is hashed, and the authentication server stores the output. The only way to reproduce the hash is to know the original value.
         - hash function implements encryption with a specified algorithm, but without a key
@@ -1190,8 +1191,6 @@ taxed by inefficient implementations of software and VMs.
     - ✈️Station-to-Station (STS) Protocol: Combines Diffie-Hellman key exchange with digital signatures to authenticate the communicating parties. Mitigates man-in-the-middle attacks by authenticating the exchanged keys. Utilizes both public key cryptography and Diffie-Hellman.
     - ✈️Internet Key Exchange (IKE): A protocol used to set up a secure and authenticated communication channel, often used with IPsec. Supports mutual authentication and dynamic key exchange. It is used in IPsec to negotiate tunnel parameters.
     - ✈️Secure Remote Password (SRP): A password-based key exchange protocol that ensures mutual authentication without transmitting the actual password. Provides resistance against dictionary attacks and man-in-the-middle attacks. Useful in secure login scenarios where passwords are used.
-
-**In a zero-knowledge proof**, one individual demonstrates to another that they can achieve a result that requires sensitive information without actually disclosing the sensitive information
 
 - 🟢**TEMPEST-derived technology** allows the electronic emanations that devices produce (known as Van Eck radiation) to be read from a distance (this process is known as Van Eck phreaking). TEMPEST eavesdropping or Van Eck phreaking countermeasures include the following:
     - 🐌Faraday Cage: A Faraday cage is an enclosure that blocks or absorbs electromagnetic fields or signals. Faraday cage containers, computer cases, rack-­mount systems, rooms, or even building materials are used to create a blockage against the transmission of data, information, metadata, or other emanations from computers and other electronics. Devices inside a Faraday cage can use EM fields for communications, such as wireless or Bluetooth, but devices outside of the cage will not be able to eavesdrop on the signals of the systems within the cage.
