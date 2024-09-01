@@ -15,14 +15,15 @@ You may find this domain to be more technical than others, and if you have exper
 - **Encryption**: process and act of converting the message from plaintext to ciphertext (AKA enciphering)
 - **Frequency analysis**: form of cryptanalys that uses frequency of occurrence of letters, words or symbols in the plaintext as a way of reducing the search space
 - **Hybrid encryption system**: a system that uses both symmetric and asymmetric encryption
-- **An initialization vector (IV)** is a random bit string (a nonce) that is the same length as the block size that is XORed with the message. IVs are used to create a unique ciphertext every time the same message is encrypted with the same key.
+- 🍮**An initialization vector (IV)** is a random bit string (a nonce) that is the same length as the block size that is XORed with the message. IVs are used to create a unique ciphertext every time the same message is encrypted with the same key.
+    - An Initialization Vector (IV) is a random value used with a key to encrypt or decrypt data. The IV is used to reduce the likelihood of the same plaintext patterns being found in the ciphertext. One of the reasons Wired Equivalent Privacy (WEP) was weak was because it used a short (24-bit) and predictable IV. This caused the same IV to be used multiple times throughout the stream, allowing attackers to find patterns between messages using the same IV.
+    - The IV does not change the key length in any way. The purpose is to solely hide patterns found within the plaintext so that they are not exposed in the ciphertext. 
 - **Key**: the input that controls the operation of the cryptographic algorthm, determining the behavior of the algorithm and permis the reliable encyrption and decryption of the message
 - **Key pair**: matching set of one public and one private key
 - **Key escrow**: process by which keys (asymmetric or symmetric) are placed in a trusted storage agent's custody, for later retrieval
 - **Key generation**: the process of creating a new encryption/decryption key
 - **Key recovery**: process of reconstructing an encryption key from the cyphertext alone; if there is a workable key recovery system, it means the algorithm is not secure
 - **Key space**: represents the total number of possible values of keys in a cryptographic algorithm or password
-- **One-time pad**: series of randomly generated symmetric encryption keys, each one to be used only once by the sender and recipient
 - **Out-of-band**: transmitting or sharing control information (e.g. encryption keys and crypto variables) by means of a separate and distinct communications path, channel, or system
 - **Plaintext**: message or data in its readable form, not turned into a secret
 - **Cleartext**: any information that is unencrypted, although it might be in an encoded form that is not easily human-readable (such as base64 encoding)
@@ -39,7 +40,7 @@ You may find this domain to be more technical than others, and if you have exper
      - 📁**Vigenere**: A polyalphabetic cipher that uses a keyword to shift letters. The shifts are determined by the letters of the keyword. Vigenère ciphers are an example of a substitution cipher technique.
          - The Vigenère cipher was invented by Blaise de Vigenère in the 16th century. It is a polyalphabetic cipher. Side note, it was first described by Bellaso in 1553.
          - Both Vernman and Vigenère are substitution ciphers.
-     - 📁**One-­time Pad**: A one-time pad (OTP) is a theoretically unbreakable encryption technique in cryptography that involves using a random key that is as long as the message being sent. It is the only known cryptosystem that is not vulnerable to attacks. All other cryptosystems, including transposition ciphers, substitution ciphers, and even AES, are vulnerable to attack, even if no attack has yet been discovered. A one-­time pad is only appropriate for use in human-­to-­human communications.
+     - 📁**One-­time Pad**: One-time pad is a series of randomly generated symmetric encryption keys, each one to be used only once by the sender and recipient. A one-time pad (OTP) is a theoretically unbreakable encryption technique in cryptography that involves using a random key that is as long as the message being sent. It is the only known cryptosystem that is not vulnerable to attacks. All other cryptosystems, including transposition ciphers, substitution ciphers, and even AES, are vulnerable to attack, even if no attack has yet been discovered. A one-­time pad is only appropriate for use in human-­to-­human communications.
         - 🎈The encryption key must be randomly generated (Keys must be genuinely random values)
         - 🎈The encryption key must be at least as long as the message to be encrypted. (The key must be the same length as the message)
         - 🎈Each one-time pad must be used only once (Keys can only be used one time)
