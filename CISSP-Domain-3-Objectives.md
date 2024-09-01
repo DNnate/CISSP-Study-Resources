@@ -2,29 +2,28 @@
 
 You may find this domain to be more technical than others, and if you have experience woring in a security engineering role you likely have an advantage. If not, allocate extra time to this domain to ensure you have a good understanding of the topics
 - **Algorithm**: a mathmatical function that is used in the encryption and decryption process; can be simply or very complex; also defined as a set of instructions by which encryption and decryption is done
-- **Block Mode Encryption**: using fixed-length sequences of input plaintext symbols as the unit of encryption
 - **Collision**: occurs when a hash function generates the same output for different inputs. Collision is a term related to hashing algorithms. If two pieces of plaintext hashes to the same value, there is a collision. This is the problem that the 📝birthday attack exploits.
 - **Cryptanalysis**: study of techniques for attempting to defeat cryptographic techniques and generally information security services
+    - **Frequency analysis**: form of cryptanalys that uses frequency of occurrence of letters, words or symbols in the plaintext as a way of reducing the search space
 - **Cryptography**: study of/application of methods to ssecure the meaning and content of messages, files etc by disguise, obscuration, or other transformations.
+    - 🔨**Encryption**: process and act of converting the message from plaintext to ciphertext (AKA enciphering)
+        - 🎈**Block Mode Encryption**: using fixed-length sequences of input plaintext symbols as the unit of encryption
+        - 🎈**Stream mode encryption**: system using a process that treats the input plaintext as a continuous flow of symbols, encrypting one symbol at a time; usually uses a streaming key, using part of the key as a one-time key for each symbol's encryption
+    - 🔨**Decryption**: the reverse process from encryption
+    - 🧨**Encoding**: action of changing a message or set of info into another format through the use of code; unlike encryption, encoded info can still be read by anyone with knowledge of the encoding process
+    - 🧨**Decoding**: the reverse process from encoding, converting the encoded message back to plaintext format
     - Cryptography is used in
         - ⏰confidentiality in the form of encryption
         - ⏰integrity in the form of hashing
         - ⏰authentication in the form of asymmetric digital signatures and hashing.
 - **Cryptosystem**: complete set of hardware, software, communictions elements and procedures that allow parties to communicate, store or use info protected by cryptographic means; includes algroithm, key, and key management functions
 - **Cryptovariables(s)**: parameters associated with a particular cryptogrphic algorithm; e.g. block size, key length and number of iterations
-- **Decoding**: the reverse process from encoding, converting the encoded message back to plaintext format
-- **Decryption**: the reverse process from encryption
-- **Encoding**: action of changing a message or set of info into another format through the use of code; unlike encryption, encoded info can still be read by anyone with knowledge of the encoding process
-- **Encryption**: process and act of converting the message from plaintext to ciphertext (AKA enciphering)
-- **Frequency analysis**: form of cryptanalys that uses frequency of occurrence of letters, words or symbols in the plaintext as a way of reducing the search space
 - 🍮**An initialization vector (IV)** is a random bit string (a nonce) that is the same length as the block size that is XORed with the message. IVs are used to create a unique ciphertext every time the same message is encrypted with the same key.
     - An Initialization Vector (IV) is a random value used with a key to encrypt or decrypt data. The IV is used to reduce the likelihood of the same plaintext patterns being found in the ciphertext. One of the reasons Wired Equivalent Privacy (WEP) was weak was because it used a short (24-bit) and predictable IV. This caused the same IV to be used multiple times throughout the stream, allowing attackers to find patterns between messages using the same IV.
     - The IV does not change the key length in any way. The purpose is to solely hide patterns found within the plaintext so that they are not exposed in the ciphertext. 
 - **Key space**: represents the total number of possible values of keys in a cryptographic algorithm or password
 - **Key Encryption Keys (KEK)** are encryption keys that are used to protect other keys. If there is an existing shared key it could be used to encrypt another key that makes it easier to exchange the original key.
 - **Out-of-band**: transmitting or sharing control information (e.g. encryption keys and crypto variables) by means of a separate and distinct communications path, channel, or system
-- **Session key**: a symmetric encryption key generated for one-time use; usually requires a key encapsulation approach to eliminate key management issues
-- **Stream mode encryption**: system using a process that treats the input plaintext as a continuous flow of symbols, encrypting one symbol at a time; usually uses a streaming key, using part of the key as a one-time key for each symbol's encryption
 - 🍮**Transposition Cipher**: encryption/decription process using transposition. Transposition ciphers are a type of encryption method where the positions of the characters in the plaintext are shifted according to a certain system, effectively permuting the characters. Unlike substitution ciphers, transposition ciphers do not alter the actual characters themselves, only their 📝positions. e.g frequency of message might match known english language patterns. It can be broken with frequency analysis combined with pattern recognition.
     - Transposition is the process of altering the order of the plaintext in order to encrypt it. If the plaintext is again ‘when’ the ciphertext could be ‘hwne’. All of the letters are still there, they are just in a different order now. Today’s block cipher does a combination of both substitution and transposition. 
 - 🍮**Substituion Cipher**: Encryption/decription process using subsitution. Substitution is the method of altering plaintext by replacing a value with a different value. i.e 📝characters are replaced. Examples include
@@ -607,6 +606,7 @@ taxed by inefficient implementations of software and VMs.
         - symmetric encryption is faster than asymmetric encryption because smaller keys can be used for the same level of protection 
         - downside is that users or systems must find a way to securely share the key and hope the key is used only for the specified communication
         - symmetric encryption uses session keys. In TLS, both the server and the client communicate using an ephemeral symmetric session key. They exchange this key using asymmetric cryptography, but all encrypted content is protected using symmetric cryptography.
+            - 🎈**Session key**: a symmetric encryption key generated for one-time use; usually requires a key encapsulation approach to eliminate key management issues
         - primarily employed to perform bulk encryption and provides only for the security service of confidentiality
         - 🧠Nonrepudiation requires the use of a public key cryptosystem to prevent users from falsely denying that they originated a message. Asymmetric cryptography is used for Nonrepudiation. Sender encrypt message (digital signature) with private key and receive decrypt message with sender's public key. This validates integrity and Nonrepudiation.
         - 🧠Nonrepudiation cannot be achieved with a symmetric cryptosystem, such as AES.
