@@ -830,6 +830,7 @@ taxed by inefficient implementations of software and VMs.
         - in this type of attack, attackers look for weaknesses in the implementation, such as a software bug or outdated firmware
 - 3.7.7 Side-channel: Side-channel attacks seek to use information about system activity and retrieve information that is actively being encrypted
     - 🍮**Side-channel**: these attacks seek to use the way computer systems generate characteristic footprints of activity, such as changes in processor utilization, power consumption, or electromagnetic radiation to monitor system activity and retrieve information that is actively being encrypted
+        - A side-channel attack is a type of cryptographic attack that exploits unintended information leakage from a system, such as power consumption, electromagnetic radiation, or timing variations. By analyzing these side-channel signals, attackers can gain insights into the cryptographic keys or sensitive data being processed, potentially compromising the security of the system.
         - similar to an implementation attack, side-channel attacks look for weaknesses outside of the core cryptography functions themselves
         - Side-channel attacks seek to use information about system activity and retrieve information that is actively being encrypted. 
         - a side-channel attack could target a computer’s CPU, or attempt to gain key information about the environment during encryption or decryption by looking for electromagnetic emissions or the amount of execution time required during decryption
@@ -839,11 +840,13 @@ taxed by inefficient implementations of software and VMs.
     - 🍮**Fault-Injection**: the attacker attempts to compromise the integrity of a cryptographic device by causing some type of external fault 
         - for example, using high-voltage electricity, dry ice, high or low temperature, or other factors to cause a malfunction that undermines the security of the device.
         - Fault injection attacks require physical access to the facility.
+            - 🍓**Differential Power Analysis (DPA)** is a cryptographic attack technique that exploits variations in power consumption during cryptographic operations. By analyzing power differentials, attackers can infer secret encryption keys, potentially compromising the security of the system and revealing sensitive information.
 - 3.7.9 Timing
     - 🍮**Timing**: timing attacks are an example of a side-channel attack where the attacker measures precisely how long cryptographic operations take to complete, gaining information about the cryptographic process that may be used to undermine its security.
         - By analyzing these timing variations, an attacker can infer details about the cryptographic keys or the data being processed.
         - If an encryption algorithm takes longer to process certain values or operations due to conditional statements or variable-length operations, an attacker might exploit these timing differences to gain insights into the key or plaintext.
-             - 🍓**Race condition**: The exploitation of the reliance of a system’s behavior on the sequence of events that occur externally. Time of Check to Time of Use (TOCTOU) attack (attacker exploits the difference in time btw when a security control is verified and the data protected by the control is actually used). 
+             - 🍓**Race condition**: The exploitation of the reliance of a system’s behavior on the sequence of events that occur externally. Time of Check to Time of Use (TOCTOU) attack (attacker exploits the difference in time btw when a security control is verified and the data protected by the control is actually used).
+             - 🍓**Clock frequency attack** is a side-channel attack that exploits variations in the clock frequency of a computing device during cryptographic operations. By analyzing these fluctuations, attackers can infer information about the operations being performed, potentially revealing sensitive data or cryptographic keys. Countermeasures, such as constant-time algorithms, are used to mitigate the risks posed by clock frequency attacks. 
 - 3.7.10 Man-in-the-middle (MITM)
     - 🍮**Man-in-the-middle (MITM) (AKA on-path)**: in this attack a malicious individual sits between two communicating parties and intercepts all communications (including the setup of the cryptographic session) 
         - attacker responds to the originator's initialization requests and sets up a secure session with the originator 
