@@ -154,13 +154,13 @@ You may find this domain to be more technical than others, and if you have exper
     - ⚓**Multilevel Security (MLS) Model** The concept of MLS is the idea that a system would have multiple levels of classification in the same system. Bell-LaPadula was the first mathematical model of a Multilevel Security (MLS) policy. Access control philosophies can be organized into models that define approaches to security issues. The Take-Grant model, the Bell-LaPadula model, and the Biba model are examples of different access control models.
 
 - 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification. Bell-LaPadula was released in 1976 by the US government to provide for better confidentiality
-    - Focuse is on confidentiality ✏️
+    - Focuse is on confidentiality📝
     - Simple security property: 🔥No read-up 
     - Star (*) security property: 🔥No write-down ( an individual may not write to a file at a lower classification level than that of the individual. AKA confinement property)
     - Discretionary Security Property: uses an access matrix (need to know in order to access)
     - Doesn't address covert channels
 - 🔴**Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
-    - Focus is on integrity ✏️
+    - Focus is on integrity📝
     -  is based on information flow, and is a multilevel model.
     - Simple integrity property: 🔥No read down ( individual may not read a file classified at a lower security level than the individual's security clearance. for example, users with a Top Secret clearance can’t read data classified as Secret). the implied allowed opposite is read-up.
     - Star (*) integrity property: 🔥No write up (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
@@ -172,7 +172,7 @@ You may find this domain to be more technical than others, and if you have exper
         - ⚒️grant: The grant rule allows a subject to grant rights that it possesses on an object to another subject.
         - ⚒️create: The create rule allows a subject to create new objects and also creates an edge from the subject to that object, granting rights on the new object.
         - ⚒️remove
-- 🔴**Clark-Wilson**: The Clark–Wilson model uses a multifaceted approach to enforcing data integrity. Instead of defining a formal state machine, the Clark–Wilson model defines each data item and allowable data transformations. 
+- 🔴**Clark-Wilson**: The Clark–Wilson model uses a multifaceted approach to enforcing data integrity. Instead of defining a formal state machine, the Clark–Wilson model defines each data item and allowable data transformations. The Clark-Wilson model focuses on data integrity and it relies on the separation of duties. Subjects access and modify objects 📝indirectly through an interface or program. This is known as the 📝"access triple" and is made up of the subject/program/object. The Clark-Wilson model defines Constrained Data Items (CDI) and integrity verification procedures and confirms transformation procedures.
     - Focus is on 📝integrity. Clark and Wilson defined the following as the three goals of integrity in their security model that was published in 1987.
         - ⚒️Rule 1: Prevent unauthorized users from making any modifications.
         - ⚒️Rule 2: Prevent authorized users from making improper modifications.
@@ -200,7 +200,7 @@ You may find this domain to be more technical than others, and if you have exper
     - Foundation of noninterference conceptual theories
 - 🔴**Sutherland Model**:
     - Focuses on preventing 📝interference in support of integrity
-    - Focus is on Integrity📝
+    - Focus is on Integrity📝 and Confidentiality📝
 - 🔴**Graham-Denning Model**
     - Focused on the secure 📝creation and 📝deletion of both subjects and objects
     - 8 primary protection rules or actions
