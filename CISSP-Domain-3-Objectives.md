@@ -227,7 +227,9 @@ You may find this domain to be more technical than others, and if you have exper
 
 [3.3](#3.3) Select controls based upon systems security requirements (OSG-9 Chpt 8)
 
-- 📗**Common Criteria (CC)** for Information Technology Security Evaluation. Common Criteria is the name used for the International Standards Organization (ISO) 15408 standard. ISO 15408 is a testing criterion for security products. It is designed as an independent, third-party testing mechanism. It is also good for software developers to use, especially if they want to achieve a higher score when tested against Common Criteria.
+- 📗**Common Criteria (CC)** for Information Technology Security Evaluation.
+- The U.S. Department of Defense-developed Trusted Computer System Evaluation Criteria (TCSEC), and the European Union-developed Information Technology Security Evaluation Criteria (ITSEC) were both replaced with Common Criteria. Common Criteria is published as International Standards Organization (ISO) Standard 15408. It was developed as a standard for 📝evaluating information technology products. Arguably, ISO 15408 is the international standard for system security evaluation criteria, but that is not the real name. 
+- Common Criteria is the name used for the International Standards Organization (ISO) 15408 standard. ISO 15408 is a testing criterion for security products. It is designed as an independent, third-party testing mechanism. It is also good for software developers to use, especially if they want to achieve a higher score when tested against Common Criteria.
     - The CC provides a standard to evaluate systems, defining various levels of testing and confirmation of systems' security capabilities
     - The primary distinction of the current Common Criteria (CC) from the previous security evaluation criteria systems it replaced is that the CC is a dynamic and subjective evaluation of security mechanisms and functions via the protection profiles (PPs) and security targets (STs) comparison mechanism. Most previous systems were static in their evaluation of security protection mechanisms.
     - The number of the level indicates what kind of testing and confirmation has been performed
@@ -239,7 +241,7 @@ You may find this domain to be more technical than others, and if you have exper
     - The evaluation will attempt to gauge the confidence level of a security feature 
     - 💥**Security assurance requirements (SARs)**: Assurance is the degree of confidence that an organization has that its security controls are correctly implemented. It must be continually monitored and reverified. SAR is a description of how the TOE is to be evaluated, based on the development of the solution
     - Key actions during development and testing should be captured 
-    - 💥**Evaluation assurance level (EAL)**: a numerical rating used to assess the rigor of an evaluation; the scale is EAL 1 (cheap and easy) to EAL7 (expensive and complex):
+    - 💥**Evaluation assurance level (EAL)**: a numerical rating used to assess the rigor of an evaluation; the scale is EAL 1 (cheap and easy) to EAL7 (expensive and complex): 🟡FSMMSSF (Fishermen sing merry melodies so stay friendly)
         - 🍐EAL1: functionally tested (lowest level of assurance)
         - 🍐EAL2: structurally tested
         - 🍐EAL3: methodically tested and checked
