@@ -981,10 +981,10 @@ taxed by inefficient implementations of software and VMs.
         - carbon dioxide (CO2) suppresses the oxygen supply
         - halon substitutes and other nonflammable gases interfere with the chemistry of combustion and/or suppress the oxygen supply. FM-200 is a chemical suppressant commonly used in place of water in data centers.
     - Fire stages:
-        - 🍐**Stage 1**: ✏️incipient stage: early warning of fire. At this stage, there is only air ionization and no smoke
-        - 🍐**Stage 2**: ✏️smoke stage: smoke is visible from the point of ignition
-        - 🍐**Stage 3**: ✏️flame stage: this is when a flame can be seen with the naked eye
-        - 🍐**Stage 4**: ✏️heat stage: at stage 4, there is an intense heat buildup and everything in the area burns
+        - 🍐**Stage 1**: **incipient stage**: early warning of fire. At this stage, there is only air ionization and no smoke
+        - 🍐**Stage 2**: **smoke stage**: smoke is visible from the point of ignition
+        - 🍐**Stage 3**: **flame stage**: this is when a flame can be seen with the naked eye
+        - 🍐**Stage 4**: **heat stage**: at stage 4, there is an intense heat buildup and everything in the area burns
     - Fire extinguisher classes:
         - **🧯Class A**: common combustibles e.g wood or paper 🟡Ash (water, foam, wet chemical agent)
         - **🧯Class B**: liquids      🟡boil (CO2, Halon or an acceptable halon substitute like FM-200, , Sodium bicarbonate, mono-ammonium phosphate and soda acid)
