@@ -216,11 +216,11 @@ You may find this domain to be more technical than others, and if you have exper
     - Also determines whether a person can read or write to a higher or lower level of confidentiality
     - 📝Strong star (*) property states that a subject may not read or write information that resides at any security level, except for the level the subject is a member of.
 - 🔴**Access Control Matrix**: 
-    - An access control matrix assembles ACLs from multiple objects into a single table.
-         - Access control list is a list of individual users who may access the file.  An ACL is a list of permissions attached to an object (such as a file, directory, or network resource) that specifies which users or systems are granted access and what kind of access they are permitted. Access Control List  consists of multiple access control entries.
-         - Access Control Entry: An ACE is a single entry within an ACL that defines the access rights for a specific user or group on a particular resource. Each ACE in an ACL specifies the permissions granted to a single user or group. It essentially defines a rule for access control in the context of the larger ACL.
-     - 📝ACL: Refers to the entire list of access control rules for a particular resource. 📝ACE: Refers to a single entry within that list, specifying permissions for one user or group.
-    - The rows of that table are the ACEs of a subject across those objects, thus a capabilities list.
+    - An access control matrix assembles ACLs from multiple objects into a single table. An access control matrix is a table that contains a list of subjects, objects, and permissible actions. The matrix contains what permissions are assigned to each user for a specific object. This could be called a capability table.
+        - 🛠️Columns: The columns in an access control matrix are called the Access Control List (ACL).
+        - 🛠️Rows: The rows are called the capability list. The rows of the table are the ACEs of a subject across those objects, thus a capabilities list.
+         - 🥑Access control list (ACL): An ACL is a list of individual users who may access the file.  An ACL is a list of permissions attached to an object (such as a file, directory, or network resource) that specifies which users or systems are granted access and what kind of access they are permitted. Access Control List  consists of multiple access control entries. 📝ACL: Refers to the entire list of access control rules for a particular resource. 
+         - 🥑Access Control Entry (ACE): An ACE is a single entry within an ACL that defines the access rights for a specific user or group on a particular resource. Each ACE in an ACL specifies the permissions granted to a single user or group. It essentially defines a rule for access control in the context of the larger ACL. 📝ACE: Refers to a single entry within that list, specifying permissions for one user or group.
 - 🔴**Capability Tables**: 
     - They are different from ACLs in that a capability table is focused on subjects (such as users, groups, or roles).
     - For example, a capability table created for the accounting role will include a list of all objects that the accounting role can access as well as the specific privileges assigned to the accounting role for these objects. In contrast, ACLs are focused on objects.
