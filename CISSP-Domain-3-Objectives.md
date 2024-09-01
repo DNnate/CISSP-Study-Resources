@@ -986,6 +986,7 @@ taxed by inefficient implementations of software and VMs.
         - - **VESDA**: very early smoke detection process (air sensing device brand name)
         - carbon dioxide (CO2) suppresses the oxygen supply
         - halon substitutes and other nonflammable gases interfere with the chemistry of combustion and/or suppress the oxygen supply. FM-200 is a chemical suppressant commonly used in place of water in data centers.
+            - 📝FM-200 is a gas that extinguishes fires, making it a safe suppression system for electronics. FM-200 is a colorless suppression agent that is electrically non-conductive and safe for humans. It extinguishes fire through heat absorption. It can be used to replace Halon in fire suppression systems.
     - Fire stages:
         - 🍐**Stage 1**: **incipient stage**: early warning of fire. At this stage, there is only air ionization and no smoke
         - 🍐**Stage 2**: **smoke stage**: smoke is visible from the point of ignition
