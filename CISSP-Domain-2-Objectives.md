@@ -351,7 +351,7 @@ rewriting with a new value or using a menu option to reset the device to the fac
     - A CPU register is a temporary storage location located on the Central Processing Unit (CPU). It is used to store instruction sets. When a CPU executes an instruction set, it loads it from the register.
     - **Ring Architecture** refers to the different privilege levels within a CPU that determine how much access a process has to system resources. There are typically four rings in this architecture, numbered from 0 to 3. Ring architectures can be larger than four rings. For example, it is normal to have seven rings in Unix. 
         - 🎈Ring 0: Most privileged mainly the operating system (Kernel Mode): The kernel resides in Ring 0, the first ring and the most trusted within the computer system, which requires the highest security access level. The kernel is the interface between the hardware and the operating system.
-        - 🎈Ring 1: include OS componenets
+        - 🎈Ring 1: include Operating System and OS componenets
         - 🎈Ring 2: Include device drivers and protocols
         - 🎈Ring 3: Least privileged include User-level programs and applications. (User Mode)
     -  **CPU Security Features**:
