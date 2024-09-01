@@ -155,6 +155,7 @@ You may find this domain to be more technical than others, and if you have exper
     - ⚓**Multilevel Security (MLS) Model** The concept of MLS is the idea that a system would have multiple levels of classification in the same system. Bell-LaPadula was the first mathematical model of a Multilevel Security (MLS) policy. Access control philosophies can be organized into models that define approaches to security issues. The Take-Grant model, the Bell-LaPadula model, and the Biba model are examples of different access control models.
 
 - 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification. Bell-LaPadula was released in 1976 by the US government to provide for better confidentiality
+    - The Bell-LaPadula security model deals with multiple levels of access regulation in 📝government and military applications. This security model involves labels ranging from Unclassified to Top Secret. Bell-LaPadula was developed to formalize the U.S. Department of 📝Defense's multi-level security policy.
     - Focuse is on confidentiality📝
     - Simple security property: 🔥No read-up 
     - Star (*) security property: 🔥No write-down ( an individual may not write to a file at a lower classification level than that of the individual. AKA confinement property)
