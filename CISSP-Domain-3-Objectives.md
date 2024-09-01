@@ -1049,15 +1049,13 @@ taxed by inefficient implementations of software and VMs.
         - this is a system that collects power into a battery but can switch over to pulling power from the battery when the power grid fails
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
 
-- 🔴**Physical Controls**: The six common physical security control mechanisms is ✏️Deter (guard dogs, Lighting), ✏️Deny (mantrap, turnstile, gate), ✏️Detect (CCTV,motion sensor), ✏️Delay (locks), ✏️Determine, ✏️Decide. 
+- 🔴**Physical Controls**: Includes facility construction and selection, site management, building design, locks, security guards, personnel controls, lighting, Administrative controls such as policies, procedures, background checks, and other things that could be represented easily or normally on paper, and Technical physical controls such as Closed-Circuit Television (CCTV), intrusion detection, and access cards. 
+- The six common physical security control mechanisms is ✏️Deter (guard dogs, Lighting), ✏️Deny (mantrap, turnstile, gate), ✏️Detect (CCTV,motion sensor), ✏️Delay (locks), ✏️Determine, ✏️Decide. 
     - The first line of defense against an initial attempt to access a physical asset should be a deterrent control such as signs, lighting, or policy. A physical security program should attempt to thwart threats in the following order:
         - 🆎Deterrence/Deterrent controls
         - 🆎Denial/Preventative
         - 🆎Detection/Detective controls
         - 🆎Delay/Preventative and Compensating controls
-    - facility construction and selection
-    - site management
-    - building design
     - **Locks:**
          - 🔒A tumbler lock is a common type of lock mechanism found in many doors and padlocks. It consists of a series of spring-loaded pins (tumblers) that align when the correct key is inserted, allowing the lock to turn and open. Incorrect keys won't align the tumblers, preventing the lock from turning. Tumbler locks offer basic security but are vulnerable to lock-picking techniques.
          - 🔒A mortise lock is a type of door lock that is set within a rectangular cavity, or mortise, in the door. It typically consists of a lock body with a latch, a strike plate, and a cylinder or keyhole. Mortise locks are known for their durability and security, making them common in commercial and residential applications. They are often considered more secure than standard cylindrical locks due to their robust construction and the fact that they are more challenging to pick or force open.
@@ -1071,15 +1069,13 @@ taxed by inefficient implementations of software and VMs.
     - **Personnel Controls** e.g Badges, identification cards, and security IDs, turnstile, mantraps, access control vestibules (An access control vestibule is a double set of doors that is often protected by a guard and used to contain a subject until their identity and authentication is verified.)
         - 🔔Mantraps use two sets of doors to control access to a facility. This may be used to prevent piggybacking by monitoring use of the mantrap to allow only a single individual to enter a facility at a time. They may also be used to allow manual inspection of individuals or perform other security screening. Mantraps are also commonly known as access control vestibules.
         - 🔔Smart cards are credit card-sized devices that contain a microprocessor. The smart card typically contains an encrypted private key issued through a Public Key Infrastructure (PKI) system that the authenticating environment trusts. When the smart card is inserted into a reader, or tapped, the user must enter a PIN before the smart card releases the private key. The "something you know" is the PIN. The "something you have" is the smart card. Smart cards that are used for facility access may also have Radio-Frequency Identification (RFID) chips.
-    - awareness training
-    - emergency response and procedures.
         - **Security Guards**: are usually unaware of the scope of the operations within a facility and are therefore not thoroughly equipped to know how to respond to every situation. Though this is considered a disadvantage, the lack of knowledge of the scope of the operations within a facility can also be considered an advantage because this supports confidentiality of those operations and thus helps reduce the possibility that a security guard will be involved in the disclosure of confidential information. The main disadvantages of security guards include:
             - Not all environments and facilities support security guards. This may be because of actual human incompatibility or the layout, design, location, and construction of the facility.
             - Not all security guards are themselves reliable.
             - Prescreening, bonding, and training do not guarantee that you won’t end up with an ineffective or unreliable security guard.
 - Physical Access Control:
      - Locks and Keys, Security Guards, Guard dogs, CCTV, Security Alarms
-- 🔴**Technical Physical Controls**
+- 🔴**Technical Physical Controls**: Technical controls involve code, hardware, firmware, etc.
      - **Motion Detectors**: A motion detector, or motion sensor, is a device that senses movement or sound in a specific area, and it is a common element of intruder detection systems. Many types of motion detectors exist, including the following:
          - 🍳digital motion detector monitors for  changes in the digital pattern of a monitored area (smart security camera).
          - 🍳passive infrared (PIR) or heat-based motion detector monitors for changes in the heat levels and patterns.
@@ -1117,7 +1113,7 @@ taxed by inefficient implementations of software and VMs.
          - 🚒Photoelectric detectors uses a small light source inside the alarm that is captured by a light sensor and detects smoke. 
          - 🚒Incipient smoke detection systems, also known as aspirating sensors, are able to detect the chemicals typically associated with the very early stages of combustion before a fire is other wise detectible via other means. These devices are even more costly than flame-actuated sensors and are also only used in 📝high-risk or critical environments.
 - 🔴**Administrative Access Control**:
-     - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs
+     - Access Control Policies, User Account Management, Background checks, Role-Based Access Control (RBAC), Regular Audits and Reviews, Training and Awareness Programs, awareness training, emergency response and procedures. Awareness training is an administrative control. Examples of administrative controls are policies, procedures, background checks, and other things that could be represented easily or normally on paper.
 - 🔴**Technical Access Control**:
      - passwords, multi-factor authentication (MFA), or digital certificates, Encryption, Firewalls, IDS/IPS, Access Control Lists (ACLs), Access Cards/Biometric Systems
 - 🔴**Compensatory Access Control**:
