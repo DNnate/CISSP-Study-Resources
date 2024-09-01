@@ -1155,7 +1155,11 @@ taxed by inefficient implementations of software and VMs.
     - 💊Blowfish - 📝Bock Size 64, 📝Key Size 32 - 448 (uses 16 round of encryption regardless of key lenght. Blowfish was invented by Bruce Schneier who chose not to patent it but made it available for free, public use. Bruce Schneider also created twofish and threefish. It is both substitution and transposition.)
     - 💊DES - Block Cipher, 📝Bock Size 64, 📝Key Size 56. It is both substitution and transposition. Data Encryption Standard (DES) was published in 1977 as a standard cryptosystem for government communications. DES has a key size of 64 bits; however, 8 bits are used for parity, giving DES an effective key length of 56 bits. DES has a block size of 64 bits, and each block is put through 16 rounds of encryption functions.
     - 💊2DES - Block Cipher (vulnerable to meet-in-the-middle attack)
-    - 💊3DES - Block Cipher, 📝Bock Size 64, 📝Key Size 112, 168 
+    - 💊3DES - Block Cipher, 📝Bock Size 64, 📝Key Size 112, 168. Triple Data Encryption Standard (3DES) has four different modes. 
+        - 🛠️E(K1 ,E(K2 ,E(K3 ,P))) DES-EEE3 encrypts the data three times using three different keys.
+        - 🛠️E(K1 ,D(K2 ,E(K3 ,P))) DES-EDE3 encrypts the data twice with decryption in the middle and uses three different keys.
+        - 🛠️E(K1 ,E(K2 ,E(K1 ,P))) DES-EEE2 encrypts the data three times using two different keys.
+        - 🛠️E(K1 ,D(K2 ,E(K1 ,P))) DES-EDE2 encrypts the data twice with decryption in the middle and uses two different keys. 
     - 💊IDEA - 📝Bock Size 64, 📝Key Size 128 (IDEAis frequently used in Pretty Good Privacy (PGP). The IDEA block cipher was developed in response to complaints about the insufficient key length of DES algorithm.)
     - 💊RC2 - 📝Bock Size 128, 📝Key Size 128
     - 💊RC4 - Stream Cipher, 📝Key Size 128
