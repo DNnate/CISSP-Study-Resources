@@ -1019,6 +1019,11 @@ taxed by inefficient implementations of software and VMs.
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
 
 - 🔴**Administrative Physical Controls**: The six common physical security control mechanisms is ✏️Deter (guard dogs, Lighting), ✏️Deny (mantrap, turnstile, gate), ✏️Detect (CCTV,motion sensor), ✏️Delay (locks), ✏️Determine, ✏️Decide. 
+    - The first line of defense against an initial attempt to access a physical asset should be a deterrent control such as signs, lighting, or policy. A physical security program should attempt to thwart threats in the following order:
+        - 🆎Deterrence/Deterrent controls
+        - 🆎Denial/Preventative
+        - 🆎Detection/Detective controls
+        - 🆎Delay/Preventative and Compensating controls
     - facility construction and selection
     - site management
     - building design
