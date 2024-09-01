@@ -23,6 +23,7 @@ You may find this domain to be more technical than others, and if you have exper
 - **Key generation**: the process of creating a new encryption/decryption key
 - **Key recovery**: process of reconstructing an encryption key from the cyphertext alone; if there is a workable key recovery system, it means the algorithm is not secure
 - **Key space**: represents the total number of possible values of keys in a cryptographic algorithm or password
+- **Key Encryption Keys (KEK)** are encryption keys that are used to protect other keys. If there is an existing shared key it could be used to encrypt another key that makes it easier to exchange the original key.
 - **Out-of-band**: transmitting or sharing control information (e.g. encryption keys and crypto variables) by means of a separate and distinct communications path, channel, or system
 - **Session key**: a symmetric encryption key generated for one-time use; usually requires a key encapsulation approach to eliminate key management issues
 - **Stream mode encryption**: system using a process that treats the input plaintext as a continuous flow of symbols, encrypting one symbol at a time; usually uses a streaming key, using part of the key as a one-time key for each symbol's encryption
