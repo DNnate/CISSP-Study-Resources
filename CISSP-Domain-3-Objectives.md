@@ -804,13 +804,14 @@ taxed by inefficient implementations of software and VMs.
         - An attacker has intercepted a large amount of data that was all encrypted with the same algorithm and encryption key. With no further information they can attempt a brute force attack.
         - 📝Rainbow tables contain precomputed hash values for commonly used passwords and may be used to increase the efficiency of password-­cracking attacks.
 - 3.7.2 Ciphertext only
-    - 🍮**Ciphertext only**: an attack where you only have the 📝encrypted ciphertext message at your disposal (not the plaintext)
+    - 🍮**Known Ciphertext (ciphertext only)**: an attack where you only have the 📝encrypted ciphertext message at your disposal (not the plaintext). You only have the ciphertext and try to figure out the plaintext or key.
         - if you have enough ciphertext samples, the idea is that you can decrypt the target ciphertext based on the samples
         - one technique proves helpful against simple ciphers is 📝frequency analysis (counting the number of times each letter appears in the ciphertext)
         - An attacker without any special access to the system would only be able to perform ciphertext-­only attacks.
 - 3.7.3 Known plaintext
-    - 🍮**Known plaintext**: in this attack, the attacker has a copy of the 📝encrypted message along with the 📝plaintext message used to generate the ciphertext (the copy); this knowledge greatly assists the attacker in breaking weaker codes.
-         - 🛑In a chosen plaintext attack, the attacker has the ability to choose the plaintext to be encrypted.
+    - 🍮**Known plaintext**: in this attack, the attacker has a copy of the 📝encrypted message along with the 📝plaintext message used to generate the ciphertext (the copy); this knowledge greatly assists the attacker in breaking weaker codes. You have both the plaintext and its ciphertext.
+    - 🍮**Chosen plaintext**: The attacker can choose specific plaintexts to be encrypted and then examines the resulting ciphertexts.
+         - 🛑In a chosen plaintext attack, the attacker has the ability to choose the plaintext to be encrypted. 
          - Known plaintext and chosen plaintext attacks require the ability to encrypt data.
 - 3.7.4 Frequency analysis
     - 🍮**Frequency analysis**: an attack where the characteristics of a language are used to defeat substitution ciphers
@@ -818,7 +819,7 @@ taxed by inefficient implementations of software and VMs.
         - An attacker has intercepted a large amount of data that was all encrypted with the same algorithm and encryption key. With no further information they can attemt a frequency analysis attack
         - other examples might include letters that appear twice in sequence, as well as the most common words used in a language 
 - 3.7.5 Chosen ciphertext
-    - 🍮**Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to 📝one or more ciphertexts and their plaintexts; i.e. the attacker has the 📝ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require 📝access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext. Known plaintext and chosen plaintext attacks require the ability to encrypt data. In a chosen ciphertext attack, the attacker can choose the ciphertext output
+    - 🍮**Chosen ciphertext**: in a chosen ciphertext attack, the attacker has access to 📝one or more ciphertexts and their plaintexts; i.e. the attacker has the 📝ability to decrypt chosen portions of the ciphertext message, and use the decrypted portion to discover the key. Chosen ciphertext attacks require 📝access to the algorithm and work by having the attacker perform encryption that results in an expected ciphertext.  The attacker deliberately selects ciphertexts, submits them for decryption, and studies the resulting plaintexts to learn about the encryption key or algorithm. In a chosen ciphertext attack, the attacker can choose the ciphertext output. You can choose ciphertexts to decrypt and study the plaintexts you get.
     - 🍮**Differential cryptanalysis**: a type of chosen plaintext attack, and a general form of cryptanalysis applicable primarily to 📝block ciphers, but also to 📝stream ciphers and cryptographic 📝hash functions; in the broadest sense, it is the study of how differences in information input can affect the resultant difference at the output; advanced methods such as differential cryptanalysis are types of chosen plaintext attacks
         - as an example, an attacker may try to get the receiver to decrypt modified ciphertext, looking for that modification to cause a predictable change to the plaintext
 - 3.7.6 Implementation attacks
