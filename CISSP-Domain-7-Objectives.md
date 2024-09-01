@@ -39,15 +39,6 @@ than signature detection methods.
 - **Precursor**: signal from events suggesting a possible change of conditions, that may alter the current threat landscape
 - **Regression testing**: testing of a system to ascertain whether recently approved modifications have changed its performance, or if other approved functions have introduced unauthorized behaviors
 - **Root Cause Analysis**: principle-based systems approach for the identification of underlying causes associated with a particular risk set or incidents
-- **Trusted Computing Base (TCB)**: the collection of all hardware, software, and firmware components within an architecture that is specifically responsible for security and the isolation of objects;
-    - TCB is a term that is usually associated with security kernels and the reference monitor
-    - TCB has a component known as the reference monitor in theory, which becomes the security kernel in implementation.
-    - The 📝reference monitor validates access to every resource prior to granting the requested access. The reference monitor is much like the bouncer at a club because it stands between each subject and object. Its role is to verify the subject meets the minimum requirements for access
-    - It is the combination of hardware, software, and controls that work together to enforce a security policy.
- - **Security Perimeters**:
-   - the imaginary boundary that separates the TCB from the rest of the system is known as a security perimeter
-   - A border firewall could be considered a security perimeter protection device
-   - the boundary of the physically secure area surrounding your system, is also a security perimeter
 - **View-Based access controls**: access control that allows the database to be logically divided into components like records, fields, or groups allowing sensitive data to be hidden from non-authorized users; admins can set up views by user type, allowing only access to assigned views
 
 [7.1](#7.1) Understand and comply with investigations (OSG-9 Chpt 19)
@@ -1139,7 +1130,12 @@ of litigation is imminent.
     - If a duress system is activated accidentally code word(s) can be used to assure responding personnel it was an accident, or omit the word(s) keying an actual response
     - Cipher lock: Some cipher locks can be programmed with more than one code. One code can open the door, and another code can open the door and also raise a silent duress alarm. 
 
-- **Trusted Computing Base (TCB)**: This encompasses all the hardware, software, and firmware that are critical to the system's security. It includes the Security Kernel but also includes other components involved in the security of the system.
+- 🔴**Trusted Computing Base (TCB)**: This encompasses all the hardware, software, and firmware that are critical to the system's security. It includes the Security Kernel but also includes other components involved in the security of the system. The TCB includes the reference monitor and the security kernel as well as the other security mechanisms necessary to be able to trust the computer. It can be considered the totality of all security mechanisms.
+    - It is the collection of all hardware, software, and firmware components within an architecture that is specifically responsible for security and the isolation of objects;
+    - It is the combination of hardware, software, and controls that work together to enforce a security policy.
+    - TCB is a term that is usually associated with 📝security kernels and the 📝reference monitor
+    - TCB has a component known as the reference monitor in theory, which becomes the security kernel in implementation.
+    - The 📝reference monitor validates access to every resource prior to granting the requested access. The reference monitor is much like the bouncer at a club because it stands between each subject and object. Its role is to verify the subject meets the minimum requirements for access
 - 📘**Security Kernel**: The actual implementation within the OS that enforces the security policies and manages the interfaces between the hardware, OS, and other parts of the system. It is part of an operating system (OS) responsible for providing security interfaces among the hardware, OS, and other parts of the computing system
     - **Ring Protection**:Ring protection is a feature of CPU architectures that provides a way to enforce different levels of privilege or protection for different parts of the system. It uses a hierarchy of privilege levels, typically referred to as "rings," where Ring 0 (the innermost ring) has the highest level of privilege and direct access to hardware, while Ring 3 (the outermost ring) has the lowest level of privilege and is used for user applications.
         - 🎈Ring 0 The kernel lies within the central ring. contains the operating system's kernel
@@ -1147,11 +1143,22 @@ of litigation is imminent.
         - 🎈Ring 2 is used for drivers and protocols.
         - 🎈Ring 3 User-level programs and applications. 
     - Note📝 Rings 0 through 2 run in privileged mode while Ring 3 runs in user mode. Layers 1 and 2 contain device drivers but are not normally implemented in practice, since they are often collapsed into layer 0. It is important to note that many modern operating systems do not fully ­implement this model.
-    - 🔖**Reference Monitor**: This concept refers to an abstract model that 🔥enforces access control policies in a system. It's a theoretical component that must be implemented by the Security Kernel.
+    - 🔖**Reference Monitor**: This concept refers to an abstract model that 🔥enforces access control policies in a system. It's a theoretical component that must be implemented by the Security Kernel. The reference monitor enforces access control between all subjects and all objects.
+        - The reference monitor is an abstract machine concept that mediates all access from every subject before granting access requests to objects.
+        - It is described as an abstract machine which means that it needs to be built using as few lines of code as possible to be able to validate that it works exactly as it is supposed to.
+        - The reference monitor should meet four conditions:
+            - 1) it must always be turned on,
+              2) it must be verifiable,
+              3) it must be tamper-proof, and
+              4) it cannot be bypassed.
     - 🔖**Process States**: Ready, running, and stopped each refer to operating system process states.
         - 🏓Ready describes a process queued for execution (in the order of any priority set) as soon as the Central Processing Unit (CPU) becomes available.
         - 🏓Running describes a process that is in the midst of execution by the CPU.
         - 🏓Stopped: A process that is no longer running because it has been completed (or errored out) is described as stopped.
+- 📘**Security Perimeters**:
+   - the imaginary boundary that separates the TCB from the rest of the system is known as a security perimeter
+   - A border firewall could be considered a security perimeter protection device
+   - the boundary of the physically secure area surrounding your system, is also a security perimeter
 - 🔴**DDOS Attacks**: Performing a load or stress test to validate how applications/systems performs under both expected and extreme loads to know what a denial-of-service attack based on load will look like is a good practice. Not all instances of DoS are the result of a malicious attack. Errors in coding OSs, services, and applications have resulted in DoS conditions. Some examples of this include a process failing to release control of the CPU or a service consuming system resources out of proportion to the service requests it is handling.  A 📝DoS attack typically originates from a single source. A 📝DDoS attack is more complex and involves multiple sources. The attacker uses a network of compromised computers (often referred to as a botnet) to launch a coordinated attack on the target. 
     - 🔥SYN Flood: In a SYN flood attack, the attacker sends a large number of SYN packets to a system but does not respond to the SYN/ACK packets, attempting to overwhelm the attacked system’s connection state table with half-open connections. Many firewalls have a built-in anti–SYN flood defense (SYN-ACK Spoofing) that responds to SYNs on behalf of protected systems. It is a TCP attack.
     - 🔥Smurf: A Smurf attack is a type of DDoS (Distributed Denial of Service) attack where an attacker sends a large number of ICMP echo request packets to a broadcast address, with the source address spoofed to that of the target.
