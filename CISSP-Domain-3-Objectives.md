@@ -3,8 +3,7 @@
 You may find this domain to be more technical than others, and if you have experience woring in a security engineering role you likely have an advantage. If not, allocate extra time to this domain to ensure you have a good understanding of the topics
 - **Algorithm**: a mathmatical function that is used in the encryption and decryption process; can be simply or very complex; also defined as a set of instructions by which encryption and decryption is done
 - **Block Mode Encryption**: using fixed-length sequences of input plaintext symbols as the unit of encryption
-- **Ciphertext**: altered form of a plaintext message so as to be unreadable for anyone expect the intended recipients (it's a secret)
-- **Collision**: occurs when a hash function generates the same output for different inputs
+- **Collision**: occurs when a hash function generates the same output for different inputs. Collision is a term related to hashing algorithms. If two pieces of plaintext hashes to the same value, there is a collision. This is the problem that the 📝birthday attack exploits.
 - **Cryptanalysis**: study of techniques for attempting to defeat cryptographic techniques and generally information security services
 - **Cryptography**: study of/application of methods to ssecure the meaning and content of messages, files etc by disguise, obscuration, or other transformations
 - **Cryptosystem**: complete set of hardware, software, communictions elements and procedures that allow parties to communicate, store or use info protected by cryptographic means; includes algroithm, key, and key management functions
@@ -25,8 +24,6 @@ You may find this domain to be more technical than others, and if you have exper
 - **Key recovery**: process of reconstructing an encryption key from the cyphertext alone; if there is a workable key recovery system, it means the algorithm is not secure
 - **Key space**: represents the total number of possible values of keys in a cryptographic algorithm or password
 - **Out-of-band**: transmitting or sharing control information (e.g. encryption keys and crypto variables) by means of a separate and distinct communications path, channel, or system
-- **Plaintext**: message or data in its readable form, not turned into a secret
-- **Cleartext**: any information that is unencrypted, although it might be in an encoded form that is not easily human-readable (such as base64 encoding)
 - **Session key**: a symmetric encryption key generated for one-time use; usually requires a key encapsulation approach to eliminate key management issues
 - **Stream mode encryption**: system using a process that treats the input plaintext as a continuous flow of symbols, encrypting one symbol at a time; usually uses a streaming key, using part of the key as a one-time key for each symbol's encryption
 - **Symmetric encryption**: process that uses the same key (or a simple transformation of it) for both encryption/decryption
@@ -50,7 +47,11 @@ You may find this domain to be more technical than others, and if you have exper
      - Substitution and transposition are two different types of encryption techniques. They are both used together in block ciphers today.
 - 🍍**Work factor**: amount of effort necessary to break a cryptographic system, measured in elapsed time. When file encryption is strong, it is said to have increased the work factor level. Work factor refers to the difficulty of breaking an encrypted file. Therefore, it takes significantly more time to hack or break.
 - 🍍**Confusion**: occurs when the relationship between the plaintext and the key is so complicated that an attacker can’t merely continue altering the plaintext and analyzing the resulting ciphertext to determine the key.
-- 🍍**Diffusion** occurs when a change in the plaintext results in multiple changes spread throughout the ciphertext. Claude Shannon, at Belcore, wrote a paper in 1945 explaining that confusion and diffusion are two critical concepts in cryptography today. Diffusion speaks to the relationship between the plaintext and the ciphertext. Basically, what is wanted is to ensure that patterns in the plaintext do not appear in the ciphertext. i.e 📝eliminate patterns
+- 🍍**Diffusion** occurs when a change in the 📝plaintext results in multiple changes spread throughout the 📝ciphertext. Claude Shannon, at Belcore, wrote a paper in 1945 explaining that confusion and diffusion are two critical concepts in cryptography today. Diffusion speaks to the relationship between the plaintext and the ciphertext. Basically, what is wanted is to ensure that patterns in the plaintext do not appear in the ciphertext. i.e 📝eliminate patterns
+    - Diffusion occurs when there is enough change from plaintext to ciphertext. If one bit of the plaintext is changed there needs to be a significant change to the ciphertext. If not, there is too much predictability in the algorithm.
+        - 🎈**Plaintext**: message or data in its readable form, not turned into a secret
+        - 🎈**Cleartext**: any information that is unencrypted, although it might be in an encoded form that is not easily human-readable (such as base64 encoding)
+        - 🎈**Ciphertext**: altered form of a plaintext message so as to be unreadable for anyone expect the intended recipients (it's a secret)
 
 [3.1](#3.1) Research, implement, and manage engineering processes using secure design principles (OSG-9 Chpts 1,8,9,16). The standard secure design principles are: ❄️threat modeling, ❄️least privilege, ❄️defense in depth, ❄️secure defaults, ❄️fail securely, ❄️separation of duties, ❄️keep it simple, ❄️zero trust, ❄️privacy by design, and ❄️trust but verify. 
 
