@@ -960,7 +960,7 @@ taxed by inefficient implementations of software and VMs.
     - Secondary facilities should be located far enough away from the primary to ensure they won't be damaged by the same event
     - **Recommendations**:
         - 🔨Temperature: Rooms intended primarily to house computers should generally be kept between 59 and 89.6 degrees Fahrenheit (15 and 32 degrees Celsius). Some systems might require even lower temperatures.
-        - 🔨Humidity: Humidity in a computer room should be maintained between 40 and 60 percent. Too much humidity can cause condensation leading to corrosion. Too little humidity causes static voltage\electricity to build up.
+        - 🔨Humidity: Humidity in a computer room should be maintained between 📝40-60%. According to the Heating, Refrigerations and Air Conditioning Engineers (ASHRAE), the humidity range considered most favorable for computer operations is 📝35–55%. Although there are varying standards, ASHRAE's range fits within ISC2's wider range of 📝20–80% and is more accurate and specific for optimal computer operations.Too much humidity can cause condensation leading to corrosion. Too little humidity causes static voltage\electricity to build up. 
         - 🔨Static Voltage:
              - 40 can cause Destruction of sensitive circuits and other electronic components
              - 1,000 ca cause Scrambling of monitor displays
