@@ -884,18 +884,19 @@ taxed by inefficient implementations of software and VMs.
 [3.9](#3.9) Design site and facility security controls (OSG-9 Chpt 10)
 - Note that alghough the topics in this section cover mostly interior spaces, physical security is applicable to both interior and exterior of a facility
 - 3.9.1 Wiring closets/intermediate distribution facilities
-    - **Wiring closets/intermediate distribution facilities (IDF)**: A wiring closet  or IDF is typically the smallest room that holds IT
-    hardware
+    - **Wiring closets/intermediate distribution facilities (IDF)/main distribution frame (MDF)**: A wiring closet  or IDF is typically the smallest room that holds IT hardware
         - wiring closet is AKA premises wire distribution room, main distribution frame (MDF), intermediate distribution frame (IDF), and telecommunications room, and it is referred to as an IDF in (ISC)^2 CISSP objective 3.9.1
+        - Main or intermediate distribution frames or wiring closets are the central storage areas for hardware, including routers, switches, cables, patch panels, and (sometimes) computer equipment. 
         - A wiring closet is the infrastructure component often located in the same position across multiple floors in order to provide a convenient means of linking floor-based networks together.
         - A wiring closet is where the networking cables are connected to other essential equipment, such as patch panels, switches, routers, local area network (LAN) extenders, and WAN backbone channels. 
         - usually includes telephony and network devices, alarm systems, circuit breaker panels, punch-down blocks, WAPs, video/security
         - may include a small number of servers 
-        - access to the wiring closest/IDF should be restricted to authorized personnel responsible for managing the IT hardware 
-        - use door access control (i.e. electronic badge system or electronic combination lock, or Use sensors on doors to log entries.)
-        - Perform regular inspections of the closet.
-        - Do not store flammable items in the closet.
-        - from a layout perspective, wiring closets should be accessible only in private areas of the building interiors; people must pass through a visitor center and a controlled doorway prior to be able to enter a wiring closet
+        - unauthorized access to the wiring closest/IDF should be restricted to authorized personnel responsible for managing the IT hardware
+            - Main or intermediate distribution frames should be secured using physical security such as locks, swipe card access on the doors, and video surveillance. Just one snipped cable can cause severe network outages.
+            - use door access control (i.e. electronic badge system or electronic combination lock, or Use sensors on doors to log entries.)
+            - Perform regular inspections of the closet.
+            - Do not store flammable items in the closet.
+            - from a layout perspective, wiring closets should be accessible only in private areas of the building interiors; people must pass through a visitor center and a controlled doorway prior to be able to enter a wiring closet
     - **Cable Plant Management Policy**: A cable plant management policy is used to define the physical structure and deployment of network cabling and related devices within a facility. A cable plant is the collection of interconnected cables and intermediary devices (such as cross-connects, patch panels, and switches) that establish the physical network. Elements of a cable plant include the following:
       - 🐊Entrance facility: Also known as the demarcation point or MDF, is the entrance point to the building where the cable from the provider connects the internal cable plant.
       - 🐊Equipment room: is the main wiring closet for the building, often connected to or adjacent to the MDF.
