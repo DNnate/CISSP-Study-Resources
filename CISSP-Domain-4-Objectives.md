@@ -867,10 +867,18 @@ Connection: The DCE connects the DTE to the Frame Relay network, acting as an in
 Bending the coax cable past its maximum arc radius may break the center conductor and Deploying the coax cable in a length greater than its maximum recommended may cause isses.
 - 📘**Fibre Optics**
 - Fiber can be deployed as single-mode (supporting a single light signal) or multimode (supporting multiple light signals).  
-    - Single-mode fiber has a thinner optical core, lower attenuation over distance, and potentially unlimited bandwidth. It
-uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km without repeaters, and is typically sheathed in yellow.
-    - Multimode fiber has a larger optical core, higher attenuation over distance, and bandwidth limitations (inversely related to distance), and it uses 850 nm or 1300 nm wavelength LEDs or lasers, has a maximum run length of
-400m, and is typically sheathed in blue.
+    - 💢Single-mode fiber has a thinner optical core, lower attenuation over distance, and potentially unlimited bandwidth. It uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km without repeaters, and is typically sheathed in yellow.
+        - Single mode cables are typically rated for between 1 and 10 Gigabits per second over these incredible lengths. It’s theoretically possible that they can run at much higher bandwidths, but typical specifications limit them to 10 Gbps at the top end. 
+        - Single mode cables are typically made with a single strand of glass at their core, leading to a narrower core of the cabling, and more robust signal integrity over greater distances. They can be further divided into
+        - 🐍OS1 cables: commonly used in campus data networks, telecommunication networks, and TV transmission networks. 
+        - 🐍OS2 cables: which are designed for indoor and outdoor uses, respectively, with OS2 cables offering greater cable lengths and bandwidth.
+    - 💢Multimode fiber has a larger optical core, higher attenuation over distance, and bandwidth limitations (inversely related to distance), and it uses 850 nm or 1300 nm wavelength LEDs or lasers, has a maximum run length of 400m, and is typically sheathed in blue.
+        - Multimode cables have multiple glass strands in the core, making them larger and more versatile since they can handle multiple data streams at a time. However, that broader core means there’s more light refraction throughout the cable, weakening the signal faster, and making multimode cables less suitable for longer runs. They too are divided into more cable types:
+        - 🐍OM1: Legacy OM1 cables are limited to just 100ft. 300 meters for 1 Gbps (Gigabit Ethernet) and 33 meters for 10 Gbps (10-Gigabit Ethernet).
+        - 🐍OM2: OM2 provides a higher quality connection and can stretch to 260ft. OM2 bandwith is relatively comparable to single mode cables, delivering between 1Gbps and 10 Gbps depending on cable length.
+        - 🐍OM3: OM3 multimode fiber optic cables can manage longer cable runs at up to 1,000ft
+        - 🐍OM4: OM4 and OM5 are capable of 1,300ft cable runs at up to 10 Gbps
+        - 🐍OM5: OM4 and OM5 are capable of 1,300ft cable runs at up to 10 Gbps. All three are also capable of transmitting at a much higher bandwidth: up to 100 Gbps in some cases. However, offering such throughput requires a shorter cable run, with even the most capable OM4 and OM5 cables limited to just 500ft at the maximum bandwidth.
 
 | SONET         | SDH        |DATA RATE               |
 |---------------|-----------------| -------------------|
