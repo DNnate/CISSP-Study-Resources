@@ -157,6 +157,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - 🐤**MACsec**: MACsec (Media Access Control Security) operates at Layer 2 (Data Link Layer). MACsec is a security protocol that provides confidentiality, integrity, and origin authenticity for data at the Data Link Layer. It encrypts and authenticates packets between directly connected nodes (e.g., switches, routers) on a LAN, ensuring that even if data is intercepted at this level, it cannot be understood or tampered with. 📝802.1AE, also known as MACsec, is an Institute of Electrical and Electronics Engineers (IEEE) standard that provides confidentiality and integrity at the data link layer of the Open Systems Interconnection (OSI) model. MACsec adds additional headers to the frame that identify it has been protected with MACsec. MACsec provides Hop-to-Hop encryption or link encryption, not end-to-end encryption.
         - 🐤**Address Resolution Protocol (ARP)**: operates at layer 2
         - Switches & bridges function at this layer
+            - 💥**Switch** operates at Layer 2 (Data Link Layer): A switch is more sophisticated than a hub and can forward data based on MAC addresses. It uses these addresses to direct traffic to the appropriate device, reducing collisions and improving network efficiency. A switch generally does not send frames to interfaces where the traffic is not destined
         - Logical Link Control (LLC) is one of two sublayers that make up the Data Link Layer
             - **ARP Poisoning**: also known as ARP spoofing, is a type of cyber attack in which an attacker sends falsified Address Resolution Protocol (ARP) messages over a local network. 
             - ARP poisoning can use unsolicited or gratuitous replies—­specifically, ARP replies for which the local device did not transmit an ARP broadcast request.
@@ -167,6 +168,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Converts a frame into bits for transmission/receiving over the physical connection medium
         - The Physical layer includes electrical specifications, protocols, and standards that allow control of throughput, handling line noise, and a variety of other electrical interface and signaling requirements
         - Network hardware devices that function at layer 1 include 📝NICs, 📝hubs, 📝repeaters, 📝concentrators, 📝amplifiers
+            - 💥**Hub** operates at Layer 1 (Physical Layer): A hub is a simple device that transmits electrical signals to all connected devices. It does not understand MAC addresses or any other data beyond the raw physical signals. Hubs transmit frames out all interfaces regardless of the source and destination Media Access Control (MAC) address.
         - The physical layer contains wire, fiber, wireless, Binary digITs (BIT), and so on.
         - provides or defines the type of media to be used and defines the representation of data on the medium. The physical layer is where messages are transferred to electrical impulses.
         - Know four basic network topologies:
