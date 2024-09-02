@@ -158,6 +158,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - 🐤**Address Resolution Protocol (ARP)**: operates at layer 2
         - Switches & bridges function at this layer
             - 💥**Switch** operates at Layer 2 (Data Link Layer): A switch is more sophisticated than a hub and can forward data based on MAC addresses. It uses these addresses to direct traffic to the appropriate device, reducing collisions and improving network efficiency. A switch generally does not send frames to interfaces where the traffic is not destined
+            - 💥**Bridge**: It is used to divide a network into segments and filter traffic between them based on MAC addresses. Used in smaller networks or to segment traffic in larger networks but less commonly used in modern networking due to the limitations in performance and scalability. Typically, it is used to connect two networks as if they were a single network.
         - Logical Link Control (LLC) is one of two sublayers that make up the Data Link Layer
             - **ARP Poisoning**: also known as ARP spoofing, is a type of cyber attack in which an attacker sends falsified Address Resolution Protocol (ARP) messages over a local network. 
             - ARP poisoning can use unsolicited or gratuitous replies—­specifically, ARP replies for which the local device did not transmit an ARP broadcast request.
@@ -408,7 +409,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - 📗**802.1X/EAP**: WPA, WPA2, and WPA3 support the enterprise (ENT) authentication known as 802.1X/EAP, a standard port-based network access control.
          - ⚒️**802.1X** is an Institute of Electrical and Electronics Engineers (IEEE) standard that requires network devices to be authenticated before accessing network resources. 802.1X can be used to dynamically assign a device to the correct Virtual Local Area Network (VLAN). It can be implemented on wired and wireless networks. Administrators can implement 802.1X using RADIUS as the centralized authentication protocol. It also uses Extensible Authentication Protocol (EAP) as a local protocol to transmit the authentication information to the access point when used in wireless networks.
      - Through the use of 802.1X, other solutions such as Remote Authentication Dial-In User Service (RADIUS), Terminal Access Controller Access Control System (TACACS), certificates, smartcards, token devices, and biometrics can be integrated into wireless networks, providing techniques for both mutual and multifactor authentication.
-- 📗**Extensible Authentication Protocol (EAP)***: is not a specific mechanism of authentication; rather it is an authentication framework. Effectively, EAP allows for new authentication technologies to be compatible with existing wireless or point-to-point connection technologies. More than 40 EAP methods have been defined, including ✏️LEAP, ✏️PEAP, ✏️EAP-­SIM, ✏️EAP-­FAST, ✏️EAP-­MD5, ✏️EAP-­POTP, ✏️EAP-­TLS, and ✏️EAP-­TTLS.
+- 📗**Extensible Authentication Protocol (EAP)***: is not a specific mechanism of authentication; rather it is an authentication 📝framework. Effectively, EAP allows for new authentication technologies to be compatible with existing wireless or point-to-point connection technologies. More than 40 EAP methods have been defined, including ✏️LEAP, ✏️PEAP, ✏️EAP-­SIM, ✏️EAP-­FAST, ✏️EAP-­MD5, ✏️EAP-­POTP, ✏️EAP-­TLS, and ✏️EAP-­TTLS.
+    - Extensible Authentication Protocol (EAP) is a 📝framework for authentication rather than a standalone authentication protocol. EAP is used to negotiate the best authentication method that both a client and server agree on. The authentication types that it can carry include smartcards, tokens, and biometrics, as well as the traditional password. 
 - 📗**LEAP**: Lightweight Extensible Authentication Protocol (LEAP) is a Cisco proprietary alternative to TKIP for WPA.
      - This was developed to address deficiencies in TKIP before the 802.11i/WPA2 system was ratified as a standard.
      - An attack tool known as asleap was released in 2004 that could exploit LEAP;
@@ -417,11 +419,13 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
      - Since EAP was originally designed for use over physically isolated channels and hence assumed secured pathways, EAP is usually not encrypted.
      - So PEAP can provide encryption for EAP methods.
 - 📗**CHAP**:Challenge-Handshake Authentication Protocol, or CHAP, is used by PPP servers to authenticate remote clients.
-     - It encrypts both the username and password and performs periodic reauthentication while connected using techniques to prevent replay attacks. 
+     - It encrypts both the username and password and performs periodic reauthentication while connected using techniques to prevent replay attacks.
+     - CHAP was the next protocol after PAP, but it also only carries passwords
 - 📗**Password Authentication Protocol (PAP)**: PAP transmits usernames and passwords in cleartext.
      - It offers no form of encryption;
      - it simply provides a means to transport the logon credentials from the client to the authentication server.
      - Also used by PPP servers.
+     - PAP is one of the oldest authentication protocols that transports a password and only a password.
 - 📗**Zigbee**: IoT equipment communications concept based on Bluetooth. It requires close proximity of devices and communications are encrypted.
      - Low power/low throughput
      - Requires close proximity
