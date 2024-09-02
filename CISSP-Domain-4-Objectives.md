@@ -222,10 +222,17 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                   -  🐝DNS64: Works with NAT64 to synthesize IPv6 addresses from IPv4 addresses in DNS responses.
              
     - 🔴**TCP/IP Model**
-        - 📝Application layer: Application Layer: defines protocols for node-to-node application communication and provides services to the application software running on a computer
-        - 📝Transport layer: Transport Layer: defines protocols for setting up the level of transmission service for applications; this layer is responsible for the reliable transmission of data and the error-free delivery of packets
-        - 📝Internet layer: Internet Layer: defines the protocols for logically transmitting packets over the network
-        - 📝Network Access layer: Network Access Layer: defines the protocols and hardware required to deliver data across a physical network
+        - 📝Application layer: Application Layer: defines protocols for node-to-node application communication and provides services to the application software running on a computer. HTTP, FTP, SMTP, DNS, SNMP.
+        - 📝Transport layer: Transport Layer: defines protocols for setting up the level of transmission service for applications; this layer is responsible for the reliable transmission of data and the error-free delivery of packets. TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+        - 📝Internet layer: Internet Layer: defines the protocols for logically transmitting packets over the network.  Internet Protocol (IP).
+        - 📝Network Access layer: Network Access Layer: defines the protocols and hardware required to deliver data across a physical network. It handles the physical transmission of data over a network, including hardware addressing (MAC addresses), framing, and error detection at the hardware level.
+        - the TCP/IP model can also be listed as:
+            - 💠Application
+            - 💠Host-to-Host
+            - 💠Internet
+            - 💠Link
+            - 💠Physical
+        - Sometimes the physical and the link layers are considered one and called network access. The host-to-host layer equates to the transport layer of the OSI model and is sometimes called the transport layer. The top three layers of the OSI model are represented in the TCP/IP model as the application layer. There is often confusion in conversations due to this.
 
 - 4.1.3 Secure protocols
     - ❄️**Kerberos**: standards-based network authentication protocol, used in many products (most notably Microsoft Active Directory Domain Services or AD DS)     
