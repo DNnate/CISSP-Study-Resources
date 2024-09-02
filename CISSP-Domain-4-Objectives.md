@@ -177,14 +177,12 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - The physical layer contains wire, fiber, wireless, Binary digITs (BIT), and so on.
         - provides or defines the type of media to be used and defines the representation of data on the medium. The physical layer is where messages are transferred to electrical impulses.
         - Know four basic network topologies:
-            - 🍌**star**: each individual node on the network is directly connect to a switch/hub/concentrator. A star topology has a single point of failure at its center device
-            - 🍌**mesh**: all systems are interconnected; partial mesh can be created by adding multiple NICs or server clustering. Mesh topologies provide redundant connections to systems, allowing multiple segment failures without seriously affecting connectivity.
-            - 🍌**ring**: closed loop that connects end devices in a continuous ring (all communication travels in a single direction around the ring); A ring topology is a single point of failure at any location around the cable ring
+            - 🍌**Star**: each individual node on the network is directly connect to a switch/hub/concentrator. A star topology has a single point of failure at its center device. However, it allows nodes to fail without impacting other nodes on the network.
+            - 🍌**Mesh**: all systems are interconnected; partial mesh can be created by adding multiple NICs or server clustering. Mesh topologies provide redundant connections to systems, allowing multiple segment failures without seriously affecting connectivity.
+            - 🍌**Ring**: closed loop that connects end devices in a continuous ring (all communication travels in a single direction around the ring); A ring topology is a single point of failure at any location around the cable ring
                 - **Multistation Access Unit** (MSAU or MAU) connects individual devices
-                - used in token ring and FDDI networks
-            - 🍌**bus**: all devices are connected to a single cable (backbone) terminated on both ends. A bus topology has a single point of failure at its central backbone cable.
-        - Know commonly used twisted-pair cable categories
-        - Know cable types & characteristics
+                - used in token ring and FDDI networks. When all nodes are connected in a closed loop it is a ring, so it would be a Token Rink or Fiber Distributed Data Interface (FDDI).
+            - 🍌**Bus**: all devices are connected to a single cable (backbone) terminated on both ends. A bus topology has a single point of failure at its central backbone cable. When all nodes are connected to a single cable it is considered a BUS network. 
 
 - 4.1.2 Internet Protocol (IP) networking (e.g., Internet Protocol Security (IPSec), Internet Protocol (IP) v4/6)
      - IP is part of the TCP/IP (Transmission Control Protocol/Internet Protocol) suite
@@ -667,9 +665,9 @@ The components of a network make up the backbone of the logical infrastructure f
 - 4.3.1 Voice
     - 📗**Voice of Internet Protocol (VoIP)**: set of technologies that enables voice to be sent over a packet network
     - As more orgs switch to VoIP, protocols like SIP become more common, and introducing additional management, either via dedicated voice VLANs, or by establishing quality of service (QoS) levels to ensure voice traffic priority
-    - 🔥SIPS, the secure version of the Session Initialization Protocol for VoIP, adds TLS encryption to keep the session initialization process secure. 📝SIPS and SRTP are appropriate for a VoIP environment, but are not generally a complete solution for a modern multimedia collaboration platform like Microsoft Teams, Zoom, or WebEx. (Modern collaboration platforms support TLS throughout their communications allowing clients to securely connect to the service and to encrypt communications.)
-         - 🍉SIP is primarily used for initiating, maintaining, and terminating real-time communication sessions. It handles the setup and teardown of calls or sessions.  It deals with the signaling aspect of a communication session, including establishing session parameters.
-         - 🍉RTP is used for the actual transmission of media streams (like audio and video) once the session has been established. After the SIP protocol has established a VoIP call, RTP is used to carry the audio data between the caller and receiver during the call.
+    - 🔥SIPS, the secure version of the Session Initialization Protocol for VoIP, adds TLS encryption to keep the session initialization process secure. 📝SIPS and SRTP are appropriate for a VoIP environment, but are not generally a complete solution for a modern multimedia collaboration platform like Microsoft Teams, Zoom, or WebEx. (Modern collaboration platforms support TLS throughout their communications allowing clients to securely connect to the service and to encrypt communications.) Media packets can be encrypted by using the Secure Real-time Transport Protocol (SRTP). When SRTP is used, keys are generally exchanged by the SIP protocol.
+         - 🍉SIP is primarily used for initiating, maintaining, and terminating real-time communication sessions. It handles the setup and teardown of calls or sessions.  It deals with the signaling aspect of a communication session, including establishing session parameters. It does not carry the actual media between each endpoint.
+         - 🍉RTP is used for the actual transmission of media streams (like audio and video) once the session has been established. After the SIP protocol has established a VoIP call, RTP is used to carry the audio data between the caller and receiver during the call. RTP settings are negotiated between endpoints by Session Initiation Protocol (SIP)
     - Web-based voice apps can be more difficult to manage, causing additional unplanned bandwidth consumption
     - In most cases, VoIP is only able to be encrypted between 📝compatible VoIP solutions, which is usually only those products provided by the same VoIP vendor, or VoIP endpoints that are from the same VoIP vendor or provider
     - VoIP is at risk for 📝caller ID spoofing, 📝vishing, call manager 📝software/firmware attacks, phone 📝hardware attacks, 📝DoS, 📝MitM/on-path attacks, 📝spoofing, and 📝switch hopping.
