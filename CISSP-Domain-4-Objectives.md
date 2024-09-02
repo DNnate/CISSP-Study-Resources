@@ -404,6 +404,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
              - SAE performs a zero-knowledge proof process known as Dragonfly Key Exchange, which is itself a derivative of Diffie–Hellman.
              - However, consider using a 📝captive portal if the end goal is to gather data from customers such as email address, but customer data will not be encrypted. 
 - 📗**802.1X/EAP**: WPA, WPA2, and WPA3 support the enterprise (ENT) authentication known as 802.1X/EAP, a standard port-based network access control.
+         - ⚒️**802.1X** is an Institute of Electrical and Electronics Engineers (IEEE) standard that requires network devices to be authenticated before accessing network resources. 802.1X can be used to dynamically assign a device to the correct Virtual Local Area Network (VLAN). It can be implemented on wired and wireless networks. Administrators can implement 802.1X using RADIUS as the centralized authentication protocol. It also uses Extensible Authentication Protocol (EAP) as a local protocol to transmit the authentication information to the access point when used in wireless networks.
      - Through the use of 802.1X, other solutions such as Remote Authentication Dial-In User Service (RADIUS), Terminal Access Controller Access Control System (TACACS), certificates, smartcards, token devices, and biometrics can be integrated into wireless networks, providing techniques for both mutual and multifactor authentication.
 - 📗**Extensible Authentication Protocol (EAP)***: is not a specific mechanism of authentication; rather it is an authentication framework. Effectively, EAP allows for new authentication technologies to be compatible with existing wireless or point-to-point connection technologies. More than 40 EAP methods have been defined, including ✏️LEAP, ✏️PEAP, ✏️EAP-­SIM, ✏️EAP-­FAST, ✏️EAP-­MD5, ✏️EAP-­POTP, ✏️EAP-­TLS, and ✏️EAP-­TTLS.
 - 📗**LEAP**: Lightweight Extensible Authentication Protocol (LEAP) is a Cisco proprietary alternative to TKIP for WPA.
@@ -581,7 +582,7 @@ The components of a network make up the backbone of the logical infrastructure f
         - 🍈Dissolvable: usually written in a web/mobile language and is executed on each local machine when the specific management web page is accessed (such as captive portal). A dissolvable NAC agent can be set to run once and then terminate.
         - 🍈Permanent: installed on the monitored system as a persistent background service
     - Just as you need to control physical access to equipment and wiring, you need to use logical controls to protect a network; there are a variety of devices that provide this type of protection, including:
-        - **Stateful and Stateless firewalls** can perform inspection of the network packets and use rules, signatures and patterns to determine whether the packet should be delivered. Circuit-level firewalls (aka circuit proxies) are used to establish communication sessions between trusted partners. In theory, they operate at the Session layer (layer 5) of the OSI model.
+        - 💥**Stateful and Stateless firewalls** can perform inspection of the network packets and use rules, signatures and patterns to determine whether the packet should be delivered. Circuit-level firewalls (aka circuit proxies) are used to establish communication sessions between trusted partners. In theory, they operate at the Session layer (layer 5) of the OSI model.
             - reasons for dropping a packet could include addresses that don’t exist on the network, ports or addresses that are blocked, or the content of the packet (e.g malicious packets blocked by admin policy)
             - ⚒️Tier 1 Firewall - One protected Zone e.g Internet 
             - ⚒️Tier 2 Firewall - Two Protected Zones e.g Internet and DMZ and so on.
@@ -625,7 +626,7 @@ The components of a network make up the backbone of the logical infrastructure f
 [4.3](#4.3) Implement secure communication channels according to design ((OSG-9 Chpt 12))
 - Protocols that provide security services for application-specific communication channels are called secure communication protocols
 - 4.3.1 Voice
-    - **Voice of Internet Protocol (VoIP)**: set of technologies that enables voice to be sent over a packet network
+    - 📗**Voice of Internet Protocol (VoIP)**: set of technologies that enables voice to be sent over a packet network
     - As more orgs switch to VoIP, protocols like SIP become more common, and introducing additional management, either via dedicated voice VLANs, or by establishing quality of service (QoS) levels to ensure voice traffic priority
     - 🔥SIPS, the secure version of the Session Initialization Protocol for VoIP, adds TLS encryption to keep the session initialization process secure. 📝SIPS and SRTP are appropriate for a VoIP environment, but are not generally a complete solution for a modern multimedia collaboration platform like Microsoft Teams, Zoom, or WebEx. (Modern collaboration platforms support TLS throughout their communications allowing clients to securely connect to the service and to encrypt communications.)
          - 🍉SIP is primarily used for initiating, maintaining, and terminating real-time communication sessions. It handles the setup and teardown of calls or sessions.  It deals with the signaling aspect of a communication session, including establishing session parameters.
@@ -667,7 +668,7 @@ The components of a network make up the backbone of the logical infrastructure f
         - 🎽Prevent ghost or phantom calls on IP phones by blocking nonexistent or invalid-origin numbers.
         - 🎽Implement NIPS with VoIP evaluation features.
 
-- **Switching Technologies**
+-📘 **Switching Technologies**
 
 | Circuit Switching      | Packet Switching      | 
 |------------------------|-----------------------|
@@ -684,8 +685,7 @@ The components of a network make up the backbone of the logical infrastructure f
     - 🍊Switched virtual circuits (SVCs): An SVC has to be 📝created each time it is needed using the best paths currently available before it can be used and then disassembled after the transmission is complete. An SVC is more like a shortwave or ham radio. You must tune the transmitter and receiver to a new frequency every time you want to communicate with someone.  SVCs use unique settings, parameters or virtual pathway each time.
         - An SVC is seen in the traditional Plain Old Telephone System (POTS) as well as X.25, frame relay, and ATM. In the POTS network, if someone picks up a phone they then have to dial a phone number. That number is used to navigate the network, set up a connection, and ring the phone on the other end. Once the call is finished and someone hangs up their phone, the connection is dropped. 
     - In either type of virtual circuit, when a data packet enters point A of a virtual circuit connection, that packet is sent directly to point B or the other end of the virtual circuit. However, the actual path of one packet may be different from the path of another packet from the same transmission. In other words, multiple paths may exist between point A and point B as the ends of the virtual circuit, but any packet entering at point A will end up at point B.
-
-- **WAN Technologies**
+- 📘**WAN Technologies**
     - 🟢**A dedicated line (also called a leased line or point-to-point link)** is one that is continually reserved for use by a specific customer. A dedicated line is always on and waiting for traffic to be transmitted over it. The link between the customer’s LAN and the dedicated WAN link is always open and established. A dedicated line connects two specific endpoints and only those two endpoints. This type of connection is often used between multiple business locations, so they can effectively communicate as a single entity.
      - There have been numerous types of dedicated lines over the years, ranging from the T1 (telephone line 1 with 1.54 Mbps capacity) to T3 or DS3 (Digital Service 3 with 44.7 Mbps capacity). Other options included X.25, Asynchronous Transfer Mode (ATM), and Frame Relay. These technologies have mostly been replaced by fiber optic–based solutions.
      - For long-term connections like backhaul networks, a point-to-point VPN that is connected at all times is the most common choice to ensure all traffic is secured. 
@@ -787,7 +787,7 @@ Connection: The DCE connects the DTE to the Frame Relay network, acting as an in
      - ❄️**STARTTLS** using Secure SMTP over TLS. STARTTLS (aka explicit TLS or opportunistic TLS for SMTP) will attempt to set up an encrypted connection with the target email server. STARTTLS is not a protocol but instead an SMTP command. Once the initial SMTP connection is made to the email server, the STARTTLS command will be used if the target server supports it. Otherwise, it will remain as plaintext. STARTTLS’s secure session will take place on TCP port 587. STARTTLS can also be used with IMAP connections, whereas POP3 connections use the STLS command to perform a similar function.
      - ❄️**Implicit SMTPS** This is the TLS-encrypted form of SMTP, which assumes the target server supports TLS. If accurate, then an encrypted session is negotiated. If not, then the connection is terminated because plaintext is not accepted. SMTPS communications are initiated against TCP port 465.
 
-IEEE 802.1 - Bridging and Network Management
+🍏IEEE 802.1 - Bridging and Network Management
 - 802.1Q: VLAN Tagging - Defines VLANs and the tagging protocol used to identify VLAN traffic.
 - 802.1X: Port-Based Network Access Control - Provides an authentication mechanism for devices wishing to attach to a LAN or WLAN.
 - 802.1D: Spanning Tree Protocol (STP) - Provides loop-free topology for Ethernet networks.
@@ -795,7 +795,7 @@ IEEE 802.1 - Bridging and Network Management
 - 802.1s: Multiple Spanning Tree Protocol (MSTP) - Extends RSTP to support multiple spanning trees.
 - 802.1ad: Provider Bridges (Q-in-Q) - Extends VLANs for use in provider networks.
 - 
-IEEE 802.3 - Ethernet
+🍏IEEE 802.3 - Ethernet
 - 802.3i: 10BASE-T - 10 Mbps over twisted pair cabling.
 - 802.3u: 100BASE-TX - Fast Ethernet, 100 Mbps over twisted pair cabling.
 - 802.3ab: 1000BASE-T - Gigabit Ethernet over twisted pair cabling.
@@ -803,7 +803,7 @@ IEEE 802.3 - Ethernet
 - 802.3af: Power over Ethernet (PoE) - Provides power over Ethernet cabling.
 - 802.3at: Power over Ethernet Plus (PoE+) - Enhanced version of PoE with higher power delivery.
   
-IEEE 802.11 - Wireless LAN (Wi-Fi)
+🍏IEEE 802.11 - Wireless LAN (Wi-Fi)
 - 802.11a: 5 GHz, up to 54 Mbps.
 - 802.11b: 2.4 GHz, up to 11 Mbps.
 - 802.11g: 2.4 GHz, up to 54 Mbps.
@@ -811,17 +811,17 @@ IEEE 802.11 - Wireless LAN (Wi-Fi)
 - 802.11ac: 5 GHz, up to several Gbps with wider channels and more MIMO streams.
 - 802.11ax: Wi-Fi 6, improvements in throughput and efficiency.
   
-IEEE 802.15 - Wireless Personal Area Networks (WPAN)
+🍏IEEE 802.15 - Wireless Personal Area Networks (WPAN)
 - 802.15.1: Bluetooth.
 - 802.15.4: Low-Rate WPAN (used by protocols like Zigbee).
   
-IEEE 802.16 - Broadband Wireless Access
+🍏IEEE 802.16 - Broadband Wireless Access (MAN)
 - 802.16: WiMAX - Provides wireless metropolitan area network (MAN) connectivity.
   
-IEEE 802.17 - Resilient Packet Ring (RPR)
+🍏IEEE 802.17 - Resilient Packet Ring (RPR)
 - 802.17: RPR - Optimizes the transport of data traffic over fiber ring networks.
 
-***UTP categories***
+- **UTP categories**
 
 | UTP    | Throuput      |Notes               |
 |--------|---------------| -------------------|
@@ -838,17 +838,14 @@ IEEE 802.17 - Resilient Packet Ring (RPR)
 
 - Maximum distance to deploy twisted-pair cable (1000BaseT) should not be longer than 100 meters
 - Attenuation is the loss of signal as it travels through a medium. Ethernet connections should not exceed the recommended length of 100 meters. Excessive length can cause the signal to degrade as it travels through the cable. This can lead to packet loss or excessive latency.
-- **Coax**
-
+- 📘**Coax**
 - There are two main types of coaxial cable: thinnet and thicknet. 
     - Thinnet (10Base2) was commonly used to connect systems to backbone trunks of thicknet cabling. Thinnet can span
         distances of 185 meters and provide throughput up to 10 Mbps. 
     - Thicknet (10Base5) can span 500 meters and provide throughput up to 10 Mbps.
     
 Bending the coax cable past its maximum arc radius may break the center conductor and Deploying the coax cable in a length greater than its maximum recommended may cause isses.
-
-***Fibre Optics***
-
+- 📘**Fibre Optics**
 - Fiber can be deployed as single-mode (supporting a single light signal) or multimode (supporting multiple light signals).  
     - Single-mode fiber has a thinner optical core, lower attenuation over distance, and potentially unlimited bandwidth. It
 uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km without repeaters, and is typically sheathed in yellow.
@@ -865,9 +862,9 @@ uses a 1310 nm or 1550 nm wavelength laser, can be deployed in runs up to 10 km 
 |STS-192/OC-192 | STM-64      | 9.953 Gbps |
 |STS-768/OC-768 | STM-256      | 39.813 Gbps |
 
-Synchronous Digital Hierarchy (SDH) and Synchronous Optical Network (SONET) are fiber-optic high-speed networking standards. SDH was standardized by the International Telecommunications Union (ITU) and SONET by the American National Standards Institute (ANSI). SDH and SONET are mostly hardware or physical layer standards defining infrastructure and line speed requirements. SDH and SONET use synchronous time-division multiplexing (TDM) to high-speed duplex communications with minimal need for control and management overhead.
+- Synchronous Digital Hierarchy (SDH) and Synchronous Optical Network (SONET) are fiber-optic high-speed networking standards. SDH was standardized by the International Telecommunications Union (ITU) and SONET by the American National Standards Institute (ANSI). SDH and SONET are mostly hardware or physical layer standards defining infrastructure and line speed requirements. SDH and SONET use synchronous time-division multiplexing (TDM) to high-speed duplex communications with minimal need for control and management overhead.
 
-- **Common VPN Protocols**: VPNs can be implemented using software or hardware solutions. In either case, there are several common VPN protocols: PPTP, L2TP, L2F (Cisco), SSH, OpenVPN (i.e., TLS), and IPsec.
+- 📁**Common VPN Protocols**: VPNs can be implemented using software or hardware solutions. In either case, there are several common VPN protocols: PPTP, L2TP, L2F (Cisco), SSH, OpenVPN (i.e., TLS), and IPsec.
   - ⚓Tunnel Mode: encrypts the entire IP packet, including both the header and the payload, and then encapsulates it within a new IP packet. This mode is commonly used for VPNs that connect entire networks or provide secure communication over untrusted networks. Tunnel mode VPNs are used to connect networks to networks or hosts to networks. It is applied in Site-to-Site VPNs and remote access VPNs
   - ⚓Transport Mode: encrypts only the payload of the IP packet, leaving the original IP header intact. This mode is typically used for end-to-end communications between individual devices. Transport mode is used to connect hosts to hosts. 
     - ⚒️**TLS**:  TLS is also used for an increasingly large percentage of VPN connections and may appear at some point in the CISSP exam.
