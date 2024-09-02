@@ -116,6 +116,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - emphasizing: full-duplex, connection-oriented protocol
                 - uses three-way handshake, which makes it a connection-oriented protocol.
                 - It supports full-duplex communications, is connection-oriented, and employs reliable sessions.
+                - 🔨Flow control, or congestion control, is manipulated by using sliding windows in the Transmission Control Protocol (TCP). Sliding windows change the number of packets that can be sent before an acknowledgment is required. This allows the window size to change if congestion or packet loss is detected. Larger windows increase the number of packets that can be sent before an acknowledgment is required, and smaller windows decrease the number of packets that can be sent before an acknowledgment is required.
+                - 🔨TCP Checksum: Instead of CRC, TCP uses a checksum to verify data integrity. The checksum is a simpler form of error detection than CRC. It is calculated over the TCP header and data and included in the TCP segment. The receiving end performs the same checksum calculation and compares the result with the checksum received. If they match, the data is accepted; if not, it is rejected. UDP Checksum provides integrity for UDP datagrams; it is optional in IPv4 but mandatory in IPv6.
             - 🛠️User Datagram Protocol (UDP)
                 - connectionless protocol that provides fast, best-effort delivery of **datagrams** (self-container unit of data)
                 - User Datagram Protocol (UDP) does not employ a handshake
@@ -123,18 +125,19 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - 🛠️Transport Layer Security (TLS)
     - ❄️**Network Layer (3)**
         - Responsible for logical addressing, and providing routing or delivery guidance (but not necessarily verifying guaranteed delivery), manages error detection and traffic control
-        - **routing protocols**: move routed protocol messages across a network
+        - 🔨IP Header Checksum: In the IPv4 protocol, the Network Layer uses a checksum in the IP header to ensure that the header itself has not been corrupted during transmission. The checksum is calculated by summing all the 16-bit words in the IP header. The result is then complemented, and this value is placed in the checksum field of the IP header. When the packet is received, the checksum is recalculated. If the result differs from the checksum in the header, the packet is considered corrupt and is discarded.  The checksum only covers the IP header, not the payload (the data part of the packet). IPv6, the newer version of the Internet Protocol, does not use a checksum in the IP header.
+        - 🔨**Routing Protocols**: move routed protocol messages across a network
             - it ensures that messages are delivered to the proper device across a physical network link
             - includes RIP, OSPF, IS-IS, IGRP, and BGP
             - routing protocols are defined at the Network Layer and specify how routers communicate
             - routing protocols can be static or dynamic, and categorized as interior or exterior
-            - 🏺**static routing protocol**: requires an admin to create/update routes on the router
-            - 🏺**dynamic**: can discover routers and determine best route to a given destination; routing table is periodically updated
-            - 🍍**distance-vector**: (interior) makes routing decisions based on distance (e.g. hop count), and vector (router egress interface);  Distance-vector protocols use metrics including the direction and distance in hops to remote networks to make decisions. examples:
+            - 🏺**Static routing protocol**: requires an admin to create/update routes on the router
+            - 🏺**Dynamic**: can discover routers and determine best route to a given destination; routing table is periodically updated
+            - 🍍**Distance-vector**: (interior) makes routing decisions based on distance (e.g. hop count), and vector (router egress interface);  Distance-vector protocols use metrics including the direction and distance in hops to remote networks to make decisions. examples:
                 - **Routing Information Protocol (RIP)**: a distance-vector protocol that uses hop count as its routing metric
                 - Interior Gateway Routing Protocol (IGRP)
                 - Enhanced Interior Gateway Routing Protocol (EIGRP). This is Cisco Proprietary.
-            - 🍍**link state**: (interior) uses router characteristics (e.g. speed, latency, error rates) to make next hop routing decisions based on the shortest distance to a remote network. examples:
+            - 🍍**Link state**: (interior) uses router characteristics (e.g. speed, latency, error rates) to make next hop routing decisions based on the shortest distance to a remote network. examples:
                 - **Open Shortest Path First (OSPF)**: an interior gateway routing protocol developed for IP networks based on shorest path first or link-state algorithm
                 - Intermediate System to Intermediate System (IS-IS)
             - interior vs exterior:
@@ -155,6 +158,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - 📝first 3b/24-bits: Organizationally Unique Identifier (OUI) - denotes manufacturer
                 - last 3b/24-bits: unique to that interface
         - 🐤**MACsec**: MACsec (Media Access Control Security) operates at Layer 2 (Data Link Layer). MACsec is a security protocol that provides confidentiality, integrity, and origin authenticity for data at the Data Link Layer. It encrypts and authenticates packets between directly connected nodes (e.g., switches, routers) on a LAN, ensuring that even if data is intercepted at this level, it cannot be understood or tampered with. 📝802.1AE, also known as MACsec, is an Institute of Electrical and Electronics Engineers (IEEE) standard that provides confidentiality and integrity at the data link layer of the Open Systems Interconnection (OSI) model. MACsec adds additional headers to the frame that identify it has been protected with MACsec. MACsec provides Hop-to-Hop encryption or link encryption, not end-to-end encryption.
+        - 🐤CRC (Cyclic Redundancy Check) is used at the data link layer (Layer 2) for ensuring data integrity. CRC is a method used to detect errors in data transmission. It is commonly used in network protocols at the data link layer, such as Ethernet and Wi-Fi. It ensures that data frames sent over the network are not corrupted during transmission. When data is transmitted, a CRC value (a type of checksum) is calculated from the data and sent along with it. The receiving device recalculates the CRC value from the received data and compares it with the transmitted CRC. If they match, the data is considered intact; if not, an error is detected, and the data may be discarded or requested for retransmission.
         - 🐤**Address Resolution Protocol (ARP)**: operates at layer 2
         - Switches & bridges function at this layer
             - 💥**Switch** operates at Layer 2 (Data Link Layer): A switch is more sophisticated than a hub and can forward data based on MAC addresses. It uses these addresses to direct traffic to the appropriate device, reducing collisions and improving network efficiency. A switch generally does not send frames to interfaces where the traffic is not destined
