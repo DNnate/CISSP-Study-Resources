@@ -97,9 +97,9 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Responsible for establishing, maintaining, and terminating communication sessions between two computers
         - Three communication session phases: 
             - connection establishment
-                - 🎈**simplex**: one-way 
-                - 🎈**half-duplex**: both comm devices can transmit/receive, but not at the same time
-                - 🎈**full-duplex**: both comm devices can transmit/receive at same time
+                - 🎈**simplex**: one-way. In simplex mode, a one-way communications path is established with a transmitter at one end of the connection and a receiver at the other end. e.g car radio
+                - 🎈**half-duplex**: both comm devices can transmit/receive, but not at the same time. In half duplex both communicating devices can transmit and receive messages but cannot do so simultaneously. e.g walkie-talkie
+                - 🎈**full-duplex**: both comm devices can transmit/receive at same time. In Full-duplex mode, both communicating devices are capable of transmitting and receiving simultaneously. e.g cellular phone
             - data transfer
             - connection release
             - it establishes, coordinates, and terminates a communication session.
@@ -546,12 +546,12 @@ The components of a network make up the backbone of the logical infrastructure f
             - longer lengths than twisted pair
             - requires segment terminators
             - two main types:
-                - **thinnet (10Base2)**: used to connect systems to backbond trunks of thicknet cabling (185m, 10Mbps)
-                - **thicknet (10Base5)**: can span 500 meters and provide up to 10Mbps
+                - 🔨**thinnet (10Base2)**: used to connect systems to backbond trunks of thicknet cabling (185m, 10Mbps)
+                - 🔨**thicknet (10Base5)**: can span 500 meters and provide up to 10Mbps
         - 🍖Ethernet (Copper) can be used to describe many mediums, it is typically associated with Category 5/6 unshielded twisted-pair (UTP) or shielded twisted pair (STP), and can be plenum-rated
         - 📝A repeater, switch, or concentrator can be used to amplify signals, ensuring that the 100-meter (328 Feet) distance limitation of 1000BaseT or CAT 6 is not an issue.
         -  STP cable is limited to 155 Mbps and 100 meters (328 Feet)
-        - fiber typically comes in two options: single-mode or multi-mode
+        - 🍖fiber typically comes in two options: single-mode or multi-mode
             - 🥑Single-mode is typically used for long-distance communication, over several kilometers or miles
             - 🥑Multi-mode fiber is typically used for faster transmission, but with a distance limit depending on the desired speed
             - Fiber is most often used in the datacenter for backend components
