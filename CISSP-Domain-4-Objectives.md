@@ -826,9 +826,9 @@ IEEE 802.17 - Resilient Packet Ring (RPR)
 | Cat 7  | 10 Gbps       | Gigabit Ethernet, 10G Ethernet.|
 | Cat 8  | 40 Gbps       | 10G+ Ethernet.|
 
-Maximum distance to deploy twisted-pair cable (1000BaseT) should not be longer than 100 meters
-
-***Coax***
+- Maximum distance to deploy twisted-pair cable (1000BaseT) should not be longer than 100 meters
+- Attenuation is the loss of signal as it travels through a medium. Ethernet connections should not exceed the recommended length of 100 meters. Excessive length can cause the signal to degrade as it travels through the cable. This can lead to packet loss or excessive latency.
+- **Coax**
 
 - There are two main types of coaxial cable: thinnet and thicknet. 
     - Thinnet (10Base2) was commonly used to connect systems to backbone trunks of thicknet cabling. Thinnet can span
