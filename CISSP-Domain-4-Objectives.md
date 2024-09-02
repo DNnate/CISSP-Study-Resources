@@ -570,6 +570,17 @@ The components of a network make up the backbone of the logical infrastructure f
         | Cat 7    |   10 Gbps  |        |
         | Cat 8    |   40 Gbps  |        |
 
+-Common  fiber optic connectors and their uses:
+| Connector    | Uses      |Design               |
+|--------|---------------| -------------------|
+| SC (Subscriber Connector)  | single-mode and multi-mode        | square-shaped, push-pull connector |
+| LC (Lucent Connector)  | single-mode and multi-mode (high-density applications)       | small, compact connector with a latch |
+| ST (Straight Tip)  | multi-mode fiber (legacy systems)       | bayonet-style coupling mechanism |
+| MTP/MPO (Multi-Fiber Push-On/Pull-Off) |  multiple fibers (e.g., 12, 24, 48 fibers) high-density and high-bandwidth applications.      | multiple fibers are terminated in a single connector.|
+| FC (Ferrule Connector)  | single-mode fiber (high precision and minimal signal loss)      | screw-on mechanism |
+| LC/APC and SC/APC | single-mode fiber applications where low signal loss and high performance are critical     | Angled Physical Contact) connectors are designed to reduce back-reflection.|
+| LC/UPC and SC/UPC  |  single-mode and multi-mode fibers,  low insertion/signal loss | polished UPC (Ultra Physical Contact) connectors .|
+
 - 4.2.3 Network Access Control (NAC) devices
 - Port security can refer to several concepts, including network access control (NAC), Transport layer ports, and RJ-­45 jack ports. Port security is generally a MAC address–based security feature that can only restrict which systems or devices can connect to a given port. 📝NAC requires authentication before devices can communicate on the network. 📝Transport-­layer port security involves using firewalls to grant or deny communications to TCP and UDP ports. 📝physical control of all connection points. RJ-­45 jacks should be managed so that unused ports are disabled and that when a cable is disconnected, the port is disabled. This approach prevents the connection of unauthorized devices, cam table flooding etc.
     - **Network Access Control (NAC)**: the concept of controlling access to an environment through strict adherence to and enforcement of security policy
