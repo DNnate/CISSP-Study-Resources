@@ -154,11 +154,11 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - MAC address is a 6-byte (48-bit) binary address written in hex
                 - 📝first 3b/24-bits: Organizationally Unique Identifier (OUI) - denotes manufacturer
                 - last 3b/24-bits: unique to that interface
-        - 🐤**MACsec**: MACsec (Media Access Control Security) operates at Layer 2 (Data Link Layer). MACsec is a security protocol that provides confidentiality, integrity, and origin authenticity for data at the Data Link Layer. It encrypts and authenticates packets between directly connected nodes (e.g., switches, routers) on a LAN, ensuring that even if data is intercepted at this level, it cannot be understood or tampered with. 802.1AE, also known as MACsec, is an Institute of Electrical and Electronics Engineers (IEEE) standard that provides confidentiality and integrity at the data link layer of the Open Systems Interconnection (OSI) model. MACsec adds additional headers to the frame that identify it has been protected with MACsec. MACsec provides Hop-to-Hop encryption or link encryption, not end-to-end encryption.
+        - 🐤**MACsec**: MACsec (Media Access Control Security) operates at Layer 2 (Data Link Layer). MACsec is a security protocol that provides confidentiality, integrity, and origin authenticity for data at the Data Link Layer. It encrypts and authenticates packets between directly connected nodes (e.g., switches, routers) on a LAN, ensuring that even if data is intercepted at this level, it cannot be understood or tampered with. 📝802.1AE, also known as MACsec, is an Institute of Electrical and Electronics Engineers (IEEE) standard that provides confidentiality and integrity at the data link layer of the Open Systems Interconnection (OSI) model. MACsec adds additional headers to the frame that identify it has been protected with MACsec. MACsec provides Hop-to-Hop encryption or link encryption, not end-to-end encryption.
         - 🐤**Address Resolution Protocol (ARP)**: operates at layer 2
         - Switches & bridges function at this layer
         - Logical Link Control (LLC) is one of two sublayers that make up the Data Link Layer
-        - **ARP Poisoning**: also known as ARP spoofing, is a type of cyber attack in which an attacker sends falsified Address Resolution Protocol (ARP) messages over a local network. 
+            - **ARP Poisoning**: also known as ARP spoofing, is a type of cyber attack in which an attacker sends falsified Address Resolution Protocol (ARP) messages over a local network. 
             - ARP poisoning can use unsolicited or gratuitous replies—­specifically, ARP replies for which the local device did not transmit an ARP broadcast request.
             - in ARP poisoning,  an attacker sends malicious ARP replies to the network. These replies contain incorrect mappings of IP addresses to MAC addresses. Devices on the network, upon receiving these forged ARP replies, update their ARP tables with the incorrect information.
             - It can be used for Man-in-the-Middle (MitM) Attacks, Denial of Service (DoS), and Session Hijacking.
@@ -794,7 +794,10 @@ Connection: The DCE connects the DTE to the Frame Relay network, acting as an in
 - 802.1w: Rapid Spanning Tree Protocol (RSTP) - An evolution of STP providing faster convergence.
 - 802.1s: Multiple Spanning Tree Protocol (MSTP) - Extends RSTP to support multiple spanning trees.
 - 802.1ad: Provider Bridges (Q-in-Q) - Extends VLANs for use in provider networks.
-- 
+
+🍏IEEE 802.1AE - MACsec
+- MACsec is an Institute of Electrical and Electronics Engineers (IEEE) standard that provides confidentiality and integrity at the data link layer of the Open Systems Interconnection (OSI) model.
+
 🍏IEEE 802.3 - Ethernet
 - 802.3i: 10BASE-T - 10 Mbps over twisted pair cabling.
 - 802.3u: 100BASE-TX - Fast Ethernet, 100 Mbps over twisted pair cabling.
@@ -810,14 +813,14 @@ Connection: The DCE connects the DTE to the Frame Relay network, acting as an in
 - 802.11n: 2.4/5 GHz, up to 600 Mbps with MIMO.
 - 802.11ac: 5 GHz, up to several Gbps with wider channels and more MIMO streams.
 - 802.11ax: Wi-Fi 6, improvements in throughput and efficiency.
-  
+
 🍏IEEE 802.15 - Wireless Personal Area Networks (WPAN)
 - 802.15.1: Bluetooth.
 - 802.15.4: Low-Rate WPAN (used by protocols like Zigbee).
-  
+
 🍏IEEE 802.16 - Broadband Wireless Access (MAN)
 - 802.16: WiMAX - Provides wireless metropolitan area network (MAN) connectivity.
-  
+
 🍏IEEE 802.17 - Resilient Packet Ring (RPR)
 - 802.17: RPR - Optimizes the transport of data traffic over fiber ring networks.
 
