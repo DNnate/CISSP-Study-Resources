@@ -428,19 +428,22 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
 - 📗**802.1X/EAP**: WPA, WPA2, and WPA3 support the enterprise (ENT) authentication known as 802.1X/EAP, a standard port-based network access control.
          - ⚒️**802.1X** is an Institute of Electrical and Electronics Engineers (IEEE) standard that requires network devices to be authenticated before accessing network resources. 802.1X can be used to dynamically assign a device to the correct Virtual Local Area Network (VLAN). It can be implemented on wired and wireless networks. Administrators can implement 802.1X using RADIUS as the centralized authentication protocol. It also uses Extensible Authentication Protocol (EAP) as a local protocol to transmit the authentication information to the access point when used in wireless networks.
      - Through the use of 802.1X, other solutions such as Remote Authentication Dial-In User Service (RADIUS), Terminal Access Controller Access Control System (TACACS), certificates, smartcards, token devices, and biometrics can be integrated into wireless networks, providing techniques for both mutual and multifactor authentication.
-- 📗**Extensible Authentication Protocol (EAP)***: is not a specific mechanism of authentication; rather it is an authentication 📝framework. Effectively, EAP allows for new authentication technologies to be compatible with existing wireless or point-to-point connection technologies. More than 40 EAP methods have been defined, including ✏️LEAP, ✏️PEAP, ✏️EAP-­SIM, ✏️EAP-­FAST, ✏️EAP-­MD5, ✏️EAP-­POTP, ✏️EAP-­TLS, and ✏️EAP-­TTLS.
-    - Extensible Authentication Protocol (EAP) is a 📝framework for authentication rather than a standalone authentication protocol. EAP is used to negotiate the best authentication method that both a client and server agree on. The authentication types that it can carry include smartcards, tokens, and biometrics, as well as the traditional password. 
-- 📗**LEAP**: Lightweight Extensible Authentication Protocol (LEAP) is a Cisco proprietary alternative to TKIP for WPA.
+- 📗**Extensible Authentication Protocol (EAP)**: is not a specific mechanism of authentication; rather it is an authentication 📝framework. Effectively, EAP allows for new authentication technologies to be compatible with existing wireless or point-to-point connection technologies. More than 40 EAP methods have been defined, including ✏️LEAP, ✏️PEAP, ✏️EAP-­SIM, ✏️EAP-­FAST, ✏️EAP-­MD5, ✏️EAP-­POTP, ✏️EAP-­TLS, and ✏️EAP-­TTLS.
+    - Extensible Authentication Protocol (EAP) is a 📝framework for authentication rather than a standalone authentication protocol. EAP is used to negotiate the best authentication method that both a client and server agree on. The authentication types that it can carry include smartcards, tokens, and biometrics, as well as the traditional password.
+    - EAP is used to negotiate the best authentication method that both a client and server agree on.
+- 📗**LEAP**: Lightweight Extensible Authentication Protocol (LEAP) is a 📝Cisco proprietary alternative to TKIP for WPA.
      - This was developed to address deficiencies in TKIP before the 802.11i/WPA2 system was ratified as a standard.
      - An attack tool known as asleap was released in 2004 that could exploit LEAP;
      - use of EAP-TLS as an alternative is recommended, but if LEAP is used, a complex password is strongly recommended.
-- 📗**PEAP**:Protected Extensible Authentication Protocol (PEAP) encapsulates EAP methods within a TLS tunnel that provides authentication and potentially encryption.
+- 📗**PEAP**:Protected Extensible Authentication Protocol (PEAP) encapsulates EAP methods within a 📝TLS tunnel that provides authentication and potentially encryption.
      - Since EAP was originally designed for use over physically isolated channels and hence assumed secured pathways, EAP is usually not encrypted.
      - So PEAP can provide encryption for EAP methods.
+     - Protected Extensible Authentication Protocol (PEAP) is similar to EAP but is 📝encapsulated in a Transport Layer Security (TLS) session using a server-side certificate.
 - 📗**CHAP**:Challenge-Handshake Authentication Protocol, or CHAP, is used by PPP servers to authenticate remote clients.
      - It encrypts both the username and password and performs periodic reauthentication while connected using techniques to prevent replay attacks.
      - CHAP was the next protocol after PAP, but it also only carries passwords
-- 📗**Password Authentication Protocol (PAP)**: PAP transmits usernames and passwords in cleartext.
+     - CHAP is one of the authentication protocols used over Point-to-Point Protocol (PPP) links. CHAP 📝hashes 📝usernames and 📝passwords to prevent them from being transmitted in clear text. It performs authentication using a challenge-response that is resistant to replay attacks.
+- 📗**Password Authentication Protocol (PAP)**: PAP transmits usernames and passwords in 📝cleartext.
      - It offers no form of encryption;
      - it simply provides a means to transport the logon credentials from the client to the authentication server.
      - Also used by PPP servers.
