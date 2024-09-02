@@ -276,7 +276,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - **Converged protocols**: merged specialty or proprietary with standard protocols, such as those from the TCP/IP suite
         - converged protocols provide the ability to use existing TCP/IP supporting network infrastructure to host special or proprietary services without the need to deploy different hardware
     - Examples of converged protocols:
-        - 🔴**Storage Area Network (SAN)**: a secondary network (distinct from the primary network) used to consolidate/manage various storage devices into single network-accessible storage
+        - 🔴**Storage Area Network (SAN)**: a secondary network (distinct from the primary network) used to consolidate/manage various storage devices into single network-accessible storage. The Storage Area Network (SAN) connects servers to a network-attached storage device. Storage can be attached using Internet Small Computer Systems Interface 📝(iSCSI), 📝Fibre Channel (FC), or Network File System 📝(NFS).
            -  🍍Deduplication: is particularly effective when an organization is dealing with a large amount of redundant data, as it ensures that only unique instances of data are stored, thereby optimizing storage utilization and improving overall efficiency.
                 - In some instances, a SAN may implement deduplication in order to save space by not retaining multiple copies of the same file. However, this can sometimes result in data loss if the one retained original is corrupted.
                 - Deduplication replaces multiple copies of a file with a 📝pointer to one copy. If the one remaining file is damaged, then all of the linked copies are damaged or inaccessible as well.
