@@ -306,7 +306,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - ❄️**Virtual extensible local area network (VXLAN)**:
         - an encapsulation protocol that enables VLANs to be stretched across subnets and geographic distances
         - VLANs allow network admins to use switches to create software-based LAN segments that can be defined based on factors other than physical location
-        - VXLAN is an encapsulation protocol that enables switch-created network segments (i.e., VLANs) to be stretched across subnets and geographic distances.
+            - **⚒️VLAN:** Virtual Local Area Networks (VLANs) can be used to provide logical separation between internal departments, such as engineering, sales, and marketing. VLANs provide scalability and segmentation and are separated logically by tags. The tags are used by the switches to determine where to send frames that pass through it. 
+        - VXLAN is an encapsulation protocol that enables switch-created network segments (i.e., VLANs) to be 📝stretched across subnets and geographic distances.
         - Typically restricted to layer 2
         - VXLAN tunnels layer 2 connections over a layer 3 network, in essence extending a LAN over distances or networks that it might not otherwise function over.
         - Allows up to 16 million virtual networks (VLAN limit is 4096)
@@ -349,9 +350,12 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
    - 🍇**Internal Segmentation Firewall (ISFW)** is a security device or technology used to enforce security policies and controls within an internal network, particularly to segment different internal network zones. Unlike traditional firewalls that primarily focus on perimeter security, an ISFW operates within the internal network to create additional layers of security. It focuses on internal network segmentation and access control between internal segments.
    - 🍇**Application-­level firewall** is able to make access control decisions based on the content of communications as well as the parameters of the associated protocol and software. application-level gateway firewalls proxy traffic for specific applications. Often application-aware devices are able to provide 📝deep packet or content inspection and filtering based on their focus on specific applications and protocols. A web application firewall (WAF) is an example of an application-aware device that can provide deep packet or content inspection.
    - 🍇**Web Application Firewall WAF**: is a software-based app that monitors and filters exchanges between applications and a host; usually inspect and filter conversations like HTTP/S. It is an appliance, server add-­on, virtual service, or system filter that defines a strict set of communication rules for a website. 
-   - 🍇**Stateful inspection firewalls** make access control decisions based on the content and context of communications, but are not typically limited to a single application-­layer protocol. Stateful packet inspection firewalls, also known as dynamic packet filtering firewalls, track the state of a conversation and can allow a response from a remote system based on an internal system being allowed to start the communication.
-   - 🍇**Circuit-­level firewalls** are able to make permit and deny decisions in regard to circuit establishment either based on simple rules for IP and port, using captive portals, requiring port authentication via 802.1X, or more complex elements such as context-­or attribute-­based access control.
+   - 🍇**Stateful inspection firewalls** make access control decisions based on the content and context of communications, but are not typically limited to a single application-­layer protocol. Stateful packet inspection firewalls, also known as dynamic packet filtering firewalls, 📝track the state of a conversation and can allow a response from a remote system based on an internal system being allowed to start the communication.
+       - A stateful firewall monitors the current state of network connections and blocks packets that are invalid in context (OSI Layers 3 and 4) 
+   - 🍇**Circuit-­level firewalls** are able to make permit and deny decisions in regard to circuit establishment either based on simple rules for IP and port, using 📝captive portals, requiring 📝port authentication via 802.1X, or more complex elements such as context-­or attribute-­based access control.
+       - A circuit-level firewall ensures that the TCP handshake was completed and conceals information about the protected network. (Theoretically OSI Layer 5, but also looks at TCP data at Layer 4.) SOCKS proxies are examples of circuit firewalls. 
    - 🍇**Static packet-­filtering firewalls** filter traffic by examining data from a message header. Usually, the rules are concerned with source and destination IP address (layer 3) and port numbers (layer 4).
+       - A static packet filtering, screening router, or stateless firewall evaluates each packet independently based on its header fields (OSI Layer 3). 
    - 🍇**TCP Wrapper**: is a host-based access control system that can be used to restrict access to Internet services based on IP address or hostname. It acts as a gateway between network services and the network, allowing administrators to control which hosts can connect to services like SSH, FTP, and others. TCP Wrapper allows administrators to specify which hosts (by IP address or hostname) are allowed or denied access to specific services, such as SSH, FTP, or HTTP, based on the requesting host.
 
 - 4.1.7 Wireless networks (e.g. LiFi, Wi-Fi, Zigbee, satellite)
@@ -440,7 +444,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
   -  🍎Jitter: The variation in time delay between data packets arriving. Affects QOS for real-time applications. Key: If some cars on a highway arrive faster than others even though they left at the same time. Jitter is a variation in the latency for different packets.
   -  🍎Packet Loss: Packet loss is the disappearance of packets in transit that requires retransmission.
   -  🍎Signal to Noise Ratio (SNR): A measure of the signal strength relative to background noise. Commonly used in wireless communications. Key: How clearly you can hear someone speaking in a noisy room; higher SNR means a clearer signal and less interferance.
-- 4.1.8 Cellular networks (e.g. 4G, 5G)
+- 4.1.8 **Cellular networks** (e.g. 4G, 5G)
     - A cellular network or a wireless network is the primary communications technology used by many mobile devices
     - Cells are primary transceiver (cell site/tower)
     - Cellular networks have the same issues that any public network does.
@@ -473,24 +477,25 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
      - 📘North-South Traffic: Data traffic that moves between a data center and external networks or clients. Traffic moves to/from endpoints on internal network to nodes on the public cloud/internet. Involves untrusted nodes. This brings security concerns like data comprise, DDoS attacks, inadequate authentication. 
 
 - 4.1.9 Content Distribution Networks (CDN)
-    - **Content Distribution Network (CDN)**: a collection of resource services deployed in numerous data centers across the internet in order to provide low latency, high performance, and high availability of the hosted content
+    - 🔴**Content Distribution Network (CDN)**: a collection of resource services deployed in numerous data centers across the internet in order to provide low latency, high performance, and high availability of the hosted content
         - CDNs provide multimedia performance quality through the concept of distributed data hosts, geographically distributed, closer to groups of customers
         - It is true that a CDN is able to maintain customer demand levels of multimedia performance quality,
         - avoids straining individual servers, and stores data close to customers,
         - and that a client-based CDN (aka P2P) can support high-speed file exchange (i.e., BitTorrent)
         - Provides geographic and logical load balancing; lower-latency and higher-quality throughput
+        - A Content Distribution Network (CDN) is a collection of different content that a website may display, distributed across geographical regions. A CDN allows website creators to improve performance by providing a website’s content in a geographical region closest to the client. This reduces latency and download times.
     - Client-based CDN is often referred to as P2P (peer-to-peer)
     - BitTorrent is an example of a peer-to-peer (P2P) content delivery network. It is commonly used for legitimate purposes to distribute large files like Linux ISOs and other freely distributed software packages and files in addition to its less legitimate uses. CloudFlare, CloudFront, and Akamai's Edge are all hosted CDNs.
     -Thus a content delivery network, or CDN, run by a major provider can handle large-scale DDoS attacks more easily than local server implementations.
 
-- 4.1.12 Edge Networks 
+- 4.1.12 🔴**Edge Networks**
     - Distributed networks that bring compute and storage resources physically closer to end users and devices on the edge of the network.
     - **Ingress/Egress**: Entry point for traffic entering an edge network, usually from an end user device or an external network. Important for security monitoring and traffic shaping.
     - **Peering**: Direct interconnection between edge network locations to allow traffic exchange without travelling through a central hub. reduces latency and bottle necks which are problems in a hub-and-spoke topology. Peering allows you to connect directly to a Cloud Service provider's network at a peering location where they provide edge facilities. This can reduce ingress/egress costs as well as provide direct paths to their networks and services. Peering can be either public peering, a connection through an Internet Exchange Point via a network connection, or private peering done directly with another entity in a colocation facility. 
     - **Caching**: Caching popular contents like video, audio and web pages. Provides better user experience in SaaS subscriber scenarios. eg CDNs.
     - **Compute**: Granular compute functions, containarized, to provide low-latency processing near end users and devices. Also known as Edge Computing. Edge computing is a technology that processes data near the source of data generation, such as IoT devices or local servers, rather than sending it to a central data center or cloud for processing.
     - **Storage**: Multiple edge locations to reduce latency for accessing data and updating data. E.g file servers that are synchronized across location like DFS.
-- **Grid computing** is a form of distributed computing where multiple computers work together to solve complex problems or process large amounts of data. In simple terms, it's like combining the power of many computers to achieve a task more efficiently than a single computer could alone.
+- 🛠️**Grid computing** is a form of distributed computing where multiple computers work together to solve complex problems or process large amounts of data. In simple terms, it's like combining the power of many computers to achieve a task more efficiently than a single computer could alone.
      - In many grid computing implementations, grid members can access the contents of the distributed work segments or divisions.
      - Grid computing over the internet is not usually the best platform for sensitive operations.
      - Grid computing is able to handle and compensate for latency of communications, duplicate work, and capacity fluctuation.
