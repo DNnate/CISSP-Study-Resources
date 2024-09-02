@@ -547,7 +547,7 @@ The components of a network make up the backbone of the logical infrastructure f
             - requires segment terminators
             - two main types:
                 - 🔨**thinnet (10Base2)**: used to connect systems to backbond trunks of thicknet cabling (185m, 10Mbps)
-                - 🔨**thicknet (10Base5)**: can span 500 meters and provide up to 10Mbps
+                - 🔨**thicknet (10Base5)**: can span 500 meters and provide up to 10Mbps. 10Base5 and coaxial cables have a low susceptibility to EMI, but they are not completely resistant.
         - 🍖Ethernet (Copper) can be used to describe many mediums, it is typically associated with Category 5/6 unshielded twisted-pair (UTP) or shielded twisted pair (STP), and can be plenum-rated
         - 📝A repeater, switch, or concentrator can be used to amplify signals, ensuring that the 100-meter (328 Feet) distance limitation of 1000BaseT or CAT 6 is not an issue.
         -  STP cable is limited to 155 Mbps and 100 meters (328 Feet)
@@ -557,18 +557,18 @@ The components of a network make up the backbone of the logical infrastructure f
             - Fiber is most often used in the datacenter for backend components
             - it is not affected by electromagnetic interference (EMI)
 
-        | Category | Throughput | Notes |
+        | Medium | Speed/Distance | Standard |
         |----------|------------|--------|
-        | Cat 1    |   1 Mbps   |        |
-        | Cat 2    |   4 Mbps   |        |
-        | Cat 3    |   10 Mbps  |        |
-        | Cat 4    |   16 Mbps  |        |
-        | Cat 5    |   100 Mbps |        |
-        | Cat 5e   |   1 Gbps   |        |
-        | Cat 6    |   1 Gbps   |        |
-        | Cat 6a   |   10 Gbps  |        |
-        | Cat 7    |   10 Gbps  |        |
-        | Cat 8    |   40 Gbps  |        |
+        | Cat 3 or higher    |   10 Mbps Ethernet over twisted pair copper cables   |    10Base-T    |
+        | Multi-mode fiber (10Base-FL is the common variant)   |  10 Mbps Ethernet over fiber optic cables.  |   10Base-F     |
+        | Cat5 or higher twisted pair cables.   |  100 Mbps Ethernet over twisted pair cables. Up to 100 meters (328 feet |  100Base-TX      |
+        | Multi-mode fiber.   |   100 Mbps Ethernet over fiber optic cables Up to 2 kilometers  |      100Base-FX  |
+        | Cat5e or higher twisted pair cables  |  1 Gbps Ethernet over twisted pair cables. Up to 100 meters |   1000Base-T (1 Gbps)     |
+        | Multi-mode fiber.  |   1 Gbps Ethernet over short-wavelength fiber optic cables Up to 550 meters (1804 feet) on OM2 fiber  |    1000Base-SX    |
+        | Single-mode fiber.   |   1 Gbps Ethernet over long-wavelength fiber optic cables Up to 10 kilometers  |   1000Base-LX     |
+        | Shielded twisted pair cables (STP)  |  1 Gbps Ethernet over very short-distance copper cables Up to 25 meters |   1000Base-CX     |
+        | Single-mode fiber   |   An extended range version of 1000Base-LX. Up to 70 kilometers |    1000Base-ZX    |
+
 
 -Common  fiber optic connectors and their uses:
 | Connector    | Uses      |Design               |
