@@ -88,6 +88,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Responsible for transforming data into the format that any system following the OSI model can understand
         - Associated tasks:
             - data representation
+            -  it provides coding and conversion functions to data.
             - character conversion
             - data compression
             - data encryption
@@ -100,6 +101,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - 🎈**full-duplex**: both comm devices can transmit/receive at same time
             - data transfer
             - connection release
+            - it establishes, coordinates, and terminates a communication session.
             - 📝Data streams exist at the Application, Presentation, and Session layers
     - ❄️**Transport Layer (4)**
         - Responsible for managing the integrity of a connection and controlling the session; providing transparent data transport and end-to-end transmission control
@@ -119,6 +121,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - ❄️**Network Layer (3)**
         - Responsible for logical addressing, and providing routing or delivery guidance (but not necessarily verifying guaranteed delivery), manages error detection and traffic control
         - **routing protocols**: move routed protocol messages across a network
+            - it ensures that messages are delivered to the proper device across a physical network link
             - includes RIP, OSPF, IS-IS, IGRP, and BGP
             - routing protocols are defined at the Network Layer and specify how routers communicate
             - routing protocols can be static or dynamic, and categorized as interior or exterior
@@ -160,6 +163,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Converts a frame into bits for transmission/receiving over the physical connection medium
         - The Physical layer includes electrical specifications, protocols, and standards that allow control of throughput, handling line noise, and a variety of other electrical interface and signaling requirements
         - Network hardware devices that function at layer 1 include 📝NICs, 📝hubs, 📝repeaters, 📝concentrators, 📝amplifiers
+        - provides or defines the type of media to be used and defines the representation of data on the medium. The physical layer is where messages are transferred to electrical impulses.
         - Know four basic network topologies:
             - 🍌**star**: each individual node on the network is directly connect to a switch/hub/concentrator. A star topology has a single point of failure at its center device
             - 🍌**mesh**: all systems are interconnected; partial mesh can be created by adding multiple NICs or server clustering. Mesh topologies provide redundant connections to systems, allowing multiple segment failures without seriously affecting connectivity.
