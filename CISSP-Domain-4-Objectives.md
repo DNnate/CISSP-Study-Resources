@@ -84,6 +84,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - identifying and establishing availability of communication partners 
             - determining resource availability and 
             - synchronizing communication
+            - The application layer contains protocols such as HTTP (HyperText Transfer Protocol), SMTP (Simple Mail Transfer Protocol), and File Transfer Protocol (FTP).
     - ❄️**Presentation Layer (6)**
         - Responsible for transforming data into the format that any system following the OSI model can understand
         - Associated tasks:
@@ -113,9 +114,11 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - 🛠️Transmission Control Protocol (TCP)
                 - the major transport protocol in the internet suite of protocols providing reliable, connection-oriented, full-duplex streams
                 - emphasizing: full-duplex, connection-oriented protocol
-                - uses three-way handshake, which makes it a connection-oriented protocol. 
+                - uses three-way handshake, which makes it a connection-oriented protocol.
+                - It supports full-duplex communications, is connection-oriented, and employs reliable sessions.
             - 🛠️User Datagram Protocol (UDP)
                 - connectionless protocol that provides fast, best-effort delivery of **datagrams** (self-container unit of data)
+                - User Datagram Protocol (UDP) does not employ a handshake
                 - it is also considered a 📝simplex protocol (Typically, there is no acknowledgment or feedback from the receiver to the sender, because the channel only allows data to flow in one direction.)
             - 🛠️Transport Layer Security (TLS)
     - ❄️**Network Layer (3)**
@@ -146,6 +149,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - The primary Data Link VPNs are 📝L2TP and 📝PPTP, although wireless encryption occurs here as well.
         - When a message reaches the Data Link layer, it is called a frame
         - Adds the source and destination hardware addresses to the frame
+        - The data link layer contains Ethernet, token ring, Point to Point Protocol (PPP), and so on.
         - Media Access Control (MAC) - (hardware-based) address/AKA NIC address
             - MAC address is a 6-byte (48-bit) binary address written in hex
                 - 📝first 3b/24-bits: Organizationally Unique Identifier (OUI) - denotes manufacturer
@@ -163,6 +167,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Converts a frame into bits for transmission/receiving over the physical connection medium
         - The Physical layer includes electrical specifications, protocols, and standards that allow control of throughput, handling line noise, and a variety of other electrical interface and signaling requirements
         - Network hardware devices that function at layer 1 include 📝NICs, 📝hubs, 📝repeaters, 📝concentrators, 📝amplifiers
+        - The physical layer contains wire, fiber, wireless, Binary digITs (BIT), and so on.
         - provides or defines the type of media to be used and defines the representation of data on the medium. The physical layer is where messages are transferred to electrical impulses.
         - Know four basic network topologies:
             - 🍌**star**: each individual node on the network is directly connect to a switch/hub/concentrator. A star topology has a single point of failure at its center device
