@@ -362,8 +362,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
    - 🍇**TCP Wrapper**: is a host-based access control system that can be used to restrict access to Internet services based on IP address or hostname. It acts as a gateway between network services and the network, allowing administrators to control which hosts can connect to services like SSH, FTP, and others. TCP Wrapper allows administrators to specify which hosts (by IP address or hostname) are allowed or denied access to specific services, such as SSH, FTP, or HTTP, based on the requesting host.
 
 - 4.1.7 Wireless networks (e.g. LiFi, Wi-Fi, Zigbee, satellite)
-    - Li-Fi: **light fidelity (Li-Fi)**: a form of wireless communication technology that relies on light to transmit data, with theorectical speeds up to 224Gbits/sec. It is not susceptible to EM interference
-    - **Wi-Fi**: Wirless LAN IEEE 802.11x; associated with computer networking, Wi-Fi uses 802.11x spec to create a public or private wireless LAN. There are several modes of connecting to WiFi
+    - ❄️**Light fidelity (Li-Fi)**: a form of wireless communication technology that relies on light to transmit data, with theorectical speeds up to 224Gbits/sec. It is not susceptible to EM interference
+    - ❄️**Wi-Fi**: Wirless LAN IEEE 802.11x; associated with computer networking, Wi-Fi uses 802.11x spec to create a public or private wireless LAN. There are several modes of connecting to WiFi
         - 🎈Ad hoc mode: Directly connects two clients.
         - 🎈Standalone Mode: Ad hoc mode can be easy to confuse this with standalone mode, which connects clients using a wireless access point but not to wired resources like a central network.
         - 🎈Infrastructure mode connects endpoints to a central network, not directly to each other.
@@ -374,7 +374,16 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - 📚**FHSS (Frequency-Hopping Spread Spectrum):** FHSS is a method of transmitting radio signals by rapidly switching the carrier frequency among many predefined channels in a pseudo-random sequence, which helps avoid interference and eavesdropping. It also Spreads the signal across a wider bandwidth, which improves resistance to interference and jamming. Bluetooth uses FHSS.
             - 📚**DSSS (Direct Sequence Spread Spectrum):** DSSS is a spread spectrum technique where the data signal is multiplied by a pseudorandom noise (PN) sequence, resulting in a wider bandwidth signal. Data is modulated by a pseudorandom sequence, which spreads the signal over a wider frequency band. It provides resistance to narrowband interference and improves signal robustness. Requires precise synchronization between transmitter and receiver to decode the signal correctly. The 802.11b standard uses DSSS for spreading data signals and achieving robustness against interference. GPS (Global Positioning System) signals use DSSS to maintain signal integrity and resist interference.
             - 📚**Orthogonal Frequency-Division Multiplexing OFDM:** is a method of encoding digital data on multiple carrier frequencies. It divides a high-data-rate signal into several lower data-rate streams, each transmitted simultaneously over a different frequency band.  OFDM offers 📝high throughput with the least interference. OFDM employs a digital multi-carrier modulation scheme that allows for a more tightly compacted transmission. The modulated signals are perpendicular (orthogonal) and thus do not cause interference with each other. This makes OFDM superior to FHSS and DSSS in throughput and interference.
- 
+- 📙**2.4 GHz Wireless Channels:** The 2.4 GHz band typically has 11 channels in the United States (14 in some other countries), but due to overlap, only 3 of these channels (1, 6, and 11) are non-overlapping and commonly used to avoid interference.The Federal Communications Commission (FCC) has allocated 11 channels that may be used on the 2.4 GHz spectrum. Channels overlap and, if used incorrectly, can create interference. It is recommended to only use channels 1, 6, and 11.
+    - More prone to interference because it's a crowded band shared with many devices, like microwaves, cordless phones, and other wireless networks.
+    - Better range and penetration through walls and obstacles, making it suitable for larger areas.
+    - Typically slower due to more interference and less available bandwidth.
+    - Better for coverage in larger spaces or environments with many obstacles. 
+- 📙**5 GHz Wireless Channels:** The 5 GHz band offers significantly more channels—up to 25 or more non-overlapping channels, depending on the region and the specific portion of the 5 GHz spectrum being used. In the U.S., for instance, there are 24 non-overlapping channels available.
+    - Less interference and congestion due to more available channels and less crowded spectrum.
+    - Shorter range and poorer penetration through walls, but offers faster speeds over shorter distances.
+    - Typically faster due to wider channels and less interference.
+    - Better for high-speed connections in smaller areas with less interference.
         - 📘**Wired Equivalent Privacy (WEP)**:
             - WEP is defined by the original IEEE 802.11 standard
             - WEP uses a predefined shared Rivest Cipher 4 (RC4) secret key for both authentication (SKA) and encryption
