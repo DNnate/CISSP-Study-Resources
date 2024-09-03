@@ -147,6 +147,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Routed protocols include Internetwork Package Exchange (IPX) and Internet Protocol (IP)
         - 📝Network hardware devices, including routers, function at layer 3
         - 📝IPsec operates at the Network layer (layer 3)
+        - 📝Internet Control Message Protocol (ICMP)operates at layer 3 of the OSI model.
     - ❄️**Data Link Layer (2)**
         - Responsible for formatting a packet for transmission
         - The primary Data Link VPNs are 📝L2TP and 📝PPTP, although wireless encryption occurs here as well.
