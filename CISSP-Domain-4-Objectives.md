@@ -48,7 +48,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
      - NAT enables the sharing of a few public internet addresses with a large number of internal clients.
      - NAT supports the use of the private IP addresses from RFC 1918 on an internal network.
      - Static NAT is needed to allow an outside entity to initiate communications with an internal system behind a NAT proxy. 
-- **RPC**: Remote Procedure Call is a protocol that enables one system to execute instructions on other hosts across a network infrastructure
+- **RPC**: Remote Procedure Call is a protocol that enables one system to execute instructions on other hosts across a network infrastructure. RPC is an Application Programming Interface (API) like SOAP and Representation State Transfer (ReST).
 - **Root of Trust**: a source that can always be trusted within a cryptographic system; because cryptographic security is dependent on keys to encrypt and decrypt data and perform functions such as generating digital signatures and verifying signatures, RoT schemes generally include a hardened hardware module; a RoT guarantees the integrity of the hardware prior to loading the OS of a computer
 - **SNMP**: Simple Network Management Protocol, is a protocol for collecting and organizing info about managed devices on IP networks; it can be used to determine the health of devices such as routers, switches, servers, workstations, etc
 - **Smurf attack**: ICMP echo request sent to the network broadcast address of a spoofed victim causing all nodes to respond to the victim with an echo reply
