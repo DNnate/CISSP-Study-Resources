@@ -874,7 +874,8 @@ Connection: The DCE connects the DTE to the Frame Relay network, acting as an in
 - 802.3ae: 10GBASE-SR/LR - 10 Gigabit Ethernet over fiber.
 - 802.3af: Power over Ethernet (PoE) - Provides power over Ethernet cabling.
 - 802.3at: Power over Ethernet Plus (PoE+) - Enhanced version of PoE with higher power delivery.
-  
+🍏IEEE 802.4: Fiber Distributed Data Interface (FDDI) is derived from IEEE 802.4.
+🍏IEEE 802.5: A token ring is IEEE 802.5.
 🍏IEEE 802.11 - Wireless LAN (Wi-Fi)
 - 802.11a: 5 GHz, up to 54 Mbps.
 - 802.11b: 2.4 GHz, up to 11 Mbps.
