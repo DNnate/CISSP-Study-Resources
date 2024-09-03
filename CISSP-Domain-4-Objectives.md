@@ -182,7 +182,11 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - 🍌**Ring**: closed loop that connects end devices in a continuous ring (all communication travels in a single direction around the ring); A ring topology is a single point of failure at any location around the cable ring
                 - **Multistation Access Unit** (MSAU or MAU) connects individual devices
                 - used in token ring and FDDI networks. When all nodes are connected in a closed loop it is a ring, so it would be a Token Rink or Fiber Distributed Data Interface (FDDI).
-            - 🍌**Bus**: all devices are connected to a single cable (backbone) terminated on both ends. A bus topology has a single point of failure at its central backbone cable. When all nodes are connected to a single cable it is considered a BUS network. 
+            - 🍌**Bus**: all devices are connected to a single cable (backbone) terminated on both ends. A bus topology has a single point of failure at its central backbone cable. When all nodes are connected to a single cable it is considered a BUS network.
+        - 📚Local Area Network (LAN) is a data network that operates across a small geographic area such as a single building or floor.
+        - 📚Wide Area Network (WAN) is a geographically broad network that can cover multiple cities or even countries. A WAN connects multiple Local Area Networks (LANs) and other WANs by using telecommunications devices and facilities to form an internetwork.
+        - 📚Metropolitan Area Network (MAN) extends across a large area, such as a city.
+        - 📚Personal Area Network (PAN) is a small, personal-use network such as Bluetooth. 
 
 - 4.1.2 Internet Protocol (IP) networking (e.g., Internet Protocol Security (IPSec), Internet Protocol (IP) v4/6)
      - IP is part of the TCP/IP (Transmission Control Protocol/Internet Protocol) suite
@@ -403,18 +407,20 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - Better for high-speed connections in smaller areas with less interference.
         - 📘**Wired Equivalent Privacy (WEP)**:
             - WEP is defined by the original IEEE 802.11 standard
-            - WEP uses a predefined shared Rivest Cipher 4 (RC4) secret key for both authentication (SKA) and encryption
-            - Temporal Key Integrity Protocol (TKIP) is a combination of RC4 and the hashing algorithm of Michael that is used in Wireless Encryption Protocol (WEP).
+            - WEP uses a predefined shared Rivest Cipher 4 📝(RC4) secret key for both authentication (SKA) and encryption
             - Shared key is static
             - The Wired Equivalent Privacy (WEP) protocol defined in IEEE 802.11 uses a shared key between clients and access points. The access point sends the client a random value and the client encrypts this value using its shared key and sends it back to the access point. The access point decrypts the value with the shared key, and if the decrypted value is equal to the original, the access point authenticates the client. WEP is no longer considered secure and has many security flaws.
             - The shared key may appear to be a password that the user must type in, but it is actually the key. 
             - WEP is weak from RC4 flaws 
+        - 📘**Wi-Fi Protected Access (WPA)**: WPA uses the Temporal Key Integrity Protocol (TKIP) to generate a unique key for each frame transmitted. TKIP-generated keys are fed into the RC4 encryption algorithm to encrypt traffic. This combination of TKIP and RC4 improves the original standard Wired Equivalent Privacy (WEP).
+            - Temporal Key Integrity Protocol 📝(TKIP) is a combination of RC4 and the hashing algorithm of Michael that is used in Wireless Encryption Protocol (WEP).
         - 📘**Wi-Fi Protected Access II (WPA2)**:
             - IEEE 802.11i WPA2 replaced WEP and WPA.
-            - WPA2 enterprise uses 🔥RADIUS authentication for users rather than a preshared key. This means a password attack is more likely to fail as password attempts for a given user may result in account lockout.
-            - TKIP was introduced with the original version of WPA and was replaced with the AES-based CCMP in WPA2
-            - EAP is an authentication framework used in wireless networks to provide various methods for authenticating users. In WPA2, 🔥EAP is often used in conjunction with the Advanced Encryption Standard (AES) to provide strong encryption and secure authentication for wireless communications.
+            - WPA2 enterprise uses 📝RADIUS authentication for users rather than a preshared key. This means a password attack is more likely to fail as password attempts for a given user may result in account lockout.
+            - TKIP was introduced with the original version of WPA and was replaced with the 📝AES-based CCMP in WPA2
+            - EAP is an authentication framework used in wireless networks to provide various methods for authenticating users. In WPA2, 📝EAP is often used in conjunction with the Advanced Encryption Standard (AES) to provide strong encryption and secure authentication for wireless communications.
             - Uses AES-CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol)
+            - WPA2 uses 📝AES to encrypt traffic, however, it can be downgraded to use TKIP and RC4 to maintain compatibility with older devices.
         - Frequency table:
             
         | Amendment | Wi-Fi Alliance | Speed | Frequency |
@@ -871,7 +877,6 @@ Connection: The DCE connects the DTE to the Frame Relay network, acting as an in
 
 🍏IEEE 802.17 - Resilient Packet Ring (RPR)
 - 802.17: RPR - Optimizes the transport of data traffic over fiber ring networks.
-
 - **UTP categories**
 
 | UTP    | Throuput      |Notes               |
