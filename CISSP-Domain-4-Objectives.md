@@ -12,7 +12,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
 - **Boundary routers**: they advertise routes that external hosts can use to reach internal hosts
 - **Bridge**: device that aggregates separate network segments into a single network segment, operating at OSI layer 2
 - **CSMA/CA**: Carrier Sense Multiple Access with Collission Avoidance is a method of network flow control. 802.11 📝wireless networking is an example of a network that employs CSMA/CA technologies. CSMA/CA attempts to avoid collisions by granting only a single permission to communicate at any given time. IEEE 802.11 wireless networks use Carrier-Sense Multiple Access with Collision Avoidance (CSMA/CA) to manage (technically avoid) collisions.
-    - CSMA/CA is used in wireless networks. Collisions are avoided by having the host/wireless device select a random number and then transmit after counting to that number. This reduces the chance that two devices will transmit at the same time, thereby having the frames collide. Token passing is used by the token ring technology (IEEE 802.5). Collisions are avoided because there is a single token on the ring and a device/host cannot transmit unless it is in possession of that token. 
+    - CSMA/CA is used in wireless networks. Collisions are avoided by having the host/wireless device select a random number and then transmit after counting to that number. This reduces the chance that two devices will transmit at the same time, thereby having the frames collide. 
 - **CSMA/CD**: Carrier Sense Multiple Access with Colliion Detection is a method of network flow control, where if > 1 station accesses the network at the same time, other stations detect and re-try their transmission. 📝Ethernet networks employ the CSMA/CD technology. CSMA/CD responds to collisions by having each member of the collision domain wait for a short but random period of time before starting the process over. Ethernet (IEEE 802.3) uses Carrier-Sense Multiple Access with Collision Detection (CSMA/CD).
     - Carrier-Sense Multiple Access with Collision Detection (CSMA/CD) is a media access control method primarily in wired Ethernet technology for local area networking. It uses the following steps:
         - 🆎The client listens to the LAN media to determine if it's in use
@@ -891,7 +891,7 @@ The components of a network make up the backbone of the logical infrastructure f
 - 802.3af: Power over Ethernet (PoE) - Provides power over Ethernet cabling.
 - 802.3at: Power over Ethernet Plus (PoE+) - Enhanced version of PoE with higher power delivery.
 🍏IEEE 802.4: Fiber Distributed Data Interface (FDDI) is derived from IEEE 802.4. Fiber Distributed Data Interface (FDDI) is a high-speed token-passing technology that employs two rings with traffic flowing in opposite directions and is designed for the Metropolitan Area Network (MAN)
-🍏IEEE 802.5: A token ring is IEEE 802.5.
+🍏IEEE 802.5: A token ring is IEEE 802.5. Token passing is used by the token ring technology (IEEE 802.5). Collisions are avoided because there is a single token on the ring and a device/host cannot transmit unless it is in possession of that token. 
 🍏IEEE 802.11 - Wireless LAN (Wi-Fi)
 - 802.11a: 5 GHz, up to 54 Mbps.
 - 802.11b: 2.4 GHz, up to 11 Mbps.
