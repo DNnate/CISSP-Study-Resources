@@ -747,6 +747,8 @@ access rights. A rootkit is used to achieve or maintain elevated privileges on a
     - 🔥**Lateral movement**: which is when an intruder is able to gain remote control over another internal system after pivoting from the initial system they compromised.
     - 🔥**Passive reconnaissance** which is gathering information about a target in such a way as to not to be noticed by said target.
     - 🔥**Command injection attacks** occur when the attacker is able to insert an operating system command into a user interface, for example, command.exe.
+    - 🔥**Clickjacking** occurs when the user interface of a website is manipulated to misdirect intended click-throughs.
+    - 🔥**Typo squatting**: The practice of registering common misspellings or variations of a domain name (e.g. facebok.com, apples.com) is referred to as typosquatting. Such registrations typically direct traffic to destinations that advantage the squatter, rather than to the domain originally intended.
 - 🟦**Computing Resilience**:        
     - 🛠️Multitasking is processing more than one task at the same time. In most cases, multitasking is simulated by the OS (using multiprogramming or pseudo-­simultaneous execution) even when not supported by the processor.
     - 🛠️Multicore is also able to perform simultaneous execution but does so with multiple execution cores on one or more CPUs. Multicore refers to a processor with multiple independent processing units (cores) on a single chip, enabling simultaneous execution of tasks for improved performance, efficiency, and multitasking capabilities. 
