@@ -95,6 +95,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - data encryption
     - ❄️**Session Layer (5)**
         - Responsible for establishing, maintaining, and terminating communication sessions between two computers
+        - The session layer is used primarily to track application dialogue.
+        - The session layer (Layer 5) establishes, coordinates, and terminates communication sessions between applications. Examples of session layer protocols are Remote Procedure Call (RPC) and Network File System (NFS).
         - Three communication session phases: 
             - connection establishment
                 - 🎈**simplex**: one-way. In simplex mode, a one-way communications path is established with a transmitter at one end of the connection and a receiver at the other end. e.g car radio
