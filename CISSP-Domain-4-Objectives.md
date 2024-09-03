@@ -122,7 +122,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - connectionless protocol that provides fast, best-effort delivery of **datagrams** (self-container unit of data)
                 - User Datagram Protocol (UDP) does not employ a handshake
                 - it is also considered a 📝simplex protocol (Typically, there is no acknowledgment or feedback from the receiver to the sender, because the channel only allows data to flow in one direction.)
-            - 🛠️Transport Layer Security (TLS)
+            - 🛠️Transport Layer Security (TLS): Transport Layer Security (TLS) is a cryptographic protocol that provides secure communication over a network. It is commonly used to establish secure connections between clients (such as web browsers) and servers (such as web servers) to ensure the confidentiality, integrity, and authenticity of data transmitted between them.
     - ❄️**Network Layer (3)**
         - Responsible for logical addressing, and providing routing or delivery guidance (but not necessarily verifying guaranteed delivery), manages error detection and traffic control
         - 🔨IP Header Checksum: In the IPv4 protocol, the Network Layer uses a checksum in the IP header to ensure that the header itself has not been corrupted during transmission. The checksum is calculated by summing all the 16-bit words in the IP header. The result is then complemented, and this value is placed in the checksum field of the IP header. When the packet is received, the checksum is recalculated. If the result differs from the checksum in the header, the packet is considered corrupt and is discarded.  The checksum only covers the IP header, not the payload (the data part of the packet). IPv6, the newer version of the Internet Protocol, does not use a checksum in the IP header.
@@ -969,7 +969,7 @@ Bending the coax cable past its maximum arc radius may break the center conducto
         - Many WAPs support OpenVPN, which is a native VPN option for using a home or business WAP as a VPN gateway.
     - ⚒️**Internet Protocol Security (IPsec)** is a standard of IP security extensions used as an add-on for IPv4 and integrated into IPv6.
         - IPsec is sometimes paired with L2TP as L2TP/IPsec.
-        - IPsec isn’t a single protocol but rather a collection of protocols, including AH, ESP, HMAC, IPComp, and IKE.
+        - IPsec isn’t a single protocol but rather a 📝collection of protocols, including AH, ESP, HMAC, IPComp, and IKE.
             - 🐍Authentication Header (AH) provides assurances of message integrity and nonrepudiation. AH also provides the primary authentication function for IPsec, implements session access control, and prevents replay attacks. The Authentication Header provides authentication, integrity, and nonrepudiation for IPsec connections. 
             - 🐍Encapsulating Security Payload (ESP) provides confidentiality and integrity of payload contents, hence confidentiality. It provides encryption, offers limited authentication, and prevents replay attacks. Modern IPsec ESP typically uses advanced encryption standard (AES) encryption. The limited authentication allows ESP to either establish its own links without using AH and perform periodic mid-session reauthentication to detect and respond to session hijacking. ESP can operate in either transport mode or tunnel mode.
             - 🐍Hash-based Message Authentication Code (HMAC) is the primary hashing or integrity mechanism used by IPsec.
