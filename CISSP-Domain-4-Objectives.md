@@ -134,6 +134,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
                 - User Datagram Protocol (UDP) does not employ a handshake
                 - it is also considered a 📝simplex protocol (Typically, there is no acknowledgment or feedback from the receiver to the sender, because the channel only allows data to flow in one direction.)
                 -  It's used for communication when there is no need to guarantee that the packet was received. For instance, chat programs, video streaming, and voice communication commonly use the UDP protocol.
+            - 🛠️SSH: Secure Shell (SSH) provides 📝end-to-end encryption and exchange keys using the Diffie-Hellman algorithm. The encryption is negotiated between the client and server and does not rely on lower-layer encryption methods to protect the payload.
             - 🛠️Transport Layer Security (TLS): Transport Layer Security (TLS) is a cryptographic protocol that provides secure communication over a network. It is commonly used to establish secure connections between clients (such as web browsers) and servers (such as web servers) to ensure the confidentiality, integrity, and authenticity of data transmitted between them.
                 - Transport Layer Security (TLS) uses asymmetric encryption and Public Key Infrastructure (PKI) to securely exchange a client-generated session key, after which all traffic is encrypted using symmetric encryption. TLS superseded Secure Socket Layer (SSL).  
     - ❄️**Network Layer (3)**
