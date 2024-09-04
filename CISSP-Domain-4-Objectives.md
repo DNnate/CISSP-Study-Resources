@@ -123,6 +123,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - Protocols that operate at the Transport layer:
             - 🛠️Transmission Control Protocol (TCP)
                 - the major transport protocol in the internet suite of protocols providing reliable, connection-oriented, full-duplex streams
+                - The key to connection-oriented is that the packets are numbered so that if there is one missing, it can be retransmitted.
                 - emphasizing: full-duplex, connection-oriented protocol
                 - uses three-way handshake, which makes it a connection-oriented protocol.
                 - It supports full-duplex communications, is connection-oriented, and employs reliable sessions.
