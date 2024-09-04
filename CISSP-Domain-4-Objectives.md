@@ -217,7 +217,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
          - 🍎**Multicast:** One to Many. Supported by both IPv4 and IPv6. Multicasting is the transmission of data to multiple specific recipients. Internet Group Management Protocol (IGMP) is used to register a host's dynamic multicast group membership in order to receive a copy of the data stream. TFTP systems can be used to host or cache multicast datasets that are to be sent to the multiple recipients
          - 🍎**Broadcast:** One to all. Not Supported by IPv6. IPv6 replaces broadcast with multicast and anycast to improve network efficiency and reduce unnecessary traffic.
          - 🍎**Unicast:** One to One communication. Supported by both IPv4 and IPv6.
-         - 🍎**Anycast:** From single source to the nearest or optimal recipient or group of recipients. Supported natively by 📝IPv6. Used for CDN and for streaming. 
+         - 🍎**Anycast:** From single source to the nearest or optimal recipient or group of recipients. Supported natively by 📝IPv6. Used for CDN and for streaming. Anycast addresses are sent to just one device like a unicast, but, the way it works is, that the first of any devices that can handle that request will answer, and the rest would then ignore the traffic.
         - 🍏**IPv4**:
              - dominant protocol that operates at layer 3; IP is responsible for addressing packets, uses 32-bit addresses. The  (TTL) IPv4 header values is used to prevent infinite transmission. 
              - IPv4 supports QoS priority values, but it is called "type of service" in the IPv4 header.
