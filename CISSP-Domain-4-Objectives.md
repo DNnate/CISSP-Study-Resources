@@ -1000,6 +1000,7 @@ Bending the coax cable past its maximum arc radius may break the center conducto
         - However, as a VPN, SSH is limited to transport mode (i.e., end-to-end encryption between individual hosts, aka link encryption and host-to-host VPN).
         - The tool OpenSSH is a means to implement SSH VPNs. For most secure protocols, if the S in the name is a prefix, like with SFTP, then the encryption is provided by SSH (which has an S as its first letter).
         - If the S in the name is a suffix, like with HTTPS, then the encryption is provided by TLS (which has S as its last letter).
+        - Secure Shell (SSH) provides end-to-end encryption and exchange keys using the Diffie-Hellman algorithm. The encryption is negotiated between the client and server and does not rely on lower-layer encryption methods to protect the payload.
     - ⚒️**OpenVPN**: OpenVPN is based on TLS (formally SSL) and provides an easy-to-configure but robustly secured VPN option.
         - OpenVPN is an open source implementation that can use either pre-shared passwords or certificates for authentication.
         - Many WAPs support OpenVPN, which is a native VPN option for using a home or business WAP as a VPN gateway.
