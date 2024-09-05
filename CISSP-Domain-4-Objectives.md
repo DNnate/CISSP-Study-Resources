@@ -50,6 +50,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
 - **PLC**: Packet Loss Concealment used in VoIP communications to mask the effect of dropped packets
 - **Packet-Switched Network**: a network that doesn't use a dedicated connection between endpoints
 - **Point-to-Point Protocol**: a standard method for transporting multiprotocol datagrams over point-to-point links
+- **NAT**: Network Address Translation (NAT) is used to translate between two Internet Protocol (IP) addresses. Typically, NAT is enabled on a router connected to the internet. The router will translate all the internal private IP addresses to a public IP address when outgoing connections are made and translate the return traffic back to the private IP address.
 - **Port Address Translation**: an extension of NAT (Network Address Translation) translating all addresses to one routable IP address and translate the source port number in the packet to a unique value. NAT offers many benefits.
      - NAT hides the internal IP addressing scheme
      - Network Address Translation (NAT) rewrites Internet Protocol (IP) headers
