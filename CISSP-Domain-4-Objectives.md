@@ -785,7 +785,7 @@ The components of a network make up the backbone of the logical infrastructure f
 |------------------------|-----------------------|
 | Constant traffic   | Bursty traffic   |
 | Fixed known delays | Variable Delays |
-| Connection oriented | Connectionless |
+| Connection oriented | Connectionless*️ |
 | Sensitive to connection loss | Sensitive to data loss |
 | Used primarily for voice | Used for any type of traffic |
 | Outdated | Modern |
