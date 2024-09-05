@@ -911,6 +911,9 @@ The components of a network make up the backbone of the logical infrastructure f
 - 802.11n: 2.4/5 GHz, up to 600 Mbps with MIMO.
 - 802.11ac: 5 GHz, up to several Gbps with wider channels and more MIMO streams.
 - 802.11ax: Wi-Fi 6, improvements in throughput and efficiency.
+    - 🎈Wi-Fi 6 operates at the 2.4 Gbps and 5Ghz frequency but allows for the same data rate as the Wi-Fi 6 and 6E standards. Wi-Fi 5 is an old Wi-Fi standard, allowing for only a fraction of the data transfer rate Wi-Fi 6 and 6E allow for.
+    - 🎈Wi-Fi 6E is the latest Wi-Fi standard to be released yet, allowing a maximum data rate of 9.6 Gbps under the 6Ghz frequency. Like Wi-Fi 6, it falls under the IEEE 802.11ax standard. Wi-Fi 6E is currently the only 6Ghz standard in the U.S., with the release of Wi-Fi 7 to occur shortly.
+    - 🎈Wi-Fi 7 is available as of January 8, 2024. The current exam outline, as of writing, is Wi-Fi 6e. The exam update in 2024 would make Wi-Fi 7 a valid question.
 
 🍏IEEE 802.15 - Wireless Personal Area Networks (WPAN)
 - 802.15.1: Bluetooth.
