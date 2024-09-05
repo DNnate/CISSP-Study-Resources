@@ -94,6 +94,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - determining resource availability and 
             - synchronizing communication
             - The application layer contains protocols such as HTTP (HyperText Transfer Protocol), SMTP (Simple Mail Transfer Protocol), and File Transfer Protocol (FTP).
+            - The application layer is not the user's application, but rather the protocol that interacts with the application and takes the data, voice, or video and sends it down through the OSI model for transmission to the machine on the other side of the network that the application is communicating with. 
     - ❄️**Presentation Layer (6)**
         - Responsible for transforming data into the format that any system following the OSI model can understand.  Examples of presentation layer formats include the American Standard Code for Information Interchange (ASCII) and the Extended Binary-Coded Decimal Interchange Code (EBCDIC). It is commonly thought that 🚫JPEG and 🚫MPEG would be at the presentation layer, however, those are file extensions created by actual specific applications and therefore reside above the OSI layer.
         - Associated tasks:
@@ -146,6 +147,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - includes RIP, OSPF, IS-IS, IGRP, and BGP
             - routing protocols are defined at the Network Layer and specify how routers communicate
             - routing protocols can be static or dynamic, and categorized as interior or exterior
+            - The network layer is where addressing is found. The most common addressing in use today is the Internet Protocol (IP) address using v4 and now also using v6 (IPv4 and IPv6).
+            - Routers and most routing protocols are also found here. A common mistake made is to include the Router Information Protocol (RIP) here. RIP is actually a layer seven protocol.
             - 🏺**Static routing protocol**: requires an admin to create/update routes on the router
             - 🏺**Dynamic**: can discover routers and determine best route to a given destination; routing table is periodically updated
             - 🍍**Distance-vector**: (interior) makes routing decisions based on distance (e.g. hop count), and vector (router egress interface);  Distance-vector protocols use metrics including the direction and distance in hops to remote networks to make decisions. examples:
