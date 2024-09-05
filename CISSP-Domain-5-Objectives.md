@@ -27,13 +27,14 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - 5.1.4 Facilities: any physical location, building, rooms, complexes etc; physical security controls are important to help protect facilities
     - 5.1.5 Applications: apps provide access to data; permissions are an easy way to restrict logical access to apps
 - Understand what assets you have, and how to protect them
-    - **physical security controls**: such as perimeter security and environmental controls
+    - 🎈**physical security controls**: such as perimeter security and environmental controls
         - control access and the environment
-    - **logical access controls**: automated systems that auth or deny access based on verification that identify presented matches that which was previously approved; technical controls used to protect access to information, systems, devices, and applications
+    - 🎈**logical access controls**: automated systems that auth or deny access based on verification that identify presented matches that which was previously approved; technical controls used to protect access to information, systems, devices, and applications
         - includes authentication, authorization, and permissions
         - permissions help ensure only authorized entities can access data
         - logical controls restrict access to config settings on systems/networks to only authed individuals
         - applies to on-prem and cloud
+        - Virtual Private Networks (VPN) and network access control are logical controls
  - 5.1.6 Services: Controlling physical and logical access, whether on-premise or in the cloud, in the office or work-from-home scenarios. Basically controlling access control mechanisms to assets. These includes
    - Apps
    - Data/Information
