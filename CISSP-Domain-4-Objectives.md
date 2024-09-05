@@ -518,6 +518,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
      - It encrypts both the username and password and performs periodic reauthentication while connected using techniques to prevent replay attacks.
      - CHAP was the next protocol after PAP, but it also only carries passwords
      - CHAP is one of the authentication protocols used over Point-to-Point Protocol (PPP) links. CHAP 📝hashes 📝usernames and 📝passwords to prevent them from being transmitted in clear text. It performs authentication using a challenge-response that is resistant to replay attacks.
+     -  It was an improvement from the previous Password Authentication Protocol (PAP) which sent the password in clear text. CHAP hashes the password in combination with a challenge number called a Number used ONCE 📝(NONCE).
 - 📗**Password Authentication Protocol (PAP)**: PAP transmits usernames and passwords in 📝cleartext.
      - It offers no form of encryption;
      - it simply provides a means to transport the logon credentials from the client to the authentication server.
