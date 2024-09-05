@@ -208,7 +208,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - 🍌**Ring**: closed loop that connects end devices in a continuous ring (all communication travels in a single direction around the ring); A ring topology is a single point of failure at any location around the cable ring
                 - **Multistation Access Unit** (MSAU or MAU) connects individual devices
                 - used in token ring and FDDI networks. When all nodes are connected in a closed loop it is a ring, so it would be a Token Rink or Fiber Distributed Data Interface (FDDI).
-            - 🍌**Bus**: all devices are connected to a single cable (backbone) terminated on both ends. A bus topology has a single point of failure at its central backbone cable. When all nodes are connected to a single cable it is considered a BUS network.
+            - 🍌**Bus**: all devices are connected to a single cable (backbone) terminated on both ends. A bus topology has a single point of failure at its central backbone cable. When all nodes are connected to a single cable it is considered a BUS network. Bus topology contains one trunk cable and each computer is connected to this one trunk.
         - 📚Local Area Network (LAN) is a data network that operates across a small geographic area such as a single building or floor.
         - 📚Wide Area Network (WAN) is a geographically broad network that can cover multiple cities or even countries. A WAN connects multiple Local Area Networks (LANs) and other WANs by using telecommunications devices and facilities to form an internetwork.
         - 📚Metropolitan Area Network (MAN) extends across a large area, such as a city.
