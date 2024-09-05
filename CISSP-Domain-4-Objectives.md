@@ -106,6 +106,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - ❄️**Session Layer (5)**
         - Responsible for establishing, maintaining, and terminating communication sessions between two computers
         - The session layer is used primarily to track application dialogue.
+        - It is responsible for establishing, maintaining, and terminating communications between applications, and managing these in simplex, half-duplex, and full-duplex modes
         - The session layer (Layer 5) establishes, coordinates, and terminates communication sessions between applications. Examples of session layer protocols are Remote Procedure Call (RPC) and Network File System (NFS).
         - Three communication session phases: 
             - connection establishment
