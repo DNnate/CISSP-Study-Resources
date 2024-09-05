@@ -159,7 +159,7 @@ You may find this domain to be more technical than others, and if you have exper
     - The Bell-LaPadula security model deals with multiple levels of access regulation in 📝government and military applications. This security model involves labels ranging from Unclassified to Top Secret. Bell-LaPadula was developed to formalize the U.S. Department of 📝Defense's multi-level security policy.
     - Focuse is on confidentiality📝
     - Simple security property: 🔥No read-up 
-    - Star (*) security property: 🔥No write-down ( an individual may not write to a file at a lower classification level than that of the individual. AKA confinement property)
+    - Star (*) security property: 🔥No write-down ( an individual may not write to a file at a lower classification level than that of the individual. AKA confinement property. This is to prevent the accidental dissemination of sensitive information)
     - Discretionary Security Property: uses an access matrix (need to know in order to access)
     - Doesn't address covert channels
 - 🔴**Biba**: Released in 1977, this model was created to supplement Bell-LaPadula 
