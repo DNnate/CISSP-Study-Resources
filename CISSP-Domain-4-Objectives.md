@@ -95,7 +95,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
             - synchronizing communication
             - The application layer contains protocols such as HTTP (HyperText Transfer Protocol), SMTP (Simple Mail Transfer Protocol), and File Transfer Protocol (FTP).
     - ❄️**Presentation Layer (6)**
-        - Responsible for transforming data into the format that any system following the OSI model can understand
+        - Responsible for transforming data into the format that any system following the OSI model can understand.  Examples of presentation layer formats include the American Standard Code for Information Interchange (ASCII) and the Extended Binary-Coded Decimal Interchange Code (EBCDIC). It is commonly thought that 🚫JPEG and 🚫MPEG would be at the presentation layer, however, those are file extensions created by actual specific applications and therefore reside above the OSI layer.
         - Associated tasks:
             - data representation
             -  it provides coding and conversion functions to data.
