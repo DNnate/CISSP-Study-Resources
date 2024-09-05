@@ -647,6 +647,8 @@ The components of a network make up the backbone of the logical infrastructure f
                 - 🔨**thinnet (10Base2)**: used to connect systems to backbond trunks of thicknet cabling (185m, 10Mbps)
                 - 🔨**thicknet (10Base5)**: can span 500 meters and provide up to 10Mbps. 10Base5 and coaxial cables have a low susceptibility to EMI, but they are not completely resistant.
         - 🍖Ethernet (Copper) can be used to describe many mediums, it is typically associated with Category 5/6 unshielded twisted-pair (UTP) or shielded twisted pair (STP), and can be plenum-rated
+            - Unshielded Twisted Pair (UTP) is susceptible to Electromagnetic Interference (EMI) and should not be used in environments known to have large amounts of EMI.
+            - Shielded Twisted Pair (STP) is protected with a thin foil that helps protect against EMI. It does not absolutely contain or reflect electrical signals, but it does help.  
         - 📝A repeater, switch, or concentrator can be used to amplify signals, ensuring that the 100-meter (328 Feet) distance limitation of 1000BaseT or CAT 6 is not an issue.
         -  STP cable is limited to 155 Mbps and 100 meters (328 Feet)
         - 🍖fiber typically comes in two options: single-mode or multi-mode
