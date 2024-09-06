@@ -311,6 +311,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - A risk-based access control model can be coded to block malicious traffic from infected IoT devices. It evaluates the environment and the situation and makes decisions to block traffic that is abnormal. 
 - 5.4.7 ❄️**Task based access control**
     - TBAC is similar to RBAC, but instead of being assigned to one or more roles, each user is assigned an array of tasks.
+- 5.4.8 ❄️**Time based/Temporal access control**:
+    - Temporal or time-based access control is a security mechanism that regulates access to resources or data based on specific time-related criteria. Unlike traditional access control, which focuses on who can access what, temporal access control considers when access is permitted. 
 - [5.5](#5.5.0) 🔴**Zero-Trust Access Policy Enforcement**:
   - 📁**Policy Enforcement Point (PEP)**: Responsible for enabling, monitoring and terminating connections between a subject (such as user or device) and an enterprise resource.
      - It acts as a 📝gateway the enforces access control policies.
