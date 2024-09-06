@@ -557,6 +557,7 @@ to misuse the application
     - 🎨L2TP (Layer 2 Tunneling Protocol): Port 1701
     - 🎨PPTP (Point-to-Point Tunneling Protocol): Port 1723
     - 🎨RADIUS (Remote Authentication Dial-In User Service): Port 1812 (Authentication), Port 1813 (Accounting)
+    - 🎨RADIUS over TLS (RadSec): Port 2083
     - 🎨NetBIOS: Ports 137-139
     - 🎨TACAS: Port 49
     - 🎨XMPP (Extensible Messaging and Presence Protocol): Port 5222
