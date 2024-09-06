@@ -255,7 +255,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - e.g. a label of top secret grants access to top-secret documents
     - When documented in a table, the MAC model sometimes resembles a 📝lattice or matrix (i.e. climbing rosebush framework), so it is referred to as a lattice-based model. 📝Biba integrity model uses this.
     - The MAC model uses labels to identify the upper and lower bounds of classification levels, and these define the level of access for subjects.
-    - Mandatory Access Control (MAC) uses data classification levels, the user's clearance, and the corporate policy to make decisions. This is more commonly seen in government and military environments, not public companies due to its complexity.
+    - Mandatory Access Control (MAC) uses 📝data classification levels, the user's 📝clearance, and the corporate 📝policy to make decisions. This is more commonly seen in government and military environments, not public companies due to its complexity.
     - MAC model assigns access based on a user's 📝need to know and organization policies.
     - In a mandatory access control system, the 📝operating system enforces access control,
     - Mandatory access control systems are based on a lattice-based model. Lattice-based models use a matrix of classification labels to compartmentalize data.
