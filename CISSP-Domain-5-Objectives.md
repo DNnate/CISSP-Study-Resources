@@ -44,8 +44,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
    - Sites and Facilities
    
 [5.2](#5.2) Manage identification and authentication of people, devices, and services (OSG-9 Chpt 13)
-- **Identification**: the process of a subject claiming, or professing an identity. A user professes an identity with a login ID. The 📝combination of the login ID and the password provides authentication. A user account must have an account identifier (also known as a username).
-- **Authentication**: verifies the subject’s identity by comparing one or more factors against a database of valid identities, such as user accounts
+- 📚**Identification**: the process of a subject claiming, or professing an identity. A user professes an identity with a login ID. The 📝combination of the login ID and the password provides authentication. A user account must have an account identifier (also known as a username). This is done by providing a user identification, email address, personal number, etc.
+- 📚**Authentication**: verifies the subject’s identity by comparing one or more factors against a database of valid identities, such as user accounts. Authentication is the verification or proof of the identity claim. This is done through the use of one or more of the three authentication factors. 📝Factor 1 is knowledge, e.g. password, passphrase, or cognitive password. 📝Factor 2 is possession, e.g. token, X.509 certificate, or mobile phone (for the receiving of an SMS (Short Message Shared)). 📝Factor 3 is biometrics, e.g. fingerprint, facial recognition, etc.
     - a core principle with authentication is that all subjects must have unique identities
     - identification and authentication occur together as a single two-step process
     - Access control systems rely on identification and authentication to provide 📝accountability. 
@@ -57,7 +57,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - 🔬Shadowed password refers to a system where user password hashes are stored in a separate file, typically called the "shadow file", instead of the standard "/etc/passwd" file on Unix or Linux systems. When a system is configured to use shadowed passwords, the /etc/passwd file contains only the character x in the place of a password. When a system uses shadowed passwords, the hashed password value is stored in /etc/shadow instead of /etc/passwd.
     - 🔬Mutual authentication ensures that a server provides authentication before the client provides authentication. This prevents employees from revealing their credentials to rogue servers.
     - 🔬Credential Management API is a web-based API that allows developers to store, retrieve, and manage user credentials in a secure and user-friendly manner. It’s part of modern web standards and plays a crucial role in simplifying user authentication while enhancing security. The Credential Management application programming interface (API) was published by the World Wide Web Consortium (W3C) as a working draft in January 2019 and allow customers to be automatically logged on when they visit a website.
-- **Authorization**: Authorization verifies the identity of a subject by checking a factor like a password.  Authorization provides a user with capabilities or rights. It is the process of determining what a user is allowed to do.
+- 📚**Authorization**: Authorization verifies the identity of a subject by checking a factor like a password and then granting an appropriate level of permissions if the user is allowed access. Permissions include read, write, tag, list, execute, etc.  Authorization provides a user with capabilities or rights. It is the process of determining what a user is allowed to do.
 - 5.2.1 Identiy management (IdM) implementation
     - Identity and access management is a collection of processes and techologies that are used to control access to critical assets; it's purpose is the management of access to information, systems, devices, and facilities
     - Identity Management (IdM) implementation techniques generally fall into two categories:
@@ -72,9 +72,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - With ubiquitious mobile computing and anywhere, anytime access (to apps & data), identity is the "new perimeter"
     - **Roles & Groups**:
     - provides centralized managment of access control policies, sreamlining administration across different scenarios. It also enforces ✏️least privilege by tailoring permission to roles.
-    - On-Premise: roles and groups are tied to physical servers and domain controllers e.g AD
-    - Cloud: cloud providers like Azure or AWS offer thier own identity and Access Management systems. It allows for cloud native groups and roles, templates and security integration with clud platforms. E.g Entra ID (Formerly Azure AD)
-    - Hybrid: Organizations typically sunchronize  groups and roles  between on-premise and cloud environments. It allows for SSO for on-premise and cloud resources for better user experience.
+    - 🐬On-Premise: roles and groups are tied to physical servers and domain controllers e.g AD
+    - 🐬Cloud: cloud providers like Azure or AWS offer thier own identity and Access Management systems. It allows for cloud native groups and roles, templates and security integration with clud platforms. E.g Entra ID (Formerly Azure AD)
+    - 🐬Hybrid: Organizations typically synchronize  groups and roles  between on-premise and cloud environments. It allows for SSO for on-premise and cloud resources for better user experience.
       - Groups: Collection of users or devices that share common access requirements for a resources. Can streamline managment permissions and scale.
       - Roles: defines specfic rights and permissions granted to groups. Typically defines specific rights and permissions granted to groups. and reflects job functions or respionsibilities within an organization. In the cloud, it can relate to roles that map to specific roles for completing common tasks.
       - 
@@ -424,7 +424,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - Kerberos supports SSO in a single organization (not federation) it doesnt use 🚫SAML
     - Ticket authentication is a mechanism that employs a third-party entity to prove identification and provide authentication - Kerberos is a well-known ticket system
     - After users authenticate and prove their identity, Kerberos uses their proven identity to issue tickets, and user accounts present these tickets when accessing resources
-    - Kerberos version 5 relies on symmetric-key cryptography (AKA secret-key cryptography) using the Advanced Encryption Standard (AES) symmetric encryption protocol
+    - Kerberos version 5 relies on 📝symmetric-key cryptography (AKA secret-key cryptography) using the Advanced Encryption Standard 📝(AES) symmetric encryption protocol
     - Kerberos provides confidentiality and integrity for authentication traffic using end-to-end security and helps protect against eavesdropping and replay attacks
     - Kerberos elements: Kerberos has three core servers: the 📝Key Distribution Center (KDC), the 📝Authentication Server (AS), and the 📝Ticket Granting Server (TGS).
         - **Key Distribution Center (KDC)**: the trusted third party that provides authentication services. The KDC is the server that creates and distributes the 📝symmetric keys that are used to encrypt and decrypt the tickets by the user's machine and the destination server. It has two main parts: Kerberos Authentication Server (AS) and the ticket-granting service (TGS):
