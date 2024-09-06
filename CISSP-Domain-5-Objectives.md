@@ -261,6 +261,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - A key characteristic of the MAC model is the use of labels applied to 📝both subjects and objects
         - e.g. a label of top secret grants access to top-secret documents
     - When documented in a table, the MAC model sometimes resembles a 📝lattice or matrix (i.e. climbing rosebush framework), so it is referred to as a lattice-based model. 📝Biba integrity model uses this.
+    - The Mandatory Access Control (MAC) model is prohibitive by design, as it employs an 📝implicit-deny methodology.
     - The MAC model uses labels to identify the upper and lower bounds of classification levels, and these define the level of access for subjects.
     - Mandatory Access Control (MAC) uses 📝data classification levels, the user's 📝clearance, and the corporate 📝policy to make decisions. This is more commonly seen in government and military environments, not public companies due to its complexity.
     - MAC model assigns access based on a user's 📝need to know and organization policies.
