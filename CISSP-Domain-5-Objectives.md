@@ -475,7 +475,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - a user can connect to any network access server, which then passes on the user’s credentials to the RADIUS server to verify authentication and authorization and to track accounting
         - in this context, the network access server is the RADIUS client e.g router, switch, and a RADIUS server acts as an authentication server
         - the RADIUS server also provides AAA services for multiple remote access servers
-        - RADIUS uses the User Datagram Protocol (UDP) by default and encrypts only the password’s exchange
+        - RADIUS uses the User Datagram Protocol (UDP) by default and encrypts only the password’s exchange. RADIUS 🚫sends usernames in cleartext from the RADIUS client to the server.
         - RADIUS using Transport Layer Security (TLS) over TCP (port 📝2083) is defined by RFC 6614 
         - RADIUS uses UDP port 1812 for RADIUS messages and UDP port 1813 for RADIUS Accounting messages
         - RADIUS encrypts only the password’s exchange by default
