@@ -273,6 +273,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - New Technology File System (NTFS) used in Windows, uses the DAC model
     - MAC, RBAC, and rule-­based access control) are nondiscretionary models.
     - A system that employs Discretionary Access Controls (DACs) allows the 📝Data Owner to control and define each object's access. All objects have owners and access control is based on the discretion or decision of the owner.
+    - MAC and DAC were originally defined within the Trusted Computer System Evaluation Criteria (TCSEC) document, which is also known as the orange book.
 - 5.4.5 Attribute Based Access Control (ABAC) or Policy-Based Access Control
     - ❄️**Attribute-Based Access Control (ABAC)**: an access control paradigm where access rights are granted to users with policies that combine attributes together. Access decisions based on characteristics of the subject, object, or action. Attributes used for ABAC often fall into one of four categories:
         - 🐝subject attributes like department or title;
