@@ -227,7 +227,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - once an account is compromised, an attacker gains unrestricted access to all of the authorized resources
     - Within an organization, a central access control system, such as a directory service, is often used for SSO
 - 📁**Directory Service**: a centralized database that includes information about subjects and objects, including authentication data
-    - many directory services are based on the Lightweight Directory Access Protocol (LDAP)
+    - Many directory services are based on the Lightweight Directory Access Protocol (LDAP)
     - PKI and LDAP can be used to support Single Sign-On (SSO) systems. A Public Key Infrastructure (PKI) can use a Lightweight Directory Access Protocol (LDAP) when a client queries for a Certificate Authority (CA).
 - 5.2.9 Just-In_time (JIT)
     - Federated identity solutions that support just-in-time (JIT) provisioning automatically create the relationship between two entities so that new users can access resources
@@ -444,7 +444,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - 🏔️**Extensible Access Control Markup Language (XACML)** is used to describe access controls.  XACML is the eXtensible Access Control Markup Language, an OASIS standard used for access control decisions
   
 - 5.6.3 Kerberos: 🔄 Clients wants to access a Windows Server ➡️ Client sends a request to AS (part of KDC) ➡️ AS verifies client and responds with TGT (TGT allows authenticated users to request access to services.) ➡️ Client sends the TGT to TGS (part of the KDC) ➡️ TGS decrypts the TGT, verify the client, sends a service ticket and Session Key to client ➡️ client sends the service ticket and a new authenticator (encrypted with the session key) to the Windows server ➡️ The server decrypts the service ticket with its own secret key and verifies the client's identity using the authenticator ➡️ CLient is granted access to the server if all OK. 🔄 If the client has already authenticated to the KDC and wants access to another server, the client sends its existing valid TGT to the KDC and requests access to the resource.
-    - **Kerberos** is a network authentication protocol widely used in corporate and private networks and found in many LDAP and directory services solutions such as Microsoft Active Directory
+    - **Kerberos** is a network authentication protocol widely used in corporate and private networks and found in many LDAP and directory services solutions such as Microsoft Active Directory. Kerberos is an open protocol that was developed at MIT for Single Sign-On (SSO) within a business. It is the protocol that Microsoft built its Active Directory (AD) on.
     - It provides single sign-on and uses cryptography to strengthen the authentication process
     - Kerberos uses port 📝88
     - The primary purpose of Kerberos is authentication, since it allows users to prove their identity.
