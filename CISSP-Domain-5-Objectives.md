@@ -208,9 +208,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - Federated identity management systems can be hosted on-premises, in the cloud, or in a combination of the two as a hybrid system. Hybrid federation e.g occurs where authentication occurs on-premises and services are provided through a federated identity service in the cloud
     - Upon implementing a cloud-based federation for identity sharing, individuals will typically use their existing 📝normal account credentials to log in. This is facilitated by the federation service, which allows for the secure sharing of identities across different systems and providers. 
 - 5.2.7 Credential management systems
-    - 📁**Credential management systems**: provide storage space for usernames and password
+    - 📁**Credential management systems**: provide storage space for usernames and password. Credential management systems provide a secure location where users can store their usernames and passwords for resources such as websites, network files, and software.
         - e.g. web browsers that remember usernames and passwords for visited sites
-    - The World Wide Web Consortium (W3C) published the Credential Management Level 1 API as a working draft in January 2019, which many browsers have adopted
+    - The World Wide Web Consortium (W3C) published the Credential Management Level 1 API as a working draft in January 📝2019, which many browsers have adopted
     - Credential management systems offer features like password management, multi-factor authentication to retrieve passwords, logging, audit, and password rotation capabilities. 
     - Some federated identity management solutions use the Credential Management API, allowing web apps to implement SSO using a federated identity provider
         - e.g. using your Google or Facebook account to sign into Zoom
