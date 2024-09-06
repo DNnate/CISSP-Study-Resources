@@ -558,6 +558,7 @@ to misuse the application
     - 🎨PPTP (Point-to-Point Tunneling Protocol): Port 1723
     - 🎨RADIUS (Remote Authentication Dial-In User Service): Port 1812 (Authentication), Port 1813 (Accounting)
     - 🎨RADIUS over TLS (RadSec): Port 2083
+    - 🎨Diameter: TCP or SCTP (Stream Control Transmission Protocol) on port 3868.
     - 🎨NetBIOS: Ports 137-139
     - 🎨TACAS: Port 49
     - 🎨XMPP (Extensible Messaging and Presence Protocol): Port 5222
