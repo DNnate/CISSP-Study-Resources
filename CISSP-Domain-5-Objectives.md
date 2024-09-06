@@ -271,6 +271,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - The Mandatory Access Control (MAC) model is prohibitive by design, as it employs an 📝implicit-deny methodology.
     - The MAC model uses labels to identify the upper and lower bounds of classification levels, and these define the level of access for subjects.
     - Mandatory Access Control (MAC) uses 📝data classification levels, the user's 📝clearance, and the corporate 📝policy to make decisions. This is more commonly seen in government and military environments, not public companies due to its complexity.
+    - The modification of the label or classification of a resource in Mandatory Access Control (MAC) can only be performed by system administrators. Strict auditing should be implemented to ensure that 📝system administrators do not modify resources that should not be modified.
     - MAC model assigns access based on a user's 📝need to know and organization policies.
     - In a mandatory access control system, the 📝operating system enforces access control,
     - Mandatory access control systems are based on a lattice-based model. Lattice-based models use a matrix of classification labels to compartmentalize data.
