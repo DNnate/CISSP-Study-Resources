@@ -1132,6 +1132,9 @@ taxed by inefficient implementations of software and VMs.
 - 🔴**Corrective Access Control**:
      - Correct or mitigate the impact of security incidents after they have occurred.
      - Examples include Incident Response Plans/Procedures for responding to and managing security breaches, Data Backup and Recovery to restore data to its original state following loss or corruption and Patch Management to apply software patches and updates to fix vulnerabilities.
+     - Corrective returns something that is broken back to a functional state. For example, a Disaster Recovery (DR) site is created to allow a business to keep running with little disruption from something like a fire in their data center.
+- 🔴**Recovery Access controls** are used for restoring systems to a normal condition. For example, rebuilding and returning to the primary location after a fire and then returning all systems to that location.
+-  🔴**Preventive Access controls** purpose is to prevent unauthorized access e.g locks, mantraps, fences, access controls. 
                  
 - 3.10 Information System Life Cycle
     - a structured framework for managing an information system from its intial conception to its retirement.
