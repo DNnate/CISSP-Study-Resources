@@ -486,7 +486,11 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - TACACS+ allows authentication, authorization, and accounting to be handled independently, providing more granular control.
         - additionally, TACACS+ encrypts all of the authentication information, not just the password, as RADIUS does
         - TACACS+ uses TCP port 49, providing a higher level of reliability for the packet transmissions
-
+    - ❄️**Diameter**: Diameter is designed to address the limitations of RADIUS, providing more robust security and scalability for AAA in modern networks, particularly in mobile and IMS (IP Multimedia Subsystem) environments.
+        - Operates over TCP or SCTP (Stream Control Transmission Protocol) on port 3868.
+        - Provides end-to-end encryption for all communication, offering stronger security than RADIUS.
+        - Separates authentication and authorization processes, making it more flexible.
+        - Common in mobile and large-scale ISP networks where security and scalability are critical.
 - 5.6.5 Credential Managment System
     - 🗳️**Password Vault**: stored locally on the device and stores password so the user doesnt have to remember them
        - uses trong encyrption e.g AES-256 for secure storage
