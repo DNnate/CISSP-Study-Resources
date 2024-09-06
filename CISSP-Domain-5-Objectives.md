@@ -9,7 +9,7 @@ The identity and Access Management (IAM) domain focuses on issues related to gra
 - Single sign-on (SSO) technologies allow users to authenticate once and access any resources in a network or the cloud, without authenticating again. Kerberos, Active Directory Federation Services (ADFS), and Central Authentication
 Services (CAS) are all SSO implementations. RADIUS is not a single sign-on implementation
 - Federated Identity Management (FIM) systems link user identities in one system with other systems to implement SSO
-- **Access Control System**: ensuring access to assets is authorized and restricted based on business and security requirements
+- **Access Control System**: ensuring access to assets is authorized and restricted based on business and security requirements. The primary reason an organization will implement access control mechanisms is to prevent losses. There are three categories of IT loss: 📝loss of confidentiality, 📝loss of availability, and 📝loss of integrity. Those are the three core aspects of information security.
 - **Access Control Token**: based on the parameters like time, date, day etc a token defines access validity to a system
 - **Ethical Wall**: the use of administrative, phyiscal/logical controls to establih/enforce separation of information, assets or job functions for need-to-know boundaries or prevent conflict of interest situations; AKA compartmentalization
 - **Granularity of controls**: level of abstraction or detail which in a security function can be configured or tuned for performance and sensitivity
