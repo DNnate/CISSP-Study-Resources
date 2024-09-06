@@ -241,7 +241,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - RBAC uses a well-defined collection of named job roles for access control. Administrators grant each job role with the privileges they need to perform their jobs. 
     - it is based on role or group membership, and users can be members of multiple groups. Users are not limited to only a single role.
     - RBAC models are based on the hierarchy of an organization, so they are 📝hierarchy based.
-    - It is nondiscretionary model managed by a central authority🔥 to determine which objects subjects can access
+    - It is nondiscretionary model managed by a central authority🔥 to determine which objects subjects can access.  Therefore, it is required that the creator of the role understands the required operations and tasks prior to creating the role. Otherwise, the created role may provide insufficient or excessive access.
 - 5.4.2 ❄️**Rule Based access control**
     - A key characteristic of the Rule-Based access control model is that it applies global rules to all subjects
     - A rule-based access control model uses 📝global rules applied to all users and other subjects equally.
