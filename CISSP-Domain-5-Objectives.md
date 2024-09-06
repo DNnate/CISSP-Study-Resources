@@ -255,7 +255,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - if the user account is in a role, the user has all privileges assigned to the role
     - MS Windows OS uses this model with groups
     - A role-­based access control (RBAC) model can group users into roles based on the organization’s hierarchy
-    - RBAC uses a well-defined collection of named job roles for access control. Administrators grant each job role with the privileges they need to perform their jobs. 
+    - RBAC uses a well-defined collection of named job roles for access control. Administrators grant each job role with the privileges they need to perform their jobs.
+    - RBAC is a system that employs Role-Based Access Control (RBAC) maps a subject's role with their needed operations and tasks. Users are assigned to roles and not resources. The job functions and hierarchy implies that the user’s role is the key element that they are using to determine access needs.
     - it is based on role or group membership, and users can be members of multiple groups. Users are not limited to only a single role.
     - RBAC models are based on the hierarchy of an organization, so they are 📝hierarchy based.
     - It is nondiscretionary model managed by a central authority🔥 to determine which objects subjects can access.  Therefore, it is required that the creator of the role understands the required operations and tasks prior to creating the role. Otherwise, the created role may provide insufficient or excessive access.
@@ -295,7 +296,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - DAC is the least restrictive compared to the other systems, as it essentially allows an individual complete control over any objects they own, as well as the programs associated with those objects. A drawback is that it gives the end-user complete control in setting security level settings for other users and the permissions given to the end-user are inherited into other programs they use, which could potentially lead to malware being executed without the end-user being aware of it.
     - MAC and DAC were originally defined within the Trusted Computer System Evaluation Criteria (TCSEC) document, which is also known as the orange book.
 - 5.4.5 Attribute Based Access Control (ABAC) or Policy-Based Access Control
-    - ❄️**Attribute-Based Access Control (ABAC)**: an access control paradigm where access rights are granted to users with policies that combine 📝granular attributes together. Access decisions based on characteristics of the subject, object, or action. Attributes used for ABAC often fall into one of four categories:
+    - ❄️**Attribute-Based Access Control (ABAC)**: an access control paradigm where access rights are granted to users with policies that combine 📝granular attributes together. ABAC defines and assigns various attributes to users, and access to resources is governed based on 📝combinations of attributes. Access decisions based on characteristics of the subject, object, or action. Attributes used for ABAC often fall into one of four categories:
         - 🐝subject attributes like department or title;
         - 🐝action attributes like the ability to view, edit, or delete;
         - 🐝object attributes that describe the object that can be impacted; and
@@ -312,11 +313,14 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - Using machine learning, making predictive conclusions about current activity based on past activity
         - risk-­based access control model can require users to authenticate with multifactor authentication
         - it evaluates the 📝environment and the 📝situation and then makes access decisions based on coded policies
-        - A risk-based access control model can be coded to block malicious traffic from infected IoT devices. It evaluates the environment and the situation and makes decisions to block traffic that is abnormal. 
+        - A risk-based access control model can be coded to block malicious traffic from infected IoT devices. It evaluates the environment and the situation and makes decisions to block traffic that is abnormal.
+        - Risk-based access control assesses the risk posed by a request before granting or denying it. For example, some resources may only be accessible from on-prem networks or trusted devices.
 - 5.4.7 ❄️**Task based access control**
     - TBAC is similar to RBAC, but instead of being assigned to one or more roles, each user is assigned an array of tasks.
 - 5.4.8 ❄️**Time based/Temporal access control**:
-    - Temporal or time-based access control is a security mechanism that regulates access to resources or data based on specific time-related criteria. Unlike traditional access control, which focuses on who can access what, temporal access control considers when access is permitted. 
+    - Temporal or time-based access control is a security mechanism that regulates access to resources or data based on specific time-related criteria. Unlike traditional access control, which focuses on who can access what, temporal access control considers when access is permitted.
+ - - 5.4.9 ❄️**Non-Discretionary access control**:
+    - The major difference between discretionary and Non-Discretionary Access Controls (NDAC) is how they are controlled and managed. Administrators centrally administer non-discretionary access controls and can make changes that affect the entire environment. The most commonly discussed NDAC is Mandatory Access Control (MAC).
 - [5.5](#5.5.0) 🔴**Zero-Trust Access Policy Enforcement**:
   - 📁**Policy Enforcement Point (PEP)**: Responsible for enabling, monitoring and terminating connections between a subject (such as user or device) and an enterprise resource.
      - It acts as a 📝gateway the enforces access control policies.
@@ -480,11 +484,12 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
                 - The TGS, or ticket-granting service (which is usually on the same server as the KDC), receives a TGT from the client. It validates the TGT and the user's rights to access the service they are requesting to use. The TGS then issues a ticket and session keys to the client. 
                 - a TGT is encrypted and includes a symmetric key, an expiration time, and user’s IP address. 📝 a scenario where TGT is compromised, Attackers can create golden tickets after successfully exploiting Kerberos and obtaining the Kerberos service account (KRBTGT).
                 - subjects present the TGT when requesting tickets to access objects
-            - 🍮**authentication service (AS)**: hosts the functions of the KDC. It verifies or rejects the authenticity and timeliness of tickets. Often referred to as the KDC. The AS serves as the authentication server, which forwards the username to the KDC. It's worth noting that the client doesn't communicate with the KDC directly. Instead, it will communicate with the TGT and the AS, which means KDC isn't an appropriate answer here.
+            - 🍮**authentication service (AS)**: hosts the functions of the KDC. It verifies or rejects the authenticity and timeliness of tickets. Often referred to as the KDC. The AS serves as the authentication server, which forwards the username to the KDC. It's worth noting that the client doesn't communicate with the KDC directly. Instead, it will communicate with the 📝TGT (proof of authentication) and the AS, which means KDC isn't an appropriate answer here.
                 - The AS is the part of Kerberos that goes through the initial process of verifying that the user is who they claim to be. Once that is complete, the user is issued a Ticket Granting Ticket (TGT) which gives them permission to request access to destination servers. 
         - **ticket (AKA service ticket (ST))**: an encrypted message that provides proof that a subject is authorized to access an object
         - **Kerberos Principal**: typically a user but can be any entity that can request a ticket
-        - **Kerberos realm**: a logical area (such as a domain or network) ruled by Kerberos
+        - **Kerberos Realm**: a logical area (such as a domain or network) ruled by Kerberos
+        - **Kerberos Timestamps** Kerberos uses tickets and a cryptographic key matched with a timestamp to allow users to prove their authenticity with trusted services. The timestamp on the certificate would state the time it was issued, so 📝replay attacks at a later time would appear suspicious and be rejected by those services. The timestamp could be associated with a log, future Quality of Service (QoS) implementation, or a Security Information & Event Manager (SIEM) that can correlate the events with the proper integration mechanisms. 
     - Kerberos login process:
         - user types a username/password into the client to initiate client/TGS key generation
         - client encrypts the username with AES for transmission to the KDC
