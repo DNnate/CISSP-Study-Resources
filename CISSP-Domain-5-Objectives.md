@@ -263,7 +263,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - MAC is a nondiscretionary access control model that uses labels🔥
     - (MAC) model supports three environments: hierarchical, compartmentalized, and hybrid.
         - ☑️In a hierarchical environment, the various classification labels are assigned in an ordered structure from low security to high security. Mandatory access control systems can be hierarchical, where each domain is ordered and related to other domains above and below it. It grants users access using predefined labels for specific labels. The hierarchical environment uses levels to assign access.
-        - ☑️compartmentalized environment ignores the levels, and instead only allows access for individual compartments on any level.  MAC systems can be compartmentalized, where there is no relationship between each domain; 
+        - ☑️compartmentalized environment ignores the levels, and instead only allows access for individual compartments on any level.  MAC systems can be compartmentalized, where there is no relationship between each domain; Each domain represents a separate isolated compartment. To gain access to an object, the subject must have specific clearance for each security domain. For example, a general may have access to Top Secret information about troop movements but not Top Secret information about nuclear missile construction. 
         - ☑️hybrid environment is a combination of a hierarchical and compartmentalized environment. Hybrid environments combine both hierarchical and compartmentalized environments so that security levels have sub-compartments.  
 
 - 5.4.4 Discretionary Access Control (DAC)
