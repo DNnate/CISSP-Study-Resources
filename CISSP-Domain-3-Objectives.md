@@ -1133,10 +1133,11 @@ taxed by inefficient implementations of software and VMs.
      - Correct or mitigate the impact of security incidents after they have occurred.
      - Examples include Incident Response Plans/Procedures for responding to and managing security breaches, Data Backup and Recovery to restore data to its original state following loss or corruption and Patch Management to apply software patches and updates to fix vulnerabilities.
      - Corrective returns something that is broken back to a functional state. For example, a Disaster Recovery (DR) site is created to allow a business to keep running with little disruption from something like a fire in their data center.
+     - It may not be back to normal but at least it is in a working state.
 - 🔴**Recovery Access controls** are used for restoring systems to a normal condition. For example, rebuilding and returning to the primary location after a fire and then returning all systems to that location.
--  🔴**Preventive Access controls** purpose is to prevent unauthorized access e.g locks, mantraps, fences, access controls. 
-                 
-- 3.10 Information System Life Cycle
+- 🔴**Preventive Access controls** Preventive access controls attempt to stop or interrupt unauthorized attempts to gain access. Examples of preventive access controls include fences, locks, biometrics, mantraps, lighting, alarm systems, separation of duties policies, encryption, auditing, and others. A smart card is an example of a preventive access control because it prevents unauthorized activity. 
+- 🔴**Detective Access controls** A detective control discovers and alerts the operations center to a possible attack. Logs and the Security Information Event Manager (SIEM) are good examples of detective controls.   
+- 3.10 ❄️Information System Life Cycle
     - a structured framework for managing an information system from its intial conception to its retirement.
     - The goal is to ensure that a system is developed and managed in a way that meets business needs , remains secure and operates efficiently through its lifespan
     - Key phases include
