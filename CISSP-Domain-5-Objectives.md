@@ -337,9 +337,18 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
        - Subject/System: Subject is the user who wishes to access a resource. The system is a non-human entity often used by the user to access this resource.   
        - Policy Enforcement Point: When a user or system request access to a resource, it is the PEP that evaluates it against predefined policies and applies the neccessary controls.
 
-[5.5](#5.5) Manage the identity and access provisioning lifecycle (OSG-9 Chpts 13,14)
-- 5.5.1 Account accesss review
+📗[5.5](#5.5) Manage the identity and access provisioning lifecycle (OSG-9 Chpts 13,14)
+- The Identity and Access Provisioning Lifecycle includes the following stages:
+    - 🆎Provisioning:
+    - 🆎Deprovisioning:
+    - 🆎Role Definition and Transition:
+    - 🆎Account Maintenance: involves reviewing/updating rights/privileges to ensure that they are aligned with a user’s current needs.
+    - 🆎Account Access Review:
+    - 🆎Privilege Escalation:
+    - 🆎Service Accounts Management: 
+- 5.5.1 🌲✴️**Account accesss review**
     - Administrators need to periodically review user, system and service accounts to ensure they meet security policies and that they don’t have excessive privileges
+    - Administrators should regularly review accounts to ensure that they have appropriate privileges and are not inactive. Privilege-related issues include excessive privileges (like unneeded administrator-level access) and privilege creep (acquiring and retaining unneeded privileges as job roles change).
     - Be careful in using the local system account as an application service account; although it allows the app to run without creating a special service account, it usually grants the app more access than it needs
     - You can use scripts to run periodically and check for unused accounts, and check priveleged group membership, removing unauthorized accounts
     - Guard against two access control issues:
@@ -348,14 +357,14 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.5.2 Provisioning and deprovisioning
     - Identity and access provisioning lifecycle refers to the creation, management, and deletion of accounts
         - this lifecycle is important because without properly defined and maintained user accounts, a system is unable to establish accurate identity, perform authentication, provide authorization, and track accountability
-    - 🌲**Provisioning/Onboarding**
+    - 🌲✴️**Provisioning/Onboarding**
         - proper user account creation, or provisioning, ensures that personnel follow specific procedures when creating accounts
         - 📝Onboarding refers to a collection of activities performed by (or for the benefit of) new hires to meet legal or policy compliance and orient the employees to the policies and processes of the organization.
         - 📝Provisioning includes the creation, maintenance, and removal of user objects from applications, systems, and directories.  The provisioning process is a subset of (and typically completed during) the onboarding process. Registration occurs when users are enrolled in a biometric system for example;
             - 🩹Enrollment, or registration, is the initial creation of a user account in the provisioning process. Clearance verification and background checks are sometimes part of the process that ensures that the identity of the person being enrolled matches who they claim to be
             - new-user account creation is AKA enrollment or registration
             - 🩹Registration is the process of adding a user to an identity management system. This includes creating their unique identifier and adding any attribute information that is associated with their identity.
-            -  review of provisioning processes typically involves checking logs, reviewing the audit trail, or performing a manual review of permissions granted during the provisioning process.
+            -  review of provisioning processes typically involves checking logs, reviewing the audit trail, or performing a manual review of permissions granted during the provisioning process. Provisioning also may include issuing devices and having users sign off on necessary corporate policies.
         - 🌑User access Modification: involves updating or changing a user's access rights when their role within the organization changes.
         - 🌑User access Recertification: Involves periodic reviews to confirm that users have the appropriate access rights,
         - **Workflow provisioning**: Provisioning that occurs through an established workflow, such as through an HR process, is workflow-based account provisioning
@@ -371,7 +380,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
             - configure a password manager
             - explaining how to access help desk
             - show to access, share and save resources
-    - 🌲**Deprovisioning/Offboarding**
+    - 🌲✴️**Deprovisioning/Offboarding**
         - 📝Offboarding refers to a collection of activities performed by (or for the benefit of) separating employees to meet legal or policy compliance and recover any company devices, keys, or tokens that were issued during the term of employment.
         - 📝Deprovisioning occurs when an employee leaves the organization or is transferred to a different department. Deprovisioning refers to the deactivation or revocation of a user account. The deprovisioning process is a subset of (and typically completed during) the offboarding process. The process of deactivating or revoking a user account is commonly referred to as deprovisioning. The deprovisioning process is typically triggered when an employee separates from the organization.
         - **Account revocation**: deleting an account is the easiest way to deprovision
@@ -379,12 +388,14 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
             - supervisors can then review the user’s data and determine if anything is needed
             - note: if terminated employee retains access to a user account after the exit interview, the risk for sabatage is very high
         - Deprovisioning includes collecting any hardware issued to an employee such as laptops, mobile devices and auth tokens. 
-- 5.5.3 Role definition
+- 5.5.3 🌲✴️**Role definition**
     - Employee responsibilities can change in the form of transfers to a different role, or into a newly created role
         - for new roles, it’s important to define the role and the privileges needed by the employees in that role
     - Roles and associated groups need to be defined in terms of privileges
-- 5.5.4 Privilege escalation (e.g. managed service accounts, use of usdo, minimizing its use)
+    - As employees grow and the company changes, new roles may need to be created or assigned. For example, an employee promoted to management will need new access granted to them and some privileges removed. The company may also need to create or update roles to support new types of employees or corporate systems.
+- 5.5.4 🌲✴️**Privilege escalation** (e.g. managed service accounts, use of usdo, minimizing its use)
     - Privilege escalation refers to any situation that gives users more privileges than they should have
+    - Privilege escalation involves moving to a higher privilege level via the use of sudo or similar means. This privilege escalation should only occur when needed and be logged.
     - Attackers use privilege escalation techniques to gain elevated privileges
     - 🍍**Horizontal privilege escalation**: gives an attacker similar privileges as the first compromised user, but from other accounts. Multifactor authentication is most likely to limit horizontal privilege escalation by making it difficult to access user accounts and to authenticate to a compromised account. Limiting permissions for groups and accounts can also help
         - Horizontal privilege escalation occurs when a user gains access to the privileges of another user who has similar permissions. In this type of attack, the malicious user does not increase their privilege level but rather "horizontally" moves to impersonate or access another user’s data or capabilities.
@@ -395,7 +406,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - the attacker can then use horizontal privilege escalation techniques to access other computers in the network
         - this horizontal privilege escalation throughout the network is AKA 📝lateral movement
         - Disabling unused ports and services and sanitizing user inputs both address threats that are most frequently associated with vertical privilege escalation attacks.
-- ✴️**Service Accounts**: When a software is installed on a computer, it may require privileged access to run and access other resources (systems/data). Service accounts are a low level adminsitrative accounts without human intervention.
+- 🌲✴️**Service Accounts**: When a software is installed on a computer, it may require privileged access to run and access other resources (systems/data). Service accounts are a low level adminsitrative accounts without human intervention.
+   - They need certain levels of access, which should be tailored to their role rather than using over-privileged built-in accounts.
    - it is an account used to run an application
    - In the cloud, it is often called service principle.
    - In the cloud, similar concepts exists for clud resources such as VMs, that provides an identity for that resource to access other resources. In Azure (_Managed Identity_), in AWS (_Service Roles_), in Google cloud (_Service Account Identity_).
