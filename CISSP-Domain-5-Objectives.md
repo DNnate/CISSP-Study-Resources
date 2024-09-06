@@ -107,7 +107,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - note: requiring users to enter a password and a PIN is NOT multifactor (both are something you know)
         - Type 1 + Type 2 + Type 3: A user needs to enter a password (🛎️Type 1 something you know ✏️), use a smart card (🛎️Type 2 something you have ✏️), and undergo a retina scan (🛎️Type 3 something you are ✏️). 🛎️Somehwere you are: A callback to a landline phone number is an example of a "somewhere you are" factor because of the fixed physical location of a wired phone. 
         - Yubikeys, Titan Security Keys, and similar devices are examples of tokens i.e Type 2
-        - **🔔Smart cards** are credit card-sized devices that contain a microprocessor. A smart card typically contains an 📝encrypted private key issued through a Public Key Infrastructure (PKI) system that the authenticating environment trusts. When the smart card is inserted into a reader, the user must enter a Personal Identification Number (PIN) before the smart card releases the private key. Smart cards can be programmed to wipe themselves if a PIN is entered incorrectly too many times.
+        - **🔔Smart cards** are credit card-sized devices that contain a microprocessor. A smart card typically contains an 📝encrypted private key issued through a 📝Public Key Infrastructure (PKI) system that the authenticating environment trusts. When the smart card is inserted into a reader, the user must enter a Personal Identification Number (PIN) before the smart card releases the private key. Smart cards can be programmed to wipe themselves if a PIN is entered incorrectly too many times.
         - **🔔Synchronous** soft tokens, such as Google Authenticator, use a time-based algorithm that generates a constantly changing series of codes. A synchronous token generates and displays onetime passwords e.g every 60 seconds, that are synchronized with an authentication server. They usually use time as a key element in the process of generating the one-time password. This requires the token and the server to maintain an accurate time. Tokens often provide multi-factor authentication. A synchronous token is 🚫not protected with encryption, and anyone with physical access to the token can view the PIN.
         - **🔔Asynchronous** tokens typically require a 📝challenge to be entered on the token to allow it to calculate a response, which the server compares to the response it expects. An asynchronous token uses a challenge-­response process to generate the onetime password. Asynchronous tokens also generate passwords, but they use a challenge-response process. The server the user is trying to access will send a number, or challenge, that is entered into the asynchronous token. The token uses that number to generate the response.
         - **🔔RFID badge** (Radio Frequency Identification) refers to a physical access control device that uses radio waves to transmit a unique identifier from the badge to a nearby RFID reader. This technology is commonly used for authentication and access control in physical security systems, such as securing buildings or restricted areas.  Passive RFID badges can be vulnerable to cloning if not properly secured. Attackers can capture the radio signal and clone the badge. Also it is vulnerable to Eavesdropping because an attacker could intercept the communication between the RFID badge and the reader if encryption is not used.
@@ -208,14 +208,14 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - Federated identity management systems can be hosted on-premises, in the cloud, or in a combination of the two as a hybrid system. Hybrid federation e.g occurs where authentication occurs on-premises and services are provided through a federated identity service in the cloud
     - Upon implementing a cloud-based federation for identity sharing, individuals will typically use their existing 📝normal account credentials to log in. This is facilitated by the federation service, which allows for the secure sharing of identities across different systems and providers. 
 - 5.2.7 Credential management systems
-    - **Credential management systems**: provide storage space for usernames and password
+    - 📁**Credential management systems**: provide storage space for usernames and password
         - e.g. web browsers that remember usernames and passwords for visited sites
     - The World Wide Web Consortium (W3C) published the Credential Management Level 1 API as a working draft in January 2019, which many browsers have adopted
     - Credential management systems offer features like password management, multi-factor authentication to retrieve passwords, logging, audit, and password rotation capabilities. 
     - Some federated identity management solutions use the Credential Management API, allowing web apps to implement SSO using a federated identity provider
         - e.g. using your Google or Facebook account to sign into Zoom
 - 5.2.8 Singe Sign On (SSO)
-    - **Single Sign-On (SSO)**: a centralized access control technique allowing a subject to be authenticated once on a system and access multiple resources without authenticating again
+    - 📁**Single Sign-On (SSO)**: a centralized access control technique allowing a subject to be authenticated once on a system and access multiple resources without authenticating again
     - 🚡Advantages of using SSO include:
         - reduces the number of passwords that users need to remember, and they are less likely to write them down
         - eases administration by reducing the number of accounts
@@ -226,8 +226,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
     - 🚡Disadvantages:
         - once an account is compromised, an attacker gains unrestricted access to all of the authorized resources
     - Within an organization, a central access control system, such as a directory service, is often used for SSO
-        - **Directory Service**: a centralized database that includes information about subjects and objects, including authentication data
-        - many directory services are based on the Lightweight Directory Access Protocol (LDAP)
+- 📁**Directory Service**: a centralized database that includes information about subjects and objects, including authentication data
+    - many directory services are based on the Lightweight Directory Access Protocol (LDAP)
+    - PKI and LDAP can be used to support Single Sign-On (SSO) systems. A Public Key Infrastructure (PKI) can use a Lightweight Directory Access Protocol (LDAP) when a client queries for a Certificate Authority (CA).
 - 5.2.9 Just-In_time (JIT)
     - Federated identity solutions that support just-in-time (JIT) provisioning automatically create the relationship between two entities so that new users can access resources
     - A JIT solution creates the connection without any administrative intervention
@@ -371,7 +372,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
             - show to access, share and save resources
     - 🌲**Deprovisioning/Offboarding**
         - 📝Offboarding refers to a collection of activities performed by (or for the benefit of) separating employees to meet legal or policy compliance and recover any company devices, keys, or tokens that were issued during the term of employment.
-        - 📝Deprovisioning/offboarding occurs when an employee leaves the organization or is transferred to a different department. Deprovisioning refers to the deactivation or revocation of a user account. The deprovisioning process is a subset of (and typically completed during) the offboarding process. 
+        - 📝Deprovisioning occurs when an employee leaves the organization or is transferred to a different department. Deprovisioning refers to the deactivation or revocation of a user account. The deprovisioning process is a subset of (and typically completed during) the offboarding process. The process of deactivating or revoking a user account is commonly referred to as deprovisioning. The deprovisioning process is typically triggered when an employee separates from the organization.
         - **Account revocation**: deleting an account is the easiest way to deprovision
             - an employee's account is usually first disabled
             - supervisors can then review the user’s data and determine if anything is needed
