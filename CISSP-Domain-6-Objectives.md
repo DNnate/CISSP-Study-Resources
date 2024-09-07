@@ -176,6 +176,8 @@
     - 🚡**information gathering and discovery**: uses manual and automated tools to collect information about the target environment
         - basic reconnaissance (website mapping)
         - Discovery can include both active and passive discovery.
+            - 🎈Passive: Searching Domain Name System (DNS) records involves using command line input to gather open-source information which the client would not be alerted to. Physical observation and visiting the company's website would not necessarily alert a client.
+            - 🎈Active: Synchronize (SYN) scans would alert the client that a SYN packet reached their port. A pattern of these SYN packets to different ports may then trigger an alert in an intrusion detection system.
         - Port scanning is commonly done during discovery to assess what services the target provides, and nmap is one of the most popular tools used for this purpose. 
         - network discovery e.g using nmap, dumpster diving, War dialing (an attempt to locate modems and fax machines by dialing phone numbers).
         - testers probe for system weaknesses using network, web and db vuln scans e.g Nessus and Nikto
