@@ -504,9 +504,10 @@ inputs and outputs to inform the test plan.
         - An example is the OpenSSL package is a widely used implementation of TLS encryption that is available as an open source package. 
         - it also means that both open-source devs as well as adversaries are able to review the code for vulns
         - The ability to inspect open source software means that organizations can inspect it, but more importantly that others can and often have also inspected it. This results in software that has had far more review than some closed-source or commercial packages (although large organizations may perform more review).
-        - the greatest risk of open-source software is relying on outdated versions -- especially true of shared libraries 
+        - the greatest risk of open-source software is relying on 📝outdated versions -- especially true of shared libraries 
         - an org should develop processes to ensure that all open-source software is periodically updated, likely in a way that differs from the process for updating COTS
         - By monitoring/tracking assets containing open source libraries for vulnerabilities, organizations can stay informed about any newly discovered vulnerabilities or weaknesses in these libraries. This allows them to take proactive measures, such as applying patches or updates, implementing workarounds, or finding alternative solutions, to mitigate the risk of zero-day attacks.
+        - Open-source products can sometimes have 📝limited support, as the products aren't usually bound by stringent agreements with buyers as their closed-source counterparts may be. Open-source products may not have the same features as many closed-source/proprietary products in their market.
 
 - 8.4.3 Third-party
     - ❄️**Third-party software**: (AKA outsourced software) is software made specifically for an org by a third party
