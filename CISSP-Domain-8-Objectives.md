@@ -235,7 +235,7 @@
             - 🆎Level 3: **Defined**: in this phase, software devs operate according to a set of formal, documented software development processes. The Defined stage of the SW-CMM is marked by the presence of basic lifecycle management processes and reuse of code. It includes the use of requirements management, software project planning, quality assurance, and configuration management practices.
             - 🆎Level 4: **Managed**: in this phase, there is better management of the software process. The organization uses 📝quantitative measures to gain a detailed understanding of the development process. Software Quality Management is a process that occurs during level 4, the Managed stage of the SW-CMM.
             - 🆎Level 5: **Optimizing**: in this phase continuous improvement occurs
-    - 🟢**Software Assurance Maturity Model (SAMM)**: GDIVO 🟡 an open source project maintained by the Open Web Application Security Project (OWASP)
+    - 🟢**Software Assurance Maturity Model (SAMM)**: GDIVO Great Developers Implement Valuable Operations🟡 an open source project maintained by the Open Web Application Security Project (OWASP)
         - provides a framework for integrating security into the software development and maintenance processes and provides orgs with the ability to assess their maturity
         - SAMM associates software development with 5 business functions:
             - 🛎️Governance: the activities needed to manage software development processes
