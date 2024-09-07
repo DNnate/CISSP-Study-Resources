@@ -454,12 +454,13 @@
     - They educate employees about current threats and advise them on best practices for protecting information and systems under their care from attacks
         - Employees are the 📝largest security threat to a company, and their training would reduce the largest number of security threats.
         - Employees are 📝prime targets for a variety of attacks involving social engineering and hoaxes.
-        - Employees make 📝mistakes that can have serious consequences, which BAS tests, vulnerability scanning, and ISACs won't identify and fix. 
+        - Employees make 📝mistakes that can have serious consequences, which BAS tests, vulnerability scanning, and ISACs won't identify and fix.
+        - Empoyees may lack of knowledge, and specifically, cyberattacks such as phishing attempts could be thwarted with regular education.
     - Program should begin with initial training designed to provide foundation knowledge to employees who are joining the org or moving to a new role; the initial training should be tailored to an individual’s role
     - Training and awareness should continue to take place throughout the year, reminding employees of their responsibilities and updating them on changes to the organization’s operating environment and threat landscape
     - Training activities should be 📝tracked to ensure that all employees attend and, even better, are learning.
     - The number of staff who took a given training and the average change in their awareness from 📝before the training to 📝after the training can provide insight into how many trained staff you have and how impactful the training was.
-    - Training employees 📝frequently will ensure better security for the organization as a whole. Generally speaking, employees are the greatest threat to an organization. This is usually due to accidents, lack of knowledge, and specifically, cyberattacks such as phishing attempts that could be thwarted with regular education.
+    - Training employees 📝frequently will ensure better security for the organization as a whole. Generally speaking, employees are the greatest threat to an organization. 
     - Use phishing simulations to evaluate the effectiveness of their security awareness programs
     - 📝Phishing simulations test the effectiveness of security training by actually identifying the percentage of users likely to fall victim to a phishing attack.
     - 📝Surveys, which is the most common, would also measure this but with lesser effectiveness because they depend upon self-reported perceptions
