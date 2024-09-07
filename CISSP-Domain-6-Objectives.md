@@ -387,6 +387,13 @@
         - 🩹level of organizational impact of incidents
         - 🩹number of false positives (i.e., false detection alerts/alarms). 
    - 🍮**Key Risk Indicator (KRIs)**: Key risk indicators are used to tell those in charge of risk management how risky an activity is and how much impact changes are having on that risk profile. Identifying key risk indicators and monitoring them can help to identify high-risk areas earlier in their lifecycle.  Key Risk Indicators (KRIs) allow for a more proactive approach to cybersecurity.
+   - KRI include
+       - Hardware and Software entering entering EOS as this naturally increases risk over time since there are no future patches. 
+       - Increase global phishing campaigns. With phishing campaigns on the rise and many businesses using e-mail, it is safe to say this would be a major security risk and an indication that the use of Sender Policy Framework (SPF) records and Domain Keys Identify Mail (DKIM) should be used as a mitigation strategy.
+       - Supply chain issues are a risk to a business, as they can naturally increase costs or jeopardize the reputation of a company that isn't conducting quality control. Understanding a supply chain and potential issues can ensure an understanding of current supply and demand, and the likelihood of untrusted or counterfeit products. Ways to mitigate this would be to reduce the company's scope of purchase from less-trusted third parties and to implement quality control upon delivery of items.
+       - Low storage volumes could be an indicator of a future denial of service, for example. Imagine attempting to update a game before playing, but you cannot update the game because you are out of storage space. This would be an example of a denial of service.
+       - An increase in blocked firewall connections could be an indication of attempted cyberattacks, most notably a denial of service or distributed denial of service. Imagine an attacker sending traffic during a distributed denial of service, but you notice this and have the bandwidth to support it. An attacker may see that you are still online and send even more data as a result, but these blocked connections would be an indicator of this potentially happening.
+       - High CPU usage on a router could be an indicator that you should upgrade before the router becomes overworked and enters a failed state, eliminating your internet connection.
 - 6.3.4 Backup verification data
     - Managers should periodically inspect the results of backups to verify that the process functions effectively and meets the organization’s data protection needs
         - this might include reviewing logs, inspecting hash values, or requesting an actual restore of a system or file
