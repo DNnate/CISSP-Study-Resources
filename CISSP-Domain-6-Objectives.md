@@ -591,12 +591,12 @@
     - Fuzzing involves sending unexpected inputs to a program to see how it responds
         - 🔔Mutation (Dumb) Fuzzing Takes previous input values from actual operation of the software and manipulates (or mutates) it to create fuzzed input. It uses bit flipping and other techniques to slightly modify previous inputs to a program in an attempt to detect software flaws. It  modifies known inputs to generate synthetic inputs that may trigger unexpected behavior
         - 🔔Generational (Intelligent) Fuzzing Develops data models and creates new fuzzed input based on an understanding of the types of data used by the program. It develops inputs based on models of expected inputs to perform the same task.
-    - ❄️**Interface Testing**: assesses the performance of modules against the interface specifications to ensure that they will work together properly. Interfaces to be tested include
-      - Application Programming Interfaces (APIs)
-      - User Interfaces (UIs)
-      - Physical Interfaces (For applications that manipulate machinery and logic controllers)
-    - ❄️**Misuse Case Testing**: or abuse case testing to evaluate the vulnerability of their software to users attempt
-to misuse the application
+    - ❄️**Interface Testing**: assesses the performance of modules against the interface specifications to ensure that they will work together properly.  Interface testing verifies that the different components of a system will work properly when linked together. Interfaces to be tested include
+      - 🎈Application Programming Interfaces (APIs)
+      - 🎈User Interfaces (UIs)
+      - 🎈 Network Interface
+      - 🎈Physical Interfaces (For applications that manipulate machinery and logic controllers)
+    - ❄️**Misuse Case Testing**: or abuse case testing to evaluate the vulnerability of their software to users attempt to misuse the application and tests its responses to these malicious inputs.
     - ❄️**Mutation Testing**: Mutation testing (automatically) modifies a program in small ways and then tests that mutant to determine if it behaves as it should or if it fails. This technique is used to design and test software tests through mutation. It is a method used to automatically design new software tests and to ensure the quality of tests
     - ❄️**Regression Testing**: In cases where the project is releasing updates to an existing system, regression testing formalizes the process of verifying that the new code performs in the same manner as the old code, other than any changes expected as part of the new release. They Key performance measure of Regression testing is more specifically covered by defect recurrence rates.        
 
