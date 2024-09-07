@@ -154,8 +154,8 @@
             - 🩹**Nmap** only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! 📝Both TCP and UDP port numbers are a 16-digit binary number, which means there can be 216 ports, or 65,536 ports, numbered from 0 to 65,535.
             - Nmap states include:
                 - 🔨Open Port: The port is accessible on the remote system and an application is accepting connections on that port.
-                - 🔨Closed Port: The port is not accessible on the remote system.
-                - 🔨Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port. Also Nmap us unable to determine if it is open or closed.
+                - 🔨Closed Port: TPort is accessible but not accepting connections. The system is responding to Nmap’s probes, but no service is running on that port. It means the port is accessible but not currently in use.
+                - 🔨Filtered Port: Nmap us unable to determine if it is open or closed due to a firewall. The port is behind a firewall, router, or some security device that is blocking or filtering Nmap’s probes, preventing Nmap from determining its status.
         - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Nmap, Nessus, and Nikto all have OS fingerprinting or other operating system identification capabilities. Network vulnerability scanners are used to discover systems that have known vulnerabilities such as missing patches.
             - 🩹**OpenVAS**: OpenVAS is an open source vulnerability scanning tool that provide report of the vulnerabilities that it can identify from a remote, network-based scan.
             - Web vulnerability scanner is a type of network scanner.
