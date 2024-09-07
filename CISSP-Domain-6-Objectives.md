@@ -198,16 +198,19 @@
         - 🔴**white-box penetration test (crystal)**:
             - provides the attackers with **detailed information** about the systems they target
             - this bypasses many of the reconnaissance steps that normally precede attacks, shortening the time of the attack and increasing the likelihood that it will find security flaws
+            - When the penetration testers are provided detailed information, it is referred to as a full-knowledge test (white box).
             - these tests are sometimes called "**known environment**" tests
             - To fully test code, a white-box test is required. Without full visibility of the code, error conditions or other code could be missed.
         - 🔴**gray-box penetration test**:
             - AKA **partial knowledge tests**, these are sometimes chosen to balance the advantages and disadvantages of white- and black-box penetration tests
-            - In a gray-box test, the tester evaluates the software from a user perspective but has access to the source code as the test is conducted. 
+            - In a gray-box test, the tester evaluates the software from a user perspective but has access to the source code as the test is conducted.
+            - In grey-box or partial testing, the penetration testers are provided with partial information before testing. This can help the tester potentially find vulnerabilities and exploit them more than if the tester knew no information about the environment before testing.
             - this is particularly common when black-box results are desired but costs or time constraints mean that some knowledge is needed to complete the testing
             - these tests are sometimes called "**partially known environment**" tests
         - 🔴**black-box penetration test**:
             - does not provide attackers with any information prior to the attack
             - this simulates an external attacker trying to gain access to information about the business and technical environment before engaging in an attack
+            - When the penetration testers are provided no information, it is referred to as a zero-knowledge test (black box). 
             - these tests are sometimes called "**unknown environment**" tests
 - **Excersice Types**:
     - 📗**Red Team (Tiger Team)**: A group of security professionals who simulate real-world 📝attacks to test the defenses of an organization.
