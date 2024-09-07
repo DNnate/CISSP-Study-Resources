@@ -437,7 +437,7 @@
     - These processes need to be periodically accessed, and regular testing of disaster recovery and business continuity controls provide organizations with the assurance they are effectively protected against disruptions to business ops
     - The main objective of DR is to restore IT systems and data after a disaster (e.g., cyberattacks, natural disasters).
     - It’s more IT-focused and typically forms a part of the overall BCP. DR involves specific steps to recover technology systems, such as servers, networks, and databases.
-    - For example, after a ransomware attack, DR would cover restoring backup data, rebuilding systems, and ensuring IT services are back online.
+    - For example, after a ransomware attack, DR would cover restoring backup data, rebuilding systems, and ensuring IT services are back online. When planning a disaster recovery solution, the amount of data loss should be lower than the Recovery Point Objective (RPO). RPO is the threshold (expressed as an interval of time) established by the organization to indicate the maximum amount of data loss it can tolerate without adverse impact. An organization that is unable to tolerate more than a day's worth of data loss would have an RPO of 24 hours.
     - Focuses on recovering IT infrastructure and data to bring systems back to normal after they’ve been disrupted.
     - Disaster Recovery (DR) Example where a fire in the main warehouse destroys critical IT equipment and disrupts the company’s ability to process online orders
         - 🍪The IT department switches operations to a backup data center, where all customer and inventory data are replicated.
@@ -520,7 +520,7 @@
                 - Example a cloud service provider undergoes an SSAE 18 audit to prove to clients that their data is secure and managed properly. SOC 3 report, is intended for distribution to third parties. They include the auditor's opinions and management assertions, along with information about the service organization. SOC3 reports are specifically intended for external release.
             - 📗**ISAE (International Standard on Assurance Engagements)**:  ISAE is a set of standards issued by the International Auditing and Assurance Standards Board (IAASB) for assurance engagements, including reports on controls at service organizations. 
                 - The board and its standards are both similar to those of SSAE.
-                - ISAE 3402: The most relevant standard for cloud services, similar to SSAE 18, used internationally. it is roughly the equivalent of SOC 2 reports in SSAE.
+                - ISAE 3402: The most relevant standard for cloud services, similar to SSAE 18, used 📝internationally. it is roughly the equivalent of SOC 2 reports in SSAE.
             - 📗**CSA (Cloud Security Alliance)**: CSA is an organization that defines best practices and provides certifications for securing cloud computing environments.
                 - it offers the CSA STAR program: The Security, Trust, Assurance, and Risk (STAR) program is a certification for cloud service providers based on CSA's Cloud Controls Matrix (CCM).
                 - STAR consists of two level of certification which provide increasing levels of assurance
@@ -529,6 +529,7 @@
                 - Can be used by CSPs, cloud consumers, auditors or consultants
                 - It is designed to demonstrate compliance to a desired level of assurance.
     - Hybrid:
+    - As Security Organizational Controls (SOC) engagement reports increase in level, their public disclosure is more likely. Additionally, SOC 1 and SOC 2 audit reports function similarly. The greater the involvement of people, the higher the level. SOC 1 reports are based on documentation review. SOC 2 reports are based on a more thorough review of security practices and physical evaluation. All three SOC engagement reports stress the Confidentiality, Integrity, Availability (CIA) triad. As we get closer to SOC 3, each aspect of the CIA triad also changes. The levels usually begin at level one with low availability and confidentiality and end at level three with availability to the public and no confidentiality.
       
 - [6.6](#6.6) Software testing: Security Assessment and Testing (OSG-9 Chpt 15)
     - ❄️**Code Review**: Code review is the foundation of software assessment programs. During a code review, also known as a peer review, developers other than the one who wrote the code review it for defects. Static program reviews are typically performed by an automated tool. Program understanding, program comprehension, pair programming, software inspections, and software walk-throughs are all human-centric methods for reviewing code.
