@@ -51,8 +51,11 @@
         - External auditors can provide an unbiased and impartial view of an organization's controls to third parties. 
 - 6.1.3 🔴Third-party
     - Third-party audits are conducted by, or on behalf of, another org
+    - The cost and lack of familiarity with an organization's systems can be a drawback to third-party audits. For example, someone who is unfamiliar with the systems will take longer to conduct an audit. Additionally, they may require additional resources that an internal employee wouldn't need, which may include having someone show them around the building or familiarizing the auditor with the structure of networks.
+    - Since a third party has no vested interest in the company they're auditing, it's fair to say the auditor would be impartial during the audit. With that said, they would have less of a reason to not be transparent with whoever they may be auditing.
     - In the case of a third-party audit, the org initiating the audit generally selects the auditors and designs the scope of the audit
     - Large organizations hire  Qualified Security Assessor QSAs, or qualified security assessors, to conduct compliance checks. Third-party certification is required for large organizations by PCI-DSS, although smaller organizations can self-certify.
+    - The major audit firms are PricewaterhouseCoopers, KPMG, Deloitte, and Ernst & Young. 
     - ❄️**Standards for Attestation Engagements document 18 (SSAE 18)**, The statement on SSAE 18 titled Reporting on Controls, provides a common standard to be used by auditors performing assessments of service orgs with the intent of allowing the org to conduct external assessments, instead of multiple third-party assessments, and then sharing the resulting report with customers and potential customers
         - outside of the US, similar engagements are conducted under the International Standard for Attestation Engagements (ISAE) 3402, Assurance Reports on Controls at a Service Organization
     - SSAE 18 and ISAE 3402 engagements are commonly referred to as a service organization controls (SOC) audits
