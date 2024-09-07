@@ -168,7 +168,8 @@
     - ✴️Active Scanning is useful for testing IDS or IPS systems. Scripted attacks are part of active scanning
     - ✴️Passive scanning can help identify rogue devices by capturing MAC address vendor IDs that do not match deployed devices, by verifying that systems match inventories of organizationally owned hardware by hardware address, and by monitoring for rogue SSIDs or connections.
     - 🔔Authenticated Vulnerability scans use a read-only account to access configuration files, allowing more accurate testing of vulnerabilities. It  provides the most accurate and detailed information about the security state of a server.
-        - Authenticated scans can read configuration information from the target system and reduce the instances of false positive and false negative reports.
+        - Authenticated scans can read configuration information from the target system and reduce the instances of false positive. Authenticated scanning utilizes credentials for a more complete (and accurate) scan of the device. This may reduce 📝false positive results (where a vulnerability that isn't present is reported as being present); 
+    - 🔔Vulnerability scanners rely on a database of known vulnerabilities for detection. If this database is outdated, vulnerabilities that are present may go undetected (which is referred to as false negative results). Therefore, the database should be updated before each scan. This will help to reduce 📝false negative results. 
 
 - 6.2.2 ❄️Penetration testing
     - Penetration testing is the attempt to bypass security controls to test overall system security
