@@ -49,10 +49,12 @@
     - External audits are performed by an outside auditing firm
         - these audits have a high degree of external validity because the auditors performing the assessment theoretically have no conflict of interest with the org itself
         - audits by these firms are generally considered acceptable by most investors and governing bodies
+        - External audits are performed by an external organization. Often, they are 📝paid for by the organization, which has a certain level of control over them. However, external audits are considered more trustworthy than internal audits, since external auditors are independent of the company under test.
         - External auditors can provide an unbiased and impartial view of an organization's controls to third parties. 
 - 6.1.3 🔴Third-party
     - Third-party audits are conducted by, or on behalf of, another org
     - The cost and lack of familiarity with an organization's systems can be a drawback to third-party audits. For example, someone who is unfamiliar with the systems will take longer to conduct an audit. Additionally, they may require additional resources that an internal employee wouldn't need, which may include having someone show them around the building or familiarizing the auditor with the structure of networks.
+    - Third-party audits are controlled and conducted by third parties. A 📝regulator may select or accredit the auditor and can use the results to determine compliance.
     - Since a third party has no vested interest in the company they're auditing, it's fair to say the auditor would be impartial during the audit. With that said, they would have less of a reason to not be transparent with whoever they may be auditing.
     - In the case of a third-party audit, the org initiating the audit generally selects the auditors and designs the scope of the audit
     - Large organizations hire  Qualified Security Assessor QSAs, or qualified security assessors, to conduct compliance checks. Third-party certification is required for large organizations by PCI-DSS, although smaller organizations can self-certify.
