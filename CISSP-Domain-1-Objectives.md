@@ -905,7 +905,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
      - ✏️Discoverability: How easily can the vulnerability be found?
  - 🔴**MITRE's ATT&CK framework** is broadly adopted by threat modeling and threat intelligence organizations and is used as a default model in many software packages and tools.
  - ATT&CK is used to map out and understand adversarial behaviors and techniques, allowing organizations to improve detection and response capabilities based on 📝known attack methods.
- - it provides a step-by-step guide on how attackers exploit vulnerabilities
+ - it provides a step-by-step guide on how attackers exploit vulnerabilities (📝Think like an attacker)
  - It is a comprehensive knowledge base of adversary tactics and techniques based on real-world observations and using 📝pre-existing tools. It includes:
      - ✏️Tactics: The goals of an adversary during an attack (e.g., Initial Access, Execution, Persistence).
      - ✏️Techniques: Specific methods used to achieve tactics (e.g., Phishing, PowerShell).
