@@ -43,7 +43,9 @@
         - e.g. a publicly traded company will have a more rigorous internal auditing strategy than a privately held company
     - Designing the audit strategy should include laying out applicable regulatory requirements and compliance goals
     - Internal audits are performed by an organization’s internal audit staff and are typically intended for internal audiences
-    - Having an audit done by someone inside the company, such as an internal auditor, functional management, or the chief information security officer, would be a 📝conflict of interest. 
+    - Having an audit done by someone inside the company, such as an internal auditor, functional management, or the chief information security officer, would be a 📝conflict of interest.
+    - Internal audits should not be used to demonstrate compliance against an external standard for government or industry compliance. This is because internal audits present a conflict of interest. An organization should use a third party to audit them when audit reports are used for compliance reasons.
+    - Internal audits should be used in preparation for an external or third-party audit, which is where a company can demonstrate compliance with external standards, laws, or regulations. Regular internal audits also show due care and due diligence. Internal audits ultimately are used to provide assurances to the organization's 📝stakeholders.
     - It is entirely appropriate to distribute internal audit reports to anyone in the organization who has a valid need to know. This may include both management and individual contributors responsible for remediating issues as well as board members charged with oversight
     - Internal auditors are useful when reporting to senior management of the organization but are typically not asked to report to third parties. 
     - The chief audit executive (CAE) should report to the most senior possible leader e.g CEO to avoid conflicts of interest.  It is also possible to provide an added degree of independence by having the CAE report to the board of directors, either as a primary reporting line or as a dotted line relationship.
