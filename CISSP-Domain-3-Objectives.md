@@ -1060,8 +1060,11 @@ taxed by inefficient implementations of software and VMs.
         - this is a system that collects power into a battery but can switch over to pulling power from the battery when the power grid fails
         - generally, this type of system was implemented to supply power to an entire building rather than just one or a few devices
 
-- 🔴**Physical Controls**: Includes facility construction and selection, site management, building design, locks, security guards, personnel controls, lighting, Administrative controls such as policies, procedures, background checks, and other things that could be represented easily or normally on paper, and Technical physical controls such as Closed-Circuit Television (CCTV), intrusion detection, and access cards. 
-- The six common physical security control mechanisms is ✏️Deter (guard dogs, Lighting), ✏️Deny (mantrap, turnstile, gate), ✏️Detect (CCTV,motion sensor), ✏️Delay (locks), ✏️Determine, ✏️Decide. 
+- ❄️**Physical Controls**:
+- Physical Security Control: Includes facility construction and selection, site management, building design, locks, security guards, personnel controls, lighting, 
+- Administrative controls such as policies, procedures, background checks, and other things that could be represented easily or normally on paper, and
+- Technical physical controls such as Closed-Circuit Television (CCTV), intrusion detection, and access cards.  Tokens, smart cards, and secure areas are physical controls. Each one of these involves a physical mechanism that grants or prevents access.  Secure areas can be made secure with the use of tokens, smart cards, access control vestibules, etc.
+- 🔴**Physical Security Controls**:The six common physical security control mechanisms is ✏️Deter (guard dogs, Lighting), ✏️Deny (mantrap, turnstile, gate), ✏️Detect (CCTV,motion sensor), ✏️Delay (locks), ✏️Determine, ✏️Decide. 
     - The first line of defense against an initial attempt to access a physical asset should be a deterrent control such as signs, lighting, or policy. A physical security program should attempt to thwart threats in the following order:
         - 🆎Deterrence/Deterrent controls
         - 🆎Denial/Preventative
