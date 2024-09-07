@@ -151,13 +151,14 @@
             - 🔔TCP ACK Scanning Sends a packet with the ACK flag set, indicating that it is part of an open connection. This type of scan may be done in an attempt to determine the rules enforced by a firewall and the firewall methodology. The TCP ACK scan sends an ACK packet, simulating a packet from the middle of an already established/open connection.
             - 🔔UDP Scanning Performs a scan of the remote system using the UDP protocol, checking for active UDP services. This scan type does not use the three-­way handshake, because UDP is a connectionless protocol.
             - 🔔Xmas Scanning Sends a packet with the FIN, PSH, and URG flags set. A packet with so many flags set is said to be “lit up like a Christmas tree,” leading to the scan’s name.
-        - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Nmap, Nessus, and Nikto all have OS fingerprinting or other operating system identification capabilities.
+        - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Nmap, Nessus, and Nikto all have OS fingerprinting or other operating system identification capabilities. Network vulnerability scanners are used to discover systems that have known vulnerabilities such as missing patches.
             - **Nmap** only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! 📝Both TCP and UDP port numbers are a 16-digit binary number, which means there can be 216 ports, or 65,536 ports, numbered from 0 to 65,535.
             - Nmap states include:
                 - 🔨Open Port: The port is accessible on the remote system and an application is accepting connections on that port.
                 - 🔨Closed Port: The port is not accessible on the remote system.
                 - 🔨Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port. Also Nmap us unable to determine if it is open or closed.
-            - **OpenVAS**: OpenVAS is an open source vulnerability scanning tool that provide report of the vulnerabilities that it can identify from a remote, network-based scan. 
+            - **OpenVAS**: OpenVAS is an open source vulnerability scanning tool that provide report of the vulnerabilities that it can identify from a remote, network-based scan.
+            - Web vulnerability scanner is a type of network scanner.
         - 📗Web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af, Wapiti. They detect web vulnerabilities such as 📝SQL injection and 📝Cross-site scripting attacks. While SQL injection attacks do target databases, they do so by using web servers as intermediaries. Therefore, SQL injection attacks take place over web ports, such as 80 and 443, and not database ports, such as 1433 and 1521.
         - 📗Database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus. sqlmap is custom-designed to detecting database vulnerabilities.
     - ✴️Active Scanning is useful for testing IDS or IPS systems. Scripted attacks are part of active scanning
@@ -254,6 +255,9 @@
         -  ♈the security of the data
         -  ♈the amount of effort required to analyze the data.
     - **Security Information and Event Management (SIEM)**: packages that collect information using the syslog functionality present in many devices, operating systems, and applications. Note📝 Windows systems generate logs in the Windows native logging format. To send syslog events, Windows systems require a helper application or tool.
+        - SIEM products are designed to log and analyze networks, providing the user with a variety of ways to observe their network.
+        - SIEMs also aggregate data from various sources, making event correlation and threat hunting very simple for security analysts.
+        - SIEM being remote or a secondary log source on the network at least, there is a second copy of time-organized logs available in case an attacker deletes their firewall logs.
         - Admins may choose to deploy logging policies through Windows Group Policy Objects (GPOs)
         - Logging systems should also make use of the Network Time Protocol (NTP) to ensure that clocks are synchronized on systems sending log entries to the SIEM as well as the SIEM itself, ensuring info from multiple sources have a consistent timeline
         - Examples include SPlunk, LogRythm, Microsoft Azure Sentinel, IBM Qradar
@@ -538,7 +542,7 @@
         - Common technique in cloud auditing is sampling - picking a subset of the physical infrastructure to inspect
         - CSPs can collect evidence that provides auditors with sufficient assurance that they have collected a representative sample to save time and expense while still mainting accuracy
         - In relation to audit compliance, the 3 audit standards commonly used by the big CSPs include SSAE, ISAE, and CSA.
-            - 📗️**SSAE (Statement on Standards for Attestation Engagements)**: SSAE is a standard developed by the American Institute of Certified Public Accountants (AICPA) for reporting on the controls at a service organization.
+            - 📗️**SSAE (Statement on Standards for Attestation Engagements)**: SSAE is a standard developed by the American Institute of Certified Public Accountants 📝(AICPA) for reporting on the controls at a service organization.
                 - SSAE 18 is designed to enhance the quality and usefulness of SOC reports
                 - SSAE is the framework for creating System and Organization Controls (SOC) reports, such as SOC 1, SOC 2, and SOC 3.
                   - 🛠️SOC 1: report that focuses on financial reporting by certified public accountants.
