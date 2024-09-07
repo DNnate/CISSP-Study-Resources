@@ -22,7 +22,7 @@
 
 - 📂**Security assessments**: comprehensive reviews of the security of a system, application, or other tested environment
     - during a security assessment, a trained information security professional performs a risk assessment that identifies vulnerabilities in the tested environment that may allow a compromise and makes recommendations for remediation, as needed
-    - a security assessment includes the use of security testing tools, but go beyond scanning and manual penetration tests
+    - a security assessment includes the use of security testing tools, but go beyond scanning and manual penetration tests. Security assessments are comprehensive reviews of the security of a system, application, or other tested environments. During a security assessment, a trained information security professional performs a risk assessment that identifies vulnerabilities in the environment that may allow a compromise and makes recommendations for remediation.
         - 🛠️Security Controls Tests: are conducted to verify that a control reduces risk to an acceptable level. Among other things, these tests can include scans, penetration tests, and social engineering. A score can be given if needed, but the purpose is not to generate a score.
         - 🛠️Security Program Test: If all of the controls are tested, then it is possible to test the effectiveness of the security program. Having a security program shows due diligence and due care.
     - the main work product of a security assessment is normally an assessment report addressed to management that contains the results of the assessment in nontechnical language and concludes with specific recommendations for improving the security of the tested environment
