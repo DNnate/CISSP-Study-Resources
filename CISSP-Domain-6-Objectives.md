@@ -414,11 +414,35 @@
     - 📝Phishing simulations test the effectiveness of security training by actually identifying the percentage of users likely to fall victim to a phishing attack.
     - 📝Surveys, which is the most common, would also measure this but with lesser effectiveness because they depend upon self-reported perceptions
 
-- 6.3.6 Disaster Recover (DR) and Business Continuity (BC)
-    - **Business Continuity (BC)**: the processes used by an organization to ensure, holistically, that its vital business processes remain unaffected or can be quickly restored following a serious incident. Preventing business interruption is the goal of business continuity
-    - **Disaster Recovery (DR)**: is a subset of BC, that focuses on restoring information systems after a disaster. the goal of DRP is to restore regular business activity as quickly as possible.
+- 6.3.6 Disaster Recover (DR) and Business Continuity (BC): 🩹BCP: Keeps the business running during a disaster (includes all functions). 🩹DR: Focuses on restoring IT systems after a disaster.
+    - 📁**Business Continuity (BC)**: the processes used by an organization to ensure, holistically, that its vital business processes remain 📝unaffected or can be quickly restored following a serious incident. Preventing business interruption is the goal of business continuity
+        - The main purpose of BCP is to ensure that critical business functions continue operating during and after a disruption, no matter how big or small.
+        - It’s a 📝broad plan that covers all aspects of the business. This includes keeping people, processes, and resources running to prevent complete shutdown.
+        - For example, if there’s a major power outage, BCP will outline steps to ensure the company can still function—by switching to generators, relocating staff, or working remotely.
+        - Ensures that operations 📝continue with minimal interruption. The goal is to keep the entire business running, not just IT systems.
+        - Business Continuity Planning (BCP) Response Example where A large retail company, like Walmart or Amazon, experiences a severe snowstorm that shuts down roads and makes it impossible for employees to reach their warehouse.
+            - 🍪Shifting operations to a nearby warehouse that is unaffected by the storm.
+            - 🍪Having employees work from home to coordinate deliveries and manage online orders.
+            - 🍪Using backup suppliers or transportation routes to ensure products are still delivered to customers.
+            - 🍪The company reroutes deliveries from alternative suppliers to maintain product availability.
+            - 🍪Non-critical employees are given time off until the situation improves.
+            - 🍪Online shopping systems, which run on backup generators or alternative power sources, remain operational so customers can still place orders.
+            - 🉑Outcome: Even though there’s a snowstorm, the company continues to fulfill customer orders and keep the business running by adapting its operations.
+    - 📁**Disaster Recovery (DR)**: is a 📝subset of BC, that focuses on restoring information systems after a disaster. the goal of DRP is to restore regular business activity as quickly as possible.
     - These processes need to be periodically accessed, and regular testing of disaster recovery and business continuity controls provide organizations with the assurance they are effectively protected against disruptions to business ops
-    - Protection of life is of the utmost importance and should be dealt with first before attempting to save material things
+    - The main objective of DR is to restore IT systems and data after a disaster (e.g., cyberattacks, natural disasters).
+    - It’s more IT-focused and typically forms a part of the overall BCP. DR involves specific steps to recover technology systems, such as servers, networks, and databases.
+    - For example, after a ransomware attack, DR would cover restoring backup data, rebuilding systems, and ensuring IT services are back online.
+    - Focuses on recovering IT infrastructure and data to bring systems back to normal after they’ve been disrupted.
+    - Disaster Recovery (DR) Example where a fire in the main warehouse destroys critical IT equipment and disrupts the company’s ability to process online orders
+        - 🍪The IT department switches operations to a backup data center, where all customer and inventory data are replicated.
+        - 🍪Backup servers are used to restore the order processing system, allowing customers to continue shopping online.
+        - 🍪The company restores its internal systems and communication tools to enable employees to coordinate shipments from unaffected locations.
+        - 🍪Data is restored from secure off-site backups to bring the banking systems back online.
+        - 🍪Customer data and transaction history are restored from secure backups, ensuring that no information is lost.
+        - 🍪Online systems are restored to normal operation, and branches are back online to process orders within hours
+        - 🉑Outcome: After a short downtime, IT systems are restored, and the company resumes online order processing. The focus here is on recovering the IT systems after the fire.
+    - 📝Protection of life is of the utmost importance and should be dealt with first before attempting to save material things
         - Crisis management is the process of planning and responding to unexpected events that can have a negative impact on an organization. One of the key traits of crisis management is the ability to anticipate potential problems and develop plans to mitigate their impact. This means being able to think ahead and identify potential risks, as well as having a plan in place to deal with them if they do occur.
         - Crisis management involves handling the overall strategy and high-level decisions during a crisis or disaster. It focuses on managing the organization's response at a strategic level, ensuring that the organization can navigate through the crisis effectively and make decisions that align with its long-term goals and survival.
 
