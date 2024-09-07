@@ -394,15 +394,18 @@
         -  The backup verification process ensures that backups are running properly and thus meeting the organization's data protection objectives.
         -  The recovery point objective (RPO) specifies the maximum amount of data that may be lost during a disaster and should be used to guide backup strategies. 
 
-- 6.3.5 Training and awareness
+- 6.3.5 🔴Training and awareness
     - Training and awareness programs play a crucial role in preparing an organization’s workforce to support information security programs
     - They educate employees about current threats and advise them on best practices for protecting information and systems under their care from attacks
+        - Employees are the 📝largest security threat to a company, and their training would reduce the largest number of security threats.
+        - Employees are 📝prime targets for a variety of attacks involving social engineering and hoaxes.
+        - Employees make 📝mistakes that can have serious consequences, which BAS tests, vulnerability scanning, and ISACs won't identify and fix. 
     - Program should begin with initial training designed to provide foundation knowledge to employees who are joining the org or moving to a new role; the initial training should be tailored to an individual’s role
     - Training and awareness should continue to take place throughout the year, reminding employees of their responsibilities and updating them on changes to the organization’s operating environment and threat landscape
     - The number of staff who took a given training and the average change in their awareness from before the training to after the training can provide insight into how many trained staff you have and how impactful the training was.
     - Use phishing simulations to evaluate the effectiveness of their security awareness programs
-    - Phishing simulations test the effectiveness of security training by actually identifying the percentage of users likely to fall victim to a phishing attack.
-    - Surveys, which is the most common, would also measure this but with lesser effectiveness because they depend upon self-reported perceptions
+    - 📝Phishing simulations test the effectiveness of security training by actually identifying the percentage of users likely to fall victim to a phishing attack.
+    - 📝Surveys, which is the most common, would also measure this but with lesser effectiveness because they depend upon self-reported perceptions
 
 - 6.3.6 Disaster Recover (DR) and Business Continuity (BC)
     - **Business Continuity (BC)**: the processes used by an organization to ensure, holistically, that its vital business processes remain unaffected or can be quickly restored following a serious incident. Preventing business interruption is the goal of business continuity
