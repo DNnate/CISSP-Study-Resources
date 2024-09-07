@@ -59,7 +59,9 @@
     - The major audit firms are PricewaterhouseCoopers, KPMG, Deloitte, and Ernst & Young. 
     - ❄️**Standards for Attestation Engagements document 18 (SSAE 18)**, The statement on SSAE 18 titled Reporting on Controls, provides a common standard to be used by auditors performing assessments of service orgs with the intent of allowing the org to conduct external assessments, instead of multiple third-party assessments, and then sharing the resulting report with customers and potential customers
         - outside of the US, similar engagements are conducted under the International Standard for Attestation Engagements (ISAE) 3402, Assurance Reports on Controls at a Service Organization
-    - SSAE 18 and ISAE 3402 engagements are commonly referred to as a service organization controls (SOC) audits
+    - SSAE 18 and ISAE 3402 engagements are commonly referred to as a service organization controls (SOC) audits. Both ISAE 3402 and SSAE 18 result in Service Organization Controls (SOC) one, two, and three reports, which determine the level of disclosure between the company and the public on matters. These organizations also conduct type one and type two audits, which can be simply verifying documentation or conducting a physical assessment.
+    - 🔥SSAE 18: The Statements on Standards for Attestation Engagements 18 (SSAE 18) is conducted in the 📝United States. Specifically, it is a set framework for companies to conduct third-party audits. It upholds the integrity of the industry by maintaining a set standard for all audits.
+    - 🔥ISAE 3402: ISAE 3402, which covers international auditing anywhere except the USA. ISAE 3402 is used within the 📝European Union (EU) as well as most of the planet (aside from the US).
     - Three forms of SOC audits:
         - 📙**SOC 1 Engagements**: assess the organization’s controls that might impact the accuracy of financial reporting
         - 📙**SOC 2 Engagements**: assess the organization’s controls that affect the security (confidentiality, integrity, and availability) and privacy of information stored in a system
