@@ -29,8 +29,11 @@
     - Security assessment reports should be addressed to the organization's management. For this reason, they should be written in plain English and avoid technical jargon.
     - Security assessments include many types of tests designed to identify vulnerabilities, and the assessment report normally includes recommendations for mitigation. The assessment does not, however, include actual mitigation of those vulnerabilities.
     - The 📝sensitivity of information stored on the system, 📝difficulty of performing the test, and 📝likelihood of an attacker targeting the system are all valid considerations when planning a security testing schedule.
-    - IT staff may perform security assessments to evaluate the security of their systems and applications. However, audits must be performed by internal or external auditors who are independent of the IT organization. 
-- 📂**Audit**: An organization’s audit strategy will depend on its size, industry, financial status and other factors
+    - IT staff may perform security assessments to evaluate the security of their systems and applications. However, audits must be performed by internal or external auditors who are independent of the IT organization.
+    - 
+- 📂**Security Audit**: An organization’s audit strategy will depend on its size, industry, financial status and other factors
+    - Unlike security assessments, security audits are generally performed by an 📝external group to prevent conflicts of interest.
+    - The audience of a security audit report would be people outside of the company's day-to-day operations, such as the board of directors, government regulators, or third parties.
     - a small non-profit, a small private company and a small public company will have different requirements and goals for their audit strategies
     - the audit strategy should be assessed and tested regularly to ensure that the organization is not doing a disservice to itself with the current strategy
     - there are three types of audit strategies: internal, external, and third-party
