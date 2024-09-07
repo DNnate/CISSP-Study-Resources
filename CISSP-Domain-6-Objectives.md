@@ -393,7 +393,10 @@
         - 🩹time to detect incidents
         - 🩹time to respond to incidents
         - 🩹level of organizational impact of incidents
-        - 🩹number of false positives (i.e., false detection alerts/alarms). 
+        - 🩹number of false positives (i.e., false detection alerts/alarms).
+        - 🩹increase in closed service tickets allows a company to track the performance of the service department.
+        -  🩹decrease in amount of downtime is a terrific KPI to track to show the capability and performance of the Information Technology (IT) department.
+        -  🩹decreased number of tickets should indicate a decreased number of problems with a system
    - 🍮**Key Risk Indicator (KRIs)**: Key risk indicators are used to tell those in charge of risk management how risky an activity is and how much impact changes are having on that risk profile. Identifying key risk indicators and monitoring them can help to identify high-risk areas earlier in their lifecycle.  Key Risk Indicators (KRIs) allow for a more proactive approach to cybersecurity.
    - KRI include
        - Hardware and Software entering entering EOS as this naturally increases risk over time since there are no future patches. 
@@ -402,6 +405,7 @@
        - Low storage volumes could be an indicator of a future denial of service, for example. Imagine attempting to update a game before playing, but you cannot update the game because you are out of storage space. This would be an example of a denial of service.
        - An increase in blocked firewall connections could be an indication of attempted cyberattacks, most notably a denial of service or distributed denial of service. Imagine an attacker sending traffic during a distributed denial of service, but you notice this and have the bandwidth to support it. An attacker may see that you are still online and send even more data as a result, but these blocked connections would be an indicator of this potentially happening.
        - High CPU usage on a router could be an indicator that you should upgrade before the router becomes overworked and enters a failed state, eliminating your internet connection.
+       - An increase in Intrusion Detection System (IDS) alerts is a Key Risk Indicator (KRI).
 - 6.3.4 Backup verification data
     - Managers should periodically inspect the results of backups to verify that the process functions effectively and meets the organization’s data protection needs
         - this might include reviewing logs, inspecting hash values, or requesting an actual restore of a system or file
