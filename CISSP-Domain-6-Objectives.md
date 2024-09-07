@@ -365,18 +365,18 @@
         - FedRAMP Penetration Test Guidance
         - PCI DSS Information Supplemental on Penetration Testing Note📝 PCI DSS requires a rescan of  application at least annually and after any change in the application.
 
-- 6.2.10 Compliance checks
+- 6.2.10 🔴Compliance checks
     - Orgs should create and maintain compliance plans documenting each of their regulatory obligations and map those to the specific security controls designed to satisfy each objective
     - Compliance checks are an important part of security testing and assessment programs for regulated firms: these checks verify that all of the controls listed in a compliance plan are functioning properly and are effectively meeting regulatory requirements
 
 [6.3](#6.3) Collect security process data (e.g. technical and administrative) (OSG-9 Chpts 15,18)
-- 6.3.1 Account management
+- 6.3.1 🔴Account management
     - Preferred attacker techniques for obtaining privilege user access include:    
         - compromising an existing privileged account: mitigated through use of strong authentication (strong passwords and multifactor), and by admins use of privileged accounts only for specific tasks
         - privelege escalation of a regular account or creation of a new account: these approaches can be mitigated by paying attention to the creation, modification, and use of user accounts
         - The most frequent target of account management reviews are highly 📝privileged accounts, as they create the greatest risk.
 
-- 6.3.2 Management review and approval
+- 6.3.2 🔴Management review and approval
     - Account management reviews ensure that users only retain authorized permissions and that unauthorized modifications do not occur
     - The management review and approval process ensures that each account was appropriately authorized and remains necessary to meet business needs.
     - Full review of accounts: time-consuming to review all, and often done only for highly privileged accounts. 
@@ -393,7 +393,7 @@
         - 🎤check: security assessment and testing (this objective)
         - 🎤act: formally do the management review
 
-- 6.3.3 Key performance and risk indicators
+- 6.3.3 🔴Key performance and risk indicators
     - 🍮**Key Performance Indicator (KPIs)**: measures that provide significance of showing the performance an Information Security Management System ISMS compared to stated goals. KPIs are used to determine how effective practices, procedures, and staff are. Key Performance Indicators (KPIs) are a class of metrics used to measure activity success. KPI measurements enable performance to be tracked, trended, monitored, and prioritized or targeted for improvement. Examples of KPIs include, "percent of system uptime" and "mean time to detect."
         - Choose the factors that can show the state of security
         - Define baselines for some (or better yet all) of the factors
@@ -431,11 +431,12 @@
        - An increase in blocked firewall connections could be an indication of attempted cyberattacks, most notably a denial of service or distributed denial of service. Imagine an attacker sending traffic during a distributed denial of service, but you notice this and have the bandwidth to support it. An attacker may see that you are still online and send even more data as a result, but these blocked connections would be an indicator of this potentially happening.
        - High CPU usage on a router could be an indicator that you should upgrade before the router becomes overworked and enters a failed state, eliminating your internet connection.
        - An increase in Intrusion Detection System (IDS) alerts is a Key Risk Indicator (KRI).
-- 6.3.4 Backup verification data
+- 6.3.4 🔴Backup verification data
     - Managers should periodically inspect the results of backups to verify that the process functions effectively and meets the organization’s data protection needs
         - this might include reviewing logs, inspecting hash values, or requesting an actual restore of a system or file
         -  ensures that the organization’s 📝data protection requirements are met effectively
         -  The backup verification process ensures that backups are running properly and thus meeting the organization's data protection objectives.
+            - For verifying backup integrity, automated integrity checking can determine if files have been changed. If the files have been altered, automated integrity checks can occur with the backup drives upon integrating them into production. There are local programs that can also do this. Sigverif is a Windows program that can check the integrity of files and be useful in the event that backups are not automated, to check integrity.
         -  The recovery point objective (RPO) specifies the maximum amount of data that may be lost during a disaster and should be used to guide backup strategies. 
 
 - 6.3.5 🔴Training and awareness
@@ -451,7 +452,7 @@
     - 📝Phishing simulations test the effectiveness of security training by actually identifying the percentage of users likely to fall victim to a phishing attack.
     - 📝Surveys, which is the most common, would also measure this but with lesser effectiveness because they depend upon self-reported perceptions
 
-- 6.3.6 Disaster Recover (DR) and Business Continuity (BC): 🩹BCP: Keeps the business running during a disaster (includes all functions). 🩹DR: Focuses on restoring IT systems after a disaster.
+- 6.3.6 🔴Disaster Recover (DR) and Business Continuity (BC): 🩹BCP: Keeps the business running during a disaster (includes all functions). 🩹DR: Focuses on restoring IT systems after a disaster.
     - 📁**Business Continuity (BC)**: the processes used by an organization to ensure, holistically, that its vital business processes remain 📝unaffected or can be quickly restored following a serious incident. Preventing business interruption is the goal of business continuity
         - The main purpose of BC is to ensure that critical business functions continue operating during and after a disruption, no matter how big or small.
         - It’s a 📝broad plan that covers all aspects of the business. This includes keeping people, processes, and resources running to prevent complete shutdown.
