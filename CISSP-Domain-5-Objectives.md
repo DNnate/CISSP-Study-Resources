@@ -238,6 +238,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 📁**Directory Service**: a centralized database that includes information about subjects and objects, including authentication data
     - Many directory services are based on the Lightweight Directory Access Protocol (LDAP)
     - PKI and LDAP can be used to support Single Sign-On (SSO) systems. A Public Key Infrastructure (PKI) can use a Lightweight Directory Access Protocol (LDAP) when a client queries for a Certificate Authority (CA).
+    - Open LDAP, Kerberos, and FreeIPA are all programs built to meet the needs of central administration for many workstations. Open LDAP and FreeIPA are essentially open-source versions of Microsoft Active Directory. Each program allows for the administration of any workstation within the domain, granting or denying access to resources, and the administration of patching from one administrator workstation.
 - 5.2.9 Just-In_time (JIT)
     - Federated identity solutions that support just-in-time (JIT) provisioning automatically create the relationship between two entities so that new users can access resources
     - A JIT solution creates the connection without any administrative intervention
