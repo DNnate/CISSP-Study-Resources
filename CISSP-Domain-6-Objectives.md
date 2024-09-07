@@ -151,13 +151,13 @@
             - 🔔TCP ACK Scanning Sends a packet with the ACK flag set, indicating that it is part of an open connection. This type of scan may be done in an attempt to determine the rules enforced by a firewall and the firewall methodology. The TCP ACK scan sends an ACK packet, simulating a packet from the middle of an already established/open connection.
             - 🔔UDP Scanning Performs a scan of the remote system using the UDP protocol, checking for active UDP services. This scan type does not use the three-­way handshake, because UDP is a connectionless protocol.
             - 🔔Xmas Scanning Sends a packet with the FIN, PSH, and URG flags set. A packet with so many flags set is said to be “lit up like a Christmas tree,” leading to the scan’s name.
-        - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Nmap, Nessus, and Nikto all have OS fingerprinting or other operating system identification capabilities. Network vulnerability scanners are used to discover systems that have known vulnerabilities such as missing patches.
-            - **Nmap** only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! 📝Both TCP and UDP port numbers are a 16-digit binary number, which means there can be 216 ports, or 65,536 ports, numbered from 0 to 65,535.
+            - 🩹**Nmap** only scans 1000 TCP and UDP ports by default, including ports outside the 0–1024 range of “well-known” ports. By using the defaults, you miss 64,535 ports! 📝Both TCP and UDP port numbers are a 16-digit binary number, which means there can be 216 ports, or 65,536 ports, numbered from 0 to 65,535.
             - Nmap states include:
                 - 🔨Open Port: The port is accessible on the remote system and an application is accepting connections on that port.
                 - 🔨Closed Port: The port is not accessible on the remote system.
                 - 🔨Filtered Port: The port is accessible on the remote system, but no application is accepting connections on that port. Also Nmap us unable to determine if it is open or closed.
-            - **OpenVAS**: OpenVAS is an open source vulnerability scanning tool that provide report of the vulnerabilities that it can identify from a remote, network-based scan.
+        - 📗Network vulnerability scans e.g nmap, nikto, OpenVAS, QualysGuard, Nessus, Rapid7, Tenable. Nmap, Nessus, and Nikto all have OS fingerprinting or other operating system identification capabilities. Network vulnerability scanners are used to discover systems that have known vulnerabilities such as missing patches.
+            - 🩹**OpenVAS**: OpenVAS is an open source vulnerability scanning tool that provide report of the vulnerabilities that it can identify from a remote, network-based scan.
             - Web vulnerability scanner is a type of network scanner.
         - 📗Web application vulnerability scans e.e OWASP, Nikto, Burp Suit, Nessus, Arachni, W3af, Wapiti. They detect web vulnerabilities such as 📝SQL injection and 📝Cross-site scripting attacks. While SQL injection attacks do target databases, they do so by using web servers as intermediaries. Therefore, SQL injection attacks take place over web ports, such as 80 and 443, and not database ports, such as 1433 and 1521.
         - 📗Database vulnerability scans e.g SQLMap, DBProtect, Rapid7, Oracle DBSAT, IBM Guardium, Nessus. sqlmap is custom-designed to detecting database vulnerabilities.
@@ -168,6 +168,10 @@
 
 - 6.2.2 ❄️Penetration testing
     - Penetration testing is the attempt to bypass security controls to test overall system security
+        - Scope and depth come into play during every penetration test. A client will tell a penetration tester exactly what needs to be tested and how it will be tested. This is especially important, as failing to abide by these specifications may jeopardize an active workplace or even damage equipment.
+    - Scope and depth also relate to the permission given to a penetration tester, so going outside that permission range could lead to liability if things go wrong.
+        - Scope defines the systems involved in the test;
+        - Depth defines the detail of the act 
     - Penetration tests goes beyond vulnerability testing techniques because it actually attempts to exploit systems. In most organizations, senior management needs to approve penetration tests due to the risk to the organization and the potential impact of the test. In a small number of organizations, the service owner may be able to make this decision, but penetration tests often have broader impacts than a single service, meaning that senior management is the proper approval path.
         - ⚒️Advantages:
             - Can be fast (and therefore cheap)
