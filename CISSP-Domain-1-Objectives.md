@@ -148,6 +148,7 @@
   - there are many frameworks to choose from, such as:
     -  🔴**Control Objectives for Information Technology (COBIT)** ("moderately referenced" on the exam)
         - COBIT is a documented set of best IT security practices by ISACA for information technology (IT) management and governance. COBIT (formerly Control Objectives for Information and Related Technology) created by the Information Systems Audit and Control Association (ISACA) is a framework used to establish effective security governance within an organization.
+        - The COBIT framework specifically manages control variables within Information Technology (IT) and how they align with business practices. COBIT is a healthy approach to balancing IT responsibilities and tailoring them to business needs. The framework strives not to manage, but to govern, while keeping stakeholders and business needs in mind.
         - Six key principles (🟡Sally Has Daring Goals To Excel SHDGTE) :
           - ✏️provide stakeholder value
           - ✏️holistic approach
