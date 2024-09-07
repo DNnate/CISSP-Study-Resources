@@ -398,6 +398,11 @@
             - CI also allows the practice of continuous delivery (CD)
         - 🔔**Continuous Delivery (CD)**: incrementally building a software product that can be released at any time; because all processes and tests are automated, code can be released to production daily or more often
     - CI/CD relies on automation and often third-party tools which can have vulnerabilities or be compromised
+        - ⚒️Automation in Continuous Integration and Continuous Deployment (CI/CD) refers to the use of automated tools and processes to streamline and accelerate the software development lifecycle. CI/CD automation aims to automate the building, testing, deployment, and monitoring of software applications, ensuring faster and more reliable delivery of software changes. Benefits of CI/CD automation include:
+            - 🎈Faster Delivery: Automation reduces manual intervention, allowing teams to deliver changes more frequently and reliably.
+            - 🎈Quality Assurance: Automated testing improves code quality and helps catch bugs early in the development process.
+            - 🎈Feedback Loop: Rapid feedback from automated tests helps developers identify and address issues promptly.
+            - 🎈Consistency: Automation ensures that the same processes are followed for every build and deployment, reducing errors and discrepancies. 
     - Secure practices such as threat modeling, least privilege, defense in depth, and zero trust can help reduce possible threats to these tools and systems
 
 - 8.2.8 Software Configuration Management (SCM)
