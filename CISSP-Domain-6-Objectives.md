@@ -42,6 +42,7 @@
     - the audit strategy should be assessed and tested regularly to ensure that the organization is not doing a disservice to itself with the current strategy
     - there are three types of audit strategies: internal, external, and third-party
     - SSAE 18 is a US auditing system while ISAE 3402 is a very similar system used internationally. Both are standards used by companies to audit other companies in their jurisdiction.
+    - 📝Non-disclosure agreements should be prepared prior to an audit. This is so all parties acknowledge that a reasonable time frame will be given to remediate potential vulnerabilities found. Not only is this done to conduct business in an ethical manner by being reasonable, but it's also to avoid jeopardizing the business and opening the doors to an increase in threats.
 
 [6.1](#6.1) Design and validate assessment, test, and audit strategies (OSG-9 Chpt 15)
 - 6.1.1 🔴Internal
@@ -63,6 +64,8 @@
         - audits by these firms are generally considered acceptable by most investors and governing bodies
         - External audits are performed by an external organization. Often, they are 📝paid for by the organization, which has a certain level of control over them. However, external audits are considered more trustworthy than internal audits, since external auditors are independent of the company under test.
         - External auditors can provide an unbiased and impartial view of an organization's controls to third parties. 
+- 6.1.3.1 🔴Second-party
+    - Second-Party audits typically involve 📝business partners auditing each other. A great example of this would be an enterprise auditing a 📝cloud provider prior to migrating data. These are useful to ensure all parties are comfortable working with each other and for enhancing trust, but they aren't as useful when it comes to meeting regulations. 
 - 6.1.3 🔴Third-party
     - Third-party audits are conducted by, or on behalf of, another org. This can also be an unrelated firm that has the ability to be fair and impartial regarding the audited business.
     - The cost and lack of familiarity with an organization's systems can be a drawback to third-party audits. For example, someone who is unfamiliar with the systems will take longer to conduct an audit. Additionally, they may require additional resources that an internal employee wouldn't need, which may include having someone show them around the building or familiarizing the auditor with the structure of networks.
@@ -302,9 +305,11 @@
     - 🔖**Dynamic application security testing (DAST)**: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else. Dynamic testing is also used to determine how code handles variables that change over time.
 
 - 6.2.6 Misuse case testing
-    - 🔨**Misuse case testing**: AKA abuse case testing - used by software testers to evaluate the vulnerability of their software to known risks
+    - 🔨**Misuse case testing**: used by software testers to evaluate the vulnerability of their software to known risks
         - In misuse case testing, testers first enumerate the known misuse cases, then attempt to exploit those use cases with manual or automated attack techniques
         - a list of possible ways that an attacker might exploit the application is identified, and testers work through each scenario, testing the application to see if it is vulnerable to that exploit
+        - Misuse case testing is commonly used to describe abuse case testing, but its focus is on testing to ensure 📝incorrect inputs or other types of misuse don't reveal any information about company servers or software.
+    - 🔨**Abuse case testing**: Abuse case testing is a test to determine if a website, its hardware, software, and interactions with customers have security 📝vulnerabilities that could be used by attackers..
     - 🔨**Use case testing**: use case testing is to verify that the application responds properly to actual use cases. It involves testing for desired functionality.
 
 - 6.2.7 **Test coverage analysis**
@@ -454,6 +459,7 @@
     - Training and awareness should continue to take place throughout the year, reminding employees of their responsibilities and updating them on changes to the organization’s operating environment and threat landscape
     - Training activities should be 📝tracked to ensure that all employees attend and, even better, are learning.
     - The number of staff who took a given training and the average change in their awareness from 📝before the training to 📝after the training can provide insight into how many trained staff you have and how impactful the training was.
+    - Training employees 📝frequently will ensure better security for the organization as a whole. Generally speaking, employees are the greatest threat to an organization. This is usually due to accidents, lack of knowledge, and specifically, cyberattacks such as phishing attempts that could be thwarted with regular education.
     - Use phishing simulations to evaluate the effectiveness of their security awareness programs
     - 📝Phishing simulations test the effectiveness of security training by actually identifying the percentage of users likely to fall victim to a phishing attack.
     - 📝Surveys, which is the most common, would also measure this but with lesser effectiveness because they depend upon self-reported perceptions
