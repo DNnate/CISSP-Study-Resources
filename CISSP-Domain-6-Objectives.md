@@ -212,6 +212,8 @@
             - this simulates an external attacker trying to gain access to information about the business and technical environment before engaging in an attack
             - When the penetration testers are provided no information, it is referred to as a zero-knowledge test (black box). 
             - these tests are sometimes called "**unknown environment**" tests
+        - 🔴**physical or internal penetration test**:
+            - If the penetration testers are provided building and system access they could be performing a physical test or an internal test
 - **Excersice Types**:
     - 📗**Red Team (Tiger Team)**: A group of security professionals who simulate real-world 📝attacks to test the defenses of an organization.
         - They are an internal or external entity dedicated to testing the effectiveness of a security program by emulating tools and techniques of likely attackers in the most realistic way possible
