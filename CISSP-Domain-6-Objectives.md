@@ -562,8 +562,10 @@ to misuse the application
     - 🎨SMB (Server Message Block): Port 445
     - 🎨Syslog: Port 514
     - 🎨Kerberos: Port 88
-    - 🎨SQL Server: Port 1433
+    - 🎨SQL Server: Port 1433-1434
     - 🎨MySQL: Port 3306
+    - 🎨Mongodb: TCP ports 27017-27019
+    - 🎨Elasticsearch: TCP port 9200
     - 🎨Oracle DB: Port 1521
     - 🎨NTP (Network Time Protocol): Port 123
     - 🎨BGP (Border Gateway Protocol): Port 179
