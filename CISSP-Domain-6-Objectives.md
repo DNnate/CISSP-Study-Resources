@@ -160,6 +160,12 @@
             - Front-impact testing only
             - penetration testing can only cover the point in time when it is conducted. 
     -  📝Application crashes; 📝denial of service due to system, 📝network failures, or 📝application failures; and 📝data corruption can all be hazards of penetration tests.
+    - The following are the five phases of a penetration test:
+        - 🎈Planning/Footprinting
+        - 🎈Information gathering and discovery/Enumeration
+        - 🎈Vulnerability scanning
+        - 🎈Exploitation
+        - 🎈Reporting
     - NIST defines the penetration testing process as consisting of four phases: PIAR 🟡
     - 🚡**planning**: includes agreement on the scope of the test and the rules of engagement
         - ensures that both the testing team and management are in agreement about the nature of the test and that it is explicitly authorized
