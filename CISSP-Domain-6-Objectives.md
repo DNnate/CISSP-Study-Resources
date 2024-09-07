@@ -328,6 +328,11 @@
         - Breach and Attack Simulation, systems are systems that combine red team (attack) and blue team (defense) techniques together with automation to simulate advanced persistent threats and other advanced threat actors when run against your environment. This allows a variety of threats to be replicated and assessed in an environment without as much overhead as a fully staffed purple team would.
         - Designed to inject threat indicators onto systems and networks in an effort to trigger other security controls (e.g. place a suspicious file on a server)
         - detection and prevention controls should immediately detect and/or block this traffic as potentially malicious
+        - Advantages:
+            - 🎈Over time, a BAS would reduce costs compared to hiring a third-party vendor once a year or every quarter. Howver note that this is not effective becuase since tests\audits are internal, there will still be conflict of interest, hence not compliance effective. 
+            - 🎈Additionally, a BAS would be more convenient and more "on-demand", while allowing for faster and more consistent testing.
+            - 🎈An automated breach attack simulation would not be as disruptive to a business as a traditional penetration test would be.
+            - 🎈Automated testing would allow for consistent testing, which would detect new vulnerabilities and real threats faster than a third party conducting a quarterly audit.
     - See:
         - OWASP Web Security Testing Guide 
             - 🖱️Phase 1 Before Development Begins: Define a SDLC, Review Policies and Standards, Develop Measurement and Metrics Criteria and Ensure Traceability
