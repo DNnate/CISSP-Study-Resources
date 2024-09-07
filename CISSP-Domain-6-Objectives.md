@@ -34,6 +34,7 @@
     - a small non-profit, a small private company and a small public company will have different requirements and goals for their audit strategies
     - the audit strategy should be assessed and tested regularly to ensure that the organization is not doing a disservice to itself with the current strategy
     - there are three types of audit strategies: internal, external, and third-party
+    - SSAE 18 is a US auditing system while ISAE 3402 is a very similar system used internationally. Both are standards used by companies to audit other companies in their jurisdiction.
 
 [6.1](#6.1) Design and validate assessment, test, and audit strategies (OSG-9 Chpt 15)
 - 6.1.1 🔴Internal
