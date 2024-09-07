@@ -433,9 +433,9 @@
 
 - 6.3.6 Disaster Recover (DR) and Business Continuity (BC): 🩹BCP: Keeps the business running during a disaster (includes all functions). 🩹DR: Focuses on restoring IT systems after a disaster.
     - 📁**Business Continuity (BC)**: the processes used by an organization to ensure, holistically, that its vital business processes remain 📝unaffected or can be quickly restored following a serious incident. Preventing business interruption is the goal of business continuity
-        - The main purpose of BCP is to ensure that critical business functions continue operating during and after a disruption, no matter how big or small.
+        - The main purpose of BC is to ensure that critical business functions continue operating during and after a disruption, no matter how big or small.
         - It’s a 📝broad plan that covers all aspects of the business. This includes keeping people, processes, and resources running to prevent complete shutdown.
-        - For example, if there’s a major power outage, BCP will outline steps to ensure the company can still function—by switching to generators, relocating staff, or working remotely.
+        - For example, if there’s a major power outage, BC will outline steps to ensure the company can still function—by switching to generators, relocating staff, or working remotely.
         - Ensures that operations 📝continue with minimal interruption. The goal is to keep the entire business running, not just IT systems.
         - Business Continuity Planning (BCP) Response Example where A large retail company, like Walmart or Amazon, experiences a severe snowstorm that shuts down roads and makes it impossible for employees to reach their warehouse.
             - 🍪Shifting operations to a nearby warehouse that is unaffected by the storm.
@@ -445,6 +445,8 @@
             - 🍪Non-critical employees are given time off until the situation improves.
             - 🍪Online shopping systems, which run on backup generators or alternative power sources, remain operational so customers can still place orders.
             - 🉑Outcome: Even though there’s a snowstorm, the company continues to fulfill customer orders and keep the business running by adapting its operations.
+            - **Business Continuity Planning (BCP)** is defined by NIST as, “The documentation of a predetermined set of instructions or procedures that describe how an organization’s mission/business processes will be sustained during and after a significant disruption.”
+            - Between DRP and BCP, the most common way to look at the two is that BCP is a bigger, 📝broader document that is for all critical missions and processes.
     - 📁**Disaster Recovery (DR)**: is a 📝subset of BC, that focuses on restoring information systems after a disaster. the goal of DRP is to restore regular business activity as quickly as possible.
     - These processes need to be periodically accessed, and regular testing of disaster recovery and business continuity controls provide organizations with the assurance they are effectively protected against disruptions to business ops
     - The main objective of DR is to restore IT systems and data after a disaster (e.g., cyberattacks, natural disasters).
@@ -462,6 +464,8 @@
     - 📝Protection of life is of the utmost importance and should be dealt with first before attempting to save material things
         - Crisis management is the process of planning and responding to unexpected events that can have a negative impact on an organization. One of the key traits of crisis management is the ability to anticipate potential problems and develop plans to mitigate their impact. This means being able to think ahead and identify potential risks, as well as having a plan in place to deal with them if they do occur.
         - Crisis management involves handling the overall strategy and high-level decisions during a crisis or disaster. It focuses on managing the organization's response at a strategic level, ensuring that the organization can navigate through the crisis effectively and make decisions that align with its long-term goals and survival.
+        - **Disaster Recovery Planning (DRP)** involves being prepared for a disaster and recovering from it. Failing to keep track of a disaster recovery site could mean it's not reliable to use when a disaster hits and, due to the lack of effort, plenty of money will be wasted. DRP is defined by the United States (US) National Institute of Standards and Technology (NIST) as, “A written plan for recovering one or more information systems at an alternate facility in response to a major hardware or software failure or destruction of facilities.”
+        - Between DRP and BCP, the most common way to look at the two is that DRP involves the 📝data center.
 
 [6.4](#6.4) Analyze test output and generate report (OSG-9 Chpt 15)
 - 💥Step 1: review and understand the data
