@@ -701,7 +701,8 @@ Factors, entities or conditions outside the organisation upon which the organisa
        - ✏️Threats: Any potential occurrence that may cause an undesirable or unwanted outcome for an organization or for a specific asset is a threat.
        - ✏️Threat agents or threat actors: Entities that intentionally exploit vulnerabilities.
        - ✏️Threat events: Accidental occurrences and intentional exploitations of vulnerabilities.
-       - ✏️Threat vector: The path or means by which an attack or attacker can gain access to a target in order to cause harm. 
+       - ✏️Threat vector: The path or means by which an attack or attacker can gain access to a target in order to cause harm.
+       - A threat assessment is done as part of risk management. This could be done in relationship to just about any job/task/project/software/etc that a business engages in. In the threat assessment, it would be normal to document the discovered risks
   - **❄️Vulnerability** (a weakness that can be exploited by a threat).
       - It is the weakness in an asset, or the absence or the weakness of a safeguard or countermeasure.
       - A vulnerability is a flaw, loophole, oversight, error, limitation, frailty, or susceptibility in the IT infrastructure or any other process.
