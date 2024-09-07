@@ -120,6 +120,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - ❄️**Transport Layer (4)**
         - Responsible for managing the integrity of a connection and controlling the session; providing transparent data transport and end-to-end transmission control
         - The Transport layer provides logical connections between devices, including end-to-end transport services to ensure that data is delivered. Transport layer protocols include TCP, UDP, SSL, and TLS.
+        -  A 📝port is a transport layer identifier for the type of traffic that is being transported across the network using either Transmission Control Protocol (TCP) or User Datagram Protocol (UDP).
         -  📝circuit level firewalls and proxies operate at this layer
         -  The primary VPNs at the Transport layer are 📝TLS and 📝SSH. 
         - Defines session rules like how much data each segment can contain, how to verify message integrity, and how to determine whether data has been lost
