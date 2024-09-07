@@ -647,6 +647,8 @@ to misuse the application
     - 🎨NFS (Network File System): Port 2049
     - 🎨OpenVPN: Port 1194
     - 🎨PostgreSQL: Port 5432
+    - 🎨Oracle: 1521
+    - 🎨H.323: 1720
 
 - 🔴**NIST Special Publication (SP) 800 Series:**
     - ⚒️NIST 800-12 provides foundational guidance on 📝computer security. It serves as an introductory framework for managing and securing information systems.
