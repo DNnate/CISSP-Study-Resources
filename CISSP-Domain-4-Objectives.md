@@ -606,15 +606,19 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
      - In many grid computing implementations, grid members can access the contents of the distributed work segments or divisions.
      - Grid computing over the internet is not usually the best platform for sensitive operations.
      - Grid computing is able to handle and compensate for latency of communications, duplicate work, and capacity fluctuation.
+     - Grid computing involves Parallel processing where nodes may join and leave at will
+     - Grid computing is similar to clustering, however, individual nodes do not trust each other and can join and leave at will.
+     - Grid computing is generally distributed across hundreds and thousands of nodes across the internet. Nodes check in when they have available system resources and contribute to grid processing.
+     - Grid computing is used for Bitcoin mining, the creation of rainbow tables, and predicting weather patterns, among many other things.
        
-- 4.1.17 Virtual Private Cloud (VPC)
+- 4.1.17 🔴Virtual Private Cloud (VPC)
     - Virtual networks, public and private subnets, segmentation and API inspection and integration are important elements of cloud security.
     - VPC is a virtual network that consists of cloud resources, where the VM of one company is isolated from the resources of another company.
     - A VPC, or virtual private cloud, is the environment many organizations operate inside of public clouds. They provide on-demand access to configurable, shared resources operated by the cloud provider inside of their isolated boundaries.
     - Seperate VPCs can be isolated using public or private networks or segmentation. This concept exists in all major public clouds. It is refered to as VPC in AWS & Google Cloud Platforms. It is referred to as Virtual Networks (VNET) in Azure.
     - Virtual private clouds (VPCs) run on cloud-hosted infrastructure providing a secure, isolated pool of resources to be used by organizations to meet their needs.
  
-- 4.1.18 Monitoring and Management
+- 4.1.18 🔴Monitoring and Management
     - **Network Observability:** Invloves collecting data and gaining visibility into the status and performance of network components and traffic flows. Supports issue identificaton and troubleshooting. Observability focuses on the ability to see how an entire system, service, or environment is performing and behaving based on its external outputs. That means that telemetry data—information about what components are doing—is critical and will be gathered using logs, metrics, and real-time analysis. This means that centralizing and aggregating data, enabling alerts for critical errors, and implementing logging using standardized formats are all common practices.
         - 💻Real-time fault monitoring for network devices and connections often relies on ☑️SNMP and ☑️ICMP-based monitoring capabilities.  
     - **Traffic FLow/Traffic Shapping:** Managing and controlling the volume and priorities of different types of traffic. E,g QOS (priority to certain traffic such as real-time traffic), rate limitting (example API limiting to number of API requests that can be made by a single user in a specific period of time), throttling.
@@ -636,7 +640,7 @@ The components of a network make up the backbone of the logical infrastructure f
         - redundant power is typically used with components such as servers, routers, and firewalls
         - redundant power is usually paired with other types of redundancies to provide high availability
 
-- 4.2.2 Transmission media
+- 4.2.2 🔴Transmission media
     - Transmission Media: comes in many forms, not just cables
         - includes wireless, LiFi, Bluetooth, Zigbee, satellites
         - most common cause of network failure (i.e. violations of availability) are cable failures or misconfigurations
