@@ -1141,7 +1141,7 @@ of litigation is imminent.
             - It can also be used preventing 📝tailgating/📝piggybacking
     - 🍮**Security bollards**: a key element of physical security, which prevent vehicles from ramming access points and entrances
     - 🍮**Barricades**: in addition to fencing, are used to control both foot traffic and vehicles
-    - 🍮**Lighting** is the 📝most commonly used form of perimeter security control providing the security benefit of deterrence (primary purpose is to discourage casual intruders, trespassers etc). A foot-candle or lumen is a measure of the visible light that a light produces. The accepted standard for lighting used in parking lots or perimeters is a minimum of 📝two foot-candles or 📝two lumen.
+    - 🍮**Lighting** is the 📝most commonly used form of perimeter security control providing the security benefit of deterrence (primary purpose is to discourage casual intruders, trespassers etc). A foot-candle or lumen is a measure of the visible light that a light produces. The accepted standard for lighting or MINIMUM light level used in parking lots or perimeters is a minimum of 📝two foot-candles or 📝two lumen.
     - All physical security controls ultimately rely on personnel to intervene and stop actual intrusions and attacks
 - 7.14.2 Internal security controls
     - In all circumstances and under all conditions, the most important aspect of security is protecting people
