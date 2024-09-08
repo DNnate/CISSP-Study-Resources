@@ -220,19 +220,30 @@
         - It is known as a "Metamodel" or "Model of Models"
         - the spiral model provides a solution to the major criticism of the waterfall model in that it allows devs to return to planning stages as technical demands and customer requirements iterate
         - In this approach, developers use multiple iterations of a waterfall-style software development process. This becomes a “loop” of iterations through similar processes.
-        - Each loop of the spiral results in the development of a new system prototype.
+        - Each loop of the spiral results in the development of a new system 📝prototype.
+        - The spiral model has an emphasis on risk analysis and prototyping. This is used for rapid production and prototyping systems. The spiral model is derived from the waterfall model. Each loop in the spiral is one full iteration of the waterfall method.
+    - 📁**Joint analysis development model**: Joint analysis development uses prototyping in the life cycle area of the Dynamic Systems Development Method
+    - 📁**Clean room model**: Clean room is a software development process intended to produce software with a level of reliability that can be certified.
     - 📁**DevOps (Development and Operations)**: an approach to software development, quality assurance, and technology operations that seeks to unite siloed staff, and bring the three functions together in a single operational model
         - closely aligned with lean and the Agile development approach, DevOps aims to dramatically decrease the time required to develop, test, and deploy software changes
         - using the DevOps model, and continuous integration/continuous delivery (CI/CD), orgs strive to roll out code dozens or even hundreds of times per day and the can deploy code extremely rapidly.
         - this requires a high degree of 🧠automation, including integrating code repositories, the software configuration management process, and the movement of code between development, testing and production environments
         - the tight integration of development and operations also calls for the simultaneous integration of security controls
+        - The DevOps model is closely aligned with the Agile development approach and aims to dramatically decrease the time required to develop, test, and deploy software changes.
         - security must be tightly integrated and move with the same agility
         - The DevOps approach to technology management seeks to integrate software development, operations, and quality assurance in a seamless approach that builds collaboration between the three disciplines.
-        - The three elements of the DevOps model are 🔥software development, 🔥quality assurance, and 🔥IT operations.
+        - The three elements of the DevOps model are
+            - 🔥software development
+            - 🔥quality assurance, and
+            - 🔥IT operations.
     - 📁**DevSecOps**: refers to the integration of development, security, and operations
         - provides for a merger of phased review (as in the waterfall SDLC) with the DevOps method, to incorporate the needs for security, safety, resilience or other emerging properties in the final system, at each turn of the cycle of development
         - DevSecOps supports the concept of software-defined security, where security controls are actively managed into the CI/CD pipeline
-        - The four elements of the DevSecOps model are 🔥software development, 🔥quality assurance, 🔥IT operations and 🔥Information security (introduced in the DevSecOps model)
+        - The four elements of the DevSecOps model are
+            - 🔥software development
+            - 🔥quality assurance
+            - 🔥IT operations and
+            - 🔥Information security (introduced in the DevSecOps model)
 
 - 8.1.2 Maturity models (e.g., Capability Maturity Model (CMM), Software Assurance Maturity Model (SAMM))
     - Software Engineering Institute (SEI) (Carnegie Mellon University) created the Capability Maturity Model for Software (AKA Software Capability Maturity Model, abbreviated SW-CMM, CMM, or SCMM)
@@ -751,7 +762,7 @@ access rights. A rootkit is used to achieve or maintain 📝elevated privileges 
             - 🧯Macro Viruses: These viruses target applications that use macros, such as Microsoft Word or Excel. They infect and spread through macro-enabled documents, affecting document files rather than the system itself. e.g Melissa, Concept.
             - 🧯Boot Sector Viruses: These viruses infect the master boot record (MBR) of a hard disk or a removable drive's boot sector. They are activated when the system starts up, spreading before the operating system is loaded. E.g Michelangelo, Stone.
             - 🧯Multipartite Viruses: These viruses can infect multiple parts of a system, such as both the boot sector and executable files. They spread in multiple ways and can re-infect systems even after cleanup if not all parts are addressed. E.g Tequila, Invader.
-            - 🧯Polymorphic Viruses: These viruses can change their code or signature each time they infect a new system. They use encryption and code mutation to avoid detection by antivirus software. E.g Storm Worm, Vundo.
+            - 🧯Polymorphic Viruses: These viruses can change their code or signature each time they infect a new system. They use encryption and code mutation to avoid detection by antivirus software. E.g Storm Worm, Vundo. The virus's propagation and destruction techniques remain the same, but the virus's software signature is different each time it infects a new system. This is because, as the code changes, the hash output of the virus also changes.
             - 🧯Metamorphic Viruses: These viruses rewrite their own code each time they infect a new file, making each version different. They can completely change their structure and functionality to evade detection. E.g Simile, ZMist.
             - 🧯Stealth Viruses: These viruses hide themselves by intercepting system calls and returning false information to the antivirus software. They avoid detection by using stealth techniques, such  as intercepting read requests from the antivirus software and returning a correct-looking version of the infected file masking their presence, often hiding file size changes or memory usage. E.g Tchernobyl, Frodo. 
             - 🧯Resident Viruses: These viruses embed themselves in the system's memory. They stay active even after the host program is terminated, allowing them to infect other files and programs. E.g Randex, CMJ.
