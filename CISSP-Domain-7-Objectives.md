@@ -101,7 +101,7 @@ of litigation is imminent.
     - ✏️Production: Places the information into a format that may be shared with others and delivers it to other parties, such as opposing counsel.
     - ✏️Presentation: Displays the information to witnesses, the court, and other parties.
 
-- 7.1.1 Evidence collection and handling
+- 7.1.1 🔴Evidence collection and handling
     - Evidence (or artifacts) collection is complex, should be done by professionals, and can be thrown out of court if incorrectly handled
     - It’s important to preserve original evidence
     - 🔥**International Organization on Computer Evidence (IOCE)** six principles for media, network and software analysis:
@@ -145,7 +145,7 @@ of litigation is imminent.
         - 🧑‍⚖️**Hearsay evidence**: type of evidence that is based on statements made by someone outside of court and is generally not admissible. The hearsay rule says that a witness cannot testify about what someone else told them, except under very specific exceptions. However, the courts have applied the hearsay rule to include the concept that attorneys may not introduce logs into evidence unless they are 📝authenticated by the system administrator. In this scenario, the administrator might also be able to provide a sworn affidavit. 
         - 🧑‍⚖️**Best evidence rule**: states that the original evidence should be presented in court, rather than a copy or other secondary evidence
     - It is important to note that evidence should be collected and handled in a forensically sound manner to ensure that it is admissible in court and to avoid any legal issues
-    - 🔥The chain of custody: focuses on having control of the evidence -- who collected and handled what evidence, when, and where. The chain of custody is chronological documentation or a paper trail showing the seizure, custody, control, transfer, analysis, and disposal of evidence. The chain of custody (also called the chain of evidence) documents all individuals who handled the evidence and helps ensure that evidence can be used in court proceedings.
+    - 🔥**The chain of custody**: focuses on having control of the evidence -- who collected and handled what evidence, when, and where. The chain of custody is chronological documentation or a paper trail showing the seizure, custody, control, transfer, analysis, and disposal of evidence. The chain of custody (also called the chain of evidence) documents all individuals who handled the evidence and helps ensure that evidence can be used in court proceedings. The chain of custody (also called the 📝evidence chain) is the process of logging access and location of evidence and its condition during investigations. It documents who had control of evidence at any given point to ensure that it is admissible during trial. It also documents what was done with the evidence, where it was, how it was treated, how it was moved from location to location, and when it was handled.
         - think about establishing the chain of custody as:
             - tag, 
             - bag, and 
@@ -186,7 +186,7 @@ of litigation is imminent.
         - Examining a live system can change the state of the evidence 
             - small changes like interacting with the keyboard, mouse, loading/unloading programs, or of course powering off the system, can change or eliminate live evidence
         - Whenever a forensic investigation of a storage drive is conducted, two identical bit-for-bit copies of the original drive should be created first
-    - 🍍**eDiscovery**: the process of identifying, collecting, and producing electronic evidence in legal proceedings
+    - 🍍**eDiscovery**: Electronic discovery, or E-discovery, is the process of identifying, collecting, analyzing and producing Electronically Stored Information (ESI) for 📝legal purposes and in legal proceedings. It is used in legal investigations, litigation, and compliance. Electronic review involves the examination and analysis of ESI during the e-discovery process, typically for legal purposes, compliance, or investigation.
 
 - 7.1.5 Artifacts (e.g. computer, network, mobile device)
     - Forensic artifacts: remnants of a system or network breach/attempted breach, which and may or may not be relevant to an investigation or response
@@ -786,6 +786,8 @@ of litigation is imminent.
     - 💢The request control process provides an organized framework within which users can request modifications, managers can conduct cost/benefit analyses, and developers can prioritize tasks.
     - 💢Change control provides an organized framework within which multiple developers can create and test solutions prior to rolling them out into a production environment.
     - 💢Release control includes acceptance testing to ensure that any alterations to end-user work tasks are understood and functional.
+        - 🔨Release management (found within ITIL) is the process of managing, coordinating, controlling, and making new and changed services available. This includes software features being made available to users.
+        - 🔨Deployment management is moving new hardware into production or new software to a live environment. 
     - 💢Configuration control ensures that changes to software versions are made in accordance with the change control and configuration management process. Updates can be made only from authorized distributions in accordance with those policies.
         - 🎈Versioning: refers to version control used in software configuration management. A labeling or numbering system is used to differentiate between different software sets and configurations across multiple machines or at different points in time on a single machine. Versioning also helps with rollback procedures when deployment fails.
     - Change management controls provide a process to control, document, track, and audit all system changes.
@@ -992,7 +994,7 @@ of litigation is imminent.
     - 🧮**Business Continuity Planning (BCP)**: focuses on the survival of the business processes when something unexpected impacts it. Business continuity planning is focused on 📝keeping business functions uninterrupted when a disaster strikes. Preventing business interruption is the goal of business continuity
     - 🧮**Disaster Recovery Planning (DRP)**: focuses on the recovery of vital technology infrastructure and systems. disaster recovery planning picks up where business continuity planning leaves off. Disaster recovery planning guides an organization through recovery of normal operations at the primary facility. The goal of DRP is to 📝restore regular business activity as quickly as possible
 - Organizations can choose whether to develop business continuity planning or disaster recovery planning plans, although it is highly recommended that they do both.
-- Tip❗People should always be your highest priority in business continuity planning. Any life safety systems, e.g fire suppression systems, should always receive high prioritization❗
+- Tip❗People should always be your highest priority in business continuity planning. Any life safety systems, e.g fire suppression systems, should always receive high prioritization❗ Employee safety should always be the top priority when designing a Business Continuity Plan (BCP) or Disaster Recovery Plan (DRP).
     - BCM, BCP, and DRP are ultimately used to achieve the same goal: the continuity of the business and its critical and essential functions, processes, and services
 - The key BCP/DRP steps are:
     - 🚡Develop contingency planning policy
@@ -1003,9 +1005,9 @@ of litigation is imminent.
     - 🚡Develop contingency plan
     - 🚡Ensure testing, training, and exercises (Conducting regular business continuity exercises, such as practical continuity work, keeps knowledge fresh)
     - 🚡Maintenance
-- Four key measurements for BCP and DRP procedures:
+- 🍏Four key measurements for BCP and DRP procedures:
     - ⚒️RPO (recovery point objective): max tolerable data loss measured in time and should be used to guide backup strategies
-    - ⚒️RTO (recovery time objective): max tolerable time to recover systems to a defined service level
+    - ⚒️RTO (recovery time objective): max tolerable time to recover systems to a defined service level.  It should never exceed the Maximum Tolerable Downtime (MTD)
     - ⚒️WRT (work recovery time): max time available to verify system and data integrity as part of the resumption of normal ops
     - ⚒️MTD (max tollerable downtime): max time-critical system, function, or process can be disrupted before unacceptable/irrecoverable consequences to the business
 
