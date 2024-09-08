@@ -522,7 +522,7 @@ inputs and outputs to inform the test plan.
     - As orgs continue to migrate to the cloud (SaaS, IaaS, PaaS), they should increase the security assessment of those services
         - 🎵Community cloud deployment model provides cloud-based assets to two or more organizations. It is a cloud application has been deployed and shared among several organisations with similar concerns.
         - 🎵Public cloud model includes assets available for any consumers to rent or lease.
-        - 🎵Private cloud deployment model includes cloud-based assets that are exclusive to a single organization.
+        - 🎵Private cloud deployment model includes cloud-based assets that are exclusive to a single organization. A private cloud is hosted for the benefit of a single organization and is only accessible to that organization.
         - 🎵Hybrid model includes a combination of two or more deployment models. It doesn't matter if it is a Software as a Service (SaaS) model or any other service model.
     - The top reasons for cloud breaches continues to be misconfigurations, lack of visibility into access settings, and poor access controls
         - cloud service providers have tools to help mitigate these issues, and orgs should consider bringing in third-party experts to help if they don't have the internal expertise
