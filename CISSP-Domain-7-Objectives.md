@@ -996,12 +996,12 @@ of litigation is imminent.
 - The key BCP/DRP steps are:
     - 🚡Develop contingency planning policy
     - 🚡Conduct BIA (business Impact Analysis): During the business impact analysis phase, you must identify the business priorities of your organization to assist with the allocation of BCP resources. You can use this same information to drive the disaster recovery planning business unit prioritization.
+        - 📝Performing a Business Impact Analysis (BIA) is critical in developing a Business Continuity Plan (BCP) and a Disaster Recovery Plan (DRP). The BIA identifies all critical functions and processes so the organization can prioritize them based on criticality. The BIA also involves calculating risk for the identified business functions so that vulnerabilities are prioritized appropriately.
     - 🚡Identify controls
     - 🚡Create contingency strategies
     - 🚡Develop contingency plan
     - 🚡Ensure testing, training, and exercises (Conducting regular business continuity exercises, such as practical continuity work, keeps knowledge fresh)
     - 🚡Maintenance
-
 - Four key measurements for BCP and DRP procedures:
     - ⚒️RPO (recovery point objective): max tolerable data loss measured in time and should be used to guide backup strategies
     - ⚒️RTO (recovery time objective): max tolerable time to recover systems to a defined service level
