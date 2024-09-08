@@ -348,18 +348,19 @@ of litigation is imminent.
     - ✈️**Dynamic techniques**: the scanner runs executable files in a sandbox to observe their behavior.
 
 [7.3](#7.3) Perform Configuration Management (CM) (e.g. provisioning, baselining, automation) (OSG-9 Chpt 16)
-- **Configuration Management (CM)**: collection of activities focused on establishing and maintaining the integrity of IT products and info systems, via the control of processes for initializing, changing, and monitoring the configurations of those products/systems through their lifecycle; the process of identifying, controlling, and verifying the configuration of systems and components throughout their lifecycle
+- 📁**Configuration Management (CM)**: collection of activities focused on establishing and maintaining the integrity of IT products and info systems, via the control of processes for initializing, changing, and monitoring the configurations of those products/systems through their lifecycle; the process of identifying, controlling, and verifying the configuration of systems and components throughout their lifecycle
     - CM is an integral part of secure provisioning and relates to the proper configuration of a device at the time of deployment
     - CM helps ensure that systems are deployed in a secure, consistent state and that they stay in a secure, consistent state throughout their lifecycle
-- **Provisioning**: taking a particular config baseline, making additional or modified copies, and placing those copies into the environment in which they belong; refers to installing and configuring the operating system and needed apps on new systems
+    - Configuration Management is used to ensure secure 📝baselines on systems are adequately maintained, and any deviations are authorized and documented. Configuration management seeks to establish safe, reliable configurations for systems.
+- 🚡**Provisioning**: taking a particular config baseline, making additional or modified copies, and placing those copies into the environment in which they belong; refers to installing and configuring the operating system and needed apps on new systems
     - new systems should be configured to reduce vulnerabilities introduced via default configurations; the key is to harden a system based on intended useage
-- **Hardening a system**: process of applying security configurations, and locking down various hardware, communications systems, software (e.g. OS, web/app server, apps etc); normally performed based on industry guidelines and benchmarks like the Center for Internet Security ⚖️(CIS); The CIS benchmarks provide a useful security standard and baseline to assess systems against or to configure them to. Organizations can adapt and modify the baseline to meet their specific needs while speeding up deployment by using an accepted industry standard. 
+- 🚡**Hardening a system**: process of applying security configurations, and locking down various hardware, communications systems, software (e.g. OS, web/app server, apps etc); normally performed based on industry guidelines and benchmarks like the Center for Internet Security ⚖️(CIS); The CIS benchmarks provide a useful security standard and baseline to assess systems against or to configure them to. Organizations can adapt and modify the baseline to meet their specific needs while speeding up deployment by using an accepted industry standard. 
     - makes it more secure than the default configuration and includes the following:
         - 🎈disable all unused services
         - 🎈close all unused logical ports
         - 🎈remove all unused apps
         - 🎈change default passwords
-- **Baseline**: in the context of configuration management, it is the starting point or starting config for a system
+- 🚡**Baseline**: in the context of configuration management, it is the starting point or starting config for a system
     - an easy way to think of a baseline is as a list of services; an OS baseline identifies all the settings to harden specific systems
     - many organizations use images to deploy baselines; baseline images improve the security of systems by ensuring that desired security settings are always configured correctly
     - baseline images improve the security of systems by ensuring that desired security settings are always configured correctly; they also reduce the amount of time required to deploy and maintain systems, reducing overall maintenance costs
@@ -456,7 +457,7 @@ of litigation is imminent.
     - When media is marked, handled, and stored properly, it helps prevent unauthorized disclosure (loss of confidentiality), unauthorized modification (loss of integrity), and unauthorized destruction (loss of availability)
 
 [7.6](#7.6) Conduct incident management (OSG-9 Chpt 17)
-- **Incident response**: the mitigation of violations of security policies and recommended practices; the process to detect and respond to incidents and to reduce the impact when incidents occur; it attempts to keep a business operating or restore operations as quickly as possible in the wake of an incident
+- 🔴**Incident response**: the mitigation of violations of security policies and recommended practices; the process to detect and respond to incidents and to reduce the impact when incidents occur; it attempts to keep a business operating or restore operations as quickly as possible in the wake of an incident
 - Incident management is usually conducted by an Incident Response Team (IRT), which comprises individuals with the required expertise and experience to manage security incidents; the IRT is accountable for implementing the incident response plan, which is a written record that defines the processes to be followed during each stage of the incident response cycle
 
 - The main goals of incident response:
