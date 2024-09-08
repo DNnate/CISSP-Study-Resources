@@ -230,7 +230,8 @@
         - this requires a high degree of 🧠automation, including integrating code repositories, the software configuration management process, and the movement of code between development, testing and production environments
         - the tight integration of development and operations also calls for the simultaneous integration of security controls
         - The DevOps model is closely aligned with the Agile development approach and aims to dramatically decrease the time required to develop, test, and deploy software changes.
-        - security must be tightly integrated and move with the same agility
+        - security is not tightly integrated and move with the same agility
+        - DevOps describes a software development approach that utilizes a CI/CD pipeline for automation without having automated cybersecurity checks incorporated into that pipeline. DevOps is a portmanteau of Development (Dev) and Operations (Ops).
         - The DevOps approach to technology management seeks to integrate software development, operations, and quality assurance in a seamless approach that builds collaboration between the three disciplines.
         - The three elements of the DevOps model are
             - 🔥software development
@@ -244,7 +245,7 @@
             - 🔥quality assurance
             - 🔥IT operations and
             - 🔥Information security (introduced in the DevSecOps model)
-
+        - DevSecOps is a software development approach incorporating automated cybersecurity checks into its CI/CD pipeline automation. DevSecOps is a combination of Development (Dev), Security (Sec), and Operations (Ops).
 - 8.1.2 Maturity models (e.g., Capability Maturity Model (CMM), Software Assurance Maturity Model (SAMM))
     - Software Engineering Institute (SEI) (Carnegie Mellon University) created the Capability Maturity Model for Software (AKA Software Capability Maturity Model, abbreviated SW-CMM, CMM, or SCMM)
     - 🟢 **SW-CMM**:  I Must Do Quality Optimization 🟡 a management process to foster the ongoing and continuous improvement of an org's processes and workflows for developing, maintaining and using software
@@ -393,6 +394,7 @@
     
 - 8.2.2 🔴Libraries
     - **Software library (Code Libraries)**: a pre-written collection of components (classes, procedures, scripts etc) that do specific tasks, useful to other components (e.g. software libraries for encryption algorithms, managing network connections, or displaying graphics)
+    - Software libraries are groups of pre-created code by other developers that can be used to integrate into your code. This saves developers 📝time when creating a program by reusing code that has already been made by others.
     - Shared software libraries contain 📝reusable code, improving developer's efficiency, and reducing the need to write well-known algorithms from scratch; often available as open source
     - Code libraries are packages of reusable functions that may be incorporated into individual development projects.
         - shared libraries can also include many security issues (e.g. Heartbleed), and devs should be aware of the origins of the shared code that they use, and keep informed about any security vulns that might be discovered in these libraries
@@ -679,6 +681,13 @@ inputs and outputs to inform the test plan.
         - SDS enables more responsive, scalable, and centralized security management, often leveraging automation and orchestration to adapt to new threats or changes in the environment. It allows security to be more closely aligned with modern, agile IT practices.
         - Example: A cloud environment using SDS might automatically adjust firewall rules and access controls based on detected threats or compliance requirements, ensuring consistent security across all deployed resources.
         - SDS is specifically concerned with security, applying and managing security policies dynamically across the environment. SDS operates at the 📝security layer. SDS automates security controls
+            - 🎈Advantages:
+                - With Software-Defined Networking (SDN) and Software-Defined Security (SDS), configuration is nowhere near as complex or difficult as the physical methods. Configuration is much easier, being right at your fingertips on one screen.
+                - While there is a learning curve with SDN and SDS, they are overall far easier to configure than physically setting everything up by hand and maneuvering around a residence or enterprise environment.
+                - It is elastic and dynamic to changes
+                - It can be automated
+                - With the convenience of everything being accessible and administrated on one screen, security implementations are also far easier to understand and recognize.
+                - Additionally, these software programs can be integrated with other programs. Everything you need can be on one computer via software, configured the way you want, and accessible wirelessly or however you would like. 
    - 🍏**Infrastructure as Code (IaC)**:
        - IaC is focused on automating the deployment and management of infrastructure. It allows IT environments (servers, networks, databases, etc.) to be defined and managed through code, making infrastructure deployment consistent, repeatable, and scalable.
        - IaC covers the entire IT infrastructure, from virtual machines and networks to storage and application configurations. It is not limited to security but encompasses all aspects of infrastructure provisioning and management.
@@ -729,7 +738,9 @@ inputs and outputs to inform the test plan.
             - Escaping user input makes dangerous characters less likely to be a problem.
             - Parameterized queries limit what can be sent in a query
             - Input validation adds another layer of protection by limiting what can be successfully input by a user. 
-    - 🔥Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to adjacent memory locations being overwritten. The best protection against buffer overflow attacks is server-side input validation. This technique limits user input to approved ranges of values that fit within allocated buffers. **Address space layout randomization (ASLR)** is a memory-protection process for operating systems (OSes) that guards against buffer-overflow attacks by randomizing the location where system executables are loaded into memory.
+    - 🔥Buffer Overflow: Occurs when a program writes more data to a buffer than it can hold, leading to adjacent memory locations being overwritten. The best protection against buffer overflow attacks is server-side input validation. This technique limits user input to approved ranges of values that fit within allocated buffers.
+        - Buffer overflows occur when an application does not validate input data length. They occur when 📝too much data is provided and the allocated memory space overflows. This generally causes the program to crash and, in some circumstances, the attacker can replace legitimate code execution with their own set of instructions. 
+        - 👽**Address space layout randomization (ASLR)** is a memory-protection process for operating systems (OSes) that guards against buffer-overflow attacks by randomizing the location where system executables are loaded into memory.
     - 🔥Broken Authentication and Session Management: Flaws in the authentication and session management functions that can be exploited to impersonate other users e.g Session ID exposure, weak password management.
     - 🔥Security Misconfiguration: Insecure default configurations, incomplete or ad-hoc configurations, open cloud storage, Improper enforcement of access control policies, misconfigured HTTP headers, and error messages containing sensitive information. Can lead to unauthorized access and data exposure.
     - 🔥Insecure Deserialization: Issues arising from the deserialization of untrusted data, which can lead to remote code execution, replay attacks, and injection attacks. Can lead to exploitation and manipulation of application logic.
