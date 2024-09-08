@@ -1075,7 +1075,8 @@ of litigation is imminent.
 - 7.12.0 📙**Checklist tests:**
 - The checklist review is the 📝least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes. It also has a very minimal 📝time commitment.
     - The checklist review is the least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and 📝suggest any necessary changes.
-    - A checklist exercise is to walk through the DRP using a checklist of items/sections that should be in the plan. Or it is possible to use a list such as commonly forgotten items to see if they have been included in the plan.
+    - A checklist exercise is to walk through the DRP using a checklist of items/sections that should be in the plan.
+    - It is possible to use a list such as commonly forgotten items to see if they have been included in the plan.
 - 7.12.1 
     - 📙**Read-through test**: one of the 📝simplest to conduct, but also one of the most critical; copies of a DR plan are distributed to the members of the DR team for review, accomplishing three goals:
         - ensure that key personnel are aware of their responsibilities and have that knowledge refreshed periodically
@@ -1087,6 +1088,7 @@ of litigation is imminent.
         - the team refers to their copies of the DR plan and discuss the appropriate responses to that particular type of disaster
         - Tabletop exercises are designed to walk teams through a scenario,
         - During a tabletop exercise, team members come together and walk through a scenario 📝without making any changes to information systems.
+        - A structured walk-through test occurs in the 📝conference room where team members talk through a scenario using their plan. The completeness of the plan is assessed before they leave the conference room and attempt any actions on any systems.
         - The idea is to talk through the steps that have been documented to see if it has all of the correct steps and that they appear to be in the Disaster Recovery Plan (DRP). It is called a tabletop exercise because the team sits around a conference table to talk through the steps
         - It's important to have a structured walk-through before a live disaster test to adequately prepare and complete all necessary implementations.
 - 7.12.3 Simulation
@@ -1095,15 +1097,16 @@ of litigation is imminent.
         - In simulation tests, disaster recovery team members are presented with a scenario and asked to develop an 📝appropriate response. 
         -  ❗Simulation tests may shut down noncritical business units. 
         - this may involve the interruption of noncritical business activities and the use of some operational personnel
-        - A simulation test involves a role-play of a prepared scenario overseen by a moderator. Responses are assessed to help improve the organization's response process. 
-        - Simulations are the 📝most complete test that can be conducted without the risk that a full failover test creates. 
+        - A simulation test involves a 📝role-play of a prepared scenario overseen by a moderator. Responses are assessed to help improve the organization's response process. 
+        - Simulations are the 📝most complete test that can be conducted without the risk that a full failover test creates.
+        - In a simulation, the systems are not brought to a functional level at the alternate site. The plan is analyzed possibly 📝in and 📝out of the conference room. A simulation could involve stepping through some of the procedural documents to see if the instructions match what is visible in a system, without taking any actual action.
 - Checklist tests, structured walk-­throughs, and simulations are all test types that do not involve actually activating the alternate site.
 - 7.12.4 Parallel
     - 📙**Parallel tests**: represent the next level, and involve 📝relocating personnel to the alternate recovery site and implementing site activation procedures
         - the relocated employees perform their DR responsibilities just as they would for an actual disaster
         - In a parallel test, production processing is not interrupted
         - operations at the main facility are not interrupted
-        - During a parallel test, the team actually activates the disaster recovery site for testing, but the primary site remains operational.
+        - During a parallel test, the team actually activates the disaster recovery site for testing, but the primary site remains operational in the original location during the test. 
         -  it fully evaluates operations at the backup facility but does not shift primary operations responsibility from the main site
         -  During a parallel test, the team activates the disaster recovery site for testing, but the primary site remains operational. 
 
