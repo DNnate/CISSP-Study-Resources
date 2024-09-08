@@ -137,7 +137,7 @@ of litigation is imminent.
              - ✴️The best evidence rule states that when a document is used as evidence in a court proceeding, the original document must be introduced. Best evidence is a form of documentary evidence, but specifically it is the original document rather than a copy or description.
              - ✴️The parol evidence rule states that when an agreement between parties is put into written form, the written document is assumed to contain all the terms of the agreement and no verbal agreements may modify the written agreement.
         - 🧑‍⚖️**Direct evidence**: this type of evidence is based on the observations of a witness or expert opinion and can be used to prove a fact at hand (with backup evidence support). Direct evidence may come from witnesses who give oral testimony based on their observations. Direct evidence cannot be hearsay, which is second-hand testimony.
-            - 👽**Expert witness** may express their opinions or conclusions without providing direct evidence. An expert witness is believed to have greater insight because they have professional experience and expertise in the topic that their testimony covers. They can add insight and information to legal proceedings for various crimes. Expert witnesses should not be confused with standard witnesses who provide direct observational evidence about the case.
+            - 👽**Expert witness** may 📝express their opinions or conclusions without providing direct evidence. An expert witness is believed to have greater insight because they have professional experience and expertise in the topic that their testimony covers. They can add insight and information to legal proceedings for various crimes. Expert witnesses should not be confused with standard witnesses who provide direct observational evidence about the case.
         - 🧑‍⚖️**Conclusive evidence**: this type of evidence is irrefutable and cannot be contradicted.
         - 🧑‍⚖️**Circumstantial evidence**: this type of evidence is based on inference and can be used to support a conclusion, but not prove it. Circumstantial evidence can prove an intermediate fact used to assume another fact.
         - 🧑‍⚖️**Corroborative evidence**: this type of evidence is used to support other evidence and can be used to strengthen a case. Corroborative evidence is used to prove an idea or point that cannot stand on its own.
@@ -277,16 +277,18 @@ of litigation is imminent.
 - **Syslog**: RFC 5424, the Syslog Protocol, describes the syslog protocol, which is used to send event notification messages. A centralized syslog server receives these syslog messages from devices on a network. The protocol defines how to format the messages and how to ✏️send them to the syslog server but ✏️not how to handle them. Syslog has historically been used in Unix and Linux systems. These systems include the syslogd daemon, which handles all incoming syslog messages, similar to how a SIEM server provides centralized logging. Some syslogd extensions, such as syslog-­ng and rsyslog, allow the syslog server to accept messages from any source, not just Unix and Linux systems.
     - Implementations of syslog vary, but most provide a setting for severity level, allowing configuration of a value that determines what messages are sent. Typical severity levels include debug, informational, notice, warning, error, critical, alert, and emergency. The facility code is also supported by syslog, but is associated with which services are being logged.
     - Syslog uses UDP port 📝514. TCP-based implementations of syslog typically use port 📝6514.
-- **Sampling or Data Extraction**, is the process of extracting specific elements from a large collection of data to construct a meaningful representation or summary of the whole. In other words, sampling is a form of data reduction that allows someone to glean valuable information by looking at only a small sample of data in an audit trail.
+- 📗**Sampling or Data Extraction**, is the process of extracting specific elements from a large collection of data to construct a meaningful representation or summary of the whole. In other words, sampling is a form of data reduction that allows someone to glean valuable information by looking at only a small sample of data in an audit trail.
 - Both statistical and nonstatistical sampling are valid mechanisms to create summaries or overviews of large bodies of audit data. However, statistical sampling is more reliable and mathematically defensible.
      - 🍮Statistical sampling uses precise mathematical functions to extract meaningful information from a large volume of data. There is always a risk that sampled data is not an accurate representation of the whole body of data, and statistical sampling can identify the margin of error.
      - 🍮Nonstatistical sampling is discretionary sampling, or sampling at the auditor’s discretion. It doesn’t offer an accurate representation of the whole body of data and will ignore events that don’t reach the 📝clipping level threshold. However, it is effective when used to focus on specific events. Additionally, nonstatistical sampling is less expensive and easier to implement than statistical sampling.
-          - Clipping Levels: Clipping is a form of nonstatistical sampling. It selects only events that exceed a clipping level, which is a predefined threshold for the event. The system ignores events until they reach this threshold.
-          - For example, failed logon attempts are common in any system, since users can easily enter the wrong password once or twice. Instead of raising an alarm for every single failed logon attempt, a clipping level can be set to raise an alarm only if it detects five failed logon attempts within a 30-­minute period.
-          - Many account lockout controls use a similar clipping level. They don’t lock the account after a single failed logon. Instead, they count the failed logons and lock the account only when the predefined threshold is reached.
-          - Clipping levels are widely used in the process of auditing events to establish a baseline of routine system or user activity. The monitoring system raises an alarm to signal abnormal events only if the baseline is exceeded.
+          - ⚒️Clipping Levels: Clipping is a form of nonstatistical sampling. It selects only events that exceed a clipping level, which is a predefined threshold for the event. The system ignores events until they reach this threshold.
+              - For example, failed logon attempts are common in any system, since users can easily enter the wrong password once or twice. Instead of raising an alarm for every single failed logon attempt, a clipping level can be set to raise an alarm only if it detects five failed logon attempts within a 30-­minute period.
+              - Many account lockout controls use a similar clipping level. They don’t lock the account after a single failed logon. Instead, they count the failed logons and lock the account only when the predefined threshold is reached.
+              - Clipping levels are widely used in the process of auditing events to establish a baseline of routine system or user activity. The monitoring system raises an alarm to signal abnormal events only if the baseline is exceeded.
+              - The clipping level is a threshold for the number of error occurrences before it's considered suspicious or sets off an alarm. For example, ten attempts with an incorrect password would trigger an account lockout and password reset.
+              - Clipping level is the more theoretical term for what is now commonly called thresholds.
 	  
-- 7.2.3 Continuous monitoring
+- 7.2.3 🔴Continuous monitoring
     - After a SIEM is set up, configured, tuned, and running, it must be routinely updated and continuously monitored to function effectively
     - Effective continuous monitoring encompasses 📝technology, 📝processes, and 📝people
     - Continuous monitoring steps are:
@@ -319,7 +321,7 @@ of litigation is imminent.
         - 🐍CAPEC, or Common Attack Pattern Enumeration and Classification, is a dictionary of known attack patterns.
         - 🐍STIX is the Structured Threat Information eXpression language used to describe threats in a standardized way
         - 🐍TAXII, the Trusted Automated eXchange of Indicator Information, defines how threat information can be shared and exchanged. 
-    - **Kill chain**: military model (used for both offense and defense):
+    - 🟦**Kill chain**: military model (used for both offense and defense):
         - find/identify a target through reconnaissance
         - get the target’s location
         - track the target’s movement
@@ -335,7 +337,7 @@ of litigation is imminent.
         - ♋**command and control**: attackers maintain a command and control system, which controls the target and other compromised systems. Social media is commonly used as a command-and-control system for botnet activity.
         - ♋**actions on objectives**: attackers execute their original goals such as theft of money, or data, destruction of assets, or installing additional malicious code (eg. ransomware)
 
-- **The MITRE ATT&CK Matrix**: (created by MITRE and viewable at attack.mitre.org) is a knowledge base of identified tactics, techniques, and procedures (TTPs) used by attackers in various attacks. It is complementary to kill chain models, such as the Cyber Kill Chain. However, unlike kill chain models, the tactics are not an ordered set of attacks. Instead, ATT&CK lists the TTPs within a matrix. Additionally, attackers are constantly modifying their attack methods, so the ATT&CK Matrix is a living document that is updated at least twice a year. The matrix includes the following tactics:
+- 🟦**The MITRE ATT&CK Matrix**: (created by MITRE and viewable at attack.mitre.org) is a knowledge base of identified tactics, techniques, and procedures (TTPs) used by attackers in various attacks. It is complementary to kill chain models, such as the Cyber Kill Chain. However, unlike kill chain models, the tactics are not an ordered set of attacks. Instead, ATT&CK lists the TTPs within a matrix. Additionally, attackers are constantly modifying their attack methods, so the ATT&CK Matrix is a living document that is updated at least twice a year. The matrix includes the following tactics:
      - Reconnaissance
      - Resource development
      - Initial access
@@ -1007,7 +1009,10 @@ of litigation is imminent.
 - The key BCP/DRP steps are:
     - 🚡Develop contingency planning policy
     - 🚡Conduct BIA (business Impact Analysis): During the business impact analysis phase, you must identify the business priorities of your organization to assist with the allocation of BCP resources. You can use this same information to drive the disaster recovery planning business unit prioritization.
-        - 📝Performing a Business Impact Analysis (BIA) is critical in developing a Business Continuity Plan (BCP) and a Disaster Recovery Plan (DRP). The BIA identifies all critical functions and processes so the organization can prioritize them based on criticality. The BIA also involves calculating risk for the identified business functions so that vulnerabilities are prioritized appropriately.
+        - 🎈BIA (business Impact Analysis): Performing a Business Impact Analysis (BIA) is critical in developing a Business Continuity Plan (BCP) and a Disaster Recovery Plan (DRP). The BIA identifies all critical functions and processes so the organization can prioritize them based on criticality. The BIA also involves calculating risk for the identified business functions so that vulnerabilities are prioritized appropriately.
+        - In business continuity planning, qualitative and quantitative evaluations are performed and relative priorities are established primarily during the Business Impact Analysis (BIA) stage.
+            - ⚒️Qualitative evaluations might consider impacts on intangibles such as customer reputation
+            - ⚒️Quantitative evaluations typically rely on calculations such as Single Loss Expectancy (SLE) and Annualized Loss Expectancy (ALE) to measure the impact on tangible assets.
     - 🚡Identify controls
     - 🚡Create contingency strategies
     - 🚡Develop contingency plan
