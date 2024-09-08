@@ -215,7 +215,8 @@ of litigation is imminent.
     - **Intrusion detection**: a specific form of monitoring events, usually in real time, to detect abnormal activity indicating a potential incident or intrusion
     - 🍀**Intrusion Detection System (IDS)**: a security service that monitors and analyzes network or system events for the purpose of finding/providing realtime/neartime warnings of unauthorized attempts to access system resources; automates the inspection of logs and real-time system events to detect intrusion attempts and system failures. It provides only 📝_passive_ responses, such as alerting administrators to a suspected attack
         - an IDS is intended as part of a defense-in-depth security plan
-        - An IDS is most likely to connect to a switch port configured as a mirrored port
+        - An IDS is most likely to connect to a switch port configured as a 📝mirrored port or a 📝Network TAP
+        - A network Traffic Access Point (TAP) is a physical device used to capture network flows between devices. A network TAP can only reproduce traffic and cannot alter or change the traffic as it flows through it. Network TAPs are commonly used when installing an Intrusion Detection System (IDS) 
         - 🍏Anomaly-based intrusion detection systems may identify a zero-day vulnerability because it deviates from normal patterns of activity. An anomaly-based IDS requires a 📝baseline, and it then monitors traffic for any anomalies or changes when compared to the baseline. It's also called 📝behavior based and 📝heuristics based. 
         - 🍏Pattern-based detection (also known as 📝knowledge-based detection and 📝signature-based detection) uses known signatures to detect attacks. A pattern-matching IDS (also known as signature-based detection) has a low false-positive rate.
             - 🍊**Host-­based IDSs (HIDSs)** can monitor activity on a single system only. A drawback is that attackers can discover and disable them. HIDS may be able to detect unauthorized processes running on a system. Host-based IDSs have some difficulty with detecting and tracking down DoS attacks.
@@ -224,7 +225,9 @@ of litigation is imminent.
     - NIST SP 800-94 Guide to Intrusion Detection and Prevention Systems provides comprehensive coverage of both IDS and IPS
     - They provide 📝active response to a security event.
     - A network-based intrusion prevention system (NIPS) is placed in line with the traffic and can prevent attacks from reaching an internal network
-    - NIPSs can also detect attacks using pattern-matching (also known as signature-based detection and knowledge-based detection). 
+    - An IPS makes forwarding decisions in real-time and must be strategically placed to be effective. An IPS can be installed between a router and a firewall, between two switches, between a switch and a router, or in any other location where the corporation wants to watch and control traffic that they do not want. Most commonly, it would be installed after the Internet-connected router and the first firewall.
+        - 🍊**NIPS** can also detect and protect against attacks using pattern-matching (also known as signature-based detection and knowledge-based detection). A NIPS can take action to prevent an attack. It operates at the network level and inspects packets flowing through the network. E.g Firepower, Fortigate NGFW, Palo Alto NGFW, Snort. It Operates at the network level, monitoring all traffic flowing through the network.
+        - 🍊**HIPS**: A HIPS protects individual hosts or endpoints by monitoring and analyzing activity at the host level, detecting malicious behavior, and stopping unauthorized actions. e.g McAfee Host Intrusion Prevention, CrowdStrike Falcon, Symantec Endpoint Protection (SEP). It  Operates at the host level, protecting individual devices or servers.
 - 7.2.2 ❄️**Security Information and Event Management (SIEM)**
     - NIST Special Publication 800-92, the Guide to Computer Security Log Management, describes four types of common challenges to log management:
         - 🔨Many log sources
@@ -715,7 +718,7 @@ of litigation is imminent.
 
 
 [7.8](#7.8) Implement and support patch and vulnerability management (OSG-9 Chpt 16)
-- Patch and vulnerability management processes work together to help protect an org against emerging threats; 📝patch management ensures that appropriate patches are applied, and 📝vuln management helps verify that systems are not vulnerable to known threats
+- Patch and vulnerability management processes 📝work together to help protect an org against emerging threats; 📝patch management ensures that appropriate patches are applied, and 📝vuln management helps verify that systems are not vulnerable to known threats
 - 📁**Patch Management**: systematic notification, identification, deployment, installation and verification of OS and app code revisions known as patches, hot fixes, and service packs  
     - an effective patch management program ensures that systems are kept up to date with current patches
     - An effective patch management program evaluates and tests patches before deploying them.
@@ -740,14 +743,17 @@ of litigation is imminent.
     - deploy the patches: after testing and approval, deploy the patches; many orgs use automated methods to deploy patches, via third-party or the software vendor
     - verify that patches are deployed: regularly test and audit systems to ensure they remain patched
 - 📁**Vulnerability Management**: regularly identifying vulns, evaluating them, and taking steps to mitigate risks associated with them. Vulnerability Management are activities necessary to identify, assess, prioritize, and remediate information systems weaknesses
+    - Vulnerability management is a systematic approach to identifying, evaluating, and mitigating security vulnerabilities in computer systems, networks, applications, and other digital assets.
+    - The primary objective of vulnerability management is to 📝proactively reduce the risk of potential security breaches and data compromises by addressing weaknesses in an organization's IT infrastructure before they can be exploited by malicious actors. 
     - it isn’t possible to eliminate risks, and it isn’t possible to eliminate all vulnerabilities
     - a vuln managment program helps ensure that an org is regularly evaluating vulns and mitigating those that represent the greatest risk
     - one of the most common vulnerabilities within an org is an unpatched system, and so a vuln management program will often work in conjunction with a patch management program
     - Vulnerability scanners are used to check systems for known issues and are part of an overall vulnerability management program.
-    - A vulnerability scan will list or enumerate all security risks within a system.
+    - A 📝vulnerability scan will list or enumerate all security risks within a system.
 
 [7.9](#7.9) Understand and participate in change management processes (OSG-9 Chpt 16)
 - 📁**Change management**: formal process an org uses to transition from the current state to a future state; typically includes mechanisms to request, evaluate, approve, implement, verify, and learn the change; ensures that the costs and benefits of changes are analyzed and changes are made in a controlled manner to reduce risks
+    - Change management is a structured and systematic approach used to manage the process of introducing modifications, updates, or alterations to an organization's systems, processes, technology, or infrastructure. The primary goal of change management is to minimize disruption, reduce risks, and ensure that changes are implemented smoothly and effectively while maximizing benefits and minimizing adverse impacts.
     - Change management processes allow various IT experts to review proposed changes for unintended consequences before implementing
     - 💥**Request For Change (RFC)**: documentation of a proposed change in support of change management activities. Each change should be the result of a reviewed and approved request for change (RFC). These RFCs may be approved by the change advisory board (CAB). 
     - Change management aims to ensure that any change does not result in unintended outages or reduce security. 
@@ -876,6 +882,7 @@ of litigation is imminent.
         - 📁**hot sites**: a fully operational offsite data processing facility equipped with hardware and software; a backup facility that is maintained in constant working order, with a full complement of servers, workstations, and comm links
             - a hot site is usually a subscription service
             - A site with dedicated storage and real-time data replication, often with shared equipment that allows restoration of service in a very short time.
+            - A hot site provides rapid recovery capabilities since it has all the resources required for instant function and connectivity of IT systems minus people and the most recent data.
             - the data on the primary site servers is periodically or continuously replicated to corresponding servers at the hot site, ensuring that the hot site has up-to-date data
             - ✏️contain workstations, servers, and the communications circuits necessary to achieve operational status as well as 🎆current data or near-­real-­time copies of the operational data
             - advantages:
@@ -1100,7 +1107,7 @@ of litigation is imminent.
     - 🍮**Perimeter intrusion detection and assessment system (PIDAS)**: an advanced form of fencing that has two or three fences used in concert to optimize security. A PIDAS (perimeter intrusion detection and assessment system) is a 📝fence system that has two or three fences used in concert to optimize security. The space between the fences can serve as a corridor for guard patrols or wandering guard dogs. One or more fences can support touch detection technologies. An exterior fence is used to keep animals and casual trespassers from accessing the main fence. This reduces the nuisance alarm rate (NAR) or false positives.
     - 🍮**Sensitive compartmented information facility (SCIF)** is often used by government and military agencies, divisions, and contractors to provide a secure environment for highly sensitive data storage and computation. An SCIF is typically located within a structure, although an entire structure can be implemented as an SCIF. 
     - 🍮**Gate**: controlled exit and entry point in a fence or wall
-    - 🍮**Turnstile**: form of gate that prevents more than one person at a time from gaining entry and often restricts movement in one direction
+    - 🍮**Turnstile**: form of gate that prevents more than one person at a time from gaining entry and often restricts movement in one direction. Turnstiles allow only one person to enter at a time. As one person swipes a badge and enters the data center, the turnstile restricts the following person. It's a method of preventing 📝tailgating, which happens when an unauthorized person follows an authorized person through an entrance.
     - 🍮**Access control vestibule**: (AKA mantrap) a double set of doors that is often protected by a guard or other physical layout preventing piggybacking and can trap individuals at the discretion of security personnel
         - A mantrap uses two sets of doors, only one of which can open at a time. A mantrap is a type of 📝preventive access control, although its implementation is a physical control.
     - 🍮**Security bollards**: a key element of physical security, which prevent vehicles from ramming access points and entrances
