@@ -78,6 +78,7 @@ of litigation is imminent.
         - the goal is to gather evidence that can be used to convict in court
         - the job of a security professional is to preserve evidence, ensure law enforcement has been contacted, and assist as necessary
         - follows the 📝beyond a reasonable doubt standard of proof
+        - Involving law enforcement is a complicated decision. Sometimes, it is legally mandated to notify law enforcement. However, in certain circumstances, involving law enforcement can potentially lead to incidents becoming public. Senior management should always be consulted before law enforcement is involved. A CISSP should remember the (ISC)² Code of Ethics and never allow themselves to become culpable for a crime.
     - 📕**civil**: non-criminal investigation for matters such as contract disputes
         - the goal of a civil investigation is to gather evidence that can be used to support a legal claim in court, and is typically triggered from an imminent or on-going lawsuit
         - the level of proof is much lower for a civil compared to a criminal investigation
@@ -236,6 +237,8 @@ of litigation is imminent.
         - 🔨Inconsistent log formats
     - A security information and event management (SIEM) tool is designed to centralize logs from many locations in many formats and to ensure that logs are read and analyzed despite differences between different systems and devices.
     - Security Information and Event Management (SIEM): systems that collects/ingest logs from multiple sources, compile and analyze log entries, and report relevant information
+    - A SIEM system aggregates the system logs from multiple systems. The SIEM then correlates the logs from the many sources within the network to 'connect the dots' and determine if there has been a likely compromise. This generates the Indication of Compromise 📝(IoC). Using a SIEM, an administrator can create reports that show access history and are useful for security personnel to verify physical or logical access.
+        - A SIEM can be configured to generate alerts if certain logs or patterns are observed.
         - SIEM systems are complex and require expertise to install and tune
         - Provide real-time monitoring, traffic analysis, & notification of potential attack (Traffic analysis focuses more on the patterns and trends of data rather than the actual content)
         - require a properly trained team that understands how to read and interpret info, and escalation procedures to follow when a legitimate alert is raised
@@ -414,6 +417,8 @@ of litigation is imminent.
         - prevemts employees from developing familiarity with security controls over time and finding ways to bypass them.
         - job rotation policy can act as both a deterrent and a detection mechanism
         - Job rotation and separation of duties policies help prevent fraud.
+        - job rotation also Provides peer review, Reduces fraud, Enables cross-training
+        - The purpose of job rotation is to act as a deterrent and a detection tool. If one knows that someone will be taking over their job functions soon, they are less likely to participate in fraudulent activities. If someone does do something fraudulent, job rotation increases the likelihood it will be discovered through a peer review when someone rotates into that job and is cross-trained on responsibilities. A peer review is performed, effectively, when someone rotates into a job. It is necessary to figure out where the last person left off in order to get to work. This peer review could either detect fraud or, knowing it will happen, reduce the likelihood of it ever happening.
         - Job rotation helps ensure that multiple people can do the same job and can help prevent the organization from losing information when a single person leaves.
         -  Job rotation of duties is effective in preventing security breach where employee has found ways of bypassing intended safeguards., as it would help prevent from having sufficient time in thier role to discover and exploit weaknesses in the system.
 - 7.4.5 Service Level Agreements (SLA)
