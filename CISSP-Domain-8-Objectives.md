@@ -732,7 +732,7 @@ inputs and outputs to inform the test plan.
     - 🔥Viruses: Programs that replicate themselves and infect other files on a computer. Require humn intervention to replicate.
     - 🔥Trojans: Programs that appear legitimate but perform malicious activities when executed. Trojan horses masquerade as useful software but then carry out malicious functions after installation.  A well-designed Trojan won’t have any noticeable differences from legitimate software to the end-user. Administrators should ensure the software is signed by a trusted software provider to reduce the likelihood of a Trojan being introduced into the environment.
     - 🔥Ransomware: Encrypts files on a victim's system and demands ransom for decryption.
-    - 🔥Spyware: Secretly gathers information about a user's activities.
+    - 🔥Spyware: Secretly gathers information about a user's activities. Spyware is malicious software that covertly gathers information from a user's device. It monitors online activities, collects sensitive data, and can track keystrokes or capture personal information, compromising privacy and security without user consent. 
     - 🔥Adware: Displays unwanted advertisements. classed as potentially unwanted programs (PUPs)
     - 🔥Worms: 📝Self-replicating malware that spreads over networks. e.g stuxnet, code red worm. Worms are malicious code objects that move between systems under their own power, whereas viruses require some type of human intervention.
     - 🔥Rootkits: Conceal the existence of malware or malicious processes. it is commonly used for 🧠privilege escalation. Privilege escalation attacks, such as those carried out by rootkits, seek to upgrade normal user accounts to administrative
