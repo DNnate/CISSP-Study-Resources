@@ -37,6 +37,7 @@
     - IT staff may perform security assessments to evaluate the security of their systems and applications. However, audits must be performed by internal or external auditors who are independent of the IT organization.
     - 
 - 📂**Security Audit**: Security audits are performed by accredited, 📝third-party auditors. They are designed to prove to regulators or customers that the organization’s security controls meet the requirements of a particular regulation or standard. An organization’s audit strategy will depend on its size, industry, financial status and other factors
+    - Security audits are performed to validate that security controls have been implemented and work as desired. Security audits generally compare results against an 📝external standard.
     - Unlike security assessments, security audits are generally performed by an 📝external group to prevent conflicts of interest.
     - The audience of a security audit report would be people outside of the company's day-to-day operations, such as the board of directors, government regulators, or third parties.
     - a small non-profit, a small private company and a small public company will have different requirements and goals for their audit strategies
@@ -221,23 +222,27 @@
             - 🔖False positives occur when scans report the presence of a vulnerability that does not actually exist.
             - 🔖False negatives occur when scans report that no vulnerability exists when one does, in fact, exist.
     - Penetration tests are normally categorized into three groups:
-        - 🔴**white-box penetration test (crystal)**:
+        - 🔴**white-box penetration test (crystal or Open-box or Clear-box)**:
             - provides the attackers with **detailed information** about the systems they target
             - this bypasses many of the reconnaissance steps that normally precede attacks, shortening the time of the attack and increasing the likelihood that it will find security flaws
             - When the penetration testers are provided detailed information, it is referred to as a full-knowledge test (white box).
             - these tests are sometimes called "**known environment**" tests
             - To fully test code, a white-box test is required. Without full visibility of the code, error conditions or other code could be missed.
+            - Open-box (formerly white) testing is the exact opposite, where the penetration tester has full knowledge of the environment. This test is sometimes more accurate, providing fewer false positives of vulnerabilities and leaving no stone unturned.
+            - This is more likely to find and exploit vulnerabilities used by insider threats. 
         - 🔴**gray-box penetration test**:
             - AKA **partial knowledge tests**, these are sometimes chosen to balance the advantages and disadvantages of white- and black-box penetration tests
             - In a gray-box test, the tester evaluates the software from a user perspective but has access to the source code as the test is conducted.
             - In grey-box or partial testing, the penetration testers are provided with partial information before testing. This can help the tester potentially find vulnerabilities and exploit them more than if the tester knew no information about the environment before testing.
             - this is particularly common when black-box results are desired but costs or time constraints mean that some knowledge is needed to complete the testing
+            - Partial-box (formerly grey) testing is when the tester has some internal knowledge of the environment.
             - these tests are sometimes called "**partially known environment**" tests
-        - 🔴**black-box penetration test**:
+        - 🔴**black-box penetration test (Closed-box or Zero-knowledge testing)**:
             - does not provide attackers with any information prior to the attack
             - this simulates an external attacker trying to gain access to information about the business and technical environment before engaging in an attack
             - When the penetration testers are provided no information, it is referred to as a zero-knowledge test (black box). 
             - these tests are sometimes called "**unknown environment**" tests
+            - With closed-box (formerly black) testing, the penetration tester isn't given any prior knowledge of the network and has very little or no information to work with. It is commonly referred to as the most realistic test, as it provides the same point of view as an outside attacker.
         - 🔴**physical or internal penetration test**:
             - If the penetration testers are provided building and system access they could be performing a physical test or an internal test
 - **Excersice Types**:
