@@ -526,6 +526,7 @@ of litigation is imminent.
     - At this point, the goal is to start returning to normal
     - Recovery is the next step, 📝returning a system to a fully functioning state
     - The most secure method of restoring a system after an incident is completely rebuilding the system from scratch, including restoring all data from the most recent backup
+    - Initiating a BCP is always part of a recovery activity. Recovery controls bring non-functional equipment/servers/data centers/etc. back to a normal state. 
         - effective configuration and change management will provide the necessary documentation to ensure the rebuilt systems are configured properly
     - According to the OGS, you should check these areas as part of recovery:
         - access control lists (ACLs), including firewall or router rules
@@ -752,6 +753,12 @@ of litigation is imminent.
     - An effective patch management program evaluates and tests patches before deploying them.
     - A patch management system ensures that systems have required patches. In addition to deploying patches, it would also check the systems to verify they accepted the patches.
     - 📝Vulnerability scanning can help discover systems that still require patching. Vulnerability scans should be performed periodically on production environments.
+    - Some of the key steps in a patch management program include:
+        - 🆎Evaluate Patches: Determine whether the organization needs to deploy the patch
+        - 🆎Test Patches: Test patches on a non-production system to ensure that they do their job and don’t create other issues
+        - 🆎Approve Patches: Approve tested patches for deployment in production, potentially via a change management process
+        - 🆎Deploy Patches: Deploy patches to production systems, potentially using automation
+        - 🆎Verify Patch Deployment: Test patches to ensure that they were applied correctly and fix the vulnerability
     - **Patch**: (AKA updates, quick or hot fixes) a blanket term for any type of code written to correct bug or vulnerability or to improve existing software performance; when installed, a patch directly modifies files or device settings without changing the version number or release details of the related software comonent
     - in the context of security, admins are primarily concerned with security patches, which are patches that affect a system’s vulns
     - When patches are introduced to fix a security weakness in the system, they help mitigate risk
@@ -972,6 +979,7 @@ of litigation is imminent.
         - 🔥RAID 0—📝Striping: provides significant speed, writing and reading advantages. Requires minimum of 📝2 drives. offers no 🚫redundancy. RAID level 0 is also known as disk striping. When implementing RAID 0 (striping) with two 50 GB drives, the effective capacity of your disks is simply the sum of both drives since RAID 0 doesn’t use any space for redundancy. It distributes (stripes) data evenly across both drives, maximizing storage capacity.
         - 🔥RAID 1—📝Mirroring: uses redundancy to provide reliable availability of data. Requires minimum of 📝2 drives. sacrifices 🚫performance. RAID 1 is called disk mirroring. When implementing RAID 1 (mirroring) with two 50 GB drives, the effective capacity is equal to the capacity of just one of the drives because the second drive is used to duplicate (mirror) the data for redundancy.
         - 🔥RAID 3: This level uses byte-level striping with a dedicated parity disk. It provides fault tolerance but can become a bottleneck because all parity calculations are handled by a single disk. It is less common compared to RAID 5 and RAID 6. RAID 3 requires a minimum of 📝3 drives because it uses dedicated parity for fault tolerance. So, the effective capacity of your disks in RAID 3 with 3 drives of 50 GB each is 100 GB.
+        - 🔥RAID 4 provides fault tolerance and improved performance by striping data across multiple drives, similar to RAID-3.
         - 🔥RAID 10—📝Mirroring and Striping: requires a minimum of 📝four drives and provides the benefits of striping (speed) and mirroring (availability) in one solution; this type of RAID is typically one of the most expensive. RAID 10 is known as a stripe of mirrors. When implementing RAID 10 (a combination of RAID 1 + RAID 0) with 4 drives of 50 GB each, half of the drives are used for mirroring (RAID 1), and the other half are used for striping (RAID 0). So, the effective capacity of your disks in RAID 10 is 100 GB. RAID 10 may protect against two drive failures, depending on which drives fail.
         - 🔥RAID 5—📝Parity Protection: requires a minimum of three drives and provides a cost-effective balance between RAID 0 and RAID 1; RAID 5 utilizes a parity bit, computed from an XOR operation, for purposes of storing and restoring data. RAID level 5 offers both redundancy and fault tolerance by using striping with distributed parity. It uses 📝three or more disks, with 📝one disk containing parity information used to restore data to another disk in the event of failure. When used with three disks, RAID 5 is able to withstand the loss of a single disk. RAID 5 is called disk striping with parity.
             - When implementing RAID 5 with 3 drives of 50 GB each, one drive's worth of capacity is used for parity, which provides fault tolerance. The remaining capacity is used for data storage. So, the effective capacity of your disks in RAID 5 with 3 drives of 50 GB each is 100 GB.
@@ -1107,6 +1115,7 @@ of litigation is imminent.
         - A structured walk-through test occurs in the 📝conference room where team members talk through a scenario using their plan. The completeness of the plan is assessed before they leave the conference room and attempt any actions on any systems.
         - The idea is to talk through the steps that have been documented to see if it has all of the correct steps and that they appear to be in the Disaster Recovery Plan (DRP). It is called a tabletop exercise because the team sits around a conference table to talk through the steps
         - It's important to have a structured walk-through before a live disaster test to adequately prepare and complete all necessary implementations.
+        - tabletop plans prioritizes cost and minimal disruption over realism
 - 7.12.3 Simulation
     - 📙**Simulation tests**: similar to the structured walk-throughs, where team members are presented with a scenario and asked to develop an appropriate response
         - unlike read-throughs and walk-throughs, some of these response measures are then tested
