@@ -24,6 +24,7 @@
     - during a security assessment, a trained information security professional performs a risk assessment that identifies vulnerabilities in the tested environment that may allow a compromise and makes recommendations for remediation, as needed
     - a security assessment includes the use of security testing tools, but go beyond scanning and manual penetration tests. Security assessments are comprehensive reviews of the security of a system, application, or other tested environments. During a security assessment, a trained information security professional performs a risk assessment that identifies vulnerabilities in the environment that may allow a compromise and makes recommendations for remediation.
     - Security assessments involve a trained professional performing a comprehensive review of the environment under test. It is a more thorough assessment of the security of the threat environment than a security test.
+    - Security assessments are generally performed at the direction of 📝senior management. They evaluate the effectiveness of the organization's information security program. Reports should be written in non-technical language that management can understand. More technical info can be distributed by management to their teams to implement the report's recommendations.
         - 🛠️Security Controls Tests: are conducted to verify that a control reduces risk to an acceptable level. Security tests validate that a security control is doing its job. They range from fully-automated scans to manual penetration testing. Among other things, these tests can include scans, penetration tests, and social engineering. A score can be given if needed, but the purpose is not to generate a score. Security testing comes in a variety of different forms. Some of the main types include:
             - ✈️Penetration testing: Penetration testing includes vulnerability assessments but also attempts to exploit the vulnerabilities that they discover. Additionally, they involve more manual testing than a fully-automated vulnerability scan.
             - ✈️Vulnerability assessments: Vulnerability assessments use automated tools to identify vulnerabilities within an organization’s systems, including networks, web applications, and databases. Typically, these check an application against the list of Common Vulnerabilities and Exposures (CVEs) to identify known issues. These vulnerabilities are scored using the Common Vulnerability Scoring System (CVSS), which helps in identifying how severe the vulnerability is.
@@ -382,6 +383,7 @@
         - NIST 800-115 (🎤Planning, 🎤Discovery, 🎤Attack, 🎤Reporting)
         - FedRAMP Penetration Test Guidance
         - PCI DSS Information Supplemental on Penetration Testing Note📝 PCI DSS requires a rescan of  application at least annually and after any change in the application.
+        - 📝Infection Monkey is an open-source Breach Attack Simulation (BAS) program, which can be found on Github or the Akamai website.
 
 - 6.2.10 🔴Compliance checks
     - Orgs should create and maintain compliance plans documenting each of their regulatory obligations and map those to the specific security controls designed to satisfy each objective
@@ -428,6 +430,7 @@
         - 👽repeat audit findings
         - 👽number of account compromise
         - 👽number of times user attempts to visit known malicious sites
+        - 👽Number of times a malicious IP address is blocked before and after a new security rule is implemented
     - Develop a dashboard of metrics and track them
     - There are many key performance indicators(KPIs) that are relevant to 📝physical security. Some are:
         - 🩹number of successful intrusions
