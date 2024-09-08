@@ -143,6 +143,7 @@ of litigation is imminent.
             - tag, 
             - bag, and 
             - carry the evidence
+    - Generally, It is critical that evidence is related to the case. It must be convincing and reliable (at least in most legal systems).
     - Five rules of evidence: five evidence characteristics providing the best chance of surviving legal and other scrutiny:
         - 🚦**authentic**: evidence is not fabricated or planted, and can be proven through crime scene photos, or bit-for-bit copies of storage
         - 🚦**accurate**: evidence that has integrity (not been modified)
@@ -379,7 +380,8 @@ of litigation is imminent.
 - 7.4.2 Separation of Duties (SoD) and responsibilities
     - 💥**Separation of Duties (SoD)**: ensures that no single person has total control over a critical function or system
         - SoD policies help reduce fraud by requiring collusion between two or more people to perform unauthorized activity
-        - A separation of duties (SoD) policy prevents a single person from controlling all elements of a process. When applied to security settings, it can prevent a person from making major security changes without assistance
+        - A separation of duties (SoD) policy prevents a single person from controlling all elements of a process. When applied to security settings, it can prevent a person from making major security 📝changes without assistance.
+        - It adds additional oversight by involving multiple individuals.
         - example of how SoD can be enforced, is by dividing the security or admin capabilities and functions among multiple trusted individuals
         - example Separation of duties applied to a situation where the same person may not have both the ability to initiate a request and the ability to approve a request. 
     - 💥**Two-person control**: (AKA two-man rule) requires the approval of two individuals for critical tasks
@@ -907,13 +909,12 @@ of litigation is imminent.
             - interference: electrical noise, faulty equipment, and other factors may corrupt the contents of packets
     - **Fault tolerance**: the ability of a system to suffer a fault but continue to operate
     - **Redundant array of independent disks (RAID)**: refers to multiple drives being used in unison in a system to achieve greater speed or availability; the most well-known RAID levels are:
-        - 🔥RAID 0—Striping: provides significant speed, writing and reading advantages. Requires minimum of 📝2 drives. offers no redundancy. RAID level 0 is also known as disk striping. 
-        - 🔥RAID 1—Mirroring: uses redundancy to provide reliable availability of data. Requires minimum of 📝2 drives. sacrifices performance. RAID 1 is called disk mirroring. 
-        - 🔥RAID 3: This level uses byte-level striping with a dedicated parity disk. It provides fault tolerance but can become a bottleneck because all parity calculations are handled by a single disk. It is less common compared to RAID 5 and RAID 6.
-        - 🔥RAID 10—Mirroring and Striping: requires a minimum of 📝four drives and provides the benefits of striping (speed) and mirroring (availability) in one solution; this type of RAID is typically one of the most expensive. RAID 10 is known as a stripe of mirrors.
-        - 🔥RAID 5—Parity Protection: requires a minimum of three drives and provides a cost-effective balance between RAID 0 and RAID 1; RAID 5 utilizes a parity bit, computed from an XOR operation, for purposes of storing and restoring data. RAID level 5 offers both redundancy and fault tolerance by using striping with distributed parity. t uses 📝three or more disks, with one disk containing parity information used to restore data to another disk in the event of failure. When used with three disks, RAID 5 is able to withstand the loss of a single disk. RAID 5 is called disk striping with parity. 
-
-
+        - 🔥RAID 0—📝Striping: provides significant speed, writing and reading advantages. Requires minimum of 📝2 drives. offers no 🚫redundancy. RAID level 0 is also known as disk striping. When implementing RAID 0 (striping) with two 50 GB drives, the effective capacity of your disks is simply the sum of both drives since RAID 0 doesn’t use any space for redundancy. It distributes (stripes) data evenly across both drives, maximizing storage capacity.
+        - 🔥RAID 1—📝Mirroring: uses redundancy to provide reliable availability of data. Requires minimum of 📝2 drives. sacrifices 🚫performance. RAID 1 is called disk mirroring. When implementing RAID 1 (mirroring) with two 50 GB drives, the effective capacity is equal to the capacity of just one of the drives because the second drive is used to duplicate (mirror) the data for redundancy.
+        - 🔥RAID 3: This level uses byte-level striping with a dedicated parity disk. It provides fault tolerance but can become a bottleneck because all parity calculations are handled by a single disk. It is less common compared to RAID 5 and RAID 6. RAID 3 requires a minimum of 📝3 drives because it uses dedicated parity for fault tolerance. So, the effective capacity of your disks in RAID 3 with 3 drives of 50 GB each is 100 GB.
+        - 🔥RAID 10—📝Mirroring and Striping: requires a minimum of 📝four drives and provides the benefits of striping (speed) and mirroring (availability) in one solution; this type of RAID is typically one of the most expensive. RAID 10 is known as a stripe of mirrors. When implementing RAID 10 (a combination of RAID 1 + RAID 0) with 4 drives of 50 GB each, half of the drives are used for mirroring (RAID 1), and the other half are used for striping (RAID 0). So, the effective capacity of your disks in RAID 10 is 100 GB.
+        - 🔥RAID 5—📝Parity Protection: requires a minimum of three drives and provides a cost-effective balance between RAID 0 and RAID 1; RAID 5 utilizes a parity bit, computed from an XOR operation, for purposes of storing and restoring data. RAID level 5 offers both redundancy and fault tolerance by using striping with distributed parity. It uses 📝three or more disks, with one disk containing parity information used to restore data to another disk in the event of failure. When used with three disks, RAID 5 is able to withstand the loss of a single disk. RAID 5 is called disk striping with parity.
+            - When implementing RAID 5 with 3 drives of 50 GB each, one drive's worth of capacity is used for parity, which provides fault tolerance. The remaining capacity is used for data storage. So, the effective capacity of your disks in RAID 5 with 3 drives of 50 GB each is 100 GB.
 
     | Backup Method | Cost Implications                                                          | Time Implications for RPO                      |
     |---------------|----------------------------------------------------------------------------|-----------------------------------------------|
@@ -1088,7 +1089,7 @@ of litigation is imminent.
 - Physical access control mechanisms deployed to control, monitor and manage access to a facility
     - Sections, divisions, or areas within a site should be clearly designated as public, private, or restricted with appropriate sinage
 - 7.14.1 Perimeter security controls
-    - 🍮**Fence** is a perimeter-defining (outdoor) device and can consist of:
+    - 🍮**Fence** is a perimeter-defining (outdoor) device. Fences should be at least 📝eight feet/two to three meters tall with barbed wire at the top for adequate deterrence. Fences can consist of:
         - stripes painted on the ground
         - chain link fences
         - barbed wire
