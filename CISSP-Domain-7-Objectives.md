@@ -408,7 +408,8 @@ of litigation is imminent.
         - using job rotation as a security control provides peer review, reduces fraud, and enables cross-training
         - job rotation policy can act as both a deterrent and a detection mechanism
         - Job rotation and separation of duties policies help prevent fraud.
-        - Job rotation helps ensure that multiple people can do the same job and can help prevent the organization from losing information when a single person leaves. 
+        - Job rotation helps ensure that multiple people can do the same job and can help prevent the organization from losing information when a single person leaves.
+        -  Job rotation of duties is effective in preventing security breach where employee has found ways of bypassing intended safeguards., as it would help prevent from having sufficient time in thier role to discover and exploit weaknesses in the system.
 - 7.4.5 Service Level Agreements (SLA)
     - 💢**Service Level Agreement (SLA)**: an agreement between an organization and an outside entity, such as a vendor, where the SLA stipulates performance expectations and often includes penalties if the vendor doesn’t meet these expectations. A service level agreement, or SLA, contains details about how the service will be provided, what level of outages or downtime is acceptable, and what remedies may exist in the case of outages or other issues. 
     - 💢**Memoradum of Understanding (MOU)**: documents the intention of two entities to work together toward a common goal
