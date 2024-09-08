@@ -302,12 +302,14 @@
             4) inspection
             5) rework
             6) follow-up
-    - 🔖**Static application security testing (SAST)**: evaluates the security of software without running it by analyzing either the source code or the compiled application. Static reviews are typically performed by an automated tool.
+    - 🔖**Static application security testing (SAST)**: evaluates the security of software without running it by analyzing either the source code or the compiled application, but not a running application. Static reviews are typically performed by an automated tool.
     - 🔖**Dynamic application security testing (DAST)**: evaluates the security of software in a runtime environment and is often the only option for organizations deploying applications written by someone else. Dynamic testing is also used to determine how code handles variables that change over time.
+    - 🔖**Interactive Application Security Testing (IAST)** involves analyzing a running application while also looking at the source code as it is being accessed. 
 
 - 6.2.6 Misuse case testing
     - 🔨**Misuse case testing**: used by software testers to evaluate the vulnerability of their software to known risks
         - In misuse case testing, testers first enumerate the known misuse cases, then attempt to exploit those use cases with manual or automated attack techniques
+        - Misuse testing is a type of testing that involves trying to accomplish more than the user should be able to do when using a running piece of software.
         - a list of possible ways that an attacker might exploit the application is identified, and testers work through each scenario, testing the application to see if it is vulnerable to that exploit
         - Misuse case testing is commonly used to describe abuse case testing, but its focus is on testing to ensure 📝incorrect inputs or other types of misuse don't reveal any information about company servers or software.
     - 🔨**Abuse case testing**: Abuse case testing is a test to determine if a website, its hardware, software, and interactions with customers have security 📝vulnerabilities that could be used by attackers..
