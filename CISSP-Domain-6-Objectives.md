@@ -415,7 +415,7 @@
         - 🎤act: formally do the management review
 
 - 6.3.3 🔴Key performance and risk indicators
-    - 🍮**Key Performance Indicator (KPIs)**:KPIs help evaluate a process's health.  measures that provide significance of showing the performance an Information Security Management System ISMS compared to stated goals. KPIs are used to determine how effective practices, procedures, and staff are. Key Performance Indicators (KPIs) are a class of metrics used to measure activity success. KPI measurements enable performance to be tracked, trended, monitored, and prioritized or targeted for improvement. Examples of KPIs include, "percent of system uptime" and "mean time to detect."
+    - 🍮**Key Performance Indicator (KPIs)**:KPIs help evaluate a process's health.  measures that provide significance of showing the performance an Information Security Management System ISMS compared to stated goals. KPIs are used to determine how effective practices, procedures, and staff are. Key Performance Indicators (KPIs) are a class of metrics used to measure activity success. KPI measurements enable performance to be tracked, trended, monitored, and prioritized or targeted for improvement.  KPIs are primarily utilized within 📝operations management. Examples of KPIs include, "percent of system uptime" and "mean time to detect."
         - Choose the factors that can show the state of security
         - Define baselines for some (or better yet all) of the factors
         - Develop a plan for periodically capturing factor values (use automation!)
