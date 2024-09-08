@@ -367,8 +367,8 @@
         - C, C++, and Java are all compiled languages—a compiler produces an executable file that is not human-readable
         - **Decompilers**: convert binary executable back into source code
     - ⚒️**Interpreted language**: uses an interpreter to execute;sourcecode is viewable; e.g. Python, R, JavaScript, VBScript. 📝JavaScript remains the one mobile code technology that may affect the security of modern browsers and their host OSs. JavaScript is an interpreted language so the code is not compiled prior to execution, allowing you to inspect the contents of the code. 
-    - ⚒️**Object-oriented programming (OOP)**: defines an object to be set of a software that offers one or more methods, internal to the object, that software external to that object can request to access; each method may require specific inputs and resources and may produce a specified set of outputs; focuses on the objects involved in an interaction
-        - OOP languages include C++, Java, and .NET
+    - ⚒️**Object-oriented programming (OOP)**: defines an object to be set of a software that offers one or more 📝methods, internal to the object, that software external to that object can request to access; each method may require specific inputs and resources and may produce a specified set of outputs; focuses on the objects involved in an interaction. OOP is the concept that there are objects that applications are created from. An object contains data and code. Data are fields that are sometimes called attributes or properties. The codes are procedures or methods.
+        - OOP languages include 📝C++, 📝Java, and 📝.NET
         - think of OOP as a group of objects that can be requested to perform certain operations or exhibit certain behaviors, working together to provide a system’s functionality or capabilities
         - OOP has the potential to be more reliable and to reduce the propagation of program change errors, and is better suited to modeling or mimicking the real world
         - each object in the OOP model has methods that correspond to specific actions that can be taken on the object
@@ -390,18 +390,19 @@
                 - lower coupling: means less interaction
                 - lower coupling provides better software design because objects are more independent, and code is easier to troubleshoot and update
     
-- 8.2.2 Libraries
+- 8.2.2 🔴Libraries
     - **Software library (Code Libraries)**: a pre-written collection of components (classes, procedures, scripts etc) that do specific tasks, useful to other components (e.g. software libraries for encryption algorithms, managing network connections, or displaying graphics)
     - Shared software libraries contain 📝reusable code, improving developer's efficiency, and reducing the need to write well-known algorithms from scratch; often available as open source
     - Code libraries are packages of reusable functions that may be incorporated into individual development projects.
         - shared libraries can also include many security issues (e.g. Heartbleed), and devs should be aware of the origins of the shared code that they use, and keep informed about any security vulns that might be discovered in these libraries
-        - 📝Code repositories may be used to manage the distribution and updating of these libraries.
+        - ⚒️**Code repositories** are collections of code made by many people, typically open for the use of others. An example of this would be Github.  📝Code repositories may be used to manage the distribution and updating of these libraries.
+        - ⚒️**Dynamic Link Libraries (DLLs)** are usually 📝functions meant to be used with a specific coding language for a specific purpose. For example, there are many DLLs for creating machine learning AI in Python. These libraries allow the AI to have data for use when communicating with a person. The AI would possess a library in their code, which would tell them how to respond to specific statements.
         - 🔥OWASP recommends four critical best practices for libraries and frameworks:
             - 🔨using libraries and frameworks from trusted sources that are broadly used and well maintained
             - 🔨maintaining an inventory of third-party libraries
             - 🔨updating libraries and components proactively
             - 🔨reducing attack surface by limiting what functions can be used.
-        - **Software Development Kits SDK**: Organizations trying to make libraries more accessible to developers often publish SDKs. SDKs are collections of software libraries combined with documentation, examples, and other resources designed to help programmers get up and running quickly in a development environment. SDKs also often include specialized utilities designed to help developers design and test code.
+        - ⚒️**Software Development Kits SDK**: Organizations trying to make libraries more accessible to developers often publish SDKs. SDKs are collections of software libraries combined with documentation, examples, and other resources designed to help programmers get up and running quickly in a development environment. SDKs also often include specialized utilities designed to help developers design and test code.
     
 - 8.2.3 Tool sets
     - Forcing all devs to use the same toolset can reduce productivity and job satisfaction; however letting every dev choose their own tools and environment widens an organization's attack surface
@@ -455,9 +456,10 @@
         - Static testing performs code analysis in an offline fashion, without actually executing the code.
     - 📗**Dynamic Application Security Testing (DAST)**: (Outside In)  AKA dynamic analysis, is the evaluation of a program while running in real time
         - tools that execute the software unit, application or system under test, in ways that attempt to drive it to reveal a potentially exploitable vulnerability
+        - DAST testing evaluates application security through the use of scanning, enumeration, and synthetic transaction activities performed against the application's runtime services.
         - Dynamic testing evaluates code in a runtime environment.
         - Dynamic testing of software typically occurs in a black-box environment where the tester does not have access to the source code. 
-        - Tester has NO knowledge of the underlying framework, design, source code and implementation
+        - Tester has 🚫NO knowledge of the underlying framework, design, source code and implementation
         - It is by definition a form of black-box testing
         - DAST is usually performed once a program has cleared SAST and basic code flaws have been fixed 
         - DAST enables devs to trace subtle logical errors that are likely to cause security problems, without the need to create artificial error-inducing scenarios
