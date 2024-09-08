@@ -685,6 +685,8 @@ of litigation is imminent.
     - Using a sandbox is an example of confinement, where the system restricts the access of a particular process to limit its ability to affect other processes running on the same system.
     - Sandboxing is commonly utilized by next-generation antimalware solutions to evaluate suspect executables in a secure, isolated environment.
     - Sandboxed environments are often enabled through virtualization technology, which prevents software executed within the sandboxed environment from interacting with the environment outside of the sandbox, except in controlled ways.
+    - Sandboxing executes potential malware in an isolated environment that includes monitoring capabilities. This helps to identify potential malware before it is delivered to its intended destination.
+    - Sandboxing is also used in mobile devices to isolate apps from one another.
 - 7.7.6 Honeypots/honeynets
     - 🍏**Honeypots**: individual computers created as a trap or a decoy for intruders or insider threats. A pseudoflaw is a false vulnerability in a system that may distract an attacker. These are often used in honeypot system to consume an attacker's time while alerting administrators. Administrators of honeypots need to be careful not to solicit attackers into attacking a honeypot, as this is considered entrapment and is illegal. They should not be made too weak as more knowledgeable attackers will figure out that it is a honeypot much quicker and move on, possibly to critical business systems.
     - 🍏**Honeynet**: two or more networked honeypots used together to simulate a network
@@ -986,7 +988,7 @@ of litigation is imminent.
         - 🔥RAID 6 - Similar to RAID-5, however, 📝two sets of parity are written to each drive. This allows for two drives to fail without causing the RAID to fail. This provides redundancy, but the usable storage is reduced by two drive's worth of storage. RAID 6 requires at least 📝4 drives, as it uses two drives for parity, allowing for better fault tolerance (two simultaneous drive failures).  If you had 4 drives of 50 GB each, the effective capacity would be Total capacity - Size of two drives (used for parity) i.e 100 GB. RAID 6 protects against two drive failures.
         - 🧯If four drives at 100GB each are used, you get the following results for each RAID level:
             - 🧠RAID-0 – 400GB of usable space with no fault-tolerance.
-            - 🧠RAID-1 – 100GB of usable space with 3x fault-tolerance.
+            - 🧠RAID-1 – 200GB of usable space with 2x fault-tolerance (1 from each mirrored pair). usable storage is reduced by 50% of your total storage
             - 🧠RAID-10 – 200GB of usable space with ~2x fault-tolerance.
             - 🧠RAID-5 – 300GB of usable space with 1x fault-tolerance.
             - 🧠RAID-6 – 200GB of usable space with 2x fault-tolerance.
