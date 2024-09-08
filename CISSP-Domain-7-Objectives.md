@@ -356,12 +356,14 @@ of litigation is imminent.
     - Configuration Management is used to ensure secure 📝baselines on systems are adequately maintained, and any deviations are authorized and documented. Configuration management seeks to establish safe, reliable configurations for systems.
 - 🚡**Provisioning**: taking a particular config baseline, making additional or modified copies, and placing those copies into the environment in which they belong; refers to installing and configuring the operating system and needed apps on new systems
     - new systems should be configured to reduce vulnerabilities introduced via default configurations; the key is to harden a system based on intended useage
-- 🚡**Hardening a system**: process of applying security configurations, and locking down various hardware, communications systems, software (e.g. OS, web/app server, apps etc); normally performed based on industry guidelines and benchmarks like the Center for Internet Security ⚖️(CIS); The CIS benchmarks provide a useful security standard and baseline to assess systems against or to configure them to. Organizations can adapt and modify the baseline to meet their specific needs while speeding up deployment by using an accepted industry standard. 
+- 🚡**System Hardening**: process of applying security configurations, and locking down various hardware, communications systems, software (e.g. OS, web/app server, apps etc); normally performed based on industry guidelines and benchmarks like the Center for Internet Security ⚖️(CIS); The CIS benchmarks provide a useful security standard and baseline to assess systems against or to configure them to. Organizations can adapt and modify the baseline to meet their specific needs while speeding up deployment by using an accepted industry standard. 
     - makes it more secure than the default configuration and includes the following:
         - 🎈disable all unused services
         - 🎈close all unused logical ports
         - 🎈remove all unused apps
         - 🎈change default passwords
+    - The goal of system hardening is to reduce the attack surface available for an attacker to try to access.
+    - Once a system is hardened, that state should be the baseline.
 - 🚡**Baseline**: in the context of configuration management, it is the starting point or starting config for a system
     - an easy way to think of a baseline is as a list of services; an OS baseline identifies all the settings to harden specific systems
     - many organizations use images to deploy baselines; baseline images improve the security of systems by ensuring that desired security settings are always configured correctly
