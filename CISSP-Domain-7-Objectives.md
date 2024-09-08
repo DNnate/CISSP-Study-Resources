@@ -824,6 +824,7 @@ of litigation is imminent.
     - Three types of backups:
         - **📁Full backup**: store a complete copy of the data contained on the protected device or backup media; full backups duplicate every file on the system regardless of the setting of the archive bit
         - **📁Incremental backup**: captures changes since the last  full or incremental backup
+            -  Incremental backup is used in conjunction with full backups. The incremental backups copy the files that have been changed or created since the last backup, either incremental or full.
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - once an incremental backup is complete, the archive bit on all duplicated files is reset, turned off, or set to 0
             - Incremental backups provide the option that includes the 📝smallest amount of data. In this case, that would be only the data modified since the most recent incremental backup.
@@ -856,8 +857,9 @@ of litigation is imminent.
     | **Best Use Case**     | When backup time and storage space are not issues Ideal for less frequent backups | Suitable for environments where daily changes are minimal and quick backups are necessary | Ideal for environments where storage space is a concern but restoration time needs to be relatively quick |
 
     - Three main techniques used to create offsite copies of DB content: electronic vaulting, remote journaling, and remote mirroring
-        - **🔥electronic vaulting**: where database backups are moved to a remote site using bulk transfers, but it does not do so in real time.
+        - **🔥electronic vaulting**: where database backups are moved to a remote site using bulk transfers, but it does not do so in real time. Electronic vaulting is an online bulk transfer of data offsite.
         - **🔥remote journaling**: data transfers are performed in a more expeditious manner; remote journaling is similar to electronic vaulting in that transaction logs transferred to the remote site are not applied to a live database server but are maintained in a backup device. Remote journaling options send logs, rather than full data replicas, to the remote location.
+            - Remote journaling is a type of backup system where the transfer of data happens closer to real-time. Remote journaling only transmits file deltas to keep systems synchronized. The Recovery Point Objective (RPO) is determined by the frequency of how often the deltas are synchronized.
         - **🔥remote mirroring**: the most advanced db backup solution, and the most expensive, with remote mirroring, a live db server is maintained at the backup site; the remote server receives copies of the db modifications at the same time they are applied to the production server at the primary site. When you use remote mirroring, an exact copy of the database is maintained at an alternative location. You keep the remote copy up to date by executing all transactions on both the primary and remote sites at the 📝same time. Remote mirroring is the only backup option in which a live backup server at a remote site maintains a bit-for-bit copy of the contents of the primary server, synchronized as closely as the latency in the link between primary and remote systems will allow.
 
 - **Backup Tape Rotation** There are several commonly used tape rotation strategies for backups:
