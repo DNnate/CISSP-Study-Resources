@@ -415,7 +415,7 @@
         - 🎤act: formally do the management review
 
 - 6.3.3 🔴Key performance and risk indicators
-    - 🍮**Key Performance Indicator (KPIs)**: measures that provide significance of showing the performance an Information Security Management System ISMS compared to stated goals. KPIs are used to determine how effective practices, procedures, and staff are. Key Performance Indicators (KPIs) are a class of metrics used to measure activity success. KPI measurements enable performance to be tracked, trended, monitored, and prioritized or targeted for improvement. Examples of KPIs include, "percent of system uptime" and "mean time to detect."
+    - 🍮**Key Performance Indicator (KPIs)**:KPIs help evaluate a process's health.  measures that provide significance of showing the performance an Information Security Management System ISMS compared to stated goals. KPIs are used to determine how effective practices, procedures, and staff are. Key Performance Indicators (KPIs) are a class of metrics used to measure activity success. KPI measurements enable performance to be tracked, trended, monitored, and prioritized or targeted for improvement. Examples of KPIs include, "percent of system uptime" and "mean time to detect."
         - Choose the factors that can show the state of security
         - Define baselines for some (or better yet all) of the factors
         - Develop a plan for periodically capturing factor values (use automation!)
@@ -446,7 +446,7 @@
         -  🩹decreased number of tickets should indicate a decreased number of problems with a system
         -  🩹Increase in the average service ticket time to close
 
-   - 🍮**Key Risk Indicator (KRIs)**: Key risk indicators are used to tell those in charge of risk management how risky an activity is and how much impact changes are having on that risk profile. Identifying key risk indicators and monitoring them can help to identify high-risk areas earlier in their lifecycle.  Key Risk Indicators (KRIs) allow for a more proactive approach to cybersecurity.
+   - 🍮**Key Risk Indicator (KRIs)**:KRI serves as a warning of increased risk. Key risk indicators are used to tell those in charge of risk management how risky an activity is and how much impact changes are having on that risk profile. Identifying key risk indicators and monitoring them can help to identify high-risk areas earlier in their lifecycle.  Key Risk Indicators (KRIs) allow for a more proactive approach to cybersecurity.
    - Key Risk Indicators (KRIs) are a class of metrics used to measure exposure to potential harm. Examples of KRIs include,
        - 🛰️Decrease in successful install updates
        - 🛰️Increase in system failures
