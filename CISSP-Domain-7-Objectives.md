@@ -532,6 +532,7 @@ of litigation is imminent.
         - based on the findings, the team may recommend changes to procedures, the addition of security controls, or even changes to policies
         - management will decide what recommendations to implement and is responsible for the remaining risk for any recommendations they reject
         - The remediation and lessons learned stages include root cause analysis to determine the cause and recommend solutions to prevent a reoccurrence
+        - performs a retrospective to identify potential inefficiencies or errors in their response that could be corrected for future incidents.
 - NOTE📝 Incident management DOES NOT include a counterattack against the attacker
 
 - Incident Response Summary:
