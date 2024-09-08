@@ -147,6 +147,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
         - The audit trail allows an administrator to review events and users linked to those events. It can be used to review employee misconduct or provide a log of events leading to system failure.
         - An audit trail is required for some security standards, including the Health Insurance Portability and Accountability Act (HIPAA).
         - Auditing provides 📝accountability
+        - Audit trails are especially important for software that contains sensitive data. For instance, they are required by the Health Insurance Portability and Accountability Act 📝(HIPAA) to audit who has access to patient data and when the data was accessed.
         - Auditing occurs after the logs have been created
         - Logs record events, including who took an action, but without accurate identification and authentication, the logs can’t be relied on.
         - identification when combined with authentication provides accountability.
