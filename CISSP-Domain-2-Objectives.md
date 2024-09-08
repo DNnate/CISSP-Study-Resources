@@ -7,8 +7,8 @@
 - **Asset lifecycle**: phases an asset goes through, from creation (or collection) to destruction
 - 🔴**Risk** is the _possibility, probability, chance or likelihood_ that a threat will exploit a vulnerability to cause harm to an asset and the severity of damage that could result. e.g damage to equipment.
      - Risk = Threat ✖️ Vulnerability
-     - 🍋**Threat** is any _potential occurrence_ that may cause an undesirable or unwanted outcome for an organization or for a specific asset. e.g threat/likelihood of fire
-     - 🍋**Vulnerability** is the _weakness_ in an asset, or the absence or the weakness of a safeguard or countermeasure. e.g lack of fire extinguishers
+     - 🍋**Threat** is any _potential occurrence_ that may cause an undesirable or unwanted outcome for an organization or for a specific asset. The International Organization for Standardization and the International Electrotechnical Commission define a threat as a “potential cause of an unwanted incident, which may result in harm to a system or organization.” Earthquakes, hackers, and botnets are all forms of threats. e.g threat/likelihood of fire
+     - 🍋**Vulnerability** is the _weakness_ in an asset, or the absence or the weakness of a safeguard or countermeasure. e.g lack of fire extinguishers, unpatched server.
      - 🍋**Exposure** is being _susceptible_ to asset loss because of a threat; there is the possibility that a vulnerability can or will be exploited. It is the presence of a vulnerability when a related threat exists. - Every instance of exposure is a risk.
      - 🍋**Risk Analysis**: is simply the evaluation of threats against assets in regard to rate of occurrence and levels of consequence.
      - 🍋**Risk Assessment**: A risk assessment would help identify which controls are needed to protect the assets
