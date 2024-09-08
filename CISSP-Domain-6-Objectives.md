@@ -463,7 +463,8 @@
         -  ensures that the organization’s 📝data protection requirements are met effectively
         -  The backup verification process ensures that backups are running properly and thus meeting the organization's data protection objectives.
             - For verifying backup integrity, automated integrity checking can determine if files have been changed. If the files have been altered, automated integrity checks can occur with the backup drives upon integrating them into production. There are local programs that can also do this. Sigverif is a Windows program that can check the integrity of files and be useful in the event that backups are not automated, to check integrity.
-        -  The recovery point objective (RPO) specifies the maximum amount of data that may be lost during a disaster and should be used to guide backup strategies. 
+        -  🏺Recovery point objective (RPO) specifies the maximum amount of data that may be lost during a disaster and should be used to guide backup strategies.
+        -  🏺Mean Time To Failure (MTTF): Devices or components with a finite life typically use MTTF to report the average life that can be expected from them before failing. MTTF can be expressed either as a duration or as a count of uses. Certain types of 📝reusable media fall into this category, making it essential to consider MTTF when relying on them for critical backups.
 
 - 6.3.5 🔴Training and awareness
     - Training and awareness programs play a crucial role in preparing an organization’s workforce to support information security programs
