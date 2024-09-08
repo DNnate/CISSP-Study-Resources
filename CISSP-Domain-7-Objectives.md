@@ -369,9 +369,10 @@ of litigation is imminent.
 - The primary purpose of security operations practices is to safeguard assets such as information, systems, devices, facilities, and apps, and helping organizations to detect, prevent, and respond to security threats
 - Implementing common security operations concepts, along with performing periodic security audits and reviews, demonstrates a level of due care and due diligence. Note📝 Security audits and reviews help ensure that an organization is following its policies but wouldn’t directly check systems for vulnerabilities.
 
-- 7.4.1 Need-to-know/least privilege
+- 7.4.1 🔴Need-to-know/least privilege: Least privilege is based upon limiting access and ability as determined by a subject's security clearance or permission group, while need-to-know is more 📝selective and determined by a task that needs to be completed by a specific subject, even within a security clearance level. For example, a user with a secret clearance may be granted access to all general military intelligence. Certain users within that security clearance may be given specific tasks and, therefore, provided with information related to their specific task that is inaccessible to others who were not assigned that same task.
     - 💥**Need-to-know principle**: imposes the requirement to grant users 📝access only to data or resources they need to perform assigned work tasks. The need-to-know policy operates on the basis that any given system user should be granted access only to portions of sensitive information or materials necessary to perform some task.
-        - The Need-To-Know (NTK) principle is used to determine if a user’s access to certain information is necessary to perform their job role sufficiently. If a user does not need read access to data to carry out their job role, they should not be granted access. The need-to-know principle differs from least privilege because the need-to-know principle is only concerned with read access. 
+        - The Need-To-Know (NTK) principle is used to determine if a user’s access to certain information is necessary to perform their job role sufficiently. If a user does not need read access to data to carry out their job role, they should not be granted access. The need-to-know principle differs from least privilege because the need-to-know principle is only concerned with read access.
+        - need to know is about the actual data 
     - 💥**Least privilege principle**: states that subjects are granted only the privileges necessary to perform assigned work tasks and no more.  The principle of least privilege ensures that personnel are granted only the 📝permissions they need to perform their job and no more.
         - privilege in this context includes both permissions to data and rights to perform systems tasks
         - limiting and controlling privileges based on this concept protects confidentiality and data integrity
@@ -379,15 +380,16 @@ of litigation is imminent.
         - least privilege is typically focused on ensuring that user privileges are restricted, but it also applies to apps or processes (e.g. if an app or service is compromised, the attacker can assume the service account’s privileges)
         - New user accounts should have no access permissions by default and then give each user the necessary permissions to perform their job responsibilities.
         -  The principle of least privilege includes both rights and permissions
+        -  Least privilege is about permissions
         -  If a user has an NTK then the question is what level of permission do they need. Do they need read, write, full control, or another level? The best idea is to give them as little permission as possible, just enough to do their job. This is called the principle of least privilege. 
 - 7.4.2 Separation of Duties (SoD) and responsibilities
-    - 💥**Separation of Duties (SoD)**: ensures that no single person has total control over a critical function or system
+    - 💥**Separation of Duties (SoD)**: ensures that no single person has total control over a critical function or system. Separation of duties allows for two or more people to 📝play separate 📝roles in the completion of a critical process. 
         - SoD policies help reduce fraud by requiring collusion between two or more people to perform unauthorized activity
         - A separation of duties (SoD) policy prevents a single person from controlling all elements of a process. When applied to security settings, it can prevent a person from making major security 📝changes without assistance.
         - It adds additional oversight by involving multiple individuals.
         - example of how SoD can be enforced, is by dividing the security or admin capabilities and functions among multiple trusted individuals
         - example Separation of duties applied to a situation where the same person may not have both the ability to initiate a request and the ability to approve a request. 
-    - 💥**Two-person control**: (AKA two-man rule) requires the approval of two individuals for critical tasks
+    - 💥**Two-person control**: (AKA two-man rule) requires the approval of two individuals for critical tasks. Dual control is a security principle that requires two or more individuals to 📝work together to perform critical tasks, such as authorizing sensitive transactions or accessing high-security areas. Ensuring multiple people are involved reduces the risk of unauthorized activities, fraud, or errors, providing an extra layer of protection and accountability in security-sensitive operations.
         - using two-person controls within an org ensures peer review and reduces the likelihood of collusion and fraud
         - a process that requires the concurrence of two people to perform a sensitive action
         - the principle of two-person control by requiring simultaneous action by two separate authorized individuals to gain access is designed for highly sensitive operations
@@ -794,12 +796,12 @@ of litigation is imminent.
         - once a full backup is complete, the archive bit on every file is reset, turned off, or set to 0
     - Three types of backups:
         - **📁Full backup**: store a complete copy of the data contained on the protected device or backup media; full backups duplicate every file on the system regardless of the setting of the archive bit
-        - **📁Incremental backup**: changes since the last incremental backup
+        - **📁Incremental backup**: captures changes since the last  full or incremental backup
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - once an incremental backup is complete, the archive bit on all duplicated files is reset, turned off, or set to 0
             - Incremental backups provide the option that includes the 📝smallest amount of data. In this case, that would be only the data modified since the most recent incremental backup.
             -  Incremental backups are created faster than differential backups because of the number of files it is necessary to back up each time.
-        - **📁Differential backup**: changes since the last full backup
+        - **📁Differential backup**: captures changes since the last full backup
             - only files that have the archive bit turned on, enabled, or set to 1 are duplicated
             - unlike full and incremental backups, the differential backup process does not change the archive bit
             - Differential backups involve always storing copies of all files modified since the most recent full backup, regardless of any incremental or differential backups created during the intervening time period.
@@ -1108,8 +1110,9 @@ of litigation is imminent.
     - 🍮**Sensitive compartmented information facility (SCIF)** is often used by government and military agencies, divisions, and contractors to provide a secure environment for highly sensitive data storage and computation. An SCIF is typically located within a structure, although an entire structure can be implemented as an SCIF. 
     - 🍮**Gate**: controlled exit and entry point in a fence or wall
     - 🍮**Turnstile**: form of gate that prevents more than one person at a time from gaining entry and often restricts movement in one direction. Turnstiles allow only one person to enter at a time. As one person swipes a badge and enters the data center, the turnstile restricts the following person. It's a method of preventing 📝tailgating, which happens when an unauthorized person follows an authorized person through an entrance.
-    - 🍮**Access control vestibule**: (AKA mantrap) a double set of doors that is often protected by a guard or other physical layout preventing piggybacking and can trap individuals at the discretion of security personnel
+    - 🍮**Access control vestibule\Mantrap**: (AKA mantrap) a double set of doors that is often protected by a guard or other physical layout preventing piggybacking and can trap individuals at the discretion of security personnel
         - A mantrap uses two sets of doors, only one of which can open at a time. A mantrap is a type of 📝preventive access control, although its implementation is a physical control.
+            - Double door systems, or mantraps, force individuals into a small room with an ingress and egress door. Before the person can exit through the egress door, the ingress door must be closed and locked. If the individual is authorized, the egress door will unlock and they can proceed. If they are not authorized, both doors remain locked until a security guard or police officer arrives and escorts them off the property or arrests them for trespassing. It is common for mantraps to have a weight scale across the floor to ensure only one person is in the room.
     - 🍮**Security bollards**: a key element of physical security, which prevent vehicles from ramming access points and entrances
     - 🍮**Barricades**: in addition to fencing, are used to control both foot traffic and vehicles
     - 🍮**Lighting** is the 📝most commonly used form of perimeter security control providing the security benefit of deterrence (primary purpose is to discourage casual intruders, trespassers etc)
