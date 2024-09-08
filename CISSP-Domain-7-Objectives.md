@@ -1012,8 +1012,9 @@ of litigation is imminent.
     - The response plan should include clear criteria for activation of the disaster recovery plan, define who has the authority to declare a disaster, and then discuss notification procedures
     - The emergency response guidelines should include the immediate steps an organization should follow in response to an emergency situation. These include immediate response procedures, a list of individuals who should be notified of the emergency, and secondary response procedures for first responders. 
 - 7.11.2 ❄️Personnel
-    - A disaster recovery plan should contain a list of personnel to contact in the event of a disaster
+    - A disaster recovery plan should contain a list of 📝contact information of personnel to contact in the event of a disaster
         - usually includes key members of the DRP team as well as critical personnel
+        - An organization's employee contact information should be contained in the Disaster Recovery Plan (DRP) for potential emergencies. This is also referred to as a 📝Crisis Communications Plan. The plan also provides a priority list to establish a chain of command.
     - Businesses need to make sure employees are trained on DR procedures and that they have the necessary resources to implement the DR plan
 	- Key activities involved in preparing people and procedures for DR include:
 		- develop DR training programs
