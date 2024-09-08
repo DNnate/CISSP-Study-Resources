@@ -409,7 +409,9 @@
     - Developers use a variety of tools, and one of the most important is the IDE (defined below)
 
 - 8.2.4 Integrated Development Environment (IDE)
-    - **Integrated Development Environment (IDE)**: software applications, their control procedures, supporting databases, libraries and toolsets that provide a programmer or team what they need to specify, code, compile, test, and integrate code; IDEs provide developers with a single environment where they can write their code, test and debug, and compile it
+    - 🔴**Integrated Development Environment (IDE)**: software applications, their control procedures, supporting databases, libraries and toolsets that provide a programmer or team what they need to specify, code, compile, test, and integrate code; IDEs provide developers with a single environment where they can write their code, test and debug, and compile it
+        - An integrated development environment is a pre-created environment composed of useful programs for the task at hand.
+        - An example of this would be Kali Linux, which is an operating system filled with various red and blue teaming tools. 
 - 8.2.5 Runtime
     - 💥**RunTime Environments (RTE)**: allows the portable execution of code across different operating systems or platforms without recompiling (e.g. Java Virtual Manager (JVM))
         - this is known as portable code, which needs translation between each environment, the role of the RTE
