@@ -371,7 +371,7 @@ of litigation is imminent.
         - 🎈remove all unused apps
         - 🎈change default passwords
     - The goal of system hardening is to reduce the attack surface available for an attacker to try to access.
-    - Once a system is hardened, that state should be the baseline.
+    - Once a system is hardened, that state should be the baseline. Once a secure baseline has been established on a particular system, administrators can capture the system's state, called an 📝"image", and deploy it to other systems. This process is known as imaging.
 - 🚡**Baseline**: in the context of configuration management, it is the starting point or starting config for a system
     - an easy way to think of a baseline is as a list of services; an OS baseline identifies all the settings to harden specific systems
     - many organizations use images to deploy baselines; baseline images improve the security of systems by ensuring that desired security settings are always configured correctly
@@ -786,14 +786,15 @@ of litigation is imminent.
     - 💢Change control provides an organized framework within which multiple developers can create and test solutions prior to rolling them out into a production environment.
     - 💢Release control includes acceptance testing to ensure that any alterations to end-user work tasks are understood and functional.
     - 💢Configuration control ensures that changes to software versions are made in accordance with the change control and configuration management process. Updates can be made only from authorized distributions in accordance with those policies.
+        - 🎈Versioning: refers to version control used in software configuration management. A labeling or numbering system is used to differentiate between different software sets and configurations across multiple machines or at different points in time on a single machine. Versioning also helps with rollback procedures when deployment fails.
     - Change management controls provide a process to control, document, track, and audit all system changes.
     - The typical steps for the change management process are as follows:
-        - 🆎Request the change
-        - 🆎Review the change
-        - 🆎Approve/reject the change
-        - 🆎Test the change
-        - 🆎Schedule and implement the change
-        - 🆎Document the change
+        - 🆎Request the change: The requester submits a request to alter something. This could be a firewall change, a software code change, etc.
+        - 🆎Review the change: A committee has been established to evaluate the effect of this change on the business, the business unit(s), the policy, legal compliance, and so on. This is looking at the benefits and the disadvantages of making this change.
+        - 🆎Approve/reject the change:  Based on the assessment in step two, the request is either accepted or denied.
+        - 🆎Test the change: If the request is accepted the requesters can proceed to test this change in a test environment.
+        - 🆎Schedule and implement the change: If the change operated as expected in the test environment, it can be scheduled for deployment to the production environment. Then the deployment can proceed as scheduled.
+        - 🆎Document the change: Formal documentation needs to be created that documents all that occurred in the steps above.
     - The change management process includes multiple steps that build upon each other:
         - 🔐Change request: a change request can come from any part of an org and pertain to almost any topic; companies typically use some type of change management software. 
         - 🔐Assess impact: after a change request is made, however small the request might be, the impact of the potential change must be assessed
@@ -1066,15 +1067,15 @@ of litigation is imminent.
 [7.12](#7.12) Test Disaster Recovery Plans (DRP) (OSG-9 Chpt 18)
 - Every DR plan must be tested on a periodic basis to ensure that the plan’s provisions are viable and that it meets an org’s changing needs
 - Five main test types:
-    - Read-through tests
-    - structured walk-throughs
+    - checklist\Read-through tests
+    - structured walk-throughs/tabletop
     - simulation tests
     - parallel tests
     - full-interruption tests
 - 7.12.0 📙**Checklist tests:**
 - The checklist review is the 📝least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes. It also has a very minimal 📝time commitment.
-    - The checklist review is the least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and 📝suggest any necessary changes.  
-
+    - The checklist review is the least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and 📝suggest any necessary changes.
+    - A checklist exercise is to walk through the DRP using a checklist of items/sections that should be in the plan. Or it is possible to use a list such as commonly forgotten items to see if they have been included in the plan.
 - 7.12.1 
     - 📙**Read-through test**: one of the 📝simplest to conduct, but also one of the most critical; copies of a DR plan are distributed to the members of the DR team for review, accomplishing three goals:
         - ensure that key personnel are aware of their responsibilities and have that knowledge refreshed periodically
@@ -1082,10 +1083,12 @@ of litigation is imminent.
         - provide individuals with an opportunity to review and update plans, remvoving obsolete info
         - helps identify situations in which key personnel have left the company and the DR responsibility needs to be re-assigned (note that DR responsibilities should be included in job descriptions)
 - 7.12.2 Walkthrough
-    - 📙**Structured walk-through/Tabletop**: AKA tabletop exercise, takes testing one step further, where members of the DR team gather in a large conference room and role-play a disaster scenario
+    - 📙**Structured walk-through/Tabletop**: AKA tabletop exercise, takes testing one step further, where members of the DR team gather in a large conference room and role-play a disaster 📝scenario
         - the team refers to their copies of the DR plan and discuss the appropriate responses to that particular type of disaster
         - Tabletop exercises are designed to walk teams through a scenario,
         - During a tabletop exercise, team members come together and walk through a scenario 📝without making any changes to information systems.
+        - The idea is to talk through the steps that have been documented to see if it has all of the correct steps and that they appear to be in the Disaster Recovery Plan (DRP). It is called a tabletop exercise because the team sits around a conference table to talk through the steps
+        - It's important to have a structured walk-through before a live disaster test to adequately prepare and complete all necessary implementations.
 - 7.12.3 Simulation
     - 📙**Simulation tests**: similar to the structured walk-throughs, where team members are presented with a scenario and asked to develop an appropriate response
         - unlike read-throughs and walk-throughs, some of these response measures are then tested
@@ -1098,6 +1101,7 @@ of litigation is imminent.
 - 7.12.4 Parallel
     - 📙**Parallel tests**: represent the next level, and involve 📝relocating personnel to the alternate recovery site and implementing site activation procedures
         - the relocated employees perform their DR responsibilities just as they would for an actual disaster
+        - In a parallel test, production processing is not interrupted
         - operations at the main facility are not interrupted
         - During a parallel test, the team actually activates the disaster recovery site for testing, but the primary site remains operational.
         -  it fully evaluates operations at the backup facility but does not shift primary operations responsibility from the main site
