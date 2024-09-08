@@ -536,12 +536,13 @@
         - e.g. micro-segmentation of device, access restrictions, monitoring etc
     - Exception handling may be required due to system crash as the result of patching (requiring roll-back)
 
-- 6.4.3 Ethical disclosure
+- 6.4.3 ❄️Ethical disclosure
     - While conducting security testing, cybersecurity pros may discover previously undiscovered vulns (perhaps implementing compensating controls to correct) that they may be unable to correct
     - **Ethical disclosure**: the idea that security pros who detect a vuln have a responsibility to report it to the vendor, providing them with enough time to patch or remediate
         - the disclosure should be made privately to the vendor providing reasonable amount of time to correct
         - if the vuln is not corrected, then public disclosure of the vuln is warrented, such that other professionals can make informed decisions about future use of the product(s)
         - Unlike bug bounties, this does not rely on organizations providing financial or other rewards.
+        - **Responsible disclosure** is a type of ethical disclosure in which vendors are informed but given time to remediate the issue. Doing so acknowledges an issue that needs a fix but gives companies an opportunity to do the right thing without alerting the public and increasing the likelihood of cyber attacks. If this were not taken seriously by the company, it would fall under the category of 📝whistleblowing to both hold the company accountable and inform other customers before an attacker exploits the vulnerability.  
     - **Bug bounties** are programs offered by organizations to incentivize security researchers, ethical hackers, and sometimes the general public to find and report security vulnerabilities in their software, websites, or systems. These programs are a proactive approach to identifying and fixing potential security issues before they can be exploited by malicious actors.
 [6.5](#6.5) Conduct or facilitate security audits (OSG-9 Chpt 15)
 - 6.5.1 🔴Internal
