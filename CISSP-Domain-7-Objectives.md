@@ -53,17 +53,20 @@ of litigation is imminent.
         - Proportionality: The benefits of additional discovery must be proportional to the additional costs that they will require. This prevents additional discovery requests from becoming inordinately expensive, and the requester will typically have to justify these requests to the judge presiding over the case.
         - _Interviews_ occur when investigators meet with an individual who may have information relevant to their investigation but is not a suspect. If the individual is a suspect, then the meeting is an _interrogation_.
     - general principles:
-        - identify and secure the scene
-        - 🍪protect evidence -- proper collection of evidence preserves its integrity and the chain of custody. For example, The Linux tool 📝dd creates a bit-by-bit copy of the target drive that is well suited to forensic use, and special forensic versions of dd exist that can provide even more forensic features. Also, For example
+        - 🍪identify and secure the scene
+        - 🍪protect/preserve evidence: proper collection of evidence preserves its integrity and the chain of custody. For example, The Linux tool 📝dd creates a bit-by-bit copy of the target drive that is well suited to forensic use, and special forensic versions of dd exist that can provide even more forensic features. 
+            - The procedures for the protection of evidence are very specific. The precise, regulated, and controlled procedures for the safe and secure retrieval and cataloging of evidence must be followed; otherwise, the evidence cannot be admissible in legal proceedings.
+            - All collected evidence must be cataloged and tracked with a chain of custody that creates a paper trail showing the seizure, custody, control, transfer, analysis, and disposal of evidence. The 📝chain of custody (also called the chain of evidence) documents all individuals who handled the evidence and helps ensure that evidence can be used in court proceedings.
             - When investigating computer crimes, an investigator should never use the original evidence. Instead, a bit-by-bit copy of the original drive should be created and used for the investigation. If an investigator taints the original evidence, it may be dismissed in court. Original evidence should always be collected and documented using a Chain of Custody. You could taint the original evidence by 🚫logging on to the endpoint or device without a 📝forensice disk controller\📝write bloxcker.
+            - 🔥A Faraday bag prevents electromagnetic interference and the ability to remotely wipe or otherwise interact with a device remotely. It is used to ensure evidence on mobile device is not tampered with remotely. It t prevent wireless communication to and from the mobile device and prevent the transference or reception of radio waves that could potentially be used to tamper evidence.
             - 🔥A forensic disk controller or hardware write-block device is a specialized type of computer hard disk controller made for the purpose of gaining read-only access to computer hard drives without the risk of damaging the drive's contents. One of the main functions of a forensic drive controller is preventing any command sent to a device from modifying data stored on the device. For this reason, forensic drive controllers are also often referred to as 📝write blockers.
             - 🍾It  intercept write commands from the host operating system, preventing them from reaching the drive.
             - 🍾It returns data requested by a read operation
             - 🍾It returns access-significant information from the device
             - 🍾It reports errors from the device back to the forensic host.
-        - identification and examination of the evidence
-        - further analysis of the most compelling evidence
-        - final reporting of findings
+        - 🍪identification and examination of the evidence
+        - 🍪further analysis of the most compelling evidence
+        - 🍪final reporting of findings
     
 - 💥**Locard exchange principle**: whenever a crime is commited something is taken, and something is left behind. Locard's principle suggests that any contact between two objects results in an exchange of materials. In the context of digital forensics, this principle implies that there is always some form of digital trace or residue left behind when devices interact or when data is transferred. 
 - The purpose of an investigation is to:
@@ -141,7 +144,7 @@ of litigation is imminent.
         - 🧑‍⚖️**Hearsay evidence**: type of evidence that is based on statements made by someone outside of court and is generally not admissible. The hearsay rule says that a witness cannot testify about what someone else told them, except under very specific exceptions. However, the courts have applied the hearsay rule to include the concept that attorneys may not introduce logs into evidence unless they are 📝authenticated by the system administrator. In this scenario, the administrator might also be able to provide a sworn affidavit. 
         - 🧑‍⚖️**Best evidence rule**: states that the original evidence should be presented in court, rather than a copy or other secondary evidence
     - It is important to note that evidence should be collected and handled in a forensically sound manner to ensure that it is admissible in court and to avoid any legal issues
-    - The chain of custody: focuses on having control of the evidence -- who collected and handled what evidence, when, and where
+    - 🔥The chain of custody: focuses on having control of the evidence -- who collected and handled what evidence, when, and where. The chain of custody is chronological documentation or a paper trail showing the seizure, custody, control, transfer, analysis, and disposal of evidence. The chain of custody (also called the chain of evidence) documents all individuals who handled the evidence and helps ensure that evidence can be used in court proceedings.
         - think about establishing the chain of custody as:
             - tag, 
             - bag, and 
