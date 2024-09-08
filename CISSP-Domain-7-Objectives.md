@@ -54,7 +54,9 @@ of litigation is imminent.
         - _Interviews_ occur when investigators meet with an individual who may have information relevant to their investigation but is not a suspect. If the individual is a suspect, then the meeting is an _interrogation_.
     - general principles:
         - identify and secure the scene
-        - protect evidence -- proper collection of evidence preserves its integrity and the chain of custody. For example, The Linux tool 📝dd creates a bit-by-bit copy of the target drive that is well suited to forensic use, and special forensic versions of dd exist that can provide even more forensic features. Also, For example 🔥A forensic disk controller or hardware write-block device is a specialized type of computer hard disk controller made for the purpose of gaining read-only access to computer hard drives without the risk of damaging the drive's contents. One of the main functions of a forensic drive controller is preventing any command sent to a device from modifying data stored on the device. For this reason, forensic drive controllers are also often referred to as 📝write blockers.
+        - 🍪protect evidence -- proper collection of evidence preserves its integrity and the chain of custody. For example, The Linux tool 📝dd creates a bit-by-bit copy of the target drive that is well suited to forensic use, and special forensic versions of dd exist that can provide even more forensic features. Also, For example
+            - When investigating computer crimes, an investigator should never use the original evidence. Instead, a bit-by-bit copy of the original drive should be created and used for the investigation. If an investigator taints the original evidence, it may be dismissed in court. Original evidence should always be collected and documented using a Chain of Custody. You could taint the original evidence by 🚫logging on to the endpoint or device without a 📝forensice disk controller\📝write bloxcker.
+            - 🔥A forensic disk controller or hardware write-block device is a specialized type of computer hard disk controller made for the purpose of gaining read-only access to computer hard drives without the risk of damaging the drive's contents. One of the main functions of a forensic drive controller is preventing any command sent to a device from modifying data stored on the device. For this reason, forensic drive controllers are also often referred to as 📝write blockers.
             - 🍾It  intercept write commands from the host operating system, preventing them from reaching the drive.
             - 🍾It returns data requested by a read operation
             - 🍾It returns access-significant information from the device
@@ -823,11 +825,11 @@ of litigation is imminent.
 	- ⚒️the Grandfather-­Father-­Son (GFS) strategy: This is a tiered backup scheme that uses daily (son), weekly (father), and monthly (Grandfather) backup tapes.
  	- ⚒️the Tower of Hanoi strategy: Uses a series of tapes labeled with numbers that follow the recursive pattern of the Tower of Hanoi puzzle. The nth backup tape is used at intervals of 2^𝑛 days
 	- ⚒️the Six Cartridge Weekly Backup strategy: A simple weekly backup rotation strategy that uses Six tapes labeled Monday through Saturday.
- - These strategies can be fairly complex, especially with large tape sets. They can be implemented manually using a pencil and a calendar or automatically by using either commercial backup software or a fully automated hierarchical storage management (HSM) system. An HSM system is an automated robotic backup jukebox consisting of 32 or 64 optical or tape backup devices. All the drive elements within an HSM system are configured as a single drive array (a bit like RAID).
-
-- Online Storage: This is for data that is frequently accessed and actively used. It’s the most accessible and typically the most expensive form of storage.
-- Nearline Storage: This sits between online and offline storage in terms of accessibility and cost. It’s suitable for data that doesn’t need to be immediately accessible but still needs to be retrieved quickly when needed.
-- Offline Storage: This is for data that is rarely accessed and can be stored on less expensive, slower media. Examples include tape drives or optical media.
+ - These strategies can be fairly complex, especially with large tape sets. They can be implemented manually using a pencil and a calendar or automatically by using either commercial backup software or a fully automated hierarchical storage management (HSM) system.
+     - **HSM system** is an automated robotic backup jukebox consisting of 32 or 64 optical or tape backup devices. All the drive elements within an HSM system are configured as a single drive array (a bit like RAID).
+- 🍪Online Storage: This is for data that is frequently accessed and actively used. It’s the most accessible and typically the most expensive form of storage.
+- 🍪Nearline Storage: This sits between online and offline storage in terms of accessibility and cost. It’s suitable for data that doesn’t need to be immediately accessible but still needs to be retrieved quickly when needed.
+- 🍪Offline Storage: This is for data that is rarely accessed and can be stored on less expensive, slower media. Examples include tape drives or optical media.
 
 - 7.10.2 Recovery site strategies
     - Non-disaster: service disruption with significant but limited impact
