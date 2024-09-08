@@ -189,10 +189,18 @@
                    - Systems Thinking
     - 📁**Waterfall**: 
         - Developed by Winston Royce in 1970, the waterfall model uses a linear sequential life-cycle approach where each phase must be completed before the next can begin; all project requirements are gathered up front, and there is no formal way to integrate changes as more information becomes available
+        - The seven stages of the original waterfall model are as follows: Silly Sharks Always Drop Chess To Operate 🟡
+            - System requirements / Feasibility
+            - Software requirements / Analysis
+            - Analysis
+            - Program design
+            - Coding
+            - Testing
+            - Operation
         - Traditional model has 7 stages, as each stage is completed, the project moves into the next phase; the iterative waterfall model does allow development to return to the previous phase to correct defects 
             - 🔏System Requirements
             - 🔏Software Requirements
-            - 🔏Preliminary Design
+            - 🔏Analysis\Preliminary Design
             - 🔏Detailed Design
             - 🔏Code and Debug
             - 🔏Testing
@@ -450,7 +458,8 @@
       - Pass-around reviews are often done via email or using a central code review system, allowing developers to review code asynchronously.
       - Pair programming requires two programmers to work together, with one writing code and the other reviewing and tracking progress.
       - Team reviews are typically done in a group
-      - Fagan inspection is a formal review process that would involve both the developer and a team to review the code using a formal process. 
+      - Fagan inspection is a formal review process that would involve both the developer and a team to review the code using a formal process.
+      - It is sometimes referred to as a 📝"peer review". Typically, this entails the independent, manual evaluation of developed source code for quality and security risks (e.g. errors, bugs, vulnerabilities) by a more senior developer.
   - 🔖**White-Box Testing**: A software testing approach where the tester has complete knowledge of the internal structure, code, and logic of the application being tested. White-box tests also have access to the source code but perform testing from a developer’s perspective.
   - 🔖**Black-box testing** begins with no prior knowledge of the system implementation, simulating a user perspective. They do not have access to source code.
   - 🔖**Gray-box testing** provide partial knowledge of the system, respectively, in advance of the test. In a gray-box test, the tester evaluates the software from a user perspective but has access to the source code as the test is conducted.
