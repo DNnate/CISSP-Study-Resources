@@ -760,6 +760,7 @@ of litigation is imminent.
     - A 📝vulnerability scan will list or enumerate all security risks within a system.
 
 [7.9](#7.9) Understand and participate in change management processes (OSG-9 Chpt 16)
+- 📁**Configuration management**: Configuration Management is used to ensure secure 📝baselines on systems are adequately maintained, and any deviations are authorized and documented. Configuration management seeks to establish safe, reliable configurations for systems.
 - 📁**Change management**: formal process an org uses to transition from the current state to a future state; typically includes mechanisms to request, evaluate, approve, implement, verify, and learn the change; ensures that the costs and benefits of changes are analyzed and changes are made in a controlled manner to reduce risks
     - Change management is a structured and systematic approach used to manage the process of introducing modifications, updates, or alterations to an organization's systems, processes, technology, or infrastructure. The primary goal of change management is to minimize disruption, reduce risks, and ensure that changes are implemented smoothly and effectively while maximizing benefits and minimizing adverse impacts.
     - Security analysts should always 📝report findings to management and 📝gain approval to implement changes once the total risk to the business can be properly weighed. This is the process of change management and patch management.
@@ -873,11 +874,12 @@ of litigation is imminent.
             - a cold site has NO COMPUTING FACILITIES (hardware or software) preinstalled. Installation can take weeks!
             - a cold site has no active broadband comm links
             - A rented space with power, cooling, and connectivity that can accept equipment as part of a recovery effort.
-            - advantages:
+            - 🎈advantages:
                 - a cold site is the LEAST EXPENSIVE OPTION and perhaps the most practical
-            - disadvantages:
+            - 🎈disadvantages:
                 - tremendous lag to activate the site, often measured in weeks, which can yield a false sense of security
                 - difficult to test
+                - Cold sites may take a week or more to become live since the equipment must be purchased and installed. 
                 - A rented space with power, cooling, and connectivity that can accept equipment as part of a recovery effort
         - 📁**warm sites**: a warm site is better than a cold site because, in addition to the shell of a building, basic equipment is installed
             - a warm site contains the data links and preconfigured equipment necessary to begin restoring operations, but no usable data for information
@@ -893,6 +895,7 @@ of litigation is imminent.
             - A site with dedicated storage and real-time data replication, often with shared equipment that allows restoration of service in a very short time.
             - A hot site provides rapid recovery capabilities since it has all the resources required for instant function and connectivity of IT systems minus people and the most recent data.
             - the data on the primary site servers is periodically or continuously replicated to corresponding servers at the hot site, ensuring that the hot site has up-to-date data
+            - They can become live in a 📝few hours. 
             - ✏️contain workstations, servers, and the communications circuits necessary to achieve operational status as well as 🎆current data or near-­real-­time copies of the operational data
             - advantages:
                 - unsurpassed level of disaster recovery protection
