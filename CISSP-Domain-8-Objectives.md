@@ -204,7 +204,7 @@
         - Still used in public utility projects and even building of nuclear reactors
         - In the waterfall model, the software development process follows five sequential steps that are, in order: Requirements, Design, Coding, Testing, and Maintenance.
         - The ✏️Iterative waterfall model uses a seven-­stage approach to software development and includes a feedback loop that allows development to return to the previous phase to correct defects discovered during the subsequent phase.
-    - 📁**Spiral model**: improved waterfall dev process providing for a cycle of Plan, Do, Check, Act (🟡PDCA) sub-stages at each phase of the SDLC; a 📝risk-driven development process that follows an iterative model while also including waterfall elements
+    - 📁**Spiral model**: Spiral was developed in 1986 by Barry Boehm. Agile was developed in 2001. It improved waterfall dev process providing for a cycle of Plan, Do, Check, Act (🟡PDCA) sub-stages at each phase of the SDLC; a 📝risk-driven development process that follows an iterative model while also including waterfall elements
         - following defined phases to completion and then repeats the process, resembling a spiral
         - It allows for multiple iterations of the waterfall-style process
         - It is known as a "Metamodel" or "Model of Models"
@@ -226,15 +226,19 @@
 
 - 8.1.2 Maturity models (e.g., Capability Maturity Model (CMM), Software Assurance Maturity Model (SAMM))
     - Software Engineering Institute (SEI) (Carnegie Mellon University) created the Capability Maturity Model for Software (AKA Software Capability Maturity Model, abbreviated SW-CMM, CMM, or SCMM)
-    - 🟢 **SW-CMM**: a management process to foster the ongoing and continuous improvement of an org's processes and workflows for developing, maintaining and using software
+    - 🟢 **SW-CMM**:  I Must Do Quality Optimization 🟡 a management process to foster the ongoing and continuous improvement of an org's processes and workflows for developing, maintaining and using software
         - all software development moves through a set of maturity phases in sequential fashion, and CMM describes the principles and practices underlying software process maturity, intended to help improve the maturity and quality of software processes
         - note that CMM doesn't explicitly address security
         - stages of the CMM:
             - 🆎Level 1: **Initial**: process is disorganized; usually little or no defined software development process
-            - 🆎Level 2: **Repeatable**: in this phase, basic lifecycle management processes are introduced. Reuse of code in an organized fashion begins, and repeatable results are expected from similar projects. The key process areas for this level include Requirements Management, Software Project Planning, Software Project Tracking and Oversight, Software Subcontract Management, Software Quality Assurance, and Software Configuration Management.
+            - 🆎Level 2: **Managed\Repeatable**: in this phase, basic lifecycle management processes are introduced. Reuse of code in an organized fashion begins, and repeatable results are expected from similar projects. The key process areas for this level include Requirements Management, Software Project Planning, Software Project Tracking and Oversight, Software Subcontract Management, Software Quality Assurance, and Software Configuration Management.
+                - Processes are planned, documented, and executed according to policy. Basic project management practices are in place, allowing projects to repeat similar successes. 
             - 🆎Level 3: **Defined**: in this phase, software devs operate according to a set of formal, documented software development processes. The Defined stage of the SW-CMM is marked by the presence of basic lifecycle management processes and reuse of code. It includes the use of requirements management, software project planning, quality assurance, and configuration management practices.
-            - 🆎Level 4: **Managed**: in this phase, there is better management of the software process. The organization uses 📝quantitative measures to gain a detailed understanding of the development process. Software Quality Management is a process that occurs during level 4, the Managed stage of the SW-CMM.
-            - 🆎Level 5: **Optimizing**: in this phase continuous improvement occurs
+                - Processes are well-documented, standardized, and understood across the organization. There are defined standards, procedures, and tools in place, and processes are tailored based on the organization’s needs. 
+            - 🆎Level 4: **Quantitatively Managed**: in this phase, there is better management of the software process. The organization uses 📝quantitative measures to gain a detailed understanding of the development process. Software Quality Management is a process that occurs during level 4, the Managed stage of the SW-CMM. These organizations are precise with measurements and know exactly what they need to thrive based on their data.
+                - Processes are measured and controlled using quantitative data. Statistical methods are used to manage and improve processes, ensuring performance is predictable and consistent. 
+            - 🆎Level 5: **Optimizing**: in this phase continuous improvement occurs. Focus is on continuous process improvement through innovation and optimization. The organization regularly identifies weaknesses and makes improvements to prevent process defects and enhance capabilities.
+        -  CMM was designed to determine a company's level of maturity in the skill of software development. It was replaced by the Capability Maturity Model Integration (CMMI) because CMM just did not integrate into the business well even though it was a very good maturity model. As a side note, there is another CMM today, specifically the Systems Security Engineering CMM, as defined in the International Standards Orgnaion (ISO) 21827. 
     - 🟢**Software Assurance Maturity Model (SAMM)**: GDIVO Great Developers Implement Valuable Operations🟡 an open source project maintained by the Open Web Application Security Project (OWASP)
         - provides a framework for integrating security into the software development and maintenance processes and provides orgs with the ability to assess their maturity
         - SAMM associates software development with 5 business functions:
@@ -387,6 +391,7 @@
     - 💥**RunTime Environments (RTE)**: allows the portable execution of code across different operating systems or platforms without recompiling (e.g. Java Virtual Manager (JVM))
         - this is known as portable code, which needs translation between each environment, the role of the RTE
         - The JVM is the runtime virtual machine that allows the execution of Java code on a device. The JVM implements the Java sandbox but that is only one of its many functions.
+        - A runtime environment must be an environment in which all hardware and software components are available to fully operate. A gaming computer, virtual machine, and high-latency game server all meet the criteria for a runtime environment. It doesn't matter if their resources are limited, so long as they are fully capable of running.
         - 🔨**Runtime Application Security Protection (RASP)**: security agents comprised of small code units built into an app which can 🧠detect set of security violations; upon detection, the RASP agent can cause the app to terminate, or take other protective actions
 - 8.2.6 Continuous Integration and Continuous Delivery (CI/CD)
     - 📙**Continuous Integration and Continuous Delivery**: workflow automation processes and tools that attempt to reduce, if not eliminate, the need for manual communication and coordination between the steps of a software development process
@@ -488,7 +493,7 @@ inputs and outputs to inform the test plan.
         - software projects should be tracked in the org’s risk matrix, to ensure the dev team is connected to the broader risk management efforts, and not working in isolation
 
 [8.4](#8.4) Assess security impact of acquired software (OSG-9 Chpts 16,20)
-- 8.4.1 Commercial-off-the-shelf (COTS)
+- 8.4.1 Commercial-off-the-shelf (COTS): Software that is developed by a third party and typically sold for a profit is commonly described as Commercial Off The Shelf (COTS). Examples of well-known COTS applications include Microsoft Office, Intuit QuickBooks, and Adobe Creative Cloud.
     - ❄️**Commercial Off-the-Shelf (COTS)**: software elements, usually apps, that are provided as finished products (not intended for alteration by or for the end-user)
     - When using commercial off-the-shelf (COTS) software, customers do not generally have access to the source code and must depend upon the vendor to release security patches that correct vulnerabilities.
     - Most widely used commercial-off-the-shelf (COTS) software products have been security researcher (both benign and malicious) tested 
@@ -539,7 +544,7 @@ inputs and outputs to inform the test plan.
 
     - 🔴**Software as a Service (SaaS)**: Delivers software applications over the internet on a subscription basis. Examples: Google Workspace (formerly G Suite), Microsoft Office 365, Salesforce.
         - 🔔Cloud Service Provider (CSP): Provides access to the software application over the internet. Manages all underlying infrastructure and resources required to deliver the application. Manages updates, patches, and maintenance of the application. Ensures security and privacy of customer data stored within the application.
-        - 🔔Customer: Configures application settings and user preferences within the provided interface. Manages user data and ensures compliance with data protection regulations. Manages user access controls and permissions within the application. Integrates the SaaS application with other enterprise systems if necessary. The SaaS model gives the organization the least control, and the cloud service provider (CSP) is responsible for all maintenance.
+        - 🔔Customer: Configures application settings and user preferences within the provided interface. Manages user data and ensures compliance with data protection regulations. Manages user access controls and permissions within the application. Integrates the SaaS application with other enterprise systems if necessary. The SaaS model gives the organization the least control, and the cloud service provider (CSP) is responsible for all maintenance. Customer would still be responsible for identity and access management, as they would need to permit employees to access resources and manage logins, permissions, and passwords. The company would still be responsible for the users and endpoints being used to access the data now stored in the cloud. 
     
     - 🔴**Function as a Service (FaaS)**: Serverless computing model where developers execute functions in response to events. Examples: AWS Lambda, Azure Functions, Google Cloud Functions.
         - 🔔Cloud Service Provider (CSP): Executes functions in response to events or triggers. Ensures scalability and availability of the serverless execution environment. Manages performance metrics and response times for function executions. Implements security controls around function execution and data handling.
@@ -712,13 +717,13 @@ inputs and outputs to inform the test plan.
 
 - 🔴**Malware: (Malicious Software)** is a general term used to describe any software intentionally designed to cause damage to a computer, server, client, or computer network. It encompasses a wide range of malicious programs, including but not limited to:       
     - 🔥Viruses: Programs that replicate themselves and infect other files on a computer. Require humn intervention to replicate.
-    - 🔥Trojans: Programs that appear legitimate but perform malicious activities when executed. Trojan horses masquerade as useful software but then carry out malicious functions after installation.
+    - 🔥Trojans: Programs that appear legitimate but perform malicious activities when executed. Trojan horses masquerade as useful software but then carry out malicious functions after installation.  A well-designed Trojan won’t have any noticeable differences from legitimate software to the end-user. Administrators should ensure the software is signed by a trusted software provider to reduce the likelihood of a Trojan being introduced into the environment.
     - 🔥Ransomware: Encrypts files on a victim's system and demands ransom for decryption.
     - 🔥Spyware: Secretly gathers information about a user's activities.
     - 🔥Adware: Displays unwanted advertisements. classed as potentially unwanted programs (PUPs)
-    - 🔥Worms: Self-replicating malware that spreads over networks. e.g stuxnet, code red worm. Worms are malicious code objects that move between systems under their own power, whereas viruses require some type of human intervention.
+    - 🔥Worms: 📝Self-replicating malware that spreads over networks. e.g stuxnet, code red worm. Worms are malicious code objects that move between systems under their own power, whereas viruses require some type of human intervention.
     - 🔥Rootkits: Conceal the existence of malware or malicious processes. it is commonly used for 🧠privilege escalation. Privilege escalation attacks, such as those carried out by rootkits, seek to upgrade normal user accounts to administrative
-access rights. A rootkit is used to achieve or maintain elevated privileges on a victim’s host. Rootkits frequently masquerade as system-level services to help remain undetected. Rootkits often have kernel-level access and are very difficult to detect or remove.
+access rights. A rootkit is used to achieve or maintain 📝elevated privileges on a victim’s host. Rootkits frequently masquerade as system-level services to help remain undetected. Rootkits often have kernel-level access and are very difficult to detect or remove.
     - 🔥Fileless malware: Malware that leaves no trace of its presence nor saves itself to a storage device, but is still able to stay resident and active on a computer is fileless malware. This is similar to a rootkit, which can be described as an invisibility shield. But its core features are that it interferes with low-level communications of the operating environment to hide itself and then hide other things, such as files and/or processes. A rootkit is usually deposited on a system as a file that is then executed upon system load or application launch.
     - 🔥Cryptomalware: installs a cryptominer on a victim system.
     - 🔥Logic Bombs: Malicious code that lies dormant until certain conditions are met. Logic bombs wait until certain conditions are met before delivering their malicious payloads.
