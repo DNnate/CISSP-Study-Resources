@@ -499,7 +499,8 @@
             - Between DRP and BCP, the most common way to look at the two is that BCP is a bigger, 📝broader document that is for all critical missions and processes.
     - 📁**Disaster Recovery (DR)**: is a 📝subset of BC, that focuses on restoring information systems after a disaster. the goal of DRP is to restore regular business activity as quickly as possible.
     - These processes need to be periodically accessed, and regular testing of disaster recovery and business continuity controls provide organizations with the assurance they are effectively protected against disruptions to business ops
-    - The main objective of DR is to restore IT systems and data after a disaster (e.g., cyberattacks, natural disasters).
+    - The main objective of DR is to restore IT systems and data after a 📝disaster (e.g., cyberattacks, natural disasters) or a
+    - Disaster Recovery Plan (DRP) should be initiated when IT is 📝no longer able to support a 📝mission-critical process e.g where a business-critical file server crashes and no longer boots.
     - It’s more IT-focused and typically forms a part of the overall BCP. DR involves specific steps to recover technology systems, such as servers, networks, and databases.
     - For example, after a ransomware attack, DR would cover restoring backup data, rebuilding systems, and ensuring IT services are back online. When planning a disaster recovery solution, the amount of data loss should be lower than the Recovery Point Objective (RPO). RPO is the threshold (expressed as an interval of time) established by the organization to indicate the maximum amount of data loss it can tolerate without adverse impact. An organization that is unable to tolerate more than a day's worth of data loss would have an RPO of 24 hours.
     - Focuses on recovering IT infrastructure and data to bring systems back to normal after they’ve been disrupted.
