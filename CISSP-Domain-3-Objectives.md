@@ -159,6 +159,7 @@ You may find this domain to be more technical than others, and if you have exper
 
 - 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification. Bell-LaPadula was released in 1976 by the US government to provide for better confidentiality
     - The Bell-LaPadula security model deals with multiple levels of access regulation in 📝government and military applications. This security model involves labels ranging from Unclassified to Top Secret. Bell-LaPadula was developed to formalize the U.S. Department of 📝Defense's multi-level security policy.
+    - The Bell-LaPadula security model involves labels such as Unclassified and Top Secret. Bell-LaPadula was developed to formalize the U.S. Department of Defense's multi-level security policy. Bell-LaPadula is used in strict need-to-know environments.
     - Focuse is on confidentiality📝
     - Simple security property: 🔥No read-up 
     - Star (*) security property: 🔥No write-down ( an individual may not write to a file at a lower classification level than that of the individual. AKA confinement property. This is to prevent the accidental dissemination of sensitive information)
