@@ -278,7 +278,7 @@
                         - 🚧Decomposing the application to understand it and how it interacts with other components or users.
                         - 🚧Determining and ranking threats allowing you to focus on the threats that should be prioritized.
                         - 🚧Determining countermeasures and mitigation
-                    - threat assessment using threatmodelling techniques
+                    - threat assessment using threatmodelling techniques. Threat modeling refers to the process of identifying, understanding, and categorizing potential threats. T
                     - security requirements
                     - security architecture
             - 🛎️Implementation: process of building and deploying software components and managing flaws
