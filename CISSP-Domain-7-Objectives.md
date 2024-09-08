@@ -351,7 +351,8 @@ of litigation is imminent.
      - Impact
   
 - 7.2.7 User and Entity Behavior Analytics (UEBA)
-    - ✈️**UEBA (aka UBA)**: focuses on the analysis of user and entity behavior as a way of detecting inappropriate or unauthorized activity (e.g. fraud, malware, insider attacks etc); analysis engines are typically included with SIEM solutions or may be added via subscription
+    - ✈️**UEBA (aka UBA)**: focuses on the analysis of user and entity behavior as a way of detecting inappropriate or unauthorized activity (e.g. fraud, malware, insider attacks etc); analysis engines are typically included with SIEM solutions or may be added via subscription.
+        - User and Entity Behavior Analytics (UEBA) refers to a security capability that utilizes 📝machine learning to establish a baseline of expected user and device activity in order to detect deviations that might indicate a compromise. 
     - ✈️**Behavior-based detection**: (AKA statistical intrusion, anomaly, and heuristics-based detection), starts by creating a baseline of normal activities and events; once enough baseline data has been accumulated to determine normal activity, it can detect abnormal activity (that may indicate a malicious intrusion or event)
     - Behavior-based IDSs use the baseline, profiles, activity statistics, and heuristic evaluation techniques to compare current activity against previous activity to detect potentially malicious events
     - ✈️**Static code scanning techniques**: the scanner scans code in files, similar to white box testing
@@ -678,6 +679,8 @@ of litigation is imminent.
     - 💥**Sandboxing**: refers to a security technique where a separate, secure environment is created to run and analyze untested or untrusted programs or code without risking harm to the host device or network; this isolated environment, known as a sandbox, effectively contains the execution of the code, allowing it to run and behave as if it were in a normal computing environment, but without the ability to affect the host system or access critical resources and data 
     - Sandboxing provides a security boundary for applications and prevents the app from interacting with other apps; can be used as part of development, integration, or acceptance testing, as part of malware screening, or as part of a honeynet
     - Using a sandbox is an example of confinement, where the system restricts the access of a particular process to limit its ability to affect other processes running on the same system.
+    - Sandboxing is commonly utilized by next-generation antimalware solutions to evaluate suspect executables in a secure, isolated environment.
+    - Sandboxed environments are often enabled through virtualization technology, which prevents software executed within the sandboxed environment from interacting with the environment outside of the sandbox, except in controlled ways.
 - 7.7.6 Honeypots/honeynets
     - 🍏**Honeypots**: individual computers created as a trap or a decoy for intruders or insider threats. A pseudoflaw is a false vulnerability in a system that may distract an attacker. These are often used in honeypot system to consume an attacker's time while alerting administrators. Administrators of honeypots need to be careful not to solicit attackers into attacking a honeypot, as this is considered entrapment and is illegal. They should not be made too weak as more knowledgeable attackers will figure out that it is a honeypot much quicker and move on, possibly to critical business systems.
     - 🍏**Honeynet**: two or more networked honeypots used together to simulate a network
