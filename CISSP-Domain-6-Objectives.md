@@ -318,6 +318,7 @@
         - Misuse testing is a type of testing that involves trying to accomplish more than the user should be able to do when using a running piece of software.
         - a list of possible ways that an attacker might exploit the application is identified, and testers work through each scenario, testing the application to see if it is vulnerable to that exploit
         - Misuse case testing is commonly used to describe abuse case testing, but its focus is on testing to ensure 📝incorrect inputs or other types of misuse don't reveal any information about company servers or software.
+        - Misuse case testing is used to help identify potential security flaws in a software’s design by examining how software could be abused or manipulated into doing something malicious.
     - 🔨**Abuse case testing**: Abuse case testing is a test to determine if a website, its hardware, software, and interactions with customers have security 📝vulnerabilities that could be used by attackers..
     - 🔨**Use case testing**: use case testing is to verify that the application responds properly to actual use cases. It involves testing for desired functionality.
 
