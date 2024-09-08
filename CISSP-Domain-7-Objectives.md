@@ -638,7 +638,7 @@ of litigation is imminent.
     - 📝IPS is usually placed in line with the network traffic, so it is placed before the switch.
     - See NIST SP 800-94
 
-- 7.7.3 Whitelisting/blacklisting
+- 7.7.3 🔴**Whitelisting/blacklisting**
     - Method used to control which applications run and which applications can’t is allow list and deny list (AKA whitelists and blacklists)
     - 🎱**Allow list (Whitelist)**:: identifies a list of apps authorized to run on a system and blocks all other apps. A whitelist of allowed applications will ensure that users can run only the applications that you preapproves.
     - 🎱**Deny list (Blacklist)**: identifies a list of apps that are not authorized to run on a system. The blacklisting approach to application control allows users to install any software they wish except for packages specifically identified by the administrator as prohibited. This would be an appropriate approach in a scenario where users should be able to install any non malicious software they wish to use. Blacklists would require you to maintain a list of every application that you don't want to allow, which is an almost impossible task.
@@ -715,14 +715,14 @@ of litigation is imminent.
 
 
 [7.8](#7.8) Implement and support patch and vulnerability management (OSG-9 Chpt 16)
-- **Vulnerability Management**: activities necessary to identify, assess, prioritize, and remediate information systems weaknesses
-- Patch and vulnerability management processes work together to help protect an org against emerging threats; patch management ensures that appropriate patches are applied, and vuln management helps verify that systems are not vulnerable to known threats
-- **Patch**: (AKA updates, quick or hot fixes) a blanket term for any type of code written to correct bug or vulnerability or to improve existing software performance; when installed, a patch directly modifies files or device settings without changing the version number or release details of the related software comonent
-    - in the context of security, admins are primarily concerned with security patches, which are patches that affect a system’s vulns
-- **Patch Management**: systematic notification, identification, deployment, installation and verification of OS and app code revisions known as patches, hot fixes, and service packs  
+- Patch and vulnerability management processes work together to help protect an org against emerging threats; 📝patch management ensures that appropriate patches are applied, and 📝vuln management helps verify that systems are not vulnerable to known threats
+- 📁**Patch Management**: systematic notification, identification, deployment, installation and verification of OS and app code revisions known as patches, hot fixes, and service packs  
     - an effective patch management program ensures that systems are kept up to date with current patches
     - An effective patch management program evaluates and tests patches before deploying them.
-    - A patch management system ensures that systems have required patches. In addition to deploying patches, it would also check the systems to verify they accepted the patches. 
+    - A patch management system ensures that systems have required patches. In addition to deploying patches, it would also check the systems to verify they accepted the patches.
+    - **Patch**: (AKA updates, quick or hot fixes) a blanket term for any type of code written to correct bug or vulnerability or to improve existing software performance; when installed, a patch directly modifies files or device settings without changing the version number or release details of the related software comonent
+    - in the context of security, admins are primarily concerned with security patches, which are patches that affect a system’s vulns
+    - When patches are introduced to fix a security weakness in the system, they help mitigate risk
     - **Patch Tuesday**: several big-tech orgs (e.g. Microsoft, Adobe, Oracle etc) regularly release patches on the second Tuesday of every month
     - A patch management process includes evaluating patches, testing patches, and auditing patches.
         - 🎤Evaluating patches determines what patches should be deployed.
@@ -739,7 +739,7 @@ of litigation is imminent.
     - approve the patches: after successful testing, patches are approved for deployment; it’s common to use Change Management as part of the approval process
     - deploy the patches: after testing and approval, deploy the patches; many orgs use automated methods to deploy patches, via third-party or the software vendor
     - verify that patches are deployed: regularly test and audit systems to ensure they remain patched
-- **Vulnerability Management**: regularly identifying vulns, evaluating them, and taking steps to mitigate risks associated with them 
+- 📁**Vulnerability Management**: regularly identifying vulns, evaluating them, and taking steps to mitigate risks associated with them. Vulnerability Management are activities necessary to identify, assess, prioritize, and remediate information systems weaknesses
     - it isn’t possible to eliminate risks, and it isn’t possible to eliminate all vulnerabilities
     - a vuln managment program helps ensure that an org is regularly evaluating vulns and mitigating those that represent the greatest risk
     - one of the most common vulnerabilities within an org is an unpatched system, and so a vuln management program will often work in conjunction with a patch management program
@@ -747,7 +747,7 @@ of litigation is imminent.
     - A vulnerability scan will list or enumerate all security risks within a system.
 
 [7.9](#7.9) Understand and participate in change management processes (OSG-9 Chpt 16)
-- **Change management**: formal process an org uses to transition from the current state to a future state; typically includes mechanisms to request, evaluate, approve, implement, verify, and learn the change; ensures that the costs and benefits of changes are analyzed and changes are made in a controlled manner to reduce risks
+- 📁**Change management**: formal process an org uses to transition from the current state to a future state; typically includes mechanisms to request, evaluate, approve, implement, verify, and learn the change; ensures that the costs and benefits of changes are analyzed and changes are made in a controlled manner to reduce risks
     - Change management processes allow various IT experts to review proposed changes for unintended consequences before implementing
     - 💥**Request For Change (RFC)**: documentation of a proposed change in support of change management activities. Each change should be the result of a reviewed and approved request for change (RFC). These RFCs may be approved by the change advisory board (CAB). 
     - Change management aims to ensure that any change does not result in unintended outages or reduce security. 
