@@ -1102,7 +1102,7 @@ of litigation is imminent.
 - The checklist review is the 📝least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and suggest any necessary changes. It also has a very minimal 📝time commitment.
     - The checklist review is the least disruptive type of disaster recovery test. During a checklist review, team members each review the contents of their disaster recovery checklists on their own and 📝suggest any necessary changes.
     - A checklist exercise is to walk through the DRP using a checklist of items/sections that should be in the plan.
-    - It is possible to use a list such as commonly forgotten items to see if they have been included in the plan.
+    - It is possible to use a list such as commonly forgotten items to see if they have been included in the plan. A desk check, also known as a checklist, reviews the plan to ensure the expected items have been included in the disaster recovery plan document itself.
 - 7.12.1 
     - 📙**Read-through test**: one of the 📝simplest to conduct, but also one of the most critical; copies of a DR plan are distributed to the members of the DR team for review, accomplishing three goals:
         - ensure that key personnel are aware of their responsibilities and have that knowledge refreshed periodically
@@ -1112,7 +1112,7 @@ of litigation is imminent.
 - 7.12.2 Walkthrough
     - 📙**Structured walk-through/Tabletop**: AKA tabletop exercise, takes testing one step further, where members of the DR team gather in a large conference room and role-play a disaster 📝scenario
         - the team refers to their copies of the DR plan and discuss the appropriate responses to that particular type of disaster
-        - Tabletop exercises are designed to walk teams through a scenario,
+        - Tabletop exercises are designed to walk teams through a scenario, role-playing a disaster recovery scenario to test their readiness to respond. A moderator knows the full scope of the disaster, and each team member provides suggestions as they discuss the process of responding to this scenario. 
         - During a tabletop exercise, team members come together and walk through a scenario 📝without making any changes to information systems.
         - A structured walk-through test occurs in the 📝conference room where team members talk through a scenario using their plan. The completeness of the plan is assessed before they leave the conference room and attempt any actions on any systems.
         - The idea is to talk through the steps that have been documented to see if it has all of the correct steps and that they appear to be in the Disaster Recovery Plan (DRP). It is called a tabletop exercise because the team sits around a conference table to talk through the steps
@@ -1177,7 +1177,7 @@ of litigation is imminent.
 - Physical access control mechanisms deployed to control, monitor and manage access to a facility
     - Sections, divisions, or areas within a site should be clearly designated as public, private, or restricted with appropriate sinage
 - 7.14.1 Perimeter security controls
-    - 🍮**Fence** is a perimeter-defining (outdoor) device. Fences should be at least 📝eight feet/two to three meters tall with barbed wire at the top for adequate deterrence. The standard fencing height recommendations are:
+    - 🍮**Fence** is a perimeter-defining (outdoor) device. Fences should be at least 📝eight feet/two to three meters tall with 📝barbed wire at the top for adequate deterrence. The standard fencing height recommendations are:
         - ⚒️3-4 feet/1-1.5 meters deter casual trespassers
         - ⚒️6-7 feet/1.8- 2.1 meters deter most intruders, but not determined ones
         - ⚒️8 or more feet/2.4 meters or more deter determined intruders
