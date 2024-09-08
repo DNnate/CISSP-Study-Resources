@@ -508,7 +508,8 @@ of litigation is imminent.
     - The IR Team's job at this point is not to fix the problem; it's simply to try and prevent further damage
     - responders attempt to contain the incident in the mitigation step. 
     - Note this may involve disconnecting a computer from the network; sometimes responders take steps to mitigate the incident, but without letting the attacker know that the attack has been detected
-    - The mitigation phase of incident response focuses on actions that can contain the damage incurred during an incident. This includes 📝limiting the scope and or effectiveness of the incident. 
+    - The mitigation phase of incident response focuses on actions that can contain the damage incurred during an incident. This includes 📝limiting the scope and or effectiveness of the incident.
+    - Containing the compromise is part of the mitigation step of the incident response. the IoC must be contained before any further mitigations or recovery attempts are made.
 
 - 7.6.4 ❄️**Reporting**
     - Reporting occurs throughout the incident response process
