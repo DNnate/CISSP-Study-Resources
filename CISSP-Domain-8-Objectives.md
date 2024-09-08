@@ -110,7 +110,7 @@
         - In IPT team of stakeholders and individuals that possess different skills and who work together to acheive a defined process or product.
         - It was designed by the Defense Department in 1995.
         - It was a predecessor to the Agile methodology, which uses tools like the scrum approach and user stories to conduct software development work. 
-    - 📁**Agile methodology**: a project management approach to development that involves breaking the project into phases and emphasizes continuous collaboration and improvement; teams follow a cycle of planning, executing, and evaluating
+    - 📁**Agile methodology**: a project management approach to development that involves breaking the project into phases and emphasizes continuous collaboration and improvement; teams follow a cycle of planning, executing, and evaluating. The Agile software development model is an iterative and flexible approach, emphasizing collaboration, adaptability, and customer feedback throughout the development process for efficient and responsive project delivery.
         - Agile development emphasizes:
             - the delivery of working software in short iterations, helping to get the software to market faster 
             - reduced risk by frequently testing and providing feedback, helping to identify and resolve issues earlier in the development process
@@ -207,6 +207,7 @@
             - 🔏Operations and Maintenance
         - It allows developers to go backacross the 7 stages to make corrections. But you can only return to a previous stage (Only on stage back)
         - A major criticism of this model is that it's very rigid, and not ideal for most complex projects which often contain many variables that affect the scope throughout the project's lifecycle
+        - When software development follows a staggered approach of rigid, well-defined stages, this is considered the waterfall model. A waterfall model of system development contains all the steps required to take a project from conception to completion. Generally, you cannot skip or go back to steps using the waterfall model.
         - Despite many organizations moving to Agile, DevOps, or other more responsive development methodologies, waterfall remains a strong contender when clear objectives, upfront planning and stable requirements are combined with a need to prevent flaws and to have a high level of control over the development process and output.
         - It is mainly used where time and cost is not important
         - Still used in public utility projects and even building of nuclear reactors
