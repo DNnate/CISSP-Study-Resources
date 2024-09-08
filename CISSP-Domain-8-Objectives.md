@@ -364,7 +364,7 @@
 - Applications, including custom systems, can present significant risks and vulnerabilities, and to protect against these it's important to introduce security controls into the entire system’s development lifecycle
 - 8.2.1 Programming languages
     - Computers understand 1s and 0s (binary), and each CPU has its own (machine) language
-    - ⚒️**Machine language (GEN 1)**: machine language is a generation one software programming language, which is what a computer speaks
+    - ⚒️**Machine language (GEN 1)**: machine language is a generation one software programming language, which is what a computer speaks. Computers only understand binary, also called machine language, which consists only of 0s and 1s.
     - ⚒️**Assembly language (GEN 2)**: a way of using mnemonics to represent the basic instruction set of a CPU. Assembly language falls under generation two of the software programming languages. This language is one level above machine language and uses assemblers to transition code into machine language.  
         - 🎈Assemblers: tools that convert assembly language source code into machine code
         - 🎈Disassemblers: convert back into machine-readable assembly language (an intermediate step during the compilation process)
@@ -377,10 +377,11 @@
             - 🎈Compiler: converts source code into machine-executable format
             - 🎈Decompilers: convert binary executable back into source code
     - ⚒️**Interpreted language (GEN 4 & 5)**: uses an interpreter to execute; sourcecode is viewable; e.g. Python, R, JavaScript, VBScript.
-        - Generations four and five involve very high-level and natural language, which utilize an interpreter. This interpreter can take language from these levels and bring it straight to machine level. 
+        - Generations four and five involve very high-level and natural language, which utilize an interpreter. This interpreter can take language from these levels and bring it straight to machine level.
+        -  Interpreted language uses source code and distributes the code without compiling it into a file.
         - 📝JavaScript remains the one mobile code technology that may affect the security of modern browsers and their host OSs. JavaScript is an interpreted language so the code is not compiled prior to execution, allowing you to inspect the contents of the code. JavaScript is an interpreted programming language. It is interpreted on the fly. You can think of an interpreter next to a speaker that translates what they are saying into another language for the audience.
     - 🟦**Object-oriented programming (OOP)**: defines an object to be set of a software that offers one or more 📝methods, internal to the object, that software external to that object can request to access; each method may require specific inputs and resources and may produce a specified set of outputs; focuses on the objects involved in an interaction. OOP is the concept that there are objects that applications are created from. An object contains data and code. Data are fields that are sometimes called attributes or properties. The codes are procedures or methods.
-        - OOP languages include 📝C++, 📝Java, and 📝.NET
+        - ⚒️**Object Oriented language**OOP languages include 📝C++, 📝Java, and 📝.NET
         - think of OOP as a group of objects that can be requested to perform certain operations or exhibit certain behaviors, working together to provide a system’s functionality or capabilities
         - OOP has the potential to be more reliable and to reduce the propagation of program change errors, and is better suited to modeling or mimicking the real world
         - each object in the OOP model has methods that correspond to specific actions that can be taken on the object
@@ -702,7 +703,19 @@ inputs and outputs to inform the test plan.
                 - It is elastic and dynamic to changes
                 - It can be automated
                 - With the convenience of everything being accessible and administrated on one screen, security implementations are also far easier to understand and recognize.
-                - Additionally, these software programs can be integrated with other programs. Everything you need can be on one computer via software, configured the way you want, and accessible wirelessly or however you would like. 
+                - Additionally, these software programs can be integrated with other programs. Everything you need can be on one computer via software, configured the way you want, and accessible wirelessly or however you would like.
+   - 🍏**Software-defined Everything (SDx)**: SDx refers to replacing hardware with software through virtualization. Software-Defined Everything (SDx) refers to the shift toward managing and controlling IT infrastructure through software rather than relying on hardware-based configurations. In SDx, various aspects of computing environments (e.g., networking, storage, and data centers) are abstracted, virtualized, and managed via software platforms, providing more flexibility, scalability, and automation. Key compnents include
+       - 💠Virtual Machines (VMs) run guest operating systems. There can be multiple VMs on one piece of hardware, so new hardware is not needed for each operating system.
+       - 💠Software-Defined Networks (SDNs) separate controls from rules and remove the need for networking hardware such as routers and switches.
+       - 💠A Virtual Storage Area Network (VSAN) virtualizes the storage controllers using virtual servers (A Storage Area Network (SAN) is a high-speed network that connects storage devices with servers)
+       - 💠Software-Defined Networking (SDN): Virtualizes the network, allowing network management to be controlled programmatically rather than through hardware-based switches and routers. Example: A cloud provider using SDN can dynamically route traffic to optimize performance without physically changing the network infrastructure. Security Implications: Centralized control can be a single point of failure if compromised.
+       - 💠Software-Defined Storage (SDS): Storage is managed and provisioned through software, decoupling it from the physical hardware. Example: VMware's vSAN, which allows storage resources to be pooled and managed by software without needing specific hardware for each type of storage. Security Implications: Access control to the software that manages storage becomes critical.
+       - 💠Software-Defined Data Center (SDDC): Definition: All elements of the data center (compute, storage, and networking) are virtualized and delivered as a service. The entire infrastructure is managed by software. Example: VMware's SDDC or OpenStack, where compute, network, and storage are virtualized and centrally managed via software. Security Implications: Virtualization increases the attack surface, so securing the hypervisor and management software is vital.
+       - 💠Software-Defined Perimeter (SDP): Definition: A security framework that dynamically creates one-to-one connections between users and the resources they need to access, hiding all other services. Example: Google’s BeyondCorp architecture uses SDP to create a perimeter-less, secure environment for users accessing company resources from any device. Security Implications: Provides enhanced security by limiting access to specific resources based on identity and context.
+       - Benefits of Software-Defined Everything:
+           - 🎈Flexibility: Administrators can quickly modify, scale, and manage infrastructure without hardware changes.
+           - 🎈Cost Efficiency: Reduced need for specialized hardware, allowing organizations to use commodity hardware and focus on software for advanced capabilities.
+           - 🎈Automation: Repetitive tasks can be automated, improving response times and reducing human error.
    - 🍏**Infrastructure as Code (IaC)**:
        - IaC is focused on automating the deployment and management of infrastructure. It allows IT environments (servers, networks, databases, etc.) to be defined and managed through code, making infrastructure deployment consistent, repeatable, and scalable.
        - IaC covers the entire IT infrastructure, from virtual machines and networks to storage and application configurations. It is not limited to security but encompasses all aspects of infrastructure provisioning and management.
