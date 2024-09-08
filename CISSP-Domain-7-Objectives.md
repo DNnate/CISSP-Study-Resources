@@ -1101,7 +1101,11 @@ of litigation is imminent.
 - Physical access control mechanisms deployed to control, monitor and manage access to a facility
     - Sections, divisions, or areas within a site should be clearly designated as public, private, or restricted with appropriate sinage
 - 7.14.1 Perimeter security controls
-    - 🍮**Fence** is a perimeter-defining (outdoor) device. Fences should be at least 📝eight feet/two to three meters tall with barbed wire at the top for adequate deterrence. Fences can consist of:
+    - 🍮**Fence** is a perimeter-defining (outdoor) device. Fences should be at least 📝eight feet/two to three meters tall with barbed wire at the top for adequate deterrence. The standard fencing height recommendations are:
+        - ⚒️3-4 feet/1-1.5 meters deter casual trespassers
+        - ⚒️6-7 feet/1.8- 2.1 meters deter most intruders, but not determined ones
+        - ⚒️8 or more feet/2.4 meters or more deter determined intruders
+    - Fences can consist of:
         - stripes painted on the ground
         - chain link fences
         - barbed wire
@@ -1110,7 +1114,7 @@ of litigation is imminent.
     - 🍮**Perimeter intrusion detection and assessment system (PIDAS)**: an advanced form of fencing that has two or three fences used in concert to optimize security. A PIDAS (perimeter intrusion detection and assessment system) is a 📝fence system that has two or three fences used in concert to optimize security. The space between the fences can serve as a corridor for guard patrols or wandering guard dogs. One or more fences can support touch detection technologies. An exterior fence is used to keep animals and casual trespassers from accessing the main fence. This reduces the nuisance alarm rate (NAR) or false positives.
     - 🍮**Sensitive compartmented information facility (SCIF)** is often used by government and military agencies, divisions, and contractors to provide a secure environment for highly sensitive data storage and computation. An SCIF is typically located within a structure, although an entire structure can be implemented as an SCIF. 
     - 🍮**Gate**: controlled exit and entry point in a fence or wall
-    - 🍮**Turnstile**: form of gate that prevents more than one person at a time from gaining entry and often restricts movement in one direction. Turnstiles allow only one person to enter at a time. As one person swipes a badge and enters the data center, the turnstile restricts the following person. It's a method of preventing 📝tailgating, which happens when an unauthorized person follows an authorized person through an entrance.
+    - 🍮**Turnstile**: form of gate that prevents more than one person at a time from gaining entry and often restricts movement in one direction. Turnstiles allow only one person to enter at a time. As one person swipes a badge and enters the data center, the turnstile restricts the following person. It's a method of preventing 📝tailgating/📝piggybacking, which happens when an unauthorized person follows an authorized person through an entrance.
     - 🍮**Access control vestibule\Mantrap**: (AKA mantrap) a double set of doors that is often protected by a guard or other physical layout preventing piggybacking and can trap individuals at the discretion of security personnel
         - A mantrap uses two sets of doors, only one of which can open at a time. A mantrap is a type of 📝preventive access control, although its implementation is a physical control.
             - Double door systems, or mantraps, force individuals into a small room with an ingress and egress door. Before the person can exit through the egress door, the ingress door must be closed and locked. If the individual is authorized, the egress door will unlock and they can proceed. If they are not authorized, both doors remain locked until a security guard or police officer arrives and escorts them off the property or arrests them for trespassing. It is common for mantraps to have a weight scale across the floor to ensure only one person is in the room.
