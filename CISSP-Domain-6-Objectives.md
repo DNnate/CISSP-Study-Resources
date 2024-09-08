@@ -222,7 +222,7 @@
             - 🔖False positives occur when scans report the presence of a vulnerability that does not actually exist.
             - 🔖False negatives occur when scans report that no vulnerability exists when one does, in fact, exist.
     - Penetration tests are normally categorized into three groups:
-        - 🔴**white-box penetration test (crystal or Open-box or Clear-box)**:
+        - 🔴**white-box penetration test (crystal or Full knowledge or Open-box or Clear-box)**:
             - provides the attackers with **detailed information** about the systems they target
             - this bypasses many of the reconnaissance steps that normally precede attacks, shortening the time of the attack and increasing the likelihood that it will find security flaws
             - When the penetration testers are provided detailed information, it is referred to as a full-knowledge test (white box).
@@ -235,7 +235,7 @@
             - In a gray-box test, the tester evaluates the software from a user perspective but has access to the source code as the test is conducted.
             - In grey-box or partial testing, the penetration testers are provided with partial information before testing. This can help the tester potentially find vulnerabilities and exploit them more than if the tester knew no information about the environment before testing.
             - this is particularly common when black-box results are desired but costs or time constraints mean that some knowledge is needed to complete the testing
-            - Partial-box (formerly grey) testing is when the tester has some internal knowledge of the environment.
+            - Partial-box (formerly grey) testing is when the tester has some internal knowledge of the environment. Partial knowledge emulates an attack coming from someone such as a customer, contractor, vendor, or employee who has some knowledge of the business before the attack.
             - these tests are sometimes called "**partially known environment**" tests
         - 🔴**black-box penetration test (Closed-box or Zero-knowledge testing)**:
             - does not provide attackers with any information prior to the attack
