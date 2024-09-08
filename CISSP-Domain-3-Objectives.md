@@ -90,6 +90,7 @@ You may find this domain to be more technical than others, and if you have exper
         - M of N control requires that a minimum number of authorized users (M) be present out of all authorized users (N) before performing a function. For example, a dual custody safe may have three keys and require that two of the three keys be present before opening. M of N control is a form of split knowledge. Split knowledge separates a piece of information, say a password or combination for a safe, between multiple people. 
 - 3.1.7 Keep it simple
     - ❄️**Keep it simple**: AKA keep it simple, stupid (KISS), this concept is the encouragement to avoid overcomplicating the environment, organization, or product design. The keep it simple principle says that security controls and other technologies should remain as simple as possible while still completing their objectives.
+        - For these reasons, keeping things simple means eliminating redundancy. Maintaining simple configurations and adding features only as needed will lead to less extra work for developers and allow user input to determine how a product develops over time.
     3.1.8 Zero Trust
     - ❄️**Zero Trust**: Security architecture where no entity is trusted by default. Based on 3 principles
         - ⭐Assume Breach 
