@@ -406,6 +406,7 @@ of litigation is imminent.
 - 7.4.4 Job rotation
     - 💥**Job rotation**: (AKA rotation of duties) means that employees rotate through jobs or rotate job responsibilities with other employees
         - using job rotation as a security control provides peer review, reduces fraud, and enables cross-training
+        - prevemts employees from developing familiarity with security controls over time and finding ways to bypass them.
         - job rotation policy can act as both a deterrent and a detection mechanism
         - Job rotation and separation of duties policies help prevent fraud.
         - Job rotation helps ensure that multiple people can do the same job and can help prevent the organization from losing information when a single person leaves.
