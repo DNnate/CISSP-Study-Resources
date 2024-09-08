@@ -741,7 +741,7 @@ of litigation is imminent.
 - Common steps within an effective program:
     - evaluate patches: determine if they apply to your systems
     - test patches: test patches on an isolated, non-production system to determine if the patch causes any unwanted side effects
-    - approve the patches: after successful testing, patches are approved for deployment; it’s common to use Change Management as part of the approval process
+    - approve the patches: after successful testing, patches are approved for deployment; it’s common to use 📝Change Management as part of the approval process
     - deploy the patches: after testing and approval, deploy the patches; many orgs use automated methods to deploy patches, via third-party or the software vendor
     - verify that patches are deployed: regularly test and audit systems to ensure they remain patched
 - 📁**Vulnerability Management**: regularly identifying vulns, evaluating them, and taking steps to mitigate risks associated with them. Vulnerability Management are activities necessary to identify, assess, prioritize, and remediate information systems weaknesses
@@ -756,6 +756,7 @@ of litigation is imminent.
 [7.9](#7.9) Understand and participate in change management processes (OSG-9 Chpt 16)
 - 📁**Change management**: formal process an org uses to transition from the current state to a future state; typically includes mechanisms to request, evaluate, approve, implement, verify, and learn the change; ensures that the costs and benefits of changes are analyzed and changes are made in a controlled manner to reduce risks
     - Change management is a structured and systematic approach used to manage the process of introducing modifications, updates, or alterations to an organization's systems, processes, technology, or infrastructure. The primary goal of change management is to minimize disruption, reduce risks, and ensure that changes are implemented smoothly and effectively while maximizing benefits and minimizing adverse impacts.
+    - Security analysts should always 📝report findings to management and 📝gain approval to implement changes once the total risk to the business can be properly weighed. This is the process of change management and patch management.
     - Change management processes allow various IT experts to review proposed changes for unintended consequences before implementing
     - 💥**Request For Change (RFC)**: documentation of a proposed change in support of change management activities. Each change should be the result of a reviewed and approved request for change (RFC). These RFCs may be approved by the change advisory board (CAB). 
     - Change management aims to ensure that any change does not result in unintended outages or reduce security. 
