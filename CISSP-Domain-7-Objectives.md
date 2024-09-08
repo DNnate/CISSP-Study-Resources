@@ -1,4 +1,4 @@
-```````````[Domain 7](#domain7-top) **Security Operations**
+[Domain 7](#domain7-top) **Security Operations**
 
 - **Allowed/Blocked listing**: allowed or blocked entities, register of entities that are being provided (or blocked) for a particular privilege, service, mobility, access or recognition including web, IP, geo, hardware address, files/programs; entities on the allowed list will be accepted, approved and/or recognized; deprecated AKA whitelist/blacklist; systems also alert IT security personnel an access attempt involves a resource not on a pre-approved list; can also incorporate anti-malware
 - **Alternate site**: contingency or Continuity of Operations (COOP) site used to assume system or org operations, if the primary site is not available
