@@ -495,6 +495,7 @@
             - 🍪The company reroutes deliveries from alternative suppliers to maintain product availability.
             - 🍪Non-critical employees are given time off until the situation improves.
             - 🍪Online shopping systems, which run on backup generators or alternative power sources, remain operational so customers can still place orders.
+            - 🪕The National Institute for Standards and Technology NIST defines a Business Continuity Plan (BCP) as “The documentation of a predetermined set of instructions or procedures that describe how an organization’s mission/business processes will be sustained during and after a significant disruption.”
             - 🉑Outcome: Even though there’s a snowstorm, the company continues to fulfill customer orders and keep the business running by adapting its operations.
             - **💢Business Continuity Planning (BCP)** is defined by NIST as, “The documentation of a predetermined set of instructions or procedures that describe how an organization’s mission/business processes will be sustained during and after a significant disruption.”
             - A Business Continuity Plan (BCP) deals with both preparing for a disaster and aiding after a disaster has occurred. The primary goal of a BCP is to reduce disaster-related risks to an acceptable level. A BCP is broader than a Disaster Recovery Plan (DRP) and is focused on the business as a whole, not just IT equipment.
@@ -513,7 +514,7 @@
         - 🍪Data is restored from secure off-site backups to bring the banking systems back online.
         - 🍪Customer data and transaction history are restored from secure backups, ensuring that no information is lost.
         - 🍪Online systems are restored to normal operation, and branches are back online to process orders within hours
-        - 🍪The United States National Institute for Standards and Technology (NIST) defines a DRP as “A written plan for processing critical applications in the event of a major hardware or software failure or destruction of facilities.” Since the main warehouse is on fire, the DRP is the best match.
+        - 🪕The National Institute for Standards and Technology (NIST) defines a DRP as “A written plan for processing critical applications in the event of a major hardware or software failure or destruction of facilities.” Since the main warehouse is on fire, the DRP is the best match.
         - 🉑Outcome: After a short downtime, IT systems are restored, and the company resumes online order processing. The focus here is on recovering the IT systems after the fire.
     - 📝Protection of life is of the utmost importance and should be dealt with first before attempting to save material things
         - Crisis management is the process of planning and responding to unexpected events that can have a negative impact on an organization. One of the key traits of crisis management is the ability to anticipate potential problems and develop plans to mitigate their impact. This means being able to think ahead and identify potential risks, as well as having a plan in place to deal with them if they do occur.
