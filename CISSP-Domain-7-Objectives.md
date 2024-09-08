@@ -1,4 +1,4 @@
-[Domain 7](#domain7-top) **Security Operations**
+```````````[Domain 7](#domain7-top) **Security Operations**
 
 - **Allowed/Blocked listing**: allowed or blocked entities, register of entities that are being provided (or blocked) for a particular privilege, service, mobility, access or recognition including web, IP, geo, hardware address, files/programs; entities on the allowed list will be accepted, approved and/or recognized; deprecated AKA whitelist/blacklist; systems also alert IT security personnel an access attempt involves a resource not on a pre-approved list; can also incorporate anti-malware
 - **Alternate site**: contingency or Continuity of Operations (COOP) site used to assume system or org operations, if the primary site is not available
@@ -126,9 +126,9 @@ of litigation is imminent.
         - 🧑‍⚖️**secondary evidence**:
             - less powerful and reliable than primary evidence (e.g. copies of originals, witness oral evidence etc)
             - if primary evidence is available secondary of the same content is not valid
-        - 🧑‍⚖️**Real Evidence**: also known as object evidence. this type of evidence includes physical objects, such as computers, hard drives, and other storage devices, that can be brought into a court of law. Real evidence must be either 📝uniquely identified by a witness or authenticated through a 📝documented chain of custody.  Real evidence is object evidence—tangible things that can be brought into a court of law.
+        - 🧑‍⚖️**Real Evidence**: also known as object evidence. this type of evidence includes 📝physical objects, such as computers, hard drives, and other storage devices, that can be brought into a court of law. Real evidence must be either 📝uniquely identified by a witness or authenticated through a 📝documented chain of custody.  Real evidence is object evidence—tangible things that can be brought into a court of law.
             - Police investigators, evidence technicians, attorneys, and anyone else involved in the collection, processing, analysis, and production of evidence must maintain the chain of custody 
-        - 🧑‍⚖️**Documentary Evidence**: includes any 📝written items brought into court to prove a fact at hand. This type of evidence must also be authenticated. Note: Server logs are an example of documentary evidence. Two additional evidence rules apply specifically to documentary evidence:
+        - 🧑‍⚖️**Documentary Evidence**: includes any 📝written items brought into court to prove a fact at hand. This type of evidence must also be authenticated. Note📝Server logs, 📝system logs are an example of documentary evidence. Two additional evidence rules apply specifically to documentary evidence:
              - ✴️The best evidence rule states that when a document is used as evidence in a court proceeding, the original document must be introduced. Best evidence is a form of documentary evidence, but specifically it is the original document rather than a copy or description.
              - ✴️The parol evidence rule states that when an agreement between parties is put into written form, the written document is assumed to contain all the terms of the agreement and no verbal agreements may modify the written agreement.
         - 🧑‍⚖️**Direct evidence**: this type of evidence is based on the observations of a witness or expert opinion and can be used to prove a fact at hand (with backup evidence support)
