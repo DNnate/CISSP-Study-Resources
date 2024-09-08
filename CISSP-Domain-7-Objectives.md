@@ -742,6 +742,7 @@ of litigation is imminent.
     - an effective patch management program ensures that systems are kept up to date with current patches
     - An effective patch management program evaluates and tests patches before deploying them.
     - A patch management system ensures that systems have required patches. In addition to deploying patches, it would also check the systems to verify they accepted the patches.
+    - 📝Vulnerability scanning can help discover systems that still require patching. Vulnerability scans should be performed periodically on production environments.
     - **Patch**: (AKA updates, quick or hot fixes) a blanket term for any type of code written to correct bug or vulnerability or to improve existing software performance; when installed, a patch directly modifies files or device settings without changing the version number or release details of the related software comonent
     - in the context of security, admins are primarily concerned with security patches, which are patches that affect a system’s vulns
     - When patches are introduced to fix a security weakness in the system, they help mitigate risk
@@ -783,6 +784,13 @@ of litigation is imminent.
     - 💢Release control includes acceptance testing to ensure that any alterations to end-user work tasks are understood and functional.
     - 💢Configuration control ensures that changes to software versions are made in accordance with the change control and configuration management process. Updates can be made only from authorized distributions in accordance with those policies.
     - Change management controls provide a process to control, document, track, and audit all system changes.
+    - The typical steps for the change management process are as follows:
+        - 🆎Request the change
+        - 🆎Review the change
+        - 🆎Approve/reject the change
+        - 🆎Test the change
+        - 🆎Schedule and implement the change
+        - 🆎Document the change
     - The change management process includes multiple steps that build upon each other:
         - 🔐Change request: a change request can come from any part of an org and pertain to almost any topic; companies typically use some type of change management software. 
         - 🔐Assess impact: after a change request is made, however small the request might be, the impact of the potential change must be assessed
