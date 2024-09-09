@@ -67,6 +67,8 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 📚**Authorization**: Authorization verifies the identity of a subject by checking a factor like a password and then granting an appropriate level of permissions if the user is allowed access. Permissions include read, write, tag, list, execute, etc.  Authorization provides a user with capabilities or rights. It is the process of determining what a user is allowed to do.
 - 5.2.1 Identiy management (IdM) implementation
     - Identity and access management is a collection of processes and techologies that are used to control access to critical assets; it's purpose is the management of access to information, systems, devices, and facilities
+    - 🍡An **Identity and Access Management (IAM)** platform is designed to manage user identities and access permissions across an organization. It automates user access reviews, ensures compliance, and integrates with various systems to provide centralized control over user access and rights. This makes it the most comprehensive solution for eliminating manual user access reviews and improving compliance.
+        - 🎈**Privileged Access Management (PAM) system**: PAM focuses on managing and securing privileged accounts and access, which is a subset of IAM functionality. 
     - Identity Management (IdM) implementation techniques generally fall into two categories:
         - ♈**centralized access control**: implies a single entity within a system performs all authorization verification
             - potentially creates a single point of failure
