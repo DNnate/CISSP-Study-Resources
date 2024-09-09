@@ -18,6 +18,7 @@
 - 2.1.1 ❄️**Data classification**
   - Managing the data lifecycle refers to protecting it from cradle to grave -- steps need to be taken to protect data when it's first created until it's destroyed
   - One of the first steps in the lifecycle is identifying and classifying information and assets, often within a security policy
+  - Data classification ensures 📝integrity, 📝confidentiality and 📝availability
   - Data classifications provide strong protection against the loss of confidentiality
   - Data classification identifies the sensitivity of the data according to the data governance policy and then Marking and labeling are when the classification level is physically added to the document or media. 📝Marking helps ensure individuals protect information and media while in their position.
   - Identifying the security classification for data and defining the requirements to protect the data is the primary purpose of data classification. It defines how to 📝protect data at rest and in transit, and how to back it up.
