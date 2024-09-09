@@ -455,7 +455,8 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
     - More prone to interference because it's a crowded band shared with many devices, like microwaves, cordless phones, and other wireless networks.
     - Better range and penetration through walls and obstacles, making it suitable for larger areas.
     - Typically slower due to more interference and less available bandwidth.
-    - Better for coverage in larger spaces or environments with many obstacles. 
+    - Better for coverage in larger spaces or environments with many obstacles.
+        - Disabling the 2.4GHz radios on the WiFi access points (APs) is the most cost-efficient way to improve network performance if the neighboring offices are not using the same frequency band. The 2.4GHz band is often more crowded and subject to interference from other devices. By disabling it, you can reduce interference and congestion, potentially improving performance for devices using the 5GHz band. 
 - 📙**5 GHz Wireless Channels:** The 5 GHz band offers significantly more channels—up to 25 or more non-overlapping channels, depending on the region and the specific portion of the 5 GHz spectrum being used. In the U.S., for instance, there are 24 non-overlapping channels available.
     - Less interference and congestion due to more available channels and less crowded spectrum.
     - Shorter range and poorer penetration through walls, but offers faster speeds over shorter distances.
