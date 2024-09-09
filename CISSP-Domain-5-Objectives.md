@@ -367,6 +367,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
 - 5.5.1 🌲✴️**Account accesss review**
     - Administrators need to periodically review user, system and service accounts to ensure they meet security policies and that they don’t have excessive privileges
     - Administrators should regularly review accounts to ensure that they have appropriate privileges and are not inactive. Privilege-related issues include excessive privileges (like unneeded administrator-level access) and privilege creep (acquiring and retaining unneeded privileges as job roles change).
+    - User access 📝recertification involves periodically reviewing access rights to ensure they are still appropriate.
     - Be careful in using the local system account as an application service account; although it allows the app to run without creating a special service account, it usually grants the app more access than it needs
     - You can use scripts to run periodically and check for unused accounts, and check priveleged group membership, removing unauthorized accounts
     - Guard against two access control issues:
