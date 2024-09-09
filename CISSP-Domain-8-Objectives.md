@@ -255,9 +255,12 @@
             - 🔥IT operations and
             - 🔥Information security (introduced in the DevSecOps model)
         - DevSecOps is a software development approach incorporating automated cybersecurity checks into its CI/CD pipeline automation. DevSecOps is a combination of Development (Dev), Security (Sec), and Operations (Ops).
+        - In DevSecOps, the security team is integrated into the development of software very early. Typically, the security team will follow the software creation progress and work with the developers during every step of the development phase. This helps to ensure secure practices occur at every stage of the software development life cycle, instead of potentially allowing things to be missed during the development. Additionally, this can make the development of software more efficient.
+        - In DevSecOps, the work will be checked for security flaws while it is being created, not after.
 - 8.1.2 Maturity models (e.g., Capability Maturity Model (CMM), Software Assurance Maturity Model (SAMM))
     - Software Engineering Institute (SEI) (Carnegie Mellon University) created the Capability Maturity Model for Software (AKA Software Capability Maturity Model, abbreviated SW-CMM, CMM, or SCMM)
-    - 🟢 **SW-CMM**:  I Must Do Quality Optimization 🟡 a management process to foster the ongoing and continuous improvement of an org's processes and workflows for developing, maintaining and using software
+    - 🟢 **SW-CMM**:  I Must Do Quality Optimization 🟡
+    - It is a management process to foster the ongoing and continuous improvement of an org's processes and workflows for developing, maintaining and using software. The Software Capability Maturity Model (SCMM) is based on the principle that a mature software development process will produce quality software.
         - all software development moves through a set of maturity phases in sequential fashion, and CMM describes the principles and practices underlying software process maturity, intended to help improve the maturity and quality of software processes
         - note that CMM doesn't explicitly address security
         - stages of the CMM:
@@ -275,6 +278,8 @@
         -  CMM was designed to determine a company's level of maturity in the skill of software development. It was replaced by the Capability Maturity Model Integration (CMMI) because CMM just did not integrate into the business well even though it was a very good maturity model. As a side note, there is another CMM today, specifically the Systems Security Engineering CMM, as defined in the International Standards Orgnaion (ISO) 21827. 
     - 🟢**Software Assurance Maturity Model (SAMM)**: GDIVO Great Developers Implement Valuable Operations🟡 an open source project maintained by the Open Web Application Security Project (OWASP)
         - provides a framework for integrating security into the software development and maintenance processes and provides orgs with the ability to assess their maturity
+        - SAMM is a regimented and well-structured approach to ensure proper software development with security in mind. It does not offer the flexibility of adapting to the needs of software. Instead, software should follow suit with SAMM.
+        - A Software Assurance Maturity Model (SAMM) ensures proper development practices in software by combining five major aspects of the process into a framework to promote security. Essentially, SAMM ensures software development includes governance, design, implementation, verification, and operations.
         - SAMM associates software development with 5 business functions:
             - 🛎️Governance: the activities needed to manage software development processes
                 - this function includes practices for:
@@ -446,6 +451,8 @@
         - The JVM is the runtime virtual machine that allows the execution of Java code on a device. The JVM implements the Java sandbox but that is only one of its many functions.
         - A runtime environment must be an environment in which all hardware and software components are available to fully operate. A gaming computer, virtual machine, and high-latency game server all meet the criteria for a runtime environment. It doesn't matter if their resources are limited, so long as they are fully capable of running.
         - Runtime environments are pre-created environments capable of running various types of operating systems. This is beneficial to customers, employees, and anyone who uses computers every day. With a runtime environment, an environment can be created quickly that will cater to the needs of any software or other purpose needed.
+        - A runtime or runtime environment is an environment that contains all the hardware and software necessary to properly run an application. A good example of this is a virtual machine, which would have all the proper software and hardware needed to create a virtual environment.
+        - Runtimes can be very complex, as there are a lot of different components that must be compatible. Hardware, drivers, software, and operating systems all must be compatible for a successful runtime environment. 
         - 🔨**Runtime Application Security Protection (RASP)**: security agents comprised of small code units built into an app which can 🧠detect set of security violations; upon detection, the RASP agent can cause the app to terminate, or take other protective actions. Runtime Application Self-Protection (RASP) is a security application that ensures all software runs as it should and does not execute behavior that may be malicious. RASP digs into the code associated with the program, views what is set to occur at runtime, and determines if it's malicious. In fact, RASP is known to slow programs down and sometimes hinder performance. The protection it offers occurs during a dynamic analysis, not static. 
 - 8.2.6 Continuous Integration and Continuous Delivery (CI/CD)
     - 📙**Continuous Integration and Continuous Delivery**: workflow automation processes and tools that attempt to reduce, if not eliminate, the need for manual communication and coordination between the steps of a software development process
