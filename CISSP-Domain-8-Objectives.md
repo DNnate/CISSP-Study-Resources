@@ -100,6 +100,13 @@
     - It can lead to Data Redundancy i.e data duplication because of the need to represent the same data in multiple hierarchies.
         - **Windows Registry:** A hierarchical database that stores low-level settings for the operating system is known as the Windows Registry in Microsoft Windows operating systems. The Windows Registry is a centralized database that stores configuration settings and options for the operating system, hardware devices, software applications, and user preferences. It is organized in a hierarchical structure with keys and values, allowing the system and applications to retrieve and store configuration data efficiently. 
 - ❄️**SDLC**: Software Development LifeCycle is a framework and systematic associated with tasks that are performed in a series of steps for building, deploying, and supporting software apps; 🧠begins with planning and requirements gathering, and ends with decommissioning and sunsetting; there are many different SDLCs, such as agile, DevSecOps, rapid prototyping, offering different approaches to defining and managing the software lifecycle. The SDLC does not mandate the use of an iterative or sequential approach; it allows for either approach.
+    - SDLC is generally
+        - 🥦Define
+        - 🥦Planning and requirements analysis
+        - 🥦Design
+        - 🥦Develop
+        - 🥦Testing
+        - 🥦Maintenance 
     - All systems development processes should have several activities in common. Although they may not necessarily share the same names, these core activities are essential to the development of sound, secure systems:
         - 🆎Phase 1: Conceptual definition
         - 🆎Phase 2: Functional requirements determination:  conducted by the senior team members with inputs from all the stakeholders and domain experts. Planning for the quality assurance requirements and recognization of the risks involved is also done at this stage.
