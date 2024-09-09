@@ -1035,7 +1035,10 @@ of litigation is imminent.
     - ⚒️RTO (recovery time objective): max tolerable time to recover systems to a defined service level.  It should never exceed the Maximum Tolerable Downtime (MTD)
     - ⚒️WRT (work recovery time): max time available to verify system and data integrity as part of the resumption of normal ops
     - ⚒️MTD (max tollerable downtime): max time-critical system, function, or process can be disrupted before unacceptable/irrecoverable consequences to the business
-
+- 📂**Continuity of operations** refers to the ability of an organization to maintain essential functions and recover quickly from disruptions. The key components supporting this are:
+    - 🎈Connectivity: Ensures that systems and communications remain operational during and after a disruption.
+    - 🎈Reliability: Ensures that systems and processes are dependable and can function effectively under various conditions.
+    - 🎈Recovery: Focuses on the ability to restore operations and services after an interruption or disaster.
 - 7.11.1 ❄️Response
     - A disaster recovery plan should contain simple yet comprehensive instructions for essential personnel to follow immediately upon recognizing that a disaster is in progress or imminent
     - Emergency-response plans are often put together in a form of checklists provided to responders; arrange the checklist tasks in order of priority, with the most important task first!
