@@ -1096,14 +1096,16 @@ Bending the coax cable past its maximum arc radius may break the center conducto
             - message authentication .
          - 📝Replay Attacks are where the attacker stole an authentication token and used it to impersonate the user
          - IPsec has always offered native data encryption. Generic Routing Encapsulation (GRE) is a proprietary Cisco tunneling protocol that can be used to establish VPNs. GRE provides encapsulation but not encryption. L2TP does not offer native data encryption, but it can support IPsec's ESP to provide encryption. PPTP did not originally provide native data encryption, but with the adoption of MS-CHAPv2 that feature was added.
-- **PRIVATE IP**: These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
+- 🔴**PRIVATE IP**: These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
     - 10.0.0.0–10.255.255.255 (a full Class A range)./8
         - Example: 10.0.0.1 in binary: 00001010.00000000.00000000.00000001 
     - 172.16.0.0–172.31.255.255 (16 Class B ranges)./12
         - Example: 172.16.0.1 in binary: 10101100.00010000.00000000.00000001 
     - 192.168.0.0–192.168.255.255 (256 Class C ranges)./16
         - Example: 192.168.1.1 in binary: 11000000.10101000.00000001.00000001
-- **Centralized Remote Authentication Services**
+- 🔴**Well-known ports**
+    - Well-known ports  are assigned by the Internet Assigned Numbers Authority (IANA) and range from 0 to 1023. These ports are used by widely used protocols and services, such as HTTP (port 80), FTP (port 21), and SSH (port 22).
+- 🔴**Centralized Remote Authentication Services**
     - RADIUS: Users pass login credentials to a RADIUS server for authentication. By default, RADIUS uses UDP and only encrypts passwords. RADIUS supports TCP and TLS, but this is not a default setting.
     - Diameter: is essentially the successor to RADIUS. One significant improvement Diameter provides is added reliability. Diameter is often used in prepaid and credit-­based usage models in mobile device services, and similar applications.
     - TACACS: available in three versions: original TACACS, Extended TACACS (XTACACS), and TACACS+. TACACS integrates the authentication and authorization processes. XTACACS keeps the authentication, authorization, and accounting processes separate. TACACS+ improves XTACACS by adding two-­factor authentication.
