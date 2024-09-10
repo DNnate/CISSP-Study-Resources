@@ -610,6 +610,8 @@ of litigation is imminent.
 - 📁**Corrective control** Security Orchestration, Automation, and Response (SOAR) technologies are a combination of detective and corrective controls. They can detect attacks and apply automated actions to mitigate the attacks.
     - Corrective controls are designed to take a non-functional state back to functional. For example, a Disaster Recovery (DR) site. They allow a company to function after a disaster such as a fire in the data center.
 - 📁**Compensatory control**  A compensating control is used to compensate for the anticipated failure of another control. It is with compensating controls that defense in depth is created.
+- 📁**Soft Controls**: Preventive/Administrative Pairing emphasizes "soft" mechanisms, which are often non-technical and focus on policies, procedures, and guidelines that support access control objectives. Administrative controls include things like training, awareness programs, and formal access control policies, which are designed to prevent unauthorized access and ensure compliance with security practices.
+- 📁**Hard Controls:** Technical controls such as firewalls and encryption, which are "hard" mechanisms. Physical controls like locks and security guards, which are also "hard" mechanisms. Detective controls like monitoring and logging are "hard" mechanisms designed to detect and respond to security incidents rather than prevent them.
 
 - 🔴**NIST SP 800-137**: organizations should use the following factors to ­determine assessment and monitoring frequency:
     - security control volatility: refers to how frequently a security control might need to be changed or updated over time
