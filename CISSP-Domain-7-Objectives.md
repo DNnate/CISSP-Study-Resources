@@ -35,6 +35,8 @@ than signature detection methods.
     - ⚒️**Indicators of Compromise (IoC)**: a signal that an intrusion, malware, or other predefined hostile or hazardous set of events has or is occurring
 - **Information Security Continuous Monitoring (ICSM)**: maintaining ongoing awareness of information security, vulnerabilities and threats to support organizational risk management decisions; ongoing monitoring sufficient to ensure and assure effectiveness of security controls
 - **Information Sharing and Analysis Center (ISAC)**: entity or collab created for the purposes of analyzing critical cyber and related info to better understand security problems and interdependencies to ensure CIA
+- Information Systems Security (InfoSec): InfoSec is more focused on the protection of information systems from unauthorized access or modification. IA covers a broader scope including the assurance aspects.
+    - 🔨Information Assurance (IA) encompasses the measures taken to protect and support information and information systems by ensuring their availability, integrity, authentication, confidentiality, and non-repudiation. IA focuses on maintaining these aspects of information security to ensure that systems and data are trustworthy and resilient.
 - **Log**: record of actions/events that have taken place on a system
 - **Precursor**: signal from events suggesting a possible change of conditions, that may alter the current threat landscape
 - **Regression testing**: testing of a system to ascertain whether recently approved modifications have changed its performance, or if other approved functions have introduced unauthorized behaviors
