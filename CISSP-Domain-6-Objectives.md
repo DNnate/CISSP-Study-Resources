@@ -616,10 +616,9 @@
                    - 🛠️Level 2 Third Party Audit: Requires the CSP to engage an independent auditor to evaluate the CSPs controls against the CSA standard. It is stronger.
                 - Can be used by CSPs, cloud consumers, auditors or consultants
                 - It is designed to demonstrate compliance to a desired level of assurance.
-    - The Cloud Security Alliance (CSA) Security, Trust, and Assurance Registry (STAR) program has: Three tiers
+    - The Cloud Security Alliance (CSA) Security, Trust, and Assurance Registry (STAR) program has: two tiers
         - 🎱STAR Level 1: Self-Assessment - Involves completing the CSA Cloud Controls Matrix (CCM) and providing a self-assessment report.
         - 🎱STAR Level 2: Third-Party Assessment - Involves an independent third-party assessment against the CSA CCM.
-        - 🎱STAR Level 3: Continuous Monitoring - Involves continuous monitoring of security and compliance through various mechanisms and real-time assurance.
     - Hybrid:
     - As Security Organizational Controls (SOC) engagement reports increase in level, their public disclosure is more likely. Additionally, SOC 1 and SOC 2 audit reports function similarly. The greater the involvement of people, the higher the level. SOC 1 reports are based on documentation review. SOC 2 reports are based on a more thorough review of security practices and physical evaluation. All three SOC engagement reports stress the Confidentiality, Integrity, Availability (CIA) triad. As we get closer to SOC 3, each aspect of the CIA triad also changes. The levels usually begin at level one with low availability and confidentiality and end at level three with availability to the public and no confidentiality.
       
