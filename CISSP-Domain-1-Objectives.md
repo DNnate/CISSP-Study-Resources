@@ -497,7 +497,7 @@
      - 🎈Punitive The intent of punitive damages is to punish an individual or organization. These damages are typically awarded to attempt to discourage a particularly egregious violation where the compensatory or statutory damages alone would not act as a deterrent
 
 [1.7](#1.7) Develop, document, and implement security policy, standards, procedures and guidelines (OSG-9 Chpt 1)
-- The top tier of a formalized hierarchical organization security documentation is the security policy
+- The first step in establishing an information security program is to establish an information security policy. This policy provides a framework and guidelines for the program, aligning security efforts with the organization's goals and setting the foundation for identifying risks, controls, and infrastructure requirements. The top tier of a formalized hierarchical organization security documentation is the security policy
   - A security policy is a formal document that defines the scope and enforcement of security within an organization. Security policies do not frequently change and generally invoke standards, procedures, and guidelines. Security documentation is the security policy.
   - 🔥**Policy**: docs created by and published by 📝senior management describing organizational strategic goals
   - A security policy is a document that defines the scope of security needed by the org, discussing assets that require protection and the extent to which security solutions should go to provide the necessary protections
