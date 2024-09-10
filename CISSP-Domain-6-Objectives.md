@@ -215,6 +215,8 @@
     - 🚡**planning**: includes agreement on the scope of the test and the rules of engagement
         - ensures that both the testing team and management are in agreement about the nature of the test and that it is explicitly authorized
         - determining how vulnerability data should be stored and sent is critical becuase penetration test reports often include information that could result in additional exposure if they were accidentally released or stolen.
+        - Formulating specific management objectives is crucial as it defines the scope, goals, and requirements of the penetration test. This step ensures that the objectives of the test are aligned with the organization’s security needs and business goals. It sets the direction for the entire testing process, including what will be tested, how it will be tested, and the expected outcomes.
+        - The approval of change control management, while important, this typically comes after defining the objectives and scope of the test.
     - 🚡**information gathering and discovery**: uses manual and automated tools to collect information about the target environment
         - basic reconnaissance (website mapping)
         - Discovery can include both active and passive discovery.
