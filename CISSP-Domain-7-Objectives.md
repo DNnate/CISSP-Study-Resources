@@ -125,7 +125,7 @@ of litigation is imminent.
         - preservation
     - Types of evidence:
         - 🧑‍⚖️**primary evidence**:
-            - most reliable and used at trial
+            - most reliable (The evidence has not been tampered with or modified.) and used at trial
             - original documents (e.g. legal contracts), no copies or duplicates
         - 🧑‍⚖️**secondary evidence**:
             - less powerful and reliable than primary evidence (e.g. copies of originals, witness oral evidence etc)
