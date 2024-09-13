@@ -215,7 +215,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - 📚Local Area Network (LAN) is a data network that operates across a small geographic area such as a single building or floor.
         - 📚Wide Area Network (WAN) is a geographically broad network that can cover multiple cities or even countries. A WAN connects multiple Local Area Networks (LANs) and other WANs by using telecommunications devices and facilities to form an internetwork.
         - 📚Metropolitan Area Network (MAN) extends across a large area, such as a city.
-        - 📚Personal Area Network (PAN) is a small, personal-use network such as Bluetooth. 
+        - 📚Personal Area Network (PAN) is a small, personal-use network such as Bluetooth. Bluetooth max coverage is roughly 📝33 feet
 
 - 4.1.2 Internet Protocol (IP) networking (e.g., Internet Protocol Security (IPSec), Internet Protocol (IP) v4/6)
      - IP is part of the TCP/IP (Transmission Control Protocol/Internet Protocol) suite
