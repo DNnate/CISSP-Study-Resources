@@ -784,8 +784,11 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - then, logical and technical controls provide protection against logical attacks and exploits 
       - then, physical controls provide protection against real-world physical attacks against facilities and devices
 - 1.10.5 Applicable types of controls (e.g., preventive, detective, corrective)
-  - **🔥Administrative**: the policies and procedures defined by an org's security policy and other regulations or requirements. Administrative controls are sometimes referred to as management controls. They are the policies or procedures defined by an organization's security program. Administrative controls include hiring processes, background checks, data classification requirements, data labeling, security awareness, and training.
-  - **🔥Physical**: security mechanisms focused on providing protection to the facility and real world objects
+  - These access control categories can fall into one of three categories: administrative, technical, or physical.
+       - 1. 🍏**Administrative** (also called directive) controls are implemented by creating and following organizational policy, procedure, or regulation. User training and awareness also fall into this category.  Administrative: the policies and procedures defined by an org's security policy and other regulations or requirements. Administrative controls are sometimes referred to as management controls. They are the policies or procedures defined by an organization's security program. Administrative controls include hiring processes, background checks, data classification requirements, data labeling, security awareness, and training.
+         2. 🍏**Technical** controls (Logical Controls) are implemented using software, hardware, or firmware that restricts logical access on an IT system. Examples include firewalls, routers, encryption, etc.
+         3. 🍏**Physical** controls are implemented with physical devices, such as locks, fences, gates, and security guards. Physical security mechanisms focused on providing protection to the facility and real world objects
+  - These access control types can fall into one of the following:
   - **🔥Preventive**: a preventive or preventative control is deployed to thwart or stop unwanted or unauthorized activity from occurring
   - **🔥Deterrent**: a deterrent control is deployed to discourage security policy violations; deterrent and preventative controls are similar, but deterrent controls often depend on individuals being convinced not to take an unwanted action
   - **🔥Detective**: a detective control is deployed to discover or detect unwanted or unauthorized activity; detective controls operate after the fact
@@ -797,11 +800,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
   - **🔥Recovery**: An extension of corrective controls but have more advanced or complex abilities; a recovery control attempts to repair or restore resources, functions, and capabilities after a security policy violation 
     - recovery controls typically address more significant damaging events compared to corrective controls, especially when security violations may have occurred
   - **🔥Directive**: A directive control is deployed to direct, confine, or control the actions of subjects to force or encourage compliance with security policies. Notifications and procedures like the signs posted at doors for are examples of directive access controls.
-  - These access control types can fall into one of three categories: administrative, technical, or physical.
-       - 1. Administrative (also called directive) controls are implemented by creating and following organizational policy, procedure, or regulation. User training and awareness also fall into this category.
-         2. Technical controls (Logical Controls) are implemented using software, hardware, or firmware that restricts logical access on an IT system. Examples include firewalls, routers, encryption, etc.
-         3. Physical controls are implemented with physical devices, such as locks, fences, gates, and security guards.
-  - 🔥Security through obscurity attempts to hide the details of security controls to add security to them
+  - 🧨Security through obscurity attempts to hide the details of security controls to add security to them
 - 1.10.6 Control assessments (security and privacy)
   - Periodically assess security and privacy controls: what’s working, what isn’t 
     - As part of this assessment, the existing documents should be thoroughly reviewed, and some of the controls tested randomly 
