@@ -486,7 +486,7 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         |-----|---------------| -------------------|------------|
         | 802.11    |   --   | 2 Mbps |2.4 GHz               |
         | 802.11a 🚒  |  Wi-Fi 2    | 🧯54 Mbps |🔥5 GHz                |
-        | 802.11b   |  Wi-Fi 1    | 11 Mbps |2.4 GHz              |
+        | 802.11b   |  Wi-Fi 1    | 11 Mbps |2.4 GHz (DSSS)             |
         | 802.11g 🚒  |  Wi-Fi 3    | 🧯54 Mbps |🔥2.4 GHz              |
         | 802.11n   |  Wi-Fi 4    | 200+ Mbps |2.4GHz or 5 GHz    |
         | 802.11ac   | Wi-Fi 5    |1-5.9Gbps  |5 GHz              |
