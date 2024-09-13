@@ -36,8 +36,6 @@ Networking can be one of the more complex exam topics; if you have a networking 
     - DNS Cache Poisoning involves corrupting the DNS cache of a DNS resolver or server. The DNS cache stores recent DNS query results to improve performance and reduce lookup times. An attacker manipulates this cache to insert false DNS records, causing users to be redirected to incorrect or malicious IP addresses.
     - DNSSEC uses certificates to perform mutual authentication between DNS servers, and thus public key infrastructure (PKI) is needed to provide and support those certificates.
 - **DHCP**: Dynamic Host Configuration Protocol is an industry standard used to dynamically assign IP addresses to network devices
-- **Ports 1024-4951**: registered ports used with non-system applications associated with vendors and devs
-- **Ports 49152-65535**: dynamic ports (AKA private or non-reserved ports) used as temporary ports, often in association when a service is requested via a well-known port
 - **FDDI**: Fiber Distributed Data Interface is an ANSI X3T9.5 LAN standard; 100Mbps, token-passing using fiber-optic, up to 2 kilometers
 - **FCoE**: Fibre Channel over Ethernet is a lightweight encapulsation protocol without the reliable data transport of TCP
 - **Gateway device**: a firewall or other device that sits at the edge of the network to regulate traffic and enforce rules
@@ -1106,8 +1104,9 @@ Bending the coax cable past its maximum arc radius may break the center conducto
         - Example: 172.16.0.1 in binary: 10101100.00010000.00000000.00000001 
     - 192.168.0.0–192.168.255.255 (256 Class C ranges)./16
         - Example: 192.168.1.1 in binary: 11000000.10101000.00000001.00000001
-- 🔴**Well-known ports**
-    - Well-known ports  are assigned by the Internet Assigned Numbers Authority (IANA) and range from 0 to 1023. These ports are used by widely used protocols and services, such as HTTP (port 80), FTP (port 21), and SSH (port 22).
+- 🌲**Well-known ports**: Well-known ports  are assigned by the Internet Assigned Numbers Authority (IANA) and range from 0 to 1023. These ports are used by widely used protocols and services, such as HTTP (port 80), FTP (port 21), and SSH (port 22).
+- 🌲**Registered\User Ports 1024-4951**: registered ports used with non-system applications associated with vendors and devs
+- 🌲**Dynamic\Private\Ephemeral Ports 49152-65535**: dynamic ports (AKA private or non-reserved ports) used as temporary ports, often in association when a service is requested via a well-known port
 - 🔴**Centralized Remote Authentication Services**
     - RADIUS: Users pass login credentials to a RADIUS server for authentication. By default, RADIUS uses UDP and only encrypts passwords. RADIUS supports TCP and TLS, but this is not a default setting.
     - Diameter: is essentially the successor to RADIUS. One significant improvement Diameter provides is added reliability. Diameter is often used in prepaid and credit-­based usage models in mobile device services, and similar applications.
