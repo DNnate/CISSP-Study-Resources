@@ -918,7 +918,7 @@ Factors, entities or conditions outside the organisation upon which the organisa
       - ✏️Infrastructure: The systems, tools, or networks used by the adversary to conduct the attack.
       - ✏️Capability: The techniques, tools, or methods used by the adversary to exploit vulnerabilities and achieve their goals.
       - ✏️Victim: The target of the attack, which could be a person, organization, system, or data.
-- 🔴**Threat Representation, Intelligence, and Knowledge Engine (TRIKE)**. It is a threat modeling framework focused on 📝simulating cyber threats and helping organizations identify and mitigate vulnerabilities in their systems and networks.  it is 📝open source.
+- 🔴**Threat Representation, Intelligence, and Knowledge Engine (TRIKE)**. It is a threat modeling framework focused on 📝simulating cyber threats and helping organizations identify and mitigate vulnerabilities in their systems and networks.  it is 📝open source and it implements a requirements model, ensuring that the assigned level of risk is acceptable to stakeholders.
 - 🔴**Visual, Agile, and Simple Threat (VAST)**: a threat modeling concept that integrates threat and risk management into an 📝Agile programming environment on a scalable basis
 - Part of the job of the security team is to identify threats, using different methods:
    - ✏️Focus on attackers: this is a useful method in specific situations;
