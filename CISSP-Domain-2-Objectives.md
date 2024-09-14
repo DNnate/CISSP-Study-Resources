@@ -274,7 +274,8 @@ rewriting with a new value or using a menu option to reset the device to the fac
 
 - 2.4.4 Data maintenance
   - 🔵**Data Maintenance**: managing data through the data lifecycle (creation, usage, retirement); data maintenance is the process (often automated) of making sure the data is available (or not available) based on where it is in the lifecycle. During the data maintenance phase of a typical data lifecycle, activities like data scrubbing occur to remove unneeded, incorrect, or out-of-date data.
-  - Data lifecycle:  Data Maintenance ↪️🔄 Data Collection ➡️ Data Analysis ➡️ Data Usage ➡️ Data Retention ➡️ Data Destruction ↩️🔄 Data Maintenance 
+  - Data lifecycle:  Data Maintenance ↪️🔄 Data Collection ➡️ Data Analysis ➡️ Data Usage ➡️ Data Retention ➡️ Data Destruction ↩️🔄 Data Maintenance
+  -  🔥**Data lifecycle:**  ↪️🔄Data Creation\Update ↪️🔄 Data Storage ➡️ Data Usage ➡️ Data Shared ➡️ Data Archive ➡️ Data Destruction ↩️🔄. Classification is crucial for creating controls for each stage
   - In a typical data lifecycle, collection is the first stage. Once collected, data can be analyzed, used, stored, and disposed of at the end of its useful life. Policies may be created at any time, and organizations often have data before they have policies. Labels are added to data during the analysis, usage, or retention cycle.
   - Ensuring appropriate asset protection requires that sensitive data be preserved for a period of not less than what is business-required, but for no longer than necessary
   - Encrypt sensitive data
