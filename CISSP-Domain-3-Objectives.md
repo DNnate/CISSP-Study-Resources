@@ -159,7 +159,7 @@ You may find this domain to be more technical than others, and if you have exper
     - ⚓**Multilevel Security (MLS) Model** The concept of MLS is the idea that a system would have multiple levels of classification in the same system. Bell-LaPadula was the first mathematical model of a Multilevel Security (MLS) policy. Access control philosophies can be organized into models that define approaches to security issues. The Take-Grant model, the Bell-LaPadula model, and the Biba model are examples of different access control models.
 
 - 🔴**Bell-LaPadula**: Model was established in 1973. The goal is to ensure that information is exposed only to those with the right level of classification. Bell-LaPadula was released in 1976 by the US government to provide for better confidentiality
-    - The Bell-LaPadula security model deals with multiple levels of access regulation in 📝government and military applications. This security model involves labels ranging from Unclassified to Top Secret. Bell-LaPadula was developed to formalize the U.S. Department of 📝Defense's multi-level security policy.
+    - The Bell-LaPadula security model deals with multiple levels of access regulation in 📝government and military applications. This security model involves labels ranging from Unclassified to Top Secret. Bell-LaPadula was developed to formalize the U.S. Department of 📝Defense's multi-level security policy. uses 📝MAC model
     - The Bell-LaPadula security model involves labels such as Unclassified and Top Secret. Bell-LaPadula was developed to formalize the U.S. Department of Defense's multi-level security policy. Bell-LaPadula is used in strict need-to-know environments.
     - Focuse is on confidentiality📝
     - Simple security property: 🔥No read-up 
@@ -171,9 +171,10 @@ You may find this domain to be more technical than others, and if you have exper
     -  is based on information flow, and is a multilevel model.
     - Simple integrity property: 🔥No read down ( individual may not read a file classified at a lower security level than the individual's security clearance. for example, users with a Top Secret clearance can’t read data classified as Secret). the implied allowed opposite is read-up.
     - Star (*) integrity property: 🔥No write up (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
+    - invocation property: prohibists subject at one level of integrity from invoking subjects at a higher level of integrity
     - By combining it with Bell-LaPadula, you get both confidentiality and integrity
 - 🔴**Take-Grant**: 
-    - The take-grant model employs a directed graph to dictate how rights can be passed from one subject to another, or from a subject to an object
+    - The take-grant model employs a directed graph to dictate how rights can be passed from one subject to another, or from a subject to an object. Focuses on 📝Confidentiality
     - Four rules: 
         - ⚒️take: The right to remove or take permissions from other users. The take rule allows a subject to take the rights belonging to another object. 
         - ⚒️grant: The grant rule allows a subject to grant rights that it possesses on an object to another subject.
