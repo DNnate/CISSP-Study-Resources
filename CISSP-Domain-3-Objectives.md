@@ -135,28 +135,31 @@ You may find this domain to be more technical than others, and if you have exper
 - 3.1.11.1 Security Architecture
     - 🔴**The Open Group Architecture Framework (TOGAF)** is a standard that helps organizations design, plan, implement, and govern information technology architecture. TOGAF uses the Architecture Development Method (ADM) to create architectures for business, data, applications, and technology.
         - TOGAF helps organizations align their business goals with IT strategies, ensuring that all aspects of the enterprise architecture are considered and integrated effectively.
-        - Architecture Development Method (ADM): The central feature of TOGAF, the ADM provides a step-by-step approach to developing an enterprise architecture. It includes phases like:
-            - Preliminary Phase: Setting up the architecture capability.
-            - Architecture Vision: Defining the scope, stakeholders, and high-level vision.
-            - Business Architecture: Developing the business architecture.
-            - Information Systems Architecture: Developing data and application architectures.
-            - Technology Architecture: Developing the technology architecture.
-            - Opportunities and Solutions: Identifying potential solutions and opportunities.
-            - Migration Planning: Planning the implementation and migration path.
-            - Implementation Governance: Ensuring the architecture's implementation adheres to the design.
-            - Architecture Change Management: Managing changes to the architecture.
-            - Enterprise Continuum: A classification mechanism to organize reusable architecture and solution artifacts.
-            - Architecture Repository: A place to store different architectural outputs like frameworks, standards, and guidelines.
-      - TOGAF can integrate with the SABSA (Sherwood Applied Business Security Architecture) framework to address security-specific architecture. Security is embedded in every phase of the ADM. CISSP candidates should understand how TOGAF ensures that 📝security is considered throughout the architecture development process. 
+        - 🔥**Architecture Development Method (ADM)**: The central feature of TOGAF, the ADM provides a step-by-step approach to developing an enterprise architecture. It includes phases like:
+            - ✏️Preliminary Phase: Setting up the architecture capability.
+            - ✏️Architecture Vision: Defining the scope, stakeholders, and high-level vision.
+            - ✏️Business Architecture: Developing the business architecture.
+            - ✏️Information Systems Architecture: Developing data and application architectures.
+            - ✏️Technology Architecture: Developing the technology architecture.
+            - ✏️Opportunities and Solutions: Identifying potential solutions and opportunities.
+            - ✏️Migration Planning: Planning the implementation and migration path.
+            - ✏️Implementation Governance: Ensuring the architecture's implementation adheres to the design.
+            - ✏️Architecture Change Management: Managing changes to the architecture.
+            - ✏️Enterprise Continuum: A classification mechanism to organize reusable architecture and solution artifacts.
+            - ✏️Architecture Repository: A place to store different architectural outputs like frameworks, standards, and guidelines.
+      - TOGAF can 📝integrate with the SABSA (Sherwood Applied Business Security Architecture) framework to address security-specific architecture. Security is embedded in every phase of the ADM. CISSP candidates should understand how TOGAF ensures that 📝security is considered throughout the architecture development process. 
     - 🔴**SABSA (Sheerwood Applied Business Security Architecture):**  is a framework and methodology for developing risk-driven enterprise information security architectures. It 🧠integrates security into the business processes and aligns security measures with business goals🧠. provides a structured method for designing, implementing and managing security architectures.
     -  It provides a holistic, business-­driven approach to security architecture, encompassing everything from assessing business requirements to implementation and metrics.
+    -  SABSA is a newer framework (adopted in 📝1995) that focuses on security architecture risk and allows security to be embedded in IT functions.
+    -  It is an 📝open source framework that provides scalability and ease of implementation, facilitates compliance, and can help
+response prioritization.
     -  It is recognized for its comprehensive life cycle approach to security architecture, from assessing business requirements to establishing a “chain of traceability” through strategy, concept, design, implementation, and metrics stages
     -  SABSA Lifecycle Phases: 🟡 SDIM
         - ✏️Strategy Phase: Understanding business context and defining security goals.
         - ✏️Design Phase: Developing the detailed architecture.
         - ✏️Implementation Phase: Deploying the security solutions.
         - ✏️Management Phase: Ongoing management and adaptation of the security architecture.
-    - 🔴**Zachman** : Zachman focuses on answering basic questions like 📝how, 📝where, 📝who, 📝when, and 📝why by directing those to the various company teams (e.g., designers, owners, architects, strategists, engineers, operators) and acquiring their feedback. However, this is an older model dating back to the ’70s and may not necessarily be the most suitable model today, as it merely focuses on classification and organization of enterprise security.
+    - 🔴**Zachman** : Zachman focuses on answering basic questions like 📝how, 📝where, 📝who, 📝when, and 📝why by directing those to the various company teams (e.g., designers, owners, architects, strategists, engineers, operators) and acquiring their feedback. However, this is an older model dating back to the 📝’70s and may not necessarily be the most suitable model today, as it merely focuses on classification and organization of enterprise security.
         - The Zachman Framework is one of many enterprise architectures that can be used to communicate the same issue in a language different silos of the business can understand. The framework will answer the same what, how, where, who, when, and why in a language that relates to different departmental perspectives
 - 3.1.12 Secure Access Service Edge (SASE)
     - 🟣**SASE**: A design philosophy closely related to Zero trust Network Architecture. 🔥Brings together networking and security functions and delivers them as an integrated cloud service.
