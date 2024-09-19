@@ -346,7 +346,7 @@
     - 📙**Health Information Technology for Economic and Clinical Health (HITECH)** In the US, the Act requires ✏️notification of a data breach in some cases, such as when the personal health information was not protected as required by HIPAA
     - 📙**GLBA (Gramm-Leach-Bliley Act)** applies to insurance and financial orgs, requiring notification to federal regulators, law enforcement agencies and customers when a ✏️data breach occurs 
     - Certain states also impose their own requirements concerning data breaches 
-    - the EU and other countries have their own requirements, for instance, the GDPR has very strict data breach notification requirements: A data breach must be reported to the competent supervisory authority within 72 hours of its discovery
+    - the EU and other countries have their own requirements, for instance, the GDPR has very strict data breach notification requirements: A data breach must be reported to the competent 📝supervisory authority within 72 hours of its discovery
     - Some countries do not have any reporting requirements
 - 1.5.2 Licensing and intellectual property (IP) requirements
   - 💢**Intellectual property**: ✏️intangible assets (e.g. software, data)
