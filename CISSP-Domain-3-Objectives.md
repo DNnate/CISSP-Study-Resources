@@ -135,6 +135,7 @@ You may find this domain to be more technical than others, and if you have exper
 - 3.1.11.1 Security Architecture
     - 🔴**The Open Group Architecture Framework (TOGAF)** is a standard that helps organizations design, plan, implement, and govern information technology architecture. TOGAF uses the Architecture Development Method (ADM) to create architectures for business, data, applications, and technology.
         - TOGAF helps organizations align their business goals with IT strategies, ensuring that all aspects of the enterprise architecture are considered and integrated effectively.
+        -  TOGAF focuses on efficient resource utilization and 📝cost minimization while having a modular structure increasing its adoption, a content framework providing consistency, and a style that allows architectural flexibility.
         - 🔥**Architecture Development Method (ADM)**: The central feature of TOGAF, the ADM provides a step-by-step approach to developing an enterprise architecture. It includes phases like:
             - ✏️Preliminary Phase: Setting up the architecture capability.
             - ✏️Architecture Vision: Defining the scope, stakeholders, and high-level vision.
