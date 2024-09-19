@@ -201,7 +201,7 @@ response prioritization.
     - Simple integrity property: 🔥No read down ( individual may not read a file classified at a lower security level than the individual's security clearance. for example, users with a Top Secret clearance can’t read data classified as Secret). the implied allowed opposite is read-up.
     - Star (*) integrity property: 🔥No write up (for example, a user with a Secret clearance can’t write data to files classified as Top Secret)
     - invocation property: prohibists subject at one level of integrity from invoking subjects at a higher level of integrity
-    - By combining it with Bell-LaPadula, you get both confidentiality and integrity
+- 🔴**Lipner implementation** is not a model; it is an implementation that combines the best features of Bell–LaPadula and Biba. By combining Biba  with Bell-LaPadula, you get both confidentiality and integrity
 - 🔴**Take-Grant**: 
     - The take-grant model employs a directed graph to dictate how rights can be passed from one subject to another, or from a subject to an object. Focuses on 📝Confidentiality
     - Four rules: 
