@@ -156,7 +156,8 @@ You may find this domain to be more technical than others, and if you have exper
         - ✏️Design Phase: Developing the detailed architecture.
         - ✏️Implementation Phase: Deploying the security solutions.
         - ✏️Management Phase: Ongoing management and adaptation of the security architecture.
-    - 🔴**Zachman** : Zachman focuses on answering basic questions like 📝how, 📝where, 📝who, 📝when, and 📝why by directing those to the various company teams (e.g., designers, owners, architects, strategists, engineers, operators) and acquiring their feedback. However, this is an older model dating back to the ’70s and may not necessarily be the most suitable model today, as it merely focuses on classification and organization of enterprise security. 
+    - 🔴**Zachman** : Zachman focuses on answering basic questions like 📝how, 📝where, 📝who, 📝when, and 📝why by directing those to the various company teams (e.g., designers, owners, architects, strategists, engineers, operators) and acquiring their feedback. However, this is an older model dating back to the ’70s and may not necessarily be the most suitable model today, as it merely focuses on classification and organization of enterprise security.
+        - The Zachman Framework is one of many enterprise architectures that can be used to communicate the same issue in a language different silos of the business can understand. The framework will answer the same what, how, where, who, when, and why in a language that relates to different departmental perspectives
 - 3.1.12 Secure Access Service Edge (SASE)
     - 🟣**SASE**: A design philosophy closely related to Zero trust Network Architecture. 🔥Brings together networking and security functions and delivers them as an integrated cloud service.
     - Described as Gartner in 2019 as a networking model that merges traditional WAN managment and security capabilites into a unified whole
