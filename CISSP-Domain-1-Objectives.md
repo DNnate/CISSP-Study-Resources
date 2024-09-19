@@ -328,6 +328,43 @@
       - Storage Limitation
       - Security
       - Accountability
+          - 📗General Data Protection Regulation (GDPR) – European Union: The GDPR is one of the strictest data protection laws in the world. It applies to any organization that processes personal data of EU citizens, regardless of where the organization is based. Key Points of GDPR:
+          - 🎈Data Protection Principles:
+              - Lawfulness, fairness, and transparency: Data must be processed lawfully and transparently.
+              - Purpose limitation: Data should only be collected for specific, legitimate purposes.
+              - Data minimization: Only collect data that is necessary.
+              - Accuracy: Personal data must be kept accurate and up to date.
+              - Storage limitation: Data should not be stored longer than necessary.
+              - Integrity and confidentiality: Data must be processed securely.
+          - 🎈Rights of Individuals:
+              - Right to Access: Individuals can request access to their data.
+              - Right to Rectification: Individuals can request corrections to inaccurate data.
+              - Right to Erasure ("Right to be Forgotten"): Individuals can request the deletion of their data under certain conditions.
+              - Right to Data Portability: Individuals can request to receive their data in a structured format.
+              - Right to Restrict Processing: Individuals can restrict the processing of their data.
+              - Right to Object: Individuals can object to the processing of their data, especially for direct marketing.
+          - 🎈Consent: Consent must be freely given, specific, informed, and unambiguous. Individuals can withdraw consent at any time.
+          - 🎈Data Breach Notification: Organizations must report data breaches to the supervisory authority within 72 hours. Affected individuals must be notified if the breach poses a high risk to their rights and freedoms.
+          - 🎈Accountability: Organizations must implement measures to ensure and demonstrate compliance with GDPR (e.g., Data Protection Impact Assessments, data protection policies).
+          - 🎈Data Protection Officers (DPO): Organizations may be required to appoint a DPO to oversee GDPR compliance.
+          - 🎈Fines: Non-compliance can lead to hefty fines, up to €20 million or **4%** of global annual turnover, whichever is higher.
+          - 📗 OECD Privacy Guidelines – Global Framework: The OECD Privacy Guidelines (Organisation for Economic Co-operation and Development) are a set of principles developed to guide countries in creating their own privacy regulations. They are more high-level and flexible compared to GDPR. Key Points of OECD Privacy Guidelines:
+              - Collection Limitation: Personal data collection should be limited and obtained lawfully with the knowledge or consent of the individual.
+              - Data Quality: Personal data should be relevant, accurate, complete, and kept up-to-date.
+              - Purpose Specification: The purpose for collecting personal data should be specified before or at the time of collection.
+              - Use Limitation: Personal data should not be used for purposes other than those specified, unless with consent or by authority of law.
+              - Security Safeguards: Personal data must be protected with reasonable security measures against risks like unauthorized access or disclosure.
+              - Openness: There should be transparency regarding privacy practices and policies.
+              - Individual Participation: Individuals have the right to know if an organization holds their data, and the right to access, rectify, or delete their data if necessary.
+              - Accountability: Data controllers are responsible for complying with privacy protection principles.
+          - 📗**Unique Points of GDPR vs. OECD:**
+              - Scope: GDPR is legally binding within the EU and has global reach (applies to organizations outside the EU if they process EU citizens' data).
+              - OECD guidelines are non-binding, serving as a framework for countries to develop their own privacy laws.
+              - Enforcement: GDPR has strict penalties and enforcement mechanisms, while OECD guidelines provide principles but no direct enforcement or penalties.
+              - Individual Rights: GDPR gives individuals specific rights (like the right to be forgotten, data portability), whereas the OECD guidelines emphasize individual participation but without the detailed rights outlined by GDPR.
+              - Consent: GDPR emphasizes informed and explicit consent, while OECD places general emphasis on obtaining consent without detailing specific standards.
+              - Data Breach Reporting: GDPR mandates a 72-hour breach notification requirement, which is absent in OECD guidelines.
+              - Fines: GDPR has substantial financial penalties for violations, which OECD does not specify. 
     - California Consumer Privacy Act (CCPA)
     - Be familiar with the EU Data Protection Directive
     - Be familiar with the requirements around healthcare data, credit card data and other PII data as it relates to various countries and their laws and regulations
