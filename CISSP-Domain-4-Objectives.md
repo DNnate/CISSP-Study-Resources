@@ -1115,8 +1115,8 @@ Bending the coax cable past its maximum arc radius may break the center conducto
         - Example: 192.168.1.1 in binary: 11000000.10101000.00000001.00000001
         - Class C: Maximum number of addresses: 254
 - 🌲**Well-known ports**: Well-known ports  are assigned by the Internet Assigned Numbers Authority (IANA) and range from 0 to 1023. These ports are used by widely used protocols and services, such as HTTP (port 80), FTP (port 21), and SSH (port 22).
-- 🌲**Registered\User Ports 1024-4951**: registered ports used with non-system applications associated with vendors and devs
-- 🌲**Dynamic\Private\Ephemeral Ports 49152-65535**: dynamic ports (AKA private or non-reserved ports) used as temporary ports, often in association when a service is requested via a well-known port
+- 🌲**Registered\User Ports 1,024-49,151**: registered ports used with non-system applications associated with vendors and devs
+- 🌲**Dynamic\Private\Ephemeral Ports 49,152-65,535**: dynamic ports (AKA private or non-reserved ports) used as temporary ports, often in association when a service is requested via a well-known port
 - 🔴**Centralized Remote Authentication Services**
     - RADIUS: Users pass login credentials to a RADIUS server for authentication. By default, RADIUS uses UDP and only encrypts passwords. RADIUS supports TCP and TLS, but this is not a default setting.
     - Diameter: is essentially the successor to RADIUS. One significant improvement Diameter provides is added reliability. Diameter is often used in prepaid and credit-­based usage models in mobile device services, and similar applications.
