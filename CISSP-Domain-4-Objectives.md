@@ -1107,13 +1107,13 @@ Bending the coax cable past its maximum arc radius may break the center conducto
 - 🔴**PRIVATE IP**: These IPv4 addresses, commonly called the private IPv4 addresses, are defined in RFC 1918. They are as follows:
     - 10.0.0.0–10.255.255.255 (a full Class A range)./8
         - Example: 10.0.0.1 in binary: 00001010.00000000.00000000.00000001
-        - Maximum number of addresses: 16,777,214
+        - Class A: Maximum number of addresses: 16,777,214
     - 172.16.0.0–172.31.255.255 (16 Class B ranges)./12
         - Example: 172.16.0.1 in binary: 10101100.00010000.00000000.00000001
-        - Maximum number of addresses: 65,534
+        - Class B: Maximum number of addresses: 65,534
     - 192.168.0.0–192.168.255.255 (256 Class C ranges)./16
         - Example: 192.168.1.1 in binary: 11000000.10101000.00000001.00000001
-        - Maximum number of addresses: 254
+        - Class C: Maximum number of addresses: 254
 - 🌲**Well-known ports**: Well-known ports  are assigned by the Internet Assigned Numbers Authority (IANA) and range from 0 to 1023. These ports are used by widely used protocols and services, such as HTTP (port 80), FTP (port 21), and SSH (port 22).
 - 🌲**Registered\User Ports 1024-4951**: registered ports used with non-system applications associated with vendors and devs
 - 🌲**Dynamic\Private\Ephemeral Ports 49152-65535**: dynamic ports (AKA private or non-reserved ports) used as temporary ports, often in association when a service is requested via a well-known port
