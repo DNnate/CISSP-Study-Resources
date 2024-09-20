@@ -1138,7 +1138,7 @@ of litigation is imminent.
         - In simulation tests, disaster recovery team members are presented with a scenario and asked to develop an 📝appropriate response. 
         -  ❗Simulation tests may shut down noncritical business units. 
         - this may involve the interruption of noncritical business activities and the use of some operational personnel
-        - A simulation test involves a 📝role-play of a prepared scenario overseen by a moderator. Responses are assessed to help improve the organization's response process. 
+        - A simulation test involves a 📝role-play of a prepared 📝scenario overseen by a 📝moderator. Responses are assessed to help improve the organization's response process. 
         - Simulations are the 📝most complete test that can be conducted without the risk that a full failover test creates.
         - In a simulation, the systems are not brought to a functional level at the alternate site. The plan is analyzed possibly 📝in and 📝out of the conference room. A simulation could involve stepping through some of the procedural documents to see if the instructions match what is visible in a system, without taking any actual action.
 - Checklist tests, structured walk-­throughs, and simulations are all test types that do not involve actually activating the alternate site.
