@@ -1047,7 +1047,12 @@ Bending the coax cable past its maximum arc radius may break the center conducto
         - TLS supports both one-way and two-way authentication.
         - TLS and SSL are not interoperable or backward compatible.
     - ⚒️**Point-to-Point Tunneling Protocol (PPTP)**: is an obsolete encapsulation protocol developed from the dial-up Point-to-Point Protocol.
-        - Point-to-Point Protocol (PPP) was developed to support multiple network layer protocols (such as IP, IPX, and others) and provides features like login, password authentication, and error correction. PPP is widely used for establishing direct connections over serial links such as dial-up or VPN connections, offering robust functionality for authentication and error handling.
+        - 🎈**Point-to-Point Protocol (PPP)** was developed to support multiple network layer protocols (such as IP, IPX, and others) and provides features like login, password authentication, and error correction. PPP is widely used for establishing direct connections over serial links such as dial-up or VPN connections, offering robust functionality for authentication and error handling.
+            - It's commonly used for connecting end-user systems (like a computer) to an ISP (Internet Service Provider).
+            - Encapsulation: Wraps network layer packets (like IP packets) in a data link frame, allowing them to travel across various physical media
+            - Supports various authentication protocols, such as PAP (Password Authentication Protocol) and CHAP (Challenge Handshake Authentication Protocol) and EAP.
+            - It's commonly used for connecting end-user systems (like a computer) to an ISP (Internet Service Provider).
+        - PPTP is a Layer 2 tunneling protocol used to implement VPNs (Virtual Private Networks). It encapsulates **PPP** frames into IP datagrams so they can be transmitted over an IP-based network (like the Internet).
         - It operates at the Data Link layer (layer 2) of the OSI model and is used on IP networks.
         - PPTP uses TCP port 1723.
         - PPTP offers protection for authentication traffic through the same authentication protocols supported by PPP: Password Authentication Protocol (PAP), CHAP, EAP, Microsoft Challenge Handshake Authentication Protocol (MS-CHAPv2).
