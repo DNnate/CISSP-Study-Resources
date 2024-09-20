@@ -73,7 +73,7 @@ Networking can be one of the more complex exam topics; if you have a networking 
     |-----|---------------| -------------------|------------| ----------------|-----------|
     | 7     | Application     | Application |Data               | L7 firewall, Application FW                                | HTTP/s, DNS, DHCP, FTP,S-HTTP, TPFT, Telnet, SSH, SMTP, POP3, SNMP, PEM, IMAP, NTP, SNMP, TLS/SSL, GBP, RIP, SIP, S/MIME etc. |
     | 6     | Presentation    | Application |Data               | L7 firewall                                | JPEG, ASCII, and MIDI                                                |
-    | 5     | Session         | Application| Data               | L7 firewall, Proxy FW                                | PAP, CHAP, EAP, NFS, SQL, and RPC                                                |
+    | 5     | Session         | Application| Data               | L7 firewall, Circuit Proxy FW, Circuit GW                                | PAP, CHAP, EAP, NFS, SQL, and RPC                                                |
     | 4     | Transport       | Transport (host-to-host) | Segments           | L4 firewall                                | TCP (connection oriented), UDP (connectionless), TLS     |
     | 3     | Network         | Internet/IP | Packets            | Router, Multiplayer Switch, Router, Packet Filter FW         | IPv4, IPv6, IPSec, OSPF, EIGRP, IGMP, ICMP                               |
     | 2     | Data Link       | Network Access | Frames             | Switch, Bridge, NIC, Wireless Access Point | MAC, ARP Ethernet 802.3 (Wired), CDP, LLDP, HDLC, PPP, DSL, L2TP, IEEE 802.11 (Wireless), SONET/SDH |
