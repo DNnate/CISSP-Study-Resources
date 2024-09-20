@@ -231,15 +231,17 @@ Note: Data streams are associated with the Application, Presentation, and Sessio
         - 🍏**IPv4**:
              - dominant protocol that operates at layer 3; IP is responsible for addressing packets, uses 32-bit addresses. The  (TTL) IPv4 header values is used to prevent infinite transmission. 
              - IPv4 supports QoS priority values, but it is called "type of service" in the IPv4 header.
-             - Format: IPv4 addresses are 32-bit numerical labels written in decimal format as four octets separated by periods (e.g., 192.168.1.1).
+             - Format: IPv4 addresses are 📝32-bit numerical labels written in decimal format as four octets separated by periods (e.g., 192.168.1.1).
+             - IPv4 = 32 bits divided into four groups of 8 bits each versus
              - Size: The IPv4 header is 20 to 60 bytes in length.
              - Fragmentation: Routers can fragment IPv4 packets to accommodate the maximum transmission unit (MTU) of the network path.
              - Built-in Security: IPv4 does not have built-in security features, but it can use IPsec (Internet Protocol Security) for encryption and authentication.
         - 🍏**IPv6**:
-             - modernization of IPv4, uses 128-bit addresses, supporting 2128 hosts.
+             - modernization of IPv4, uses 📝128-bit addresses, supporting 2128 hosts.
              - supports auto-configuration without DHCP, and supports Quality of Service (QoS) priority values
              - The hop limit IPv6 header value is used to prevent infinite transmission. 
              - Format: IPv6 addresses are 128-bit hexadecimal labels written in eight groups of four hexadecimal digits separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+             - IPv6 = 128 bits divided into eight groups of 16 bits
              - Size: The IPv6 header is 40 bytes in length.
              - Fragmentation: IPv6 requires fragmentation to be handled by the sending host rather than by routers, improving efficiency.
              - Built-in Security: IPv6 was designed with IPsec as a mandatory component, providing native support for encryption and authentication.
