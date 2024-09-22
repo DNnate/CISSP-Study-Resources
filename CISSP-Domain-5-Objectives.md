@@ -364,7 +364,9 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
        - Policy Enforcement Point: When a user or system request access to a resource, it is the PEP that evaluates it against predefined policies and applies the neccessary controls.
 
 📗[5.5](#5.5) Manage the identity and access provisioning lifecycle (OSG-9 Chpts 13,14)
-- The identity and access provisioning life cycle refers to the creation, management, review/audit, and deletion of accounts. The Identity and Access Provisioning Lifecycle includes the following stages:
+- The identity and access provisioning life cycle refers to the creation, management, review/audit, and deletion of accounts.
+- The Identity Life Cycle is simple in concept and refers to the creation or provisioning of user access, the periodic review of that access, and eventually the revocation of that access. The three steps of the Identity Life Cycle are 🔥Provisioning, 🔥Review and 🔥Revocation
+- The Identity and Access Provisioning Lifecycle includes the following stages:
     - 🆎Provisioning:
     - 🆎Deprovisioning:
     - 🆎Role Definition and Transition:
