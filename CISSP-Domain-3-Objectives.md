@@ -608,7 +608,14 @@ taxed by inefficient implementations of software and VMs.
 
 [3.6](#3.6) Select and determine cryptographic solutions (OSG-9 Chpts 6,7)
 - FIPS 140-2: Established to aid in the protection of digitally stored unclassified , yet sensitive information.
-- According to FIPS 140-2, the following combination of cryptographic algorithms are compliant for non-legacy systems: key exchange: DH >=2048 bits, Symmetric Key: AES > 128 bits, Digital Signature: DSA or RSA >=2048 bits
+- 🔥According to 🔥FIPS 140-2, the following combination of cryptographic algorithms are compliant for non-legacy systems:
+    - ✏️key exchange: DH >=2048 bits
+    - ✏️Symmetric Key: AES > 128 bits
+    - ✏️Digital Signature: DSA or RSA >=2048 bits
+- 🔥According to 🔥FIPS 140-3, the following comnbination of cryptographic algorithms are compliant:
+    - ✏️Key Exchange: Diffie-Hellman (DH) ≥ 2048 bits or 📝ECDH ≥ 256 bits
+    - ✏️Symmetric Key: AES-128, AES-192, or AES-256
+    - ✏️Digital Signature: RSA ≥ 2048 bits, DSA ≥ 2048 bits, or 📝ECDSA ≥ 256 bits
  - Developed by NIST for use in computer systems by non-military American government agencies and government contractors
  - **FIPS 140-2** 🤯 (Federal Information Processing Standard) Security levels include
    - Level 1: lowest level of security.
