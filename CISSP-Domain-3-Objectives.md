@@ -109,6 +109,7 @@ You may find this domain to be more technical than others, and if you have exper
              - 🍍The policy enforcement point (PEP) enforces these decisions by controlling access to resources based on instructions from the policy administrator. Lastly, the subject refers to users, services, or systems that request access or attempt to use rights and is not involved in decision-making.
         - 🛑In a zero-trust network architecture, access control decisions should never be made based upon a system's location on the network. Therefore, an IP address should never be used and would be the least appropriate of these options. 
         - See my article on an [Overview of Zero Trust Basics](https://blog.balancedsec.com/p/an-overview-of-zero-trust-basics)
+        - See **NIST Special Publication 800-207**, which introduces the concept of zero trust architecture (ZTA).
         - In the CISA Zero Trust Maturity Model (ZTMM), organizations progress through four maturity levels as they implement Zero Trust. These levels are applied across all ZT pillars (identity, devices, networks, applications/workloads, data, and visibility/analytics). Here are the levels: **Traditional** > **Initia**l > **Advanced** > **Optimal**
 - 3.1.9 Privacy by design
     - ❄️**Privacy by design (PbD)**: a guideline to integrate privacy protections into products during the earliest design phase rather than tacking it on at the end of development
