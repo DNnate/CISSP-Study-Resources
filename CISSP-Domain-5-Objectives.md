@@ -200,7 +200,7 @@ Services (CAS) are all SSO implementations. RADIUS is not a single sign-on imple
             - SAML is actively maintained by the Organization for the Advancement of Structured Information Standards (OASIS) and is currently in version 2.0
             - SAML is an 📝XML-based framework used to 📝exchange user information for single sign-on(SSO) between federated organizations within a federated identity management system.
             - eXtensible markup language (XML) was designed to store and transport data and be both human and machine-readable. It uses a simple text-based format for representing structured information such as documents, data, configuration, books, transactions, invoices, and much more. It was derived from an older standard format called SGML (International Standards Organization (ISO) 8879) and was modified to be more suitable for web use. Federated organizations use the Security Assertion Markup Language (SAML) to support single sign-on (SSO) capabilities on the internet. SAML is an open, XML-based standard used to provide authorization, attribute information, and authentication data. SAML has three roles:
-            - 🩹the principal
+            - 🩹the principal (The user)
             - 🩹the identity provider
             - 🩹the service provider.
         - 🍊OAuth (most widely used and integrates with 3rd Parties). OAuth is the most widely used open standard for 📝authorization and 📝delegation of rights for cloud services.
